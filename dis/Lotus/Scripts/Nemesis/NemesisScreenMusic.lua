@@ -26,18 +26,18 @@
        6 [-]: GETIMPORT R3 5; var3 = _T["gNemesis"]["generatedProfile"]
        7 [-]: GETTABLEKS R2 R3 K6; var2 = var3["mFaction"]
        8 [-]: LOADN R3 0   ; var3 = 0
-       9 [-]: JUMPIFNOTEQ R2 R3 L0; goto L0 if var2 ~= var2097152837
+       9 [-]: JUMPIFNOTEQ R2 R3 L0; goto L0 if var2 ~= var2097152844
       10 [-]: NAMECALL R3 R0 K7; var4 = var0; var3 = var0[0x383D2E7D]
       11 [-]: CALL R3 2 1  ; var3(var4)
       12 [-]: RETURN R0 0  ; 
 L 0:  13 [-]: LOADN R3 1   ; var3 = 1
-      14 [-]: JUMPIFNOTEQ R2 R3 L2; goto L2 if var2 ~= var591182
+      14 [-]: JUMPIFNOTEQ R2 R3 L2; goto L2 if var2 ~= var591137
       15 [-]: GETIMPORT R5 9; var5 = 0x0469F296
       16 [-]: LOADK R6 K10 ; var6 = "CorpusLichSeq"
       17 [-]: CALL R5 2 0  ; var5, ... = var5(var6)
       18 [-]: NAMECALL R3 R1 K11; var4 = var1; var3 = var1[0x46A0EBF5]
       19 [-]: CALL R3 0 2  ; var3 = var3(var4, ...)
-      20 [-]: FASTCALL1 62 R3 L1; 
+      20 [-]: FASTCALL1 64 R3 L1; 
       21 [-]: MOVE R5 R3   ; var5 = var3
       22 [-]: GETIMPORT R4 13; var4 = 0x7B998233
       23 [-]: CALL R4 2 2  ; var4 = var4(var5)

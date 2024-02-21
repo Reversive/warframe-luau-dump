@@ -24,7 +24,7 @@
        4 [-]: MOVE R5 R1   ; var5 = var1
        5 [-]: CALL R3 3 2  ; var3 = var3(var4, var5)
        6 [-]: LOADN R4 60  ; var4 = 60
-       7 [-]: JUMPIFNOTLT R3 R4 L0; goto L0 if var3 >= var66331
+       7 [-]: JUMPIFNOTLT R3 R4 L0; goto L0 if var3 >= var66310
        8 [-]: LOADB R3 1   ; var3 = true
        9 [-]: RETURN R3 1  ; 
 L 0:  10 [-]: LOADB R3 0   ; var3 = false

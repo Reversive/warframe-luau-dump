@@ -3,45 +3,49 @@
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       1
-; Max Stack Size:  9
+; Max Stack Size:  10
 
-       1 [-]: GETIMPORT R0 1; var0 = 0x0469F296
-       2 [-]: LOADK R1 K2  ; var1 = "PurgatoryDifficulty"
+       1 [-]: GETIMPORT R0 1; var0 = 0x2D0FAD09
+       2 [-]: LOADK R1 K2  ; var1 = "Lotus.Scripts.Nemesis.NemesisGenerator"
        3 [-]: CALL R0 2 2  ; var0 = var0(var1)
-       4 [-]: GETIMPORT R1 1; var1 = 0x0469F296
-       5 [-]: LOADK R2 K3  ; var2 = "PurgatoryComplete"
+       4 [-]: GETIMPORT R1 4; var1 = 0x0469F296
+       5 [-]: LOADK R2 K5  ; var2 = "PurgatoryDifficulty"
        6 [-]: CALL R1 2 2  ; var1 = var1(var2)
-       7 [-]: GETIMPORT R2 1; var2 = 0x0469F296
-       8 [-]: LOADK R3 K4  ; var3 = "PurgatoryRewardTier"
+       7 [-]: GETIMPORT R2 4; var2 = 0x0469F296
+       8 [-]: LOADK R3 K6  ; var3 = "PurgatoryComplete"
        9 [-]: CALL R2 2 2  ; var2 = var2(var3)
-      10 [-]: GETIMPORT R3 1; var3 = 0x0469F296
-      11 [-]: LOADK R4 K5  ; var4 = "LawyerTreasurerSpawn"
+      10 [-]: GETIMPORT R3 4; var3 = 0x0469F296
+      11 [-]: LOADK R4 K7  ; var4 = "PurgatoryRewardTier"
       12 [-]: CALL R3 2 2  ; var3 = var3(var4)
-      13 [-]: DUPCLOSURE R4 K6; 
-      14 [-]: DUPCLOSURE R5 K7; 
-      15 [-]: DUPCLOSURE R6 K8; 
-      16 [-]: DUPCLOSURE R7 K9; 
-      17 [-]: CAPTURE VAL R6; 
-      18 [-]: CAPTURE VAL R4; 
-      19 [-]: CAPTURE VAL R3; 
-      20 [-]: DUPCLOSURE R8 K10; 
-      21 [-]: CAPTURE VAL R3; 
-      22 [-]: CAPTURE VAL R7; 
-      23 [-]: CAPTURE VAL R0; 
-      24 [-]: CAPTURE VAL R1; 
-      25 [-]: CAPTURE VAL R2; 
-      26 [-]: SETGLOBAL R8 K11; "LawyerTreasurerSpawner" = var8
-      27 [-]: RETURN R0 0  ; 
+      13 [-]: GETIMPORT R4 4; var4 = 0x0469F296
+      14 [-]: LOADK R5 K8  ; var5 = "LawyerTreasurerSpawn"
+      15 [-]: CALL R4 2 2  ; var4 = var4(var5)
+      16 [-]: DUPCLOSURE R5 K9; 
+      17 [-]: DUPCLOSURE R6 K10; 
+      18 [-]: DUPCLOSURE R7 K11; 
+      19 [-]: CAPTURE VAL R0; 
+      20 [-]: DUPCLOSURE R8 K12; 
+      21 [-]: CAPTURE VAL R7; 
+      22 [-]: CAPTURE VAL R5; 
+      23 [-]: CAPTURE VAL R4; 
+      24 [-]: DUPCLOSURE R9 K13; 
+      25 [-]: CAPTURE VAL R4; 
+      26 [-]: CAPTURE VAL R8; 
+      27 [-]: CAPTURE VAL R1; 
+      28 [-]: CAPTURE VAL R2; 
+      29 [-]: CAPTURE VAL R3; 
+      30 [-]: SETGLOBAL R9 K14; "LawyerTreasurerSpawner" = var9
+      31 [-]: RETURN R0 0  ; 
 
 
 ; Name:            
-; Defined at line: 22
+; Defined at line: 24
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
 ; Max Stack Size:  10
 
-       0 [-]: FASTCALL1 62 R0 L0; 
+       0 [-]: FASTCALL1 64 R0 L0; 
        1 [-]: MOVE R2 R0   ; var2 = var0
        2 [-]: GETIMPORT R1 1; var1 = 0x7B998233
        3 [-]: CALL R1 2 2  ; var1 = var1(var2)
@@ -50,7 +54,7 @@ L 0:   4 [-]: JUMPIFNOT R1 L1; goto L1 if not var1
 L 1:   6 [-]: GETIMPORT R1 3; var1 = 0x89326C93
        7 [-]: NAMECALL R1 R1 K4; var2 = var1; var1 = var1[0x7D108DDB]
        8 [-]: CALL R1 2 2  ; var1 = var1(var2)
-       9 [-]: FASTCALL1 62 R1 L2; 
+       9 [-]: FASTCALL1 64 R1 L2; 
       10 [-]: MOVE R3 R1   ; var3 = var1
       11 [-]: GETIMPORT R2 1; var2 = 0x7B998233
       12 [-]: CALL R2 2 2  ; var2 = var2(var3)
@@ -62,7 +66,7 @@ L 2:  13 [-]: JUMPIF R2 L6 ; goto L6 if var2
 L 3:  18 [-]: GETTABLE R5 R1 R4; var5 = var1[var4]
       19 [-]: NAMECALL R5 R5 K5; var6 = var5; var5 = var5[0xBB610E5B]
       20 [-]: CALL R5 2 2  ; var5 = var5(var6)
-      21 [-]: FASTCALL1 62 R5 L4; 
+      21 [-]: FASTCALL1 64 R5 L4; 
       22 [-]: MOVE R7 R5   ; var7 = var5
       23 [-]: GETIMPORT R6 1; var6 = 0x7B998233
       24 [-]: CALL R6 2 2  ; var6 = var6(var7)
@@ -76,7 +80,7 @@ L 6:  31 [-]: RETURN R0 0  ;
 
 
 ; Name:            
-; Defined at line: 37
+; Defined at line: 39
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -90,13 +94,13 @@ L 6:  31 [-]: RETURN R0 0  ;
        5 [-]: LOADN R2 1   ; var2 = 1
        6 [-]: FORNPREP R1 L1; nforprep start - [escape at L1] -- var1 = iterator
 L 0:   7 [-]: GETTABLE R4 R0 R3; var4 = var0[var3]
-       8 [-]: LOADK R6 K3  ; var6 = 1.6000000000000001
+       8 [-]: LOADK R6 K3  ; var6 = 1.6000000238418579
        9 [-]: NAMECALL R4 R4 K4; var5 = var4; var4 = var4[0xBFEF315D]
       10 [-]: CALL R4 3 1  ; var4(var5, var6)
       11 [-]: FORNLOOP R1 L0; nforloop end - iterate + goto L0
 L 1:  12 [-]: GETIMPORT R1 1; var1 = 0x89326C93
       13 [-]: GETIMPORT R3 6; var3 = 0xEC4F990F
-      14 [-]: LOADK R4 K7  ; var4 = 0.20000000000000001
+      14 [-]: LOADK R4 K7  ; var4 = 0.20000000298023224
       15 [-]: LOADN R5 2   ; var5 = 2
       16 [-]: LOADN R6 2   ; var6 = 2
       17 [-]: LOADB R7 1   ; var7 = true
@@ -106,11 +110,11 @@ L 1:  12 [-]: GETIMPORT R1 1; var1 = 0x89326C93
 
 
 ; Name:            
-; Defined at line: 45
-; #Upvalues:       0
+; Defined at line: 47
+; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
-; Max Stack Size:  9
+; Max Stack Size:  13
 
        0 [-]: GETIMPORT R0 1; var0 = 0x89326C93
        1 [-]: NAMECALL R0 R0 K2; var1 = var0; var0 = var0[0x7D108DDB]
@@ -118,26 +122,34 @@ L 1:  12 [-]: GETIMPORT R1 1; var1 = 0x89326C93
        3 [-]: LOADN R3 1   ; var3 = 1
        4 [-]: LENGTH R1 R0 ; var1 = #var0
        5 [-]: LOADN R2 1   ; var2 = 1
-       6 [-]: FORNPREP R1 L2; nforprep start - [escape at L2] -- var1 = iterator
+       6 [-]: FORNPREP R1 L4; nforprep start - [escape at L4] -- var1 = iterator
 L 0:   7 [-]: GETTABLE R4 R0 R3; var4 = var0[var3]
-       8 [-]: NAMECALL R4 R4 K3; var5 = var4; var4 = var4[0x62C81B76]
-       9 [-]: CALL R4 2 2  ; var4 = var4(var5)
-      10 [-]: GETTABLEKS R5 R4 K4; var5 = var4["mHasActiveNemesis"]
-      11 [-]: NAMECALL R6 R4 K5; var7 = var4; var6 = var4[0x9094066E]
-      12 [-]: CALL R6 2 2  ; var6 = var6(var7)
-      13 [-]: GETTABLEKS R7 R4 K6; var7 = var4["mWraithQuestCompleted"]
-      14 [-]: JUMPIF R5 L1 ; goto L1 if var5
-      15 [-]: JUMPIFNOT R6 L1; goto L1 if not var6
-      16 [-]: JUMPIFNOT R7 L1; goto L1 if not var7
-      17 [-]: LOADB R8 1   ; var8 = true
-      18 [-]: RETURN R8 1  ; 
-L 1:  19 [-]: FORNLOOP R1 L0; nforloop end - iterate + goto L0
-L 2:  20 [-]: LOADB R1 0   ; var1 = false
-      21 [-]: RETURN R1 1  ; 
+       8 [-]: NAMECALL R5 R4 K3; var6 = var4; var5 = var4[0x62C81B76]
+       9 [-]: CALL R5 2 2  ; var5 = var5(var6)
+      10 [-]: GETTABLEKS R6 R5 K4; var6 = var5["mHasActiveNemesis"]
+      11 [-]: NAMECALL R7 R5 K5; var8 = var5; var7 = var5[0x9094066E]
+      12 [-]: CALL R7 2 2  ; var7 = var7(var8)
+      13 [-]: GETTABLEKS R8 R5 K6; var8 = var5["mWraithQuestCompleted"]
+      14 [-]: NAMECALL R10 R4 K7; var11 = var4; var10 = var4[0x8ED175C9]
+      15 [-]: CALL R10 2 2 ; var10 = var10(var11)
+      16 [-]: GETUPVAL R12 0; var12 = upvalues[0]
+      17 [-]: GETTABLEKS R11 R12 K8; var11 = var12["MASTERY_RANK_REQUIREMENT"]
+      18 [-]: JUMPIFLE R11 R10 L1; goto L1 if var11 <= var16779526
+      19 [-]: LOADB R9 0 +1; var9 = false
+L 1:  20 [-]: LOADB R9 1   ; var9 = true
+L 2:  21 [-]: JUMPIF R6 L3 ; goto L3 if var6
+      22 [-]: JUMPIFNOT R7 L3; goto L3 if not var7
+      23 [-]: JUMPIFNOT R8 L3; goto L3 if not var8
+      24 [-]: JUMPIFNOT R9 L3; goto L3 if not var9
+      25 [-]: LOADB R10 1  ; var10 = true
+      26 [-]: RETURN R10 1 ; 
+L 3:  27 [-]: FORNLOOP R1 L0; nforloop end - iterate + goto L0
+L 4:  28 [-]: LOADB R1 0   ; var1 = false
+      29 [-]: RETURN R1 1  ; 
 
 
 ; Name:            
-; Defined at line: 60
+; Defined at line: 64
 ; #Upvalues:       3
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -184,7 +196,7 @@ L 1:  21 [-]: GETIMPORT R4 15; var4 = 0xCBD666E1
       38 [-]: CALL R11 3 2 ; var11 = var11(var12, var13)
       39 [-]: GETTABLE R10 R8 R11; var10 = var8[var11]
 L 2:  40 [-]: GETIMPORT R11 20; var11 = 0x21A5B9AD
-      41 [-]: JUMPIFNOTLT R5 R11 L16; goto L16 if var5 >= var68430
+      41 [-]: JUMPIFNOTLT R5 R11 L16; goto L16 if var5 >= var68385
       42 [-]: GETIMPORT R11 1; var11 = 0x3D106989
       43 [-]: LOADK R13 K21; var13 = "lawyer treasurer attempt "
       44 [-]: MOVE R14 R5  ; var14 = var5
@@ -193,7 +205,7 @@ L 2:  40 [-]: GETIMPORT R11 20; var11 = 0x21A5B9AD
       47 [-]: GETIMPORT R11 5; var11 = 0x89326C93
       48 [-]: NAMECALL R11 R11 K22; var12 = var11; var11 = var11[0xE3A0BBCA]
       49 [-]: CALL R11 2 2 ; var11 = var11(var12)
-      50 [-]: FASTCALL1 62 R11 L3; 
+      50 [-]: FASTCALL1 64 R11 L3; 
       51 [-]: MOVE R13 R11 ; var13 = var11
       52 [-]: GETIMPORT R12 24; var12 = 0x7B998233
       53 [-]: CALL R12 2 2 ; var12 = var12(var13)
@@ -207,7 +219,7 @@ L 4:  59 [-]: ADDK R5 R5 K28; var5 = var5 + 1
       61 [-]: LOADN R13 3  ; var13 = 3
       62 [-]: CALL R12 2 1 ; var12(var13)
       63 [-]: GETIMPORT R13 30; var13 = 0xC516EB74
-      64 [-]: FASTCALL1 62 R13 L5; 
+      64 [-]: FASTCALL1 64 R13 L5; 
       65 [-]: GETIMPORT R12 24; var12 = 0x7B998233
       66 [-]: CALL R12 2 2 ; var12 = var12(var13)
 L 5:  67 [-]: JUMPIF R12 L6; goto L6 if var12
@@ -229,7 +241,7 @@ L 6:  71 [-]: NAMECALL R12 R2 K31; var13 = var2; var12 = var2[0xC9EAF3C4]
       83 [-]: LOADK R21 K37; var21 = " idx"
       84 [-]: CONCAT R16 R17 R21; var16 = var17 .. var21
       85 [-]: CALL R15 2 1 ; var15(var16)
-      86 [-]: JUMPIFNOTLT R14 R13 L15; goto L15 if var14 >= var235671351
+      86 [-]: JUMPIFNOTLT R14 R13 L15; goto L15 if var14 >= var235671325
       87 [-]: GETTABLE R15 R12 R14; var15 = var12[var14]
       88 [-]: ADDK R17 R14 K28; var17 = var14 + 1
       89 [-]: GETTABLE R16 R12 R17; var16 = var12[var17]
@@ -247,7 +259,7 @@ L 6:  71 [-]: NAMECALL R12 R2 K31; var13 = var2; var12 = var2[0xC9EAF3C4]
      101 [-]: GETIMPORT R18 1; var18 = 0x3D106989
      102 [-]: LOADK R19 K42; var19 = "spawning in choke point..."
      103 [-]: CALL R18 2 1 ; var18(var19)
-     104 [-]: FASTCALL1 62 R17 L7; 
+     104 [-]: FASTCALL1 64 R17 L7; 
      105 [-]: MOVE R19 R17 ; var19 = var17
      106 [-]: GETIMPORT R18 24; var18 = 0x7B998233
      107 [-]: CALL R18 2 2 ; var18 = var18(var19)
@@ -266,7 +278,7 @@ L 7: 108 [-]: JUMPIF R18 L12; goto L12 if var18
      120 [-]: NAMECALL R18 R18 K22; var19 = var18; var18 = var18[0xE3A0BBCA]
      121 [-]: CALL R18 2 2 ; var18 = var18(var19)
      122 [-]: MOVE R11 R18 ; var11 = var18
-     123 [-]: FASTCALL1 62 R11 L8; 
+     123 [-]: FASTCALL1 64 R11 L8; 
      124 [-]: MOVE R19 R11 ; var19 = var11
      125 [-]: GETIMPORT R18 24; var18 = 0x7B998233
      126 [-]: CALL R18 2 2 ; var18 = var18(var19)
@@ -276,7 +288,7 @@ L 8: 127 [-]: JUMPIF R18 L9; goto L9 if var18
      130 [-]: NAMECALL R18 R11 K27; var19 = var11; var18 = var11[0x659D451F]
      131 [-]: CALL R18 4 1 ; var18(var19, var20, var21)
 L 9: 132 [-]: GETIMPORT R19 51; var19 = 0x86279AB4
-     133 [-]: FASTCALL1 62 R19 L10; 
+     133 [-]: FASTCALL1 64 R19 L10; 
      134 [-]: GETIMPORT R18 24; var18 = 0x7B998233
      135 [-]: CALL R18 2 2 ; var18 = var18(var19)
 L10: 136 [-]: JUMPIF R18 L11; goto L11 if var18
@@ -299,7 +311,7 @@ L12: 149 [-]: GETIMPORT R18 1; var18 = 0x3D106989
      153 [-]: NAMECALL R18 R18 K22; var19 = var18; var18 = var18[0xE3A0BBCA]
      154 [-]: CALL R18 2 2 ; var18 = var18(var19)
      155 [-]: MOVE R11 R18 ; var11 = var18
-     156 [-]: FASTCALL1 62 R11 L13; 
+     156 [-]: FASTCALL1 64 R11 L13; 
      157 [-]: MOVE R19 R11 ; var19 = var11
      158 [-]: GETIMPORT R18 24; var18 = 0x7B998233
      159 [-]: CALL R18 2 2 ; var18 = var18(var19)
@@ -325,7 +337,7 @@ L16: 172 [-]: GETIMPORT R11 1; var11 = 0x3D106989
      179 [-]: GETIMPORT R13 59; var13 = EMPTY_SYMBOL
      180 [-]: NAMECALL R11 R2 K60; var12 = var2; var11 = var2[0x234BA63B]
      181 [-]: CALL R11 3 2 ; var11 = var11(var12, var13)
-     182 [-]: FASTCALL1 62 R11 L17; 
+     182 [-]: FASTCALL1 64 R11 L17; 
      183 [-]: MOVE R13 R11 ; var13 = var11
      184 [-]: GETIMPORT R12 24; var12 = 0x7B998233
      185 [-]: CALL R12 2 2 ; var12 = var12(var13)
@@ -345,7 +357,7 @@ L19: 198 [-]: RETURN R0 0  ;
 
 
 ; Name:            
-; Defined at line: 169
+; Defined at line: 173
 ; #Upvalues:       5
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -358,7 +370,7 @@ L19: 198 [-]: RETURN R0 0  ;
        4 [-]: GETIMPORT R2 5; var2 = 0x0469F296
        5 [-]: LOADK R3 K6  ; var3 = "LawyerMeUp"
        6 [-]: CALL R2 2 2  ; var2 = var2(var3)
-       7 [-]: JUMPIFNOTEQ R1 R2 L0; goto L0 if var1 ~= var65870
+       7 [-]: JUMPIFNOTEQ R1 R2 L0; goto L0 if var1 ~= var65825
        8 [-]: GETIMPORT R1 1; var1 = 0xBE190284
        9 [-]: GETUPVAL R3 0; var3 = upvalues[0]
       10 [-]: LOADN R4 1   ; var4 = 1
@@ -373,7 +385,7 @@ L 0:  18 [-]: GETIMPORT R2 1; var2 = 0xBE190284
       19 [-]: NAMECALL R2 R2 K8; var3 = var2; var2 = var2[0x5C390F04]
       20 [-]: CALL R2 2 2  ; var2 = var2(var3)
       21 [-]: LOADN R3 30  ; var3 = 30
-      22 [-]: JUMPIFEQ R2 R3 L1; goto L1 if var2 == var16777499
+      22 [-]: JUMPIFEQ R2 R3 L1; goto L1 if var2 == var16777478
       23 [-]: LOADB R1 0 +1; var1 = false
 L 1:  24 [-]: LOADB R1 1   ; var1 = true
 L 2:  25 [-]: GETIMPORT R3 10; var3 = 0x89326C93
@@ -382,7 +394,7 @@ L 2:  25 [-]: GETIMPORT R3 10; var3 = 0x89326C93
       28 [-]: CALL R5 2 0  ; var5, ... = var5(var6)
       29 [-]: NAMECALL R3 R3 K12; var4 = var3; var3 = var3[0x46A0EBF5]
       30 [-]: CALL R3 0 0  ; var3, ... = var3(var4, ...)
-      31 [-]: FASTCALL 62 L3; 
+      31 [-]: FASTCALL 64 L3; 
       32 [-]: GETIMPORT R2 14; var2 = 0x7B998233
       33 [-]: CALL R2 0 2  ; var2 = var2(var3, ...)
 L 3:  34 [-]: JUMPIF R1 L4 ; goto L4 if var1
@@ -407,7 +419,7 @@ L 7:  51 [-]: GETIMPORT R3 1; var3 = 0xBE190284
       53 [-]: NAMECALL R3 R3 K15; var4 = var3; var3 = var3[0x0EB34C69]
       54 [-]: CALL R3 3 2  ; var3 = var3(var4, var5)
       55 [-]: GETIMPORT R4 20; var4 = 0xFC2F1878
-      56 [-]: JUMPIFNOTLT R3 R4 L8; goto L8 if var3 >= var1442894
+      56 [-]: JUMPIFNOTLT R3 R4 L8; goto L8 if var3 >= var1442849
       57 [-]: GETIMPORT R4 22; var4 = 0x3D106989
       58 [-]: LOADK R5 K23 ; var5 = "no law-treasurer spawn, difficulty tier too low"
       59 [-]: CALL R4 2 1  ; var4(var5)
@@ -422,7 +434,7 @@ L 9:  62 [-]: GETIMPORT R5 1; var5 = 0xBE190284
       68 [-]: GETUPVAL R7 4; var7 = upvalues[4]
       69 [-]: NAMECALL R5 R5 K15; var6 = var5; var5 = var5[0x0EB34C69]
       70 [-]: CALL R5 3 2  ; var5 = var5(var6, var7)
-      71 [-]: JUMPIFNOTLT R4 R5 L10; goto L10 if var4 >= var328726
+      71 [-]: JUMPIFNOTLT R4 R5 L10; goto L10 if var4 >= var328750
       72 [-]: MOVE R4 R5   ; var4 = var5
 L10:  73 [-]: GETIMPORT R6 18; var6 = 0xCBD666E1
       74 [-]: LOADN R7 0   ; var7 = 0
@@ -430,7 +442,7 @@ L10:  73 [-]: GETIMPORT R6 18; var6 = 0xCBD666E1
       76 [-]: JUMPBACK L9  ; goto L9
 L11:  77 [-]: GETIMPORT R6 26; var6 = 0x24678072
       78 [-]: GETTABLE R5 R6 R3; var5 = var6[var3]
-      79 [-]: JUMPIFNOTLT R4 R5 L12; goto L12 if var4 >= var1443406
+      79 [-]: JUMPIFNOTLT R4 R5 L12; goto L12 if var4 >= var1443361
       80 [-]: GETIMPORT R6 22; var6 = 0x3D106989
       81 [-]: LOADK R7 K27 ; var7 = "no law-treasurer spawn, reward tier too low"
       82 [-]: CALL R6 2 1  ; var6(var7)

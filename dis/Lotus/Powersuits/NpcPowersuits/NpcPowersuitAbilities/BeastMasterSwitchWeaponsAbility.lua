@@ -34,7 +34,7 @@
        6 [-]: LOADN R5 0   ; var5 = 0
        7 [-]: NAMECALL R3 R3 K3; var4 = var3; var3 = var3[0x881B6B90]
        8 [-]: CALL R3 3 2  ; var3 = var3(var4, var5)
-       9 [-]: FASTCALL1 62 R3 L0; 
+       9 [-]: FASTCALL1 64 R3 L0; 
       10 [-]: MOVE R5 R3   ; var5 = var3
       11 [-]: GETIMPORT R4 5; var4 = 0x7B998233
       12 [-]: CALL R4 2 2  ; var4 = var4(var5)
@@ -44,13 +44,13 @@ L 0:  13 [-]: JUMPIFNOT R4 L1; goto L1 if not var4
 L 1:  16 [-]: NAMECALL R4 R3 K6; var5 = var3; var4 = var3[0xB5D09C91]
       17 [-]: CALL R4 2 2  ; var4 = var4(var5)
       18 [-]: GETUPVAL R5 0; var5 = upvalues[0]
-      19 [-]: JUMPIFNOTEQ R4 R5 L2; goto L2 if var4 ~= var460037
+      19 [-]: JUMPIFNOTEQ R4 R5 L2; goto L2 if var4 ~= var460103
       20 [-]: LOADK R5 K7  ; var5 = 0.5
       21 [-]: RETURN R5 1  ; 
 L 2:  22 [-]: GETIMPORT R5 9; var5 = 0x8486FB10
-      23 [-]: JUMPIFNOTLE R2 R5 L3; goto L3 if var2 > var66823
+      23 [-]: JUMPIFNOTLE R2 R5 L3; goto L3 if var2 > var66876
       24 [-]: GETUPVAL R5 1; var5 = upvalues[1]
-      25 [-]: JUMPIFNOTEQ R4 R5 L3; goto L3 if var4 ~= var460037
+      25 [-]: JUMPIFNOTEQ R4 R5 L3; goto L3 if var4 ~= var460103
       26 [-]: LOADK R5 K7  ; var5 = 0.5
       27 [-]: RETURN R5 1  ; 
 L 3:  28 [-]: LOADN R5 0   ; var5 = 0
@@ -75,7 +75,7 @@ L 0:   5 [-]: LOADNIL R4   ; var4 = nil
        8 [-]: LOADN R7 0   ; var7 = 0
        9 [-]: NAMECALL R5 R5 K4; var6 = var5; var5 = var5[0x881B6B90]
       10 [-]: CALL R5 3 2  ; var5 = var5(var6, var7)
-      11 [-]: FASTCALL1 62 R5 L1; 
+      11 [-]: FASTCALL1 64 R5 L1; 
       12 [-]: MOVE R7 R5   ; var7 = var5
       13 [-]: GETIMPORT R6 6; var6 = 0x7B998233
       14 [-]: CALL R6 2 2  ; var6 = var6(var7)
@@ -84,7 +84,7 @@ L 1:  15 [-]: JUMPIF R6 L2 ; goto L2 if var6
       17 [-]: CALL R6 2 2  ; var6 = var6(var7)
       18 [-]: MOVE R4 R6   ; var4 = var6
 L 2:  19 [-]: GETUPVAL R6 0; var6 = upvalues[0]
-      20 [-]: JUMPIFEQ R4 R6 L3; goto L3 if var4 == var1862338117
+      20 [-]: JUMPIFEQ R4 R6 L3; goto L3 if var4 == var1862338124
       21 [-]: NAMECALL R6 R1 K3; var7 = var1; var6 = var1[0xDE321E6F]
       22 [-]: CALL R6 2 2  ; var6 = var6(var7)
       23 [-]: GETUPVAL R8 0; var8 = upvalues[0]

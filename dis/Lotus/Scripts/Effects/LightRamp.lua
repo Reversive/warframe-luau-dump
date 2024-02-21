@@ -19,7 +19,7 @@
 
        0 [-]: LOADN R1 0   ; var1 = 0
 L 0:   1 [-]: GETIMPORT R2 1; var2 = 0xE15169D2
-       2 [-]: JUMPIFNOTLT R1 R2 L1; goto L1 if var1 >= var197198
+       2 [-]: JUMPIFNOTLT R1 R2 L1; goto L1 if var1 >= var197153
        3 [-]: GETIMPORT R2 3; var2 = 0xA533083A
        4 [-]: GETIMPORT R4 1; var4 = 0xE15169D2
        5 [-]: DIV R3 R1 R4 ; var3 = var1 / var4

@@ -36,7 +36,7 @@
       10 [-]: CALL R3 3 2  ; var3 = var3(var4, var5)
       11 [-]: SETTABLEKS R3 R2 K7; var3["challengeInstance"] = var2
       12 [-]: GETTABLEKS R4 R2 K7; var4 = var2["challengeInstance"]
-      13 [-]: FASTCALL1 62 R4 L0; 
+      13 [-]: FASTCALL1 64 R4 L0; 
       14 [-]: GETIMPORT R3 9; var3 = 0x7B998233
       15 [-]: CALL R3 2 2  ; var3 = var3(var4)
 L 0:  16 [-]: JUMPIFNOT R3 L1; goto L1 if not var3
@@ -47,7 +47,7 @@ L 1:  18 [-]: GETIMPORT R3 5; var3 = 0xBA7DFCD2
       21 [-]: CALL R3 3 2  ; var3 = var3(var4, var5)
       22 [-]: SETTABLEKS R3 R2 K11; var3["challengeUserState"] = var2
       23 [-]: GETTABLEKS R4 R2 K11; var4 = var2["challengeUserState"]
-      24 [-]: FASTCALL1 62 R4 L2; 
+      24 [-]: FASTCALL1 64 R4 L2; 
       25 [-]: GETIMPORT R3 9; var3 = 0x7B998233
       26 [-]: CALL R3 2 2  ; var3 = var3(var4)
 L 2:  27 [-]: JUMPIFNOT R3 L3; goto L3 if not var3
@@ -93,7 +93,7 @@ L 0:   2 [-]: GETTABLEKS R3 R0 K0; var3 = var0["curNumHits"]
        8 [-]: CALL R2 3 2  ; var2 = var2(var3, var4)
        9 [-]: SETTABLEKS R2 R0 K5; var2["challengeUserState"] = var0
       10 [-]: GETTABLEKS R3 R0 K5; var3 = var0["challengeUserState"]
-      11 [-]: FASTCALL1 62 R3 L1; 
+      11 [-]: FASTCALL1 64 R3 L1; 
       12 [-]: GETIMPORT R2 7; var2 = 0x7B998233
       13 [-]: CALL R2 2 2  ; var2 = var2(var3)
 L 1:  14 [-]: JUMPIF R2 L2 ; goto L2 if var2

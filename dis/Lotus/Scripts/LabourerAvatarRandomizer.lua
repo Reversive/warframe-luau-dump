@@ -33,7 +33,7 @@
       13 [-]: CALL R2 5 1  ; var2(var3, var4, var5, var6)
 L 0:  14 [-]: GETIMPORT R1 7; var1 = 0xA2BC2ECB
       15 [-]: GETIMPORT R2 9; var2 = 0xBA997F41
-      16 [-]: JUMPIFNOTEQ R1 R2 L1; goto L1 if var1 ~= var590670
+      16 [-]: JUMPIFNOTEQ R1 R2 L1; goto L1 if var1 ~= var590625
       17 [-]: GETIMPORT R3 9; var3 = 0xBA997F41
       18 [-]: NAMECALL R1 R0 K10; var2 = var0; var1 = var0[0x2D9BA74F]
       19 [-]: CALL R1 3 1  ; var1(var2, var3)

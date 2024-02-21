@@ -43,7 +43,7 @@ L 0:   7 [-]: SETTABLEKS R2 R1 K0; var2["CHANCE"] = var1
        0 [-]: NAMECALL R5 R4 K0; var6 = var4; var5 = var4[0x5EFCA02D]
        1 [-]: CALL R5 2 2  ; var5 = var5(var6)
        2 [-]: GETTABLEKS R6 R5 K1; var6 = var5["victim"]
-       3 [-]: FASTCALL1 62 R6 L0; 
+       3 [-]: FASTCALL1 64 R6 L0; 
        4 [-]: MOVE R8 R6   ; var8 = var6
        5 [-]: GETIMPORT R7 3; var7 = 0x7B998233
        6 [-]: CALL R7 2 2  ; var7 = var7(var8)
@@ -57,7 +57,7 @@ L 1:   9 [-]: GETIMPORT R7 6; var7 = _T["laughCooldownTimer"]
 L 2:  14 [-]: GETIMPORT R7 6; var7 = _T["laughCooldownTimer"]
       15 [-]: GETIMPORT R8 9; var8 = 0x55156FF7
       16 [-]: CALL R8 1 2  ; var8 = var8()
-      17 [-]: JUMPIFNOTLT R8 R7 L3; goto L3 if var8 >= var65581
+      17 [-]: JUMPIFNOTLT R8 R7 L3; goto L3 if var8 >= var65571
       18 [-]: RETURN R0 0  ; 
 L 3:  19 [-]: GETIMPORT R8 11; var8 = 0xCB2F9123
       20 [-]: MUL R7 R2 R8 ; var7 = var2 * var8
@@ -65,7 +65,7 @@ L 3:  19 [-]: GETIMPORT R8 11; var8 = 0xCB2F9123
       22 [-]: LOADN R9 0   ; var9 = 0
       23 [-]: LOADN R10 1  ; var10 = 1
       24 [-]: CALL R8 3 2  ; var8 = var8(var9, var10)
-      25 [-]: JUMPIFNOTLT R7 R8 L4; goto L4 if var7 >= var65581
+      25 [-]: JUMPIFNOTLT R7 R8 L4; goto L4 if var7 >= var65571
       26 [-]: RETURN R0 0  ; 
 L 4:  27 [-]: GETIMPORT R9 15; var9 = 0x89326C93
       28 [-]: GETIMPORT R11 17; var11 = 0xB93B820E

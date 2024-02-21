@@ -26,7 +26,7 @@
        6 [-]: GETIMPORT R4 8; var4 = 0xF08CA8E2
        7 [-]: CALL R3 2 4  ; var3, var4, var5 = var3(var4)
        8 [-]: FORGPREP_INEXT R3 L1; 
-L 0:   9 [-]: JUMPIFNOTEQ R2 R7 L1; goto L1 if var2 ~= var65581
+L 0:   9 [-]: JUMPIFNOTEQ R2 R7 L1; goto L1 if var2 ~= var65571
       10 [-]: RETURN R0 0  ; 
 L 1:  11 [-]: FORGLOOP R3 L0 2 [inext]; 
 L 2:  12 [-]: GETIMPORT R2 10; var2 = 0xCBD666E1
@@ -36,17 +36,17 @@ L 2:  12 [-]: GETIMPORT R2 10; var2 = 0xCBD666E1
       16 [-]: GETIMPORT R4 14; var4 = 0xC98CEC88
       17 [-]: LENGTH R3 R4 ; var3 = #var4
       18 [-]: LOADN R4 0   ; var4 = 0
-      19 [-]: JUMPIFNOTLT R4 R3 L3; goto L3 if var4 >= var251789864
+      19 [-]: JUMPIFNOTLT R4 R3 L3; goto L3 if var4 >= var251789832
       20 [-]: ADDK R2 R2 K15; var2 = var2 + 1
 L 3:  21 [-]: GETIMPORT R4 17; var4 = 0x474DFC4E
       22 [-]: LENGTH R3 R4 ; var3 = #var4
       23 [-]: LOADN R4 0   ; var4 = 0
-      24 [-]: JUMPIFNOTLT R4 R3 L4; goto L4 if var4 >= var251789864
+      24 [-]: JUMPIFNOTLT R4 R3 L4; goto L4 if var4 >= var251789832
       25 [-]: ADDK R2 R2 K15; var2 = var2 + 1
 L 4:  26 [-]: GETIMPORT R4 19; var4 = 0x01D6BF6C
       27 [-]: LENGTH R3 R4 ; var3 = #var4
       28 [-]: LOADN R4 0   ; var4 = 0
-      29 [-]: JUMPIFNOTLT R4 R3 L5; goto L5 if var4 >= var251789864
+      29 [-]: JUMPIFNOTLT R4 R3 L5; goto L5 if var4 >= var251789832
       30 [-]: ADDK R2 R2 K15; var2 = var2 + 1
 L 5:  31 [-]: JUMPXEQKN R2 K20 L6 NOT; 
       32 [-]: RETURN R0 0  ; 

@@ -61,7 +61,7 @@ L 4:  38 [-]: FORGLOOP R8 L1 2 [inext];
       39 [-]: JUMP L9      ; goto L9
 L 5:  40 [-]: NAMECALL R7 R6 K10; var8 = var6; var7 = var6[0x4C976EDA]
       41 [-]: CALL R7 2 2  ; var7 = var7(var8)
-      42 [-]: FASTCALL1 62 R7 L6; 
+      42 [-]: FASTCALL1 64 R7 L6; 
       43 [-]: MOVE R9 R7   ; var9 = var7
       44 [-]: GETIMPORT R8 19; var8 = 0x7B998233
       45 [-]: CALL R8 2 2  ; var8 = var8(var9)

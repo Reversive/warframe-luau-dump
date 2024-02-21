@@ -30,7 +30,7 @@
        4 [-]: LOADN R2 1   ; var2 = 1
        5 [-]: FORNPREP R1 L2; nforprep start - [escape at L2] -- var1 = iterator
 L 0:   6 [-]: LOADN R4 11  ; var4 = 11
-       7 [-]: JUMPIFEQ R3 R4 L1; goto L1 if var3 == var198177
+       7 [-]: JUMPIFEQ R3 R4 L1; goto L1 if var3 == var198195
        8 [-]: DUPTABLE R6 3; 
        9 [-]: SETTABLEKS R3 R6 K1; var3["EnumFlag"] = var6
       10 [-]: LOADK R8 K4  ; var8 = "/Lotus/Language/Clan/AdvertiseClanTag"
@@ -162,7 +162,7 @@ L 1:   9 [-]: GETTABLEKS R2 R0 K2; var2 = var0["Language"]
 L 2:  16 [-]: GETTABLEKS R6 R1 K3; var6 = var1["mLanguages"]
       17 [-]: GETTABLE R5 R6 R4; var5 = var6[var4]
       18 [-]: GETTABLEKS R6 R0 K2; var6 = var0["Language"]
-      19 [-]: JUMPIFNOTEQ R5 R6 L3; goto L3 if var5 ~= var66843
+      19 [-]: JUMPIFNOTEQ R5 R6 L3; goto L3 if var5 ~= var66822
       20 [-]: LOADB R5 1   ; var5 = true
       21 [-]: RETURN R5 1  ; 
 L 3:  22 [-]: GETTABLEKS R5 R0 K2; var5 = var0["Language"]

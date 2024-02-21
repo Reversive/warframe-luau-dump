@@ -52,7 +52,7 @@
       12 [-]: JUMPIF R1 L1 ; goto L1 if var1
       13 [-]: GETTABLEKS R2 R0 K8; var2 = var0["maxWaveNum"]
       14 [-]: LOADN R3 0   ; var3 = 0
-      15 [-]: JUMPIFLT R3 R2 L0; goto L0 if var3 < var16777499
+      15 [-]: JUMPIFLT R3 R2 L0; goto L0 if var3 < var16777478
       16 [-]: LOADB R1 0 +1; var1 = false
 L 0:  17 [-]: LOADB R1 1   ; var1 = true
 L 1:  18 [-]: RETURN R1 1  ; 
@@ -83,14 +83,14 @@ L 1:  18 [-]: RETURN R1 1  ;
       15 [-]: CALL R6 4 2  ; var6 = var6(var7, var8, var9)
       16 [-]: LENGTH R7 R6 ; var7 = #var6
       17 [-]: LOADN R8 1   ; var8 = 1
-      18 [-]: JUMPIFLT R7 R8 L1; goto L1 if var7 < var50740811
-      19 [-]: FASTCALL1 62 R6 L0; 
+      18 [-]: JUMPIFLT R7 R8 L1; goto L1 if var7 < var50741309
+      19 [-]: FASTCALL1 64 R6 L0; 
       20 [-]: MOVE R8 R6   ; var8 = var6
       21 [-]: GETIMPORT R7 11; var7 = 0x7B998233
       22 [-]: CALL R7 2 2  ; var7 = var7(var8)
 L 0:  23 [-]: JUMPIF R7 L1 ; goto L1 if var7
       24 [-]: LOADN R7 2   ; var7 = 2
-      25 [-]: JUMPIFEQ R5 R7 L2; goto L2 if var5 == var65581
+      25 [-]: JUMPIFEQ R5 R7 L2; goto L2 if var5 == var65571
 L 1:  26 [-]: RETURN R0 0  ; 
 L 2:  27 [-]: GETIMPORT R7 13; var7 = 0x4A9305FF
       28 [-]: GETIMPORT R8 7; var8 = 0xBE190284
@@ -112,7 +112,7 @@ L 2:  27 [-]: GETIMPORT R7 13; var7 = 0x4A9305FF
       44 [-]: JUMPIF R9 L4 ; goto L4 if var9
       45 [-]: GETTABLEKS R11 R10 K20; var11 = var10["maxWaveNum"]
       46 [-]: LOADN R12 0  ; var12 = 0
-      47 [-]: JUMPIFLT R12 R11 L3; goto L3 if var12 < var16779547
+      47 [-]: JUMPIFLT R12 R11 L3; goto L3 if var12 < var16779526
       48 [-]: LOADB R9 0 +1; var9 = false
 L 3:  49 [-]: LOADB R9 1   ; var9 = true
 L 4:  50 [-]: JUMPIFNOT R9 L6; goto L6 if not var9
@@ -135,11 +135,11 @@ L 7:  65 [-]: GETIMPORT R9 30; var9 = _T["SurvivalMissionState"]
       67 [-]: GETUPVAL R11 0; var11 = upvalues[0]
       68 [-]: NAMECALL R9 R4 K34; var10 = var4; var9 = var4[0x0EB34C69]
       69 [-]: CALL R9 3 2  ; var9 = var9(var10, var11)
-      70 [-]: JUMPIFNOTLE R7 R9 L14; goto L14 if var7 > var2361934
+      70 [-]: JUMPIFNOTLE R7 R9 L14; goto L14 if var7 > var2361889
       71 [-]: GETIMPORT R10 36; var10 = 0x5BCED4C4[0x3630E649]
       72 [-]: CALL R10 1 2 ; var10 = var10()
       73 [-]: GETIMPORT R11 38; var11 = 0x643BF559
-      74 [-]: JUMPIFNOTLE R10 R11 L13; goto L13 if var10 > var2624078
+      74 [-]: JUMPIFNOTLE R10 R11 L13; goto L13 if var10 > var2624033
       75 [-]: GETIMPORT R10 40; var10 = 0x55730E1A
       76 [-]: LOADN R11 1  ; var11 = 1
       77 [-]: LENGTH R12 R6; var12 = #var6
@@ -154,19 +154,19 @@ L 7:  65 [-]: GETIMPORT R9 30; var9 = _T["SurvivalMissionState"]
       86 [-]: NAMECALL R12 R1 K44; var13 = var1; var12 = var1[0x33FC842F]
       87 [-]: CALL R12 6 2 ; var12 = var12(var13, var14, var15, var16, var17)
       88 [-]: LOADN R13 0  ; var13 = 0
-L 8:  89 [-]: FASTCALL1 62 R12 L9; 
+L 8:  89 [-]: FASTCALL1 64 R12 L9; 
       90 [-]: MOVE R15 R12 ; var15 = var12
       91 [-]: GETIMPORT R14 11; var14 = 0x7B998233
       92 [-]: CALL R14 2 2 ; var14 = var14(var15)
 L 9:  93 [-]: JUMPIFNOT R14 L10; goto L10 if not var14
       94 [-]: LOADN R14 30 ; var14 = 30
-      95 [-]: JUMPIFNOTLE R13 R14 L10; goto L10 if var13 > var755830056
+      95 [-]: JUMPIFNOTLE R13 R14 L10; goto L10 if var13 > var755830024
       96 [-]: ADDK R13 R13 K45; var13 = var13 + 1
       97 [-]: GETIMPORT R14 33; var14 = 0xCBD666E1
       98 [-]: LOADN R15 1  ; var15 = 1
       99 [-]: CALL R14 2 1 ; var14(var15)
      100 [-]: JUMPBACK L8  ; goto L8
-L10: 101 [-]: FASTCALL1 62 R12 L11; 
+L10: 101 [-]: FASTCALL1 64 R12 L11; 
      102 [-]: MOVE R15 R12 ; var15 = var12
      103 [-]: GETIMPORT R14 11; var14 = 0x7B998233
      104 [-]: CALL R14 2 2 ; var14 = var14(var15)
@@ -229,14 +229,14 @@ L15: 136 [-]: RETURN R0 0  ;
       15 [-]: CALL R6 4 2  ; var6 = var6(var7, var8, var9)
       16 [-]: LENGTH R7 R6 ; var7 = #var6
       17 [-]: LOADN R8 1   ; var8 = 1
-      18 [-]: JUMPIFLT R7 R8 L1; goto L1 if var7 < var50740811
-      19 [-]: FASTCALL1 62 R6 L0; 
+      18 [-]: JUMPIFLT R7 R8 L1; goto L1 if var7 < var50741309
+      19 [-]: FASTCALL1 64 R6 L0; 
       20 [-]: MOVE R8 R6   ; var8 = var6
       21 [-]: GETIMPORT R7 11; var7 = 0x7B998233
       22 [-]: CALL R7 2 2  ; var7 = var7(var8)
 L 0:  23 [-]: JUMPIF R7 L1 ; goto L1 if var7
       24 [-]: LOADN R7 2   ; var7 = 2
-      25 [-]: JUMPIFEQ R5 R7 L2; goto L2 if var5 == var65581
+      25 [-]: JUMPIFEQ R5 R7 L2; goto L2 if var5 == var65571
 L 1:  26 [-]: RETURN R0 0  ; 
 L 2:  27 [-]: GETIMPORT R7 13; var7 = 0x4A9305FF
 L 3:  28 [-]: GETIMPORT R8 16; var8 = _T["SurvivalMissionState"]
@@ -255,22 +255,22 @@ L 4:  34 [-]: GETIMPORT R8 16; var8 = _T["SurvivalMissionState"]
       41 [-]: GETIMPORT R10 25; var10 = 0xA87B574C
       42 [-]: MOD R9 R8 R10; var9 = var8 var10
       43 [-]: SUBK R10 R7 K26; var10 = var7 - 5
-      44 [-]: JUMPIFNOTLE R10 R8 L11; goto L11 if var10 > var1641038
+      44 [-]: JUMPIFNOTLE R10 R8 L11; goto L11 if var10 > var1640993
       45 [-]: GETIMPORT R10 25; var10 = 0xA87B574C
-      46 [-]: JUMPIFNOTLT R10 R8 L11; goto L11 if var10 >= var2631
+      46 [-]: JUMPIFNOTLT R10 R8 L11; goto L11 if var10 >= var2608
       47 [-]: LOADN R10 0  ; var10 = 0
-      48 [-]: JUMPIFNOTLE R10 R9 L11; goto L11 if var10 > var985671
+      48 [-]: JUMPIFNOTLE R10 R9 L11; goto L11 if var10 > var985648
       49 [-]: LOADN R10 15 ; var10 = 15
-      50 [-]: JUMPIFNOTLT R9 R10 L11; goto L11 if var9 >= var1903182
+      50 [-]: JUMPIFNOTLT R9 R10 L11; goto L11 if var9 >= var1903137
       51 [-]: GETIMPORT R10 29; var10 = 0x5BCED4C4[0x3630E649]
       52 [-]: CALL R10 1 2 ; var10 = var10()
       53 [-]: GETIMPORT R11 31; var11 = 0x643BF559
-      54 [-]: JUMPIFNOTLE R10 R11 L10; goto L10 if var10 > var151521803
+      54 [-]: JUMPIFNOTLE R10 R11 L10; goto L10 if var10 > var151521809
       55 [-]: SUB R10 R8 R9; var10 = var8 - var9
       56 [-]: GETUPVAL R13 0; var13 = upvalues[0]
       57 [-]: NAMECALL R11 R4 K23; var12 = var4; var11 = var4[0x0EB34C69]
       58 [-]: CALL R11 3 2 ; var11 = var11(var12, var13)
-      59 [-]: JUMPIFNOTLT R11 R10 L11; goto L11 if var11 >= var2165838
+      59 [-]: JUMPIFNOTLT R11 R10 L11; goto L11 if var11 >= var2165793
       60 [-]: GETIMPORT R12 33; var12 = 0x55730E1A
       61 [-]: LOADN R13 1  ; var13 = 1
       62 [-]: LENGTH R14 R6; var14 = #var6
@@ -292,19 +292,19 @@ L 4:  34 [-]: GETIMPORT R8 16; var8 = _T["SurvivalMissionState"]
       78 [-]: NAMECALL R14 R1 K38; var15 = var1; var14 = var1[0x33FC842F]
       79 [-]: CALL R14 0 2 ; var14 = var14(var15, ...)
       80 [-]: LOADN R15 0  ; var15 = 0
-L 5:  81 [-]: FASTCALL1 62 R14 L6; 
+L 5:  81 [-]: FASTCALL1 64 R14 L6; 
       82 [-]: MOVE R17 R14 ; var17 = var14
       83 [-]: GETIMPORT R16 11; var16 = 0x7B998233
       84 [-]: CALL R16 2 2 ; var16 = var16(var17)
 L 6:  85 [-]: JUMPIFNOT R16 L7; goto L7 if not var16
       86 [-]: LOADN R16 30 ; var16 = 30
-      87 [-]: JUMPIFNOTLE R15 R16 L7; goto L7 if var15 > var655298344
+      87 [-]: JUMPIFNOTLE R15 R16 L7; goto L7 if var15 > var655298312
       88 [-]: ADDK R15 R15 K39; var15 = var15 + 1
       89 [-]: GETIMPORT R16 19; var16 = 0xCBD666E1
       90 [-]: LOADN R17 1  ; var17 = 1
       91 [-]: CALL R16 2 1 ; var16(var17)
       92 [-]: JUMPBACK L5  ; goto L5
-L 7:  93 [-]: FASTCALL1 62 R14 L8; 
+L 7:  93 [-]: FASTCALL1 64 R14 L8; 
       94 [-]: MOVE R17 R14 ; var17 = var14
       95 [-]: GETIMPORT R16 11; var16 = 0x7B998233
       96 [-]: CALL R16 2 2 ; var16 = var16(var17)

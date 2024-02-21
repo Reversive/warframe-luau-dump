@@ -71,7 +71,7 @@ L 0:  27 [-]: GETTABLE R11 R2 R10; var11 = var2[var10]
       45 [-]: MOVE R16 R6  ; var16 = var6
       46 [-]: NAMECALL R11 R11 K27; var12 = var11; var11 = var11[0x47901F07]
       47 [-]: CALL R11 6 2 ; var11 = var11(var12, var13, var14, var15, var16)
-      48 [-]: FASTCALL1 62 R11 L1; 
+      48 [-]: FASTCALL1 64 R11 L1; 
       49 [-]: MOVE R13 R11 ; var13 = var11
       50 [-]: GETIMPORT R12 29; var12 = 0x7B998233
       51 [-]: CALL R12 2 2 ; var12 = var12(var13)
@@ -134,7 +134,7 @@ L 6: 100 [-]: RETURN R0 0  ;
 ; Max Stack Size:  8
 
        0 [-]: GETIMPORT R1 1; var1 = 0xCBD666E1
-       1 [-]: LOADK R2 K2  ; var2 = 0.59999999999999998
+       1 [-]: LOADK R2 K2  ; var2 = 0.60000002384185791
        2 [-]: CALL R1 2 1  ; var1(var2)
        3 [-]: NAMECALL R1 R0 K3; var2 = var0; var1 = var0[0x2B54251B]
        4 [-]: CALL R1 2 2  ; var1 = var1(var2)

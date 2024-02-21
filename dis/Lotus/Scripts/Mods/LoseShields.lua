@@ -22,18 +22,18 @@
        2 [-]: CALL R5 2 2  ; var5 = var5(var6)
        3 [-]: JUMPIF R5 L0 ; goto L0 if var5
        4 [-]: RETURN R0 0  ; 
-L 0:   5 [-]: FASTCALL1 62 R0 L1; 
+L 0:   5 [-]: FASTCALL1 64 R0 L1; 
        6 [-]: MOVE R6 R0   ; var6 = var0
        7 [-]: GETIMPORT R5 4; var5 = 0x7B998233
        8 [-]: CALL R5 2 2  ; var5 = var5(var6)
 L 1:   9 [-]: JUMPIF R5 L4 ; goto L4 if var5
-      10 [-]: FASTCALL1 62 R4 L2; 
+      10 [-]: FASTCALL1 64 R4 L2; 
       11 [-]: MOVE R6 R4   ; var6 = var4
       12 [-]: GETIMPORT R5 4; var5 = 0x7B998233
       13 [-]: CALL R5 2 2  ; var5 = var5(var6)
 L 2:  14 [-]: JUMPIF R5 L4 ; goto L4 if var5
       15 [-]: GETIMPORT R6 6; var6 = 0xBE190284
-      16 [-]: FASTCALL1 62 R6 L3; 
+      16 [-]: FASTCALL1 64 R6 L3; 
       17 [-]: GETIMPORT R5 4; var5 = 0x7B998233
       18 [-]: CALL R5 2 2  ; var5 = var5(var6)
 L 3:  19 [-]: JUMPIF R5 L4 ; goto L4 if var5

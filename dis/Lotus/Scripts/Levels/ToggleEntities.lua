@@ -21,7 +21,7 @@
        1 [-]: GETIMPORT R1 3; var1 = 0x02C0F90F
        2 [-]: CALL R0 2 4  ; var0, var1, var2 = var0(var1)
        3 [-]: FORGPREP_INEXT R0 L2; 
-L 0:   4 [-]: FASTCALL1 62 R4 L1; 
+L 0:   4 [-]: FASTCALL1 64 R4 L1; 
        5 [-]: MOVE R6 R4   ; var6 = var4
        6 [-]: GETIMPORT R5 5; var5 = 0x7B998233
        7 [-]: CALL R5 2 2  ; var5 = var5(var6)

@@ -46,7 +46,7 @@ L 0:  11 [-]: SETTABLEKS R4 R3 K1; var4["VAL"] = var3
 ; Is_vararg:       0
 ; Max Stack Size:  12
 
-       0 [-]: JUMPIFNOTEQ R0 R1 L0; goto L0 if var0 ~= var65581
+       0 [-]: JUMPIFNOTEQ R0 R1 L0; goto L0 if var0 ~= var65571
        1 [-]: RETURN R0 0  ; 
 L 0:   2 [-]: NAMECALL R3 R1 K0; var4 = var1; var3 = var1[0xDE321E6F]
        3 [-]: CALL R3 2 2  ; var3 = var3(var4)
@@ -75,7 +75,7 @@ L 1:  19 [-]: RETURN R0 0  ;
 ; Is_vararg:       0
 ; Max Stack Size:  12
 
-       0 [-]: JUMPIFNOTEQ R0 R1 L0; goto L0 if var0 ~= var65581
+       0 [-]: JUMPIFNOTEQ R0 R1 L0; goto L0 if var0 ~= var65571
        1 [-]: RETURN R0 0  ; 
 L 0:   2 [-]: NAMECALL R3 R1 K0; var4 = var1; var3 = var1[0xDE321E6F]
        3 [-]: CALL R3 2 2  ; var3 = var3(var4)

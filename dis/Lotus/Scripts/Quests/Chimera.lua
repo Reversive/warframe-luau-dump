@@ -136,7 +136,7 @@
        0 [-]: GETIMPORT R0 1; var0 = 0x89326C93
        1 [-]: NAMECALL R0 R0 K2; var1 = var0; var0 = var0[0x78298275]
        2 [-]: CALL R0 2 2  ; var0 = var0(var1)
-L 0:   3 [-]: FASTCALL1 62 R0 L1; 
+L 0:   3 [-]: FASTCALL1 64 R0 L1; 
        4 [-]: MOVE R2 R0   ; var2 = var0
        5 [-]: GETIMPORT R1 4; var1 = 0x7B998233
        6 [-]: CALL R1 2 2  ; var1 = var1(var2)
@@ -210,7 +210,7 @@ L 2:  16 [-]: RETURN R0 1  ;
       48 [-]: NAMECALL R16 R1 K23; var17 = var1; var16 = var1[0xAAC2F3A5]
       49 [-]: CALL R16 2 2 ; var16 = var16(var17)
       50 [-]: GETUPVAL R18 1; var18 = upvalues[1]
-      51 [-]: FASTCALL1 62 R18 L0; 
+      51 [-]: FASTCALL1 64 R18 L0; 
       52 [-]: GETIMPORT R17 25; var17 = 0x7B998233
       53 [-]: CALL R17 2 2 ; var17 = var17(var18)
 L 0:  54 [-]: JUMPIF R17 L1; goto L1 if var17
@@ -243,12 +243,11 @@ L 1:  62 [-]: NAMECALL R17 R3 K27; var18 = var3; var17 = var3[0xFCA5CC93]
 L 2:  81 [-]: NAMECALL R18 R1 K32; var19 = var1; var18 = var1[0xBEBAD19F]
       82 [-]: CALL R18 3 2 ; var18 = var18(var19, var20)
       83 [-]: GETIMPORT R19 34; var19 = 0x9BAFFFE3
-      84 [-]: LOADK R20 K35; var20 = 0.40000000000000002
-      85 [-]: LOADK R21 K36; var21 = 0.69999999999999996
+      84 [-]: LOADK R20 K35; var20 = 0.40000000596046448
+      85 [-]: LOADK R21 K36; var21 = 0.69999998807907104
       86 [-]: GETIMPORT R22 38; var22 = 0x42DCC9F5
       87 [-]: SUBK R24 R18 K40; var24 = var18 - 10
-      88 [-]: DIVK R23 R24 K39; var23 = var24 / 0.29999999999999993
-      89 [-]: LOADN R24 0  ; var24 = 0
+           89 [-]: LOADN R24 0  ; var24 = 0
       90 [-]: LOADN R25 1  ; var25 = 1
       91 [-]: CALL R22 4 0 ; var22, ... = var22(var23, var24, var25)
       92 [-]: CALL R19 0 2 ; var19 = var19(var20, ...)
@@ -285,7 +284,7 @@ L 2:  81 [-]: NAMECALL R18 R1 K32; var19 = var1; var18 = var1[0xBEBAD19F]
      123 [-]: LOADB R26 0  ; var26 = false
      124 [-]: LOADN R27 0  ; var27 = 0
 L 3: 125 [-]: LOADN R28 1  ; var28 = 1
-     126 [-]: JUMPIFNOTLT R27 R28 L15; goto L15 if var27 >= var3611726
+     126 [-]: JUMPIFNOTLT R27 R28 L15; goto L15 if var27 >= var3611681
      127 [-]: GETIMPORT R28 55; var28 = 0xCBD666E1
      128 [-]: LOADN R29 0  ; var29 = 0
      129 [-]: CALL R28 2 1 ; var28(var29)
@@ -305,13 +304,12 @@ L 3: 125 [-]: LOADN R28 1  ; var28 = 1
      143 [-]: CALL R28 0 2 ; var28 = var28(var29, ...)
      144 [-]: GETIMPORT R29 59; var29 = 0xA533083A
      145 [-]: GETIMPORT R30 38; var30 = 0x42DCC9F5
-     146 [-]: DIVK R31 R27 K60; var31 = var27 / 0.20000000000000001
-     147 [-]: LOADN R32 0  ; var32 = 0
+          147 [-]: LOADN R32 0  ; var32 = 0
      148 [-]: LOADN R33 1  ; var33 = 1
      149 [-]: CALL R30 4 0 ; var30, ... = var30(var31, var32, var33)
      150 [-]: CALL R29 0 2 ; var29 = var29(var30, ...)
      151 [-]: LOADK R30 K61; var30 = 0.5
-     152 [-]: JUMPIFNOTLT R27 R30 L4; goto L4 if var27 >= var2236494
+     152 [-]: JUMPIFNOTLT R27 R30 L4; goto L4 if var27 >= var2236449
      153 [-]: GETIMPORT R32 34; var32 = 0x9BAFFFE3
      154 [-]: MOVE R33 R15 ; var33 = var15
      155 [-]: MOVE R34 R14 ; var34 = var14
@@ -322,9 +320,8 @@ L 3: 125 [-]: LOADN R28 1  ; var28 = 1
      160 [-]: JUMP L5      ; goto L5
 L 4: 161 [-]: GETIMPORT R30 59; var30 = 0xA533083A
      162 [-]: GETIMPORT R31 38; var31 = 0x42DCC9F5
-     163 [-]: SUBK R33 R27 K62; var33 = var27 - 0.80000000000000004
-     164 [-]: DIVK R32 R33 K60; var32 = var33 / 0.20000000000000001
-     165 [-]: LOADN R33 0  ; var33 = 0
+     163 [-]: SUBK R33 R27 K62; var33 = var27 - 0.80000001192092896
+          165 [-]: LOADN R33 0  ; var33 = 0
      166 [-]: LOADN R34 1  ; var34 = 1
      167 [-]: CALL R31 4 0 ; var31, ... = var31(var32, var33, var34)
      168 [-]: CALL R30 0 2 ; var30 = var30(var31, ...)
@@ -368,7 +365,7 @@ L 8: 205 [-]: LOADN R33 0  ; var33 = 0
      206 [-]: LOADN R34 1  ; var34 = 1
      207 [-]: CALL R31 4 2 ; var31 = var31(var32, var33, var34)
      208 [-]: GETIMPORT R32 38; var32 = 0x42DCC9F5
-     209 [-]: LOADK R35 K60; var35 = 0.20000000000000001
+     209 [-]: LOADK R35 K60; var35 = 0.20000000298023224
      210 [-]: MUL R34 R35 R30; var34 = var35 * var30
      211 [-]: ADD R33 R28 R34; var33 = var28 + var34
      212 [-]: LOADN R34 0  ; var34 = 0
@@ -390,7 +387,7 @@ L 8: 205 [-]: LOADN R33 0  ; var33 = 0
      228 [-]: MOVE R36 R12 ; var36 = var12
      229 [-]: NAMECALL R33 R2 K71; var34 = var2; var33 = var2[0x589EF1C1]
      230 [-]: CALL R33 4 1 ; var33(var34, var35, var36)
-     231 [-]: FASTCALL1 62 R24 L9; 
+     231 [-]: FASTCALL1 64 R24 L9; 
      232 [-]: MOVE R34 R24 ; var34 = var24
      233 [-]: GETIMPORT R33 25; var33 = 0x7B998233
      234 [-]: CALL R33 2 2 ; var33 = var33(var34)
@@ -403,10 +400,10 @@ L 9: 235 [-]: JUMPIF R33 L10; goto L10 if var33
      241 [-]: SETTABLEKS R33 R24 K72; var33["saturation"] = var24
      242 [-]: SETTABLEKS R31 R24 K73; var31["radialBlurStrength"] = var24
 L10: 243 [-]: GETIMPORT R33 75; var33 = 0xC5883DAA
-     244 [-]: JUMPIFNOTLE R33 R27 L12; goto L12 if var33 > var1251652
+     244 [-]: JUMPIFNOTLE R33 R27 L12; goto L12 if var33 > var1251661
      245 [-]: JUMPIF R25 L12; goto L12 if var25
      246 [-]: GETIMPORT R34 77; var34 = 0x3B65D85C
-     247 [-]: FASTCALL1 62 R34 L11; 
+     247 [-]: FASTCALL1 64 R34 L11; 
      248 [-]: GETIMPORT R33 25; var33 = 0x7B998233
      249 [-]: CALL R33 2 2 ; var33 = var33(var34)
 L11: 250 [-]: JUMPIF R33 L12; goto L12 if var33
@@ -421,7 +418,7 @@ L11: 250 [-]: JUMPIF R33 L12; goto L12 if var33
 L12: 259 [-]: GETIMPORT R33 80; var33 = _T["Chimera_CancelWarpAtDelta"]
      260 [-]: JUMPIF R33 L13; goto L13 if var33
      261 [-]: LOADK R33 K81; var33 = 3.4028234663852886e+38
-L13: 262 [-]: JUMPIFNOTLT R33 R28 L14; goto L14 if var33 >= var72219
+L13: 262 [-]: JUMPIFNOTLT R33 R28 L14; goto L14 if var33 >= var72198
      263 [-]: LOADB R26 1  ; var26 = true
      264 [-]: JUMP L15     ; goto L15
 L14: 265 [-]: JUMPBACK L3  ; goto L3
@@ -431,11 +428,11 @@ L15: 266 [-]: MOVE R28 R26 ; var28 = var26
      269 [-]: JUMPIF R29 L16; goto L16 if var29
      270 [-]: LOADK R29 K81; var29 = 3.4028234663852886e+38
 L16: 271 [-]: LOADN R30 1  ; var30 = 1
-     272 [-]: JUMPIFLE R29 R30 L17; goto L17 if var29 <= var16784411
+     272 [-]: JUMPIFLE R29 R30 L17; goto L17 if var29 <= var16784390
      273 [-]: LOADB R28 0 +1; var28 = false
 L17: 274 [-]: LOADB R28 1  ; var28 = true
 L18: 275 [-]: MOVE R26 R28 ; var26 = var28
-     276 [-]: FASTCALL1 62 R24 L19; 
+     276 [-]: FASTCALL1 64 R24 L19; 
      277 [-]: MOVE R29 R24 ; var29 = var24
      278 [-]: GETIMPORT R28 25; var28 = 0x7B998233
      279 [-]: CALL R28 2 2 ; var28 = var28(var29)
@@ -466,7 +463,7 @@ L20: 285 [-]: MOVE R30 R7  ; var30 = var7
      304 [-]: JUMPIF R26 L23; goto L23 if var26
      305 [-]: LOADN R27 0  ; var27 = 0
 L21: 306 [-]: LOADN R28 1  ; var28 = 1
-     307 [-]: JUMPIFNOTLT R27 R28 L23; goto L23 if var27 >= var3611726
+     307 [-]: JUMPIFNOTLT R27 R28 L23; goto L23 if var27 >= var3611681
      308 [-]: GETIMPORT R28 55; var28 = 0xCBD666E1
      309 [-]: LOADN R29 0  ; var29 = 0
      310 [-]: CALL R28 2 1 ; var28(var29)
@@ -475,8 +472,7 @@ L21: 306 [-]: LOADN R28 1  ; var28 = 1
      313 [-]: CALL R28 2 1 ; var28(var29)
      314 [-]: GETIMPORT R29 57; var29 = 0x67652851
      315 [-]: CALL R29 1 2 ; var29 = var29()
-     316 [-]: DIVK R28 R29 K61; var28 = var29 / 0.5
-     317 [-]: ADD R27 R27 R28; var27 = var27 + var28
+          317 [-]: ADD R27 R27 R28; var27 = var27 + var28
      318 [-]: GETIMPORT R28 59; var28 = 0xA533083A
      319 [-]: LOADN R30 1  ; var30 = 1
      320 [-]: GETIMPORT R31 38; var31 = 0x42DCC9F5
@@ -500,7 +496,7 @@ L22: 327 [-]: LOADN R33 0  ; var33 = 0
      338 [-]: NAMECALL R29 R13 K71; var30 = var13; var29 = var13[0x589EF1C1]
      339 [-]: CALL R29 0 1 ; var29(var30, ...)
      340 [-]: JUMPBACK L21 ; goto L21
-L23: 341 [-]: FASTCALL1 62 R3 L24; 
+L23: 341 [-]: FASTCALL1 64 R3 L24; 
      342 [-]: MOVE R29 R3  ; var29 = var3
      343 [-]: GETIMPORT R28 25; var28 = 0x7B998233
      344 [-]: CALL R28 2 2 ; var28 = var28(var29)
@@ -519,7 +515,7 @@ L24: 345 [-]: JUMPIF R28 L25; goto L25 if var28
      357 [-]: CALL R28 3 1 ; var28(var29, var30)
 L25: 358 [-]: NAMECALL R28 R13 K90; var29 = var13; var28 = var13[0xA2880940]
      359 [-]: CALL R28 2 1 ; var28(var29)
-     360 [-]: FASTCALL1 62 R22 L26; 
+     360 [-]: FASTCALL1 64 R22 L26; 
      361 [-]: MOVE R29 R22 ; var29 = var22
      362 [-]: GETIMPORT R28 25; var28 = 0x7B998233
      363 [-]: CALL R28 2 2 ; var28 = var28(var29)
@@ -549,7 +545,7 @@ L27: 367 [-]: SETUPVAL R1 1; upvalues[1] = var1
        9 [-]: GETUPVAL R6 0; var6 = upvalues[0]
       10 [-]: CALL R5 2 4  ; var5, var6, var7 = var5(var6)
       11 [-]: FORGPREP_INEXT R5 L1; 
-L 0:  12 [-]: JUMPIFEQ R9 R0 L1; goto L1 if var9 == var-16184763
+L 0:  12 [-]: JUMPIFEQ R9 R0 L1; goto L1 if var9 == var-16184756
       13 [-]: NAMECALL R10 R9 K8; var11 = var9; var10 = var9[0xF37943FF]
       14 [-]: CALL R10 2 2 ; var10 = var10(var11)
       15 [-]: JUMPIFNOT R10 L1; goto L1 if not var10
@@ -586,7 +582,7 @@ L 1:  34 [-]: FORGLOOP R5 L0 2 [inext];
        1 [-]: GETUPVAL R2 0; var2 = upvalues[0]
        2 [-]: CALL R1 2 4  ; var1, var2, var3 = var1(var2)
        3 [-]: FORGPREP_INEXT R1 L2; 
-L 0:   4 [-]: FASTCALL1 62 R5 L1; 
+L 0:   4 [-]: FASTCALL1 64 R5 L1; 
        5 [-]: MOVE R7 R5   ; var7 = var5
        6 [-]: GETIMPORT R6 3; var6 = 0x7B998233
        7 [-]: CALL R6 2 2  ; var6 = var6(var7)
@@ -621,7 +617,7 @@ L 4:  24 [-]: GETUPVAL R1 3; var1 = upvalues[3]
       36 [-]: FORNPREP R2 L8; nforprep start - [escape at L8] -- var2 = iterator
 L 5:  37 [-]: GETUPVAL R6 1; var6 = upvalues[1]
       38 [-]: GETTABLE R5 R6 R4; var5 = var6[var4]
-      39 [-]: FASTCALL1 62 R5 L6; 
+      39 [-]: FASTCALL1 64 R5 L6; 
       40 [-]: MOVE R9 R5   ; var9 = var5
       41 [-]: GETIMPORT R8 3; var8 = 0x7B998233
       42 [-]: CALL R8 2 2  ; var8 = var8(var9)
@@ -665,9 +661,9 @@ L 8:  72 [-]: RETURN R0 0  ;
 ; Max Stack Size:  6
 
        0 [-]: GETUPVAL R1 0; var1 = upvalues[0]
-       1 [-]: JUMPIFEQ R1 R0 L4; goto L4 if var1 == var66055
+       1 [-]: JUMPIFEQ R1 R0 L4; goto L4 if var1 == var66108
        2 [-]: GETUPVAL R2 1; var2 = upvalues[1]
-       3 [-]: FASTCALL1 62 R2 L0; 
+       3 [-]: FASTCALL1 64 R2 L0; 
        4 [-]: GETIMPORT R1 1; var1 = 0x7B998233
        5 [-]: CALL R1 2 2  ; var1 = var1(var2)
 L 0:   6 [-]: JUMPIF R1 L1 ; goto L1 if var1
@@ -676,7 +672,7 @@ L 0:   6 [-]: JUMPIF R1 L1 ; goto L1 if var1
        9 [-]: CALL R1 2 1  ; var1(var2)
       10 [-]: LOADNIL R1   ; var1 = nil
       11 [-]: SETUPVAL R1 1; upvalues[1] = var1
-L 1:  12 [-]: FASTCALL1 62 R0 L2; 
+L 1:  12 [-]: FASTCALL1 64 R0 L2; 
       13 [-]: MOVE R2 R0   ; var2 = var0
       14 [-]: GETIMPORT R1 1; var1 = 0x7B998233
       15 [-]: CALL R1 2 2  ; var1 = var1(var2)
@@ -696,7 +692,7 @@ L 3:  20 [-]: GETIMPORT R1 7; var1 = 0x89326C93
       29 [-]: GETIMPORT R1 5; var1 = _T["SetHudHintMessage"]
       30 [-]: LOADK R2 K14 ; var2 = "/Lotus/Language/Chimera/StealthControlsHint"
       31 [-]: CALL R1 2 1  ; var1(var2)
-L 4:  32 [-]: FASTCALL1 62 R0 L5; 
+L 4:  32 [-]: FASTCALL1 64 R0 L5; 
       33 [-]: MOVE R2 R0   ; var2 = var0
       34 [-]: GETIMPORT R1 1; var1 = 0x7B998233
       35 [-]: CALL R1 2 2  ; var1 = var1(var2)
@@ -741,7 +737,7 @@ L 6:  43 [-]: SETUPVAL R0 0; upvalues[0] = var0
       20 [-]: GETUPVAL R6 6; var6 = upvalues[6]
       21 [-]: MOVE R7 R0   ; var7 = var0
       22 [-]: CALL R5 3 1  ; var5(var6, var7)
-L 0:  23 [-]: FASTCALL1 62 R0 L1; 
+L 0:  23 [-]: FASTCALL1 64 R0 L1; 
       24 [-]: MOVE R6 R0   ; var6 = var0
       25 [-]: GETIMPORT R5 6; var5 = 0x7B998233
       26 [-]: CALL R5 2 2  ; var5 = var5(var6)
@@ -773,7 +769,7 @@ L 1:  27 [-]: JUMPIFNOT R5 L5; goto L5 if not var5
       52 [-]: GETIMPORT R8 16; var8 = 0xDC695B78
       53 [-]: NAMECALL R6 R3 K17; var7 = var3; var6 = var3[0xE985E1E0]
       54 [-]: CALL R6 3 2  ; var6 = var6(var7, var8)
-L 2:  55 [-]: FASTCALL1 62 R6 L3; 
+L 2:  55 [-]: FASTCALL1 64 R6 L3; 
       56 [-]: MOVE R8 R6   ; var8 = var6
       57 [-]: GETIMPORT R7 6; var7 = 0x7B998233
       58 [-]: CALL R7 2 2  ; var7 = var7(var8)
@@ -888,9 +884,9 @@ L 0:  16 [-]: GETIMPORT R7 7; var7 = 0x4FD57545
       17 [-]: MOVE R8 R0   ; var8 = var0
       18 [-]: MOVE R9 R6   ; var9 = var6
       19 [-]: CALL R7 3 2  ; var7 = var7(var8, var9)
-      20 [-]: JUMPIFNOTLT R1 R7 L1; goto L1 if var1 >= var526341
-      21 [-]: LOADK R8 K8  ; var8 = 0.98480775301220802
-      22 [-]: JUMPIFNOTLE R8 R7 L1; goto L1 if var8 > var459030
+      20 [-]: JUMPIFNOTLT R1 R7 L1; goto L1 if var1 >= var526407
+      21 [-]: LOADK R8 K8  ; var8 = 0.98480772972106934
+      22 [-]: JUMPIFNOTLE R8 R7 L1; goto L1 if var8 > var459054
       23 [-]: MOVE R1 R7   ; var1 = var7
       24 [-]: GETUPVAL R9 4; var9 = upvalues[4]
       25 [-]: GETTABLE R8 R9 R5; var8 = var9[var5]
@@ -902,10 +898,10 @@ L 1:  27 [-]: FORGLOOP R2 L0 2 [inext];
       31 [-]: CALL R4 2 2  ; var4 = var4(var5)
       32 [-]: GETUPVAL R5 5; var5 = upvalues[5]
       33 [-]: SUB R3 R4 R5 ; var3 = var4 - var5
-      34 [-]: LOADK R4 K12 ; var4 = 0.29999999999999999
-      35 [-]: JUMPIFNOTLE R4 R3 L3; goto L3 if var4 > var132103
+      34 [-]: LOADK R4 K12 ; var4 = 0.30000001192092896
+      35 [-]: JUMPIFNOTLE R4 R3 L3; goto L3 if var4 > var132156
       36 [-]: GETUPVAL R4 2; var4 = upvalues[2]
-      37 [-]: FASTCALL1 62 R4 L2; 
+      37 [-]: FASTCALL1 64 R4 L2; 
       38 [-]: GETIMPORT R3 14; var3 = 0x7B998233
       39 [-]: CALL R3 2 2  ; var3 = var3(var4)
 L 2:  40 [-]: NOT R2 R3    ; var2 = not var3
@@ -939,7 +935,7 @@ L 5:  50 [-]: GETUPVAL R4 7; var4 = upvalues[7]
        5 [-]: GETIMPORT R3 3; var3 = 0xBE190284
        6 [-]: NAMECALL R3 R3 K4; var4 = var3; var3 = var3[0xAE962FA0]
        7 [-]: CALL R3 2 2  ; var3 = var3(var4)
-       8 [-]: JUMPIFNOTLT R2 R3 L0; goto L0 if var2 >= var393806
+       8 [-]: JUMPIFNOTLT R2 R3 L0; goto L0 if var2 >= var393761
        9 [-]: GETIMPORT R2 6; var2 = 0x42DCC9F5
       10 [-]: GETUPVAL R4 0; var4 = upvalues[0]
       11 [-]: GETIMPORT R7 9; var7 = 0xE9345B3B
@@ -960,7 +956,7 @@ L 1:  25 [-]: GETUPVAL R4 0; var4 = upvalues[0]
       26 [-]: FASTCALL1 12 R4 L2; 
       27 [-]: GETIMPORT R3 14; var3 = 0x5BCED4C4[0x55F27C30]
       28 [-]: CALL R3 2 2  ; var3 = var3(var4)
-L 2:  29 [-]: JUMPIFNOTLT R3 R2 L5; goto L5 if var3 >= var197198
+L 2:  29 [-]: JUMPIFNOTLT R3 R2 L5; goto L5 if var3 >= var197153
       30 [-]: GETIMPORT R2 3; var2 = 0xBE190284
       31 [-]: NAMECALL R2 R2 K4; var3 = var2; var2 = var2[0xAE962FA0]
       32 [-]: CALL R2 2 2  ; var2 = var2(var3)
@@ -969,7 +965,7 @@ L 2:  29 [-]: JUMPIFNOTLT R3 R2 L5; goto L5 if var3 >= var197198
 L 3:  35 [-]: GETIMPORT R2 18; var2 = _T["Chimera_DetectionAmount"]
       36 [-]: ORK R1 R2 K15; var1 = var2 or 0
       37 [-]: LOADN R2 0   ; var2 = 0
-      38 [-]: JUMPIFNOTLE R1 R2 L5; goto L5 if var1 > var393550
+      38 [-]: JUMPIFNOTLE R1 R2 L5; goto L5 if var1 > var393505
       39 [-]: GETIMPORT R1 6; var1 = 0x42DCC9F5
       40 [-]: GETUPVAL R3 0; var3 = upvalues[0]
       41 [-]: GETIMPORT R6 20; var6 = 0xDC78F128
@@ -980,7 +976,7 @@ L 3:  35 [-]: GETIMPORT R2 18; var2 = _T["Chimera_DetectionAmount"]
       46 [-]: ADD R2 R3 R4 ; var2 = var3 + var4
       47 [-]: LOADN R3 0   ; var3 = 0
       48 [-]: GETUPVAL R7 0; var7 = upvalues[0]
-      49 [-]: SUBK R6 R7 K22; var6 = var7 - 0.001
+      49 [-]: SUBK R6 R7 K22; var6 = var7 - 0.0010000000474974513
       50 [-]: FASTCALL1 12 R6 L4; 
       51 [-]: GETIMPORT R5 14; var5 = 0x5BCED4C4[0x55F27C30]
       52 [-]: CALL R5 2 2  ; var5 = var5(var6)
@@ -999,7 +995,7 @@ L 5:  56 [-]: GETIMPORT R1 24; var1 = _T["DetectionHud_Info"]
       65 [-]: CALL R1 4 1  ; var1(var2, var3, var4)
       66 [-]: GETUPVAL R2 0; var2 = upvalues[0]
       67 [-]: LOADN R3 0   ; var3 = 0
-      68 [-]: JUMPIFLT R3 R2 L6; goto L6 if var3 < var16777499
+      68 [-]: JUMPIFLT R3 R2 L6; goto L6 if var3 < var16777478
       69 [-]: LOADB R1 0 +1; var1 = false
 L 6:  70 [-]: LOADB R1 1   ; var1 = true
 L 7:  71 [-]: RETURN R1 1  ; 
@@ -1013,7 +1009,7 @@ L 7:  71 [-]: RETURN R1 1  ;
 ; Max Stack Size:  7
 
        0 [-]: GETIMPORT R1 1; var1 = 0x76906D48
-       1 [-]: FASTCALL1 62 R1 L0; 
+       1 [-]: FASTCALL1 64 R1 L0; 
        2 [-]: GETIMPORT R0 3; var0 = 0x7B998233
        3 [-]: CALL R0 2 2  ; var0 = var0(var1)
 L 0:   4 [-]: JUMPIF R0 L1 ; goto L1 if var0
@@ -1029,14 +1025,13 @@ L 1:  12 [-]: GETIMPORT R0 5; var0 = 0x89326C93
       14 [-]: CALL R0 2 2  ; var0 = var0(var1)
       15 [-]: LOADN R1 0   ; var1 = 0
 L 2:  16 [-]: LOADN R2 1   ; var2 = 1
-      17 [-]: JUMPIFNOTLT R1 R2 L3; goto L3 if var1 >= var721486
+      17 [-]: JUMPIFNOTLT R1 R2 L3; goto L3 if var1 >= var721441
       18 [-]: GETIMPORT R2 11; var2 = 0xCBD666E1
       19 [-]: LOADN R3 0   ; var3 = 0
       20 [-]: CALL R2 2 1  ; var2(var3)
       21 [-]: GETIMPORT R3 14; var3 = 0x67652851
       22 [-]: CALL R3 1 2  ; var3 = var3()
-      23 [-]: DIVK R2 R3 K12; var2 = var3 / 0.59999999999999998
-      24 [-]: ADD R1 R1 R2 ; var1 = var1 + var2
+           24 [-]: ADD R1 R1 R2 ; var1 = var1 + var2
       25 [-]: GETIMPORT R2 16; var2 = 0xA533083A
       26 [-]: GETIMPORT R3 18; var3 = 0x42DCC9F5
       27 [-]: MOVE R4 R1   ; var4 = var1
@@ -1063,14 +1058,13 @@ L 3:  36 [-]: RETURN R0 0  ;
        2 [-]: CALL R0 2 2  ; var0 = var0(var1)
        3 [-]: LOADN R1 0   ; var1 = 0
 L 0:   4 [-]: LOADN R2 1   ; var2 = 1
-       5 [-]: JUMPIFNOTLT R1 R2 L1; goto L1 if var1 >= var262734
+       5 [-]: JUMPIFNOTLT R1 R2 L1; goto L1 if var1 >= var262689
        6 [-]: GETIMPORT R2 4; var2 = 0xCBD666E1
        7 [-]: LOADN R3 0   ; var3 = 0
        8 [-]: CALL R2 2 1  ; var2(var3)
        9 [-]: GETIMPORT R3 7; var3 = 0x67652851
       10 [-]: CALL R3 1 2  ; var3 = var3()
-      11 [-]: DIVK R2 R3 K5; var2 = var3 / 0.59999999999999998
-      12 [-]: ADD R1 R1 R2 ; var1 = var1 + var2
+           12 [-]: ADD R1 R1 R2 ; var1 = var1 + var2
       13 [-]: GETIMPORT R2 9; var2 = 0xA533083A
       14 [-]: GETIMPORT R3 11; var3 = 0x42DCC9F5
       15 [-]: MOVE R4 R1   ; var4 = var1
@@ -1114,7 +1108,7 @@ L 1:  25 [-]: RETURN R0 0  ;
       18 [-]: SETTABLEKS R5 R4 K14; var5["HideTransferenceFx"] = var4
       19 [-]: NAMECALL R4 R3 K15; var5 = var3; var4 = var3[0x18F03C5D]
       20 [-]: CALL R4 2 1  ; var4(var5)
-L 0:  21 [-]: FASTCALL1 62 R2 L1; 
+L 0:  21 [-]: FASTCALL1 64 R2 L1; 
       22 [-]: MOVE R5 R2   ; var5 = var2
       23 [-]: GETIMPORT R4 17; var4 = 0x7B998233
       24 [-]: CALL R4 2 2  ; var4 = var4(var5)
@@ -1130,7 +1124,7 @@ L 2:  30 [-]: GETIMPORT R4 22; var4 = 0xCBD666E1
       34 [-]: CALL R4 1 2  ; var4 = var4()
       35 [-]: MOVE R2 R4   ; var2 = var4
       36 [-]: JUMPBACK L0  ; goto L0
-L 3:  37 [-]: FASTCALL1 62 R3 L4; 
+L 3:  37 [-]: FASTCALL1 64 R3 L4; 
       38 [-]: MOVE R5 R3   ; var5 = var3
       39 [-]: GETIMPORT R4 17; var4 = 0x7B998233
       40 [-]: CALL R4 2 2  ; var4 = var4(var5)
@@ -1189,7 +1183,7 @@ L10:  89 [-]: GETIMPORT R3 31; var3 = 0x89326C93
       93 [-]: GETIMPORT R6 50; var6 = gCameraSpotType
       94 [-]: NAMECALL R4 R3 K51; var5 = var3; var4 = var3[0xC9F6A7D7]
       95 [-]: CALL R4 3 2  ; var4 = var4(var5, var6)
-      96 [-]: FASTCALL1 62 R3 L11; 
+      96 [-]: FASTCALL1 64 R3 L11; 
       97 [-]: MOVE R8 R3   ; var8 = var3
       98 [-]: GETIMPORT R7 17; var7 = 0x7B998233
       99 [-]: CALL R7 2 2  ; var7 = var7(var8)
@@ -1246,7 +1240,7 @@ L13: 146 [-]: GETIMPORT R9 22; var9 = 0xCBD666E1
      150 [-]: NAMECALL R9 R9 K69; var10 = var9; var9 = var9[0xDD25E9D1]
      151 [-]: CALL R9 2 2  ; var9 = var9(var10)
      152 [-]: MOVE R8 R9   ; var8 = var9
-     153 [-]: FASTCALL1 62 R8 L14; 
+     153 [-]: FASTCALL1 64 R8 L14; 
      154 [-]: MOVE R10 R8  ; var10 = var8
      155 [-]: GETIMPORT R9 17; var9 = 0x7B998233
      156 [-]: CALL R9 2 2  ; var9 = var9(var10)
@@ -1258,10 +1252,10 @@ L14: 157 [-]: JUMPIF R9 L15; goto L15 if var9
 L15: 162 [-]: JUMPBACK L13 ; goto L13
 L16: 163 [-]: GETIMPORT R10 31; var10 = 0x89326C93
      164 [-]: NAMECALL R10 R10 K69; var11 = var10; var10 = var10[0xDD25E9D1]
-     165 [-]: CALL R10 2 2 ; var10 = var10(var11)
-     166 [-]: FASTCALL1 62 R10 L17; 
+     165 [-]: CALL R10 2 0 ; var10, ... = var10(var11)
+     166 [-]: FASTCALL 64 L17; 
      167 [-]: GETIMPORT R9 17; var9 = 0x7B998233
-     168 [-]: CALL R9 2 2  ; var9 = var9(var10)
+     168 [-]: CALL R9 0 2  ; var9 = var9(var10, ...)
 L17: 169 [-]: JUMPIF R9 L18; goto L18 if var9
      170 [-]: GETIMPORT R9 22; var9 = 0xCBD666E1
      171 [-]: LOADN R10 0  ; var10 = 0
@@ -1312,7 +1306,7 @@ L19: 186 [-]: GETUPVAL R7 3; var7 = upvalues[3]
      216 [-]: SETTABLEKS R11 R10 K80; var11["Health"] = var10
      217 [-]: SETTABLEKS R10 R9 K82; var10["DetectionHud_Info"] = var9
      218 [-]: GETIMPORT R10 84; var10 = 0x440081A2
-     219 [-]: FASTCALL1 62 R10 L20; 
+     219 [-]: FASTCALL1 64 R10 L20; 
      220 [-]: GETIMPORT R9 17; var9 = 0x7B998233
      221 [-]: CALL R9 2 2  ; var9 = var9(var10)
 L20: 222 [-]: JUMPIF R9 L21; goto L21 if var9
@@ -1369,7 +1363,7 @@ L21: 228 [-]: GETIMPORT R9 87; var9 = _T["Chimera_ShouldEndSequence"]
      273 [-]: LOADB R11 1  ; var11 = true
      274 [-]: CALL R9 3 1  ; var9(var10, var11)
      275 [-]: GETIMPORT R9 22; var9 = 0xCBD666E1
-     276 [-]: LOADK R10 K100; var10 = 0.29999999999999999
+     276 [-]: LOADK R10 K100; var10 = 0.30000001192092896
      277 [-]: CALL R9 2 1  ; var9(var10)
      278 [-]: GETIMPORT R9 13; var9 = _T
      279 [-]: LOADB R10 0  ; var10 = false
@@ -1379,7 +1373,7 @@ L21: 228 [-]: GETIMPORT R9 87; var9 = _T["Chimera_ShouldEndSequence"]
 L22: 283 [-]: GETUPVAL R9 14; var9 = upvalues[14]
      284 [-]: JUMPIFNOT R9 L24; goto L24 if not var9
      285 [-]: GETUPVAL R10 15; var10 = upvalues[15]
-     286 [-]: FASTCALL1 62 R10 L23; 
+     286 [-]: FASTCALL1 64 R10 L23; 
      287 [-]: GETIMPORT R9 17; var9 = 0x7B998233
      288 [-]: CALL R9 2 2  ; var9 = var9(var10)
 L23: 289 [-]: JUMPIF R9 L24; goto L24 if var9
@@ -1388,7 +1382,7 @@ L23: 289 [-]: JUMPIF R9 L24; goto L24 if var9
      292 [-]: LOADB R11 0  ; var11 = false
      293 [-]: CALL R9 3 1  ; var9(var10, var11)
 L24: 294 [-]: JUMPBACK L21 ; goto L21
-L25: 295 [-]: FASTCALL1 62 R8 L26; 
+L25: 295 [-]: FASTCALL1 64 R8 L26; 
      296 [-]: MOVE R10 R8  ; var10 = var8
      297 [-]: GETIMPORT R9 17; var9 = 0x7B998233
      298 [-]: CALL R9 2 2  ; var9 = var9(var10)
@@ -1420,7 +1414,7 @@ L27: 302 [-]: GETIMPORT R9 31; var9 = 0x89326C93
 ; Max Stack Size:  3
 
        0 [-]: LOADN R2 0   ; var2 = 0
-       1 [-]: JUMPIFLT R2 R0 L0; goto L0 if var2 < var16777499
+       1 [-]: JUMPIFLT R2 R0 L0; goto L0 if var2 < var16777478
        2 [-]: LOADB R1 0 +1; var1 = false
 L 0:   3 [-]: LOADB R1 1   ; var1 = true
 L 1:   4 [-]: SETUPVAL R1 0; upvalues[1] = var0
@@ -1440,7 +1434,7 @@ L 1:   4 [-]: SETUPVAL R1 0; upvalues[1] = var0
        3 [-]: CALL R2 2 0  ; var2, ... = var2(var3)
        4 [-]: NAMECALL R0 R0 K5; var1 = var0; var0 = var0[0x46A0EBF5]
        5 [-]: CALL R0 0 2  ; var0 = var0(var1, ...)
-       6 [-]: FASTCALL1 62 R0 L0; 
+       6 [-]: FASTCALL1 64 R0 L0; 
        7 [-]: MOVE R2 R0   ; var2 = var0
        8 [-]: GETIMPORT R1 7; var1 = 0x7B998233
        9 [-]: CALL R1 2 2  ; var1 = var1(var2)
@@ -1492,7 +1486,7 @@ L 1:  16 [-]: GETIMPORT R1 11; var1 = 0xBE190284
       55 [-]: NAMECALL R4 R4 K5; var5 = var4; var4 = var4[0x46A0EBF5]
       56 [-]: CALL R4 0 2  ; var4 = var4(var5, ...)
 L 2:  57 [-]: GETIMPORT R5 24; var5 = _T["Chimera_CurrentPoint"]
-      58 [-]: JUMPIFEQ R5 R1 L3; goto L3 if var5 == var1705294
+      58 [-]: JUMPIFEQ R5 R1 L3; goto L3 if var5 == var1705249
       59 [-]: GETIMPORT R5 26; var5 = 0xCBD666E1
       60 [-]: LOADN R6 0   ; var6 = 0
       61 [-]: CALL R5 2 1  ; var5(var6)
@@ -1537,7 +1531,7 @@ L 3:  63 [-]: LOADK R7 K27 ; var7 = "Disable"
      100 [-]: NAMECALL R7 R7 K41; var8 = var7; var7 = var7[0x553549E8]
      101 [-]: CALL R7 0 1  ; var7(var8, ...)
 L 4: 102 [-]: GETIMPORT R7 24; var7 = _T["Chimera_CurrentPoint"]
-     103 [-]: JUMPIFEQ R7 R2 L5; goto L5 if var7 == var1705806
+     103 [-]: JUMPIFEQ R7 R2 L5; goto L5 if var7 == var1705761
      104 [-]: GETIMPORT R7 26; var7 = 0xCBD666E1
      105 [-]: LOADN R8 0   ; var8 = 0
      106 [-]: CALL R7 2 1  ; var7(var8)
@@ -1551,7 +1545,7 @@ L 5: 108 [-]: LOADK R9 K27 ; var9 = "Disable"
      114 [-]: SETLIST R8 R9 1 [1]; var8[1] = var9; var8[2] = var10; 
      115 [-]: CALL R7 2 1  ; var7(var8)
 L 6: 116 [-]: GETIMPORT R7 24; var7 = _T["Chimera_CurrentPoint"]
-     117 [-]: JUMPIFEQ R7 R3 L7; goto L7 if var7 == var1705806
+     117 [-]: JUMPIFEQ R7 R3 L7; goto L7 if var7 == var1705761
      118 [-]: GETIMPORT R7 26; var7 = 0xCBD666E1
      119 [-]: LOADN R8 0   ; var8 = 0
      120 [-]: CALL R7 2 1  ; var7(var8)
@@ -1572,7 +1566,7 @@ L 7: 122 [-]: LOADK R9 K27 ; var9 = "Disable"
      135 [-]: CALL R9 2 0  ; var9, ... = var9(var10)
      136 [-]: CALL R7 0 1  ; var7(var8, ...)
 L 8: 137 [-]: GETIMPORT R7 24; var7 = _T["Chimera_CurrentPoint"]
-     138 [-]: JUMPIFEQ R7 R4 L9; goto L9 if var7 == var1705806
+     138 [-]: JUMPIFEQ R7 R4 L9; goto L9 if var7 == var1705761
      139 [-]: GETIMPORT R7 26; var7 = 0xCBD666E1
      140 [-]: LOADN R8 0   ; var8 = 0
      141 [-]: CALL R7 2 1  ; var7(var8)
@@ -1600,7 +1594,7 @@ L 9: 143 [-]: LOADK R9 K27 ; var9 = "Disable"
      163 [-]: SETLIST R9 R10 1 [1]; var9[1] = var10; var9[2] = var11; 
      164 [-]: CALL R8 2 1  ; var8(var9)
 L10: 165 [-]: GETIMPORT R8 24; var8 = _T["Chimera_CurrentPoint"]
-     166 [-]: JUMPIFEQ R8 R7 L11; goto L11 if var8 == var1706062
+     166 [-]: JUMPIFEQ R8 R7 L11; goto L11 if var8 == var1706017
      167 [-]: GETIMPORT R8 26; var8 = 0xCBD666E1
      168 [-]: LOADN R9 0   ; var9 = 0
      169 [-]: CALL R8 2 1  ; var8(var9)
@@ -1670,234 +1664,235 @@ L15: 228 [-]: LOADN R11 0  ; var11 = 0
      233 [-]: LOADN R13 1  ; var13 = 1
      234 [-]: LOADN R11 6  ; var11 = 6
      235 [-]: LOADN R12 1  ; var12 = 1
-     236 [-]: FORNPREP R11 L22; nforprep start - [escape at L22] -- var11 = iterator
+     236 [-]: FORNPREP R11 L23; nforprep start - [escape at L23] -- var11 = iterator
 L16: 237 [-]: MOVE R14 R10 ; var14 = var10
      238 [-]: GETIMPORT R15 3; var15 = 0x0469F296
      239 [-]: LOADK R17 K57; var17 = "BallasRant"
-     240 [-]: GETIMPORT R18 59; var18 = 0x64FB1586
+     240 [-]: FASTCALL1 63 R13 L17; 
      241 [-]: MOVE R19 R13 ; var19 = var13
-     242 [-]: CALL R18 2 2 ; var18 = var18(var19)
-     243 [-]: CONCAT R16 R17 R18; var16 = var17 .. var18
-     244 [-]: CALL R15 2 0 ; var15, ... = var15(var16)
-     245 [-]: CALL R14 0 2 ; var14 = var14(var15, ...)
-     246 [-]: JUMPIF R14 L17; goto L17 if var14
-     247 [-]: LOADN R14 6  ; var14 = 6
-     248 [-]: JUMPIFLT R13 R14 L22; goto L22 if var13 < var331335
-L17: 249 [-]: LOADN R14 5  ; var14 = 5
-     250 [-]: JUMPIFNOTLE R14 R13 L18; goto L18 if var14 > var1117774
-     251 [-]: GETIMPORT R14 17; var14 = _T
-     252 [-]: LOADB R15 1  ; var15 = true
-     253 [-]: SETTABLEKS R15 R14 K18; var15["Chimera_DisableDetection"] = var14
-     254 [-]: GETIMPORT R14 17; var14 = _T
-     255 [-]: LOADB R15 1  ; var15 = true
-     256 [-]: SETTABLEKS R15 R14 K60; var15["Chimera_BallasDisableEyeSounds"] = var14
-L18: 257 [-]: SETUPVAL R13 2; upvalues[13] = var2
-     258 [-]: LOADB R14 0  ; var14 = false
-     259 [-]: SETUPVAL R14 3; upvalues[14] = var3
-     260 [-]: GETIMPORT R16 3; var16 = 0x0469F296
-     261 [-]: LOADK R17 K61; var17 = "BallasSummonSword"
-     262 [-]: CALL R16 2 2 ; var16 = var16(var17)
-     263 [-]: LOADB R17 0  ; var17 = false
-     264 [-]: NAMECALL R14 R6 K62; var15 = var6; var14 = var6[0xD5F7912B]
-     265 [-]: CALL R14 4 1 ; var14(var15, var16, var17)
-L19: 266 [-]: GETUPVAL R14 3; var14 = upvalues[3]
-     267 [-]: JUMPIF R14 L21; goto L21 if var14
-     268 [-]: GETIMPORT R14 26; var14 = 0xCBD666E1
-     269 [-]: LOADN R15 0  ; var15 = 0
-     270 [-]: CALL R14 2 1 ; var14(var15)
-     271 [-]: GETIMPORT R14 64; var14 = _T["Chimera_Restart"]
-     272 [-]: JUMPIFNOT R14 L20; goto L20 if not var14
-     273 [-]: LOADN R14 5  ; var14 = 5
-     274 [-]: JUMPIFLT R13 R14 L21; goto L21 if var13 < var-851924
-L20: 275 [-]: JUMPBACK L19 ; goto L19
-L21: 276 [-]: FORNLOOP R11 L16; nforloop end - iterate + goto L16
-L22: 277 [-]: GETUPVAL R11 2; var11 = upvalues[2]
-     278 [-]: LOADN R12 6  ; var12 = 6
-     279 [-]: JUMPIFLE R12 R11 L33; goto L33 if var12 <= var4197198
-L23: 280 [-]: GETIMPORT R11 64; var11 = _T["Chimera_Restart"]
-     281 [-]: JUMPIFNOT R11 L26; goto L26 if not var11
-     282 [-]: GETIMPORT R12 66; var12 = _T["curTransmission"]
-     283 [-]: FASTCALL1 62 R12 L24; 
-     284 [-]: GETIMPORT R11 7; var11 = 0x7B998233
-     285 [-]: CALL R11 2 2 ; var11 = var11(var12)
-L24: 286 [-]: JUMPIF R11 L25; goto L25 if var11
-     287 [-]: GETUPVAL R12 1; var12 = upvalues[1]
-     288 [-]: GETTABLEKS R11 R12 K67; var11 = var12[0xFE0D9469]
-     289 [-]: GETIMPORT R12 66; var12 = _T["curTransmission"]
-     290 [-]: CALL R11 2 1 ; var11(var12)
-L25: 291 [-]: GETUPVAL R12 1; var12 = upvalues[1]
-     292 [-]: GETTABLEKS R11 R12 K68; var11 = var12[0xA559EB32]
-     293 [-]: CALL R11 1 1 ; var11()
-     294 [-]: GETIMPORT R11 26; var11 = 0xCBD666E1
-     295 [-]: LOADN R12 0  ; var12 = 0
-     296 [-]: CALL R11 2 1 ; var11(var12)
-     297 [-]: JUMPBACK L23 ; goto L23
-L26: 298 [-]: GETIMPORT R13 69; var13 = _T["Chimera_BallasReset"]["pos"]
-     299 [-]: GETIMPORT R14 70; var14 = _T["Chimera_BallasReset"]["rot"]
-     300 [-]: NAMECALL R11 R6 K39; var12 = var6; var11 = var6[0x589EF1C1]
-     301 [-]: CALL R11 4 1 ; var11(var12, var13, var14)
-     302 [-]: NAMECALL R11 R6 K40; var12 = var6; var11 = var6[0x020D4331]
-     303 [-]: CALL R11 2 2 ; var11 = var11(var12)
-     304 [-]: GETIMPORT R13 70; var13 = _T["Chimera_BallasReset"]["rot"]
-     305 [-]: NAMECALL R11 R11 K41; var12 = var11; var11 = var11[0x553549E8]
-     306 [-]: CALL R11 3 1 ; var11(var12, var13)
-     307 [-]: GETIMPORT R13 72; var13 = 0x15DE116A
-     308 [-]: LOADB R14 0  ; var14 = false
-     309 [-]: LOADN R15 3  ; var15 = 3
-     310 [-]: LOADN R16 2  ; var16 = 2
-     311 [-]: LOADB R17 1  ; var17 = true
-     312 [-]: NAMECALL R11 R6 K73; var12 = var6; var11 = var6[0x5D985C7E]
-     313 [-]: CALL R11 7 1 ; var11(var12, var13, var14, var15, var16, var17)
-     314 [-]: GETIMPORT R11 17; var11 = _T
-     315 [-]: LOADNIL R12  ; var12 = nil
-     316 [-]: SETTABLEKS R12 R11 K18; var12["Chimera_DisableDetection"] = var11
-     317 [-]: MOVE R11 R10 ; var11 = var10
-     318 [-]: GETIMPORT R12 3; var12 = 0x0469F296
-     319 [-]: LOADK R13 K74; var13 = "BallasRantRespawn"
-     320 [-]: CALL R12 2 0 ; var12, ... = var12(var13)
-     321 [-]: CALL R11 0 2 ; var11 = var11(var12, ...)
-     322 [-]: JUMPIF R11 L31; goto L31 if var11
-     323 [-]: GETIMPORT R11 26; var11 = 0xCBD666E1
-     324 [-]: LOADN R12 0  ; var12 = 0
-     325 [-]: CALL R11 2 1 ; var11(var12)
-L27: 326 [-]: GETIMPORT R11 64; var11 = _T["Chimera_Restart"]
-     327 [-]: JUMPIFNOT R11 L30; goto L30 if not var11
-     328 [-]: GETIMPORT R12 66; var12 = _T["curTransmission"]
-     329 [-]: FASTCALL1 62 R12 L28; 
-     330 [-]: GETIMPORT R11 7; var11 = 0x7B998233
-     331 [-]: CALL R11 2 2 ; var11 = var11(var12)
-L28: 332 [-]: JUMPIF R11 L29; goto L29 if var11
-     333 [-]: GETUPVAL R12 1; var12 = upvalues[1]
-     334 [-]: GETTABLEKS R11 R12 K67; var11 = var12[0xFE0D9469]
-     335 [-]: GETIMPORT R12 66; var12 = _T["curTransmission"]
-     336 [-]: CALL R11 2 1 ; var11(var12)
-L29: 337 [-]: GETUPVAL R12 1; var12 = upvalues[1]
-     338 [-]: GETTABLEKS R11 R12 K68; var11 = var12[0xA559EB32]
-     339 [-]: CALL R11 1 1 ; var11()
-     340 [-]: GETIMPORT R11 26; var11 = 0xCBD666E1
-     341 [-]: LOADN R12 0  ; var12 = 0
-     342 [-]: CALL R11 2 1 ; var11(var12)
-     343 [-]: JUMPBACK L27 ; goto L27
-L30: 344 [-]: JUMPBACK L26 ; goto L26
-L31: 345 [-]: GETIMPORT R11 24; var11 = _T["Chimera_CurrentPoint"]
-     346 [-]: JUMPIFNOTEQ R11 R4 L32; goto L32 if var11 ~= var1706830
-     347 [-]: GETIMPORT R11 26; var11 = 0xCBD666E1
-     348 [-]: LOADN R12 0  ; var12 = 0
-     349 [-]: CALL R11 2 1 ; var11(var12)
-     350 [-]: JUMPBACK L31 ; goto L31
-L32: 351 [-]: LOADNIL R13  ; var13 = nil
-     352 [-]: LOADB R14 0  ; var14 = false
-     353 [-]: LOADN R15 2  ; var15 = 2
-     354 [-]: LOADN R16 1  ; var16 = 1
-     355 [-]: LOADB R17 1  ; var17 = true
-     356 [-]: NAMECALL R11 R6 K73; var12 = var6; var11 = var6[0x5D985C7E]
-     357 [-]: CALL R11 7 1 ; var11(var12, var13, var14, var15, var16, var17)
-     358 [-]: JUMPBACK L15 ; goto L15
-L33: 359 [-]: GETIMPORT R11 17; var11 = _T
-     360 [-]: LOADB R12 1  ; var12 = true
-     361 [-]: SETTABLEKS R12 R11 K18; var12["Chimera_DisableDetection"] = var11
-     362 [-]: GETUPVAL R12 0; var12 = upvalues[0]
-     363 [-]: GETTABLEKS R11 R12 K31; var11 = var12[0x9742B85B]
-     364 [-]: GETIMPORT R12 33; var12 = 0xE91D7466
-     365 [-]: GETIMPORT R13 3; var13 = 0x0469F296
-     366 [-]: LOADK R14 K75; var14 = "BallasSwordComplete"
-     367 [-]: CALL R13 2 0 ; var13, ... = var13(var14)
-     368 [-]: CALL R11 0 1 ; var11(var12, ...)
-     369 [-]: GETUPVAL R12 0; var12 = upvalues[0]
-     370 [-]: GETTABLEKS R11 R12 K43; var11 = var12[0xFC87A231]
-     371 [-]: CALL R11 1 1 ; var11()
-     372 [-]: GETIMPORT R11 1; var11 = 0x89326C93
-     373 [-]: GETIMPORT R13 3; var13 = 0x0469F296
-     374 [-]: LOADK R14 K76; var14 = "ChimeraBallasSwordGrabCin"
-     375 [-]: CALL R13 2 0 ; var13, ... = var13(var14)
-     376 [-]: NAMECALL R11 R11 K5; var12 = var11; var11 = var11[0x46A0EBF5]
-     377 [-]: CALL R11 0 2 ; var11 = var11(var12, ...)
-     378 [-]: FASTCALL1 62 R11 L34; 
-     379 [-]: MOVE R13 R11 ; var13 = var11
-     380 [-]: GETIMPORT R12 7; var12 = 0x7B998233
-     381 [-]: CALL R12 2 2 ; var12 = var12(var13)
-L34: 382 [-]: JUMPIF R12 L38; goto L38 if var12
-     383 [-]: LOADK R14 K47; var14 = "StartPlaying"
-     384 [-]: NAMECALL R12 R11 K28; var13 = var11; var12 = var11[0x8EB2112D]
-     385 [-]: CALL R12 3 1 ; var12(var13, var14)
-L35: 386 [-]: NAMECALL R12 R11 K48; var13 = var11; var12 = var11[0x1C84839C]
-     387 [-]: CALL R12 2 2 ; var12 = var12(var13)
-     388 [-]: JUMPIF R12 L36; goto L36 if var12
-     389 [-]: GETIMPORT R12 26; var12 = 0xCBD666E1
-     390 [-]: LOADN R13 0  ; var13 = 0
-     391 [-]: CALL R12 2 1 ; var12(var13)
-     392 [-]: JUMPBACK L35 ; goto L35
-L36: 393 [-]: GETIMPORT R14 78; var14 = 0x176BC146
-     394 [-]: LOADB R15 0  ; var15 = false
-     395 [-]: LOADN R16 3  ; var16 = 3
-     396 [-]: LOADN R17 2  ; var17 = 2
-     397 [-]: LOADB R18 1  ; var18 = true
-     398 [-]: NAMECALL R12 R6 K73; var13 = var6; var12 = var6[0x5D985C7E]
-     399 [-]: CALL R12 7 1 ; var12(var13, var14, var15, var16, var17, var18)
-L37: 400 [-]: NAMECALL R12 R11 K48; var13 = var11; var12 = var11[0x1C84839C]
-     401 [-]: CALL R12 2 2 ; var12 = var12(var13)
-     402 [-]: JUMPIFNOT R12 L38; goto L38 if not var12
-     403 [-]: GETIMPORT R12 26; var12 = 0xCBD666E1
-     404 [-]: LOADN R13 0  ; var13 = 0
-     405 [-]: CALL R12 2 1 ; var12(var13)
-     406 [-]: JUMPBACK L37 ; goto L37
-L38: 407 [-]: GETIMPORT R12 1; var12 = 0x89326C93
-     408 [-]: GETIMPORT R14 3; var14 = 0x0469F296
-     409 [-]: LOADK R15 K79; var15 = "ChimeraSwordPoint"
-     410 [-]: CALL R14 2 0 ; var14, ... = var14(var15)
-     411 [-]: NAMECALL R12 R12 K5; var13 = var12; var12 = var12[0x46A0EBF5]
-     412 [-]: CALL R12 0 2 ; var12 = var12(var13, ...)
-     413 [-]: LOADK R15 K80; var15 = "Enable"
-     414 [-]: NAMECALL R13 R12 K28; var14 = var12; var13 = var12[0x8EB2112D]
-     415 [-]: CALL R13 3 1 ; var13(var14, var15)
-     416 [-]: GETIMPORT R13 26; var13 = 0xCBD666E1
-     417 [-]: LOADN R14 0  ; var14 = 0
-     418 [-]: CALL R13 2 1 ; var13(var14)
-     419 [-]: GETIMPORT R13 30; var13 = _T["Chimera_SetConnectedPointsOverride"]
-     420 [-]: NEWTABLE R14 0 1; var14 = {}
-     421 [-]: MOVE R15 R12 ; var15 = var12
-     422 [-]: SETLIST R14 R15 1 [1]; var14[1] = var15; var14[2] = var16; 
-     423 [-]: CALL R13 2 1 ; var13(var14)
-     424 [-]: GETIMPORT R13 17; var13 = _T
-     425 [-]: LOADK R14 K81; var14 = 0.5
-     426 [-]: SETTABLEKS R14 R13 K82; var14["Chimera_CancelWarpAtDelta"] = var13
-L39: 427 [-]: GETIMPORT R13 24; var13 = _T["Chimera_CurrentPoint"]
-     428 [-]: JUMPIFEQ R13 R12 L40; goto L40 if var13 == var1707342
-     429 [-]: GETIMPORT R13 26; var13 = 0xCBD666E1
-     430 [-]: LOADN R14 0  ; var14 = 0
-     431 [-]: CALL R13 2 1 ; var13(var14)
-     432 [-]: JUMPBACK L39 ; goto L39
-L40: 433 [-]: GETIMPORT R13 26; var13 = 0xCBD666E1
-     434 [-]: LOADN R14 0  ; var14 = 0
-     435 [-]: CALL R13 2 1 ; var13(var14)
-     436 [-]: GETIMPORT R13 30; var13 = _T["Chimera_SetConnectedPointsOverride"]
-     437 [-]: NEWTABLE R14 0 0; var14 = {}
-     438 [-]: CALL R13 2 1 ; var13(var14)
-     439 [-]: GETIMPORT R13 1; var13 = 0x89326C93
-     440 [-]: GETIMPORT R15 3; var15 = 0x0469F296
-     441 [-]: LOADK R16 K83; var16 = "ChimeraBallasLairEndCin"
-     442 [-]: CALL R15 2 0 ; var15, ... = var15(var16)
-     443 [-]: NAMECALL R13 R13 K5; var14 = var13; var13 = var13[0x46A0EBF5]
-     444 [-]: CALL R13 0 2 ; var13 = var13(var14, ...)
-     445 [-]: LOADK R16 K47; var16 = "StartPlaying"
-     446 [-]: NAMECALL R14 R13 K28; var15 = var13; var14 = var13[0x8EB2112D]
-     447 [-]: CALL R14 3 1 ; var14(var15, var16)
-L41: 448 [-]: NAMECALL R14 R13 K48; var15 = var13; var14 = var13[0x1C84839C]
-     449 [-]: CALL R14 2 2 ; var14 = var14(var15)
-     450 [-]: JUMPIF R14 L42; goto L42 if var14
-     451 [-]: GETIMPORT R14 26; var14 = 0xCBD666E1
-     452 [-]: LOADN R15 0  ; var15 = 0
-     453 [-]: CALL R14 2 1 ; var14(var15)
-     454 [-]: JUMPBACK L41 ; goto L41
-L42: 455 [-]: NAMECALL R14 R13 K48; var15 = var13; var14 = var13[0x1C84839C]
-     456 [-]: CALL R14 2 2 ; var14 = var14(var15)
-     457 [-]: JUMPIFNOT R14 L43; goto L43 if not var14
-     458 [-]: GETIMPORT R14 26; var14 = 0xCBD666E1
-     459 [-]: LOADN R15 0  ; var15 = 0
-     460 [-]: CALL R14 2 1 ; var14(var15)
-     461 [-]: JUMPBACK L42 ; goto L42
-L43: 462 [-]: CLOSEUPVALS R9; 
-     463 [-]: RETURN R0 0  ; 
+     242 [-]: GETIMPORT R18 59; var18 = 0x64FB1586
+     243 [-]: CALL R18 2 2 ; var18 = var18(var19)
+L17: 244 [-]: CONCAT R16 R17 R18; var16 = var17 .. var18
+     245 [-]: CALL R15 2 0 ; var15, ... = var15(var16)
+     246 [-]: CALL R14 0 2 ; var14 = var14(var15, ...)
+     247 [-]: JUMPIF R14 L18; goto L18 if var14
+     248 [-]: LOADN R14 6  ; var14 = 6
+     249 [-]: JUMPIFLT R13 R14 L23; goto L23 if var13 < var331312
+L18: 250 [-]: LOADN R14 5  ; var14 = 5
+     251 [-]: JUMPIFNOTLE R14 R13 L19; goto L19 if var14 > var1117729
+     252 [-]: GETIMPORT R14 17; var14 = _T
+     253 [-]: LOADB R15 1  ; var15 = true
+     254 [-]: SETTABLEKS R15 R14 K18; var15["Chimera_DisableDetection"] = var14
+     255 [-]: GETIMPORT R14 17; var14 = _T
+     256 [-]: LOADB R15 1  ; var15 = true
+     257 [-]: SETTABLEKS R15 R14 K60; var15["Chimera_BallasDisableEyeSounds"] = var14
+L19: 258 [-]: SETUPVAL R13 2; upvalues[13] = var2
+     259 [-]: LOADB R14 0  ; var14 = false
+     260 [-]: SETUPVAL R14 3; upvalues[14] = var3
+     261 [-]: GETIMPORT R16 3; var16 = 0x0469F296
+     262 [-]: LOADK R17 K61; var17 = "BallasSummonSword"
+     263 [-]: CALL R16 2 2 ; var16 = var16(var17)
+     264 [-]: LOADB R17 0  ; var17 = false
+     265 [-]: NAMECALL R14 R6 K62; var15 = var6; var14 = var6[0xD5F7912B]
+     266 [-]: CALL R14 4 1 ; var14(var15, var16, var17)
+L20: 267 [-]: GETUPVAL R14 3; var14 = upvalues[3]
+     268 [-]: JUMPIF R14 L22; goto L22 if var14
+     269 [-]: GETIMPORT R14 26; var14 = 0xCBD666E1
+     270 [-]: LOADN R15 0  ; var15 = 0
+     271 [-]: CALL R14 2 1 ; var14(var15)
+     272 [-]: GETIMPORT R14 64; var14 = _T["Chimera_Restart"]
+     273 [-]: JUMPIFNOT R14 L21; goto L21 if not var14
+     274 [-]: LOADN R14 5  ; var14 = 5
+     275 [-]: JUMPIFLT R13 R14 L22; goto L22 if var13 < var-851898
+L21: 276 [-]: JUMPBACK L20 ; goto L20
+L22: 277 [-]: FORNLOOP R11 L16; nforloop end - iterate + goto L16
+L23: 278 [-]: GETUPVAL R11 2; var11 = upvalues[2]
+     279 [-]: LOADN R12 6  ; var12 = 6
+     280 [-]: JUMPIFLE R12 R11 L34; goto L34 if var12 <= var4197153
+L24: 281 [-]: GETIMPORT R11 64; var11 = _T["Chimera_Restart"]
+     282 [-]: JUMPIFNOT R11 L27; goto L27 if not var11
+     283 [-]: GETIMPORT R12 66; var12 = _T["curTransmission"]
+     284 [-]: FASTCALL1 64 R12 L25; 
+     285 [-]: GETIMPORT R11 7; var11 = 0x7B998233
+     286 [-]: CALL R11 2 2 ; var11 = var11(var12)
+L25: 287 [-]: JUMPIF R11 L26; goto L26 if var11
+     288 [-]: GETUPVAL R12 1; var12 = upvalues[1]
+     289 [-]: GETTABLEKS R11 R12 K67; var11 = var12[0xFE0D9469]
+     290 [-]: GETIMPORT R12 66; var12 = _T["curTransmission"]
+     291 [-]: CALL R11 2 1 ; var11(var12)
+L26: 292 [-]: GETUPVAL R12 1; var12 = upvalues[1]
+     293 [-]: GETTABLEKS R11 R12 K68; var11 = var12[0xA559EB32]
+     294 [-]: CALL R11 1 1 ; var11()
+     295 [-]: GETIMPORT R11 26; var11 = 0xCBD666E1
+     296 [-]: LOADN R12 0  ; var12 = 0
+     297 [-]: CALL R11 2 1 ; var11(var12)
+     298 [-]: JUMPBACK L24 ; goto L24
+L27: 299 [-]: GETIMPORT R13 69; var13 = _T["Chimera_BallasReset"]["pos"]
+     300 [-]: GETIMPORT R14 70; var14 = _T["Chimera_BallasReset"]["rot"]
+     301 [-]: NAMECALL R11 R6 K39; var12 = var6; var11 = var6[0x589EF1C1]
+     302 [-]: CALL R11 4 1 ; var11(var12, var13, var14)
+     303 [-]: NAMECALL R11 R6 K40; var12 = var6; var11 = var6[0x020D4331]
+     304 [-]: CALL R11 2 2 ; var11 = var11(var12)
+     305 [-]: GETIMPORT R13 70; var13 = _T["Chimera_BallasReset"]["rot"]
+     306 [-]: NAMECALL R11 R11 K41; var12 = var11; var11 = var11[0x553549E8]
+     307 [-]: CALL R11 3 1 ; var11(var12, var13)
+     308 [-]: GETIMPORT R13 72; var13 = 0x15DE116A
+     309 [-]: LOADB R14 0  ; var14 = false
+     310 [-]: LOADN R15 3  ; var15 = 3
+     311 [-]: LOADN R16 2  ; var16 = 2
+     312 [-]: LOADB R17 1  ; var17 = true
+     313 [-]: NAMECALL R11 R6 K73; var12 = var6; var11 = var6[0x5D985C7E]
+     314 [-]: CALL R11 7 1 ; var11(var12, var13, var14, var15, var16, var17)
+     315 [-]: GETIMPORT R11 17; var11 = _T
+     316 [-]: LOADNIL R12  ; var12 = nil
+     317 [-]: SETTABLEKS R12 R11 K18; var12["Chimera_DisableDetection"] = var11
+     318 [-]: MOVE R11 R10 ; var11 = var10
+     319 [-]: GETIMPORT R12 3; var12 = 0x0469F296
+     320 [-]: LOADK R13 K74; var13 = "BallasRantRespawn"
+     321 [-]: CALL R12 2 0 ; var12, ... = var12(var13)
+     322 [-]: CALL R11 0 2 ; var11 = var11(var12, ...)
+     323 [-]: JUMPIF R11 L32; goto L32 if var11
+     324 [-]: GETIMPORT R11 26; var11 = 0xCBD666E1
+     325 [-]: LOADN R12 0  ; var12 = 0
+     326 [-]: CALL R11 2 1 ; var11(var12)
+L28: 327 [-]: GETIMPORT R11 64; var11 = _T["Chimera_Restart"]
+     328 [-]: JUMPIFNOT R11 L31; goto L31 if not var11
+     329 [-]: GETIMPORT R12 66; var12 = _T["curTransmission"]
+     330 [-]: FASTCALL1 64 R12 L29; 
+     331 [-]: GETIMPORT R11 7; var11 = 0x7B998233
+     332 [-]: CALL R11 2 2 ; var11 = var11(var12)
+L29: 333 [-]: JUMPIF R11 L30; goto L30 if var11
+     334 [-]: GETUPVAL R12 1; var12 = upvalues[1]
+     335 [-]: GETTABLEKS R11 R12 K67; var11 = var12[0xFE0D9469]
+     336 [-]: GETIMPORT R12 66; var12 = _T["curTransmission"]
+     337 [-]: CALL R11 2 1 ; var11(var12)
+L30: 338 [-]: GETUPVAL R12 1; var12 = upvalues[1]
+     339 [-]: GETTABLEKS R11 R12 K68; var11 = var12[0xA559EB32]
+     340 [-]: CALL R11 1 1 ; var11()
+     341 [-]: GETIMPORT R11 26; var11 = 0xCBD666E1
+     342 [-]: LOADN R12 0  ; var12 = 0
+     343 [-]: CALL R11 2 1 ; var11(var12)
+     344 [-]: JUMPBACK L28 ; goto L28
+L31: 345 [-]: JUMPBACK L27 ; goto L27
+L32: 346 [-]: GETIMPORT R11 24; var11 = _T["Chimera_CurrentPoint"]
+     347 [-]: JUMPIFNOTEQ R11 R4 L33; goto L33 if var11 ~= var1706785
+     348 [-]: GETIMPORT R11 26; var11 = 0xCBD666E1
+     349 [-]: LOADN R12 0  ; var12 = 0
+     350 [-]: CALL R11 2 1 ; var11(var12)
+     351 [-]: JUMPBACK L32 ; goto L32
+L33: 352 [-]: LOADNIL R13  ; var13 = nil
+     353 [-]: LOADB R14 0  ; var14 = false
+     354 [-]: LOADN R15 2  ; var15 = 2
+     355 [-]: LOADN R16 1  ; var16 = 1
+     356 [-]: LOADB R17 1  ; var17 = true
+     357 [-]: NAMECALL R11 R6 K73; var12 = var6; var11 = var6[0x5D985C7E]
+     358 [-]: CALL R11 7 1 ; var11(var12, var13, var14, var15, var16, var17)
+     359 [-]: JUMPBACK L15 ; goto L15
+L34: 360 [-]: GETIMPORT R11 17; var11 = _T
+     361 [-]: LOADB R12 1  ; var12 = true
+     362 [-]: SETTABLEKS R12 R11 K18; var12["Chimera_DisableDetection"] = var11
+     363 [-]: GETUPVAL R12 0; var12 = upvalues[0]
+     364 [-]: GETTABLEKS R11 R12 K31; var11 = var12[0x9742B85B]
+     365 [-]: GETIMPORT R12 33; var12 = 0xE91D7466
+     366 [-]: GETIMPORT R13 3; var13 = 0x0469F296
+     367 [-]: LOADK R14 K75; var14 = "BallasSwordComplete"
+     368 [-]: CALL R13 2 0 ; var13, ... = var13(var14)
+     369 [-]: CALL R11 0 1 ; var11(var12, ...)
+     370 [-]: GETUPVAL R12 0; var12 = upvalues[0]
+     371 [-]: GETTABLEKS R11 R12 K43; var11 = var12[0xFC87A231]
+     372 [-]: CALL R11 1 1 ; var11()
+     373 [-]: GETIMPORT R11 1; var11 = 0x89326C93
+     374 [-]: GETIMPORT R13 3; var13 = 0x0469F296
+     375 [-]: LOADK R14 K76; var14 = "ChimeraBallasSwordGrabCin"
+     376 [-]: CALL R13 2 0 ; var13, ... = var13(var14)
+     377 [-]: NAMECALL R11 R11 K5; var12 = var11; var11 = var11[0x46A0EBF5]
+     378 [-]: CALL R11 0 2 ; var11 = var11(var12, ...)
+     379 [-]: FASTCALL1 64 R11 L35; 
+     380 [-]: MOVE R13 R11 ; var13 = var11
+     381 [-]: GETIMPORT R12 7; var12 = 0x7B998233
+     382 [-]: CALL R12 2 2 ; var12 = var12(var13)
+L35: 383 [-]: JUMPIF R12 L39; goto L39 if var12
+     384 [-]: LOADK R14 K47; var14 = "StartPlaying"
+     385 [-]: NAMECALL R12 R11 K28; var13 = var11; var12 = var11[0x8EB2112D]
+     386 [-]: CALL R12 3 1 ; var12(var13, var14)
+L36: 387 [-]: NAMECALL R12 R11 K48; var13 = var11; var12 = var11[0x1C84839C]
+     388 [-]: CALL R12 2 2 ; var12 = var12(var13)
+     389 [-]: JUMPIF R12 L37; goto L37 if var12
+     390 [-]: GETIMPORT R12 26; var12 = 0xCBD666E1
+     391 [-]: LOADN R13 0  ; var13 = 0
+     392 [-]: CALL R12 2 1 ; var12(var13)
+     393 [-]: JUMPBACK L36 ; goto L36
+L37: 394 [-]: GETIMPORT R14 78; var14 = 0x176BC146
+     395 [-]: LOADB R15 0  ; var15 = false
+     396 [-]: LOADN R16 3  ; var16 = 3
+     397 [-]: LOADN R17 2  ; var17 = 2
+     398 [-]: LOADB R18 1  ; var18 = true
+     399 [-]: NAMECALL R12 R6 K73; var13 = var6; var12 = var6[0x5D985C7E]
+     400 [-]: CALL R12 7 1 ; var12(var13, var14, var15, var16, var17, var18)
+L38: 401 [-]: NAMECALL R12 R11 K48; var13 = var11; var12 = var11[0x1C84839C]
+     402 [-]: CALL R12 2 2 ; var12 = var12(var13)
+     403 [-]: JUMPIFNOT R12 L39; goto L39 if not var12
+     404 [-]: GETIMPORT R12 26; var12 = 0xCBD666E1
+     405 [-]: LOADN R13 0  ; var13 = 0
+     406 [-]: CALL R12 2 1 ; var12(var13)
+     407 [-]: JUMPBACK L38 ; goto L38
+L39: 408 [-]: GETIMPORT R12 1; var12 = 0x89326C93
+     409 [-]: GETIMPORT R14 3; var14 = 0x0469F296
+     410 [-]: LOADK R15 K79; var15 = "ChimeraSwordPoint"
+     411 [-]: CALL R14 2 0 ; var14, ... = var14(var15)
+     412 [-]: NAMECALL R12 R12 K5; var13 = var12; var12 = var12[0x46A0EBF5]
+     413 [-]: CALL R12 0 2 ; var12 = var12(var13, ...)
+     414 [-]: LOADK R15 K80; var15 = "Enable"
+     415 [-]: NAMECALL R13 R12 K28; var14 = var12; var13 = var12[0x8EB2112D]
+     416 [-]: CALL R13 3 1 ; var13(var14, var15)
+     417 [-]: GETIMPORT R13 26; var13 = 0xCBD666E1
+     418 [-]: LOADN R14 0  ; var14 = 0
+     419 [-]: CALL R13 2 1 ; var13(var14)
+     420 [-]: GETIMPORT R13 30; var13 = _T["Chimera_SetConnectedPointsOverride"]
+     421 [-]: NEWTABLE R14 0 1; var14 = {}
+     422 [-]: MOVE R15 R12 ; var15 = var12
+     423 [-]: SETLIST R14 R15 1 [1]; var14[1] = var15; var14[2] = var16; 
+     424 [-]: CALL R13 2 1 ; var13(var14)
+     425 [-]: GETIMPORT R13 17; var13 = _T
+     426 [-]: LOADK R14 K81; var14 = 0.5
+     427 [-]: SETTABLEKS R14 R13 K82; var14["Chimera_CancelWarpAtDelta"] = var13
+L40: 428 [-]: GETIMPORT R13 24; var13 = _T["Chimera_CurrentPoint"]
+     429 [-]: JUMPIFEQ R13 R12 L41; goto L41 if var13 == var1707297
+     430 [-]: GETIMPORT R13 26; var13 = 0xCBD666E1
+     431 [-]: LOADN R14 0  ; var14 = 0
+     432 [-]: CALL R13 2 1 ; var13(var14)
+     433 [-]: JUMPBACK L40 ; goto L40
+L41: 434 [-]: GETIMPORT R13 26; var13 = 0xCBD666E1
+     435 [-]: LOADN R14 0  ; var14 = 0
+     436 [-]: CALL R13 2 1 ; var13(var14)
+     437 [-]: GETIMPORT R13 30; var13 = _T["Chimera_SetConnectedPointsOverride"]
+     438 [-]: NEWTABLE R14 0 0; var14 = {}
+     439 [-]: CALL R13 2 1 ; var13(var14)
+     440 [-]: GETIMPORT R13 1; var13 = 0x89326C93
+     441 [-]: GETIMPORT R15 3; var15 = 0x0469F296
+     442 [-]: LOADK R16 K83; var16 = "ChimeraBallasLairEndCin"
+     443 [-]: CALL R15 2 0 ; var15, ... = var15(var16)
+     444 [-]: NAMECALL R13 R13 K5; var14 = var13; var13 = var13[0x46A0EBF5]
+     445 [-]: CALL R13 0 2 ; var13 = var13(var14, ...)
+     446 [-]: LOADK R16 K47; var16 = "StartPlaying"
+     447 [-]: NAMECALL R14 R13 K28; var15 = var13; var14 = var13[0x8EB2112D]
+     448 [-]: CALL R14 3 1 ; var14(var15, var16)
+L42: 449 [-]: NAMECALL R14 R13 K48; var15 = var13; var14 = var13[0x1C84839C]
+     450 [-]: CALL R14 2 2 ; var14 = var14(var15)
+     451 [-]: JUMPIF R14 L43; goto L43 if var14
+     452 [-]: GETIMPORT R14 26; var14 = 0xCBD666E1
+     453 [-]: LOADN R15 0  ; var15 = 0
+     454 [-]: CALL R14 2 1 ; var14(var15)
+     455 [-]: JUMPBACK L42 ; goto L42
+L43: 456 [-]: NAMECALL R14 R13 K48; var15 = var13; var14 = var13[0x1C84839C]
+     457 [-]: CALL R14 2 2 ; var14 = var14(var15)
+     458 [-]: JUMPIFNOT R14 L44; goto L44 if not var14
+     459 [-]: GETIMPORT R14 26; var14 = 0xCBD666E1
+     460 [-]: LOADN R15 0  ; var15 = 0
+     461 [-]: CALL R14 2 1 ; var14(var15)
+     462 [-]: JUMPBACK L43 ; goto L43
+L44: 463 [-]: CLOSEUPVALS R9; 
+     464 [-]: RETURN R0 0  ; 
 
 
 ; Name:            
@@ -1917,7 +1912,7 @@ L 0:   2 [-]: GETIMPORT R2 5; var2 = _T["Chimera_BallasDoingSearch"]
        7 [-]: JUMPBACK L0  ; goto L0
 L 1:   8 [-]: GETIMPORT R3 3; var3 = _T["Chimera_FailureCount"]
        9 [-]: ORK R2 R3 K0 ; var2 = var3 or 0
-      10 [-]: JUMPIFEQ R2 R1 L2; goto L2 if var2 == var65581
+      10 [-]: JUMPIFEQ R2 R1 L2; goto L2 if var2 == var65571
       11 [-]: RETURN R0 0  ; 
 L 2:  12 [-]: GETIMPORT R4 9; var4 = 0x45CF24E2
       13 [-]: LOADB R5 0   ; var5 = false
@@ -1935,7 +1930,7 @@ L 2:  12 [-]: GETIMPORT R4 9; var4 = 0x45CF24E2
       25 [-]: CALL R4 4 1  ; var4(var5, var6, var7)
       26 [-]: GETIMPORT R5 3; var5 = _T["Chimera_FailureCount"]
       27 [-]: ORK R4 R5 K0 ; var4 = var5 or 0
-      28 [-]: JUMPIFEQ R4 R1 L3; goto L3 if var4 == var65581
+      28 [-]: JUMPIFEQ R4 R1 L3; goto L3 if var4 == var65571
       29 [-]: RETURN R0 0  ; 
 L 3:  30 [-]: GETIMPORT R4 16; var4 = _T
       31 [-]: GETUPVAL R5 0; var5 = upvalues[0]
@@ -1964,14 +1959,14 @@ L 4:  43 [-]: CALL R4 2 1  ; var4(var5)
 ; Max Stack Size:  9
 
        0 [-]: GETIMPORT R0 1; var0 = 0xCBD666E1
-       1 [-]: LOADK R1 K2  ; var1 = 0.10000000000000001
+       1 [-]: LOADK R1 K2  ; var1 = 0.10000000149011612
        2 [-]: CALL R0 2 1  ; var0(var1)
        3 [-]: GETIMPORT R0 4; var0 = 0x89326C93
        4 [-]: NAMECALL R0 R0 K5; var1 = var0; var0 = var0[0x78298275]
        5 [-]: CALL R0 2 2  ; var0 = var0(var1)
        6 [-]: LOADNIL R1   ; var1 = nil
        7 [-]: LOADNIL R2   ; var2 = nil
-       8 [-]: FASTCALL1 62 R0 L0; 
+       8 [-]: FASTCALL1 64 R0 L0; 
        9 [-]: MOVE R4 R0   ; var4 = var0
       10 [-]: GETIMPORT R3 7; var3 = 0x7B998233
       11 [-]: CALL R3 2 2  ; var3 = var3(var4)
@@ -1992,7 +1987,7 @@ L 0:  12 [-]: JUMPIF R3 L1 ; goto L1 if var3
       26 [-]: NAMECALL R3 R3 K11; var4 = var3; var3 = var3[0x4E5939A5]
       27 [-]: CALL R3 5 2  ; var3 = var3(var4, var5, var6, var7)
       28 [-]: MOVE R2 R3   ; var2 = var3
-L 1:  29 [-]: FASTCALL1 62 R1 L2; 
+L 1:  29 [-]: FASTCALL1 64 R1 L2; 
       30 [-]: MOVE R4 R1   ; var4 = var1
       31 [-]: GETIMPORT R3 7; var3 = 0x7B998233
       32 [-]: CALL R3 2 2  ; var3 = var3(var4)
@@ -2003,7 +1998,7 @@ L 2:  33 [-]: JUMPIF R3 L3 ; goto L3 if var3
       37 [-]: NAMECALL R3 R1 K13; var4 = var1; var3 = var1[0xA2880940]
       38 [-]: CALL R3 2 1  ; var3(var4)
 L 3:  39 [-]: LOADNIL R3   ; var3 = nil
-      40 [-]: FASTCALL1 62 R2 L4; 
+      40 [-]: FASTCALL1 64 R2 L4; 
       41 [-]: MOVE R5 R2   ; var5 = var2
       42 [-]: GETIMPORT R4 7; var4 = 0x7B998233
       43 [-]: CALL R4 2 2  ; var4 = var4(var5)
@@ -2014,12 +2009,12 @@ L 4:  44 [-]: JUMPIF R4 L5 ; goto L5 if var4
 L 5:  48 [-]: GETIMPORT R4 16; var4 = 0x0469F296
       49 [-]: LOADK R5 K17 ; var5 = "PauseUmbra"
       50 [-]: CALL R4 2 2  ; var4 = var4(var5)
-      51 [-]: FASTCALL1 62 R2 L6; 
+      51 [-]: FASTCALL1 64 R2 L6; 
       52 [-]: MOVE R6 R2   ; var6 = var2
       53 [-]: GETIMPORT R5 7; var5 = 0x7B998233
       54 [-]: CALL R5 2 2  ; var5 = var5(var6)
 L 6:  55 [-]: JUMPIF R5 L8 ; goto L8 if var5
-      56 [-]: FASTCALL1 62 R3 L7; 
+      56 [-]: FASTCALL1 64 R3 L7; 
       57 [-]: MOVE R6 R3   ; var6 = var3
       58 [-]: GETIMPORT R5 7; var5 = 0x7B998233
       59 [-]: CALL R5 2 2  ; var5 = var5(var6)

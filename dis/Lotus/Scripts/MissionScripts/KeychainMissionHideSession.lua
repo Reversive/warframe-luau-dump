@@ -30,7 +30,7 @@ L 0:   3 [-]: JUMPIF R2 L5 ; goto L5 if var2
       10 [-]: FORGPREP_INEXT R4 L4; 
 L 1:  11 [-]: NAMECALL R9 R8 K7; var10 = var8; var9 = var8[0xE79E7EF4]
       12 [-]: CALL R9 2 2  ; var9 = var9(var10)
-      13 [-]: FASTCALL1 62 R9 L2; 
+      13 [-]: FASTCALL1 64 R9 L2; 
       14 [-]: MOVE R11 R9  ; var11 = var9
       15 [-]: GETIMPORT R10 9; var10 = 0x7B998233
       16 [-]: CALL R10 2 2 ; var10 = var10(var11)
@@ -40,15 +40,15 @@ L 2:  17 [-]: JUMPIF R10 L4; goto L4 if var10
       20 [-]: GETIMPORT R11 12; var11 = 0x0469F296
       21 [-]: LOADK R12 K13; var12 = "Connector"
       22 [-]: CALL R11 2 2 ; var11 = var11(var12)
-      23 [-]: JUMPIFEQ R10 R11 L3; goto L3 if var10 == var789326
+      23 [-]: JUMPIFEQ R10 R11 L3; goto L3 if var10 == var789281
       24 [-]: GETIMPORT R11 12; var11 = 0x0469F296
       25 [-]: LOADK R12 K14; var12 = "Intermediate"
       26 [-]: CALL R11 2 2 ; var11 = var11(var12)
-      27 [-]: JUMPIFEQ R10 R11 L3; goto L3 if var10 == var789326
+      27 [-]: JUMPIFEQ R10 R11 L3; goto L3 if var10 == var789281
       28 [-]: GETIMPORT R11 12; var11 = 0x0469F296
       29 [-]: LOADK R12 K15; var12 = "Objective"
       30 [-]: CALL R11 2 2 ; var11 = var11(var12)
-      31 [-]: JUMPIFNOTEQ R10 R11 L4; goto L4 if var10 ~= var66075
+      31 [-]: JUMPIFNOTEQ R10 R11 L4; goto L4 if var10 ~= var66054
 L 3:  32 [-]: LOADB R2 1   ; var2 = true
 L 4:  33 [-]: FORGLOOP R4 L1 2 [inext]; 
       34 [-]: GETIMPORT R4 17; var4 = 0xCBD666E1
@@ -57,7 +57,7 @@ L 4:  33 [-]: FORGLOOP R4 L1 2 [inext];
       37 [-]: JUMPBACK L0  ; goto L0
 L 5:  38 [-]: LOADN R2 0   ; var2 = 0
 L 6:  39 [-]: GETIMPORT R3 19; var3 = 0x18B1D2D3
-      40 [-]: JUMPIFNOTLE R2 R3 L7; goto L7 if var2 > var335675944
+      40 [-]: JUMPIFNOTLE R2 R3 L7; goto L7 if var2 > var335675912
       41 [-]: ADDK R2 R2 K20; var2 = var2 + 1
       42 [-]: GETIMPORT R3 17; var3 = 0xCBD666E1
       43 [-]: LOADN R4 1   ; var4 = 1

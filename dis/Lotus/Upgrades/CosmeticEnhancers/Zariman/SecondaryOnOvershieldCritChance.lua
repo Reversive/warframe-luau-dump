@@ -75,7 +75,7 @@ L 1:  12 [-]: GETTABLE R5 R6 R7; var5 = var6[var7]
       25 [-]: MULK R7 R5 K14; var7 = var5 * 100
       26 [-]: SETTABLEKS R7 R6 K15; var7["buffData"] = var6
       27 [-]: LOADB R7 0   ; var7 = false
-L 2:  28 [-]: FASTCALL1 62 R0 L3; 
+L 2:  28 [-]: FASTCALL1 64 R0 L3; 
       29 [-]: MOVE R9 R0   ; var9 = var0
       30 [-]: GETIMPORT R8 17; var8 = 0x7B998233
       31 [-]: CALL R8 2 2  ; var8 = var8(var9)
@@ -89,7 +89,7 @@ L 3:  32 [-]: JUMPIF R8 L6 ; goto L6 if var8
       39 [-]: NAMECALL R9 R9 K20; var10 = var9; var9 = var9[0xF456C2D7]
       40 [-]: CALL R9 2 2  ; var9 = var9(var10)
       41 [-]: JUMPIF R7 L4 ; goto L4 if var7
-      42 [-]: JUMPIFNOTLT R8 R9 L4; goto L4 if var8 >= var1862273605
+      42 [-]: JUMPIFNOTLT R8 R9 L4; goto L4 if var8 >= var1862273612
       43 [-]: NAMECALL R10 R0 K21; var11 = var0; var10 = var0[0xDE321E6F]
       44 [-]: CALL R10 2 2 ; var10 = var10(var11)
       45 [-]: GETIMPORT R12 23; var12 = 0x14AB107E
@@ -108,7 +108,7 @@ L 3:  32 [-]: JUMPIF R8 L6 ; goto L6 if var8
       58 [-]: LOADB R7 1   ; var7 = true
       59 [-]: JUMP L5      ; goto L5
 L 4:  60 [-]: JUMPIFNOT R7 L5; goto L5 if not var7
-      61 [-]: JUMPIFNOTLE R9 R8 L5; goto L5 if var9 > var1819
+      61 [-]: JUMPIFNOTLE R9 R8 L5; goto L5 if var9 > var1798
       62 [-]: LOADB R7 0   ; var7 = false
       63 [-]: MOVE R12 R6  ; var12 = var6
       64 [-]: LOADB R13 0  ; var13 = false

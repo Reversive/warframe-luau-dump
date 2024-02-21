@@ -22,21 +22,21 @@
        2 [-]: CALL R1 2 2  ; var1 = var1(var2)
        3 [-]: GETTABLEKS R2 R1 K3; var2 = var1["invasionAllyFaction"]
        4 [-]: LOADN R3 3   ; var3 = 3
-       5 [-]: JUMPIFNOTEQ R2 R3 L0; goto L0 if var2 ~= var65581
+       5 [-]: JUMPIFNOTEQ R2 R3 L0; goto L0 if var2 ~= var65571
        6 [-]: RETURN R0 0  ; 
 L 0:   7 [-]: GETIMPORT R2 5; var2 = 0x89326C93
        8 [-]: NAMECALL R2 R2 K6; var3 = var2; var2 = var2[0x29EF273D]
        9 [-]: CALL R2 2 2  ; var2 = var2(var3)
       10 [-]: NAMECALL R3 R2 K7; var4 = var2; var3 = var2[0x66905CB0]
       11 [-]: CALL R3 2 2  ; var3 = var3(var4)
-      12 [-]: FASTCALL1 62 R3 L1; 
+      12 [-]: FASTCALL1 64 R3 L1; 
       13 [-]: MOVE R5 R3   ; var5 = var3
       14 [-]: GETIMPORT R4 9; var4 = 0x7B998233
       15 [-]: CALL R4 2 2  ; var4 = var4(var5)
 L 1:  16 [-]: JUMPIF R4 L7 ; goto L7 if var4
       17 [-]: GETIMPORT R4 11; var4 = 0x59A86B70
       18 [-]: GETIMPORT R5 14; var5 = _T["faction"]
-      19 [-]: JUMPIFNOTEQ R4 R5 L4; goto L4 if var4 ~= var1049678
+      19 [-]: JUMPIFNOTEQ R4 R5 L4; goto L4 if var4 ~= var1049633
       20 [-]: GETIMPORT R4 16; var4 = 0x559B2179
       21 [-]: JUMPIF R4 L2 ; goto L2 if var4
       22 [-]: NAMECALL R4 R3 K17; var5 = var3; var4 = var3[0x152F5223]

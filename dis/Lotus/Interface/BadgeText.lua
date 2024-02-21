@@ -91,7 +91,7 @@
       43 [-]: CALL R1 0 1  ; var1(var2, ...)
       44 [-]: JUMPIFNOT R0 L1; goto L1 if not var0
       45 [-]: GETIMPORT R2 7; var2 = 0x14733A30
-      46 [-]: FASTCALL1 62 R2 L0; 
+      46 [-]: FASTCALL1 64 R2 L0; 
       47 [-]: GETIMPORT R1 9; var1 = 0x7B998233
       48 [-]: CALL R1 2 2  ; var1 = var1(var2)
 L 0:  49 [-]: JUMPIF R1 L1 ; goto L1 if var1
@@ -133,13 +133,13 @@ L 1:   4 [-]: CALL R1 2 1  ; var1(var2)
        0 [-]: JUMPXEQKS R1 K0 L0 NOT; 
        1 [-]: GETIMPORT R2 2; var2 = 0xAE91E43B
        2 [-]: LOADK R4 K3  ; var4 = "TextContainer.Label"
-       3 [-]: LOADN R5 29  ; var5 = 29
+       3 [-]: LOADN R5 31  ; var5 = 31
        4 [-]: MOVE R6 R0   ; var6 = var0
        5 [-]: NAMECALL R2 R2 K4; var3 = var2; var2 = var2[0x5F56EEAB]
        6 [-]: CALL R2 5 1  ; var2(var3, var4, var5, var6)
        7 [-]: GETIMPORT R2 2; var2 = 0xAE91E43B
        8 [-]: LOADK R4 K5  ; var4 = "TextContainer.LabelShadow"
-       9 [-]: LOADN R5 29  ; var5 = 29
+       9 [-]: LOADN R5 31  ; var5 = 31
       10 [-]: MOVE R6 R0   ; var6 = var0
       11 [-]: NAMECALL R2 R2 K4; var3 = var2; var2 = var2[0x5F56EEAB]
       12 [-]: CALL R2 5 1  ; var2(var3, var4, var5, var6)
@@ -168,26 +168,27 @@ L 0:  26 [-]: GETIMPORT R2 12; var2 = 0x7F5022CF[0x66EDF04F]
       35 [-]: LOADK R5 K14 ; var5 = ""
       36 [-]: CALL R2 4 2  ; var2 = var2(var3, var4, var5)
       37 [-]: MOVE R0 R2   ; var0 = var2
-      38 [-]: GETIMPORT R2 17; var2 = 0x03F57322
+      38 [-]: FASTCALL1 62 R0 L1; 
       39 [-]: MOVE R3 R0   ; var3 = var0
-      40 [-]: CALL R2 2 2  ; var2 = var2(var3)
-      41 [-]: GETIMPORT R4 19; var4 = 0xE7502F18
-      42 [-]: LENGTH R3 R4 ; var3 = #var4
-      43 [-]: JUMPIFNOTLT R3 R2 L1; goto L1 if var3 >= var1246030
-      44 [-]: GETIMPORT R3 19; var3 = 0xE7502F18
-      45 [-]: LENGTH R2 R3 ; var2 = #var3
-      46 [-]: JUMP L3      ; goto L3
-L 1:  47 [-]: JUMPXEQKNIL R2 L2; 
-      48 [-]: LOADN R3 0   ; var3 = 0
-      49 [-]: JUMPIFNOTLE R2 R3 L3; goto L3 if var2 > var66119
-L 2:  50 [-]: LOADN R2 1   ; var2 = 1
-L 3:  51 [-]: GETIMPORT R3 2; var3 = 0xAE91E43B
-      52 [-]: LOADK R5 K8  ; var5 = "Panel"
-      53 [-]: GETIMPORT R7 19; var7 = 0xE7502F18
-      54 [-]: GETTABLE R6 R7 R2; var6 = var7[var2]
-      55 [-]: NAMECALL R3 R3 K20; var4 = var3; var3 = var3[0x1CB415C1]
-      56 [-]: CALL R3 4 1  ; var3(var4, var5, var6)
-      57 [-]: RETURN R0 0  ; 
+      40 [-]: GETIMPORT R2 17; var2 = 0x03F57322
+      41 [-]: CALL R2 2 2  ; var2 = var2(var3)
+L 1:  42 [-]: GETIMPORT R4 19; var4 = 0xE7502F18
+      43 [-]: LENGTH R3 R4 ; var3 = #var4
+      44 [-]: JUMPIFNOTLT R3 R2 L2; goto L2 if var3 >= var1245985
+      45 [-]: GETIMPORT R3 19; var3 = 0xE7502F18
+      46 [-]: LENGTH R2 R3 ; var2 = #var3
+      47 [-]: JUMP L4      ; goto L4
+L 2:  48 [-]: JUMPXEQKNIL R2 L3; 
+      49 [-]: LOADN R3 0   ; var3 = 0
+      50 [-]: JUMPIFNOTLE R2 R3 L4; goto L4 if var2 > var66096
+L 3:  51 [-]: LOADN R2 1   ; var2 = 1
+L 4:  52 [-]: GETIMPORT R3 2; var3 = 0xAE91E43B
+      53 [-]: LOADK R5 K8  ; var5 = "Panel"
+      54 [-]: GETIMPORT R7 19; var7 = 0xE7502F18
+      55 [-]: GETTABLE R6 R7 R2; var6 = var7[var2]
+      56 [-]: NAMECALL R3 R3 K20; var4 = var3; var3 = var3[0x1CB415C1]
+      57 [-]: CALL R3 4 1  ; var3(var4, var5, var6)
+      58 [-]: RETURN R0 0  ; 
 
 
 ; Name:            
@@ -229,13 +230,13 @@ L 3:  51 [-]: GETIMPORT R3 2; var3 = 0xAE91E43B
       29 [-]: CALL R0 5 1  ; var0(var1, var2, var3, var4)
       30 [-]: GETIMPORT R0 1; var0 = 0xAE91E43B
       31 [-]: LOADK R2 K5  ; var2 = "TextContainer.Label"
-      32 [-]: LOADN R3 29  ; var3 = 29
+      32 [-]: LOADN R3 31  ; var3 = 31
       33 [-]: LOADK R4 K6  ; var4 = ""
       34 [-]: NAMECALL R0 R0 K7; var1 = var0; var0 = var0[0x5F56EEAB]
       35 [-]: CALL R0 5 1  ; var0(var1, var2, var3, var4)
       36 [-]: GETIMPORT R0 1; var0 = 0xAE91E43B
       37 [-]: LOADK R2 K8  ; var2 = "TextContainer.LabelShadow"
-      38 [-]: LOADN R3 29  ; var3 = 29
+      38 [-]: LOADN R3 31  ; var3 = 31
       39 [-]: LOADK R4 K6  ; var4 = ""
       40 [-]: NAMECALL R0 R0 K7; var1 = var0; var0 = var0[0x5F56EEAB]
       41 [-]: CALL R0 5 1  ; var0(var1, var2, var3, var4)
@@ -249,7 +250,7 @@ L 3:  51 [-]: GETIMPORT R3 2; var3 = 0xAE91E43B
       49 [-]: GETIMPORT R2 12; var2 = 0x79D9FFAA
       50 [-]: NAMECALL R0 R0 K13; var1 = var0; var0 = var0[0xBCFB64AB]
       51 [-]: CALL R0 3 2  ; var0 = var0(var1, var2)
-      52 [-]: FASTCALL1 62 R0 L0; 
+      52 [-]: FASTCALL1 64 R0 L0; 
       53 [-]: MOVE R2 R0   ; var2 = var0
       54 [-]: GETIMPORT R1 15; var1 = 0x7B998233
       55 [-]: CALL R1 2 2  ; var1 = var1(var2)
@@ -324,10 +325,10 @@ L 1:  61 [-]: GETIMPORT R1 18; var1 = 0x25312C9B
        4 [-]: CALL R0 0 1  ; var0(var1, ...)
        5 [-]: GETIMPORT R1 1; var1 = 0xAE91E43B
        6 [-]: NAMECALL R1 R1 K5; var2 = var1; var1 = var1[0xCD73323E]
-       7 [-]: CALL R1 2 2  ; var1 = var1(var2)
-       8 [-]: FASTCALL1 62 R1 L0; 
+       7 [-]: CALL R1 2 0  ; var1, ... = var1(var2)
+       8 [-]: FASTCALL 64 L0; 
        9 [-]: GETIMPORT R0 7; var0 = 0x7B998233
-      10 [-]: CALL R0 2 2  ; var0 = var0(var1)
+      10 [-]: CALL R0 0 2  ; var0 = var0(var1, ...)
 L 0:  11 [-]: JUMPIFNOT R0 L1; goto L1 if not var0
       12 [-]: GETIMPORT R0 1; var0 = 0xAE91E43B
       13 [-]: NAMECALL R0 R0 K8; var1 = var0; var0 = var0[0x32302B4A]

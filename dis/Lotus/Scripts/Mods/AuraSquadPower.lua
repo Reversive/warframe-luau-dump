@@ -61,7 +61,7 @@ L 3:  26 [-]: SETTABLEKS R2 R1 K1; var2["teamStrength"] = var1
 ; Is_vararg:       0
 ; Max Stack Size:  12
 
-       0 [-]: JUMPIFNOTEQ R0 R1 L1; goto L1 if var0 ~= var66894
+       0 [-]: JUMPIFNOTEQ R0 R1 L1; goto L1 if var0 ~= var66849
        1 [-]: GETIMPORT R5 1; var5 = 0x3F5FAFBA
        2 [-]: GETIMPORT R8 1; var8 = 0x3F5FAFBA
        3 [-]: LENGTH R7 R8 ; var7 = #var8
@@ -103,7 +103,7 @@ L 2:  29 [-]: GETTABLE R7 R8 R9; var7 = var8[var9]
 ; Is_vararg:       0
 ; Max Stack Size:  12
 
-       0 [-]: JUMPIFNOTEQ R0 R1 L1; goto L1 if var0 ~= var66894
+       0 [-]: JUMPIFNOTEQ R0 R1 L1; goto L1 if var0 ~= var66849
        1 [-]: GETIMPORT R5 1; var5 = 0x3F5FAFBA
        2 [-]: GETIMPORT R8 1; var8 = 0x3F5FAFBA
        3 [-]: LENGTH R7 R8 ; var7 = #var8

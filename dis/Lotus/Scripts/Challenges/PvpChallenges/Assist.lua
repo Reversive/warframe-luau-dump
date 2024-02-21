@@ -32,7 +32,7 @@
        8 [-]: SETTABLEKS R5 R4 K3; var5["gAssistChallengeData"] = var4
 L 0:   9 [-]: NAMECALL R5 R3 K6; var6 = var3; var5 = var3[0x5E651723]
       10 [-]: CALL R5 2 0  ; var5, ... = var5(var6)
-      11 [-]: FASTCALL 62 L1; 
+      11 [-]: FASTCALL 64 L1; 
       12 [-]: GETIMPORT R4 8; var4 = 0x7B998233
       13 [-]: CALL R4 0 2  ; var4 = var4(var5, ...)
 L 1:  14 [-]: JUMPIF R4 L7 ; goto L7 if var4
@@ -57,7 +57,7 @@ L 1:  14 [-]: JUMPIF R4 L7 ; goto L7 if var4
 L 2:  33 [-]: GETTABLE R10 R6 R9; var10 = var6[var9]
       34 [-]: NAMECALL R10 R10 K0; var11 = var10; var10 = var10[0x5CA33548]
       35 [-]: CALL R10 2 2 ; var10 = var10(var11)
-      36 [-]: JUMPIFEQ R10 R2 L3; goto L3 if var10 == var265294
+      36 [-]: JUMPIFEQ R10 R2 L3; goto L3 if var10 == var265249
       37 [-]: GETIMPORT R12 4; var12 = _T["gAssistChallengeData"]
       38 [-]: GETTABLE R11 R12 R10; var11 = var12[var10]
       39 [-]: JUMPXEQKNIL R11 L3; 
@@ -70,7 +70,7 @@ L 2:  33 [-]: GETTABLE R10 R6 R9; var10 = var6[var9]
       46 [-]: GETTABLE R12 R13 R4; var12 = var13[var4]
       47 [-]: SUB R11 R5 R12; var11 = var5 - var12
       48 [-]: LOADN R12 5  ; var12 = 5
-      49 [-]: JUMPIFNOTLE R11 R12 L3; goto L3 if var11 > var1117006
+      49 [-]: JUMPIFNOTLE R11 R12 L3; goto L3 if var11 > var1116961
       50 [-]: GETIMPORT R11 17; var11 = 0xBA7DFCD2
       51 [-]: GETTABLE R13 R6 R9; var13 = var6[var9]
       52 [-]: GETUPVAL R14 0; var14 = upvalues[0]

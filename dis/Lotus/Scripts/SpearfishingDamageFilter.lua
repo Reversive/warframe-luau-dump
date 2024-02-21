@@ -19,7 +19,7 @@
 
        0 [-]: NAMECALL R2 R1 K0; var3 = var1; var2 = var1[0x14A55974]
        1 [-]: CALL R2 2 2  ; var2 = var2(var3)
-       2 [-]: FASTCALL1 62 R2 L0; 
+       2 [-]: FASTCALL1 64 R2 L0; 
        3 [-]: MOVE R4 R2   ; var4 = var2
        4 [-]: GETIMPORT R3 2; var3 = 0x7B998233
        5 [-]: CALL R3 2 2  ; var3 = var3(var4)
@@ -36,7 +36,7 @@ L 3:  13 [-]: GETIMPORT R5 9; var5 = 0xCA8DADC4
       16 [-]: NAMECALL R4 R0 K11; var5 = var0; var4 = var0[0xD2715720]
       17 [-]: CALL R4 2 2  ; var4 = var4(var5)
       18 [-]: LOADN R5 0   ; var5 = 0
-      19 [-]: JUMPIFNOTLT R5 R4 L6; goto L6 if var5 >= var460622
+      19 [-]: JUMPIFNOTLT R5 R4 L6; goto L6 if var5 >= var460577
       20 [-]: GETIMPORT R7 7; var7 = _T["gFishing"]["levelData"]
       21 [-]: GETTABLEKS R6 R7 K12; var6 = var7["perceptions"]
       22 [-]: DUPTABLE R7 15; 

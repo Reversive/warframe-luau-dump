@@ -78,13 +78,12 @@
        5 [-]: GETTABLEKS R7 R8 K3; var7 = var8["postProcess"]
        6 [-]: SETTABLEKS R7 R3 K3; var7["postProcess"] = var3
        7 [-]: LOADN R7 7   ; var7 = 7
-       8 [-]: JUMPIFNOTLE R7 R4 L0; goto L0 if var7 > var1509191
+       8 [-]: JUMPIFNOTLE R7 R4 L0; goto L0 if var7 > var1509168
        9 [-]: LOADN R7 23  ; var7 = 23
-      10 [-]: JUMPIFNOTLE R4 R7 L0; goto L0 if var4 > var329550
+      10 [-]: JUMPIFNOTLE R4 R7 L0; goto L0 if var4 > var329505
       11 [-]: GETIMPORT R7 5; var7 = 0x42DCC9F5
       12 [-]: SUBK R9 R4 K7; var9 = var4 - 7
-      13 [-]: DIVK R8 R9 K6; var8 = var9 / 16
-      14 [-]: LOADN R9 0   ; var9 = 0
+           14 [-]: LOADN R9 0   ; var9 = 0
       15 [-]: LOADN R10 1  ; var10 = 1
       16 [-]: CALL R7 4 2  ; var7 = var7(var8, var9, var10)
       17 [-]: MOVE R6 R7   ; var6 = var7
@@ -110,8 +109,7 @@ L 0:  25 [-]: GETTABLEKS R7 R3 K10; var7 = var3["sunRotation"]
       37 [-]: FASTCALL1 2 R10 L1; 
       38 [-]: GETIMPORT R9 19; var9 = 0x5BCED4C4[0xE4A5B3CA]
       39 [-]: CALL R9 2 2  ; var9 = var9(var10)
-L 1:  40 [-]: DIVK R8 R9 K15; var8 = var9 / 90
-      41 [-]: LOADN R9 0   ; var9 = 0
+L 1:       41 [-]: LOADN R9 0   ; var9 = 0
       42 [-]: LOADN R10 1  ; var10 = 1
       43 [-]: CALL R7 4 2  ; var7 = var7(var8, var9, var10)
       44 [-]: MOVE R5 R7   ; var5 = var7
@@ -145,7 +143,7 @@ L 2:  45 [-]: GETTABLEKS R7 R3 K10; var7 = var3["sunRotation"]
       72 [-]: GETTABLEKS R8 R3 K10; var8 = var3["sunRotation"]
       73 [-]: CALL R7 2 2  ; var7 = var7(var8)
       74 [-]: GETTABLEKS R9 R3 K29; var9 = var3["fogMaterial"]
-      75 [-]: FASTCALL1 62 R9 L3; 
+      75 [-]: FASTCALL1 64 R9 L3; 
       76 [-]: GETIMPORT R8 31; var8 = 0x7B998233
       77 [-]: CALL R8 2 2  ; var8 = var8(var9)
 L 3:  78 [-]: JUMPIF R8 L4 ; goto L4 if var8
@@ -173,7 +171,7 @@ L 3:  78 [-]: JUMPIF R8 L4 ; goto L4 if var8
      100 [-]: NAMECALL R8 R8 K37; var9 = var8; var8 = var8[0x1401E73D]
      101 [-]: CALL R8 4 1  ; var8(var9, var10, var11)
 L 4: 102 [-]: GETIMPORT R9 39; var9 = 0x5659C84E
-     103 [-]: FASTCALL1 62 R9 L5; 
+     103 [-]: FASTCALL1 64 R9 L5; 
      104 [-]: GETIMPORT R8 31; var8 = 0x7B998233
      105 [-]: CALL R8 2 2  ; var8 = var8(var9)
 L 5: 106 [-]: JUMPIF R8 L6 ; goto L6 if var8
@@ -201,7 +199,7 @@ L 5: 106 [-]: JUMPIF R8 L6 ; goto L6 if var8
      128 [-]: NAMECALL R8 R8 K37; var9 = var8; var8 = var8[0x1401E73D]
      129 [-]: CALL R8 4 1  ; var8(var9, var10, var11)
 L 6: 130 [-]: GETIMPORT R9 41; var9 = 0x823400A4
-     131 [-]: FASTCALL1 62 R9 L7; 
+     131 [-]: FASTCALL1 64 R9 L7; 
      132 [-]: GETIMPORT R8 31; var8 = 0x7B998233
      133 [-]: CALL R8 2 2  ; var8 = var8(var9)
 L 7: 134 [-]: JUMPIF R8 L8 ; goto L8 if var8
@@ -229,12 +227,12 @@ L 7: 134 [-]: JUMPIF R8 L8 ; goto L8 if var8
      156 [-]: NAMECALL R8 R8 K37; var9 = var8; var8 = var8[0x1401E73D]
      157 [-]: CALL R8 4 1  ; var8(var9, var10, var11)
 L 8: 158 [-]: GETTABLEKS R9 R3 K42; var9 = var3["bgZone"]
-     159 [-]: FASTCALL1 62 R9 L9; 
+     159 [-]: FASTCALL1 64 R9 L9; 
      160 [-]: GETIMPORT R8 31; var8 = 0x7B998233
      161 [-]: CALL R8 2 2  ; var8 = var8(var9)
 L 9: 162 [-]: JUMPIF R8 L11; goto L11 if var8
      163 [-]: GETTABLEKS R9 R3 K43; var9 = var3["sunFlare"]
-     164 [-]: FASTCALL1 62 R9 L10; 
+     164 [-]: FASTCALL1 64 R9 L10; 
      165 [-]: GETIMPORT R8 31; var8 = 0x7B998233
      166 [-]: CALL R8 2 2  ; var8 = var8(var9)
 L10: 167 [-]: JUMPIF R8 L11; goto L11 if var8
@@ -284,8 +282,7 @@ L11: 197 [-]: GETTABLEKS R8 R3 K3; var8 = var3["postProcess"]
 ; Is_vararg:       0
 ; Max Stack Size:  4
 
-       0 [-]: DIVK R3 R0 K1; var3 = var0 / 3600
-       1 [-]: FASTCALL1 12 R3 L0; 
+            1 [-]: FASTCALL1 12 R3 L0; 
        2 [-]: GETIMPORT R2 4; var2 = 0x5BCED4C4[0x55F27C30]
        3 [-]: CALL R2 2 2  ; var2 = var2(var3)
 L 0:   4 [-]: MODK R1 R2 K0; var1 = var2 24
@@ -306,8 +303,7 @@ L 0:   4 [-]: MODK R1 R2 K0; var1 = var2 24
        4 [-]: GETIMPORT R1 3; var1 = 0xBE190284
        5 [-]: NAMECALL R2 R1 K4; var3 = var1; var2 = var1[0x67B221FA]
        6 [-]: CALL R2 2 2  ; var2 = var2(var3)
-       7 [-]: DIVK R6 R2 K6; var6 = var2 / 3600
-       8 [-]: FASTCALL1 12 R6 L0; 
+            8 [-]: FASTCALL1 12 R6 L0; 
        9 [-]: GETIMPORT R5 9; var5 = 0x5BCED4C4[0x55F27C30]
       10 [-]: CALL R5 2 2  ; var5 = var5(var6)
 L 0:  11 [-]: MODK R4 R5 K5; var4 = var5 24
@@ -336,9 +332,9 @@ L 0:  11 [-]: MODK R4 R5 K5; var4 = var5 24
       34 [-]: SETTABLEKS R5 R4 K16; var5["lmColor"] = var4
       35 [-]: LOADN R5 1   ; var5 = 1
       36 [-]: SETTABLEKS R5 R4 K17; var5["lmAtten"] = var4
-      37 [-]: LOADK R5 K25 ; var5 = 0.59999999999999998
+      37 [-]: LOADK R5 K25 ; var5 = 0.60000002384185791
       38 [-]: SETTABLEKS R5 R4 K18; var5["saturation"] = var4
-      39 [-]: LOADK R5 K26 ; var5 = 0.070000000000000007
+      39 [-]: LOADK R5 K26 ; var5 = 0.070000000298023224
       40 [-]: SETTABLEKS R5 R4 K19; var5["exposure"] = var4
       41 [-]: GETIMPORT R5 28; var5 = 0xECA32C85
       42 [-]: SETTABLEKS R5 R4 K20; var5["atmosphereTexture"] = var4
@@ -353,21 +349,21 @@ L 0:  11 [-]: MODK R4 R5 K5; var4 = var5 24
       51 [-]: LOADN R9 14  ; var9 = 14
       52 [-]: CALL R6 4 2  ; var6 = var6(var7, var8, var9)
       53 [-]: SETTABLEKS R6 R5 K13; var6["sunColor"] = var5
-      54 [-]: LOADK R6 K29 ; var6 = 0.29999999999999999
+      54 [-]: LOADK R6 K29 ; var6 = 0.30000001192092896
       55 [-]: SETTABLEKS R6 R5 K14; var6["sunBrightness"] = var5
       56 [-]: LOADN R6 0   ; var6 = 0
       57 [-]: SETTABLEKS R6 R5 K15; var6["sunFlare"] = var5
       58 [-]: GETIMPORT R6 23; var6 = 0x60130201
-      59 [-]: LOADK R7 K30 ; var7 = 91.200000000000003
-      60 [-]: LOADK R8 K31 ; var8 = 93.599999999999994
-      61 [-]: LOADK R9 K32 ; var9 = 117.59999999999999
+      59 [-]: LOADK R7 K30 ; var7 = 91.199996948242188
+      60 [-]: LOADK R8 K31 ; var8 = 93.599998474121094
+      61 [-]: LOADK R9 K32 ; var9 = 117.59999847412109
       62 [-]: CALL R6 4 2  ; var6 = var6(var7, var8, var9)
       63 [-]: SETTABLEKS R6 R5 K16; var6["lmColor"] = var5
       64 [-]: LOADN R6 1   ; var6 = 1
       65 [-]: SETTABLEKS R6 R5 K17; var6["lmAtten"] = var5
       66 [-]: LOADN R6 1   ; var6 = 1
       67 [-]: SETTABLEKS R6 R5 K18; var6["saturation"] = var5
-      68 [-]: LOADK R6 K33 ; var6 = 0.10000000000000001
+      68 [-]: LOADK R6 K33 ; var6 = 0.10000000149011612
       69 [-]: SETTABLEKS R6 R5 K19; var6["exposure"] = var5
       70 [-]: GETIMPORT R6 35; var6 = 0x2BF5AB6B
       71 [-]: SETTABLEKS R6 R5 K20; var6["atmosphereTexture"] = var5
@@ -387,16 +383,16 @@ L 0:  11 [-]: MODK R4 R5 K5; var4 = var5 24
       85 [-]: LOADN R7 1   ; var7 = 1
       86 [-]: SETTABLEKS R7 R6 K15; var7["sunFlare"] = var6
       87 [-]: GETIMPORT R7 23; var7 = 0x60130201
-      88 [-]: LOADK R8 K36 ; var8 = 67.200000000000003
-      89 [-]: LOADK R9 K37 ; var9 = 69.599999999999994
-      90 [-]: LOADK R10 K31; var10 = 93.599999999999994
+      88 [-]: LOADK R8 K36 ; var8 = 67.199996948242188
+      89 [-]: LOADK R9 K37 ; var9 = 69.599998474121094
+      90 [-]: LOADK R10 K31; var10 = 93.599998474121094
       91 [-]: CALL R7 4 2  ; var7 = var7(var8, var9, var10)
       92 [-]: SETTABLEKS R7 R6 K16; var7["lmColor"] = var6
       93 [-]: LOADN R7 1   ; var7 = 1
       94 [-]: SETTABLEKS R7 R6 K17; var7["lmAtten"] = var6
       95 [-]: LOADN R7 1   ; var7 = 1
       96 [-]: SETTABLEKS R7 R6 K18; var7["saturation"] = var6
-      97 [-]: LOADK R7 K33 ; var7 = 0.10000000000000001
+      97 [-]: LOADK R7 K33 ; var7 = 0.10000000149011612
       98 [-]: SETTABLEKS R7 R6 K19; var7["exposure"] = var6
       99 [-]: GETIMPORT R7 39; var7 = 0xD95F3BA1
      100 [-]: SETTABLEKS R7 R6 K20; var7["atmosphereTexture"] = var6
@@ -416,16 +412,16 @@ L 0:  11 [-]: MODK R4 R5 K5; var4 = var5 24
      114 [-]: LOADN R8 1   ; var8 = 1
      115 [-]: SETTABLEKS R8 R7 K15; var8["sunFlare"] = var7
      116 [-]: GETIMPORT R8 23; var8 = 0x60130201
-     117 [-]: LOADK R9 K40 ; var9 = 122.10000000000001
-     118 [-]: LOADK R10 K41; var10 = 135.30000000000001
-     119 [-]: LOADK R11 K42; var11 = 156.20000000000002
+     117 [-]: LOADK R9 K40 ; var9 = 122.09999847412109
+     118 [-]: LOADK R10 K41; var10 = 135.30000305175781
+     119 [-]: LOADK R11 K42; var11 = 156.19999694824219
      120 [-]: CALL R8 4 2  ; var8 = var8(var9, var10, var11)
      121 [-]: SETTABLEKS R8 R7 K16; var8["lmColor"] = var7
      122 [-]: LOADK R8 K43 ; var8 = 0.75
      123 [-]: SETTABLEKS R8 R7 K17; var8["lmAtten"] = var7
      124 [-]: LOADN R8 1   ; var8 = 1
      125 [-]: SETTABLEKS R8 R7 K18; var8["saturation"] = var7
-     126 [-]: LOADK R8 K33 ; var8 = 0.10000000000000001
+     126 [-]: LOADK R8 K33 ; var8 = 0.10000000149011612
      127 [-]: SETTABLEKS R8 R7 K19; var8["exposure"] = var7
      128 [-]: GETIMPORT R8 45; var8 = 0x3E2867C9
      129 [-]: SETTABLEKS R8 R7 K20; var8["atmosphereTexture"] = var7
@@ -445,16 +441,16 @@ L 0:  11 [-]: MODK R4 R5 K5; var4 = var5 24
      143 [-]: LOADN R9 1   ; var9 = 1
      144 [-]: SETTABLEKS R9 R8 K15; var9["sunFlare"] = var8
      145 [-]: GETIMPORT R9 23; var9 = 0x60130201
-     146 [-]: LOADK R10 K46; var10 = 115.19999999999999
-     147 [-]: LOADK R11 K37; var11 = 69.599999999999994
-     148 [-]: LOADK R12 K47; var12 = 57.599999999999994
+     146 [-]: LOADK R10 K46; var10 = 115.19999694824219
+     147 [-]: LOADK R11 K37; var11 = 69.599998474121094
+     148 [-]: LOADK R12 K47; var12 = 57.599998474121094
      149 [-]: CALL R9 4 2  ; var9 = var9(var10, var11, var12)
      150 [-]: SETTABLEKS R9 R8 K16; var9["lmColor"] = var8
      151 [-]: LOADN R9 1   ; var9 = 1
      152 [-]: SETTABLEKS R9 R8 K17; var9["lmAtten"] = var8
      153 [-]: LOADN R9 1   ; var9 = 1
      154 [-]: SETTABLEKS R9 R8 K18; var9["saturation"] = var8
-     155 [-]: LOADK R9 K33 ; var9 = 0.10000000000000001
+     155 [-]: LOADK R9 K33 ; var9 = 0.10000000149011612
      156 [-]: SETTABLEKS R9 R8 K19; var9["exposure"] = var8
      157 [-]: GETIMPORT R9 49; var9 = 0xACD49094
      158 [-]: SETTABLEKS R9 R8 K20; var9["atmosphereTexture"] = var8
@@ -469,21 +465,21 @@ L 0:  11 [-]: MODK R4 R5 K5; var4 = var5 24
      167 [-]: LOADN R13 14 ; var13 = 14
      168 [-]: CALL R10 4 2 ; var10 = var10(var11, var12, var13)
      169 [-]: SETTABLEKS R10 R9 K13; var10["sunColor"] = var9
-     170 [-]: LOADK R10 K33; var10 = 0.10000000000000001
+     170 [-]: LOADK R10 K33; var10 = 0.10000000149011612
      171 [-]: SETTABLEKS R10 R9 K14; var10["sunBrightness"] = var9
      172 [-]: LOADN R10 0  ; var10 = 0
      173 [-]: SETTABLEKS R10 R9 K15; var10["sunFlare"] = var9
      174 [-]: GETIMPORT R10 23; var10 = 0x60130201
-     175 [-]: LOADK R11 K50; var11 = 129.19999999999999
-     176 [-]: LOADK R12 K51; var12 = 132.59999999999999
-     177 [-]: LOADK R13 K52; var13 = 166.59999999999999
+     175 [-]: LOADK R11 K50; var11 = 129.19999694824219
+     176 [-]: LOADK R12 K51; var12 = 132.60000610351562
+     177 [-]: LOADK R13 K52; var13 = 166.60000610351562
      178 [-]: CALL R10 4 2 ; var10 = var10(var11, var12, var13)
      179 [-]: SETTABLEKS R10 R9 K16; var10["lmColor"] = var9
      180 [-]: LOADN R10 1  ; var10 = 1
      181 [-]: SETTABLEKS R10 R9 K17; var10["lmAtten"] = var9
      182 [-]: LOADN R10 1  ; var10 = 1
      183 [-]: SETTABLEKS R10 R9 K18; var10["saturation"] = var9
-     184 [-]: LOADK R10 K33; var10 = 0.10000000000000001
+     184 [-]: LOADK R10 K33; var10 = 0.10000000149011612
      185 [-]: SETTABLEKS R10 R9 K19; var10["exposure"] = var9
      186 [-]: GETIMPORT R10 35; var10 = 0x2BF5AB6B
      187 [-]: SETTABLEKS R10 R9 K20; var10["atmosphereTexture"] = var9
@@ -510,9 +506,9 @@ L 0:  11 [-]: MODK R4 R5 K5; var4 = var5 24
      208 [-]: SETTABLEKS R11 R10 K16; var11["lmColor"] = var10
      209 [-]: LOADN R11 2  ; var11 = 2
      210 [-]: SETTABLEKS R11 R10 K17; var11["lmAtten"] = var10
-     211 [-]: LOADK R11 K25; var11 = 0.59999999999999998
+     211 [-]: LOADK R11 K25; var11 = 0.60000002384185791
      212 [-]: SETTABLEKS R11 R10 K18; var11["saturation"] = var10
-     213 [-]: LOADK R11 K53; var11 = 0.080000000000000002
+     213 [-]: LOADK R11 K53; var11 = 0.079999998211860657
      214 [-]: SETTABLEKS R11 R10 K19; var11["exposure"] = var10
      215 [-]: GETIMPORT R11 28; var11 = 0xECA32C85
      216 [-]: SETTABLEKS R11 R10 K20; var11["atmosphereTexture"] = var10
@@ -533,7 +529,7 @@ L 0:  11 [-]: MODK R4 R5 K5; var4 = var5 24
      231 [-]: CALL R12 0 2 ; var12 = var12(var13, ...)
      232 [-]: GETIMPORT R13 61; var13 = 0xA421AF95
      233 [-]: CALL R13 1 2 ; var13 = var13()
-     234 [-]: FASTCALL1 62 R12 L1; 
+     234 [-]: FASTCALL1 64 R12 L1; 
      235 [-]: MOVE R15 R12 ; var15 = var12
      236 [-]: GETIMPORT R14 63; var14 = 0x7B998233
      237 [-]: CALL R14 2 2 ; var14 = var14(var15)
@@ -576,7 +572,7 @@ L 2: 242 [-]: DUPTABLE R14 75;
      274 [-]: GETTABLEKS R15 R16 K74; var15 = var16["postProcess"]
      275 [-]: SETTABLEKS R15 R14 K74; var15["postProcess"] = var14
      276 [-]: GETIMPORT R16 78; var16 = 0xD3729A7B
-     277 [-]: FASTCALL1 62 R16 L3; 
+     277 [-]: FASTCALL1 64 R16 L3; 
      278 [-]: GETIMPORT R15 63; var15 = 0x7B998233
      279 [-]: CALL R15 2 2 ; var15 = var15(var16)
 L 3: 280 [-]: JUMPIF R15 L4; goto L4 if var15
@@ -605,14 +601,14 @@ L 6: 301 [-]: GETIMPORT R19 93; var19 = 0x67652851
      303 [-]: MULK R18 R19 K88; var18 = var19 * 0
      304 [-]: ADD R15 R15 R18; var15 = var15 + var18
      305 [-]: LOADN R18 24 ; var18 = 24
-     306 [-]: JUMPIFNOTLE R18 R15 L7; goto L7 if var18 > var84872999
+     306 [-]: JUMPIFNOTLE R18 R15 L7; goto L7 if var18 > var84872962
      307 [-]: SUBK R15 R15 K5; var15 = var15 - 24
 L 7: 308 [-]: LOADN R20 1  ; var20 = 1
      309 [-]: LENGTH R18 R17; var18 = #var17
      310 [-]: LOADN R19 1  ; var19 = 1
      311 [-]: FORNPREP R18 L11; nforprep start - [escape at L11] -- var18 = iterator
 L 8: 312 [-]: GETTABLE R21 R17 R20; var21 = var17[var20]
-     313 [-]: FASTCALL1 62 R21 L9; 
+     313 [-]: FASTCALL1 64 R21 L9; 
      314 [-]: MOVE R23 R21 ; var23 = var21
      315 [-]: GETIMPORT R22 63; var22 = 0x7B998233
      316 [-]: CALL R22 2 2 ; var22 = var22(var23)
@@ -628,13 +624,13 @@ L11: 322 [-]: LOADN R18 0  ; var18 = 0
      326 [-]: FORNPREP R19 L13; nforprep start - [escape at L13] -- var19 = iterator
 L12: 327 [-]: GETTABLE R23 R11 R21; var23 = var11[var21]
      328 [-]: GETTABLEKS R22 R23 K11; var22 = var23["time"]
-     329 [-]: JUMPIFLT R15 R22 L13; goto L13 if var15 < var1595019816
+     329 [-]: JUMPIFLT R15 R22 L13; goto L13 if var15 < var1595019784
      330 [-]: ADDK R18 R18 K95; var18 = var18 + 1
      331 [-]: FORNLOOP R19 L12; nforloop end - iterate + goto L12
 L13: 332 [-]: JUMPXEQKN R18 K88 L14 NOT; 
      333 [-]: LENGTH R18 R11; var18 = #var11
 L14: 334 [-]: LENGTH R19 R11; var19 = #var11
-     335 [-]: JUMPIFNOTLT R19 R18 L15; goto L15 if var19 >= var70215
+     335 [-]: JUMPIFNOTLT R19 R18 L15; goto L15 if var19 >= var70192
      336 [-]: LOADN R18 1  ; var18 = 1
 L15: 337 [-]: SUBK R19 R18 K95; var19 = var18 - 1
      338 [-]: JUMPXEQKN R19 K88 L16 NOT; 
@@ -651,7 +647,7 @@ L16: 340 [-]: GETTABLE R20 R11 R18; var20 = var11[var18]
      349 [-]: LOADN R24 0  ; var24 = 0
      350 [-]: LOADN R25 1  ; var25 = 1
      351 [-]: CALL R22 4 2 ; var22 = var22(var23, var24, var25)
-     352 [-]: JUMPIFEQ R20 R16 L17; goto L17 if var20 == var1314838
+     352 [-]: JUMPIFEQ R20 R16 L17; goto L17 if var20 == var1314862
      353 [-]: MOVE R16 R20 ; var16 = var20
 L17: 354 [-]: GETUPVAL R23 0; var23 = upvalues[0]
      355 [-]: MOVE R24 R21 ; var24 = var21
@@ -692,7 +688,7 @@ L17: 354 [-]: GETUPVAL R23 0; var23 = upvalues[0]
       15 [-]: CALL R4 2 0  ; var4, ... = var4(var5)
       16 [-]: NAMECALL R2 R2 K5; var3 = var2; var2 = var2[0x46A0EBF5]
       17 [-]: CALL R2 0 2  ; var2 = var2(var3, ...)
-      18 [-]: FASTCALL1 62 R0 L0; 
+      18 [-]: FASTCALL1 64 R0 L0; 
       19 [-]: MOVE R4 R0   ; var4 = var0
       20 [-]: GETIMPORT R3 9; var3 = 0x7B998233
       21 [-]: CALL R3 2 2  ; var3 = var3(var4)
@@ -724,13 +720,13 @@ L 1:  24 [-]: NAMECALL R3 R0 K10; var4 = var0; var3 = var0[0xD199E920]
       47 [-]: LOADN R3 0   ; var3 = 0
       48 [-]: NEWTABLE R4 0 4; var4 = {}
       49 [-]: LOADK R5 K15 ; var5 = 0.75
-      50 [-]: LOADK R6 K16 ; var6 = -0.20000000000000001
+      50 [-]: LOADK R6 K16 ; var6 = -0.20000000298023224
       51 [-]: LOADN R7 2   ; var7 = 2
       52 [-]: LOADN R8 0   ; var8 = 0
       53 [-]: SETLIST R4 R5 4 [1]; var4[1] = var5; var4[2] = var6; var4[3] = var7; var4[4] = var8; var4[5] = var9; 
       54 [-]: NEWTABLE R5 0 4; var5 = {}
       55 [-]: LOADN R6 0   ; var6 = 0
-      56 [-]: LOADK R7 K17 ; var7 = 0.90000000000000002
+      56 [-]: LOADK R7 K17 ; var7 = 0.89999997615814209
       57 [-]: LOADN R8 0   ; var8 = 0
       58 [-]: LOADN R9 0   ; var9 = 0
       59 [-]: SETLIST R5 R6 4 [1]; var5[1] = var6; var5[2] = var7; var5[3] = var8; var5[4] = var9; var5[5] = var10; 
@@ -738,10 +734,10 @@ L 1:  24 [-]: NAMECALL R3 R0 K10; var4 = var0; var3 = var0[0xD199E920]
       61 [-]: LOADN R7 0   ; var7 = 0
       62 [-]: LOADN R8 0   ; var8 = 0
       63 [-]: LOADN R9 0   ; var9 = 0
-      64 [-]: LOADK R10 K17; var10 = 0.90000000000000002
+      64 [-]: LOADK R10 K17; var10 = 0.89999997615814209
       65 [-]: SETLIST R6 R7 4 [1]; var6[1] = var7; var6[2] = var8; var6[3] = var9; var6[4] = var10; var6[5] = var11; 
       66 [-]: NEWTABLE R7 0 4; var7 = {}
-      67 [-]: LOADK R8 K18 ; var8 = 0.69999999999999996
+      67 [-]: LOADK R8 K18 ; var8 = 0.69999998807907104
       68 [-]: LOADN R9 1   ; var9 = 1
       69 [-]: LOADN R10 1  ; var10 = 1
       70 [-]: LOADN R11 1  ; var11 = 1
@@ -865,12 +861,12 @@ L 1:  24 [-]: NAMECALL R3 R0 K10; var4 = var0; var3 = var0[0xD199E920]
      188 [-]: LOADN R14 1  ; var14 = 1
 L 2: 189 [-]: GETIMPORT R17 22; var17 = 0x67652851
      190 [-]: CALL R17 1 2 ; var17 = var17()
-     191 [-]: MULK R16 R17 K20; var16 = var17 * 0.01
+     191 [-]: MULK R16 R17 K20; var16 = var17 * 0.0099999997764825821
      192 [-]: GETTABLE R17 R8 R14; var17 = var8[var14]
      193 [-]: MUL R15 R16 R17; var15 = var16 * var17
      194 [-]: ADD R3 R3 R15; var3 = var3 + var15
      195 [-]: LOADN R15 1  ; var15 = 1
-     196 [-]: JUMPIFNOTLT R15 R3 L3; goto L3 if var15 >= var386073383
+     196 [-]: JUMPIFNOTLT R15 R3 L3; goto L3 if var15 >= var386073346
      197 [-]: SUBK R3 R3 K23; var3 = var3 - 1
 L 3: 198 [-]: LOADN R16 1  ; var16 = 1
      199 [-]: MULK R17 R3 K24; var17 = var3 * 4
@@ -881,7 +877,7 @@ L 3: 198 [-]: LOADN R16 1  ; var16 = 1
      204 [-]: CALL R17 2 2 ; var17 = var17(var18)
 L 4: 205 [-]: ADDK R16 R17 K23; var16 = var17 + 1
      206 [-]: LOADN R17 4  ; var17 = 4
-     207 [-]: JUMPIFNOTLT R17 R16 L5; goto L5 if var17 >= var69703
+     207 [-]: JUMPIFNOTLT R17 R16 L5; goto L5 if var17 >= var69680
      208 [-]: LOADN R16 1  ; var16 = 1
 L 5: 209 [-]: FASTCALL1 12 R15 L6; 
      210 [-]: MOVE R19 R15 ; var19 = var15

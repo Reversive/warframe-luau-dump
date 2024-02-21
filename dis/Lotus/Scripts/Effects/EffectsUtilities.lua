@@ -30,9 +30,9 @@
        4 [-]: LOADN R5 1   ; var5 = 1
        5 [-]: DIV R4 R5 R3 ; var4 = var5 / var3
        6 [-]: LOADN R5 1   ; var5 = 1
-L 0:   7 [-]: JUMPIFNOTLT R5 R2 L2; goto L2 if var5 >= var84084270
+L 0:   7 [-]: JUMPIFNOTLT R5 R2 L2; goto L2 if var5 >= var84084266
        8 [-]: MUL R6 R3 R5 ; var6 = var3 * var5
-       9 [-]: JUMPIFNOTLT R0 R6 L1; goto L1 if var0 >= var132686
+       9 [-]: JUMPIFNOTLT R0 R6 L1; goto L1 if var0 >= var132641
       10 [-]: GETIMPORT R6 2; var6 = 0x9BAFFFE3
       11 [-]: GETTABLE R7 R1 R5; var7 = var1[var5]
       12 [-]: ADDK R9 R5 K0; var9 = var5 + 1
@@ -56,13 +56,13 @@ L 2:  22 [-]: GETTABLE R6 R1 R2; var6 = var1[var2]
 ; Is_vararg:       0
 ; Max Stack Size:  9
 
-       0 [-]: FASTCALL1 62 R0 L0; 
+       0 [-]: FASTCALL1 64 R0 L0; 
        1 [-]: MOVE R3 R0   ; var3 = var0
        2 [-]: GETIMPORT R2 1; var2 = 0x7B998233
        3 [-]: CALL R2 2 2  ; var2 = var2(var3)
 L 0:   4 [-]: JUMPIFNOT R2 L1; goto L1 if not var2
        5 [-]: RETURN R0 0  ; 
-L 1:   6 [-]: FASTCALL1 62 R0 L2; 
+L 1:   6 [-]: FASTCALL1 64 R0 L2; 
        7 [-]: MOVE R3 R0   ; var3 = var0
        8 [-]: GETIMPORT R2 1; var2 = 0x7B998233
        9 [-]: CALL R2 2 2  ; var2 = var2(var3)

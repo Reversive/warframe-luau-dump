@@ -33,7 +33,7 @@ L 0:   9 [-]: GETIMPORT R6 1; var6 = 0x15D6612F
       13 [-]: SETTABLE R5 R0 R4; var5[var0] = var4
       14 [-]: FORNLOOP R2 L0; nforloop end - iterate + goto L0
 L 1:  15 [-]: LOADN R2 1   ; var2 = 1
-      16 [-]: JUMPIFNOTLT R1 R2 L6; goto L6 if var1 >= var66631
+      16 [-]: JUMPIFNOTLT R1 R2 L6; goto L6 if var1 >= var66608
       17 [-]: LOADN R4 1   ; var4 = 1
       18 [-]: GETIMPORT R5 1; var5 = 0x15D6612F
       19 [-]: LENGTH R2 R5 ; var2 = #var5
@@ -46,7 +46,7 @@ L 2:  22 [-]: GETIMPORT R5 4; var5 = 0x9BAFFFE3
       26 [-]: CALL R5 4 2  ; var5 = var5(var6, var7, var8)
       27 [-]: GETIMPORT R8 1; var8 = 0x15D6612F
       28 [-]: GETTABLE R7 R8 R4; var7 = var8[var4]
-      29 [-]: FASTCALL1 62 R7 L3; 
+      29 [-]: FASTCALL1 64 R7 L3; 
       30 [-]: GETIMPORT R6 8; var6 = 0x7B998233
       31 [-]: CALL R6 2 2  ; var6 = var6(var7)
 L 3:  32 [-]: JUMPIF R6 L4 ; goto L4 if var6

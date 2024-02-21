@@ -28,10 +28,8 @@
       21 [-]: SETGLOBAL R6 K8; "StartChallenge" = var6
       22 [-]: DUPCLOSURE R6 K9; 
       23 [-]: SETGLOBAL R6 K10; "PanicButtonOverride" = var6
-      24 [-]: DUPCLOSURE R6 K11; 
-      25 [-]: SETGLOBAL R6 K12; "OnTrainingResultUploaded" = var6
-      26 [-]: CLOSEUPVALS R3; 
-      27 [-]: RETURN R0 0  ; 
+      24 [-]: CLOSEUPVALS R3; 
+      25 [-]: RETURN R0 0  ; 
 
 
 ; Name:            
@@ -155,7 +153,7 @@ L 2:  45 [-]: GETUPVAL R6 2; var6 = upvalues[2]
       51 [-]: GETTABLEKS R7 R8 K24; var7 = var8[0x06D055F9]
       52 [-]: GETIMPORT R9 25; var9 = _T["hackingTutorialOverride"]
       53 [-]: LOADN R10 3  ; var10 = 3
-      54 [-]: JUMPIFLT R10 R9 L3; goto L3 if var10 < var16779291
+      54 [-]: JUMPIFLT R10 R9 L3; goto L3 if var10 < var16779270
       55 [-]: LOADB R8 0 +1; var8 = false
 L 3:  56 [-]: LOADB R8 1   ; var8 = true
 L 4:  57 [-]: LOADN R9 2   ; var9 = 2
@@ -190,7 +188,7 @@ L 5:  62 [-]: FORGLOOP R1 L0 2 [inext];
 ; Is_vararg:       0
 ; Max Stack Size:  5
 
-       0 [-]: FASTCALL1 62 R0 L0; 
+       0 [-]: FASTCALL1 64 R0 L0; 
        1 [-]: MOVE R4 R0   ; var4 = var0
        2 [-]: GETIMPORT R3 1; var3 = 0x7B998233
        3 [-]: CALL R3 2 2  ; var3 = var3(var4)
@@ -200,28 +198,6 @@ L 1:   6 [-]: JUMPXEQKN R1 K2 L2 NOT;
        7 [-]: NAMECALL R3 R2 K3; var4 = var2; var3 = var2[0xF4E253B6]
        8 [-]: CALL R3 2 1  ; var3(var4)
 L 2:   9 [-]: RETURN R0 0  ; 
-
-
-; Name:            
-; Defined at line: 87
-; #Upvalues:       0
-; #Parameters:     2
-; Is_vararg:       0
-; Max Stack Size:  10
-
-       0 [-]: GETIMPORT R2 1; var2 = 0x3D106989
-       1 [-]: LOADK R4 K2  ; var4 = "Dojo: OnTrainingResultUploaded result="
-       2 [-]: GETIMPORT R8 4; var8 = 0x64FB1586
-       3 [-]: MOVE R9 R0   ; var9 = var0
-       4 [-]: CALL R8 2 2  ; var8 = var8(var9)
-       5 [-]: MOVE R5 R8   ; var5 = var8
-       6 [-]: LOADK R6 K5  ; var6 = ", body="
-       7 [-]: GETIMPORT R7 4; var7 = 0x64FB1586
-       8 [-]: MOVE R8 R1   ; var8 = var1
-       9 [-]: CALL R7 2 2  ; var7 = var7(var8)
-      10 [-]: CONCAT R3 R4 R7; var3 = var4 .. var7
-      11 [-]: CALL R2 2 1  ; var2(var3)
-      12 [-]: RETURN R0 0  ; 
 
 
 

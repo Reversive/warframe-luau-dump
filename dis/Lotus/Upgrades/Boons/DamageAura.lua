@@ -60,12 +60,12 @@
 ; Is_vararg:       0
 ; Max Stack Size:  11
 
-       0 [-]: FASTCALL1 62 R0 L0; 
+       0 [-]: FASTCALL1 64 R0 L0; 
        1 [-]: MOVE R7 R0   ; var7 = var0
        2 [-]: GETIMPORT R6 1; var6 = 0x7B998233
        3 [-]: CALL R6 2 2  ; var6 = var6(var7)
 L 0:   4 [-]: JUMPIF R6 L2 ; goto L2 if var6
-       5 [-]: FASTCALL1 62 R1 L1; 
+       5 [-]: FASTCALL1 64 R1 L1; 
        6 [-]: MOVE R7 R1   ; var7 = var1
        7 [-]: GETIMPORT R6 1; var6 = 0x7B998233
        8 [-]: CALL R6 2 2  ; var6 = var6(var7)
@@ -129,7 +129,7 @@ L 5:  24 [-]: NAMECALL R7 R0 K6; var8 = var0; var7 = var0[0x388577D5]
 ; Is_vararg:       0
 ; Max Stack Size:  13
 
-       0 [-]: FASTCALL1 62 R1 L0; 
+       0 [-]: FASTCALL1 64 R1 L0; 
        1 [-]: MOVE R6 R1   ; var6 = var1
        2 [-]: GETIMPORT R5 1; var5 = 0x7B998233
        3 [-]: CALL R5 2 2  ; var5 = var5(var6)
@@ -148,12 +148,12 @@ L 3:  14 [-]: GETIMPORT R6 7; var6 = 0xCFC01047
       16 [-]: GETTABLE R7 R9 R5; var7 = var9[var5]
       17 [-]: CALL R6 2 4  ; var6, var7, var8 = var6(var7)
       18 [-]: FORGPREP_NEXT R6 L7; 
-L 4:  19 [-]: FASTCALL1 62 R10 L5; 
+L 4:  19 [-]: FASTCALL1 64 R10 L5; 
       20 [-]: MOVE R12 R10 ; var12 = var10
       21 [-]: GETIMPORT R11 1; var11 = 0x7B998233
       22 [-]: CALL R11 2 2 ; var11 = var11(var12)
 L 5:  23 [-]: JUMPIF R11 L6; goto L6 if var11
-      24 [-]: JUMPIFNOTEQ R10 R0 L7; goto L7 if var10 ~= var265294
+      24 [-]: JUMPIFNOTEQ R10 R0 L7; goto L7 if var10 ~= var265249
 L 6:  25 [-]: GETIMPORT R12 4; var12 = _T["damageAura"]
       26 [-]: GETTABLE R11 R12 R5; var11 = var12[var5]
       27 [-]: LOADNIL R12  ; var12 = nil
@@ -207,9 +207,9 @@ L 0:  16 [-]: NAMECALL R7 R0 K11; var8 = var0; var7 = var0[0x2047CFE7]
       20 [-]: GETTABLE R7 R1 R8; var7 = var1[var8]
       21 [-]: JUMPIF R7 L1 ; goto L1 if var7
       22 [-]: LOADN R7 0   ; var7 = 0
-      23 [-]: JUMPIFNOTLT R7 R6 L7; goto L7 if var7 >= var1863
+      23 [-]: JUMPIFNOTLT R7 R6 L7; goto L7 if var7 >= var1840
 L 1:  24 [-]: LOADN R7 0   ; var7 = 0
-      25 [-]: JUMPIFNOTLE R5 R7 L5; goto L5 if var5 > var2055
+      25 [-]: JUMPIFNOTLE R5 R7 L5; goto L5 if var5 > var2108
       26 [-]: GETUPVAL R8 0; var8 = upvalues[0]
       27 [-]: GETTABLE R7 R1 R8; var7 = var1[var8]
       28 [-]: JUMPIFNOT R7 L4; goto L4 if not var7
@@ -218,7 +218,7 @@ L 1:  24 [-]: LOADN R7 0   ; var7 = 0
       31 [-]: NAMECALL R7 R0 K12; var8 = var0; var7 = var0[0x479483BB]
       32 [-]: CALL R7 3 1  ; var7(var8, var9)
 L 2:  33 [-]: LOADN R7 0   ; var7 = 0
-      34 [-]: JUMPIFNOTLE R6 R7 L3; goto L3 if var6 > var264470
+      34 [-]: JUMPIFNOTLE R6 R7 L3; goto L3 if var6 > var264494
       35 [-]: MOVE R9 R4   ; var9 = var4
       36 [-]: GETIMPORT R10 14; var10 = 0x0C212CB3
       37 [-]: LOADN R11 6  ; var11 = 6
@@ -240,7 +240,7 @@ L 3:  52 [-]: GETIMPORT R6 20; var6 = 0x7FE3DF7D
 L 4:  53 [-]: GETIMPORT R7 22; var7 = 0xF732982C
       54 [-]: ADD R5 R5 R7 ; var5 = var5 + var7
 L 5:  55 [-]: LOADN R7 0   ; var7 = 0
-      56 [-]: JUMPIFNOTLE R6 R7 L6; goto L6 if var6 > var264470
+      56 [-]: JUMPIFNOTLE R6 R7 L6; goto L6 if var6 > var264494
       57 [-]: MOVE R9 R4   ; var9 = var4
       58 [-]: NAMECALL R7 R3 K23; var8 = var3; var7 = var3[0x55481E0D]
       59 [-]: CALL R7 3 1  ; var7(var8, var9)
@@ -248,10 +248,10 @@ L 5:  55 [-]: LOADN R7 0   ; var7 = 0
       61 [-]: NAMECALL R7 R3 K24; var8 = var3; var7 = var3[0x34E75661]
       62 [-]: CALL R7 3 1  ; var7(var8, var9)
 L 6:  63 [-]: GETIMPORT R7 26; var7 = 0xCBD666E1
-      64 [-]: LOADK R8 K27 ; var8 = 0.10000000000000001
+      64 [-]: LOADK R8 K27 ; var8 = 0.10000000149011612
       65 [-]: CALL R7 2 1  ; var7(var8)
-      66 [-]: SUBK R5 R5 K27; var5 = var5 - 0.10000000000000001
-      67 [-]: SUBK R6 R6 K27; var6 = var6 - 0.10000000000000001
+      66 [-]: SUBK R5 R5 K27; var5 = var5 - 0.10000000149011612
+      67 [-]: SUBK R6 R6 K27; var6 = var6 - 0.10000000149011612
       68 [-]: JUMPBACK L0  ; goto L0
 L 7:  69 [-]: MOVE R9 R4   ; var9 = var4
       70 [-]: NAMECALL R7 R3 K23; var8 = var3; var7 = var3[0x55481E0D]

@@ -25,7 +25,7 @@
        3 [-]: NAMECALL R2 R2 K3; var3 = var2; var2 = var2[0x8733746A]
        4 [-]: CALL R2 3 2  ; var2 = var2(var3, var4)
        5 [-]: GETIMPORT R3 5; var3 = 0x939B0636
-       6 [-]: JUMPIFEQ R2 R3 L0; goto L0 if var2 == var65581
+       6 [-]: JUMPIFEQ R2 R3 L0; goto L0 if var2 == var65571
        7 [-]: RETURN R0 0  ; 
 L 0:   8 [-]: LOADN R2 0   ; var2 = 0
        9 [-]: NAMECALL R3 R1 K6; var4 = var1; var3 = var1[0xFA9E477F]
@@ -43,7 +43,7 @@ L 1:  17 [-]: GETTABLE R7 R3 R6; var7 = var3[var6]
       21 [-]: GETTABLE R8 R3 R6; var8 = var3[var6]
       22 [-]: GETTABLEKS R7 R8 K9; var7 = var8["distanceToTarget"]
       23 [-]: GETIMPORT R8 11; var8 = 0x443A8D0B
-      24 [-]: JUMPIFNOTLE R7 R8 L2; goto L2 if var7 > var68167
+      24 [-]: JUMPIFNOTLE R7 R8 L2; goto L2 if var7 > var68144
       25 [-]: LOADN R10 1  ; var10 = 1
       26 [-]: GETIMPORT R12 11; var12 = 0x443A8D0B
       27 [-]: DIV R11 R7 R12; var11 = var7 / var12

@@ -31,7 +31,7 @@
        5 [-]: GETIMPORT R3 6; var3 = _T
        6 [-]: NEWTABLE R4 0 0; var4 = {}
        7 [-]: SETTABLEKS R4 R3 K4; var4["gHunting"] = var3
-L 0:   8 [-]: JUMPIFNOTEQ R1 R2 L1; goto L1 if var1 ~= var328526
+L 0:   8 [-]: JUMPIFNOTEQ R1 R2 L1; goto L1 if var1 ~= var328481
        9 [-]: GETIMPORT R3 5; var3 = _T["gHunting"]
       10 [-]: LOADB R4 1   ; var4 = true
       11 [-]: SETTABLEKS R4 R3 K7; var4["isLocalAvatarInCallPoint"] = var3
@@ -58,7 +58,7 @@ L 1:  17 [-]: RETURN R0 0  ;
        5 [-]: GETIMPORT R3 6; var3 = _T
        6 [-]: NEWTABLE R4 0 0; var4 = {}
        7 [-]: SETTABLEKS R4 R3 K4; var4["gHunting"] = var3
-L 0:   8 [-]: JUMPIFNOTEQ R1 R2 L1; goto L1 if var1 ~= var328526
+L 0:   8 [-]: JUMPIFNOTEQ R1 R2 L1; goto L1 if var1 ~= var328481
        9 [-]: GETIMPORT R3 5; var3 = _T["gHunting"]
       10 [-]: LOADB R4 0   ; var4 = false
       11 [-]: SETTABLEKS R4 R3 K7; var4["isLocalAvatarInCallPoint"] = var3

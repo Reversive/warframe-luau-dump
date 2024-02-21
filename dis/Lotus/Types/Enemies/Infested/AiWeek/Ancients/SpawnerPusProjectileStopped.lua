@@ -33,7 +33,7 @@
        9 [-]: CALL R8 2 0  ; var8, ... = var8(var9)
       10 [-]: NAMECALL R3 R3 K10; var4 = var3; var3 = var3[0x05909209]
       11 [-]: CALL R3 0 2  ; var3 = var3(var4, ...)
-      12 [-]: FASTCALL1 62 R3 L0; 
+      12 [-]: FASTCALL1 64 R3 L0; 
       13 [-]: MOVE R5 R3   ; var5 = var3
       14 [-]: GETIMPORT R4 12; var4 = 0x7B998233
       15 [-]: CALL R4 2 2  ; var4 = var4(var5)

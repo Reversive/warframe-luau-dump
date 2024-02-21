@@ -78,7 +78,7 @@
 ; Max Stack Size:  9
 
        0 [-]: GETTABLEKS R3 R1 K0; var3 = var1["colors"]
-       1 [-]: FASTCALL1 62 R3 L0; 
+       1 [-]: FASTCALL1 64 R3 L0; 
        2 [-]: GETIMPORT R2 2; var2 = 0x7B998233
        3 [-]: CALL R2 2 2  ; var2 = var2(var3)
 L 0:   4 [-]: JUMPIF R2 L1 ; goto L1 if var2
@@ -116,7 +116,7 @@ L 4:  23 [-]: GETIMPORT R3 5; var3 = _T["DojoMgr"]
 ; Max Stack Size:  7
 
        0 [-]: GETTABLEKS R3 R1 K0; var3 = var1["lights"]
-       1 [-]: FASTCALL1 62 R3 L0; 
+       1 [-]: FASTCALL1 64 R3 L0; 
        2 [-]: GETIMPORT R2 2; var2 = 0x7B998233
        3 [-]: CALL R2 2 2  ; var2 = var2(var3)
 L 0:   4 [-]: JUMPIF R2 L1 ; goto L1 if var2
@@ -175,13 +175,13 @@ L 0:   5 [-]: LOADB R2 0   ; var2 = false
 ; Max Stack Size:  12
 
        0 [-]: GETTABLEKS R1 R0 K0; var1 = var0["pendingColors"]
-       1 [-]: FASTCALL1 62 R1 L0; 
+       1 [-]: FASTCALL1 64 R1 L0; 
        2 [-]: MOVE R3 R1   ; var3 = var1
        3 [-]: GETIMPORT R2 2; var2 = 0x7B998233
        4 [-]: CALL R2 2 2  ; var2 = var2(var3)
 L 0:   5 [-]: JUMPIFNOT R2 L1; goto L1 if not var2
        6 [-]: GETTABLEKS R1 R0 K3; var1 = var0["colors"]
-L 1:   7 [-]: FASTCALL1 62 R1 L2; 
+L 1:   7 [-]: FASTCALL1 64 R1 L2; 
        8 [-]: MOVE R3 R1   ; var3 = var1
        9 [-]: GETIMPORT R2 2; var2 = 0x7B998233
       10 [-]: CALL R2 2 2  ; var2 = var2(var3)
@@ -195,7 +195,7 @@ L 3:  17 [-]: MOVE R7 R2   ; var7 = var2
       18 [-]: JUMPIF R7 L5 ; goto L5 if var7
       19 [-]: GETTABLE R8 R1 R6; var8 = var1[var6]
       20 [-]: GETIMPORT R9 10; var9 = 0x6C97A788["CustomizationColorPalette_sDefaultColor"]
-      21 [-]: JUMPIFEQ R8 R9 L4; goto L4 if var8 == var16779035
+      21 [-]: JUMPIFEQ R8 R9 L4; goto L4 if var8 == var16779014
       22 [-]: LOADB R7 0 +1; var7 = false
 L 4:  23 [-]: LOADB R7 1   ; var7 = true
 L 5:  24 [-]: LOADNIL R8   ; var8 = nil
@@ -226,13 +226,13 @@ L 9:  41 [-]: RETURN R3 1  ;
 ; Max Stack Size:  12
 
        0 [-]: GETTABLEKS R1 R0 K0; var1 = var0["pendingLights"]
-       1 [-]: FASTCALL1 62 R1 L0; 
+       1 [-]: FASTCALL1 64 R1 L0; 
        2 [-]: MOVE R3 R1   ; var3 = var1
        3 [-]: GETIMPORT R2 2; var2 = 0x7B998233
        4 [-]: CALL R2 2 2  ; var2 = var2(var3)
 L 0:   5 [-]: JUMPIFNOT R2 L1; goto L1 if not var2
        6 [-]: GETTABLEKS R1 R0 K3; var1 = var0["lights"]
-L 1:   7 [-]: FASTCALL1 62 R1 L2; 
+L 1:   7 [-]: FASTCALL1 64 R1 L2; 
        8 [-]: MOVE R3 R1   ; var3 = var1
        9 [-]: GETIMPORT R2 2; var2 = 0x7B998233
       10 [-]: CALL R2 2 2  ; var2 = var2(var3)
@@ -245,7 +245,7 @@ L 3:  16 [-]: MOVE R7 R2   ; var7 = var2
       17 [-]: JUMPIF R7 L5 ; goto L5 if var7
       18 [-]: GETTABLE R8 R1 R6; var8 = var1[var6]
       19 [-]: GETIMPORT R9 6; var9 = 0x6C97A788["CustomizationColorPalette_sDefaultColor"]
-      20 [-]: JUMPIFEQ R8 R9 L4; goto L4 if var8 == var16779035
+      20 [-]: JUMPIFEQ R8 R9 L4; goto L4 if var8 == var16779014
       21 [-]: LOADB R7 0 +1; var7 = false
 L 4:  22 [-]: LOADB R7 1   ; var7 = true
 L 5:  23 [-]: LOADNIL R8   ; var8 = nil
@@ -285,7 +285,7 @@ L 0:   4 [-]: GETIMPORT R2 2; var2 = 0x89326C93
        7 [-]: CALL R5 2 0  ; var5, ... = var5(var6)
        8 [-]: NAMECALL R2 R2 K6; var3 = var2; var2 = var2[0x4E5939A5]
        9 [-]: CALL R2 0 2  ; var2 = var2(var3, ...)
-      10 [-]: FASTCALL1 62 R2 L1; 
+      10 [-]: FASTCALL1 64 R2 L1; 
       11 [-]: MOVE R4 R2   ; var4 = var2
       12 [-]: GETIMPORT R3 8; var3 = 0x7B998233
       13 [-]: CALL R3 2 2  ; var3 = var3(var4)
@@ -303,7 +303,7 @@ L 3:  19 [-]: GETIMPORT R3 14; var3 = _T["DojoMgr"]["mDojo"]
       25 [-]: CALL R4 2 2  ; var4 = var4(var5)
       26 [-]: NAMECALL R5 R2 K9; var6 = var2; var5 = var2[0xF537CFC7]
       27 [-]: CALL R5 2 2  ; var5 = var5(var6)
-      28 [-]: JUMPIFEQ R4 R5 L4; goto L4 if var4 == var65581
+      28 [-]: JUMPIFEQ R4 R5 L4; goto L4 if var4 == var65571
       29 [-]: RETURN R0 0  ; 
 L 4:  30 [-]: NAMECALL R4 R2 K16; var5 = var2; var4 = var2[0xE79E7EF4]
       31 [-]: CALL R4 2 2  ; var4 = var4(var5)
@@ -382,19 +382,19 @@ L 6:  99 [-]: JUMPXEQKNIL R8 L7 NOT;
 L 7: 104 [-]: LOADNIL R9   ; var9 = nil
      105 [-]: GETUPVAL R11 3; var11 = upvalues[3]
      106 [-]: GETTABLEKS R10 R11 K45; var10 = var11["CANCEL"]
-     107 [-]: JUMPIFNOTEQ R8 R10 L8; goto L8 if var8 ~= var2082
+     107 [-]: JUMPIFNOTEQ R8 R10 L8; goto L8 if var8 ~= var2128
      108 [-]: CLOSEUPVALS R8; 
      109 [-]: RETURN R0 0  ; 
 L 8: 110 [-]: GETUPVAL R11 3; var11 = upvalues[3]
      111 [-]: GETTABLEKS R10 R11 K46; var10 = var11["CONTRIBUTE"]
-     112 [-]: JUMPIFNOTEQ R8 R10 L12; goto L12 if var8 ~= var-1442444516
+     112 [-]: JUMPIFNOTEQ R8 R10 L12; goto L12 if var8 ~= var-1442444481
      113 [-]: GETTABLEKS R11 R6 K47; var11 = var6["pendingColors"]
-     114 [-]: FASTCALL1 62 R11 L9; 
+     114 [-]: FASTCALL1 64 R11 L9; 
      115 [-]: GETIMPORT R10 8; var10 = 0x7B998233
      116 [-]: CALL R10 2 2 ; var10 = var10(var11)
 L 9: 117 [-]: JUMPIFNOT R10 L11; goto L11 if not var10
      118 [-]: GETTABLEKS R11 R6 K48; var11 = var6["pendingLights"]
-     119 [-]: FASTCALL1 62 R11 L10; 
+     119 [-]: FASTCALL1 64 R11 L10; 
      120 [-]: GETIMPORT R10 8; var10 = 0x7B998233
      121 [-]: CALL R10 2 2 ; var10 = var10(var11)
 L10: 122 [-]: JUMPIFNOT R10 L11; goto L11 if not var10
@@ -411,12 +411,12 @@ L11: 129 [-]: GETIMPORT R10 52; var10 = 0xB009BBC6
      133 [-]: JUMP L13     ; goto L13
 L12: 134 [-]: GETUPVAL R11 3; var11 = upvalues[3]
      135 [-]: GETTABLEKS R10 R11 K55; var10 = var11["RUSH"]
-     136 [-]: JUMPIFNOTEQ R8 R10 L13; goto L13 if var8 ~= var3410510
+     136 [-]: JUMPIFNOTEQ R8 R10 L13; goto L13 if var8 ~= var3410465
      137 [-]: GETIMPORT R10 52; var10 = 0xB009BBC6
      138 [-]: GETIMPORT R11 57; var11 = 0x225828FD
      139 [-]: CALL R10 2 2 ; var10 = var10(var11)
      140 [-]: MOVE R9 R10  ; var9 = var10
-L13: 141 [-]: FASTCALL1 62 R9 L14; 
+L13: 141 [-]: FASTCALL1 64 R9 L14; 
      142 [-]: MOVE R11 R9  ; var11 = var9
      143 [-]: GETIMPORT R10 8; var10 = 0x7B998233
      144 [-]: CALL R10 2 2 ; var10 = var10(var11)
@@ -425,7 +425,7 @@ L14: 145 [-]: JUMPIF R10 L17; goto L17 if var10
      147 [-]: MOVE R12 R9  ; var12 = var9
      148 [-]: NAMECALL R10 R10 K35; var11 = var10; var10 = var10[0xCFBA257F]
      149 [-]: CALL R10 3 2 ; var10 = var10(var11, var12)
-     150 [-]: FASTCALL1 62 R10 L15; 
+     150 [-]: FASTCALL1 64 R10 L15; 
      151 [-]: MOVE R12 R10 ; var12 = var10
      152 [-]: GETIMPORT R11 8; var11 = 0x7B998233
      153 [-]: CALL R11 2 2 ; var11 = var11(var12)
@@ -450,16 +450,16 @@ L16: 171 [-]: CLOSEUPVALS R8;
      172 [-]: RETURN R0 0  ; 
 L17: 173 [-]: GETUPVAL R11 3; var11 = upvalues[3]
      174 [-]: GETTABLEKS R10 R11 K62; var10 = var11["PREVIEW_COLOURS"]
-     175 [-]: JUMPIFNOTEQ R8 R10 L32; goto L32 if var8 ~= var738265669
+     175 [-]: JUMPIFNOTEQ R8 R10 L32; goto L32 if var8 ~= var738265676
      176 [-]: NAMECALL R10 R1 K63; var11 = var1; var10 = var1[0x5B89142C]
      177 [-]: CALL R10 2 2 ; var10 = var10(var11)
      178 [-]: GETTABLEKS R12 R6 K47; var12 = var6["pendingColors"]
-     179 [-]: FASTCALL1 62 R12 L18; 
+     179 [-]: FASTCALL1 64 R12 L18; 
      180 [-]: GETIMPORT R11 8; var11 = 0x7B998233
      181 [-]: CALL R11 2 2 ; var11 = var11(var12)
 L18: 182 [-]: JUMPIFNOT R11 L20; goto L20 if not var11
      183 [-]: GETTABLEKS R12 R6 K48; var12 = var6["pendingLights"]
-     184 [-]: FASTCALL1 62 R12 L19; 
+     184 [-]: FASTCALL1 64 R12 L19; 
      185 [-]: GETIMPORT R11 8; var11 = 0x7B998233
      186 [-]: CALL R11 2 2 ; var11 = var11(var12)
 L19: 187 [-]: JUMPIFNOT R11 L20; goto L20 if not var11
@@ -470,7 +470,7 @@ L19: 187 [-]: JUMPIFNOT R11 L20; goto L20 if not var11
      192 [-]: CLOSEUPVALS R8; 
      193 [-]: RETURN R0 0  ; 
 L20: 194 [-]: GETTABLEKS R12 R6 K47; var12 = var6["pendingColors"]
-     195 [-]: FASTCALL1 62 R12 L21; 
+     195 [-]: FASTCALL1 64 R12 L21; 
      196 [-]: GETIMPORT R11 8; var11 = 0x7B998233
      197 [-]: CALL R11 2 2 ; var11 = var11(var12)
 L21: 198 [-]: JUMPIF R11 L22; goto L22 if var11
@@ -480,7 +480,7 @@ L21: 198 [-]: JUMPIF R11 L22; goto L22 if var11
      202 [-]: NAMECALL R11 R11 K65; var12 = var11; var11 = var11[0x193134D5]
      203 [-]: CALL R11 4 1 ; var11(var12, var13, var14)
 L22: 204 [-]: GETTABLEKS R12 R6 K48; var12 = var6["pendingLights"]
-     205 [-]: FASTCALL1 62 R12 L23; 
+     205 [-]: FASTCALL1 64 R12 L23; 
      206 [-]: GETIMPORT R11 8; var11 = 0x7B998233
      207 [-]: CALL R11 2 2 ; var11 = var11(var12)
 L23: 208 [-]: JUMPIF R11 L24; goto L24 if var11
@@ -494,7 +494,7 @@ L24: 214 [-]: GETIMPORT R11 29; var11 = _T
      216 [-]: SETTABLEKS R12 R11 K24; var12["PaintBotColorsActive"] = var11
      217 [-]: LOADN R11 20 ; var11 = 20
 L25: 218 [-]: LOADN R12 0  ; var12 = 0
-     219 [-]: JUMPIFNOTLT R12 R11 L27; goto L27 if var12 >= var-519435195
+     219 [-]: JUMPIFNOTLT R12 R11 L27; goto L27 if var12 >= var-519435188
      220 [-]: NAMECALL R12 R10 K27; var13 = var10; var12 = var10[0x0803EEE1]
      221 [-]: CALL R12 2 2 ; var12 = var12(var13)
      222 [-]: GETIMPORT R14 68; var14 = 0x603636AD
@@ -530,7 +530,7 @@ L27: 243 [-]: GETIMPORT R12 29; var12 = _T
      252 [-]: LOADB R13 0  ; var13 = false
      253 [-]: SETTABLEKS R13 R12 K24; var13["PaintBotColorsActive"] = var12
      254 [-]: GETTABLEKS R13 R6 K47; var13 = var6["pendingColors"]
-     255 [-]: FASTCALL1 62 R13 L28; 
+     255 [-]: FASTCALL1 64 R13 L28; 
      256 [-]: GETIMPORT R12 8; var12 = 0x7B998233
      257 [-]: CALL R12 2 2 ; var12 = var12(var13)
 L28: 258 [-]: JUMPIF R12 L29; goto L29 if var12
@@ -539,7 +539,7 @@ L28: 258 [-]: JUMPIF R12 L29; goto L29 if var12
      261 [-]: MOVE R14 R6  ; var14 = var6
      262 [-]: CALL R12 3 1 ; var12(var13, var14)
 L29: 263 [-]: GETTABLEKS R13 R6 K48; var13 = var6["pendingLights"]
-     264 [-]: FASTCALL1 62 R13 L30; 
+     264 [-]: FASTCALL1 64 R13 L30; 
      265 [-]: GETIMPORT R12 8; var12 = 0x7B998233
      266 [-]: CALL R12 2 2 ; var12 = var12(var13)
 L30: 267 [-]: JUMPIF R12 L31; goto L31 if var12
@@ -551,10 +551,10 @@ L31: 272 [-]: CLOSEUPVALS R8;
      273 [-]: RETURN R0 0  ; 
 L32: 274 [-]: GETUPVAL R11 3; var11 = upvalues[3]
      275 [-]: GETTABLEKS R10 R11 K77; var10 = var11["SET_COLOURS"]
-     276 [-]: JUMPIFEQ R8 R10 L33; goto L33 if var8 == var199431
+     276 [-]: JUMPIFEQ R8 R10 L33; goto L33 if var8 == var199484
      277 [-]: GETUPVAL R11 3; var11 = upvalues[3]
      278 [-]: GETTABLEKS R10 R11 K78; var10 = var11["SET_LIGHTS"]
-     279 [-]: JUMPIFNOTEQ R8 R10 L36; goto L36 if var8 ~= var330503
+     279 [-]: JUMPIFNOTEQ R8 R10 L36; goto L36 if var8 ~= var330556
 L33: 280 [-]: GETUPVAL R11 5; var11 = upvalues[5]
      281 [-]: GETTABLEKS R10 R11 K79; var10 = var11[0x334AF2B4]
      282 [-]: LOADB R11 1  ; var11 = true
@@ -569,7 +569,7 @@ L33: 280 [-]: GETUPVAL R11 5; var11 = upvalues[5]
      291 [-]: RETURN R0 0  ; 
 L34: 292 [-]: GETUPVAL R12 3; var12 = upvalues[3]
      293 [-]: GETTABLEKS R11 R12 K78; var11 = var12["SET_LIGHTS"]
-     294 [-]: JUMPIFNOTEQ R8 R11 L35; goto L35 if var8 ~= var1903438
+     294 [-]: JUMPIFNOTEQ R8 R11 L35; goto L35 if var8 ~= var1903393
      295 [-]: GETIMPORT R11 29; var11 = _T
      296 [-]: LOADB R12 1  ; var12 = true
      297 [-]: SETTABLEKS R12 R11 K81; var12["changingDojoLights"] = var11
@@ -585,7 +585,7 @@ L37: 305 [-]: GETIMPORT R10 83; var10 = _T["DojoMgr"]["mGameRules"]
      307 [-]: NAMECALL R10 R10 K85; var11 = var10; var10 = var10[0x802F7DD8]
      308 [-]: CALL R10 3 1 ; var10(var11, var12)
 L38: 309 [-]: GETUPVAL R11 6; var11 = upvalues[6]
-     310 [-]: FASTCALL1 62 R11 L39; 
+     310 [-]: FASTCALL1 64 R11 L39; 
      311 [-]: GETIMPORT R10 8; var10 = 0x7B998233
      312 [-]: CALL R10 2 2 ; var10 = var10(var11)
 L39: 313 [-]: JUMPIFNOT R10 L40; goto L40 if not var10
@@ -600,7 +600,7 @@ L40: 318 [-]: GETUPVAL R11 6; var11 = upvalues[6]
      322 [-]: GETIMPORT R12 88; var12 = 0x9E024073
      323 [-]: NAMECALL R10 R10 K89; var11 = var10; var10 = var10[0x6DD7AA66]
      324 [-]: CALL R10 3 2 ; var10 = var10(var11, var12)
-     325 [-]: FASTCALL1 62 R10 L41; 
+     325 [-]: FASTCALL1 64 R10 L41; 
      326 [-]: MOVE R12 R10 ; var12 = var10
      327 [-]: GETIMPORT R11 8; var11 = 0x7B998233
      328 [-]: CALL R11 2 2 ; var11 = var11(var12)
@@ -661,7 +661,7 @@ L43: 376 [-]: GETUPVAL R12 0; var12 = upvalues[0]
      383 [-]: CALL R12 3 1 ; var12(var13, var14)
      384 [-]: LENGTH R12 R11; var12 = #var11
      385 [-]: LOADN R13 0  ; var13 = 0
-     386 [-]: JUMPIFNOTLT R13 R12 L56; goto L56 if var13 >= var2047216668
+     386 [-]: JUMPIFNOTLT R13 R12 L56; goto L56 if var13 >= var2047216703
      387 [-]: GETTABLEKS R12 R6 K98; var12 = var6["colors"]
      388 [-]: GETTABLEKS R13 R6 K47; var13 = var6["pendingColors"]
      389 [-]: GETIMPORT R14 99; var14 = _T["changingDojoLights"]
@@ -669,7 +669,7 @@ L43: 376 [-]: GETUPVAL R12 0; var12 = upvalues[0]
      391 [-]: GETTABLEKS R12 R6 K100; var12 = var6["lights"]
      392 [-]: GETTABLEKS R13 R6 K48; var13 = var6["pendingLights"]
 L44: 393 [-]: LOADB R14 0  ; var14 = false
-     394 [-]: FASTCALL1 62 R13 L45; 
+     394 [-]: FASTCALL1 64 R13 L45; 
      395 [-]: MOVE R16 R13 ; var16 = var13
      396 [-]: GETIMPORT R15 8; var15 = 0x7B998233
      397 [-]: CALL R15 2 2 ; var15 = var15(var16)
@@ -684,7 +684,7 @@ L46: 403 [-]: GETTABLE R18 R11 R17; var18 = var11[var17]
      406 [-]: GETIMPORT R19 104; var19 = 0x6C97A788["CustomizationColorPalette_sDefaultColor"]
      407 [-]: NAMECALL R19 R19 K101; var20 = var19; var19 = var19[0xA5D5C8F6]
      408 [-]: CALL R19 2 2 ; var19 = var19(var20)
-     409 [-]: JUMPIFNOTEQ R18 R19 L47; goto L47 if var18 ~= var855040
+     409 [-]: JUMPIFNOTEQ R18 R19 L47; goto L47 if var18 ~= var855106
      410 [-]: JUMPXEQKNIL R12 L48; 
      411 [-]: GETTABLE R18 R11 R17; var18 = var11[var17]
      412 [-]: NAMECALL R18 R18 K101; var19 = var18; var18 = var18[0xA5D5C8F6]
@@ -692,7 +692,7 @@ L46: 403 [-]: GETTABLE R18 R11 R17; var18 = var11[var17]
      414 [-]: GETTABLE R19 R12 R17; var19 = var12[var17]
      415 [-]: NAMECALL R19 R19 K101; var20 = var19; var19 = var19[0xA5D5C8F6]
      416 [-]: CALL R19 2 2 ; var19 = var19(var20)
-     417 [-]: JUMPIFEQ R18 R19 L48; goto L48 if var18 == var69147
+     417 [-]: JUMPIFEQ R18 R19 L48; goto L48 if var18 == var69126
 L47: 418 [-]: LOADB R14 1  ; var14 = true
      419 [-]: JUMP L52     ; goto L52
 L48: 420 [-]: FORNLOOP R15 L46; nforloop end - iterate + goto L46
@@ -707,7 +707,7 @@ L50: 426 [-]: GETTABLE R18 R11 R17; var18 = var11[var17]
      429 [-]: GETTABLE R19 R13 R17; var19 = var13[var17]
      430 [-]: NAMECALL R19 R19 K101; var20 = var19; var19 = var19[0xA5D5C8F6]
      431 [-]: CALL R19 2 2 ; var19 = var19(var20)
-     432 [-]: JUMPIFEQ R18 R19 L51; goto L51 if var18 == var69147
+     432 [-]: JUMPIFEQ R18 R19 L51; goto L51 if var18 == var69126
      433 [-]: LOADB R14 1  ; var14 = true
      434 [-]: JUMP L52     ; goto L52
 L51: 435 [-]: FORNLOOP R15 L50; nforloop end - iterate + goto L50
@@ -743,7 +743,7 @@ L55: 459 [-]: GETUPVAL R16 10; var16 = upvalues[10]
      465 [-]: CALL R16 1 2 ; var16 = var16()
      466 [-]: ADD R15 R15 R16; var15 = var15 + var16
      467 [-]: LOADN R16 10 ; var16 = 10
-     468 [-]: JUMPIFLT R16 R15 L56; goto L56 if var16 < var-917460
+     468 [-]: JUMPIFLT R16 R15 L56; goto L56 if var16 < var-917434
      469 [-]: JUMPBACK L55 ; goto L55
 L56: 470 [-]: CLOSEUPVALS R11; 
 L57: 471 [-]: CLOSEUPVALS R8; 

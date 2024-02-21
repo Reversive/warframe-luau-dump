@@ -46,7 +46,7 @@ L 1:   7 [-]: FORGLOOP R0 L0 2 [inext];
        3 [-]: NAMECALL R2 R2 K2; var3 = var2; var2 = var2[0x5C390F04]
        4 [-]: CALL R2 2 2  ; var2 = var2(var3)
        5 [-]: LOADN R3 5   ; var3 = 5
-       6 [-]: JUMPIFNOTEQ R2 R3 L0; goto L0 if var2 ~= var65819
+       6 [-]: JUMPIFNOTEQ R2 R3 L0; goto L0 if var2 ~= var65798
        7 [-]: LOADB R1 1   ; var1 = true
 L 0:   8 [-]: GETIMPORT R3 4; var3 = 0x89326C93
        9 [-]: NAMECALL R3 R3 K5; var4 = var3; var3 = var3[0x18D05D30]
@@ -79,7 +79,7 @@ L 5:  34 [-]: GETUPVAL R5 0; var5 = upvalues[0]
       36 [-]: CALL R3 3 2  ; var3 = var3(var4, var5)
       37 [-]: JUMPXEQKN R3 K18 L6 NOT; 
       38 [-]: GETIMPORT R3 20; var3 = 0xCBD666E1
-      39 [-]: LOADK R4 K21 ; var4 = 0.10000000000000001
+      39 [-]: LOADK R4 K21 ; var4 = 0.10000000149011612
       40 [-]: CALL R3 2 1  ; var3(var4)
       41 [-]: JUMPBACK L5  ; goto L5
 L 6:  42 [-]: GETUPVAL R5 0; var5 = upvalues[0]
@@ -102,7 +102,7 @@ L 7:  55 [-]: JUMPXEQKN R3 K26 L8 NOT;
       59 [-]: CALL R4 3 1  ; var4(var5, var6)
 L 8:  60 [-]: GETIMPORT R5 30; var5 = 0xFA9A7435
       61 [-]: LENGTH R4 R5 ; var4 = #var5
-      62 [-]: JUMPIFNOTLE R3 R4 L11; goto L11 if var3 > var263246
+      62 [-]: JUMPIFNOTLE R3 R4 L11; goto L11 if var3 > var263201
       63 [-]: GETIMPORT R4 4; var4 = 0x89326C93
       64 [-]: GETIMPORT R7 30; var7 = 0xFA9A7435
       65 [-]: GETTABLE R6 R7 R3; var6 = var7[var3]
@@ -118,7 +118,7 @@ L 9:  72 [-]: LOADK R12 K32; var12 = "Show"
 L10:  75 [-]: FORGLOOP R5 L9 2 [inext]; 
 L11:  76 [-]: GETIMPORT R5 34; var5 = 0xDEA71A38
       77 [-]: LENGTH R4 R5 ; var4 = #var5
-      78 [-]: JUMPIFNOTLE R3 R4 L14; goto L14 if var3 > var263246
+      78 [-]: JUMPIFNOTLE R3 R4 L14; goto L14 if var3 > var263201
       79 [-]: GETIMPORT R4 4; var4 = 0x89326C93
       80 [-]: GETIMPORT R7 34; var7 = 0xDEA71A38
       81 [-]: GETTABLE R6 R7 R3; var6 = var7[var3]
@@ -134,7 +134,7 @@ L12:  88 [-]: LOADK R12 K35; var12 = "Enable"
 L13:  91 [-]: FORGLOOP R5 L12 2 [inext]; 
 L14:  92 [-]: GETIMPORT R5 37; var5 = 0x2F46AD0A
       93 [-]: LENGTH R4 R5 ; var4 = #var5
-      94 [-]: JUMPIFNOTLE R3 R4 L17; goto L17 if var3 > var263246
+      94 [-]: JUMPIFNOTLE R3 R4 L17; goto L17 if var3 > var263201
       95 [-]: GETIMPORT R4 4; var4 = 0x89326C93
       96 [-]: GETIMPORT R7 37; var7 = 0x2F46AD0A
       97 [-]: GETTABLE R6 R7 R3; var6 = var7[var3]

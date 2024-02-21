@@ -45,7 +45,7 @@
 L 0:  14 [-]: LOADN R2 0   ; var2 = 0
       15 [-]: LOADNIL R3   ; var3 = nil
 L 1:  16 [-]: LOADN R4 1   ; var4 = 1
-      17 [-]: JUMPIFNOTLT R2 R4 L2; goto L2 if var2 >= var721998
+      17 [-]: JUMPIFNOTLT R2 R4 L2; goto L2 if var2 >= var721953
       18 [-]: GETIMPORT R4 11; var4 = 0x9BAFFFE3
       19 [-]: MOVE R5 R1   ; var5 = var1
       20 [-]: LOADN R6 1   ; var6 = 1
@@ -87,7 +87,7 @@ L 2:  36 [-]: LOADN R6 1   ; var6 = 1
        4 [-]: CALL R2 4 2  ; var2 = var2(var3, var4, var5)
        5 [-]: JUMPIFNOT R2 L3; goto L3 if not var2
        6 [-]: GETIMPORT R3 5; var3 = 0xBE190284
-       7 [-]: FASTCALL1 62 R3 L0; 
+       7 [-]: FASTCALL1 64 R3 L0; 
        8 [-]: GETIMPORT R2 7; var2 = 0x7B998233
        9 [-]: CALL R2 2 2  ; var2 = var2(var3)
 L 0:  10 [-]: JUMPIF R2 L1 ; goto L1 if var2
@@ -102,7 +102,7 @@ L 1:  18 [-]: GETUPVAL R3 0; var3 = upvalues[0]
       19 [-]: GETTABLEKS R2 R3 K12; var2 = var3[0xFE0D9469]
       20 [-]: CALL R2 1 1  ; var2()
       21 [-]: GETIMPORT R2 15; var2 = _T["gCorpusHarvesterFinisherVictim"]
-      22 [-]: JUMPIFNOTEQ R2 R1 L3; goto L3 if var2 ~= var587268677
+      22 [-]: JUMPIFNOTEQ R2 R1 L3; goto L3 if var2 ~= var587268684
       23 [-]: NAMECALL R2 R1 K16; var3 = var1; var2 = var1[0x5E651723]
       24 [-]: CALL R2 2 2  ; var2 = var2(var3)
       25 [-]: NAMECALL R2 R2 K17; var3 = var2; var2 = var2[0x420402A9]

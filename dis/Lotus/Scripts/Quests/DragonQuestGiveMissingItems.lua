@@ -122,17 +122,18 @@ L 0:  13 [-]: GETUPVAL R2 1; var2 = upvalues[1]
       17 [-]: CALL R2 2 1  ; var2(var3)
       18 [-]: JUMPBACK L0  ; goto L0
 L 1:  19 [-]: GETUPVAL R2 2; var2 = upvalues[2]
-      20 [-]: JUMPIFNOT R2 L2; goto L2 if not var2
+      20 [-]: JUMPIFNOT R2 L3; goto L3 if not var2
       21 [-]: GETIMPORT R2 8; var2 = 0x3D106989
       22 [-]: LOADK R4 K9  ; var4 = "Failed getting items for The New Strange stage "
-      23 [-]: GETIMPORT R5 11; var5 = 0x64FB1586
+      23 [-]: FASTCALL1 63 R0 L2; 
       24 [-]: MOVE R6 R0   ; var6 = var0
-      25 [-]: CALL R5 2 2  ; var5 = var5(var6)
-      26 [-]: CONCAT R3 R4 R5; var3 = var4 .. var5
-      27 [-]: CALL R2 2 1  ; var2(var3)
-      28 [-]: LOADB R2 1   ; var2 = true
-      29 [-]: SETUPVAL R2 4; upvalues[2] = var4
-L 2:  30 [-]: RETURN R0 0  ; 
+      25 [-]: GETIMPORT R5 11; var5 = 0x64FB1586
+      26 [-]: CALL R5 2 2  ; var5 = var5(var6)
+L 2:  27 [-]: CONCAT R3 R4 R5; var3 = var4 .. var5
+      28 [-]: CALL R2 2 1  ; var2(var3)
+      29 [-]: LOADB R2 1   ; var2 = true
+      30 [-]: SETUPVAL R2 4; upvalues[2] = var4
+L 3:  31 [-]: RETURN R0 0  ; 
 
 
 ; Name:            
@@ -150,7 +151,7 @@ L 2:  30 [-]: RETURN R0 0  ;
        5 [-]: CALL R0 2 2  ; var0 = var0(var1)
        6 [-]: SETUPVAL R0 0; upvalues[0] = var0
 L 0:   7 [-]: GETUPVAL R1 0; var1 = upvalues[0]
-       8 [-]: FASTCALL1 62 R1 L1; 
+       8 [-]: FASTCALL1 64 R1 L1; 
        9 [-]: GETIMPORT R0 5; var0 = 0x7B998233
       10 [-]: CALL R0 2 2  ; var0 = var0(var1)
 L 1:  11 [-]: JUMPIFNOT R0 L2; goto L2 if not var0
@@ -170,7 +171,7 @@ L 2:  23 [-]: GETUPVAL R1 1; var1 = upvalues[1]
       25 [-]: GETUPVAL R1 0; var1 = upvalues[0]
       26 [-]: CALL R0 2 4  ; var0, var1, var2 = var0(var1)
       27 [-]: LOADN R3 0   ; var3 = 0
-      28 [-]: JUMPIFNOTLT R3 R2 L3; goto L3 if var3 >= var65581
+      28 [-]: JUMPIFNOTLT R3 R2 L3; goto L3 if var3 >= var65571
       29 [-]: RETURN R0 0  ; 
 L 3:  30 [-]: GETUPVAL R3 0; var3 = upvalues[0]
       31 [-]: NAMECALL R3 R3 K10; var4 = var3; var3 = var3[0x25A6E75E]
@@ -293,7 +294,7 @@ L21: 141 [-]: GETUPVAL R15 1; var15 = upvalues[1]
      148 [-]: GETTABLEKS R17 R18 K25; var17 = var18["LastQuestTransmission"]
 L22: 149 [-]: JUMPXEQKNIL R17 L24; 
      150 [-]: GETTABLEKS R19 R17 K26; var19 = var17["quest"]
-     151 [-]: FASTCALL1 62 R19 L23; 
+     151 [-]: FASTCALL1 64 R19 L23; 
      152 [-]: GETIMPORT R18 5; var18 = 0x7B998233
      153 [-]: CALL R18 2 2 ; var18 = var18(var19)
 L23: 154 [-]: JUMPIF R18 L24; goto L24 if var18
@@ -304,7 +305,7 @@ L23: 154 [-]: JUMPIF R18 L24; goto L24 if var18
      159 [-]: JUMPIFNOT R18 L24; goto L24 if not var18
      160 [-]: GETTABLEKS R18 R17 K27; var18 = var17["stage"]
      161 [-]: ADDK R19 R15 K20; var19 = var15 + 1
-     162 [-]: JUMPIFEQ R18 R19 L25; goto L25 if var18 == var463438
+     162 [-]: JUMPIFEQ R18 R19 L25; goto L25 if var18 == var463393
 L24: 163 [-]: GETIMPORT R18 7; var18 = 0xCBD666E1
      164 [-]: LOADN R19 0  ; var19 = 0
      165 [-]: CALL R18 2 1 ; var18(var19)
@@ -313,10 +314,10 @@ L24: 163 [-]: GETIMPORT R18 7; var18 = 0xCBD666E1
      168 [-]: JUMPBACK L22 ; goto L22
 L25: 169 [-]: GETIMPORT R19 29; var19 = 0x89326C93
      170 [-]: NAMECALL R19 R19 K30; var20 = var19; var19 = var19[0x78298275]
-     171 [-]: CALL R19 2 2 ; var19 = var19(var20)
-     172 [-]: FASTCALL1 62 R19 L26; 
+     171 [-]: CALL R19 2 0 ; var19, ... = var19(var20)
+     172 [-]: FASTCALL 64 L26; 
      173 [-]: GETIMPORT R18 5; var18 = 0x7B998233
-     174 [-]: CALL R18 2 2 ; var18 = var18(var19)
+     174 [-]: CALL R18 0 2 ; var18 = var18(var19, ...)
 L26: 175 [-]: JUMPIF R18 L27; goto L27 if var18
      176 [-]: GETIMPORT R18 33; var18 = _T["TransmissionConvoDone"]
      177 [-]: JUMPIF R18 L28; goto L28 if var18

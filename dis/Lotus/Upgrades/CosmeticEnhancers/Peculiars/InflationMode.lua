@@ -65,13 +65,13 @@
        0 [-]: NAMECALL R4 R0 K0; var5 = var0; var4 = var0[0x388577D5]
        1 [-]: CALL R4 2 2  ; var4 = var4(var5)
        2 [-]: GETIMPORT R6 3; var6 = _T["inflationModTargets"]
-       3 [-]: FASTCALL1 62 R6 L0; 
+       3 [-]: FASTCALL1 64 R6 L0; 
        4 [-]: GETIMPORT R5 5; var5 = 0x7B998233
        5 [-]: CALL R5 2 2  ; var5 = var5(var6)
 L 0:   6 [-]: JUMPIF R5 L5 ; goto L5 if var5
        7 [-]: GETIMPORT R7 3; var7 = _T["inflationModTargets"]
        8 [-]: GETTABLE R6 R7 R4; var6 = var7[var4]
-       9 [-]: FASTCALL1 62 R6 L1; 
+       9 [-]: FASTCALL1 64 R6 L1; 
       10 [-]: GETIMPORT R5 5; var5 = 0x7B998233
       11 [-]: CALL R5 2 2  ; var5 = var5(var6)
 L 1:  12 [-]: JUMPIF R5 L5 ; goto L5 if var5
@@ -81,11 +81,11 @@ L 1:  12 [-]: JUMPIF R5 L5 ; goto L5 if var5
       16 [-]: CALL R5 2 4  ; var5, var6, var7 = var5(var6)
       17 [-]: FORGPREP_NEXT R5 L4; 
 L 2:  18 [-]: GETTABLEKS R10 R9 K8; var10 = var9["inflateBone"]
-      19 [-]: JUMPIFNOTEQ R10 R1 L4; goto L4 if var10 ~= var201919004
+      19 [-]: JUMPIFNOTEQ R10 R1 L4; goto L4 if var10 ~= var201919039
       20 [-]: GETTABLEKS R10 R9 K9; var10 = var9["inflateDuration"]
       21 [-]: GETIMPORT R12 11; var12 = 0x1CF0B20A
       22 [-]: SUB R11 R2 R12; var11 = var2 - var12
-      23 [-]: JUMPIFNOTLE R10 R11 L3; goto L3 if var10 > var854606
+      23 [-]: JUMPIFNOTLE R10 R11 L3; goto L3 if var10 > var854561
       24 [-]: GETIMPORT R10 13; var10 = 0x9BAFFFE3
       25 [-]: LOADN R11 1  ; var11 = 1
       26 [-]: GETTABLEKS R12 R9 K14; var12 = var9["maxInflation"]
@@ -124,13 +124,13 @@ L 5:  47 [-]: LOADB R5 0   ; var5 = false
        1 [-]: CALL R2 2 2  ; var2 = var2(var3)
        2 [-]: LOADN R3 0   ; var3 = 0
        3 [-]: GETIMPORT R5 3; var5 = _T["inflationModTargets"]
-       4 [-]: FASTCALL1 62 R5 L0; 
+       4 [-]: FASTCALL1 64 R5 L0; 
        5 [-]: GETIMPORT R4 5; var4 = 0x7B998233
        6 [-]: CALL R4 2 2  ; var4 = var4(var5)
 L 0:   7 [-]: JUMPIF R4 L5 ; goto L5 if var4
        8 [-]: GETIMPORT R6 3; var6 = _T["inflationModTargets"]
        9 [-]: GETTABLE R5 R6 R2; var5 = var6[var2]
-      10 [-]: FASTCALL1 62 R5 L1; 
+      10 [-]: FASTCALL1 64 R5 L1; 
       11 [-]: GETIMPORT R4 5; var4 = 0x7B998233
       12 [-]: CALL R4 2 2  ; var4 = var4(var5)
 L 1:  13 [-]: JUMPIF R4 L5 ; goto L5 if var4
@@ -140,7 +140,7 @@ L 1:  13 [-]: JUMPIF R4 L5 ; goto L5 if var4
       17 [-]: CALL R4 2 4  ; var4, var5, var6 = var4(var5)
       18 [-]: FORGPREP_NEXT R4 L4; 
 L 2:  19 [-]: GETTABLEKS R9 R8 K8; var9 = var8["inflateBone"]
-      20 [-]: JUMPIFNOTEQ R9 R1 L3; goto L3 if var9 ~= var199246
+      20 [-]: JUMPIFNOTEQ R9 R1 L3; goto L3 if var9 ~= var199201
       21 [-]: GETIMPORT R10 3; var10 = _T["inflationModTargets"]
       22 [-]: GETTABLE R9 R10 R2; var9 = var10[var2]
       23 [-]: LOADNIL R10  ; var10 = nil
@@ -165,13 +165,13 @@ L 6:  32 [-]: RETURN R0 0  ;
        0 [-]: NAMECALL R2 R0 K0; var3 = var0; var2 = var0[0x388577D5]
        1 [-]: CALL R2 2 2  ; var2 = var2(var3)
        2 [-]: GETIMPORT R4 3; var4 = _T["inflationModTargets"]
-       3 [-]: FASTCALL1 62 R4 L0; 
+       3 [-]: FASTCALL1 64 R4 L0; 
        4 [-]: GETIMPORT R3 5; var3 = 0x7B998233
        5 [-]: CALL R3 2 2  ; var3 = var3(var4)
 L 0:   6 [-]: JUMPIF R3 L4 ; goto L4 if var3
        7 [-]: GETIMPORT R5 3; var5 = _T["inflationModTargets"]
        8 [-]: GETTABLE R4 R5 R2; var4 = var5[var2]
-       9 [-]: FASTCALL1 62 R4 L1; 
+       9 [-]: FASTCALL1 64 R4 L1; 
       10 [-]: GETIMPORT R3 5; var3 = 0x7B998233
       11 [-]: CALL R3 2 2  ; var3 = var3(var4)
 L 1:  12 [-]: JUMPIF R3 L4 ; goto L4 if var3
@@ -181,7 +181,7 @@ L 1:  12 [-]: JUMPIF R3 L4 ; goto L4 if var3
       16 [-]: CALL R3 2 4  ; var3, var4, var5 = var3(var4)
       17 [-]: FORGPREP_NEXT R3 L3; 
 L 2:  18 [-]: GETTABLEKS R8 R7 K8; var8 = var7["inflateBone"]
-      19 [-]: JUMPIFNOTEQ R8 R1 L3; goto L3 if var8 ~= var201787420
+      19 [-]: JUMPIFNOTEQ R8 R1 L3; goto L3 if var8 ~= var201787455
       20 [-]: GETTABLEKS R8 R7 K9; var8 = var7["inflateDuration"]
       21 [-]: GETTABLEKS R9 R7 K10; var9 = var7["maxInflation"]
       22 [-]: RETURN R8 2  ; 
@@ -200,13 +200,13 @@ L 4:  24 [-]: LOADN R3 0   ; var3 = 0
        0 [-]: NAMECALL R4 R0 K0; var5 = var0; var4 = var0[0x388577D5]
        1 [-]: CALL R4 2 2  ; var4 = var4(var5)
        2 [-]: GETIMPORT R6 3; var6 = _T["inflationModTargets"]
-       3 [-]: FASTCALL1 62 R6 L0; 
+       3 [-]: FASTCALL1 64 R6 L0; 
        4 [-]: GETIMPORT R5 5; var5 = 0x7B998233
        5 [-]: CALL R5 2 2  ; var5 = var5(var6)
 L 0:   6 [-]: JUMPIF R5 L4 ; goto L4 if var5
        7 [-]: GETIMPORT R7 3; var7 = _T["inflationModTargets"]
        8 [-]: GETTABLE R6 R7 R4; var6 = var7[var4]
-       9 [-]: FASTCALL1 62 R6 L1; 
+       9 [-]: FASTCALL1 64 R6 L1; 
       10 [-]: GETIMPORT R5 5; var5 = 0x7B998233
       11 [-]: CALL R5 2 2  ; var5 = var5(var6)
 L 1:  12 [-]: JUMPIF R5 L4 ; goto L4 if var5
@@ -216,7 +216,7 @@ L 1:  12 [-]: JUMPIF R5 L4 ; goto L4 if var5
       16 [-]: CALL R5 2 4  ; var5, var6, var7 = var5(var6)
       17 [-]: FORGPREP_NEXT R5 L3; 
 L 2:  18 [-]: GETTABLEKS R10 R9 K8; var10 = var9["inflateBone"]
-      19 [-]: JUMPIFNOTEQ R10 R1 L3; goto L3 if var10 ~= var199502
+      19 [-]: JUMPIFNOTEQ R10 R1 L3; goto L3 if var10 ~= var199457
       20 [-]: GETIMPORT R11 3; var11 = _T["inflationModTargets"]
       21 [-]: GETTABLE R10 R11 R4; var10 = var11[var4]
       22 [-]: NEWTABLE R11 4 0; var11 = {}
@@ -242,12 +242,12 @@ L 4:  29 [-]: RETURN R0 0  ;
        3 [-]: SETUPVAL R6 0; upvalues[6] = var0
        4 [-]: GETTABLEKS R6 R5 K3; var6 = var5["hitType"]
        5 [-]: LOADN R7 1   ; var7 = 1
-       6 [-]: JUMPIFEQ R6 R7 L0; goto L0 if var6 == var2131035676
+       6 [-]: JUMPIFEQ R6 R7 L0; goto L0 if var6 == var2131035711
        7 [-]: GETTABLEKS R6 R5 K3; var6 = var5["hitType"]
        8 [-]: LOADN R7 2   ; var7 = 2
-       9 [-]: JUMPIFNOTEQ R6 R7 L10; goto L10 if var6 ~= var537200156
+       9 [-]: JUMPIFNOTEQ R6 R7 L10; goto L10 if var6 ~= var537200191
 L 0:  10 [-]: GETTABLEKS R6 R5 K4; var6 = var5["victim"]
-      11 [-]: FASTCALL1 62 R6 L1; 
+      11 [-]: FASTCALL1 64 R6 L1; 
       12 [-]: MOVE R8 R6   ; var8 = var6
       13 [-]: GETIMPORT R7 6; var7 = 0x7B998233
       14 [-]: CALL R7 2 2  ; var7 = var7(var8)
@@ -274,7 +274,7 @@ L 3:  21 [-]: NAMECALL R7 R6 K10; var8 = var6; var7 = var6[0x1AC1655C]
       35 [-]: NAMECALL R7 R5 K16; var8 = var5; var7 = var5[0x36E85886]
       36 [-]: CALL R7 2 2  ; var7 = var7(var8)
       37 [-]: SETUPVAL R7 2; upvalues[7] = var2
-      38 [-]: FASTCALL1 62 R0 L4; 
+      38 [-]: FASTCALL1 64 R0 L4; 
       39 [-]: MOVE R8 R0   ; var8 = var0
       40 [-]: GETIMPORT R7 6; var7 = 0x7B998233
       41 [-]: CALL R7 2 2  ; var7 = var7(var8)
@@ -287,7 +287,7 @@ L 4:  42 [-]: JUMPIF R7 L5 ; goto L5 if var7
       48 [-]: JUMP L6      ; goto L6
 L 5:  49 [-]: LOADN R7 0   ; var7 = 0
       50 [-]: SETUPVAL R7 3; upvalues[7] = var3
-L 6:  51 [-]: FASTCALL1 62 R6 L7; 
+L 6:  51 [-]: FASTCALL1 64 R6 L7; 
       52 [-]: MOVE R8 R6   ; var8 = var6
       53 [-]: GETIMPORT R7 6; var7 = 0x7B998233
       54 [-]: CALL R7 2 2  ; var7 = var7(var8)
@@ -308,7 +308,7 @@ L 7:  55 [-]: JUMPIF R7 L10; goto L10 if var7
       69 [-]: SETUPVAL R7 4; upvalues[7] = var4
       70 [-]: GETUPVAL R7 4; var7 = upvalues[4]
       71 [-]: LOADN R8 0   ; var8 = 0
-      72 [-]: JUMPIFNOTLE R7 R8 L8; goto L8 if var7 > var67399
+      72 [-]: JUMPIFNOTLE R7 R8 L8; goto L8 if var7 > var67376
       73 [-]: LOADN R7 1   ; var7 = 1
       74 [-]: SETUPVAL R7 4; upvalues[7] = var4
       75 [-]: JUMP L9      ; goto L9
@@ -355,7 +355,7 @@ L10: 103 [-]: RETURN R0 0  ;
        3 [-]: GETUPVAL R4 3; var4 = upvalues[3]
        4 [-]: LOADNIL R5   ; var5 = nil
        5 [-]: GETIMPORT R7 2; var7 = _T["inflationModTargets"]
-       6 [-]: FASTCALL1 62 R7 L0; 
+       6 [-]: FASTCALL1 64 R7 L0; 
        7 [-]: GETIMPORT R6 4; var6 = 0x7B998233
        8 [-]: CALL R6 2 2  ; var6 = var6(var7)
 L 0:   9 [-]: JUMPIFNOT R6 L1; goto L1 if not var6
@@ -366,7 +366,7 @@ L 1:  13 [-]: NAMECALL R6 R0 K6; var7 = var0; var6 = var0[0x388577D5]
       14 [-]: CALL R6 2 2  ; var6 = var6(var7)
       15 [-]: GETIMPORT R9 2; var9 = _T["inflationModTargets"]
       16 [-]: GETTABLE R8 R9 R6; var8 = var9[var6]
-      17 [-]: FASTCALL1 62 R8 L2; 
+      17 [-]: FASTCALL1 64 R8 L2; 
       18 [-]: GETIMPORT R7 4; var7 = 0x7B998233
       19 [-]: CALL R7 2 2  ; var7 = var7(var8)
 L 2:  20 [-]: JUMPIFNOT R7 L3; goto L3 if not var7
@@ -374,7 +374,7 @@ L 2:  20 [-]: JUMPIFNOT R7 L3; goto L3 if not var7
       22 [-]: NEWTABLE R8 0 0; var8 = {}
       23 [-]: SETTABLE R8 R7 R6; var8[var7] = var6
 L 3:  24 [-]: GETIMPORT R8 8; var8 = 0x19CEDE8F
-      25 [-]: FASTCALL1 62 R8 L4; 
+      25 [-]: FASTCALL1 64 R8 L4; 
       26 [-]: GETIMPORT R7 4; var7 = 0x7B998233
       27 [-]: CALL R7 2 2  ; var7 = var7(var8)
 L 4:  28 [-]: JUMPIF R7 L5 ; goto L5 if var7
@@ -388,7 +388,7 @@ L 4:  28 [-]: JUMPIF R7 L5 ; goto L5 if var7
       36 [-]: CALL R7 8 1  ; var7(var8, var9, var10, var11, var12, var13, var14)
 L 5:  37 [-]: LOADNIL R7   ; var7 = nil
       38 [-]: GETIMPORT R9 11; var9 = 0x8CBE103F
-      39 [-]: FASTCALL1 62 R9 L6; 
+      39 [-]: FASTCALL1 64 R9 L6; 
       40 [-]: GETIMPORT R8 4; var8 = 0x7B998233
       41 [-]: CALL R8 2 2  ; var8 = var8(var9)
 L 6:  42 [-]: JUMPIF R8 L7 ; goto L7 if var8
@@ -403,7 +403,7 @@ L 6:  42 [-]: JUMPIF R8 L7 ; goto L7 if var8
       51 [-]: MOVE R7 R8   ; var7 = var8
 L 7:  52 [-]: LOADNIL R8   ; var8 = nil
       53 [-]: GETIMPORT R10 13; var10 = 0x3837278F
-      54 [-]: FASTCALL1 62 R10 L8; 
+      54 [-]: FASTCALL1 64 R10 L8; 
       55 [-]: GETIMPORT R9 4; var9 = 0x7B998233
       56 [-]: CALL R9 2 2  ; var9 = var9(var10)
 L 8:  57 [-]: JUMPIF R9 L9 ; goto L9 if var9
@@ -426,7 +426,7 @@ L 9:  63 [-]: GETIMPORT R11 2; var11 = _T["inflationModTargets"]
       74 [-]: GETIMPORT R9 22; var9 = 0x33BDD652[0x23D5322F]
       75 [-]: CALL R9 3 1  ; var9(var10, var11)
 L10:  76 [-]: LOADN R9 0   ; var9 = 0
-      77 [-]: JUMPIFNOTLT R9 R1 L13; goto L13 if var9 >= var-419428027
+      77 [-]: JUMPIFNOTLT R9 R1 L13; goto L13 if var9 >= var-419428020
       78 [-]: NAMECALL R9 R0 K23; var10 = var0; var9 = var0[0x2047CFE7]
       79 [-]: CALL R9 2 2  ; var9 = var9(var10)
       80 [-]: JUMPIF R9 L13; goto L13 if var9
@@ -457,7 +457,7 @@ L10:  76 [-]: LOADN R9 0   ; var9 = 0
      105 [-]: CALL R10 4 1 ; var10(var11, var12, var13)
      106 [-]: GETIMPORT R11 30; var11 = 0x61984D1C
      107 [-]: MUL R10 R11 R4; var10 = var11 * var4
-     108 [-]: FASTCALL1 62 R7 L11; 
+     108 [-]: FASTCALL1 64 R7 L11; 
      109 [-]: MOVE R12 R7  ; var12 = var7
      110 [-]: GETIMPORT R11 4; var11 = 0x7B998233
      111 [-]: CALL R11 2 2 ; var11 = var11(var12)
@@ -482,7 +482,7 @@ L12: 129 [-]: GETIMPORT R11 40; var11 = 0xCBD666E1
      130 [-]: LOADN R12 0  ; var12 = 0
      131 [-]: CALL R11 2 1 ; var11(var12)
      132 [-]: JUMPBACK L10 ; goto L10
-L13: 133 [-]: FASTCALL1 62 R7 L14; 
+L13: 133 [-]: FASTCALL1 64 R7 L14; 
      134 [-]: MOVE R10 R7  ; var10 = var7
      135 [-]: GETIMPORT R9 4; var9 = 0x7B998233
      136 [-]: CALL R9 2 2  ; var9 = var9(var10)
@@ -490,7 +490,7 @@ L14: 137 [-]: JUMPIF R9 L15; goto L15 if var9
      138 [-]: LOADB R11 0  ; var11 = false
      139 [-]: NAMECALL R9 R7 K41; var10 = var7; var9 = var7[0x6CF1E476]
      140 [-]: CALL R9 3 1  ; var9(var10, var11)
-L15: 141 [-]: FASTCALL1 62 R8 L16; 
+L15: 141 [-]: FASTCALL1 64 R8 L16; 
      142 [-]: MOVE R10 R8  ; var10 = var8
      143 [-]: GETIMPORT R9 4; var9 = 0x7B998233
      144 [-]: CALL R9 2 2  ; var9 = var9(var10)

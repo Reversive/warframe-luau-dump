@@ -56,7 +56,7 @@
       34 [-]: NAMECALL R3 R3 K23; var4 = var3; var3 = var3[0x97DCFF30]
       35 [-]: CALL R3 3 1  ; var3(var4, var5)
 L 0:  36 [-]: GETIMPORT R3 25; var3 = 0x55BA2EEB
-      37 [-]: FASTCALL1 62 R3 L1; 
+      37 [-]: FASTCALL1 64 R3 L1; 
       38 [-]: GETIMPORT R2 27; var2 = 0x7B998233
       39 [-]: CALL R2 2 2  ; var2 = var2(var3)
 L 1:  40 [-]: JUMPIF R2 L2 ; goto L2 if var2

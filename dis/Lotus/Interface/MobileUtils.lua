@@ -33,7 +33,7 @@
 ; Max Stack Size:  17
 
        0 [-]: ORK R5 R5 K0 ; var5 = var5 or 1
-       1 [-]: FASTCALL1 62 R1 L0; 
+       1 [-]: FASTCALL1 64 R1 L0; 
        2 [-]: MOVE R7 R1   ; var7 = var1
        3 [-]: GETIMPORT R6 2; var6 = 0x7B998233
        4 [-]: CALL R6 2 2  ; var6 = var6(var7)
@@ -65,7 +65,7 @@ L 5:  27 [-]: GETUPVAL R7 3; var7 = upvalues[3]
       30 [-]: LOADK R8 K8  ; var8 = "EN_MOUSE_X"
       31 [-]: LOADK R9 K9  ; var9 = "EN_MOUSE_Y"
       32 [-]: CALL R6 4 2  ; var6 = var6(var7, var8, var9)
-      33 [-]: JUMPIFNOTEQ R2 R6 L6; goto L6 if var2 ~= var1543
+      33 [-]: JUMPIFNOTEQ R2 R6 L6; goto L6 if var2 ~= var1596
       34 [-]: GETUPVAL R6 0; var6 = upvalues[0]
       35 [-]: JUMPIFNOT R6 L6; goto L6 if not var6
       36 [-]: GETUPVAL R7 3; var7 = upvalues[3]

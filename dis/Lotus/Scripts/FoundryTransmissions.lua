@@ -30,14 +30,14 @@ L 0:   4 [-]: SETTABLEKS R1 R0 K2; var1["FoundryClaimCallbacks"] = var0
        6 [-]: GETIMPORT R1 7; var1 = 0x1EA8D1E1
        7 [-]: CALL R0 2 4  ; var0, var1, var2 = var0(var1)
        8 [-]: FORGPREP_INEXT R0 L4; 
-L 1:   9 [-]: FASTCALL1 62 R4 L2; 
+L 1:   9 [-]: FASTCALL1 64 R4 L2; 
       10 [-]: MOVE R6 R4   ; var6 = var4
       11 [-]: GETIMPORT R5 9; var5 = 0x7B998233
       12 [-]: CALL R5 2 2  ; var5 = var5(var6)
 L 2:  13 [-]: JUMPIF R5 L4 ; goto L4 if var5
       14 [-]: GETIMPORT R7 11; var7 = 0x605C3CFB
       15 [-]: GETTABLE R6 R7 R3; var6 = var7[var3]
-      16 [-]: FASTCALL1 62 R6 L3; 
+      16 [-]: FASTCALL1 64 R6 L3; 
       17 [-]: GETIMPORT R5 9; var5 = 0x7B998233
       18 [-]: CALL R5 2 2  ; var5 = var5(var6)
 L 3:  19 [-]: JUMPIF R5 L4 ; goto L4 if var5

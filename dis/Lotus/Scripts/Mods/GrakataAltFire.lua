@@ -110,7 +110,7 @@ L 0:  13 [-]: GETTABLE R8 R9 R10; var8 = var9[var10]
        4 [-]: LOADN R4 0   ; var4 = 0
        5 [-]: NAMECALL R2 R2 K2; var3 = var2; var2 = var2[0x881B6B90]
        6 [-]: CALL R2 3 2  ; var2 = var2(var3, var4)
-       7 [-]: FASTCALL1 62 R2 L0; 
+       7 [-]: FASTCALL1 64 R2 L0; 
        8 [-]: MOVE R4 R2   ; var4 = var2
        9 [-]: GETIMPORT R3 4; var3 = 0x7B998233
       10 [-]: CALL R3 2 2  ; var3 = var3(var4)
@@ -129,7 +129,7 @@ L 1:  16 [-]: LOADN R3 0   ; var3 = 0
 L 2:  23 [-]: MOVE R10 R7  ; var10 = var7
       24 [-]: NAMECALL R8 R2 K10; var9 = var2; var8 = var2[0xFEF27732]
       25 [-]: CALL R8 3 2  ; var8 = var8(var9, var10)
-      26 [-]: FASTCALL1 62 R8 L3; 
+      26 [-]: FASTCALL1 64 R8 L3; 
       27 [-]: MOVE R10 R8  ; var10 = var8
       28 [-]: GETIMPORT R9 4; var9 = 0x7B998233
       29 [-]: CALL R9 2 2  ; var9 = var9(var10)
@@ -144,7 +144,7 @@ L 3:  30 [-]: JUMPIF R9 L4 ; goto L4 if var9
       38 [-]: CALL R9 0 2  ; var9 = var9(var10, ...)
       39 [-]: ADDK R3 R9 K9; var3 = var9 + 1
 L 4:  40 [-]: FORNLOOP R5 L2; nforloop end - iterate + goto L2
-L 5:  41 [-]: FASTCALL1 62 R2 L6; 
+L 5:  41 [-]: FASTCALL1 64 R2 L6; 
       42 [-]: MOVE R6 R2   ; var6 = var2
       43 [-]: GETIMPORT R5 4; var5 = 0x7B998233
       44 [-]: CALL R5 2 2  ; var5 = var5(var6)
@@ -175,7 +175,7 @@ L 9:  67 [-]: NAMECALL R5 R0 K0; var6 = var0; var5 = var0[0x388577D5]
       69 [-]: GETIMPORT R9 7; var9 = _T["grakataAltFire"]
       70 [-]: GETTABLE R8 R9 R5; var8 = var9[var5]
       71 [-]: GETTABLEKS R7 R8 K21; var7 = var8["killed"]
-      72 [-]: FASTCALL1 62 R7 L10; 
+      72 [-]: FASTCALL1 64 R7 L10; 
       73 [-]: GETIMPORT R6 4; var6 = 0x7B998233
       74 [-]: CALL R6 2 2  ; var6 = var6(var7)
 L10:  75 [-]: JUMPIF R6 L12; goto L12 if var6
@@ -184,7 +184,7 @@ L10:  75 [-]: JUMPIF R6 L12; goto L12 if var6
       78 [-]: GETTABLEKS R7 R8 K21; var7 = var8["killed"]
       79 [-]: LENGTH R6 R7 ; var6 = #var7
       80 [-]: LOADN R7 2   ; var7 = 2
-      81 [-]: JUMPIFNOTLE R7 R6 L12; goto L12 if var7 > var1426196293
+      81 [-]: JUMPIFNOTLE R7 R6 L12; goto L12 if var7 > var1426196300
       82 [-]: NAMECALL R7 R2 K22; var8 = var2; var7 = var2[0xD6BD1155]
       83 [-]: CALL R7 2 2  ; var7 = var7(var8)
       84 [-]: GETIMPORT R9 24; var9 = 0x42159700
@@ -216,7 +216,7 @@ L12: 100 [-]: GETIMPORT R6 7; var6 = _T["grakataAltFire"]
 ; Is_vararg:       0
 ; Max Stack Size:  11
 
-       0 [-]: FASTCALL1 62 R0 L0; 
+       0 [-]: FASTCALL1 64 R0 L0; 
        1 [-]: MOVE R2 R0   ; var2 = var0
        2 [-]: GETIMPORT R1 1; var1 = 0x7B998233
        3 [-]: CALL R1 2 2  ; var1 = var1(var2)
@@ -231,7 +231,7 @@ L 1:   6 [-]: GETIMPORT R1 3; var1 = 0xCBD666E1
       12 [-]: CALL R1 2 2  ; var1 = var1(var2)
       13 [-]: NAMECALL R2 R1 K6; var3 = var1; var2 = var1[0x52DE0ED7]
       14 [-]: CALL R2 2 2  ; var2 = var2(var3)
-      15 [-]: FASTCALL1 62 R2 L2; 
+      15 [-]: FASTCALL1 64 R2 L2; 
       16 [-]: MOVE R4 R2   ; var4 = var2
       17 [-]: GETIMPORT R3 1; var3 = 0x7B998233
       18 [-]: CALL R3 2 2  ; var3 = var3(var4)
@@ -248,13 +248,13 @@ L 4:  25 [-]: NAMECALL R3 R2 K10; var4 = var2; var3 = var2[0x388577D5]
       29 [-]: LOADN R6 0   ; var6 = 0
       30 [-]: NAMECALL R4 R4 K12; var5 = var4; var4 = var4[0x881B6B90]
       31 [-]: CALL R4 3 2  ; var4 = var4(var5, var6)
-      32 [-]: FASTCALL1 62 R4 L5; 
+      32 [-]: FASTCALL1 64 R4 L5; 
       33 [-]: MOVE R6 R4   ; var6 = var4
       34 [-]: GETIMPORT R5 1; var5 = 0x7B998233
       35 [-]: CALL R5 2 2  ; var5 = var5(var6)
 L 5:  36 [-]: JUMPIFNOT R5 L6; goto L6 if not var5
       37 [-]: RETURN R0 0  ; 
-L 6:  38 [-]: FASTCALL1 62 R4 L7; 
+L 6:  38 [-]: FASTCALL1 64 R4 L7; 
       39 [-]: MOVE R6 R4   ; var6 = var4
       40 [-]: GETIMPORT R5 1; var5 = 0x7B998233
       41 [-]: CALL R5 2 2  ; var5 = var5(var6)
@@ -267,7 +267,7 @@ L 7:  42 [-]: JUMPIF R5 L16; goto L16 if var5
       48 [-]: CALL R5 2 1  ; var5(var6)
       49 [-]: GETIMPORT R7 16; var7 = _T["grakataAltFire"]
       50 [-]: GETTABLE R6 R7 R3; var6 = var7[var3]
-      51 [-]: FASTCALL1 62 R6 L8; 
+      51 [-]: FASTCALL1 64 R6 L8; 
       52 [-]: GETIMPORT R5 1; var5 = 0x7B998233
       53 [-]: CALL R5 2 2  ; var5 = var5(var6)
 L 8:  54 [-]: JUMPIFNOT R5 L9; goto L9 if not var5
@@ -282,7 +282,7 @@ L 9:  56 [-]: NAMECALL R5 R0 K17; var6 = var0; var5 = var0[0x2047CFE7]
       63 [-]: MOVE R1 R5   ; var1 = var5
       64 [-]: NAMECALL R5 R1 K6; var6 = var1; var5 = var1[0x52DE0ED7]
       65 [-]: CALL R5 2 2  ; var5 = var5(var6)
-      66 [-]: JUMPIFEQ R2 R5 L10; goto L10 if var2 == var65581
+      66 [-]: JUMPIFEQ R2 R5 L10; goto L10 if var2 == var65571
       67 [-]: RETURN R0 0  ; 
 L10:  68 [-]: NAMECALL R6 R1 K18; var7 = var1; var6 = var1[0x14A55974]
       69 [-]: CALL R6 2 2  ; var6 = var6(var7)
@@ -294,7 +294,7 @@ L10:  68 [-]: NAMECALL R6 R1 K18; var7 = var1; var6 = var1[0x14A55974]
 L11:  75 [-]: GETIMPORT R10 16; var10 = _T["grakataAltFire"]
       76 [-]: GETTABLE R9 R10 R3; var9 = var10[var3]
       77 [-]: GETTABLEKS R8 R9 K19; var8 = var9["killed"]
-      78 [-]: FASTCALL1 62 R8 L12; 
+      78 [-]: FASTCALL1 64 R8 L12; 
       79 [-]: GETIMPORT R7 1; var7 = 0x7B998233
       80 [-]: CALL R7 2 2  ; var7 = var7(var8)
 L12:  81 [-]: JUMPIFNOT R7 L13; goto L13 if not var7
@@ -324,7 +324,7 @@ L16:  96 [-]: RETURN R0 0  ;
 
        0 [-]: NAMECALL R3 R1 K0; var4 = var1; var3 = var1[0x52DE0ED7]
        1 [-]: CALL R3 2 2  ; var3 = var3(var4)
-       2 [-]: FASTCALL1 62 R3 L0; 
+       2 [-]: FASTCALL1 64 R3 L0; 
        3 [-]: MOVE R5 R3   ; var5 = var3
        4 [-]: GETIMPORT R4 2; var4 = 0x7B998233
        5 [-]: CALL R4 2 2  ; var4 = var4(var5)
@@ -338,7 +338,7 @@ L 1:   8 [-]: GETIMPORT R4 4; var4 = 0x89326C93
       13 [-]: CALL R4 2 2  ; var4 = var4(var5)
       14 [-]: JUMPIF R4 L2 ; goto L2 if var4
       15 [-]: RETURN R0 0  ; 
-L 2:  16 [-]: FASTCALL1 62 R2 L3; 
+L 2:  16 [-]: FASTCALL1 64 R2 L3; 
       17 [-]: MOVE R5 R2   ; var5 = var2
       18 [-]: GETIMPORT R4 2; var4 = 0x7B998233
       19 [-]: CALL R4 2 2  ; var4 = var4(var5)
@@ -348,7 +348,7 @@ L 3:  20 [-]: JUMPIF R4 L12; goto L12 if var4
       23 [-]: CALL R4 3 2  ; var4 = var4(var5, var6)
       24 [-]: JUMPIFNOT R4 L12; goto L12 if not var4
       25 [-]: GETIMPORT R5 12; var5 = _T["grakataAltFire"]
-      26 [-]: FASTCALL1 62 R5 L4; 
+      26 [-]: FASTCALL1 64 R5 L4; 
       27 [-]: GETIMPORT R4 2; var4 = 0x7B998233
       28 [-]: CALL R4 2 2  ; var4 = var4(var5)
 L 4:  29 [-]: JUMPIFNOT R4 L5; goto L5 if not var4
@@ -361,7 +361,7 @@ L 5:  33 [-]: NAMECALL R4 R3 K14; var5 = var3; var4 = var3[0x388577D5]
       36 [-]: CALL R5 2 2  ; var5 = var5(var6)
       37 [-]: GETIMPORT R8 12; var8 = _T["grakataAltFire"]
       38 [-]: GETTABLE R7 R8 R4; var7 = var8[var4]
-      39 [-]: FASTCALL1 62 R7 L6; 
+      39 [-]: FASTCALL1 64 R7 L6; 
       40 [-]: GETIMPORT R6 2; var6 = 0x7B998233
       41 [-]: CALL R6 2 2  ; var6 = var6(var7)
 L 6:  42 [-]: JUMPIFNOT R6 L7; goto L7 if not var6
@@ -381,7 +381,7 @@ L 8:  55 [-]: GETIMPORT R12 12; var12 = _T["grakataAltFire"]
       56 [-]: GETTABLE R11 R12 R4; var11 = var12[var4]
       57 [-]: GETTABLEKS R10 R11 K15; var10 = var11["processed"]
       58 [-]: GETTABLE R9 R10 R8; var9 = var10[var8]
-      59 [-]: JUMPIFNOTEQ R9 R5 L9; goto L9 if var9 ~= var65581
+      59 [-]: JUMPIFNOTEQ R9 R5 L9; goto L9 if var9 ~= var65571
       60 [-]: RETURN R0 0  ; 
 L 9:  61 [-]: FORNLOOP R6 L8; nforloop end - iterate + goto L8
 L10:  62 [-]: GETIMPORT R8 18; var8 = 0x0469F296

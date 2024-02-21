@@ -138,7 +138,7 @@
       19 [-]: MOVE R14 R1  ; var14 = var1
       20 [-]: LOADK R15 K1 ; var15 = ".Label"
       21 [-]: CONCAT R13 R14 R15; var13 = var14 .. var15
-      22 [-]: LOADN R14 66 ; var14 = 66
+      22 [-]: LOADN R14 68 ; var14 = 68
       23 [-]: NAMECALL R11 R0 K2; var12 = var0; var11 = var0[0x91A24E4B]
       24 [-]: CALL R11 4 2 ; var11 = var11(var12, var13, var14)
       25 [-]: SETTABLEKS R11 R6 K3; var11["mInitLabelLeading"] = var6
@@ -162,157 +162,158 @@
       43 [-]: SETTABLEKS R11 R6 K13; var11["mMultiline"] = var6
       44 [-]: GETTABLEKS R11 R6 K14; var11 = var6["SetActive"]
       45 [-]: SETTABLEKS R11 R6 K15; var11["ComponentSetActive"] = var6
-      46 [-]: DUPCLOSURE R11 K16; 
-      47 [-]: SETTABLEKS R11 R6 K14; var11["SetActive"] = var6
-      48 [-]: DUPCLOSURE R11 K17; 
-      49 [-]: SETTABLEKS R11 R6 K18; var11["OnGamepadTransition"] = var6
-      50 [-]: GETTABLEKS R11 R6 K19; var11 = var6["Interpolate"]
-      51 [-]: SETTABLEKS R11 R6 K20; var11["ComponentInterpolate"] = var6
-      52 [-]: DUPCLOSURE R11 K21; 
-      53 [-]: CAPTURE UPVAL U2; 
-      54 [-]: SETTABLEKS R11 R6 K19; var11["Interpolate"] = var6
-      55 [-]: DUPCLOSURE R11 K22; 
-      56 [-]: SETTABLEKS R11 R6 K23; var11["TrySetDrag"] = var6
-      57 [-]: GETTABLEKS R11 R6 K24; var11 = var6["TrySetFocus"]
-      58 [-]: SETTABLEKS R11 R6 K25; var11["ComponentTrySetFocus"] = var6
-      59 [-]: DUPCLOSURE R11 K26; 
-      60 [-]: SETTABLEKS R11 R6 K24; var11["TrySetFocus"] = var6
-      61 [-]: GETTABLEKS R11 R6 K27; var11 = var6["SetFocus"]
-      62 [-]: SETTABLEKS R11 R6 K28; var11["ComponentSetFocus"] = var6
-      63 [-]: NEWCLOSURE R11 P9; 
-      64 [-]: CAPTURE UPVAL U3; 
-      65 [-]: CAPTURE VAL R5; 
-      66 [-]: CAPTURE VAL R3; 
-      67 [-]: CAPTURE UPVAL U4; 
-      68 [-]: SETTABLEKS R11 R6 K27; var11["SetFocus"] = var6
-      69 [-]: GETTABLEKS R11 R6 K29; var11 = var6["TryPressed"]
-      70 [-]: SETTABLEKS R11 R6 K30; var11["ComponentTryPressed"] = var6
-      71 [-]: NEWCLOSURE R11 P10; 
-      72 [-]: CAPTURE VAL R3; 
-      73 [-]: SETTABLEKS R11 R6 K29; var11["TryPressed"] = var6
-      74 [-]: DUPCLOSURE R11 K31; 
-      75 [-]: SETTABLEKS R11 R6 K32; var11["GetColorButtons"] = var6
-      76 [-]: GETTABLEKS R11 R6 K33; var11 = var6["Pressed"]
-      77 [-]: SETTABLEKS R11 R6 K34; var11["ComponentPressed"] = var6
-      78 [-]: NEWCLOSURE R11 P12; 
-      79 [-]: CAPTURE VAL R4; 
-      80 [-]: CAPTURE VAL R5; 
-      81 [-]: CAPTURE VAL R3; 
-      82 [-]: SETTABLEKS R11 R6 K33; var11["Pressed"] = var6
-      83 [-]: GETTABLEKS R11 R6 K35; var11 = var6["Resize"]
-      84 [-]: SETTABLEKS R11 R6 K36; var11["ComponentResize"] = var6
-      85 [-]: NEWCLOSURE R11 P13; 
-      86 [-]: CAPTURE UPVAL U2; 
-      87 [-]: CAPTURE VAL R5; 
-      88 [-]: SETTABLEKS R11 R6 K35; var11["Resize"] = var6
-      89 [-]: GETTABLEKS R11 R6 K37; var11 = var6["UpdateColors"]
-      90 [-]: SETTABLEKS R11 R6 K38; var11["ComponentUpdateColors"] = var6
-      91 [-]: DUPCLOSURE R11 K39; 
-      92 [-]: CAPTURE UPVAL U5; 
-      93 [-]: SETTABLEKS R11 R6 K37; var11["UpdateColors"] = var6
-      94 [-]: NEWCLOSURE R11 P15; 
-      95 [-]: CAPTURE VAL R3; 
-      96 [-]: SETTABLEKS R11 R6 K40; var11["ApplyColor"] = var6
-      97 [-]: DUPCLOSURE R11 K41; 
-      98 [-]: SETTABLEKS R11 R6 K42; var11["ResetColor"] = var6
-      99 [-]: NEWCLOSURE R11 P17; 
-     100 [-]: CAPTURE VAL R3; 
-     101 [-]: CAPTURE UPVAL U6; 
-     102 [-]: SETTABLEKS R11 R6 K43; var11["RandomizeColor"] = var6
-     103 [-]: DUPCLOSURE R11 K44; 
-     104 [-]: SETTABLEKS R11 R6 K45; var11["CopyColors"] = var6
-     105 [-]: NEWCLOSURE R11 P19; 
-     106 [-]: CAPTURE VAL R3; 
-     107 [-]: CAPTURE UPVAL U6; 
-     108 [-]: SETTABLEKS R11 R6 K46; var11["PickColor"] = var6
-     109 [-]: NEWCLOSURE R11 P20; 
-     110 [-]: CAPTURE VAL R3; 
-     111 [-]: CAPTURE VAL R5; 
-     112 [-]: SETTABLEKS R11 R6 K47; var11["ApplyItemSelection"] = var6
-     113 [-]: NEWCLOSURE R11 P21; 
-     114 [-]: CAPTURE VAL R5; 
-     115 [-]: SETTABLEKS R11 R6 K48; var11["DefaultItemSelection"] = var6
-     116 [-]: NEWCLOSURE R11 P22; 
-     117 [-]: CAPTURE VAL R5; 
-     118 [-]: SETTABLEKS R11 R6 K49; var11["RandomizeItemSelection"] = var6
-     119 [-]: DUPCLOSURE R11 K50; 
-     120 [-]: SETTABLEKS R11 R6 K51; var11["SetDefault"] = var6
-     121 [-]: DUPCLOSURE R11 K52; 
-     122 [-]: SETTABLEKS R11 R6 K53; var11["Randomize"] = var6
-     123 [-]: DUPCLOSURE R11 K54; 
-     124 [-]: SETTABLEKS R11 R6 K55; var11["GetContentHeight"] = var6
-     125 [-]: NEWCLOSURE R11 P26; 
-     126 [-]: CAPTURE UPVAL U2; 
-     127 [-]: CAPTURE VAL R3; 
-     128 [-]: CAPTURE UPVAL U7; 
-     129 [-]: SETTABLEKS R11 R6 K56; var11["RedrawDropDown"] = var6
-     130 [-]: DUPCLOSURE R11 K57; 
-     131 [-]: CAPTURE UPVAL U8; 
-     132 [-]: SETTABLEKS R11 R6 K58; var11["RedrawProgressBar"] = var6
-     133 [-]: NEWCLOSURE R11 P28; 
-     134 [-]: CAPTURE UPVAL U2; 
-     135 [-]: CAPTURE VAL R3; 
-     136 [-]: CAPTURE UPVAL U9; 
-     137 [-]: CAPTURE UPVAL U1; 
-     138 [-]: SETTABLEKS R11 R6 K59; var11["RedrawToggle"] = var6
-     139 [-]: NEWCLOSURE R11 P29; 
-     140 [-]: CAPTURE UPVAL U2; 
-     141 [-]: CAPTURE VAL R3; 
-     142 [-]: CAPTURE UPVAL U10; 
-     143 [-]: CAPTURE UPVAL U1; 
-     144 [-]: SETTABLEKS R11 R6 K60; var11["RedrawSlider"] = var6
-     145 [-]: DUPCLOSURE R11 K61; 
-     146 [-]: CAPTURE UPVAL U11; 
-     147 [-]: CAPTURE UPVAL U2; 
-     148 [-]: CAPTURE UPVAL U1; 
-     149 [-]: SETTABLEKS R11 R6 K62; var11["RedrawCheckbox"] = var6
-     150 [-]: NEWCLOSURE R11 P31; 
-     151 [-]: CAPTURE UPVAL U1; 
-     152 [-]: CAPTURE VAL R6; 
-     153 [-]: CAPTURE VAL R9; 
-     154 [-]: CAPTURE VAL R5; 
-     155 [-]: CAPTURE UPVAL U0; 
-     156 [-]: CAPTURE VAL R3; 
-     157 [-]: SETTABLEKS R11 R6 K63; var11["RedrawColorButtons"] = var6
-     158 [-]: DUPCLOSURE R11 K64; 
-     159 [-]: SETTABLEKS R11 R6 K65; var11["Update"] = var6
-     160 [-]: GETTABLEKS R11 R6 K66; var11 = var6["Redraw"]
-     161 [-]: SETTABLEKS R11 R6 K67; var11["ComponentRedraw"] = var6
-     162 [-]: NEWCLOSURE R11 P33; 
-     163 [-]: CAPTURE VAL R5; 
-     164 [-]: CAPTURE UPVAL U2; 
-     165 [-]: SETTABLEKS R11 R6 K66; var11["Redraw"] = var6
-     166 [-]: GETTABLEKS R11 R6 K68; var11 = var6["SetText"]
-     167 [-]: SETTABLEKS R11 R6 K69; var11["ComponentSetText"] = var6
-     168 [-]: DUPCLOSURE R11 K70; 
-     169 [-]: CAPTURE UPVAL U2; 
-     170 [-]: SETTABLEKS R11 R6 K68; var11["SetText"] = var6
-     171 [-]: DUPCLOSURE R11 K71; 
-     172 [-]: SETTABLEKS R11 R6 K72; var11["SetMultiline"] = var6
-     173 [-]: FASTCALL1 62 R5 L0; 
-     174 [-]: MOVE R12 R5  ; var12 = var5
-     175 [-]: GETIMPORT R11 74; var11 = 0x7B998233
-     176 [-]: CALL R11 2 2 ; var11 = var11(var12)
-L 0: 177 [-]: JUMPIF R11 L1; goto L1 if var11
-     178 [-]: GETTABLEKS R11 R5 K75; var11 = var5["Multiline"]
-     179 [-]: JUMPXEQKNIL R11 L1; 
-     180 [-]: GETTABLEKS R13 R5 K75; var13 = var5["Multiline"]
-     181 [-]: NAMECALL R11 R6 K76; var12 = var6; var11 = var6[0x858C23AD]
-     182 [-]: CALL R11 3 1 ; var11(var12, var13)
-L 1: 183 [-]: LOADK R13 K77; var13 = "left"
-     184 [-]: NAMECALL R11 R6 K78; var12 = var6; var11 = var6[0x6B2AB44E]
-     185 [-]: CALL R11 3 1 ; var11(var12, var13)
-     186 [-]: NAMECALL R11 R6 K79; var12 = var6; var11 = var6[0x71E9AC81]
-     187 [-]: CALL R11 2 1 ; var11(var12)
-     188 [-]: NAMECALL R11 R6 K80; var12 = var6; var11 = var6[0x9C683672]
-     189 [-]: CALL R11 2 1 ; var11(var12)
-     190 [-]: MOVE R14 R1  ; var14 = var1
-     191 [-]: LOADK R15 K1 ; var15 = ".Label"
-     192 [-]: CONCAT R13 R14 R15; var13 = var14 .. var15
-     193 [-]: LOADK R14 K81; var14 = "ShowHyperlinkItem"
-     194 [-]: NAMECALL R11 R0 K82; var12 = var0; var11 = var0[0xEE6D3B33]
-     195 [-]: CALL R11 4 1 ; var11(var12, var13, var14)
-     196 [-]: RETURN R6 1  ; 
+      46 [-]: NEWCLOSURE R11 P4; 
+      47 [-]: CAPTURE VAL R5; 
+      48 [-]: SETTABLEKS R11 R6 K14; var11["SetActive"] = var6
+      49 [-]: DUPCLOSURE R11 K16; 
+      50 [-]: SETTABLEKS R11 R6 K17; var11["OnGamepadTransition"] = var6
+      51 [-]: GETTABLEKS R11 R6 K18; var11 = var6["Interpolate"]
+      52 [-]: SETTABLEKS R11 R6 K19; var11["ComponentInterpolate"] = var6
+      53 [-]: DUPCLOSURE R11 K20; 
+      54 [-]: CAPTURE UPVAL U2; 
+      55 [-]: SETTABLEKS R11 R6 K18; var11["Interpolate"] = var6
+      56 [-]: DUPCLOSURE R11 K21; 
+      57 [-]: SETTABLEKS R11 R6 K22; var11["TrySetDrag"] = var6
+      58 [-]: GETTABLEKS R11 R6 K23; var11 = var6["TrySetFocus"]
+      59 [-]: SETTABLEKS R11 R6 K24; var11["ComponentTrySetFocus"] = var6
+      60 [-]: DUPCLOSURE R11 K25; 
+      61 [-]: SETTABLEKS R11 R6 K23; var11["TrySetFocus"] = var6
+      62 [-]: GETTABLEKS R11 R6 K26; var11 = var6["SetFocus"]
+      63 [-]: SETTABLEKS R11 R6 K27; var11["ComponentSetFocus"] = var6
+      64 [-]: NEWCLOSURE R11 P9; 
+      65 [-]: CAPTURE UPVAL U3; 
+      66 [-]: CAPTURE VAL R5; 
+      67 [-]: CAPTURE VAL R3; 
+      68 [-]: CAPTURE UPVAL U4; 
+      69 [-]: SETTABLEKS R11 R6 K26; var11["SetFocus"] = var6
+      70 [-]: GETTABLEKS R11 R6 K28; var11 = var6["TryPressed"]
+      71 [-]: SETTABLEKS R11 R6 K29; var11["ComponentTryPressed"] = var6
+      72 [-]: NEWCLOSURE R11 P10; 
+      73 [-]: CAPTURE VAL R3; 
+      74 [-]: SETTABLEKS R11 R6 K28; var11["TryPressed"] = var6
+      75 [-]: DUPCLOSURE R11 K30; 
+      76 [-]: SETTABLEKS R11 R6 K31; var11["GetColorButtons"] = var6
+      77 [-]: GETTABLEKS R11 R6 K32; var11 = var6["Pressed"]
+      78 [-]: SETTABLEKS R11 R6 K33; var11["ComponentPressed"] = var6
+      79 [-]: NEWCLOSURE R11 P12; 
+      80 [-]: CAPTURE VAL R4; 
+      81 [-]: CAPTURE VAL R5; 
+      82 [-]: CAPTURE VAL R3; 
+      83 [-]: SETTABLEKS R11 R6 K32; var11["Pressed"] = var6
+      84 [-]: GETTABLEKS R11 R6 K34; var11 = var6["Resize"]
+      85 [-]: SETTABLEKS R11 R6 K35; var11["ComponentResize"] = var6
+      86 [-]: NEWCLOSURE R11 P13; 
+      87 [-]: CAPTURE UPVAL U2; 
+      88 [-]: CAPTURE VAL R5; 
+      89 [-]: SETTABLEKS R11 R6 K34; var11["Resize"] = var6
+      90 [-]: GETTABLEKS R11 R6 K36; var11 = var6["UpdateColors"]
+      91 [-]: SETTABLEKS R11 R6 K37; var11["ComponentUpdateColors"] = var6
+      92 [-]: DUPCLOSURE R11 K38; 
+      93 [-]: CAPTURE UPVAL U5; 
+      94 [-]: SETTABLEKS R11 R6 K36; var11["UpdateColors"] = var6
+      95 [-]: NEWCLOSURE R11 P15; 
+      96 [-]: CAPTURE VAL R3; 
+      97 [-]: SETTABLEKS R11 R6 K39; var11["ApplyColor"] = var6
+      98 [-]: DUPCLOSURE R11 K40; 
+      99 [-]: SETTABLEKS R11 R6 K41; var11["ResetColor"] = var6
+     100 [-]: NEWCLOSURE R11 P17; 
+     101 [-]: CAPTURE VAL R3; 
+     102 [-]: CAPTURE UPVAL U6; 
+     103 [-]: SETTABLEKS R11 R6 K42; var11["RandomizeColor"] = var6
+     104 [-]: DUPCLOSURE R11 K43; 
+     105 [-]: SETTABLEKS R11 R6 K44; var11["CopyColors"] = var6
+     106 [-]: NEWCLOSURE R11 P19; 
+     107 [-]: CAPTURE VAL R3; 
+     108 [-]: CAPTURE UPVAL U6; 
+     109 [-]: SETTABLEKS R11 R6 K45; var11["PickColor"] = var6
+     110 [-]: NEWCLOSURE R11 P20; 
+     111 [-]: CAPTURE VAL R3; 
+     112 [-]: CAPTURE VAL R5; 
+     113 [-]: SETTABLEKS R11 R6 K46; var11["ApplyItemSelection"] = var6
+     114 [-]: NEWCLOSURE R11 P21; 
+     115 [-]: CAPTURE VAL R5; 
+     116 [-]: SETTABLEKS R11 R6 K47; var11["DefaultItemSelection"] = var6
+     117 [-]: NEWCLOSURE R11 P22; 
+     118 [-]: CAPTURE VAL R5; 
+     119 [-]: SETTABLEKS R11 R6 K48; var11["RandomizeItemSelection"] = var6
+     120 [-]: DUPCLOSURE R11 K49; 
+     121 [-]: SETTABLEKS R11 R6 K50; var11["SetDefault"] = var6
+     122 [-]: DUPCLOSURE R11 K51; 
+     123 [-]: SETTABLEKS R11 R6 K52; var11["Randomize"] = var6
+     124 [-]: DUPCLOSURE R11 K53; 
+     125 [-]: SETTABLEKS R11 R6 K54; var11["GetContentHeight"] = var6
+     126 [-]: NEWCLOSURE R11 P26; 
+     127 [-]: CAPTURE UPVAL U2; 
+     128 [-]: CAPTURE VAL R3; 
+     129 [-]: CAPTURE UPVAL U7; 
+     130 [-]: SETTABLEKS R11 R6 K55; var11["RedrawDropDown"] = var6
+     131 [-]: DUPCLOSURE R11 K56; 
+     132 [-]: CAPTURE UPVAL U8; 
+     133 [-]: SETTABLEKS R11 R6 K57; var11["RedrawProgressBar"] = var6
+     134 [-]: NEWCLOSURE R11 P28; 
+     135 [-]: CAPTURE UPVAL U2; 
+     136 [-]: CAPTURE VAL R3; 
+     137 [-]: CAPTURE UPVAL U9; 
+     138 [-]: CAPTURE UPVAL U1; 
+     139 [-]: SETTABLEKS R11 R6 K58; var11["RedrawToggle"] = var6
+     140 [-]: NEWCLOSURE R11 P29; 
+     141 [-]: CAPTURE UPVAL U2; 
+     142 [-]: CAPTURE VAL R3; 
+     143 [-]: CAPTURE UPVAL U10; 
+     144 [-]: CAPTURE UPVAL U1; 
+     145 [-]: SETTABLEKS R11 R6 K59; var11["RedrawSlider"] = var6
+     146 [-]: DUPCLOSURE R11 K60; 
+     147 [-]: CAPTURE UPVAL U11; 
+     148 [-]: CAPTURE UPVAL U2; 
+     149 [-]: CAPTURE UPVAL U1; 
+     150 [-]: SETTABLEKS R11 R6 K61; var11["RedrawCheckbox"] = var6
+     151 [-]: NEWCLOSURE R11 P31; 
+     152 [-]: CAPTURE UPVAL U1; 
+     153 [-]: CAPTURE VAL R6; 
+     154 [-]: CAPTURE VAL R9; 
+     155 [-]: CAPTURE VAL R5; 
+     156 [-]: CAPTURE UPVAL U0; 
+     157 [-]: CAPTURE VAL R3; 
+     158 [-]: SETTABLEKS R11 R6 K62; var11["RedrawColorButtons"] = var6
+     159 [-]: DUPCLOSURE R11 K63; 
+     160 [-]: SETTABLEKS R11 R6 K64; var11["Update"] = var6
+     161 [-]: GETTABLEKS R11 R6 K65; var11 = var6["Redraw"]
+     162 [-]: SETTABLEKS R11 R6 K66; var11["ComponentRedraw"] = var6
+     163 [-]: NEWCLOSURE R11 P33; 
+     164 [-]: CAPTURE VAL R5; 
+     165 [-]: CAPTURE UPVAL U2; 
+     166 [-]: SETTABLEKS R11 R6 K65; var11["Redraw"] = var6
+     167 [-]: GETTABLEKS R11 R6 K67; var11 = var6["SetText"]
+     168 [-]: SETTABLEKS R11 R6 K68; var11["ComponentSetText"] = var6
+     169 [-]: DUPCLOSURE R11 K69; 
+     170 [-]: CAPTURE UPVAL U2; 
+     171 [-]: SETTABLEKS R11 R6 K67; var11["SetText"] = var6
+     172 [-]: DUPCLOSURE R11 K70; 
+     173 [-]: SETTABLEKS R11 R6 K71; var11["SetMultiline"] = var6
+     174 [-]: FASTCALL1 64 R5 L0; 
+     175 [-]: MOVE R12 R5  ; var12 = var5
+     176 [-]: GETIMPORT R11 73; var11 = 0x7B998233
+     177 [-]: CALL R11 2 2 ; var11 = var11(var12)
+L 0: 178 [-]: JUMPIF R11 L1; goto L1 if var11
+     179 [-]: GETTABLEKS R11 R5 K74; var11 = var5["Multiline"]
+     180 [-]: JUMPXEQKNIL R11 L1; 
+     181 [-]: GETTABLEKS R13 R5 K74; var13 = var5["Multiline"]
+     182 [-]: NAMECALL R11 R6 K75; var12 = var6; var11 = var6[0x858C23AD]
+     183 [-]: CALL R11 3 1 ; var11(var12, var13)
+L 1: 184 [-]: LOADK R13 K76; var13 = "left"
+     185 [-]: NAMECALL R11 R6 K77; var12 = var6; var11 = var6[0x6B2AB44E]
+     186 [-]: CALL R11 3 1 ; var11(var12, var13)
+     187 [-]: NAMECALL R11 R6 K78; var12 = var6; var11 = var6[0x71E9AC81]
+     188 [-]: CALL R11 2 1 ; var11(var12)
+     189 [-]: NAMECALL R11 R6 K79; var12 = var6; var11 = var6[0x9C683672]
+     190 [-]: CALL R11 2 1 ; var11(var12)
+     191 [-]: MOVE R14 R1  ; var14 = var1
+     192 [-]: LOADK R15 K1 ; var15 = ".Label"
+     193 [-]: CONCAT R13 R14 R15; var13 = var14 .. var15
+     194 [-]: LOADK R14 K80; var14 = "ShowHyperlinkItem"
+     195 [-]: NAMECALL R11 R0 K81; var12 = var0; var11 = var0[0xEE6D3B33]
+     196 [-]: CALL R11 4 1 ; var11(var12, var13, var14)
+     197 [-]: RETURN R6 1  ; 
 
 
 

@@ -205,7 +205,7 @@
 ; Max Stack Size:  4
 
        0 [-]: GETUPVAL R1 0; var1 = upvalues[0]
-       1 [-]: FASTCALL1 62 R1 L0; 
+       1 [-]: FASTCALL1 64 R1 L0; 
        2 [-]: GETIMPORT R0 1; var0 = 0x7B998233
        3 [-]: CALL R0 2 2  ; var0 = var0(var1)
 L 0:   4 [-]: JUMPIFNOT R0 L1; goto L1 if not var0
@@ -217,7 +217,7 @@ L 0:   4 [-]: JUMPIFNOT R0 L1; goto L1 if not var0
       10 [-]: CALL R0 0 2  ; var0 = var0(var1, ...)
       11 [-]: SETUPVAL R0 0; upvalues[0] = var0
 L 1:  12 [-]: GETUPVAL R1 0; var1 = upvalues[0]
-      13 [-]: FASTCALL1 62 R1 L2; 
+      13 [-]: FASTCALL1 64 R1 L2; 
       14 [-]: GETIMPORT R0 1; var0 = 0x7B998233
       15 [-]: CALL R0 2 2  ; var0 = var0(var1)
 L 2:  16 [-]: JUMPIF R0 L5 ; goto L5 if var0

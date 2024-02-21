@@ -44,7 +44,7 @@ L 0:   8 [-]: LOADB R1 0   ; var1 = false
 ; Is_vararg:       0
 ; Max Stack Size:  11
 
-       0 [-]: FASTCALL1 62 R1 L0; 
+       0 [-]: FASTCALL1 64 R1 L0; 
        1 [-]: MOVE R3 R1   ; var3 = var1
        2 [-]: GETIMPORT R2 1; var2 = 0x7B998233
        3 [-]: CALL R2 2 2  ; var2 = var2(var3)
@@ -127,7 +127,7 @@ L 3:  19 [-]: RETURN R0 0  ;
       17 [-]: GETIMPORT R3 2; var3 = 0x89326C93
       18 [-]: NAMECALL R3 R3 K12; var4 = var3; var3 = var3[0x78298275]
       19 [-]: CALL R3 2 2  ; var3 = var3(var4)
-L 0:  20 [-]: FASTCALL1 62 R3 L1; 
+L 0:  20 [-]: FASTCALL1 64 R3 L1; 
       21 [-]: MOVE R5 R3   ; var5 = var3
       22 [-]: GETIMPORT R4 14; var4 = 0x7B998233
       23 [-]: CALL R4 2 2  ; var4 = var4(var5)
@@ -136,7 +136,7 @@ L 1:  24 [-]: JUMPIF R4 L5 ; goto L5 if var4
       26 [-]: NAMECALL R4 R3 K15; var5 = var3; var4 = var3[0x1F420A3A]
       27 [-]: CALL R4 3 2  ; var4 = var4(var5, var6)
       28 [-]: LOADN R5 25  ; var5 = 25
-      29 [-]: JUMPIFNOTLT R5 R4 L5; goto L5 if var5 >= var1180750
+      29 [-]: JUMPIFNOTLT R5 R4 L5; goto L5 if var5 >= var1180705
       30 [-]: GETIMPORT R4 18; var4 = _T["NeverAbandonExtract"]
       31 [-]: JUMPIF R4 L4 ; goto L4 if var4
       32 [-]: NAMECALL R5 R0 K19; var6 = var0; var5 = var0[0xD9531187]

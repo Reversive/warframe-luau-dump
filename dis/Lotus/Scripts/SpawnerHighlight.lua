@@ -21,7 +21,7 @@
        1 [-]: GETIMPORT R3 3; var3 = gSpawnerType
        2 [-]: NAMECALL R1 R1 K4; var2 = var1; var1 = var1[0xC9F6A7D7]
        3 [-]: CALL R1 3 2  ; var1 = var1(var2, var3)
-       4 [-]: FASTCALL1 62 R1 L0; 
+       4 [-]: FASTCALL1 64 R1 L0; 
        5 [-]: MOVE R3 R1   ; var3 = var1
        6 [-]: GETIMPORT R2 6; var2 = 0x7B998233
        7 [-]: CALL R2 2 2  ; var2 = var2(var3)
@@ -30,7 +30,7 @@ L 0:   8 [-]: JUMPIF R2 L3 ; goto L3 if var2
       10 [-]: CALL R2 2 1  ; var2(var3)
       11 [-]: LOADN R2 0   ; var2 = 0
 L 1:  12 [-]: GETIMPORT R3 9; var3 = 0xADF61563
-      13 [-]: JUMPIFNOTLT R2 R3 L2; goto L2 if var2 >= var721742
+      13 [-]: JUMPIFNOTLT R2 R3 L2; goto L2 if var2 >= var721697
       14 [-]: GETIMPORT R3 11; var3 = 0xCBD666E1
       15 [-]: LOADN R4 0   ; var4 = 0
       16 [-]: CALL R3 2 1  ; var3(var4)

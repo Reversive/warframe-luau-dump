@@ -17,7 +17,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  5
 
-L 0:   0 [-]: FASTCALL1 62 R0 L1; 
+L 0:   0 [-]: FASTCALL1 64 R0 L1; 
        1 [-]: MOVE R2 R0   ; var2 = var0
        2 [-]: GETIMPORT R1 1; var1 = 0x7B998233
        3 [-]: CALL R1 2 2  ; var1 = var1(var2)

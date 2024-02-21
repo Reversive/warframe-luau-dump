@@ -75,7 +75,7 @@
       15 [-]: LOADB R8 0 +1; var8 = false
 L 0:  16 [-]: LOADB R8 1   ; var8 = true
 L 1:  17 [-]: LOADN R9 0   ; var9 = 0
-      18 [-]: LOADK R10 K7 ; var10 = 0.10000000000000001
+      18 [-]: LOADK R10 K7 ; var10 = 0.10000000149011612
       19 [-]: CALL R7 4 0  ; var7, ... = var7(var8, var9, var10)
       20 [-]: CALL R1 0 1  ; var1(var2, ...)
       21 [-]: SETUPVAL R0 1; upvalues[0] = var1
@@ -91,7 +91,7 @@ L 2:  23 [-]: JUMPXEQKN R0 K8 L3 NOT;
       31 [-]: NEWTABLE R6 0 1; var6 = {}
       32 [-]: LOADN R7 100 ; var7 = 100
       33 [-]: SETLIST R6 R7 1 [1]; var6[1] = var7; var6[2] = var8; 
-      34 [-]: LOADK R7 K9  ; var7 = 0.14999999999999999
+      34 [-]: LOADK R7 K9  ; var7 = 0.15000000596046448
       35 [-]: CALL R1 7 1  ; var1(var2, var3, var4, var5, var6, var7)
 L 3:  36 [-]: GETIMPORT R1 11; var1 = 0x42DCC9F5
       37 [-]: MULK R2 R0 K12; var2 = var0 * 2
@@ -100,7 +100,7 @@ L 3:  36 [-]: GETIMPORT R1 11; var1 = 0x42DCC9F5
       40 [-]: CALL R1 4 2  ; var1 = var1(var2, var3, var4)
       41 [-]: LOADK R2 K13 ; var2 = ""
       42 [-]: LOADN R3 0   ; var3 = 0
-      43 [-]: JUMPIFNOTLT R3 R1 L4; goto L4 if var3 >= var262990
+      43 [-]: JUMPIFNOTLT R3 R1 L4; goto L4 if var3 >= var262945
       44 [-]: GETIMPORT R3 4; var3 = 0xAE91E43B
       45 [-]: LOADK R5 K14 ; var5 = "/Lotus/Language/Game/UNIT_MULTIPLIER"
       46 [-]: LOADB R6 0   ; var6 = false
@@ -127,7 +127,7 @@ L 3:  36 [-]: GETIMPORT R1 11; var1 = 0x42DCC9F5
       67 [-]: CALL R3 9 1  ; var3(var4, var5, var6, var7, var8, var9, var10, var11)
 L 4:  68 [-]: GETIMPORT R3 4; var3 = 0xAE91E43B
       69 [-]: LOADK R5 K21 ; var5 = "Combo.Step.Multiplier"
-      70 [-]: LOADN R6 29  ; var6 = 29
+      70 [-]: LOADN R6 31  ; var6 = 31
       71 [-]: MOVE R7 R2   ; var7 = var2
       72 [-]: NAMECALL R3 R3 K22; var4 = var3; var3 = var3[0x5F56EEAB]
       73 [-]: CALL R3 5 1  ; var3(var4, var5, var6, var7)
@@ -160,7 +160,7 @@ L 4:  68 [-]: GETIMPORT R3 4; var3 = 0xAE91E43B
 ; Max Stack Size:  9
 
        0 [-]: GETIMPORT R1 1; var1 = 0xAE91E43B
-       1 [-]: FASTCALL1 62 R1 L0; 
+       1 [-]: FASTCALL1 64 R1 L0; 
        2 [-]: GETIMPORT R0 3; var0 = 0x7B998233
        3 [-]: CALL R0 2 2  ; var0 = var0(var1)
 L 0:   4 [-]: JUMPIF R0 L1 ; goto L1 if var0
@@ -174,7 +174,7 @@ L 2:   8 [-]: GETIMPORT R0 5; var0 = 0x67652851
       12 [-]: NAMECALL R1 R1 K6; var2 = var1; var1 = var1[0x8A8C8D5A]
       13 [-]: CALL R1 3 1  ; var1(var2, var3)
       14 [-]: GETUPVAL R2 1; var2 = upvalues[1]
-      15 [-]: FASTCALL1 62 R2 L3; 
+      15 [-]: FASTCALL1 64 R2 L3; 
       16 [-]: GETIMPORT R1 3; var1 = 0x7B998233
       17 [-]: CALL R1 2 2  ; var1 = var1(var2)
 L 3:  18 [-]: JUMPIFNOT R1 L4; goto L4 if not var1
@@ -187,7 +187,7 @@ L 4:  23 [-]: LOADB R1 1   ; var1 = true
       25 [-]: GETUPVAL R2 3; var2 = upvalues[3]
       26 [-]: LENGTH R1 R2 ; var1 = #var2
       27 [-]: LOADN R2 0   ; var2 = 0
-      28 [-]: JUMPIFNOTLT R2 R1 L7; goto L7 if var2 >= var66375
+      28 [-]: JUMPIFNOTLT R2 R1 L7; goto L7 if var2 >= var66352
       29 [-]: LOADN R3 1   ; var3 = 1
       30 [-]: GETUPVAL R4 3; var4 = upvalues[3]
       31 [-]: LENGTH R1 R4 ; var1 = #var4
@@ -268,7 +268,7 @@ L 1:  15 [-]: RETURN R0 0  ;
       13 [-]: NEWTABLE R7 0 1; var7 = {}
       14 [-]: LOADN R8 1   ; var8 = 1
       15 [-]: SETLIST R7 R8 1 [1]; var7[1] = var8; var7[2] = var9; 
-      16 [-]: LOADK R8 K6  ; var8 = 0.59999999999999998
+      16 [-]: LOADK R8 K6  ; var8 = 0.60000002384185791
       17 [-]: LOADN R9 0   ; var9 = 0
       18 [-]: NEWCLOSURE R10 P1; 
       19 [-]: CAPTURE UPVAL U0; 
@@ -294,7 +294,7 @@ L 1:  15 [-]: RETURN R0 0  ;
        4 [-]: LOADNIL R1   ; var1 = nil
        5 [-]: SETTABLEKS R1 R0 K3; var1["RHINO_SetComboTimerProp"] = var0
        6 [-]: GETIMPORT R1 5; var1 = _T["HUD_GetAnchorMgr"]
-       7 [-]: FASTCALL1 62 R1 L0; 
+       7 [-]: FASTCALL1 64 R1 L0; 
        8 [-]: GETIMPORT R0 7; var0 = 0x7B998233
        9 [-]: CALL R0 2 2  ; var0 = var0(var1)
 L 0:  10 [-]: JUMPIF R0 L1 ; goto L1 if var0
@@ -326,7 +326,7 @@ L 1:  18 [-]: RETURN R0 0  ;
        8 [-]: CAPTURE UPVAL U2; 
        9 [-]: SETTABLEKS R1 R0 K5; var1["RHINO_SetComboTimerProp"] = var0
       10 [-]: GETIMPORT R1 7; var1 = _T["HUD_GetAnchorMgr"]
-      11 [-]: FASTCALL1 62 R1 L0; 
+      11 [-]: FASTCALL1 64 R1 L0; 
       12 [-]: GETIMPORT R0 9; var0 = 0x7B998233
       13 [-]: CALL R0 2 2  ; var0 = var0(var1)
 L 0:  14 [-]: JUMPIF R0 L1 ; goto L1 if var0
@@ -379,11 +379,12 @@ L 1:  35 [-]: GETUPVAL R0 1; var0 = upvalues[1]
        0 [-]: GETUPVAL R2 0; var2 = upvalues[0]
        1 [-]: GETTABLEKS R1 R2 K0; var1 = var2[0xFA221145]
        2 [-]: GETIMPORT R2 2; var2 = 0xAE91E43B
-       3 [-]: GETIMPORT R3 4; var3 = 0x03F57322
+       3 [-]: FASTCALL1 62 R0 L0; 
        4 [-]: MOVE R4 R0   ; var4 = var0
-       5 [-]: CALL R3 2 0  ; var3, ... = var3(var4)
-       6 [-]: CALL R1 0 1  ; var1(var2, ...)
-       7 [-]: RETURN R0 0  ; 
+       5 [-]: GETIMPORT R3 4; var3 = 0x03F57322
+       6 [-]: CALL R3 2 2  ; var3 = var3(var4)
+L 0:   7 [-]: CALL R1 3 1  ; var1(var2, var3)
+       8 [-]: RETURN R0 0  ; 
 
 
 

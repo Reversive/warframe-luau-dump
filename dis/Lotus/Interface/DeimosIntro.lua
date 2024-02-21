@@ -71,8 +71,8 @@
       22 [-]: NEWTABLE R5 0 1; var5 = {}
       23 [-]: LOADN R6 100 ; var6 = 100
       24 [-]: SETLIST R5 R6 1 [1]; var5[1] = var6; var5[2] = var7; 
-      25 [-]: LOADK R6 K10 ; var6 = 0.69999999999999996
-      26 [-]: LOADK R7 K11 ; var7 = 1.3
+      25 [-]: LOADK R6 K10 ; var6 = 0.69999998807907104
+      26 [-]: LOADK R7 K11 ; var7 = 1.2999999523162842
       27 [-]: CALL R0 8 1  ; var0(var1, var2, var3, var4, var5, var6, var7)
       28 [-]: GETIMPORT R0 9; var0 = 0x25312C9B
       29 [-]: GETIMPORT R1 1; var1 = 0xAE91E43B
@@ -137,7 +137,7 @@
        3 [-]: CALL R2 2 0  ; var2, ... = var2(var3)
        4 [-]: NAMECALL R0 R0 K5; var1 = var0; var0 = var0[0x46A0EBF5]
        5 [-]: CALL R0 0 2  ; var0 = var0(var1, ...)
-       6 [-]: FASTCALL1 62 R0 L0; 
+       6 [-]: FASTCALL1 64 R0 L0; 
        7 [-]: MOVE R2 R0   ; var2 = var0
        8 [-]: GETIMPORT R1 7; var1 = 0x7B998233
        9 [-]: CALL R1 2 2  ; var1 = var1(var2)
@@ -150,7 +150,7 @@ L 1:  13 [-]: GETIMPORT R1 1; var1 = 0x89326C93
       16 [-]: CALL R3 2 0  ; var3, ... = var3(var4)
       17 [-]: NAMECALL R1 R1 K5; var2 = var1; var1 = var1[0x46A0EBF5]
       18 [-]: CALL R1 0 2  ; var1 = var1(var2, ...)
-      19 [-]: FASTCALL1 62 R1 L2; 
+      19 [-]: FASTCALL1 64 R1 L2; 
       20 [-]: MOVE R3 R1   ; var3 = var1
       21 [-]: GETIMPORT R2 7; var2 = 0x7B998233
       22 [-]: CALL R2 2 2  ; var2 = var2(var3)
@@ -193,7 +193,7 @@ L 3:  26 [-]: RETURN R0 0  ;
        3 [-]: CALL R2 2 0  ; var2, ... = var2(var3)
        4 [-]: NAMECALL R0 R0 K5; var1 = var0; var0 = var0[0x46A0EBF5]
        5 [-]: CALL R0 0 2  ; var0 = var0(var1, ...)
-       6 [-]: FASTCALL1 62 R0 L0; 
+       6 [-]: FASTCALL1 64 R0 L0; 
        7 [-]: MOVE R2 R0   ; var2 = var0
        8 [-]: GETIMPORT R1 7; var1 = 0x7B998233
        9 [-]: CALL R1 2 2  ; var1 = var1(var2)
@@ -206,7 +206,7 @@ L 1:  13 [-]: GETIMPORT R1 1; var1 = 0x89326C93
       16 [-]: CALL R3 2 0  ; var3, ... = var3(var4)
       17 [-]: NAMECALL R1 R1 K5; var2 = var1; var1 = var1[0x46A0EBF5]
       18 [-]: CALL R1 0 2  ; var1 = var1(var2, ...)
-      19 [-]: FASTCALL1 62 R1 L2; 
+      19 [-]: FASTCALL1 64 R1 L2; 
       20 [-]: MOVE R3 R1   ; var3 = var1
       21 [-]: GETIMPORT R2 7; var2 = 0x7B998233
       22 [-]: CALL R2 2 2  ; var2 = var2(var3)

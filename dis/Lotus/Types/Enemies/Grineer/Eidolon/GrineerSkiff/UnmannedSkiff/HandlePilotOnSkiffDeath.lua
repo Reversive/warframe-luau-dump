@@ -37,7 +37,7 @@ L 1:  13 [-]: GETTABLE R7 R3 R6; var7 = var3[var6]
       17 [-]: JUMPIFNOT R7 L2; goto L2 if not var7
       18 [-]: GETTABLE R2 R3 R6; var2 = var3[var6]
 L 2:  19 [-]: FORNLOOP R4 L1; nforloop end - iterate + goto L1
-L 3:  20 [-]: FASTCALL1 62 R2 L4; 
+L 3:  20 [-]: FASTCALL1 64 R2 L4; 
       21 [-]: MOVE R5 R2   ; var5 = var2
       22 [-]: GETIMPORT R4 8; var4 = 0x7B998233
       23 [-]: CALL R4 2 2  ; var4 = var4(var5)
@@ -45,7 +45,7 @@ L 4:  24 [-]: JUMPIF R4 L7 ; goto L7 if var4
       25 [-]: NAMECALL R4 R2 K9; var5 = var2; var4 = var2[0xFA9E477F]
       26 [-]: CALL R4 2 2  ; var4 = var4(var5)
       27 [-]: MOVE R1 R4   ; var1 = var4
-      28 [-]: FASTCALL1 62 R1 L5; 
+      28 [-]: FASTCALL1 64 R1 L5; 
       29 [-]: MOVE R5 R1   ; var5 = var1
       30 [-]: GETIMPORT R4 8; var4 = 0x7B998233
       31 [-]: CALL R4 2 2  ; var4 = var4(var5)

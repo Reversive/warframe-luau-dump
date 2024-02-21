@@ -36,14 +36,14 @@
        3 [-]: RETURN R2 1  ; 
 L 0:   4 [-]: LENGTH R2 R0 ; var2 = #var0
        5 [-]: LENGTH R3 R1 ; var3 = #var1
-       6 [-]: JUMPIFEQ R2 R3 L1; goto L1 if var2 == var-64953
+       6 [-]: JUMPIFEQ R2 R3 L1; goto L1 if var2 == var-64976
        7 [-]: LOADN R2 -1  ; var2 = -1
        8 [-]: RETURN R2 1  ; 
 L 1:   9 [-]: GETIMPORT R2 3; var2 = _T["AvatarRandomizerOverrideIndex"]
       10 [-]: JUMPXEQKNIL R2 L3; 
       11 [-]: GETIMPORT R2 3; var2 = _T["AvatarRandomizerOverrideIndex"]
       12 [-]: LENGTH R3 R0 ; var3 = #var0
-      13 [-]: JUMPIFNOTLT R3 R2 L2; goto L2 if var3 >= var328270
+      13 [-]: JUMPIFNOTLT R3 R2 L2; goto L2 if var3 >= var328225
       14 [-]: GETIMPORT R2 5; var2 = 0x3D106989
       15 [-]: LOADK R3 K6  ; var3 = "Warning: tried to use AvatarRandomizerOverrideIndex with invalid index"
       16 [-]: CALL R2 2 1  ; var2(var3)
@@ -68,7 +68,7 @@ L 5:  28 [-]: GETIMPORT R4 8; var4 = 0xC163F229
       35 [-]: LOADN R5 1   ; var5 = 1
       36 [-]: FORNPREP R4 L8; nforprep start - [escape at L8] -- var4 = iterator
 L 6:  37 [-]: GETTABLE R7 R1 R6; var7 = var1[var6]
-      38 [-]: JUMPIFNOTLE R3 R7 L7; goto L7 if var3 > var132653
+      38 [-]: JUMPIFNOTLE R3 R7 L7; goto L7 if var3 > var132643
       39 [-]: RETURN R6 1  ; 
 L 7:  40 [-]: GETTABLE R7 R1 R6; var7 = var1[var6]
       41 [-]: SUB R3 R3 R7 ; var3 = var3 - var7
@@ -143,7 +143,7 @@ L 0:  20 [-]: LOADK R5 K10 ; var5 = ""
       25 [-]: GETIMPORT R2 18; var2 = 0xC4460BD1
       26 [-]: LENGTH R1 R2 ; var1 = #var2
       27 [-]: LOADN R2 0   ; var2 = 0
-      28 [-]: JUMPIFNOTLT R2 R1 L0; goto L0 if var2 >= var1311054
+      28 [-]: JUMPIFNOTLT R2 R1 L0; goto L0 if var2 >= var1311009
       29 [-]: GETIMPORT R1 20; var1 = 0x55730E1A
       30 [-]: LOADN R2 1   ; var2 = 1
       31 [-]: GETIMPORT R4 18; var4 = 0xC4460BD1
@@ -191,7 +191,7 @@ L 0:  38 [-]: RETURN R0 0  ;
       25 [-]: GETIMPORT R2 18; var2 = 0xB1C2B2F4
       26 [-]: LENGTH R1 R2 ; var1 = #var2
       27 [-]: LOADN R2 0   ; var2 = 0
-      28 [-]: JUMPIFNOTLT R2 R1 L0; goto L0 if var2 >= var1311054
+      28 [-]: JUMPIFNOTLT R2 R1 L0; goto L0 if var2 >= var1311009
       29 [-]: GETIMPORT R1 20; var1 = 0x55730E1A
       30 [-]: LOADN R2 1   ; var2 = 1
       31 [-]: GETIMPORT R4 18; var4 = 0xB1C2B2F4
@@ -239,12 +239,12 @@ L 0:  38 [-]: RETURN R0 0  ;
       25 [-]: GETIMPORT R2 18; var2 = 0xFA327719
       26 [-]: LENGTH R1 R2 ; var1 = #var2
       27 [-]: LOADN R2 0   ; var2 = 0
-      28 [-]: JUMPIFNOTLT R2 R1 L2; goto L2 if var2 >= var66119
+      28 [-]: JUMPIFNOTLT R2 R1 L2; goto L2 if var2 >= var66096
       29 [-]: LOADN R2 1   ; var2 = 1
       30 [-]: GETIMPORT R3 21; var3 = _T["AvatarRandomizerOverrideIndex"]
       31 [-]: JUMPXEQKNIL R3 L0; 
       32 [-]: GETIMPORT R3 21; var3 = _T["AvatarRandomizerOverrideIndex"]
-      33 [-]: JUMPIFNOTLE R3 R1 L0; goto L0 if var3 > var1376846
+      33 [-]: JUMPIFNOTLE R3 R1 L0; goto L0 if var3 > var1376801
       34 [-]: GETIMPORT R2 21; var2 = _T["AvatarRandomizerOverrideIndex"]
       35 [-]: JUMP L1      ; goto L1
 L 0:  36 [-]: GETIMPORT R3 23; var3 = 0x55730E1A
@@ -299,7 +299,7 @@ L 2:  17 [-]: GETUPVAL R2 2; var2 = upvalues[2]
       19 [-]: CALL R2 2 1  ; var2(var3)
       20 [-]: GETIMPORT R2 8; var2 = 0xA2BC2ECB
       21 [-]: GETIMPORT R3 10; var3 = 0xBA997F41
-      22 [-]: JUMPIFNOTEQ R2 R3 L3; goto L3 if var2 ~= var656462
+      22 [-]: JUMPIFNOTEQ R2 R3 L3; goto L3 if var2 ~= var656417
       23 [-]: GETIMPORT R4 10; var4 = 0xBA997F41
       24 [-]: NAMECALL R2 R0 K11; var3 = var0; var2 = var0[0x2D9BA74F]
       25 [-]: CALL R2 3 1  ; var2(var3, var4)

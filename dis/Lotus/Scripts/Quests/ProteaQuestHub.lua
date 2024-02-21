@@ -40,7 +40,7 @@
        0 [-]: GETIMPORT R1 2; var1 = _T["HeistRoom_HologramPosition"]
        1 [-]: GETIMPORT R2 4; var2 = _T["HeistRoom_HologramRotation"]
        2 [-]: GETIMPORT R4 6; var4 = _T["HeistRoom_HologramOverride"]
-       3 [-]: FASTCALL1 62 R4 L0; 
+       3 [-]: FASTCALL1 64 R4 L0; 
        4 [-]: GETIMPORT R3 8; var3 = 0x7B998233
        5 [-]: CALL R3 2 2  ; var3 = var3(var4)
 L 0:   6 [-]: JUMPIF R3 L1 ; goto L1 if var3
@@ -102,7 +102,7 @@ L 5:  47 [-]: GETIMPORT R5 25; var5 = _T
        3 [-]: CALL R1 2 0  ; var1, ... = var1(var2)
        4 [-]: SETLIST R0 R1 -1 [1]; 
        5 [-]: GETIMPORT R2 4; var2 = 0x4B858385
-       6 [-]: FASTCALL1 62 R2 L0; 
+       6 [-]: FASTCALL1 64 R2 L0; 
        7 [-]: GETIMPORT R1 6; var1 = 0x7B998233
        8 [-]: CALL R1 2 2  ; var1 = var1(var2)
 L 0:   9 [-]: JUMPIF R1 L1 ; goto L1 if var1
@@ -139,7 +139,7 @@ L 4:  34 [-]: GETIMPORT R1 17; var1 = 0xBD496AA1[0x42645DA3]
       40 [-]: GETTABLEKS R2 R3 K21; var2 = var3["location"]
       41 [-]: GETUPVAL R4 0; var4 = upvalues[0]
       42 [-]: GETTABLEKS R3 R4 K22; var3 = var4["FORTUNA_NODE_TAG"]
-      43 [-]: JUMPIFEQ R2 R3 L5; goto L5 if var2 == var65581
+      43 [-]: JUMPIFEQ R2 R3 L5; goto L5 if var2 == var65571
       44 [-]: RETURN R0 0  ; 
 L 5:  45 [-]: GETIMPORT R2 25; var2 = _T["Fortuna_ForceScreenTransmission"]
       46 [-]: JUMPIF R2 L6 ; goto L6 if var2
@@ -244,7 +244,7 @@ L12: 134 [-]: SETTABLEKS R4 R3 K53; var4["TaggedDialog"] = var3
 
 
 ; Name:            
-; Defined at line: 120
+; Defined at line: 121
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -260,7 +260,7 @@ L12: 134 [-]: SETTABLEKS R4 R3 K53; var4["TaggedDialog"] = var3
 
 
 ; Name:            
-; Defined at line: 125
+; Defined at line: 126
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -273,7 +273,7 @@ L12: 134 [-]: SETTABLEKS R4 R3 K53; var4["TaggedDialog"] = var3
 
 
 ; Name:            
-; Defined at line: 129
+; Defined at line: 130
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -286,7 +286,7 @@ L12: 134 [-]: SETTABLEKS R4 R3 K53; var4["TaggedDialog"] = var3
 
 
 ; Name:            
-; Defined at line: 133
+; Defined at line: 134
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0

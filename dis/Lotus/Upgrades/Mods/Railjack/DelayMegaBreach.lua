@@ -79,7 +79,7 @@ L 0:   7 [-]: GETTABLE R3 R4 R5; var3 = var4[var5]
       12 [-]: GETIMPORT R5 7; var5 = 0x89326C93
       13 [-]: NAMECALL R5 R5 K8; var6 = var5; var5 = var5[0x78298275]
       14 [-]: CALL R5 2 2  ; var5 = var5(var6)
-      15 [-]: FASTCALL1 62 R5 L1; 
+      15 [-]: FASTCALL1 64 R5 L1; 
       16 [-]: MOVE R7 R5   ; var7 = var5
       17 [-]: GETIMPORT R6 10; var6 = 0x7B998233
       18 [-]: CALL R6 2 2  ; var6 = var6(var7)
@@ -120,7 +120,7 @@ L 2:  29 [-]: GETIMPORT R6 15; var6 = cjson[0xB139D7BC]
       11 [-]: GETIMPORT R9 6; var9 = 0x7ED0A956
       12 [-]: LOADK R10 K7 ; var10 = "/Lotus/Types/Game/CrewShip/Malfunctions/MegaBreach"
       13 [-]: CALL R9 2 2  ; var9 = var9(var10)
-      14 [-]: FASTCALL1 62 R8 L0; 
+      14 [-]: FASTCALL1 64 R8 L0; 
       15 [-]: MOVE R11 R8  ; var11 = var8
       16 [-]: GETIMPORT R10 9; var10 = 0x7B998233
       17 [-]: CALL R10 2 2 ; var10 = var10(var11)
@@ -129,7 +129,7 @@ L 0:  18 [-]: JUMPIF R10 L2; goto L2 if var10
       20 [-]: NAMECALL R10 R8 K10; var11 = var8; var10 = var8[0x6B8FA1A7]
       21 [-]: CALL R10 3 2 ; var10 = var10(var11, var12)
       22 [-]: LOADN R11 0  ; var11 = 0
-      23 [-]: JUMPIFNOTLT R11 R10 L2; goto L2 if var11 >= var789070
+      23 [-]: JUMPIFNOTLT R11 R10 L2; goto L2 if var11 >= var789025
       24 [-]: GETIMPORT R10 12; var10 = _T
       25 [-]: GETUPVAL R12 2; var12 = upvalues[2]
       26 [-]: GETUPVAL R16 2; var16 = upvalues[2]

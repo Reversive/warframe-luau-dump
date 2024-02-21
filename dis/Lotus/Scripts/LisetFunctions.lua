@@ -26,7 +26,7 @@
        0 [-]: GETIMPORT R0 1; var0 = 0x89326C93
        1 [-]: NAMECALL R0 R0 K2; var1 = var0; var0 = var0[0x78298275]
        2 [-]: CALL R0 2 2  ; var0 = var0(var1)
-L 0:   3 [-]: FASTCALL1 62 R0 L1; 
+L 0:   3 [-]: FASTCALL1 64 R0 L1; 
        4 [-]: MOVE R2 R0   ; var2 = var0
        5 [-]: GETIMPORT R1 4; var1 = 0x7B998233
        6 [-]: CALL R1 2 2  ; var1 = var1(var2)
@@ -77,7 +77,7 @@ L 4:  29 [-]: FORGLOOP R2 L3 2 [inext];
       11 [-]: NAMECALL R3 R3 K6; var4 = var3; var3 = var3[0x3F3AE64C]
       12 [-]: CALL R3 4 2  ; var3 = var3(var4, var5, var6)
       13 [-]: LOADNIL R4   ; var4 = nil
-      14 [-]: FASTCALL1 62 R3 L0; 
+      14 [-]: FASTCALL1 64 R3 L0; 
       15 [-]: MOVE R6 R3   ; var6 = var3
       16 [-]: GETIMPORT R5 8; var5 = 0x7B998233
       17 [-]: CALL R5 2 2  ; var5 = var5(var6)
@@ -85,7 +85,7 @@ L 0:  18 [-]: JUMPIF R5 L6 ; goto L6 if var5
       19 [-]: NAMECALL R5 R3 K9; var6 = var3; var5 = var3[0x80563238]
       20 [-]: CALL R5 2 2  ; var5 = var5(var6)
       21 [-]: MOVE R4 R5   ; var4 = var5
-      22 [-]: FASTCALL1 62 R4 L1; 
+      22 [-]: FASTCALL1 64 R4 L1; 
       23 [-]: MOVE R6 R4   ; var6 = var4
       24 [-]: GETIMPORT R5 8; var5 = 0x7B998233
       25 [-]: CALL R5 2 2  ; var5 = var5(var6)
@@ -95,12 +95,12 @@ L 1:  26 [-]: JUMPIF R5 L5 ; goto L5 if var5
       29 [-]: NAMECALL R5 R5 K11; var6 = var5; var5 = var5[0x8E7C3B5E]
       30 [-]: CALL R5 2 2  ; var5 = var5(var6)
       31 [-]: MOVE R2 R5   ; var2 = var5
-      32 [-]: FASTCALL1 62 R4 L2; 
+      32 [-]: FASTCALL1 64 R4 L2; 
       33 [-]: MOVE R6 R4   ; var6 = var4
       34 [-]: GETIMPORT R5 8; var5 = 0x7B998233
       35 [-]: CALL R5 2 2  ; var5 = var5(var6)
 L 2:  36 [-]: JUMPIF R5 L4 ; goto L4 if var5
-      37 [-]: FASTCALL1 62 R2 L3; 
+      37 [-]: FASTCALL1 64 R2 L3; 
       38 [-]: MOVE R6 R2   ; var6 = var2
       39 [-]: GETIMPORT R5 8; var5 = 0x7B998233
       40 [-]: CALL R5 2 2  ; var5 = var5(var6)
@@ -118,9 +118,9 @@ L 4:  51 [-]: LOADB R8 1   ; var8 = true
       52 [-]: NAMECALL R6 R4 K16; var7 = var4; var6 = var4[0xCD57F819]
       53 [-]: CALL R6 3 2  ; var6 = var6(var7, var8)
       54 [-]: GETTABLEKS R5 R6 K17; var5 = var6["mBootLocation"]
-      55 [-]: JUMPIFEQ R2 R1 L7; goto L7 if var2 == var67143
+      55 [-]: JUMPIFEQ R2 R1 L7; goto L7 if var2 == var67120
       56 [-]: LOADN R6 1   ; var6 = 1
-      57 [-]: JUMPIFNOTEQ R5 R6 L7; goto L7 if var5 ~= var1246798
+      57 [-]: JUMPIFNOTEQ R5 R6 L7; goto L7 if var5 ~= var1246753
       58 [-]: GETIMPORT R6 19; var6 = 0x89326C93
       59 [-]: GETIMPORT R8 21; var8 = 0x0469F296
       60 [-]: LOADK R9 K22 ; var9 = "TNWQuestSpawn"
@@ -145,7 +145,7 @@ L 7:  78 [-]: GETIMPORT R5 5; var5 = 0x76EA806B
       79 [-]: NAMECALL R5 R5 K31; var6 = var5; var5 = var5[0x8792AAAB]
       80 [-]: CALL R5 2 2  ; var5 = var5(var6)
       81 [-]: JUMPIFNOT R5 L10; goto L10 if not var5
-      82 [-]: JUMPIFNOTEQ R2 R1 L8; goto L8 if var2 ~= var1770830
+      82 [-]: JUMPIFNOTEQ R2 R1 L8; goto L8 if var2 ~= var1770785
       83 [-]: GETIMPORT R5 27; var5 = 0x3D106989
       84 [-]: LOADK R6 K32 ; var6 = "LisetPlayerSpawn disabled, active quest == TNW"
       85 [-]: CALL R5 2 1  ; var5(var6)
@@ -170,7 +170,7 @@ L 9: 103 [-]: GETIMPORT R5 27; var5 = 0x3D106989
      104 [-]: LOADK R6 K38 ; var6 = "No Active Quest"
      105 [-]: CALL R5 2 1  ; var5(var6)
      106 [-]: JUMP L21     ; goto L21
-L10: 107 [-]: JUMPIFEQ R2 R1 L11; goto L11 if var2 == var16778523
+L10: 107 [-]: JUMPIFEQ R2 R1 L11; goto L11 if var2 == var16778502
      108 [-]: LOADB R5 0 +1; var5 = false
 L11: 109 [-]: LOADB R5 1   ; var5 = true
 L12: 110 [-]: JUMPIFNOT R5 L13; goto L13 if not var5
@@ -193,10 +193,10 @@ L14: 125 [-]: GETIMPORT R7 43; var7 = 0x25D99D89
      127 [-]: CALL R7 2 2  ; var7 = var7(var8)
      128 [-]: NAMECALL R7 R7 K11; var8 = var7; var7 = var7[0x8E7C3B5E]
      129 [-]: CALL R7 2 2  ; var7 = var7(var8)
-     130 [-]: JUMPIFEQ R7 R1 L15; goto L15 if var7 == var16778779
+     130 [-]: JUMPIFEQ R7 R1 L15; goto L15 if var7 == var16778758
      131 [-]: LOADB R6 0 +1; var6 = false
 L15: 132 [-]: LOADB R6 1   ; var6 = true
-L16: 133 [-]: JUMPIFEQ R5 R6 L21; goto L21 if var5 == var1247054
+L16: 133 [-]: JUMPIFEQ R5 R6 L21; goto L21 if var5 == var1247009
      134 [-]: GETIMPORT R7 19; var7 = 0x89326C93
      135 [-]: GETIMPORT R9 21; var9 = 0x0469F296
      136 [-]: LOADK R10 K22; var10 = "TNWQuestSpawn"
@@ -246,7 +246,7 @@ L18: 178 [-]: GETIMPORT R10 52; var10 = 0xBE190284
      180 [-]: LOADNIL R13  ; var13 = nil
      181 [-]: NAMECALL R10 R10 K53; var11 = var10; var10 = var10[0x970C8978]
      182 [-]: CALL R10 4 1 ; var10(var11, var12, var13)
-     183 [-]: FASTCALL1 62 R9 L19; 
+     183 [-]: FASTCALL1 64 R9 L19; 
      184 [-]: MOVE R11 R9  ; var11 = var9
      185 [-]: GETIMPORT R10 8; var10 = 0x7B998233
      186 [-]: CALL R10 2 2 ; var10 = var10(var11)

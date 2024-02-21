@@ -24,7 +24,7 @@
        2 [-]: LOADN R4 1   ; var4 = 1
        3 [-]: NAMECALL R2 R2 K1; var3 = var2; var2 = var2[0xE85A2361]
        4 [-]: CALL R2 3 2  ; var2 = var2(var3, var4)
-       5 [-]: FASTCALL1 62 R2 L0; 
+       5 [-]: FASTCALL1 64 R2 L0; 
        6 [-]: MOVE R4 R2   ; var4 = var2
        7 [-]: GETIMPORT R3 3; var3 = 0x7B998233
        8 [-]: CALL R3 2 2  ; var3 = var3(var4)
@@ -55,7 +55,7 @@ L 3:  27 [-]: NAMECALL R3 R2 K9; var4 = var2; var3 = var2[0x0AD758CB]
 L 4:  33 [-]: MOVE R9 R6   ; var9 = var6
       34 [-]: NAMECALL R7 R2 K11; var8 = var2; var7 = var2[0xFEF27732]
       35 [-]: CALL R7 3 2  ; var7 = var7(var8, var9)
-      36 [-]: FASTCALL1 62 R7 L5; 
+      36 [-]: FASTCALL1 64 R7 L5; 
       37 [-]: MOVE R9 R7   ; var9 = var7
       38 [-]: GETIMPORT R8 3; var8 = 0x7B998233
       39 [-]: CALL R8 2 2  ; var8 = var8(var9)

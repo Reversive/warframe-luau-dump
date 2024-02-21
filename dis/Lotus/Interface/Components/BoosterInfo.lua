@@ -106,7 +106,7 @@
        5 [-]: LOADN R3 0   ; var3 = 0
        6 [-]: NAMECALL R1 R1 K4; var2 = var1; var1 = var1[0x3F3AE64C]
        7 [-]: CALL R1 3 2  ; var1 = var1(var2, var3)
-       8 [-]: FASTCALL1 62 R1 L0; 
+       8 [-]: FASTCALL1 64 R1 L0; 
        9 [-]: MOVE R3 R1   ; var3 = var1
       10 [-]: GETIMPORT R2 6; var2 = 0x7B998233
       11 [-]: CALL R2 2 2  ; var2 = var2(var3)
@@ -116,7 +116,7 @@ L 1:  14 [-]: NAMECALL R2 R1 K7; var3 = var1; var2 = var1[0x80563238]
       15 [-]: CALL R2 2 2  ; var2 = var2(var3)
       16 [-]: SETTABLEKS R2 R0 K8; var2["mGameData"] = var0
       17 [-]: GETTABLEKS R3 R0 K8; var3 = var0["mGameData"]
-      18 [-]: FASTCALL1 62 R3 L2; 
+      18 [-]: FASTCALL1 64 R3 L2; 
       19 [-]: GETIMPORT R2 6; var2 = 0x7B998233
       20 [-]: CALL R2 2 2  ; var2 = var2(var3)
 L 2:  21 [-]: JUMPIFNOT R2 L3; goto L3 if not var2
@@ -134,7 +134,7 @@ L 3:  23 [-]: NEWTABLE R2 0 0; var2 = {}
 L 4:  33 [-]: LOADNIL R7   ; var7 = nil
       34 [-]: GETTABLE R10 R3 R6; var10 = var3[var6]
       35 [-]: GETTABLEKS R9 R10 K11; var9 = var10["mItemType"]
-      36 [-]: FASTCALL1 62 R9 L5; 
+      36 [-]: FASTCALL1 64 R9 L5; 
       37 [-]: GETIMPORT R8 6; var8 = 0x7B998233
       38 [-]: CALL R8 2 2  ; var8 = var8(var9)
 L 5:  39 [-]: JUMPIF R8 L10; goto L10 if var8
@@ -148,7 +148,7 @@ L 5:  39 [-]: JUMPIF R8 L10; goto L10 if var8
       47 [-]: GETTABLEKS R9 R10 K16; var9 = var10["mExpiryDate"]
       48 [-]: CALL R8 2 2  ; var8 = var8(var9)
       49 [-]: LOADN R9 0   ; var9 = 0
-      50 [-]: JUMPIFNOTLT R9 R8 L7; goto L7 if var9 >= var1181985
+      50 [-]: JUMPIFNOTLT R9 R8 L7; goto L7 if var9 >= var1182003
       51 [-]: DUPTABLE R9 18; 
       52 [-]: GETTABLE R11 R3 R6; var11 = var3[var6]
       53 [-]: GETTABLEKS R10 R11 K16; var10 = var11["mExpiryDate"]
@@ -160,7 +160,7 @@ L 5:  39 [-]: JUMPIF R8 L10; goto L10 if var8
 L 6:  59 [-]: GETTABLE R9 R3 R6; var9 = var3[var6]
       60 [-]: GETTABLEKS R8 R9 K17; var8 = var9["mUsesRemaining"]
       61 [-]: LOADN R9 0   ; var9 = 0
-      62 [-]: JUMPIFNOTLT R9 R8 L7; goto L7 if var9 >= var1247265
+      62 [-]: JUMPIFNOTLT R9 R8 L7; goto L7 if var9 >= var1247283
       63 [-]: DUPTABLE R8 19; 
       64 [-]: GETTABLE R10 R3 R6; var10 = var3[var6]
       65 [-]: GETTABLEKS R9 R10 K17; var9 = var10["mUsesRemaining"]
@@ -265,9 +265,9 @@ L21: 158 [-]: GETTABLEKS R9 R4 K34; var9 = var4["mGlobalUpgrades"]
      164 [-]: GETTABLEKS R11 R8 K16; var11 = var8["mExpiryDate"]
      165 [-]: CALL R10 2 2 ; var10 = var10(var11)
      166 [-]: LOADN R11 0  ; var11 = 0
-     167 [-]: JUMPIFNOTLT R9 R11 L22; goto L22 if var9 >= var2887
+     167 [-]: JUMPIFNOTLT R9 R11 L22; goto L22 if var9 >= var2864
      168 [-]: LOADN R11 0  ; var11 = 0
-     169 [-]: JUMPIFNOTLT R11 R10 L22; goto L22 if var11 >= var-1309432
+     169 [-]: JUMPIFNOTLT R11 R10 L22; goto L22 if var11 >= var-1309403
 L22: 170 [-]: FORNLOOP R5 L21; nforloop end - iterate + goto L21
 L23: 171 [-]: GETIMPORT R5 38; var5 = _T["HubBlessings"]
      172 [-]: JUMPIFNOT R5 L29; goto L29 if not var5
@@ -298,7 +298,7 @@ L27: 195 [-]: JUMPIF R10 L28; goto L28 if var10
      197 [-]: GETTABLEKS R12 R9 K16; var12 = var9["mExpiryDate"]
      198 [-]: CALL R11 2 2 ; var11 = var11(var12)
      199 [-]: LOADN R12 0  ; var12 = 0
-     200 [-]: JUMPIFNOTLT R12 R11 L28; goto L28 if var12 >= var1182753
+     200 [-]: JUMPIFNOTLT R12 R11 L28; goto L28 if var12 >= var1182771
      201 [-]: DUPTABLE R12 18; 
      202 [-]: GETTABLEKS R13 R9 K16; var13 = var9["mExpiryDate"]
      203 [-]: SETTABLEKS R13 R12 K16; var13["mExpiryDate"] = var12
@@ -330,7 +330,7 @@ L29: 226 [-]: LOADN R7 1   ; var7 = 1
      229 [-]: FORNPREP R5 L33; nforprep start - [escape at L33] -- var5 = iterator
 L30: 230 [-]: GETTABLEKS R9 R0 K0; var9 = var0["mActiveBoosters"]
      231 [-]: LENGTH R8 R9 ; var8 = #var9
-     232 [-]: JUMPIFNOTLE R7 R8 L32; goto L32 if var7 > var687868444
+     232 [-]: JUMPIFNOTLE R7 R8 L32; goto L32 if var7 > var687868479
      233 [-]: GETTABLEKS R10 R0 K0; var10 = var0["mActiveBoosters"]
      234 [-]: GETTABLE R9 R10 R7; var9 = var10[var7]
      235 [-]: GETTABLEKS R8 R9 K16; var8 = var9["mExpiryDate"]
@@ -341,11 +341,11 @@ L30: 230 [-]: GETTABLEKS R9 R0 K0; var9 = var0["mActiveBoosters"]
      240 [-]: GETTABLEKS R9 R10 K16; var9 = var10["mExpiryDate"]
      241 [-]: CALL R8 2 2  ; var8 = var8(var9)
      242 [-]: LOADN R9 0   ; var9 = 0
-     243 [-]: JUMPIFNOTLT R9 R8 L32; goto L32 if var9 >= var-570423012
+     243 [-]: JUMPIFNOTLT R9 R8 L32; goto L32 if var9 >= var-570422977
      244 [-]: GETTABLEKS R9 R0 K1; var9 = var0["mRefreshDelay"]
      245 [-]: JUMPXEQKNIL R9 L31; 
      246 [-]: GETTABLEKS R9 R0 K1; var9 = var0["mRefreshDelay"]
-     247 [-]: JUMPIFNOTLT R8 R9 L32; goto L32 if var8 >= var-570423245
+     247 [-]: JUMPIFNOTLT R8 R9 L32; goto L32 if var8 >= var-570423239
 L31: 248 [-]: SETTABLEKS R8 R0 K1; var8["mRefreshDelay"] = var0
 L32: 249 [-]: FORNLOOP R5 L30; nforloop end - iterate + goto L30
 L33: 250 [-]: LOADB R5 1   ; var5 = true
@@ -370,7 +370,7 @@ L 0:   3 [-]: GETTABLEKS R2 R0 K0; var2 = var0["mRefreshDelay"]
        7 [-]: SETTABLEKS R1 R0 K0; var1["mRefreshDelay"] = var0
        8 [-]: GETTABLEKS R1 R0 K0; var1 = var0["mRefreshDelay"]
        9 [-]: LOADN R2 0   ; var2 = 0
-      10 [-]: JUMPIFNOTLT R1 R2 L1; goto L1 if var1 >= var-2080374459
+      10 [-]: JUMPIFNOTLT R1 R2 L1; goto L1 if var1 >= var-2080374452
       11 [-]: NAMECALL R1 R0 K3; var2 = var0; var1 = var0[0x431E8984]
       12 [-]: CALL R1 2 1  ; var1(var2)
 L 1:  13 [-]: RETURN R0 0  ; 
@@ -384,7 +384,7 @@ L 1:  13 [-]: RETURN R0 0  ;
 ; Max Stack Size:  4
 
        0 [-]: GETTABLEKS R2 R0 K0; var2 = var0["mGameData"]
-       1 [-]: FASTCALL1 62 R2 L0; 
+       1 [-]: FASTCALL1 64 R2 L0; 
        2 [-]: GETIMPORT R1 2; var1 = 0x7B998233
        3 [-]: CALL R1 2 2  ; var1 = var1(var2)
 L 0:   4 [-]: JUMPIFNOT R1 L1; goto L1 if not var1

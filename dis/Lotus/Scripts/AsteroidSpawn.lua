@@ -25,14 +25,14 @@ L 0:   2 [-]: GETIMPORT R2 3; var2 = 0x46C0EF36
        3 [-]: NAMECALL R2 R2 K4; var3 = var2; var2 = var2[0x89DCE117]
        4 [-]: CALL R2 2 2  ; var2 = var2(var3)
        5 [-]: JUMPIF R2 L5 ; goto L5 if var2
-       6 [-]: FASTCALL1 62 R0 L1; 
+       6 [-]: FASTCALL1 64 R0 L1; 
        7 [-]: MOVE R3 R0   ; var3 = var0
        8 [-]: GETIMPORT R2 6; var2 = 0x7B998233
        9 [-]: CALL R2 2 2  ; var2 = var2(var3)
 L 1:  10 [-]: JUMPIF R2 L4 ; goto L4 if var2
       11 [-]: LENGTH R2 R0 ; var2 = #var0
       12 [-]: LOADN R3 0   ; var3 = 0
-      13 [-]: JUMPIFNOTLE R2 R3 L2; goto L2 if var2 > var65558
+      13 [-]: JUMPIFNOTLE R2 R3 L2; goto L2 if var2 > var65582
       14 [-]: MOVE R0 R1   ; var0 = var1
       15 [-]: NEWTABLE R1 0 0; var1 = {}
 L 2:  16 [-]: GETIMPORT R2 8; var2 = 0x0C5E62F9

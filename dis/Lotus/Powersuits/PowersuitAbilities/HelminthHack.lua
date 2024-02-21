@@ -173,7 +173,7 @@ L 3:  14 [-]: NAMECALL R4 R1 K6; var5 = var1; var4 = var1[0xDE321E6F]
       69 [-]: NAMECALL R5 R5 K35; var6 = var5; var5 = var5[0x18D05D30]
       70 [-]: CALL R5 2 2  ; var5 = var5(var6)
       71 [-]: JUMPIFNOT R5 L4; goto L4 if not var5
-      72 [-]: LOADN R7 62  ; var7 = 62
+      72 [-]: LOADN R7 65  ; var7 = 65
       73 [-]: LOADN R8 0   ; var8 = 0
       74 [-]: GETUPVAL R9 0; var9 = upvalues[0]
       75 [-]: NAMECALL R5 R4 K36; var6 = var4; var5 = var4[0x5E6704FF]
@@ -212,7 +212,7 @@ L 6: 101 [-]: SETTABLEKS R6 R5 K55; var6["buffData"] = var5
      108 [-]: GETIMPORT R9 48; var9 = 0x6687F6E0
      109 [-]: NAMECALL R7 R0 K57; var8 = var0; var7 = var0[0x73712B9C]
      110 [-]: CALL R7 3 2  ; var7 = var7(var8, var9)
-L 7: 111 [-]: FASTCALL1 62 R1 L8; 
+L 7: 111 [-]: FASTCALL1 64 R1 L8; 
      112 [-]: MOVE R9 R1   ; var9 = var1
      113 [-]: GETIMPORT R8 59; var8 = 0x7B998233
      114 [-]: CALL R8 2 2  ; var8 = var8(var9)
@@ -226,7 +226,7 @@ L 8: 115 [-]: JUMPIF R8 L11; goto L11 if var8
      122 [-]: JUMPIF R8 L11; goto L11 if var8
      123 [-]: NAMECALL R8 R1 K37; var9 = var1; var8 = var1[0xA5E492D4]
      124 [-]: CALL R8 2 2  ; var8 = var8(var9)
-     125 [-]: JUMPIFEQ R6 R8 L9; goto L9 if var6 == var394776
+     125 [-]: JUMPIFEQ R6 R8 L9; goto L9 if var6 == var394792
      126 [-]: NOT R6 R6    ; var6 = not var6
      127 [-]: JUMPIFNOT R6 L9; goto L9 if not var6
      128 [-]: GETIMPORT R8 63; var8 = _T["SetAbilityActiveAnim"]
@@ -276,7 +276,7 @@ L 3:  14 [-]: NAMECALL R4 R1 K6; var5 = var1; var4 = var1[0xDE321E6F]
       17 [-]: NAMECALL R5 R5 K9; var6 = var5; var5 = var5[0x18D05D30]
       18 [-]: CALL R5 2 2  ; var5 = var5(var6)
       19 [-]: JUMPIFNOT R5 L4; goto L4 if not var5
-      20 [-]: LOADN R7 62  ; var7 = 62
+      20 [-]: LOADN R7 65  ; var7 = 65
       21 [-]: LOADN R8 0   ; var8 = 0
       22 [-]: GETUPVAL R9 0; var9 = upvalues[0]
       23 [-]: NAMECALL R5 R4 K10; var6 = var4; var5 = var4[0x12DD9DA2]

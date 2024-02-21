@@ -24,7 +24,7 @@
 ; Max Stack Size:  17
 
        0 [-]: GETIMPORT R5 2; var5 = _T["harlequinLightClones"]
-       1 [-]: FASTCALL1 62 R5 L0; 
+       1 [-]: FASTCALL1 64 R5 L0; 
        2 [-]: GETIMPORT R4 4; var4 = 0x7B998233
        3 [-]: CALL R4 2 2  ; var4 = var4(var5)
 L 0:   4 [-]: JUMPIF R4 L13; goto L13 if var4
@@ -32,12 +32,12 @@ L 0:   4 [-]: JUMPIF R4 L13; goto L13 if var4
        6 [-]: NAMECALL R7 R0 K5; var8 = var0; var7 = var0[0x388577D5]
        7 [-]: CALL R7 2 2  ; var7 = var7(var8)
        8 [-]: GETTABLE R5 R6 R7; var5 = var6[var7]
-       9 [-]: FASTCALL1 62 R5 L1; 
+       9 [-]: FASTCALL1 64 R5 L1; 
       10 [-]: GETIMPORT R4 4; var4 = 0x7B998233
       11 [-]: CALL R4 2 2  ; var4 = var4(var5)
 L 1:  12 [-]: JUMPIF R4 L13; goto L13 if var4
       13 [-]: GETIMPORT R5 7; var5 = _T["clonesVortex"]
-      14 [-]: FASTCALL1 62 R5 L2; 
+      14 [-]: FASTCALL1 64 R5 L2; 
       15 [-]: GETIMPORT R4 4; var4 = 0x7B998233
       16 [-]: CALL R4 2 2  ; var4 = var4(var5)
 L 2:  17 [-]: JUMPIFNOT R4 L3; goto L3 if not var4
@@ -46,7 +46,7 @@ L 2:  17 [-]: JUMPIFNOT R4 L3; goto L3 if not var4
       20 [-]: SETTABLEKS R5 R4 K6; var5["clonesVortex"] = var4
 L 3:  21 [-]: GETIMPORT R6 7; var6 = _T["clonesVortex"]
       22 [-]: GETTABLE R5 R6 R1; var5 = var6[var1]
-      23 [-]: FASTCALL1 62 R5 L4; 
+      23 [-]: FASTCALL1 64 R5 L4; 
       24 [-]: GETIMPORT R4 4; var4 = 0x7B998233
       25 [-]: CALL R4 2 2  ; var4 = var4(var5)
 L 4:  26 [-]: JUMPIFNOT R4 L5; goto L5 if not var4
@@ -81,7 +81,7 @@ L 7:  49 [-]: GETTABLEKS R10 R8 K11; var10 = var8["avatar"]
       55 [-]: NAMECALL R10 R10 K20; var11 = var10; var10 = var10[0x47901F07]
       56 [-]: CALL R10 7 2 ; var10 = var10(var11, var12, var13, var14, var15, var16)
       57 [-]: MOVE R9 R10  ; var9 = var10
-L 8:  58 [-]: FASTCALL1 62 R9 L9; 
+L 8:  58 [-]: FASTCALL1 64 R9 L9; 
       59 [-]: MOVE R11 R9  ; var11 = var9
       60 [-]: GETIMPORT R10 4; var10 = 0x7B998233
       61 [-]: CALL R10 2 2 ; var10 = var10(var11)
@@ -125,7 +125,7 @@ L13:  91 [-]: RETURN R0 0  ;
 ; Max Stack Size:  9
 
        0 [-]: GETIMPORT R3 2; var3 = _T["clonesVortex"]
-       1 [-]: FASTCALL1 62 R3 L0; 
+       1 [-]: FASTCALL1 64 R3 L0; 
        2 [-]: GETIMPORT R2 4; var2 = 0x7B998233
        3 [-]: CALL R2 2 2  ; var2 = var2(var3)
 L 0:   4 [-]: JUMPIFNOT R2 L1; goto L1 if not var2
@@ -134,7 +134,7 @@ L 0:   4 [-]: JUMPIFNOT R2 L1; goto L1 if not var2
        7 [-]: SETTABLEKS R3 R2 K1; var3["clonesVortex"] = var2
 L 1:   8 [-]: GETIMPORT R4 2; var4 = _T["clonesVortex"]
        9 [-]: GETTABLE R3 R4 R0; var3 = var4[var0]
-      10 [-]: FASTCALL1 62 R3 L2; 
+      10 [-]: FASTCALL1 64 R3 L2; 
       11 [-]: GETIMPORT R2 4; var2 = 0x7B998233
       12 [-]: CALL R2 2 2  ; var2 = var2(var3)
 L 2:  13 [-]: JUMPIF R2 L6 ; goto L6 if var2
@@ -143,7 +143,7 @@ L 2:  13 [-]: JUMPIF R2 L6 ; goto L6 if var2
       16 [-]: GETTABLE R3 R5 R0; var3 = var5[var0]
       17 [-]: CALL R2 2 4  ; var2, var3, var4 = var2(var3)
       18 [-]: FORGPREP_INEXT R2 L5; 
-L 3:  19 [-]: FASTCALL1 62 R6 L4; 
+L 3:  19 [-]: FASTCALL1 64 R6 L4; 
       20 [-]: MOVE R8 R6   ; var8 = var6
       21 [-]: GETIMPORT R7 4; var7 = 0x7B998233
       22 [-]: CALL R7 2 2  ; var7 = var7(var8)
@@ -166,7 +166,7 @@ L 6:  31 [-]: RETURN R0 0  ;
 ; Max Stack Size:  29
 
        0 [-]: GETIMPORT R6 2; var6 = _T["harlequinLightClones"]
-       1 [-]: FASTCALL1 62 R6 L0; 
+       1 [-]: FASTCALL1 64 R6 L0; 
        2 [-]: GETIMPORT R5 4; var5 = 0x7B998233
        3 [-]: CALL R5 2 2  ; var5 = var5(var6)
 L 0:   4 [-]: JUMPIF R5 L5 ; goto L5 if var5
@@ -174,7 +174,7 @@ L 0:   4 [-]: JUMPIF R5 L5 ; goto L5 if var5
        6 [-]: NAMECALL R8 R0 K5; var9 = var0; var8 = var0[0x388577D5]
        7 [-]: CALL R8 2 2  ; var8 = var8(var9)
        8 [-]: GETTABLE R6 R7 R8; var6 = var7[var8]
-       9 [-]: FASTCALL1 62 R6 L1; 
+       9 [-]: FASTCALL1 64 R6 L1; 
       10 [-]: GETIMPORT R5 4; var5 = 0x7B998233
       11 [-]: CALL R5 2 2  ; var5 = var5(var6)
 L 1:  12 [-]: JUMPIF R5 L5 ; goto L5 if var5
@@ -234,7 +234,7 @@ L 5:  57 [-]: RETURN R0 0  ;
 
        0 [-]: NAMECALL R2 R0 K0; var3 = var0; var2 = var0[0x28E744CF]
        1 [-]: CALL R2 2 2  ; var2 = var2(var3)
-       2 [-]: FASTCALL1 62 R2 L0; 
+       2 [-]: FASTCALL1 64 R2 L0; 
        3 [-]: MOVE R4 R2   ; var4 = var2
        4 [-]: GETIMPORT R3 2; var3 = 0x7B998233
        5 [-]: CALL R3 2 2  ; var3 = var3(var4)
@@ -251,7 +251,7 @@ L 2:  12 [-]: GETIMPORT R5 7; var5 = gLotusMirrorAvatarType
       16 [-]: RETURN R0 0  ; 
 L 3:  17 [-]: NAMECALL R3 R2 K8; var4 = var2; var3 = var2[0xDE321E6F]
       18 [-]: CALL R3 2 2  ; var3 = var3(var4)
-      19 [-]: FASTCALL1 62 R3 L4; 
+      19 [-]: FASTCALL1 64 R3 L4; 
       20 [-]: MOVE R5 R3   ; var5 = var3
       21 [-]: GETIMPORT R4 2; var4 = 0x7B998233
       22 [-]: CALL R4 2 2  ; var4 = var4(var5)
@@ -262,7 +262,7 @@ L 5:  25 [-]: NAMECALL R4 R2 K9; var5 = var2; var4 = var2[0x5E651723]
       27 [-]: NAMECALL R4 R4 K10; var5 = var4; var4 = var4[0x8B72B36E]
       28 [-]: CALL R4 2 2  ; var4 = var4(var5)
       29 [-]: GETIMPORT R6 13; var6 = _T["inCooldown"]
-      30 [-]: FASTCALL1 62 R6 L6; 
+      30 [-]: FASTCALL1 64 R6 L6; 
       31 [-]: GETIMPORT R5 2; var5 = 0x7B998233
       32 [-]: CALL R5 2 2  ; var5 = var5(var6)
 L 6:  33 [-]: JUMPIFNOT R5 L7; goto L7 if not var5
@@ -271,7 +271,7 @@ L 6:  33 [-]: JUMPIFNOT R5 L7; goto L7 if not var5
       36 [-]: SETTABLEKS R6 R5 K12; var6["inCooldown"] = var5
 L 7:  37 [-]: GETIMPORT R7 13; var7 = _T["inCooldown"]
       38 [-]: GETTABLE R6 R7 R4; var6 = var7[var4]
-      39 [-]: FASTCALL1 62 R6 L8; 
+      39 [-]: FASTCALL1 64 R6 L8; 
       40 [-]: GETIMPORT R5 2; var5 = 0x7B998233
       41 [-]: CALL R5 2 2  ; var5 = var5(var6)
 L 8:  42 [-]: JUMPIFNOT R5 L9; goto L9 if not var5
@@ -279,7 +279,7 @@ L 8:  42 [-]: JUMPIFNOT R5 L9; goto L9 if not var5
       44 [-]: LOADB R6 0   ; var6 = false
       45 [-]: SETTABLE R6 R5 R4; var6[var5] = var4
 L 9:  46 [-]: GETIMPORT R6 16; var6 = _T["aliveVortex"]
-      47 [-]: FASTCALL1 62 R6 L10; 
+      47 [-]: FASTCALL1 64 R6 L10; 
       48 [-]: GETIMPORT R5 2; var5 = 0x7B998233
       49 [-]: CALL R5 2 2  ; var5 = var5(var6)
 L10:  50 [-]: JUMPIFNOT R5 L11; goto L11 if not var5
@@ -287,7 +287,7 @@ L10:  50 [-]: JUMPIFNOT R5 L11; goto L11 if not var5
       52 [-]: NEWTABLE R6 0 0; var6 = {}
       53 [-]: SETTABLEKS R6 R5 K15; var6["aliveVortex"] = var5
 L11:  54 [-]: GETIMPORT R6 18; var6 = _T["lastVortexTime"]
-      55 [-]: FASTCALL1 62 R6 L12; 
+      55 [-]: FASTCALL1 64 R6 L12; 
       56 [-]: GETIMPORT R5 2; var5 = 0x7B998233
       57 [-]: CALL R5 2 2  ; var5 = var5(var6)
 L12:  58 [-]: JUMPIFNOT R5 L13; goto L13 if not var5
@@ -308,13 +308,13 @@ L13:  62 [-]: GETIMPORT R5 20; var5 = 0xBE190284
       73 [-]: GETIMPORT R8 27; var8 = 0xD2FCBC86
 L14:  74 [-]: GETIMPORT R11 18; var11 = _T["lastVortexTime"]
       75 [-]: GETTABLE R10 R11 R4; var10 = var11[var4]
-      76 [-]: FASTCALL1 62 R10 L15; 
+      76 [-]: FASTCALL1 64 R10 L15; 
       77 [-]: GETIMPORT R9 2; var9 = 0x7B998233
       78 [-]: CALL R9 2 2  ; var9 = var9(var10)
 L15:  79 [-]: JUMPIF R9 L16; goto L16 if var9
       80 [-]: GETIMPORT R10 18; var10 = _T["lastVortexTime"]
       81 [-]: GETTABLE R9 R10 R4; var9 = var10[var4]
-      82 [-]: JUMPIFNOTLT R7 R9 L16; goto L16 if var7 >= var1182030
+      82 [-]: JUMPIFNOTLT R7 R9 L16; goto L16 if var7 >= var1181985
       83 [-]: GETIMPORT R9 18; var9 = _T["lastVortexTime"]
       84 [-]: LOADNIL R10  ; var10 = nil
       85 [-]: SETTABLE R10 R9 R4; var10[var9] = var4
@@ -335,20 +335,20 @@ L16:  86 [-]: GETIMPORT R9 30; var9 = 0x6C97A788[0x608BC054]
      100 [-]: SETTABLEKS R10 R9 K38; var10["buffData"] = var9
      101 [-]: GETIMPORT R12 18; var12 = _T["lastVortexTime"]
      102 [-]: GETTABLE R11 R12 R4; var11 = var12[var4]
-     103 [-]: FASTCALL1 62 R11 L17; 
+     103 [-]: FASTCALL1 64 R11 L17; 
      104 [-]: GETIMPORT R10 2; var10 = 0x7B998233
      105 [-]: CALL R10 2 2 ; var10 = var10(var11)
 L17: 106 [-]: JUMPIF R10 L19; goto L19 if var10
      107 [-]: GETIMPORT R12 18; var12 = _T["lastVortexTime"]
      108 [-]: GETTABLE R11 R12 R4; var11 = var12[var4]
-     109 [-]: FASTCALL1 62 R11 L18; 
+     109 [-]: FASTCALL1 64 R11 L18; 
      110 [-]: GETIMPORT R10 2; var10 = 0x7B998233
      111 [-]: CALL R10 2 2 ; var10 = var10(var11)
 L18: 112 [-]: JUMPIF R10 L32; goto L32 if var10
      113 [-]: GETIMPORT R12 18; var12 = _T["lastVortexTime"]
      114 [-]: GETTABLE R11 R12 R4; var11 = var12[var4]
      115 [-]: SUB R10 R7 R11; var10 = var7 - var11
-     116 [-]: JUMPIFNOTLT R8 R10 L32; goto L32 if var8 >= var1049891
+     116 [-]: JUMPIFNOTLT R8 R10 L32; goto L32 if var8 >= var1049876
 L19: 117 [-]: JUMPIFNOT R5 L20; goto L20 if not var5
      118 [-]: GETIMPORT R10 16; var10 = _T["aliveVortex"]
      119 [-]: GETIMPORT R13 40; var13 = 0xF1699C40
@@ -378,7 +378,7 @@ L21: 137 [-]: GETIMPORT R12 51; var12 = 0x58048C2B
      143 [-]: CALL R10 7 1 ; var10(var11, var12, var13, var14, var15, var16)
      144 [-]: GETIMPORT R12 16; var12 = _T["aliveVortex"]
      145 [-]: GETTABLE R11 R12 R4; var11 = var12[var4]
-     146 [-]: FASTCALL1 62 R11 L22; 
+     146 [-]: FASTCALL1 64 R11 L22; 
      147 [-]: GETIMPORT R10 2; var10 = 0x7B998233
      148 [-]: CALL R10 2 2 ; var10 = var10(var11)
 L22: 149 [-]: JUMPIF R10 L31; goto L31 if var10
@@ -432,13 +432,13 @@ L24: 168 [-]: GETIMPORT R13 16; var13 = _T["aliveVortex"]
 L25: 197 [-]: LOADB R12 0  ; var12 = false
 L26: 198 [-]: JUMPIF R12 L27; goto L27 if var12
      199 [-]: GETIMPORT R13 65; var13 = 0xCBD666E1
-     200 [-]: LOADK R14 K66; var14 = 0.14999999999999999
+     200 [-]: LOADK R14 K66; var14 = 0.15000000596046448
      201 [-]: CALL R13 2 1 ; var13(var14)
      202 [-]: LOADB R12 1  ; var12 = true
      203 [-]: JUMPBACK L26 ; goto L26
 L27: 204 [-]: GETIMPORT R15 16; var15 = _T["aliveVortex"]
      205 [-]: GETTABLE R14 R15 R4; var14 = var15[var4]
-     206 [-]: FASTCALL1 62 R14 L28; 
+     206 [-]: FASTCALL1 64 R14 L28; 
      207 [-]: GETIMPORT R13 2; var13 = 0x7B998233
      208 [-]: CALL R13 2 2 ; var13 = var13(var14)
 L28: 209 [-]: JUMPIF R13 L38; goto L38 if var13
@@ -461,11 +461,11 @@ L29: 218 [-]: GETIMPORT R21 71; var21 = gLotusAvatarType
      226 [-]: ADDK R13 R13 K73; var13 = var13 + 1
 L30: 227 [-]: FORGLOOP R14 L29 2 [inext]; 
      228 [-]: LOADN R14 0  ; var14 = 0
-     229 [-]: JUMPIFNOTLT R14 R13 L38; goto L38 if var14 >= var4918862
+     229 [-]: JUMPIFNOTLT R14 R13 L38; goto L38 if var14 >= var4918817
      230 [-]: GETIMPORT R14 75; var14 = 0xF5EFE735
      231 [-]: MUL R13 R13 R14; var13 = var13 * var14
      232 [-]: GETIMPORT R16 25; var16 = 0xAA36C202
-     233 [-]: LOADN R17 296; var17 = 296
+     233 [-]: LOADN R17 306; var17 = 306
      234 [-]: LOADN R18 3  ; var18 = 3
      235 [-]: MOVE R19 R13 ; var19 = var13
      236 [-]: NAMECALL R14 R3 K76; var15 = var3; var14 = var3[0x032A0844]
@@ -480,7 +480,7 @@ L30: 227 [-]: FORGLOOP R14 L29 2 [inext];
      245 [-]: NAMECALL R14 R2 K63; var15 = var2; var14 = var2[0x37E45FB5]
      246 [-]: CALL R14 5 1 ; var14(var15, var16, var17, var18)
      247 [-]: GETIMPORT R14 18; var14 = _T["lastVortexTime"]
-     248 [-]: SUBK R15 R7 K66; var15 = var7 - 0.14999999999999999
+     248 [-]: SUBK R15 R7 K66; var15 = var7 - 0.15000000596046448
      249 [-]: SETTABLE R15 R14 R4; var15[var14] = var4
      250 [-]: RETURN R0 0  ; 
 L31: 251 [-]: GETIMPORT R10 80; var10 = 0x3D106989
@@ -493,7 +493,7 @@ L32: 255 [-]: GETIMPORT R11 13; var11 = _T["inCooldown"]
      258 [-]: RETURN R0 0  ; 
 L33: 259 [-]: GETIMPORT R12 16; var12 = _T["aliveVortex"]
      260 [-]: GETTABLE R11 R12 R4; var11 = var12[var4]
-     261 [-]: FASTCALL1 62 R11 L34; 
+     261 [-]: FASTCALL1 64 R11 L34; 
      262 [-]: GETIMPORT R10 2; var10 = 0x7B998233
      263 [-]: CALL R10 2 2 ; var10 = var10(var11)
 L34: 264 [-]: JUMPIF R10 L35; goto L35 if var10
@@ -523,7 +523,7 @@ L36: 283 [-]: GETIMPORT R11 84; var11 = 0x60F649B4
      288 [-]: GETIMPORT R12 92; var12 = 0xA84E2806
      289 [-]: GETIMPORT R13 94; var13 = 0xBCFE32C3
 L37: 290 [-]: MOVE R16 R12 ; var16 = var12
-     291 [-]: LOADN R17 292; var17 = 292
+     291 [-]: LOADN R17 300; var17 = 300
      292 [-]: NAMECALL R18 R6 K95; var19 = var6; var18 = var6[0xCDE10C4A]
      293 [-]: CALL R18 2 2 ; var18 = var18(var19)
      294 [-]: MOVE R19 R6  ; var19 = var6

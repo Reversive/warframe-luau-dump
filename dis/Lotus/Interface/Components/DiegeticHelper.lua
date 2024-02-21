@@ -35,23 +35,21 @@
        7 [-]: SETTABLEKS R2 R1 K3; var2["mCameraSpotPos"] = var1
        8 [-]: NAMECALL R3 R0 K5; var4 = var0; var3 = var0[0x091C120E]
        9 [-]: CALL R3 2 2  ; var3 = var3(var4)
-      10 [-]: DIVK R2 R3 K4; var2 = var3 / 2
-      11 [-]: SETTABLEKS R2 R1 K6; var2["mHalfWidth"] = var1
+           11 [-]: SETTABLEKS R2 R1 K6; var2["mHalfWidth"] = var1
       12 [-]: NAMECALL R3 R0 K7; var4 = var0; var3 = var0[0x2CC9D281]
       13 [-]: CALL R3 2 2  ; var3 = var3(var4)
-      14 [-]: DIVK R2 R3 K4; var2 = var3 / 2
-      15 [-]: SETTABLEKS R2 R1 K8; var2["mHalfHeight"] = var1
+           15 [-]: SETTABLEKS R2 R1 K8; var2["mHalfHeight"] = var1
       16 [-]: GETIMPORT R2 10; var2 = 0x78CA68A2
       17 [-]: LOADN R3 0   ; var3 = 0
-      18 [-]: LOADK R4 K11 ; var4 = 0.14999999999999999
+      18 [-]: LOADK R4 K11 ; var4 = 0.15000000596046448
       19 [-]: CALL R2 3 2  ; var2 = var2(var3, var4)
       20 [-]: SETTABLEKS R2 R1 K12; var2["mSmoothCursorX"] = var1
       21 [-]: GETIMPORT R2 10; var2 = 0x78CA68A2
       22 [-]: LOADN R3 0   ; var3 = 0
-      23 [-]: LOADK R4 K11 ; var4 = 0.14999999999999999
+      23 [-]: LOADK R4 K11 ; var4 = 0.15000000596046448
       24 [-]: CALL R2 3 2  ; var2 = var2(var3, var4)
       25 [-]: SETTABLEKS R2 R1 K13; var2["mSmoothCursorY"] = var1
-      26 [-]: LOADK R2 K11 ; var2 = 0.14999999999999999
+      26 [-]: LOADK R2 K11 ; var2 = 0.15000000596046448
       27 [-]: SETTABLEKS R2 R1 K14; var2["mDefaultSmoothTime"] = var1
       28 [-]: LOADN R2 0   ; var2 = 0
       29 [-]: SETTABLEKS R2 R1 K15; var2["mActiveMouseInterpSmoothTime"] = var1
@@ -63,13 +61,13 @@
       35 [-]: SETTABLEKS R2 R1 K18; var2["mMinShiftX"] = var1
       36 [-]: LOADN R2 220 ; var2 = 220
       37 [-]: SETTABLEKS R2 R1 K19; var2["mMaxShiftX"] = var1
-      38 [-]: LOADK R2 K20 ; var2 = 0.20000000000000001
+      38 [-]: LOADK R2 K20 ; var2 = 0.20000000298023224
       39 [-]: SETTABLEKS R2 R1 K21; var2["mMinCameraShiftX"] = var1
-      40 [-]: LOADK R2 K22 ; var2 = -0.20000000000000001
+      40 [-]: LOADK R2 K22 ; var2 = -0.20000000298023224
       41 [-]: SETTABLEKS R2 R1 K23; var2["mMaxCameraShiftX"] = var1
-      42 [-]: LOADK R2 K24 ; var2 = -0.10000000000000001
+      42 [-]: LOADK R2 K24 ; var2 = -0.10000000149011612
       43 [-]: SETTABLEKS R2 R1 K25; var2["mMinCameraShiftY"] = var1
-      44 [-]: LOADK R2 K26 ; var2 = 0.10000000000000001
+      44 [-]: LOADK R2 K26 ; var2 = 0.10000000149011612
       45 [-]: SETTABLEKS R2 R1 K27; var2["mMaxCameraShiftY"] = var1
       46 [-]: LOADN R2 -100; var2 = -100
       47 [-]: SETTABLEKS R2 R1 K28; var2["mMinShiftY"] = var1

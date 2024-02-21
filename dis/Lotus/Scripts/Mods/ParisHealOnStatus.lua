@@ -55,7 +55,7 @@
        1 [-]: NAMECALL R5 R5 K2; var6 = var5; var5 = var5[0x18D05D30]
        2 [-]: CALL R5 2 2  ; var5 = var5(var6)
        3 [-]: JUMPIFNOT R5 L1; goto L1 if not var5
-       4 [-]: FASTCALL1 62 R0 L0; 
+       4 [-]: FASTCALL1 64 R0 L0; 
        5 [-]: MOVE R6 R0   ; var6 = var0
        6 [-]: GETIMPORT R5 4; var5 = 0x7B998233
        7 [-]: CALL R5 2 2  ; var5 = var5(var6)
@@ -91,7 +91,7 @@ L 3:  15 [-]: NAMECALL R5 R0 K9; var6 = var0; var5 = var0[0x388577D5]
       37 [-]: GETIMPORT R8 7; var8 = _T["parisHealOnStatus"]
       38 [-]: GETTABLE R7 R8 R5; var7 = var8[var5]
       39 [-]: LOADN R8 3   ; var8 = 3
-      40 [-]: JUMPIFNOTLE R8 R7 L4; goto L4 if var8 > var3278919
+      40 [-]: JUMPIFNOTLE R8 R7 L4; goto L4 if var8 > var3278896
       41 [-]: LOADN R8 50  ; var8 = 50
       42 [-]: MUL R7 R8 R2 ; var7 = var8 * var2
       43 [-]: MOVE R10 R0  ; var10 = var0

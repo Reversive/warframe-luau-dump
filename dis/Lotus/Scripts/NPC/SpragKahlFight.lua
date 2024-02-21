@@ -24,7 +24,7 @@ L 0:   1 [-]: GETIMPORT R2 1; var2 = 0xCBD666E1
        4 [-]: NAMECALL R2 R0 K2; var3 = var0; var2 = var0[0xFA9E477F]
        5 [-]: CALL R2 2 2  ; var2 = var2(var3)
        6 [-]: MOVE R1 R2   ; var1 = var2
-       7 [-]: FASTCALL1 62 R1 L1; 
+       7 [-]: FASTCALL1 64 R1 L1; 
        8 [-]: MOVE R3 R1   ; var3 = var1
        9 [-]: GETIMPORT R2 4; var2 = 0x7B998233
       10 [-]: CALL R2 2 2  ; var2 = var2(var3)

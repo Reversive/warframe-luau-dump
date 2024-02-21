@@ -106,7 +106,7 @@ L 5:  31 [-]: GETIMPORT R2 24; var2 = _T["AbilityLevelQueryParms"]["Modded"]
        1 [-]: CALL R4 2 2  ; var4 = var4(var5)
        2 [-]: NAMECALL R4 R4 K1; var5 = var4; var4 = var4[0x18BE56EC]
        3 [-]: CALL R4 2 0  ; var4, ... = var4(var5)
-       4 [-]: FASTCALL 62 L0; 
+       4 [-]: FASTCALL 64 L0; 
        5 [-]: GETIMPORT R3 3; var3 = 0x7B998233
        6 [-]: CALL R3 0 2  ; var3 = var3(var4, ...)
 L 0:   7 [-]: JUMPIFNOT R3 L1; goto L1 if not var3
@@ -193,7 +193,7 @@ L 3:  14 [-]: NAMECALL R4 R1 K6; var5 = var1; var4 = var1[0xDE321E6F]
       62 [-]: CALL R5 2 2  ; var5 = var5(var6)
       63 [-]: NAMECALL R5 R5 K31; var6 = var5; var5 = var5[0x18BE56EC]
       64 [-]: CALL R5 2 2  ; var5 = var5(var6)
-      65 [-]: FASTCALL1 62 R5 L4; 
+      65 [-]: FASTCALL1 64 R5 L4; 
       66 [-]: MOVE R7 R5   ; var7 = var5
       67 [-]: GETIMPORT R6 33; var6 = 0x7B998233
       68 [-]: CALL R6 2 2  ; var6 = var6(var7)
@@ -294,7 +294,7 @@ L 7: 156 [-]: RETURN R0 0  ;
 ; Is_vararg:       0
 ; Max Stack Size:  7
 
-L 0:   0 [-]: FASTCALL1 62 R1 L1; 
+L 0:   0 [-]: FASTCALL1 64 R1 L1; 
        1 [-]: MOVE R5 R1   ; var5 = var1
        2 [-]: GETIMPORT R4 1; var4 = 0x7B998233
        3 [-]: CALL R4 2 2  ; var4 = var4(var5)

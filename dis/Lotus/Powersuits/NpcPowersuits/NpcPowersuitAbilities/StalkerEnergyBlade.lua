@@ -30,7 +30,7 @@
        4 [-]: GETTABLEKS R3 R2 K2; var3 = var2["visible"]
        5 [-]: JUMPIFNOT R3 L1; goto L1 if not var3
        6 [-]: GETTABLEKS R4 R2 K3; var4 = var2["avatar"]
-       7 [-]: FASTCALL1 62 R4 L0; 
+       7 [-]: FASTCALL1 64 R4 L0; 
        8 [-]: GETIMPORT R3 5; var3 = 0x7B998233
        9 [-]: CALL R3 2 2  ; var3 = var3(var4)
 L 0:  10 [-]: JUMPIF R3 L1 ; goto L1 if var3
@@ -40,7 +40,7 @@ L 0:  10 [-]: JUMPIF R3 L1 ; goto L1 if var3
       14 [-]: JUMPIF R3 L1 ; goto L1 if var3
       15 [-]: GETTABLEKS R3 R2 K7; var3 = var2["distanceToTarget"]
       16 [-]: GETIMPORT R4 9; var4 = 0x443A8D0B
-      17 [-]: JUMPIFNOTLT R4 R3 L2; goto L2 if var4 >= var839
+      17 [-]: JUMPIFNOTLT R4 R3 L2; goto L2 if var4 >= var816
 L 1:  18 [-]: LOADN R3 0   ; var3 = 0
       19 [-]: RETURN R3 1  ; 
 L 2:  20 [-]: GETTABLEKS R5 R2 K3; var5 = var2["avatar"]
@@ -63,7 +63,7 @@ L 2:  20 [-]: GETTABLEKS R5 R2 K3; var5 = var2["avatar"]
        3 [-]: NAMECALL R3 R0 K3; var4 = var0; var3 = var0[0x003C792F]
        4 [-]: CALL R3 0 2  ; var3 = var3(var4, ...)
        5 [-]: LOADNIL R4   ; var4 = nil
-       6 [-]: FASTCALL1 62 R1 L0; 
+       6 [-]: FASTCALL1 64 R1 L0; 
        7 [-]: MOVE R6 R1   ; var6 = var1
        8 [-]: GETIMPORT R5 5; var5 = 0x7B998233
        9 [-]: CALL R5 2 2  ; var5 = var5(var6)
@@ -96,7 +96,7 @@ L 2:  32 [-]: GETIMPORT R5 15; var5 = 0x89326C93
       36 [-]: MOVE R10 R0  ; var10 = var0
       37 [-]: NAMECALL R5 R5 K18; var6 = var5; var5 = var5[0x05909209]
       38 [-]: CALL R5 6 2  ; var5 = var5(var6, var7, var8, var9, var10)
-      39 [-]: FASTCALL1 62 R5 L3; 
+      39 [-]: FASTCALL1 64 R5 L3; 
       40 [-]: MOVE R7 R5   ; var7 = var5
       41 [-]: GETIMPORT R6 5; var6 = 0x7B998233
       42 [-]: CALL R6 2 2  ; var6 = var6(var7)
@@ -114,7 +114,7 @@ L 4:  47 [-]: RETURN R0 0  ;
 ; Is_vararg:       0
 ; Max Stack Size:  15
 
-       0 [-]: FASTCALL1 62 R2 L0; 
+       0 [-]: FASTCALL1 64 R2 L0; 
        1 [-]: MOVE R5 R2   ; var5 = var2
        2 [-]: GETIMPORT R4 1; var4 = 0x7B998233
        3 [-]: CALL R4 2 2  ; var4 = var4(var5)

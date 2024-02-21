@@ -51,7 +51,7 @@ L 0:  21 [-]: MOVE R4 R7   ; var4 = var7
       23 [-]: FORNPREP R4 L4; nforprep start - [escape at L4] -- var4 = iterator
 L 1:  24 [-]: GETTABLE R7 R2 R6; var7 = var2[var6]
       25 [-]: GETIMPORT R9 14; var9 = 0x6C97A788["EMISSIVE_MAP_ATTEN"]
-      26 [-]: LOADK R10 K15; var10 = 0.20000000000000001
+      26 [-]: LOADK R10 K15; var10 = 0.20000000298023224
       27 [-]: NAMECALL R7 R7 K16; var8 = var7; var7 = var7[0x986D2AB8]
       28 [-]: CALL R7 4 1  ; var7(var8, var9, var10)
       29 [-]: GETUPVAL R9 0; var9 = upvalues[0]
@@ -73,7 +73,7 @@ L 1:  24 [-]: GETTABLE R7 R2 R6; var7 = var2[var6]
       45 [-]: LOADN R14 5  ; var14 = 5
       46 [-]: NAMECALL R9 R9 K22; var10 = var9; var9 = var9[0x462C251C]
       47 [-]: CALL R9 6 2  ; var9 = var9(var10, var11, var12, var13, var14)
-      48 [-]: FASTCALL1 62 R9 L2; 
+      48 [-]: FASTCALL1 64 R9 L2; 
       49 [-]: MOVE R11 R9  ; var11 = var9
       50 [-]: GETIMPORT R10 24; var10 = 0x7B998233
       51 [-]: CALL R10 2 2 ; var10 = var10(var11)
@@ -86,14 +86,14 @@ L 2:  52 [-]: JUMPIF R10 L3; goto L3 if var10
       58 [-]: CALL R12 5 0 ; var12, ... = var12(var13, var14, var15, var16)
       59 [-]: NAMECALL R10 R9 K27; var11 = var9; var10 = var9[0xA3927FE9]
       60 [-]: CALL R10 0 1 ; var10(var11, ...)
-      61 [-]: LOADK R13 K15; var13 = 0.20000000000000001
+      61 [-]: LOADK R13 K15; var13 = 0.20000000298023224
       62 [-]: GETIMPORT R15 30; var15 = 0x5BCED4C4[0x3630E649]
       63 [-]: CALL R15 1 2 ; var15 = var15()
-      64 [-]: MULK R14 R15 K28; var14 = var15 * 0.29999999999999999
+      64 [-]: MULK R14 R15 K28; var14 = var15 * 0.30000001192092896
       65 [-]: ADD R12 R13 R14; var12 = var13 + var14
       66 [-]: NAMECALL R10 R9 K31; var11 = var9; var10 = var9[0x175F96C1]
       67 [-]: CALL R10 3 1 ; var10(var11, var12)
-      68 [-]: LOADK R12 K32; var12 = -0.90000000000000002
+      68 [-]: LOADK R12 K32; var12 = -0.89999997615814209
       69 [-]: NAMECALL R10 R9 K33; var11 = var9; var10 = var9[0xA8193DBF]
       70 [-]: CALL R10 3 1 ; var10(var11, var12)
       71 [-]: LOADN R12 3  ; var12 = 3

@@ -59,7 +59,7 @@
        5 [-]: CALL R0 5 1  ; var0(var1, var2, var3, var4)
        6 [-]: GETIMPORT R3 5; var3 = 0x0032441C
        7 [-]: GETTABLEKS R2 R3 K6; var2 = var3["UIColor_DarkGrey"]
-       8 [-]: FASTCALL1 62 R2 L0; 
+       8 [-]: FASTCALL1 64 R2 L0; 
        9 [-]: GETIMPORT R1 8; var1 = 0x7B998233
       10 [-]: CALL R1 2 2  ; var1 = var1(var2)
 L 0:  11 [-]: NOT R0 R1    ; var0 = not var1
@@ -83,7 +83,7 @@ L 1:  20 [-]: GETIMPORT R0 1; var0 = 0xAE91E43B
       29 [-]: NAMECALL R0 R0 K3; var1 = var0; var0 = var0[0x67BC869F]
       30 [-]: CALL R0 5 1  ; var0(var1, var2, var3, var4)
       31 [-]: GETIMPORT R1 17; var1 = _T["ProgressMovie_Time"]
-      32 [-]: FASTCALL1 62 R1 L2; 
+      32 [-]: FASTCALL1 64 R1 L2; 
       33 [-]: GETIMPORT R0 8; var0 = 0x7B998233
       34 [-]: CALL R0 2 2  ; var0 = var0(var1)
 L 2:  35 [-]: JUMPIF R0 L3 ; goto L3 if var0
@@ -120,7 +120,7 @@ L 3:  40 [-]: RETURN R0 0  ;
 
        0 [-]: GETIMPORT R1 1; var1 = 0xAE91E43B
        1 [-]: LOADK R3 K2  ; var3 = "Panel.Progress.Label.Tf"
-       2 [-]: LOADN R4 29  ; var4 = 29
+       2 [-]: LOADN R4 31  ; var4 = 31
        3 [-]: MULK R9 R0 K3; var9 = var0 * 100
        4 [-]: FASTCALL1 12 R9 L0; 
        5 [-]: GETIMPORT R8 6; var8 = 0x5BCED4C4[0x55F27C30]
@@ -132,7 +132,7 @@ L 0:   7 [-]: MOVE R6 R8   ; var6 = var8
       11 [-]: CALL R1 5 1  ; var1(var2, var3, var4, var5)
       12 [-]: GETIMPORT R1 1; var1 = 0xAE91E43B
       13 [-]: LOADK R3 K9  ; var3 = "Panel.ProgressShadow.Label.Tf"
-      14 [-]: LOADN R4 29  ; var4 = 29
+      14 [-]: LOADN R4 31  ; var4 = 31
       15 [-]: MULK R9 R0 K3; var9 = var0 * 100
       16 [-]: FASTCALL1 12 R9 L1; 
       17 [-]: GETIMPORT R8 6; var8 = 0x5BCED4C4[0x55F27C30]
@@ -192,7 +192,7 @@ L 1:  19 [-]: MOVE R6 R8   ; var6 = var8
       28 [-]: CALL R1 5 1  ; var1(var2, var3, var4, var5)
       29 [-]: GETIMPORT R1 5; var1 = 0xAE91E43B
       30 [-]: LOADK R3 K12 ; var3 = "Panel.TimeLeft"
-      31 [-]: LOADN R4 34  ; var4 = 34
+      31 [-]: LOADN R4 36  ; var4 = 36
       32 [-]: NAMECALL R1 R1 K13; var2 = var1; var1 = var1[0x91A24E4B]
       33 [-]: CALL R1 4 2  ; var1 = var1(var2, var3, var4)
       34 [-]: GETIMPORT R2 5; var2 = 0xAE91E43B

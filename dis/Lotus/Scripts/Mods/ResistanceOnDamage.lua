@@ -71,7 +71,7 @@ L 2:  30 [-]: SETTABLEKS R2 R1 K2; var2["maxResistance"] = var1
 
        0 [-]: NAMECALL R2 R0 K0; var3 = var0; var2 = var0[0x5B89142C]
        1 [-]: CALL R2 2 2  ; var2 = var2(var3)
-       2 [-]: FASTCALL1 62 R2 L0; 
+       2 [-]: FASTCALL1 64 R2 L0; 
        3 [-]: MOVE R4 R2   ; var4 = var2
        4 [-]: GETIMPORT R3 2; var3 = 0x7B998233
        5 [-]: CALL R3 2 2  ; var3 = var3(var4)
@@ -86,55 +86,56 @@ L 2:  13 [-]: GETIMPORT R5 6; var5 = _T["resistanceOnDamage"]
       14 [-]: GETTABLE R4 R5 R3; var4 = var5[var3]
       15 [-]: JUMPXEQKNIL R4 L3 NOT; 
       16 [-]: RETURN R0 0  ; 
-L 3:  17 [-]: GETIMPORT R4 8; var4 = 0x03F57322
+L 3:  17 [-]: FASTCALL1 62 R1 L4; 
       18 [-]: MOVE R5 R1   ; var5 = var1
-      19 [-]: CALL R4 2 2  ; var4 = var4(var5)
-      20 [-]: GETIMPORT R7 6; var7 = _T["resistanceOnDamage"]
-      21 [-]: GETTABLE R6 R7 R3; var6 = var7[var3]
-      22 [-]: GETTABLE R5 R6 R4; var5 = var6[var4]
-      23 [-]: JUMPXEQKNIL R5 L4 NOT; 
-      24 [-]: RETURN R0 0  ; 
-L 4:  25 [-]: GETIMPORT R7 6; var7 = _T["resistanceOnDamage"]
-      26 [-]: GETTABLE R6 R7 R3; var6 = var7[var3]
-      27 [-]: GETTABLE R5 R6 R4; var5 = var6[var4]
-L 5:  28 [-]: GETTABLEKS R6 R5 K9; var6 = var5["timer"]
-      29 [-]: LOADN R7 0   ; var7 = 0
-      30 [-]: JUMPIFNOTLT R7 R6 L6; goto L6 if var7 >= var-419428795
-      31 [-]: NAMECALL R6 R0 K10; var7 = var0; var6 = var0[0x2047CFE7]
-      32 [-]: CALL R6 2 2  ; var6 = var6(var7)
-      33 [-]: JUMPIF R6 L6 ; goto L6 if var6
-      34 [-]: GETTABLEKS R7 R5 K9; var7 = var5["timer"]
-      35 [-]: GETIMPORT R8 12; var8 = 0x67652851
-      36 [-]: CALL R8 1 2  ; var8 = var8()
-      37 [-]: SUB R6 R7 R8 ; var6 = var7 - var8
-      38 [-]: SETTABLEKS R6 R5 K9; var6["timer"] = var5
-      39 [-]: GETIMPORT R6 14; var6 = 0xCBD666E1
-      40 [-]: LOADN R7 0   ; var7 = 0
-      41 [-]: CALL R6 2 1  ; var6(var7)
-      42 [-]: JUMPBACK L5  ; goto L5
-L 6:  43 [-]: GETTABLEKS R6 R5 K15; var6 = var5["resistanceVal"]
-      44 [-]: GETTABLEKS R7 R5 K16; var7 = var5["numResistances"]
-      45 [-]: MUL R9 R6 R7 ; var9 = var6 * var7
-      46 [-]: GETIMPORT R10 18; var10 = 0x1E196325
-      47 [-]: FASTCALL2 19 R9 R10 L7; 
-      48 [-]: GETIMPORT R8 21; var8 = 0x5BCED4C4[0xAC1B386A]
-      49 [-]: CALL R8 3 2  ; var8 = var8(var9, var10)
-L 7:  50 [-]: NAMECALL R9 R0 K22; var10 = var0; var9 = var0[0xDE321E6F]
-      51 [-]: CALL R9 2 2  ; var9 = var9(var10)
-      52 [-]: LOADN R11 35 ; var11 = 35
-      53 [-]: LOADN R12 2  ; var12 = 2
-      54 [-]: LOADN R14 1  ; var14 = 1
-      55 [-]: SUB R13 R14 R8; var13 = var14 - var8
-      56 [-]: LOADNIL R14  ; var14 = nil
-      57 [-]: LOADNIL R15  ; var15 = nil
-      58 [-]: MOVE R16 R4  ; var16 = var4
-      59 [-]: NAMECALL R9 R9 K23; var10 = var9; var9 = var9[0x12DD9DA2]
-      60 [-]: CALL R9 8 1  ; var9(var10, var11, var12, var13, var14, var15, var16)
-      61 [-]: GETIMPORT R10 6; var10 = _T["resistanceOnDamage"]
-      62 [-]: GETTABLE R9 R10 R3; var9 = var10[var3]
-      63 [-]: LOADNIL R10  ; var10 = nil
-      64 [-]: SETTABLE R10 R9 R4; var10[var9] = var4
-      65 [-]: RETURN R0 0  ; 
+      19 [-]: GETIMPORT R4 8; var4 = 0x03F57322
+      20 [-]: CALL R4 2 2  ; var4 = var4(var5)
+L 4:  21 [-]: GETIMPORT R7 6; var7 = _T["resistanceOnDamage"]
+      22 [-]: GETTABLE R6 R7 R3; var6 = var7[var3]
+      23 [-]: GETTABLE R5 R6 R4; var5 = var6[var4]
+      24 [-]: JUMPXEQKNIL R5 L5 NOT; 
+      25 [-]: RETURN R0 0  ; 
+L 5:  26 [-]: GETIMPORT R7 6; var7 = _T["resistanceOnDamage"]
+      27 [-]: GETTABLE R6 R7 R3; var6 = var7[var3]
+      28 [-]: GETTABLE R5 R6 R4; var5 = var6[var4]
+L 6:  29 [-]: GETTABLEKS R6 R5 K9; var6 = var5["timer"]
+      30 [-]: LOADN R7 0   ; var7 = 0
+      31 [-]: JUMPIFNOTLT R7 R6 L7; goto L7 if var7 >= var-419428788
+      32 [-]: NAMECALL R6 R0 K10; var7 = var0; var6 = var0[0x2047CFE7]
+      33 [-]: CALL R6 2 2  ; var6 = var6(var7)
+      34 [-]: JUMPIF R6 L7 ; goto L7 if var6
+      35 [-]: GETTABLEKS R7 R5 K9; var7 = var5["timer"]
+      36 [-]: GETIMPORT R8 12; var8 = 0x67652851
+      37 [-]: CALL R8 1 2  ; var8 = var8()
+      38 [-]: SUB R6 R7 R8 ; var6 = var7 - var8
+      39 [-]: SETTABLEKS R6 R5 K9; var6["timer"] = var5
+      40 [-]: GETIMPORT R6 14; var6 = 0xCBD666E1
+      41 [-]: LOADN R7 0   ; var7 = 0
+      42 [-]: CALL R6 2 1  ; var6(var7)
+      43 [-]: JUMPBACK L6  ; goto L6
+L 7:  44 [-]: GETTABLEKS R6 R5 K15; var6 = var5["resistanceVal"]
+      45 [-]: GETTABLEKS R7 R5 K16; var7 = var5["numResistances"]
+      46 [-]: MUL R9 R6 R7 ; var9 = var6 * var7
+      47 [-]: GETIMPORT R10 18; var10 = 0x1E196325
+      48 [-]: FASTCALL2 19 R9 R10 L8; 
+      49 [-]: GETIMPORT R8 21; var8 = 0x5BCED4C4[0xAC1B386A]
+      50 [-]: CALL R8 3 2  ; var8 = var8(var9, var10)
+L 8:  51 [-]: NAMECALL R9 R0 K22; var10 = var0; var9 = var0[0xDE321E6F]
+      52 [-]: CALL R9 2 2  ; var9 = var9(var10)
+      53 [-]: LOADN R11 38 ; var11 = 38
+      54 [-]: LOADN R12 2  ; var12 = 2
+      55 [-]: LOADN R14 1  ; var14 = 1
+      56 [-]: SUB R13 R14 R8; var13 = var14 - var8
+      57 [-]: LOADNIL R14  ; var14 = nil
+      58 [-]: LOADNIL R15  ; var15 = nil
+      59 [-]: MOVE R16 R4  ; var16 = var4
+      60 [-]: NAMECALL R9 R9 K23; var10 = var9; var9 = var9[0x12DD9DA2]
+      61 [-]: CALL R9 8 1  ; var9(var10, var11, var12, var13, var14, var15, var16)
+      62 [-]: GETIMPORT R10 6; var10 = _T["resistanceOnDamage"]
+      63 [-]: GETTABLE R9 R10 R3; var9 = var10[var3]
+      64 [-]: LOADNIL R10  ; var10 = nil
+      65 [-]: SETTABLE R10 R9 R4; var10[var9] = var4
+      66 [-]: RETURN R0 0  ; 
 
 
 ; Name:            
@@ -155,7 +156,7 @@ L 0:   5 [-]: NAMECALL R5 R0 K3; var6 = var0; var5 = var0[0x1AC1655C]
        8 [-]: CALL R5 2 2  ; var5 = var5(var6)
        9 [-]: GETTABLEKS R6 R5 K5; var6 = var5["baseAmount"]
       10 [-]: LOADN R7 0   ; var7 = 0
-      11 [-]: JUMPIFNOTLE R6 R7 L1; goto L1 if var6 > var65581
+      11 [-]: JUMPIFNOTLE R6 R7 L1; goto L1 if var6 > var65571
       12 [-]: RETURN R0 0  ; 
 L 1:  13 [-]: LOADN R6 -1  ; var6 = -1
       14 [-]: LOADN R7 0   ; var7 = 0
@@ -166,14 +167,14 @@ L 1:  13 [-]: LOADN R6 -1  ; var6 = -1
 L 2:  19 [-]: MOVE R13 R10 ; var13 = var10
       20 [-]: NAMECALL R11 R5 K6; var12 = var5; var11 = var5[0x56B2AAE2]
       21 [-]: CALL R11 3 2 ; var11 = var11(var12, var13)
-      22 [-]: JUMPIFNOTLT R7 R11 L3; goto L3 if var7 >= var656918
+      22 [-]: JUMPIFNOTLT R7 R11 L3; goto L3 if var7 >= var656942
       23 [-]: MOVE R6 R10  ; var6 = var10
       24 [-]: MOVE R7 R11  ; var7 = var11
 L 3:  25 [-]: FORNLOOP R8 L2; nforloop end - iterate + goto L2
 L 4:  26 [-]: JUMPXEQKN R6 K7 L5 NOT; 
       27 [-]: RETURN R0 0  ; 
 L 5:  28 [-]: GETIMPORT R9 10; var9 = _T["resistanceOnDamage"]
-      29 [-]: FASTCALL1 62 R9 L6; 
+      29 [-]: FASTCALL1 64 R9 L6; 
       30 [-]: GETIMPORT R8 12; var8 = 0x7B998233
       31 [-]: CALL R8 2 2  ; var8 = var8(var9)
 L 6:  32 [-]: JUMPIFNOT R8 L7; goto L7 if not var8
@@ -182,7 +183,7 @@ L 6:  32 [-]: JUMPIFNOT R8 L7; goto L7 if not var8
       35 [-]: SETTABLEKS R9 R8 K9; var9["resistanceOnDamage"] = var8
 L 7:  36 [-]: NAMECALL R8 R0 K14; var9 = var0; var8 = var0[0x5B89142C]
       37 [-]: CALL R8 2 2  ; var8 = var8(var9)
-      38 [-]: FASTCALL1 62 R8 L8; 
+      38 [-]: FASTCALL1 64 R8 L8; 
       39 [-]: MOVE R10 R8  ; var10 = var8
       40 [-]: GETIMPORT R9 12; var9 = 0x7B998233
       41 [-]: CALL R9 2 2  ; var9 = var9(var10)
@@ -207,7 +208,7 @@ L11:  59 [-]: GETTABLE R10 R11 R12; var10 = var11[var12]
       60 [-]: GETIMPORT R13 10; var13 = _T["resistanceOnDamage"]
       61 [-]: GETTABLE R12 R13 R9; var12 = var13[var9]
       62 [-]: GETTABLE R11 R12 R6; var11 = var12[var6]
-      63 [-]: JUMPXEQKNIL R11 L13 NOT; 
+      63 [-]: JUMPXEQKNIL R11 L14 NOT; 
       64 [-]: GETIMPORT R12 22; var12 = 0x318548FC
       65 [-]: GETIMPORT R15 22; var15 = 0x318548FC
       66 [-]: LENGTH R14 R15; var14 = #var15
@@ -218,7 +219,7 @@ L11:  59 [-]: GETTABLE R10 R11 R12; var10 = var11[var12]
 L12:  71 [-]: GETTABLE R11 R12 R13; var11 = var12[var13]
       72 [-]: NAMECALL R12 R0 K23; var13 = var0; var12 = var0[0xDE321E6F]
       73 [-]: CALL R12 2 2 ; var12 = var12(var13)
-      74 [-]: LOADN R14 35 ; var14 = 35
+      74 [-]: LOADN R14 38 ; var14 = 38
       75 [-]: LOADN R15 2  ; var15 = 2
       76 [-]: LOADN R17 1  ; var17 = 1
       77 [-]: SUB R16 R17 R11; var16 = var17 - var11
@@ -241,106 +242,107 @@ L12:  71 [-]: GETTABLE R11 R12 R13; var11 = var12[var13]
       94 [-]: LOADK R16 K33; var16 = "TimedUpgrade"
       95 [-]: CALL R15 2 2 ; var15 = var15(var16)
       96 [-]: LOADB R16 0  ; var16 = false
-      97 [-]: GETIMPORT R17 35; var17 = 0x64FB1586
+      97 [-]: FASTCALL1 63 R6 L13; 
       98 [-]: MOVE R18 R6  ; var18 = var6
-      99 [-]: CALL R17 2 0 ; var17, ... = var17(var18)
-     100 [-]: NAMECALL R13 R0 K36; var14 = var0; var13 = var0[0xD5F7912B]
-     101 [-]: CALL R13 0 1 ; var13(var14, ...)
-     102 [-]: JUMP L16     ; goto L16
-L13: 103 [-]: GETIMPORT R14 10; var14 = _T["resistanceOnDamage"]
-     104 [-]: GETTABLE R13 R14 R9; var13 = var14[var9]
-     105 [-]: GETTABLE R12 R13 R6; var12 = var13[var6]
-     106 [-]: GETTABLEKS R11 R12 K27; var11 = var12["resistanceVal"]
-     107 [-]: GETIMPORT R15 10; var15 = _T["resistanceOnDamage"]
-     108 [-]: GETTABLE R14 R15 R9; var14 = var15[var9]
-     109 [-]: GETTABLE R13 R14 R6; var13 = var14[var6]
-     110 [-]: GETTABLEKS R12 R13 K26; var12 = var13["numResistances"]
-     111 [-]: MUL R14 R11 R12; var14 = var11 * var12
-     112 [-]: GETIMPORT R15 29; var15 = 0x1E196325
-     113 [-]: FASTCALL2 19 R14 R15 L14; 
-     114 [-]: GETIMPORT R13 20; var13 = 0x5BCED4C4[0xAC1B386A]
-     115 [-]: CALL R13 3 2 ; var13 = var13(var14, var15)
-L14: 116 [-]: ADDK R14 R12 K37; var14 = var12 + 1
-     117 [-]: GETIMPORT R17 10; var17 = _T["resistanceOnDamage"]
-     118 [-]: GETTABLE R16 R17 R9; var16 = var17[var9]
-     119 [-]: GETTABLE R15 R16 R6; var15 = var16[var6]
-     120 [-]: SETTABLEKS R14 R15 K26; var14["numResistances"] = var15
-     121 [-]: GETIMPORT R17 10; var17 = _T["resistanceOnDamage"]
-     122 [-]: GETTABLE R16 R17 R9; var16 = var17[var9]
-     123 [-]: GETTABLE R15 R16 R6; var15 = var16[var6]
-     124 [-]: SETTABLEKS R10 R15 K25; var10["timer"] = var15
-     125 [-]: MUL R16 R11 R14; var16 = var11 * var14
-     126 [-]: GETIMPORT R17 29; var17 = 0x1E196325
-     127 [-]: FASTCALL2 19 R16 R17 L15; 
-     128 [-]: GETIMPORT R15 20; var15 = 0x5BCED4C4[0xAC1B386A]
-     129 [-]: CALL R15 3 2 ; var15 = var15(var16, var17)
-L15: 130 [-]: JUMPIFEQ R13 R15 L16; goto L16 if var13 == var1862275141
-     131 [-]: NAMECALL R16 R0 K23; var17 = var0; var16 = var0[0xDE321E6F]
-     132 [-]: CALL R16 2 2 ; var16 = var16(var17)
-     133 [-]: LOADN R18 35 ; var18 = 35
-     134 [-]: LOADN R19 2  ; var19 = 2
-     135 [-]: LOADN R21 1  ; var21 = 1
-     136 [-]: SUB R20 R21 R13; var20 = var21 - var13
-     137 [-]: LOADNIL R21  ; var21 = nil
-     138 [-]: LOADNIL R22  ; var22 = nil
-     139 [-]: MOVE R23 R6  ; var23 = var6
-     140 [-]: NAMECALL R16 R16 K38; var17 = var16; var16 = var16[0x12DD9DA2]
-     141 [-]: CALL R16 8 1 ; var16(var17, var18, var19, var20, var21, var22, var23)
-     142 [-]: NAMECALL R16 R0 K23; var17 = var0; var16 = var0[0xDE321E6F]
-     143 [-]: CALL R16 2 2 ; var16 = var16(var17)
-     144 [-]: LOADN R18 35 ; var18 = 35
-     145 [-]: LOADN R19 2  ; var19 = 2
-     146 [-]: LOADN R21 1  ; var21 = 1
-     147 [-]: SUB R20 R21 R15; var20 = var21 - var15
-     148 [-]: LOADNIL R21  ; var21 = nil
-     149 [-]: LOADNIL R22  ; var22 = nil
-     150 [-]: MOVE R23 R6  ; var23 = var6
-     151 [-]: NAMECALL R16 R16 K24; var17 = var16; var16 = var16[0x5E6704FF]
-     152 [-]: CALL R16 8 1 ; var16(var17, var18, var19, var20, var21, var22, var23)
-L16: 153 [-]: GETIMPORT R13 10; var13 = _T["resistanceOnDamage"]
-     154 [-]: GETTABLE R12 R13 R9; var12 = var13[var9]
-     155 [-]: GETTABLE R11 R12 R6; var11 = var12[var6]
-     156 [-]: JUMPXEQKNIL R11 L19; 
-     157 [-]: GETIMPORT R14 10; var14 = _T["resistanceOnDamage"]
-     158 [-]: GETTABLE R13 R14 R9; var13 = var14[var9]
-     159 [-]: GETTABLE R12 R13 R6; var12 = var13[var6]
-     160 [-]: GETTABLEKS R11 R12 K27; var11 = var12["resistanceVal"]
-     161 [-]: GETIMPORT R15 10; var15 = _T["resistanceOnDamage"]
-     162 [-]: GETTABLE R14 R15 R9; var14 = var15[var9]
-     163 [-]: GETTABLE R13 R14 R6; var13 = var14[var6]
-     164 [-]: GETTABLEKS R12 R13 K26; var12 = var13["numResistances"]
-     165 [-]: GETIMPORT R13 41; var13 = 0x6C97A788[0x608BC054]
-     166 [-]: CALL R13 1 2 ; var13 = var13()
-     167 [-]: SETTABLEKS R0 R13 K42; var0["instigator"] = var13
-     168 [-]: NEWTABLE R14 0 1; var14 = {}
-     169 [-]: MOVE R15 R0  ; var15 = var0
-     170 [-]: SETLIST R14 R15 1 [1]; var14[1] = var15; var14[2] = var16; 
-     171 [-]: SETTABLEKS R14 R13 K43; var14["affected"] = var13
-     172 [-]: LOADN R14 3  ; var14 = 3
-     173 [-]: SETTABLEKS R14 R13 K44; var14["buffType"] = var13
-     174 [-]: GETIMPORT R15 46; var15 = 0xCFA73217
-     175 [-]: GETIMPORT R18 46; var18 = 0xCFA73217
-     176 [-]: LENGTH R17 R18; var17 = #var18
-     177 [-]: ADDK R18 R6 K37; var18 = var6 + 1
-     178 [-]: FASTCALL2 19 R17 R18 L17; 
-     179 [-]: GETIMPORT R16 20; var16 = 0x5BCED4C4[0xAC1B386A]
-     180 [-]: CALL R16 3 2 ; var16 = var16(var17, var18)
-L17: 181 [-]: GETTABLE R14 R15 R16; var14 = var15[var16]
-     182 [-]: SETTABLEKS R14 R13 K47; var14["abilityType"] = var13
-     183 [-]: SETTABLEKS R10 R13 K48; var10["buffData"] = var13
-     184 [-]: MUL R16 R11 R12; var16 = var11 * var12
-     185 [-]: GETIMPORT R17 29; var17 = 0x1E196325
-     186 [-]: FASTCALL2 19 R16 R17 L18; 
-     187 [-]: GETIMPORT R15 20; var15 = 0x5BCED4C4[0xAC1B386A]
-     188 [-]: CALL R15 3 2 ; var15 = var15(var16, var17)
-L18: 189 [-]: MULK R14 R15 K49; var14 = var15 * 100
-     190 [-]: SETTABLEKS R14 R13 K50; var14["buffDataExtra"] = var13
-     191 [-]: MOVE R16 R13 ; var16 = var13
-     192 [-]: LOADB R17 1  ; var17 = true
-     193 [-]: LOADB R18 1  ; var18 = true
-     194 [-]: NAMECALL R14 R0 K51; var15 = var0; var14 = var0[0x37E45FB5]
-     195 [-]: CALL R14 5 1 ; var14(var15, var16, var17, var18)
-L19: 196 [-]: RETURN R0 0  ; 
+      99 [-]: GETIMPORT R17 35; var17 = 0x64FB1586
+     100 [-]: CALL R17 2 2 ; var17 = var17(var18)
+L13: 101 [-]: NAMECALL R13 R0 K36; var14 = var0; var13 = var0[0xD5F7912B]
+     102 [-]: CALL R13 5 1 ; var13(var14, var15, var16, var17)
+     103 [-]: JUMP L17     ; goto L17
+L14: 104 [-]: GETIMPORT R14 10; var14 = _T["resistanceOnDamage"]
+     105 [-]: GETTABLE R13 R14 R9; var13 = var14[var9]
+     106 [-]: GETTABLE R12 R13 R6; var12 = var13[var6]
+     107 [-]: GETTABLEKS R11 R12 K27; var11 = var12["resistanceVal"]
+     108 [-]: GETIMPORT R15 10; var15 = _T["resistanceOnDamage"]
+     109 [-]: GETTABLE R14 R15 R9; var14 = var15[var9]
+     110 [-]: GETTABLE R13 R14 R6; var13 = var14[var6]
+     111 [-]: GETTABLEKS R12 R13 K26; var12 = var13["numResistances"]
+     112 [-]: MUL R14 R11 R12; var14 = var11 * var12
+     113 [-]: GETIMPORT R15 29; var15 = 0x1E196325
+     114 [-]: FASTCALL2 19 R14 R15 L15; 
+     115 [-]: GETIMPORT R13 20; var13 = 0x5BCED4C4[0xAC1B386A]
+     116 [-]: CALL R13 3 2 ; var13 = var13(var14, var15)
+L15: 117 [-]: ADDK R14 R12 K37; var14 = var12 + 1
+     118 [-]: GETIMPORT R17 10; var17 = _T["resistanceOnDamage"]
+     119 [-]: GETTABLE R16 R17 R9; var16 = var17[var9]
+     120 [-]: GETTABLE R15 R16 R6; var15 = var16[var6]
+     121 [-]: SETTABLEKS R14 R15 K26; var14["numResistances"] = var15
+     122 [-]: GETIMPORT R17 10; var17 = _T["resistanceOnDamage"]
+     123 [-]: GETTABLE R16 R17 R9; var16 = var17[var9]
+     124 [-]: GETTABLE R15 R16 R6; var15 = var16[var6]
+     125 [-]: SETTABLEKS R10 R15 K25; var10["timer"] = var15
+     126 [-]: MUL R16 R11 R14; var16 = var11 * var14
+     127 [-]: GETIMPORT R17 29; var17 = 0x1E196325
+     128 [-]: FASTCALL2 19 R16 R17 L16; 
+     129 [-]: GETIMPORT R15 20; var15 = 0x5BCED4C4[0xAC1B386A]
+     130 [-]: CALL R15 3 2 ; var15 = var15(var16, var17)
+L16: 131 [-]: JUMPIFEQ R13 R15 L17; goto L17 if var13 == var1862275148
+     132 [-]: NAMECALL R16 R0 K23; var17 = var0; var16 = var0[0xDE321E6F]
+     133 [-]: CALL R16 2 2 ; var16 = var16(var17)
+     134 [-]: LOADN R18 38 ; var18 = 38
+     135 [-]: LOADN R19 2  ; var19 = 2
+     136 [-]: LOADN R21 1  ; var21 = 1
+     137 [-]: SUB R20 R21 R13; var20 = var21 - var13
+     138 [-]: LOADNIL R21  ; var21 = nil
+     139 [-]: LOADNIL R22  ; var22 = nil
+     140 [-]: MOVE R23 R6  ; var23 = var6
+     141 [-]: NAMECALL R16 R16 K38; var17 = var16; var16 = var16[0x12DD9DA2]
+     142 [-]: CALL R16 8 1 ; var16(var17, var18, var19, var20, var21, var22, var23)
+     143 [-]: NAMECALL R16 R0 K23; var17 = var0; var16 = var0[0xDE321E6F]
+     144 [-]: CALL R16 2 2 ; var16 = var16(var17)
+     145 [-]: LOADN R18 38 ; var18 = 38
+     146 [-]: LOADN R19 2  ; var19 = 2
+     147 [-]: LOADN R21 1  ; var21 = 1
+     148 [-]: SUB R20 R21 R15; var20 = var21 - var15
+     149 [-]: LOADNIL R21  ; var21 = nil
+     150 [-]: LOADNIL R22  ; var22 = nil
+     151 [-]: MOVE R23 R6  ; var23 = var6
+     152 [-]: NAMECALL R16 R16 K24; var17 = var16; var16 = var16[0x5E6704FF]
+     153 [-]: CALL R16 8 1 ; var16(var17, var18, var19, var20, var21, var22, var23)
+L17: 154 [-]: GETIMPORT R13 10; var13 = _T["resistanceOnDamage"]
+     155 [-]: GETTABLE R12 R13 R9; var12 = var13[var9]
+     156 [-]: GETTABLE R11 R12 R6; var11 = var12[var6]
+     157 [-]: JUMPXEQKNIL R11 L20; 
+     158 [-]: GETIMPORT R14 10; var14 = _T["resistanceOnDamage"]
+     159 [-]: GETTABLE R13 R14 R9; var13 = var14[var9]
+     160 [-]: GETTABLE R12 R13 R6; var12 = var13[var6]
+     161 [-]: GETTABLEKS R11 R12 K27; var11 = var12["resistanceVal"]
+     162 [-]: GETIMPORT R15 10; var15 = _T["resistanceOnDamage"]
+     163 [-]: GETTABLE R14 R15 R9; var14 = var15[var9]
+     164 [-]: GETTABLE R13 R14 R6; var13 = var14[var6]
+     165 [-]: GETTABLEKS R12 R13 K26; var12 = var13["numResistances"]
+     166 [-]: GETIMPORT R13 41; var13 = 0x6C97A788[0x608BC054]
+     167 [-]: CALL R13 1 2 ; var13 = var13()
+     168 [-]: SETTABLEKS R0 R13 K42; var0["instigator"] = var13
+     169 [-]: NEWTABLE R14 0 1; var14 = {}
+     170 [-]: MOVE R15 R0  ; var15 = var0
+     171 [-]: SETLIST R14 R15 1 [1]; var14[1] = var15; var14[2] = var16; 
+     172 [-]: SETTABLEKS R14 R13 K43; var14["affected"] = var13
+     173 [-]: LOADN R14 3  ; var14 = 3
+     174 [-]: SETTABLEKS R14 R13 K44; var14["buffType"] = var13
+     175 [-]: GETIMPORT R15 46; var15 = 0xCFA73217
+     176 [-]: GETIMPORT R18 46; var18 = 0xCFA73217
+     177 [-]: LENGTH R17 R18; var17 = #var18
+     178 [-]: ADDK R18 R6 K37; var18 = var6 + 1
+     179 [-]: FASTCALL2 19 R17 R18 L18; 
+     180 [-]: GETIMPORT R16 20; var16 = 0x5BCED4C4[0xAC1B386A]
+     181 [-]: CALL R16 3 2 ; var16 = var16(var17, var18)
+L18: 182 [-]: GETTABLE R14 R15 R16; var14 = var15[var16]
+     183 [-]: SETTABLEKS R14 R13 K47; var14["abilityType"] = var13
+     184 [-]: SETTABLEKS R10 R13 K48; var10["buffData"] = var13
+     185 [-]: MUL R16 R11 R12; var16 = var11 * var12
+     186 [-]: GETIMPORT R17 29; var17 = 0x1E196325
+     187 [-]: FASTCALL2 19 R16 R17 L19; 
+     188 [-]: GETIMPORT R15 20; var15 = 0x5BCED4C4[0xAC1B386A]
+     189 [-]: CALL R15 3 2 ; var15 = var15(var16, var17)
+L19: 190 [-]: MULK R14 R15 K49; var14 = var15 * 100
+     191 [-]: SETTABLEKS R14 R13 K50; var14["buffDataExtra"] = var13
+     192 [-]: MOVE R16 R13 ; var16 = var13
+     193 [-]: LOADB R17 1  ; var17 = true
+     194 [-]: LOADB R18 1  ; var18 = true
+     195 [-]: NAMECALL R14 R0 K51; var15 = var0; var14 = var0[0x37E45FB5]
+     196 [-]: CALL R14 5 1 ; var14(var15, var16, var17, var18)
+L20: 197 [-]: RETURN R0 0  ; 
 
 
 

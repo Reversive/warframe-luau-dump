@@ -61,32 +61,31 @@
        4 [-]: CALL R1 2 2  ; var1 = var1(var2)
        5 [-]: GETTABLEKS R0 R1 K6; var0 = var1["postProcess"]
        6 [-]: LOADK R2 K7  ; var2 = 0.25
-       7 [-]: GETIMPORT R8 11; var8 = 0x107BF6DA
-       8 [-]: GETIMPORT R10 14; var10 = 0x55156FF7
+       7 [-]: GETIMPORT R8 12; var8 = 0x107BF6DA
+       8 [-]: GETIMPORT R10 15; var10 = 0x55156FF7
        9 [-]: CALL R10 1 2 ; var10 = var10()
-      10 [-]: MULK R9 R10 K12; var9 = var10 * 0.10000000000000001
+      10 [-]: MULK R9 R10 K13; var9 = var10 * 0.10000000149011612
       11 [-]: CALL R8 2 2  ; var8 = var8(var9)
-      12 [-]: LOADK R9 K15 ; var9 = 3.1415927410125732
-      13 [-]: MUL R7 R8 R9 ; var7 = var8 * var9
-      14 [-]: MULK R6 R7 K9; var6 = var7 * 2
-      15 [-]: FASTCALL1 24 R6 L0; 
-      16 [-]: GETIMPORT R5 18; var5 = 0x5BCED4C4[0x3EDA26FC]
-      17 [-]: CALL R5 2 2  ; var5 = var5(var6)
-L 0:  18 [-]: FASTCALL1 2 R5 L1; 
-      19 [-]: GETIMPORT R4 20; var4 = 0x5BCED4C4[0xE4A5B3CA]
-      20 [-]: CALL R4 2 2  ; var4 = var4(var5)
-L 1:  21 [-]: MULK R3 R4 K8; var3 = var4 * 0.75
-      22 [-]: ADD R1 R2 R3 ; var1 = var2 + var3
-      23 [-]: SETTABLEKS R1 R0 K21; var1["saturation"] = var0
-      24 [-]: GETUPVAL R1 0; var1 = upvalues[0]
-      25 [-]: SETTABLEKS R1 R0 K22; var1["desaturateColor"] = var0
-      26 [-]: GETUPVAL R1 1; var1 = upvalues[1]
-      27 [-]: SETTABLEKS R1 R0 K23; var1["fogColor"] = var0
-      28 [-]: LOADK R1 K7  ; var1 = 0.25
-      29 [-]: SETTABLEKS R1 R0 K24; var1["distanceFogDensity"] = var0
-      30 [-]: GETUPVAL R1 1; var1 = upvalues[1]
-      31 [-]: SETTABLEKS R1 R0 K25; var1["lightMapTint"] = var0
-L 2:  32 [-]: RETURN R0 0  ; 
+      12 [-]: MULK R7 R8 K10; var7 = var8 * 3.1415927410125732
+      13 [-]: MULK R6 R7 K9; var6 = var7 * 2
+      14 [-]: FASTCALL1 24 R6 L0; 
+      15 [-]: GETIMPORT R5 18; var5 = 0x5BCED4C4[0x3EDA26FC]
+      16 [-]: CALL R5 2 2  ; var5 = var5(var6)
+L 0:  17 [-]: FASTCALL1 2 R5 L1; 
+      18 [-]: GETIMPORT R4 20; var4 = 0x5BCED4C4[0xE4A5B3CA]
+      19 [-]: CALL R4 2 2  ; var4 = var4(var5)
+L 1:  20 [-]: MULK R3 R4 K8; var3 = var4 * 0.75
+      21 [-]: ADD R1 R2 R3 ; var1 = var2 + var3
+      22 [-]: SETTABLEKS R1 R0 K21; var1["saturation"] = var0
+      23 [-]: GETUPVAL R1 0; var1 = upvalues[0]
+      24 [-]: SETTABLEKS R1 R0 K22; var1["desaturateColor"] = var0
+      25 [-]: GETUPVAL R1 1; var1 = upvalues[1]
+      26 [-]: SETTABLEKS R1 R0 K23; var1["fogColor"] = var0
+      27 [-]: LOADK R1 K7  ; var1 = 0.25
+      28 [-]: SETTABLEKS R1 R0 K24; var1["distanceFogDensity"] = var0
+      29 [-]: GETUPVAL R1 1; var1 = upvalues[1]
+      30 [-]: SETTABLEKS R1 R0 K25; var1["lightMapTint"] = var0
+L 2:  31 [-]: RETURN R0 0  ; 
 
 
 ; Name:            
@@ -144,11 +143,11 @@ L 2:  32 [-]: RETURN R0 0  ;
 ; Max Stack Size:  6
 
        0 [-]: GETIMPORT R2 1; var2 = 0x9BA7909F
-       1 [-]: FASTCALL1 62 R2 L0; 
+       1 [-]: FASTCALL1 64 R2 L0; 
        2 [-]: GETIMPORT R1 3; var1 = 0x7B998233
        3 [-]: CALL R1 2 2  ; var1 = var1(var2)
 L 0:   4 [-]: JUMPIF R1 L3 ; goto L3 if var1
-       5 [-]: FASTCALL1 62 R0 L1; 
+       5 [-]: FASTCALL1 64 R0 L1; 
        6 [-]: MOVE R2 R0   ; var2 = var0
        7 [-]: GETIMPORT R1 3; var1 = 0x7B998233
        8 [-]: CALL R1 2 2  ; var1 = var1(var2)
@@ -157,7 +156,7 @@ L 1:   9 [-]: JUMPIF R1 L3 ; goto L3 if var1
       11 [-]: MOVE R3 R0   ; var3 = var0
       12 [-]: NAMECALL R1 R1 K4; var2 = var1; var1 = var1[0xBCFB64AB]
       13 [-]: CALL R1 3 2  ; var1 = var1(var2, var3)
-      14 [-]: FASTCALL1 62 R1 L2; 
+      14 [-]: FASTCALL1 64 R1 L2; 
       15 [-]: MOVE R3 R1   ; var3 = var1
       16 [-]: GETIMPORT R2 3; var2 = 0x7B998233
       17 [-]: CALL R2 2 2  ; var2 = var2(var3)

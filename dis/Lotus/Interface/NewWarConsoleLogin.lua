@@ -74,7 +74,7 @@
        7 [-]: NEWTABLE R5 0 1; var5 = {}
        8 [-]: LOADN R6 0   ; var6 = 0
        9 [-]: SETLIST R5 R6 1 [1]; var5[1] = var6; var5[2] = var7; 
-      10 [-]: LOADK R6 K5  ; var6 = 0.20000000000000001
+      10 [-]: LOADK R6 K5  ; var6 = 0.20000000298023224
       11 [-]: LOADN R7 0   ; var7 = 0
       12 [-]: DUPCLOSURE R8 K6; 
       13 [-]: CALL R0 9 1  ; var0(var1, var2, var3, var4, var5, var6, var7, var8)
@@ -110,7 +110,7 @@
 ; Max Stack Size:  6
 
        0 [-]: GETUPVAL R3 0; var3 = upvalues[0]
-       1 [-]: FASTCALL1 62 R3 L0; 
+       1 [-]: FASTCALL1 64 R3 L0; 
        2 [-]: GETIMPORT R2 1; var2 = 0x7B998233
        3 [-]: CALL R2 2 2  ; var2 = var2(var3)
 L 0:   4 [-]: JUMPIF R2 L1 ; goto L1 if var2
@@ -130,7 +130,7 @@ L 1:  10 [-]: RETURN R0 0  ;
 ; Max Stack Size:  8
 
        0 [-]: GETUPVAL R5 0; var5 = upvalues[0]
-       1 [-]: FASTCALL1 62 R5 L0; 
+       1 [-]: FASTCALL1 64 R5 L0; 
        2 [-]: GETIMPORT R4 1; var4 = 0x7B998233
        3 [-]: CALL R4 2 2  ; var4 = var4(var5)
 L 0:   4 [-]: JUMPIF R4 L1 ; goto L1 if var4
@@ -312,7 +312,7 @@ L 1:  10 [-]: RETURN R0 0  ;
      137 [-]: CALL R1 3 1  ; var1(var2, var3)
      138 [-]: GETIMPORT R1 18; var1 = 0xAE91E43B
      139 [-]: LOADK R3 K25 ; var3 = "BuildLabel"
-     140 [-]: LOADN R4 29  ; var4 = 29
+     140 [-]: LOADN R4 31  ; var4 = 31
      141 [-]: GETUPVAL R6 1; var6 = upvalues[1]
      142 [-]: GETTABLEKS R5 R6 K47; var5 = var6[0xB3365548]
      143 [-]: CALL R5 1 0  ; var5, ... = var5()
@@ -325,7 +325,7 @@ L 1:  10 [-]: RETURN R0 0  ;
      150 [-]: NAMECALL R2 R2 K50; var3 = var2; var2 = var2[0xAF9FDA9F]
      151 [-]: CALL R2 2 2  ; var2 = var2(var3)
      152 [-]: GETUPVAL R4 3; var4 = upvalues[3]
-     153 [-]: FASTCALL1 62 R4 L0; 
+     153 [-]: FASTCALL1 64 R4 L0; 
      154 [-]: GETIMPORT R3 52; var3 = 0x7B998233
      155 [-]: CALL R3 2 2  ; var3 = var3(var4)
 L 0: 156 [-]: JUMPIF R3 L1 ; goto L1 if var3
@@ -373,7 +373,7 @@ L 1: 162 [-]: GETUPVAL R2 6; var2 = upvalues[6]
       15 [-]: CALL R2 2 2  ; var2 = var2(var3)
       16 [-]: LENGTH R1 R2 ; var1 = #var2
       17 [-]: LOADN R2 0   ; var2 = 0
-      18 [-]: JUMPIFLT R2 R1 L0; goto L0 if var2 < var393294
+      18 [-]: JUMPIFLT R2 R1 L0; goto L0 if var2 < var393249
       19 [-]: GETIMPORT R0 6; var0 = 0x9BA7909F
       20 [-]: GETIMPORT R2 14; var2 = 0x7FDB7CBD
       21 [-]: NAMECALL R0 R0 K9; var1 = var0; var0 = var0[0xBCFB64AB]

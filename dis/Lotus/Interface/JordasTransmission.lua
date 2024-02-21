@@ -22,7 +22,7 @@
        2 [-]: GETIMPORT R2 6; var2 = 0x74B75231
        3 [-]: CALL R1 2 1  ; var1(var2)
        4 [-]: GETIMPORT R2 8; var2 = 0x74ACBBE0
-       5 [-]: FASTCALL1 62 R2 L0; 
+       5 [-]: FASTCALL1 64 R2 L0; 
        6 [-]: GETIMPORT R1 10; var1 = 0x7B998233
        7 [-]: CALL R1 2 2  ; var1 = var1(var2)
 L 0:   8 [-]: JUMPIFNOT R1 L1; goto L1 if not var1
@@ -33,13 +33,13 @@ L 1:  10 [-]: LOADN R1 0   ; var1 = 0
       13 [-]: GETIMPORT R5 12; var5 = gCameraSpotType
       14 [-]: NAMECALL R3 R3 K13; var4 = var3; var3 = var3[0xFB669000]
       15 [-]: CALL R3 3 2  ; var3 = var3(var4, var5)
-L 2:  16 [-]: FASTCALL1 62 R0 L3; 
+L 2:  16 [-]: FASTCALL1 64 R0 L3; 
       17 [-]: MOVE R5 R0   ; var5 = var0
       18 [-]: GETIMPORT R4 10; var4 = 0x7B998233
       19 [-]: CALL R4 2 2  ; var4 = var4(var5)
 L 3:  20 [-]: JUMPIF R4 L14; goto L14 if var4
       21 [-]: GETIMPORT R5 8; var5 = 0x74ACBBE0
-      22 [-]: FASTCALL1 62 R5 L4; 
+      22 [-]: FASTCALL1 64 R5 L4; 
       23 [-]: GETIMPORT R4 10; var4 = 0x7B998233
       24 [-]: CALL R4 2 2  ; var4 = var4(var5)
 L 4:  25 [-]: JUMPIF R4 L14; goto L14 if var4
@@ -63,7 +63,7 @@ L 5:  34 [-]: MOVE R1 R4   ; var1 = var4
 L 6:  43 [-]: MOVE R2 R4   ; var2 = var4
       44 [-]: JUMPIFNOT R3 L8; goto L8 if not var3
       45 [-]: GETTABLEN R5 R3 1; var5 = var3[1]
-      46 [-]: FASTCALL1 62 R5 L7; 
+      46 [-]: FASTCALL1 64 R5 L7; 
       47 [-]: GETIMPORT R4 10; var4 = 0x7B998233
       48 [-]: CALL R4 2 2  ; var4 = var4(var5)
 L 7:  49 [-]: JUMPIF R4 L8 ; goto L8 if var4
@@ -94,7 +94,7 @@ L 8:  59 [-]: GETIMPORT R4 2; var4 = _T["TransmissionSoundInstance"]
       74 [-]: GETIMPORT R10 28; var10 = 0x107BF6DA
       75 [-]: GETIMPORT R12 31; var12 = 0x55156FF7
       76 [-]: CALL R12 1 2 ; var12 = var12()
-      77 [-]: MULK R11 R12 K29; var11 = var12 * 0.29999999999999999
+      77 [-]: MULK R11 R12 K29; var11 = var12 * 0.30000001192092896
       78 [-]: CALL R10 2 0 ; var10, ... = var10(var11)
       79 [-]: CALL R9 0 2  ; var9 = var9(var10, ...)
       80 [-]: MULK R8 R9 K14; var8 = var9 * 2
@@ -129,7 +129,7 @@ L 9:  84 [-]: ADD R4 R5 R6 ; var4 = var5 + var6
 L10: 109 [-]: GETTABLE R11 R7 R10; var11 = var7[var10]
      110 [-]: NAMECALL R12 R11 K36; var13 = var11; var12 = var11[0xE79E7EF4]
      111 [-]: CALL R12 2 2 ; var12 = var12(var13)
-     112 [-]: FASTCALL1 62 R12 L11; 
+     112 [-]: FASTCALL1 64 R12 L11; 
      113 [-]: MOVE R14 R12 ; var14 = var12
      114 [-]: GETIMPORT R13 10; var13 = 0x7B998233
      115 [-]: CALL R13 2 2 ; var13 = var13(var14)

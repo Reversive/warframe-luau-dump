@@ -77,7 +77,7 @@
       11 [-]: NEWTABLE R5 0 1; var5 = {}
       12 [-]: LOADN R6 0   ; var6 = 0
       13 [-]: SETLIST R5 R6 1 [1]; var5[1] = var6; var5[2] = var7; 
-      14 [-]: LOADK R6 K8  ; var6 = 0.45000000000000001
+      14 [-]: LOADK R6 K8  ; var6 = 0.44999998807907104
       15 [-]: LOADN R7 0   ; var7 = 0
       16 [-]: GETUPVAL R8 1; var8 = upvalues[1]
       17 [-]: CALL R0 9 1  ; var0(var1, var2, var3, var4, var5, var6, var7, var8)
@@ -94,7 +94,7 @@
        0 [-]: JUMPXEQKNIL R1 L0 NOT; 
        1 [-]: LOADN R1 5   ; var1 = 5
 L 0:   2 [-]: JUMPXEQKNIL R2 L1 NOT; 
-       3 [-]: LOADK R2 K0  ; var2 = 0.01
+       3 [-]: LOADK R2 K0  ; var2 = 0.0099999997764825821
 L 1:   4 [-]: JUMPXEQKNIL R3 L2 NOT; 
        5 [-]: LOADB R3 1   ; var3 = true
 L 2:   6 [-]: GETUPVAL R4 0; var4 = upvalues[0]
@@ -161,7 +161,7 @@ L 2:   6 [-]: GETUPVAL R4 0; var4 = upvalues[0]
        3 [-]: NAMECALL R0 R0 K4; var1 = var0; var0 = var0[0x8A8C8D5A]
        4 [-]: CALL R0 0 1  ; var0(var1, ...)
        5 [-]: GETUPVAL R1 0; var1 = upvalues[0]
-       6 [-]: FASTCALL1 62 R1 L0; 
+       6 [-]: FASTCALL1 64 R1 L0; 
        7 [-]: GETIMPORT R0 6; var0 = 0x7B998233
        8 [-]: CALL R0 2 2  ; var0 = var0(var1)
 L 0:   9 [-]: JUMPIF R0 L1 ; goto L1 if var0

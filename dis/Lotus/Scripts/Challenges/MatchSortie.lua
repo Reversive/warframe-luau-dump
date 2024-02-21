@@ -19,7 +19,7 @@
 
        0 [-]: LOADK R2 K0  ; var2 = ""
        1 [-]: GETIMPORT R4 2; var4 = 0xBE190284
-       2 [-]: FASTCALL1 62 R4 L0; 
+       2 [-]: FASTCALL1 64 R4 L0; 
        3 [-]: GETIMPORT R3 4; var3 = 0x7B998233
        4 [-]: CALL R3 2 2  ; var3 = var3(var4)
 L 0:   5 [-]: JUMPIF R3 L1 ; goto L1 if var3

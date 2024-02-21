@@ -21,7 +21,9 @@
       14 [-]: SETGLOBAL R0 K13; "RandomBurst" = var0
       15 [-]: DUPCLOSURE R0 K14; 
       16 [-]: SETGLOBAL R0 K15; "SpriteScaleFade" = var0
-      17 [-]: RETURN R0 0  ; 
+      17 [-]: DUPCLOSURE R0 K16; 
+      18 [-]: SETGLOBAL R0 K17; "FirePortBurst" = var0
+      19 [-]: RETURN R0 0  ; 
 
 
 ; Name:            
@@ -202,7 +204,7 @@ L 1:  31 [-]: RETURN R0 0  ;
        0 [-]: GETIMPORT R1 1; var1 = 0xCBD666E1
        1 [-]: GETIMPORT R2 3; var2 = 0x74B75231
        2 [-]: CALL R1 2 1  ; var1(var2)
-       3 [-]: FASTCALL1 62 R0 L0; 
+       3 [-]: FASTCALL1 64 R0 L0; 
        4 [-]: MOVE R2 R0   ; var2 = var0
        5 [-]: GETIMPORT R1 5; var1 = 0x7B998233
        6 [-]: CALL R1 2 2  ; var1 = var1(var2)
@@ -219,7 +221,7 @@ L 1:  10 [-]: RETURN R0 0  ;
 ; Is_vararg:       0
 ; Max Stack Size:  5
 
-L 0:   0 [-]: FASTCALL1 62 R0 L1; 
+L 0:   0 [-]: FASTCALL1 64 R0 L1; 
        1 [-]: MOVE R2 R0   ; var2 = var0
        2 [-]: GETIMPORT R1 1; var1 = 0x7B998233
        3 [-]: CALL R1 2 2  ; var1 = var1(var2)
@@ -249,7 +251,7 @@ L 2:  15 [-]: RETURN R0 0  ;
        2 [-]: GETIMPORT R1 4; var1 = 0xCBD666E1
        3 [-]: GETIMPORT R2 1; var2 = 0x74B75231
        4 [-]: CALL R1 2 1  ; var1(var2)
-L 0:   5 [-]: FASTCALL1 62 R0 L1; 
+L 0:   5 [-]: FASTCALL1 64 R0 L1; 
        6 [-]: MOVE R2 R0   ; var2 = var0
        7 [-]: GETIMPORT R1 6; var1 = 0x7B998233
        8 [-]: CALL R1 2 2  ; var1 = var1(var2)
@@ -258,7 +260,7 @@ L 1:   9 [-]: JUMPIFNOT R1 L2; goto L2 if not var1
 L 2:  11 [-]: LOADN R1 0   ; var1 = 0
       12 [-]: GETIMPORT R2 8; var2 = 0x686ADA8A
 L 3:  13 [-]: GETIMPORT R3 10; var3 = 0x07E9D557
-      14 [-]: JUMPIFNOTLT R1 R3 L4; goto L4 if var1 >= var787278
+      14 [-]: JUMPIFNOTLT R1 R3 L4; goto L4 if var1 >= var787233
       15 [-]: GETIMPORT R3 12; var3 = 0x9BAFFFE3
       16 [-]: GETIMPORT R4 8; var4 = 0x686ADA8A
       17 [-]: GETIMPORT R5 14; var5 = 0x1DC19539
@@ -279,6 +281,31 @@ L 3:  13 [-]: GETIMPORT R3 10; var3 = 0x07E9D557
       32 [-]: CALL R3 2 1  ; var3(var4)
       33 [-]: JUMPBACK L3  ; goto L3
 L 4:  34 [-]: RETURN R0 0  ; 
+
+
+; Name:            
+; Defined at line: 106
+; #Upvalues:       0
+; #Parameters:     0
+; Is_vararg:       0
+; Max Stack Size:  6
+
+       0 [-]: LOADN R2 1   ; var2 = 1
+       1 [-]: GETIMPORT R3 1; var3 = 0x22A2A8AD
+       2 [-]: LENGTH R0 R3 ; var0 = #var3
+       3 [-]: LOADN R1 1   ; var1 = 1
+       4 [-]: FORNPREP R0 L1; nforprep start - [escape at L1] -- var0 = iterator
+L 0:   5 [-]: GETIMPORT R4 1; var4 = 0x22A2A8AD
+       6 [-]: GETTABLE R3 R4 R2; var3 = var4[var2]
+       7 [-]: NAMECALL R3 R3 K2; var4 = var3; var3 = var3[0x383D2E7D]
+       8 [-]: CALL R3 2 1  ; var3(var4)
+       9 [-]: GETIMPORT R4 1; var4 = 0x22A2A8AD
+      10 [-]: GETTABLE R3 R4 R2; var3 = var4[var2]
+      11 [-]: LOADK R5 K3  ; var5 = "Burst"
+      12 [-]: NAMECALL R3 R3 K4; var4 = var3; var3 = var3[0x8EB2112D]
+      13 [-]: CALL R3 3 1  ; var3(var4, var5)
+      14 [-]: FORNLOOP R0 L0; nforloop end - iterate + goto L0
+L 1:  15 [-]: RETURN R0 0  ; 
 
 
 

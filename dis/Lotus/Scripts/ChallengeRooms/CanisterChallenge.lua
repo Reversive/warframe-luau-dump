@@ -208,7 +208,7 @@ L 0:   5 [-]: NAMECALL R2 R1 K3; var3 = var1; var2 = var1[0xBB610E5B]
        1 [-]: NAMECALL R0 R0 K0; var1 = var0; var0 = var0[0xE830AC3D]
        2 [-]: CALL R0 2 2  ; var0 = var0(var1)
        3 [-]: LOADN R1 25  ; var1 = 25
-       4 [-]: JUMPIFNOTLT R0 R1 L0; goto L0 if var0 >= var65607
+       4 [-]: JUMPIFNOTLT R0 R1 L0; goto L0 if var0 >= var65584
        5 [-]: LOADN R0 1   ; var0 = 1
        6 [-]: SETUPVAL R0 1; upvalues[0] = var1
        7 [-]: GETIMPORT R0 2; var0 = 0x55730E1A
@@ -286,12 +286,11 @@ L 0:   5 [-]: SETUPVAL R0 0; upvalues[0] = var0
       22 [-]: GETUPVAL R1 1; var1 = upvalues[1]
       23 [-]: GETTABLEKS R0 R1 K11; var0 = var1["SetValue"]
       24 [-]: GETUPVAL R2 0; var2 = upvalues[0]
-      25 [-]: DIVK R1 R2 K12; var1 = var2 / 60
-      26 [-]: CALL R0 2 1  ; var0(var1)
+           26 [-]: CALL R0 2 1  ; var0(var1)
 L 1:  27 [-]: GETUPVAL R3 2; var3 = upvalues[2]
       28 [-]: GETTABLEKS R2 R3 K14; var2 = var3["List"]
       29 [-]: GETTABLEKS R1 R2 K13; var1 = var2["mElements"]
-      30 [-]: FASTCALL1 62 R1 L2; 
+      30 [-]: FASTCALL1 64 R1 L2; 
       31 [-]: GETIMPORT R0 16; var0 = 0x7B998233
       32 [-]: CALL R0 2 2  ; var0 = var0(var1)
 L 2:  33 [-]: JUMPIFNOT R0 L3; goto L3 if not var0
@@ -308,16 +307,16 @@ L 4:  42 [-]: GETUPVAL R6 2; var6 = upvalues[2]
       44 [-]: GETTABLEKS R4 R5 K13; var4 = var5["mElements"]
       45 [-]: GETTABLE R3 R4 R2; var3 = var4[var2]
       46 [-]: GETUPVAL R4 4; var4 = upvalues[4]
-      47 [-]: JUMPIFNOTLE R2 R4 L5; goto L5 if var2 > var2229319
-      48 [-]: LOADN R4 34  ; var4 = 34
+      47 [-]: JUMPIFNOTLE R2 R4 L5; goto L5 if var2 > var2294832
+      48 [-]: LOADN R4 35  ; var4 = 35
       49 [-]: SETTABLEKS R4 R3 K19; var4["Color"] = var3
       50 [-]: JUMP L6      ; goto L6
 L 5:  51 [-]: GETUPVAL R5 4; var5 = upvalues[4]
       52 [-]: ADDK R4 R5 K20; var4 = var5 + 1
-      53 [-]: JUMPIFNOTEQ R2 R4 L7; goto L7 if var2 ~= var328711
+      53 [-]: JUMPIFNOTEQ R2 R4 L7; goto L7 if var2 ~= var328764
       54 [-]: GETUPVAL R4 5; var4 = upvalues[5]
       55 [-]: JUMPIFNOT R4 L7; goto L7 if not var4
-      56 [-]: LOADN R4 38  ; var4 = 38
+      56 [-]: LOADN R4 39  ; var4 = 39
       57 [-]: SETTABLEKS R4 R3 K19; var4["Color"] = var3
       58 [-]: JUMP L6      ; goto L6
       59 [-]: JUMP L7      ; goto L7
@@ -401,7 +400,7 @@ L 0:   6 [-]: LOADB R0 0   ; var0 = false
        1 [-]: NAMECALL R0 R0 K0; var1 = var0; var0 = var0[0xBB610E5B]
        2 [-]: CALL R0 2 2  ; var0 = var0(var1)
        3 [-]: GETUPVAL R2 1; var2 = upvalues[1]
-       4 [-]: FASTCALL1 62 R2 L0; 
+       4 [-]: FASTCALL1 64 R2 L0; 
        5 [-]: GETIMPORT R1 2; var1 = 0x7B998233
        6 [-]: CALL R1 2 2  ; var1 = var1(var2)
 L 0:   7 [-]: JUMPIF R1 L1 ; goto L1 if var1
@@ -435,7 +434,7 @@ L 1:  20 [-]: GETIMPORT R3 13; var3 = 0x5B394600
       35 [-]: NAMECALL R2 R0 K18; var3 = var0; var2 = var0[0x35B09371]
       36 [-]: CALL R2 3 1  ; var2(var3, var4)
       37 [-]: GETIMPORT R3 21; var3 = _T["HideImpactMessage"]
-      38 [-]: FASTCALL1 62 R3 L2; 
+      38 [-]: FASTCALL1 64 R3 L2; 
       39 [-]: GETIMPORT R2 2; var2 = 0x7B998233
       40 [-]: CALL R2 2 2  ; var2 = var2(var3)
 L 2:  41 [-]: JUMPIF R2 L3 ; goto L3 if var2
@@ -450,7 +449,7 @@ L 3:  44 [-]: GETUPVAL R2 2; var2 = upvalues[2]
       50 [-]: CALL R1 1 1  ; var1()
       51 [-]: GETUPVAL R1 2; var1 = upvalues[2]
       52 [-]: GETUPVAL R2 5; var2 = upvalues[5]
-      53 [-]: JUMPIFNOTLT R1 R2 L4; goto L4 if var1 >= var393479
+      53 [-]: JUMPIFNOTLT R1 R2 L4; goto L4 if var1 >= var393532
       54 [-]: GETUPVAL R1 6; var1 = upvalues[6]
       55 [-]: LOADK R2 K23 ; var2 = "/Lotus/Language/Game/MasterySpawningCanister"
       56 [-]: LOADN R3 5   ; var3 = 5
@@ -482,7 +481,7 @@ L 4:  60 [-]: GETUPVAL R1 6; var1 = upvalues[6]
        7 [-]: GETTABLE R1 R2 R3; var1 = var2[var3]
        8 [-]: GETUPVAL R2 1; var2 = upvalues[1]
        9 [-]: LOADN R3 0   ; var3 = 0
-      10 [-]: JUMPIFNOTLT R3 R2 L0; goto L0 if var3 >= var66311
+      10 [-]: JUMPIFNOTLT R3 R2 L0; goto L0 if var3 >= var66364
       11 [-]: GETUPVAL R3 1; var3 = upvalues[1]
       12 [-]: SUBK R2 R3 K2; var2 = var3 - 1
       13 [-]: SETUPVAL R2 1; upvalues[2] = var1
@@ -498,7 +497,7 @@ L 4:  60 [-]: GETUPVAL R1 6; var1 = upvalues[6]
       23 [-]: JUMP L1      ; goto L1
 L 0:  24 [-]: GETUPVAL R2 4; var2 = upvalues[4]
       25 [-]: LOADN R3 0   ; var3 = 0
-      26 [-]: JUMPIFNOTLT R3 R2 L1; goto L1 if var3 >= var262919
+      26 [-]: JUMPIFNOTLT R3 R2 L1; goto L1 if var3 >= var262972
       27 [-]: GETUPVAL R3 4; var3 = upvalues[4]
       28 [-]: SUBK R2 R3 K2; var2 = var3 - 1
       29 [-]: SETUPVAL R2 4; upvalues[2] = var4
@@ -511,7 +510,7 @@ L 0:  24 [-]: GETUPVAL R2 4; var2 = upvalues[4]
       36 [-]: NAMECALL R2 R2 K3; var3 = var2; var2 = var2[0xC3F557D6]
       37 [-]: CALL R2 7 2  ; var2 = var2(var3, var4, var5, var6, var7, var8)
       38 [-]: MOVE R0 R2   ; var0 = var2
-L 1:  39 [-]: FASTCALL1 62 R0 L2; 
+L 1:  39 [-]: FASTCALL1 64 R0 L2; 
       40 [-]: MOVE R3 R0   ; var3 = var0
       41 [-]: GETIMPORT R2 5; var2 = 0x7B998233
       42 [-]: CALL R2 2 2  ; var2 = var2(var3)
@@ -622,7 +621,7 @@ L 0:  51 [-]: GETUPVAL R0 0; var0 = upvalues[0]
       76 [-]: GETIMPORT R0 11; var0 = 0xBE190284
       77 [-]: NAMECALL R0 R0 K24; var1 = var0; var0 = var0[0x8F99293A]
       78 [-]: CALL R0 2 2  ; var0 = var0(var1)
-      79 [-]: FASTCALL1 62 R0 L1; 
+      79 [-]: FASTCALL1 64 R0 L1; 
       80 [-]: MOVE R2 R0   ; var2 = var0
       81 [-]: GETIMPORT R1 26; var1 = 0x7B998233
       82 [-]: CALL R1 2 2  ; var1 = var1(var2)
@@ -705,7 +704,7 @@ L 5: 154 [-]: GETUPVAL R5 18; var5 = upvalues[18]
      159 [-]: SETTABLEKS R7 R6 K57; var7["Width"] = var6
      160 [-]: LOADN R7 32  ; var7 = 32
      161 [-]: SETTABLEKS R7 R6 K58; var7["Height"] = var6
-     162 [-]: LOADN R7 10  ; var7 = 10
+     162 [-]: LOADN R7 11  ; var7 = 11
      163 [-]: SETTABLEKS R7 R6 K59; var7["Color"] = var6
      164 [-]: CALL R4 3 1  ; var4(var5, var6)
      165 [-]: FORNLOOP R1 L5; nforloop end - iterate + goto L5
@@ -763,7 +762,7 @@ L 0:   5 [-]: GETUPVAL R0 1; var0 = upvalues[1]
        8 [-]: LOADN R1 0   ; var1 = 0
        9 [-]: CALL R0 2 1  ; var0(var1)
       10 [-]: GETUPVAL R1 2; var1 = upvalues[2]
-      11 [-]: FASTCALL1 62 R1 L1; 
+      11 [-]: FASTCALL1 64 R1 L1; 
       12 [-]: GETIMPORT R0 3; var0 = 0x7B998233
       13 [-]: CALL R0 2 2  ; var0 = var0(var1)
 L 1:  14 [-]: JUMPIFNOT R0 L2; goto L2 if not var0
@@ -794,7 +793,7 @@ L 3:  38 [-]: GETIMPORT R0 13; var0 = 0xC8802016
       39 [-]: GETUPVAL R1 7; var1 = upvalues[7]
       40 [-]: CALL R0 2 4  ; var0, var1, var2 = var0(var1)
       41 [-]: FORGPREP_INEXT R0 L6; 
-L 4:  42 [-]: FASTCALL1 62 R4 L5; 
+L 4:  42 [-]: FASTCALL1 64 R4 L5; 
       43 [-]: MOVE R6 R4   ; var6 = var4
       44 [-]: GETIMPORT R5 3; var5 = 0x7B998233
       45 [-]: CALL R5 2 2  ; var5 = var5(var6)
@@ -857,7 +856,7 @@ L 7:  66 [-]: GETUPVAL R1 10; var1 = upvalues[10]
 ; Max Stack Size:  5
 
        0 [-]: GETUPVAL R1 0; var1 = upvalues[0]
-       1 [-]: JUMPIFNOTEQ R0 R1 L0; goto L0 if var0 ~= var65799
+       1 [-]: JUMPIFNOTEQ R0 R1 L0; goto L0 if var0 ~= var65852
        2 [-]: GETUPVAL R1 1; var1 = upvalues[1]
        3 [-]: LOADN R3 2   ; var3 = 2
        4 [-]: NEWCLOSURE R4 P0; 
@@ -870,7 +869,7 @@ L 0:   9 [-]: GETUPVAL R2 3; var2 = upvalues[3]
       11 [-]: SETUPVAL R1 3; upvalues[1] = var3
       12 [-]: GETUPVAL R1 3; var1 = upvalues[3]
       13 [-]: LOADN R2 60  ; var2 = 60
-      14 [-]: JUMPIFNOTLE R2 R1 L1; goto L1 if var2 > var65819
+      14 [-]: JUMPIFNOTLE R2 R1 L1; goto L1 if var2 > var65798
       15 [-]: LOADB R1 1   ; var1 = true
       16 [-]: SETUPVAL R1 4; upvalues[1] = var4
       17 [-]: LOADB R1 1   ; var1 = true
@@ -905,7 +904,7 @@ L 1:  19 [-]: GETUPVAL R1 6; var1 = upvalues[6]
 ; Max Stack Size:  3
 
        0 [-]: GETIMPORT R2 2; var2 = _T["OnCanisterCreated"]
-       1 [-]: FASTCALL1 62 R2 L0; 
+       1 [-]: FASTCALL1 64 R2 L0; 
        2 [-]: GETIMPORT R1 4; var1 = 0x7B998233
        3 [-]: CALL R1 2 2  ; var1 = var1(var2)
 L 0:   4 [-]: JUMPIF R1 L1 ; goto L1 if var1

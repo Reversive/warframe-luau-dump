@@ -100,8 +100,7 @@
       14 [-]: NAMECALL R2 R2 K4; var3 = var2; var2 = var2[0x67BC869F]
       15 [-]: CALL R2 5 1  ; var2(var3, var4, var5, var6)
       16 [-]: GETUPVAL R4 1; var4 = upvalues[1]
-      17 [-]: DIVK R3 R4 K6; var3 = var4 / 4
-      18 [-]: DIV R2 R3 R0 ; var2 = var3 / var0
+           18 [-]: DIV R2 R3 R0 ; var2 = var3 / var0
       19 [-]: LOADN R5 1   ; var5 = 1
       20 [-]: GETUPVAL R6 2; var6 = upvalues[2]
       21 [-]: LENGTH R3 R6 ; var3 = #var6
@@ -165,7 +164,7 @@ L 0:  13 [-]: GETTABLEKS R5 R2 K2; var5 = var2["Range"]
       15 [-]: GETTABLEKS R5 R2 K0; var5 = var2["Amount"]
       16 [-]: GETIMPORT R9 5; var9 = 0x55156FF7
       17 [-]: CALL R9 1 2  ; var9 = var9()
-      18 [-]: MULK R8 R9 K3; var8 = var9 * 0.14999999999999999
+      18 [-]: MULK R8 R9 K3; var8 = var9 * 0.15000000596046448
       19 [-]: FASTCALL1 24 R8 L1; 
       20 [-]: GETIMPORT R7 8; var7 = 0x5BCED4C4[0x3EDA26FC]
       21 [-]: CALL R7 2 2  ; var7 = var7(var8)
@@ -174,14 +173,14 @@ L 1:  22 [-]: GETTABLEKS R8 R2 K2; var8 = var2["Range"]
       24 [-]: ADD R4 R5 R6 ; var4 = var5 + var6
 L 2:  25 [-]: LOADK R5 K9  ; var5 = 7462140
       26 [-]: LOADN R6 180 ; var6 = 180
-      27 [-]: JUMPIFNOTLT R4 R3 L3; goto L3 if var4 >= var656645
+      27 [-]: JUMPIFNOTLT R4 R3 L3; goto L3 if var4 >= var656711
       28 [-]: LOADK R5 K10 ; var5 = 11885556
       29 [-]: LOADN R6 0   ; var6 = 0
 L 3:  30 [-]: GETIMPORT R7 12; var7 = 0xAE91E43B
       31 [-]: GETTABLEKS R10 R2 K13; var10 = var2["ClipName"]
       32 [-]: LOADK R11 K14; var11 = ".Amount"
       33 [-]: CONCAT R9 R10 R11; var9 = var10 .. var11
-      34 [-]: LOADN R10 29 ; var10 = 29
+      34 [-]: LOADN R10 31 ; var10 = 31
       35 [-]: GETUPVAL R15 1; var15 = upvalues[1]
       36 [-]: GETTABLEKS R14 R15 K15; var14 = var15[0x1142C7A8]
       37 [-]: MOVE R15 R4  ; var15 = var4
@@ -211,7 +210,7 @@ L 7:  55 [-]: GETTABLEKS R15 R2 K18; var15 = var2["Append"]
       61 [-]: GETIMPORT R7 12; var7 = 0xAE91E43B
       62 [-]: GETTABLEKS R9 R2 K13; var9 = var2["ClipName"]
       63 [-]: LOADK R10 K0 ; var10 = "Amount"
-      64 [-]: LOADN R11 36 ; var11 = 36
+      64 [-]: LOADN R11 38 ; var11 = 38
       65 [-]: MOVE R12 R5  ; var12 = var5
       66 [-]: NAMECALL R7 R7 K21; var8 = var7; var7 = var7[0xF64B7262]
       67 [-]: CALL R7 6 1  ; var7(var8, var9, var10, var11, var12)
@@ -256,9 +255,9 @@ L 0:  13 [-]: GETUPVAL R1 0; var1 = upvalues[0]
       14 [-]: DUPTABLE R2 10; 
       15 [-]: LOADK R3 K11 ; var3 = "FIXED INTEREST RATE"
       16 [-]: SETTABLEKS R3 R2 K0; var3["Label"] = var2
-      17 [-]: LOADK R3 K12 ; var3 = 56.729999999999997
+      17 [-]: LOADK R3 K12 ; var3 = 56.729999542236328
       18 [-]: SETTABLEKS R3 R2 K1; var3["Amount"] = var2
-      19 [-]: LOADK R3 K13 ; var3 = 0.10000000000000001
+      19 [-]: LOADK R3 K13 ; var3 = 0.10000000149011612
       20 [-]: SETTABLEKS R3 R2 K2; var3["Delta"] = var2
       21 [-]: LOADN R3 2   ; var3 = 2
       22 [-]: SETTABLEKS R3 R2 K8; var3["FloatDigits"] = var2
@@ -271,7 +270,7 @@ L 1:  28 [-]: GETUPVAL R1 0; var1 = upvalues[0]
       29 [-]: DUPTABLE R2 16; 
       30 [-]: LOADK R3 K17 ; var3 = "VARIABLE RATE"
       31 [-]: SETTABLEKS R3 R2 K0; var3["Label"] = var2
-      32 [-]: LOADK R3 K18 ; var3 = 36.210000000000001
+      32 [-]: LOADK R3 K18 ; var3 = 36.209999084472656
       33 [-]: SETTABLEKS R3 R2 K1; var3["Amount"] = var2
       34 [-]: LOADN R3 4   ; var3 = 4
       35 [-]: SETTABLEKS R3 R2 K15; var3["Range"] = var2
@@ -297,9 +296,9 @@ L 3:  54 [-]: GETUPVAL R1 0; var1 = upvalues[0]
       55 [-]: DUPTABLE R2 10; 
       56 [-]: LOADK R3 K20 ; var3 = "GDP"
       57 [-]: SETTABLEKS R3 R2 K0; var3["Label"] = var2
-      58 [-]: LOADK R3 K21 ; var3 = 1.3999999999999999
+      58 [-]: LOADK R3 K21 ; var3 = 1.3999999761581421
       59 [-]: SETTABLEKS R3 R2 K1; var3["Amount"] = var2
-      60 [-]: LOADK R3 K22 ; var3 = 0.01
+      60 [-]: LOADK R3 K22 ; var3 = 0.0099999997764825821
       61 [-]: SETTABLEKS R3 R2 K2; var3["Delta"] = var2
       62 [-]: LOADN R3 1   ; var3 = 1
       63 [-]: SETTABLEKS R3 R2 K8; var3["FloatDigits"] = var2
@@ -400,7 +399,7 @@ L11: 144 [-]: GETUPVAL R7 0; var7 = upvalues[0]
      158 [-]: MOVE R10 R4  ; var10 = var4
      159 [-]: LOADK R11 K45; var11 = ".Label"
      160 [-]: CONCAT R9 R10 R11; var9 = var10 .. var11
-     161 [-]: LOADN R10 29 ; var10 = 29
+     161 [-]: LOADN R10 31 ; var10 = 31
      162 [-]: GETUPVAL R13 0; var13 = upvalues[0]
      163 [-]: GETTABLE R12 R13 R3; var12 = var13[var3]
      164 [-]: GETTABLEKS R11 R12 K0; var11 = var12["Label"]
@@ -466,7 +465,7 @@ L15: 223 [-]: GETIMPORT R7 29; var7 = 0xAE91E43B
      224 [-]: MOVE R10 R4  ; var10 = var4
      225 [-]: LOADK R11 K45; var11 = ".Label"
      226 [-]: CONCAT R9 R10 R11; var9 = var10 .. var11
-     227 [-]: LOADN R10 33 ; var10 = 33
+     227 [-]: LOADN R10 35 ; var10 = 35
      228 [-]: NAMECALL R7 R7 K52; var8 = var7; var7 = var7[0x91A24E4B]
      229 [-]: CALL R7 4 2  ; var7 = var7(var8, var9, var10)
      230 [-]: ADD R8 R6 R7 ; var8 = var6 + var7
@@ -488,13 +487,13 @@ L15: 223 [-]: GETIMPORT R7 29; var7 = 0xAE91E43B
      246 [-]: CALL R8 6 1  ; var8(var9, var10, var11, var12, var13)
      247 [-]: GETUPVAL R8 3; var8 = upvalues[3]
      248 [-]: MOVE R9 R3   ; var9 = var3
-     249 [-]: LOADK R10 K13; var10 = 0.10000000000000001
+     249 [-]: LOADK R10 K13; var10 = 0.10000000149011612
      250 [-]: CALL R8 3 1  ; var8(var9, var10)
      251 [-]: GETIMPORT R8 29; var8 = 0xAE91E43B
      252 [-]: MOVE R11 R4  ; var11 = var4
      253 [-]: LOADK R12 K49; var12 = ".Amount"
      254 [-]: CONCAT R10 R11 R12; var10 = var11 .. var12
-     255 [-]: LOADN R11 33 ; var11 = 33
+     255 [-]: LOADN R11 35 ; var11 = 35
      256 [-]: NAMECALL R8 R8 K52; var9 = var8; var8 = var8[0x91A24E4B]
      257 [-]: CALL R8 4 2  ; var8 = var8(var9, var10, var11)
      258 [-]: ADD R9 R6 R8 ; var9 = var6 + var8
@@ -572,8 +571,7 @@ L 1:  31 [-]: GETUPVAL R3 0; var3 = upvalues[0]
       33 [-]: GETTABLEKS R1 R2 K3; var1 = var2["X"]
       34 [-]: GETUPVAL R4 2; var4 = upvalues[2]
       35 [-]: MINUS R3 R4  ; 
-      36 [-]: DIVK R2 R3 K8; var2 = var3 / 2
-      37 [-]: JUMPIFNOTLT R1 R2 L3; goto L3 if var1 >= var519
+           37 [-]: JUMPIFNOTLT R1 R2 L3; goto L3 if var1 >= var572
       38 [-]: GETUPVAL R2 0; var2 = upvalues[0]
       39 [-]: GETTABLEN R1 R2 1; var1 = var2[1]
       40 [-]: GETUPVAL R3 0; var3 = upvalues[0]
@@ -617,7 +615,7 @@ L 3:  57 [-]: RETURN R0 0  ;
       11 [-]: NEWTABLE R5 0 1; var5 = {}
       12 [-]: LOADN R6 0   ; var6 = 0
       13 [-]: SETLIST R5 R6 1 [1]; var5[1] = var6; var5[2] = var7; 
-      14 [-]: LOADK R6 K8  ; var6 = 0.45000000000000001
+      14 [-]: LOADK R6 K8  ; var6 = 0.44999998807907104
       15 [-]: LOADN R7 0   ; var7 = 0
       16 [-]: GETUPVAL R8 1; var8 = upvalues[1]
       17 [-]: CALL R0 9 1  ; var0(var1, var2, var3, var4, var5, var6, var7, var8)
@@ -773,7 +771,7 @@ L 1:  46 [-]: FORGLOOP R2 L0 2 [inext];
        3 [-]: NAMECALL R0 R0 K4; var1 = var0; var0 = var0[0x8A8C8D5A]
        4 [-]: CALL R0 0 1  ; var0(var1, ...)
        5 [-]: GETUPVAL R1 0; var1 = upvalues[0]
-       6 [-]: FASTCALL1 62 R1 L0; 
+       6 [-]: FASTCALL1 64 R1 L0; 
        7 [-]: GETIMPORT R0 6; var0 = 0x7B998233
        8 [-]: CALL R0 2 2  ; var0 = var0(var1)
 L 0:   9 [-]: JUMPIF R0 L1 ; goto L1 if var0

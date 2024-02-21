@@ -183,7 +183,7 @@ L 0:   5 [-]: NAMECALL R2 R0 K4; var3 = var0; var2 = var0[0x388577D5]
        1 [-]: MOVE R3 R0   ; var3 = var0
        2 [-]: CALL R2 2 4  ; var2, var3, var4 = var2(var3)
        3 [-]: FORGPREP_INEXT R2 L1; 
-L 0:   4 [-]: JUMPIFNOTEQ R6 R1 L1; goto L1 if var6 ~= var67355
+L 0:   4 [-]: JUMPIFNOTEQ R6 R1 L1; goto L1 if var6 ~= var67334
        5 [-]: LOADB R7 1   ; var7 = true
        6 [-]: RETURN R7 1  ; 
 L 1:   7 [-]: FORGLOOP R2 L0 2 [inext]; 
@@ -208,24 +208,24 @@ L 1:   7 [-]: FORGLOOP R2 L0 2 [inext];
        7 [-]: GETTABLE R5 R6 R4; var5 = var6[var4]
        8 [-]: JUMPIFNOT R5 L4; goto L4 if not var5
        9 [-]: GETIMPORT R6 8; var6 = _T["spawnedMaggot"]
-      10 [-]: FASTCALL1 62 R6 L0; 
+      10 [-]: FASTCALL1 64 R6 L0; 
       11 [-]: GETIMPORT R5 10; var5 = 0x7B998233
       12 [-]: CALL R5 2 2  ; var5 = var5(var6)
 L 0:  13 [-]: JUMPIF R5 L4 ; goto L4 if var5
       14 [-]: GETIMPORT R6 12; var6 = _T["pheromoneTargets"]
-      15 [-]: FASTCALL1 62 R6 L1; 
+      15 [-]: FASTCALL1 64 R6 L1; 
       16 [-]: GETIMPORT R5 10; var5 = 0x7B998233
       17 [-]: CALL R5 2 2  ; var5 = var5(var6)
 L 1:  18 [-]: JUMPIF R5 L4 ; goto L4 if var5
       19 [-]: GETIMPORT R7 8; var7 = _T["spawnedMaggot"]
       20 [-]: GETTABLE R6 R7 R4; var6 = var7[var4]
-      21 [-]: FASTCALL1 62 R6 L2; 
+      21 [-]: FASTCALL1 64 R6 L2; 
       22 [-]: GETIMPORT R5 10; var5 = 0x7B998233
       23 [-]: CALL R5 2 2  ; var5 = var5(var6)
 L 2:  24 [-]: JUMPIF R5 L4 ; goto L4 if var5
       25 [-]: GETIMPORT R7 12; var7 = _T["pheromoneTargets"]
       26 [-]: GETTABLE R6 R7 R4; var6 = var7[var4]
-      27 [-]: FASTCALL1 62 R6 L3; 
+      27 [-]: FASTCALL1 64 R6 L3; 
       28 [-]: GETIMPORT R5 10; var5 = 0x7B998233
       29 [-]: CALL R5 2 2  ; var5 = var5(var6)
 L 3:  30 [-]: JUMPIFNOT R5 L5; goto L5 if not var5
@@ -239,7 +239,7 @@ L 5:  32 [-]: GETIMPORT R6 8; var6 = _T["spawnedMaggot"]
       38 [-]: NAMECALL R7 R7 K14; var8 = var7; var7 = var7[0xF5527472]
       39 [-]: CALL R7 2 2  ; var7 = var7(var8)
       40 [-]: JUMPIFNOT R3 L15; goto L15 if not var3
-      41 [-]: FASTCALL1 62 R7 L6; 
+      41 [-]: FASTCALL1 64 R7 L6; 
       42 [-]: MOVE R9 R7   ; var9 = var7
       43 [-]: GETIMPORT R8 10; var8 = 0x7B998233
       44 [-]: CALL R8 2 2  ; var8 = var8(var9)
@@ -264,7 +264,7 @@ L 8:  59 [-]: GETTABLE R13 R14 R15; var13 = var14[var15]
       63 [-]: MOVE R10 R8  ; var10 = var8
       64 [-]: CALL R9 2 4  ; var9, var10, var11 = var9(var10)
       65 [-]: FORGPREP_INEXT R9 L14; 
-L 9:  66 [-]: JUMPIFEQ R13 R7 L14; goto L14 if var13 == var856086
+L 9:  66 [-]: JUMPIFEQ R13 R7 L14; goto L14 if var13 == var856110
       67 [-]: MOVE R16 R13 ; var16 = var13
       68 [-]: NAMECALL R14 R5 K26; var15 = var5; var14 = var5[0xEE0BC178]
       69 [-]: CALL R14 3 2 ; var14 = var14(var15, var16)
@@ -277,7 +277,7 @@ L 9:  66 [-]: JUMPIFEQ R13 R7 L14; goto L14 if var13 == var856086
       76 [-]: MOVE R16 R6  ; var16 = var6
       77 [-]: CALL R15 2 4 ; var15, var16, var17 = var15(var16)
       78 [-]: FORGPREP_INEXT R15 L11; 
-L10:  79 [-]: JUMPIFNOTEQ R19 R13 L11; goto L11 if var19 ~= var69147
+L10:  79 [-]: JUMPIFNOTEQ R19 R13 L11; goto L11 if var19 ~= var69126
       80 [-]: LOADB R14 1  ; var14 = true
       81 [-]: JUMP L12     ; goto L12
 L11:  82 [-]: FORGLOOP R15 L10 2 [inext]; 
@@ -301,14 +301,14 @@ L15:  99 [-]: GETIMPORT R8 25; var8 = 0xC8802016
      100 [-]: MOVE R9 R6   ; var9 = var6
      101 [-]: CALL R8 2 4  ; var8, var9, var10 = var8(var9)
      102 [-]: FORGPREP_INEXT R8 L19; 
-L16: 103 [-]: FASTCALL1 62 R12 L17; 
+L16: 103 [-]: FASTCALL1 64 R12 L17; 
      104 [-]: MOVE R14 R12 ; var14 = var12
      105 [-]: GETIMPORT R13 10; var13 = 0x7B998233
      106 [-]: CALL R13 2 2 ; var13 = var13(var14)
 L17: 107 [-]: JUMPIF R13 L19; goto L19 if var13
      108 [-]: NAMECALL R13 R12 K13; var14 = var12; var13 = var12[0xFA9E477F]
      109 [-]: CALL R13 2 2 ; var13 = var13(var14)
-     110 [-]: FASTCALL1 62 R13 L18; 
+     110 [-]: FASTCALL1 64 R13 L18; 
      111 [-]: MOVE R15 R13 ; var15 = var13
      112 [-]: GETIMPORT R14 10; var14 = 0x7B998233
      113 [-]: CALL R14 2 2 ; var14 = var14(var15)
@@ -333,7 +333,7 @@ L21: 126 [-]: FORGLOOP R8 L20 2 [inext];
      132 [-]: CALL R11 2 2 ; var11 = var11(var12)
      133 [-]: CONCAT R9 R10 R11; var9 = var10 .. var11
      134 [-]: CALL R8 2 2  ; var8 = var8(var9)
-     135 [-]: FASTCALL1 62 R7 L22; 
+     135 [-]: FASTCALL1 64 R7 L22; 
      136 [-]: MOVE R10 R7  ; var10 = var7
      137 [-]: GETIMPORT R9 10; var9 = 0x7B998233
      138 [-]: CALL R9 2 2  ; var9 = var9(var10)
@@ -358,24 +358,24 @@ L23: 143 [-]: RETURN R0 0  ;
        4 [-]: CALL R3 2 2  ; var3 = var3(var4)
        5 [-]: JUMPIFNOT R3 L4; goto L4 if not var3
        6 [-]: GETIMPORT R4 6; var4 = _T["spawnedMaggot"]
-       7 [-]: FASTCALL1 62 R4 L0; 
+       7 [-]: FASTCALL1 64 R4 L0; 
        8 [-]: GETIMPORT R3 8; var3 = 0x7B998233
        9 [-]: CALL R3 2 2  ; var3 = var3(var4)
 L 0:  10 [-]: JUMPIF R3 L4 ; goto L4 if var3
       11 [-]: GETIMPORT R4 10; var4 = _T["maggotSummonerAbilityLevel"]
-      12 [-]: FASTCALL1 62 R4 L1; 
+      12 [-]: FASTCALL1 64 R4 L1; 
       13 [-]: GETIMPORT R3 8; var3 = 0x7B998233
       14 [-]: CALL R3 2 2  ; var3 = var3(var4)
 L 1:  15 [-]: JUMPIF R3 L4 ; goto L4 if var3
       16 [-]: GETIMPORT R5 6; var5 = _T["spawnedMaggot"]
       17 [-]: GETTABLE R4 R5 R2; var4 = var5[var2]
-      18 [-]: FASTCALL1 62 R4 L2; 
+      18 [-]: FASTCALL1 64 R4 L2; 
       19 [-]: GETIMPORT R3 8; var3 = 0x7B998233
       20 [-]: CALL R3 2 2  ; var3 = var3(var4)
 L 2:  21 [-]: JUMPIF R3 L4 ; goto L4 if var3
       22 [-]: GETIMPORT R5 10; var5 = _T["maggotSummonerAbilityLevel"]
       23 [-]: GETTABLE R4 R5 R2; var4 = var5[var2]
-      24 [-]: FASTCALL1 62 R4 L3; 
+      24 [-]: FASTCALL1 64 R4 L3; 
       25 [-]: GETIMPORT R3 8; var3 = 0x7B998233
       26 [-]: CALL R3 2 2  ; var3 = var3(var4)
 L 3:  27 [-]: JUMPIFNOT R3 L5; goto L5 if not var3
@@ -397,7 +397,7 @@ L 5:  29 [-]: GETIMPORT R4 6; var4 = _T["spawnedMaggot"]
       43 [-]: MOVE R9 R0   ; var9 = var0
       44 [-]: NAMECALL R4 R4 K16; var5 = var4; var4 = var4[0x05909209]
       45 [-]: CALL R4 6 2  ; var4 = var4(var5, var6, var7, var8, var9)
-      46 [-]: FASTCALL1 62 R4 L6; 
+      46 [-]: FASTCALL1 64 R4 L6; 
       47 [-]: MOVE R6 R4   ; var6 = var4
       48 [-]: GETIMPORT R5 8; var5 = 0x7B998233
       49 [-]: CALL R5 2 2  ; var5 = var5(var6)
@@ -412,8 +412,7 @@ L 6:  50 [-]: JUMPIF R5 L8 ; goto L8 if var5
       58 [-]: GETIMPORT R11 22; var11 = 0x5BCED4C4[0xAC1B386A]
       59 [-]: CALL R11 3 2 ; var11 = var11(var12, var13)
 L 7:  60 [-]: GETTABLE R8 R10 R11; var8 = var10[var11]
-      61 [-]: DIVK R7 R8 K17; var7 = var8 / 5
-      62 [-]: NAMECALL R5 R4 K23; var6 = var4; var5 = var4[0x2D9BA74F]
+           62 [-]: NAMECALL R5 R4 K23; var6 = var4; var5 = var4[0x2D9BA74F]
       63 [-]: CALL R5 3 1  ; var5(var6, var7)
 L 8:  64 [-]: GETIMPORT R5 26; var5 = 0x34291F5C[0x35C16153]
       65 [-]: CALL R5 1 2  ; var5 = var5()
@@ -498,23 +497,23 @@ L13: 130 [-]: FORGLOOP R7 L12 2 [inext];
        0 [-]: NAMECALL R4 R1 K0; var5 = var1; var4 = var1[0x388577D5]
        1 [-]: CALL R4 2 2  ; var4 = var4(var5)
        2 [-]: GETIMPORT R6 3; var6 = _T["spawnedMaggot"]
-       3 [-]: FASTCALL1 62 R6 L0; 
+       3 [-]: FASTCALL1 64 R6 L0; 
        4 [-]: GETIMPORT R5 5; var5 = 0x7B998233
        5 [-]: CALL R5 2 2  ; var5 = var5(var6)
 L 0:   6 [-]: JUMPIF R5 L4 ; goto L4 if var5
        7 [-]: GETIMPORT R6 7; var6 = _T["maggotDiedNaturally"]
-       8 [-]: FASTCALL1 62 R6 L1; 
+       8 [-]: FASTCALL1 64 R6 L1; 
        9 [-]: GETIMPORT R5 5; var5 = 0x7B998233
       10 [-]: CALL R5 2 2  ; var5 = var5(var6)
 L 1:  11 [-]: JUMPIF R5 L4 ; goto L4 if var5
       12 [-]: GETIMPORT R6 9; var6 = _T["maggotHasLatchedTarget"]
-      13 [-]: FASTCALL1 62 R6 L2; 
+      13 [-]: FASTCALL1 64 R6 L2; 
       14 [-]: GETIMPORT R5 5; var5 = 0x7B998233
       15 [-]: CALL R5 2 2  ; var5 = var5(var6)
 L 2:  16 [-]: JUMPIF R5 L4 ; goto L4 if var5
       17 [-]: GETIMPORT R7 3; var7 = _T["spawnedMaggot"]
       18 [-]: GETTABLE R6 R7 R4; var6 = var7[var4]
-      19 [-]: FASTCALL1 62 R6 L3; 
+      19 [-]: FASTCALL1 64 R6 L3; 
       20 [-]: GETIMPORT R5 5; var5 = 0x7B998233
       21 [-]: CALL R5 2 2  ; var5 = var5(var6)
 L 3:  22 [-]: JUMPIFNOT R5 L5; goto L5 if not var5
@@ -522,7 +521,7 @@ L 4:  23 [-]: RETURN R0 0  ;
 L 5:  24 [-]: GETIMPORT R6 3; var6 = _T["spawnedMaggot"]
       25 [-]: GETTABLE R5 R6 R4; var5 = var6[var4]
       26 [-]: LOADN R6 15  ; var6 = 15
-      27 [-]: JUMPIFNOTLE R6 R3 L6; goto L6 if var6 > var722766
+      27 [-]: JUMPIFNOTLE R6 R3 L6; goto L6 if var6 > var722721
       28 [-]: GETIMPORT R7 11; var7 = _T["maggotDiedEarly"]
       29 [-]: GETTABLE R6 R7 R4; var6 = var7[var4]
       30 [-]: JUMPIF R6 L6 ; goto L6 if var6
@@ -542,7 +541,7 @@ L 6:  41 [-]: NAMECALL R6 R5 K13; var7 = var5; var6 = var5[0x2B54251B]
       44 [-]: CALL R7 2 2  ; var7 = var7(var8)
       45 [-]: NAMECALL R7 R7 K15; var8 = var7; var7 = var7[0xF5527472]
       46 [-]: CALL R7 2 2  ; var7 = var7(var8)
-      47 [-]: FASTCALL1 62 R6 L7; 
+      47 [-]: FASTCALL1 64 R6 L7; 
       48 [-]: MOVE R9 R6   ; var9 = var6
       49 [-]: GETIMPORT R8 5; var8 = 0x7B998233
       50 [-]: CALL R8 2 2  ; var8 = var8(var9)
@@ -550,7 +549,7 @@ L 7:  51 [-]: JUMPIF R8 L12; goto L12 if var8
       52 [-]: GETIMPORT R9 9; var9 = _T["maggotHasLatchedTarget"]
       53 [-]: GETTABLE R8 R9 R4; var8 = var9[var4]
       54 [-]: JUMPIF R8 L11; goto L11 if var8
-      55 [-]: JUMPIFNOTEQ R6 R7 L11; goto L11 if var6 ~= var591950
+      55 [-]: JUMPIFNOTEQ R6 R7 L11; goto L11 if var6 ~= var591905
       56 [-]: GETIMPORT R8 9; var8 = _T["maggotHasLatchedTarget"]
       57 [-]: LOADB R9 1   ; var9 = true
       58 [-]: SETTABLE R9 R8 R4; var9[var8] = var4
@@ -562,7 +561,7 @@ L 7:  51 [-]: JUMPIF R8 L12; goto L12 if var8
       64 [-]: MOVE R13 R0  ; var13 = var0
       65 [-]: NAMECALL R8 R8 K23; var9 = var8; var8 = var8[0x05909209]
       66 [-]: CALL R8 6 2  ; var8 = var8(var9, var10, var11, var12, var13)
-      67 [-]: FASTCALL1 62 R8 L8; 
+      67 [-]: FASTCALL1 64 R8 L8; 
       68 [-]: MOVE R10 R8  ; var10 = var8
       69 [-]: GETIMPORT R9 5; var9 = 0x7B998233
       70 [-]: CALL R9 2 2  ; var9 = var9(var10)
@@ -575,8 +574,7 @@ L 8:  71 [-]: JUMPIF R9 L10; goto L10 if var9
       77 [-]: GETIMPORT R14 29; var14 = 0x5BCED4C4[0xAC1B386A]
       78 [-]: CALL R14 3 2 ; var14 = var14(var15, var16)
 L 9:  79 [-]: GETTABLE R12 R13 R14; var12 = var13[var14]
-      80 [-]: DIVK R11 R12 K24; var11 = var12 / 5
-      81 [-]: NAMECALL R9 R8 K30; var10 = var8; var9 = var8[0x2D9BA74F]
+           81 [-]: NAMECALL R9 R8 K30; var10 = var8; var9 = var8[0x2D9BA74F]
       82 [-]: CALL R9 3 1  ; var9(var10, var11)
 L10:  83 [-]: GETIMPORT R9 32; var9 = 0x0469F296
       84 [-]: LOADK R11 K33; var11 = "PheromoneTarget"
@@ -655,7 +653,7 @@ L 3:  35 [-]: GETTABLE R2 R3 R4; var2 = var3[var4]
 ; Max Stack Size:  13
 
        0 [-]: GETIMPORT R5 2; var5 = _T["MaggotKilledEarly"]
-       1 [-]: FASTCALL1 62 R5 L0; 
+       1 [-]: FASTCALL1 64 R5 L0; 
        2 [-]: GETIMPORT R4 4; var4 = 0x7B998233
        3 [-]: CALL R4 2 2  ; var4 = var4(var5)
 L 0:   4 [-]: JUMPIFNOT R4 L1; goto L1 if not var4
@@ -728,10 +726,10 @@ L 6:  56 [-]: JUMPXEQKNIL R5 L10;
       71 [-]: GETIMPORT R9 25; var9 = 0x5BCED4C4[0xAC1B386A]
       72 [-]: CALL R9 3 2  ; var9 = var9(var10, var11)
 L 7:  73 [-]: GETTABLE R7 R8 R9; var7 = var8[var9]
-      74 [-]: JUMPIFLT R6 R7 L9; goto L9 if var6 < var1706318
+      74 [-]: JUMPIFLT R6 R7 L9; goto L9 if var6 < var1706273
       75 [-]: GETIMPORT R9 26; var9 = _T["spawnedMaggot"]
       76 [-]: GETTABLE R8 R9 R4; var8 = var9[var4]
-      77 [-]: FASTCALL1 62 R8 L8; 
+      77 [-]: FASTCALL1 64 R8 L8; 
       78 [-]: GETIMPORT R7 4; var7 = 0x7B998233
       79 [-]: CALL R7 2 2  ; var7 = var7(var8)
 L 8:  80 [-]: JUMPIF R7 L10; goto L10 if var7
@@ -748,23 +746,23 @@ L10:  83 [-]: LOADN R6 1   ; var6 = 1
 ; Is_vararg:       0
 ; Max Stack Size:  18
 
-       0 [-]: FASTCALL1 62 R1 L0; 
+       0 [-]: FASTCALL1 64 R1 L0; 
        1 [-]: MOVE R6 R1   ; var6 = var1
        2 [-]: GETIMPORT R5 1; var5 = 0x7B998233
        3 [-]: CALL R5 2 2  ; var5 = var5(var6)
 L 0:   4 [-]: JUMPIF R5 L4 ; goto L4 if var5
        5 [-]: GETIMPORT R6 4; var6 = _T["spawnedMaggot"]
-       6 [-]: FASTCALL1 62 R6 L1; 
+       6 [-]: FASTCALL1 64 R6 L1; 
        7 [-]: GETIMPORT R5 1; var5 = 0x7B998233
        8 [-]: CALL R5 2 2  ; var5 = var5(var6)
 L 1:   9 [-]: JUMPIF R5 L4 ; goto L4 if var5
       10 [-]: GETIMPORT R6 6; var6 = _T["maggotDiedEarly"]
-      11 [-]: FASTCALL1 62 R6 L2; 
+      11 [-]: FASTCALL1 64 R6 L2; 
       12 [-]: GETIMPORT R5 1; var5 = 0x7B998233
       13 [-]: CALL R5 2 2  ; var5 = var5(var6)
 L 2:  14 [-]: JUMPIF R5 L4 ; goto L4 if var5
       15 [-]: GETIMPORT R6 8; var6 = _T["maggotDiedNaturally"]
-      16 [-]: FASTCALL1 62 R6 L3; 
+      16 [-]: FASTCALL1 64 R6 L3; 
       17 [-]: GETIMPORT R5 1; var5 = 0x7B998233
       18 [-]: CALL R5 2 2  ; var5 = var5(var6)
 L 3:  19 [-]: JUMPIFNOT R5 L5; goto L5 if not var5
@@ -773,13 +771,13 @@ L 5:  21 [-]: NAMECALL R5 R1 K9; var6 = var1; var5 = var1[0x388577D5]
       22 [-]: CALL R5 2 2  ; var5 = var5(var6)
       23 [-]: GETIMPORT R8 4; var8 = _T["spawnedMaggot"]
       24 [-]: GETTABLE R7 R8 R5; var7 = var8[var5]
-      25 [-]: FASTCALL1 62 R7 L6; 
+      25 [-]: FASTCALL1 64 R7 L6; 
       26 [-]: GETIMPORT R6 1; var6 = 0x7B998233
       27 [-]: CALL R6 2 2  ; var6 = var6(var7)
 L 6:  28 [-]: JUMPIF R6 L7 ; goto L7 if var6
       29 [-]: RETURN R0 0  ; 
 L 7:  30 [-]: GETIMPORT R7 11; var7 = 0xCEDC9DDC
-      31 [-]: FASTCALL1 62 R7 L8; 
+      31 [-]: FASTCALL1 64 R7 L8; 
       32 [-]: GETIMPORT R6 1; var6 = 0x7B998233
       33 [-]: CALL R6 2 2  ; var6 = var6(var7)
 L 8:  34 [-]: JUMPIF R6 L9 ; goto L9 if var6
@@ -790,7 +788,7 @@ L 8:  34 [-]: JUMPIF R6 L9 ; goto L9 if var6
       39 [-]: NAMECALL R6 R1 K12; var7 = var1; var6 = var1[0x659D451F]
       40 [-]: CALL R6 6 1  ; var6(var7, var8, var9, var10, var11)
 L 9:  41 [-]: GETIMPORT R7 14; var7 = 0x7AD09905
-      42 [-]: FASTCALL1 62 R7 L10; 
+      42 [-]: FASTCALL1 64 R7 L10; 
       43 [-]: GETIMPORT R6 1; var6 = 0x7B998233
       44 [-]: CALL R6 2 2  ; var6 = var6(var7)
 L10:  45 [-]: JUMPIF R6 L11; goto L11 if var6
@@ -838,7 +836,7 @@ L11:  56 [-]: GETIMPORT R6 18; var6 = 0x89326C93
       87 [-]: SETTABLEKS R11 R8 K35; var11["heading"] = var8
       88 [-]: NAMECALL R11 R10 K36; var12 = var10; var11 = var10[0xBB610E5B]
       89 [-]: CALL R11 2 2 ; var11 = var11(var12)
-      90 [-]: FASTCALL1 62 R11 L12; 
+      90 [-]: FASTCALL1 64 R11 L12; 
       91 [-]: MOVE R13 R11 ; var13 = var11
       92 [-]: GETIMPORT R12 1; var12 = 0x7B998233
       93 [-]: CALL R12 2 2 ; var12 = var12(var13)

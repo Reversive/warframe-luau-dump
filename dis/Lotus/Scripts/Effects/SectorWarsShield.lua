@@ -25,7 +25,7 @@
 
        0 [-]: LOADN R1 1   ; var1 = 1
 L 0:   1 [-]: LOADN R2 0   ; var2 = 0
-       2 [-]: JUMPIFNOTLT R2 R1 L1; goto L1 if var2 >= var132174
+       2 [-]: JUMPIFNOTLT R2 R1 L1; goto L1 if var2 >= var132129
        3 [-]: GETIMPORT R4 2; var4 = 0x6C97A788["UNLIT_ATTEN"]
        4 [-]: GETIMPORT R7 4; var7 = 0x5E960C54
        5 [-]: MUL R6 R7 R1 ; var6 = var7 * var1
@@ -73,14 +73,14 @@ L 0:  11 [-]: GETIMPORT R7 9; var7 = 0x0469F296
       14 [-]: LOADB R8 0   ; var8 = false
       15 [-]: NAMECALL R5 R0 K11; var6 = var0; var5 = var0[0xD5F7912B]
       16 [-]: CALL R5 4 1  ; var5(var6, var7, var8)
-      17 [-]: FASTCALL1 62 R1 L1; 
+      17 [-]: FASTCALL1 64 R1 L1; 
       18 [-]: MOVE R6 R1   ; var6 = var1
       19 [-]: GETIMPORT R5 13; var5 = 0x7B998233
       20 [-]: CALL R5 2 2  ; var5 = var5(var6)
 L 1:  21 [-]: JUMPIF R5 L3 ; goto L3 if var5
       22 [-]: NAMECALL R5 R1 K14; var6 = var1; var5 = var1[0xEC71CA93]
       23 [-]: CALL R5 2 2  ; var5 = var5(var6)
-      24 [-]: FASTCALL1 62 R5 L2; 
+      24 [-]: FASTCALL1 64 R5 L2; 
       25 [-]: MOVE R7 R5   ; var7 = var5
       26 [-]: GETIMPORT R6 13; var6 = 0x7B998233
       27 [-]: CALL R6 2 2  ; var6 = var6(var7)
@@ -112,7 +112,7 @@ L 3:  35 [-]: RETURN R0 0  ;
        8 [-]: GETTABLEKS R3 R2 K6; var3 = var2["particleSysQuality"]
        9 [-]: JUMPXEQKN R3 K7 L1 NOT; 
       10 [-]: GETIMPORT R5 9; var5 = 0x008A038B
-      11 [-]: FASTCALL1 62 R5 L0; 
+      11 [-]: FASTCALL1 64 R5 L0; 
       12 [-]: GETIMPORT R4 11; var4 = 0x7B998233
       13 [-]: CALL R4 2 2  ; var4 = var4(var5)
 L 0:  14 [-]: JUMPIF R4 L1 ; goto L1 if var4
@@ -125,7 +125,7 @@ L 1:  20 [-]: GETIMPORT R6 15; var6 = 0x6C97A788["UNLIT_ATTEN"]
       21 [-]: GETIMPORT R7 17; var7 = 0xD995CA40
       22 [-]: NAMECALL R4 R0 K18; var5 = var0; var4 = var0[0x986D2AB8]
       23 [-]: CALL R4 4 1  ; var4(var5, var6, var7)
-L 2:  24 [-]: FASTCALL1 62 R0 L3; 
+L 2:  24 [-]: FASTCALL1 64 R0 L3; 
       25 [-]: MOVE R5 R0   ; var5 = var0
       26 [-]: GETIMPORT R4 11; var4 = 0x7B998233
       27 [-]: CALL R4 2 2  ; var4 = var4(var5)
@@ -155,7 +155,7 @@ L 4:  33 [-]: RETURN R0 0  ;
        8 [-]: GETIMPORT R6 8; var6 = 0x5F455FB4
        9 [-]: NAMECALL R1 R1 K9; var2 = var1; var1 = var1[0x462C251C]
       10 [-]: CALL R1 6 2  ; var1 = var1(var2, var3, var4, var5, var6)
-      11 [-]: FASTCALL1 62 R1 L0; 
+      11 [-]: FASTCALL1 64 R1 L0; 
       12 [-]: MOVE R3 R1   ; var3 = var1
       13 [-]: GETIMPORT R2 11; var2 = 0x7B998233
       14 [-]: CALL R2 2 2  ; var2 = var2(var3)

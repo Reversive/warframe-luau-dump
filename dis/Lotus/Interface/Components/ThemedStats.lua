@@ -78,62 +78,66 @@
       54 [-]: SETTABLEKS R10 R9 K26; var10["mBgOffset"] = var9
       55 [-]: LOADN R10 0  ; var10 = 0
       56 [-]: SETTABLEKS R10 R9 K27; var10["mYOffset"] = var9
-      57 [-]: LOADK R10 K28; var10 = 0.20000000000000001
+      57 [-]: LOADK R10 K28; var10 = 0.20000000298023224
       58 [-]: SETTABLEKS R10 R9 K29; var10["mEdgeAlpha"] = var9
-      59 [-]: LOADB R10 0  ; var10 = false
-      60 [-]: SETTABLEKS R10 R9 K30; var10["mGrowDownward"] = var9
+      59 [-]: LOADK R10 K30; var10 = 0.80000001192092896
+      60 [-]: SETTABLEKS R10 R9 K31; var10["mInnerAlpha"] = var9
       61 [-]: LOADB R10 0  ; var10 = false
-      62 [-]: SETTABLEKS R10 R9 K31; var10["mCanFocusStats"] = var9
-      63 [-]: LOADN R10 1  ; var10 = 1
-      64 [-]: SETTABLEKS R10 R9 K32; var10["mNumStats"] = var9
-      65 [-]: GETIMPORT R11 34; var11 = 0x0032441C
-      66 [-]: GETTABLEKS R10 R11 K35; var10 = var11["UIMaterial_RectangleNoDepth"]
-      67 [-]: SETTABLEKS R10 R9 K36; var10["RectangleMaterial"] = var9
-      68 [-]: GETIMPORT R11 34; var11 = 0x0032441C
-      69 [-]: GETTABLEKS R10 R11 K37; var10 = var11["UIMaterial_PlainText"]
-      70 [-]: SETTABLEKS R10 R9 K38; var10["TextMaterial"] = var9
-      71 [-]: DUPCLOSURE R10 K39; 
-      72 [-]: SETTABLEKS R10 R9 K40; var10["GetParentEnv"] = var9
-      73 [-]: DUPCLOSURE R10 K41; 
-      74 [-]: SETTABLEKS R10 R9 K42; var10["ShowStatTips"] = var9
-      75 [-]: DUPCLOSURE R10 K43; 
-      76 [-]: SETTABLEKS R10 R9 K44; var10["AttachScrollBar"] = var9
-      77 [-]: DUPCLOSURE R10 K45; 
-      78 [-]: SETTABLEKS R10 R9 K46; var10["SetWidth"] = var9
-      79 [-]: NEWCLOSURE R10 P4; 
-      80 [-]: CAPTURE VAL R4; 
-      81 [-]: CAPTURE VAL R6; 
-      82 [-]: SETTABLEKS R10 R9 K47; var10["Redraw"] = var9
-      83 [-]: NEWCLOSURE R10 P5; 
+      62 [-]: SETTABLEKS R10 R9 K32; var10["mGrowDownward"] = var9
+      63 [-]: LOADB R10 0  ; var10 = false
+      64 [-]: SETTABLEKS R10 R9 K33; var10["mCanFocusStats"] = var9
+      65 [-]: LOADB R10 1  ; var10 = true
+      66 [-]: SETTABLEKS R10 R9 K34; var10["mUseContentColor"] = var9
+      67 [-]: LOADN R10 1  ; var10 = 1
+      68 [-]: SETTABLEKS R10 R9 K35; var10["mNumStats"] = var9
+      69 [-]: GETIMPORT R11 37; var11 = 0x0032441C
+      70 [-]: GETTABLEKS R10 R11 K38; var10 = var11["UIMaterial_RectangleNoDepth"]
+      71 [-]: SETTABLEKS R10 R9 K39; var10["RectangleMaterial"] = var9
+      72 [-]: GETIMPORT R11 37; var11 = 0x0032441C
+      73 [-]: GETTABLEKS R10 R11 K40; var10 = var11["UIMaterial_PlainText"]
+      74 [-]: SETTABLEKS R10 R9 K41; var10["TextMaterial"] = var9
+      75 [-]: DUPCLOSURE R10 K42; 
+      76 [-]: SETTABLEKS R10 R9 K43; var10["GetParentEnv"] = var9
+      77 [-]: DUPCLOSURE R10 K44; 
+      78 [-]: SETTABLEKS R10 R9 K45; var10["ShowStatTips"] = var9
+      79 [-]: DUPCLOSURE R10 K46; 
+      80 [-]: SETTABLEKS R10 R9 K47; var10["AttachScrollBar"] = var9
+      81 [-]: DUPCLOSURE R10 K48; 
+      82 [-]: SETTABLEKS R10 R9 K49; var10["SetWidth"] = var9
+      83 [-]: NEWCLOSURE R10 P4; 
       84 [-]: CAPTURE VAL R4; 
-      85 [-]: SETTABLEKS R10 R9 K48; var10["SetCollapsed"] = var9
-      86 [-]: NEWCLOSURE R10 P6; 
-      87 [-]: CAPTURE VAL R4; 
-      88 [-]: CAPTURE VAL R6; 
-      89 [-]: SETTABLEKS R10 R9 K49; var10["SetActive"] = var9
-      90 [-]: DUPCLOSURE R10 K50; 
-      91 [-]: SETTABLEKS R10 R9 K51; var10["SetBorderPadding"] = var9
-      92 [-]: NEWCLOSURE R10 P8; 
-      93 [-]: CAPTURE VAL R8; 
-      94 [-]: CAPTURE VAL R7; 
-      95 [-]: SETTABLEKS R10 R9 K52; var10["SetType"] = var9
-      96 [-]: NEWCLOSURE R10 P9; 
+      85 [-]: CAPTURE VAL R6; 
+      86 [-]: SETTABLEKS R10 R9 K50; var10["Redraw"] = var9
+      87 [-]: NEWCLOSURE R10 P5; 
+      88 [-]: CAPTURE VAL R4; 
+      89 [-]: SETTABLEKS R10 R9 K51; var10["SetCollapsed"] = var9
+      90 [-]: NEWCLOSURE R10 P6; 
+      91 [-]: CAPTURE VAL R4; 
+      92 [-]: CAPTURE VAL R6; 
+      93 [-]: SETTABLEKS R10 R9 K52; var10["SetActive"] = var9
+      94 [-]: DUPCLOSURE R10 K53; 
+      95 [-]: SETTABLEKS R10 R9 K54; var10["SetBorderPadding"] = var9
+      96 [-]: NEWCLOSURE R10 P8; 
       97 [-]: CAPTURE VAL R8; 
-      98 [-]: CAPTURE VAL R4; 
-      99 [-]: CAPTURE VAL R7; 
-     100 [-]: SETTABLEKS R10 R9 K53; var10["Compare"] = var9
-     101 [-]: DUPCLOSURE R10 K54; 
-     102 [-]: SETTABLEKS R10 R9 K55; var10["SetVisible"] = var9
-     103 [-]: DUPCLOSURE R10 K56; 
-     104 [-]: SETTABLEKS R10 R9 K57; var10["SetAlpha"] = var9
-     105 [-]: NEWCLOSURE R10 P12; 
-     106 [-]: CAPTURE VAL R5; 
-     107 [-]: SETTABLEKS R10 R9 K58; var10["ShowToolTip"] = var9
-     108 [-]: MOVE R12 R2  ; var12 = var2
-     109 [-]: MOVE R13 R3  ; var13 = var3
-     110 [-]: NAMECALL R10 R9 K59; var11 = var9; var10 = var9[0xF87811F6]
-     111 [-]: CALL R10 4 1 ; var10(var11, var12, var13)
-     112 [-]: RETURN R9 1  ; 
+      98 [-]: CAPTURE VAL R7; 
+      99 [-]: SETTABLEKS R10 R9 K55; var10["SetType"] = var9
+     100 [-]: NEWCLOSURE R10 P9; 
+     101 [-]: CAPTURE VAL R8; 
+     102 [-]: CAPTURE VAL R4; 
+     103 [-]: CAPTURE VAL R7; 
+     104 [-]: SETTABLEKS R10 R9 K56; var10["Compare"] = var9
+     105 [-]: DUPCLOSURE R10 K57; 
+     106 [-]: SETTABLEKS R10 R9 K58; var10["SetVisible"] = var9
+     107 [-]: DUPCLOSURE R10 K59; 
+     108 [-]: SETTABLEKS R10 R9 K60; var10["SetAlpha"] = var9
+     109 [-]: NEWCLOSURE R10 P12; 
+     110 [-]: CAPTURE VAL R5; 
+     111 [-]: SETTABLEKS R10 R9 K61; var10["ShowToolTip"] = var9
+     112 [-]: MOVE R12 R2  ; var12 = var2
+     113 [-]: MOVE R13 R3  ; var13 = var3
+     114 [-]: NAMECALL R10 R9 K62; var11 = var9; var10 = var9[0xF87811F6]
+     115 [-]: CALL R10 4 1 ; var10(var11, var12, var13)
+     116 [-]: RETURN R9 1  ; 
 
 
 

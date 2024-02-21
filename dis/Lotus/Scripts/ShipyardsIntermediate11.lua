@@ -40,7 +40,7 @@ L 0:   0 [-]: GETIMPORT R0 1; var0 = 0x46E5D6C9
        2 [-]: CALL R0 2 2  ; var0 = var0(var1)
        3 [-]: SETUPVAL R0 0; upvalues[0] = var0
        4 [-]: GETIMPORT R1 1; var1 = 0x46E5D6C9
-       5 [-]: FASTCALL1 62 R1 L1; 
+       5 [-]: FASTCALL1 64 R1 L1; 
        6 [-]: GETIMPORT R0 4; var0 = 0x7B998233
        7 [-]: CALL R0 2 2  ; var0 = var0(var1)
 L 1:   8 [-]: JUMPIF R0 L2 ; goto L2 if var0

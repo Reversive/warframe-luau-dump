@@ -176,7 +176,7 @@ L 3:  51 [-]: GETUPVAL R1 0; var1 = upvalues[0]
 ; Max Stack Size:  8
 
        0 [-]: GETUPVAL R1 0; var1 = upvalues[0]
-       1 [-]: FASTCALL1 62 R1 L0; 
+       1 [-]: FASTCALL1 64 R1 L0; 
        2 [-]: GETIMPORT R0 1; var0 = 0x7B998233
        3 [-]: CALL R0 2 2  ; var0 = var0(var1)
 L 0:   4 [-]: JUMPIFNOT R0 L1; goto L1 if not var0
@@ -198,7 +198,7 @@ L 1:   9 [-]: GETUPVAL R0 1; var0 = upvalues[1]
       20 [-]: GETTABLEKS R0 R1 K5; var0 = var1["Active"]
       21 [-]: GETUPVAL R2 2; var2 = upvalues[2]
       22 [-]: GETTABLEKS R1 R2 K5; var1 = var2["Active"]
-      23 [-]: JUMPIFEQ R0 R1 L2; goto L2 if var0 == var196615
+      23 [-]: JUMPIFEQ R0 R1 L2; goto L2 if var0 == var196668
       24 [-]: GETUPVAL R0 3; var0 = upvalues[3]
       25 [-]: GETUPVAL R2 1; var2 = upvalues[1]
       26 [-]: GETTABLEKS R1 R2 K5; var1 = var2["Active"]
@@ -211,7 +211,7 @@ L 2:  32 [-]: GETUPVAL R1 1; var1 = upvalues[1]
       33 [-]: GETTABLEKS R0 R1 K7; var0 = var1["CanRankUp"]
       34 [-]: GETUPVAL R2 2; var2 = upvalues[2]
       35 [-]: GETTABLEKS R1 R2 K7; var1 = var2["CanRankUp"]
-      36 [-]: JUMPIFEQ R0 R1 L4; goto L4 if var0 == var65799
+      36 [-]: JUMPIFEQ R0 R1 L4; goto L4 if var0 == var65852
       37 [-]: GETUPVAL R1 1; var1 = upvalues[1]
       38 [-]: GETTABLEKS R0 R1 K7; var0 = var1["CanRankUp"]
       39 [-]: JUMPIF R0 L3 ; goto L3 if var0
@@ -258,12 +258,12 @@ L 4:  54 [-]: GETIMPORT R0 3; var0 = 0xCBD666E1
       13 [-]: SETUPVAL R1 1; upvalues[1] = var1
 L 0:  14 [-]: SETUPVAL R0 2; upvalues[0] = var2
       15 [-]: GETUPVAL R2 1; var2 = upvalues[1]
-      16 [-]: FASTCALL1 62 R2 L1; 
+      16 [-]: FASTCALL1 64 R2 L1; 
       17 [-]: GETIMPORT R1 10; var1 = 0x7B998233
       18 [-]: CALL R1 2 2  ; var1 = var1(var2)
 L 1:  19 [-]: JUMPIF R1 L4 ; goto L4 if var1
       20 [-]: GETUPVAL R2 2; var2 = upvalues[2]
-      21 [-]: FASTCALL1 62 R2 L2; 
+      21 [-]: FASTCALL1 64 R2 L2; 
       22 [-]: GETIMPORT R1 10; var1 = 0x7B998233
       23 [-]: CALL R1 2 2  ; var1 = var1(var2)
 L 2:  24 [-]: JUMPIF R1 L4 ; goto L4 if var1

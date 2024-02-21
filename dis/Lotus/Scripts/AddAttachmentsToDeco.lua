@@ -20,7 +20,7 @@
 ; Max Stack Size:  6
 
        0 [-]: GETIMPORT R1 1; var1 = 0x418B9EE0
-       1 [-]: FASTCALL1 62 R1 L0; 
+       1 [-]: FASTCALL1 64 R1 L0; 
        2 [-]: GETIMPORT R0 3; var0 = 0x7B998233
        3 [-]: CALL R0 2 2  ; var0 = var0(var1)
 L 0:   4 [-]: JUMPIFNOT R0 L1; goto L1 if not var0
@@ -53,7 +53,7 @@ L 0:   4 [-]: LOADN R2 1   ; var2 = 1
        8 [-]: FORNPREP R0 L4; nforprep start - [escape at L4] -- var0 = iterator
 L 1:   9 [-]: GETIMPORT R5 1; var5 = 0xC1CAA169
       10 [-]: GETTABLE R4 R5 R2; var4 = var5[var2]
-      11 [-]: FASTCALL1 62 R4 L2; 
+      11 [-]: FASTCALL1 64 R4 L2; 
       12 [-]: GETIMPORT R3 4; var3 = 0x7B998233
       13 [-]: CALL R3 2 2  ; var3 = var3(var4)
 L 2:  14 [-]: JUMPIF R3 L3 ; goto L3 if var3

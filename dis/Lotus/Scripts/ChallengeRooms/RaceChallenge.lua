@@ -32,9 +32,7 @@
       25 [-]: SETGLOBAL R3 K19; "SetNextStage" = var3
       26 [-]: DUPCLOSURE R3 K20; 
       27 [-]: SETGLOBAL R3 K21; "OnDeath" = var3
-      28 [-]: DUPCLOSURE R3 K22; 
-      29 [-]: SETGLOBAL R3 K23; "OnTrainingResultUploaded" = var3
-      30 [-]: RETURN R0 0  ; 
+      28 [-]: RETURN R0 0  ; 
 
 
 ; Name:            
@@ -135,7 +133,7 @@ L 2:  16 [-]: RETURN R0 0  ;
        1 [-]: LOADB R1 0   ; var1 = false
        2 [-]: SETTABLEKS R1 R0 K2; var1["gGoalReached"] = var0
        3 [-]: GETIMPORT R0 4; var0 = 0xCBD666E1
-       4 [-]: LOADK R1 K5  ; var1 = 0.10000000000000001
+       4 [-]: LOADK R1 K5  ; var1 = 0.10000000149011612
        5 [-]: CALL R0 2 1  ; var0(var1)
        6 [-]: GETIMPORT R0 1; var0 = _T
        7 [-]: LOADN R1 0   ; var1 = 0
@@ -162,7 +160,7 @@ L 1:  25 [-]: FORGLOOP R1 L0 2 [inext];
       28 [-]: CALL R1 2 2  ; var1 = var1(var2)
       29 [-]: NAMECALL R1 R1 K19; var2 = var1; var1 = var1[0x2676DEEE]
       30 [-]: CALL R1 2 2  ; var1 = var1(var2)
-      31 [-]: FASTCALL1 62 R1 L2; 
+      31 [-]: FASTCALL1 64 R1 L2; 
       32 [-]: MOVE R3 R1   ; var3 = var1
       33 [-]: GETIMPORT R2 21; var2 = 0x7B998233
       34 [-]: CALL R2 2 2  ; var2 = var2(var3)
@@ -195,7 +193,7 @@ L 4:  59 [-]: GETUPVAL R2 0; var2 = upvalues[0]
       61 [-]: NAMECALL R2 R2 K32; var3 = var2; var2 = var2[0xFFDDF768]
       62 [-]: CALL R2 3 2  ; var2 = var2(var3, var4)
       63 [-]: LOADN R3 0   ; var3 = 0
-      64 [-]: JUMPIFNOTLT R3 R2 L5; goto L5 if var3 >= var2163278
+      64 [-]: JUMPIFNOTLT R3 R2 L5; goto L5 if var3 >= var2163233
       65 [-]: GETIMPORT R2 33; var2 = _T["gGoalReached"]
       66 [-]: JUMPIF R2 L5 ; goto L5 if var2
       67 [-]: GETIMPORT R2 4; var2 = 0xCBD666E1
@@ -236,7 +234,7 @@ L 6:  93 [-]: RETURN R0 0  ;
 
        0 [-]: GETIMPORT R0 2; var0 = _T["gCurrentRsPoint"]
        1 [-]: GETIMPORT R1 4; var1 = _T["gNumRsPoints"]
-       2 [-]: JUMPIFNOTLT R0 R1 L0; goto L0 if var0 >= var327758
+       2 [-]: JUMPIFNOTLT R0 R1 L0; goto L0 if var0 >= var327713
        3 [-]: GETIMPORT R0 5; var0 = _T
        4 [-]: GETIMPORT R2 2; var2 = _T["gCurrentRsPoint"]
        5 [-]: ADDK R1 R2 K6; var1 = var2 + 1
@@ -268,7 +266,7 @@ L 0:   7 [-]: GETIMPORT R0 5; var0 = _T
 ; Is_vararg:       0
 ; Max Stack Size:  8
 
-       0 [-]: FASTCALL1 62 R1 L0; 
+       0 [-]: FASTCALL1 64 R1 L0; 
        1 [-]: MOVE R6 R1   ; var6 = var1
        2 [-]: GETIMPORT R5 1; var5 = 0x7B998233
        3 [-]: CALL R5 2 2  ; var5 = var5(var6)
@@ -282,28 +280,6 @@ L 0:   4 [-]: JUMPIF R5 L1 ; goto L1 if var5
       11 [-]: ADDK R6 R7 K7; var6 = var7 + 5
       12 [-]: SETTABLEKS R6 R5 K8; var6["gTimeIncrease"] = var5
 L 1:  13 [-]: RETURN R0 0  ; 
-
-
-; Name:            
-; Defined at line: 97
-; #Upvalues:       0
-; #Parameters:     2
-; Is_vararg:       0
-; Max Stack Size:  10
-
-       0 [-]: GETIMPORT R2 1; var2 = 0x3D106989
-       1 [-]: LOADK R4 K2  ; var4 = "Dojo: OnTrainingResultUploaded result="
-       2 [-]: GETIMPORT R8 4; var8 = 0x64FB1586
-       3 [-]: MOVE R9 R0   ; var9 = var0
-       4 [-]: CALL R8 2 2  ; var8 = var8(var9)
-       5 [-]: MOVE R5 R8   ; var5 = var8
-       6 [-]: LOADK R6 K5  ; var6 = ", body="
-       7 [-]: GETIMPORT R7 4; var7 = 0x64FB1586
-       8 [-]: MOVE R8 R1   ; var8 = var1
-       9 [-]: CALL R7 2 2  ; var7 = var7(var8)
-      10 [-]: CONCAT R3 R4 R7; var3 = var4 .. var7
-      11 [-]: CALL R2 2 1  ; var2(var3)
-      12 [-]: RETURN R0 0  ; 
 
 
 

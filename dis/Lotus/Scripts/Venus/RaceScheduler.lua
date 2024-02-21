@@ -45,8 +45,7 @@ L 2:  11 [-]: GETIMPORT R0 8; var0 = 0x89326C93
       17 [-]: GETIMPORT R1 1; var1 = 0xBE190284
       18 [-]: NAMECALL R1 R1 K13; var2 = var1; var1 = var1[0xBE9C4719]
       19 [-]: CALL R1 2 2  ; var1 = var1(var2)
-      20 [-]: DIVK R3 R1 K14; var3 = var1 / 86400
-      21 [-]: FASTCALL1 12 R3 L3; 
+           21 [-]: FASTCALL1 12 R3 L3; 
       22 [-]: GETIMPORT R2 17; var2 = 0x5BCED4C4[0x55F27C30]
       23 [-]: CALL R2 2 2  ; var2 = var2(var3)
 L 3:  24 [-]: GETIMPORT R3 19; var3 = 0xFFD438AB
@@ -76,7 +75,7 @@ L 5:  46 [-]: LOADK R11 K33; var11 = "Execute"
       48 [-]: CALL R9 3 1  ; var9(var10, var11)
 L 6:  49 [-]: FORGLOOP R4 L5 2; 
 L 7:  50 [-]: GETIMPORT R5 36; var5 = _T["DisableBounties"]
-      51 [-]: FASTCALL1 62 R5 L8; 
+      51 [-]: FASTCALL1 64 R5 L8; 
       52 [-]: GETIMPORT R4 38; var4 = 0x7B998233
       53 [-]: CALL R4 2 2  ; var4 = var4(var5)
 L 8:  54 [-]: JUMPIFNOT R4 L9; goto L9 if not var4

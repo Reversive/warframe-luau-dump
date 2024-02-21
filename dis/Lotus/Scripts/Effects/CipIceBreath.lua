@@ -24,7 +24,7 @@
        4 [-]: LOADK R1 K4  ; var1 = "Icy Breath begin"
        5 [-]: CALL R0 2 1  ; var0(var1)
        6 [-]: LOADNIL R0   ; var0 = nil
-L 0:   7 [-]: FASTCALL1 62 R0 L1; 
+L 0:   7 [-]: FASTCALL1 64 R0 L1; 
        8 [-]: MOVE R2 R0   ; var2 = var0
        9 [-]: GETIMPORT R1 6; var1 = 0x7B998233
       10 [-]: CALL R1 2 2  ; var1 = var1(var2)
@@ -42,7 +42,7 @@ L 2:  21 [-]: GETIMPORT R1 1; var1 = 0xCBD666E1
       22 [-]: LOADN R2 0   ; var2 = 0
       23 [-]: CALL R1 2 1  ; var1(var2)
       24 [-]: JUMPBACK L0  ; goto L0
-L 3:  25 [-]: FASTCALL1 62 R0 L4; 
+L 3:  25 [-]: FASTCALL1 64 R0 L4; 
       26 [-]: MOVE R2 R0   ; var2 = var0
       27 [-]: GETIMPORT R1 6; var1 = 0x7B998233
       28 [-]: CALL R1 2 2  ; var1 = var1(var2)

@@ -57,7 +57,7 @@
       33 [-]: NAMECALL R4 R0 K19; var5 = var0; var4 = var0[0x095251AF]
       34 [-]: CALL R4 2 2  ; var4 = var4(var5)
       35 [-]: LOADN R5 0   ; var5 = 0
-      36 [-]: JUMPIFNOTEQ R4 R5 L0; goto L0 if var4 ~= var2130707525
+      36 [-]: JUMPIFNOTEQ R4 R5 L0; goto L0 if var4 ~= var2130707532
       37 [-]: NAMECALL R4 R0 K20; var5 = var0; var4 = var0[0x7B41D07F]
       38 [-]: CALL R4 2 2  ; var4 = var4(var5)
       39 [-]: JUMPIF R4 L0 ; goto L0 if var4

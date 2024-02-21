@@ -25,7 +25,7 @@
        1 [-]: GETIMPORT R2 3; var2 = gZoneAttribsType
        2 [-]: NAMECALL R0 R0 K4; var1 = var0; var0 = var0[0xFB669000]
        3 [-]: CALL R0 3 2  ; var0 = var0(var1, var2)
-       4 [-]: FASTCALL1 62 R0 L0; 
+       4 [-]: FASTCALL1 64 R0 L0; 
        5 [-]: MOVE R2 R0   ; var2 = var0
        6 [-]: GETIMPORT R1 6; var1 = 0x7B998233
        7 [-]: CALL R1 2 2  ; var1 = var1(var2)
@@ -37,7 +37,7 @@ L 0:   8 [-]: JUMPIF R1 L4 ; goto L4 if var1
 L 1:  13 [-]: GETTABLE R4 R0 R3; var4 = var0[var3]
       14 [-]: NAMECALL R4 R4 K7; var5 = var4; var4 = var4[0xE79E7EF4]
       15 [-]: CALL R4 2 2  ; var4 = var4(var5)
-      16 [-]: FASTCALL1 62 R4 L2; 
+      16 [-]: FASTCALL1 64 R4 L2; 
       17 [-]: MOVE R6 R4   ; var6 = var4
       18 [-]: GETIMPORT R5 6; var5 = 0x7B998233
       19 [-]: CALL R5 2 2  ; var5 = var5(var6)
@@ -78,7 +78,7 @@ L 4:  38 [-]: RETURN R0 0  ;
        6 [-]: GETIMPORT R2 6; var2 = 0x5B6123C1
        7 [-]: NAMECALL R0 R0 K7; var1 = var0; var0 = var0[0xBCFB64AB]
        8 [-]: CALL R0 3 2  ; var0 = var0(var1, var2)
-       9 [-]: FASTCALL1 62 R0 L0; 
+       9 [-]: FASTCALL1 64 R0 L0; 
       10 [-]: MOVE R2 R0   ; var2 = var0
       11 [-]: GETIMPORT R1 9; var1 = 0x7B998233
       12 [-]: CALL R1 2 2  ; var1 = var1(var2)
@@ -89,7 +89,7 @@ L 0:  13 [-]: JUMPIF R1 L4 ; goto L4 if var1
       17 [-]: GETIMPORT R2 13; var2 = 0x89326C93
       18 [-]: NAMECALL R2 R2 K14; var3 = var2; var2 = var2[0xDD25E9D1]
       19 [-]: CALL R2 2 2  ; var2 = var2(var3)
-      20 [-]: FASTCALL1 62 R2 L1; 
+      20 [-]: FASTCALL1 64 R2 L1; 
       21 [-]: MOVE R4 R2   ; var4 = var2
       22 [-]: GETIMPORT R3 9; var3 = 0x7B998233
       23 [-]: CALL R3 2 2  ; var3 = var3(var4)

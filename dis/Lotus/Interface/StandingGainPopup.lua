@@ -60,28 +60,26 @@ L 1:   6 [-]: NAMECALL R3 R3 K3; var4 = var3; var3 = var3[0xAADE900E]
        8 [-]: JUMPXEQKNIL R1 L2; 
        9 [-]: GETIMPORT R3 1; var3 = 0xAE91E43B
       10 [-]: LOADK R5 K4  ; var5 = "Title.Subtitle.Label"
-      11 [-]: LOADN R6 29  ; var6 = 29
+      11 [-]: LOADN R6 31  ; var6 = 31
       12 [-]: MOVE R7 R1   ; var7 = var1
       13 [-]: NAMECALL R3 R3 K5; var4 = var3; var3 = var3[0x5F56EEAB]
       14 [-]: CALL R3 5 1  ; var3(var4, var5, var6, var7)
       15 [-]: GETIMPORT R4 1; var4 = 0xAE91E43B
       16 [-]: LOADK R6 K4  ; var6 = "Title.Subtitle.Label"
-      17 [-]: LOADN R7 33  ; var7 = 33
+      17 [-]: LOADN R7 35  ; var7 = 35
       18 [-]: NAMECALL R4 R4 K7; var5 = var4; var4 = var4[0x91A24E4B]
       19 [-]: CALL R4 4 2  ; var4 = var4(var5, var6, var7)
       20 [-]: ADDK R3 R4 K6; var3 = var4 + 20
       21 [-]: GETIMPORT R4 1; var4 = 0xAE91E43B
       22 [-]: LOADK R6 K8  ; var6 = "Title.Subtitle.LineLeft"
       23 [-]: LOADN R7 0   ; var7 = 0
-      24 [-]: DIVK R9 R3 K9; var9 = var3 / 2
-      25 [-]: MINUS R8 R9  ; 
+           25 [-]: MINUS R8 R9  ; 
       26 [-]: NAMECALL R4 R4 K10; var5 = var4; var4 = var4[0x67BC869F]
       27 [-]: CALL R4 5 1  ; var4(var5, var6, var7, var8)
       28 [-]: GETIMPORT R4 1; var4 = 0xAE91E43B
       29 [-]: LOADK R6 K11 ; var6 = "Title.Subtitle.LineRight"
       30 [-]: LOADN R7 0   ; var7 = 0
-      31 [-]: DIVK R9 R3 K9; var9 = var3 / 2
-      32 [-]: SUBK R8 R9 K12; var8 = var9 - 5
+           32 [-]: SUBK R8 R9 K12; var8 = var9 - 5
       33 [-]: NAMECALL R4 R4 K10; var5 = var4; var4 = var4[0x67BC869F]
       34 [-]: CALL R4 5 1  ; var4(var5, var6, var7, var8)
 L 2:  35 [-]: GETIMPORT R3 1; var3 = 0xAE91E43B
@@ -174,13 +172,13 @@ L 2:  35 [-]: GETIMPORT R3 1; var3 = 0xAE91E43B
       36 [-]: CALL R4 5 1  ; var4(var5, var6, var7, var8)
       37 [-]: GETIMPORT R4 2; var4 = 0xAE91E43B
       38 [-]: LOADK R6 K8  ; var6 = "Title.RepGain"
-      39 [-]: LOADN R7 36  ; var7 = 36
+      39 [-]: LOADN R7 38  ; var7 = 38
       40 [-]: MOVE R8 R1   ; var8 = var1
       41 [-]: NAMECALL R4 R4 K4; var5 = var4; var4 = var4[0x67BC869F]
       42 [-]: CALL R4 5 1  ; var4(var5, var6, var7, var8)
       43 [-]: GETIMPORT R4 2; var4 = 0xAE91E43B
       44 [-]: LOADK R6 K9  ; var6 = "Title.Subtitle.Label"
-      45 [-]: LOADN R7 36  ; var7 = 36
+      45 [-]: LOADN R7 38  ; var7 = 38
       46 [-]: MOVE R8 R2   ; var8 = var2
       47 [-]: NAMECALL R4 R4 K4; var5 = var4; var4 = var4[0x67BC869F]
       48 [-]: CALL R4 5 1  ; var4(var5, var6, var7, var8)
@@ -364,7 +362,7 @@ L 2:  35 [-]: GETIMPORT R3 1; var3 = 0xAE91E43B
       69 [-]: SETTABLEKS R6 R5 K24; var6["StandingRewarded"] = var5
 L 0:  70 [-]: JUMPIFNOT R2 L1; goto L1 if not var2
       71 [-]: GETUPVAL R3 3; var3 = upvalues[3]
-      72 [-]: LOADK R5 K27 ; var5 = 0.10000000000000001
+      72 [-]: LOADK R5 K27 ; var5 = 0.10000000149011612
       73 [-]: NEWCLOSURE R6 P0; 
       74 [-]: CAPTURE UPVAL U5; 
       75 [-]: CAPTURE UPVAL U3; 
@@ -390,7 +388,7 @@ L 1:  80 [-]: GETUPVAL R3 6; var3 = upvalues[6]
        3 [-]: NAMECALL R0 R0 K4; var1 = var0; var0 = var0[0x8A8C8D5A]
        4 [-]: CALL R0 0 1  ; var0(var1, ...)
        5 [-]: GETUPVAL R1 0; var1 = upvalues[0]
-       6 [-]: FASTCALL1 62 R1 L0; 
+       6 [-]: FASTCALL1 64 R1 L0; 
        7 [-]: GETIMPORT R0 6; var0 = 0x7B998233
        8 [-]: CALL R0 2 2  ; var0 = var0(var1)
 L 0:   9 [-]: JUMPIF R0 L1 ; goto L1 if var0

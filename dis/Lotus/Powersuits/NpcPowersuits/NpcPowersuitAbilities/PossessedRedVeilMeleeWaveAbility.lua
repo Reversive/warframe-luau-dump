@@ -49,7 +49,7 @@
       25 [-]: GETIMPORT R7 11; var7 = 0x492C7F2A
       26 [-]: GETIMPORT R8 13; var8 = 0xA421AF95
       27 [-]: LOADN R9 0   ; var9 = 0
-      28 [-]: LOADK R10 K14; var10 = 1.3
+      28 [-]: LOADK R10 K14; var10 = 1.2999999523162842
       29 [-]: LOADN R11 1  ; var11 = 1
       30 [-]: CALL R8 4 2  ; var8 = var8(var9, var10, var11)
       31 [-]: MOVE R9 R6   ; var9 = var6

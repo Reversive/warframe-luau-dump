@@ -48,7 +48,7 @@ L 1:  16 [-]: RETURN R0 0  ;
 ; Is_vararg:       0
 ; Max Stack Size:  13
 
-       0 [-]: JUMPIFNOTEQ R0 R3 L0; goto L0 if var0 ~= var33621068
+       0 [-]: JUMPIFNOTEQ R0 R3 L0; goto L0 if var0 ~= var33621054
        1 [-]: ADD R4 R1 R2 ; var4 = var1 + var2
        2 [-]: RETURN R4 1  ; 
 L 0:   3 [-]: LOADN R9 2   ; var9 = 2
@@ -82,14 +82,14 @@ L 1:  10 [-]: MINUS R7 R8  ;
        7 [-]: GETIMPORT R5 10; var5 = 0x759117E1["z"]
        8 [-]: CALL R2 4 2  ; var2 = var2(var3, var4, var5)
 L 0:   9 [-]: GETIMPORT R3 12; var3 = 0xD481C73D
-      10 [-]: JUMPIFNOTLT R1 R3 L4; goto L4 if var1 >= var66326
+      10 [-]: JUMPIFNOTLT R1 R3 L4; goto L4 if var1 >= var66350
       11 [-]: MOVE R3 R1   ; var3 = var1
       12 [-]: GETIMPORT R4 13; var4 = 0x759117E1
       13 [-]: GETIMPORT R6 15; var6 = 0xB807B911
       14 [-]: GETIMPORT R7 13; var7 = 0x759117E1
       15 [-]: SUB R5 R6 R7 ; var5 = var6 - var7
       16 [-]: GETIMPORT R6 12; var6 = 0xD481C73D
-      17 [-]: JUMPIFNOTEQ R3 R6 L1; goto L1 if var3 ~= var84148812
+      17 [-]: JUMPIFNOTEQ R3 R6 L1; goto L1 if var3 ~= var84148798
       18 [-]: ADD R2 R4 R5 ; var2 = var4 + var5
       19 [-]: JUMP L3      ; goto L3
 L 1:  20 [-]: LOADN R11 2  ; var11 = 2
@@ -140,14 +140,14 @@ L 4:  45 [-]: RETURN R0 0  ;
       10 [-]: LOADN R1 0   ; var1 = 0
       11 [-]: LOADNIL R2   ; var2 = nil
 L 0:  12 [-]: GETIMPORT R3 11; var3 = 0xD8E0B159
-      13 [-]: JUMPIFNOTLT R1 R3 L4; goto L4 if var1 >= var66326
+      13 [-]: JUMPIFNOTLT R1 R3 L4; goto L4 if var1 >= var66350
       14 [-]: MOVE R3 R1   ; var3 = var1
       15 [-]: GETIMPORT R4 6; var4 = 0xEC22358D
       16 [-]: GETIMPORT R6 13; var6 = 0xC4AE9F92
       17 [-]: GETIMPORT R7 6; var7 = 0xEC22358D
       18 [-]: SUB R5 R6 R7 ; var5 = var6 - var7
       19 [-]: GETIMPORT R6 11; var6 = 0xD8E0B159
-      20 [-]: JUMPIFNOTEQ R3 R6 L1; goto L1 if var3 ~= var84148812
+      20 [-]: JUMPIFNOTEQ R3 R6 L1; goto L1 if var3 ~= var84148798
       21 [-]: ADD R2 R4 R5 ; var2 = var4 + var5
       22 [-]: JUMP L3      ; goto L3
 L 1:  23 [-]: LOADN R11 2  ; var11 = 2

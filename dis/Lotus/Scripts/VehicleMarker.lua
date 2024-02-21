@@ -29,7 +29,7 @@
        6 [-]: NAMECALL R1 R0 K3; var2 = var0; var1 = var0[0x383D2E7D]
        7 [-]: CALL R1 2 1  ; var1(var2)
 L 0:   8 [-]: GETUPVAL R2 0; var2 = upvalues[0]
-       9 [-]: FASTCALL1 62 R2 L1; 
+       9 [-]: FASTCALL1 64 R2 L1; 
       10 [-]: GETIMPORT R1 5; var1 = 0x7B998233
       11 [-]: CALL R1 2 2  ; var1 = var1(var2)
 L 1:  12 [-]: JUMPIF R1 L4 ; goto L4 if var1

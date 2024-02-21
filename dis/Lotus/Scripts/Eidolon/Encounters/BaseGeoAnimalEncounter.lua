@@ -97,9 +97,9 @@
       10 [-]: GETUPVAL R6 0; var6 = upvalues[0]
       11 [-]: GETTABLEKS R5 R6 K6; var5 = var6["states"]
       12 [-]: GETTABLEKS R4 R5 K7; var4 = var5["SLEPT"]
-      13 [-]: JUMPIFNOTEQ R3 R4 L0; goto L0 if var3 ~= var263239
+      13 [-]: JUMPIFNOTEQ R3 R4 L0; goto L0 if var3 ~= var263216
       14 [-]: LOADN R4 4   ; var4 = 4
-      15 [-]: JUMPIFNOTEQ R2 R4 L0; goto L0 if var2 ~= var66567
+      15 [-]: JUMPIFNOTEQ R2 R4 L0; goto L0 if var2 ~= var66620
       16 [-]: GETUPVAL R4 1; var4 = upvalues[1]
       17 [-]: LOADN R6 3   ; var6 = 3
       18 [-]: NAMECALL R4 R4 K8; var5 = var4; var4 = var4[0x5B18BB5D]
@@ -108,9 +108,9 @@
 L 0:  21 [-]: GETUPVAL R6 0; var6 = upvalues[0]
       22 [-]: GETTABLEKS R5 R6 K6; var5 = var6["states"]
       23 [-]: GETTABLEKS R4 R5 K9; var4 = var5["ESCAPED"]
-      24 [-]: JUMPIFNOTEQ R3 R4 L1; goto L1 if var3 ~= var328775
+      24 [-]: JUMPIFNOTEQ R3 R4 L1; goto L1 if var3 ~= var328752
       25 [-]: LOADN R4 5   ; var4 = 5
-      26 [-]: JUMPIFNOTEQ R2 R4 L1; goto L1 if var2 ~= var66567
+      26 [-]: JUMPIFNOTEQ R2 R4 L1; goto L1 if var2 ~= var66620
       27 [-]: GETUPVAL R4 1; var4 = upvalues[1]
       28 [-]: LOADN R6 4   ; var6 = 4
       29 [-]: NAMECALL R4 R4 K8; var5 = var4; var4 = var4[0x5B18BB5D]
@@ -138,7 +138,7 @@ L 0:   9 [-]: GETUPVAL R1 2; var1 = upvalues[2]
       10 [-]: LOADN R3 6   ; var3 = 6
       11 [-]: NAMECALL R1 R1 K4; var2 = var1; var1 = var1[0xFE9DC265]
       12 [-]: CALL R1 3 1  ; var1(var2, var3)
-      13 [-]: FASTCALL1 62 R0 L1; 
+      13 [-]: FASTCALL1 64 R0 L1; 
       14 [-]: MOVE R2 R0   ; var2 = var0
       15 [-]: GETIMPORT R1 6; var1 = 0x7B998233
       16 [-]: CALL R1 2 2  ; var1 = var1(var2)
@@ -162,7 +162,7 @@ L 2:  20 [-]: RETURN R0 0  ;
        4 [-]: LOADNIL R2   ; var2 = nil
        5 [-]: SETTABLEKS R2 R1 K5; var2["conservationGeoEncounterHint"] = var1
        6 [-]: GETUPVAL R2 0; var2 = upvalues[0]
-       7 [-]: FASTCALL1 62 R2 L0; 
+       7 [-]: FASTCALL1 64 R2 L0; 
        8 [-]: GETIMPORT R1 7; var1 = 0x7B998233
        9 [-]: CALL R1 2 2  ; var1 = var1(var2)
 L 0:  10 [-]: JUMPIF R1 L3 ; goto L3 if var1
@@ -174,7 +174,7 @@ L 0:  10 [-]: JUMPIF R1 L3 ; goto L3 if var1
       16 [-]: LOADN R3 1   ; var3 = 1
       17 [-]: FORNPREP R2 L3; nforprep start - [escape at L3] -- var2 = iterator
 L 1:  18 [-]: GETTABLE R5 R1 R4; var5 = var1[var4]
-      19 [-]: JUMPIFNOTEQ R5 R0 L2; goto L2 if var5 ~= var263502
+      19 [-]: JUMPIFNOTEQ R5 R0 L2; goto L2 if var5 ~= var263457
       20 [-]: GETIMPORT R5 4; var5 = _T
       21 [-]: GETUPVAL R6 0; var6 = upvalues[0]
       22 [-]: SETTABLEKS R6 R5 K5; var6["conservationGeoEncounterHint"] = var5
@@ -184,7 +184,7 @@ L 3:  25 [-]: GETIMPORT R1 4; var1 = _T
       26 [-]: LOADNIL R2   ; var2 = nil
       27 [-]: SETTABLEKS R2 R1 K9; var2["conservationTrailEncounterHint"] = var1
       28 [-]: GETUPVAL R2 1; var2 = upvalues[1]
-      29 [-]: FASTCALL1 62 R2 L4; 
+      29 [-]: FASTCALL1 64 R2 L4; 
       30 [-]: GETIMPORT R1 7; var1 = 0x7B998233
       31 [-]: CALL R1 2 2  ; var1 = var1(var2)
 L 4:  32 [-]: JUMPIF R1 L7 ; goto L7 if var1
@@ -196,7 +196,7 @@ L 4:  32 [-]: JUMPIF R1 L7 ; goto L7 if var1
       38 [-]: LOADN R3 1   ; var3 = 1
       39 [-]: FORNPREP R2 L7; nforprep start - [escape at L7] -- var2 = iterator
 L 5:  40 [-]: GETTABLE R5 R1 R4; var5 = var1[var4]
-      41 [-]: JUMPIFNOTEQ R5 R0 L6; goto L6 if var5 ~= var263502
+      41 [-]: JUMPIFNOTEQ R5 R0 L6; goto L6 if var5 ~= var263457
       42 [-]: GETIMPORT R5 4; var5 = _T
       43 [-]: GETUPVAL R6 1; var6 = upvalues[1]
       44 [-]: SETTABLEKS R6 R5 K9; var6["conservationTrailEncounterHint"] = var5
@@ -206,7 +206,7 @@ L 7:  47 [-]: GETIMPORT R1 4; var1 = _T
       48 [-]: LOADNIL R2   ; var2 = nil
       49 [-]: SETTABLEKS R2 R1 K10; var2["conservationAnimalEncounterHint"] = var1
       50 [-]: GETUPVAL R2 2; var2 = upvalues[2]
-      51 [-]: FASTCALL1 62 R2 L8; 
+      51 [-]: FASTCALL1 64 R2 L8; 
       52 [-]: GETIMPORT R1 7; var1 = 0x7B998233
       53 [-]: CALL R1 2 2  ; var1 = var1(var2)
 L 8:  54 [-]: JUMPIF R1 L11; goto L11 if var1
@@ -218,7 +218,7 @@ L 8:  54 [-]: JUMPIF R1 L11; goto L11 if var1
       60 [-]: LOADN R3 1   ; var3 = 1
       61 [-]: FORNPREP R2 L11; nforprep start - [escape at L11] -- var2 = iterator
 L 9:  62 [-]: GETTABLE R5 R1 R4; var5 = var1[var4]
-      63 [-]: JUMPIFNOTEQ R5 R0 L10; goto L10 if var5 ~= var263502
+      63 [-]: JUMPIFNOTEQ R5 R0 L10; goto L10 if var5 ~= var263457
       64 [-]: GETIMPORT R5 4; var5 = _T
       65 [-]: GETUPVAL R6 2; var6 = upvalues[2]
       66 [-]: SETTABLEKS R6 R5 K10; var6["conservationAnimalEncounterHint"] = var5
@@ -235,7 +235,7 @@ L11:  69 [-]: RETURN R0 0  ;
 ; Max Stack Size:  6
 
        0 [-]: GETUPVAL R1 0; var1 = upvalues[0]
-       1 [-]: FASTCALL1 62 R1 L0; 
+       1 [-]: FASTCALL1 64 R1 L0; 
        2 [-]: GETIMPORT R0 1; var0 = 0x7B998233
        3 [-]: CALL R0 2 2  ; var0 = var0(var1)
 L 0:   4 [-]: JUMPIF R0 L2 ; goto L2 if var0
@@ -243,14 +243,14 @@ L 0:   4 [-]: JUMPIF R0 L2 ; goto L2 if var0
        6 [-]: NAMECALL R0 R0 K2; var1 = var0; var0 = var0[0xEFE6CAD1]
        7 [-]: CALL R0 2 2  ; var0 = var0(var1)
        8 [-]: LOADN R1 3   ; var1 = 3
-       9 [-]: JUMPIFNOTEQ R0 R1 L1; goto L1 if var0 ~= var65799
+       9 [-]: JUMPIFNOTEQ R0 R1 L1; goto L1 if var0 ~= var65852
       10 [-]: GETUPVAL R1 1; var1 = upvalues[1]
       11 [-]: LOADN R3 1   ; var3 = 1
       12 [-]: NAMECALL R1 R1 K3; var2 = var1; var1 = var1[0x5B18BB5D]
       13 [-]: CALL R1 3 1  ; var1(var2, var3)
       14 [-]: RETURN R0 0  ; 
 L 1:  15 [-]: LOADN R1 2   ; var1 = 2
-      16 [-]: JUMPIFNOTLT R1 R0 L2; goto L2 if var1 >= var328014
+      16 [-]: JUMPIFNOTLT R1 R0 L2; goto L2 if var1 >= var327969
       17 [-]: GETIMPORT R1 5; var1 = 0x3D106989
       18 [-]: LOADK R3 K6  ; var3 = "BaseGeo: Trail failed with status "
       19 [-]: MOVE R4 R0   ; var4 = var0
@@ -272,7 +272,7 @@ L 2:  27 [-]: RETURN R0 0  ;
 ; Max Stack Size:  5
 
        0 [-]: GETUPVAL R1 0; var1 = upvalues[0]
-       1 [-]: FASTCALL1 62 R1 L0; 
+       1 [-]: FASTCALL1 64 R1 L0; 
        2 [-]: GETIMPORT R0 1; var0 = 0x7B998233
        3 [-]: CALL R0 2 2  ; var0 = var0(var1)
 L 0:   4 [-]: JUMPIF R0 L4 ; goto L4 if var0
@@ -280,7 +280,7 @@ L 0:   4 [-]: JUMPIF R0 L4 ; goto L4 if var0
        6 [-]: NAMECALL R0 R0 K2; var1 = var0; var0 = var0[0xEFE6CAD1]
        7 [-]: CALL R0 2 2  ; var0 = var0(var1)
        8 [-]: LOADN R1 3   ; var1 = 3
-       9 [-]: JUMPIFNOTEQ R0 R1 L1; goto L1 if var0 ~= var262478
+       9 [-]: JUMPIFNOTEQ R0 R1 L1; goto L1 if var0 ~= var262433
       10 [-]: GETIMPORT R1 4; var1 = 0x3D106989
       11 [-]: LOADK R2 K5  ; var2 = "BaseGeo: Animal encounter complete, completing"
       12 [-]: CALL R1 2 1  ; var1(var2)
@@ -290,7 +290,7 @@ L 0:   4 [-]: JUMPIF R0 L4 ; goto L4 if var0
       16 [-]: CALL R1 3 1  ; var1(var2, var3)
       17 [-]: JUMP L3      ; goto L3
 L 1:  18 [-]: LOADN R1 4   ; var1 = 4
-      19 [-]: JUMPIFNOTEQ R0 R1 L2; goto L2 if var0 ~= var262478
+      19 [-]: JUMPIFNOTEQ R0 R1 L2; goto L2 if var0 ~= var262433
       20 [-]: GETIMPORT R1 4; var1 = 0x3D106989
       21 [-]: LOADK R2 K7  ; var2 = "BaseGeo: Animal encounter succeeded, finishing"
       22 [-]: CALL R1 2 1  ; var1(var2)
@@ -300,7 +300,7 @@ L 1:  18 [-]: LOADN R1 4   ; var1 = 4
       26 [-]: CALL R1 3 1  ; var1(var2, var3)
       27 [-]: JUMP L3      ; goto L3
 L 2:  28 [-]: LOADN R1 5   ; var1 = 5
-      29 [-]: JUMPIFNOTEQ R0 R1 L3; goto L3 if var0 ~= var262478
+      29 [-]: JUMPIFNOTEQ R0 R1 L3; goto L3 if var0 ~= var262433
       30 [-]: GETIMPORT R1 4; var1 = 0x3D106989
       31 [-]: LOADK R2 K8  ; var2 = "BaseGeo: Animal encounter failed, finishing"
       32 [-]: CALL R1 2 1  ; var1(var2)
@@ -309,7 +309,7 @@ L 2:  28 [-]: LOADN R1 5   ; var1 = 5
       35 [-]: NAMECALL R1 R1 K6; var2 = var1; var1 = var1[0xFE9DC265]
       36 [-]: CALL R1 3 1  ; var1(var2, var3)
 L 3:  37 [-]: LOADN R1 2   ; var1 = 2
-      38 [-]: JUMPIFNOTLT R1 R0 L6; goto L6 if var1 >= var262478
+      38 [-]: JUMPIFNOTLT R1 R0 L6; goto L6 if var1 >= var262433
       39 [-]: GETIMPORT R1 4; var1 = 0x3D106989
       40 [-]: LOADK R2 K9  ; var2 = "BaseGeo: Animal encounter failed, shutting down"
       41 [-]: CALL R1 2 1  ; var1(var2)
@@ -326,7 +326,7 @@ L 4:  47 [-]: GETUPVAL R0 1; var0 = upvalues[1]
       52 [-]: CALL R1 2 2  ; var1 = var1(var2)
       53 [-]: JUMPXEQKN R0 K11 L5 NOT; 
       54 [-]: LOADN R2 4   ; var2 = 4
-      55 [-]: JUMPIFEQ R1 R2 L5; goto L5 if var1 == var262734
+      55 [-]: JUMPIFEQ R1 R2 L5; goto L5 if var1 == var262689
       56 [-]: GETIMPORT R2 4; var2 = 0x3D106989
       57 [-]: LOADK R3 K7  ; var3 = "BaseGeo: Animal encounter succeeded, finishing"
       58 [-]: CALL R2 2 1  ; var2(var3)
@@ -337,7 +337,7 @@ L 4:  47 [-]: GETUPVAL R0 1; var0 = upvalues[1]
       63 [-]: RETURN R0 0  ; 
 L 5:  64 [-]: JUMPXEQKN R0 K12 L6 NOT; 
       65 [-]: LOADN R2 5   ; var2 = 5
-      66 [-]: JUMPIFEQ R1 R2 L6; goto L6 if var1 == var262734
+      66 [-]: JUMPIFEQ R1 R2 L6; goto L6 if var1 == var262689
       67 [-]: GETIMPORT R2 4; var2 = 0x3D106989
       68 [-]: LOADK R3 K8  ; var3 = "BaseGeo: Animal encounter failed, finishing"
       69 [-]: CALL R2 2 1  ; var2(var3)
@@ -359,7 +359,7 @@ L 6:  74 [-]: RETURN R0 0  ;
        1 [-]: LOADK R1 K2  ; var1 = "BaseGeo: Starting"
        2 [-]: CALL R0 2 1  ; var0(var1)
        3 [-]: GETUPVAL R1 0; var1 = upvalues[0]
-       4 [-]: FASTCALL1 62 R1 L0; 
+       4 [-]: FASTCALL1 64 R1 L0; 
        5 [-]: GETIMPORT R0 4; var0 = 0x7B998233
        6 [-]: CALL R0 2 2  ; var0 = var0(var1)
 L 0:   7 [-]: JUMPIFNOT R0 L1; goto L1 if not var0
@@ -424,7 +424,7 @@ L 1:  10 [-]: GETIMPORT R0 4; var0 = 0x89326C93
       18 [-]: LOADN R6 0   ; var6 = 0
       19 [-]: NAMECALL R1 R0 K7; var2 = var0; var1 = var0[0x44C55B21]
       20 [-]: CALL R1 6 2  ; var1 = var1(var2, var3, var4, var5, var6)
-      21 [-]: FASTCALL1 62 R1 L2; 
+      21 [-]: FASTCALL1 64 R1 L2; 
       22 [-]: MOVE R3 R1   ; var3 = var1
       23 [-]: GETIMPORT R2 9; var2 = 0x7B998233
       24 [-]: CALL R2 2 2  ; var2 = var2(var3)
@@ -458,7 +458,7 @@ L 3:  39 [-]: GETIMPORT R2 1; var2 = 0x3D106989
        0 [-]: GETUPVAL R0 0; var0 = upvalues[0]
        1 [-]: NAMECALL R0 R0 K0; var1 = var0; var0 = var0[0x891629FA]
        2 [-]: CALL R0 2 2  ; var0 = var0(var1)
-       3 [-]: FASTCALL1 62 R0 L0; 
+       3 [-]: FASTCALL1 64 R0 L0; 
        4 [-]: MOVE R2 R0   ; var2 = var0
        5 [-]: GETIMPORT R1 2; var1 = 0x7B998233
        6 [-]: CALL R1 2 2  ; var1 = var1(var2)
@@ -468,7 +468,7 @@ L 0:   7 [-]: JUMPIF R1 L1 ; goto L1 if var1
       10 [-]: JUMPIFNOT R1 L1; goto L1 if not var1
       11 [-]: LOADB R1 1   ; var1 = true
       12 [-]: RETURN R1 1  ; 
-L 1:  13 [-]: FASTCALL1 62 R0 L2; 
+L 1:  13 [-]: FASTCALL1 64 R0 L2; 
       14 [-]: MOVE R2 R0   ; var2 = var0
       15 [-]: GETIMPORT R1 2; var1 = 0x7B998233
       16 [-]: CALL R1 2 2  ; var1 = var1(var2)
@@ -486,7 +486,7 @@ L 3:  24 [-]: GETUPVAL R1 0; var1 = upvalues[0]
       28 [-]: NAMECALL R2 R2 K5; var3 = var2; var2 = var2[0xABE61691]
       29 [-]: CALL R2 2 2  ; var2 = var2(var3)
       30 [-]: LOADN R3 2   ; var3 = 2
-      31 [-]: JUMPIFNOTLT R3 R1 L4; goto L4 if var3 >= var459598
+      31 [-]: JUMPIFNOTLT R3 R1 L4; goto L4 if var3 >= var459553
       32 [-]: GETIMPORT R3 7; var3 = 0x3D106989
       33 [-]: LOADK R4 K8  ; var4 = "GEO WANTS TO SHUT DOWN"
       34 [-]: CALL R3 2 1  ; var3(var4)
@@ -494,7 +494,7 @@ L 3:  24 [-]: GETUPVAL R1 0; var1 = upvalues[0]
       36 [-]: RETURN R3 1  ; 
 L 4:  37 [-]: JUMPXEQKN R2 K9 L6 NOT; 
       38 [-]: GETUPVAL R4 1; var4 = upvalues[1]
-      39 [-]: FASTCALL1 62 R4 L5; 
+      39 [-]: FASTCALL1 64 R4 L5; 
       40 [-]: GETIMPORT R3 2; var3 = 0x7B998233
       41 [-]: CALL R3 2 2  ; var3 = var3(var4)
 L 5:  42 [-]: JUMPIFNOT R3 L6; goto L6 if not var3
@@ -502,7 +502,7 @@ L 5:  42 [-]: JUMPIFNOT R3 L6; goto L6 if not var3
       44 [-]: RETURN R3 1  ; 
 L 6:  45 [-]: JUMPXEQKN R2 K10 L8 NOT; 
       46 [-]: GETUPVAL R4 2; var4 = upvalues[2]
-      47 [-]: FASTCALL1 62 R4 L7; 
+      47 [-]: FASTCALL1 64 R4 L7; 
       48 [-]: GETIMPORT R3 2; var3 = 0x7B998233
       49 [-]: CALL R3 2 2  ; var3 = var3(var4)
 L 7:  50 [-]: JUMPIFNOT R3 L8; goto L8 if not var3
@@ -615,7 +615,7 @@ L 0:  31 [-]: ADD R10 R4 R3; var10 = var4 + var3
 ; Is_vararg:       0
 ; Max Stack Size:  20
 
-       0 [-]: FASTCALL1 62 R0 L0; 
+       0 [-]: FASTCALL1 64 R0 L0; 
        1 [-]: MOVE R2 R0   ; var2 = var0
        2 [-]: GETIMPORT R1 1; var1 = 0x7B998233
        3 [-]: CALL R1 2 2  ; var1 = var1(var2)
@@ -653,7 +653,7 @@ L 3:  24 [-]: SETUPVAL R0 0; upvalues[0] = var0
       35 [-]: NAMECALL R3 R0 K20; var4 = var0; var3 = var0[0xEFE6CAD1]
       36 [-]: CALL R3 2 2  ; var3 = var3(var4)
       37 [-]: LOADN R4 2   ; var4 = 2
-      38 [-]: JUMPIFNOTLE R4 R3 L10; goto L10 if var4 > var197454
+      38 [-]: JUMPIFNOTLE R4 R3 L10; goto L10 if var4 > var197409
       39 [-]: GETIMPORT R3 3; var3 = 0x3D106989
       40 [-]: LOADK R4 K21 ; var4 = "BaseGeo: Resuming encounter after host migration"
       41 [-]: CALL R3 2 1  ; var3(var4)
@@ -663,16 +663,16 @@ L 3:  24 [-]: SETUPVAL R0 0; upvalues[0] = var0
       45 [-]: LOADN R6 1   ; var6 = 1
       46 [-]: LENGTH R4 R3 ; var4 = #var3
       47 [-]: LOADN R5 1   ; var5 = 1
-      48 [-]: FORNPREP R4 L25; nforprep start - [escape at L25] -- var4 = iterator
+      48 [-]: FORNPREP R4 L27; nforprep start - [escape at L27] -- var4 = iterator
 L 4:  49 [-]: GETTABLE R7 R3 R6; var7 = var3[var6]
-      50 [-]: FASTCALL1 62 R7 L5; 
+      50 [-]: FASTCALL1 64 R7 L5; 
       51 [-]: MOVE R9 R7   ; var9 = var7
       52 [-]: GETIMPORT R8 1; var8 = 0x7B998233
       53 [-]: CALL R8 2 2  ; var8 = var8(var9)
 L 5:  54 [-]: JUMPIF R8 L9 ; goto L9 if var8
       55 [-]: NAMECALL R8 R7 K23; var9 = var7; var8 = var7[0x4C976EDA]
       56 [-]: CALL R8 2 2  ; var8 = var8(var9)
-      57 [-]: FASTCALL1 62 R8 L6; 
+      57 [-]: FASTCALL1 64 R8 L6; 
       58 [-]: MOVE R10 R8  ; var10 = var8
       59 [-]: GETIMPORT R9 1; var9 = 0x7B998233
       60 [-]: CALL R9 2 2  ; var9 = var9(var10)
@@ -698,7 +698,7 @@ L 8:  79 [-]: NAMECALL R9 R7 K30; var10 = var7; var9 = var7[0xD1586535]
       80 [-]: CALL R9 2 2  ; var9 = var9(var10)
       81 [-]: SETUPVAL R9 5; upvalues[9] = var5
 L 9:  82 [-]: FORNLOOP R4 L4; nforloop end - iterate + goto L4
-      83 [-]: JUMP L25     ; goto L25
+      83 [-]: JUMP L27     ; goto L27
 L10:  84 [-]: GETIMPORT R3 3; var3 = 0x3D106989
       85 [-]: LOADK R4 K31 ; var4 = "BaseGeo: Starting encounter"
       86 [-]: CALL R3 2 1  ; var3(var4)
@@ -719,7 +719,7 @@ L11:  98 [-]: GETTABLE R7 R3 R6; var7 = var3[var6]
      101 [-]: LENGTH R8 R11; var8 = #var11
      102 [-]: LOADN R9 1   ; var9 = 1
      103 [-]: FORNPREP R8 L15; nforprep start - [escape at L15] -- var8 = iterator
-L12: 104 [-]: FASTCALL1 62 R7 L13; 
+L12: 104 [-]: FASTCALL1 64 R7 L13; 
      105 [-]: MOVE R12 R7  ; var12 = var7
      106 [-]: GETIMPORT R11 1; var11 = 0x7B998233
      107 [-]: CALL R11 2 2 ; var11 = var11(var12)
@@ -739,7 +739,7 @@ L13: 108 [-]: JUMPIF R11 L14; goto L14 if var11
      121 [-]: JUMP L15     ; goto L15
 L14: 122 [-]: FORNLOOP R8 L12; nforloop end - iterate + goto L12
 L15: 123 [-]: FORNLOOP R4 L11; nforloop end - iterate + goto L11
-L16: 124 [-]: FASTCALL1 62 R2 L17; 
+L16: 124 [-]: FASTCALL1 64 R2 L17; 
      125 [-]: MOVE R5 R2   ; var5 = var2
      126 [-]: GETIMPORT R4 1; var4 = 0x7B998233
      127 [-]: CALL R4 2 2  ; var4 = var4(var5)
@@ -761,7 +761,7 @@ L18: 141 [-]: GETUPVAL R4 0; var4 = upvalues[0]
      143 [-]: NAMECALL R4 R4 K5; var5 = var4; var4 = var4[0xFE9DC265]
      144 [-]: CALL R4 3 1  ; var4(var5, var6)
      145 [-]: LOADNIL R5   ; var5 = nil
-     146 [-]: FASTCALL1 62 R5 L19; 
+     146 [-]: FASTCALL1 64 R5 L19; 
      147 [-]: GETIMPORT R4 1; var4 = 0x7B998233
      148 [-]: CALL R4 2 2  ; var4 = var4(var5)
 L19: 149 [-]: JUMPIF R4 L20; goto L20 if var4
@@ -800,11 +800,11 @@ L21: 154 [-]: GETIMPORT R6 44; var6 = 0x20254AA4
      182 [-]: LOADN R8 20  ; var8 = 20
      183 [-]: MOVE R9 R6   ; var9 = var6
      184 [-]: CALL R7 3 2  ; var7 = var7(var8, var9)
-     185 [-]: FASTCALL1 62 R7 L22; 
+     185 [-]: FASTCALL1 64 R7 L22; 
      186 [-]: MOVE R9 R7   ; var9 = var7
      187 [-]: GETIMPORT R8 1; var8 = 0x7B998233
      188 [-]: CALL R8 2 2  ; var8 = var8(var9)
-L22: 189 [-]: JUMPIFNOT R8 L23; goto L23 if not var8
+L22: 189 [-]: JUMPIFNOT R8 L25; goto L25 if not var8
      190 [-]: GETIMPORT R8 3; var8 = 0x3D106989
      191 [-]: LOADK R10 K54; var10 = "BaseGeo: Animal Location Query failed on "
      192 [-]: GETUPVAL R17 0; var17 = upvalues[0]
@@ -812,61 +812,63 @@ L22: 189 [-]: JUMPIFNOT R8 L23; goto L23 if not var8
      194 [-]: CALL R17 2 2 ; var17 = var17(var18)
      195 [-]: MOVE R11 R17 ; var11 = var17
      196 [-]: LOADK R12 K56; var12 = " at "
-     197 [-]: GETIMPORT R17 58; var17 = 0x64FB1586
-     198 [-]: GETUPVAL R18 0; var18 = upvalues[0]
-     199 [-]: NAMECALL R18 R18 K30; var19 = var18; var18 = var18[0xD1586535]
-     200 [-]: CALL R18 2 0 ; var18, ... = var18(var19)
-     201 [-]: CALL R17 0 2 ; var17 = var17(var18, ...)
-     202 [-]: MOVE R13 R17 ; var13 = var17
-     203 [-]: LOADK R14 K59; var14 = " from start point "
-     204 [-]: GETIMPORT R17 58; var17 = 0x64FB1586
-     205 [-]: MOVE R18 R5  ; var18 = var5
-     206 [-]: CALL R17 2 2 ; var17 = var17(var18)
-     207 [-]: MOVE R15 R17 ; var15 = var17
-     208 [-]: LOADK R16 K60; var16 = ", please check that this hint is on nav or send this line in a jira to the #trappingandhunting team"
-     209 [-]: CONCAT R9 R10 R16; var9 = var10 .. var16
-     210 [-]: CALL R8 2 1  ; var8(var9)
-     211 [-]: JUMP L24     ; goto L24
-L23: 212 [-]: GETIMPORT R9 63; var9 = 0x5BCED4C4[0x3630E649]
-     213 [-]: LOADN R10 1  ; var10 = 1
-     214 [-]: LENGTH R11 R7; var11 = #var7
-     215 [-]: CALL R9 3 2  ; var9 = var9(var10, var11)
-     216 [-]: GETTABLE R8 R7 R9; var8 = var7[var9]
-     217 [-]: SETUPVAL R8 5; upvalues[8] = var5
-L24: 218 [-]: GETUPVAL R8 10; var8 = upvalues[10]
-     219 [-]: CALL R8 1 1  ; var8()
-L25: 220 [-]: GETUPVAL R3 11; var3 = upvalues[11]
-     221 [-]: CALL R3 1 2  ; var3 = var3()
-     222 [-]: JUMPIF R3 L26; goto L26 if var3
-     223 [-]: GETUPVAL R3 12; var3 = upvalues[12]
-     224 [-]: LOADK R4 K64 ; var4 = 0.10000000000000001
-     225 [-]: CALL R3 2 1  ; var3(var4)
-     226 [-]: GETIMPORT R3 12; var3 = 0xCBD666E1
-     227 [-]: LOADK R4 K64 ; var4 = 0.10000000000000001
-     228 [-]: CALL R3 2 1  ; var3(var4)
-     229 [-]: JUMPBACK L25 ; goto L25
-L26: 230 [-]: MOVE R3 R2   ; var3 = var2
-     231 [-]: GETIMPORT R4 3; var4 = 0x3D106989
-     232 [-]: LOADK R5 K40 ; var5 = "SHUTTING DOWN GEO"
-     233 [-]: CALL R4 2 1  ; var4(var5)
-     234 [-]: GETUPVAL R4 6; var4 = upvalues[6]
-     235 [-]: JUMPIFNOT R4 L27; goto L27 if not var4
-     236 [-]: GETUPVAL R5 7; var5 = upvalues[7]
-     237 [-]: GETTABLEKS R4 R5 K41; var4 = var5[0x2C7A2400]
-     238 [-]: GETUPVAL R5 6; var5 = upvalues[6]
-     239 [-]: CALL R4 2 1  ; var4(var5)
-L27: 240 [-]: GETUPVAL R4 0; var4 = upvalues[0]
-     241 [-]: LOADN R6 6   ; var6 = 6
-     242 [-]: NAMECALL R4 R4 K5; var5 = var4; var4 = var4[0xFE9DC265]
-     243 [-]: CALL R4 3 1  ; var4(var5, var6)
-     244 [-]: FASTCALL1 62 R3 L28; 
-     245 [-]: MOVE R5 R3   ; var5 = var3
-     246 [-]: GETIMPORT R4 1; var4 = 0x7B998233
-     247 [-]: CALL R4 2 2  ; var4 = var4(var5)
-L28: 248 [-]: JUMPIF R4 L29; goto L29 if var4
-     249 [-]: NAMECALL R4 R3 K42; var5 = var3; var4 = var3[0xA2880940]
-     250 [-]: CALL R4 2 1  ; var4(var5)
-L29: 251 [-]: RETURN R0 0  ; 
+     197 [-]: GETUPVAL R18 0; var18 = upvalues[0]
+     198 [-]: NAMECALL R18 R18 K30; var19 = var18; var18 = var18[0xD1586535]
+     199 [-]: CALL R18 2 0 ; var18, ... = var18(var19)
+     200 [-]: FASTCALL 63 L23; 
+     201 [-]: GETIMPORT R17 58; var17 = 0x64FB1586
+     202 [-]: CALL R17 0 2 ; var17 = var17(var18, ...)
+L23: 203 [-]: MOVE R13 R17 ; var13 = var17
+     204 [-]: LOADK R14 K59; var14 = " from start point "
+     205 [-]: FASTCALL1 63 R5 L24; 
+     206 [-]: MOVE R18 R5  ; var18 = var5
+     207 [-]: GETIMPORT R17 58; var17 = 0x64FB1586
+     208 [-]: CALL R17 2 2 ; var17 = var17(var18)
+L24: 209 [-]: MOVE R15 R17 ; var15 = var17
+     210 [-]: LOADK R16 K60; var16 = ", please check that this hint is on nav or send this line in a jira to the #trappingandhunting team"
+     211 [-]: CONCAT R9 R10 R16; var9 = var10 .. var16
+     212 [-]: CALL R8 2 1  ; var8(var9)
+     213 [-]: JUMP L26     ; goto L26
+L25: 214 [-]: GETIMPORT R9 63; var9 = 0x5BCED4C4[0x3630E649]
+     215 [-]: LOADN R10 1  ; var10 = 1
+     216 [-]: LENGTH R11 R7; var11 = #var7
+     217 [-]: CALL R9 3 2  ; var9 = var9(var10, var11)
+     218 [-]: GETTABLE R8 R7 R9; var8 = var7[var9]
+     219 [-]: SETUPVAL R8 5; upvalues[8] = var5
+L26: 220 [-]: GETUPVAL R8 10; var8 = upvalues[10]
+     221 [-]: CALL R8 1 1  ; var8()
+L27: 222 [-]: GETUPVAL R3 11; var3 = upvalues[11]
+     223 [-]: CALL R3 1 2  ; var3 = var3()
+     224 [-]: JUMPIF R3 L28; goto L28 if var3
+     225 [-]: GETUPVAL R3 12; var3 = upvalues[12]
+     226 [-]: LOADK R4 K64 ; var4 = 0.10000000149011612
+     227 [-]: CALL R3 2 1  ; var3(var4)
+     228 [-]: GETIMPORT R3 12; var3 = 0xCBD666E1
+     229 [-]: LOADK R4 K64 ; var4 = 0.10000000149011612
+     230 [-]: CALL R3 2 1  ; var3(var4)
+     231 [-]: JUMPBACK L27 ; goto L27
+L28: 232 [-]: MOVE R3 R2   ; var3 = var2
+     233 [-]: GETIMPORT R4 3; var4 = 0x3D106989
+     234 [-]: LOADK R5 K40 ; var5 = "SHUTTING DOWN GEO"
+     235 [-]: CALL R4 2 1  ; var4(var5)
+     236 [-]: GETUPVAL R4 6; var4 = upvalues[6]
+     237 [-]: JUMPIFNOT R4 L29; goto L29 if not var4
+     238 [-]: GETUPVAL R5 7; var5 = upvalues[7]
+     239 [-]: GETTABLEKS R4 R5 K41; var4 = var5[0x2C7A2400]
+     240 [-]: GETUPVAL R5 6; var5 = upvalues[6]
+     241 [-]: CALL R4 2 1  ; var4(var5)
+L29: 242 [-]: GETUPVAL R4 0; var4 = upvalues[0]
+     243 [-]: LOADN R6 6   ; var6 = 6
+     244 [-]: NAMECALL R4 R4 K5; var5 = var4; var4 = var4[0xFE9DC265]
+     245 [-]: CALL R4 3 1  ; var4(var5, var6)
+     246 [-]: FASTCALL1 64 R3 L30; 
+     247 [-]: MOVE R5 R3   ; var5 = var3
+     248 [-]: GETIMPORT R4 1; var4 = 0x7B998233
+     249 [-]: CALL R4 2 2  ; var4 = var4(var5)
+L30: 250 [-]: JUMPIF R4 L31; goto L31 if var4
+     251 [-]: NAMECALL R4 R3 K42; var5 = var3; var4 = var3[0xA2880940]
+     252 [-]: CALL R4 2 1  ; var4(var5)
+L31: 253 [-]: RETURN R0 0  ; 
 
 
 

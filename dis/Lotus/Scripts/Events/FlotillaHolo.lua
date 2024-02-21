@@ -30,7 +30,7 @@
       10 [-]: LOADN R8 1   ; var8 = 1
       11 [-]: LOADK R9 K10 ; var9 = -0.5
       12 [-]: CALL R6 4 2  ; var6 = var6(var7, var8, var9)
-      13 [-]: MULK R5 R6 K7; var5 = var6 * 0.40000000000000002
+      13 [-]: MULK R5 R6 K7; var5 = var6 * 0.40000000596046448
       14 [-]: GETIMPORT R6 12; var6 = 0x00046924
       15 [-]: LOADN R7 180 ; var7 = 180
       16 [-]: LOADN R8 0   ; var8 = 0

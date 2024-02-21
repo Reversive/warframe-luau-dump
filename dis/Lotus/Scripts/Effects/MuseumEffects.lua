@@ -25,7 +25,7 @@
        3 [-]: CALL R3 1 2  ; var3 = var3()
        4 [-]: MULK R2 R3 K1; var2 = var3 * 5
        5 [-]: GETIMPORT R3 5; var3 = 0xC163F229
-       6 [-]: LOADK R4 K6  ; var4 = 0.20000000000000001
+       6 [-]: LOADK R4 K6  ; var4 = 0.20000000298023224
        7 [-]: LOADK R5 K7  ; var5 = 0.5
        8 [-]: CALL R3 3 2  ; var3 = var3(var4, var5)
        9 [-]: GETIMPORT R4 5; var4 = 0xC163F229
@@ -41,13 +41,13 @@ L 0:  18 [-]: SUB R5 R6 R7 ; var5 = var6 - var7
       19 [-]: GETIMPORT R6 3; var6 = 0x0C62ABF7
       20 [-]: CALL R6 1 2  ; var6 = var6()
       21 [-]: LOADK R7 K7  ; var7 = 0.5
-      22 [-]: JUMPIFNOTLT R7 R6 L1; goto L1 if var7 >= var329037
+      22 [-]: JUMPIFNOTLT R7 R6 L1; goto L1 if var7 >= var329016
       23 [-]: MINUS R5 R5  ; 
 L 1:  24 [-]: LOADN R6 -1  ; var6 = -1
       25 [-]: GETIMPORT R7 3; var7 = 0x0C62ABF7
       26 [-]: CALL R7 1 2  ; var7 = var7()
       27 [-]: LOADK R8 K7  ; var8 = 0.5
-      28 [-]: JUMPIFNOTLT R8 R7 L2; goto L2 if var8 >= var67143
+      28 [-]: JUMPIFNOTLT R8 R7 L2; goto L2 if var8 >= var67120
       29 [-]: LOADN R6 1   ; var6 = 1
       30 [-]: GETTABLEKS R8 R1 K12; var8 = var1["y"]
       31 [-]: SUBK R7 R8 K11; var7 = var8 - 2
@@ -99,7 +99,7 @@ L 3:  39 [-]: MUL R10 R8 R8; var10 = var8 * var8
 
        0 [-]: NAMECALL R1 R0 K0; var2 = var0; var1 = var0[0x2B54251B]
        1 [-]: CALL R1 2 2  ; var1 = var1(var2)
-       2 [-]: FASTCALL1 62 R1 L0; 
+       2 [-]: FASTCALL1 64 R1 L0; 
        3 [-]: MOVE R3 R1   ; var3 = var1
        4 [-]: GETIMPORT R2 2; var2 = 0x7B998233
        5 [-]: CALL R2 2 2  ; var2 = var2(var3)
@@ -113,7 +113,7 @@ L 1:   8 [-]: NAMECALL R2 R1 K3; var3 = var1; var2 = var1[0x905BB2BD]
       13 [-]: FORGPREP_INEXT R3 L4; 
 L 2:  14 [-]: NAMECALL R9 R7 K6; var10 = var7; var9 = var7[0xE860AF53]
       15 [-]: CALL R9 2 0  ; var9, ... = var9(var10)
-      16 [-]: FASTCALL 62 L3; 
+      16 [-]: FASTCALL 64 L3; 
       17 [-]: GETIMPORT R8 2; var8 = 0x7B998233
       18 [-]: CALL R8 0 2  ; var8 = var8(var9, ...)
 L 3:  19 [-]: JUMPIF R8 L4 ; goto L4 if var8

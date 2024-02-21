@@ -21,7 +21,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  8
 
-       0 [-]: FASTCALL1 62 R0 L0; 
+       0 [-]: FASTCALL1 64 R0 L0; 
        1 [-]: MOVE R2 R0   ; var2 = var0
        2 [-]: GETIMPORT R1 1; var1 = 0x7B998233
        3 [-]: CALL R1 2 2  ; var1 = var1(var2)
@@ -44,24 +44,33 @@ L 1:   6 [-]: NAMECALL R1 R0 K2; var2 = var0; var1 = var0[0x1AC1655C]
       20 [-]: LOADN R7 0   ; var7 = 0
       21 [-]: NAMECALL R2 R1 K5; var3 = var1; var2 = var1[0x4CB29D1C]
       22 [-]: CALL R2 6 1  ; var2(var3, var4, var5, var6, var7)
-      23 [-]: GETIMPORT R2 7; var2 = 0xCBD666E1
-      24 [-]: LOADK R3 K8  ; var3 = 0.59999999999999998
-      25 [-]: CALL R2 2 1  ; var2(var3)
-      26 [-]: FASTCALL1 62 R0 L2; 
-      27 [-]: MOVE R3 R0   ; var3 = var0
-      28 [-]: GETIMPORT R2 1; var2 = 0x7B998233
-      29 [-]: CALL R2 2 2  ; var2 = var2(var3)
-L 2:  30 [-]: JUMPIF R2 L3 ; goto L3 if var2
-      31 [-]: GETUPVAL R4 0; var4 = upvalues[0]
-      32 [-]: NAMECALL R2 R1 K9; var3 = var1; var2 = var1[0x571105C9]
-      33 [-]: CALL R2 3 1  ; var2(var3, var4)
-      34 [-]: GETUPVAL R4 0; var4 = upvalues[0]
-      35 [-]: NAMECALL R2 R1 K10; var3 = var1; var2 = var1[0x8E3E343E]
-      36 [-]: CALL R2 3 1  ; var2(var3, var4)
+      23 [-]: GETUPVAL R4 0; var4 = upvalues[0]
+      24 [-]: LOADN R5 25  ; var5 = 25
+      25 [-]: LOADN R6 6   ; var6 = 6
+      26 [-]: LOADN R7 0   ; var7 = 0
+      27 [-]: NAMECALL R2 R1 K6; var3 = var1; var2 = var1[0x3A0E0670]
+      28 [-]: CALL R2 6 1  ; var2(var3, var4, var5, var6, var7)
+      29 [-]: GETIMPORT R2 8; var2 = 0xCBD666E1
+      30 [-]: LOADK R3 K9  ; var3 = 0.60000002384185791
+      31 [-]: CALL R2 2 1  ; var2(var3)
+      32 [-]: FASTCALL1 64 R0 L2; 
+      33 [-]: MOVE R3 R0   ; var3 = var0
+      34 [-]: GETIMPORT R2 1; var2 = 0x7B998233
+      35 [-]: CALL R2 2 2  ; var2 = var2(var3)
+L 2:  36 [-]: JUMPIF R2 L3 ; goto L3 if var2
       37 [-]: GETUPVAL R4 0; var4 = upvalues[0]
-      38 [-]: NAMECALL R2 R1 K11; var3 = var1; var2 = var1[0x9326CA4B]
+      38 [-]: NAMECALL R2 R1 K10; var3 = var1; var2 = var1[0x571105C9]
       39 [-]: CALL R2 3 1  ; var2(var3, var4)
-L 3:  40 [-]: RETURN R0 0  ; 
+      40 [-]: GETUPVAL R4 0; var4 = upvalues[0]
+      41 [-]: NAMECALL R2 R1 K11; var3 = var1; var2 = var1[0x8E3E343E]
+      42 [-]: CALL R2 3 1  ; var2(var3, var4)
+      43 [-]: GETUPVAL R4 0; var4 = upvalues[0]
+      44 [-]: NAMECALL R2 R1 K12; var3 = var1; var2 = var1[0x9326CA4B]
+      45 [-]: CALL R2 3 1  ; var2(var3, var4)
+      46 [-]: GETUPVAL R4 0; var4 = upvalues[0]
+      47 [-]: NAMECALL R2 R1 K13; var3 = var1; var2 = var1[0x34E75661]
+      48 [-]: CALL R2 3 1  ; var2(var3, var4)
+L 3:  49 [-]: RETURN R0 0  ; 
 
 
 

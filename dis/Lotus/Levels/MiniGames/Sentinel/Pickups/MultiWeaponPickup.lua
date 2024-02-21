@@ -45,12 +45,12 @@
        9 [-]: LENGTH R6 R7 ; var6 = #var7
       10 [-]: CALL R4 3 2  ; var4 = var4(var5, var6)
       11 [-]: LOADN R5 0   ; var5 = 0
-L 0:  12 [-]: FASTCALL1 62 R1 L1; 
+L 0:  12 [-]: FASTCALL1 64 R1 L1; 
       13 [-]: MOVE R7 R1   ; var7 = var1
       14 [-]: GETIMPORT R6 9; var6 = 0x7B998233
       15 [-]: CALL R6 2 2  ; var6 = var6(var7)
 L 1:  16 [-]: JUMPIF R6 L4 ; goto L4 if var6
-      17 [-]: FASTCALL1 62 R3 L2; 
+      17 [-]: FASTCALL1 64 R3 L2; 
       18 [-]: MOVE R7 R3   ; var7 = var3
       19 [-]: GETIMPORT R6 9; var6 = 0x7B998233
       20 [-]: CALL R6 2 2  ; var6 = var6(var7)
@@ -59,28 +59,22 @@ L 2:  21 [-]: JUMPIF R6 L4 ; goto L4 if var6
       23 [-]: CALL R6 1 2  ; var6 = var6()
       24 [-]: SUB R5 R5 R6 ; var5 = var5 - var6
       25 [-]: LOADN R6 0   ; var6 = 0
-      26 [-]: JUMPIFNOTLT R5 R6 L3; goto L3 if var5 >= var132423
+      26 [-]: JUMPIFNOTLT R5 R6 L3; goto L3 if var5 >= var132400
       27 [-]: LOADN R5 2   ; var5 = 2
       28 [-]: GETIMPORT R7 7; var7 = 0x772566B9
       29 [-]: GETTABLE R6 R7 R4; var6 = var7[var4]
       30 [-]: GETIMPORT R9 14; var9 = 0x6C97A788["TINT_COLOR"]
       31 [-]: GETTABLEKS R11 R6 K16; var11 = var6["red"]
-      32 [-]: DIVK R10 R11 K15; var10 = var11 / 255
-      33 [-]: GETTABLEKS R12 R6 K17; var12 = var6["green"]
-      34 [-]: DIVK R11 R12 K15; var11 = var12 / 255
-      35 [-]: GETTABLEKS R13 R6 K18; var13 = var6["blue"]
-      36 [-]: DIVK R12 R13 K15; var12 = var13 / 255
-      37 [-]: LOADN R13 1  ; var13 = 1
+           33 [-]: GETTABLEKS R12 R6 K17; var12 = var6["green"]
+           35 [-]: GETTABLEKS R13 R6 K18; var13 = var6["blue"]
+           37 [-]: LOADN R13 1  ; var13 = 1
       38 [-]: NAMECALL R7 R3 K19; var8 = var3; var7 = var3[0x986D2AB8]
       39 [-]: CALL R7 7 1  ; var7(var8, var9, var10, var11, var12, var13)
       40 [-]: GETUPVAL R9 0; var9 = upvalues[0]
       41 [-]: GETTABLEKS R11 R6 K16; var11 = var6["red"]
-      42 [-]: DIVK R10 R11 K15; var10 = var11 / 255
-      43 [-]: GETTABLEKS R12 R6 K17; var12 = var6["green"]
-      44 [-]: DIVK R11 R12 K15; var11 = var12 / 255
-      45 [-]: GETTABLEKS R13 R6 K18; var13 = var6["blue"]
-      46 [-]: DIVK R12 R13 K15; var12 = var13 / 255
-      47 [-]: LOADN R13 1  ; var13 = 1
+           43 [-]: GETTABLEKS R12 R6 K17; var12 = var6["green"]
+           45 [-]: GETTABLEKS R13 R6 K18; var13 = var6["blue"]
+           47 [-]: LOADN R13 1  ; var13 = 1
       48 [-]: NAMECALL R7 R3 K19; var8 = var3; var7 = var3[0x986D2AB8]
       49 [-]: CALL R7 7 1  ; var7(var8, var9, var10, var11, var12, var13)
       50 [-]: GETUPVAL R9 1; var9 = upvalues[1]
@@ -89,28 +83,22 @@ L 2:  21 [-]: JUMPIF R6 L4 ; goto L4 if var6
       53 [-]: CALL R7 4 1  ; var7(var8, var9, var10)
       54 [-]: GETUPVAL R9 2; var9 = upvalues[2]
       55 [-]: GETTABLEKS R11 R6 K16; var11 = var6["red"]
-      56 [-]: DIVK R10 R11 K15; var10 = var11 / 255
-      57 [-]: GETTABLEKS R12 R6 K17; var12 = var6["green"]
-      58 [-]: DIVK R11 R12 K15; var11 = var12 / 255
-      59 [-]: GETTABLEKS R13 R6 K18; var13 = var6["blue"]
-      60 [-]: DIVK R12 R13 K15; var12 = var13 / 255
-      61 [-]: LOADN R13 1  ; var13 = 1
+           57 [-]: GETTABLEKS R12 R6 K17; var12 = var6["green"]
+           59 [-]: GETTABLEKS R13 R6 K18; var13 = var6["blue"]
+           61 [-]: LOADN R13 1  ; var13 = 1
       62 [-]: NAMECALL R7 R1 K19; var8 = var1; var7 = var1[0x986D2AB8]
       63 [-]: CALL R7 7 1  ; var7(var8, var9, var10, var11, var12, var13)
       64 [-]: GETUPVAL R9 3; var9 = upvalues[3]
       65 [-]: GETTABLEKS R11 R6 K16; var11 = var6["red"]
-      66 [-]: DIVK R10 R11 K15; var10 = var11 / 255
-      67 [-]: GETTABLEKS R12 R6 K17; var12 = var6["green"]
-      68 [-]: DIVK R11 R12 K15; var11 = var12 / 255
-      69 [-]: GETTABLEKS R13 R6 K18; var13 = var6["blue"]
-      70 [-]: DIVK R12 R13 K15; var12 = var13 / 255
-      71 [-]: LOADN R13 1  ; var13 = 1
+           67 [-]: GETTABLEKS R12 R6 K17; var12 = var6["green"]
+           69 [-]: GETTABLEKS R13 R6 K18; var13 = var6["blue"]
+           71 [-]: LOADN R13 1  ; var13 = 1
       72 [-]: NAMECALL R7 R1 K19; var8 = var1; var7 = var1[0x986D2AB8]
       73 [-]: CALL R7 7 1  ; var7(var8, var9, var10, var11, var12, var13)
       74 [-]: ADDK R4 R4 K20; var4 = var4 + 1
       75 [-]: GETIMPORT R8 7; var8 = 0x772566B9
       76 [-]: LENGTH R7 R8 ; var7 = #var8
-      77 [-]: JUMPIFNOTLT R7 R4 L3; goto L3 if var7 >= var66631
+      77 [-]: JUMPIFNOTLT R7 R4 L3; goto L3 if var7 >= var66608
       78 [-]: LOADN R4 1   ; var4 = 1
 L 3:  79 [-]: GETIMPORT R6 22; var6 = 0xCBD666E1
       80 [-]: LOADN R7 0   ; var7 = 0

@@ -23,7 +23,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  19
 
-       0 [-]: FASTCALL1 62 R3 L0; 
+       0 [-]: FASTCALL1 64 R3 L0; 
        1 [-]: MOVE R5 R3   ; var5 = var3
        2 [-]: GETIMPORT R4 1; var4 = 0x7B998233
        3 [-]: CALL R4 2 2  ; var4 = var4(var5)
@@ -38,7 +38,7 @@ L 1:   6 [-]: NAMECALL R4 R0 K2; var5 = var0; var4 = var0[0x5CA33548]
       12 [-]: GETIMPORT R6 7; var6 = _T
       13 [-]: NEWTABLE R7 0 0; var7 = {}
       14 [-]: SETTABLEKS R7 R6 K5; var7["gSuicideAssistData"] = var6
-L 2:  15 [-]: JUMPIFEQ R3 R5 L3; goto L3 if var3 == var591950
+L 2:  15 [-]: JUMPIFEQ R3 R5 L3; goto L3 if var3 == var591905
       16 [-]: GETIMPORT R8 9; var8 = gDamageTriggerType
       17 [-]: NAMECALL R6 R3 K10; var7 = var3; var6 = var3[0xF2DEAF69]
       18 [-]: CALL R6 3 2  ; var6 = var6(var7, var8)
@@ -50,7 +50,7 @@ L 2:  15 [-]: JUMPIFEQ R3 R5 L3; goto L3 if var3 == var591950
       24 [-]: JUMPIFNOT R6 L9; goto L9 if not var6
 L 3:  25 [-]: GETIMPORT R8 6; var8 = _T["gSuicideAssistData"]
       26 [-]: GETTABLE R7 R8 R4; var7 = var8[var4]
-      27 [-]: FASTCALL1 62 R7 L4; 
+      27 [-]: FASTCALL1 64 R7 L4; 
       28 [-]: GETIMPORT R6 1; var6 = 0x7B998233
       29 [-]: CALL R6 2 2  ; var6 = var6(var7)
 L 4:  30 [-]: JUMPIF R6 L9 ; goto L9 if var6
@@ -59,7 +59,7 @@ L 4:  30 [-]: JUMPIF R6 L9 ; goto L9 if var6
       33 [-]: LOADN R7 0   ; var7 = 0
       34 [-]: NAMECALL R8 R0 K15; var9 = var0; var8 = var0[0xAD1E0B4B]
       35 [-]: CALL R8 2 2  ; var8 = var8(var9)
-      36 [-]: JUMPIFNOTEQ R7 R8 L5; goto L5 if var7 ~= var67399
+      36 [-]: JUMPIFNOTEQ R7 R8 L5; goto L5 if var7 ~= var67376
       37 [-]: LOADN R7 1   ; var7 = 1
 L 5:  38 [-]: GETIMPORT R8 17; var8 = 0x89326C93
       39 [-]: NAMECALL R8 R8 K18; var9 = var8; var8 = var8[0x7D108DDB]
@@ -69,11 +69,11 @@ L 5:  38 [-]: GETIMPORT R8 17; var8 = 0x89326C93
       43 [-]: LOADN R10 1  ; var10 = 1
       44 [-]: FORNPREP R9 L9; nforprep start - [escape at L9] -- var9 = iterator
 L 6:  45 [-]: GETTABLE R12 R8 R11; var12 = var8[var11]
-      46 [-]: JUMPIFEQ R12 R0 L8; goto L8 if var12 == var185076791
+      46 [-]: JUMPIFEQ R12 R0 L8; goto L8 if var12 == var185076765
       47 [-]: GETTABLE R12 R8 R11; var12 = var8[var11]
       48 [-]: NAMECALL R12 R12 K3; var13 = var12; var12 = var12[0xBB610E5B]
       49 [-]: CALL R12 2 2 ; var12 = var12(var13)
-      50 [-]: FASTCALL1 62 R12 L7; 
+      50 [-]: FASTCALL1 64 R12 L7; 
       51 [-]: MOVE R14 R12 ; var14 = var12
       52 [-]: GETIMPORT R13 1; var13 = 0x7B998233
       53 [-]: CALL R13 2 2 ; var13 = var13(var14)
@@ -94,7 +94,7 @@ L 7:  54 [-]: JUMPIF R13 L8; goto L8 if var13
       68 [-]: GETTABLE R15 R16 R13; var15 = var16[var13]
       69 [-]: SUB R14 R6 R15; var14 = var6 - var15
       70 [-]: LOADN R15 3  ; var15 = 3
-      71 [-]: JUMPIFNOTLE R14 R15 L8; goto L8 if var14 > var1379918
+      71 [-]: JUMPIFNOTLE R14 R15 L8; goto L8 if var14 > var1379873
       72 [-]: GETIMPORT R14 21; var14 = 0xBA7DFCD2
       73 [-]: GETTABLE R16 R8 R11; var16 = var8[var11]
       74 [-]: GETUPVAL R17 0; var17 = upvalues[0]
@@ -121,7 +121,7 @@ L 9:  79 [-]: GETIMPORT R6 6; var6 = _T["gSuicideAssistData"]
        3 [-]: CALL R3 2 2  ; var3 = var3(var4)
        4 [-]: NAMECALL R5 R3 K2; var6 = var3; var5 = var3[0x5E651723]
        5 [-]: CALL R5 2 0  ; var5, ... = var5(var6)
-       6 [-]: FASTCALL 62 L0; 
+       6 [-]: FASTCALL 64 L0; 
        7 [-]: GETIMPORT R4 4; var4 = 0x7B998233
        8 [-]: CALL R4 0 2  ; var4 = var4(var5, ...)
 L 0:   9 [-]: JUMPIF R4 L3 ; goto L3 if var4

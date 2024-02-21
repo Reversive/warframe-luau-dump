@@ -19,7 +19,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  35
 
-       0 [-]: FASTCALL1 62 R0 L0; 
+       0 [-]: FASTCALL1 64 R0 L0; 
        1 [-]: MOVE R4 R0   ; var4 = var0
        2 [-]: GETIMPORT R3 1; var3 = 0x7B998233
        3 [-]: CALL R3 2 2  ; var3 = var3(var4)
@@ -27,7 +27,7 @@ L 0:   4 [-]: JUMPIFNOT R3 L1; goto L1 if not var3
        5 [-]: RETURN R0 0  ; 
 L 1:   6 [-]: NAMECALL R4 R0 K2; var5 = var0; var4 = var0[0xFA9E477F]
        7 [-]: CALL R4 2 0  ; var4, ... = var4(var5)
-       8 [-]: FASTCALL 62 L2; 
+       8 [-]: FASTCALL 64 L2; 
        9 [-]: GETIMPORT R3 1; var3 = 0x7B998233
       10 [-]: CALL R3 0 2  ; var3 = var3(var4, ...)
 L 2:  11 [-]: JUMPIF R3 L3 ; goto L3 if var3
@@ -39,26 +39,26 @@ L 4:  15 [-]: NAMECALL R3 R2 K3; var4 = var2; var3 = var2[0x2B54251B]
       17 [-]: NAMECALL R4 R2 K4; var5 = var2; var4 = var2[0x28E744CF]
       18 [-]: CALL R4 2 2  ; var4 = var4(var5)
       19 [-]: JUMPXEQKN R1 K5 L23 NOT; 
-      20 [-]: FASTCALL1 62 R2 L5; 
+      20 [-]: FASTCALL1 64 R2 L5; 
       21 [-]: MOVE R6 R2   ; var6 = var2
       22 [-]: GETIMPORT R5 1; var5 = 0x7B998233
       23 [-]: CALL R5 2 2  ; var5 = var5(var6)
 L 5:  24 [-]: JUMPIF R5 L20; goto L20 if var5
       25 [-]: GETIMPORT R6 8; var6 = _T["harlequinObjectChange"]
-      26 [-]: FASTCALL1 62 R6 L6; 
+      26 [-]: FASTCALL1 64 R6 L6; 
       27 [-]: GETIMPORT R5 1; var5 = 0x7B998233
       28 [-]: CALL R5 2 2  ; var5 = var5(var6)
 L 6:  29 [-]: JUMPIF R5 L20; goto L20 if var5
       30 [-]: NAMECALL R6 R0 K2; var7 = var0; var6 = var0[0xFA9E477F]
       31 [-]: CALL R6 2 0  ; var6, ... = var6(var7)
-      32 [-]: FASTCALL 62 L7; 
+      32 [-]: FASTCALL 64 L7; 
       33 [-]: GETIMPORT R5 1; var5 = 0x7B998233
       34 [-]: CALL R5 0 2  ; var5 = var5(var6, ...)
 L 7:  35 [-]: JUMPIF R5 L20; goto L20 if var5
       36 [-]: GETIMPORT R7 10; var7 = gDecorationType
       37 [-]: NAMECALL R5 R2 K11; var6 = var2; var5 = var2[0xC1595BD5]
       38 [-]: CALL R5 3 2  ; var5 = var5(var6, var7)
-      39 [-]: FASTCALL1 62 R5 L8; 
+      39 [-]: FASTCALL1 64 R5 L8; 
       40 [-]: MOVE R7 R5   ; var7 = var5
       41 [-]: GETIMPORT R6 1; var6 = 0x7B998233
       42 [-]: CALL R6 2 2  ; var6 = var6(var7)
@@ -75,7 +75,7 @@ L 9:  51 [-]: GETTABLE R10 R6 R9; var10 = var6[var9]
       53 [-]: CALL R10 2 2 ; var10 = var10(var11)
       54 [-]: GETIMPORT R13 8; var13 = _T["harlequinObjectChange"]
       55 [-]: GETTABLE R12 R13 R10; var12 = var13[var10]
-      56 [-]: FASTCALL1 62 R12 L10; 
+      56 [-]: FASTCALL1 64 R12 L10; 
       57 [-]: GETIMPORT R11 1; var11 = 0x7B998233
       58 [-]: CALL R11 2 2 ; var11 = var11(var12)
 L10:  59 [-]: JUMPIF R11 L19; goto L19 if var11
@@ -92,7 +92,7 @@ L11:  64 [-]: GETIMPORT R15 8; var15 = _T["harlequinObjectChange"]
 L12:  70 [-]: GETTABLE R18 R5 R13; var18 = var5[var13]
       71 [-]: GETTABLE R20 R14 R17; var20 = var14[var17]
       72 [-]: GETTABLEKS R19 R20 K16; var19 = var20["object"]
-      73 [-]: JUMPIFNOTEQ R18 R19 L17; goto L17 if var18 ~= var856654
+      73 [-]: JUMPIFNOTEQ R18 R19 L17; goto L17 if var18 ~= var856609
       74 [-]: GETIMPORT R18 13; var18 = 0x89326C93
       75 [-]: GETTABLE R22 R14 R17; var22 = var14[var17]
       76 [-]: GETTABLEKS R21 R22 K17; var21 = var22["params"]
@@ -106,7 +106,7 @@ L12:  70 [-]: GETTABLE R18 R5 R13; var18 = var5[var13]
       84 [-]: GETTABLE R20 R6 R9; var20 = var6[var9]
       85 [-]: NAMECALL R20 R20 K23; var21 = var20; var20 = var20[0xBB610E5B]
       86 [-]: CALL R20 2 0 ; var20, ... = var20(var21)
-      87 [-]: FASTCALL 62 L13; 
+      87 [-]: FASTCALL 64 L13; 
       88 [-]: GETIMPORT R19 1; var19 = 0x7B998233
       89 [-]: CALL R19 0 2 ; var19 = var19(var20, ...)
 L13:  90 [-]: JUMPIF R19 L14; goto L14 if var19
@@ -123,7 +123,7 @@ L14:  99 [-]: GETIMPORT R24 8; var24 = _T["harlequinObjectChange"]
      101 [-]: GETTABLE R22 R23 R17; var22 = var23[var17]
      102 [-]: GETTABLEKS R21 R22 K17; var21 = var22["params"]
      103 [-]: GETTABLEKS R20 R21 K26; var20 = var21["consoleAgent"]
-     104 [-]: FASTCALL1 62 R20 L15; 
+     104 [-]: FASTCALL1 64 R20 L15; 
      105 [-]: GETIMPORT R19 1; var19 = 0x7B998233
      106 [-]: CALL R19 2 2 ; var19 = var19(var20)
 L15: 107 [-]: JUMPIF R19 L16; goto L16 if var19
@@ -186,7 +186,7 @@ L20: 144 [-]: NAMECALL R5 R0 K24; var6 = var0; var5 = var0[0xDE321E6F]
      164 [-]: JUMPIFNOT R5 L23; goto L23 if not var5
      165 [-]: NAMECALL R6 R0 K2; var7 = var0; var6 = var0[0xFA9E477F]
      166 [-]: CALL R6 2 0  ; var6, ... = var6(var7)
-     167 [-]: FASTCALL 62 L21; 
+     167 [-]: FASTCALL 64 L21; 
      168 [-]: GETIMPORT R5 1; var5 = 0x7B998233
      169 [-]: CALL R5 0 2  ; var5 = var5(var6, ...)
 L21: 170 [-]: JUMPIF R5 L22; goto L22 if var5
@@ -214,7 +214,7 @@ L23: 182 [-]: RETURN R0 0  ;
        0 [-]: GETIMPORT R3 1; var3 = gContextActionType
        1 [-]: NAMECALL R1 R0 K2; var2 = var0; var1 = var0[0xC9F6A7D7]
        2 [-]: CALL R1 3 2  ; var1 = var1(var2, var3)
-       3 [-]: FASTCALL1 62 R1 L0; 
+       3 [-]: FASTCALL1 64 R1 L0; 
        4 [-]: MOVE R3 R1   ; var3 = var1
        5 [-]: GETIMPORT R2 4; var2 = 0x7B998233
        6 [-]: CALL R2 2 2  ; var2 = var2(var3)

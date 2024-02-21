@@ -43,7 +43,7 @@ L 0:   8 [-]: GETTABLE R2 R3 R4; var2 = var3[var4]
 ; Is_vararg:       0
 ; Max Stack Size:  6
 
-       0 [-]: FASTCALL1 62 R1 L0; 
+       0 [-]: FASTCALL1 64 R1 L0; 
        1 [-]: MOVE R4 R1   ; var4 = var1
        2 [-]: GETIMPORT R3 1; var3 = 0x7B998233
        3 [-]: CALL R3 2 2  ; var3 = var3(var4)
@@ -80,7 +80,7 @@ L 1:  18 [-]: NOT R2 R3    ; var2 = not var3
 L 0:   5 [-]: GETIMPORT R3 4; var3 = 0xBECCD31E
        6 [-]: JUMPIF R3 L4 ; goto L4 if var3
        7 [-]: GETIMPORT R4 7; var4 = _T["tekGravity"]
-       8 [-]: FASTCALL1 62 R4 L1; 
+       8 [-]: FASTCALL1 64 R4 L1; 
        9 [-]: GETIMPORT R3 9; var3 = 0x7B998233
       10 [-]: CALL R3 2 2  ; var3 = var3(var4)
 L 1:  11 [-]: JUMPIF R3 L3 ; goto L3 if var3
@@ -88,7 +88,7 @@ L 1:  11 [-]: JUMPIF R3 L3 ; goto L3 if var3
       13 [-]: NAMECALL R6 R0 K10; var7 = var0; var6 = var0[0x388577D5]
       14 [-]: CALL R6 2 2  ; var6 = var6(var7)
       15 [-]: GETTABLE R4 R5 R6; var4 = var5[var6]
-      16 [-]: FASTCALL1 62 R4 L2; 
+      16 [-]: FASTCALL1 64 R4 L2; 
       17 [-]: GETIMPORT R3 9; var3 = 0x7B998233
       18 [-]: CALL R3 2 2  ; var3 = var3(var4)
 L 2:  19 [-]: JUMPIFNOT R3 L4; goto L4 if not var3
@@ -122,7 +122,7 @@ L 5:  42 [-]: GETTABLE R11 R12 R13; var11 = var12[var13]
       47 [-]: LOADN R8 1   ; var8 = 1
       48 [-]: FORNPREP R7 L10; nforprep start - [escape at L10] -- var7 = iterator
 L 6:  49 [-]: GETTABLE R11 R6 R9; var11 = var6[var9]
-      50 [-]: FASTCALL1 62 R11 L7; 
+      50 [-]: FASTCALL1 64 R11 L7; 
       51 [-]: MOVE R13 R11 ; var13 = var11
       52 [-]: GETIMPORT R12 9; var12 = 0x7B998233
       53 [-]: CALL R12 2 2 ; var12 = var12(var13)

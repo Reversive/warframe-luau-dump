@@ -114,7 +114,7 @@ L 7:  30 [-]: DUPTABLE R3 9;
       35 [-]: GETIMPORT R4 11; var4 = 0x89326C93
       36 [-]: NAMECALL R4 R4 K12; var5 = var4; var4 = var4[0x78298275]
       37 [-]: CALL R4 2 2  ; var4 = var4(var5)
-      38 [-]: FASTCALL1 62 R4 L8; 
+      38 [-]: FASTCALL1 64 R4 L8; 
       39 [-]: MOVE R6 R4   ; var6 = var4
       40 [-]: GETIMPORT R5 14; var5 = 0x7B998233
       41 [-]: CALL R5 2 2  ; var5 = var5(var6)

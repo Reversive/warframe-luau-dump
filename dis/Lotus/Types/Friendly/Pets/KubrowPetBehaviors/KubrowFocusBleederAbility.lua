@@ -96,7 +96,7 @@ L 0:  11 [-]: RETURN R0 0  ;
        1 [-]: CALL R1 2 2  ; var1 = var1(var2)
        2 [-]: NAMECALL R1 R1 K1; var2 = var1; var1 = var1[0xF7D48EE0]
        3 [-]: CALL R1 2 2  ; var1 = var1(var2)
-       4 [-]: FASTCALL1 62 R1 L0; 
+       4 [-]: FASTCALL1 64 R1 L0; 
        5 [-]: MOVE R3 R1   ; var3 = var1
        6 [-]: GETIMPORT R2 3; var2 = 0x7B998233
        7 [-]: CALL R2 2 2  ; var2 = var2(var3)
@@ -107,7 +107,7 @@ L 1:  10 [-]: NAMECALL R2 R1 K4; var3 = var1; var2 = var1[0x388577D5]
       12 [-]: GETIMPORT R5 7; var5 = _T["kubrowBleedTarget"]
       13 [-]: GETTABLE R4 R5 R2; var4 = var5[var2]
       14 [-]: GETTABLEKS R3 R4 K8; var3 = var4["enemy"]
-      15 [-]: FASTCALL1 62 R3 L2; 
+      15 [-]: FASTCALL1 64 R3 L2; 
       16 [-]: MOVE R5 R3   ; var5 = var3
       17 [-]: GETIMPORT R4 3; var4 = 0x7B998233
       18 [-]: CALL R4 2 2  ; var4 = var4(var5)
@@ -115,7 +115,7 @@ L 2:  19 [-]: JUMPIFNOT R4 L3; goto L3 if not var4
       20 [-]: RETURN R0 0  ; 
 L 3:  21 [-]: NAMECALL R4 R0 K9; var5 = var0; var4 = var0[0xFA9E477F]
       22 [-]: CALL R4 2 2  ; var4 = var4(var5)
-      23 [-]: FASTCALL1 62 R4 L4; 
+      23 [-]: FASTCALL1 64 R4 L4; 
       24 [-]: MOVE R6 R4   ; var6 = var4
       25 [-]: GETIMPORT R5 3; var5 = 0x7B998233
       26 [-]: CALL R5 2 2  ; var5 = var5(var6)
@@ -135,8 +135,8 @@ L 5:  29 [-]: MOVE R7 R3   ; var7 = var3
       40 [-]: CALL R7 3 2  ; var7 = var7(var8, var9)
 L 6:  41 [-]: GETTABLE R5 R6 R7; var5 = var6[var7]
       42 [-]: LOADN R6 0   ; var6 = 0
-L 7:  43 [-]: JUMPIFNOTLT R6 R5 L9; goto L9 if var6 >= var50544203
-      44 [-]: FASTCALL1 62 R3 L8; 
+L 7:  43 [-]: JUMPIFNOTLT R6 R5 L9; goto L9 if var6 >= var50544701
+      44 [-]: FASTCALL1 64 R3 L8; 
       45 [-]: MOVE R8 R3   ; var8 = var3
       46 [-]: GETIMPORT R7 3; var7 = 0x7B998233
       47 [-]: CALL R7 2 2  ; var7 = var7(var8)
@@ -151,7 +151,7 @@ L 8:  48 [-]: JUMPIF R7 L9 ; goto L9 if var7
       56 [-]: LOADN R8 0   ; var8 = 0
       57 [-]: CALL R7 2 1  ; var7(var8)
       58 [-]: JUMPBACK L7  ; goto L7
-L 9:  59 [-]: FASTCALL1 62 R4 L10; 
+L 9:  59 [-]: FASTCALL1 64 R4 L10; 
       60 [-]: MOVE R8 R4   ; var8 = var4
       61 [-]: GETIMPORT R7 3; var7 = 0x7B998233
       62 [-]: CALL R7 2 2  ; var7 = var7(var8)
@@ -179,7 +179,7 @@ L11:  68 [-]: GETIMPORT R8 7; var8 = _T["kubrowBleedTarget"]
        2 [-]: CALL R3 2 2  ; var3 = var3(var4)
        3 [-]: JUMPIF R3 L0 ; goto L0 if var3
        4 [-]: RETURN R0 0  ; 
-L 0:   5 [-]: FASTCALL1 62 R2 L1; 
+L 0:   5 [-]: FASTCALL1 64 R2 L1; 
        6 [-]: MOVE R4 R2   ; var4 = var2
        7 [-]: GETIMPORT R3 4; var3 = 0x7B998233
        8 [-]: CALL R3 2 2  ; var3 = var3(var4)
@@ -189,7 +189,7 @@ L 1:   9 [-]: JUMPIF R3 L2 ; goto L2 if var3
       12 [-]: JUMPIFNOT R3 L3; goto L3 if not var3
 L 2:  13 [-]: RETURN R0 0  ; 
 L 3:  14 [-]: GETIMPORT R4 8; var4 = _T["kubrowBleedTarget"]
-      15 [-]: FASTCALL1 62 R4 L4; 
+      15 [-]: FASTCALL1 64 R4 L4; 
       16 [-]: GETIMPORT R3 4; var3 = 0x7B998233
       17 [-]: CALL R3 2 2  ; var3 = var3(var4)
 L 4:  18 [-]: JUMPIFNOT R3 L5; goto L5 if not var3
@@ -208,7 +208,7 @@ L 5:  22 [-]: NAMECALL R3 R0 K10; var4 = var0; var3 = var0[0x388577D5]
       31 [-]: SETTABLE R6 R5 R3; var6[var5] = var3
       32 [-]: JUMP L10     ; goto L10
 L 6:  33 [-]: GETTABLEKS R6 R4 K11; var6 = var4["enemy"]
-      34 [-]: FASTCALL1 62 R6 L7; 
+      34 [-]: FASTCALL1 64 R6 L7; 
       35 [-]: GETIMPORT R5 4; var5 = 0x7B998233
       36 [-]: CALL R5 2 2  ; var5 = var5(var6)
 L 7:  37 [-]: JUMPIF R5 L8 ; goto L8 if var5
@@ -222,7 +222,7 @@ L 8:  42 [-]: SETTABLEKS R2 R4 K11; var2["enemy"] = var4
 L 9:  45 [-]: RETURN R0 0  ; 
 L10:  46 [-]: NAMECALL R5 R0 K14; var6 = var0; var5 = var0[0x20833F15]
       47 [-]: CALL R5 2 2  ; var5 = var5(var6)
-      48 [-]: FASTCALL1 62 R5 L11; 
+      48 [-]: FASTCALL1 64 R5 L11; 
       49 [-]: MOVE R7 R5   ; var7 = var5
       50 [-]: GETIMPORT R6 4; var6 = 0x7B998233
       51 [-]: CALL R6 2 2  ; var6 = var6(var7)

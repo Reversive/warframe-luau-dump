@@ -87,7 +87,7 @@ L 4:  36 [-]: GETIMPORT R7 20; var7 = 0x7ED0A956
 L 5:  41 [-]: MOVE R9 R6   ; var9 = var6
       42 [-]: NAMECALL R7 R0 K23; var8 = var0; var7 = var0[0xC9F6A7D7]
       43 [-]: CALL R7 3 2  ; var7 = var7(var8, var9)
-      44 [-]: FASTCALL1 62 R7 L6; 
+      44 [-]: FASTCALL1 64 R7 L6; 
       45 [-]: MOVE R9 R7   ; var9 = var7
       46 [-]: GETIMPORT R8 25; var8 = 0x7B998233
       47 [-]: CALL R8 2 2  ; var8 = var8(var9)

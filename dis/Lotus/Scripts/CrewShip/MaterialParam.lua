@@ -23,9 +23,9 @@
 ; Max Stack Size:  24
 
        0 [-]: LOADN R6 0   ; var6 = 0
-       1 [-]: JUMPIFNOTLT R6 R5 L5; goto L5 if var6 >= var1607
+       1 [-]: JUMPIFNOTLT R6 R5 L5; goto L5 if var6 >= var1584
        2 [-]: LOADN R6 0   ; var6 = 0
-L 0:   3 [-]: JUMPIFNOTLT R6 R5 L9; goto L9 if var6 >= var67406
+L 0:   3 [-]: JUMPIFNOTLT R6 R5 L9; goto L9 if var6 >= var67361
        4 [-]: GETIMPORT R7 1; var7 = 0xCBD666E1
        5 [-]: LOADN R8 0   ; var8 = 0
        6 [-]: CALL R7 2 1  ; var7(var8)
@@ -133,7 +133,7 @@ L 9:  93 [-]: RETURN R0 0  ;
        5 [-]: FORNPREP R1 L3; nforprep start - [escape at L3] -- var1 = iterator
 L 0:   6 [-]: GETIMPORT R6 1; var6 = 0xC1CAA169
        7 [-]: GETTABLE R5 R6 R3; var5 = var6[var3]
-       8 [-]: FASTCALL1 62 R5 L1; 
+       8 [-]: FASTCALL1 64 R5 L1; 
        9 [-]: GETIMPORT R4 3; var4 = 0x7B998233
       10 [-]: CALL R4 2 2  ; var4 = var4(var5)
 L 1:  11 [-]: JUMPIFNOT R4 L2; goto L2 if not var4
@@ -145,7 +145,7 @@ L 2:  16 [-]: FORNLOOP R1 L0; nforloop end - iterate + goto L0
 L 3:  17 [-]: GETIMPORT R2 1; var2 = 0xC1CAA169
       18 [-]: LENGTH R1 R2 ; var1 = #var2
       19 [-]: LOADN R2 1   ; var2 = 1
-      20 [-]: JUMPIFNOTLT R1 R2 L4; goto L4 if var1 >= var65581
+      20 [-]: JUMPIFNOTLT R1 R2 L4; goto L4 if var1 >= var65571
       21 [-]: RETURN R0 0  ; 
 L 4:  22 [-]: GETIMPORT R1 8; var1 = 0xC8802016
       23 [-]: GETIMPORT R2 1; var2 = 0xC1CAA169
@@ -199,7 +199,7 @@ L 6:  47 [-]: FORGLOOP R1 L5 2 [inext];
        5 [-]: FORNPREP R1 L3; nforprep start - [escape at L3] -- var1 = iterator
 L 0:   6 [-]: GETIMPORT R6 1; var6 = 0xC1CAA169
        7 [-]: GETTABLE R5 R6 R3; var5 = var6[var3]
-       8 [-]: FASTCALL1 62 R5 L1; 
+       8 [-]: FASTCALL1 64 R5 L1; 
        9 [-]: GETIMPORT R4 3; var4 = 0x7B998233
       10 [-]: CALL R4 2 2  ; var4 = var4(var5)
 L 1:  11 [-]: JUMPIFNOT R4 L2; goto L2 if not var4
@@ -211,7 +211,7 @@ L 2:  16 [-]: FORNLOOP R1 L0; nforloop end - iterate + goto L0
 L 3:  17 [-]: GETIMPORT R2 1; var2 = 0xC1CAA169
       18 [-]: LENGTH R1 R2 ; var1 = #var2
       19 [-]: LOADN R2 1   ; var2 = 1
-      20 [-]: JUMPIFNOTLT R1 R2 L4; goto L4 if var1 >= var65581
+      20 [-]: JUMPIFNOTLT R1 R2 L4; goto L4 if var1 >= var65571
       21 [-]: RETURN R0 0  ; 
 L 4:  22 [-]: GETIMPORT R1 8; var1 = 0xC8802016
       23 [-]: GETIMPORT R2 1; var2 = 0xC1CAA169

@@ -123,7 +123,7 @@ L 0:  12 [-]: GETIMPORT R1 11; var1 = _T["SetButtons"]
        4 [-]: CALL R0 4 1  ; var0(var1, var2, var3)
        5 [-]: GETIMPORT R0 1; var0 = 0xAE91E43B
        6 [-]: LOADK R2 K8  ; var2 = "Banner.ProjectName"
-       7 [-]: LOADN R3 38  ; var3 = 38
+       7 [-]: LOADN R3 40  ; var3 = 40
        8 [-]: LOADK R4 K9  ; var4 = "bottom"
        9 [-]: NAMECALL R0 R0 K10; var1 = var0; var0 = var0[0x5F56EEAB]
       10 [-]: CALL R0 5 1  ; var0(var1, var2, var3, var4)
@@ -227,13 +227,13 @@ L 1:   5 [-]: NAMECALL R0 R0 K5; var1 = var0; var0 = var0[0x2002E1DC]
       20 [-]: CALL R0 2 2  ; var0 = var0(var1)
       21 [-]: SETUPVAL R0 0; upvalues[0] = var0
       22 [-]: GETUPVAL R1 0; var1 = upvalues[0]
-      23 [-]: FASTCALL1 62 R1 L2; 
+      23 [-]: FASTCALL1 64 R1 L2; 
       24 [-]: GETIMPORT R0 14; var0 = 0x7B998233
       25 [-]: CALL R0 2 2  ; var0 = var0(var1)
 L 2:  26 [-]: JUMPIFNOT R0 L3; goto L3 if not var0
       27 [-]: RETURN R0 0  ; 
 L 3:  28 [-]: GETIMPORT R1 16; var1 = _T["RelayReconPhaseInfo"]
-      29 [-]: FASTCALL1 62 R1 L4; 
+      29 [-]: FASTCALL1 64 R1 L4; 
       30 [-]: GETIMPORT R0 14; var0 = 0x7B998233
       31 [-]: CALL R0 2 2  ; var0 = var0(var1)
 L 4:  32 [-]: JUMPIFNOT R0 L5; goto L5 if not var0
@@ -265,7 +265,7 @@ L 5:  37 [-]: GETIMPORT R0 1; var0 = 0xAE91E43B
       58 [-]: GETIMPORT R8 22; var8 = 0x0032441C
       59 [-]: GETTABLEKS R7 R8 K26; var7 = var8["UIColorObject_White"]
       60 [-]: GETTABLEKS R6 R7 K29; var6 = var7["b"]
-      61 [-]: LOADK R7 K30 ; var7 = 0.20000000000000001
+      61 [-]: LOADK R7 K30 ; var7 = 0.20000000298023224
       62 [-]: NAMECALL R0 R0 K31; var1 = var0; var0 = var0[0x91E13703]
       63 [-]: CALL R0 8 1  ; var0(var1, var2, var3, var4, var5, var6, var7)
       64 [-]: GETIMPORT R0 1; var0 = 0xAE91E43B

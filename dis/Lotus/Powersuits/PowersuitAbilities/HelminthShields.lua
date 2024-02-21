@@ -106,7 +106,7 @@ L 5:  31 [-]: GETIMPORT R2 24; var2 = _T["AbilityLevelQueryParms"]["Modded"]
        3 [-]: CALL R4 2 2  ; var4 = var4(var5)
        4 [-]: NAMECALL R5 R3 K2; var6 = var3; var5 = var3[0xB87F958D]
        5 [-]: CALL R5 2 2  ; var5 = var5(var6)
-       6 [-]: JUMPIFNOTLE R5 R4 L0; goto L0 if var5 > var263758
+       6 [-]: JUMPIFNOTLE R5 R4 L0; goto L0 if var5 > var263713
        7 [-]: GETIMPORT R6 4; var6 = 0x0469F296
        8 [-]: LOADK R7 K5  ; var7 = "/Lotus/Language/Game/AbilityErrorNotReady"
        9 [-]: CALL R6 2 0  ; var6, ... = var6(var7)
@@ -177,13 +177,17 @@ L 3:  14 [-]: GETIMPORT R6 7; var6 = 0x17C91A14
       49 [-]: JUMPIFNOT R4 L4; goto L4 if not var4
       50 [-]: NAMECALL R4 R1 K28; var5 = var1; var4 = var1[0x1AC1655C]
       51 [-]: CALL R4 2 2  ; var4 = var4(var5)
-      52 [-]: NAMECALL R8 R4 K29; var9 = var4; var8 = var4[0xB87F958D]
-      53 [-]: CALL R8 2 2  ; var8 = var8(var9)
-      54 [-]: GETUPVAL R9 0; var9 = upvalues[0]
-      55 [-]: MUL R7 R8 R9 ; var7 = var8 * var9
-      56 [-]: NAMECALL R5 R4 K30; var6 = var4; var5 = var4[0x60BF5F59]
-      57 [-]: CALL R5 3 1  ; var5(var6, var7)
-L 4:  58 [-]: RETURN R0 0  ; 
+      52 [-]: GETUPVAL R6 1; var6 = upvalues[1]
+      53 [-]: GETTABLEKS R5 R6 K29; var5 = var6[0x60BF5F59]
+      54 [-]: MOVE R6 R1   ; var6 = var1
+      55 [-]: NAMECALL R8 R4 K30; var9 = var4; var8 = var4[0xB87F958D]
+      56 [-]: CALL R8 2 2  ; var8 = var8(var9)
+      57 [-]: GETUPVAL R9 0; var9 = upvalues[0]
+      58 [-]: MUL R7 R8 R9 ; var7 = var8 * var9
+      59 [-]: LOADB R8 0   ; var8 = false
+      60 [-]: MOVE R9 R1   ; var9 = var1
+      61 [-]: CALL R5 5 1  ; var5(var6, var7, var8, var9)
+L 4:  62 [-]: RETURN R0 0  ; 
 
 
 

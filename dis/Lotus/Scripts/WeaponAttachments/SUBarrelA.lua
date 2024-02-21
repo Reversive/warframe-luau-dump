@@ -7,7 +7,7 @@
 
        1 [-]: NEWTABLE R0 0 1; var0 = {}
        2 [-]: NEWTABLE R1 0 2; var1 = {}
-       3 [-]: LOADK R2 K0  ; var2 = 0.10000000000000001
+       3 [-]: LOADK R2 K0  ; var2 = 0.10000000149011612
        4 [-]: LOADN R3 0   ; var3 = 0
        5 [-]: SETLIST R1 R2 2 [1]; var1[1] = var2; var1[2] = var3; var1[3] = var4; 
        6 [-]: SETLIST R0 R1 1 [1]; var0[1] = var1; var0[2] = var2; 
@@ -46,7 +46,7 @@ L 2:  17 [-]: GETIMPORT R4 2; var4 = 0xCBD666E1
       19 [-]: GETTABLE R6 R7 R3; var6 = var7[var3]
       20 [-]: GETTABLEN R5 R6 1; var5 = var6[1]
       21 [-]: CALL R4 2 1  ; var4(var5)
-      22 [-]: FASTCALL1 62 R0 L3; 
+      22 [-]: FASTCALL1 64 R0 L3; 
       23 [-]: MOVE R5 R0   ; var5 = var0
       24 [-]: GETIMPORT R4 4; var4 = 0x7B998233
       25 [-]: CALL R4 2 2  ; var4 = var4(var5)

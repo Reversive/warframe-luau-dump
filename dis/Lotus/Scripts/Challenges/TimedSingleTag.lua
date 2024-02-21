@@ -41,7 +41,7 @@ L 1:  17 [-]: LOADB R6 0   ; var6 = false
       19 [-]: GETTABLE R8 R9 R1; var8 = var9[var1]
       20 [-]: GETTABLEKS R7 R8 K3; var7 = var8["ElapsedTime"]
       21 [-]: GETIMPORT R8 9; var8 = 0xDAF34E92
-      22 [-]: JUMPIFNOTLT R7 R8 L2; goto L2 if var7 >= var67099
+      22 [-]: JUMPIFNOTLT R7 R8 L2; goto L2 if var7 >= var67078
       23 [-]: LOADB R6 1   ; var6 = true
 L 2:  24 [-]: GETIMPORT R7 11; var7 = 0x93326E7B
       25 [-]: JUMPIFNOT R7 L3; goto L3 if not var7

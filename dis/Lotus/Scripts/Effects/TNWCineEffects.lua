@@ -19,7 +19,7 @@
 
        0 [-]: LOADN R0 0   ; var0 = 0
 L 0:   1 [-]: GETIMPORT R1 1; var1 = 0xF5451277
-       2 [-]: JUMPIFNOTLE R0 R1 L1; goto L1 if var0 > var196942
+       2 [-]: JUMPIFNOTLE R0 R1 L1; goto L1 if var0 > var196897
        3 [-]: GETIMPORT R1 3; var1 = 0x12DB79E8
        4 [-]: GETIMPORT R3 5; var3 = 0x9BAFFFE3
        5 [-]: LOADN R4 0   ; var4 = 0

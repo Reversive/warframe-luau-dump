@@ -39,7 +39,7 @@
 L 0:   7 [-]: LOADN R1 0   ; var1 = 0
        8 [-]: LOADNIL R2   ; var2 = nil
 L 1:   9 [-]: GETIMPORT R3 7; var3 = 0x07E9D557
-      10 [-]: JUMPIFNOTLT R1 R3 L2; goto L2 if var1 >= var590670
+      10 [-]: JUMPIFNOTLT R1 R3 L2; goto L2 if var1 >= var590625
       11 [-]: GETIMPORT R3 9; var3 = 0x9BAFFFE3
       12 [-]: GETIMPORT R4 11; var4 = 0x2120BA2A
       13 [-]: GETIMPORT R5 13; var5 = 0x1970BA59
@@ -74,9 +74,9 @@ L 2:  28 [-]: RETURN R0 0  ;
        4 [-]: LOADNIL R2   ; var2 = nil
        5 [-]: LOADNIL R3   ; var3 = nil
 L 0:   6 [-]: GETIMPORT R4 5; var4 = 0x07E9D557
-       7 [-]: JUMPIFNOTLT R1 R4 L4; goto L4 if var1 >= var459854
+       7 [-]: JUMPIFNOTLT R1 R4 L4; goto L4 if var1 >= var459809
        8 [-]: GETIMPORT R4 7; var4 = 0xAEFC91CD
-       9 [-]: JUMPIFNOTLT R1 R4 L1; goto L1 if var1 >= var459854
+       9 [-]: JUMPIFNOTLT R1 R4 L1; goto L1 if var1 >= var459809
       10 [-]: GETIMPORT R4 7; var4 = 0xAEFC91CD
       11 [-]: DIV R2 R1 R4 ; var2 = var1 / var4
       12 [-]: JUMP L2      ; goto L2
@@ -89,7 +89,7 @@ L 1:  13 [-]: LOADN R4 1   ; var4 = 1
       19 [-]: DIV R5 R6 R7 ; var5 = var6 / var7
       20 [-]: SUB R2 R4 R5 ; var2 = var4 - var5
 L 2:  21 [-]: LOADN R4 0   ; var4 = 0
-      22 [-]: JUMPIFNOTLT R2 R4 L3; goto L3 if var2 >= var583
+      22 [-]: JUMPIFNOTLT R2 R4 L3; goto L3 if var2 >= var560
       23 [-]: LOADN R2 0   ; var2 = 0
 L 3:  24 [-]: GETIMPORT R4 9; var4 = 0x9BAFFFE3
       25 [-]: GETIMPORT R5 11; var5 = 0xB4AAB526
@@ -123,7 +123,7 @@ L 4:  40 [-]: RETURN R0 0  ;
        3 [-]: LOADN R0 0   ; var0 = 0
        4 [-]: LOADNIL R1   ; var1 = nil
 L 0:   5 [-]: GETIMPORT R2 5; var2 = 0x07E9D557
-       6 [-]: JUMPIFNOTLT R0 R2 L4; goto L4 if var0 >= var459342
+       6 [-]: JUMPIFNOTLT R0 R2 L4; goto L4 if var0 >= var459297
        7 [-]: GETIMPORT R2 7; var2 = 0x9BAFFFE3
        8 [-]: GETIMPORT R3 9; var3 = 0x2120BA2A
        9 [-]: GETIMPORT R4 11; var4 = 0x1970BA59
@@ -132,7 +132,7 @@ L 0:   5 [-]: GETIMPORT R2 5; var2 = 0x07E9D557
       12 [-]: CALL R2 4 2  ; var2 = var2(var3, var4, var5)
       13 [-]: MOVE R1 R2   ; var1 = var2
       14 [-]: GETIMPORT R3 13; var3 = 0x1380D3A9
-      15 [-]: FASTCALL1 62 R3 L1; 
+      15 [-]: FASTCALL1 64 R3 L1; 
       16 [-]: GETIMPORT R2 15; var2 = 0x7B998233
       17 [-]: CALL R2 2 2  ; var2 = var2(var3)
 L 1:  18 [-]: JUMPIF R2 L3 ; goto L3 if var2
@@ -171,9 +171,9 @@ L 4:  37 [-]: RETURN R0 0  ;
        4 [-]: LOADNIL R1   ; var1 = nil
        5 [-]: LOADNIL R2   ; var2 = nil
 L 0:   6 [-]: GETIMPORT R3 5; var3 = 0x07E9D557
-       7 [-]: JUMPIFNOTLT R0 R3 L7; goto L7 if var0 >= var459598
+       7 [-]: JUMPIFNOTLT R0 R3 L7; goto L7 if var0 >= var459553
        8 [-]: GETIMPORT R3 7; var3 = 0xAEFC91CD
-       9 [-]: JUMPIFNOTLT R0 R3 L1; goto L1 if var0 >= var459598
+       9 [-]: JUMPIFNOTLT R0 R3 L1; goto L1 if var0 >= var459553
       10 [-]: GETIMPORT R3 7; var3 = 0xAEFC91CD
       11 [-]: DIV R1 R0 R3 ; var1 = var0 / var3
       12 [-]: JUMP L2      ; goto L2
@@ -186,7 +186,7 @@ L 1:  13 [-]: LOADN R3 1   ; var3 = 1
       19 [-]: DIV R4 R5 R6 ; var4 = var5 / var6
       20 [-]: SUB R1 R3 R4 ; var1 = var3 - var4
 L 2:  21 [-]: LOADN R3 0   ; var3 = 0
-      22 [-]: JUMPIFNOTLT R1 R3 L3; goto L3 if var1 >= var327
+      22 [-]: JUMPIFNOTLT R1 R3 L3; goto L3 if var1 >= var304
       23 [-]: LOADN R1 0   ; var1 = 0
 L 3:  24 [-]: GETIMPORT R3 9; var3 = 0x9BAFFFE3
       25 [-]: GETIMPORT R4 11; var4 = 0xB4AAB526
@@ -195,7 +195,7 @@ L 3:  24 [-]: GETIMPORT R3 9; var3 = 0x9BAFFFE3
       28 [-]: CALL R3 4 2  ; var3 = var3(var4, var5, var6)
       29 [-]: MOVE R2 R3   ; var2 = var3
       30 [-]: GETIMPORT R4 15; var4 = 0x1380D3A9
-      31 [-]: FASTCALL1 62 R4 L4; 
+      31 [-]: FASTCALL1 64 R4 L4; 
       32 [-]: GETIMPORT R3 17; var3 = 0x7B998233
       33 [-]: CALL R3 2 2  ; var3 = var3(var4)
 L 4:  34 [-]: JUMPIF R3 L6 ; goto L6 if var3
@@ -275,7 +275,7 @@ L 1:   7 [-]: FORGLOOP R0 L0 2 [inext];
        3 [-]: LOADN R0 0   ; var0 = 0
        4 [-]: GETIMPORT R1 5; var1 = 0x574D51D1
 L 0:   5 [-]: GETIMPORT R2 7; var2 = 0x07E9D557
-       6 [-]: JUMPIFNOTLT R0 R2 L3; goto L3 if var0 >= var590414
+       6 [-]: JUMPIFNOTLT R0 R2 L3; goto L3 if var0 >= var590369
        7 [-]: GETIMPORT R2 9; var2 = 0x9BAFFFE3
        8 [-]: GETIMPORT R3 11; var3 = 0x574D51D1["red"]
        9 [-]: GETIMPORT R4 13; var4 = 0xDE37555A["red"]

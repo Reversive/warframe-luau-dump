@@ -67,7 +67,7 @@
        0 [-]: NAMECALL R1 R0 K0; var2 = var0; var1 = var0[0xCD73323E]
        1 [-]: CALL R1 2 2  ; var1 = var1(var2)
        2 [-]: LOADK R2 K1  ; var2 = "None"
-       3 [-]: FASTCALL1 62 R1 L0; 
+       3 [-]: FASTCALL1 64 R1 L0; 
        4 [-]: MOVE R4 R1   ; var4 = var1
        5 [-]: GETIMPORT R3 3; var3 = 0x7B998233
        6 [-]: CALL R3 2 2  ; var3 = var3(var4)
@@ -98,7 +98,7 @@ L 1:  11 [-]: GETIMPORT R3 6; var3 = 0x3D106989
 ; Max Stack Size:  14
 
        0 [-]: GETIMPORT R2 2; var2 = _T["activeEncounterHints"]
-       1 [-]: FASTCALL1 62 R2 L0; 
+       1 [-]: FASTCALL1 64 R2 L0; 
        2 [-]: GETIMPORT R1 4; var1 = 0x7B998233
        3 [-]: CALL R1 2 2  ; var1 = var1(var2)
 L 0:   4 [-]: JUMPIFNOT R1 L1; goto L1 if not var1
@@ -141,16 +141,16 @@ L 3:  32 [-]: FORGLOOP R3 L2 2 [inext];
 ; Max Stack Size:  5
 
        0 [-]: NAMECALL R3 R0 K0; var4 = var0; var3 = var0[0xFA9E477F]
-       1 [-]: CALL R3 2 2  ; var3 = var3(var4)
-       2 [-]: FASTCALL1 62 R3 L0; 
+       1 [-]: CALL R3 2 0  ; var3, ... = var3(var4)
+       2 [-]: FASTCALL 64 L0; 
        3 [-]: GETIMPORT R2 2; var2 = 0x7B998233
-       4 [-]: CALL R2 2 2  ; var2 = var2(var3)
+       4 [-]: CALL R2 0 2  ; var2 = var2(var3, ...)
 L 0:   5 [-]: JUMPIFNOT R2 L1; goto L1 if not var2
        6 [-]: JUMPXEQKNIL R1 L2 NOT; 
 L 1:   7 [-]: LOADN R1 1   ; var1 = 1
 L 2:   8 [-]: JUMPXEQKN R1 K3 L4 NOT; 
        9 [-]: GETIMPORT R3 5; var3 = 0x26C76931
-      10 [-]: FASTCALL1 62 R3 L3; 
+      10 [-]: FASTCALL1 64 R3 L3; 
       11 [-]: GETIMPORT R2 2; var2 = 0x7B998233
       12 [-]: CALL R2 2 2  ; var2 = var2(var3)
 L 3:  13 [-]: JUMPIF R2 L4 ; goto L4 if var2
@@ -174,14 +174,14 @@ L 4:  18 [-]: RETURN R0 0  ;
        3 [-]: GETIMPORT R0 5; var0 = 0xBE190284
        4 [-]: NAMECALL R0 R0 K6; var1 = var0; var0 = var0[0xEF893AEC]
        5 [-]: CALL R0 2 2  ; var0 = var0(var1)
-       6 [-]: FASTCALL1 62 R0 L0; 
+       6 [-]: FASTCALL1 64 R0 L0; 
        7 [-]: MOVE R2 R0   ; var2 = var0
        8 [-]: GETIMPORT R1 8; var1 = 0x7B998233
        9 [-]: CALL R1 2 2  ; var1 = var1(var2)
 L 0:  10 [-]: JUMPIF R1 L1 ; goto L1 if var1
       11 [-]: GETTABLEKS R1 R0 K9; var1 = var0["goalTag"]
       12 [-]: GETIMPORT R2 11; var2 = EMPTY_SYMBOL
-      13 [-]: JUMPIFNOTEQ R1 R2 L2; goto L2 if var1 ~= var519
+      13 [-]: JUMPIFNOTEQ R1 R2 L2; goto L2 if var1 ~= var572
 L 1:  14 [-]: GETUPVAL R2 0; var2 = upvalues[0]
       15 [-]: GETTABLEKS R1 R2 K12; var1 = var2[0x74F0B809]
       16 [-]: GETIMPORT R2 14; var2 = 0xC7667E41

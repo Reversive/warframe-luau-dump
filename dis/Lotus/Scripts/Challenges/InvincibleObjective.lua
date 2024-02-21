@@ -20,15 +20,17 @@
 ; Is_vararg:       0
 ; Max Stack Size:  5
 
-       0 [-]: GETIMPORT R3 1; var3 = 0x64FB1586
-       1 [-]: GETIMPORT R4 3; var4 = 0x7AAA7F8E
-       2 [-]: CALL R3 2 2  ; var3 = var3(var4)
-       3 [-]: MOVE R1 R3   ; var1 = var3
-       4 [-]: GETIMPORT R2 1; var2 = 0x64FB1586
+       0 [-]: GETIMPORT R4 1; var4 = 0x7AAA7F8E
+       1 [-]: FASTCALL1 63 R4 L0; 
+       2 [-]: GETIMPORT R3 3; var3 = 0x64FB1586
+       3 [-]: CALL R3 2 2  ; var3 = var3(var4)
+L 0:   4 [-]: MOVE R1 R3   ; var1 = var3
        5 [-]: GETIMPORT R3 5; var3 = 0x40CF16A9
-       6 [-]: CALL R2 2 2  ; var2 = var2(var3)
-       7 [-]: CONCAT R0 R1 R2; var0 = var1 .. var2
-       8 [-]: RETURN R0 1  ; 
+       6 [-]: FASTCALL1 63 R3 L1; 
+       7 [-]: GETIMPORT R2 3; var2 = 0x64FB1586
+       8 [-]: CALL R2 2 2  ; var2 = var2(var3)
+L 1:   9 [-]: CONCAT R0 R1 R2; var0 = var1 .. var2
+      10 [-]: RETURN R0 1  ; 
 
 
 ; Name:            
@@ -38,22 +40,24 @@
 ; Is_vararg:       0
 ; Max Stack Size:  7
 
-       0 [-]: GETIMPORT R5 1; var5 = 0x64FB1586
-       1 [-]: GETIMPORT R6 3; var6 = 0x7AAA7F8E
-       2 [-]: CALL R5 2 2  ; var5 = var5(var6)
-       3 [-]: MOVE R3 R5   ; var3 = var5
-       4 [-]: GETIMPORT R4 1; var4 = 0x64FB1586
+       0 [-]: GETIMPORT R6 1; var6 = 0x7AAA7F8E
+       1 [-]: FASTCALL1 63 R6 L0; 
+       2 [-]: GETIMPORT R5 3; var5 = 0x64FB1586
+       3 [-]: CALL R5 2 2  ; var5 = var5(var6)
+L 0:   4 [-]: MOVE R3 R5   ; var3 = var5
        5 [-]: GETIMPORT R5 5; var5 = 0x40CF16A9
-       6 [-]: CALL R4 2 2  ; var4 = var4(var5)
-       7 [-]: CONCAT R2 R3 R4; var2 = var3 .. var4
-       8 [-]: GETIMPORT R4 7; var4 = _T
-       9 [-]: GETTABLE R3 R4 R2; var3 = var4[var2]
-      10 [-]: JUMPXEQKB R3 1 L0 NOT; 
-      11 [-]: GETIMPORT R3 7; var3 = _T
-      12 [-]: LOADNIL R4   ; var4 = nil
-      13 [-]: SETTABLE R4 R3 R2; var4[var3] = var2
-L 0:  14 [-]: LOADB R3 0   ; var3 = false
-      15 [-]: RETURN R3 1  ; 
+       6 [-]: FASTCALL1 63 R5 L1; 
+       7 [-]: GETIMPORT R4 3; var4 = 0x64FB1586
+       8 [-]: CALL R4 2 2  ; var4 = var4(var5)
+L 1:   9 [-]: CONCAT R2 R3 R4; var2 = var3 .. var4
+      10 [-]: GETIMPORT R4 7; var4 = _T
+      11 [-]: GETTABLE R3 R4 R2; var3 = var4[var2]
+      12 [-]: JUMPXEQKB R3 1 L2 NOT; 
+      13 [-]: GETIMPORT R3 7; var3 = _T
+      14 [-]: LOADNIL R4   ; var4 = nil
+      15 [-]: SETTABLE R4 R3 R2; var4[var3] = var2
+L 2:  16 [-]: LOADB R3 0   ; var3 = false
+      17 [-]: RETURN R3 1  ; 
 
 
 ; Name:            
@@ -63,47 +67,53 @@ L 0:  14 [-]: LOADB R3 0   ; var3 = false
 ; Is_vararg:       0
 ; Max Stack Size:  7
 
-       0 [-]: GETIMPORT R2 1; var2 = 0x64FB1586
-       1 [-]: GETIMPORT R3 3; var3 = 0x7AAA7F8E
-       2 [-]: CALL R2 2 2  ; var2 = var2(var3)
-       3 [-]: JUMPIFNOTEQ R1 R2 L0; goto L0 if var1 ~= var66894
-       4 [-]: GETIMPORT R5 1; var5 = 0x64FB1586
-       5 [-]: GETIMPORT R6 3; var6 = 0x7AAA7F8E
-       6 [-]: CALL R5 2 2  ; var5 = var5(var6)
-       7 [-]: MOVE R3 R5   ; var3 = var5
-       8 [-]: GETIMPORT R4 1; var4 = 0x64FB1586
-       9 [-]: GETIMPORT R5 5; var5 = 0x40CF16A9
-      10 [-]: CALL R4 2 2  ; var4 = var4(var5)
-      11 [-]: CONCAT R2 R3 R4; var2 = var3 .. var4
-      12 [-]: GETIMPORT R3 7; var3 = _T
-      13 [-]: LOADB R4 1   ; var4 = true
-      14 [-]: SETTABLE R4 R3 R2; var4[var3] = var2
-      15 [-]: JUMP L2      ; goto L2
-L 0:  16 [-]: GETIMPORT R2 1; var2 = 0x64FB1586
-      17 [-]: GETIMPORT R3 5; var3 = 0x40CF16A9
-      18 [-]: CALL R2 2 2  ; var2 = var2(var3)
-      19 [-]: JUMPIFNOTEQ R1 R2 L2; goto L2 if var1 ~= var66894
-      20 [-]: GETIMPORT R5 1; var5 = 0x64FB1586
-      21 [-]: GETIMPORT R6 3; var6 = 0x7AAA7F8E
-      22 [-]: CALL R5 2 2  ; var5 = var5(var6)
-      23 [-]: MOVE R3 R5   ; var3 = var5
-      24 [-]: GETIMPORT R4 1; var4 = 0x64FB1586
-      25 [-]: GETIMPORT R5 5; var5 = 0x40CF16A9
-      26 [-]: CALL R4 2 2  ; var4 = var4(var5)
-      27 [-]: CONCAT R2 R3 R4; var2 = var3 .. var4
-      28 [-]: GETIMPORT R4 7; var4 = _T
-      29 [-]: GETTABLE R3 R4 R2; var3 = var4[var2]
-      30 [-]: JUMPXEQKB R3 1 L1 NOT; 
-      31 [-]: GETIMPORT R3 7; var3 = _T
-      32 [-]: LOADNIL R4   ; var4 = nil
-      33 [-]: SETTABLE R4 R3 R2; var4[var3] = var2
-      34 [-]: LOADB R3 1   ; var3 = true
-      35 [-]: RETURN R3 1  ; 
-L 1:  36 [-]: GETIMPORT R3 7; var3 = _T
-      37 [-]: LOADNIL R4   ; var4 = nil
-      38 [-]: SETTABLE R4 R3 R2; var4[var3] = var2
-L 2:  39 [-]: LOADB R2 0   ; var2 = false
-      40 [-]: RETURN R2 1  ; 
+       0 [-]: GETIMPORT R3 1; var3 = 0x7AAA7F8E
+       1 [-]: FASTCALL1 63 R3 L0; 
+       2 [-]: GETIMPORT R2 3; var2 = 0x64FB1586
+       3 [-]: CALL R2 2 2  ; var2 = var2(var3)
+L 0:   4 [-]: JUMPIFNOTEQ R1 R2 L3; goto L3 if var1 ~= var67105
+       5 [-]: GETIMPORT R6 1; var6 = 0x7AAA7F8E
+       6 [-]: FASTCALL1 63 R6 L1; 
+       7 [-]: GETIMPORT R5 3; var5 = 0x64FB1586
+       8 [-]: CALL R5 2 2  ; var5 = var5(var6)
+L 1:   9 [-]: MOVE R3 R5   ; var3 = var5
+      10 [-]: GETIMPORT R5 5; var5 = 0x40CF16A9
+      11 [-]: FASTCALL1 63 R5 L2; 
+      12 [-]: GETIMPORT R4 3; var4 = 0x64FB1586
+      13 [-]: CALL R4 2 2  ; var4 = var4(var5)
+L 2:  14 [-]: CONCAT R2 R3 R4; var2 = var3 .. var4
+      15 [-]: GETIMPORT R3 7; var3 = _T
+      16 [-]: LOADB R4 1   ; var4 = true
+      17 [-]: SETTABLE R4 R3 R2; var4[var3] = var2
+      18 [-]: JUMP L8      ; goto L8
+L 3:  19 [-]: GETIMPORT R3 5; var3 = 0x40CF16A9
+      20 [-]: FASTCALL1 63 R3 L4; 
+      21 [-]: GETIMPORT R2 3; var2 = 0x64FB1586
+      22 [-]: CALL R2 2 2  ; var2 = var2(var3)
+L 4:  23 [-]: JUMPIFNOTEQ R1 R2 L8; goto L8 if var1 ~= var67105
+      24 [-]: GETIMPORT R6 1; var6 = 0x7AAA7F8E
+      25 [-]: FASTCALL1 63 R6 L5; 
+      26 [-]: GETIMPORT R5 3; var5 = 0x64FB1586
+      27 [-]: CALL R5 2 2  ; var5 = var5(var6)
+L 5:  28 [-]: MOVE R3 R5   ; var3 = var5
+      29 [-]: GETIMPORT R5 5; var5 = 0x40CF16A9
+      30 [-]: FASTCALL1 63 R5 L6; 
+      31 [-]: GETIMPORT R4 3; var4 = 0x64FB1586
+      32 [-]: CALL R4 2 2  ; var4 = var4(var5)
+L 6:  33 [-]: CONCAT R2 R3 R4; var2 = var3 .. var4
+      34 [-]: GETIMPORT R4 7; var4 = _T
+      35 [-]: GETTABLE R3 R4 R2; var3 = var4[var2]
+      36 [-]: JUMPXEQKB R3 1 L7 NOT; 
+      37 [-]: GETIMPORT R3 7; var3 = _T
+      38 [-]: LOADNIL R4   ; var4 = nil
+      39 [-]: SETTABLE R4 R3 R2; var4[var3] = var2
+      40 [-]: LOADB R3 1   ; var3 = true
+      41 [-]: RETURN R3 1  ; 
+L 7:  42 [-]: GETIMPORT R3 7; var3 = _T
+      43 [-]: LOADNIL R4   ; var4 = nil
+      44 [-]: SETTABLE R4 R3 R2; var4[var3] = var2
+L 8:  45 [-]: LOADB R2 0   ; var2 = false
+      46 [-]: RETURN R2 1  ; 
 
 
 

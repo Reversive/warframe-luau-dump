@@ -79,7 +79,7 @@ L 2:  12 [-]: LOADN R1 15  ; var1 = 15
 ; Max Stack Size:  10
 
        0 [-]: GETUPVAL R1 0; var1 = upvalues[0]
-       1 [-]: FASTCALL1 62 R0 L0; 
+       1 [-]: FASTCALL1 64 R0 L0; 
        2 [-]: MOVE R3 R0   ; var3 = var0
        3 [-]: GETIMPORT R2 1; var2 = 0x7B998233
        4 [-]: CALL R2 2 2  ; var2 = var2(var3)
@@ -88,7 +88,7 @@ L 0:   5 [-]: JUMPIF R2 L2 ; goto L2 if var2
        7 [-]: CALL R2 2 2  ; var2 = var2(var3)
        8 [-]: NAMECALL R3 R2 K3; var4 = var2; var3 = var2[0x2303A280]
        9 [-]: CALL R3 2 2  ; var3 = var3(var4)
-      10 [-]: FASTCALL1 62 R3 L1; 
+      10 [-]: FASTCALL1 64 R3 L1; 
       11 [-]: MOVE R5 R3   ; var5 = var3
       12 [-]: GETIMPORT R4 1; var4 = 0x7B998233
       13 [-]: CALL R4 2 2  ; var4 = var4(var5)
@@ -162,7 +162,7 @@ L 5:  31 [-]: GETIMPORT R1 8; var1 = _T["AbilityLevelQueryParms"]["Modded"]
        3 [-]: CALL R3 2 2  ; var3 = var3(var4)
        4 [-]: NEWCLOSURE R4 P0; 
        5 [-]: CAPTURE VAL R1; 
-       6 [-]: FASTCALL1 62 R3 L0; 
+       6 [-]: FASTCALL1 64 R3 L0; 
        7 [-]: MOVE R6 R3   ; var6 = var3
        8 [-]: GETIMPORT R5 3; var5 = 0x7B998233
        9 [-]: CALL R5 2 2  ; var5 = var5(var6)
@@ -194,13 +194,13 @@ L 2:  31 [-]: MOVE R11 R4  ; var11 = var4
       35 [-]: MOVE R3 R10  ; var3 = var10
       36 [-]: JUMP L4      ; goto L4
 L 3:  37 [-]: FORGLOOP R6 L2 2 [inext]; 
-L 4:  38 [-]: FASTCALL1 62 R3 L5; 
+L 4:  38 [-]: FASTCALL1 64 R3 L5; 
       39 [-]: MOVE R6 R3   ; var6 = var3
       40 [-]: GETIMPORT R5 3; var5 = 0x7B998233
       41 [-]: CALL R5 2 2  ; var5 = var5(var6)
 L 5:  42 [-]: JUMPIFNOT R5 L8; goto L8 if not var5
       43 [-]: GETIMPORT R6 12; var6 = _T["supportDronesAbility"]
-      44 [-]: FASTCALL1 62 R6 L6; 
+      44 [-]: FASTCALL1 64 R6 L6; 
       45 [-]: GETIMPORT R5 3; var5 = 0x7B998233
       46 [-]: CALL R5 2 2  ; var5 = var5(var6)
 L 6:  47 [-]: JUMPIF R5 L8 ; goto L8 if var5
@@ -208,7 +208,7 @@ L 6:  47 [-]: JUMPIF R5 L8 ; goto L8 if var5
       49 [-]: NAMECALL R8 R1 K13; var9 = var1; var8 = var1[0x388577D5]
       50 [-]: CALL R8 2 2  ; var8 = var8(var9)
       51 [-]: GETTABLE R6 R7 R8; var6 = var7[var8]
-      52 [-]: FASTCALL1 62 R6 L7; 
+      52 [-]: FASTCALL1 64 R6 L7; 
       53 [-]: GETIMPORT R5 3; var5 = 0x7B998233
       54 [-]: CALL R5 2 2  ; var5 = var5(var6)
 L 7:  55 [-]: JUMPIF R5 L8 ; goto L8 if var5
@@ -219,7 +219,7 @@ L 7:  55 [-]: JUMPIF R5 L8 ; goto L8 if var5
       60 [-]: CALL R5 0 1  ; var5(var6, ...)
       61 [-]: LOADB R5 0   ; var5 = false
       62 [-]: RETURN R5 1  ; 
-L 8:  63 [-]: FASTCALL1 62 R3 L9; 
+L 8:  63 [-]: FASTCALL1 64 R3 L9; 
       64 [-]: MOVE R6 R3   ; var6 = var3
       65 [-]: GETIMPORT R5 3; var5 = 0x7B998233
       66 [-]: CALL R5 2 2  ; var5 = var5(var6)
@@ -250,11 +250,11 @@ L10:  71 [-]: LOADB R5 1   ; var5 = true
        9 [-]: CALL R4 2 2  ; var4 = var4(var5)
       10 [-]: LOADN R6 5   ; var6 = 5
       11 [-]: MUL R5 R6 R4 ; var5 = var6 * var4
-      12 [-]: JUMPIFEQ R0 R1 L0; goto L0 if var0 == var16778779
+      12 [-]: JUMPIFEQ R0 R1 L0; goto L0 if var0 == var16778758
       13 [-]: LOADB R6 0 +1; var6 = false
 L 0:  14 [-]: LOADB R6 1   ; var6 = true
 L 1:  15 [-]: GETIMPORT R8 6; var8 = _T["supportDronesAbility"]
-      16 [-]: FASTCALL1 62 R8 L2; 
+      16 [-]: FASTCALL1 64 R8 L2; 
       17 [-]: GETIMPORT R7 8; var7 = 0x7B998233
       18 [-]: CALL R7 2 2  ; var7 = var7(var8)
 L 2:  19 [-]: JUMPIFNOT R7 L3; goto L3 if not var7
@@ -265,7 +265,7 @@ L 3:  23 [-]: NAMECALL R7 R0 K10; var8 = var0; var7 = var0[0x388577D5]
       24 [-]: CALL R7 2 2  ; var7 = var7(var8)
       25 [-]: GETIMPORT R10 6; var10 = _T["supportDronesAbility"]
       26 [-]: GETTABLE R9 R10 R7; var9 = var10[var7]
-      27 [-]: FASTCALL1 62 R9 L4; 
+      27 [-]: FASTCALL1 64 R9 L4; 
       28 [-]: GETIMPORT R8 8; var8 = 0x7B998233
       29 [-]: CALL R8 2 2  ; var8 = var8(var9)
 L 4:  30 [-]: JUMPIF R8 L5 ; goto L5 if var8
@@ -375,7 +375,7 @@ L11: 130 [-]: GETIMPORT R17 57; var17 = 0x608DD73F
      134 [-]: GETIMPORT R16 34; var16 = 0x0469F296
      135 [-]: LOADK R17 K60; var17 = "BlockAttack"
      136 [-]: CALL R16 2 2 ; var16 = var16(var17)
-L12: 137 [-]: FASTCALL1 62 R0 L13; 
+L12: 137 [-]: FASTCALL1 64 R0 L13; 
      138 [-]: MOVE R18 R0  ; var18 = var0
      139 [-]: GETIMPORT R17 8; var17 = 0x7B998233
      140 [-]: CALL R17 2 2 ; var17 = var17(var18)
@@ -383,7 +383,7 @@ L13: 141 [-]: JUMPIF R17 L25; goto L25 if var17
      142 [-]: NAMECALL R17 R0 K61; var18 = var0; var17 = var0[0x2047CFE7]
      143 [-]: CALL R17 2 2 ; var17 = var17(var18)
      144 [-]: JUMPIF R17 L25; goto L25 if var17
-     145 [-]: FASTCALL1 62 R1 L14; 
+     145 [-]: FASTCALL1 64 R1 L14; 
      146 [-]: MOVE R18 R1  ; var18 = var1
      147 [-]: GETIMPORT R17 8; var17 = 0x7B998233
      148 [-]: CALL R17 2 2 ; var17 = var17(var18)
@@ -391,7 +391,7 @@ L14: 149 [-]: JUMPIF R17 L25; goto L25 if var17
      150 [-]: NAMECALL R17 R1 K61; var18 = var1; var17 = var1[0x2047CFE7]
      151 [-]: CALL R17 2 2 ; var17 = var17(var18)
      152 [-]: JUMPIF R17 L25; goto L25 if var17
-     153 [-]: FASTCALL1 62 R2 L15; 
+     153 [-]: FASTCALL1 64 R2 L15; 
      154 [-]: MOVE R18 R2  ; var18 = var2
      155 [-]: GETIMPORT R17 8; var17 = 0x7B998233
      156 [-]: CALL R17 2 2 ; var17 = var17(var18)
@@ -402,7 +402,7 @@ L15: 157 [-]: JUMPIF R17 L25; goto L25 if var17
      161 [-]: GETIMPORT R18 6; var18 = _T["supportDronesAbility"]
      162 [-]: GETTABLE R17 R18 R7; var17 = var18[var7]
      163 [-]: LOADN R18 0  ; var18 = 0
-     164 [-]: JUMPIFNOTLT R18 R17 L25; goto L25 if var18 >= var1773902
+     164 [-]: JUMPIFNOTLT R18 R17 L25; goto L25 if var18 >= var1773857
      165 [-]: GETIMPORT R17 27; var17 = 0x89326C93
      166 [-]: NAMECALL R17 R17 K28; var18 = var17; var17 = var17[0x18D05D30]
      167 [-]: CALL R17 2 2 ; var17 = var17(var18)
@@ -413,7 +413,7 @@ L15: 157 [-]: JUMPIF R17 L25; goto L25 if var17
      172 [-]: NAMECALL R18 R10 K63; var19 = var10; var18 = var10[0x28B6EB3C]
      173 [-]: CALL R18 3 2 ; var18 = var18(var19, var20)
      174 [-]: LOADK R19 K29; var19 = 10000000
-     175 [-]: JUMPIFNOTLT R18 R19 L16; goto L16 if var18 >= var136199
+     175 [-]: JUMPIFNOTLT R18 R19 L16; goto L16 if var18 >= var136252
      176 [-]: GETUPVAL R20 2; var20 = upvalues[2]
      177 [-]: NAMECALL R18 R10 K64; var19 = var10; var18 = var10[0x78D582B0]
      178 [-]: CALL R18 3 1 ; var18(var19, var20)
@@ -437,14 +437,14 @@ L16: 184 [-]: GETIMPORT R18 66; var18 = 0x6C97A788[0x733FC736]
      196 [-]: MOVE R21 R19 ; var21 = var19
      197 [-]: CALL R20 2 4 ; var20, var21, var22 = var20(var21)
      198 [-]: FORGPREP_INEXT R20 L19; 
-L17: 199 [-]: FASTCALL1 62 R24 L18; 
+L17: 199 [-]: FASTCALL1 64 R24 L18; 
      200 [-]: MOVE R26 R24 ; var26 = var24
      201 [-]: GETIMPORT R25 8; var25 = 0x7B998233
      202 [-]: CALL R25 2 2 ; var25 = var25(var26)
 L18: 203 [-]: JUMPIF R25 L19; goto L19 if var25
      204 [-]: NAMECALL R25 R24 K73; var26 = var24; var25 = var24[0xF5527472]
      205 [-]: CALL R25 2 2 ; var25 = var25(var26)
-     206 [-]: JUMPIFNOTEQ R25 R0 L19; goto L19 if var25 ~= var1477974341
+     206 [-]: JUMPIFNOTEQ R25 R0 L19; goto L19 if var25 ~= var1477974348
      207 [-]: NAMECALL R25 R24 K74; var26 = var24; var25 = var24[0x1FC4DA58]
      208 [-]: CALL R25 2 2 ; var25 = var25(var26)
      209 [-]: JUMPIF R25 L19; goto L19 if var25
@@ -455,7 +455,7 @@ L18: 203 [-]: JUMPIF R25 L19; goto L19 if var25
 L19: 214 [-]: FORGLOOP R20 L17 2 [inext]; 
      215 [-]: GETIMPORT R21 6; var21 = _T["supportDronesAbility"]
      216 [-]: GETTABLE R20 R21 R7; var20 = var21[var7]
-     217 [-]: JUMPIFNOTLT R17 R20 L21; goto L21 if var17 >= var85004879
+     217 [-]: JUMPIFNOTLT R17 R20 L21; goto L21 if var17 >= var85004810
      218 [-]: FASTCALL2K 18 R17 K76 L20; 
      219 [-]: MOVE R23 R17 ; var23 = var17
      220 [-]: LOADK R24 K76; var24 = 0
@@ -475,10 +475,10 @@ L21: 225 [-]: NAMECALL R20 R18 K81; var21 = var18; var20 = var18[0xE4E8D5F7]
      234 [-]: NAMECALL R20 R2 K82; var21 = var2; var20 = var2[0x3CC932F9]
      235 [-]: CALL R20 5 1 ; var20(var21, var22, var23, var24)
 L22: 236 [-]: LENGTH R20 R13; var20 = #var13
-     237 [-]: JUMPIFNOTLT R17 R20 L24; goto L24 if var17 >= var756094504
+     237 [-]: JUMPIFNOTLT R17 R20 L24; goto L24 if var17 >= var756094472
      238 [-]: ADDK R22 R17 K45; var22 = var17 + 1
      239 [-]: GETTABLE R21 R13 R22; var21 = var13[var22]
-     240 [-]: FASTCALL1 62 R21 L23; 
+     240 [-]: FASTCALL1 64 R21 L23; 
      241 [-]: GETIMPORT R20 8; var20 = 0x7B998233
      242 [-]: CALL R20 2 2 ; var20 = var20(var21)
 L23: 243 [-]: JUMPIF R20 L24; goto L24 if var20
@@ -505,7 +505,7 @@ L23: 243 [-]: JUMPIF R20 L24; goto L24 if var20
      264 [-]: LENGTH R21 R13; var21 = #var13
      265 [-]: CALL R20 2 1 ; var20(var21)
 L24: 266 [-]: GETIMPORT R17 93; var17 = 0xCBD666E1
-     267 [-]: LOADK R18 K94; var18 = 0.10000000000000001
+     267 [-]: LOADK R18 K94; var18 = 0.10000000149011612
      268 [-]: CALL R17 2 1 ; var17(var18)
      269 [-]: JUMPBACK L12 ; goto L12
 L25: 270 [-]: JUMPIFNOT R6 L26; goto L26 if not var6
@@ -517,7 +517,7 @@ L25: 270 [-]: JUMPIFNOT R6 L26; goto L26 if not var6
      276 [-]: LOADN R20 0  ; var20 = 0
      277 [-]: CALL R17 4 1 ; var17(var18, var19, var20)
      278 [-]: JUMP L28     ; goto L28
-L26: 279 [-]: FASTCALL1 62 R0 L27; 
+L26: 279 [-]: FASTCALL1 64 R0 L27; 
      280 [-]: MOVE R18 R0  ; var18 = var0
      281 [-]: GETIMPORT R17 8; var17 = 0x7B998233
      282 [-]: CALL R17 2 2 ; var17 = var17(var18)
@@ -539,7 +539,7 @@ L29: 296 [-]: LOADN R19 1  ; var19 = 1
      298 [-]: LOADN R18 1  ; var18 = 1
      299 [-]: FORNPREP R17 L33; nforprep start - [escape at L33] -- var17 = iterator
 L30: 300 [-]: GETTABLE R21 R13 R19; var21 = var13[var19]
-     301 [-]: FASTCALL1 62 R21 L31; 
+     301 [-]: FASTCALL1 64 R21 L31; 
      302 [-]: GETIMPORT R20 8; var20 = 0x7B998233
      303 [-]: CALL R20 2 2 ; var20 = var20(var21)
 L31: 304 [-]: JUMPIF R20 L32; goto L32 if var20
@@ -547,14 +547,14 @@ L31: 304 [-]: JUMPIF R20 L32; goto L32 if var20
      306 [-]: NAMECALL R20 R20 K89; var21 = var20; var20 = var20[0xA2880940]
      307 [-]: CALL R20 2 1 ; var20(var21)
 L32: 308 [-]: FORNLOOP R17 L30; nforloop end - iterate + goto L30
-L33: 309 [-]: FASTCALL1 62 R11 L34; 
+L33: 309 [-]: FASTCALL1 64 R11 L34; 
      310 [-]: MOVE R18 R11 ; var18 = var11
      311 [-]: GETIMPORT R17 8; var17 = 0x7B998233
      312 [-]: CALL R17 2 2 ; var17 = var17(var18)
 L34: 313 [-]: JUMPIF R17 L35; goto L35 if var17
      314 [-]: NAMECALL R17 R11 K95; var18 = var11; var17 = var11[0x1DB57C6B]
      315 [-]: CALL R17 2 1 ; var17(var18)
-L35: 316 [-]: FASTCALL1 62 R15 L36; 
+L35: 316 [-]: FASTCALL1 64 R15 L36; 
      317 [-]: MOVE R18 R15 ; var18 = var15
      318 [-]: GETIMPORT R17 8; var17 = 0x7B998233
      319 [-]: CALL R17 2 2 ; var17 = var17(var18)
@@ -599,7 +599,7 @@ L 3:  14 [-]: GETUPVAL R4 1; var4 = upvalues[1]
       22 [-]: SETTABLEKS R0 R5 K5; var0["suit"] = var5
       23 [-]: GETUPVAL R5 2; var5 = upvalues[2]
       24 [-]: SETTABLEKS R4 R5 K6; var4["numDrones"] = var5
-      25 [-]: FASTCALL1 62 R2 L4; 
+      25 [-]: FASTCALL1 64 R2 L4; 
       26 [-]: MOVE R6 R2   ; var6 = var2
       27 [-]: GETIMPORT R5 8; var5 = 0x7B998233
       28 [-]: CALL R5 2 2  ; var5 = var5(var6)
@@ -633,7 +633,7 @@ L 5:  31 [-]: GETIMPORT R7 10; var7 = 0x0469F296
 
        0 [-]: NAMECALL R2 R0 K0; var3 = var0; var2 = var0[0x5163741E]
        1 [-]: CALL R2 2 2  ; var2 = var2(var3)
-       2 [-]: FASTCALL1 62 R2 L0; 
+       2 [-]: FASTCALL1 64 R2 L0; 
        3 [-]: MOVE R4 R2   ; var4 = var2
        4 [-]: GETIMPORT R3 2; var3 = 0x7B998233
        5 [-]: CALL R3 2 2  ; var3 = var3(var4)
@@ -652,7 +652,7 @@ L 1:   8 [-]: GETIMPORT R5 4; var5 = 0x6687F6E0
       18 [-]: LOADN R6 1   ; var6 = 1
       19 [-]: FORNPREP R5 L5; nforprep start - [escape at L5] -- var5 = iterator
 L 2:  20 [-]: GETTABLE R8 R3 R7; var8 = var3[var7]
-      21 [-]: FASTCALL1 62 R8 L3; 
+      21 [-]: FASTCALL1 64 R8 L3; 
       22 [-]: MOVE R10 R8  ; var10 = var8
       23 [-]: GETIMPORT R9 2; var9 = 0x7B998233
       24 [-]: CALL R9 2 2  ; var9 = var9(var10)
@@ -680,14 +680,14 @@ L 3:  25 [-]: JUMPIF R9 L4 ; goto L4 if var9
       46 [-]: NAMECALL R9 R8 K20; var10 = var8; var9 = var8[0x3AE45EC0]
       47 [-]: CALL R9 2 1  ; var9(var10)
 L 4:  48 [-]: FORNLOOP R5 L2; nforloop end - iterate + goto L2
-L 5:  49 [-]: FASTCALL1 62 R4 L6; 
+L 5:  49 [-]: FASTCALL1 64 R4 L6; 
       50 [-]: MOVE R6 R4   ; var6 = var4
       51 [-]: GETIMPORT R5 2; var5 = 0x7B998233
       52 [-]: CALL R5 2 2  ; var5 = var5(var6)
 L 6:  53 [-]: JUMPIF R5 L11; goto L11 if var5
       54 [-]: LENGTH R5 R3 ; var5 = #var3
       55 [-]: LOADN R6 1   ; var6 = 1
-      56 [-]: JUMPIFNOTLT R6 R5 L7; goto L7 if var6 >= var591182
+      56 [-]: JUMPIFNOTLT R6 R5 L7; goto L7 if var6 >= var591137
       57 [-]: GETIMPORT R5 9; var5 = 0x89326C93
       58 [-]: GETIMPORT R7 11; var7 = 0x4268B887
       59 [-]: NAMECALL R8 R4 K21; var9 = var4; var8 = var4[0xEF8E8F7F]
@@ -697,7 +697,7 @@ L 6:  53 [-]: JUMPIF R5 L11; goto L11 if var5
       63 [-]: NAMECALL R5 R5 K15; var6 = var5; var5 = var5[0x05909209]
       64 [-]: CALL R5 6 1  ; var5(var6, var7, var8, var9, var10)
 L 7:  65 [-]: GETIMPORT R6 24; var6 = _T["supportDronesAbility"]
-      66 [-]: FASTCALL1 62 R6 L8; 
+      66 [-]: FASTCALL1 64 R6 L8; 
       67 [-]: GETIMPORT R5 2; var5 = 0x7B998233
       68 [-]: CALL R5 2 2  ; var5 = var5(var6)
 L 8:  69 [-]: JUMPIF R5 L11; goto L11 if var5
@@ -705,7 +705,7 @@ L 8:  69 [-]: JUMPIF R5 L11; goto L11 if var5
       71 [-]: CALL R5 2 2  ; var5 = var5(var6)
       72 [-]: GETIMPORT R8 24; var8 = _T["supportDronesAbility"]
       73 [-]: GETTABLE R7 R8 R5; var7 = var8[var5]
-      74 [-]: FASTCALL1 62 R7 L9; 
+      74 [-]: FASTCALL1 64 R7 L9; 
       75 [-]: GETIMPORT R6 2; var6 = 0x7B998233
       76 [-]: CALL R6 2 2  ; var6 = var6(var7)
 L 9:  77 [-]: JUMPIF R6 L11; goto L11 if var6
@@ -716,11 +716,11 @@ L 9:  77 [-]: JUMPIF R6 L11; goto L11 if var6
       82 [-]: CALL R6 0 2  ; var6 = var6(var7, ...)
       83 [-]: LENGTH R7 R6 ; var7 = #var6
       84 [-]: LOADN R8 0   ; var8 = 0
-      85 [-]: JUMPIFNOTLT R8 R7 L11; goto L11 if var8 >= var395045
+      85 [-]: JUMPIFNOTLT R8 R7 L11; goto L11 if var8 >= var395060
       86 [-]: GETTABLEN R7 R6 1; var7 = var6[1]
       87 [-]: GETIMPORT R8 24; var8 = _T["supportDronesAbility"]
       88 [-]: SETTABLE R7 R8 R5; var7[var8] = var5
-      89 [-]: JUMPIFNOTEQ R2 R4 L10; goto L10 if var2 ~= var1837134
+      89 [-]: JUMPIFNOTEQ R2 R4 L10; goto L10 if var2 ~= var1837089
       90 [-]: GETIMPORT R8 28; var8 = _T["SetAbilityTimer"]
       91 [-]: GETIMPORT R9 4; var9 = 0x6687F6E0
       92 [-]: NAMECALL R9 R9 K5; var10 = var9; var9 = var9[0xCDE10C4A]

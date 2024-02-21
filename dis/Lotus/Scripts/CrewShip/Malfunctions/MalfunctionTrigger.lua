@@ -43,11 +43,11 @@ L 1:   7 [-]: GETIMPORT R2 5; var2 = _T["RJFireThrottle"]
 L 2:  14 [-]: GETIMPORT R2 9; var2 = 0x55156FF7
       15 [-]: CALL R2 1 2  ; var2 = var2()
       16 [-]: GETIMPORT R3 5; var3 = _T["RJFireThrottle"]
-      17 [-]: JUMPIFNOTLE R3 R2 L5; goto L5 if var3 > var1031
+      17 [-]: JUMPIFNOTLE R3 R2 L5; goto L5 if var3 > var1084
       18 [-]: GETUPVAL R4 0; var4 = upvalues[0]
       19 [-]: GETTABLEKS R3 R4 K10; var3 = var4[0x81E6C00C]
       20 [-]: CALL R3 1 2  ; var3 = var3()
-      21 [-]: FASTCALL1 62 R3 L3; 
+      21 [-]: FASTCALL1 64 R3 L3; 
       22 [-]: MOVE R5 R3   ; var5 = var3
       23 [-]: GETIMPORT R4 12; var4 = 0x7B998233
       24 [-]: CALL R4 2 2  ; var4 = var4(var5)
@@ -57,7 +57,7 @@ L 3:  25 [-]: JUMPIF R4 L5 ; goto L5 if var4
       28 [-]: CALL R7 2 0  ; var7, ... = var7(var8)
       29 [-]: NAMECALL R4 R3 K16; var5 = var3; var4 = var3[0xB5530957]
       30 [-]: CALL R4 0 2  ; var4 = var4(var5, ...)
-      31 [-]: FASTCALL1 62 R4 L4; 
+      31 [-]: FASTCALL1 64 R4 L4; 
       32 [-]: MOVE R6 R4   ; var6 = var4
       33 [-]: GETIMPORT R5 12; var5 = 0x7B998233
       34 [-]: CALL R5 2 2  ; var5 = var5(var6)

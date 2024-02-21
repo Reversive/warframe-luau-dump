@@ -61,21 +61,21 @@
 ; Max Stack Size:  4
 
        0 [-]: GETUPVAL R1 0; var1 = upvalues[0]
-       1 [-]: FASTCALL1 62 R1 L0; 
+       1 [-]: FASTCALL1 64 R1 L0; 
        2 [-]: GETIMPORT R0 1; var0 = 0x7B998233
        3 [-]: CALL R0 2 2  ; var0 = var0(var1)
 L 0:   4 [-]: JUMPIFNOT R0 L3; goto L3 if not var0
        5 [-]: GETIMPORT R0 3; var0 = 0x89326C93
        6 [-]: NAMECALL R0 R0 K4; var1 = var0; var0 = var0[0x78298275]
        7 [-]: CALL R0 2 2  ; var0 = var0(var1)
-       8 [-]: FASTCALL1 62 R0 L1; 
+       8 [-]: FASTCALL1 64 R0 L1; 
        9 [-]: MOVE R2 R0   ; var2 = var0
       10 [-]: GETIMPORT R1 1; var1 = 0x7B998233
       11 [-]: CALL R1 2 2  ; var1 = var1(var2)
 L 1:  12 [-]: JUMPIF R1 L3 ; goto L3 if var1
       13 [-]: NAMECALL R1 R0 K5; var2 = var0; var1 = var0[0xDE321E6F]
       14 [-]: CALL R1 2 2  ; var1 = var1(var2)
-      15 [-]: FASTCALL1 62 R1 L2; 
+      15 [-]: FASTCALL1 64 R1 L2; 
       16 [-]: MOVE R3 R1   ; var3 = var1
       17 [-]: GETIMPORT R2 1; var2 = 0x7B998233
       18 [-]: CALL R2 2 2  ; var2 = var2(var3)
@@ -100,21 +100,21 @@ L 3:  23 [-]: RETURN R0 0  ;
        4 [-]: CALL R0 1 2  ; var0 = var0()
        5 [-]: SETUPVAL R0 1; upvalues[0] = var1
        6 [-]: GETUPVAL R1 2; var1 = upvalues[2]
-       7 [-]: FASTCALL1 62 R1 L0; 
+       7 [-]: FASTCALL1 64 R1 L0; 
        8 [-]: GETIMPORT R0 3; var0 = 0x7B998233
        9 [-]: CALL R0 2 2  ; var0 = var0(var1)
 L 0:  10 [-]: JUMPIFNOT R0 L3; goto L3 if not var0
       11 [-]: GETIMPORT R0 5; var0 = 0x89326C93
       12 [-]: NAMECALL R0 R0 K6; var1 = var0; var0 = var0[0x78298275]
       13 [-]: CALL R0 2 2  ; var0 = var0(var1)
-      14 [-]: FASTCALL1 62 R0 L1; 
+      14 [-]: FASTCALL1 64 R0 L1; 
       15 [-]: MOVE R2 R0   ; var2 = var0
       16 [-]: GETIMPORT R1 3; var1 = 0x7B998233
       17 [-]: CALL R1 2 2  ; var1 = var1(var2)
 L 1:  18 [-]: JUMPIF R1 L3 ; goto L3 if var1
       19 [-]: NAMECALL R1 R0 K7; var2 = var0; var1 = var0[0xDE321E6F]
       20 [-]: CALL R1 2 2  ; var1 = var1(var2)
-      21 [-]: FASTCALL1 62 R1 L2; 
+      21 [-]: FASTCALL1 64 R1 L2; 
       22 [-]: MOVE R3 R1   ; var3 = var1
       23 [-]: GETIMPORT R2 3; var2 = 0x7B998233
       24 [-]: CALL R2 2 2  ; var2 = var2(var3)
@@ -123,7 +123,7 @@ L 2:  25 [-]: JUMPIF R2 L3 ; goto L3 if var2
       27 [-]: CALL R2 2 2  ; var2 = var2(var3)
       28 [-]: SETUPVAL R2 2; upvalues[2] = var2
 L 3:  29 [-]: GETUPVAL R1 2; var1 = upvalues[2]
-      30 [-]: FASTCALL1 62 R1 L4; 
+      30 [-]: FASTCALL1 64 R1 L4; 
       31 [-]: GETIMPORT R0 3; var0 = 0x7B998233
       32 [-]: CALL R0 2 2  ; var0 = var0(var1)
 L 4:  33 [-]: JUMPIF R0 L5 ; goto L5 if var0
@@ -137,7 +137,7 @@ L 4:  33 [-]: JUMPIF R0 L5 ; goto L5 if var0
       41 [-]: NAMECALL R0 R0 K9; var1 = var0; var0 = var0[0xA3EF5D65]
       42 [-]: CALL R0 4 1  ; var0(var1, var2, var3)
 L 5:  43 [-]: GETUPVAL R1 0; var1 = upvalues[0]
-      44 [-]: FASTCALL1 62 R1 L6; 
+      44 [-]: FASTCALL1 64 R1 L6; 
       45 [-]: GETIMPORT R0 3; var0 = 0x7B998233
       46 [-]: CALL R0 2 2  ; var0 = var0(var1)
 L 6:  47 [-]: JUMPIF R0 L10; goto L10 if var0
@@ -152,13 +152,13 @@ L 6:  47 [-]: JUMPIF R0 L10; goto L10 if var0
       56 [-]: CALL R1 5 1  ; var1(var2, var3, var4, var5)
       57 [-]: GETIMPORT R1 12; var1 = 0xAE91E43B
       58 [-]: LOADK R3 K15 ; var3 = "Multiplier.MultInteger"
-      59 [-]: LOADN R4 36  ; var4 = 36
+      59 [-]: LOADN R4 38  ; var4 = 38
       60 [-]: MOVE R5 R0   ; var5 = var0
       61 [-]: NAMECALL R1 R1 K14; var2 = var1; var1 = var1[0x67BC869F]
       62 [-]: CALL R1 5 1  ; var1(var2, var3, var4, var5)
       63 [-]: GETIMPORT R1 12; var1 = 0xAE91E43B
       64 [-]: LOADK R3 K16 ; var3 = "Multiplier.MultDecimal"
-      65 [-]: LOADN R4 36  ; var4 = 36
+      65 [-]: LOADN R4 38  ; var4 = 38
       66 [-]: MOVE R5 R0   ; var5 = var0
       67 [-]: NAMECALL R1 R1 K14; var2 = var1; var1 = var1[0x67BC869F]
       68 [-]: CALL R1 5 1  ; var1(var2, var3, var4, var5)
@@ -174,22 +174,21 @@ L 7:  76 [-]: GETUPVAL R5 0; var5 = upvalues[0]
       78 [-]: FASTCALL2 18 R3 R4 L8; 
       79 [-]: GETIMPORT R2 22; var2 = 0x5BCED4C4[0xB62ECFE0]
       80 [-]: CALL R2 3 2  ; var2 = var2(var3, var4)
-L 8:  81 [-]: DIVK R1 R2 K17; var1 = var2 / 255
-      82 [-]: GETIMPORT R3 25; var3 = 0x0032441C
+L 8:       82 [-]: GETIMPORT R3 25; var3 = 0x0032441C
       83 [-]: GETTABLEKS R2 R3 K26; var2 = var3["UIColor_Black"]
-      84 [-]: LOADK R3 K27 ; var3 = 0.34999999999999998
-      85 [-]: JUMPIFNOTLT R1 R3 L9; goto L9 if var1 >= var1639246
+      84 [-]: LOADK R3 K27 ; var3 = 0.34999999403953552
+      85 [-]: JUMPIFNOTLT R1 R3 L9; goto L9 if var1 >= var1639201
       86 [-]: GETIMPORT R3 25; var3 = 0x0032441C
       87 [-]: GETTABLEKS R2 R3 K28; var2 = var3["UIColor_White"]
 L 9:  88 [-]: GETIMPORT R3 12; var3 = 0xAE91E43B
       89 [-]: LOADK R5 K29 ; var5 = "Multiplier.MultShadowInteger"
-      90 [-]: LOADN R6 36  ; var6 = 36
+      90 [-]: LOADN R6 38  ; var6 = 38
       91 [-]: MOVE R7 R2   ; var7 = var2
       92 [-]: NAMECALL R3 R3 K14; var4 = var3; var3 = var3[0x67BC869F]
       93 [-]: CALL R3 5 1  ; var3(var4, var5, var6, var7)
       94 [-]: GETIMPORT R3 12; var3 = 0xAE91E43B
       95 [-]: LOADK R5 K30 ; var5 = "Multiplier.MultShadowDecimal"
-      96 [-]: LOADN R6 36  ; var6 = 36
+      96 [-]: LOADN R6 38  ; var6 = 38
       97 [-]: MOVE R7 R2   ; var7 = var2
       98 [-]: NAMECALL R3 R3 K14; var4 = var3; var3 = var3[0x67BC869F]
       99 [-]: CALL R3 5 1  ; var3(var4, var5, var6, var7)
@@ -234,17 +233,18 @@ L10: 100 [-]: RETURN R0 0  ;
 ; Is_vararg:       0
 ; Max Stack Size:  4
 
-       0 [-]: GETIMPORT R2 1; var2 = 0x03F57322
+       0 [-]: FASTCALL1 62 R0 L0; 
        1 [-]: MOVE R3 R0   ; var3 = var0
-       2 [-]: CALL R2 2 2  ; var2 = var2(var3)
-       3 [-]: SETUPVAL R2 0; upvalues[2] = var0
-       4 [-]: GETUPVAL R2 0; var2 = upvalues[0]
-       5 [-]: SETUPVAL R2 1; upvalues[2] = var1
-       6 [-]: JUMPXEQKNIL R1 L0 NOT; 
-       7 [-]: LOADB R2 0 +1; var2 = false
-L 0:   8 [-]: LOADB R2 1   ; var2 = true
-L 1:   9 [-]: SETUPVAL R2 2; upvalues[2] = var2
-      10 [-]: RETURN R0 0  ; 
+       2 [-]: GETIMPORT R2 1; var2 = 0x03F57322
+       3 [-]: CALL R2 2 2  ; var2 = var2(var3)
+L 0:   4 [-]: SETUPVAL R2 0; upvalues[2] = var0
+       5 [-]: GETUPVAL R2 0; var2 = upvalues[0]
+       6 [-]: SETUPVAL R2 1; upvalues[2] = var1
+       7 [-]: JUMPXEQKNIL R1 L1 NOT; 
+       8 [-]: LOADB R2 0 +1; var2 = false
+L 1:   9 [-]: LOADB R2 1   ; var2 = true
+L 2:  10 [-]: SETUPVAL R2 2; upvalues[2] = var2
+      11 [-]: RETURN R0 0  ; 
 
 
 ; Name:            
@@ -254,11 +254,12 @@ L 1:   9 [-]: SETUPVAL R2 2; upvalues[2] = var2
 ; Is_vararg:       0
 ; Max Stack Size:  3
 
-       0 [-]: GETIMPORT R1 1; var1 = 0x03F57322
+       0 [-]: FASTCALL1 62 R0 L0; 
        1 [-]: MOVE R2 R0   ; var2 = var0
-       2 [-]: CALL R1 2 2  ; var1 = var1(var2)
-       3 [-]: SETUPVAL R1 0; upvalues[1] = var0
-       4 [-]: RETURN R0 0  ; 
+       2 [-]: GETIMPORT R1 1; var1 = 0x03F57322
+       3 [-]: CALL R1 2 2  ; var1 = var1(var2)
+L 0:   4 [-]: SETUPVAL R1 0; upvalues[1] = var0
+       5 [-]: RETURN R0 0  ; 
 
 
 ; Name:            
@@ -276,7 +277,7 @@ L 1:   9 [-]: SETUPVAL R2 2; upvalues[2] = var2
        5 [-]: MOVE R1 R2   ; var1 = var2
        6 [-]: MOVE R2 R0   ; var2 = var0
        7 [-]: LOADN R3 9   ; var3 = 9
-       8 [-]: JUMPIFNOTLT R3 R1 L1; goto L1 if var3 >= var50333515
+       8 [-]: JUMPIFNOTLT R3 R1 L1; goto L1 if var3 >= var50333501
        9 [-]: FASTCALL1 7 R0 L0; 
       10 [-]: MOVE R4 R0   ; var4 = var0
       11 [-]: GETIMPORT R3 5; var3 = 0x5BCED4C4[0x99675E23]
@@ -288,76 +289,76 @@ L 1:  15 [-]: FASTCALL1 12 R0 L2;
       17 [-]: GETIMPORT R3 7; var3 = 0x5BCED4C4[0x55F27C30]
       18 [-]: CALL R3 2 2  ; var3 = var3(var4)
 L 2:  19 [-]: MOVE R2 R3   ; var2 = var3
-L 3:  20 [-]: GETIMPORT R3 9; var3 = 0x64FB1586
+L 3:  20 [-]: FASTCALL1 63 R2 L4; 
       21 [-]: MOVE R4 R2   ; var4 = var2
-      22 [-]: CALL R3 2 2  ; var3 = var3(var4)
-      23 [-]: MOVE R2 R3   ; var2 = var3
-      24 [-]: GETIMPORT R3 11; var3 = 0xAE91E43B
-      25 [-]: LOADK R5 K12 ; var5 = "Multiplier.MultInteger"
-      26 [-]: LOADN R6 29  ; var6 = 29
-      27 [-]: MOVE R7 R2   ; var7 = var2
-      28 [-]: NAMECALL R3 R3 K13; var4 = var3; var3 = var3[0x5F56EEAB]
-      29 [-]: CALL R3 5 1  ; var3(var4, var5, var6, var7)
-      30 [-]: GETIMPORT R3 11; var3 = 0xAE91E43B
-      31 [-]: LOADK R5 K14 ; var5 = "Multiplier.MultShadowInteger"
-      32 [-]: LOADN R6 29  ; var6 = 29
-      33 [-]: MOVE R7 R2   ; var7 = var2
-      34 [-]: NAMECALL R3 R3 K13; var4 = var3; var3 = var3[0x5F56EEAB]
-      35 [-]: CALL R3 5 1  ; var3(var4, var5, var6, var7)
-      36 [-]: GETIMPORT R3 11; var3 = 0xAE91E43B
-      37 [-]: LOADK R5 K15 ; var5 = "Multiplier.MultDecimal"
-      38 [-]: LOADN R6 29  ; var6 = 29
-      39 [-]: LOADK R7 K16 ; var7 = "x"
-      40 [-]: NAMECALL R3 R3 K13; var4 = var3; var3 = var3[0x5F56EEAB]
-      41 [-]: CALL R3 5 1  ; var3(var4, var5, var6, var7)
-      42 [-]: GETIMPORT R3 11; var3 = 0xAE91E43B
-      43 [-]: LOADK R5 K17 ; var5 = "Multiplier.MultShadowDecimal"
-      44 [-]: LOADN R6 29  ; var6 = 29
-      45 [-]: LOADK R7 K16 ; var7 = "x"
-      46 [-]: NAMECALL R3 R3 K13; var4 = var3; var3 = var3[0x5F56EEAB]
-      47 [-]: CALL R3 5 1  ; var3(var4, var5, var6, var7)
-      48 [-]: GETIMPORT R3 11; var3 = 0xAE91E43B
-      49 [-]: LOADK R5 K12 ; var5 = "Multiplier.MultInteger"
-      50 [-]: LOADN R6 33  ; var6 = 33
-      51 [-]: NAMECALL R3 R3 K18; var4 = var3; var3 = var3[0x91A24E4B]
-      52 [-]: CALL R3 4 2  ; var3 = var3(var4, var5, var6)
-      53 [-]: GETIMPORT R4 11; var4 = 0xAE91E43B
-      54 [-]: LOADK R6 K15 ; var6 = "Multiplier.MultDecimal"
-      55 [-]: LOADN R7 33  ; var7 = 33
-      56 [-]: NAMECALL R4 R4 K18; var5 = var4; var4 = var4[0x91A24E4B]
-      57 [-]: CALL R4 4 2  ; var4 = var4(var5, var6, var7)
-      58 [-]: ADD R6 R3 R4 ; var6 = var3 + var4
-      59 [-]: GETIMPORT R8 11; var8 = 0xAE91E43B
-      60 [-]: LOADK R10 K20; var10 = "Multiplier"
-      61 [-]: LOADN R11 5  ; var11 = 5
-      62 [-]: NAMECALL R8 R8 K18; var9 = var8; var8 = var8[0x91A24E4B]
-      63 [-]: CALL R8 4 2  ; var8 = var8(var9, var10, var11)
-      64 [-]: DIVK R7 R8 K19; var7 = var8 / 100
-      65 [-]: MUL R5 R6 R7 ; var5 = var6 * var7
-      66 [-]: GETIMPORT R6 11; var6 = 0xAE91E43B
-      67 [-]: LOADK R8 K20 ; var8 = "Multiplier"
-      68 [-]: LOADN R9 0   ; var9 = 0
-      69 [-]: GETIMPORT R13 11; var13 = 0xAE91E43B
-      70 [-]: NAMECALL R13 R13 K23; var14 = var13; var13 = var13[0x091C120E]
-      71 [-]: CALL R13 2 2 ; var13 = var13(var14)
-      72 [-]: SUB R12 R13 R5; var12 = var13 - var5
-      73 [-]: MULK R11 R12 K22; var11 = var12 * 0.5
-      74 [-]: ADDK R10 R11 K21; var10 = var11 + 2
-      75 [-]: NAMECALL R6 R6 K24; var7 = var6; var6 = var6[0x67BC869F]
-      76 [-]: CALL R6 5 1  ; var6(var7, var8, var9, var10)
-      77 [-]: GETIMPORT R6 11; var6 = 0xAE91E43B
-      78 [-]: LOADK R8 K15 ; var8 = "Multiplier.MultDecimal"
-      79 [-]: LOADN R9 0   ; var9 = 0
-      80 [-]: ADDK R10 R3 K0; var10 = var3 + 1
-      81 [-]: NAMECALL R6 R6 K24; var7 = var6; var6 = var6[0x67BC869F]
-      82 [-]: CALL R6 5 1  ; var6(var7, var8, var9, var10)
-      83 [-]: GETIMPORT R6 11; var6 = 0xAE91E43B
-      84 [-]: LOADK R8 K17 ; var8 = "Multiplier.MultShadowDecimal"
-      85 [-]: LOADN R9 0   ; var9 = 0
-      86 [-]: ADDK R10 R3 K0; var10 = var3 + 1
-      87 [-]: NAMECALL R6 R6 K24; var7 = var6; var6 = var6[0x67BC869F]
-      88 [-]: CALL R6 5 1  ; var6(var7, var8, var9, var10)
-      89 [-]: RETURN R0 0  ; 
+      22 [-]: GETIMPORT R3 9; var3 = 0x64FB1586
+      23 [-]: CALL R3 2 2  ; var3 = var3(var4)
+L 4:  24 [-]: MOVE R2 R3   ; var2 = var3
+      25 [-]: GETIMPORT R3 11; var3 = 0xAE91E43B
+      26 [-]: LOADK R5 K12 ; var5 = "Multiplier.MultInteger"
+      27 [-]: LOADN R6 31  ; var6 = 31
+      28 [-]: MOVE R7 R2   ; var7 = var2
+      29 [-]: NAMECALL R3 R3 K13; var4 = var3; var3 = var3[0x5F56EEAB]
+      30 [-]: CALL R3 5 1  ; var3(var4, var5, var6, var7)
+      31 [-]: GETIMPORT R3 11; var3 = 0xAE91E43B
+      32 [-]: LOADK R5 K14 ; var5 = "Multiplier.MultShadowInteger"
+      33 [-]: LOADN R6 31  ; var6 = 31
+      34 [-]: MOVE R7 R2   ; var7 = var2
+      35 [-]: NAMECALL R3 R3 K13; var4 = var3; var3 = var3[0x5F56EEAB]
+      36 [-]: CALL R3 5 1  ; var3(var4, var5, var6, var7)
+      37 [-]: GETIMPORT R3 11; var3 = 0xAE91E43B
+      38 [-]: LOADK R5 K15 ; var5 = "Multiplier.MultDecimal"
+      39 [-]: LOADN R6 31  ; var6 = 31
+      40 [-]: LOADK R7 K16 ; var7 = "x"
+      41 [-]: NAMECALL R3 R3 K13; var4 = var3; var3 = var3[0x5F56EEAB]
+      42 [-]: CALL R3 5 1  ; var3(var4, var5, var6, var7)
+      43 [-]: GETIMPORT R3 11; var3 = 0xAE91E43B
+      44 [-]: LOADK R5 K17 ; var5 = "Multiplier.MultShadowDecimal"
+      45 [-]: LOADN R6 31  ; var6 = 31
+      46 [-]: LOADK R7 K16 ; var7 = "x"
+      47 [-]: NAMECALL R3 R3 K13; var4 = var3; var3 = var3[0x5F56EEAB]
+      48 [-]: CALL R3 5 1  ; var3(var4, var5, var6, var7)
+      49 [-]: GETIMPORT R3 11; var3 = 0xAE91E43B
+      50 [-]: LOADK R5 K12 ; var5 = "Multiplier.MultInteger"
+      51 [-]: LOADN R6 35  ; var6 = 35
+      52 [-]: NAMECALL R3 R3 K18; var4 = var3; var3 = var3[0x91A24E4B]
+      53 [-]: CALL R3 4 2  ; var3 = var3(var4, var5, var6)
+      54 [-]: GETIMPORT R4 11; var4 = 0xAE91E43B
+      55 [-]: LOADK R6 K15 ; var6 = "Multiplier.MultDecimal"
+      56 [-]: LOADN R7 35  ; var7 = 35
+      57 [-]: NAMECALL R4 R4 K18; var5 = var4; var4 = var4[0x91A24E4B]
+      58 [-]: CALL R4 4 2  ; var4 = var4(var5, var6, var7)
+      59 [-]: ADD R6 R3 R4 ; var6 = var3 + var4
+      60 [-]: GETIMPORT R8 11; var8 = 0xAE91E43B
+      61 [-]: LOADK R10 K20; var10 = "Multiplier"
+      62 [-]: LOADN R11 5  ; var11 = 5
+      63 [-]: NAMECALL R8 R8 K18; var9 = var8; var8 = var8[0x91A24E4B]
+      64 [-]: CALL R8 4 2  ; var8 = var8(var9, var10, var11)
+           66 [-]: MUL R5 R6 R7 ; var5 = var6 * var7
+      67 [-]: GETIMPORT R6 11; var6 = 0xAE91E43B
+      68 [-]: LOADK R8 K20 ; var8 = "Multiplier"
+      69 [-]: LOADN R9 0   ; var9 = 0
+      70 [-]: GETIMPORT R13 11; var13 = 0xAE91E43B
+      71 [-]: NAMECALL R13 R13 K23; var14 = var13; var13 = var13[0x091C120E]
+      72 [-]: CALL R13 2 2 ; var13 = var13(var14)
+      73 [-]: SUB R12 R13 R5; var12 = var13 - var5
+      74 [-]: MULK R11 R12 K22; var11 = var12 * 0.5
+      75 [-]: ADDK R10 R11 K21; var10 = var11 + 2
+      76 [-]: NAMECALL R6 R6 K24; var7 = var6; var6 = var6[0x67BC869F]
+      77 [-]: CALL R6 5 1  ; var6(var7, var8, var9, var10)
+      78 [-]: GETIMPORT R6 11; var6 = 0xAE91E43B
+      79 [-]: LOADK R8 K15 ; var8 = "Multiplier.MultDecimal"
+      80 [-]: LOADN R9 0   ; var9 = 0
+      81 [-]: ADDK R10 R3 K0; var10 = var3 + 1
+      82 [-]: NAMECALL R6 R6 K24; var7 = var6; var6 = var6[0x67BC869F]
+      83 [-]: CALL R6 5 1  ; var6(var7, var8, var9, var10)
+      84 [-]: GETIMPORT R6 11; var6 = 0xAE91E43B
+      85 [-]: LOADK R8 K17 ; var8 = "Multiplier.MultShadowDecimal"
+      86 [-]: LOADN R9 0   ; var9 = 0
+      87 [-]: ADDK R10 R3 K0; var10 = var3 + 1
+      88 [-]: NAMECALL R6 R6 K24; var7 = var6; var6 = var6[0x67BC869F]
+      89 [-]: CALL R6 5 1  ; var6(var7, var8, var9, var10)
+      90 [-]: RETURN R0 0  ; 
 
 
 ; Name:            
@@ -406,49 +407,49 @@ L 3:  20 [-]: GETIMPORT R3 9; var3 = 0x64FB1586
       23 [-]: CALL R0 5 1  ; var0(var1, var2, var3, var4)
       24 [-]: GETIMPORT R0 1; var0 = 0xAE91E43B
       25 [-]: LOADK R2 K9  ; var2 = "Multiplier.MultInteger"
-      26 [-]: LOADN R3 46  ; var3 = 46
+      26 [-]: LOADN R3 48  ; var3 = 48
       27 [-]: LOADB R4 1   ; var4 = true
       28 [-]: NAMECALL R0 R0 K10; var1 = var0; var0 = var0[0xAADE900E]
       29 [-]: CALL R0 5 1  ; var0(var1, var2, var3, var4)
       30 [-]: GETIMPORT R0 1; var0 = 0xAE91E43B
       31 [-]: LOADK R2 K11 ; var2 = "Multiplier.MultDecimal"
-      32 [-]: LOADN R3 46  ; var3 = 46
+      32 [-]: LOADN R3 48  ; var3 = 48
       33 [-]: LOADB R4 1   ; var4 = true
       34 [-]: NAMECALL R0 R0 K10; var1 = var0; var0 = var0[0xAADE900E]
       35 [-]: CALL R0 5 1  ; var0(var1, var2, var3, var4)
       36 [-]: GETIMPORT R0 1; var0 = 0xAE91E43B
       37 [-]: LOADK R2 K12 ; var2 = "Multiplier.MultShadowInteger"
-      38 [-]: LOADN R3 46  ; var3 = 46
+      38 [-]: LOADN R3 48  ; var3 = 48
       39 [-]: LOADB R4 1   ; var4 = true
       40 [-]: NAMECALL R0 R0 K10; var1 = var0; var0 = var0[0xAADE900E]
       41 [-]: CALL R0 5 1  ; var0(var1, var2, var3, var4)
       42 [-]: GETIMPORT R0 1; var0 = 0xAE91E43B
       43 [-]: LOADK R2 K13 ; var2 = "Multiplier.MultShadowDecimal"
-      44 [-]: LOADN R3 46  ; var3 = 46
+      44 [-]: LOADN R3 48  ; var3 = 48
       45 [-]: LOADB R4 1   ; var4 = true
       46 [-]: NAMECALL R0 R0 K10; var1 = var0; var0 = var0[0xAADE900E]
       47 [-]: CALL R0 5 1  ; var0(var1, var2, var3, var4)
       48 [-]: GETIMPORT R0 1; var0 = 0xAE91E43B
       49 [-]: LOADK R2 K9  ; var2 = "Multiplier.MultInteger"
-      50 [-]: LOADN R3 38  ; var3 = 38
+      50 [-]: LOADN R3 40  ; var3 = 40
       51 [-]: LOADK R4 K14 ; var4 = "bottom"
       52 [-]: NAMECALL R0 R0 K15; var1 = var0; var0 = var0[0x5F56EEAB]
       53 [-]: CALL R0 5 1  ; var0(var1, var2, var3, var4)
       54 [-]: GETIMPORT R0 1; var0 = 0xAE91E43B
       55 [-]: LOADK R2 K11 ; var2 = "Multiplier.MultDecimal"
-      56 [-]: LOADN R3 38  ; var3 = 38
+      56 [-]: LOADN R3 40  ; var3 = 40
       57 [-]: LOADK R4 K14 ; var4 = "bottom"
       58 [-]: NAMECALL R0 R0 K15; var1 = var0; var0 = var0[0x5F56EEAB]
       59 [-]: CALL R0 5 1  ; var0(var1, var2, var3, var4)
       60 [-]: GETIMPORT R0 1; var0 = 0xAE91E43B
       61 [-]: LOADK R2 K12 ; var2 = "Multiplier.MultShadowInteger"
-      62 [-]: LOADN R3 38  ; var3 = 38
+      62 [-]: LOADN R3 40  ; var3 = 40
       63 [-]: LOADK R4 K14 ; var4 = "bottom"
       64 [-]: NAMECALL R0 R0 K15; var1 = var0; var0 = var0[0x5F56EEAB]
       65 [-]: CALL R0 5 1  ; var0(var1, var2, var3, var4)
       66 [-]: GETIMPORT R0 1; var0 = 0xAE91E43B
       67 [-]: LOADK R2 K13 ; var2 = "Multiplier.MultShadowDecimal"
-      68 [-]: LOADN R3 38  ; var3 = 38
+      68 [-]: LOADN R3 40  ; var3 = 40
       69 [-]: LOADK R4 K14 ; var4 = "bottom"
       70 [-]: NAMECALL R0 R0 K15; var1 = var0; var0 = var0[0x5F56EEAB]
       71 [-]: CALL R0 5 1  ; var0(var1, var2, var3, var4)
@@ -499,7 +500,7 @@ L 3:  20 [-]: GETIMPORT R3 9; var3 = 0x64FB1586
        4 [-]: CALL R0 0 1  ; var0(var1, ...)
        5 [-]: GETUPVAL R0 0; var0 = upvalues[0]
        6 [-]: LOADN R1 -1  ; var1 = -1
-       7 [-]: JUMPIFNOTLT R1 R0 L1; goto L1 if var1 >= var65543
+       7 [-]: JUMPIFNOTLT R1 R0 L1; goto L1 if var1 >= var65596
        8 [-]: GETUPVAL R0 1; var0 = upvalues[1]
        9 [-]: JUMPIF R0 L0 ; goto L0 if var0
       10 [-]: GETUPVAL R1 2; var1 = upvalues[2]
@@ -513,7 +514,7 @@ L 0:  15 [-]: GETUPVAL R0 3; var0 = upvalues[3]
       18 [-]: DIV R1 R2 R3 ; var1 = var2 / var3
       19 [-]: CALL R0 2 1  ; var0(var1)
 L 1:  20 [-]: GETUPVAL R1 4; var1 = upvalues[4]
-      21 [-]: FASTCALL1 62 R1 L2; 
+      21 [-]: FASTCALL1 64 R1 L2; 
       22 [-]: GETIMPORT R0 6; var0 = 0x7B998233
       23 [-]: CALL R0 2 2  ; var0 = var0(var1)
 L 2:  24 [-]: JUMPIFNOT R0 L3; goto L3 if not var0
@@ -522,7 +523,7 @@ L 2:  24 [-]: JUMPIFNOT R0 L3; goto L3 if not var0
       27 [-]: CALL R0 2 2  ; var0 = var0(var1)
       28 [-]: SETUPVAL R0 4; upvalues[0] = var4
 L 3:  29 [-]: GETUPVAL R1 4; var1 = upvalues[4]
-      30 [-]: FASTCALL1 62 R1 L4; 
+      30 [-]: FASTCALL1 64 R1 L4; 
       31 [-]: GETIMPORT R0 6; var0 = 0x7B998233
       32 [-]: CALL R0 2 2  ; var0 = var0(var1)
 L 4:  33 [-]: JUMPIF R0 L5 ; goto L5 if var0
@@ -532,7 +533,7 @@ L 4:  33 [-]: JUMPIF R0 L5 ; goto L5 if var0
       37 [-]: NAMECALL R0 R0 K11; var1 = var0; var0 = var0[0x91A24E4B]
       38 [-]: CALL R0 4 2  ; var0 = var0(var1, var2, var3)
       39 [-]: GETUPVAL R1 5; var1 = upvalues[5]
-      40 [-]: JUMPIFEQ R1 R0 L5; goto L5 if var1 == var327690
+      40 [-]: JUMPIFEQ R1 R0 L5; goto L5 if var1 == var327689
       41 [-]: SETUPVAL R0 5; upvalues[0] = var5
       42 [-]: GETIMPORT R1 1; var1 = 0xAE91E43B
       43 [-]: LOADK R3 K10 ; var3 = "_root"

@@ -29,13 +29,13 @@
 ; Is_vararg:       0
 ; Max Stack Size:  12
 
-       0 [-]: FASTCALL1 62 R2 L0; 
+       0 [-]: FASTCALL1 64 R2 L0; 
        1 [-]: MOVE R6 R2   ; var6 = var2
        2 [-]: GETIMPORT R5 1; var5 = 0x7B998233
        3 [-]: CALL R5 2 2  ; var5 = var5(var6)
 L 0:   4 [-]: JUMPIF R5 L1 ; goto L1 if var5
        5 [-]: LOADN R5 30  ; var5 = 30
-       6 [-]: JUMPIFNOTLT R2 R5 L2; goto L2 if var2 >= var197966
+       6 [-]: JUMPIFNOTLT R2 R5 L2; goto L2 if var2 >= var197921
 L 1:   7 [-]: GETIMPORT R5 3; var5 = 0x3D106989
        8 [-]: LOADK R7 K4  ; var7 = "The height needs to be at least "
        9 [-]: LOADN R8 30  ; var8 = 30
@@ -46,13 +46,13 @@ L 1:   7 [-]: GETIMPORT R5 3; var5 = 0x3D106989
       14 [-]: FASTCALL1 1 R6 L2; 
       15 [-]: GETIMPORT R5 7; var5 = 0x60CCE7B4
       16 [-]: CALL R5 2 1  ; var5(var6)
-L 2:  17 [-]: FASTCALL1 62 R3 L3; 
+L 2:  17 [-]: FASTCALL1 64 R3 L3; 
       18 [-]: MOVE R6 R3   ; var6 = var3
       19 [-]: GETIMPORT R5 1; var5 = 0x7B998233
       20 [-]: CALL R5 2 2  ; var5 = var5(var6)
 L 3:  21 [-]: JUMPIF R5 L4 ; goto L4 if var5
       22 [-]: LOADN R5 0   ; var5 = 0
-      23 [-]: JUMPIFNOTLE R3 R5 L5; goto L5 if var3 > var197966
+      23 [-]: JUMPIFNOTLE R3 R5 L5; goto L5 if var3 > var197921
 L 4:  24 [-]: GETIMPORT R5 3; var5 = 0x3D106989
       25 [-]: LOADK R6 K8  ; var6 = "The visible proportion is a number (> 0 and < 1)"
       26 [-]: CALL R5 2 1  ; var5(var6)
@@ -109,7 +109,7 @@ L 5:  31 [-]: NEWTABLE R5 64 0; var5 = {}
       77 [-]: SETTABLEKS R6 R5 K33; var6["mScrubStartDragCallback"] = var5
       78 [-]: LOADNIL R6   ; var6 = nil
       79 [-]: SETTABLEKS R6 R5 K34; var6["mScrubStopDragCallback"] = var5
-      80 [-]: LOADK R6 K35 ; var6 = 0.10000000000000001
+      80 [-]: LOADK R6 K35 ; var6 = 0.10000000149011612
       81 [-]: SETTABLEKS R6 R5 K36; var6["mScrollStep"] = var5
       82 [-]: LOADB R6 0   ; var6 = false
       83 [-]: SETTABLEKS R6 R5 K37; var6["mHookedUpCallbacks"] = var5
@@ -177,43 +177,44 @@ L 5:  31 [-]: NEWTABLE R5 64 0; var5 = {}
      145 [-]: DUPCLOSURE R6 K89; 
      146 [-]: SETTABLEKS R6 R5 K90; var6["ScrollBy"] = var5
      147 [-]: DUPCLOSURE R6 K91; 
-     148 [-]: SETTABLEKS R6 R5 K92; var6["ScrollByStep"] = var5
-     149 [-]: DUPCLOSURE R6 K93; 
-     150 [-]: SETTABLEKS R6 R5 K94; var6["ScrollUp"] = var5
-     151 [-]: DUPCLOSURE R6 K95; 
-     152 [-]: SETTABLEKS R6 R5 K96; var6["ScrollDown"] = var5
-     153 [-]: DUPCLOSURE R6 K97; 
-     154 [-]: CAPTURE UPVAL U0; 
-     155 [-]: SETTABLEKS R6 R5 K98; var6["OnGamepadTransition"] = var5
-     156 [-]: DUPCLOSURE R6 K99; 
-     157 [-]: SETTABLEKS R6 R5 K100; var6["HookUpCallbacks"] = var5
-     158 [-]: DUPCLOSURE R6 K101; 
-     159 [-]: SETTABLEKS R6 R5 K102; var6["SetEnabled"] = var5
-     160 [-]: DUPCLOSURE R6 K103; 
-     161 [-]: CAPTURE UPVAL U0; 
-     162 [-]: SETTABLEKS R6 R5 K104; var6["SetActive"] = var5
-     163 [-]: DUPCLOSURE R6 K105; 
-     164 [-]: SETTABLEKS R6 R5 K106; var6["SetVisibleRangeMaterial"] = var5
-     165 [-]: DUPCLOSURE R6 K107; 
-     166 [-]: CAPTURE UPVAL U0; 
-     167 [-]: SETTABLEKS R6 R5 K108; var6["ApplyScale"] = var5
-     168 [-]: GETIMPORT R6 111; var6 = 0x34291F5C[0xE6B41ADB]
-     169 [-]: CALL R6 1 2  ; var6 = var6()
-     170 [-]: JUMPIFNOT R6 L6; goto L6 if not var6
-     171 [-]: GETTABLEKS R7 R5 K47; var7 = var5["mScale"]
-     172 [-]: MULK R6 R7 K112; var6 = var7 * 2
-     173 [-]: SETTABLEKS R6 R5 K47; var6["mScale"] = var5
-     174 [-]: GETTABLEKS R7 R5 K48; var7 = var5["mThemedScale"]
-     175 [-]: MULK R6 R7 K112; var6 = var7 * 2
-     176 [-]: SETTABLEKS R6 R5 K48; var6["mThemedScale"] = var5
-L 6: 177 [-]: NAMECALL R6 R5 K113; var7 = var5; var6 = var5[0x075502A4]
-     178 [-]: CALL R6 2 1  ; var6(var7)
-     179 [-]: GETIMPORT R9 115; var9 = 0x34291F5C[0x1467D5F4]
-     180 [-]: CALL R9 1 2  ; var9 = var9()
-     181 [-]: NOT R8 R9    ; var8 = not var9
-     182 [-]: NAMECALL R6 R5 K116; var7 = var5; var6 = var5[0x557B7601]
-     183 [-]: CALL R6 3 1  ; var6(var7, var8)
-     184 [-]: RETURN R5 1  ; 
+     148 [-]: CAPTURE UPVAL U0; 
+     149 [-]: SETTABLEKS R6 R5 K92; var6["ScrollByStep"] = var5
+     150 [-]: DUPCLOSURE R6 K93; 
+     151 [-]: SETTABLEKS R6 R5 K94; var6["ScrollUp"] = var5
+     152 [-]: DUPCLOSURE R6 K95; 
+     153 [-]: SETTABLEKS R6 R5 K96; var6["ScrollDown"] = var5
+     154 [-]: DUPCLOSURE R6 K97; 
+     155 [-]: CAPTURE UPVAL U0; 
+     156 [-]: SETTABLEKS R6 R5 K98; var6["OnGamepadTransition"] = var5
+     157 [-]: DUPCLOSURE R6 K99; 
+     158 [-]: SETTABLEKS R6 R5 K100; var6["HookUpCallbacks"] = var5
+     159 [-]: DUPCLOSURE R6 K101; 
+     160 [-]: SETTABLEKS R6 R5 K102; var6["SetEnabled"] = var5
+     161 [-]: DUPCLOSURE R6 K103; 
+     162 [-]: CAPTURE UPVAL U0; 
+     163 [-]: SETTABLEKS R6 R5 K104; var6["SetActive"] = var5
+     164 [-]: DUPCLOSURE R6 K105; 
+     165 [-]: SETTABLEKS R6 R5 K106; var6["SetVisibleRangeMaterial"] = var5
+     166 [-]: DUPCLOSURE R6 K107; 
+     167 [-]: CAPTURE UPVAL U0; 
+     168 [-]: SETTABLEKS R6 R5 K108; var6["ApplyScale"] = var5
+     169 [-]: GETIMPORT R6 111; var6 = 0x34291F5C[0xE6B41ADB]
+     170 [-]: CALL R6 1 2  ; var6 = var6()
+     171 [-]: JUMPIFNOT R6 L6; goto L6 if not var6
+     172 [-]: GETTABLEKS R7 R5 K47; var7 = var5["mScale"]
+     173 [-]: MULK R6 R7 K112; var6 = var7 * 2
+     174 [-]: SETTABLEKS R6 R5 K47; var6["mScale"] = var5
+     175 [-]: GETTABLEKS R7 R5 K48; var7 = var5["mThemedScale"]
+     176 [-]: MULK R6 R7 K112; var6 = var7 * 2
+     177 [-]: SETTABLEKS R6 R5 K48; var6["mThemedScale"] = var5
+L 6: 178 [-]: NAMECALL R6 R5 K113; var7 = var5; var6 = var5[0x075502A4]
+     179 [-]: CALL R6 2 1  ; var6(var7)
+     180 [-]: GETIMPORT R9 115; var9 = 0x34291F5C[0x1467D5F4]
+     181 [-]: CALL R9 1 2  ; var9 = var9()
+     182 [-]: NOT R8 R9    ; var8 = not var9
+     183 [-]: NAMECALL R6 R5 K116; var7 = var5; var6 = var5[0x557B7601]
+     184 [-]: CALL R6 3 1  ; var6(var7, var8)
+     185 [-]: RETURN R5 1  ; 
 
 
 

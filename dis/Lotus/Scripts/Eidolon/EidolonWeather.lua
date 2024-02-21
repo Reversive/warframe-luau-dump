@@ -20,7 +20,7 @@
        0 [-]: GETIMPORT R1 1; var1 = 0x109008EE
        1 [-]: JUMPIFNOT R1 L0; goto L0 if not var1
        2 [-]: GETIMPORT R1 3; var1 = 0xCBD666E1
-       3 [-]: LOADK R2 K4  ; var2 = 0.10000000000000001
+       3 [-]: LOADK R2 K4  ; var2 = 0.10000000149011612
        4 [-]: CALL R1 2 1  ; var1(var2)
        5 [-]: NAMECALL R1 R0 K5; var2 = var0; var1 = var0[0x383D2E7D]
        6 [-]: CALL R1 2 1  ; var1(var2)

@@ -35,7 +35,7 @@
       11 [-]: LOADN R3 0   ; var3 = 0
       12 [-]: SETTABLEKS R3 R2 K21; var3["y"] = var2
       13 [-]: SETTABLEKS R2 R1 K4; var2["mRightStickTension"] = var1
-      14 [-]: LOADK R2 K23 ; var2 = 0.20000000000000001
+      14 [-]: LOADK R2 K23 ; var2 = 0.20000000298023224
       15 [-]: SETTABLEKS R2 R1 K5; var2["mRightStickDeadZone"] = var1
       16 [-]: DUPTABLE R2 22; 
       17 [-]: LOADN R3 0   ; var3 = 0

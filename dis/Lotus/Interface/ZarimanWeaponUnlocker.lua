@@ -110,7 +110,7 @@
       16 [-]: CALL R4 2 0  ; var4, ... = var4(var5)
       17 [-]: NAMECALL R2 R2 K17; var3 = var2; var2 = var2[0xBCFB64AB]
       18 [-]: CALL R2 0 2  ; var2 = var2(var3, ...)
-      19 [-]: FASTCALL1 62 R2 L0; 
+      19 [-]: FASTCALL1 64 R2 L0; 
       20 [-]: MOVE R4 R2   ; var4 = var2
       21 [-]: GETIMPORT R3 19; var3 = 0x7B998233
       22 [-]: CALL R3 2 2  ; var3 = var3(var4)
@@ -135,7 +135,7 @@ L 2:  33 [-]: RETURN R0 0  ;
 ; Max Stack Size:  7
 
        0 [-]: GETUPVAL R1 0; var1 = upvalues[0]
-       1 [-]: FASTCALL1 62 R1 L0; 
+       1 [-]: FASTCALL1 64 R1 L0; 
        2 [-]: GETIMPORT R0 1; var0 = 0x7B998233
        3 [-]: CALL R0 2 2  ; var0 = var0(var1)
 L 0:   4 [-]: JUMPIFNOT R0 L1; goto L1 if not var0
@@ -170,41 +170,42 @@ L 1:   6 [-]: GETIMPORT R0 3; var0 = 0xAE91E43B
 ; Is_vararg:       0
 ; Max Stack Size:  6
 
-       0 [-]: GETIMPORT R1 1; var1 = 0x03F57322
+       0 [-]: FASTCALL1 62 R0 L0; 
        1 [-]: MOVE R2 R0   ; var2 = var0
-       2 [-]: CALL R1 2 2  ; var1 = var1(var2)
-       3 [-]: LOADN R2 4   ; var2 = 4
-       4 [-]: JUMPIFEQ R1 R2 L0; goto L0 if var1 == var65581
-       5 [-]: RETURN R0 0  ; 
-L 0:   6 [-]: GETIMPORT R1 4; var1 = 0x6C97A788[0x86924EFB]
-       7 [-]: CALL R1 1 2  ; var1 = var1()
-       8 [-]: GETUPVAL R3 0; var3 = upvalues[0]
-       9 [-]: GETTABLEKS R2 R3 K5; var2 = var3[0x659D451F]
-      10 [-]: GETIMPORT R3 7; var3 = 0x9D7B1C3D
-      11 [-]: CALL R2 2 1  ; var2(var3)
-      12 [-]: GETTABLEKS R2 R1 K8; var2 = var1["mItemId"]
-      13 [-]: GETIMPORT R4 12; var4 = _T["ZarimanWeaponUnlocker_Info"]["Id"]
-      14 [-]: NAMECALL R2 R2 K13; var3 = var2; var2 = var2[0x46E9D221]
-      15 [-]: CALL R2 3 1  ; var2(var3, var4)
-      16 [-]: GETUPVAL R2 1; var2 = upvalues[1]
-      17 [-]: SETTABLEKS R2 R1 K14; var2["mRecipe"] = var1
-      18 [-]: LOADN R2 0   ; var2 = 0
-      19 [-]: SETTABLEKS R2 R1 K15; var2["mLoadOutType"] = var1
-      20 [-]: GETIMPORT R2 17; var2 = _T["ZarimanWeaponUnlocker_Info"]["Category"]
-      21 [-]: SETTABLEKS R2 R1 K18; var2["mCategory"] = var1
-      22 [-]: GETUPVAL R2 2; var2 = upvalues[2]
-      23 [-]: SETTABLEKS R2 R1 K19; var2["mEvolutionType"] = var1
-      24 [-]: GETIMPORT R2 21; var2 = _T["BackgroundMovie"]
-      25 [-]: LOADK R4 K22 ; var4 = "ShowBlockingMessage"
-      26 [-]: LOADK R5 K23 ; var5 = "2"
-      27 [-]: NAMECALL R2 R2 K24; var3 = var2; var2 = var2[0xE4162EED]
-      28 [-]: CALL R2 4 1  ; var2(var3, var4, var5)
-      29 [-]: GETIMPORT R2 26; var2 = 0x25D99D89
-      30 [-]: MOVE R4 R1   ; var4 = var1
-      31 [-]: LOADK R5 K27 ; var5 = "OnInstallWeaponEvolutionAdapter"
-      32 [-]: NAMECALL R2 R2 K28; var3 = var2; var2 = var2[0x8B65C761]
-      33 [-]: CALL R2 4 1  ; var2(var3, var4, var5)
-      34 [-]: RETURN R0 0  ; 
+       2 [-]: GETIMPORT R1 1; var1 = 0x03F57322
+       3 [-]: CALL R1 2 2  ; var1 = var1(var2)
+L 0:   4 [-]: LOADN R2 4   ; var2 = 4
+       5 [-]: JUMPIFEQ R1 R2 L1; goto L1 if var1 == var65571
+       6 [-]: RETURN R0 0  ; 
+L 1:   7 [-]: GETIMPORT R1 4; var1 = 0x6C97A788[0x86924EFB]
+       8 [-]: CALL R1 1 2  ; var1 = var1()
+       9 [-]: GETUPVAL R3 0; var3 = upvalues[0]
+      10 [-]: GETTABLEKS R2 R3 K5; var2 = var3[0x659D451F]
+      11 [-]: GETIMPORT R3 7; var3 = 0x9D7B1C3D
+      12 [-]: CALL R2 2 1  ; var2(var3)
+      13 [-]: GETTABLEKS R2 R1 K8; var2 = var1["mItemId"]
+      14 [-]: GETIMPORT R4 12; var4 = _T["ZarimanWeaponUnlocker_Info"]["Id"]
+      15 [-]: NAMECALL R2 R2 K13; var3 = var2; var2 = var2[0x46E9D221]
+      16 [-]: CALL R2 3 1  ; var2(var3, var4)
+      17 [-]: GETUPVAL R2 1; var2 = upvalues[1]
+      18 [-]: SETTABLEKS R2 R1 K14; var2["mRecipe"] = var1
+      19 [-]: LOADN R2 0   ; var2 = 0
+      20 [-]: SETTABLEKS R2 R1 K15; var2["mLoadOutType"] = var1
+      21 [-]: GETIMPORT R2 17; var2 = _T["ZarimanWeaponUnlocker_Info"]["Category"]
+      22 [-]: SETTABLEKS R2 R1 K18; var2["mCategory"] = var1
+      23 [-]: GETUPVAL R2 2; var2 = upvalues[2]
+      24 [-]: SETTABLEKS R2 R1 K19; var2["mEvolutionType"] = var1
+      25 [-]: GETIMPORT R2 21; var2 = _T["BackgroundMovie"]
+      26 [-]: LOADK R4 K22 ; var4 = "ShowBlockingMessage"
+      27 [-]: LOADK R5 K23 ; var5 = "2"
+      28 [-]: NAMECALL R2 R2 K24; var3 = var2; var2 = var2[0xE4162EED]
+      29 [-]: CALL R2 4 1  ; var2(var3, var4, var5)
+      30 [-]: GETIMPORT R2 26; var2 = 0x25D99D89
+      31 [-]: MOVE R4 R1   ; var4 = var1
+      32 [-]: LOADK R5 K27 ; var5 = "OnInstallWeaponEvolutionAdapter"
+      33 [-]: NAMECALL R2 R2 K28; var3 = var2; var2 = var2[0x8B65C761]
+      34 [-]: CALL R2 4 1  ; var2(var3, var4, var5)
+      35 [-]: RETURN R0 0  ; 
 
 
 ; Name:            
@@ -313,8 +314,7 @@ L 0:   6 [-]: GETIMPORT R1 4; var1 = 0x6C97A788[0x86924EFB]
       47 [-]: CALL R2 4 2  ; var2 = var2(var3, var4, var5)
       48 [-]: GETUPVAL R5 1; var5 = upvalues[1]
       49 [-]: GETTABLEKS R4 R5 K13; var4 = var5["mColumnSeparation"]
-      50 [-]: DIVK R3 R4 K12; var3 = var4 / 2
-      51 [-]: ADD R1 R2 R3 ; var1 = var2 + var3
+           51 [-]: ADD R1 R2 R3 ; var1 = var2 + var3
       52 [-]: SETTABLEKS R1 R0 K14; var1["mInitGridXPos"] = var0
       53 [-]: GETIMPORT R0 16; var0 = 0x2D0FAD09
       54 [-]: LOADK R1 K17 ; var1 = "Lotus.Interface.Components.ThemedButton"
@@ -393,7 +393,7 @@ L 0:   6 [-]: GETIMPORT R1 4; var1 = 0x6C97A788[0x86924EFB]
 ; Max Stack Size:  2
 
        0 [-]: GETUPVAL R1 0; var1 = upvalues[0]
-       1 [-]: FASTCALL1 62 R1 L0; 
+       1 [-]: FASTCALL1 64 R1 L0; 
        2 [-]: GETIMPORT R0 1; var0 = 0x7B998233
        3 [-]: CALL R0 2 2  ; var0 = var0(var1)
 L 0:   4 [-]: JUMPIF R0 L1 ; goto L1 if var0
@@ -445,7 +445,7 @@ L 1:   8 [-]: RETURN R0 0  ;
       12 [-]: NAMECALL R2 R2 K9; var3 = var2; var2 = var2[0x1CB415C1]
       13 [-]: CALL R2 4 1  ; var2(var3, var4, var5)
       14 [-]: GETUPVAL R3 2; var3 = upvalues[2]
-      15 [-]: FASTCALL1 62 R3 L0; 
+      15 [-]: FASTCALL1 64 R3 L0; 
       16 [-]: GETIMPORT R2 11; var2 = 0x7B998233
       17 [-]: CALL R2 2 2  ; var2 = var2(var3)
 L 0:  18 [-]: JUMPIF R2 L1 ; goto L1 if var2
@@ -492,7 +492,7 @@ L 1:  22 [-]: LOADNIL R2   ; var2 = nil
       59 [-]: GETIMPORT R2 35; var2 = _T["ZarimanWeaponUnlocker_Info"]["EvoRecipe"]
       60 [-]: SETUPVAL R2 5; upvalues[2] = var5
       61 [-]: GETUPVAL R3 5; var3 = upvalues[5]
-      62 [-]: FASTCALL1 62 R3 L2; 
+      62 [-]: FASTCALL1 64 R3 L2; 
       63 [-]: GETIMPORT R2 11; var2 = 0x7B998233
       64 [-]: CALL R2 2 2  ; var2 = var2(var3)
 L 2:  65 [-]: JUMPIF R2 L10; goto L10 if var2
@@ -524,7 +524,7 @@ L 3:  76 [-]: GETTABLE R7 R3 R6; var7 = var3[var6]
       91 [-]: NAMECALL R10 R10 K43; var11 = var10; var10 = var10[0x51B30E60]
       92 [-]: CALL R10 3 2 ; var10 = var10(var11, var12)
       93 [-]: GETTABLEKS R12 R7 K44; var12 = var7["mItemCount"]
-      94 [-]: JUMPIFLE R12 R10 L4; goto L4 if var12 <= var16780059
+      94 [-]: JUMPIFLE R12 R10 L4; goto L4 if var12 <= var16780038
       95 [-]: LOADB R11 0 +1; var11 = false
 L 4:  96 [-]: LOADB R11 1  ; var11 = true
 L 5:  97 [-]: GETUPVAL R13 4; var13 = upvalues[4]
@@ -608,8 +608,7 @@ L10: 161 [-]: GETUPVAL R2 0; var2 = upvalues[0]
      175 [-]: GETUPVAL R12 0; var12 = upvalues[0]
      176 [-]: GETTABLEKS R11 R12 K68; var11 = var12["mColumnSeparation"]
      177 [-]: MUL R9 R10 R11; var9 = var10 * var11
-     178 [-]: DIVK R8 R9 K66; var8 = var9 / 2
-     179 [-]: SUB R6 R7 R8 ; var6 = var7 - var8
+          179 [-]: SUB R6 R7 R8 ; var6 = var7 - var8
      180 [-]: NAMECALL R2 R2 K69; var3 = var2; var2 = var2[0x67BC869F]
      181 [-]: CALL R2 5 1  ; var2(var3, var4, var5, var6)
      182 [-]: GETUPVAL R2 9; var2 = upvalues[9]
@@ -622,7 +621,7 @@ L10: 161 [-]: GETUPVAL R2 0; var2 = upvalues[0]
      189 [-]: GETTABLEKS R2 R3 K71; var2 = var3[0x4C232AFC]
      190 [-]: GETIMPORT R3 7; var3 = 0xAE91E43B
      191 [-]: LOADK R4 K72 ; var4 = 0.5
-     192 [-]: LOADK R5 K73 ; var5 = 0.29999999999999999
+     192 [-]: LOADK R5 K73 ; var5 = 0.30000001192092896
      193 [-]: CALL R2 4 1  ; var2(var3, var4, var5)
      194 [-]: GETUPVAL R2 2; var2 = upvalues[2]
      195 [-]: LOADK R4 K74 ; var4 = "_root"
@@ -640,7 +639,7 @@ L10: 161 [-]: GETUPVAL R2 0; var2 = upvalues[0]
      207 [-]: NEWTABLE R7 0 1; var7 = {}
      208 [-]: LOADN R8 100 ; var8 = 100
      209 [-]: SETLIST R7 R8 1 [1]; var7[1] = var8; var7[2] = var9; 
-     210 [-]: LOADK R8 K73 ; var8 = 0.29999999999999999
+     210 [-]: LOADK R8 K73 ; var8 = 0.30000001192092896
      211 [-]: CALL R2 7 1  ; var2(var3, var4, var5, var6, var7, var8)
      212 [-]: GETIMPORT R2 76; var2 = 0x25312C9B
      213 [-]: GETIMPORT R3 7; var3 = 0xAE91E43B
@@ -652,7 +651,7 @@ L10: 161 [-]: GETUPVAL R2 0; var2 = upvalues[0]
      219 [-]: NEWTABLE R7 0 1; var7 = {}
      220 [-]: LOADN R8 100 ; var8 = 100
      221 [-]: SETLIST R7 R8 1 [1]; var7[1] = var8; var7[2] = var9; 
-     222 [-]: LOADK R8 K73 ; var8 = 0.29999999999999999
+     222 [-]: LOADK R8 K73 ; var8 = 0.30000001192092896
      223 [-]: CALL R2 7 1  ; var2(var3, var4, var5, var6, var7, var8)
      224 [-]: LOADB R2 0   ; var2 = false
      225 [-]: SETUPVAL R2 10; upvalues[2] = var10
@@ -678,7 +677,7 @@ L11: 226 [-]: RETURN R0 0  ;
 ; Max Stack Size:  4
 
        0 [-]: GETUPVAL R2 0; var2 = upvalues[0]
-       1 [-]: FASTCALL1 62 R2 L0; 
+       1 [-]: FASTCALL1 64 R2 L0; 
        2 [-]: GETIMPORT R1 1; var1 = 0x7B998233
        3 [-]: CALL R1 2 2  ; var1 = var1(var2)
 L 0:   4 [-]: JUMPIF R1 L1 ; goto L1 if var1
@@ -697,7 +696,7 @@ L 1:   9 [-]: RETURN R0 0  ;
 ; Max Stack Size:  4
 
        0 [-]: GETUPVAL R2 0; var2 = upvalues[0]
-       1 [-]: FASTCALL1 62 R2 L0; 
+       1 [-]: FASTCALL1 64 R2 L0; 
        2 [-]: GETIMPORT R1 1; var1 = 0x7B998233
        3 [-]: CALL R1 2 2  ; var1 = var1(var2)
 L 0:   4 [-]: JUMPIF R1 L1 ; goto L1 if var1

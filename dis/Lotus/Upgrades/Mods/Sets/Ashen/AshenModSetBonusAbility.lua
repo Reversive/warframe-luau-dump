@@ -11,9 +11,8 @@
        4 [-]: DUPCLOSURE R1 K3; 
        5 [-]: DUPCLOSURE R2 K4; 
        6 [-]: DUPCLOSURE R3 K5; 
-       7 [-]: CAPTURE VAL R2; 
-       8 [-]: SETGLOBAL R3 K6; "ActivateAbility" = var3
-       9 [-]: RETURN R0 0  ; 
+       7 [-]: SETGLOBAL R3 K6; "ActivateAbility" = var3
+       8 [-]: RETURN R0 0  ; 
 
 
 ; Name:            
@@ -95,7 +94,7 @@ L 0:   5 [-]: NAMECALL R2 R0 K4; var3 = var0; var2 = var0[0x388577D5]
 ; Is_vararg:       0
 ; Max Stack Size:  7
 
-       0 [-]: FASTCALL1 62 R1 L0; 
+       0 [-]: FASTCALL1 64 R1 L0; 
        1 [-]: MOVE R4 R1   ; var4 = var1
        2 [-]: GETIMPORT R3 1; var3 = 0x7B998233
        3 [-]: CALL R3 2 2  ; var3 = var3(var4)
@@ -125,7 +124,7 @@ L 5:  24 [-]: GETIMPORT R5 8; var5 = 0x6A61DC97
       27 [-]: GETIMPORT R6 10; var6 = 0x55156FF7
       28 [-]: CALL R6 1 2  ; var6 = var6()
       29 [-]: SUB R5 R6 R3 ; var5 = var6 - var3
-      30 [-]: JUMPIFNOTLT R5 R4 L6; goto L6 if var5 >= var1351
+      30 [-]: JUMPIFNOTLT R5 R4 L6; goto L6 if var5 >= var1328
       31 [-]: LOADN R5 0   ; var5 = 0
       32 [-]: RETURN R5 1  ; 
 L 6:  33 [-]: LOADN R5 1   ; var5 = 1
@@ -134,13 +133,13 @@ L 6:  33 [-]: LOADN R5 1   ; var5 = 1
 
 ; Name:            
 ; Defined at line: 56
-; #Upvalues:       1
+; #Upvalues:       0
 ; #Parameters:     4
 ; Is_vararg:       0
 ; Max Stack Size:  15
 
        0 [-]: GETIMPORT R5 1; var5 = 0xBE190284
-       1 [-]: FASTCALL1 62 R5 L0; 
+       1 [-]: FASTCALL1 64 R5 L0; 
        2 [-]: GETIMPORT R4 3; var4 = 0x7B998233
        3 [-]: CALL R4 2 2  ; var4 = var4(var5)
 L 0:   4 [-]: JUMPIF R4 L1 ; goto L1 if var4
@@ -151,59 +150,89 @@ L 0:   4 [-]: JUMPIF R4 L1 ; goto L1 if var4
        9 [-]: JUMPIF R4 L2 ; goto L2 if var4
 L 1:  10 [-]: RETURN R0 0  ; 
 L 2:  11 [-]: MOVE R1 R0   ; var1 = var0
-      12 [-]: GETUPVAL R4 0; var4 = upvalues[0]
-      13 [-]: MOVE R5 R0   ; var5 = var0
-      14 [-]: MOVE R6 R1   ; var6 = var1
-      15 [-]: MOVE R7 R2   ; var7 = var2
-      16 [-]: CALL R4 4 2  ; var4 = var4(var5, var6, var7)
-      17 [-]: LOADN R5 0   ; var5 = 0
-      18 [-]: JUMPIFNOTLE R4 R5 L3; goto L3 if var4 > var65581
-      19 [-]: RETURN R0 0  ; 
-L 3:  20 [-]: GETIMPORT R5 8; var5 = 0x605DC082
-      21 [-]: GETTABLE R4 R5 R2; var4 = var5[var2]
-      22 [-]: GETIMPORT R7 10; var7 = 0x4D4341D0
-      23 [-]: GETTABLE R6 R7 R2; var6 = var7[var2]
-      24 [-]: MINUS R5 R6  ; 
-      25 [-]: FASTCALL1 62 R0 L4; 
-      26 [-]: MOVE R7 R0   ; var7 = var0
-      27 [-]: GETIMPORT R6 3; var6 = 0x7B998233
-      28 [-]: CALL R6 2 2  ; var6 = var6(var7)
-L 4:  29 [-]: JUMPIF R6 L5 ; goto L5 if var6
-      30 [-]: NAMECALL R6 R1 K11; var7 = var1; var6 = var1[0xDE321E6F]
-      31 [-]: CALL R6 2 2  ; var6 = var6(var7)
-      32 [-]: MOVE R9 R4   ; var9 = var4
-      33 [-]: LOADN R10 52 ; var10 = 52
-      34 [-]: LOADN R11 4  ; var11 = 4
-      35 [-]: MOVE R12 R5  ; var12 = var5
-      36 [-]: NAMECALL R7 R6 K12; var8 = var6; var7 = var6[0x032A0844]
-      37 [-]: CALL R7 6 1  ; var7(var8, var9, var10, var11, var12)
-      38 [-]: MOVE R9 R4   ; var9 = var4
-      39 [-]: LOADN R10 70 ; var10 = 70
-      40 [-]: LOADN R11 4  ; var11 = 4
-      41 [-]: LOADN R12 1  ; var12 = 1
-      42 [-]: NAMECALL R7 R6 K12; var8 = var6; var7 = var6[0x032A0844]
-      43 [-]: CALL R7 6 1  ; var7(var8, var9, var10, var11, var12)
-      44 [-]: LOADN R9 96  ; var9 = 96
-      45 [-]: LOADN R10 4  ; var10 = 4
-      46 [-]: MOVE R11 R4  ; var11 = var4
-      47 [-]: LOADNIL R12  ; var12 = nil
-      48 [-]: LOADNIL R13  ; var13 = nil
-      49 [-]: LOADN R14 25 ; var14 = 25
-      50 [-]: NAMECALL R7 R6 K13; var8 = var6; var7 = var6[0x5E6704FF]
-      51 [-]: CALL R7 8 1  ; var7(var8, var9, var10, var11, var12, var13, var14)
-L 5:  52 [-]: MOVE R6 R1   ; var6 = var1
-      53 [-]: GETIMPORT R7 15; var7 = 0x55156FF7
-      54 [-]: CALL R7 1 2  ; var7 = var7()
-      55 [-]: GETIMPORT R8 18; var8 = _T["ashenModSetBonusAbility"]
-      56 [-]: JUMPIF R8 L6 ; goto L6 if var8
-      57 [-]: GETIMPORT R8 19; var8 = _T
-      58 [-]: NEWTABLE R9 0 0; var9 = {}
-      59 [-]: SETTABLEKS R9 R8 K17; var9["ashenModSetBonusAbility"] = var8
-L 6:  60 [-]: NAMECALL R8 R6 K20; var9 = var6; var8 = var6[0x388577D5]
-      61 [-]: CALL R8 2 2  ; var8 = var8(var9)
-      62 [-]: GETIMPORT R9 18; var9 = _T["ashenModSetBonusAbility"]
-      63 [-]: SETTABLE R7 R9 R8; var7[var9] = var8
-      64 [-]: RETURN R0 0  ; 
+      12 [-]: MOVE R5 R1   ; var5 = var1
+      13 [-]: FASTCALL1 64 R5 L3; 
+      14 [-]: MOVE R7 R5   ; var7 = var5
+      15 [-]: GETIMPORT R6 3; var6 = 0x7B998233
+      16 [-]: CALL R6 2 2  ; var6 = var6(var7)
+L 3:  17 [-]: JUMPIFNOT R6 L4; goto L4 if not var6
+      18 [-]: LOADN R4 0   ; var4 = 0
+      19 [-]: JUMP L10     ; goto L10
+L 4:  20 [-]: LOADN R8 5   ; var8 = 5
+      21 [-]: NAMECALL R6 R5 K7; var7 = var5; var6 = var5[0x0E46E45B]
+      22 [-]: CALL R6 3 2  ; var6 = var6(var7, var8)
+      23 [-]: JUMPIFNOT R6 L5; goto L5 if not var6
+L 5:  24 [-]: GETIMPORT R7 10; var7 = _T["ashenModSetBonusAbility"]
+      25 [-]: JUMPIF R7 L6 ; goto L6 if var7
+      26 [-]: LOADNIL R6   ; var6 = nil
+      27 [-]: JUMP L8      ; goto L8
+L 6:  28 [-]: NAMECALL R7 R5 K11; var8 = var5; var7 = var5[0x388577D5]
+      29 [-]: CALL R7 2 2  ; var7 = var7(var8)
+      30 [-]: GETIMPORT R9 10; var9 = _T["ashenModSetBonusAbility"]
+      31 [-]: GETTABLE R8 R9 R7; var8 = var9[var7]
+      32 [-]: JUMPIF R8 L7 ; goto L7 if var8
+      33 [-]: LOADNIL R6   ; var6 = nil
+      34 [-]: JUMP L8      ; goto L8
+L 7:  35 [-]: GETIMPORT R8 10; var8 = _T["ashenModSetBonusAbility"]
+      36 [-]: GETTABLE R6 R8 R7; var6 = var8[var7]
+L 8:  37 [-]: GETIMPORT R8 13; var8 = 0x6A61DC97
+      38 [-]: GETTABLE R7 R8 R2; var7 = var8[var2]
+      39 [-]: JUMPXEQKNIL R6 L9; 
+      40 [-]: GETIMPORT R9 15; var9 = 0x55156FF7
+      41 [-]: CALL R9 1 2  ; var9 = var9()
+      42 [-]: SUB R8 R9 R6 ; var8 = var9 - var6
+      43 [-]: JUMPIFNOTLT R8 R7 L9; goto L9 if var8 >= var1072
+      44 [-]: LOADN R4 0   ; var4 = 0
+      45 [-]: JUMP L10     ; goto L10
+L 9:  46 [-]: LOADN R4 1   ; var4 = 1
+L10:  47 [-]: LOADN R5 0   ; var5 = 0
+      48 [-]: JUMPIFNOTLE R4 R5 L11; goto L11 if var4 > var65571
+      49 [-]: RETURN R0 0  ; 
+L11:  50 [-]: GETIMPORT R5 17; var5 = 0x605DC082
+      51 [-]: GETTABLE R4 R5 R2; var4 = var5[var2]
+      52 [-]: GETIMPORT R7 19; var7 = 0x4D4341D0
+      53 [-]: GETTABLE R6 R7 R2; var6 = var7[var2]
+      54 [-]: MINUS R5 R6  ; 
+      55 [-]: FASTCALL1 64 R0 L12; 
+      56 [-]: MOVE R7 R0   ; var7 = var0
+      57 [-]: GETIMPORT R6 3; var6 = 0x7B998233
+      58 [-]: CALL R6 2 2  ; var6 = var6(var7)
+L12:  59 [-]: JUMPIF R6 L13; goto L13 if var6
+      60 [-]: NAMECALL R6 R1 K20; var7 = var1; var6 = var1[0xDE321E6F]
+      61 [-]: CALL R6 2 2  ; var6 = var6(var7)
+      62 [-]: MOVE R9 R4   ; var9 = var4
+      63 [-]: LOADN R10 55 ; var10 = 55
+      64 [-]: LOADN R11 4  ; var11 = 4
+      65 [-]: MOVE R12 R5  ; var12 = var5
+      66 [-]: NAMECALL R7 R6 K21; var8 = var6; var7 = var6[0x032A0844]
+      67 [-]: CALL R7 6 1  ; var7(var8, var9, var10, var11, var12)
+      68 [-]: MOVE R9 R4   ; var9 = var4
+      69 [-]: LOADN R10 73 ; var10 = 73
+      70 [-]: LOADN R11 4  ; var11 = 4
+      71 [-]: LOADN R12 1  ; var12 = 1
+      72 [-]: NAMECALL R7 R6 K21; var8 = var6; var7 = var6[0x032A0844]
+      73 [-]: CALL R7 6 1  ; var7(var8, var9, var10, var11, var12)
+      74 [-]: LOADN R9 99  ; var9 = 99
+      75 [-]: LOADN R10 4  ; var10 = 4
+      76 [-]: MOVE R11 R4  ; var11 = var4
+      77 [-]: LOADNIL R12  ; var12 = nil
+      78 [-]: LOADNIL R13  ; var13 = nil
+      79 [-]: LOADN R14 25 ; var14 = 25
+      80 [-]: NAMECALL R7 R6 K22; var8 = var6; var7 = var6[0x5E6704FF]
+      81 [-]: CALL R7 8 1  ; var7(var8, var9, var10, var11, var12, var13, var14)
+L13:  82 [-]: MOVE R6 R1   ; var6 = var1
+      83 [-]: GETIMPORT R7 15; var7 = 0x55156FF7
+      84 [-]: CALL R7 1 2  ; var7 = var7()
+      85 [-]: GETIMPORT R8 10; var8 = _T["ashenModSetBonusAbility"]
+      86 [-]: JUMPIF R8 L14; goto L14 if var8
+      87 [-]: GETIMPORT R8 23; var8 = _T
+      88 [-]: NEWTABLE R9 0 0; var9 = {}
+      89 [-]: SETTABLEKS R9 R8 K9; var9["ashenModSetBonusAbility"] = var8
+L14:  90 [-]: NAMECALL R8 R6 K11; var9 = var6; var8 = var6[0x388577D5]
+      91 [-]: CALL R8 2 2  ; var8 = var8(var9)
+      92 [-]: GETIMPORT R9 10; var9 = _T["ashenModSetBonusAbility"]
+      93 [-]: SETTABLE R7 R9 R8; var7[var9] = var8
+      94 [-]: RETURN R0 0  ; 
 
 
 

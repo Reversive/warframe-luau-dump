@@ -27,7 +27,7 @@
        4 [-]: NAMECALL R3 R2 K3; var4 = var2; var3 = var2[0xE43D5F05]
        5 [-]: CALL R3 4 2  ; var3 = var3(var4, var5, var6)
        6 [-]: GETTABLEKS R5 R3 K4; var5 = var3["entity"]
-       7 [-]: FASTCALL1 62 R5 L0; 
+       7 [-]: FASTCALL1 64 R5 L0; 
        8 [-]: GETIMPORT R4 6; var4 = 0x7B998233
        9 [-]: CALL R4 2 2  ; var4 = var4(var5)
 L 0:  10 [-]: JUMPIF R4 L1 ; goto L1 if var4
@@ -80,7 +80,7 @@ L 1:  13 [-]: LOADN R4 0   ; var4 = 0
       13 [-]: MOVE R4 R6   ; var4 = var6
       14 [-]: MOVE R5 R7   ; var5 = var7
       15 [-]: GETGLOBAL R7 K5; var7 = 0x9B7A9620
-      16 [-]: FASTCALL1 62 R7 L0; 
+      16 [-]: FASTCALL1 64 R7 L0; 
       17 [-]: GETIMPORT R6 7; var6 = 0x7B998233
       18 [-]: CALL R6 2 2  ; var6 = var6(var7)
 L 0:  19 [-]: JUMPIF R6 L1 ; goto L1 if var6

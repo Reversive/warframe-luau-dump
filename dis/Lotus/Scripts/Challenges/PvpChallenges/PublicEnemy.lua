@@ -46,7 +46,7 @@ L 0:  10 [-]: LOADB R4 0   ; var4 = false
        3 [-]: CALL R3 2 2  ; var3 = var3(var4)
        4 [-]: NAMECALL R5 R3 K2; var6 = var3; var5 = var3[0x5E651723]
        5 [-]: CALL R5 2 0  ; var5, ... = var5(var6)
-       6 [-]: FASTCALL 62 L0; 
+       6 [-]: FASTCALL 64 L0; 
        7 [-]: GETIMPORT R4 4; var4 = 0x7B998233
        8 [-]: CALL R4 0 2  ; var4 = var4(var5, ...)
 L 0:   9 [-]: JUMPIF R4 L7 ; goto L7 if var4
@@ -72,7 +72,7 @@ L 2:  25 [-]: GETIMPORT R6 7; var6 = _T["gPublicEnemyChallengeData"]
       29 [-]: LOADN R5 1   ; var5 = 1
       30 [-]: NAMECALL R6 R1 K9; var7 = var1; var6 = var1[0xAD1E0B4B]
       31 [-]: CALL R6 2 2  ; var6 = var6(var7)
-      32 [-]: JUMPIFNOTEQ R5 R6 L3; goto L3 if var5 ~= var1351
+      32 [-]: JUMPIFNOTEQ R5 R6 L3; goto L3 if var5 ~= var1328
       33 [-]: LOADN R5 0   ; var5 = 0
 L 3:  34 [-]: LOADN R6 0   ; var6 = 0
       35 [-]: GETIMPORT R7 11; var7 = 0xBE190284
@@ -95,7 +95,7 @@ L 4:  43 [-]: GETIMPORT R13 7; var13 = _T["gPublicEnemyChallengeData"]
 L 5:  52 [-]: ADDK R6 R6 K13; var6 = var6 + 1
       53 [-]: FORNLOOP R8 L4; nforloop end - iterate + goto L4
 L 6:  54 [-]: LOADN R8 4   ; var8 = 4
-      55 [-]: JUMPIFNOTLE R8 R6 L7; goto L7 if var8 > var460878
+      55 [-]: JUMPIFNOTLE R8 R6 L7; goto L7 if var8 > var460833
       56 [-]: GETIMPORT R8 7; var8 = _T["gPublicEnemyChallengeData"]
       57 [-]: LOADNIL R9   ; var9 = nil
       58 [-]: SETTABLE R9 R8 R2; var9[var8] = var2

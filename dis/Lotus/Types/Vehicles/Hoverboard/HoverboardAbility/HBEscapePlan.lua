@@ -113,7 +113,7 @@
       21 [-]: NAMECALL R2 R2 K7; var3 = var2; var2 = var2[0x4A9DA24C]
       22 [-]: CALL R2 4 1  ; var2(var3, var4, var5)
       23 [-]: GETUPVAL R3 0; var3 = upvalues[0]
-      24 [-]: FASTCALL1 62 R3 L0; 
+      24 [-]: FASTCALL1 64 R3 L0; 
       25 [-]: GETIMPORT R2 9; var2 = 0x7B998233
       26 [-]: CALL R2 2 2  ; var2 = var2(var3)
 L 0:  27 [-]: JUMPIF R2 L1 ; goto L1 if var2
@@ -139,14 +139,14 @@ L 1:  44 [-]: JUMPIF R1 L4 ; goto L4 if var1
       47 [-]: NAMECALL R2 R2 K10; var3 = var2; var2 = var2[0x4A37C11B]
       48 [-]: CALL R2 2 1  ; var2(var3)
       49 [-]: GETUPVAL R3 0; var3 = upvalues[0]
-      50 [-]: FASTCALL1 62 R3 L2; 
+      50 [-]: FASTCALL1 64 R3 L2; 
       51 [-]: GETIMPORT R2 9; var2 = 0x7B998233
       52 [-]: CALL R2 2 2  ; var2 = var2(var3)
 L 2:  53 [-]: JUMPIF R2 L4 ; goto L4 if var2
       54 [-]: GETUPVAL R3 0; var3 = upvalues[0]
       55 [-]: NAMECALL R3 R3 K11; var4 = var3; var3 = var3[0xB3ED31DD]
       56 [-]: CALL R3 2 0  ; var3, ... = var3(var4)
-      57 [-]: FASTCALL 62 L3; 
+      57 [-]: FASTCALL 64 L3; 
       58 [-]: GETIMPORT R2 9; var2 = 0x7B998233
       59 [-]: CALL R2 0 2  ; var2 = var2(var3, ...)
 L 3:  60 [-]: JUMPIFNOT R2 L4; goto L4 if not var2

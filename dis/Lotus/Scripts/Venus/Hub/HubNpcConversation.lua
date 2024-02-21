@@ -17,7 +17,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  9
 
-       0 [-]: FASTCALL1 62 R0 L0; 
+       0 [-]: FASTCALL1 64 R0 L0; 
        1 [-]: MOVE R2 R0   ; var2 = var0
        2 [-]: GETIMPORT R1 1; var1 = 0x7B998233
        3 [-]: CALL R1 2 2  ; var1 = var1(var2)
@@ -25,19 +25,19 @@ L 0:   4 [-]: JUMPIFNOT R1 L1; goto L1 if not var1
        5 [-]: RETURN R0 0  ; 
 L 1:   6 [-]: NAMECALL R1 R0 K2; var2 = var0; var1 = var0[0xAD5B146C]
        7 [-]: CALL R1 2 2  ; var1 = var1(var2)
-       8 [-]: FASTCALL1 62 R1 L2; 
+       8 [-]: FASTCALL1 64 R1 L2; 
        9 [-]: MOVE R3 R1   ; var3 = var1
       10 [-]: GETIMPORT R2 1; var2 = 0x7B998233
       11 [-]: CALL R2 2 2  ; var2 = var2(var3)
 L 2:  12 [-]: JUMPIFNOT R2 L3; goto L3 if not var2
       13 [-]: RETURN R0 0  ; 
 L 3:  14 [-]: GETIMPORT R3 5; var3 = _T["CurrentConversation"]
-      15 [-]: FASTCALL1 62 R3 L4; 
+      15 [-]: FASTCALL1 64 R3 L4; 
       16 [-]: GETIMPORT R2 1; var2 = 0x7B998233
       17 [-]: CALL R2 2 2  ; var2 = var2(var3)
 L 4:  18 [-]: JUMPIF R2 L7 ; goto L7 if var2
       19 [-]: GETIMPORT R2 7; var2 = _T["CurrentConversation"]["mHubNpc"]
-      20 [-]: JUMPIFNOTEQ R2 R0 L7; goto L7 if var2 ~= var590414
+      20 [-]: JUMPIFNOTEQ R2 R0 L7; goto L7 if var2 ~= var590369
       21 [-]: GETIMPORT R2 9; var2 = _T["CurrentConversation"]["IsUnmasked"]
       22 [-]: JUMPIFNOT R2 L7; goto L7 if not var2
       23 [-]: LOADN R4 0   ; var4 = 0

@@ -28,11 +28,11 @@
        0 [-]: GETIMPORT R0 1; var0 = 0xCFC01047
        1 [-]: GETIMPORT R1 4; var1 = _T["slipperyVolumeEntities"]
        2 [-]: CALL R0 2 4  ; var0, var1, var2 = var0(var1)
-       3 [-]: FORGPREP_NEXT R0 L3; 
+       3 [-]: FORGPREP_NEXT R0 L4; 
 L 0:   4 [-]: GETIMPORT R5 1; var5 = 0xCFC01047
        5 [-]: MOVE R6 R4   ; var6 = var4
        6 [-]: CALL R5 2 4  ; var5, var6, var7 = var5(var6)
-       7 [-]: FORGPREP_NEXT R5 L2; 
+       7 [-]: FORGPREP_NEXT R5 L3; 
 L 1:   8 [-]: GETIMPORT R10 6; var10 = 0x3D106989
        9 [-]: LOADK R12 K7 ; var12 = "ENTITY: "
       10 [-]: MOVE R13 R3  ; var13 = var3
@@ -41,14 +41,15 @@ L 1:   8 [-]: GETIMPORT R10 6; var10 = 0x3D106989
       13 [-]: LOADK R16 K9 ; var16 = " FRICTION: "
       14 [-]: GETTABLEKS R17 R9 K10; var17 = var9["Friction"]
       15 [-]: LOADK R18 K11; var18 = " CAN JUMP: "
-      16 [-]: GETIMPORT R19 13; var19 = 0x64FB1586
-      17 [-]: GETTABLEKS R20 R9 K14; var20 = var9["CanJump"]
-      18 [-]: CALL R19 2 2 ; var19 = var19(var20)
-      19 [-]: CONCAT R11 R12 R19; var11 = var12 .. var19
-      20 [-]: CALL R10 2 1 ; var10(var11)
-L 2:  21 [-]: FORGLOOP R5 L1 2; 
-L 3:  22 [-]: FORGLOOP R0 L0 2; 
-      23 [-]: RETURN R0 0  ; 
+      16 [-]: GETTABLEKS R20 R9 K12; var20 = var9["CanJump"]
+      17 [-]: FASTCALL1 63 R20 L2; 
+      18 [-]: GETIMPORT R19 14; var19 = 0x64FB1586
+      19 [-]: CALL R19 2 2 ; var19 = var19(var20)
+L 2:  20 [-]: CONCAT R11 R12 R19; var11 = var12 .. var19
+      21 [-]: CALL R10 2 1 ; var10(var11)
+L 3:  22 [-]: FORGLOOP R5 L1 2; 
+L 4:  23 [-]: FORGLOOP R0 L0 2; 
+      24 [-]: RETURN R0 0  ; 
 
 
 ; Name:            
@@ -58,7 +59,7 @@ L 3:  22 [-]: FORGLOOP R0 L0 2;
 ; Is_vararg:       0
 ; Max Stack Size:  4
 
-       0 [-]: FASTCALL1 62 R0 L0; 
+       0 [-]: FASTCALL1 64 R0 L0; 
        1 [-]: MOVE R2 R0   ; var2 = var0
        2 [-]: GETIMPORT R1 1; var1 = 0x7B998233
        3 [-]: CALL R1 2 2  ; var1 = var1(var2)
@@ -95,7 +96,7 @@ L 4:  24 [-]: LOADB R2 1   ; var2 = true
 
        0 [-]: GETIMPORT R2 2; var2 = _T["slipperyVolumeEntities"]
        1 [-]: GETTABLE R1 R2 R0; var1 = var2[var0]
-       2 [-]: FASTCALL1 62 R1 L0; 
+       2 [-]: FASTCALL1 64 R1 L0; 
        3 [-]: MOVE R3 R1   ; var3 = var1
        4 [-]: GETIMPORT R2 4; var2 = 0x7B998233
        5 [-]: CALL R2 2 2  ; var2 = var2(var3)
@@ -109,7 +110,7 @@ L 1:   9 [-]: LOADN R2 0   ; var2 = 0
       13 [-]: CALL R4 2 4  ; var4, var5, var6 = var4(var5)
       14 [-]: FORGPREP_NEXT R4 L4; 
 L 2:  15 [-]: GETTABLEKS R9 R8 K7; var9 = var8["Friction"]
-      16 [-]: JUMPIFNOTLT R9 R3 L3; goto L3 if var9 >= var268960540
+      16 [-]: JUMPIFNOTLT R9 R3 L3; goto L3 if var9 >= var268960575
       17 [-]: GETTABLEKS R3 R8 K7; var3 = var8["Friction"]
 L 3:  18 [-]: ADDK R2 R2 K8; var2 = var2 + 1
 L 4:  19 [-]: FORGLOOP R4 L2 2; 
@@ -128,7 +129,7 @@ L 5:  23 [-]: RETURN R3 1  ;
 
        0 [-]: GETIMPORT R2 2; var2 = _T["slipperyVolumeEntities"]
        1 [-]: GETTABLE R1 R2 R0; var1 = var2[var0]
-       2 [-]: FASTCALL1 62 R1 L0; 
+       2 [-]: FASTCALL1 64 R1 L0; 
        3 [-]: MOVE R3 R1   ; var3 = var1
        4 [-]: GETIMPORT R2 4; var2 = 0x7B998233
        5 [-]: CALL R2 2 2  ; var2 = var2(var3)
@@ -160,7 +161,7 @@ L 5:  24 [-]: RETURN R3 1  ;
 ; Is_vararg:       0
 ; Max Stack Size:  15
 
-       0 [-]: FASTCALL1 62 R1 L0; 
+       0 [-]: FASTCALL1 64 R1 L0; 
        1 [-]: MOVE R4 R1   ; var4 = var1
        2 [-]: GETIMPORT R3 1; var3 = 0x7B998233
        3 [-]: CALL R3 2 2  ; var3 = var3(var4)
@@ -188,7 +189,7 @@ L 4:  24 [-]: LOADB R2 1   ; var2 = true
 L 5:  25 [-]: JUMPIF R2 L6 ; goto L6 if var2
       26 [-]: RETURN R0 0  ; 
 L 6:  27 [-]: GETIMPORT R3 10; var3 = _T["slipperyVolumeEntities"]
-      28 [-]: FASTCALL1 62 R3 L7; 
+      28 [-]: FASTCALL1 64 R3 L7; 
       29 [-]: GETIMPORT R2 1; var2 = 0x7B998233
       30 [-]: CALL R2 2 2  ; var2 = var2(var3)
 L 7:  31 [-]: JUMPIFNOT R2 L8; goto L8 if not var2
@@ -199,7 +200,7 @@ L 8:  35 [-]: NAMECALL R2 R1 K12; var3 = var1; var2 = var1[0x388577D5]
       36 [-]: CALL R2 2 2  ; var2 = var2(var3)
       37 [-]: GETIMPORT R5 10; var5 = _T["slipperyVolumeEntities"]
       38 [-]: GETTABLE R4 R5 R2; var4 = var5[var2]
-      39 [-]: FASTCALL1 62 R4 L9; 
+      39 [-]: FASTCALL1 64 R4 L9; 
       40 [-]: GETIMPORT R3 1; var3 = 0x7B998233
       41 [-]: CALL R3 2 2  ; var3 = var3(var4)
 L 9:  42 [-]: JUMPIFNOT R3 L10; goto L10 if not var3
@@ -221,7 +222,7 @@ L10:  46 [-]: NAMECALL R3 R0 K12; var4 = var0; var3 = var0[0x388577D5]
       58 [-]: CALL R4 2 2  ; var4 = var4(var5)
       59 [-]: GETIMPORT R7 10; var7 = _T["slipperyVolumeEntities"]
       60 [-]: GETTABLE R6 R7 R2; var6 = var7[var2]
-      61 [-]: FASTCALL1 62 R6 L11; 
+      61 [-]: FASTCALL1 64 R6 L11; 
       62 [-]: MOVE R8 R6   ; var8 = var6
       63 [-]: GETIMPORT R7 1; var7 = 0x7B998233
       64 [-]: CALL R7 2 2  ; var7 = var7(var8)
@@ -262,7 +263,7 @@ L17:  84 [-]: MOVE R8 R4   ; var8 = var4
 ; Is_vararg:       0
 ; Max Stack Size:  17
 
-       0 [-]: FASTCALL1 62 R1 L0; 
+       0 [-]: FASTCALL1 64 R1 L0; 
        1 [-]: MOVE R4 R1   ; var4 = var1
        2 [-]: GETIMPORT R3 1; var3 = 0x7B998233
        3 [-]: CALL R3 2 2  ; var3 = var3(var4)
@@ -292,7 +293,7 @@ L 5:  25 [-]: JUMPIF R2 L6 ; goto L6 if var2
 L 6:  27 [-]: NAMECALL R2 R1 K8; var3 = var1; var2 = var1[0x388577D5]
       28 [-]: CALL R2 2 2  ; var2 = var2(var3)
       29 [-]: GETIMPORT R4 11; var4 = _T["slipperyVolumeEntities"]
-      30 [-]: FASTCALL1 62 R4 L7; 
+      30 [-]: FASTCALL1 64 R4 L7; 
       31 [-]: GETIMPORT R3 1; var3 = 0x7B998233
       32 [-]: CALL R3 2 2  ; var3 = var3(var4)
 L 7:  33 [-]: JUMPIFNOT R3 L8; goto L8 if not var3
@@ -310,7 +311,7 @@ L 8:  35 [-]: NAMECALL R3 R1 K8; var4 = var1; var3 = var1[0x388577D5]
       45 [-]: CALL R6 2 2  ; var6 = var6(var7)
       46 [-]: GETIMPORT R9 11; var9 = _T["slipperyVolumeEntities"]
       47 [-]: GETTABLE R8 R9 R3; var8 = var9[var3]
-      48 [-]: FASTCALL1 62 R8 L9; 
+      48 [-]: FASTCALL1 64 R8 L9; 
       49 [-]: MOVE R10 R8  ; var10 = var8
       50 [-]: GETIMPORT R9 1; var9 = 0x7B998233
       51 [-]: CALL R9 2 2  ; var9 = var9(var10)

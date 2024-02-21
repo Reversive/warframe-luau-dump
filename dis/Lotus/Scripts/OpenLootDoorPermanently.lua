@@ -28,7 +28,7 @@
        8 [-]: FORNPREP R1 L3; nforprep start - [escape at L3] -- var1 = iterator
 L 0:   9 [-]: GETIMPORT R6 5; var6 = 0xFF6C80AC
       10 [-]: GETTABLE R5 R6 R3; var5 = var6[var3]
-      11 [-]: FASTCALL1 62 R5 L1; 
+      11 [-]: FASTCALL1 64 R5 L1; 
       12 [-]: GETIMPORT R4 7; var4 = 0x7B998233
       13 [-]: CALL R4 2 2  ; var4 = var4(var5)
 L 1:  14 [-]: JUMPIF R4 L2 ; goto L2 if var4

@@ -49,7 +49,7 @@ L 1:   7 [-]: GETIMPORT R1 2; var1 = _T["ElevatorTransmissions"]
       21 [-]: GETIMPORT R3 10; var3 = _T
       22 [-]: LOADNIL R4   ; var4 = nil
       23 [-]: SETTABLEKS R4 R3 K11; var4["ElevatorTransmissions_RequiredJobType"] = var3
-L 2:  24 [-]: FASTCALL1 62 R1 L3; 
+L 2:  24 [-]: FASTCALL1 64 R1 L3; 
       25 [-]: MOVE R4 R1   ; var4 = var1
       26 [-]: GETIMPORT R3 14; var3 = 0x7B998233
       27 [-]: CALL R3 2 2  ; var3 = var3(var4)
@@ -61,7 +61,7 @@ L 3:  28 [-]: JUMPIF R3 L4 ; goto L4 if var3
       33 [-]: LOADN R4 0   ; var4 = 0
       34 [-]: CALL R3 2 1  ; var3(var4)
       35 [-]: JUMPBACK L2  ; goto L2
-L 4:  36 [-]: FASTCALL1 62 R1 L5; 
+L 4:  36 [-]: FASTCALL1 64 R1 L5; 
       37 [-]: MOVE R4 R1   ; var4 = var1
       38 [-]: GETIMPORT R3 14; var3 = 0x7B998233
       39 [-]: CALL R3 2 2  ; var3 = var3(var4)
@@ -79,7 +79,7 @@ L 7:  45 [-]: GETIMPORT R3 20; var3 = _T["PlayingStreamingAnims"]
 L 8:  51 [-]: GETIMPORT R3 22; var3 = _T["ActiveJob"]
       52 [-]: JUMPIFNOT R3 L13; goto L13 if not var3
       53 [-]: GETIMPORT R3 24; var3 = _T["ActiveJob"]["jobType"]
-      54 [-]: JUMPIFNOTEQ R3 R2 L13; goto L13 if var3 ~= var66567
+      54 [-]: JUMPIFNOTEQ R3 R2 L13; goto L13 if var3 ~= var66620
       55 [-]: GETUPVAL R4 1; var4 = upvalues[1]
       56 [-]: GETTABLEKS R3 R4 K25; var3 = var4[0x1F60D532]
       57 [-]: GETIMPORT R4 27; var4 = 0xB009BBC6
@@ -88,9 +88,9 @@ L 8:  51 [-]: GETIMPORT R3 22; var3 = _T["ActiveJob"]
       60 [-]: CALL R3 0 1  ; var3(var4, ...)
       61 [-]: LOADN R3 0   ; var3 = 0
 L 9:  62 [-]: LOADN R4 3   ; var4 = 3
-      63 [-]: JUMPIFNOTLT R3 R4 L11; goto L11 if var3 >= var1901902
+      63 [-]: JUMPIFNOTLT R3 R4 L11; goto L11 if var3 >= var1901857
       64 [-]: GETIMPORT R5 29; var5 = _T["curTransmission"]
-      65 [-]: FASTCALL1 62 R5 L10; 
+      65 [-]: FASTCALL1 64 R5 L10; 
       66 [-]: GETIMPORT R4 14; var4 = 0x7B998233
       67 [-]: CALL R4 2 2  ; var4 = var4(var5)
 L10:  68 [-]: JUMPIFNOT R4 L11; goto L11 if not var4
@@ -102,7 +102,7 @@ L10:  68 [-]: JUMPIFNOT R4 L11; goto L11 if not var4
       74 [-]: ADD R3 R3 R4 ; var3 = var3 + var4
       75 [-]: JUMPBACK L9  ; goto L9
 L11:  76 [-]: GETIMPORT R5 29; var5 = _T["curTransmission"]
-      77 [-]: FASTCALL1 62 R5 L12; 
+      77 [-]: FASTCALL1 64 R5 L12; 
       78 [-]: GETIMPORT R4 14; var4 = 0x7B998233
       79 [-]: CALL R4 2 2  ; var4 = var4(var5)
 L12:  80 [-]: JUMPIF R4 L13; goto L13 if var4

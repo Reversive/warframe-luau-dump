@@ -131,7 +131,7 @@
 ; Max Stack Size:  6
 
        0 [-]: GETIMPORT R1 2; var1 = _T["occlusionBias"]
-       1 [-]: FASTCALL1 62 R1 L0; 
+       1 [-]: FASTCALL1 64 R1 L0; 
        2 [-]: GETIMPORT R0 4; var0 = 0x7B998233
        3 [-]: CALL R0 2 2  ; var0 = var0(var1)
 L 0:   4 [-]: JUMPIFNOT R0 L1; goto L1 if not var0
@@ -141,7 +141,7 @@ L 0:   4 [-]: JUMPIFNOT R0 L1; goto L1 if not var0
 L 1:   8 [-]: GETIMPORT R0 2; var0 = _T["occlusionBias"]
        9 [-]: JUMPXEQKN R0 K6 L4 NOT; 
       10 [-]: GETIMPORT R1 8; var1 = _T["occlusionDisabled"]
-      11 [-]: FASTCALL1 62 R1 L2; 
+      11 [-]: FASTCALL1 64 R1 L2; 
       12 [-]: GETIMPORT R0 4; var0 = 0x7B998233
       13 [-]: CALL R0 2 2  ; var0 = var0(var1)
 L 2:  14 [-]: JUMPIFNOT R0 L4; goto L4 if not var0
@@ -171,13 +171,13 @@ L 4:  26 [-]: GETIMPORT R0 5; var0 = _T
 ; Max Stack Size:  6
 
        0 [-]: GETIMPORT R1 2; var1 = _T["occlusionBias"]
-       1 [-]: FASTCALL1 62 R1 L0; 
+       1 [-]: FASTCALL1 64 R1 L0; 
        2 [-]: GETIMPORT R0 4; var0 = 0x7B998233
        3 [-]: CALL R0 2 2  ; var0 = var0(var1)
 L 0:   4 [-]: JUMPIF R0 L1 ; goto L1 if var0
        5 [-]: GETIMPORT R0 2; var0 = _T["occlusionBias"]
        6 [-]: LOADN R1 0   ; var1 = 0
-       7 [-]: JUMPIFNOTLE R0 R1 L2; goto L2 if var0 > var65581
+       7 [-]: JUMPIFNOTLE R0 R1 L2; goto L2 if var0 > var65571
 L 1:   8 [-]: RETURN R0 0  ; 
 L 2:   9 [-]: GETIMPORT R0 5; var0 = _T
       10 [-]: GETIMPORT R2 2; var2 = _T["occlusionBias"]
@@ -186,7 +186,7 @@ L 2:   9 [-]: GETIMPORT R0 5; var0 = _T
       13 [-]: GETIMPORT R0 2; var0 = _T["occlusionBias"]
       14 [-]: JUMPXEQKN R0 K7 L5 NOT; 
       15 [-]: GETIMPORT R1 9; var1 = _T["occlusionDisabled"]
-      16 [-]: FASTCALL1 62 R1 L3; 
+      16 [-]: FASTCALL1 64 R1 L3; 
       17 [-]: GETIMPORT R0 4; var0 = 0x7B998233
       18 [-]: CALL R0 2 2  ; var0 = var0(var1)
 L 3:  19 [-]: JUMPIFNOT R0 L5; goto L5 if not var0
@@ -212,7 +212,7 @@ L 5:  31 [-]: RETURN R0 0  ;
 ; Max Stack Size:  6
 
        0 [-]: GETIMPORT R1 2; var1 = _T["occlusionDisabled"]
-       1 [-]: FASTCALL1 62 R1 L0; 
+       1 [-]: FASTCALL1 64 R1 L0; 
        2 [-]: GETIMPORT R0 4; var0 = 0x7B998233
        3 [-]: CALL R0 2 2  ; var0 = var0(var1)
 L 0:   4 [-]: JUMPIFNOT R0 L1; goto L1 if not var0
@@ -223,19 +223,19 @@ L 1:   6 [-]: GETIMPORT R0 5; var0 = _T
        9 [-]: SETTABLEKS R1 R0 K1; var1["occlusionDisabled"] = var0
       10 [-]: GETIMPORT R0 2; var0 = _T["occlusionDisabled"]
       11 [-]: LOADN R1 0   ; var1 = 0
-      12 [-]: JUMPIFNOTLT R1 R0 L2; goto L2 if var1 >= var65581
+      12 [-]: JUMPIFNOTLT R1 R0 L2; goto L2 if var1 >= var65571
       13 [-]: RETURN R0 0  ; 
 L 2:  14 [-]: GETIMPORT R0 5; var0 = _T
       15 [-]: LOADNIL R1   ; var1 = nil
       16 [-]: SETTABLEKS R1 R0 K1; var1["occlusionDisabled"] = var0
       17 [-]: GETIMPORT R1 8; var1 = _T["occlusionBias"]
-      18 [-]: FASTCALL1 62 R1 L3; 
+      18 [-]: FASTCALL1 64 R1 L3; 
       19 [-]: GETIMPORT R0 4; var0 = 0x7B998233
       20 [-]: CALL R0 2 2  ; var0 = var0(var1)
 L 3:  21 [-]: JUMPIF R0 L5 ; goto L5 if var0
       22 [-]: GETIMPORT R0 8; var0 = _T["occlusionBias"]
       23 [-]: LOADN R1 0   ; var1 = 0
-      24 [-]: JUMPIFNOTLT R1 R0 L5; goto L5 if var1 >= var66119
+      24 [-]: JUMPIFNOTLT R1 R0 L5; goto L5 if var1 >= var66096
       25 [-]: LOADN R2 1   ; var2 = 1
       26 [-]: GETUPVAL R3 0; var3 = upvalues[0]
       27 [-]: LENGTH R0 R3 ; var0 = #var3
@@ -258,7 +258,7 @@ L 5:  36 [-]: RETURN R0 0  ;
 ; Max Stack Size:  6
 
        0 [-]: GETIMPORT R1 2; var1 = _T["occlusionDisabled"]
-       1 [-]: FASTCALL1 62 R1 L0; 
+       1 [-]: FASTCALL1 64 R1 L0; 
        2 [-]: GETIMPORT R0 4; var0 = 0x7B998233
        3 [-]: CALL R0 2 2  ; var0 = var0(var1)
 L 0:   4 [-]: JUMPIFNOT R0 L1; goto L1 if not var0
@@ -272,13 +272,13 @@ L 1:   9 [-]: GETIMPORT R0 5; var0 = _T
       12 [-]: SETTABLEKS R1 R0 K1; var1["occlusionDisabled"] = var0
       13 [-]: RETURN R0 0  ; 
 L 2:  14 [-]: GETIMPORT R1 8; var1 = _T["occlusionBias"]
-      15 [-]: FASTCALL1 62 R1 L3; 
+      15 [-]: FASTCALL1 64 R1 L3; 
       16 [-]: GETIMPORT R0 4; var0 = 0x7B998233
       17 [-]: CALL R0 2 2  ; var0 = var0(var1)
 L 3:  18 [-]: JUMPIF R0 L5 ; goto L5 if var0
       19 [-]: GETIMPORT R0 8; var0 = _T["occlusionBias"]
       20 [-]: LOADN R1 0   ; var1 = 0
-      21 [-]: JUMPIFNOTLT R1 R0 L5; goto L5 if var1 >= var66119
+      21 [-]: JUMPIFNOTLT R1 R0 L5; goto L5 if var1 >= var66096
       22 [-]: LOADN R2 1   ; var2 = 1
       23 [-]: GETUPVAL R3 0; var3 = upvalues[0]
       24 [-]: LENGTH R0 R3 ; var0 = #var3

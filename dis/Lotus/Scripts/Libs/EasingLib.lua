@@ -3,7 +3,7 @@
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       1
-; Max Stack Size:  28
+; Max Stack Size:  27
 
        1 [-]: GETIMPORT R0 1; var0 = 0xAEABECDA
        2 [-]: GETVARARGS R1 1; var1 = ...
@@ -12,190 +12,180 @@
        5 [-]: GETIMPORT R0 7; var0 = 0x5BCED4C4[0xA40531D8]
        6 [-]: GETIMPORT R1 9; var1 = 0x5BCED4C4[0x3EDA26FC]
        7 [-]: GETIMPORT R2 11; var2 = 0x5BCED4C4[0x00FA6BF1]
-       8 [-]: LOADK R3 K12 ; var3 = 3.1415927410125732
-       9 [-]: GETIMPORT R4 14; var4 = 0x5BCED4C4[0x34E9F45C]
-      10 [-]: GETIMPORT R5 16; var5 = 0x5BCED4C4[0xE4A5B3CA]
-      11 [-]: GETIMPORT R6 18; var6 = 0x5BCED4C4[0xF7D38BE5]
-      12 [-]: DUPCLOSURE R7 K19; 
-      13 [-]: SETGLOBAL R7 K20; "linear" = var7
-      14 [-]: DUPCLOSURE R7 K21; 
-      15 [-]: CAPTURE VAL R0; 
+       8 [-]: GETIMPORT R3 13; var3 = 0x5BCED4C4[0x34E9F45C]
+       9 [-]: GETIMPORT R4 15; var4 = 0x5BCED4C4[0xE4A5B3CA]
+      10 [-]: GETIMPORT R5 17; var5 = 0x5BCED4C4[0xF7D38BE5]
+      11 [-]: DUPCLOSURE R6 K18; 
+      12 [-]: SETGLOBAL R6 K19; "linear" = var6
+      13 [-]: DUPCLOSURE R6 K20; 
+      14 [-]: CAPTURE VAL R0; 
+      15 [-]: DUPCLOSURE R7 K21; 
       16 [-]: DUPCLOSURE R8 K22; 
-      17 [-]: DUPCLOSURE R9 K23; 
-      18 [-]: CAPTURE VAL R0; 
-      19 [-]: SETGLOBAL R9 K24; "inQuad" = var9
-      20 [-]: DUPCLOSURE R9 K25; 
-      21 [-]: SETGLOBAL R9 K26; "outQuad" = var9
-      22 [-]: DUPCLOSURE R9 K27; 
-      23 [-]: CAPTURE VAL R0; 
-      24 [-]: SETGLOBAL R9 K28; "inOutQuad" = var9
-      25 [-]: DUPCLOSURE R9 K29; 
-      26 [-]: SETGLOBAL R9 K30; "inOutQuadIntegral" = var9
-      27 [-]: DUPCLOSURE R9 K31; 
-      28 [-]: CAPTURE VAL R0; 
-      29 [-]: SETGLOBAL R9 K32; "outInQuad" = var9
-      30 [-]: DUPCLOSURE R9 K33; 
-      31 [-]: CAPTURE VAL R0; 
-      32 [-]: DUPCLOSURE R10 K34; 
-      33 [-]: CAPTURE VAL R0; 
-      34 [-]: DUPCLOSURE R11 K35; 
-      35 [-]: CAPTURE VAL R0; 
-      36 [-]: SETGLOBAL R11 K36; "inCubic" = var11
-      37 [-]: DUPCLOSURE R11 K37; 
-      38 [-]: CAPTURE VAL R0; 
-      39 [-]: SETGLOBAL R11 K38; "outCubic" = var11
-      40 [-]: DUPCLOSURE R11 K39; 
-      41 [-]: SETGLOBAL R11 K40; "inOutCubic" = var11
-      42 [-]: DUPCLOSURE R11 K41; 
-      43 [-]: CAPTURE VAL R0; 
-      44 [-]: SETGLOBAL R11 K42; "outInCubic" = var11
-      45 [-]: DUPCLOSURE R11 K43; 
-      46 [-]: CAPTURE VAL R0; 
-      47 [-]: DUPCLOSURE R12 K44; 
-      48 [-]: CAPTURE VAL R0; 
-      49 [-]: DUPCLOSURE R13 K45; 
-      50 [-]: CAPTURE VAL R0; 
-      51 [-]: SETGLOBAL R13 K46; "inQuart" = var13
-      52 [-]: DUPCLOSURE R13 K47; 
-      53 [-]: CAPTURE VAL R0; 
-      54 [-]: SETGLOBAL R13 K48; "outQuart" = var13
-      55 [-]: DUPCLOSURE R13 K49; 
-      56 [-]: CAPTURE VAL R0; 
-      57 [-]: SETGLOBAL R13 K50; "inOutQuart" = var13
-      58 [-]: DUPCLOSURE R13 K51; 
-      59 [-]: CAPTURE VAL R0; 
-      60 [-]: SETGLOBAL R13 K52; "outInQuart" = var13
-      61 [-]: DUPCLOSURE R13 K53; 
-      62 [-]: CAPTURE VAL R0; 
-      63 [-]: DUPCLOSURE R14 K54; 
-      64 [-]: CAPTURE VAL R0; 
-      65 [-]: DUPCLOSURE R15 K55; 
-      66 [-]: CAPTURE VAL R0; 
-      67 [-]: SETGLOBAL R15 K56; "inQuint" = var15
-      68 [-]: DUPCLOSURE R15 K57; 
-      69 [-]: CAPTURE VAL R0; 
-      70 [-]: SETGLOBAL R15 K58; "outQuint" = var15
-      71 [-]: DUPCLOSURE R15 K59; 
-      72 [-]: CAPTURE VAL R0; 
-      73 [-]: SETGLOBAL R15 K60; "inOutQuint" = var15
-      74 [-]: DUPCLOSURE R15 K61; 
-      75 [-]: CAPTURE VAL R0; 
-      76 [-]: SETGLOBAL R15 K62; "outInQuint" = var15
-      77 [-]: DUPCLOSURE R15 K63; 
-      78 [-]: CAPTURE VAL R3; 
-      79 [-]: CAPTURE VAL R2; 
+      17 [-]: CAPTURE VAL R0; 
+      18 [-]: SETGLOBAL R8 K23; "inQuad" = var8
+      19 [-]: DUPCLOSURE R8 K24; 
+      20 [-]: SETGLOBAL R8 K25; "outQuad" = var8
+      21 [-]: DUPCLOSURE R8 K26; 
+      22 [-]: CAPTURE VAL R0; 
+      23 [-]: SETGLOBAL R8 K27; "inOutQuad" = var8
+      24 [-]: DUPCLOSURE R8 K28; 
+      25 [-]: SETGLOBAL R8 K29; "inOutQuadIntegral" = var8
+      26 [-]: DUPCLOSURE R8 K30; 
+      27 [-]: CAPTURE VAL R0; 
+      28 [-]: SETGLOBAL R8 K31; "outInQuad" = var8
+      29 [-]: DUPCLOSURE R8 K32; 
+      30 [-]: CAPTURE VAL R0; 
+      31 [-]: DUPCLOSURE R9 K33; 
+      32 [-]: CAPTURE VAL R0; 
+      33 [-]: DUPCLOSURE R10 K34; 
+      34 [-]: CAPTURE VAL R0; 
+      35 [-]: SETGLOBAL R10 K35; "inCubic" = var10
+      36 [-]: DUPCLOSURE R10 K36; 
+      37 [-]: CAPTURE VAL R0; 
+      38 [-]: SETGLOBAL R10 K37; "outCubic" = var10
+      39 [-]: DUPCLOSURE R10 K38; 
+      40 [-]: SETGLOBAL R10 K39; "inOutCubic" = var10
+      41 [-]: DUPCLOSURE R10 K40; 
+      42 [-]: CAPTURE VAL R0; 
+      43 [-]: SETGLOBAL R10 K41; "outInCubic" = var10
+      44 [-]: DUPCLOSURE R10 K42; 
+      45 [-]: CAPTURE VAL R0; 
+      46 [-]: DUPCLOSURE R11 K43; 
+      47 [-]: CAPTURE VAL R0; 
+      48 [-]: DUPCLOSURE R12 K44; 
+      49 [-]: CAPTURE VAL R0; 
+      50 [-]: SETGLOBAL R12 K45; "inQuart" = var12
+      51 [-]: DUPCLOSURE R12 K46; 
+      52 [-]: CAPTURE VAL R0; 
+      53 [-]: SETGLOBAL R12 K47; "outQuart" = var12
+      54 [-]: DUPCLOSURE R12 K48; 
+      55 [-]: CAPTURE VAL R0; 
+      56 [-]: SETGLOBAL R12 K49; "inOutQuart" = var12
+      57 [-]: DUPCLOSURE R12 K50; 
+      58 [-]: CAPTURE VAL R0; 
+      59 [-]: SETGLOBAL R12 K51; "outInQuart" = var12
+      60 [-]: DUPCLOSURE R12 K52; 
+      61 [-]: CAPTURE VAL R0; 
+      62 [-]: DUPCLOSURE R13 K53; 
+      63 [-]: CAPTURE VAL R0; 
+      64 [-]: DUPCLOSURE R14 K54; 
+      65 [-]: CAPTURE VAL R0; 
+      66 [-]: SETGLOBAL R14 K55; "inQuint" = var14
+      67 [-]: DUPCLOSURE R14 K56; 
+      68 [-]: CAPTURE VAL R0; 
+      69 [-]: SETGLOBAL R14 K57; "outQuint" = var14
+      70 [-]: DUPCLOSURE R14 K58; 
+      71 [-]: CAPTURE VAL R0; 
+      72 [-]: SETGLOBAL R14 K59; "inOutQuint" = var14
+      73 [-]: DUPCLOSURE R14 K60; 
+      74 [-]: CAPTURE VAL R0; 
+      75 [-]: SETGLOBAL R14 K61; "outInQuint" = var14
+      76 [-]: DUPCLOSURE R14 K62; 
+      77 [-]: CAPTURE VAL R2; 
+      78 [-]: DUPCLOSURE R15 K63; 
+      79 [-]: CAPTURE VAL R1; 
       80 [-]: DUPCLOSURE R16 K64; 
-      81 [-]: CAPTURE VAL R3; 
-      82 [-]: CAPTURE VAL R1; 
-      83 [-]: DUPCLOSURE R17 K65; 
-      84 [-]: CAPTURE VAL R3; 
-      85 [-]: CAPTURE VAL R2; 
-      86 [-]: SETGLOBAL R17 K66; "inSine" = var17
-      87 [-]: DUPCLOSURE R17 K67; 
-      88 [-]: CAPTURE VAL R3; 
-      89 [-]: CAPTURE VAL R1; 
-      90 [-]: SETGLOBAL R17 K68; "outSine" = var17
-      91 [-]: DUPCLOSURE R17 K69; 
-      92 [-]: CAPTURE VAL R3; 
-      93 [-]: CAPTURE VAL R2; 
-      94 [-]: SETGLOBAL R17 K70; "inOutSine" = var17
-      95 [-]: DUPCLOSURE R17 K71; 
-      96 [-]: CAPTURE VAL R3; 
-      97 [-]: CAPTURE VAL R1; 
-      98 [-]: CAPTURE VAL R2; 
-      99 [-]: SETGLOBAL R17 K72; "outInSine" = var17
-     100 [-]: DUPCLOSURE R17 K73; 
+      81 [-]: CAPTURE VAL R2; 
+      82 [-]: SETGLOBAL R16 K65; "inSine" = var16
+      83 [-]: DUPCLOSURE R16 K66; 
+      84 [-]: CAPTURE VAL R1; 
+      85 [-]: SETGLOBAL R16 K67; "outSine" = var16
+      86 [-]: DUPCLOSURE R16 K68; 
+      87 [-]: CAPTURE VAL R2; 
+      88 [-]: SETGLOBAL R16 K69; "inOutSine" = var16
+      89 [-]: DUPCLOSURE R16 K70; 
+      90 [-]: CAPTURE VAL R1; 
+      91 [-]: CAPTURE VAL R2; 
+      92 [-]: SETGLOBAL R16 K71; "outInSine" = var16
+      93 [-]: DUPCLOSURE R16 K72; 
+      94 [-]: CAPTURE VAL R0; 
+      95 [-]: DUPCLOSURE R17 K73; 
+      96 [-]: CAPTURE VAL R0; 
+      97 [-]: DUPCLOSURE R18 K74; 
+      98 [-]: CAPTURE VAL R0; 
+      99 [-]: SETGLOBAL R18 K75; "inExpo" = var18
+     100 [-]: DUPCLOSURE R18 K76; 
      101 [-]: CAPTURE VAL R0; 
-     102 [-]: DUPCLOSURE R18 K74; 
-     103 [-]: CAPTURE VAL R0; 
-     104 [-]: DUPCLOSURE R19 K75; 
-     105 [-]: CAPTURE VAL R0; 
-     106 [-]: SETGLOBAL R19 K76; "inExpo" = var19
-     107 [-]: DUPCLOSURE R19 K77; 
-     108 [-]: CAPTURE VAL R0; 
-     109 [-]: SETGLOBAL R19 K78; "outExpo" = var19
-     110 [-]: DUPCLOSURE R19 K79; 
-     111 [-]: CAPTURE VAL R0; 
-     112 [-]: SETGLOBAL R19 K80; "inOutExpo" = var19
-     113 [-]: DUPCLOSURE R19 K81; 
-     114 [-]: CAPTURE VAL R0; 
-     115 [-]: SETGLOBAL R19 K82; "outInExpo" = var19
-     116 [-]: DUPCLOSURE R19 K83; 
-     117 [-]: CAPTURE VAL R0; 
-     118 [-]: CAPTURE VAL R4; 
-     119 [-]: DUPCLOSURE R20 K84; 
+     102 [-]: SETGLOBAL R18 K77; "outExpo" = var18
+     103 [-]: DUPCLOSURE R18 K78; 
+     104 [-]: CAPTURE VAL R0; 
+     105 [-]: SETGLOBAL R18 K79; "inOutExpo" = var18
+     106 [-]: DUPCLOSURE R18 K80; 
+     107 [-]: CAPTURE VAL R0; 
+     108 [-]: SETGLOBAL R18 K81; "outInExpo" = var18
+     109 [-]: DUPCLOSURE R18 K82; 
+     110 [-]: CAPTURE VAL R0; 
+     111 [-]: CAPTURE VAL R3; 
+     112 [-]: DUPCLOSURE R19 K83; 
+     113 [-]: CAPTURE VAL R0; 
+     114 [-]: CAPTURE VAL R3; 
+     115 [-]: DUPCLOSURE R20 K84; 
+     116 [-]: CAPTURE VAL R0; 
+     117 [-]: CAPTURE VAL R3; 
+     118 [-]: SETGLOBAL R20 K85; "inCirc" = var20
+     119 [-]: DUPCLOSURE R20 K86; 
      120 [-]: CAPTURE VAL R0; 
-     121 [-]: CAPTURE VAL R4; 
-     122 [-]: DUPCLOSURE R21 K85; 
-     123 [-]: CAPTURE VAL R0; 
-     124 [-]: CAPTURE VAL R4; 
-     125 [-]: SETGLOBAL R21 K86; "inCirc" = var21
-     126 [-]: DUPCLOSURE R21 K87; 
+     121 [-]: CAPTURE VAL R3; 
+     122 [-]: SETGLOBAL R20 K87; "outCirc" = var20
+     123 [-]: DUPCLOSURE R20 K88; 
+     124 [-]: CAPTURE VAL R3; 
+     125 [-]: SETGLOBAL R20 K89; "inOutCirc" = var20
+     126 [-]: DUPCLOSURE R20 K90; 
      127 [-]: CAPTURE VAL R0; 
-     128 [-]: CAPTURE VAL R4; 
-     129 [-]: SETGLOBAL R21 K88; "outCirc" = var21
-     130 [-]: DUPCLOSURE R21 K89; 
+     128 [-]: CAPTURE VAL R3; 
+     129 [-]: SETGLOBAL R20 K91; "outInCirc" = var20
+     130 [-]: DUPCLOSURE R20 K92; 
      131 [-]: CAPTURE VAL R4; 
-     132 [-]: SETGLOBAL R21 K90; "inOutCirc" = var21
-     133 [-]: DUPCLOSURE R21 K91; 
-     134 [-]: CAPTURE VAL R0; 
-     135 [-]: CAPTURE VAL R4; 
-     136 [-]: SETGLOBAL R21 K92; "outInCirc" = var21
-     137 [-]: DUPCLOSURE R21 K93; 
-     138 [-]: CAPTURE VAL R5; 
-     139 [-]: CAPTURE VAL R3; 
-     140 [-]: CAPTURE VAL R6; 
-     141 [-]: CAPTURE VAL R0; 
-     142 [-]: CAPTURE VAL R1; 
-     143 [-]: DUPCLOSURE R22 K94; 
-     144 [-]: CAPTURE VAL R5; 
-     145 [-]: CAPTURE VAL R3; 
-     146 [-]: CAPTURE VAL R6; 
-     147 [-]: CAPTURE VAL R0; 
-     148 [-]: CAPTURE VAL R1; 
-     149 [-]: DUPCLOSURE R23 K95; 
-     150 [-]: CAPTURE VAL R21; 
-     151 [-]: SETGLOBAL R23 K96; "inElastic" = var23
-     152 [-]: DUPCLOSURE R23 K97; 
-     153 [-]: CAPTURE VAL R22; 
-     154 [-]: SETGLOBAL R23 K98; "outElastic" = var23
-     155 [-]: DUPCLOSURE R23 K99; 
-     156 [-]: CAPTURE VAL R5; 
-     157 [-]: CAPTURE VAL R3; 
-     158 [-]: CAPTURE VAL R6; 
-     159 [-]: CAPTURE VAL R0; 
-     160 [-]: CAPTURE VAL R1; 
-     161 [-]: SETGLOBAL R23 K100; "inOutElastic" = var23
-     162 [-]: DUPCLOSURE R23 K101; 
-     163 [-]: CAPTURE VAL R22; 
-     164 [-]: CAPTURE VAL R21; 
-     165 [-]: SETGLOBAL R23 K102; "outInElastic" = var23
-     166 [-]: DUPCLOSURE R23 K103; 
-     167 [-]: DUPCLOSURE R24 K104; 
-     168 [-]: DUPCLOSURE R25 K105; 
-     169 [-]: SETGLOBAL R25 K106; "inBack" = var25
-     170 [-]: DUPCLOSURE R25 K107; 
-     171 [-]: SETGLOBAL R25 K108; "outBack" = var25
-     172 [-]: DUPCLOSURE R25 K109; 
-     173 [-]: SETGLOBAL R25 K110; "inOutBack" = var25
-     174 [-]: DUPCLOSURE R25 K111; 
-     175 [-]: SETGLOBAL R25 K112; "outInBack" = var25
-     176 [-]: DUPCLOSURE R25 K113; 
-     177 [-]: DUPCLOSURE R26 K114; 
-     178 [-]: CAPTURE VAL R25; 
-     179 [-]: DUPCLOSURE R27 K115; 
-     180 [-]: CAPTURE VAL R25; 
-     181 [-]: SETGLOBAL R27 K116; "outBounce" = var27
-     182 [-]: DUPCLOSURE R27 K117; 
-     183 [-]: CAPTURE VAL R25; 
-     184 [-]: SETGLOBAL R27 K118; "inBounce" = var27
-     185 [-]: DUPCLOSURE R27 K119; 
-     186 [-]: CAPTURE VAL R25; 
-     187 [-]: SETGLOBAL R27 K120; "inOutBounce" = var27
-     188 [-]: DUPCLOSURE R27 K121; 
-     189 [-]: CAPTURE VAL R25; 
-     190 [-]: SETGLOBAL R27 K122; "outInBounce" = var27
-     191 [-]: RETURN R0 0  ; 
+     132 [-]: CAPTURE VAL R5; 
+     133 [-]: CAPTURE VAL R0; 
+     134 [-]: CAPTURE VAL R1; 
+     135 [-]: DUPCLOSURE R21 K93; 
+     136 [-]: CAPTURE VAL R4; 
+     137 [-]: CAPTURE VAL R5; 
+     138 [-]: CAPTURE VAL R0; 
+     139 [-]: CAPTURE VAL R1; 
+     140 [-]: DUPCLOSURE R22 K94; 
+     141 [-]: CAPTURE VAL R20; 
+     142 [-]: SETGLOBAL R22 K95; "inElastic" = var22
+     143 [-]: DUPCLOSURE R22 K96; 
+     144 [-]: CAPTURE VAL R21; 
+     145 [-]: SETGLOBAL R22 K97; "outElastic" = var22
+     146 [-]: DUPCLOSURE R22 K98; 
+     147 [-]: CAPTURE VAL R4; 
+     148 [-]: CAPTURE VAL R5; 
+     149 [-]: CAPTURE VAL R0; 
+     150 [-]: CAPTURE VAL R1; 
+     151 [-]: SETGLOBAL R22 K99; "inOutElastic" = var22
+     152 [-]: DUPCLOSURE R22 K100; 
+     153 [-]: CAPTURE VAL R21; 
+     154 [-]: CAPTURE VAL R20; 
+     155 [-]: SETGLOBAL R22 K101; "outInElastic" = var22
+     156 [-]: DUPCLOSURE R22 K102; 
+     157 [-]: DUPCLOSURE R23 K103; 
+     158 [-]: DUPCLOSURE R24 K104; 
+     159 [-]: SETGLOBAL R24 K105; "inBack" = var24
+     160 [-]: DUPCLOSURE R24 K106; 
+     161 [-]: SETGLOBAL R24 K107; "outBack" = var24
+     162 [-]: DUPCLOSURE R24 K108; 
+     163 [-]: SETGLOBAL R24 K109; "inOutBack" = var24
+     164 [-]: DUPCLOSURE R24 K110; 
+     165 [-]: SETGLOBAL R24 K111; "outInBack" = var24
+     166 [-]: DUPCLOSURE R24 K112; 
+     167 [-]: DUPCLOSURE R25 K113; 
+     168 [-]: CAPTURE VAL R24; 
+     169 [-]: DUPCLOSURE R26 K114; 
+     170 [-]: CAPTURE VAL R24; 
+     171 [-]: SETGLOBAL R26 K115; "outBounce" = var26
+     172 [-]: DUPCLOSURE R26 K116; 
+     173 [-]: CAPTURE VAL R24; 
+     174 [-]: SETGLOBAL R26 K117; "inBounce" = var26
+     175 [-]: DUPCLOSURE R26 K118; 
+     176 [-]: CAPTURE VAL R24; 
+     177 [-]: SETGLOBAL R26 K119; "inOutBounce" = var26
+     178 [-]: DUPCLOSURE R26 K120; 
+     179 [-]: CAPTURE VAL R24; 
+     180 [-]: SETGLOBAL R26 K121; "outInBounce" = var26
+     181 [-]: RETURN R0 0  ; 
 
 
 ; Name:            
@@ -291,9 +281,8 @@ L 0:   7 [-]: MUL R6 R2 R7 ; var6 = var2 * var7
        0 [-]: DIV R4 R0 R3 ; var4 = var0 / var3
        1 [-]: MULK R0 R4 K0; var0 = var4 * 2
        2 [-]: LOADN R4 1   ; var4 = 1
-       3 [-]: JUMPIFNOTLT R0 R4 L1; goto L1 if var0 >= var132609
-       4 [-]: DIVK R6 R2 K0; var6 = var2 / 2
-       5 [-]: FASTCALL2K 21 R0 K0 L0; 
+       3 [-]: JUMPIFNOTLT R0 R4 L1; goto L1 if var0 >= var132689
+            5 [-]: FASTCALL2K 21 R0 K0 L0; 
        6 [-]: MOVE R8 R0   ; var8 = var0
        7 [-]: LOADK R9 K0  ; var9 = 2
        8 [-]: GETUPVAL R7 0; var7 = upvalues[0]
@@ -302,8 +291,7 @@ L 0:  10 [-]: MUL R5 R6 R7 ; var5 = var6 * var7
       11 [-]: ADD R4 R5 R1 ; var4 = var5 + var1
       12 [-]: RETURN R4 1  ; 
 L 1:  13 [-]: MINUS R7 R2  ; 
-      14 [-]: DIVK R6 R7 K0; var6 = var7 / 2
-      15 [-]: SUBK R9 R0 K1; var9 = var0 - 1
+           15 [-]: SUBK R9 R0 K1; var9 = var0 - 1
       16 [-]: SUBK R10 R0 K2; var10 = var0 - 3
       17 [-]: MUL R8 R9 R10; var8 = var9 * var10
       18 [-]: SUBK R7 R8 K1; var7 = var8 - 1
@@ -322,7 +310,7 @@ L 1:  13 [-]: MINUS R7 R2  ;
        0 [-]: DIV R5 R0 R3 ; var5 = var0 / var3
        1 [-]: MULK R4 R5 K0; var4 = var5 * 2
        2 [-]: LOADN R5 1   ; var5 = 1
-       3 [-]: JUMPIFNOTLT R4 R5 L0; goto L0 if var4 >= var133703
+       3 [-]: JUMPIFNOTLT R4 R5 L0; goto L0 if var4 >= var133680
        4 [-]: LOADN R10 2  ; var10 = 2
        5 [-]: MUL R9 R10 R2; var9 = var10 * var2
        6 [-]: MUL R8 R9 R0 ; var8 = var9 * var0
@@ -350,8 +338,7 @@ L 0:  15 [-]: LOADN R13 2  ; var13 = 2
       28 [-]: SUB R6 R1 R7 ; var6 = var1 - var7
       29 [-]: MUL R5 R0 R6 ; var5 = var0 * var6
       30 [-]: MUL R7 R2 R3 ; var7 = var2 * var3
-      31 [-]: DIVK R6 R7 K2; var6 = var7 / 6
-      32 [-]: ADD R4 R5 R6 ; var4 = var5 + var6
+           32 [-]: ADD R4 R5 R6 ; var4 = var5 + var6
       33 [-]: RETURN R4 1  ; 
 
 
@@ -362,11 +349,9 @@ L 0:  15 [-]: LOADN R13 2  ; var13 = 2
 ; Is_vararg:       0
 ; Max Stack Size:  12
 
-       0 [-]: DIVK R4 R3 K0; var4 = var3 / 2
-       1 [-]: JUMPIFNOTLT R0 R4 L0; goto L0 if var0 >= var1283
+            1 [-]: JUMPIFNOTLT R0 R4 L0; goto L0 if var0 >= var1349
        2 [-]: MULK R5 R0 K0; var5 = var0 * 2
-       3 [-]: DIVK R6 R2 K0; var6 = var2 / 2
-       4 [-]: DIV R5 R5 R3 ; var5 = var5 / var3
+            4 [-]: DIV R5 R5 R3 ; var5 = var5 / var3
        5 [-]: MINUS R9 R6  ; 
        6 [-]: MUL R8 R9 R5 ; var8 = var9 * var5
        7 [-]: SUBK R9 R5 K0; var9 = var5 - 2
@@ -375,10 +360,8 @@ L 0:  15 [-]: LOADN R13 2  ; var13 = 2
       10 [-]: RETURN R4 1  ; 
 L 0:  11 [-]: MULK R6 R0 K0; var6 = var0 * 2
       12 [-]: SUB R5 R6 R3 ; var5 = var6 - var3
-      13 [-]: DIVK R7 R2 K0; var7 = var2 / 2
-      14 [-]: ADD R6 R1 R7 ; var6 = var1 + var7
-      15 [-]: DIVK R7 R2 K0; var7 = var2 / 2
-      16 [-]: DIV R5 R5 R3 ; var5 = var5 / var3
+           14 [-]: ADD R6 R1 R7 ; var6 = var1 + var7
+           16 [-]: DIV R5 R5 R3 ; var5 = var5 / var3
       17 [-]: FASTCALL2K 21 R5 K0 L1; 
       18 [-]: MOVE R10 R5  ; var10 = var5
       19 [-]: LOADK R11 K0 ; var11 = 2
@@ -477,16 +460,14 @@ L 0:   8 [-]: ADDK R7 R8 K0; var7 = var8 + 1
        0 [-]: DIV R4 R0 R3 ; var4 = var0 / var3
        1 [-]: MULK R0 R4 K0; var0 = var4 * 2
        2 [-]: LOADN R4 1   ; var4 = 1
-       3 [-]: JUMPIFNOTLT R0 R4 L0; goto L0 if var0 >= var133121
-       4 [-]: DIVK R8 R2 K0; var8 = var2 / 2
-       5 [-]: MUL R7 R8 R0 ; var7 = var8 * var0
+       3 [-]: JUMPIFNOTLT R0 R4 L0; goto L0 if var0 >= var133201
+            5 [-]: MUL R7 R8 R0 ; var7 = var8 * var0
        6 [-]: MUL R6 R7 R0 ; var6 = var7 * var0
        7 [-]: MUL R5 R6 R0 ; var5 = var6 * var0
        8 [-]: ADD R4 R5 R1 ; var4 = var5 + var1
        9 [-]: RETURN R4 1  ; 
 L 0:  10 [-]: SUBK R0 R0 K0; var0 = var0 - 2
-      11 [-]: DIVK R6 R2 K0; var6 = var2 / 2
-      12 [-]: MUL R9 R0 R0 ; var9 = var0 * var0
+           12 [-]: MUL R9 R0 R0 ; var9 = var0 * var0
       13 [-]: MUL R8 R9 R0 ; var8 = var9 * var0
       14 [-]: ADDK R7 R8 K0; var7 = var8 + 2
       15 [-]: MUL R5 R6 R7 ; var5 = var6 * var7
@@ -501,11 +482,9 @@ L 0:  10 [-]: SUBK R0 R0 K0; var0 = var0 - 2
 ; Is_vararg:       0
 ; Max Stack Size:  12
 
-       0 [-]: DIVK R4 R3 K0; var4 = var3 / 2
-       1 [-]: JUMPIFNOTLT R0 R4 L1; goto L1 if var0 >= var1283
+            1 [-]: JUMPIFNOTLT R0 R4 L1; goto L1 if var0 >= var1349
        2 [-]: MULK R5 R0 K0; var5 = var0 * 2
-       3 [-]: DIVK R6 R2 K0; var6 = var2 / 2
-       4 [-]: DIV R7 R5 R3 ; var7 = var5 / var3
+            4 [-]: DIV R7 R5 R3 ; var7 = var5 / var3
        5 [-]: SUBK R5 R7 K1; var5 = var7 - 1
        6 [-]: FASTCALL2K 21 R5 K2 L0; 
        7 [-]: MOVE R10 R5  ; var10 = var5
@@ -518,10 +497,8 @@ L 0:  11 [-]: ADDK R8 R9 K1; var8 = var9 + 1
       14 [-]: RETURN R4 1  ; 
 L 1:  15 [-]: MULK R6 R0 K0; var6 = var0 * 2
       16 [-]: SUB R5 R6 R3 ; var5 = var6 - var3
-      17 [-]: DIVK R7 R2 K0; var7 = var2 / 2
-      18 [-]: ADD R6 R1 R7 ; var6 = var1 + var7
-      19 [-]: DIVK R7 R2 K0; var7 = var2 / 2
-      20 [-]: DIV R5 R5 R3 ; var5 = var5 / var3
+           18 [-]: ADD R6 R1 R7 ; var6 = var1 + var7
+           20 [-]: DIV R5 R5 R3 ; var5 = var5 / var3
       21 [-]: FASTCALL2K 21 R5 K2 L2; 
       22 [-]: MOVE R10 R5  ; var10 = var5
       23 [-]: LOADK R11 K2 ; var11 = 3
@@ -622,9 +599,8 @@ L 0:   9 [-]: SUBK R8 R9 K0; var8 = var9 - 1
        0 [-]: DIV R4 R0 R3 ; var4 = var0 / var3
        1 [-]: MULK R0 R4 K0; var0 = var4 * 2
        2 [-]: LOADN R4 1   ; var4 = 1
-       3 [-]: JUMPIFNOTLT R0 R4 L1; goto L1 if var0 >= var132609
-       4 [-]: DIVK R6 R2 K0; var6 = var2 / 2
-       5 [-]: FASTCALL2K 21 R0 K1 L0; 
+       3 [-]: JUMPIFNOTLT R0 R4 L1; goto L1 if var0 >= var132689
+            5 [-]: FASTCALL2K 21 R0 K1 L0; 
        6 [-]: MOVE R8 R0   ; var8 = var0
        7 [-]: LOADK R9 K1  ; var9 = 4
        8 [-]: GETUPVAL R7 0; var7 = upvalues[0]
@@ -634,8 +610,7 @@ L 0:  10 [-]: MUL R5 R6 R7 ; var5 = var6 * var7
       12 [-]: RETURN R4 1  ; 
 L 1:  13 [-]: SUBK R0 R0 K0; var0 = var0 - 2
       14 [-]: MINUS R7 R2  ; 
-      15 [-]: DIVK R6 R7 K0; var6 = var7 / 2
-      16 [-]: FASTCALL2K 21 R0 K1 L2; 
+           16 [-]: FASTCALL2K 21 R0 K1 L2; 
       17 [-]: MOVE R9 R0   ; var9 = var0
       18 [-]: LOADK R10 K1 ; var10 = 4
       19 [-]: GETUPVAL R8 0; var8 = upvalues[0]
@@ -653,11 +628,9 @@ L 2:  21 [-]: SUBK R7 R8 K0; var7 = var8 - 2
 ; Is_vararg:       0
 ; Max Stack Size:  13
 
-       0 [-]: DIVK R4 R3 K0; var4 = var3 / 2
-       1 [-]: JUMPIFNOTLT R0 R4 L1; goto L1 if var0 >= var1283
+            1 [-]: JUMPIFNOTLT R0 R4 L1; goto L1 if var0 >= var1349
        2 [-]: MULK R5 R0 K0; var5 = var0 * 2
-       3 [-]: DIVK R6 R2 K0; var6 = var2 / 2
-       4 [-]: DIV R7 R5 R3 ; var7 = var5 / var3
+            4 [-]: DIV R7 R5 R3 ; var7 = var5 / var3
        5 [-]: SUBK R5 R7 K1; var5 = var7 - 1
        6 [-]: MINUS R8 R6  ; 
        7 [-]: FASTCALL2K 21 R5 K2 L0; 
@@ -671,10 +644,8 @@ L 0:  12 [-]: SUBK R9 R10 K1; var9 = var10 - 1
       15 [-]: RETURN R4 1  ; 
 L 1:  16 [-]: MULK R6 R0 K0; var6 = var0 * 2
       17 [-]: SUB R5 R6 R3 ; var5 = var6 - var3
-      18 [-]: DIVK R7 R2 K0; var7 = var2 / 2
-      19 [-]: ADD R6 R1 R7 ; var6 = var1 + var7
-      20 [-]: DIVK R7 R2 K0; var7 = var2 / 2
-      21 [-]: DIV R5 R5 R3 ; var5 = var5 / var3
+           19 [-]: ADD R6 R1 R7 ; var6 = var1 + var7
+           21 [-]: DIV R5 R5 R3 ; var5 = var5 / var3
       22 [-]: FASTCALL2K 21 R5 K2 L2; 
       23 [-]: MOVE R10 R5  ; var10 = var5
       24 [-]: LOADK R11 K2 ; var11 = 4
@@ -773,9 +744,8 @@ L 0:   8 [-]: ADDK R7 R8 K0; var7 = var8 + 1
        0 [-]: DIV R4 R0 R3 ; var4 = var0 / var3
        1 [-]: MULK R0 R4 K0; var0 = var4 * 2
        2 [-]: LOADN R4 1   ; var4 = 1
-       3 [-]: JUMPIFNOTLT R0 R4 L1; goto L1 if var0 >= var132609
-       4 [-]: DIVK R6 R2 K0; var6 = var2 / 2
-       5 [-]: FASTCALL2K 21 R0 K1 L0; 
+       3 [-]: JUMPIFNOTLT R0 R4 L1; goto L1 if var0 >= var132689
+            5 [-]: FASTCALL2K 21 R0 K1 L0; 
        6 [-]: MOVE R8 R0   ; var8 = var0
        7 [-]: LOADK R9 K1  ; var9 = 5
        8 [-]: GETUPVAL R7 0; var7 = upvalues[0]
@@ -784,8 +754,7 @@ L 0:  10 [-]: MUL R5 R6 R7 ; var5 = var6 * var7
       11 [-]: ADD R4 R5 R1 ; var4 = var5 + var1
       12 [-]: RETURN R4 1  ; 
 L 1:  13 [-]: SUBK R0 R0 K0; var0 = var0 - 2
-      14 [-]: DIVK R6 R2 K0; var6 = var2 / 2
-      15 [-]: FASTCALL2K 21 R0 K1 L2; 
+           15 [-]: FASTCALL2K 21 R0 K1 L2; 
       16 [-]: MOVE R9 R0   ; var9 = var0
       17 [-]: LOADK R10 K1 ; var10 = 5
       18 [-]: GETUPVAL R8 0; var8 = upvalues[0]
@@ -803,11 +772,9 @@ L 2:  20 [-]: ADDK R7 R8 K0; var7 = var8 + 2
 ; Is_vararg:       0
 ; Max Stack Size:  12
 
-       0 [-]: DIVK R4 R3 K0; var4 = var3 / 2
-       1 [-]: JUMPIFNOTLT R0 R4 L1; goto L1 if var0 >= var1283
+            1 [-]: JUMPIFNOTLT R0 R4 L1; goto L1 if var0 >= var1349
        2 [-]: MULK R5 R0 K0; var5 = var0 * 2
-       3 [-]: DIVK R6 R2 K0; var6 = var2 / 2
-       4 [-]: DIV R7 R5 R3 ; var7 = var5 / var3
+            4 [-]: DIV R7 R5 R3 ; var7 = var5 / var3
        5 [-]: SUBK R5 R7 K1; var5 = var7 - 1
        6 [-]: FASTCALL2K 21 R5 K2 L0; 
        7 [-]: MOVE R10 R5  ; var10 = var5
@@ -820,10 +787,8 @@ L 0:  11 [-]: ADDK R8 R9 K1; var8 = var9 + 1
       14 [-]: RETURN R4 1  ; 
 L 1:  15 [-]: MULK R6 R0 K0; var6 = var0 * 2
       16 [-]: SUB R5 R6 R3 ; var5 = var6 - var3
-      17 [-]: DIVK R7 R2 K0; var7 = var2 / 2
-      18 [-]: ADD R6 R1 R7 ; var6 = var1 + var7
-      19 [-]: DIVK R7 R2 K0; var7 = var2 / 2
-      20 [-]: DIV R5 R5 R3 ; var5 = var5 / var3
+           18 [-]: ADD R6 R1 R7 ; var6 = var1 + var7
+           20 [-]: DIV R5 R5 R3 ; var5 = var5 / var3
       21 [-]: FASTCALL2K 21 R5 K2 L2; 
       22 [-]: MOVE R10 R5  ; var10 = var5
       23 [-]: LOADK R11 K2 ; var11 = 5
@@ -836,98 +801,89 @@ L 2:  26 [-]: MUL R8 R7 R9 ; var8 = var7 * var9
 
 ; Name:            
 ; Defined at line: 196
-; #Upvalues:       2
+; #Upvalues:       1
 ; #Parameters:     4
 ; Is_vararg:       0
-; Max Stack Size:  13
+; Max Stack Size:  11
 
        0 [-]: MINUS R7 R2  ; 
        1 [-]: DIV R10 R0 R3; var10 = var0 / var3
-       2 [-]: GETUPVAL R12 0; var12 = upvalues[0]
-       3 [-]: DIVK R11 R12 K0; var11 = var12 / 2
-       4 [-]: MUL R9 R10 R11; var9 = var10 * var11
-       5 [-]: FASTCALL1 9 R9 L0; 
-       6 [-]: GETUPVAL R8 1; var8 = upvalues[1]
-       7 [-]: CALL R8 2 2  ; var8 = var8(var9)
-L 0:   8 [-]: MUL R6 R7 R8 ; var6 = var7 * var8
-       9 [-]: ADD R5 R6 R2 ; var5 = var6 + var2
-      10 [-]: ADD R4 R5 R1 ; var4 = var5 + var1
-      11 [-]: RETURN R4 1  ; 
+       2 [-]: MULK R9 R10 K0; var9 = var10 * 1.5707963705062866
+       3 [-]: FASTCALL1 9 R9 L0; 
+       4 [-]: GETUPVAL R8 0; var8 = upvalues[0]
+       5 [-]: CALL R8 2 2  ; var8 = var8(var9)
+L 0:   6 [-]: MUL R6 R7 R8 ; var6 = var7 * var8
+       7 [-]: ADD R5 R6 R2 ; var5 = var6 + var2
+       8 [-]: ADD R4 R5 R1 ; var4 = var5 + var1
+       9 [-]: RETURN R4 1  ; 
 
 
 ; Name:            
 ; Defined at line: 200
-; #Upvalues:       2
+; #Upvalues:       1
 ; #Parameters:     4
 ; Is_vararg:       0
-; Max Stack Size:  11
+; Max Stack Size:  9
 
        0 [-]: DIV R8 R0 R3 ; var8 = var0 / var3
-       1 [-]: GETUPVAL R10 0; var10 = upvalues[0]
-       2 [-]: DIVK R9 R10 K0; var9 = var10 / 2
-       3 [-]: MUL R7 R8 R9 ; var7 = var8 * var9
-       4 [-]: FASTCALL1 24 R7 L0; 
-       5 [-]: GETUPVAL R6 1; var6 = upvalues[1]
-       6 [-]: CALL R6 2 2  ; var6 = var6(var7)
-L 0:   7 [-]: MUL R5 R2 R6 ; var5 = var2 * var6
-       8 [-]: ADD R4 R5 R1 ; var4 = var5 + var1
-       9 [-]: RETURN R4 1  ; 
+       1 [-]: MULK R7 R8 K0; var7 = var8 * 1.5707963705062866
+       2 [-]: FASTCALL1 24 R7 L0; 
+       3 [-]: GETUPVAL R6 0; var6 = upvalues[0]
+       4 [-]: CALL R6 2 2  ; var6 = var6(var7)
+L 0:   5 [-]: MUL R5 R2 R6 ; var5 = var2 * var6
+       6 [-]: ADD R4 R5 R1 ; var4 = var5 + var1
+       7 [-]: RETURN R4 1  ; 
 
 
 ; Name:            
 ; Defined at line: 204
-; #Upvalues:       2
-; #Parameters:     4
-; Is_vararg:       0
-; Max Stack Size:  13
-
-       0 [-]: MINUS R7 R2  ; 
-       1 [-]: DIV R10 R0 R3; var10 = var0 / var3
-       2 [-]: GETUPVAL R12 0; var12 = upvalues[0]
-       3 [-]: DIVK R11 R12 K0; var11 = var12 / 2
-       4 [-]: MUL R9 R10 R11; var9 = var10 * var11
-       5 [-]: FASTCALL1 9 R9 L0; 
-       6 [-]: GETUPVAL R8 1; var8 = upvalues[1]
-       7 [-]: CALL R8 2 2  ; var8 = var8(var9)
-L 0:   8 [-]: MUL R6 R7 R8 ; var6 = var7 * var8
-       9 [-]: ADD R5 R6 R2 ; var5 = var6 + var2
-      10 [-]: ADD R4 R5 R1 ; var4 = var5 + var1
-      11 [-]: RETURN R4 1  ; 
-
-
-; Name:            
-; Defined at line: 208
-; #Upvalues:       2
+; #Upvalues:       1
 ; #Parameters:     4
 ; Is_vararg:       0
 ; Max Stack Size:  11
 
-       0 [-]: DIV R8 R0 R3 ; var8 = var0 / var3
-       1 [-]: GETUPVAL R10 0; var10 = upvalues[0]
-       2 [-]: DIVK R9 R10 K0; var9 = var10 / 2
-       3 [-]: MUL R7 R8 R9 ; var7 = var8 * var9
-       4 [-]: FASTCALL1 24 R7 L0; 
-       5 [-]: GETUPVAL R6 1; var6 = upvalues[1]
-       6 [-]: CALL R6 2 2  ; var6 = var6(var7)
-L 0:   7 [-]: MUL R5 R2 R6 ; var5 = var2 * var6
+       0 [-]: MINUS R7 R2  ; 
+       1 [-]: DIV R10 R0 R3; var10 = var0 / var3
+       2 [-]: MULK R9 R10 K0; var9 = var10 * 1.5707963705062866
+       3 [-]: FASTCALL1 9 R9 L0; 
+       4 [-]: GETUPVAL R8 0; var8 = upvalues[0]
+       5 [-]: CALL R8 2 2  ; var8 = var8(var9)
+L 0:   6 [-]: MUL R6 R7 R8 ; var6 = var7 * var8
+       7 [-]: ADD R5 R6 R2 ; var5 = var6 + var2
        8 [-]: ADD R4 R5 R1 ; var4 = var5 + var1
        9 [-]: RETURN R4 1  ; 
 
 
 ; Name:            
+; Defined at line: 208
+; #Upvalues:       1
+; #Parameters:     4
+; Is_vararg:       0
+; Max Stack Size:  9
+
+       0 [-]: DIV R8 R0 R3 ; var8 = var0 / var3
+       1 [-]: MULK R7 R8 K0; var7 = var8 * 1.5707963705062866
+       2 [-]: FASTCALL1 24 R7 L0; 
+       3 [-]: GETUPVAL R6 0; var6 = upvalues[0]
+       4 [-]: CALL R6 2 2  ; var6 = var6(var7)
+L 0:   5 [-]: MUL R5 R2 R6 ; var5 = var2 * var6
+       6 [-]: ADD R4 R5 R1 ; var4 = var5 + var1
+       7 [-]: RETURN R4 1  ; 
+
+
+; Name:            
 ; Defined at line: 212
-; #Upvalues:       2
+; #Upvalues:       1
 ; #Parameters:     4
 ; Is_vararg:       0
 ; Max Stack Size:  12
 
        0 [-]: MINUS R7 R2  ; 
-       1 [-]: DIVK R6 R7 K0; var6 = var7 / 2
-       2 [-]: GETUPVAL R11 0; var11 = upvalues[0]
+            2 [-]: LOADK R11 K2 ; var11 = 3.1415927410125732
        3 [-]: MUL R10 R11 R0; var10 = var11 * var0
        4 [-]: DIV R9 R10 R3; var9 = var10 / var3
        5 [-]: FASTCALL1 9 R9 L0; 
-       6 [-]: GETUPVAL R8 1; var8 = upvalues[1]
+       6 [-]: GETUPVAL R8 0; var8 = upvalues[0]
        7 [-]: CALL R8 2 2  ; var8 = var8(var9)
 L 0:   8 [-]: SUBK R7 R8 K1; var7 = var8 - 1
        9 [-]: MUL R5 R6 R7 ; var5 = var6 * var7
@@ -937,42 +893,34 @@ L 0:   8 [-]: SUBK R7 R8 K1; var7 = var8 - 1
 
 ; Name:            
 ; Defined at line: 216
-; #Upvalues:       3
+; #Upvalues:       2
 ; #Parameters:     4
 ; Is_vararg:       0
-; Max Stack Size:  16
+; Max Stack Size:  14
 
-       0 [-]: DIVK R4 R3 K0; var4 = var3 / 2
-       1 [-]: JUMPIFNOTLT R0 R4 L1; goto L1 if var0 >= var1283
+            1 [-]: JUMPIFNOTLT R0 R4 L1; goto L1 if var0 >= var1349
        2 [-]: MULK R5 R0 K0; var5 = var0 * 2
-       3 [-]: DIVK R6 R2 K0; var6 = var2 / 2
-       4 [-]: DIV R10 R5 R3; var10 = var5 / var3
-       5 [-]: GETUPVAL R12 0; var12 = upvalues[0]
-       6 [-]: DIVK R11 R12 K0; var11 = var12 / 2
-       7 [-]: MUL R9 R10 R11; var9 = var10 * var11
-       8 [-]: FASTCALL1 24 R9 L0; 
-       9 [-]: GETUPVAL R8 1; var8 = upvalues[1]
-      10 [-]: CALL R8 2 2  ; var8 = var8(var9)
-L 0:  11 [-]: MUL R7 R6 R8 ; var7 = var6 * var8
-      12 [-]: ADD R4 R7 R1 ; var4 = var7 + var1
-      13 [-]: RETURN R4 1  ; 
-L 1:  14 [-]: MULK R6 R0 K0; var6 = var0 * 2
-      15 [-]: SUB R5 R6 R3 ; var5 = var6 - var3
-      16 [-]: DIVK R7 R2 K0; var7 = var2 / 2
-      17 [-]: ADD R6 R1 R7 ; var6 = var1 + var7
-      18 [-]: DIVK R7 R2 K0; var7 = var2 / 2
-      19 [-]: MINUS R10 R7 ; 
-      20 [-]: DIV R13 R5 R3; var13 = var5 / var3
-      21 [-]: GETUPVAL R15 0; var15 = upvalues[0]
-      22 [-]: DIVK R14 R15 K0; var14 = var15 / 2
-      23 [-]: MUL R12 R13 R14; var12 = var13 * var14
-      24 [-]: FASTCALL1 9 R12 L2; 
-      25 [-]: GETUPVAL R11 2; var11 = upvalues[2]
-      26 [-]: CALL R11 2 2 ; var11 = var11(var12)
-L 2:  27 [-]: MUL R9 R10 R11; var9 = var10 * var11
-      28 [-]: ADD R8 R9 R7 ; var8 = var9 + var7
-      29 [-]: ADD R4 R8 R6 ; var4 = var8 + var6
-      30 [-]: RETURN R4 1  ; 
+            4 [-]: DIV R10 R5 R3; var10 = var5 / var3
+       5 [-]: MULK R9 R10 K1; var9 = var10 * 1.5707963705062866
+       6 [-]: FASTCALL1 24 R9 L0; 
+       7 [-]: GETUPVAL R8 0; var8 = upvalues[0]
+       8 [-]: CALL R8 2 2  ; var8 = var8(var9)
+L 0:   9 [-]: MUL R7 R6 R8 ; var7 = var6 * var8
+      10 [-]: ADD R4 R7 R1 ; var4 = var7 + var1
+      11 [-]: RETURN R4 1  ; 
+L 1:  12 [-]: MULK R6 R0 K0; var6 = var0 * 2
+      13 [-]: SUB R5 R6 R3 ; var5 = var6 - var3
+           15 [-]: ADD R6 R1 R7 ; var6 = var1 + var7
+           17 [-]: MINUS R10 R7 ; 
+      18 [-]: DIV R13 R5 R3; var13 = var5 / var3
+      19 [-]: MULK R12 R13 K1; var12 = var13 * 1.5707963705062866
+      20 [-]: FASTCALL1 9 R12 L2; 
+      21 [-]: GETUPVAL R11 1; var11 = upvalues[1]
+      22 [-]: CALL R11 2 2 ; var11 = var11(var12)
+L 2:  23 [-]: MUL R9 R10 R11; var9 = var10 * var11
+      24 [-]: ADD R8 R9 R7 ; var8 = var9 + var7
+      25 [-]: ADD R4 R8 R6 ; var4 = var8 + var6
+      26 [-]: RETURN R4 1  ; 
 
 
 ; Name:            
@@ -994,7 +942,7 @@ L 0:   2 [-]: LOADN R8 2   ; var8 = 2
        9 [-]: CALL R7 3 2  ; var7 = var7(var8, var9)
 L 1:  10 [-]: MUL R6 R2 R7 ; var6 = var2 * var7
       11 [-]: ADD R5 R6 R1 ; var5 = var6 + var1
-      12 [-]: MULK R6 R2 K2; var6 = var2 * 0.001
+      12 [-]: MULK R6 R2 K2; var6 = var2 * 0.0010000000474974513
       13 [-]: SUB R4 R5 R6 ; var4 = var5 - var6
       14 [-]: RETURN R4 1  ; 
 
@@ -1006,10 +954,10 @@ L 1:  10 [-]: MUL R6 R2 R7 ; var6 = var2 * var7
 ; Is_vararg:       0
 ; Max Stack Size:  14
 
-       0 [-]: JUMPIFNOTEQ R0 R3 L0; goto L0 if var0 ~= var33621068
+       0 [-]: JUMPIFNOTEQ R0 R3 L0; goto L0 if var0 ~= var33621054
        1 [-]: ADD R4 R1 R2 ; var4 = var1 + var2
        2 [-]: RETURN R4 1  ; 
-L 0:   3 [-]: MULK R6 R2 K0; var6 = var2 * 1.0009999999999999
+L 0:   3 [-]: MULK R6 R2 K0; var6 = var2 * 1.0010000467300415
        4 [-]: LOADN R10 2  ; var10 = 2
        5 [-]: LOADN R13 -10; var13 = -10
        6 [-]: MUL R12 R13 R0; var12 = var13 * var0
@@ -1044,7 +992,7 @@ L 0:   3 [-]: LOADN R8 2   ; var8 = 2
       10 [-]: CALL R7 3 2  ; var7 = var7(var8, var9)
 L 1:  11 [-]: MUL R6 R2 R7 ; var6 = var2 * var7
       12 [-]: ADD R5 R6 R1 ; var5 = var6 + var1
-      13 [-]: MULK R6 R2 K2; var6 = var2 * 0.001
+      13 [-]: MULK R6 R2 K2; var6 = var2 * 0.0010000000474974513
       14 [-]: SUB R4 R5 R6 ; var4 = var5 - var6
       15 [-]: RETURN R4 1  ; 
       16 [-]: RETURN R4 1  ; 
@@ -1057,10 +1005,10 @@ L 1:  11 [-]: MUL R6 R2 R7 ; var6 = var2 * var7
 ; Is_vararg:       0
 ; Max Stack Size:  14
 
-       0 [-]: JUMPIFNOTEQ R0 R3 L0; goto L0 if var0 ~= var33621068
+       0 [-]: JUMPIFNOTEQ R0 R3 L0; goto L0 if var0 ~= var33621054
        1 [-]: ADD R4 R1 R2 ; var4 = var1 + var2
        2 [-]: RETURN R4 1  ; 
-L 0:   3 [-]: MULK R6 R2 K0; var6 = var2 * 1.0009999999999999
+L 0:   3 [-]: MULK R6 R2 K0; var6 = var2 * 1.0010000467300415
        4 [-]: LOADN R10 2  ; var10 = 2
        5 [-]: LOADN R13 -10; var13 = -10
        6 [-]: MUL R12 R13 R0; var12 = var13 * var0
@@ -1085,15 +1033,14 @@ L 1:  11 [-]: MINUS R8 R9  ;
 
        0 [-]: JUMPXEQKN R0 K0 L0 NOT; 
        1 [-]: RETURN R1 1  ; 
-L 0:   2 [-]: JUMPIFNOTEQ R0 R3 L1; goto L1 if var0 ~= var33621068
+L 0:   2 [-]: JUMPIFNOTEQ R0 R3 L1; goto L1 if var0 ~= var33621054
        3 [-]: ADD R4 R1 R2 ; var4 = var1 + var2
        4 [-]: RETURN R4 1  ; 
 L 1:   5 [-]: DIV R4 R0 R3 ; var4 = var0 / var3
        6 [-]: MULK R0 R4 K1; var0 = var4 * 2
        7 [-]: LOADN R4 1   ; var4 = 1
-       8 [-]: JUMPIFNOTLT R0 R4 L3; goto L3 if var0 >= var16910081
-       9 [-]: DIVK R7 R2 K1; var7 = var2 / 2
-      10 [-]: LOADN R9 2   ; var9 = 2
+       8 [-]: JUMPIFNOTLT R0 R4 L3; goto L3 if var0 >= var16910161
+           10 [-]: LOADN R9 2   ; var9 = 2
       11 [-]: LOADN R11 10 ; var11 = 10
       12 [-]: SUBK R12 R0 K2; var12 = var0 - 1
       13 [-]: MUL R10 R11 R12; var10 = var11 * var12
@@ -1102,12 +1049,11 @@ L 1:   5 [-]: DIV R4 R0 R3 ; var4 = var0 / var3
       16 [-]: CALL R8 3 2  ; var8 = var8(var9, var10)
 L 2:  17 [-]: MUL R6 R7 R8 ; var6 = var7 * var8
       18 [-]: ADD R5 R6 R1 ; var5 = var6 + var1
-      19 [-]: MULK R6 R2 K3; var6 = var2 * 0.00050000000000000001
+      19 [-]: MULK R6 R2 K3; var6 = var2 * 0.00050000002374872565
       20 [-]: SUB R4 R5 R6 ; var4 = var5 - var6
       21 [-]: RETURN R4 1  ; 
 L 3:  22 [-]: SUBK R0 R0 K2; var0 = var0 - 1
-      23 [-]: DIVK R7 R2 K1; var7 = var2 / 2
-      24 [-]: MULK R6 R7 K4; var6 = var7 * 1.0004999999999999
+           24 [-]: MULK R6 R7 K4; var6 = var7 * 1.000499963760376
       25 [-]: LOADN R10 2  ; var10 = 2
       26 [-]: LOADN R12 -10; var12 = -10
       27 [-]: MUL R11 R12 R0; var11 = var12 * var0
@@ -1128,14 +1074,12 @@ L 4:  31 [-]: MINUS R8 R9  ;
 ; Is_vararg:       0
 ; Max Stack Size:  16
 
-       0 [-]: DIVK R4 R3 K0; var4 = var3 / 2
-       1 [-]: JUMPIFNOTLT R0 R4 L2; goto L2 if var0 >= var1283
+            1 [-]: JUMPIFNOTLT R0 R4 L2; goto L2 if var0 >= var1349
        2 [-]: MULK R5 R0 K0; var5 = var0 * 2
-       3 [-]: DIVK R6 R2 K0; var6 = var2 / 2
-       4 [-]: JUMPIFNOTEQ R5 R3 L0; goto L0 if var5 ~= var100729932
+            4 [-]: JUMPIFNOTEQ R5 R3 L0; goto L0 if var5 ~= var100729918
        5 [-]: ADD R4 R1 R6 ; var4 = var1 + var6
        6 [-]: RETURN R4 1  ; 
-L 0:   7 [-]: MULK R8 R6 K1; var8 = var6 * 1.0009999999999999
+L 0:   7 [-]: MULK R8 R6 K1; var8 = var6 * 1.0010000467300415
        8 [-]: LOADN R12 2  ; var12 = 2
        9 [-]: LOADN R15 -10; var15 = -10
       10 [-]: MUL R14 R15 R5; var14 = var15 * var5
@@ -1151,10 +1095,8 @@ L 1:  15 [-]: MINUS R10 R11;
       20 [-]: RETURN R4 1  ; 
 L 2:  21 [-]: MULK R6 R0 K0; var6 = var0 * 2
       22 [-]: SUB R5 R6 R3 ; var5 = var6 - var3
-      23 [-]: DIVK R7 R2 K0; var7 = var2 / 2
-      24 [-]: ADD R6 R1 R7 ; var6 = var1 + var7
-      25 [-]: DIVK R7 R2 K0; var7 = var2 / 2
-      26 [-]: JUMPXEQKN R5 K3 L3 NOT; 
+           24 [-]: ADD R6 R1 R7 ; var6 = var1 + var7
+           26 [-]: JUMPXEQKN R5 K3 L3 NOT; 
       27 [-]: MOVE R4 R6   ; var4 = var6
       28 [-]: RETURN R4 1  ; 
 L 3:  29 [-]: LOADN R11 2  ; var11 = 2
@@ -1167,7 +1109,7 @@ L 3:  29 [-]: LOADN R11 2  ; var11 = 2
       36 [-]: CALL R10 3 2 ; var10 = var10(var11, var12)
 L 4:  37 [-]: MUL R9 R7 R10; var9 = var7 * var10
       38 [-]: ADD R8 R9 R6 ; var8 = var9 + var6
-      39 [-]: MULK R9 R7 K4; var9 = var7 * 0.001
+      39 [-]: MULK R9 R7 K4; var9 = var7 * 0.0010000000474974513
       40 [-]: SUB R4 R8 R9 ; var4 = var8 - var9
       41 [-]: RETURN R4 1  ; 
       42 [-]: RETURN R4 1  ; 
@@ -1283,10 +1225,9 @@ L 1:  13 [-]: MUL R6 R2 R7 ; var6 = var2 * var7
        0 [-]: DIV R4 R0 R3 ; var4 = var0 / var3
        1 [-]: MULK R0 R4 K0; var0 = var4 * 2
        2 [-]: LOADN R4 1   ; var4 = 1
-       3 [-]: JUMPIFNOTLT R0 R4 L1; goto L1 if var0 >= var132941
+       3 [-]: JUMPIFNOTLT R0 R4 L1; goto L1 if var0 >= var132920
        4 [-]: MINUS R7 R2  ; 
-       5 [-]: DIVK R6 R7 K0; var6 = var7 / 2
-       6 [-]: LOADN R10 1  ; var10 = 1
+            6 [-]: LOADN R10 1  ; var10 = 1
        7 [-]: MUL R11 R0 R0; var11 = var0 * var0
        8 [-]: SUB R9 R10 R11; var9 = var10 - var11
        9 [-]: FASTCALL1 25 R9 L0; 
@@ -1297,8 +1238,7 @@ L 0:  12 [-]: SUBK R7 R8 K1; var7 = var8 - 1
       14 [-]: ADD R4 R5 R1 ; var4 = var5 + var1
       15 [-]: RETURN R4 1  ; 
 L 1:  16 [-]: SUBK R0 R0 K0; var0 = var0 - 2
-      17 [-]: DIVK R6 R2 K0; var6 = var2 / 2
-      18 [-]: LOADN R10 1  ; var10 = 1
+           18 [-]: LOADN R10 1  ; var10 = 1
       19 [-]: MUL R11 R0 R0; var11 = var0 * var0
       20 [-]: SUB R9 R10 R11; var9 = var10 - var11
       21 [-]: FASTCALL1 25 R9 L2; 
@@ -1317,11 +1257,9 @@ L 2:  24 [-]: ADDK R7 R8 K1; var7 = var8 + 1
 ; Is_vararg:       0
 ; Max Stack Size:  17
 
-       0 [-]: DIVK R4 R3 K0; var4 = var3 / 2
-       1 [-]: JUMPIFNOTLT R0 R4 L2; goto L2 if var0 >= var1283
+            1 [-]: JUMPIFNOTLT R0 R4 L2; goto L2 if var0 >= var1349
        2 [-]: MULK R5 R0 K0; var5 = var0 * 2
-       3 [-]: DIVK R6 R2 K0; var6 = var2 / 2
-       4 [-]: DIV R7 R5 R3 ; var7 = var5 / var3
+            4 [-]: DIV R7 R5 R3 ; var7 = var5 / var3
        5 [-]: SUBK R5 R7 K1; var5 = var7 - 1
        6 [-]: LOADN R10 1  ; var10 = 1
        7 [-]: FASTCALL2K 21 R5 K0 L0; 
@@ -1338,10 +1276,8 @@ L 1:  16 [-]: MUL R7 R6 R8 ; var7 = var6 * var8
       18 [-]: RETURN R4 1  ; 
 L 2:  19 [-]: MULK R6 R0 K0; var6 = var0 * 2
       20 [-]: SUB R5 R6 R3 ; var5 = var6 - var3
-      21 [-]: DIVK R7 R2 K0; var7 = var2 / 2
-      22 [-]: ADD R6 R1 R7 ; var6 = var1 + var7
-      23 [-]: DIVK R7 R2 K0; var7 = var2 / 2
-      24 [-]: DIV R5 R5 R3 ; var5 = var5 / var3
+           22 [-]: ADD R6 R1 R7 ; var6 = var1 + var7
+           24 [-]: DIV R5 R5 R3 ; var5 = var5 / var3
       25 [-]: MINUS R9 R7  ; 
       26 [-]: LOADN R13 1  ; var13 = 1
       27 [-]: FASTCALL2K 21 R5 K0 L3; 
@@ -1361,10 +1297,10 @@ L 4:  36 [-]: SUBK R10 R11 K1; var10 = var11 - 1
 
 ; Name:            
 ; Defined at line: 304
-; #Upvalues:       5
+; #Upvalues:       4
 ; #Parameters:     6
 ; Is_vararg:       0
-; Max Stack Size:  18
+; Max Stack Size:  16
 
        0 [-]: JUMPXEQKN R0 K0 L0 NOT; 
        1 [-]: RETURN R1 1  ; 
@@ -1373,56 +1309,48 @@ L 0:   2 [-]: DIV R0 R0 R3 ; var0 = var0 / var3
        4 [-]: ADD R6 R1 R2 ; var6 = var1 + var2
        5 [-]: RETURN R6 1  ; 
 L 1:   6 [-]: JUMPIF R5 L2 ; goto L2 if var5
-       7 [-]: MULK R5 R3 K2; var5 = var3 * 0.29999999999999999
+       7 [-]: MULK R5 R3 K2; var5 = var3 * 0.30000001192092896
 L 2:   8 [-]: LOADN R6 0   ; var6 = 0
        9 [-]: JUMPIFNOT R4 L4; goto L4 if not var4
       10 [-]: FASTCALL1 2 R2 L3; 
       11 [-]: MOVE R8 R2   ; var8 = var2
       12 [-]: GETUPVAL R7 0; var7 = upvalues[0]
       13 [-]: CALL R7 2 2  ; var7 = var7(var8)
-L 3:  14 [-]: JUMPIFNOTLT R4 R7 L5; goto L5 if var4 >= var132118
+L 3:  14 [-]: JUMPIFNOTLT R4 R7 L5; goto L5 if var4 >= var132142
 L 4:  15 [-]: MOVE R4 R2   ; var4 = var2
-      16 [-]: DIVK R6 R5 K3; var6 = var5 / 4
-      17 [-]: JUMP L7      ; goto L7
-L 5:  18 [-]: LOADN R9 2   ; var9 = 2
-      19 [-]: GETUPVAL R10 1; var10 = upvalues[1]
-      20 [-]: MUL R8 R9 R10; var8 = var9 * var10
-      21 [-]: DIV R7 R5 R8 ; var7 = var5 / var8
-      22 [-]: DIV R9 R2 R4 ; var9 = var2 / var4
-      23 [-]: FASTCALL1 4 R9 L6; 
-      24 [-]: GETUPVAL R8 2; var8 = upvalues[2]
-      25 [-]: CALL R8 2 2  ; var8 = var8(var9)
-L 6:  26 [-]: MUL R6 R7 R8 ; var6 = var7 * var8
-L 7:  27 [-]: SUBK R0 R0 K1; var0 = var0 - 1
-      28 [-]: LOADN R12 2  ; var12 = 2
-      29 [-]: LOADN R14 10 ; var14 = 10
-      30 [-]: MUL R13 R14 R0; var13 = var14 * var0
-      31 [-]: FASTCALL2 21 R12 R13 L8; 
-      32 [-]: GETUPVAL R11 3; var11 = upvalues[3]
-      33 [-]: CALL R11 3 2 ; var11 = var11(var12, var13)
-L 8:  34 [-]: MUL R10 R4 R11; var10 = var4 * var11
-      35 [-]: MUL R15 R0 R3; var15 = var0 * var3
-      36 [-]: SUB R14 R15 R6; var14 = var15 - var6
-      37 [-]: LOADN R16 2  ; var16 = 2
-      38 [-]: GETUPVAL R17 1; var17 = upvalues[1]
-      39 [-]: MUL R15 R16 R17; var15 = var16 * var17
-      40 [-]: MUL R13 R14 R15; var13 = var14 * var15
-      41 [-]: DIV R12 R13 R5; var12 = var13 / var5
-      42 [-]: FASTCALL1 24 R12 L9; 
-      43 [-]: GETUPVAL R11 4; var11 = upvalues[4]
-      44 [-]: CALL R11 2 2 ; var11 = var11(var12)
-L 9:  45 [-]: MUL R9 R10 R11; var9 = var10 * var11
-      46 [-]: MINUS R8 R9  ; 
-      47 [-]: ADD R7 R8 R1 ; var7 = var8 + var1
-      48 [-]: RETURN R7 1  ; 
+           17 [-]: JUMP L7      ; goto L7
+L 5:       19 [-]: DIV R9 R2 R4 ; var9 = var2 / var4
+      20 [-]: FASTCALL1 4 R9 L6; 
+      21 [-]: GETUPVAL R8 1; var8 = upvalues[1]
+      22 [-]: CALL R8 2 2  ; var8 = var8(var9)
+L 6:  23 [-]: MUL R6 R7 R8 ; var6 = var7 * var8
+L 7:  24 [-]: SUBK R0 R0 K1; var0 = var0 - 1
+      25 [-]: LOADN R12 2  ; var12 = 2
+      26 [-]: LOADN R14 10 ; var14 = 10
+      27 [-]: MUL R13 R14 R0; var13 = var14 * var0
+      28 [-]: FASTCALL2 21 R12 R13 L8; 
+      29 [-]: GETUPVAL R11 2; var11 = upvalues[2]
+      30 [-]: CALL R11 3 2 ; var11 = var11(var12, var13)
+L 8:  31 [-]: MUL R10 R4 R11; var10 = var4 * var11
+      32 [-]: MUL R15 R0 R3; var15 = var0 * var3
+      33 [-]: SUB R14 R15 R6; var14 = var15 - var6
+      34 [-]: MULK R13 R14 K4; var13 = var14 * 6.2831854820251465
+      35 [-]: DIV R12 R13 R5; var12 = var13 / var5
+      36 [-]: FASTCALL1 24 R12 L9; 
+      37 [-]: GETUPVAL R11 3; var11 = upvalues[3]
+      38 [-]: CALL R11 2 2 ; var11 = var11(var12)
+L 9:  39 [-]: MUL R9 R10 R11; var9 = var10 * var11
+      40 [-]: MINUS R8 R9  ; 
+      41 [-]: ADD R7 R8 R1 ; var7 = var8 + var1
+      42 [-]: RETURN R7 1  ; 
 
 
 ; Name:            
 ; Defined at line: 329
-; #Upvalues:       5
+; #Upvalues:       4
 ; #Parameters:     6
 ; Is_vararg:       0
-; Max Stack Size:  18
+; Max Stack Size:  16
 
        0 [-]: JUMPXEQKN R0 K0 L0 NOT; 
        1 [-]: RETURN R1 1  ; 
@@ -1431,47 +1359,39 @@ L 0:   2 [-]: DIV R0 R0 R3 ; var0 = var0 / var3
        4 [-]: ADD R6 R1 R2 ; var6 = var1 + var2
        5 [-]: RETURN R6 1  ; 
 L 1:   6 [-]: JUMPIF R5 L2 ; goto L2 if var5
-       7 [-]: MULK R5 R3 K2; var5 = var3 * 0.29999999999999999
+       7 [-]: MULK R5 R3 K2; var5 = var3 * 0.30000001192092896
 L 2:   8 [-]: LOADN R6 0   ; var6 = 0
        9 [-]: JUMPIFNOT R4 L4; goto L4 if not var4
       10 [-]: FASTCALL1 2 R2 L3; 
       11 [-]: MOVE R8 R2   ; var8 = var2
       12 [-]: GETUPVAL R7 0; var7 = upvalues[0]
       13 [-]: CALL R7 2 2  ; var7 = var7(var8)
-L 3:  14 [-]: JUMPIFNOTLT R4 R7 L5; goto L5 if var4 >= var132118
+L 3:  14 [-]: JUMPIFNOTLT R4 R7 L5; goto L5 if var4 >= var132142
 L 4:  15 [-]: MOVE R4 R2   ; var4 = var2
-      16 [-]: DIVK R6 R5 K3; var6 = var5 / 4
-      17 [-]: JUMP L7      ; goto L7
-L 5:  18 [-]: LOADN R9 2   ; var9 = 2
-      19 [-]: GETUPVAL R10 1; var10 = upvalues[1]
-      20 [-]: MUL R8 R9 R10; var8 = var9 * var10
-      21 [-]: DIV R7 R5 R8 ; var7 = var5 / var8
-      22 [-]: DIV R9 R2 R4 ; var9 = var2 / var4
-      23 [-]: FASTCALL1 4 R9 L6; 
-      24 [-]: GETUPVAL R8 2; var8 = upvalues[2]
-      25 [-]: CALL R8 2 2  ; var8 = var8(var9)
-L 6:  26 [-]: MUL R6 R7 R8 ; var6 = var7 * var8
-L 7:  27 [-]: LOADN R12 2  ; var12 = 2
-      28 [-]: LOADN R14 -10; var14 = -10
-      29 [-]: MUL R13 R14 R0; var13 = var14 * var0
-      30 [-]: FASTCALL2 21 R12 R13 L8; 
-      31 [-]: GETUPVAL R11 3; var11 = upvalues[3]
-      32 [-]: CALL R11 3 2 ; var11 = var11(var12, var13)
-L 8:  33 [-]: MUL R10 R4 R11; var10 = var4 * var11
-      34 [-]: MUL R15 R0 R3; var15 = var0 * var3
-      35 [-]: SUB R14 R15 R6; var14 = var15 - var6
-      36 [-]: LOADN R16 2  ; var16 = 2
-      37 [-]: GETUPVAL R17 1; var17 = upvalues[1]
-      38 [-]: MUL R15 R16 R17; var15 = var16 * var17
-      39 [-]: MUL R13 R14 R15; var13 = var14 * var15
-      40 [-]: DIV R12 R13 R5; var12 = var13 / var5
-      41 [-]: FASTCALL1 24 R12 L9; 
-      42 [-]: GETUPVAL R11 4; var11 = upvalues[4]
-      43 [-]: CALL R11 2 2 ; var11 = var11(var12)
-L 9:  44 [-]: MUL R9 R10 R11; var9 = var10 * var11
-      45 [-]: ADD R8 R9 R2 ; var8 = var9 + var2
-      46 [-]: ADD R7 R8 R1 ; var7 = var8 + var1
-      47 [-]: RETURN R7 1  ; 
+           17 [-]: JUMP L7      ; goto L7
+L 5:       19 [-]: DIV R9 R2 R4 ; var9 = var2 / var4
+      20 [-]: FASTCALL1 4 R9 L6; 
+      21 [-]: GETUPVAL R8 1; var8 = upvalues[1]
+      22 [-]: CALL R8 2 2  ; var8 = var8(var9)
+L 6:  23 [-]: MUL R6 R7 R8 ; var6 = var7 * var8
+L 7:  24 [-]: LOADN R12 2  ; var12 = 2
+      25 [-]: LOADN R14 -10; var14 = -10
+      26 [-]: MUL R13 R14 R0; var13 = var14 * var0
+      27 [-]: FASTCALL2 21 R12 R13 L8; 
+      28 [-]: GETUPVAL R11 2; var11 = upvalues[2]
+      29 [-]: CALL R11 3 2 ; var11 = var11(var12, var13)
+L 8:  30 [-]: MUL R10 R4 R11; var10 = var4 * var11
+      31 [-]: MUL R15 R0 R3; var15 = var0 * var3
+      32 [-]: SUB R14 R15 R6; var14 = var15 - var6
+      33 [-]: MULK R13 R14 K4; var13 = var14 * 6.2831854820251465
+      34 [-]: DIV R12 R13 R5; var12 = var13 / var5
+      35 [-]: FASTCALL1 24 R12 L9; 
+      36 [-]: GETUPVAL R11 3; var11 = upvalues[3]
+      37 [-]: CALL R11 2 2 ; var11 = var11(var12)
+L 9:  38 [-]: MUL R9 R10 R11; var9 = var10 * var11
+      39 [-]: ADD R8 R9 R2 ; var8 = var9 + var2
+      40 [-]: ADD R7 R8 R1 ; var7 = var8 + var1
+      41 [-]: RETURN R7 1  ; 
 
 
 ; Name:            
@@ -1512,10 +1432,10 @@ L 9:  44 [-]: MUL R9 R10 R11; var9 = var10 * var11
 
 ; Name:            
 ; Defined at line: 362
-; #Upvalues:       5
+; #Upvalues:       4
 ; #Parameters:     6
 ; Is_vararg:       0
-; Max Stack Size:  19
+; Max Stack Size:  17
 
        0 [-]: JUMPXEQKN R0 K0 L0 NOT; 
        1 [-]: RETURN R1 1  ; 
@@ -1525,7 +1445,7 @@ L 0:   2 [-]: DIV R6 R0 R3 ; var6 = var0 / var3
        5 [-]: ADD R6 R1 R2 ; var6 = var1 + var2
        6 [-]: RETURN R6 1  ; 
 L 1:   7 [-]: JUMPIF R5 L2 ; goto L2 if var5
-       8 [-]: MULK R5 R3 K2; var5 = var3 * 0.44999999999999996
+       8 [-]: MULK R5 R3 K2; var5 = var3 * 0.44999998807907104
 L 2:   9 [-]: JUMPIF R4 L3 ; goto L3 if var4
       10 [-]: LOADN R4 0   ; var4 = 0
 L 3:  11 [-]: LOADN R6 0   ; var6 = 0
@@ -1534,67 +1454,56 @@ L 3:  11 [-]: LOADN R6 0   ; var6 = 0
       14 [-]: MOVE R8 R2   ; var8 = var2
       15 [-]: GETUPVAL R7 0; var7 = upvalues[0]
       16 [-]: CALL R7 2 2  ; var7 = var7(var8)
-L 4:  17 [-]: JUMPIFNOTLT R4 R7 L6; goto L6 if var4 >= var132118
+L 4:  17 [-]: JUMPIFNOTLT R4 R7 L6; goto L6 if var4 >= var132142
 L 5:  18 [-]: MOVE R4 R2   ; var4 = var2
-      19 [-]: DIVK R6 R5 K3; var6 = var5 / 4
-      20 [-]: JUMP L8      ; goto L8
-L 6:  21 [-]: LOADN R9 2   ; var9 = 2
-      22 [-]: GETUPVAL R10 1; var10 = upvalues[1]
-      23 [-]: MUL R8 R9 R10; var8 = var9 * var10
-      24 [-]: DIV R7 R5 R8 ; var7 = var5 / var8
-      25 [-]: DIV R9 R2 R4 ; var9 = var2 / var4
-      26 [-]: FASTCALL1 4 R9 L7; 
-      27 [-]: GETUPVAL R8 2; var8 = upvalues[2]
-      28 [-]: CALL R8 2 2  ; var8 = var8(var9)
-L 7:  29 [-]: MUL R6 R7 R8 ; var6 = var7 * var8
-L 8:  30 [-]: LOADN R7 1   ; var7 = 1
-      31 [-]: JUMPIFNOTLT R0 R7 L11; goto L11 if var0 >= var67108903
-      32 [-]: SUBK R0 R0 K4; var0 = var0 - 1
-      33 [-]: LOADK R9 K5  ; var9 = -0.5
-      34 [-]: LOADN R13 2  ; var13 = 2
-      35 [-]: LOADN R15 10 ; var15 = 10
-      36 [-]: MUL R14 R15 R0; var14 = var15 * var0
-      37 [-]: FASTCALL2 21 R13 R14 L9; 
-      38 [-]: GETUPVAL R12 3; var12 = upvalues[3]
-      39 [-]: CALL R12 3 2 ; var12 = var12(var13, var14)
-L 9:  40 [-]: MUL R11 R4 R12; var11 = var4 * var12
-      41 [-]: MUL R16 R0 R3; var16 = var0 * var3
-      42 [-]: SUB R15 R16 R6; var15 = var16 - var6
-      43 [-]: LOADN R17 2  ; var17 = 2
-      44 [-]: GETUPVAL R18 1; var18 = upvalues[1]
-      45 [-]: MUL R16 R17 R18; var16 = var17 * var18
-      46 [-]: MUL R14 R15 R16; var14 = var15 * var16
-      47 [-]: DIV R13 R14 R5; var13 = var14 / var5
-      48 [-]: FASTCALL1 24 R13 L10; 
-      49 [-]: GETUPVAL R12 4; var12 = upvalues[4]
-      50 [-]: CALL R12 2 2 ; var12 = var12(var13)
-L10:  51 [-]: MUL R10 R11 R12; var10 = var11 * var12
-      52 [-]: MUL R8 R9 R10; var8 = var9 * var10
-      53 [-]: ADD R7 R8 R1 ; var7 = var8 + var1
-      54 [-]: RETURN R7 1  ; 
-L11:  55 [-]: SUBK R0 R0 K4; var0 = var0 - 1
-      56 [-]: LOADN R13 2  ; var13 = 2
-      57 [-]: LOADN R15 -10; var15 = -10
-      58 [-]: MUL R14 R15 R0; var14 = var15 * var0
-      59 [-]: FASTCALL2 21 R13 R14 L12; 
-      60 [-]: GETUPVAL R12 3; var12 = upvalues[3]
-      61 [-]: CALL R12 3 2 ; var12 = var12(var13, var14)
-L12:  62 [-]: MUL R11 R4 R12; var11 = var4 * var12
-      63 [-]: MUL R16 R0 R3; var16 = var0 * var3
-      64 [-]: SUB R15 R16 R6; var15 = var16 - var6
-      65 [-]: LOADN R17 2  ; var17 = 2
-      66 [-]: GETUPVAL R18 1; var18 = upvalues[1]
-      67 [-]: MUL R16 R17 R18; var16 = var17 * var18
-      68 [-]: MUL R14 R15 R16; var14 = var15 * var16
-      69 [-]: DIV R13 R14 R5; var13 = var14 / var5
-      70 [-]: FASTCALL1 24 R13 L13; 
-      71 [-]: GETUPVAL R12 4; var12 = upvalues[4]
-      72 [-]: CALL R12 2 2 ; var12 = var12(var13)
-L13:  73 [-]: MUL R10 R11 R12; var10 = var11 * var12
-      74 [-]: MULK R9 R10 K6; var9 = var10 * 0.5
-      75 [-]: ADD R8 R9 R2 ; var8 = var9 + var2
-      76 [-]: ADD R7 R8 R1 ; var7 = var8 + var1
-      77 [-]: RETURN R7 1  ; 
+           20 [-]: JUMP L8      ; goto L8
+L 6:       22 [-]: DIV R9 R2 R4 ; var9 = var2 / var4
+      23 [-]: FASTCALL1 4 R9 L7; 
+      24 [-]: GETUPVAL R8 1; var8 = upvalues[1]
+      25 [-]: CALL R8 2 2  ; var8 = var8(var9)
+L 7:  26 [-]: MUL R6 R7 R8 ; var6 = var7 * var8
+L 8:  27 [-]: LOADN R7 1   ; var7 = 1
+      28 [-]: JUMPIFNOTLT R0 R7 L11; goto L11 if var0 >= var83886082
+      29 [-]: SUBK R0 R0 K5; var0 = var0 - 1
+      30 [-]: LOADK R9 K6  ; var9 = -0.5
+      31 [-]: LOADN R13 2  ; var13 = 2
+      32 [-]: LOADN R15 10 ; var15 = 10
+      33 [-]: MUL R14 R15 R0; var14 = var15 * var0
+      34 [-]: FASTCALL2 21 R13 R14 L9; 
+      35 [-]: GETUPVAL R12 2; var12 = upvalues[2]
+      36 [-]: CALL R12 3 2 ; var12 = var12(var13, var14)
+L 9:  37 [-]: MUL R11 R4 R12; var11 = var4 * var12
+      38 [-]: MUL R16 R0 R3; var16 = var0 * var3
+      39 [-]: SUB R15 R16 R6; var15 = var16 - var6
+      40 [-]: MULK R14 R15 K4; var14 = var15 * 6.2831854820251465
+      41 [-]: DIV R13 R14 R5; var13 = var14 / var5
+      42 [-]: FASTCALL1 24 R13 L10; 
+      43 [-]: GETUPVAL R12 3; var12 = upvalues[3]
+      44 [-]: CALL R12 2 2 ; var12 = var12(var13)
+L10:  45 [-]: MUL R10 R11 R12; var10 = var11 * var12
+      46 [-]: MUL R8 R9 R10; var8 = var9 * var10
+      47 [-]: ADD R7 R8 R1 ; var7 = var8 + var1
+      48 [-]: RETURN R7 1  ; 
+L11:  49 [-]: SUBK R0 R0 K5; var0 = var0 - 1
+      50 [-]: LOADN R13 2  ; var13 = 2
+      51 [-]: LOADN R15 -10; var15 = -10
+      52 [-]: MUL R14 R15 R0; var14 = var15 * var0
+      53 [-]: FASTCALL2 21 R13 R14 L12; 
+      54 [-]: GETUPVAL R12 2; var12 = upvalues[2]
+      55 [-]: CALL R12 3 2 ; var12 = var12(var13, var14)
+L12:  56 [-]: MUL R11 R4 R12; var11 = var4 * var12
+      57 [-]: MUL R16 R0 R3; var16 = var0 * var3
+      58 [-]: SUB R15 R16 R6; var15 = var16 - var6
+      59 [-]: MULK R14 R15 K4; var14 = var15 * 6.2831854820251465
+      60 [-]: DIV R13 R14 R5; var13 = var14 / var5
+      61 [-]: FASTCALL1 24 R13 L13; 
+      62 [-]: GETUPVAL R12 3; var12 = upvalues[3]
+      63 [-]: CALL R12 2 2 ; var12 = var12(var13)
+L13:  64 [-]: MUL R10 R11 R12; var10 = var11 * var12
+      65 [-]: MULK R9 R10 K7; var9 = var10 * 0.5
+      66 [-]: ADD R8 R9 R2 ; var8 = var9 + var2
+      67 [-]: ADD R7 R8 R1 ; var7 = var8 + var1
+      68 [-]: RETURN R7 1  ; 
 
 
 ; Name:            
@@ -1604,13 +1513,11 @@ L13:  73 [-]: MUL R10 R11 R12; var10 = var11 * var12
 ; Is_vararg:       0
 ; Max Stack Size:  13
 
-       0 [-]: DIVK R6 R3 K0; var6 = var3 / 2
-       1 [-]: JUMPIFNOTLT R0 R6 L0; goto L0 if var0 >= var1543
+            1 [-]: JUMPIFNOTLT R0 R6 L0; goto L0 if var0 >= var1596
        2 [-]: GETUPVAL R6 0; var6 = upvalues[0]
        3 [-]: MULK R7 R0 K0; var7 = var0 * 2
        4 [-]: MOVE R8 R1   ; var8 = var1
-       5 [-]: DIVK R9 R2 K0; var9 = var2 / 2
-       6 [-]: MOVE R10 R3  ; var10 = var3
+            6 [-]: MOVE R10 R3  ; var10 = var3
        7 [-]: MOVE R11 R4  ; var11 = var4
        8 [-]: MOVE R12 R5  ; var12 = var5
        9 [-]: CALL R6 7 2  ; var6 = var6(var7, var8, var9, var10, var11, var12)
@@ -1618,10 +1525,8 @@ L13:  73 [-]: MUL R10 R11 R12; var10 = var11 * var12
 L 0:  11 [-]: GETUPVAL R6 1; var6 = upvalues[1]
       12 [-]: MULK R8 R0 K0; var8 = var0 * 2
       13 [-]: SUB R7 R8 R3 ; var7 = var8 - var3
-      14 [-]: DIVK R9 R2 K0; var9 = var2 / 2
-      15 [-]: ADD R8 R1 R9 ; var8 = var1 + var9
-      16 [-]: DIVK R9 R2 K0; var9 = var2 / 2
-      17 [-]: MOVE R10 R3  ; var10 = var3
+           15 [-]: ADD R8 R1 R9 ; var8 = var1 + var9
+           17 [-]: MOVE R10 R3  ; var10 = var3
       18 [-]: MOVE R11 R4  ; var11 = var4
       19 [-]: MOVE R12 R5  ; var12 = var5
       20 [-]: CALL R6 7 2  ; var6 = var6(var7, var8, var9, var10, var11, var12)
@@ -1636,7 +1541,7 @@ L 0:  11 [-]: GETUPVAL R6 1; var6 = upvalues[1]
 ; Max Stack Size:  11
 
        0 [-]: JUMPIF R4 L0 ; goto L0 if var4
-       1 [-]: LOADK R4 K0  ; var4 = 1.7015800000000001
+       1 [-]: LOADK R4 K0  ; var4 = 1.7015800476074219
 L 0:   2 [-]: DIV R0 R0 R3 ; var0 = var0 / var3
        3 [-]: MUL R8 R2 R0 ; var8 = var2 * var0
        4 [-]: MUL R7 R8 R0 ; var7 = var8 * var0
@@ -1656,7 +1561,7 @@ L 0:   2 [-]: DIV R0 R0 R3 ; var0 = var0 / var3
 ; Max Stack Size:  13
 
        0 [-]: JUMPIF R4 L0 ; goto L0 if var4
-       1 [-]: LOADK R4 K0  ; var4 = 1.7015800000000001
+       1 [-]: LOADK R4 K0  ; var4 = 1.7015800476074219
 L 0:   2 [-]: DIV R5 R0 R3 ; var5 = var0 / var3
        3 [-]: SUBK R0 R5 K1; var0 = var5 - 1
        4 [-]: MUL R9 R0 R0 ; var9 = var0 * var0
@@ -1680,7 +1585,7 @@ L 0:   2 [-]: DIV R5 R0 R3 ; var5 = var0 / var3
        0 [-]: MOVE R6 R0   ; var6 = var0
        1 [-]: MOVE R7 R4   ; var7 = var4
        2 [-]: JUMPIF R7 L0 ; goto L0 if var7
-       3 [-]: LOADK R7 K0  ; var7 = 1.7015800000000001
+       3 [-]: LOADK R7 K0  ; var7 = 1.7015800476074219
 L 0:   4 [-]: DIV R6 R6 R3 ; var6 = var6 / var3
        5 [-]: MUL R10 R2 R6; var10 = var2 * var6
        6 [-]: MUL R9 R10 R6; var9 = var10 * var6
@@ -1702,7 +1607,7 @@ L 0:   4 [-]: DIV R6 R6 R3 ; var6 = var6 / var3
        0 [-]: MOVE R6 R0   ; var6 = var0
        1 [-]: MOVE R7 R4   ; var7 = var4
        2 [-]: JUMPIF R7 L0 ; goto L0 if var7
-       3 [-]: LOADK R7 K0  ; var7 = 1.7015800000000001
+       3 [-]: LOADK R7 K0  ; var7 = 1.7015800476074219
 L 0:   4 [-]: DIV R8 R6 R3 ; var8 = var6 / var3
        5 [-]: SUBK R6 R8 K1; var6 = var8 - 1
        6 [-]: MUL R11 R6 R6; var11 = var6 * var6
@@ -1724,14 +1629,13 @@ L 0:   4 [-]: DIV R8 R6 R3 ; var8 = var6 / var3
 ; Max Stack Size:  14
 
        0 [-]: JUMPIF R4 L0 ; goto L0 if var4
-       1 [-]: LOADK R4 K0  ; var4 = 1.7015800000000001
-L 0:   2 [-]: MULK R4 R4 K1; var4 = var4 * 1.5249999999999999
+       1 [-]: LOADK R4 K0  ; var4 = 1.7015800476074219
+L 0:   2 [-]: MULK R4 R4 K1; var4 = var4 * 1.5249999761581421
        3 [-]: DIV R5 R0 R3 ; var5 = var0 / var3
        4 [-]: MULK R0 R5 K2; var0 = var5 * 2
        5 [-]: LOADN R5 1   ; var5 = 1
-       6 [-]: JUMPIFNOTLT R0 R5 L1; goto L1 if var0 >= var33687297
-       7 [-]: DIVK R7 R2 K2; var7 = var2 / 2
-       8 [-]: MUL R9 R0 R0 ; var9 = var0 * var0
+       6 [-]: JUMPIFNOTLT R0 R5 L1; goto L1 if var0 >= var33687377
+            8 [-]: MUL R9 R0 R0 ; var9 = var0 * var0
        9 [-]: ADDK R12 R4 K3; var12 = var4 + 1
       10 [-]: MUL R11 R12 R0; var11 = var12 * var0
       11 [-]: SUB R10 R11 R4; var10 = var11 - var4
@@ -1740,8 +1644,7 @@ L 0:   2 [-]: MULK R4 R4 K1; var4 = var4 * 1.5249999999999999
       14 [-]: ADD R5 R6 R1 ; var5 = var6 + var1
       15 [-]: RETURN R5 1  ; 
 L 1:  16 [-]: SUBK R0 R0 K2; var0 = var0 - 2
-      17 [-]: DIVK R7 R2 K2; var7 = var2 / 2
-      18 [-]: MUL R10 R0 R0; var10 = var0 * var0
+           18 [-]: MUL R10 R0 R0; var10 = var0 * var0
       19 [-]: ADDK R13 R4 K3; var13 = var4 + 1
       20 [-]: MUL R12 R13 R0; var12 = var13 * var0
       21 [-]: ADD R11 R12 R4; var11 = var12 + var4
@@ -1759,13 +1662,11 @@ L 1:  16 [-]: SUBK R0 R0 K2; var0 = var0 - 2
 ; Is_vararg:       0
 ; Max Stack Size:  16
 
-       0 [-]: DIVK R5 R3 K0; var5 = var3 / 2
-       1 [-]: JUMPIFNOTLT R0 R5 L1; goto L1 if var0 >= var1539
+            1 [-]: JUMPIFNOTLT R0 R5 L1; goto L1 if var0 >= var1605
        2 [-]: MULK R6 R0 K0; var6 = var0 * 2
-       3 [-]: DIVK R7 R2 K0; var7 = var2 / 2
-       4 [-]: MOVE R8 R4   ; var8 = var4
+            4 [-]: MOVE R8 R4   ; var8 = var4
        5 [-]: JUMPIF R8 L0 ; goto L0 if var8
-       6 [-]: LOADK R8 K1  ; var8 = 1.7015800000000001
+       6 [-]: LOADK R8 K1  ; var8 = 1.7015800476074219
 L 0:   7 [-]: DIV R9 R6 R3 ; var9 = var6 / var3
        8 [-]: SUBK R6 R9 K2; var6 = var9 - 1
        9 [-]: MUL R12 R6 R6; var12 = var6 * var6
@@ -1779,12 +1680,10 @@ L 0:   7 [-]: DIV R9 R6 R3 ; var9 = var6 / var3
       17 [-]: RETURN R5 1  ; 
 L 1:  18 [-]: MULK R7 R0 K0; var7 = var0 * 2
       19 [-]: SUB R6 R7 R3 ; var6 = var7 - var3
-      20 [-]: DIVK R8 R2 K0; var8 = var2 / 2
-      21 [-]: ADD R7 R1 R8 ; var7 = var1 + var8
-      22 [-]: DIVK R8 R2 K0; var8 = var2 / 2
-      23 [-]: MOVE R9 R4   ; var9 = var4
+           21 [-]: ADD R7 R1 R8 ; var7 = var1 + var8
+           23 [-]: MOVE R9 R4   ; var9 = var4
       24 [-]: JUMPIF R9 L2 ; goto L2 if var9
-      25 [-]: LOADK R9 K1  ; var9 = 1.7015800000000001
+      25 [-]: LOADK R9 K1  ; var9 = 1.7015800476074219
 L 2:  26 [-]: DIV R6 R6 R3 ; var6 = var6 / var3
       27 [-]: MUL R12 R8 R6; var12 = var8 * var6
       28 [-]: MUL R11 R12 R6; var11 = var12 * var6
@@ -1804,17 +1703,17 @@ L 2:  26 [-]: DIV R6 R6 R3 ; var6 = var6 / var3
 ; Max Stack Size:  10
 
        0 [-]: DIV R0 R0 R3 ; var0 = var0 / var3
-       1 [-]: LOADK R4 K0  ; var4 = 0.36363636363636365
-       2 [-]: JUMPIFNOTLT R0 R4 L0; goto L0 if var0 >= var67589
+       1 [-]: LOADK R4 K0  ; var4 = 0.36363637447357178
+       2 [-]: JUMPIFNOTLT R0 R4 L0; goto L0 if var0 >= var67655
        3 [-]: LOADK R8 K1  ; var8 = 7.5625
        4 [-]: MUL R7 R8 R0 ; var7 = var8 * var0
        5 [-]: MUL R6 R7 R0 ; var6 = var7 * var0
        6 [-]: MUL R5 R2 R6 ; var5 = var2 * var6
        7 [-]: ADD R4 R5 R1 ; var4 = var5 + var1
        8 [-]: RETURN R4 1  ; 
-L 0:   9 [-]: LOADK R4 K2  ; var4 = 0.72727272727272729
-      10 [-]: JUMPIFNOTLT R0 R4 L1; goto L1 if var0 >= var50331687
-      11 [-]: SUBK R0 R0 K3; var0 = var0 - 0.54545454545454541
+L 0:   9 [-]: LOADK R4 K2  ; var4 = 0.72727274894714355
+      10 [-]: JUMPIFNOTLT R0 R4 L1; goto L1 if var0 >= var50331650
+      11 [-]: SUBK R0 R0 K3; var0 = var0 - 0.54545456171035767
       12 [-]: LOADK R9 K1  ; var9 = 7.5625
       13 [-]: MUL R8 R9 R0 ; var8 = var9 * var0
       14 [-]: MUL R7 R8 R0 ; var7 = var8 * var0
@@ -1822,9 +1721,9 @@ L 0:   9 [-]: LOADK R4 K2  ; var4 = 0.72727272727272729
       16 [-]: MUL R5 R2 R6 ; var5 = var2 * var6
       17 [-]: ADD R4 R5 R1 ; var4 = var5 + var1
       18 [-]: RETURN R4 1  ; 
-L 1:  19 [-]: LOADK R4 K5  ; var4 = 0.90909090909090906
-      20 [-]: JUMPIFNOTLT R0 R4 L2; goto L2 if var0 >= var100663335
-      21 [-]: SUBK R0 R0 K6; var0 = var0 - 0.81818181818181823
+L 1:  19 [-]: LOADK R4 K5  ; var4 = 0.90909093618392944
+      20 [-]: JUMPIFNOTLT R0 R4 L2; goto L2 if var0 >= var100663298
+      21 [-]: SUBK R0 R0 K6; var0 = var0 - 0.81818181276321411
       22 [-]: LOADK R9 K1  ; var9 = 7.5625
       23 [-]: MUL R8 R9 R0 ; var8 = var9 * var0
       24 [-]: MUL R7 R8 R0 ; var7 = var8 * var0
@@ -1832,7 +1731,7 @@ L 1:  19 [-]: LOADK R4 K5  ; var4 = 0.90909090909090906
       26 [-]: MUL R5 R2 R6 ; var5 = var2 * var6
       27 [-]: ADD R4 R5 R1 ; var4 = var5 + var1
       28 [-]: RETURN R4 1  ; 
-L 2:  29 [-]: SUBK R0 R0 K8; var0 = var0 - 0.95454545454545459
+L 2:  29 [-]: SUBK R0 R0 K8; var0 = var0 - 0.95454543828964233
       30 [-]: LOADK R9 K1  ; var9 = 7.5625
       31 [-]: MUL R8 R9 R0 ; var8 = var9 * var0
       32 [-]: MUL R7 R8 R0 ; var7 = var8 * var0
@@ -1901,8 +1800,7 @@ L 2:  29 [-]: SUBK R0 R0 K8; var0 = var0 - 0.95454545454545459
 ; Is_vararg:       0
 ; Max Stack Size:  14
 
-       0 [-]: DIVK R4 R3 K0; var4 = var3 / 2
-       1 [-]: JUMPIFNOTLT R0 R4 L0; goto L0 if var0 >= var1795
+            1 [-]: JUMPIFNOTLT R0 R4 L0; goto L0 if var0 >= var1861
        2 [-]: MULK R7 R0 K0; var7 = var0 * 2
        3 [-]: GETUPVAL R9 0; var9 = upvalues[0]
        4 [-]: SUB R10 R3 R7; var10 = var3 - var7
@@ -1936,21 +1834,17 @@ L 0:  14 [-]: GETUPVAL R7 0; var7 = upvalues[0]
 ; Is_vararg:       0
 ; Max Stack Size:  14
 
-       0 [-]: DIVK R4 R3 K0; var4 = var3 / 2
-       1 [-]: JUMPIFNOTLT R0 R4 L0; goto L0 if var0 >= var1031
+            1 [-]: JUMPIFNOTLT R0 R4 L0; goto L0 if var0 >= var1084
        2 [-]: GETUPVAL R4 0; var4 = upvalues[0]
        3 [-]: MULK R5 R0 K0; var5 = var0 * 2
        4 [-]: MOVE R6 R1   ; var6 = var1
-       5 [-]: DIVK R7 R2 K0; var7 = var2 / 2
-       6 [-]: MOVE R8 R3   ; var8 = var3
+            6 [-]: MOVE R8 R3   ; var8 = var3
        7 [-]: CALL R4 5 2  ; var4 = var4(var5, var6, var7, var8)
        8 [-]: RETURN R4 1  ; 
 L 0:   9 [-]: MULK R6 R0 K0; var6 = var0 * 2
       10 [-]: SUB R5 R6 R3 ; var5 = var6 - var3
-      11 [-]: DIVK R7 R2 K0; var7 = var2 / 2
-      12 [-]: ADD R6 R1 R7 ; var6 = var1 + var7
-      13 [-]: DIVK R7 R2 K0; var7 = var2 / 2
-      14 [-]: GETUPVAL R9 0; var9 = upvalues[0]
+           12 [-]: ADD R6 R1 R7 ; var6 = var1 + var7
+           14 [-]: GETUPVAL R9 0; var9 = upvalues[0]
       15 [-]: SUB R10 R3 R5; var10 = var3 - var5
       16 [-]: LOADN R11 0  ; var11 = 0
       17 [-]: MOVE R12 R7  ; var12 = var7

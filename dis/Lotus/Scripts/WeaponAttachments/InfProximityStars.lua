@@ -23,8 +23,8 @@
        1 [-]: CALL R1 2 2  ; var1 = var1(var2)
        2 [-]: LOADK R2 K1  ; var2 = 0.5
 L 0:   3 [-]: LOADN R3 0   ; var3 = 0
-       4 [-]: JUMPIFNOTLT R3 R2 L2; goto L2 if var3 >= var50347595
-       5 [-]: FASTCALL1 62 R0 L1; 
+       4 [-]: JUMPIFNOTLT R3 R2 L2; goto L2 if var3 >= var50348093
+       5 [-]: FASTCALL1 64 R0 L1; 
        6 [-]: MOVE R4 R0   ; var4 = var0
        7 [-]: GETIMPORT R3 3; var3 = 0x7B998233
        8 [-]: CALL R3 2 2  ; var3 = var3(var4)
@@ -38,10 +38,9 @@ L 1:   9 [-]: JUMPIF R3 L2 ; goto L2 if var3
       16 [-]: CALL R3 4 2  ; var3 = var3(var4, var5, var6)
       17 [-]: MOVE R2 R3   ; var2 = var3
       18 [-]: GETIMPORT R5 9; var5 = 0x9BAFFFE3
-      19 [-]: LOADK R6 K10 ; var6 = 0.14999999999999999
+      19 [-]: LOADK R6 K10 ; var6 = 0.15000000596046448
       20 [-]: MOVE R7 R1   ; var7 = var1
-      21 [-]: DIVK R8 R2 K1; var8 = var2 / 0.5
-      22 [-]: CALL R5 4 0  ; var5, ... = var5(var6, var7, var8)
+           22 [-]: CALL R5 4 0  ; var5, ... = var5(var6, var7, var8)
       23 [-]: NAMECALL R3 R0 K11; var4 = var0; var3 = var0[0x2D9BA74F]
       24 [-]: CALL R3 0 1  ; var3(var4, ...)
       25 [-]: GETIMPORT R3 13; var3 = 0xCBD666E1
@@ -64,14 +63,14 @@ L 2:  29 [-]: LOADB R5 0   ; var5 = false
 
        0 [-]: LOADN R1 0   ; var1 = 0
 L 0:   1 [-]: LOADN R2 1   ; var2 = 1
-       2 [-]: JUMPIFNOTLT R1 R2 L3; goto L3 if var1 >= var50347595
-       3 [-]: FASTCALL1 62 R0 L1; 
+       2 [-]: JUMPIFNOTLT R1 R2 L3; goto L3 if var1 >= var50348093
+       3 [-]: FASTCALL1 64 R0 L1; 
        4 [-]: MOVE R3 R0   ; var3 = var0
        5 [-]: GETIMPORT R2 1; var2 = 0x7B998233
        6 [-]: CALL R2 2 2  ; var2 = var2(var3)
 L 1:   7 [-]: JUMPIF R2 L3 ; goto L3 if var2
        8 [-]: GETIMPORT R3 4; var3 = _T["TopMenuOpen"]
-       9 [-]: FASTCALL1 62 R3 L2; 
+       9 [-]: FASTCALL1 64 R3 L2; 
       10 [-]: GETIMPORT R2 1; var2 = 0x7B998233
       11 [-]: CALL R2 2 2  ; var2 = var2(var3)
 L 2:  12 [-]: JUMPIF R2 L3 ; goto L3 if var2
@@ -88,13 +87,13 @@ L 2:  12 [-]: JUMPIF R2 L3 ; goto L3 if var2
       23 [-]: LOADN R3 0   ; var3 = 0
       24 [-]: CALL R2 2 1  ; var2(var3)
       25 [-]: JUMPBACK L0  ; goto L0
-L 3:  26 [-]: FASTCALL1 62 R0 L4; 
+L 3:  26 [-]: FASTCALL1 64 R0 L4; 
       27 [-]: MOVE R3 R0   ; var3 = var0
       28 [-]: GETIMPORT R2 1; var2 = 0x7B998233
       29 [-]: CALL R2 2 2  ; var2 = var2(var3)
 L 4:  30 [-]: JUMPIF R2 L6 ; goto L6 if var2
       31 [-]: GETIMPORT R3 4; var3 = _T["TopMenuOpen"]
-      32 [-]: FASTCALL1 62 R3 L5; 
+      32 [-]: FASTCALL1 64 R3 L5; 
       33 [-]: GETIMPORT R2 1; var2 = 0x7B998233
       34 [-]: CALL R2 2 2  ; var2 = var2(var3)
 L 5:  35 [-]: JUMPIF R2 L6 ; goto L6 if var2
@@ -106,8 +105,8 @@ L 5:  35 [-]: JUMPIF R2 L6 ; goto L6 if var2
       41 [-]: JUMPBACK L3  ; goto L3
 L 6:  42 [-]: LOADN R2 1   ; var2 = 1
 L 7:  43 [-]: LOADN R3 0   ; var3 = 0
-      44 [-]: JUMPIFNOTLT R3 R2 L9; goto L9 if var3 >= var50347595
-      45 [-]: FASTCALL1 62 R0 L8; 
+      44 [-]: JUMPIFNOTLT R3 R2 L9; goto L9 if var3 >= var50348093
+      45 [-]: FASTCALL1 64 R0 L8; 
       46 [-]: MOVE R4 R0   ; var4 = var0
       47 [-]: GETIMPORT R3 1; var3 = 0x7B998233
       48 [-]: CALL R3 2 2  ; var3 = var3(var4)

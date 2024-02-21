@@ -63,7 +63,7 @@
 ; Max Stack Size:  3
 
        0 [-]: GETTABLEKS R2 R0 K0; var2 = var0["mCurrentState"]
-       1 [-]: JUMPIFEQ R1 R2 L0; goto L0 if var1 == var-2147483341
+       1 [-]: JUMPIFEQ R1 R2 L0; goto L0 if var1 == var-2147483335
        2 [-]: SETTABLEKS R1 R0 K1; var1["mPendingState"] = var0
 L 0:   3 [-]: RETURN R0 0  ; 
 
@@ -79,14 +79,14 @@ L 0:   3 [-]: RETURN R0 0  ;
        1 [-]: GETTABLEKS R1 R2 K1; var1 = var2["IDLE"]
        2 [-]: SETTABLEKS R1 R0 K2; var1["mCurrentState"] = var0
        3 [-]: GETTABLEKS R2 R0 K3; var2 = var0["OnInit"]
-       4 [-]: FASTCALL1 62 R2 L0; 
+       4 [-]: FASTCALL1 64 R2 L0; 
        5 [-]: GETIMPORT R1 5; var1 = 0x7B998233
        6 [-]: CALL R1 2 2  ; var1 = var1(var2)
 L 0:   7 [-]: JUMPIF R1 L1 ; goto L1 if var1
        8 [-]: NAMECALL R1 R0 K6; var2 = var0; var1 = var0[0x95BB66C1]
        9 [-]: CALL R1 2 1  ; var1(var2)
 L 1:  10 [-]: GETTABLEKS R2 R0 K7; var2 = var0["OnStateChange"]
-      11 [-]: FASTCALL1 62 R2 L2; 
+      11 [-]: FASTCALL1 64 R2 L2; 
       12 [-]: GETIMPORT R1 5; var1 = 0x7B998233
       13 [-]: CALL R1 2 2  ; var1 = var1(var2)
 L 2:  14 [-]: JUMPIF R1 L3 ; goto L3 if var1
@@ -105,7 +105,7 @@ L 3:  19 [-]: RETURN R0 1  ;
 ; Max Stack Size:  5
 
        0 [-]: GETTABLEKS R2 R0 K0; var2 = var0["OnStart"]
-       1 [-]: FASTCALL1 62 R2 L0; 
+       1 [-]: FASTCALL1 64 R2 L0; 
        2 [-]: GETIMPORT R1 2; var1 = 0x7B998233
        3 [-]: CALL R1 2 2  ; var1 = var1(var2)
 L 0:   4 [-]: JUMPIF R1 L1 ; goto L1 if var1
@@ -126,7 +126,7 @@ L 1:   7 [-]: GETGLOBAL R4 K4; var4 = "STATE"
 ; Max Stack Size:  6
 
        0 [-]: GETTABLEKS R3 R0 K0; var3 = var0["OnUpdate"]
-       1 [-]: FASTCALL1 62 R3 L0; 
+       1 [-]: FASTCALL1 64 R3 L0; 
        2 [-]: GETIMPORT R2 2; var2 = 0x7B998233
        3 [-]: CALL R2 2 2  ; var2 = var2(var3)
 L 0:   4 [-]: JUMPIF R2 L1 ; goto L1 if var2
@@ -139,7 +139,7 @@ L 1:   8 [-]: GETTABLEKS R2 R0 K4; var2 = var0["mAutoStart"]
       11 [-]: CALL R2 2 2  ; var2 = var2(var3)
       12 [-]: GETGLOBAL R4 K6; var4 = "STATE"
       13 [-]: GETTABLEKS R3 R4 K7; var3 = var4["IDLE"]
-      14 [-]: JUMPIFNOTEQ R2 R3 L2; goto L2 if var2 ~= var1023411485
+      14 [-]: JUMPIFNOTEQ R2 R3 L2; goto L2 if var2 ~= var1023411463
       15 [-]: GETGLOBAL R5 K6; var5 = "STATE"
       16 [-]: GETTABLEKS R4 R5 K8; var4 = var5["START"]
       17 [-]: NAMECALL R2 R0 K9; var3 = var0; var2 = var0[0x05EEB9DB]
@@ -149,18 +149,18 @@ L 2:  20 [-]: NAMECALL R2 R0 K5; var3 = var0; var2 = var0[0x53C3399F]
       21 [-]: CALL R2 2 2  ; var2 = var2(var3)
       22 [-]: GETGLOBAL R4 K6; var4 = "STATE"
       23 [-]: GETTABLEKS R3 R4 K8; var3 = var4["START"]
-      24 [-]: JUMPIFNOTEQ R2 R3 L3; goto L3 if var2 ~= var1023411485
+      24 [-]: JUMPIFNOTEQ R2 R3 L3; goto L3 if var2 ~= var1023411463
       25 [-]: GETGLOBAL R5 K6; var5 = "STATE"
       26 [-]: GETTABLEKS R4 R5 K10; var4 = var5["IN_PROGRESS"]
       27 [-]: NAMECALL R2 R0 K9; var3 = var0; var2 = var0[0x05EEB9DB]
       28 [-]: CALL R2 3 1  ; var2(var3, var4)
 L 3:  29 [-]: GETTABLEKS R3 R0 K11; var3 = var0["mPendingState"]
-      30 [-]: FASTCALL1 62 R3 L4; 
+      30 [-]: FASTCALL1 64 R3 L4; 
       31 [-]: GETIMPORT R2 2; var2 = 0x7B998233
       32 [-]: CALL R2 2 2  ; var2 = var2(var3)
 L 4:  33 [-]: JUMPIF R2 L7 ; goto L7 if var2
       34 [-]: GETTABLEKS R3 R0 K12; var3 = var0["OnStateChange"]
-      35 [-]: FASTCALL1 62 R3 L5; 
+      35 [-]: FASTCALL1 64 R3 L5; 
       36 [-]: GETIMPORT R2 2; var2 = 0x7B998233
       37 [-]: CALL R2 2 2  ; var2 = var2(var3)
 L 5:  38 [-]: JUMPIF R2 L6 ; goto L6 if var2
@@ -180,7 +180,7 @@ L 7:  44 [-]: RETURN R0 0  ;
 ; Max Stack Size:  5
 
        0 [-]: GETTABLEKS R2 R0 K0; var2 = var0["OnComplete"]
-       1 [-]: FASTCALL1 62 R2 L0; 
+       1 [-]: FASTCALL1 64 R2 L0; 
        2 [-]: GETIMPORT R1 2; var1 = 0x7B998233
        3 [-]: CALL R1 2 2  ; var1 = var1(var2)
 L 0:   4 [-]: JUMPIF R1 L1 ; goto L1 if var1
@@ -203,7 +203,7 @@ L 1:   7 [-]: GETGLOBAL R4 K4; var4 = "STATE"
        0 [-]: GETTABLEKS R2 R0 K0; var2 = var0["mCurrentState"]
        1 [-]: GETGLOBAL R4 K1; var4 = "STATE"
        2 [-]: GETTABLEKS R3 R4 K2; var3 = var4["COMPLETE"]
-       3 [-]: JUMPIFEQ R2 R3 L0; goto L0 if var2 == var16777499
+       3 [-]: JUMPIFEQ R2 R3 L0; goto L0 if var2 == var16777478
        4 [-]: LOADB R1 0 +1; var1 = false
 L 0:   5 [-]: LOADB R1 1   ; var1 = true
 L 1:   6 [-]: RETURN R1 1  ; 
@@ -217,7 +217,7 @@ L 1:   6 [-]: RETURN R1 1  ;
 ; Max Stack Size:  3
 
        0 [-]: GETTABLEKS R2 R0 K0; var2 = var0["OnClear"]
-       1 [-]: FASTCALL1 62 R2 L0; 
+       1 [-]: FASTCALL1 64 R2 L0; 
        2 [-]: GETIMPORT R1 2; var1 = 0x7B998233
        3 [-]: CALL R1 2 2  ; var1 = var1(var2)
 L 0:   4 [-]: JUMPIF R1 L1 ; goto L1 if var1

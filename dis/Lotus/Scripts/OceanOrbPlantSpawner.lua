@@ -27,7 +27,7 @@
        5 [-]: CALL R1 2 2  ; var1 = var1(var2)
        6 [-]: JUMPIF R1 L0 ; goto L0 if var1
        7 [-]: RETURN R0 0  ; 
-L 0:   8 [-]: FASTCALL1 62 R0 L1; 
+L 0:   8 [-]: FASTCALL1 64 R0 L1; 
        9 [-]: MOVE R2 R0   ; var2 = var0
       10 [-]: GETIMPORT R1 6; var1 = 0x7B998233
       11 [-]: CALL R1 2 2  ; var1 = var1(var2)

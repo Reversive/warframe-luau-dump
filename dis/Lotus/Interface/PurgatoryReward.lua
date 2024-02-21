@@ -107,7 +107,7 @@
        6 [-]: NAMECALL R4 R4 K6; var5 = var4; var4 = var4[0x1CB415C1]
        7 [-]: CALL R4 0 1  ; var4(var5, ...)
        8 [-]: GETIMPORT R5 8; var5 = 0xBF97F0A5
-       9 [-]: FASTCALL1 62 R5 L0; 
+       9 [-]: FASTCALL1 64 R5 L0; 
       10 [-]: GETIMPORT R4 10; var4 = 0x7B998233
       11 [-]: CALL R4 2 2  ; var4 = var4(var5)
 L 0:  12 [-]: JUMPIF R4 L1 ; goto L1 if var4
@@ -125,164 +125,165 @@ L 1:  17 [-]: LOADK R5 K12 ; var5 = "<font color=\""
       24 [-]: MOVE R6 R3   ; var6 = var3
       25 [-]: CALL R5 2 5  ; var5, var6, var7, var8 = var5(var6)
       26 [-]: LOADN R9 10  ; var9 = 10
-      27 [-]: JUMPIFNOTLT R8 R9 L2; goto L2 if var8 >= var1050885
+      27 [-]: JUMPIFNOTLT R8 R9 L3; goto L3 if var8 >= var1050951
       28 [-]: LOADK R9 K16 ; var9 = "0"
-      29 [-]: GETIMPORT R10 18; var10 = 0x64FB1586
+      29 [-]: FASTCALL1 63 R8 L2; 
       30 [-]: MOVE R11 R8  ; var11 = var8
-      31 [-]: CALL R10 2 2 ; var10 = var10(var11)
-      32 [-]: CONCAT R8 R9 R10; var8 = var9 .. var10
-      33 [-]: JUMP L3      ; goto L3
-L 2:  34 [-]: GETIMPORT R9 18; var9 = 0x64FB1586
-      35 [-]: MOVE R10 R8  ; var10 = var8
-      36 [-]: CALL R9 2 2  ; var9 = var9(var10)
-      37 [-]: MOVE R8 R9   ; var8 = var9
-L 3:  38 [-]: GETUPVAL R14 0; var14 = upvalues[0]
-      39 [-]: GETTABLEKS R13 R14 K19; var13 = var14[0x1142C7A8]
-      40 [-]: MOVE R14 R7  ; var14 = var7
-      41 [-]: CALL R13 2 2 ; var13 = var13(var14)
-      42 [-]: MOVE R10 R13 ; var10 = var13
-      43 [-]: LOADK R11 K20; var11 = ":"
-      44 [-]: MOVE R12 R8  ; var12 = var8
-      45 [-]: CONCAT R9 R10 R12; var9 = var10 .. var12
-      46 [-]: LOADK R11 K21; var11 = "<p><font color=\""
-      47 [-]: GETUPVAL R14 1; var14 = upvalues[1]
-      48 [-]: GETTABLEKS R12 R14 K22; var12 = var14["FloatingContentHighlightHex"]
-      49 [-]: LOADK R13 K14; var13 = "\">"
-      50 [-]: CONCAT R10 R11 R13; var10 = var11 .. var13
-      51 [-]: MOVE R11 R10 ; var11 = var10
-      52 [-]: GETIMPORT R12 1; var12 = 0xAE91E43B
-      53 [-]: LOADK R14 K23; var14 = "/Lotus/Language/Purgatory/RewardTime"
-      54 [-]: LOADB R15 1  ; var15 = true
-      55 [-]: DUPTABLE R16 27; 
-      56 [-]: SETTABLEKS R4 R16 K24; var4["OPEN_COLOR"] = var16
-      57 [-]: SETTABLEKS R9 R16 K25; var9["TIME"] = var16
-      58 [-]: LOADK R17 K28; var17 = "</font>"
-      59 [-]: SETTABLEKS R17 R16 K26; var17["CLOSE_COLOR"] = var16
-      60 [-]: NAMECALL R12 R12 K29; var13 = var12; var12 = var12[0x42B04007]
-      61 [-]: CALL R12 5 2 ; var12 = var12(var13, var14, var15, var16)
-      62 [-]: CONCAT R10 R11 R12; var10 = var11 .. var12
-      63 [-]: MOVE R11 R10 ; var11 = var10
-      64 [-]: LOADK R12 K30; var12 = "</font></p>"
-      65 [-]: CONCAT R10 R11 R12; var10 = var11 .. var12
-      66 [-]: GETIMPORT R11 1; var11 = 0xAE91E43B
-      67 [-]: LOADK R13 K31; var13 = "Panel.Time"
-      68 [-]: LOADN R14 29 ; var14 = 29
-      69 [-]: MOVE R15 R10 ; var15 = var10
-      70 [-]: NAMECALL R11 R11 K32; var12 = var11; var11 = var11[0x5F56EEAB]
-      71 [-]: CALL R11 5 1 ; var11(var12, var13, var14, var15)
-      72 [-]: GETIMPORT R11 1; var11 = 0xAE91E43B
-      73 [-]: LOADK R13 K33; var13 = "Panel.Title.text"
-      74 [-]: LOADK R15 K34; var15 = "/Lotus/Language/Purgatory/RewardRank"
-      75 [-]: GETIMPORT R16 18; var16 = 0x64FB1586
-      76 [-]: MOVE R17 R2  ; var17 = var2
-      77 [-]: CALL R16 2 2 ; var16 = var16(var17)
-      78 [-]: CONCAT R14 R15 R16; var14 = var15 .. var16
-      79 [-]: NAMECALL R11 R11 K35; var12 = var11; var11 = var11[0x20B98DB3]
-      80 [-]: CALL R11 4 1 ; var11(var12, var13, var14)
-      81 [-]: GETIMPORT R11 1; var11 = 0xAE91E43B
-      82 [-]: LOADK R13 K31; var13 = "Panel.Time"
-      83 [-]: LOADN R14 36 ; var14 = 36
-      84 [-]: GETUPVAL R16 1; var16 = upvalues[1]
-      85 [-]: GETTABLEKS R15 R16 K36; var15 = var16["FloatingContent"]
-      86 [-]: NAMECALL R11 R11 K37; var12 = var11; var11 = var11[0x67BC869F]
-      87 [-]: CALL R11 5 1 ; var11(var12, var13, var14, var15)
-      88 [-]: GETIMPORT R11 1; var11 = 0xAE91E43B
-      89 [-]: LOADK R13 K38; var13 = "Panel.Title"
-      90 [-]: LOADN R14 36 ; var14 = 36
-      91 [-]: GETUPVAL R16 1; var16 = upvalues[1]
-      92 [-]: GETTABLEKS R15 R16 K39; var15 = var16["FloatingContentHighlight"]
-      93 [-]: NAMECALL R11 R11 K37; var12 = var11; var11 = var11[0x67BC869F]
-      94 [-]: CALL R11 5 1 ; var11(var12, var13, var14, var15)
-      95 [-]: LOADK R12 K21; var12 = "<p><font color=\""
-      96 [-]: GETUPVAL R15 1; var15 = upvalues[1]
-      97 [-]: GETTABLEKS R13 R15 K22; var13 = var15["FloatingContentHighlightHex"]
-      98 [-]: LOADK R14 K14; var14 = "\">"
-      99 [-]: CONCAT R11 R12 R14; var11 = var12 .. var14
-     100 [-]: MOVE R12 R11 ; var12 = var11
-     101 [-]: GETIMPORT R13 1; var13 = 0xAE91E43B
-     102 [-]: LOADK R15 K40; var15 = "/Lotus/Language/Purgatory/RewardPanelKills"
-     103 [-]: LOADB R16 0  ; var16 = false
-     104 [-]: DUPTABLE R17 42; 
-     105 [-]: SETTABLEKS R4 R17 K24; var4["OPEN_COLOR"] = var17
-     106 [-]: GETUPVAL R19 0; var19 = upvalues[0]
-     107 [-]: GETTABLEKS R18 R19 K19; var18 = var19[0x1142C7A8]
-     108 [-]: MOVE R19 R1  ; var19 = var1
-     109 [-]: CALL R18 2 2 ; var18 = var18(var19)
-     110 [-]: SETTABLEKS R18 R17 K41; var18["KILLS"] = var17
-     111 [-]: LOADK R18 K28; var18 = "</font>"
-     112 [-]: SETTABLEKS R18 R17 K26; var18["CLOSE_COLOR"] = var17
-     113 [-]: NAMECALL R13 R13 K29; var14 = var13; var13 = var13[0x42B04007]
-     114 [-]: CALL R13 5 2 ; var13 = var13(var14, var15, var16, var17)
-     115 [-]: CONCAT R11 R12 R13; var11 = var12 .. var13
-     116 [-]: MOVE R12 R11 ; var12 = var11
-     117 [-]: LOADK R13 K30; var13 = "</font></p>"
+      31 [-]: GETIMPORT R10 18; var10 = 0x64FB1586
+      32 [-]: CALL R10 2 2 ; var10 = var10(var11)
+L 2:  33 [-]: CONCAT R8 R9 R10; var8 = var9 .. var10
+      34 [-]: JUMP L5      ; goto L5
+L 3:  35 [-]: FASTCALL1 63 R8 L4; 
+      36 [-]: MOVE R10 R8  ; var10 = var8
+      37 [-]: GETIMPORT R9 18; var9 = 0x64FB1586
+      38 [-]: CALL R9 2 2  ; var9 = var9(var10)
+L 4:  39 [-]: MOVE R8 R9   ; var8 = var9
+L 5:  40 [-]: GETUPVAL R14 0; var14 = upvalues[0]
+      41 [-]: GETTABLEKS R13 R14 K19; var13 = var14[0x1142C7A8]
+      42 [-]: MOVE R14 R7  ; var14 = var7
+      43 [-]: CALL R13 2 2 ; var13 = var13(var14)
+      44 [-]: MOVE R10 R13 ; var10 = var13
+      45 [-]: LOADK R11 K20; var11 = ":"
+      46 [-]: MOVE R12 R8  ; var12 = var8
+      47 [-]: CONCAT R9 R10 R12; var9 = var10 .. var12
+      48 [-]: LOADK R11 K21; var11 = "<p><font color=\""
+      49 [-]: GETUPVAL R14 1; var14 = upvalues[1]
+      50 [-]: GETTABLEKS R12 R14 K22; var12 = var14["FloatingContentHighlightHex"]
+      51 [-]: LOADK R13 K14; var13 = "\">"
+      52 [-]: CONCAT R10 R11 R13; var10 = var11 .. var13
+      53 [-]: MOVE R11 R10 ; var11 = var10
+      54 [-]: GETIMPORT R12 1; var12 = 0xAE91E43B
+      55 [-]: LOADK R14 K23; var14 = "/Lotus/Language/Purgatory/RewardTime"
+      56 [-]: LOADB R15 1  ; var15 = true
+      57 [-]: DUPTABLE R16 27; 
+      58 [-]: SETTABLEKS R4 R16 K24; var4["OPEN_COLOR"] = var16
+      59 [-]: SETTABLEKS R9 R16 K25; var9["TIME"] = var16
+      60 [-]: LOADK R17 K28; var17 = "</font>"
+      61 [-]: SETTABLEKS R17 R16 K26; var17["CLOSE_COLOR"] = var16
+      62 [-]: NAMECALL R12 R12 K29; var13 = var12; var12 = var12[0x42B04007]
+      63 [-]: CALL R12 5 2 ; var12 = var12(var13, var14, var15, var16)
+      64 [-]: CONCAT R10 R11 R12; var10 = var11 .. var12
+      65 [-]: MOVE R11 R10 ; var11 = var10
+      66 [-]: LOADK R12 K30; var12 = "</font></p>"
+      67 [-]: CONCAT R10 R11 R12; var10 = var11 .. var12
+      68 [-]: GETIMPORT R11 1; var11 = 0xAE91E43B
+      69 [-]: LOADK R13 K31; var13 = "Panel.Time"
+      70 [-]: LOADN R14 31 ; var14 = 31
+      71 [-]: MOVE R15 R10 ; var15 = var10
+      72 [-]: NAMECALL R11 R11 K32; var12 = var11; var11 = var11[0x5F56EEAB]
+      73 [-]: CALL R11 5 1 ; var11(var12, var13, var14, var15)
+      74 [-]: GETIMPORT R11 1; var11 = 0xAE91E43B
+      75 [-]: LOADK R13 K33; var13 = "Panel.Title.text"
+      76 [-]: LOADK R15 K34; var15 = "/Lotus/Language/Purgatory/RewardRank"
+      77 [-]: FASTCALL1 63 R2 L6; 
+      78 [-]: MOVE R17 R2  ; var17 = var2
+      79 [-]: GETIMPORT R16 18; var16 = 0x64FB1586
+      80 [-]: CALL R16 2 2 ; var16 = var16(var17)
+L 6:  81 [-]: CONCAT R14 R15 R16; var14 = var15 .. var16
+      82 [-]: NAMECALL R11 R11 K35; var12 = var11; var11 = var11[0x20B98DB3]
+      83 [-]: CALL R11 4 1 ; var11(var12, var13, var14)
+      84 [-]: GETIMPORT R11 1; var11 = 0xAE91E43B
+      85 [-]: LOADK R13 K31; var13 = "Panel.Time"
+      86 [-]: LOADN R14 38 ; var14 = 38
+      87 [-]: GETUPVAL R16 1; var16 = upvalues[1]
+      88 [-]: GETTABLEKS R15 R16 K36; var15 = var16["FloatingContent"]
+      89 [-]: NAMECALL R11 R11 K37; var12 = var11; var11 = var11[0x67BC869F]
+      90 [-]: CALL R11 5 1 ; var11(var12, var13, var14, var15)
+      91 [-]: GETIMPORT R11 1; var11 = 0xAE91E43B
+      92 [-]: LOADK R13 K38; var13 = "Panel.Title"
+      93 [-]: LOADN R14 38 ; var14 = 38
+      94 [-]: GETUPVAL R16 1; var16 = upvalues[1]
+      95 [-]: GETTABLEKS R15 R16 K39; var15 = var16["FloatingContentHighlight"]
+      96 [-]: NAMECALL R11 R11 K37; var12 = var11; var11 = var11[0x67BC869F]
+      97 [-]: CALL R11 5 1 ; var11(var12, var13, var14, var15)
+      98 [-]: LOADK R12 K21; var12 = "<p><font color=\""
+      99 [-]: GETUPVAL R15 1; var15 = upvalues[1]
+     100 [-]: GETTABLEKS R13 R15 K22; var13 = var15["FloatingContentHighlightHex"]
+     101 [-]: LOADK R14 K14; var14 = "\">"
+     102 [-]: CONCAT R11 R12 R14; var11 = var12 .. var14
+     103 [-]: MOVE R12 R11 ; var12 = var11
+     104 [-]: GETIMPORT R13 1; var13 = 0xAE91E43B
+     105 [-]: LOADK R15 K40; var15 = "/Lotus/Language/Purgatory/RewardPanelKills"
+     106 [-]: LOADB R16 0  ; var16 = false
+     107 [-]: DUPTABLE R17 42; 
+     108 [-]: SETTABLEKS R4 R17 K24; var4["OPEN_COLOR"] = var17
+     109 [-]: GETUPVAL R19 0; var19 = upvalues[0]
+     110 [-]: GETTABLEKS R18 R19 K19; var18 = var19[0x1142C7A8]
+     111 [-]: MOVE R19 R1  ; var19 = var1
+     112 [-]: CALL R18 2 2 ; var18 = var18(var19)
+     113 [-]: SETTABLEKS R18 R17 K41; var18["KILLS"] = var17
+     114 [-]: LOADK R18 K28; var18 = "</font>"
+     115 [-]: SETTABLEKS R18 R17 K26; var18["CLOSE_COLOR"] = var17
+     116 [-]: NAMECALL R13 R13 K29; var14 = var13; var13 = var13[0x42B04007]
+     117 [-]: CALL R13 5 2 ; var13 = var13(var14, var15, var16, var17)
      118 [-]: CONCAT R11 R12 R13; var11 = var12 .. var13
-     119 [-]: GETIMPORT R12 1; var12 = 0xAE91E43B
-     120 [-]: LOADK R14 K43; var14 = "Panel.KillCount"
-     121 [-]: LOADN R15 29 ; var15 = 29
-     122 [-]: MOVE R16 R11 ; var16 = var11
-     123 [-]: NAMECALL R12 R12 K32; var13 = var12; var12 = var12[0x5F56EEAB]
-     124 [-]: CALL R12 5 1 ; var12(var13, var14, var15, var16)
-     125 [-]: GETIMPORT R12 1; var12 = 0xAE91E43B
-     126 [-]: LOADK R14 K43; var14 = "Panel.KillCount"
-     127 [-]: LOADN R15 33 ; var15 = 33
-     128 [-]: NAMECALL R12 R12 K44; var13 = var12; var12 = var12[0x91A24E4B]
-     129 [-]: CALL R12 4 2 ; var12 = var12(var13, var14, var15)
-     130 [-]: GETIMPORT R13 1; var13 = 0xAE91E43B
-     131 [-]: LOADK R15 K31; var15 = "Panel.Time"
-     132 [-]: LOADN R16 33 ; var16 = 33
-     133 [-]: NAMECALL R13 R13 K44; var14 = var13; var13 = var13[0x91A24E4B]
-     134 [-]: CALL R13 4 2 ; var13 = var13(var14, var15, var16)
-     135 [-]: ADD R17 R12 R13; var17 = var12 + var13
-     136 [-]: ADDK R16 R17 K46; var16 = var17 + 20
-     137 [-]: DIVK R15 R16 K45; var15 = var16 / 2
-     138 [-]: MINUS R14 R15; 
-     139 [-]: GETIMPORT R15 1; var15 = 0xAE91E43B
-     140 [-]: LOADK R17 K43; var17 = "Panel.KillCount"
-     141 [-]: LOADN R18 0  ; var18 = 0
-     142 [-]: MOVE R19 R14 ; var19 = var14
-     143 [-]: NAMECALL R15 R15 K37; var16 = var15; var15 = var15[0x67BC869F]
-     144 [-]: CALL R15 5 1 ; var15(var16, var17, var18, var19)
-     145 [-]: GETIMPORT R15 1; var15 = 0xAE91E43B
-     146 [-]: LOADK R17 K31; var17 = "Panel.Time"
-     147 [-]: LOADN R18 0  ; var18 = 0
-     148 [-]: ADD R20 R14 R12; var20 = var14 + var12
-     149 [-]: ADDK R19 R20 K46; var19 = var20 + 20
-     150 [-]: NAMECALL R15 R15 K37; var16 = var15; var15 = var15[0x67BC869F]
-     151 [-]: CALL R15 5 1 ; var15(var16, var17, var18, var19)
-     152 [-]: LOADN R17 1  ; var17 = 1
-     153 [-]: LOADN R15 3  ; var15 = 3
-     154 [-]: LOADN R16 1  ; var16 = 1
-     155 [-]: FORNPREP R15 L7; nforprep start - [escape at L7] -- var15 = iterator
-L 4: 156 [-]: GETUPVAL R18 3; var18 = upvalues[3]
-     157 [-]: DUPTABLE R20 49; 
-     158 [-]: SETTABLEKS R17 R20 K47; var17["mTier"] = var20
-     159 [-]: JUMPIFLE R17 R2 L5; goto L5 if var17 <= var16782619
-     160 [-]: LOADB R21 0 +1; var21 = false
-L 5: 161 [-]: LOADB R21 1  ; var21 = true
-L 6: 162 [-]: SETTABLEKS R21 R20 K48; var21["mAcquired"] = var20
-     163 [-]: LOADB R21 1  ; var21 = true
-     164 [-]: NAMECALL R18 R18 K50; var19 = var18; var18 = var18[0xBAD4316F]
-     165 [-]: CALL R18 4 1 ; var18(var19, var20, var21)
-     166 [-]: FORNLOOP R15 L4; nforloop end - iterate + goto L4
-L 7: 167 [-]: GETUPVAL R15 3; var15 = upvalues[3]
-     168 [-]: NAMECALL R15 R15 K51; var16 = var15; var15 = var15[0x71E9AC81]
-     169 [-]: CALL R15 2 1 ; var15(var16)
-     170 [-]: GETUPVAL R16 3; var16 = upvalues[3]
-     171 [-]: NAMECALL R16 R16 K52; var17 = var16; var16 = var16[0x5FBDDC1A]
-     172 [-]: CALL R16 2 2 ; var16 = var16(var17)
-     173 [-]: GETUPVAL R18 3; var18 = upvalues[3]
-     174 [-]: GETTABLEKS R17 R18 K53; var17 = var18["mForcedHorizontalSeparation"]
-     175 [-]: MUL R15 R16 R17; var15 = var16 * var17
-     176 [-]: GETIMPORT R16 1; var16 = 0xAE91E43B
-     177 [-]: LOADK R18 K54; var18 = "Panel.RewardList"
-     178 [-]: LOADN R19 0  ; var19 = 0
-     179 [-]: LOADN R21 7  ; var21 = 7
-     180 [-]: DIVK R22 R15 K45; var22 = var15 / 2
-     181 [-]: SUB R20 R21 R22; var20 = var21 - var22
-     182 [-]: NAMECALL R16 R16 K37; var17 = var16; var16 = var16[0x67BC869F]
-     183 [-]: CALL R16 5 1 ; var16(var17, var18, var19, var20)
-     184 [-]: RETURN R0 0  ; 
+     119 [-]: MOVE R12 R11 ; var12 = var11
+     120 [-]: LOADK R13 K30; var13 = "</font></p>"
+     121 [-]: CONCAT R11 R12 R13; var11 = var12 .. var13
+     122 [-]: GETIMPORT R12 1; var12 = 0xAE91E43B
+     123 [-]: LOADK R14 K43; var14 = "Panel.KillCount"
+     124 [-]: LOADN R15 31 ; var15 = 31
+     125 [-]: MOVE R16 R11 ; var16 = var11
+     126 [-]: NAMECALL R12 R12 K32; var13 = var12; var12 = var12[0x5F56EEAB]
+     127 [-]: CALL R12 5 1 ; var12(var13, var14, var15, var16)
+     128 [-]: GETIMPORT R12 1; var12 = 0xAE91E43B
+     129 [-]: LOADK R14 K43; var14 = "Panel.KillCount"
+     130 [-]: LOADN R15 35 ; var15 = 35
+     131 [-]: NAMECALL R12 R12 K44; var13 = var12; var12 = var12[0x91A24E4B]
+     132 [-]: CALL R12 4 2 ; var12 = var12(var13, var14, var15)
+     133 [-]: GETIMPORT R13 1; var13 = 0xAE91E43B
+     134 [-]: LOADK R15 K31; var15 = "Panel.Time"
+     135 [-]: LOADN R16 35 ; var16 = 35
+     136 [-]: NAMECALL R13 R13 K44; var14 = var13; var13 = var13[0x91A24E4B]
+     137 [-]: CALL R13 4 2 ; var13 = var13(var14, var15, var16)
+     138 [-]: ADD R17 R12 R13; var17 = var12 + var13
+     139 [-]: ADDK R16 R17 K46; var16 = var17 + 20
+          141 [-]: MINUS R14 R15; 
+     142 [-]: GETIMPORT R15 1; var15 = 0xAE91E43B
+     143 [-]: LOADK R17 K43; var17 = "Panel.KillCount"
+     144 [-]: LOADN R18 0  ; var18 = 0
+     145 [-]: MOVE R19 R14 ; var19 = var14
+     146 [-]: NAMECALL R15 R15 K37; var16 = var15; var15 = var15[0x67BC869F]
+     147 [-]: CALL R15 5 1 ; var15(var16, var17, var18, var19)
+     148 [-]: GETIMPORT R15 1; var15 = 0xAE91E43B
+     149 [-]: LOADK R17 K31; var17 = "Panel.Time"
+     150 [-]: LOADN R18 0  ; var18 = 0
+     151 [-]: ADD R20 R14 R12; var20 = var14 + var12
+     152 [-]: ADDK R19 R20 K46; var19 = var20 + 20
+     153 [-]: NAMECALL R15 R15 K37; var16 = var15; var15 = var15[0x67BC869F]
+     154 [-]: CALL R15 5 1 ; var15(var16, var17, var18, var19)
+     155 [-]: LOADN R17 1  ; var17 = 1
+     156 [-]: LOADN R15 3  ; var15 = 3
+     157 [-]: LOADN R16 1  ; var16 = 1
+     158 [-]: FORNPREP R15 L10; nforprep start - [escape at L10] -- var15 = iterator
+L 7: 159 [-]: GETUPVAL R18 3; var18 = upvalues[3]
+     160 [-]: DUPTABLE R20 49; 
+     161 [-]: SETTABLEKS R17 R20 K47; var17["mTier"] = var20
+     162 [-]: JUMPIFLE R17 R2 L8; goto L8 if var17 <= var16782598
+     163 [-]: LOADB R21 0 +1; var21 = false
+L 8: 164 [-]: LOADB R21 1  ; var21 = true
+L 9: 165 [-]: SETTABLEKS R21 R20 K48; var21["mAcquired"] = var20
+     166 [-]: LOADB R21 1  ; var21 = true
+     167 [-]: NAMECALL R18 R18 K50; var19 = var18; var18 = var18[0xBAD4316F]
+     168 [-]: CALL R18 4 1 ; var18(var19, var20, var21)
+     169 [-]: FORNLOOP R15 L7; nforloop end - iterate + goto L7
+L10: 170 [-]: GETUPVAL R15 3; var15 = upvalues[3]
+     171 [-]: NAMECALL R15 R15 K51; var16 = var15; var15 = var15[0x71E9AC81]
+     172 [-]: CALL R15 2 1 ; var15(var16)
+     173 [-]: GETUPVAL R16 3; var16 = upvalues[3]
+     174 [-]: NAMECALL R16 R16 K52; var17 = var16; var16 = var16[0x5FBDDC1A]
+     175 [-]: CALL R16 2 2 ; var16 = var16(var17)
+     176 [-]: GETUPVAL R18 3; var18 = upvalues[3]
+     177 [-]: GETTABLEKS R17 R18 K53; var17 = var18["mForcedHorizontalSeparation"]
+     178 [-]: MUL R15 R16 R17; var15 = var16 * var17
+     179 [-]: GETIMPORT R16 1; var16 = 0xAE91E43B
+     180 [-]: LOADK R18 K54; var18 = "Panel.RewardList"
+     181 [-]: LOADN R19 0  ; var19 = 0
+     182 [-]: LOADN R21 7  ; var21 = 7
+          184 [-]: SUB R20 R21 R22; var20 = var21 - var22
+     185 [-]: NAMECALL R16 R16 K37; var17 = var16; var16 = var16[0x67BC869F]
+     186 [-]: CALL R16 5 1 ; var16(var17, var18, var19, var20)
+     187 [-]: RETURN R0 0  ; 
 
 
 ; Name:            
@@ -447,7 +448,7 @@ L 7: 167 [-]: GETUPVAL R15 3; var15 = upvalues[3]
      122 [-]: CALL R1 4 1  ; var1(var2, var3, var4)
      123 [-]: GETIMPORT R1 1; var1 = 0xAE91E43B
      124 [-]: LOADK R3 K29 ; var3 = "Panel.Hint"
-     125 [-]: LOADN R4 36  ; var4 = 36
+     125 [-]: LOADN R4 38  ; var4 = 38
      126 [-]: GETUPVAL R6 1; var6 = upvalues[1]
      127 [-]: GETTABLEKS R5 R6 K8; var5 = var6["FloatingContent"]
      128 [-]: NAMECALL R1 R1 K3; var2 = var1; var1 = var1[0x67BC869F]
@@ -531,7 +532,7 @@ L 7: 167 [-]: GETUPVAL R15 3; var15 = upvalues[3]
        4 [-]: NAMECALL R1 R1 K4; var2 = var1; var1 = var1[0x8A8C8D5A]
        5 [-]: CALL R1 3 1  ; var1(var2, var3)
        6 [-]: GETUPVAL R2 0; var2 = upvalues[0]
-       7 [-]: FASTCALL1 62 R2 L0; 
+       7 [-]: FASTCALL1 64 R2 L0; 
        8 [-]: GETIMPORT R1 6; var1 = 0x7B998233
        9 [-]: CALL R1 2 2  ; var1 = var1(var2)
 L 0:  10 [-]: JUMPIF R1 L1 ; goto L1 if var1

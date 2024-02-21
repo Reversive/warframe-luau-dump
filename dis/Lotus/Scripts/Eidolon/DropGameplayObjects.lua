@@ -32,7 +32,7 @@ L 1:   9 [-]: GETIMPORT R9 5; var9 = gBaseAvatarType
       12 [-]: JUMPIFNOT R7 L6; goto L6 if not var7
       13 [-]: NAMECALL R7 R6 K7; var8 = var6; var7 = var6[0xDE321E6F]
       14 [-]: CALL R7 2 2  ; var7 = var7(var8)
-      15 [-]: FASTCALL1 62 R7 L2; 
+      15 [-]: FASTCALL1 64 R7 L2; 
       16 [-]: MOVE R9 R7   ; var9 = var7
       17 [-]: GETIMPORT R8 9; var8 = 0x7B998233
       18 [-]: CALL R8 2 2  ; var8 = var8(var9)
@@ -53,7 +53,7 @@ L 3:  30 [-]: GETIMPORT R10 17; var10 = gLotusVehicleAvatarType
       33 [-]: JUMPIFNOT R8 L7; goto L7 if not var8
       34 [-]: NAMECALL R8 R6 K18; var9 = var6; var8 = var6[0xFF005826]
       35 [-]: CALL R8 2 2  ; var8 = var8(var9)
-      36 [-]: FASTCALL1 62 R8 L4; 
+      36 [-]: FASTCALL1 64 R8 L4; 
       37 [-]: MOVE R10 R8  ; var10 = var8
       38 [-]: GETIMPORT R9 9; var9 = 0x7B998233
       39 [-]: CALL R9 2 2  ; var9 = var9(var10)
@@ -64,7 +64,7 @@ L 4:  40 [-]: JUMPIF R9 L7 ; goto L7 if var9
       44 [-]: JUMPIFNOT R9 L7; goto L7 if not var9
       45 [-]: NAMECALL R9 R8 K7; var10 = var8; var9 = var8[0xDE321E6F]
       46 [-]: CALL R9 2 2  ; var9 = var9(var10)
-      47 [-]: FASTCALL1 62 R9 L5; 
+      47 [-]: FASTCALL1 64 R9 L5; 
       48 [-]: MOVE R11 R9  ; var11 = var9
       49 [-]: GETIMPORT R10 9; var10 = 0x7B998233
       50 [-]: CALL R10 2 2 ; var10 = var10(var11)

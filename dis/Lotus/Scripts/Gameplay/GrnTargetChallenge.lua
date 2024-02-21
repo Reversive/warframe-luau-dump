@@ -48,7 +48,7 @@
        2 [-]: LENGTH R3 R0 ; var3 = #var0
        3 [-]: CALL R1 3 2  ; var1 = var1(var2, var3)
        4 [-]: GETTABLE R2 R0 R1; var2 = var0[var1]
-L 0:   5 [-]: FASTCALL1 62 R2 L1; 
+L 0:   5 [-]: FASTCALL1 64 R2 L1; 
        6 [-]: MOVE R4 R2   ; var4 = var2
        7 [-]: GETIMPORT R3 3; var3 = 0x7B998233
        8 [-]: CALL R3 2 2  ; var3 = var3(var4)
@@ -215,7 +215,7 @@ L 1:  20 [-]: GETIMPORT R10 6; var10 = 0xA47D82EC
       28 [-]: CALL R9 2 2  ; var9 = var9(var10)
       29 [-]: JUMPIFNOT R9 L4; goto L4 if not var9
       30 [-]: LOADN R9 1   ; var9 = 1
-      31 [-]: JUMPIFNOTLT R9 R1 L2; goto L2 if var9 >= var201655592
+      31 [-]: JUMPIFNOTLT R9 R1 L2; goto L2 if var9 >= var201655560
       32 [-]: ADDK R5 R5 K12; var5 = var5 + 1
       33 [-]: GETUPVAL R10 1; var10 = upvalues[1]
       34 [-]: ADDK R9 R10 K12; var9 = var10 + 1
@@ -264,7 +264,7 @@ L 5:  73 [-]: GETIMPORT R9 27; var9 = 0x11A19C5E
       77 [-]: CALL R9 3 1  ; var9(var10, var11)
       78 [-]: FORNLOOP R6 L1; nforloop end - iterate + goto L1
 L 6:  79 [-]: GETIMPORT R7 30; var7 = 0x8751083E
-      80 [-]: FASTCALL1 62 R7 L7; 
+      80 [-]: FASTCALL1 64 R7 L7; 
       81 [-]: GETIMPORT R6 32; var6 = 0x7B998233
       82 [-]: CALL R6 2 2  ; var6 = var6(var7)
 L 7:  83 [-]: JUMPIF R6 L8 ; goto L8 if var6
@@ -284,7 +284,7 @@ L 8:  92 [-]: GETIMPORT R6 36; var6 = 0x52A11A6B
       97 [-]: LOADN R7 1   ; var7 = 1
       98 [-]: CALL R6 2 1  ; var6(var7)
       99 [-]: GETIMPORT R7 42; var7 = _T["playerCount"]
-     100 [-]: FASTCALL1 62 R7 L9; 
+     100 [-]: FASTCALL1 64 R7 L9; 
      101 [-]: GETIMPORT R6 32; var6 = 0x7B998233
      102 [-]: CALL R6 2 2  ; var6 = var6(var7)
 L 9: 103 [-]: JUMPIFNOT R6 L10; goto L10 if not var6
@@ -295,7 +295,7 @@ L 9: 103 [-]: JUMPIFNOT R6 L10; goto L10 if not var6
      108 [-]: LENGTH R8 R6 ; var8 = #var6
      109 [-]: SETTABLEKS R8 R7 K41; var8["playerCount"] = var7
 L10: 110 [-]: GETIMPORT R7 16; var7 = _T["buttonCount"]
-     111 [-]: FASTCALL1 62 R7 L11; 
+     111 [-]: FASTCALL1 64 R7 L11; 
      112 [-]: GETIMPORT R6 32; var6 = 0x7B998233
      113 [-]: CALL R6 2 2  ; var6 = var6(var7)
 L11: 114 [-]: JUMPIFNOT R6 L12; goto L12 if not var6
@@ -305,12 +305,12 @@ L11: 114 [-]: JUMPIFNOT R6 L12; goto L12 if not var6
 L12: 118 [-]: JUMPIF R3 L13; goto L13 if var3
      119 [-]: LENGTH R6 R2 ; var6 = #var2
      120 [-]: LOADN R7 0   ; var7 = 0
-     121 [-]: JUMPIFNOTLT R7 R6 L13; goto L13 if var7 >= var132615
+     121 [-]: JUMPIFNOTLT R7 R6 L13; goto L13 if var7 >= var132668
      122 [-]: GETUPVAL R6 2; var6 = upvalues[2]
      123 [-]: MOVE R7 R2   ; var7 = var2
      124 [-]: CALL R6 2 2  ; var6 = var6(var7)
      125 [-]: MOVE R4 R6   ; var4 = var6
-L13: 126 [-]: FASTCALL1 62 R4 L14; 
+L13: 126 [-]: FASTCALL1 64 R4 L14; 
      127 [-]: MOVE R7 R4   ; var7 = var4
      128 [-]: GETIMPORT R6 32; var6 = 0x7B998233
      129 [-]: CALL R6 2 2  ; var6 = var6(var7)
@@ -324,7 +324,7 @@ L15: 135 [-]: GETIMPORT R9 47; var9 = 0x2460120F
      137 [-]: GETIMPORT R9 49; var9 = 0xB18C08FA
 L16: 138 [-]: GETIMPORT R10 16; var10 = _T["buttonCount"]
      139 [-]: GETIMPORT R11 42; var11 = _T["playerCount"]
-     140 [-]: JUMPIFNOTLT R10 R11 L23; goto L23 if var10 >= var2567
+     140 [-]: JUMPIFNOTLT R10 R11 L23; goto L23 if var10 >= var2620
      141 [-]: GETUPVAL R10 0; var10 = upvalues[0]
      142 [-]: JUMPIFNOT R10 L23; goto L23 if not var10
      143 [-]: NAMECALL R10 R4 K11; var11 = var4; var10 = var4[0x8E78F9E5]
@@ -340,12 +340,12 @@ L16: 138 [-]: GETIMPORT R10 16; var10 = _T["buttonCount"]
      153 [-]: CONCAT R11 R12 R13; var11 = var12 .. var13
      154 [-]: CALL R10 2 1 ; var10(var11)
 L17: 155 [-]: LOADN R10 0  ; var10 = 0
-     156 [-]: JUMPIFNOTLT R10 R9 L19; goto L19 if var10 >= var2567
+     156 [-]: JUMPIFNOTLT R10 R9 L19; goto L19 if var10 >= var2620
      157 [-]: GETUPVAL R10 0; var10 = upvalues[0]
      158 [-]: JUMPIFNOT R10 L19; goto L19 if not var10
      159 [-]: GETIMPORT R10 16; var10 = _T["buttonCount"]
      160 [-]: GETIMPORT R11 42; var11 = _T["playerCount"]
-     161 [-]: JUMPIFNOTEQ R10 R11 L18; goto L18 if var10 ~= var2375
+     161 [-]: JUMPIFNOTEQ R10 R11 L18; goto L18 if var10 ~= var2352
      162 [-]: LOADN R9 0   ; var9 = 0
 L18: 163 [-]: GETIMPORT R10 52; var10 = 0x67652851
      164 [-]: CALL R10 1 2 ; var10 = var10()
@@ -357,7 +357,7 @@ L18: 163 [-]: GETIMPORT R10 52; var10 = 0x67652851
 L19: 170 [-]: GETIMPORT R9 49; var9 = 0xB18C08FA
      171 [-]: GETIMPORT R10 16; var10 = _T["buttonCount"]
      172 [-]: GETIMPORT R11 42; var11 = _T["playerCount"]
-     173 [-]: JUMPIFNOTLT R10 R11 L21; goto L21 if var10 >= var264726
+     173 [-]: JUMPIFNOTLT R10 R11 L21; goto L21 if var10 >= var264750
      174 [-]: MOVE R10 R4  ; var10 = var4
      175 [-]: GETIMPORT R11 1; var11 = 0x3D106989
      176 [-]: LOADK R13 K13; var13 = "     Button was deactivated, decrementing _T.buttonCount to "
@@ -398,7 +398,7 @@ L22: 200 [-]: NAMECALL R9 R4 K10; var10 = var4; var9 = var4[0xF37943FF]
      211 [-]: JUMPBACK L22 ; goto L22
 L23: 212 [-]: GETUPVAL R9 1; var9 = upvalues[1]
      213 [-]: GETIMPORT R10 4; var10 = 0xF2F532F6
-     214 [-]: JUMPIFNOTLT R9 R10 L24; goto L24 if var9 >= var2311
+     214 [-]: JUMPIFNOTLT R9 R10 L24; goto L24 if var9 >= var2364
      215 [-]: GETUPVAL R9 0; var9 = upvalues[0]
      216 [-]: JUMPIFNOT R9 L24; goto L24 if not var9
      217 [-]: GETIMPORT R9 36; var9 = 0x52A11A6B
@@ -412,7 +412,7 @@ L23: 212 [-]: GETUPVAL R9 1; var9 = upvalues[1]
      225 [-]: JUMP L25     ; goto L25
 L24: 226 [-]: GETUPVAL R9 1; var9 = upvalues[1]
      227 [-]: GETIMPORT R10 4; var10 = 0xF2F532F6
-     228 [-]: JUMPIFNOTLT R9 R10 L25; goto L25 if var9 >= var2311
+     228 [-]: JUMPIFNOTLT R9 R10 L25; goto L25 if var9 >= var2364
      229 [-]: GETUPVAL R9 0; var9 = upvalues[0]
      230 [-]: JUMPIF R9 L25; goto L25 if var9
      231 [-]: GETUPVAL R9 3; var9 = upvalues[3]
@@ -421,7 +421,7 @@ L24: 226 [-]: GETUPVAL R9 1; var9 = upvalues[1]
      234 [-]: JUMP L26     ; goto L26
 L25: 235 [-]: FORNLOOP R6 L15; nforloop end - iterate + goto L15
 L26: 236 [-]: GETIMPORT R7 30; var7 = 0x8751083E
-     237 [-]: FASTCALL1 62 R7 L27; 
+     237 [-]: FASTCALL1 64 R7 L27; 
      238 [-]: GETIMPORT R6 32; var6 = 0x7B998233
      239 [-]: CALL R6 2 2  ; var6 = var6(var7)
 L27: 240 [-]: JUMPIF R6 L28; goto L28 if var6
@@ -433,7 +433,7 @@ L27: 240 [-]: JUMPIF R6 L28; goto L28 if var6
      246 [-]: CALL R6 3 1  ; var6(var7, var8)
 L28: 247 [-]: GETUPVAL R6 1; var6 = upvalues[1]
      248 [-]: GETIMPORT R7 4; var7 = 0xF2F532F6
-     249 [-]: JUMPIFNOTEQ R6 R7 L31; goto L31 if var6 ~= var67150
+     249 [-]: JUMPIFNOTEQ R6 R7 L31; goto L31 if var6 ~= var67105
      250 [-]: GETIMPORT R6 1; var6 = 0x3D106989
      251 [-]: LOADK R7 K54 ; var7 = "     Target Challenge Complete!!"
      252 [-]: CALL R6 2 1  ; var6(var7)
@@ -490,7 +490,7 @@ L31: 288 [-]: RETURN R0 0  ;
        5 [-]: FORNPREP R1 L3; nforprep start - [escape at L3] -- var1 = iterator
 L 0:   6 [-]: GETIMPORT R6 1; var6 = 0xA47D82EC
        7 [-]: GETTABLE R5 R6 R3; var5 = var6[var3]
-       8 [-]: FASTCALL1 62 R5 L1; 
+       8 [-]: FASTCALL1 64 R5 L1; 
        9 [-]: GETIMPORT R4 3; var4 = 0x7B998233
       10 [-]: CALL R4 2 2  ; var4 = var4(var5)
 L 1:  11 [-]: JUMPIF R4 L2 ; goto L2 if var4

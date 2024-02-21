@@ -17,19 +17,19 @@
 ; Is_vararg:       0
 ; Max Stack Size:  10
 
-       0 [-]: FASTCALL1 62 R0 L0; 
+       0 [-]: FASTCALL1 64 R0 L0; 
        1 [-]: MOVE R3 R0   ; var3 = var0
        2 [-]: GETIMPORT R2 1; var2 = 0x7B998233
        3 [-]: CALL R2 2 2  ; var2 = var2(var3)
 L 0:   4 [-]: JUMPIFNOT R2 L1; goto L1 if not var2
        5 [-]: RETURN R0 0  ; 
 L 1:   6 [-]: GETIMPORT R3 3; var3 = 0x25D99D89
-       7 [-]: FASTCALL1 62 R3 L2; 
+       7 [-]: FASTCALL1 64 R3 L2; 
        8 [-]: GETIMPORT R2 1; var2 = 0x7B998233
        9 [-]: CALL R2 2 2  ; var2 = var2(var3)
 L 2:  10 [-]: JUMPIF R2 L6 ; goto L6 if var2
       11 [-]: GETIMPORT R3 5; var3 = 0x159F5A4E
-      12 [-]: FASTCALL1 62 R3 L3; 
+      12 [-]: FASTCALL1 64 R3 L3; 
       13 [-]: GETIMPORT R2 1; var2 = 0x7B998233
       14 [-]: CALL R2 2 2  ; var2 = var2(var3)
 L 3:  15 [-]: JUMPIF R2 L6 ; goto L6 if var2
@@ -44,7 +44,7 @@ L 3:  15 [-]: JUMPIF R2 L6 ; goto L6 if var2
       24 [-]: FORGPREP_INEXT R3 L5; 
 L 4:  25 [-]: GETIMPORT R8 5; var8 = 0x159F5A4E
       26 [-]: GETTABLEKS R9 R7 K10; var9 = var7["mItemType"]
-      27 [-]: JUMPIFNOTEQ R8 R9 L5; goto L5 if var8 ~= var65581
+      27 [-]: JUMPIFNOTEQ R8 R9 L5; goto L5 if var8 ~= var65571
       28 [-]: RETURN R0 0  ; 
 L 5:  29 [-]: FORGLOOP R3 L4 2 [inext]; 
       30 [-]: GETIMPORT R3 3; var3 = 0x25D99D89

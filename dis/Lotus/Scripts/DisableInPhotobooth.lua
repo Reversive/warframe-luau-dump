@@ -23,7 +23,7 @@
        3 [-]: CALL R0 3 2  ; var0 = var0(var1, var2)
        4 [-]: JUMPIFNOT R0 L1; goto L1 if not var0
        5 [-]: GETIMPORT R1 6; var1 = 0x79F415DD
-       6 [-]: FASTCALL1 62 R1 L0; 
+       6 [-]: FASTCALL1 64 R1 L0; 
        7 [-]: GETIMPORT R0 8; var0 = 0x7B998233
        8 [-]: CALL R0 2 2  ; var0 = var0(var1)
 L 0:   9 [-]: JUMPIF R0 L1 ; goto L1 if var0

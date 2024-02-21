@@ -22,7 +22,7 @@
 
 
 ; Name:            
-; Defined at line: 12
+; Defined at line: 13
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -68,18 +68,18 @@ L 1:  15 [-]: GETIMPORT R0 2; var0 = _T["TaggedDialog"]
 
 
 ; Name:            
-; Defined at line: 28
+; Defined at line: 29
 ; #Upvalues:       2
 ; #Parameters:     0
 ; Is_vararg:       0
-; Max Stack Size:  6
+; Max Stack Size:  9
 
        0 [-]: GETIMPORT R0 1; var0 = _T
        1 [-]: GETIMPORT R1 3; var1 = 0x7DADE620
        2 [-]: SETTABLEKS R1 R0 K4; var1["ShowSyndicate"] = var0
        3 [-]: LOADNIL R0   ; var0 = nil
        4 [-]: GETIMPORT R2 6; var2 = 0xE4EE43AB
-       5 [-]: FASTCALL1 62 R2 L0; 
+       5 [-]: FASTCALL1 64 R2 L0; 
        6 [-]: GETIMPORT R1 8; var1 = 0x7B998233
        7 [-]: CALL R1 2 2  ; var1 = var1(var2)
 L 0:   8 [-]: JUMPIF R1 L1 ; goto L1 if var1
@@ -89,7 +89,7 @@ L 0:   8 [-]: JUMPIF R1 L1 ; goto L1 if var1
       12 [-]: CALL R1 2 2  ; var1 = var1(var2)
       13 [-]: MOVE R0 R1   ; var0 = var1
 L 1:  14 [-]: GETIMPORT R2 11; var2 = 0x0856E17D
-      15 [-]: FASTCALL1 62 R2 L2; 
+      15 [-]: FASTCALL1 64 R2 L2; 
       16 [-]: GETIMPORT R1 8; var1 = 0x7B998233
       17 [-]: CALL R1 2 2  ; var1 = var1(var2)
 L 2:  18 [-]: JUMPIF R1 L3 ; goto L3 if var1
@@ -108,7 +108,7 @@ L 4:  30 [-]: GETIMPORT R1 17; var1 = 0x9BA7909F
       31 [-]: GETUPVAL R3 1; var3 = upvalues[1]
       32 [-]: NAMECALL R1 R1 K18; var2 = var1; var1 = var1[0x6DD7AA66]
       33 [-]: CALL R1 3 2  ; var1 = var1(var2, var3)
-      34 [-]: FASTCALL1 62 R1 L5; 
+      34 [-]: FASTCALL1 64 R1 L5; 
       35 [-]: MOVE R3 R1   ; var3 = var1
       36 [-]: GETIMPORT R2 8; var2 = 0x7B998233
       37 [-]: CALL R2 2 2  ; var2 = var2(var3)
@@ -122,8 +122,17 @@ L 5:  38 [-]: JUMPIF R2 L6 ; goto L6 if var2
       45 [-]: LOADK R5 K19 ; var5 = "OnCloseSyndicateMovie"
       46 [-]: NAMECALL R2 R1 K21; var3 = var1; var2 = var1[0xE4162EED]
       47 [-]: CALL R2 4 1  ; var2(var3, var4, var5)
-L 6:  48 [-]: CLOSEUPVALS R0; 
-      49 [-]: RETURN R0 0  ; 
+      48 [-]: LOADK R4 K22 ; var4 = "SetFavorsVisible"
+      49 [-]: GETUPVAL R6 0; var6 = upvalues[0]
+      50 [-]: GETTABLEKS R5 R6 K23; var5 = var6[0x06D055F9]
+      51 [-]: GETIMPORT R6 25; var6 = 0xF44E20DB
+      52 [-]: LOADK R7 K26 ; var7 = "true"
+      53 [-]: LOADK R8 K27 ; var8 = "false"
+      54 [-]: CALL R5 4 0  ; var5, ... = var5(var6, var7, var8)
+      55 [-]: NAMECALL R2 R1 K21; var3 = var1; var2 = var1[0xE4162EED]
+      56 [-]: CALL R2 0 1  ; var2(var3, ...)
+L 6:  57 [-]: CLOSEUPVALS R0; 
+      58 [-]: RETURN R0 0  ; 
 
 
 

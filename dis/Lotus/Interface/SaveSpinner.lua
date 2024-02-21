@@ -37,24 +37,25 @@
 
        0 [-]: GETIMPORT R1 1; var1 = 0x3D106989
        1 [-]: LOADK R3 K2  ; var3 = "SaveSpinner:SetMessage("
-       2 [-]: GETIMPORT R6 4; var6 = 0x64FB1586
+       2 [-]: FASTCALL1 63 R0 L0; 
        3 [-]: MOVE R7 R0   ; var7 = var0
-       4 [-]: CALL R6 2 2  ; var6 = var6(var7)
-       5 [-]: MOVE R4 R6   ; var4 = var6
-       6 [-]: LOADK R5 K5  ; var5 = ")"
-       7 [-]: CONCAT R2 R3 R5; var2 = var3 .. var5
-       8 [-]: CALL R1 2 1  ; var1(var2)
-       9 [-]: GETUPVAL R2 0; var2 = upvalues[0]
-      10 [-]: FASTCALL1 62 R2 L0; 
-      11 [-]: GETIMPORT R1 7; var1 = 0x7B998233
-      12 [-]: CALL R1 2 2  ; var1 = var1(var2)
-L 0:  13 [-]: JUMPIF R1 L1 ; goto L1 if var1
-      14 [-]: GETUPVAL R1 0; var1 = upvalues[0]
-      15 [-]: MOVE R3 R0   ; var3 = var0
-      16 [-]: NAMECALL R1 R1 K8; var2 = var1; var1 = var1[0x9B71E815]
-      17 [-]: CALL R1 3 1  ; var1(var2, var3)
-L 1:  18 [-]: LOADB R1 1   ; var1 = true
-      19 [-]: RETURN R1 1  ; 
+       4 [-]: GETIMPORT R6 4; var6 = 0x64FB1586
+       5 [-]: CALL R6 2 2  ; var6 = var6(var7)
+L 0:   6 [-]: MOVE R4 R6   ; var4 = var6
+       7 [-]: LOADK R5 K5  ; var5 = ")"
+       8 [-]: CONCAT R2 R3 R5; var2 = var3 .. var5
+       9 [-]: CALL R1 2 1  ; var1(var2)
+      10 [-]: GETUPVAL R2 0; var2 = upvalues[0]
+      11 [-]: FASTCALL1 64 R2 L1; 
+      12 [-]: GETIMPORT R1 7; var1 = 0x7B998233
+      13 [-]: CALL R1 2 2  ; var1 = var1(var2)
+L 1:  14 [-]: JUMPIF R1 L2 ; goto L2 if var1
+      15 [-]: GETUPVAL R1 0; var1 = upvalues[0]
+      16 [-]: MOVE R3 R0   ; var3 = var0
+      17 [-]: NAMECALL R1 R1 K8; var2 = var1; var1 = var1[0x9B71E815]
+      18 [-]: CALL R1 3 1  ; var1(var2, var3)
+L 2:  19 [-]: LOADB R1 1   ; var1 = true
+      20 [-]: RETURN R1 1  ; 
 
 
 ; Name:            
@@ -135,7 +136,7 @@ L 0:  12 [-]: GETUPVAL R0 0; var0 = upvalues[0]
       25 [-]: JUMPIFNOT R0 L1; goto L1 if not var0
       26 [-]: GETUPVAL R0 1; var0 = upvalues[1]
       27 [-]: LOADN R1 1   ; var1 = 1
-      28 [-]: JUMPIFNOTLE R1 R0 L1; goto L1 if var1 > var7
+      28 [-]: JUMPIFNOTLE R1 R0 L1; goto L1 if var1 > var60
       29 [-]: GETUPVAL R0 0; var0 = upvalues[0]
       30 [-]: LOADB R2 0   ; var2 = false
       31 [-]: NAMECALL R0 R0 K9; var1 = var0; var0 = var0[0x46610C50]

@@ -30,7 +30,7 @@
        8 [-]: FORNPREP R5 L3; nforprep start - [escape at L3] -- var5 = iterator
 L 0:   9 [-]: GETTABLE R10 R4 R7; var10 = var4[var7]
       10 [-]: GETTABLEKS R9 R10 K2; var9 = var10["avatar"]
-      11 [-]: FASTCALL1 62 R9 L1; 
+      11 [-]: FASTCALL1 64 R9 L1; 
       12 [-]: GETIMPORT R8 4; var8 = 0x7B998233
       13 [-]: CALL R8 2 2  ; var8 = var8(var9)
 L 1:  14 [-]: JUMPIF R8 L2 ; goto L2 if var8
@@ -45,7 +45,7 @@ L 1:  14 [-]: JUMPIF R8 L2 ; goto L2 if var8
       23 [-]: GETTABLE R9 R4 R7; var9 = var4[var7]
       24 [-]: GETTABLEKS R8 R9 K7; var8 = var9["distanceToTarget"]
       25 [-]: GETIMPORT R9 9; var9 = 0x443A8D0B
-      26 [-]: JUMPIFNOTLE R8 R9 L2; goto L2 if var8 > var68423
+      26 [-]: JUMPIFNOTLE R8 R9 L2; goto L2 if var8 > var68400
       27 [-]: LOADN R11 1  ; var11 = 1
       28 [-]: GETIMPORT R13 9; var13 = 0x443A8D0B
       29 [-]: DIV R12 R8 R13; var12 = var8 / var13
@@ -68,7 +68,7 @@ L 3:  35 [-]: RETURN R3 1  ;
        1 [-]: NAMECALL R4 R4 K2; var5 = var4; var4 = var4[0x29EF273D]
        2 [-]: CALL R4 2 2  ; var4 = var4(var5)
        3 [-]: LOADNIL R5   ; var5 = nil
-       4 [-]: FASTCALL1 62 R4 L0; 
+       4 [-]: FASTCALL1 64 R4 L0; 
        5 [-]: MOVE R7 R4   ; var7 = var4
        6 [-]: GETIMPORT R6 4; var6 = 0x7B998233
        7 [-]: CALL R6 2 2  ; var6 = var6(var7)
@@ -76,7 +76,7 @@ L 0:   8 [-]: JUMPIF R6 L1 ; goto L1 if var6
        9 [-]: NAMECALL R6 R4 K5; var7 = var4; var6 = var4[0x66905CB0]
       10 [-]: CALL R6 2 2  ; var6 = var6(var7)
       11 [-]: MOVE R5 R6   ; var5 = var6
-L 1:  12 [-]: FASTCALL1 62 R2 L2; 
+L 1:  12 [-]: FASTCALL1 64 R2 L2; 
       13 [-]: MOVE R7 R2   ; var7 = var2
       14 [-]: GETIMPORT R6 4; var6 = 0x7B998233
       15 [-]: CALL R6 2 2  ; var6 = var6(var7)
@@ -118,14 +118,14 @@ L 3:  18 [-]: NAMECALL R6 R2 K6; var7 = var2; var6 = var2[0xD1586535]
       51 [-]: NAMECALL R7 R1 K19; var8 = var1; var7 = var1[0x7027C544]
       52 [-]: CALL R7 7 1  ; var7(var8, var9, var10, var11, var12, var13)
       53 [-]: GETIMPORT R7 21; var7 = 0xCBD666E1
-      54 [-]: LOADK R8 K22 ; var8 = 0.10000000000000001
+      54 [-]: LOADK R8 K22 ; var8 = 0.10000000149011612
       55 [-]: CALL R7 2 1  ; var7(var8)
-      56 [-]: FASTCALL1 62 R1 L4; 
+      56 [-]: FASTCALL1 64 R1 L4; 
       57 [-]: MOVE R8 R1   ; var8 = var1
       58 [-]: GETIMPORT R7 4; var7 = 0x7B998233
       59 [-]: CALL R7 2 2  ; var7 = var7(var8)
 L 4:  60 [-]: JUMPIF R7 L6 ; goto L6 if var7
-      61 [-]: FASTCALL1 62 R2 L5; 
+      61 [-]: FASTCALL1 64 R2 L5; 
       62 [-]: MOVE R8 R2   ; var8 = var2
       63 [-]: GETIMPORT R7 4; var7 = 0x7B998233
       64 [-]: CALL R7 2 2  ; var7 = var7(var8)
@@ -154,7 +154,7 @@ L 8:  80 [-]: GETIMPORT R7 1; var7 = 0x89326C93
       87 [-]: GETIMPORT R7 21; var7 = 0xCBD666E1
       88 [-]: GETIMPORT R8 30; var8 = 0x74B75231
       89 [-]: CALL R7 2 1  ; var7(var8)
-      90 [-]: FASTCALL1 62 R1 L9; 
+      90 [-]: FASTCALL1 64 R1 L9; 
       91 [-]: MOVE R8 R1   ; var8 = var1
       92 [-]: GETIMPORT R7 4; var7 = 0x7B998233
       93 [-]: CALL R7 2 2  ; var7 = var7(var8)
@@ -170,7 +170,7 @@ L10:  96 [-]: GETIMPORT R9 32; var9 = 0xCC79FF20
      103 [-]: CALL R10 7 0 ; var10, ... = var10(var11, var12, var13, var14, var15, var16)
      104 [-]: NAMECALL R7 R1 K35; var8 = var1; var7 = var1[0x21B4C60E]
      105 [-]: CALL R7 0 1  ; var7(var8, ...)
-     106 [-]: FASTCALL1 62 R1 L11; 
+     106 [-]: FASTCALL1 64 R1 L11; 
      107 [-]: MOVE R8 R1   ; var8 = var1
      108 [-]: GETIMPORT R7 4; var7 = 0x7B998233
      109 [-]: CALL R7 2 2  ; var7 = var7(var8)
@@ -179,7 +179,7 @@ L11: 110 [-]: JUMPIFNOT R7 L12; goto L12 if not var7
 L12: 112 [-]: NAMECALL R7 R1 K6; var8 = var1; var7 = var1[0xD1586535]
      113 [-]: CALL R7 2 2  ; var7 = var7(var8)
      114 [-]: GETTABLEKS R9 R7 K37; var9 = var7["y"]
-     115 [-]: ADDK R8 R9 K36; var8 = var9 + 1.2
+     115 [-]: ADDK R8 R9 K36; var8 = var9 + 1.2000000476837158
      116 [-]: SETTABLEKS R8 R7 K37; var8["y"] = var7
      117 [-]: GETIMPORT R8 1; var8 = 0x89326C93
      118 [-]: GETIMPORT R10 39; var10 = 0x63DC26A3

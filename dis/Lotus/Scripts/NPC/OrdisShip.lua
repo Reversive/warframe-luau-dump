@@ -108,7 +108,7 @@
        2 [-]: LOADB R2 1   ; var2 = true
        3 [-]: CALL R1 2 1  ; var1(var2)
        4 [-]: GETIMPORT R2 3; var2 = _T["OrdisCurrentVolume"]
-       5 [-]: FASTCALL1 62 R2 L0; 
+       5 [-]: FASTCALL1 64 R2 L0; 
        6 [-]: GETIMPORT R1 5; var1 = 0x7B998233
        7 [-]: CALL R1 2 2  ; var1 = var1(var2)
 L 0:   8 [-]: JUMPIFNOT R1 L1; goto L1 if not var1
@@ -136,7 +136,7 @@ L 3:  27 [-]: GETIMPORT R4 10; var4 = _T["advancedQuestOrdis"]
       30 [-]: NAMECALL R4 R4 K16; var5 = var4; var4 = var4[0x78298275]
       31 [-]: CALL R4 2 2  ; var4 = var4(var5)
       32 [-]: MOVE R2 R4   ; var2 = var4
-      33 [-]: FASTCALL1 62 R2 L4; 
+      33 [-]: FASTCALL1 64 R2 L4; 
       34 [-]: MOVE R5 R2   ; var5 = var2
       35 [-]: GETIMPORT R4 5; var4 = 0x7B998233
       36 [-]: CALL R4 2 2  ; var4 = var4(var5)
@@ -156,7 +156,7 @@ L 4:  37 [-]: JUMPIF R4 L5 ; goto L5 if var4
       50 [-]: NAMECALL R4 R0 K21; var5 = var0; var4 = var0[0x70B8836C]
       51 [-]: CALL R4 3 1  ; var4(var5, var6)
 L 5:  52 [-]: GETIMPORT R5 23; var5 = _T["curTransmission"]
-      53 [-]: FASTCALL1 62 R5 L6; 
+      53 [-]: FASTCALL1 64 R5 L6; 
       54 [-]: GETIMPORT R4 5; var4 = 0x7B998233
       55 [-]: CALL R4 2 2  ; var4 = var4(var5)
 L 6:  56 [-]: JUMPIF R4 L7 ; goto L7 if var4
@@ -231,7 +231,7 @@ L12: 118 [-]: NEWTABLE R9 0 4; var9 = {}
      125 [-]: LOADN R10 4  ; var10 = 4
      126 [-]: LOADN R11 1  ; var11 = 1
      127 [-]: FORNPREP R10 L15; nforprep start - [escape at L15] -- var10 = iterator
-L13: 128 [-]: LOADK R13 K39; var13 = 0.29999999999999999
+L13: 128 [-]: LOADK R13 K39; var13 = 0.30000001192092896
      129 [-]: SETTABLE R13 R9 R12; var13[var9] = var12
      130 [-]: LOADN R13 0  ; var13 = 0
      131 [-]: SETTABLE R13 R9 R12; var13[var9] = var12
@@ -240,7 +240,7 @@ L13: 128 [-]: LOADK R13 K39; var13 = 0.29999999999999999
      134 [-]: ADD R13 R14 R12; var13 = var14 + var12
      135 [-]: GETUPVAL R15 6; var15 = upvalues[6]
      136 [-]: LENGTH R14 R15; var14 = #var15
-     137 [-]: JUMPIFNOTLE R13 R14 L14; goto L14 if var13 > var397063
+     137 [-]: JUMPIFNOTLE R13 R14 L14; goto L14 if var13 > var397116
      138 [-]: GETUPVAL R15 6; var15 = upvalues[6]
      139 [-]: GETTABLE R14 R15 R13; var14 = var15[var13]
      140 [-]: SETTABLE R14 R9 R12; var14[var9] = var12

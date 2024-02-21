@@ -28,7 +28,7 @@
        1 [-]: CALL R2 2 2  ; var2 = var2(var3)
        2 [-]: NAMECALL R2 R2 K1; var3 = var2; var2 = var2[0xA39BB54B]
        3 [-]: CALL R2 2 2  ; var2 = var2(var3)
-       4 [-]: FASTCALL1 62 R2 L0; 
+       4 [-]: FASTCALL1 64 R2 L0; 
        5 [-]: MOVE R4 R2   ; var4 = var2
        6 [-]: GETIMPORT R3 3; var3 = 0x7B998233
        7 [-]: CALL R3 2 2  ; var3 = var3(var4)
@@ -36,7 +36,7 @@ L 0:   8 [-]: JUMPIF R3 L2 ; goto L2 if var3
        9 [-]: GETTABLEKS R3 R2 K4; var3 = var2["visible"]
       10 [-]: JUMPIFNOT R3 L2; goto L2 if not var3
       11 [-]: GETTABLEKS R4 R2 K5; var4 = var2["avatar"]
-      12 [-]: FASTCALL1 62 R4 L1; 
+      12 [-]: FASTCALL1 64 R4 L1; 
       13 [-]: GETIMPORT R3 3; var3 = 0x7B998233
       14 [-]: CALL R3 2 2  ; var3 = var3(var4)
 L 1:  15 [-]: JUMPIF R3 L2 ; goto L2 if var3
@@ -46,10 +46,10 @@ L 1:  15 [-]: JUMPIF R3 L2 ; goto L2 if var3
       19 [-]: JUMPIF R3 L2 ; goto L2 if var3
       20 [-]: GETTABLEKS R3 R2 K7; var3 = var2["distanceToTarget"]
       21 [-]: GETIMPORT R4 9; var4 = 0x86F495D5
-      22 [-]: JUMPIFLE R4 R3 L2; goto L2 if var4 <= var1593967388
+      22 [-]: JUMPIFLE R4 R3 L2; goto L2 if var4 <= var1593967423
       23 [-]: GETTABLEKS R3 R2 K7; var3 = var2["distanceToTarget"]
       24 [-]: GETIMPORT R4 11; var4 = 0x4243A037
-      25 [-]: JUMPIFNOTLE R3 R4 L3; goto L3 if var3 > var839
+      25 [-]: JUMPIFNOTLE R3 R4 L3; goto L3 if var3 > var816
 L 2:  26 [-]: LOADN R3 0   ; var3 = 0
       27 [-]: RETURN R3 1  ; 
 L 3:  28 [-]: GETTABLEKS R5 R2 K5; var5 = var2["avatar"]
@@ -91,7 +91,7 @@ L 3:  28 [-]: GETTABLEKS R5 R2 K5; var5 = var2["avatar"]
        2 [-]: CALL R4 2 2  ; var4 = var4(var5)
        3 [-]: JUMPIF R4 L0 ; goto L0 if var4
        4 [-]: RETURN R0 0  ; 
-L 0:   5 [-]: FASTCALL1 62 R2 L1; 
+L 0:   5 [-]: FASTCALL1 64 R2 L1; 
        6 [-]: MOVE R5 R2   ; var5 = var2
        7 [-]: GETIMPORT R4 4; var4 = 0x7B998233
        8 [-]: CALL R4 2 2  ; var4 = var4(var5)
@@ -162,7 +162,7 @@ L 3:  18 [-]: GETIMPORT R5 8; var5 = _T["taserAbility"]
       73 [-]: NAMECALL R9 R1 K14; var10 = var1; var9 = var1[0x003C792F]
       74 [-]: CALL R9 3 2  ; var9 = var9(var10, var11)
       75 [-]: MOVE R6 R9   ; var6 = var9
-      76 [-]: FASTCALL1 62 R2 L4; 
+      76 [-]: FASTCALL1 64 R2 L4; 
       77 [-]: MOVE R10 R2  ; var10 = var2
       78 [-]: GETIMPORT R9 4; var9 = 0x7B998233
       79 [-]: CALL R9 2 2  ; var9 = var9(var10)
@@ -206,7 +206,7 @@ L 5:  97 [-]: GETIMPORT R11 38; var11 = 0x520E413D
      117 [-]: CALL R10 6 2 ; var10 = var10(var11, var12, var13, var14, var15)
      118 [-]: LOADNIL R11  ; var11 = nil
      119 [-]: LOADNIL R12  ; var12 = nil
-     120 [-]: FASTCALL1 62 R10 L6; 
+     120 [-]: FASTCALL1 64 R10 L6; 
      121 [-]: MOVE R14 R10 ; var14 = var10
      122 [-]: GETIMPORT R13 4; var13 = 0x7B998233
      123 [-]: CALL R13 2 2 ; var13 = var13(var14)
@@ -230,7 +230,7 @@ L 6: 124 [-]: JUMPIF R13 L8; goto L8 if var13
      141 [-]: GETIMPORT R14 8; var14 = _T["taserAbility"]
      142 [-]: GETTABLE R13 R14 R4; var13 = var14[var4]
      143 [-]: SETTABLEKS R11 R13 K50; var11["beam"] = var13
-     144 [-]: FASTCALL1 62 R11 L7; 
+     144 [-]: FASTCALL1 64 R11 L7; 
      145 [-]: MOVE R14 R11 ; var14 = var11
      146 [-]: GETIMPORT R13 4; var13 = 0x7B998233
      147 [-]: CALL R13 2 2 ; var13 = var13(var14)
@@ -243,7 +243,7 @@ L 7: 148 [-]: JUMPIF R13 L8; goto L8 if var13
      154 [-]: CALL R13 6 1 ; var13(var14, var15, var16, var17, var18)
 L 8: 155 [-]: GETIMPORT R13 57; var13 = 0xA421AF95
      156 [-]: CALL R13 1 2 ; var13 = var13()
-     157 [-]: FASTCALL1 62 R11 L9; 
+     157 [-]: FASTCALL1 64 R11 L9; 
      158 [-]: MOVE R15 R11 ; var15 = var11
      159 [-]: GETIMPORT R14 4; var14 = 0x7B998233
      160 [-]: CALL R14 2 2 ; var14 = var14(var15)
@@ -254,7 +254,7 @@ L 9: 161 [-]: JUMPIF R14 L10; goto L10 if var14
      165 [-]: CALL R14 3 1 ; var14(var15, var16)
 L10: 166 [-]: GETIMPORT R14 60; var14 = 0xE9F5D579
 L11: 167 [-]: LOADN R15 0  ; var15 = 0
-     168 [-]: JUMPIFNOTLT R15 R14 L12; goto L12 if var15 >= var528718
+     168 [-]: JUMPIFNOTLT R15 R14 L12; goto L12 if var15 >= var528673
      169 [-]: GETIMPORT R17 8; var17 = _T["taserAbility"]
      170 [-]: GETTABLE R16 R17 R4; var16 = var17[var4]
      171 [-]: GETTABLEKS R15 R16 K10; var15 = var16["hitTarget"]
@@ -271,14 +271,14 @@ L12: 180 [-]: GETIMPORT R17 8; var17 = _T["taserAbility"]
      182 [-]: GETTABLEKS R15 R16 K10; var15 = var16["hitTarget"]
      183 [-]: JUMPXEQKB R15 0 L13 NOT; 
      184 [-]: RETURN R0 0  ; 
-L13: 185 [-]: FASTCALL1 62 R11 L14; 
+L13: 185 [-]: FASTCALL1 64 R11 L14; 
      186 [-]: MOVE R16 R11 ; var16 = var11
      187 [-]: GETIMPORT R15 4; var15 = 0x7B998233
      188 [-]: CALL R15 2 2 ; var15 = var15(var16)
 L14: 189 [-]: JUMPIF R15 L15; goto L15 if var15
      190 [-]: NAMECALL R15 R11 K65; var16 = var11; var15 = var11[0xA2880940]
      191 [-]: CALL R15 2 1 ; var15(var16)
-L15: 192 [-]: FASTCALL1 62 R2 L16; 
+L15: 192 [-]: FASTCALL1 64 R2 L16; 
      193 [-]: MOVE R16 R2  ; var16 = var2
      194 [-]: GETIMPORT R15 4; var15 = 0x7B998233
      195 [-]: CALL R15 2 2 ; var15 = var15(var16)
@@ -300,7 +300,7 @@ L16: 196 [-]: JUMPIF R15 L17; goto L17 if var15
      211 [-]: GETTABLE R15 R16 R4; var15 = var16[var4]
      212 [-]: SETTABLEKS R12 R15 K50; var12["beam"] = var15
 L17: 213 [-]: LOADN R15 0  ; var15 = 0
-L18: 214 [-]: FASTCALL1 62 R2 L19; 
+L18: 214 [-]: FASTCALL1 64 R2 L19; 
      215 [-]: MOVE R17 R2  ; var17 = var2
      216 [-]: GETIMPORT R16 4; var16 = 0x7B998233
      217 [-]: CALL R16 2 2 ; var16 = var16(var17)
@@ -312,20 +312,20 @@ L19: 218 [-]: JUMPIF R16 L25; goto L25 if var16
      223 [-]: NAMECALL R16 R2 K72; var17 = var2; var16 = var2[0xBEBAD19F]
      224 [-]: CALL R16 3 2 ; var16 = var16(var17, var18)
      225 [-]: GETIMPORT R17 74; var17 = 0xF0D8BC92
-     226 [-]: JUMPIFNOTLT R16 R17 L25; goto L25 if var16 >= var135702
+     226 [-]: JUMPIFNOTLT R16 R17 L25; goto L25 if var16 >= var135726
      227 [-]: MOVE R18 R2  ; var18 = var2
      228 [-]: NAMECALL R16 R1 K75; var17 = var1; var16 = var1[0x666A1E88]
      229 [-]: CALL R16 3 2 ; var16 = var16(var17, var18)
      230 [-]: LOADN R17 0  ; var17 = 0
-     231 [-]: JUMPIFNOTLT R17 R16 L25; goto L25 if var17 >= var4067406
+     231 [-]: JUMPIFNOTLT R17 R16 L25; goto L25 if var17 >= var4067361
      232 [-]: GETIMPORT R16 62; var16 = 0x67652851
      233 [-]: CALL R16 1 2 ; var16 = var16()
      234 [-]: SUB R15 R15 R16; var15 = var15 - var16
      235 [-]: LOADN R16 0  ; var16 = 0
-     236 [-]: JUMPIFNOTLE R15 R16 L20; goto L20 if var15 > var4984581
-     237 [-]: LOADK R15 K76; var15 = 0.29999999999999999
+     236 [-]: JUMPIFNOTLE R15 R16 L20; goto L20 if var15 > var4984647
+     237 [-]: LOADK R15 K76; var15 = 0.30000001192092896
      238 [-]: GETIMPORT R19 78; var19 = 0x147AEBC6
-     239 [-]: MULK R18 R19 K76; var18 = var19 * 0.29999999999999999
+     239 [-]: MULK R18 R19 K76; var18 = var19 * 0.30000001192092896
      240 [-]: LOADN R19 5  ; var19 = 5
      241 [-]: LOADN R20 6  ; var20 = 6
      242 [-]: LOADN R21 0  ; var21 = 0
@@ -333,7 +333,7 @@ L19: 218 [-]: JUMPIF R16 L25; goto L25 if var16
      244 [-]: MOVE R23 R0  ; var23 = var0
      245 [-]: NAMECALL R16 R2 K79; var17 = var2; var16 = var2[0x0D91E9D6]
      246 [-]: CALL R16 8 1 ; var16(var17, var18, var19, var20, var21, var22, var23)
-L20: 247 [-]: FASTCALL1 62 R11 L21; 
+L20: 247 [-]: FASTCALL1 64 R11 L21; 
      248 [-]: MOVE R17 R11 ; var17 = var11
      249 [-]: GETIMPORT R16 4; var16 = 0x7B998233
      250 [-]: CALL R16 2 2 ; var16 = var16(var17)
@@ -345,7 +345,7 @@ L21: 251 [-]: JUMPIF R16 L22; goto L22 if var16
      256 [-]: MOVE R18 R13 ; var18 = var13
      257 [-]: NAMECALL R16 R11 K58; var17 = var11; var16 = var11[0x9E9C67CB]
      258 [-]: CALL R16 3 1 ; var16(var17, var18)
-L22: 259 [-]: FASTCALL1 62 R12 L23; 
+L22: 259 [-]: FASTCALL1 64 R12 L23; 
      260 [-]: MOVE R17 R12 ; var17 = var12
      261 [-]: GETIMPORT R16 4; var16 = 0x7B998233
      262 [-]: CALL R16 2 2 ; var16 = var16(var17)
@@ -361,7 +361,7 @@ L24: 271 [-]: GETIMPORT R16 64; var16 = 0xCBD666E1
      272 [-]: LOADN R17 0  ; var17 = 0
      273 [-]: CALL R16 2 1 ; var16(var17)
      274 [-]: JUMPBACK L18 ; goto L18
-L25: 275 [-]: FASTCALL1 62 R11 L26; 
+L25: 275 [-]: FASTCALL1 64 R11 L26; 
      276 [-]: MOVE R17 R11 ; var17 = var11
      277 [-]: GETIMPORT R16 4; var16 = 0x7B998233
      278 [-]: CALL R16 2 2 ; var16 = var16(var17)
@@ -392,7 +392,7 @@ L27: 282 [-]: GETIMPORT R18 81; var18 = 0x680D8E6C
        1 [-]: CALL R1 2 2  ; var1 = var1(var2)
        2 [-]: NAMECALL R2 R0 K1; var3 = var0; var2 = var0[0x2B54251B]
        3 [-]: CALL R2 2 2  ; var2 = var2(var3)
-       4 [-]: FASTCALL1 62 R1 L0; 
+       4 [-]: FASTCALL1 64 R1 L0; 
        5 [-]: MOVE R4 R1   ; var4 = var1
        6 [-]: GETIMPORT R3 3; var3 = 0x7B998233
        7 [-]: CALL R3 2 2  ; var3 = var3(var4)
@@ -400,25 +400,25 @@ L 0:   8 [-]: JUMPIF R3 L3 ; goto L3 if var3
        9 [-]: NAMECALL R3 R1 K4; var4 = var1; var3 = var1[0x388577D5]
       10 [-]: CALL R3 2 2  ; var3 = var3(var4)
       11 [-]: GETIMPORT R5 7; var5 = _T["taserAbility"]
-      12 [-]: FASTCALL1 62 R5 L1; 
+      12 [-]: FASTCALL1 64 R5 L1; 
       13 [-]: GETIMPORT R4 3; var4 = 0x7B998233
       14 [-]: CALL R4 2 2  ; var4 = var4(var5)
 L 1:  15 [-]: JUMPIF R4 L3 ; goto L3 if var4
       16 [-]: GETIMPORT R6 7; var6 = _T["taserAbility"]
       17 [-]: GETTABLE R5 R6 R3; var5 = var6[var3]
-      18 [-]: FASTCALL1 62 R5 L2; 
+      18 [-]: FASTCALL1 64 R5 L2; 
       19 [-]: GETIMPORT R4 3; var4 = 0x7B998233
       20 [-]: CALL R4 2 2  ; var4 = var4(var5)
 L 2:  21 [-]: JUMPIF R4 L3 ; goto L3 if var4
       22 [-]: GETIMPORT R6 7; var6 = _T["taserAbility"]
       23 [-]: GETTABLE R5 R6 R3; var5 = var6[var3]
       24 [-]: GETTABLEKS R4 R5 K8; var4 = var5["target"]
-      25 [-]: JUMPIFNOTEQ R2 R4 L3; goto L3 if var2 ~= var460110
+      25 [-]: JUMPIFNOTEQ R2 R4 L3; goto L3 if var2 ~= var460065
       26 [-]: GETIMPORT R5 7; var5 = _T["taserAbility"]
       27 [-]: GETTABLE R4 R5 R3; var4 = var5[var3]
       28 [-]: LOADB R5 1   ; var5 = true
       29 [-]: SETTABLEKS R5 R4 K9; var5["hitTarget"] = var4
-L 3:  30 [-]: FASTCALL1 62 R0 L4; 
+L 3:  30 [-]: FASTCALL1 64 R0 L4; 
       31 [-]: MOVE R4 R0   ; var4 = var0
       32 [-]: GETIMPORT R3 3; var3 = 0x7B998233
       33 [-]: CALL R3 2 2  ; var3 = var3(var4)
@@ -453,20 +453,20 @@ L 5:  37 [-]: RETURN R0 0  ;
 L 0:  15 [-]: NAMECALL R2 R1 K6; var3 = var1; var2 = var1[0x388577D5]
       16 [-]: CALL R2 2 2  ; var2 = var2(var3)
       17 [-]: GETIMPORT R4 9; var4 = _T["taserAbility"]
-      18 [-]: FASTCALL1 62 R4 L1; 
+      18 [-]: FASTCALL1 64 R4 L1; 
       19 [-]: GETIMPORT R3 11; var3 = 0x7B998233
       20 [-]: CALL R3 2 2  ; var3 = var3(var4)
 L 1:  21 [-]: JUMPIF R3 L7 ; goto L7 if var3
       22 [-]: GETIMPORT R5 9; var5 = _T["taserAbility"]
       23 [-]: GETTABLE R4 R5 R2; var4 = var5[var2]
-      24 [-]: FASTCALL1 62 R4 L2; 
+      24 [-]: FASTCALL1 64 R4 L2; 
       25 [-]: GETIMPORT R3 11; var3 = 0x7B998233
       26 [-]: CALL R3 2 2  ; var3 = var3(var4)
 L 2:  27 [-]: JUMPIF R3 L7 ; goto L7 if var3
       28 [-]: GETIMPORT R6 9; var6 = _T["taserAbility"]
       29 [-]: GETTABLE R5 R6 R2; var5 = var6[var2]
       30 [-]: GETTABLEKS R4 R5 K12; var4 = var5["beam"]
-      31 [-]: FASTCALL1 62 R4 L3; 
+      31 [-]: FASTCALL1 64 R4 L3; 
       32 [-]: GETIMPORT R3 11; var3 = 0x7B998233
       33 [-]: CALL R3 2 2  ; var3 = var3(var4)
 L 3:  34 [-]: JUMPIF R3 L4 ; goto L4 if var3
@@ -478,7 +478,7 @@ L 3:  34 [-]: JUMPIF R3 L4 ; goto L4 if var3
 L 4:  40 [-]: GETIMPORT R6 9; var6 = _T["taserAbility"]
       41 [-]: GETTABLE R5 R6 R2; var5 = var6[var2]
       42 [-]: GETTABLEKS R4 R5 K14; var4 = var5["shockBeam"]
-      43 [-]: FASTCALL1 62 R4 L5; 
+      43 [-]: FASTCALL1 64 R4 L5; 
       44 [-]: GETIMPORT R3 11; var3 = 0x7B998233
       45 [-]: CALL R3 2 2  ; var3 = var3(var4)
 L 5:  46 [-]: JUMPIF R3 L6 ; goto L6 if var3

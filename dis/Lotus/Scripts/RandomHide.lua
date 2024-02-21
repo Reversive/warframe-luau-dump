@@ -22,8 +22,7 @@
        2 [-]: LOADN R2 1   ; var2 = 1
        3 [-]: CALL R0 3 2  ; var0 = var0(var1, var2)
        4 [-]: GETIMPORT R2 4; var2 = 0x84A588AE
-       5 [-]: DIVK R1 R2 K2; var1 = var2 / 100
-       6 [-]: JUMPIFNOTLE R1 R0 L0; goto L0 if var1 > var65581
+            6 [-]: JUMPIFNOTLE R1 R0 L0; goto L0 if var1 > var65571
        7 [-]: RETURN R0 0  ; 
 L 0:   8 [-]: GETIMPORT R1 6; var1 = 0xC8802016
        9 [-]: GETIMPORT R2 8; var2 = 0xBFAA023F

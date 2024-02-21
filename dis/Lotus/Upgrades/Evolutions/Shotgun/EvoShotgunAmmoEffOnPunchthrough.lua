@@ -17,7 +17,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  16
 
-       0 [-]: FASTCALL1 62 R3 L0; 
+       0 [-]: FASTCALL1 64 R3 L0; 
        1 [-]: MOVE R6 R3   ; var6 = var3
        2 [-]: GETIMPORT R5 1; var5 = 0x7B998233
        3 [-]: CALL R5 2 2  ; var5 = var5(var6)
@@ -44,7 +44,7 @@ L 3:  16 [-]: GETIMPORT R5 11; var5 = 0x34291F5C[0x397B920F]
 L 4:  24 [-]: GETTABLEKS R13 R11 K14; var13 = var11["lastHitTime"]
       25 [-]: SUB R12 R5 R13; var12 = var5 - var13
       26 [-]: LOADN R13 20 ; var13 = 20
-      27 [-]: JUMPIFNOTLT R13 R12 L5; goto L5 if var13 >= var84292621
+      27 [-]: JUMPIFNOTLT R13 R12 L5; goto L5 if var13 >= var84292649
       28 [-]: FASTCALL2 52 R6 R10 L5; 
       29 [-]: MOVE R13 R6  ; var13 = var6
       30 [-]: MOVE R14 R10 ; var14 = var10
@@ -80,7 +80,7 @@ L 8:  55 [-]: GETIMPORT R10 7; var10 = _T["EvoShotgunAmmoEffOnPunchthrough"]
       60 [-]: RETURN R8 1  ; 
 L 9:  61 [-]: NAMECALL R8 R3 K25; var9 = var3; var8 = var3[0xF14AE078]
       62 [-]: CALL R8 2 2  ; var8 = var8(var9)
-      63 [-]: FASTCALL1 62 R8 L10; 
+      63 [-]: FASTCALL1 64 R8 L10; 
       64 [-]: MOVE R10 R8  ; var10 = var8
       65 [-]: GETIMPORT R9 1; var9 = 0x7B998233
       66 [-]: CALL R9 2 2  ; var9 = var9(var10)
@@ -97,7 +97,7 @@ L10:  67 [-]: JUMPIF R9 L14; goto L14 if var9
       77 [-]: GETTABLEKS R11 R13 K22; var11 = var13["hitAvatars"]
       78 [-]: CALL R10 2 4 ; var10, var11, var12 = var10(var11)
       79 [-]: FORGPREP_INEXT R10 L12; 
-L11:  80 [-]: JUMPIFNOTEQ R14 R9 L12; goto L12 if var14 ~= var3867
+L11:  80 [-]: JUMPIFNOTEQ R14 R9 L12; goto L12 if var14 ~= var3846
       81 [-]: LOADB R15 0  ; var15 = false
       82 [-]: RETURN R15 1 ; 
 L12:  83 [-]: FORGLOOP R10 L11 2 [inext]; 

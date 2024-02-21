@@ -44,12 +44,12 @@ L 0:   8 [-]: NAMECALL R2 R1 K4; var3 = var1; var2 = var1[0x1AC1655C]
       11 [-]: CALL R3 2 2  ; var3 = var3(var4)
       12 [-]: NAMECALL R4 R3 K6; var5 = var3; var4 = var3[0x52DE0ED7]
       13 [-]: CALL R4 2 2  ; var4 = var4(var5)
-L 1:  14 [-]: FASTCALL1 62 R4 L2; 
+L 1:  14 [-]: FASTCALL1 64 R4 L2; 
       15 [-]: MOVE R6 R4   ; var6 = var4
       16 [-]: GETIMPORT R5 8; var5 = 0x7B998233
       17 [-]: CALL R5 2 2  ; var5 = var5(var6)
 L 2:  18 [-]: JUMPIFNOT R5 L4; goto L4 if not var5
-      19 [-]: FASTCALL1 62 R1 L3; 
+      19 [-]: FASTCALL1 64 R1 L3; 
       20 [-]: MOVE R6 R1   ; var6 = var1
       21 [-]: GETIMPORT R5 8; var5 = 0x7B998233
       22 [-]: CALL R5 2 2  ; var5 = var5(var6)
@@ -64,13 +64,13 @@ L 3:  23 [-]: JUMPIF R5 L4 ; goto L4 if var5
       31 [-]: LOADN R6 0   ; var6 = 0
       32 [-]: CALL R5 2 1  ; var5(var6)
       33 [-]: JUMPBACK L1  ; goto L1
-L 4:  34 [-]: FASTCALL1 62 R4 L5; 
+L 4:  34 [-]: FASTCALL1 64 R4 L5; 
       35 [-]: MOVE R6 R4   ; var6 = var4
       36 [-]: GETIMPORT R5 8; var5 = 0x7B998233
       37 [-]: CALL R5 2 2  ; var5 = var5(var6)
 L 5:  38 [-]: JUMPIFNOT R5 L6; goto L6 if not var5
       39 [-]: RETURN R0 0  ; 
-L 6:  40 [-]: FASTCALL1 62 R4 L7; 
+L 6:  40 [-]: FASTCALL1 64 R4 L7; 
       41 [-]: MOVE R6 R4   ; var6 = var4
       42 [-]: GETIMPORT R5 8; var5 = 0x7B998233
       43 [-]: CALL R5 2 2  ; var5 = var5(var6)
@@ -80,13 +80,13 @@ L 7:  44 [-]: JUMPIF R5 L11; goto L11 if var5
       47 [-]: CALL R5 3 2  ; var5 = var5(var6, var7)
       48 [-]: JUMPIFNOT R5 L11; goto L11 if not var5
       49 [-]: GETIMPORT R5 15; var5 = _T["gHuntingTransmissionSet"]
-      50 [-]: FASTCALL1 62 R5 L8; 
+      50 [-]: FASTCALL1 64 R5 L8; 
       51 [-]: MOVE R7 R5   ; var7 = var5
       52 [-]: GETIMPORT R6 8; var6 = 0x7B998233
       53 [-]: CALL R6 2 2  ; var6 = var6(var7)
 L 8:  54 [-]: JUMPIF R6 L11; goto L11 if var6
       55 [-]: GETIMPORT R6 17; var6 = _T["gHuntingInterruptibleTransmissionType"]
-      56 [-]: FASTCALL1 62 R6 L9; 
+      56 [-]: FASTCALL1 64 R6 L9; 
       57 [-]: MOVE R8 R6   ; var8 = var6
       58 [-]: GETIMPORT R7 8; var7 = 0x7B998233
       59 [-]: CALL R7 2 2  ; var7 = var7(var8)

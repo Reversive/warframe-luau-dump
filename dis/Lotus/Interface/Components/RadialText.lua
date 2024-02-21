@@ -61,7 +61,7 @@
       37 [-]: SETTABLEKS R4 R3 K16; var4["mAlignment"] = var3
       38 [-]: LOADB R4 0   ; var4 = false
       39 [-]: SETTABLEKS R4 R3 K17; var4["mFlip"] = var3
-      40 [-]: LOADK R4 K33 ; var4 = 3.1415999999999999
+      40 [-]: LOADK R4 K33 ; var4 = 3.1415998935699463
       41 [-]: SETTABLEKS R4 R3 K18; var4["PI"] = var3
       42 [-]: LOADB R4 0   ; var4 = false
       43 [-]: SETTABLEKS R4 R3 K19; var4["mLayflat"] = var3

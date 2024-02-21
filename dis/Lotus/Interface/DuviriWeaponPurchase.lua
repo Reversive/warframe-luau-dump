@@ -109,7 +109,7 @@
       15 [-]: CALL R0 4 1  ; var0(var1, var2, var3)
       16 [-]: GETIMPORT R0 2; var0 = 0xAE91E43B
       17 [-]: LOADK R2 K6  ; var2 = "Panel.Price"
-      18 [-]: LOADN R3 29  ; var3 = 29
+      18 [-]: LOADN R3 31  ; var3 = 31
       19 [-]: GETUPVAL R6 1; var6 = upvalues[1]
       20 [-]: GETUPVAL R7 0; var7 = upvalues[0]
       21 [-]: GETTABLE R5 R6 R7; var5 = var6[var7]
@@ -126,7 +126,7 @@
       32 [-]: NEWTABLE R5 0 1; var5 = {}
       33 [-]: LOADN R6 100 ; var6 = 100
       34 [-]: SETLIST R5 R6 1 [1]; var5[1] = var6; var5[2] = var7; 
-      35 [-]: LOADK R6 K11 ; var6 = 0.20000000000000001
+      35 [-]: LOADK R6 K11 ; var6 = 0.20000000298023224
       36 [-]: CALL R0 7 1  ; var0(var1, var2, var3, var4, var5, var6)
       37 [-]: GETIMPORT R0 10; var0 = 0x25312C9B
       38 [-]: GETIMPORT R1 2; var1 = 0xAE91E43B
@@ -138,7 +138,7 @@
       44 [-]: NEWTABLE R5 0 1; var5 = {}
       45 [-]: LOADN R6 100 ; var6 = 100
       46 [-]: SETLIST R5 R6 1 [1]; var5[1] = var6; var5[2] = var7; 
-      47 [-]: LOADK R6 K11 ; var6 = 0.20000000000000001
+      47 [-]: LOADK R6 K11 ; var6 = 0.20000000298023224
       48 [-]: LOADN R7 0   ; var7 = 0
       49 [-]: DUPCLOSURE R8 K12; 
       50 [-]: CAPTURE UPVAL U2; 
@@ -204,7 +204,7 @@ L 1:  27 [-]: GETIMPORT R3 14; var3 = 0xB009BBC6
 L 0:   8 [-]: GETTABLE R5 R1 R4; var5 = var1[var4]
        9 [-]: GETTABLEKS R6 R5 K3; var6 = var5["mStoreItem"]
       10 [-]: GETUPVAL R7 0; var7 = upvalues[0]
-      11 [-]: JUMPIFNOTEQ R6 R7 L1; goto L1 if var6 ~= var1510277148
+      11 [-]: JUMPIFNOTEQ R6 R7 L1; goto L1 if var6 ~= var1510277183
       12 [-]: GETTABLEKS R0 R5 K4; var0 = var5["mItemPrices"]
       13 [-]: JUMP L2      ; goto L2
 L 1:  14 [-]: FORNLOOP R2 L0; nforloop end - iterate + goto L0
@@ -251,7 +251,7 @@ L 4:  45 [-]: GETUPVAL R2 5; var2 = upvalues[5]
 ; Max Stack Size:  6
 
        0 [-]: GETIMPORT R1 1; var1 = 0xAE91E43B
-       1 [-]: FASTCALL1 62 R1 L0; 
+       1 [-]: FASTCALL1 64 R1 L0; 
        2 [-]: GETIMPORT R0 3; var0 = 0x7B998233
        3 [-]: CALL R0 2 2  ; var0 = var0(var1)
 L 0:   4 [-]: JUMPIFNOT R0 L1; goto L1 if not var0
@@ -318,7 +318,7 @@ L 1:   6 [-]: GETIMPORT R0 5; var0 = 0xBE190284
 ; Max Stack Size:  4
 
        0 [-]: GETIMPORT R1 1; var1 = 0xAE91E43B
-       1 [-]: FASTCALL1 62 R1 L0; 
+       1 [-]: FASTCALL1 64 R1 L0; 
        2 [-]: GETIMPORT R0 3; var0 = 0x7B998233
        3 [-]: CALL R0 2 2  ; var0 = var0(var1)
 L 0:   4 [-]: JUMPIFNOT R0 L1; goto L1 if not var0
@@ -332,7 +332,7 @@ L 1:   6 [-]: GETIMPORT R0 5; var0 = 0xB693B6C1
       12 [-]: GETUPVAL R1 0; var1 = upvalues[0]
       13 [-]: JUMPIFNOT R1 L3; goto L3 if not var1
       14 [-]: GETUPVAL R2 1; var2 = upvalues[1]
-      15 [-]: FASTCALL1 62 R2 L2; 
+      15 [-]: FASTCALL1 64 R2 L2; 
       16 [-]: GETIMPORT R1 3; var1 = 0x7B998233
       17 [-]: CALL R1 2 2  ; var1 = var1(var2)
 L 2:  18 [-]: JUMPIFNOT R1 L3; goto L3 if not var1
@@ -356,7 +356,7 @@ L 3:  28 [-]: RETURN R0 0  ;
 ; Max Stack Size:  2
 
        0 [-]: GETUPVAL R1 0; var1 = upvalues[0]
-       1 [-]: FASTCALL1 62 R1 L0; 
+       1 [-]: FASTCALL1 64 R1 L0; 
        2 [-]: GETIMPORT R0 1; var0 = 0x7B998233
        3 [-]: CALL R0 2 2  ; var0 = var0(var1)
 L 0:   4 [-]: JUMPIF R0 L1 ; goto L1 if var0
@@ -378,30 +378,31 @@ L 1:  10 [-]: GETIMPORT R0 4; var0 = _T
 ; Is_vararg:       0
 ; Max Stack Size:  10
 
-       0 [-]: GETIMPORT R1 1; var1 = 0x03F57322
+       0 [-]: FASTCALL1 62 R0 L0; 
        1 [-]: MOVE R2 R0   ; var2 = var0
-       2 [-]: CALL R1 2 2  ; var1 = var1(var2)
-       3 [-]: SETUPVAL R1 0; upvalues[1] = var0
-       4 [-]: GETIMPORT R2 4; var2 = _T["DuviriDrifterWeaponSpawns"]
-       5 [-]: GETUPVAL R3 0; var3 = upvalues[0]
-       6 [-]: GETTABLE R1 R2 R3; var1 = var2[var3]
-       7 [-]: GETTABLEKS R2 R1 K5; var2 = var1["weapon"]
-       8 [-]: GETIMPORT R3 7; var3 = 0xB009BBC6
-       9 [-]: LOADK R5 K8  ; var5 = "/Lotus/Types/StoreItems/Packages/DrifterWeaponBundles/"
-      10 [-]: NAMECALL R8 R2 K9; var9 = var2; var8 = var2[0xE223E2B1]
-      11 [-]: CALL R8 2 2  ; var8 = var8(var9)
-      12 [-]: MOVE R6 R8   ; var6 = var8
-      13 [-]: LOADK R7 K10 ; var7 = "Bundle"
-      14 [-]: CONCAT R4 R5 R7; var4 = var5 .. var7
-      15 [-]: CALL R3 2 2  ; var3 = var3(var4)
-      16 [-]: SETUPVAL R3 1; upvalues[3] = var1
-      17 [-]: GETUPVAL R3 3; var3 = upvalues[3]
-      18 [-]: MOVE R4 R2   ; var4 = var2
-      19 [-]: CALL R3 2 2  ; var3 = var3(var4)
-      20 [-]: SETUPVAL R3 2; upvalues[3] = var2
-      21 [-]: GETUPVAL R3 4; var3 = upvalues[4]
-      22 [-]: CALL R3 1 1  ; var3()
-      23 [-]: RETURN R0 0  ; 
+       2 [-]: GETIMPORT R1 1; var1 = 0x03F57322
+       3 [-]: CALL R1 2 2  ; var1 = var1(var2)
+L 0:   4 [-]: SETUPVAL R1 0; upvalues[1] = var0
+       5 [-]: GETIMPORT R2 4; var2 = _T["DuviriDrifterWeaponSpawns"]
+       6 [-]: GETUPVAL R3 0; var3 = upvalues[0]
+       7 [-]: GETTABLE R1 R2 R3; var1 = var2[var3]
+       8 [-]: GETTABLEKS R2 R1 K5; var2 = var1["weapon"]
+       9 [-]: GETIMPORT R3 7; var3 = 0xB009BBC6
+      10 [-]: LOADK R5 K8  ; var5 = "/Lotus/Types/StoreItems/Packages/DrifterWeaponBundles/"
+      11 [-]: NAMECALL R8 R2 K9; var9 = var2; var8 = var2[0xE223E2B1]
+      12 [-]: CALL R8 2 2  ; var8 = var8(var9)
+      13 [-]: MOVE R6 R8   ; var6 = var8
+      14 [-]: LOADK R7 K10 ; var7 = "Bundle"
+      15 [-]: CONCAT R4 R5 R7; var4 = var5 .. var7
+      16 [-]: CALL R3 2 2  ; var3 = var3(var4)
+      17 [-]: SETUPVAL R3 1; upvalues[3] = var1
+      18 [-]: GETUPVAL R3 3; var3 = upvalues[3]
+      19 [-]: MOVE R4 R2   ; var4 = var2
+      20 [-]: CALL R3 2 2  ; var3 = var3(var4)
+      21 [-]: SETUPVAL R3 2; upvalues[3] = var2
+      22 [-]: GETUPVAL R3 4; var3 = upvalues[4]
+      23 [-]: CALL R3 1 1  ; var3()
+      24 [-]: RETURN R0 0  ; 
 
 
 ; Name:            
@@ -411,14 +412,14 @@ L 1:  10 [-]: GETIMPORT R0 4; var0 = _T
 ; Is_vararg:       0
 ; Max Stack Size:  18
 
-       0 [-]: JUMPXEQKNIL R0 L0; 
+       0 [-]: JUMPIFNOT R0 L0; goto L0 if not var0
        1 [-]: JUMPXEQKNIL R1 L1 NOT; 
 L 0:   2 [-]: RETURN R0 0  ; 
 L 1:   3 [-]: LOADB R2 0   ; var2 = false
        4 [-]: LOADB R3 0   ; var3 = false
        5 [-]: GETTABLEKS R5 R1 K0; var5 = var1["mStoreItem"]
        6 [-]: GETUPVAL R6 0; var6 = upvalues[0]
-       7 [-]: JUMPIFEQ R5 R6 L2; goto L2 if var5 == var16778267
+       7 [-]: JUMPIFEQ R5 R6 L2; goto L2 if var5 == var16778246
        8 [-]: LOADB R4 0 +1; var4 = false
 L 2:   9 [-]: LOADB R4 1   ; var4 = true
 L 3:  10 [-]: JUMPIF R4 L8 ; goto L8 if var4
@@ -439,22 +440,22 @@ L 4:  15 [-]: GETTABLEKS R10 R9 K6; var10 = var9["weapon"]
       25 [-]: MOVE R13 R10 ; var13 = var10
       26 [-]: CALL R12 2 2 ; var12 = var12(var13)
       27 [-]: GETTABLEKS R13 R1 K0; var13 = var1["mStoreItem"]
-      28 [-]: JUMPIFEQ R13 R11 L5; goto L5 if var13 == var-486470372
+      28 [-]: JUMPIFEQ R13 R11 L5; goto L5 if var13 == var-486470337
       29 [-]: GETTABLEKS R13 R1 K0; var13 = var1["mStoreItem"]
-      30 [-]: JUMPIFNOTEQ R13 R12 L7; goto L7 if var13 ~= var66075
+      30 [-]: JUMPIFNOTEQ R13 R12 L7; goto L7 if var13 ~= var66054
 L 5:  31 [-]: LOADB R2 1   ; var2 = true
       32 [-]: GETTABLEKS R13 R1 K0; var13 = var1["mStoreItem"]
       33 [-]: GETUPVAL R14 2; var14 = upvalues[2]
-      34 [-]: JUMPIFEQ R13 R14 L6; goto L6 if var13 == var-486470372
+      34 [-]: JUMPIFEQ R13 R14 L6; goto L6 if var13 == var-486470337
       35 [-]: GETTABLEKS R13 R1 K0; var13 = var1["mStoreItem"]
       36 [-]: GETUPVAL R14 3; var14 = upvalues[3]
-      37 [-]: JUMPIFNOTEQ R13 R14 L7; goto L7 if var13 ~= var66331
+      37 [-]: JUMPIFNOTEQ R13 R14 L7; goto L7 if var13 ~= var66310
 L 6:  38 [-]: LOADB R3 1   ; var3 = true
 L 7:  39 [-]: FORGLOOP R5 L4 2; 
 L 8:  40 [-]: JUMPIF R2 L9 ; goto L9 if var2
       41 [-]: JUMPIFNOT R4 L13; goto L13 if not var4
 L 9:  42 [-]: GETUPVAL R6 4; var6 = upvalues[4]
-      43 [-]: FASTCALL1 62 R6 L10; 
+      43 [-]: FASTCALL1 64 R6 L10; 
       44 [-]: GETIMPORT R5 13; var5 = 0x7B998233
       45 [-]: CALL R5 2 2  ; var5 = var5(var6)
 L10:  46 [-]: JUMPIF R5 L11; goto L11 if var5
@@ -479,7 +480,7 @@ L13:  55 [-]: RETURN R0 0  ;
        0 [-]: LOADNIL R1   ; var1 = nil
        1 [-]: SETUPVAL R1 0; upvalues[1] = var0
        2 [-]: LOADN R1 4   ; var1 = 4
-       3 [-]: JUMPIFNOTEQ R0 R1 L6; goto L6 if var0 ~= var282
+       3 [-]: JUMPIFNOTEQ R0 R1 L6; goto L6 if var0 ~= var309
        4 [-]: NEWTABLE R1 0 0; var1 = {}
        5 [-]: GETIMPORT R2 1; var2 = 0x9ACB2239
        6 [-]: NAMECALL R2 R2 K2; var3 = var2; var2 = var2[0x60E4AA28]
@@ -491,7 +492,7 @@ L13:  55 [-]: RETURN R0 0  ;
 L 0:  12 [-]: GETTABLE R6 R2 R5; var6 = var2[var5]
       13 [-]: GETTABLEKS R7 R6 K3; var7 = var6["mStoreItem"]
       14 [-]: GETUPVAL R8 1; var8 = upvalues[1]
-      15 [-]: JUMPIFNOTEQ R7 R8 L1; goto L1 if var7 ~= var1510342940
+      15 [-]: JUMPIFNOTEQ R7 R8 L1; goto L1 if var7 ~= var1510342975
       16 [-]: GETTABLEKS R1 R6 K4; var1 = var6["mItemPrices"]
       17 [-]: JUMP L2      ; goto L2
 L 1:  18 [-]: FORNLOOP R3 L0; nforloop end - iterate + goto L0
@@ -538,7 +539,7 @@ L 5:  39 [-]: DUPTABLE R4 15;
       59 [-]: SETUPVAL R5 0; upvalues[5] = var0
       60 [-]: JUMP L8      ; goto L8
 L 6:  61 [-]: LOADN R1 6   ; var1 = 6
-      62 [-]: JUMPIFNOTEQ R0 R1 L7; goto L7 if var0 ~= var1638689
+      62 [-]: JUMPIFNOTEQ R0 R1 L7; goto L7 if var0 ~= var1638707
       63 [-]: DUPTABLE R1 25; 
       64 [-]: GETUPVAL R2 2; var2 = upvalues[2]
       65 [-]: SETTABLEKS R2 R1 K12; var2["StoreItem"] = var1
@@ -598,7 +599,7 @@ L 0:  13 [-]: LOADNIL R7   ; var7 = nil
       16 [-]: CALL R8 2 4  ; var8, var9, var10 = var8(var9)
       17 [-]: FORGPREP_INEXT R8 L3; 
 L 1:  18 [-]: GETTABLEKS R13 R12 K10; var13 = var12["mItemType"]
-      19 [-]: JUMPIFNOTEQ R13 R6 L3; goto L3 if var13 ~= var788246
+      19 [-]: JUMPIFNOTEQ R13 R6 L3; goto L3 if var13 ~= var788270
       20 [-]: MOVE R7 R12  ; var7 = var12
       21 [-]: GETIMPORT R13 12; var13 = _T["DuviriDrifterWeaponSpawns"]
       22 [-]: JUMPIFNOT R13 L3; goto L3 if not var13
@@ -608,7 +609,7 @@ L 1:  18 [-]: GETTABLEKS R13 R12 K10; var13 = var12["mItemType"]
       26 [-]: GETIMPORT R16 12; var16 = _T["DuviriDrifterWeaponSpawns"]
       27 [-]: GETTABLE R15 R16 R5; var15 = var16[var5]
       28 [-]: GETTABLEKS R14 R15 K13; var14 = var15["lockedMovie"]
-      29 [-]: FASTCALL1 62 R14 L2; 
+      29 [-]: FASTCALL1 64 R14 L2; 
       30 [-]: GETIMPORT R13 15; var13 = 0x7B998233
       31 [-]: CALL R13 2 2 ; var13 = var13(var14)
 L 2:  32 [-]: JUMPIF R13 L3; goto L3 if var13
@@ -693,7 +694,7 @@ L 5:  50 [-]: FORGLOOP R2 L0 2 [inext];
 ; Max Stack Size:  8
 
        0 [-]: GETIMPORT R1 1; var1 = 0x25D99D89
-       1 [-]: FASTCALL1 62 R1 L0; 
+       1 [-]: FASTCALL1 64 R1 L0; 
        2 [-]: GETIMPORT R0 3; var0 = 0x7B998233
        3 [-]: CALL R0 2 2  ; var0 = var0(var1)
 L 0:   4 [-]: JUMPIF R0 L3 ; goto L3 if var0
@@ -708,7 +709,7 @@ L 0:   4 [-]: JUMPIF R0 L3 ; goto L3 if var0
       13 [-]: FORGPREP_INEXT R1 L2; 
 L 1:  14 [-]: GETTABLEKS R6 R5 K8; var6 = var5["mItemType"]
       15 [-]: GETIMPORT R7 10; var7 = 0x90E3CB66
-      16 [-]: JUMPIFNOTEQ R6 R7 L2; goto L2 if var6 ~= var67099
+      16 [-]: JUMPIFNOTEQ R6 R7 L2; goto L2 if var6 ~= var67078
       17 [-]: LOADB R6 1   ; var6 = true
       18 [-]: RETURN R6 1  ; 
 L 2:  19 [-]: FORGLOOP R1 L1 2 [inext]; 

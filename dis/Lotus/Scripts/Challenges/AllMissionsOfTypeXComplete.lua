@@ -32,13 +32,13 @@
 L 0:   8 [-]: NAMECALL R7 R0 K2; var8 = var0; var7 = var0[0xBE524B27]
        9 [-]: CALL R7 2 2  ; var7 = var7(var8)
       10 [-]: LOADN R8 0   ; var8 = 0
-      11 [-]: FASTCALL1 62 R7 L1; 
+      11 [-]: FASTCALL1 64 R7 L1; 
       12 [-]: MOVE R10 R7  ; var10 = var7
       13 [-]: GETIMPORT R9 4; var9 = 0x7B998233
       14 [-]: CALL R9 2 2  ; var9 = var9(var10)
 L 1:  15 [-]: JUMPIF R9 L3 ; goto L3 if var9
       16 [-]: GETIMPORT R10 6; var10 = 0x703BE01D
-      17 [-]: FASTCALL1 62 R10 L2; 
+      17 [-]: FASTCALL1 64 R10 L2; 
       18 [-]: GETIMPORT R9 4; var9 = 0x7B998233
       19 [-]: CALL R9 2 2  ; var9 = var9(var10)
 L 2:  20 [-]: JUMPIF R9 L3 ; goto L3 if var9
@@ -61,15 +61,15 @@ L 5:  33 [-]: GETTABLE R13 R6 R12; var13 = var6[var12]
       37 [-]: NAMECALL R16 R14 K10; var17 = var14; var16 = var14[0x243148D6]
       38 [-]: CALL R16 2 2 ; var16 = var16(var17)
       39 [-]: GETIMPORT R17 12; var17 = 0x7412F628
-      40 [-]: JUMPIFNOTEQ R15 R17 L6; goto L6 if var15 ~= var921934
+      40 [-]: JUMPIFNOTEQ R15 R17 L6; goto L6 if var15 ~= var921889
       41 [-]: GETIMPORT R17 14; var17 = 0xAE93B30E
-      42 [-]: JUMPIFNOTEQ R16 R17 L6; goto L6 if var16 ~= var1141707036
+      42 [-]: JUMPIFNOTEQ R16 R17 L6; goto L6 if var16 ~= var1141707071
       43 [-]: GETTABLEKS R17 R13 K15; var17 = var13["missionsCompleted"]
       44 [-]: LOADN R18 0  ; var18 = 0
-      45 [-]: JUMPIFNOTLT R18 R17 L6; goto L6 if var18 >= var269027624
+      45 [-]: JUMPIFNOTLT R18 R17 L6; goto L6 if var18 >= var269027592
       46 [-]: ADDK R9 R9 K16; var9 = var9 + 1
 L 6:  47 [-]: FORNLOOP R10 L5; nforloop end - iterate + goto L5
-L 7:  48 [-]: JUMPIFLT R8 R9 L8; goto L8 if var8 < var16779803
+L 7:  48 [-]: JUMPIFLT R8 R9 L8; goto L8 if var8 < var16779782
       49 [-]: LOADB R10 0 +1; var10 = false
 L 8:  50 [-]: LOADB R10 1  ; var10 = true
 L 9:  51 [-]: RETURN R10 1 ; 

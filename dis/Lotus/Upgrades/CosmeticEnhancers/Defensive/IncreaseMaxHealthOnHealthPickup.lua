@@ -24,7 +24,7 @@
 
        0 [-]: GETIMPORT R0 2; var0 = 0xAF6AC8D4[0x449A507E]
        1 [-]: CALL R0 1 2  ; var0 = var0()
-       2 [-]: LOADN R3 67  ; var3 = 67
+       2 [-]: LOADN R3 70  ; var3 = 70
        3 [-]: NAMECALL R1 R0 K3; var2 = var0; var1 = var0[0x14894DE6]
        4 [-]: CALL R1 3 1  ; var1(var2, var3)
        5 [-]: LOADN R3 0   ; var3 = 0
@@ -54,7 +54,7 @@
        5 [-]: CALL R5 2 2  ; var5 = var5(var6)
        6 [-]: GETIMPORT R8 6; var8 = 0xAF6AC8D4[0x449A507E]
        7 [-]: CALL R8 1 2  ; var8 = var8()
-       8 [-]: LOADN R11 67 ; var11 = 67
+       8 [-]: LOADN R11 70 ; var11 = 70
        9 [-]: NAMECALL R9 R8 K7; var10 = var8; var9 = var8[0x14894DE6]
       10 [-]: CALL R9 3 1  ; var9(var10, var11)
       11 [-]: LOADN R11 0  ; var11 = 0
@@ -87,7 +87,7 @@ L 0:  23 [-]: RETURN R0 0  ;
        5 [-]: CALL R5 2 2  ; var5 = var5(var6)
        6 [-]: GETIMPORT R8 6; var8 = 0xAF6AC8D4[0x449A507E]
        7 [-]: CALL R8 1 2  ; var8 = var8()
-       8 [-]: LOADN R11 67 ; var11 = 67
+       8 [-]: LOADN R11 70 ; var11 = 70
        9 [-]: NAMECALL R9 R8 K7; var10 = var8; var9 = var8[0x14894DE6]
       10 [-]: CALL R9 3 1  ; var9(var10, var11)
       11 [-]: LOADN R11 0  ; var11 = 0

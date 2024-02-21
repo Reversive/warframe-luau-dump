@@ -35,7 +35,7 @@
 ; Max Stack Size:  22
 
        0 [-]: GETIMPORT R4 1; var4 = 0x2CA7F9C7
-       1 [-]: FASTCALL1 62 R4 L0; 
+       1 [-]: FASTCALL1 64 R4 L0; 
        2 [-]: GETIMPORT R3 3; var3 = 0x7B998233
        3 [-]: CALL R3 2 2  ; var3 = var3(var4)
 L 0:   4 [-]: JUMPIF R3 L1 ; goto L1 if var3
@@ -128,7 +128,7 @@ L 4:  79 [-]: GETTABLE R14 R3 R7; var14 = var3[var7]
       91 [-]: CALL R14 2 2 ; var14 = var14(var15)
       92 [-]: NAMECALL R14 R14 K26; var15 = var14; var14 = var14[0xF7D48EE0]
       93 [-]: CALL R14 2 2 ; var14 = var14(var15)
-      94 [-]: FASTCALL1 62 R14 L5; 
+      94 [-]: FASTCALL1 64 R14 L5; 
       95 [-]: MOVE R16 R14 ; var16 = var14
       96 [-]: GETIMPORT R15 3; var15 = 0x7B998233
       97 [-]: CALL R15 2 2 ; var15 = var15(var16)
@@ -168,7 +168,7 @@ L 8: 120 [-]: RETURN R0 0  ;
        1 [-]: NAMECALL R2 R2 K2; var3 = var2; var2 = var2[0x18D05D30]
        2 [-]: CALL R2 2 2  ; var2 = var2(var3)
        3 [-]: JUMPIFNOT R2 L2; goto L2 if not var2
-       4 [-]: FASTCALL1 62 R1 L0; 
+       4 [-]: FASTCALL1 64 R1 L0; 
        5 [-]: MOVE R3 R1   ; var3 = var1
        6 [-]: GETIMPORT R2 4; var2 = 0x7B998233
        7 [-]: CALL R2 2 2  ; var2 = var2(var3)
@@ -177,7 +177,7 @@ L 0:   8 [-]: JUMPIF R2 L2 ; goto L2 if var2
       10 [-]: CALL R2 2 2  ; var2 = var2(var3)
       11 [-]: NAMECALL R2 R2 K6; var3 = var2; var2 = var2[0xF7D48EE0]
       12 [-]: CALL R2 2 2  ; var2 = var2(var3)
-      13 [-]: FASTCALL1 62 R2 L1; 
+      13 [-]: FASTCALL1 64 R2 L1; 
       14 [-]: MOVE R4 R2   ; var4 = var2
       15 [-]: GETIMPORT R3 4; var3 = 0x7B998233
       16 [-]: CALL R3 2 2  ; var3 = var3(var4)
@@ -211,7 +211,7 @@ L 0:   6 [-]: GETIMPORT R3 5; var3 = 0xC17F3ADA
       14 [-]: NAMECALL R3 R3 K11; var4 = var3; var3 = var3[0x05909209]
       15 [-]: CALL R3 6 1  ; var3(var4, var5, var6, var7, var8)
 L 1:  16 [-]: GETIMPORT R4 13; var4 = 0x6118FDD6
-      17 [-]: FASTCALL1 62 R4 L2; 
+      17 [-]: FASTCALL1 64 R4 L2; 
       18 [-]: GETIMPORT R3 15; var3 = 0x7B998233
       19 [-]: CALL R3 2 2  ; var3 = var3(var4)
 L 2:  20 [-]: JUMPIF R3 L3 ; goto L3 if var3

@@ -37,16 +37,16 @@
        7 [-]: LOADK R1 K7  ; var1 = "Waiting for gamerules"
        8 [-]: CALL R0 2 1  ; var0(var1)
 L 0:   9 [-]: GETIMPORT R1 9; var1 = 0xBE190284
-      10 [-]: FASTCALL1 62 R1 L1; 
+      10 [-]: FASTCALL1 64 R1 L1; 
       11 [-]: GETIMPORT R0 11; var0 = 0x7B998233
       12 [-]: CALL R0 2 2  ; var0 = var0(var1)
 L 1:  13 [-]: JUMPIF R0 L3 ; goto L3 if var0
       14 [-]: GETIMPORT R1 9; var1 = 0xBE190284
       15 [-]: NAMECALL R1 R1 K12; var2 = var1; var1 = var1[0xEF893AEC]
-      16 [-]: CALL R1 2 2  ; var1 = var1(var2)
-      17 [-]: FASTCALL1 62 R1 L2; 
+      16 [-]: CALL R1 2 0  ; var1, ... = var1(var2)
+      17 [-]: FASTCALL 64 L2; 
       18 [-]: GETIMPORT R0 11; var0 = 0x7B998233
-      19 [-]: CALL R0 2 2  ; var0 = var0(var1)
+      19 [-]: CALL R0 0 2  ; var0 = var0(var1, ...)
 L 2:  20 [-]: JUMPIFNOT R0 L4; goto L4 if not var0
 L 3:  21 [-]: GETIMPORT R0 4; var0 = 0xCBD666E1
       22 [-]: LOADN R1 0   ; var1 = 0
@@ -57,7 +57,7 @@ L 4:  25 [-]: GETIMPORT R1 9; var1 = 0xBE190284
       27 [-]: CALL R1 2 2  ; var1 = var1(var2)
       28 [-]: GETTABLEKS R0 R1 K13; var0 = var1["location"]
       29 [-]: GETIMPORT R1 15; var1 = 0x48DD7951
-      30 [-]: JUMPIFEQ R0 R1 L5; goto L5 if var0 == var393294
+      30 [-]: JUMPIFEQ R0 R1 L5; goto L5 if var0 == var393249
       31 [-]: GETIMPORT R0 6; var0 = 0x3D106989
       32 [-]: LOADK R1 K16 ; var1 = "Wrong location for quest bounty, bailing"
       33 [-]: CALL R0 2 1  ; var0(var1)
@@ -77,7 +77,7 @@ L 7:  44 [-]: GETIMPORT R0 19; var0 = _T["AcceptQuestJob"]
       47 [-]: GETIMPORT R3 25; var3 = 0x00016D82
       48 [-]: CALL R0 4 1  ; var0(var1, var2, var3)
       49 [-]: GETIMPORT R1 27; var1 = 0x6FED6096
-      50 [-]: FASTCALL1 62 R1 L8; 
+      50 [-]: FASTCALL1 64 R1 L8; 
       51 [-]: GETIMPORT R0 11; var0 = 0x7B998233
       52 [-]: CALL R0 2 2  ; var0 = var0(var1)
 L 8:  53 [-]: JUMPIF R0 L16; goto L16 if var0
@@ -96,7 +96,7 @@ L10:  60 [-]: GETIMPORT R0 30; var0 = _T["QuestJobSuccess"]
       66 [-]: CALL R0 2 1  ; var0(var1)
       67 [-]: JUMPBACK L10 ; goto L10
 L11:  68 [-]: GETIMPORT R1 30; var1 = _T["QuestJobSuccess"]
-      69 [-]: FASTCALL1 62 R1 L12; 
+      69 [-]: FASTCALL1 64 R1 L12; 
       70 [-]: GETIMPORT R0 11; var0 = 0x7B998233
       71 [-]: CALL R0 2 2  ; var0 = var0(var1)
 L12:  72 [-]: JUMPIFNOT R0 L13; goto L13 if not var0
@@ -121,7 +121,7 @@ L13:  76 [-]: GETIMPORT R0 30; var0 = _T["QuestJobSuccess"]
       91 [-]: CALL R2 2 0  ; var2, ... = var2(var3)
       92 [-]: NAMECALL R0 R0 K43; var1 = var0; var0 = var0[0x46A0EBF5]
       93 [-]: CALL R0 0 2  ; var0 = var0(var1, ...)
-      94 [-]: FASTCALL1 62 R0 L14; 
+      94 [-]: FASTCALL1 64 R0 L14; 
       95 [-]: MOVE R2 R0   ; var2 = var0
       96 [-]: GETIMPORT R1 11; var1 = 0x7B998233
       97 [-]: CALL R1 2 2  ; var1 = var1(var2)

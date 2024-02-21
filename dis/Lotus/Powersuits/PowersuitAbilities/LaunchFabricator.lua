@@ -30,8 +30,8 @@
        8 [-]: SETTABLEKS R4 R3 K3; var4["fabricatorInstances"] = var3
 L 0:   9 [-]: GETIMPORT R3 7; var3 = 0x75599B4A
       10 [-]: LOADN R4 0   ; var4 = 0
-      11 [-]: JUMPIFNOTLT R4 R3 L2; goto L2 if var4 >= var50413131
-      12 [-]: FASTCALL1 62 R1 L1; 
+      11 [-]: JUMPIFNOTLT R4 R3 L2; goto L2 if var4 >= var50413629
+      12 [-]: FASTCALL1 64 R1 L1; 
       13 [-]: MOVE R4 R1   ; var4 = var1
       14 [-]: GETIMPORT R3 9; var3 = 0x7B998233
       15 [-]: CALL R3 2 2  ; var3 = var3(var4)
@@ -41,7 +41,7 @@ L 1:  16 [-]: JUMPIF R3 L2 ; goto L2 if var3
       19 [-]: NAMECALL R3 R3 K10; var4 = var3; var3 = var3[0xC45C884B]
       20 [-]: CALL R3 2 2  ; var3 = var3(var4)
       21 [-]: GETIMPORT R4 7; var4 = 0x75599B4A
-      22 [-]: JUMPIFNOTLT R3 R4 L2; goto L2 if var3 >= var1095
+      22 [-]: JUMPIFNOTLT R3 R4 L2; goto L2 if var3 >= var1072
       23 [-]: LOADN R4 0   ; var4 = 0
       24 [-]: RETURN R4 1  ; 
 L 2:  25 [-]: GETIMPORT R3 12; var3 = 0x9E130AFF
@@ -60,7 +60,7 @@ L 2:  25 [-]: GETIMPORT R3 12; var3 = 0x9E130AFF
       38 [-]: NAMECALL R5 R5 K23; var6 = var5; var5 = var5[0xFB669000]
       39 [-]: CALL R5 6 2  ; var5 = var5(var6, var7, var8, var9, var10)
       40 [-]: LENGTH R6 R5 ; var6 = #var5
-      41 [-]: JUMPIFNOTLE R4 R6 L3; goto L3 if var4 > var1607
+      41 [-]: JUMPIFNOTLE R4 R6 L3; goto L3 if var4 > var1584
       42 [-]: LOADN R6 0   ; var6 = 0
       43 [-]: RETURN R6 1  ; 
 L 3:  44 [-]: GETIMPORT R3 25; var3 = 0x74797CEB
@@ -68,7 +68,7 @@ L 3:  44 [-]: GETIMPORT R3 25; var3 = 0x74797CEB
       46 [-]: GETIMPORT R5 25; var5 = 0x74797CEB
       47 [-]: NAMECALL R3 R1 K26; var4 = var1; var3 = var1[0xC9F6A7D7]
       48 [-]: CALL R3 3 2  ; var3 = var3(var4, var5)
-      49 [-]: FASTCALL1 62 R3 L4; 
+      49 [-]: FASTCALL1 64 R3 L4; 
       50 [-]: MOVE R5 R3   ; var5 = var3
       51 [-]: GETIMPORT R4 9; var4 = 0x7B998233
       52 [-]: CALL R4 2 2  ; var4 = var4(var5)
@@ -81,7 +81,7 @@ L 5:  56 [-]: LOADB R3 0   ; var3 = false
       59 [-]: GETIMPORT R6 4; var6 = _T["fabricatorInstances"]
       60 [-]: CALL R5 2 4  ; var5, var6, var7 = var5(var6)
       61 [-]: FORGPREP_INEXT R5 L7; 
-L 6:  62 [-]: JUMPIFNOTEQ R9 R1 L7; goto L7 if var9 ~= var66331
+L 6:  62 [-]: JUMPIFNOTEQ R9 R1 L7; goto L7 if var9 ~= var66310
       63 [-]: LOADB R3 1   ; var3 = true
       64 [-]: JUMP L8      ; goto L8
 L 7:  65 [-]: FORGLOOP R5 L6 2 [inext]; 
@@ -89,7 +89,7 @@ L 8:  66 [-]: JUMPIF R3 L16; goto L16 if var3
       67 [-]: GETIMPORT R6 4; var6 = _T["fabricatorInstances"]
       68 [-]: LENGTH R5 R6 ; var5 = #var6
       69 [-]: GETIMPORT R6 30; var6 = 0x055A8328
-      70 [-]: JUMPIFNOTLE R6 R5 L15; goto L15 if var6 > var264270
+      70 [-]: JUMPIFNOTLE R6 R5 L15; goto L15 if var6 > var264225
       71 [-]: GETIMPORT R8 4; var8 = _T["fabricatorInstances"]
       72 [-]: LENGTH R7 R8 ; var7 = #var8
       73 [-]: LOADN R5 1   ; var5 = 1
@@ -97,7 +97,7 @@ L 8:  66 [-]: JUMPIF R3 L16; goto L16 if var3
       75 [-]: FORNPREP R5 L13; nforprep start - [escape at L13] -- var5 = iterator
 L 9:  76 [-]: GETIMPORT R9 4; var9 = _T["fabricatorInstances"]
       77 [-]: GETTABLE R8 R9 R7; var8 = var9[var7]
-      78 [-]: FASTCALL1 62 R8 L10; 
+      78 [-]: FASTCALL1 64 R8 L10; 
       79 [-]: MOVE R10 R8  ; var10 = var8
       80 [-]: GETIMPORT R9 9; var9 = 0x7B998233
       81 [-]: CALL R9 2 2  ; var9 = var9(var10)
@@ -106,7 +106,7 @@ L10:  82 [-]: JUMPIF R9 L11; goto L11 if var9
       84 [-]: NAMECALL R9 R8 K31; var10 = var8; var9 = var8[0xD2715720]
       85 [-]: CALL R9 2 2  ; var9 = var9(var10)
       86 [-]: LOADN R10 0  ; var10 = 0
-      87 [-]: JUMPIFNOTLE R9 R10 L12; goto L12 if var9 > var2230606
+      87 [-]: JUMPIFNOTLE R9 R10 L12; goto L12 if var9 > var2230561
 L11:  88 [-]: GETIMPORT R9 34; var9 = 0x33BDD652[0x9C1F3B5A]
       89 [-]: GETIMPORT R10 4; var10 = _T["fabricatorInstances"]
       90 [-]: MOVE R11 R7  ; var11 = var7
@@ -115,7 +115,7 @@ L12:  92 [-]: FORNLOOP R5 L9; nforloop end - iterate + goto L9
 L13:  93 [-]: GETIMPORT R6 4; var6 = _T["fabricatorInstances"]
       94 [-]: LENGTH R5 R6 ; var5 = #var6
       95 [-]: GETIMPORT R6 30; var6 = 0x055A8328
-      96 [-]: JUMPIFNOTLT R5 R6 L14; goto L14 if var5 >= var66587
+      96 [-]: JUMPIFNOTLT R5 R6 L14; goto L14 if var5 >= var66566
       97 [-]: LOADB R4 1   ; var4 = true
 L14:  98 [-]: JUMPIF R4 L16; goto L16 if var4
       99 [-]: LOADN R5 0   ; var5 = 0
@@ -125,7 +125,7 @@ L15: 102 [-]: LOADB R4 1   ; var4 = true
 L16: 103 [-]: GETTABLEKS R5 R2 K35; var5 = var2["visible"]
      104 [-]: JUMPIFNOT R5 L20; goto L20 if not var5
      105 [-]: GETTABLEKS R6 R2 K36; var6 = var2["avatar"]
-     106 [-]: FASTCALL1 62 R6 L17; 
+     106 [-]: FASTCALL1 64 R6 L17; 
      107 [-]: GETIMPORT R5 9; var5 = 0x7B998233
      108 [-]: CALL R5 2 2  ; var5 = var5(var6)
 L17: 109 [-]: JUMPIF R5 L20; goto L20 if var5
@@ -135,10 +135,10 @@ L17: 109 [-]: JUMPIF R5 L20; goto L20 if var5
      113 [-]: JUMPIF R5 L20; goto L20 if var5
      114 [-]: GETTABLEKS R5 R2 K38; var5 = var2["distanceToTarget"]
      115 [-]: GETIMPORT R6 40; var6 = 0x4243A037
-     116 [-]: JUMPIFNOTLE R6 R5 L20; goto L20 if var6 > var1593967900
+     116 [-]: JUMPIFNOTLE R6 R5 L20; goto L20 if var6 > var1593967935
      117 [-]: GETTABLEKS R5 R2 K38; var5 = var2["distanceToTarget"]
      118 [-]: GETIMPORT R6 42; var6 = 0x86F495D5
-     119 [-]: JUMPIFNOTLT R5 R6 L20; goto L20 if var5 >= var721732
+     119 [-]: JUMPIFNOTLT R5 R6 L20; goto L20 if var5 >= var721741
      120 [-]: JUMPIF R3 L19; goto L19 if var3
      121 [-]: JUMPIFNOT R4 L19; goto L19 if not var4
      122 [-]: GETIMPORT R6 4; var6 = _T["fabricatorInstances"]
@@ -169,9 +169,9 @@ L20: 134 [-]: LOADN R5 0   ; var5 = 0
        2 [-]: CALL R5 2 2  ; var5 = var5(var6)
        3 [-]: NAMECALL R5 R5 K1; var6 = var5; var5 = var5[0xEFD0FDE2]
        4 [-]: CALL R5 2 2  ; var5 = var5(var6)
-       5 [-]: JUMPIFEQ R2 R1 L3; goto L3 if var2 == var132118
+       5 [-]: JUMPIFEQ R2 R1 L3; goto L3 if var2 == var132142
        6 [-]: MOVE R4 R2   ; var4 = var2
-       7 [-]: FASTCALL1 62 R4 L0; 
+       7 [-]: FASTCALL1 64 R4 L0; 
        8 [-]: MOVE R7 R4   ; var7 = var4
        9 [-]: GETIMPORT R6 3; var6 = 0x7B998233
       10 [-]: CALL R6 2 2  ; var6 = var6(var7)
@@ -180,7 +180,7 @@ L 0:  11 [-]: JUMPIF R6 L1 ; goto L1 if var6
       13 [-]: CALL R6 2 2  ; var6 = var6(var7)
       14 [-]: NAMECALL R6 R6 K4; var7 = var6; var6 = var6[0x7C09E541]
       15 [-]: CALL R6 2 2  ; var6 = var6(var7)
-      16 [-]: JUMPIFEQ R4 R6 L1; goto L1 if var4 == var1543767621
+      16 [-]: JUMPIFEQ R4 R6 L1; goto L1 if var4 == var1543767628
       17 [-]: NAMECALL R6 R4 K5; var7 = var4; var6 = var4[0x1AC1655C]
       18 [-]: CALL R6 2 2  ; var6 = var6(var7)
       19 [-]: LOADN R8 0   ; var8 = 0
@@ -190,7 +190,7 @@ L 0:  11 [-]: JUMPIF R6 L1 ; goto L1 if var6
 L 1:  23 [-]: NAMECALL R6 R1 K7; var7 = var1; var6 = var1[0x35844CF2]
       24 [-]: CALL R6 2 2  ; var6 = var6(var7)
       25 [-]: JUMPIF R6 L3 ; goto L3 if var6
-      26 [-]: FASTCALL1 62 R2 L2; 
+      26 [-]: FASTCALL1 64 R2 L2; 
       27 [-]: MOVE R7 R2   ; var7 = var2
       28 [-]: GETIMPORT R6 3; var6 = 0x7B998233
       29 [-]: CALL R6 2 2  ; var6 = var6(var7)
@@ -211,7 +211,7 @@ L 3:  42 [-]: GETIMPORT R6 14; var6 = 0x74797CEB
       44 [-]: GETIMPORT R8 14; var8 = 0x74797CEB
       45 [-]: NAMECALL R6 R1 K15; var7 = var1; var6 = var1[0xC9F6A7D7]
       46 [-]: CALL R6 3 2  ; var6 = var6(var7, var8)
-      47 [-]: FASTCALL1 62 R6 L4; 
+      47 [-]: FASTCALL1 64 R6 L4; 
       48 [-]: MOVE R8 R6   ; var8 = var6
       49 [-]: GETIMPORT R7 3; var7 = 0x7B998233
       50 [-]: CALL R7 2 2  ; var7 = var7(var8)
@@ -247,7 +247,7 @@ L 5:  54 [-]: GETIMPORT R8 18; var8 = 0x8751F1A3
       80 [-]: MOVE R13 R1  ; var13 = var1
       81 [-]: NAMECALL R8 R8 K33; var9 = var8; var8 = var8[0x05909209]
       82 [-]: CALL R8 6 2  ; var8 = var8(var9, var10, var11, var12, var13)
-      83 [-]: FASTCALL1 62 R8 L6; 
+      83 [-]: FASTCALL1 64 R8 L6; 
       84 [-]: MOVE R10 R8  ; var10 = var8
       85 [-]: GETIMPORT R9 3; var9 = 0x7B998233
       86 [-]: CALL R9 2 2  ; var9 = var9(var10)

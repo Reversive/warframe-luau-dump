@@ -46,7 +46,7 @@
       22 [-]: SETTABLEKS R5 R4 K11; var5["UTIL"] = var4
       23 [-]: LOADN R5 0   ; var5 = 0
       24 [-]: SETTABLEKS R5 R4 K12; var5["mTopClipIndexUsed"] = var4
-      25 [-]: LOADK R5 K35 ; var5 = 0.20000000000000001
+      25 [-]: LOADK R5 K35 ; var5 = 0.20000000298023224
       26 [-]: SETTABLEKS R5 R4 K13; var5["mElementTransitionTime"] = var4
       27 [-]: LOADN R5 1   ; var5 = 1
       28 [-]: SETTABLEKS R5 R4 K14; var5["mElementDuration"] = var4
@@ -57,9 +57,9 @@
       33 [-]: SETTABLEKS R6 R5 K37; var6["Max"] = var5
       34 [-]: SETTABLEKS R5 R4 K15; var5["mRadiusRange"] = var4
       35 [-]: DUPTABLE R5 38; 
-      36 [-]: LOADK R6 K39 ; var6 = 0.10000000000000001
+      36 [-]: LOADK R6 K39 ; var6 = 0.10000000149011612
       37 [-]: SETTABLEKS R6 R5 K36; var6["Min"] = var5
-      38 [-]: LOADK R6 K40 ; var6 = 0.29999999999999999
+      38 [-]: LOADK R6 K40 ; var6 = 0.30000001192092896
       39 [-]: SETTABLEKS R6 R5 K37; var6["Max"] = var5
       40 [-]: SETTABLEKS R5 R4 K16; var5["mAlphaRange"] = var4
       41 [-]: DUPTABLE R5 38; 

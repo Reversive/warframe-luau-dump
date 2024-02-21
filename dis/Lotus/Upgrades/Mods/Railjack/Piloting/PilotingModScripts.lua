@@ -43,8 +43,7 @@
        2 [-]: CALL R2 3 2  ; var2 = var2(var3, var4)
        3 [-]: NAMECALL R2 R2 K2; var3 = var2; var2 = var2[0x0FBC7293]
        4 [-]: CALL R2 2 2  ; var2 = var2(var3)
-       5 [-]: DIVK R1 R2 K0; var1 = var2 / 100
-       6 [-]: RETURN R1 1  ; 
+            6 [-]: RETURN R1 1  ; 
 
 
 ; Name:            
@@ -68,8 +67,7 @@ L 0:   7 [-]: GETIMPORT R6 3; var6 = _T["chanceOfBreachHitAttenuator"]
       11 [-]: CALL R10 3 2 ; var10 = var10(var11, var12)
       12 [-]: NAMECALL R10 R10 K7; var11 = var10; var10 = var10[0x0FBC7293]
       13 [-]: CALL R10 2 2 ; var10 = var10(var11)
-      14 [-]: DIVK R9 R10 K5; var9 = var10 / 100
-      15 [-]: SUB R7 R8 R9 ; var7 = var8 - var9
+           15 [-]: SUB R7 R8 R9 ; var7 = var8 - var9
       16 [-]: SETTABLE R7 R6 R5; var7[var6] = var5
       17 [-]: RETURN R0 0  ; 
 
@@ -84,14 +82,14 @@ L 0:   7 [-]: GETIMPORT R6 3; var6 = _T["chanceOfBreachHitAttenuator"]
        0 [-]: NAMECALL R5 R0 K0; var6 = var0; var5 = var0[0x388577D5]
        1 [-]: CALL R5 2 2  ; var5 = var5(var6)
        2 [-]: GETIMPORT R7 3; var7 = _T["chanceOfBreachHitAttenuator"]
-       3 [-]: FASTCALL1 62 R7 L0; 
+       3 [-]: FASTCALL1 64 R7 L0; 
        4 [-]: GETIMPORT R6 5; var6 = 0x7B998233
        5 [-]: CALL R6 2 2  ; var6 = var6(var7)
 L 0:   6 [-]: JUMPIFNOT R6 L1; goto L1 if not var6
        7 [-]: RETURN R0 0  ; 
 L 1:   8 [-]: GETIMPORT R8 3; var8 = _T["chanceOfBreachHitAttenuator"]
        9 [-]: GETTABLE R7 R8 R5; var7 = var8[var5]
-      10 [-]: FASTCALL1 62 R7 L2; 
+      10 [-]: FASTCALL1 64 R7 L2; 
       11 [-]: GETIMPORT R6 5; var6 = 0x7B998233
       12 [-]: CALL R6 2 2  ; var6 = var6(var7)
 L 2:  13 [-]: JUMPIF R6 L3 ; goto L3 if var6
@@ -132,8 +130,7 @@ L 3:  24 [-]: RETURN R0 0  ;
       14 [-]: CALL R14 3 2 ; var14 = var14(var15, var16)
       15 [-]: NAMECALL R14 R14 K7; var15 = var14; var14 = var14[0x0FBC7293]
       16 [-]: CALL R14 2 2 ; var14 = var14(var15)
-      17 [-]: DIVK R13 R14 K5; var13 = var14 / 100
-      18 [-]: SUB R11 R12 R13; var11 = var12 - var13
+           18 [-]: SUB R11 R12 R13; var11 = var12 - var13
       19 [-]: NAMECALL R6 R6 K8; var7 = var6; var6 = var6[0x4CB29D1C]
       20 [-]: CALL R6 6 1  ; var6(var7, var8, var9, var10, var11)
       21 [-]: RETURN R0 0  ; 
@@ -174,8 +171,7 @@ L 3:  24 [-]: RETURN R0 0  ;
        4 [-]: CALL R9 3 2  ; var9 = var9(var10, var11)
        5 [-]: NAMECALL R9 R9 K4; var10 = var9; var9 = var9[0x0FBC7293]
        6 [-]: CALL R9 2 2  ; var9 = var9(var10)
-       7 [-]: DIVK R8 R9 K2; var8 = var9 / 100
-       8 [-]: SUB R6 R7 R8 ; var6 = var7 - var8
+            8 [-]: SUB R6 R7 R8 ; var6 = var7 - var8
        9 [-]: SETTABLEKS R6 R5 K5; var6["multiToolAmmoReduction"] = var5
       10 [-]: RETURN R0 0  ; 
 
@@ -213,19 +209,18 @@ L 0:   5 [-]: NAMECALL R5 R0 K3; var6 = var0; var5 = var0[0xDE321E6F]
       10 [-]: CALL R8 3 2  ; var8 = var8(var9, var10)
       11 [-]: NAMECALL R8 R8 K6; var9 = var8; var8 = var8[0x0FBC7293]
       12 [-]: CALL R8 2 2  ; var8 = var8(var9)
-      13 [-]: DIVK R7 R8 K4; var7 = var8 / 100
-      14 [-]: GETIMPORT R8 8; var8 = 0x7ED0A956
+           14 [-]: GETIMPORT R8 8; var8 = 0x7ED0A956
       15 [-]: LOADK R9 K9  ; var9 = "/Lotus/Types/Game/CrewShip/Malfunctions/WallBreach"
       16 [-]: CALL R8 2 2  ; var8 = var8(var9)
       17 [-]: GETUPVAL R10 0; var10 = upvalues[0]
       18 [-]: GETTABLEKS R9 R10 K10; var9 = var10[0x81E6C00C]
       19 [-]: CALL R9 1 2  ; var9 = var9()
-L 1:  20 [-]: FASTCALL1 62 R0 L2; 
+L 1:  20 [-]: FASTCALL1 64 R0 L2; 
       21 [-]: MOVE R11 R0  ; var11 = var0
       22 [-]: GETIMPORT R10 12; var10 = 0x7B998233
       23 [-]: CALL R10 2 2 ; var10 = var10(var11)
 L 2:  24 [-]: JUMPIF R10 L7; goto L7 if var10
-      25 [-]: FASTCALL1 62 R9 L3; 
+      25 [-]: FASTCALL1 64 R9 L3; 
       26 [-]: MOVE R11 R9  ; var11 = var9
       27 [-]: GETIMPORT R10 12; var10 = 0x7B998233
       28 [-]: CALL R10 2 2 ; var10 = var10(var11)
@@ -239,9 +234,9 @@ L 4:  35 [-]: MOVE R12 R8  ; var12 = var8
       36 [-]: NAMECALL R10 R9 K13; var11 = var9; var10 = var9[0x6B8FA1A7]
       37 [-]: CALL R10 3 2 ; var10 = var10(var11, var12)
       38 [-]: LOADN R11 0  ; var11 = 0
-      39 [-]: JUMPIFNOTLT R11 R10 L5; goto L5 if var11 >= var525892
+      39 [-]: JUMPIFNOTLT R11 R10 L5; goto L5 if var11 >= var525901
       40 [-]: JUMPIF R6 L5 ; goto L5 if var6
-      41 [-]: LOADN R13 125; var13 = 125
+      41 [-]: LOADN R13 130; var13 = 130
       42 [-]: LOADN R14 3  ; var14 = 3
       43 [-]: MOVE R15 R7  ; var15 = var7
       44 [-]: NAMECALL R11 R5 K14; var12 = var5; var11 = var5[0x5E6704FF]
@@ -250,7 +245,7 @@ L 4:  35 [-]: MOVE R12 R8  ; var12 = var8
       47 [-]: JUMP L6      ; goto L6
 L 5:  48 [-]: JUMPXEQKN R10 K15 L6 NOT; 
       49 [-]: JUMPIFNOT R6 L6; goto L6 if not var6
-      50 [-]: LOADN R13 125; var13 = 125
+      50 [-]: LOADN R13 130; var13 = 130
       51 [-]: LOADN R14 3  ; var14 = 3
       52 [-]: MOVE R15 R7  ; var15 = var7
       53 [-]: NAMECALL R11 R5 K16; var12 = var5; var11 = var5[0x12DD9DA2]
@@ -276,8 +271,7 @@ L 7:  60 [-]: RETURN R0 0  ;
        3 [-]: CALL R7 3 2  ; var7 = var7(var8, var9)
        4 [-]: NAMECALL R7 R7 K4; var8 = var7; var7 = var7[0x0FBC7293]
        5 [-]: CALL R7 2 2  ; var7 = var7(var8)
-       6 [-]: DIVK R6 R7 K2; var6 = var7 / 100
-       7 [-]: SETTABLEKS R6 R5 K5; var6["repelRamSledChance"] = var5
+            7 [-]: SETTABLEKS R6 R5 K5; var6["repelRamSledChance"] = var5
        8 [-]: RETURN R0 0  ; 
 
 

@@ -18,7 +18,7 @@
 ; Max Stack Size:  6
 
 L 0:   0 [-]: GETIMPORT R2 1; var2 = 0x89326C93
-       1 [-]: FASTCALL1 62 R2 L1; 
+       1 [-]: FASTCALL1 64 R2 L1; 
        2 [-]: GETIMPORT R1 3; var1 = 0x7B998233
        3 [-]: CALL R1 2 2  ; var1 = var1(var2)
 L 1:   4 [-]: JUMPIFNOT R1 L2; goto L2 if not var1

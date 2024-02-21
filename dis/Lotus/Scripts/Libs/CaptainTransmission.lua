@@ -96,7 +96,7 @@
 ; Max Stack Size:  8
 
        0 [-]: GETIMPORT R1 2; var1 = _T["CaptainNemesis"]
-       1 [-]: FASTCALL1 62 R1 L0; 
+       1 [-]: FASTCALL1 64 R1 L0; 
        2 [-]: GETIMPORT R0 4; var0 = 0x7B998233
        3 [-]: CALL R0 2 2  ; var0 = var0(var1)
 L 0:   4 [-]: JUMPIFNOT R0 L1; goto L1 if not var0
@@ -167,7 +167,7 @@ L 1:  51 [-]: RETURN R0 0  ;
        8 [-]: CALL R1 3 2  ; var1 = var1(var2, var3)
        9 [-]: GETTABLEKS R3 R1 K6; var3 = var1["missionTag"]
       10 [-]: GETUPVAL R4 1; var4 = upvalues[1]
-      11 [-]: JUMPIFEQ R3 R4 L0; goto L0 if var3 == var16777755
+      11 [-]: JUMPIFEQ R3 R4 L0; goto L0 if var3 == var16777734
       12 [-]: LOADB R2 0 +1; var2 = false
 L 0:  13 [-]: LOADB R2 1   ; var2 = true
 L 1:  14 [-]: RETURN R2 1  ; 
@@ -186,7 +186,7 @@ L 1:  14 [-]: RETURN R2 1  ;
        3 [-]: CALL R3 2 0  ; var3, ... = var3(var4)
        4 [-]: NAMECALL R1 R1 K5; var2 = var1; var1 = var1[0x46A0EBF5]
        5 [-]: CALL R1 0 2  ; var1 = var1(var2, ...)
-       6 [-]: FASTCALL1 62 R1 L0; 
+       6 [-]: FASTCALL1 64 R1 L0; 
        7 [-]: MOVE R3 R1   ; var3 = var1
        8 [-]: GETIMPORT R2 7; var2 = 0x7B998233
        9 [-]: CALL R2 2 2  ; var2 = var2(var3)
@@ -198,7 +198,7 @@ L 0:  10 [-]: JUMPIFNOT R2 L1; goto L1 if not var2
 L 1:  15 [-]: GETIMPORT R2 3; var2 = 0x0469F296
       16 [-]: LOADK R3 K11 ; var3 = "CombatStartedCorpus"
       17 [-]: CALL R2 2 2  ; var2 = var2(var3)
-      18 [-]: JUMPIFNOTEQ R0 R2 L2; goto L2 if var0 ~= var66631
+      18 [-]: JUMPIFNOTEQ R0 R2 L2; goto L2 if var0 ~= var66608
       19 [-]: LOADN R4 1   ; var4 = 1
       20 [-]: NAMECALL R2 R1 K12; var3 = var1; var2 = var1[0x05EEB9DB]
       21 [-]: CALL R2 3 1  ; var2(var3, var4)
@@ -206,7 +206,7 @@ L 1:  15 [-]: GETIMPORT R2 3; var2 = 0x0469F296
 L 2:  23 [-]: GETIMPORT R2 3; var2 = 0x0469F296
       24 [-]: LOADK R3 K13 ; var3 = "LaunchMissileAttack"
       25 [-]: CALL R2 2 2  ; var2 = var2(var3)
-      26 [-]: JUMPIFNOTEQ R0 R2 L3; goto L3 if var0 ~= var132167
+      26 [-]: JUMPIFNOTEQ R0 R2 L3; goto L3 if var0 ~= var132144
       27 [-]: LOADN R4 2   ; var4 = 2
       28 [-]: NAMECALL R2 R1 K12; var3 = var1; var2 = var1[0x05EEB9DB]
       29 [-]: CALL R2 3 1  ; var2(var3, var4)
@@ -214,7 +214,7 @@ L 2:  23 [-]: GETIMPORT R2 3; var2 = 0x0469F296
 L 3:  31 [-]: GETIMPORT R2 3; var2 = 0x0469F296
       32 [-]: LOADK R3 K14 ; var3 = "SpecTroopAbilityActivated"
       33 [-]: CALL R2 2 2  ; var2 = var2(var3)
-      34 [-]: JUMPIFNOTEQ R0 R2 L4; goto L4 if var0 ~= var197703
+      34 [-]: JUMPIFNOTEQ R0 R2 L4; goto L4 if var0 ~= var197680
       35 [-]: LOADN R4 3   ; var4 = 3
       36 [-]: NAMECALL R2 R1 K12; var3 = var1; var2 = var1[0x05EEB9DB]
       37 [-]: CALL R2 3 1  ; var2(var3, var4)
@@ -222,7 +222,7 @@ L 3:  31 [-]: GETIMPORT R2 3; var2 = 0x0469F296
 L 4:  39 [-]: GETIMPORT R2 3; var2 = 0x0469F296
       40 [-]: LOADK R3 K15 ; var3 = "EscalationFighters"
       41 [-]: CALL R2 2 2  ; var2 = var2(var3)
-      42 [-]: JUMPIFNOTEQ R0 R2 L5; goto L5 if var0 ~= var263239
+      42 [-]: JUMPIFNOTEQ R0 R2 L5; goto L5 if var0 ~= var263216
       43 [-]: LOADN R4 4   ; var4 = 4
       44 [-]: NAMECALL R2 R1 K12; var3 = var1; var2 = var1[0x05EEB9DB]
       45 [-]: CALL R2 3 1  ; var2(var3, var4)
@@ -230,7 +230,7 @@ L 4:  39 [-]: GETIMPORT R2 3; var2 = 0x0469F296
 L 5:  47 [-]: GETIMPORT R2 3; var2 = 0x0469F296
       48 [-]: LOADK R3 K16 ; var3 = "EscalationCrewship"
       49 [-]: CALL R2 2 2  ; var2 = var2(var3)
-      50 [-]: JUMPIFNOTEQ R0 R2 L6; goto L6 if var0 ~= var328775
+      50 [-]: JUMPIFNOTEQ R0 R2 L6; goto L6 if var0 ~= var328752
       51 [-]: LOADN R4 5   ; var4 = 5
       52 [-]: NAMECALL R2 R1 K12; var3 = var1; var2 = var1[0x05EEB9DB]
       53 [-]: CALL R2 3 1  ; var2(var3, var4)
@@ -259,7 +259,7 @@ L 6:  54 [-]: RETURN R0 0  ;
       12 [-]: CALL R3 3 2  ; var3 = var3(var4, var5)
       13 [-]: GETTABLEKS R4 R3 K9; var4 = var3["missionTag"]
       14 [-]: GETUPVAL R5 1; var5 = upvalues[1]
-      15 [-]: JUMPIFEQ R4 R5 L0; goto L0 if var4 == var16777499
+      15 [-]: JUMPIFEQ R4 R5 L0; goto L0 if var4 == var16777478
       16 [-]: LOADB R1 0 +1; var1 = false
 L 0:  17 [-]: LOADB R1 1   ; var1 = true
 L 1:  18 [-]: JUMPIFNOT R1 L2; goto L2 if not var1
@@ -298,7 +298,7 @@ L 3:  29 [-]: RETURN R0 0  ;
       12 [-]: CALL R4 3 2  ; var4 = var4(var5, var6)
       13 [-]: GETTABLEKS R5 R4 K9; var5 = var4["missionTag"]
       14 [-]: GETUPVAL R6 1; var6 = upvalues[1]
-      15 [-]: JUMPIFEQ R5 R6 L0; goto L0 if var5 == var16777755
+      15 [-]: JUMPIFEQ R5 R6 L0; goto L0 if var5 == var16777734
       16 [-]: LOADB R2 0 +1; var2 = false
 L 0:  17 [-]: LOADB R2 1   ; var2 = true
 L 1:  18 [-]: JUMPIFNOT R2 L2; goto L2 if not var2
@@ -323,7 +323,7 @@ L 3:  30 [-]: RETURN R0 0  ;
 ; Is_vararg:       0
 ; Max Stack Size:  5
 
-       0 [-]: FASTCALL1 62 R0 L0; 
+       0 [-]: FASTCALL1 64 R0 L0; 
        1 [-]: MOVE R2 R0   ; var2 = var0
        2 [-]: GETIMPORT R1 1; var1 = 0x7B998233
        3 [-]: CALL R1 2 2  ; var1 = var1(var2)
@@ -332,7 +332,7 @@ L 0:   4 [-]: JUMPIFNOT R1 L1; goto L1 if not var1
        6 [-]: RETURN R1 1  ; 
 L 1:   7 [-]: NAMECALL R1 R0 K2; var2 = var0; var1 = var0[0xED4E0128]
        8 [-]: CALL R1 2 2  ; var1 = var1(var2)
-       9 [-]: FASTCALL1 62 R1 L2; 
+       9 [-]: FASTCALL1 64 R1 L2; 
       10 [-]: MOVE R3 R1   ; var3 = var1
       11 [-]: GETIMPORT R2 1; var2 = 0x7B998233
       12 [-]: CALL R2 2 2  ; var2 = var2(var3)
@@ -356,7 +356,7 @@ L 3:  21 [-]: LOADB R2 0   ; var2 = false
 ; Max Stack Size:  6
 
        0 [-]: GETIMPORT R2 2; var2 = _T["CaptainNemesis"]
-       1 [-]: FASTCALL1 62 R2 L0; 
+       1 [-]: FASTCALL1 64 R2 L0; 
        2 [-]: GETIMPORT R1 4; var1 = 0x7B998233
        3 [-]: CALL R1 2 2  ; var1 = var1(var2)
 L 0:   4 [-]: JUMPIFNOT R1 L1; goto L1 if not var1

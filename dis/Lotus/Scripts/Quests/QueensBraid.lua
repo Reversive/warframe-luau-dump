@@ -52,7 +52,7 @@
       18 [-]: NAMECALL R8 R0 K8; var9 = var0; var8 = var0[0xC9F6A7D7]
       19 [-]: CALL R8 3 2  ; var8 = var8(var9, var10)
       20 [-]: GETIMPORT R10 15; var10 = _T["ActiveBraids"]
-      21 [-]: FASTCALL1 62 R10 L0; 
+      21 [-]: FASTCALL1 64 R10 L0; 
       22 [-]: GETIMPORT R9 17; var9 = 0x7B998233
       23 [-]: CALL R9 2 2  ; var9 = var9(var10)
 L 0:  24 [-]: JUMPIFNOT R9 L1; goto L1 if not var9
@@ -64,13 +64,13 @@ L 1:  29 [-]: GETIMPORT R9 18; var9 = _T
       30 [-]: GETIMPORT R11 15; var11 = _T["ActiveBraids"]
       31 [-]: ADDK R10 R11 K19; var10 = var11 + 1
       32 [-]: SETTABLEKS R10 R9 K14; var10["ActiveBraids"] = var9
-L 2:  33 [-]: FASTCALL1 62 R0 L3; 
+L 2:  33 [-]: FASTCALL1 64 R0 L3; 
       34 [-]: MOVE R10 R0  ; var10 = var0
       35 [-]: GETIMPORT R9 17; var9 = 0x7B998233
       36 [-]: CALL R9 2 2  ; var9 = var9(var10)
 L 3:  37 [-]: JUMPIF R9 L10; goto L10 if var9
       38 [-]: LOADN R9 0   ; var9 = 0
-      39 [-]: JUMPIFNOTLT R9 R2 L10; goto L10 if var9 >= var1378638
+      39 [-]: JUMPIFNOTLT R9 R2 L10; goto L10 if var9 >= var1378593
       40 [-]: GETIMPORT R9 21; var9 = _T["BraidsVulnerable"]
       41 [-]: JUMPIFNOT R9 L4; goto L4 if not var9
       42 [-]: LOADK R11 K22; var11 = "Show"
@@ -108,16 +108,16 @@ L 4:  59 [-]: LOADK R11 K31; var11 = "Hide"
 L 5:  74 [-]: NAMECALL R9 R0 K2; var10 = var0; var9 = var0[0xD2715720]
       75 [-]: CALL R9 2 2  ; var9 = var9(var10)
       76 [-]: MOVE R2 R9   ; var2 = var9
-      77 [-]: JUMPIFNOTLT R2 R4 L6; goto L6 if var2 >= var2296142
+      77 [-]: JUMPIFNOTLT R2 R4 L6; goto L6 if var2 >= var2296097
       78 [-]: GETIMPORT R9 35; var9 = 0x55156FF7
       79 [-]: CALL R9 1 2  ; var9 = var9()
       80 [-]: MOVE R1 R9   ; var1 = var9
-L 6:  81 [-]: JUMPIFNOTLT R2 R3 L7; goto L7 if var2 >= var2427470
+L 6:  81 [-]: JUMPIFNOTLT R2 R3 L7; goto L7 if var2 >= var2427425
       82 [-]: GETIMPORT R10 37; var10 = 0xBF21B56F
       83 [-]: ADD R9 R1 R10; var9 = var1 + var10
       84 [-]: GETIMPORT R10 35; var10 = 0x55156FF7
       85 [-]: CALL R10 1 2 ; var10 = var10()
-      86 [-]: JUMPIFNOTLT R9 R10 L7; goto L7 if var9 >= var2558542
+      86 [-]: JUMPIFNOTLT R9 R10 L7; goto L7 if var9 >= var2558497
       87 [-]: GETIMPORT R10 39; var10 = 0x67652851
       88 [-]: CALL R10 1 2 ; var10 = var10()
       89 [-]: MUL R9 R5 R10; var9 = var5 * var10
@@ -126,7 +126,7 @@ L 6:  81 [-]: JUMPIFNOTLT R2 R3 L7; goto L7 if var2 >= var2427470
       92 [-]: LOADB R12 0  ; var12 = false
       93 [-]: NAMECALL R9 R0 K40; var10 = var0; var9 = var0[0x014DB014]
       94 [-]: CALL R9 4 1  ; var9(var10, var11, var12)
-L 7:  95 [-]: FASTCALL1 62 R6 L8; 
+L 7:  95 [-]: FASTCALL1 64 R6 L8; 
       96 [-]: MOVE R10 R6  ; var10 = var6
       97 [-]: GETIMPORT R9 17; var9 = 0x7B998233
       98 [-]: CALL R9 2 2  ; var9 = var9(var10)
@@ -169,7 +169,7 @@ L10: 115 [-]: GETIMPORT R9 18; var9 = _T
      135 [-]: CALL R10 5 1 ; var10(var11, var12, var13, var14)
      136 [-]: JUMP L14     ; goto L14
 L11: 137 [-]: GETIMPORT R11 49; var11 = _T["QueenSound"]
-     138 [-]: FASTCALL1 62 R11 L12; 
+     138 [-]: FASTCALL1 64 R11 L12; 
      139 [-]: GETIMPORT R10 17; var10 = 0x7B998233
      140 [-]: CALL R10 2 2 ; var10 = var10(var11)
 L12: 141 [-]: JUMPIF R10 L13; goto L13 if var10

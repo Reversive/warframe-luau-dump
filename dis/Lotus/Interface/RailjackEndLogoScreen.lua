@@ -69,7 +69,7 @@
 L 0:   3 [-]: LOADB R0 1   ; var0 = true
        4 [-]: SETUPVAL R0 0; upvalues[0] = var0
        5 [-]: GETUPVAL R1 1; var1 = upvalues[1]
-       6 [-]: FASTCALL1 62 R1 L1; 
+       6 [-]: FASTCALL1 64 R1 L1; 
        7 [-]: GETIMPORT R0 1; var0 = 0x7B998233
        8 [-]: CALL R0 2 2  ; var0 = var0(var1)
 L 1:   9 [-]: JUMPIF R0 L2 ; goto L2 if var0
@@ -87,7 +87,7 @@ L 2:  14 [-]: GETIMPORT R0 4; var0 = 0x25312C9B
       21 [-]: NEWTABLE R5 0 1; var5 = {}
       22 [-]: LOADN R6 0   ; var6 = 0
       23 [-]: SETLIST R5 R6 1 [1]; var5[1] = var6; var5[2] = var7; 
-      24 [-]: LOADK R6 K8  ; var6 = 0.55000000000000004
+      24 [-]: LOADK R6 K8  ; var6 = 0.55000001192092896
       25 [-]: LOADN R7 0   ; var7 = 0
       26 [-]: DUPCLOSURE R8 K9; 
       27 [-]: CAPTURE UPVAL U2; 
@@ -158,7 +158,7 @@ L 2:  14 [-]: GETIMPORT R0 4; var0 = 0x25312C9B
       29 [-]: GETIMPORT R1 8; var1 = 0xAE91E43B
       30 [-]: LOADK R3 K17 ; var3 = "LogoGleen"
       31 [-]: LOADK R4 K20 ; var4 = "TileOffset"
-      32 [-]: LOADK R5 K21 ; var5 = 0.52500000000000002
+      32 [-]: LOADK R5 K21 ; var5 = 0.52499997615814209
       33 [-]: LOADN R6 0   ; var6 = 0
       34 [-]: LOADN R7 1   ; var7 = 1
       35 [-]: LOADN R8 1   ; var8 = 1
@@ -171,7 +171,7 @@ L 2:  14 [-]: GETIMPORT R0 4; var0 = 0x25312C9B
       42 [-]: NAMECALL R1 R1 K24; var2 = var1; var1 = var1[0x67BC869F]
       43 [-]: CALL R1 5 1  ; var1(var2, var3, var4, var5)
       44 [-]: GETUPVAL R1 0; var1 = upvalues[0]
-      45 [-]: LOADK R3 K25 ; var3 = 1.1000000000000001
+      45 [-]: LOADK R3 K25 ; var3 = 1.1000000238418579
       46 [-]: NEWCLOSURE R4 P0; 
       47 [-]: CAPTURE UPVAL U1; 
       48 [-]: CAPTURE UPVAL U2; 
@@ -201,7 +201,7 @@ L 2:  14 [-]: GETIMPORT R0 4; var0 = 0x25312C9B
 ; Max Stack Size:  3
 
        0 [-]: GETUPVAL R1 0; var1 = upvalues[0]
-       1 [-]: FASTCALL1 62 R1 L0; 
+       1 [-]: FASTCALL1 64 R1 L0; 
        2 [-]: GETIMPORT R0 1; var0 = 0x7B998233
        3 [-]: CALL R0 2 2  ; var0 = var0(var1)
 L 0:   4 [-]: JUMPIF R0 L1 ; goto L1 if var0

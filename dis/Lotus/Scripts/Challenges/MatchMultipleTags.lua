@@ -28,7 +28,7 @@ L 0:   7 [-]: GETIMPORT R6 2; var6 = 0x51CB4E17
        8 [-]: GETTABLE R5 R6 R4; var5 = var6[var4]
        9 [-]: NAMECALL R5 R5 K3; var6 = var5; var5 = var5[0x6D604BA7]
       10 [-]: CALL R5 2 2  ; var5 = var5(var6)
-      11 [-]: JUMPIFNOTEQ R1 R5 L1; goto L1 if var1 ~= var66843
+      11 [-]: JUMPIFNOTEQ R1 R5 L1; goto L1 if var1 ~= var66822
       12 [-]: LOADB R5 1   ; var5 = true
       13 [-]: RETURN R5 1  ; 
 L 1:  14 [-]: FORNLOOP R2 L0; nforloop end - iterate + goto L0

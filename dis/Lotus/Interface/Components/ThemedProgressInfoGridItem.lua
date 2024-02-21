@@ -47,7 +47,7 @@
       23 [-]: SETTABLEKS R13 R12 K8; var13["mTopRightText"] = var12
       24 [-]: LENGTH R13 R4; var13 = #var4
       25 [-]: LOADN R14 0  ; var14 = 0
-      26 [-]: JUMPIFNOTLT R14 R13 L0; goto L0 if var14 >= var-720761572
+      26 [-]: JUMPIFNOTLT R14 R13 L0; goto L0 if var14 >= var-720761537
       27 [-]: GETTABLEKS R13 R10 K9; var13 = var10[0xDC6D6AD5]
       28 [-]: MOVE R14 R4  ; var14 = var4
       29 [-]: NEWTABLE R15 0 0; var15 = {}
@@ -104,25 +104,25 @@ L 0:  32 [-]: ORK R13 R5 K7; var13 = var5 or ""
       80 [-]: SETTABLEKS R13 R12 K24; var13["ShowRank"] = var12
       81 [-]: MOVE R15 R1  ; var15 = var1
       82 [-]: LOADK R16 K25; var16 = "Name.Label"
-      83 [-]: LOADN R17 38 ; var17 = 38
+      83 [-]: LOADN R17 40 ; var17 = 40
       84 [-]: LOADK R18 K26; var18 = "top"
       85 [-]: NAMECALL R13 R0 K27; var14 = var0; var13 = var0[0xE261AA96]
       86 [-]: CALL R13 6 1 ; var13(var14, var15, var16, var17, var18)
       87 [-]: MOVE R15 R1  ; var15 = var1
       88 [-]: LOADK R16 K28; var16 = "Ratio.Label"
-      89 [-]: LOADN R17 38 ; var17 = 38
+      89 [-]: LOADN R17 40 ; var17 = 40
       90 [-]: LOADK R18 K29; var18 = "bottom"
       91 [-]: NAMECALL R13 R0 K27; var14 = var0; var13 = var0[0xE261AA96]
       92 [-]: CALL R13 6 1 ; var13(var14, var15, var16, var17, var18)
       93 [-]: MOVE R15 R1  ; var15 = var1
       94 [-]: LOADK R16 K30; var16 = "TopRight.Label"
-      95 [-]: LOADN R17 38 ; var17 = 38
+      95 [-]: LOADN R17 40 ; var17 = 40
       96 [-]: LOADK R18 K29; var18 = "bottom"
       97 [-]: NAMECALL R13 R0 K27; var14 = var0; var13 = var0[0xE261AA96]
       98 [-]: CALL R13 6 1 ; var13(var14, var15, var16, var17, var18)
       99 [-]: MOVE R15 R1  ; var15 = var1
      100 [-]: LOADK R16 K31; var16 = "BotRight.Label"
-     101 [-]: LOADN R17 38 ; var17 = 38
+     101 [-]: LOADN R17 40 ; var17 = 40
      102 [-]: LOADK R18 K29; var18 = "bottom"
      103 [-]: NAMECALL R13 R0 K27; var14 = var0; var13 = var0[0xE261AA96]
      104 [-]: CALL R13 6 1 ; var13(var14, var15, var16, var17, var18)
@@ -131,7 +131,7 @@ L 0:  32 [-]: ORK R13 R5 K7; var13 = var5 or ""
      107 [-]: JUMPIFNOT R13 L1; goto L1 if not var13
      108 [-]: MOVE R15 R1  ; var15 = var1
      109 [-]: LOADK R16 K25; var16 = "Name.Label"
-     110 [-]: LOADN R17 41 ; var17 = 41
+     110 [-]: LOADN R17 43 ; var17 = 43
      111 [-]: LOADK R18 K35; var18 = "Arial Unicode MS"
      112 [-]: NAMECALL R13 R0 K27; var14 = var0; var13 = var0[0xE261AA96]
      113 [-]: CALL R13 6 1 ; var13(var14, var15, var16, var17, var18)

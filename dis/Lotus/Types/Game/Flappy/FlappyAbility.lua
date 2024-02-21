@@ -52,7 +52,7 @@ L 0:  12 [-]: GETIMPORT R6 10; var6 = 0xB8624824
       30 [-]: CALL R9 4 0  ; var9, ... = var9(var10, var11, var12)
       31 [-]: NAMECALL R4 R1 K20; var5 = var1; var4 = var1[0x47901F07]
       32 [-]: CALL R4 0 1  ; var4(var5, ...)
-      33 [-]: LOADK R6 K21 ; var6 = 10.300000000000001
+      33 [-]: LOADK R6 K21 ; var6 = 10.300000190734863
       34 [-]: NAMECALL R4 R1 K22; var5 = var1; var4 = var1[0xB326E827]
       35 [-]: CALL R4 3 1  ; var4(var5, var6)
       36 [-]: RETURN R0 0  ; 

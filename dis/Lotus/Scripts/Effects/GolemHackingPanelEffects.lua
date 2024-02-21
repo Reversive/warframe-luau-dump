@@ -19,14 +19,13 @@
 ; Max Stack Size:  14
 
        0 [-]: JUMPIF R4 L0 ; goto L0 if var4
-       1 [-]: LOADK R4 K0  ; var4 = 1.7015800000000001
-L 0:   2 [-]: MULK R4 R4 K1; var4 = var4 * 1.5249999999999999
+       1 [-]: LOADK R4 K0  ; var4 = 1.7015800476074219
+L 0:   2 [-]: MULK R4 R4 K1; var4 = var4 * 1.5249999761581421
        3 [-]: DIV R5 R0 R3 ; var5 = var0 / var3
        4 [-]: MULK R0 R5 K2; var0 = var5 * 2
        5 [-]: LOADN R5 1   ; var5 = 1
-       6 [-]: JUMPIFNOTLT R0 R5 L1; goto L1 if var0 >= var33687297
-       7 [-]: DIVK R7 R2 K2; var7 = var2 / 2
-       8 [-]: MUL R9 R0 R0 ; var9 = var0 * var0
+       6 [-]: JUMPIFNOTLT R0 R5 L1; goto L1 if var0 >= var33687377
+            8 [-]: MUL R9 R0 R0 ; var9 = var0 * var0
        9 [-]: ADDK R12 R4 K3; var12 = var4 + 1
       10 [-]: MUL R11 R12 R0; var11 = var12 * var0
       11 [-]: SUB R10 R11 R4; var10 = var11 - var4
@@ -35,8 +34,7 @@ L 0:   2 [-]: MULK R4 R4 K1; var4 = var4 * 1.5249999999999999
       14 [-]: ADD R5 R6 R1 ; var5 = var6 + var1
       15 [-]: RETURN R5 1  ; 
 L 1:  16 [-]: SUBK R0 R0 K2; var0 = var0 - 2
-      17 [-]: DIVK R7 R2 K2; var7 = var2 / 2
-      18 [-]: MUL R10 R0 R0; var10 = var0 * var0
+           18 [-]: MUL R10 R0 R0; var10 = var0 * var0
       19 [-]: ADDK R13 R4 K3; var13 = var4 + 1
       20 [-]: MUL R12 R13 R0; var12 = var13 * var0
       21 [-]: ADD R11 R12 R4; var11 = var12 + var4
@@ -64,24 +62,23 @@ L 1:  16 [-]: SUBK R0 R0 K2; var0 = var0 - 2
        7 [-]: CALL R2 2 2  ; var2 = var2(var3)
        8 [-]: SETGLOBAL R2 K7; 0xF96894AC = var2
 L 0:   9 [-]: GETIMPORT R2 9; var2 = 0x07E9D557
-      10 [-]: JUMPIFNOTLT R1 R2 L5; goto L5 if var1 >= var656133
-      11 [-]: LOADK R3 K10 ; var3 = 0.01
+      10 [-]: JUMPIFNOTLT R1 R2 L5; goto L5 if var1 >= var656199
+      11 [-]: LOADK R3 K10 ; var3 = 0.0099999997764825821
       12 [-]: MOVE R5 R1   ; var5 = var1
       13 [-]: GETGLOBAL R6 K7; var6 = 0xF96894AC
       14 [-]: GETIMPORT R8 12; var8 = 0x65448093
       15 [-]: GETGLOBAL R9 K7; var9 = 0xF96894AC
       16 [-]: SUB R7 R8 R9 ; var7 = var8 - var9
       17 [-]: GETIMPORT R8 9; var8 = 0x07E9D557
-      18 [-]: LOADK R9 K13 ; var9 = 1.1000000000000001
+      18 [-]: LOADK R9 K13 ; var9 = 1.1000000238418579
       19 [-]: JUMPIF R9 L1 ; goto L1 if var9
-      20 [-]: LOADK R9 K14 ; var9 = 1.7015800000000001
-L 1:  21 [-]: MULK R9 R9 K15; var9 = var9 * 1.5249999999999999
+      20 [-]: LOADK R9 K14 ; var9 = 1.7015800476074219
+L 1:  21 [-]: MULK R9 R9 K15; var9 = var9 * 1.5249999761581421
       22 [-]: DIV R10 R5 R8; var10 = var5 / var8
       23 [-]: MULK R5 R10 K16; var5 = var10 * 2
       24 [-]: LOADN R10 1  ; var10 = 1
-      25 [-]: JUMPIFNOTLT R5 R10 L2; goto L2 if var5 >= var268897025
-      26 [-]: DIVK R11 R7 K16; var11 = var7 / 2
-      27 [-]: MUL R13 R5 R5; var13 = var5 * var5
+      25 [-]: JUMPIFNOTLT R5 R10 L2; goto L2 if var5 >= var268897105
+           27 [-]: MUL R13 R5 R5; var13 = var5 * var5
       28 [-]: ADDK R16 R9 K17; var16 = var9 + 1
       29 [-]: MUL R15 R16 R5; var15 = var16 * var5
       30 [-]: SUB R14 R15 R9; var14 = var15 - var9
@@ -90,8 +87,7 @@ L 1:  21 [-]: MULK R9 R9 K15; var9 = var9 * 1.5249999999999999
       33 [-]: ADD R4 R10 R6; var4 = var10 + var6
       34 [-]: JUMP L3      ; goto L3
 L 2:  35 [-]: SUBK R5 R5 K16; var5 = var5 - 2
-      36 [-]: DIVK R11 R7 K16; var11 = var7 / 2
-      37 [-]: MUL R14 R5 R5; var14 = var5 * var5
+           37 [-]: MUL R14 R5 R5; var14 = var5 * var5
       38 [-]: ADDK R17 R9 K17; var17 = var9 + 1
       39 [-]: MUL R16 R17 R5; var16 = var17 * var5
       40 [-]: ADD R15 R16 R9; var15 = var16 + var9

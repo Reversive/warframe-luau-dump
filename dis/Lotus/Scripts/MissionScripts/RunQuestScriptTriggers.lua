@@ -29,7 +29,7 @@
        6 [-]: LOADN R4 1   ; var4 = 1
        7 [-]: FORNPREP R3 L3; nforprep start - [escape at L3] -- var3 = iterator
 L 0:   8 [-]: GETTABLE R7 R2 R5; var7 = var2[var5]
-       9 [-]: FASTCALL1 62 R7 L1; 
+       9 [-]: FASTCALL1 64 R7 L1; 
       10 [-]: GETIMPORT R6 4; var6 = 0x7B998233
       11 [-]: CALL R6 2 2  ; var6 = var6(var7)
 L 1:  12 [-]: JUMPIF R6 L2 ; goto L2 if var6
@@ -62,7 +62,7 @@ L 3:  23 [-]: RETURN R0 0  ;
        6 [-]: LOADN R3 1   ; var3 = 1
        7 [-]: FORNPREP R2 L3; nforprep start - [escape at L3] -- var2 = iterator
 L 0:   8 [-]: GETTABLE R6 R1 R4; var6 = var1[var4]
-       9 [-]: FASTCALL1 62 R6 L1; 
+       9 [-]: FASTCALL1 64 R6 L1; 
       10 [-]: GETIMPORT R5 4; var5 = 0x7B998233
       11 [-]: CALL R5 2 2  ; var5 = var5(var6)
 L 1:  12 [-]: JUMPIF R5 L2 ; goto L2 if var5

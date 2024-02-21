@@ -21,7 +21,7 @@
        1 [-]: LOADN R1 0   ; var1 = 0
        2 [-]: CALL R0 2 1  ; var0(var1)
        3 [-]: GETIMPORT R1 3; var1 = 0x76027626
-       4 [-]: FASTCALL1 62 R1 L0; 
+       4 [-]: FASTCALL1 64 R1 L0; 
        5 [-]: GETIMPORT R0 5; var0 = 0x7B998233
        6 [-]: CALL R0 2 2  ; var0 = var0(var1)
 L 0:   7 [-]: JUMPIF R0 L2 ; goto L2 if var0

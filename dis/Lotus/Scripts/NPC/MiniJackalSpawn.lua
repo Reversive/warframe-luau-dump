@@ -20,7 +20,7 @@
 ; Max Stack Size:  5
 
        0 [-]: LOADNIL R1   ; var1 = nil
-L 0:   1 [-]: FASTCALL1 62 R1 L1; 
+L 0:   1 [-]: FASTCALL1 64 R1 L1; 
        2 [-]: MOVE R3 R1   ; var3 = var1
        3 [-]: GETIMPORT R2 1; var2 = 0x7B998233
        4 [-]: CALL R2 2 2  ; var2 = var2(var3)
@@ -54,7 +54,7 @@ L 0:   3 [-]: GETIMPORT R1 4; var1 = 0xBE190284
        4 [-]: NAMECALL R1 R1 K5; var2 = var1; var1 = var1[0x5C390F04]
        5 [-]: CALL R1 2 2  ; var1 = var1(var2)
        6 [-]: LOADN R2 4   ; var2 = 4
-       7 [-]: JUMPIFNOTEQ R1 R2 L1; goto L1 if var1 ~= var262478
+       7 [-]: JUMPIFNOTEQ R1 R2 L1; goto L1 if var1 ~= var262433
        8 [-]: GETIMPORT R1 4; var1 = 0xBE190284
        9 [-]: GETIMPORT R3 7; var3 = 0x0469F296
       10 [-]: LOADK R4 K8  ; var4 = "StopNormalTransmissions"
@@ -73,7 +73,7 @@ L 2:  16 [-]: GETIMPORT R1 12; var1 = 0x89326C93
 L 3:  23 [-]: GETTABLE R5 R1 R4; var5 = var1[var4]
       24 [-]: NAMECALL R5 R5 K14; var6 = var5; var5 = var5[0xBB610E5B]
       25 [-]: CALL R5 2 2  ; var5 = var5(var6)
-      26 [-]: FASTCALL1 62 R5 L4; 
+      26 [-]: FASTCALL1 64 R5 L4; 
       27 [-]: MOVE R7 R5   ; var7 = var5
       28 [-]: GETIMPORT R6 16; var6 = 0x7B998233
       29 [-]: CALL R6 2 2  ; var6 = var6(var7)

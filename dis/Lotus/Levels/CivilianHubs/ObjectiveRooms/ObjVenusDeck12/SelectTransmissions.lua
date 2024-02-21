@@ -25,7 +25,7 @@
 ; Max Stack Size:  4
 
        0 [-]: GETIMPORT R2 1; var2 = 0x25D99D89
-       1 [-]: FASTCALL1 62 R2 L0; 
+       1 [-]: FASTCALL1 64 R2 L0; 
        2 [-]: GETIMPORT R1 3; var1 = 0x7B998233
        3 [-]: CALL R1 2 2  ; var1 = var1(var2)
 L 0:   4 [-]: JUMPIFNOT R1 L1; goto L1 if not var1
@@ -47,7 +47,7 @@ L 1:   7 [-]: GETIMPORT R1 1; var1 = 0x25D99D89
 ; Is_vararg:       0
 ; Max Stack Size:  5
 
-       0 [-]: FASTCALL1 62 R0 L0; 
+       0 [-]: FASTCALL1 64 R0 L0; 
        1 [-]: MOVE R2 R0   ; var2 = var0
        2 [-]: GETIMPORT R1 1; var1 = 0x7B998233
        3 [-]: CALL R1 2 2  ; var1 = var1(var2)
@@ -56,7 +56,7 @@ L 0:   4 [-]: JUMPIFNOT R1 L1; goto L1 if not var1
 L 1:   6 [-]: GETIMPORT R1 3; var1 = 0x4E9CA548
        7 [-]: JUMPIFNOT R1 L3; goto L3 if not var1
        8 [-]: GETIMPORT R2 6; var2 = _T["curTransmission"]
-       9 [-]: FASTCALL1 62 R2 L2; 
+       9 [-]: FASTCALL1 64 R2 L2; 
       10 [-]: GETIMPORT R1 1; var1 = 0x7B998233
       11 [-]: CALL R1 2 2  ; var1 = var1(var2)
 L 2:  12 [-]: JUMPIF R1 L3 ; goto L3 if var1
@@ -69,12 +69,12 @@ L 2:  12 [-]: JUMPIF R1 L3 ; goto L3 if var1
 L 3:  19 [-]: GETIMPORT R1 10; var1 = 0x89326C93
       20 [-]: NAMECALL R1 R1 K11; var2 = var1; var1 = var1[0x78298275]
       21 [-]: CALL R1 2 2  ; var1 = var1(var2)
-      22 [-]: FASTCALL1 62 R1 L4; 
+      22 [-]: FASTCALL1 64 R1 L4; 
       23 [-]: MOVE R3 R1   ; var3 = var1
       24 [-]: GETIMPORT R2 1; var2 = 0x7B998233
       25 [-]: CALL R2 2 2  ; var2 = var2(var3)
 L 4:  26 [-]: JUMPIF R2 L6 ; goto L6 if var2
-      27 [-]: FASTCALL1 62 R0 L5; 
+      27 [-]: FASTCALL1 64 R0 L5; 
       28 [-]: MOVE R3 R0   ; var3 = var0
       29 [-]: GETIMPORT R2 1; var2 = 0x7B998233
       30 [-]: CALL R2 2 2  ; var2 = var2(var3)
@@ -100,7 +100,7 @@ L 6:  35 [-]: RETURN R0 0  ;
        5 [-]: CALL R1 2 1  ; var1(var2)
        6 [-]: GETIMPORT R2 7; var2 = 0x92CAB4B5
        7 [-]: GETIMPORT R3 9; var3 = 0x25D99D89
-       8 [-]: FASTCALL1 62 R3 L0; 
+       8 [-]: FASTCALL1 64 R3 L0; 
        9 [-]: GETIMPORT R2 11; var2 = 0x7B998233
       10 [-]: CALL R2 2 2  ; var2 = var2(var3)
 L 0:  11 [-]: JUMPIFNOT R2 L1; goto L1 if not var2

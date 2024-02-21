@@ -53,7 +53,7 @@
 
 
 ; Name:            
-; Defined at line: 13
+; Defined at line: 15
 ; #Upvalues:       1
 ; #Parameters:     10
 ; Is_vararg:       0
@@ -76,7 +76,7 @@ L 0:  11 [-]: JUMPIFNOT R2 L1; goto L1 if not var2
       14 [-]: CALL R12 3 2 ; var12 = var12(var13, var14)
       15 [-]: JUMPIFNOT R12 L12; goto L12 if not var12
 L 1:  16 [-]: LOADNIL R12  ; var12 = nil
-      17 [-]: FASTCALL1 62 R7 L2; 
+      17 [-]: FASTCALL1 64 R7 L2; 
       18 [-]: MOVE R14 R7  ; var14 = var7
       19 [-]: GETIMPORT R13 7; var13 = 0x7B998233
       20 [-]: CALL R13 2 2 ; var13 = var13(var14)
@@ -93,7 +93,7 @@ L 4:  30 [-]: MOVE R15 R1  ; var15 = var1
       31 [-]: NAMECALL R13 R11 K9; var14 = var11; var13 = var11[0x0688A24B]
       32 [-]: CALL R13 3 2 ; var13 = var13(var14, var15)
       33 [-]: MOVE R12 R13 ; var12 = var13
-L 5:  34 [-]: FASTCALL1 62 R12 L6; 
+L 5:  34 [-]: FASTCALL1 64 R12 L6; 
       35 [-]: MOVE R14 R12 ; var14 = var12
       36 [-]: GETIMPORT R13 7; var13 = 0x7B998233
       37 [-]: CALL R13 2 2 ; var13 = var13(var14)
@@ -109,7 +109,7 @@ L 7:  40 [-]: NAMECALL R13 R11 K10; var14 = var11; var13 = var11[0xCA9EA368]
       47 [-]: NAMECALL R16 R12 K12; var17 = var12; var16 = var12[0x57CBF110]
       48 [-]: CALL R16 2 2 ; var16 = var16(var17)
       49 [-]: GETIMPORT R17 14; var17 = EMPTY_SYMBOL
-      50 [-]: JUMPIFEQ R16 R17 L8; goto L8 if var16 == var269226565
+      50 [-]: JUMPIFEQ R16 R17 L8; goto L8 if var16 == var269226572
       51 [-]: NAMECALL R18 R12 K12; var19 = var12; var18 = var12[0x57CBF110]
       52 [-]: CALL R18 2 2 ; var18 = var18(var19)
       53 [-]: NAMECALL R18 R18 K15; var19 = var18; var18 = var18[0x6D604BA7]
@@ -152,7 +152,7 @@ L 9:  68 [-]: DUPTABLE R16 34;
       90 [-]: CALL R18 3 2 ; var18 = var18(var19, var20)
       91 [-]: SUBK R17 R18 K0; var17 = var18 - 1
       92 [-]: SETTABLEKS R17 R16 K26; var17["Level"] = var16
-      93 [-]: JUMPIFLT R13 R14 L10; goto L10 if var13 < var16781595
+      93 [-]: JUMPIFLT R13 R14 L10; goto L10 if var13 < var16781574
       94 [-]: LOADB R17 0 +1; var17 = false
 L10:  95 [-]: LOADB R17 1  ; var17 = true
 L11:  96 [-]: SETTABLEKS R17 R16 K27; var17["Locked"] = var16
@@ -179,7 +179,7 @@ L12: 116 [-]: RETURN R10 1 ;
 
 
 ; Name:            
-; Defined at line: 68
+; Defined at line: 70
 ; #Upvalues:       1
 ; #Parameters:     10
 ; Is_vararg:       0
@@ -201,7 +201,7 @@ L12: 116 [-]: RETURN R10 1 ;
 
 
 ; Name:            
-; Defined at line: 72
+; Defined at line: 74
 ; #Upvalues:       4
 ; #Parameters:     2
 ; Is_vararg:       0

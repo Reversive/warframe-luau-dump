@@ -106,7 +106,7 @@ L 0:   4 [-]: LOADB R1 1   ; var1 = true
        0 [-]: GETUPVAL R0 0; var0 = upvalues[0]
        1 [-]: JUMPIFNOT R0 L1; goto L1 if not var0
        2 [-]: GETIMPORT R1 1; var1 = 0xAE91E43B
-       3 [-]: FASTCALL1 62 R1 L0; 
+       3 [-]: FASTCALL1 64 R1 L0; 
        4 [-]: GETIMPORT R0 3; var0 = 0x7B998233
        5 [-]: CALL R0 2 2  ; var0 = var0(var1)
 L 0:   6 [-]: JUMPIFNOT R0 L2; goto L2 if not var0
@@ -183,7 +183,7 @@ L 3:  24 [-]: RETURN R0 0  ;
 
        0 [-]: GETIMPORT R1 1; var1 = 0xAE91E43B
        1 [-]: LOADK R3 K2  ; var3 = "Results.Result"
-       2 [-]: LOADN R4 29  ; var4 = 29
+       2 [-]: LOADN R4 31  ; var4 = 31
        3 [-]: GETIMPORT R5 1; var5 = 0xAE91E43B
        4 [-]: LOADK R7 K3  ; var7 = "/Lotus/Language/Menu/Success_Title"
        5 [-]: LOADB R8 0   ; var8 = false
@@ -193,7 +193,7 @@ L 3:  24 [-]: RETURN R0 0  ;
        9 [-]: CALL R1 0 1  ; var1(var2, ...)
       10 [-]: GETIMPORT R1 1; var1 = 0xAE91E43B
       11 [-]: LOADK R3 K6  ; var3 = "Results.Details"
-      12 [-]: LOADN R4 29  ; var4 = 29
+      12 [-]: LOADN R4 31  ; var4 = 31
       13 [-]: GETIMPORT R5 1; var5 = 0xAE91E43B
       14 [-]: LOADK R7 K7  ; var7 = "/Lotus/Language/Menu/Success_Details"
       15 [-]: LOADB R8 0   ; var8 = false
@@ -218,8 +218,7 @@ L 0:  28 [-]: GETIMPORT R5 10; var5 = 0x7F5022CF[0xE8072DED]
       34 [-]: CONCAT R2 R3 R4; var2 = var3 .. var4
       35 [-]: GETIMPORT R6 10; var6 = 0x7F5022CF[0xE8072DED]
       36 [-]: LOADK R7 K16 ; var7 = "%02d"
-      37 [-]: DIVK R9 R0 K17; var9 = var0 / 60
-      38 [-]: FASTCALL1 12 R9 L1; 
+           38 [-]: FASTCALL1 12 R9 L1; 
       39 [-]: GETIMPORT R8 21; var8 = 0x5BCED4C4[0x55F27C30]
       40 [-]: CALL R8 2 2  ; var8 = var8(var9)
 L 1:  41 [-]: CALL R6 3 2  ; var6 = var6(var7, var8)
@@ -232,7 +231,7 @@ L 1:  41 [-]: CALL R6 3 2  ; var6 = var6(var7, var8)
       48 [-]: CONCAT R4 R5 R7; var4 = var5 .. var7
       49 [-]: GETIMPORT R5 1; var5 = 0xAE91E43B
       50 [-]: LOADK R7 K22 ; var7 = "Results.ElapsedTime.Label"
-      51 [-]: LOADN R8 29  ; var8 = 29
+      51 [-]: LOADN R8 31  ; var8 = 31
       52 [-]: GETIMPORT R9 1; var9 = 0xAE91E43B
       53 [-]: LOADK R11 K23; var11 = "/Lotus/Language/Menu/ElapsedTime"
       54 [-]: LOADB R12 1  ; var12 = true
@@ -254,7 +253,7 @@ L 1:  41 [-]: CALL R6 3 2  ; var6 = var6(var7, var8)
 
        0 [-]: GETIMPORT R1 1; var1 = 0xAE91E43B
        1 [-]: LOADK R3 K2  ; var3 = "Results.Result"
-       2 [-]: LOADN R4 29  ; var4 = 29
+       2 [-]: LOADN R4 31  ; var4 = 31
        3 [-]: GETIMPORT R5 1; var5 = 0xAE91E43B
        4 [-]: LOADK R7 K3  ; var7 = "/Lotus/Language/Menu/Failure_Title"
        5 [-]: LOADB R8 0   ; var8 = false
@@ -264,7 +263,7 @@ L 1:  41 [-]: CALL R6 3 2  ; var6 = var6(var7, var8)
        9 [-]: CALL R1 0 1  ; var1(var2, ...)
       10 [-]: GETIMPORT R1 1; var1 = 0xAE91E43B
       11 [-]: LOADK R3 K6  ; var3 = "Results.Details"
-      12 [-]: LOADN R4 29  ; var4 = 29
+      12 [-]: LOADN R4 31  ; var4 = 31
       13 [-]: GETIMPORT R5 1; var5 = 0xAE91E43B
       14 [-]: LOADK R7 K7  ; var7 = "/Lotus/Language/Menu/Failure_Details"
       15 [-]: LOADB R8 0   ; var8 = false
@@ -289,8 +288,7 @@ L 0:  28 [-]: GETIMPORT R5 10; var5 = 0x7F5022CF[0xE8072DED]
       34 [-]: CONCAT R2 R3 R4; var2 = var3 .. var4
       35 [-]: GETIMPORT R6 10; var6 = 0x7F5022CF[0xE8072DED]
       36 [-]: LOADK R7 K16 ; var7 = "%02d"
-      37 [-]: DIVK R9 R0 K17; var9 = var0 / 60
-      38 [-]: FASTCALL1 12 R9 L1; 
+           38 [-]: FASTCALL1 12 R9 L1; 
       39 [-]: GETIMPORT R8 21; var8 = 0x5BCED4C4[0x55F27C30]
       40 [-]: CALL R8 2 2  ; var8 = var8(var9)
 L 1:  41 [-]: CALL R6 3 2  ; var6 = var6(var7, var8)
@@ -303,7 +301,7 @@ L 1:  41 [-]: CALL R6 3 2  ; var6 = var6(var7, var8)
       48 [-]: CONCAT R4 R5 R7; var4 = var5 .. var7
       49 [-]: GETIMPORT R5 1; var5 = 0xAE91E43B
       50 [-]: LOADK R7 K22 ; var7 = "Results.ElapsedTime.Label"
-      51 [-]: LOADN R8 29  ; var8 = 29
+      51 [-]: LOADN R8 31  ; var8 = 31
       52 [-]: GETIMPORT R9 1; var9 = 0xAE91E43B
       53 [-]: LOADK R11 K23; var11 = "/Lotus/Language/Menu/ElapsedTime"
       54 [-]: LOADB R12 1  ; var12 = true

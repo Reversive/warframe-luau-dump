@@ -161,7 +161,7 @@ L10:  90 [-]: LOADN R3 1   ; var3 = 1
       94 [-]: LOADN R6 1   ; var6 = 1
       95 [-]: FORNPREP R5 L13; nforprep start - [escape at L13] -- var5 = iterator
 L11:  96 [-]: GETTABLE R8 R1 R7; var8 = var1[var7]
-      97 [-]: JUMPIFNOTLT R4 R8 L12; goto L12 if var4 >= var117507127
+      97 [-]: JUMPIFNOTLT R4 R8 L12; goto L12 if var4 >= var117507101
       98 [-]: GETTABLE R4 R1 R7; var4 = var1[var7]
       99 [-]: MOVE R3 R7   ; var3 = var7
 L12: 100 [-]: FORNLOOP R5 L11; nforloop end - iterate + goto L11

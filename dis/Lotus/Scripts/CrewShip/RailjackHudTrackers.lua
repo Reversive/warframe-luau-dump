@@ -35,12 +35,12 @@
 ; Max Stack Size:  13
 
        0 [-]: GETUPVAL R1 0; var1 = upvalues[0]
-       1 [-]: FASTCALL1 62 R1 L0; 
+       1 [-]: FASTCALL1 64 R1 L0; 
        2 [-]: GETIMPORT R0 1; var0 = 0x7B998233
        3 [-]: CALL R0 2 2  ; var0 = var0(var1)
 L 0:   4 [-]: JUMPIFNOT R0 L4; goto L4 if not var0
        5 [-]: GETUPVAL R1 1; var1 = upvalues[1]
-       6 [-]: FASTCALL1 62 R1 L1; 
+       6 [-]: FASTCALL1 64 R1 L1; 
        7 [-]: GETIMPORT R0 1; var0 = 0x7B998233
        8 [-]: CALL R0 2 2  ; var0 = var0(var1)
 L 1:   9 [-]: JUMPIFNOT R0 L2; goto L2 if not var0
@@ -50,7 +50,7 @@ L 2:  11 [-]: GETUPVAL R0 1; var0 = upvalues[1]
       13 [-]: CALL R0 2 2  ; var0 = var0(var1)
       14 [-]: SETUPVAL R0 0; upvalues[0] = var0
       15 [-]: GETUPVAL R1 0; var1 = upvalues[0]
-      16 [-]: FASTCALL1 62 R1 L3; 
+      16 [-]: FASTCALL1 64 R1 L3; 
       17 [-]: GETIMPORT R0 1; var0 = 0x7B998233
       18 [-]: CALL R0 2 2  ; var0 = var0(var1)
 L 3:  19 [-]: JUMPIFNOT R0 L4; goto L4 if not var0
@@ -58,7 +58,7 @@ L 3:  19 [-]: JUMPIFNOT R0 L4; goto L4 if not var0
 L 4:  21 [-]: GETUPVAL R0 0; var0 = upvalues[0]
       22 [-]: NAMECALL R0 R0 K3; var1 = var0; var0 = var0[0xE79E7EF4]
       23 [-]: CALL R0 2 2  ; var0 = var0(var1)
-      24 [-]: FASTCALL1 62 R0 L5; 
+      24 [-]: FASTCALL1 64 R0 L5; 
       25 [-]: MOVE R2 R0   ; var2 = var0
       26 [-]: GETIMPORT R1 1; var1 = 0x7B998233
       27 [-]: CALL R1 2 2  ; var1 = var1(var2)
@@ -92,7 +92,7 @@ L 8:  47 [-]: GETTABLEKS R7 R5 K9; var7 = var5["Data"]
 L 9:  55 [-]: GETTABLEKS R7 R6 K13; var7 = var6["allowed"]
       56 [-]: JUMPIFNOT R7 L11; goto L11 if not var7
       57 [-]: GETTABLEKS R7 R6 K13; var7 = var6["allowed"]
-      58 [-]: JUMPIFNOTEQ R7 R1 L10; goto L10 if var7 ~= var-1459288292
+      58 [-]: JUMPIFNOTEQ R7 R1 L10; goto L10 if var7 ~= var-1459288257
       59 [-]: GETTABLEKS R7 R5 K12; var7 = var5["SetVisible"]
       60 [-]: LOADB R8 1   ; var8 = true
       61 [-]: CALL R7 2 1  ; var7(var8)
@@ -105,7 +105,7 @@ L11:  67 [-]: GETTABLEKS R7 R6 K14; var7 = var6["name"]
       68 [-]: JUMPIFNOT R7 L13; goto L13 if not var7
       69 [-]: GETTABLEKS R7 R6 K14; var7 = var6["name"]
       70 [-]: GETUPVAL R8 3; var8 = upvalues[3]
-      71 [-]: JUMPIFNOTEQ R7 R8 L12; goto L12 if var7 ~= var-1459288292
+      71 [-]: JUMPIFNOTEQ R7 R8 L12; goto L12 if var7 ~= var-1459288257
       72 [-]: GETTABLEKS R7 R5 K12; var7 = var5["SetVisible"]
       73 [-]: LOADB R8 1   ; var8 = true
       74 [-]: CALL R7 2 1  ; var7(var8)
@@ -119,7 +119,7 @@ L13:  80 [-]: LOADB R7 1   ; var7 = true
       82 [-]: GETTABLEKS R9 R6 K17; var9 = var6["disallowed"]
       83 [-]: CALL R8 2 4  ; var8, var9, var10 = var8(var9)
       84 [-]: FORGPREP_INEXT R8 L15; 
-L14:  85 [-]: JUMPIFNOTEQ R12 R1 L15; goto L15 if var12 ~= var1819
+L14:  85 [-]: JUMPIFNOTEQ R12 R1 L15; goto L15 if var12 ~= var1798
       86 [-]: LOADB R7 0   ; var7 = false
       87 [-]: JUMP L16     ; goto L16
 L15:  88 [-]: FORGLOOP R8 L14 2 [inext]; 
@@ -160,7 +160,7 @@ L 0:   7 [-]: RETURN R0 0  ;
 ; Max Stack Size:  2
 
 L 0:   0 [-]: GETIMPORT R1 1; var1 = 0xBE190284
-       1 [-]: FASTCALL1 62 R1 L1; 
+       1 [-]: FASTCALL1 64 R1 L1; 
        2 [-]: GETIMPORT R0 3; var0 = 0x7B998233
        3 [-]: CALL R0 2 2  ; var0 = var0(var1)
 L 1:   4 [-]: JUMPIF R0 L2 ; goto L2 if var0
@@ -173,7 +173,7 @@ L 2:   9 [-]: GETIMPORT R0 6; var0 = 0xCBD666E1
       11 [-]: CALL R0 2 1  ; var0(var1)
       12 [-]: JUMPBACK L0  ; goto L0
 L 3:  13 [-]: GETIMPORT R1 9; var1 = _T["LocationTrackerAddedCallbacks"]
-      14 [-]: FASTCALL1 62 R1 L4; 
+      14 [-]: FASTCALL1 64 R1 L4; 
       15 [-]: GETIMPORT R0 3; var0 = 0x7B998233
       16 [-]: CALL R0 2 2  ; var0 = var0(var1)
 L 4:  17 [-]: JUMPIF R0 L5 ; goto L5 if var0

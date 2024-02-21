@@ -117,7 +117,7 @@
        6 [-]: GETTABLEKS R3 R4 K5; var3 = var4["UIMovie_TransmissionMovie"]
        7 [-]: NAMECALL R1 R1 K6; var2 = var1; var1 = var1[0xBCFB64AB]
        8 [-]: CALL R1 3 2  ; var1 = var1(var2, var3)
-       9 [-]: FASTCALL1 62 R1 L0; 
+       9 [-]: FASTCALL1 64 R1 L0; 
       10 [-]: MOVE R3 R1   ; var3 = var1
       11 [-]: GETIMPORT R2 8; var2 = 0x7B998233
       12 [-]: CALL R2 2 2  ; var2 = var2(var3)
@@ -128,7 +128,7 @@ L 0:  13 [-]: JUMPIF R2 L1 ; goto L1 if var2
       17 [-]: CALL R2 4 1  ; var2(var3, var4, var5)
 L 1:  18 [-]: JUMPIFNOT R0 L3; goto L3 if not var0
       19 [-]: GETUPVAL R2 1; var2 = upvalues[1]
-      20 [-]: FASTCALL1 62 R2 L2; 
+      20 [-]: FASTCALL1 64 R2 L2; 
       21 [-]: GETIMPORT R1 8; var1 = 0x7B998233
       22 [-]: CALL R1 2 2  ; var1 = var1(var2)
 L 2:  23 [-]: JUMPIF R1 L3 ; goto L3 if var1
@@ -156,7 +156,7 @@ L 3:  27 [-]: GETUPVAL R2 2; var2 = upvalues[2]
        0 [-]: LOADB R1 0   ; var1 = false
        1 [-]: SETUPVAL R1 0; upvalues[1] = var0
        2 [-]: GETIMPORT R2 2; var2 = _T["ScenarioBeaconInviteInfo"]
-       3 [-]: FASTCALL1 62 R2 L0; 
+       3 [-]: FASTCALL1 64 R2 L0; 
        4 [-]: GETIMPORT R1 4; var1 = 0x7B998233
        5 [-]: CALL R1 2 2  ; var1 = var1(var2)
 L 0:   6 [-]: JUMPIF R1 L1 ; goto L1 if var1
@@ -185,7 +185,7 @@ L 1:  13 [-]: GETUPVAL R1 1; var1 = upvalues[1]
 L 0:   3 [-]: LOADB R0 0   ; var0 = false
        4 [-]: SETUPVAL R0 0; upvalues[0] = var0
        5 [-]: GETIMPORT R1 2; var1 = _T["ScenarioBeaconInviteInfo"]
-       6 [-]: FASTCALL1 62 R1 L1; 
+       6 [-]: FASTCALL1 64 R1 L1; 
        7 [-]: GETIMPORT R0 4; var0 = 0x7B998233
        8 [-]: CALL R0 2 2  ; var0 = var0(var1)
 L 1:   9 [-]: JUMPIF R0 L2 ; goto L2 if var0
@@ -211,7 +211,7 @@ L 2:  16 [-]: GETUPVAL R0 1; var0 = upvalues[1]
        0 [-]: GETIMPORT R3 1; var3 = gContextActionType
        1 [-]: NAMECALL R1 R0 K2; var2 = var0; var1 = var0[0xC9F6A7D7]
        2 [-]: CALL R1 3 2  ; var1 = var1(var2, var3)
-       3 [-]: FASTCALL1 62 R1 L0; 
+       3 [-]: FASTCALL1 64 R1 L0; 
        4 [-]: MOVE R3 R1   ; var3 = var1
        5 [-]: GETIMPORT R2 4; var2 = 0x7B998233
        6 [-]: CALL R2 2 2  ; var2 = var2(var3)
@@ -250,7 +250,7 @@ L 1:  10 [-]: GETIMPORT R4 7; var4 = 0xCD149E8B
        0 [-]: LOADB R0 1   ; var0 = true
        1 [-]: SETUPVAL R0 0; upvalues[0] = var0
        2 [-]: GETIMPORT R1 1; var1 = 0x4C8FFB4D
-       3 [-]: FASTCALL1 62 R1 L0; 
+       3 [-]: FASTCALL1 64 R1 L0; 
        4 [-]: GETIMPORT R0 3; var0 = 0x7B998233
        5 [-]: CALL R0 2 2  ; var0 = var0(var1)
 L 0:   6 [-]: JUMPIF R0 L1 ; goto L1 if var0
@@ -259,7 +259,7 @@ L 0:   6 [-]: JUMPIF R0 L1 ; goto L1 if var0
        9 [-]: GETIMPORT R1 1; var1 = 0x4C8FFB4D
       10 [-]: CALL R0 2 1  ; var0(var1)
 L 1:  11 [-]: GETIMPORT R1 7; var1 = _T["ScenarioBeaconInviteInfo"]
-      12 [-]: FASTCALL1 62 R1 L2; 
+      12 [-]: FASTCALL1 64 R1 L2; 
       13 [-]: GETIMPORT R0 3; var0 = 0x7B998233
       14 [-]: CALL R0 2 2  ; var0 = var0(var1)
 L 2:  15 [-]: JUMPIF R0 L3 ; goto L3 if var0
@@ -273,7 +273,7 @@ L 2:  15 [-]: JUMPIF R0 L3 ; goto L3 if var0
       23 [-]: NAMECALL R0 R0 K18; var1 = var0; var0 = var0[0x8F4A903C]
       24 [-]: CALL R0 5 1  ; var0(var1, var2, var3, var4)
 L 3:  25 [-]: GETIMPORT R1 20; var1 = _T["ScenarioBeacon"]
-      26 [-]: FASTCALL1 62 R1 L4; 
+      26 [-]: FASTCALL1 64 R1 L4; 
       27 [-]: GETIMPORT R0 3; var0 = 0x7B998233
       28 [-]: CALL R0 2 2  ; var0 = var0(var1)
 L 4:  29 [-]: JUMPIF R0 L5 ; goto L5 if var0
@@ -303,7 +303,7 @@ L 5:  40 [-]: GETUPVAL R0 2; var0 = upvalues[2]
        0 [-]: LOADB R0 0   ; var0 = false
        1 [-]: SETUPVAL R0 0; upvalues[0] = var0
        2 [-]: GETIMPORT R1 2; var1 = _T["ScenarioBeaconInviteInfo"]
-       3 [-]: FASTCALL1 62 R1 L0; 
+       3 [-]: FASTCALL1 64 R1 L0; 
        4 [-]: GETIMPORT R0 4; var0 = 0x7B998233
        5 [-]: CALL R0 2 2  ; var0 = var0(var1)
 L 0:   6 [-]: JUMPIF R0 L1 ; goto L1 if var0
@@ -387,7 +387,7 @@ L 1:  13 [-]: GETUPVAL R0 1; var0 = upvalues[1]
       16 [-]: CAPTURE UPVAL U1; 
       17 [-]: SETTABLEKS R2 R1 K10; var2["mElementDrawCallback"] = var1
       18 [-]: GETIMPORT R2 12; var2 = 0xE184839A
-      19 [-]: FASTCALL1 62 R2 L0; 
+      19 [-]: FASTCALL1 64 R2 L0; 
       20 [-]: GETIMPORT R1 14; var1 = 0x7B998233
       21 [-]: CALL R1 2 2  ; var1 = var1(var2)
 L 0:  22 [-]: JUMPIF R1 L1 ; goto L1 if var1
@@ -410,7 +410,7 @@ L 1:  31 [-]: RETURN R0 0  ;
 ; Max Stack Size:  5
 
        0 [-]: GETIMPORT R0 2; var0 = _T["ScenarioBeacon"]
-       1 [-]: FASTCALL1 62 R0 L0; 
+       1 [-]: FASTCALL1 64 R0 L0; 
        2 [-]: MOVE R2 R0   ; var2 = var0
        3 [-]: GETIMPORT R1 4; var1 = 0x7B998233
        4 [-]: CALL R1 2 2  ; var1 = var1(var2)
@@ -481,7 +481,7 @@ L 1:   7 [-]: GETIMPORT R3 6; var3 = 0xD5174704
       48 [-]: CALL R0 5 1  ; var0(var1, var2, var3, var4)
       49 [-]: GETIMPORT R0 6; var0 = 0xAE91E43B
       50 [-]: LOADK R2 K11 ; var2 = "HintPanel.Prompt"
-      51 [-]: LOADN R3 36  ; var3 = 36
+      51 [-]: LOADN R3 38  ; var3 = 38
       52 [-]: GETUPVAL R5 0; var5 = upvalues[0]
       53 [-]: GETTABLEKS R4 R5 K3; var4 = var5["FloatingContentHighlight"]
       54 [-]: NAMECALL R0 R0 K8; var1 = var0; var0 = var0[0x67BC869F]
@@ -502,28 +502,28 @@ L 1:   7 [-]: GETIMPORT R3 6; var3 = 0xD5174704
       69 [-]: CALL R0 5 1  ; var0(var1, var2, var3, var4)
       70 [-]: GETIMPORT R0 6; var0 = 0xAE91E43B
       71 [-]: LOADK R2 K14 ; var2 = "Panel.Desc"
-      72 [-]: LOADN R3 36  ; var3 = 36
+      72 [-]: LOADN R3 38  ; var3 = 38
       73 [-]: GETUPVAL R5 0; var5 = upvalues[0]
       74 [-]: GETTABLEKS R4 R5 K4; var4 = var5["Content"]
       75 [-]: NAMECALL R0 R0 K8; var1 = var0; var0 = var0[0x67BC869F]
       76 [-]: CALL R0 5 1  ; var0(var1, var2, var3, var4)
       77 [-]: GETIMPORT R0 6; var0 = 0xAE91E43B
       78 [-]: LOADK R2 K15 ; var2 = "Panel.PayoffTitle"
-      79 [-]: LOADN R3 36  ; var3 = 36
+      79 [-]: LOADN R3 38  ; var3 = 38
       80 [-]: GETUPVAL R5 0; var5 = upvalues[0]
       81 [-]: GETTABLEKS R4 R5 K2; var4 = var5["FloatingContent"]
       82 [-]: NAMECALL R0 R0 K8; var1 = var0; var0 = var0[0x67BC869F]
       83 [-]: CALL R0 5 1  ; var0(var1, var2, var3, var4)
       84 [-]: GETIMPORT R0 6; var0 = 0xAE91E43B
       85 [-]: LOADK R2 K16 ; var2 = "Panel.PayoffDesc"
-      86 [-]: LOADN R3 36  ; var3 = 36
+      86 [-]: LOADN R3 38  ; var3 = 38
       87 [-]: GETUPVAL R5 0; var5 = upvalues[0]
       88 [-]: GETTABLEKS R4 R5 K4; var4 = var5["Content"]
       89 [-]: NAMECALL R0 R0 K8; var1 = var0; var0 = var0[0x67BC869F]
       90 [-]: CALL R0 5 1  ; var0(var1, var2, var3, var4)
       91 [-]: GETIMPORT R0 6; var0 = 0xAE91E43B
       92 [-]: LOADK R2 K17 ; var2 = "Panel.RewardTitle"
-      93 [-]: LOADN R3 36  ; var3 = 36
+      93 [-]: LOADN R3 38  ; var3 = 38
       94 [-]: GETUPVAL R5 0; var5 = upvalues[0]
       95 [-]: GETTABLEKS R4 R5 K2; var4 = var5["FloatingContent"]
       96 [-]: NAMECALL R0 R0 K8; var1 = var0; var0 = var0[0x67BC869F]
@@ -572,7 +572,7 @@ L 1:   7 [-]: GETIMPORT R3 6; var3 = 0xD5174704
       31 [-]: GETUPVAL R9 1; var9 = upvalues[1]
       32 [-]: ADDK R8 R9 K18; var8 = var9 + 400
       33 [-]: SETLIST R6 R7 2 [1]; var6[1] = var7; var6[2] = var8; var6[3] = var9; 
-      34 [-]: LOADK R7 K19 ; var7 = 0.14999999999999999
+      34 [-]: LOADK R7 K19 ; var7 = 0.15000000596046448
       35 [-]: CALL R1 7 1  ; var1(var2, var3, var4, var5, var6, var7)
       36 [-]: GETIMPORT R1 17; var1 = 0x25312C9B
       37 [-]: GETIMPORT R2 13; var2 = 0xAE91E43B
@@ -585,7 +585,7 @@ L 1:   7 [-]: GETIMPORT R3 6; var3 = 0xD5174704
       44 [-]: LOADN R7 100 ; var7 = 100
       45 [-]: SETLIST R6 R7 1 [1]; var6[1] = var7; var6[2] = var8; 
       46 [-]: LOADK R7 K21 ; var7 = 0.25
-      47 [-]: LOADK R8 K19 ; var8 = 0.14999999999999999
+      47 [-]: LOADK R8 K19 ; var8 = 0.15000000596046448
       48 [-]: CALL R1 8 1  ; var1(var2, var3, var4, var5, var6, var7, var8)
       49 [-]: GETIMPORT R1 13; var1 = 0xAE91E43B
       50 [-]: LOADB R3 0   ; var3 = false
@@ -643,7 +643,7 @@ L 0:  53 [-]: RETURN R0 0  ;
       39 [-]: NEWTABLE R5 0 1; var5 = {}
       40 [-]: GETUPVAL R6 1; var6 = upvalues[1]
       41 [-]: SETLIST R5 R6 1 [1]; var5[1] = var6; var5[2] = var7; 
-      42 [-]: LOADK R6 K20 ; var6 = 0.20000000000000001
+      42 [-]: LOADK R6 K20 ; var6 = 0.20000000298023224
       43 [-]: CALL R0 7 1  ; var0(var1, var2, var3, var4, var5, var6)
       44 [-]: GETUPVAL R1 3; var1 = upvalues[3]
       45 [-]: GETTABLEKS R0 R1 K21; var0 = var1[0xAE6791BA]
@@ -687,7 +687,7 @@ L 0:  53 [-]: RETURN R0 0  ;
       83 [-]: GETUPVAL R2 6; var2 = upvalues[6]
       84 [-]: NAMECALL R0 R0 K37; var1 = var0; var0 = var0[0xBCFB64AB]
       85 [-]: CALL R0 3 2  ; var0 = var0(var1, var2)
-      86 [-]: FASTCALL1 62 R0 L0; 
+      86 [-]: FASTCALL1 64 R0 L0; 
       87 [-]: MOVE R2 R0   ; var2 = var0
       88 [-]: GETIMPORT R1 39; var1 = 0x7B998233
       89 [-]: CALL R1 2 2  ; var1 = var1(var2)
@@ -757,7 +757,7 @@ L 1:  96 [-]: GETIMPORT R1 1; var1 = 0xAE91E43B
      153 [-]: CALL R1 5 1  ; var1(var2, var3, var4, var5)
      154 [-]: GETIMPORT R1 1; var1 = 0xAE91E43B
      155 [-]: LOADK R3 K70 ; var3 = "Panel.Desc"
-     156 [-]: LOADN R4 29  ; var4 = 29
+     156 [-]: LOADN R4 31  ; var4 = 31
      157 [-]: GETIMPORT R6 74; var6 = _T["ScenarioBeaconInviteInfo"]["playerName"]
      158 [-]: LOADK R7 K75 ; var7 = " - [HC] Objective Text"
      159 [-]: CONCAT R5 R6 R7; var5 = var6 .. var7
@@ -765,7 +765,7 @@ L 1:  96 [-]: GETIMPORT R1 1; var1 = 0xAE91E43B
      161 [-]: CALL R1 5 1  ; var1(var2, var3, var4, var5)
      162 [-]: GETIMPORT R1 1; var1 = 0xAE91E43B
      163 [-]: LOADK R3 K77 ; var3 = "Panel.PayoffDesc"
-     164 [-]: LOADN R4 29  ; var4 = 29
+     164 [-]: LOADN R4 31  ; var4 = 31
      165 [-]: LOADK R5 K78 ; var5 = "[HC] Their reward"
      166 [-]: NAMECALL R1 R1 K76; var2 = var1; var1 = var1[0x5F56EEAB]
      167 [-]: CALL R1 5 1  ; var1(var2, var3, var4, var5)
@@ -804,7 +804,7 @@ L 1:  96 [-]: GETIMPORT R1 1; var1 = 0xAE91E43B
      200 [-]: GETTABLEKS R3 R4 K91; var3 = var4["UISound_VotingStarted"]
      201 [-]: CALL R2 2 1  ; var2(var3)
      202 [-]: GETIMPORT R3 93; var3 = 0x51B303DE
-     203 [-]: FASTCALL1 62 R3 L2; 
+     203 [-]: FASTCALL1 64 R3 L2; 
      204 [-]: GETIMPORT R2 39; var2 = 0x7B998233
      205 [-]: CALL R2 2 2  ; var2 = var2(var3)
 L 2: 206 [-]: JUMPIF R2 L3 ; goto L3 if var2
@@ -819,7 +819,7 @@ L 3: 211 [-]: GETIMPORT R2 1; var2 = 0xAE91E43B
      215 [-]: NAMECALL R2 R2 K17; var3 = var2; var2 = var2[0x67BC869F]
      216 [-]: CALL R2 5 1  ; var2(var3, var4, var5, var6)
      217 [-]: GETIMPORT R3 96; var3 = 0x6768A9F4
-     218 [-]: FASTCALL1 62 R3 L4; 
+     218 [-]: FASTCALL1 64 R3 L4; 
      219 [-]: GETIMPORT R2 39; var2 = 0x7B998233
      220 [-]: CALL R2 2 2  ; var2 = var2(var3)
 L 4: 221 [-]: JUMPIF R2 L5 ; goto L5 if var2
@@ -849,7 +849,7 @@ L 4: 221 [-]: JUMPIF R2 L5 ; goto L5 if var2
 L 5: 245 [-]: GETUPVAL R2 13; var2 = upvalues[13]
      246 [-]: CALL R2 1 1  ; var2()
      247 [-]: GETIMPORT R2 106; var2 = _T["ScenarioBeacon"]
-     248 [-]: FASTCALL1 62 R2 L6; 
+     248 [-]: FASTCALL1 64 R2 L6; 
      249 [-]: MOVE R4 R2   ; var4 = var2
      250 [-]: GETIMPORT R3 39; var3 = 0x7B998233
      251 [-]: CALL R3 2 2  ; var3 = var3(var4)
@@ -974,7 +974,7 @@ L 0:  34 [-]: GETUPVAL R0 1; var0 = upvalues[1]
       37 [-]: GETUPVAL R2 2; var2 = upvalues[2]
       38 [-]: NAMECALL R0 R0 K22; var1 = var0; var0 = var0[0xBCFB64AB]
       39 [-]: CALL R0 3 2  ; var0 = var0(var1, var2)
-      40 [-]: FASTCALL1 62 R0 L1; 
+      40 [-]: FASTCALL1 64 R0 L1; 
       41 [-]: MOVE R2 R0   ; var2 = var0
       42 [-]: GETIMPORT R1 24; var1 = 0x7B998233
       43 [-]: CALL R1 2 2  ; var1 = var1(var2)

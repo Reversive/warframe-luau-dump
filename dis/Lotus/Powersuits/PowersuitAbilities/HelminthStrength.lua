@@ -8,7 +8,7 @@
        1 [-]: GETIMPORT R0 1; var0 = 0x2D0FAD09
        2 [-]: LOADK R1 K2  ; var1 = "Lotus.Scripts.Libs.AbilitiesLib"
        3 [-]: CALL R0 2 2  ; var0 = var0(var1)
-       4 [-]: LOADK R1 K3  ; var1 = 0.20000000000000001
+       4 [-]: LOADK R1 K3  ; var1 = 0.20000000298023224
        5 [-]: NEWCLOSURE R2 P0; 
        6 [-]: CAPTURE REF R1; 
        7 [-]: NEWCLOSURE R3 P1; 
@@ -36,15 +36,15 @@
 ; Max Stack Size:  2
 
        0 [-]: JUMPXEQKN R0 K0 L0 NOT; 
-       1 [-]: LOADK R1 K1  ; var1 = 0.20000000000000001
+       1 [-]: LOADK R1 K1  ; var1 = 0.20000000298023224
        2 [-]: SETUPVAL R1 0; upvalues[1] = var0
        3 [-]: RETURN R0 0  ; 
 L 0:   4 [-]: JUMPXEQKN R0 K2 L1 NOT; 
-       5 [-]: LOADK R1 K3  ; var1 = 0.29999999999999999
+       5 [-]: LOADK R1 K3  ; var1 = 0.30000001192092896
        6 [-]: SETUPVAL R1 0; upvalues[1] = var0
        7 [-]: RETURN R0 0  ; 
 L 1:   8 [-]: JUMPXEQKN R0 K4 L2 NOT; 
-       9 [-]: LOADK R1 K5  ; var1 = 0.40000000000000002
+       9 [-]: LOADK R1 K5  ; var1 = 0.40000000596046448
       10 [-]: SETUPVAL R1 0; upvalues[1] = var0
       11 [-]: RETURN R0 0  ; 
 L 2:  12 [-]: LOADK R1 K6  ; var1 = 0.5
@@ -61,15 +61,15 @@ L 2:  12 [-]: LOADK R1 K6  ; var1 = 0.5
 
        0 [-]: GETIMPORT R0 3; var0 = _T["AbilityLevelQueryParms"]["Level"]
        1 [-]: JUMPXEQKN R0 K4 L0 NOT; 
-       2 [-]: LOADK R1 K5  ; var1 = 0.20000000000000001
+       2 [-]: LOADK R1 K5  ; var1 = 0.20000000298023224
        3 [-]: SETUPVAL R1 0; upvalues[1] = var0
        4 [-]: JUMP L3      ; goto L3
 L 0:   5 [-]: JUMPXEQKN R0 K6 L1 NOT; 
-       6 [-]: LOADK R1 K7  ; var1 = 0.29999999999999999
+       6 [-]: LOADK R1 K7  ; var1 = 0.30000001192092896
        7 [-]: SETUPVAL R1 0; upvalues[1] = var0
        8 [-]: JUMP L3      ; goto L3
 L 1:   9 [-]: JUMPXEQKN R0 K8 L2 NOT; 
-      10 [-]: LOADK R1 K9  ; var1 = 0.40000000000000002
+      10 [-]: LOADK R1 K9  ; var1 = 0.40000000596046448
       11 [-]: SETUPVAL R1 0; upvalues[1] = var0
       12 [-]: JUMP L3      ; goto L3
 L 2:  13 [-]: LOADK R1 K10 ; var1 = 0.5
@@ -110,7 +110,7 @@ L 5:  31 [-]: GETIMPORT R2 25; var2 = _T["AbilityLevelQueryParms"]["Modded"]
        3 [-]: LOADN R3 1   ; var3 = 1
        4 [-]: FORNPREP R2 L3; nforprep start - [escape at L3] -- var2 = iterator
 L 0:   5 [-]: GETTABLE R6 R0 R4; var6 = var0[var4]
-       6 [-]: FASTCALL1 62 R6 L1; 
+       6 [-]: FASTCALL1 64 R6 L1; 
        7 [-]: GETIMPORT R5 1; var5 = 0x7B998233
        8 [-]: CALL R5 2 2  ; var5 = var5(var6)
 L 1:   9 [-]: JUMPIF R5 L2 ; goto L2 if var5
@@ -130,15 +130,15 @@ L 3:  15 [-]: RETURN R1 1  ;
 ; Max Stack Size:  12
 
        0 [-]: JUMPXEQKN R3 K0 L0 NOT; 
-       1 [-]: LOADK R4 K1  ; var4 = 0.20000000000000001
+       1 [-]: LOADK R4 K1  ; var4 = 0.20000000298023224
        2 [-]: SETUPVAL R4 0; upvalues[4] = var0
        3 [-]: JUMP L3      ; goto L3
 L 0:   4 [-]: JUMPXEQKN R3 K2 L1 NOT; 
-       5 [-]: LOADK R4 K3  ; var4 = 0.29999999999999999
+       5 [-]: LOADK R4 K3  ; var4 = 0.30000001192092896
        6 [-]: SETUPVAL R4 0; upvalues[4] = var0
        7 [-]: JUMP L3      ; goto L3
 L 1:   8 [-]: JUMPXEQKN R3 K4 L2 NOT; 
-       9 [-]: LOADK R4 K5  ; var4 = 0.40000000000000002
+       9 [-]: LOADK R4 K5  ; var4 = 0.40000000596046448
       10 [-]: SETUPVAL R4 0; upvalues[4] = var0
       11 [-]: JUMP L3      ; goto L3
 L 2:  12 [-]: LOADK R4 K6  ; var4 = 0.5
@@ -247,7 +247,7 @@ L 5: 103 [-]: SETTABLEKS R5 R4 K52; var5["buffData"] = var4
      115 [-]: GETUPVAL R8 2; var8 = upvalues[2]
      116 [-]: MOVE R9 R7   ; var9 = var7
      117 [-]: CALL R8 2 2  ; var8 = var8(var9)
-L 6: 118 [-]: FASTCALL1 62 R1 L7; 
+L 6: 118 [-]: FASTCALL1 64 R1 L7; 
      119 [-]: MOVE R10 R1  ; var10 = var1
      120 [-]: GETIMPORT R9 57; var9 = 0x7B998233
      121 [-]: CALL R9 2 2  ; var9 = var9(var10)
@@ -262,10 +262,10 @@ L 7: 122 [-]: JUMPIF R9 L9 ; goto L9 if var9
      130 [-]: GETUPVAL R9 2; var9 = upvalues[2]
      131 [-]: MOVE R10 R7  ; var10 = var7
      132 [-]: CALL R9 2 2  ; var9 = var9(var10)
-     133 [-]: JUMPIFNOTEQ R8 R9 L9; goto L9 if var8 ~= var-738129595
+     133 [-]: JUMPIFNOTEQ R8 R9 L9; goto L9 if var8 ~= var-738129588
      134 [-]: NAMECALL R9 R1 K60; var10 = var1; var9 = var1[0xA5E492D4]
      135 [-]: CALL R9 2 2  ; var9 = var9(var10)
-     136 [-]: JUMPIFEQ R5 R9 L8; goto L8 if var5 == var328984
+     136 [-]: JUMPIFEQ R5 R9 L8; goto L8 if var5 == var329000
      137 [-]: NOT R5 R5    ; var5 = not var5
      138 [-]: JUMPIFNOT R5 L8; goto L8 if not var5
      139 [-]: GETIMPORT R9 63; var9 = _T["SetAbilityActiveAnim"]
@@ -287,15 +287,15 @@ L 9: 147 [-]: RETURN R0 0  ;
 ; Max Stack Size:  10
 
        0 [-]: JUMPXEQKN R3 K0 L0 NOT; 
-       1 [-]: LOADK R4 K1  ; var4 = 0.20000000000000001
+       1 [-]: LOADK R4 K1  ; var4 = 0.20000000298023224
        2 [-]: SETUPVAL R4 0; upvalues[4] = var0
        3 [-]: JUMP L3      ; goto L3
 L 0:   4 [-]: JUMPXEQKN R3 K2 L1 NOT; 
-       5 [-]: LOADK R4 K3  ; var4 = 0.29999999999999999
+       5 [-]: LOADK R4 K3  ; var4 = 0.30000001192092896
        6 [-]: SETUPVAL R4 0; upvalues[4] = var0
        7 [-]: JUMP L3      ; goto L3
 L 1:   8 [-]: JUMPXEQKN R3 K4 L2 NOT; 
-       9 [-]: LOADK R4 K5  ; var4 = 0.40000000000000002
+       9 [-]: LOADK R4 K5  ; var4 = 0.40000000596046448
       10 [-]: SETUPVAL R4 0; upvalues[4] = var0
       11 [-]: JUMP L3      ; goto L3
 L 2:  12 [-]: LOADK R4 K6  ; var4 = 0.5

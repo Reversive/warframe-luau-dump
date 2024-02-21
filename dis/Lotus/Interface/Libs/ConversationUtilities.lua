@@ -57,12 +57,12 @@
        1 [-]: MOVE R7 R2   ; var7 = var2
        2 [-]: NAMECALL R5 R5 K2; var6 = var5; var5 = var5[0x46A0EBF5]
        3 [-]: CALL R5 3 2  ; var5 = var5(var6, var7)
-       4 [-]: FASTCALL1 62 R5 L0; 
+       4 [-]: FASTCALL1 64 R5 L0; 
        5 [-]: MOVE R7 R5   ; var7 = var5
        6 [-]: GETIMPORT R6 4; var6 = 0x7B998233
        7 [-]: CALL R6 2 2  ; var6 = var6(var7)
 L 0:   8 [-]: JUMPIF R6 L2 ; goto L2 if var6
-       9 [-]: FASTCALL1 62 R1 L1; 
+       9 [-]: FASTCALL1 64 R1 L1; 
       10 [-]: MOVE R7 R1   ; var7 = var1
       11 [-]: GETIMPORT R6 4; var6 = 0x7B998233
       12 [-]: CALL R6 2 2  ; var6 = var6(var7)
@@ -78,7 +78,7 @@ L 4:  18 [-]: JUMPXEQKNIL R4 L7;
       22 [-]: CALL R6 2 2  ; var6 = var6(var7)
       23 [-]: JUMPXEQKNIL R6 L6; 
       24 [-]: GETTABLEKS R8 R6 K9; var8 = var6["mWeapon"]
-      25 [-]: FASTCALL1 62 R8 L5; 
+      25 [-]: FASTCALL1 64 R8 L5; 
       26 [-]: GETIMPORT R7 4; var7 = 0x7B998233
       27 [-]: CALL R7 2 2  ; var7 = var7(var8)
 L 5:  28 [-]: JUMPIF R7 L6 ; goto L6 if var7
@@ -127,7 +127,7 @@ L10:  69 [-]: NAMECALL R6 R0 K26; var7 = var0; var6 = var0[0x383D2E7D]
       71 [-]: NAMECALL R6 R5 K22; var7 = var5; var6 = var5[0xF4E253B6]
       72 [-]: CALL R6 2 1  ; var6(var7)
       73 [-]: GETIMPORT R6 27; var6 = _T["previousConsoleTag"]
-      74 [-]: JUMPIFNOTEQ R6 R2 L11; goto L11 if var6 ~= var1375798812
+      74 [-]: JUMPIFNOTEQ R6 R2 L11; goto L11 if var6 ~= var1375798847
       75 [-]: GETTABLEKS R6 R1 K18; var6 = var1["mPlayerAvatar"]
       76 [-]: NAMECALL R6 R6 K28; var7 = var6; var6 = var6[0x0B4BCFB6]
       77 [-]: CALL R6 2 2  ; var6 = var6(var7)
@@ -135,7 +135,7 @@ L10:  69 [-]: NAMECALL R6 R0 K26; var7 = var0; var6 = var0[0x383D2E7D]
       79 [-]: GETTABLEKS R11 R1 K29; var11 = var1["mCameraSpotStack"]
       80 [-]: LENGTH R10 R11; var10 = #var11
       81 [-]: GETTABLE R8 R9 R10; var8 = var9[var10]
-      82 [-]: LOADK R9 K30 ; var9 = 0.20000000000000001
+      82 [-]: LOADK R9 K30 ; var9 = 0.20000000298023224
       83 [-]: NAMECALL R6 R6 K31; var7 = var6; var6 = var6[0x14C7F7DD]
       84 [-]: CALL R6 4 1  ; var6(var7, var8, var9)
       85 [-]: LOADB R6 1   ; var6 = true

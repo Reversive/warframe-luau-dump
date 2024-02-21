@@ -36,14 +36,14 @@
 ; Is_vararg:       0
 ; Max Stack Size:  15
 
-       0 [-]: JUMPIFNOTLT R0 R1 L0; goto L0 if var0 >= var1799
+       0 [-]: JUMPIFNOTLT R0 R1 L0; goto L0 if var0 >= var1852
        1 [-]: GETUPVAL R7 0; var7 = upvalues[0]
        2 [-]: LOADB R9 1   ; var9 = true
        3 [-]: LOADB R10 1  ; var10 = true
        4 [-]: NAMECALL R7 R7 K0; var8 = var7; var7 = var7[0x768274D6]
        5 [-]: CALL R7 4 1  ; var7(var8, var9, var10)
 L 0:   6 [-]: LOADN R7 0   ; var7 = 0
-L 1:   7 [-]: JUMPIFNOTLT R7 R2 L3; goto L3 if var7 >= var133198
+L 1:   7 [-]: JUMPIFNOTLT R7 R2 L3; goto L3 if var7 >= var133153
        8 [-]: GETIMPORT R8 2; var8 = 0xCBD666E1
        9 [-]: LOADN R9 0   ; var9 = 0
       10 [-]: CALL R8 2 1  ; var8(var9)
@@ -82,7 +82,7 @@ L 2:  19 [-]: GETUPVAL R9 1; var9 = upvalues[1]
       43 [-]: NAMECALL R9 R9 K10; var10 = var9; var9 = var9[0x2D9BA74F]
       44 [-]: CALL R9 4 1  ; var9(var10, var11, var12)
       45 [-]: JUMPBACK L1  ; goto L1
-L 3:  46 [-]: JUMPIFNOTLT R1 R0 L4; goto L4 if var1 >= var2055
+L 3:  46 [-]: JUMPIFNOTLT R1 R0 L4; goto L4 if var1 >= var2108
       47 [-]: GETUPVAL R8 0; var8 = upvalues[0]
       48 [-]: LOADB R10 0  ; var10 = false
       49 [-]: LOADB R11 1  ; var11 = true
@@ -118,13 +118,13 @@ L 4:  52 [-]: RETURN R0 0  ;
       17 [-]: NAMECALL R1 R1 K9; var2 = var1; var1 = var1[0x5D985C7E]
       18 [-]: CALL R1 4 1  ; var1(var2, var3, var4)
       19 [-]: GETUPVAL R1 3; var1 = upvalues[3]
-      20 [-]: LOADK R2 K10 ; var2 = 0.20000000000000001
-      21 [-]: LOADK R3 K10 ; var3 = 0.20000000000000001
+      20 [-]: LOADK R2 K10 ; var2 = 0.20000000298023224
+      21 [-]: LOADK R3 K10 ; var3 = 0.20000000298023224
       22 [-]: LOADN R4 1   ; var4 = 1
-      23 [-]: LOADK R5 K10 ; var5 = 0.20000000000000001
-      24 [-]: LOADK R6 K11 ; var6 = 0.14999999999999999
+      23 [-]: LOADK R5 K10 ; var5 = 0.20000000298023224
+      24 [-]: LOADK R6 K11 ; var6 = 0.15000000596046448
       25 [-]: LOADN R7 1   ; var7 = 1
-      26 [-]: LOADK R8 K12 ; var8 = 0.33333333333333331
+      26 [-]: LOADK R8 K12 ; var8 = 0.3333333432674408
       27 [-]: CALL R1 8 1  ; var1(var2, var3, var4, var5, var6, var7, var8)
       28 [-]: RETURN R0 0  ; 
 
@@ -151,12 +151,12 @@ L 4:  52 [-]: RETURN R0 0  ;
       12 [-]: NAMECALL R1 R1 K8; var2 = var1; var1 = var1[0x5D985C7E]
       13 [-]: CALL R1 4 1  ; var1(var2, var3, var4)
       14 [-]: GETUPVAL R1 3; var1 = upvalues[3]
-      15 [-]: LOADK R2 K9  ; var2 = 0.20000000000000001
-      16 [-]: LOADK R3 K9  ; var3 = 0.20000000000000001
+      15 [-]: LOADK R2 K9  ; var2 = 0.20000000298023224
+      16 [-]: LOADK R3 K9  ; var3 = 0.20000000298023224
       17 [-]: LOADN R4 1   ; var4 = 1
-      18 [-]: LOADK R5 K10 ; var5 = 0.14999999999999999
-      19 [-]: LOADK R6 K9  ; var6 = 0.20000000000000001
-      20 [-]: LOADK R7 K11 ; var7 = 0.33333333333333331
+      18 [-]: LOADK R5 K10 ; var5 = 0.15000000596046448
+      19 [-]: LOADK R6 K9  ; var6 = 0.20000000298023224
+      20 [-]: LOADK R7 K11 ; var7 = 0.3333333432674408
       21 [-]: LOADN R8 1   ; var8 = 1
       22 [-]: CALL R1 8 1  ; var1(var2, var3, var4, var5, var6, var7, var8)
       23 [-]: GETUPVAL R1 1; var1 = upvalues[1]

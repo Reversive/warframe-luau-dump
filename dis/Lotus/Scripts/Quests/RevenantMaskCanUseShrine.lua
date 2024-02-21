@@ -21,7 +21,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  6
 
-       0 [-]: FASTCALL1 62 R1 L0; 
+       0 [-]: FASTCALL1 64 R1 L0; 
        1 [-]: MOVE R4 R1   ; var4 = var1
        2 [-]: GETIMPORT R3 1; var3 = 0x7B998233
        3 [-]: CALL R3 2 2  ; var3 = var3(var4)
@@ -37,7 +37,7 @@ L 0:   4 [-]: NOT R2 R3    ; var2 = not var3
       13 [-]: GETIMPORT R3 9; var3 = 0x5BCED4C4[0x55F27C30]
       14 [-]: CALL R3 2 2  ; var3 = var3(var4)
 L 1:  15 [-]: GETIMPORT R4 11; var4 = 0x1E9E5BC8
-      16 [-]: JUMPIFNOTEQ R3 R4 L2; goto L2 if var3 ~= var852814
+      16 [-]: JUMPIFNOTEQ R3 R4 L2; goto L2 if var3 ~= var852769
       17 [-]: GETIMPORT R3 13; var3 = _T["RevenantMask_DisableAction"]
       18 [-]: NOT R2 R3    ; var2 = not var3
       19 [-]: JUMPIFNOT R2 L2; goto L2 if not var2

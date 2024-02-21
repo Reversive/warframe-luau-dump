@@ -104,11 +104,11 @@
       80 [-]: SETTABLEKS R12 R11 K43; var12["mUseIconPadding"] = var11
       81 [-]: LOADB R12 1  ; var12 = true
       82 [-]: SETTABLEKS R12 R11 K44; var12["mShowIconBorder"] = var11
-      83 [-]: LOADK R12 K45; var12 = 0.20000000000000001
+      83 [-]: LOADK R12 K45; var12 = 0.20000000298023224
       84 [-]: SETTABLEKS R12 R11 K46; var12["mVerticalTextOffset"] = var11
-      85 [-]: LOADK R12 K47; var12 = 0.80000000000000004
+      85 [-]: LOADK R12 K47; var12 = 0.80000001192092896
       86 [-]: SETTABLEKS R12 R11 K48; var12["mBackerEdgeAlpha"] = var11
-      87 [-]: LOADK R12 K47; var12 = 0.80000000000000004
+      87 [-]: LOADK R12 K47; var12 = 0.80000001192092896
       88 [-]: SETTABLEKS R12 R11 K49; var12["mBackerIconAlpha"] = var11
       89 [-]: LOADN R12 0  ; var12 = 0
       90 [-]: SETTABLEKS R12 R11 K50; var12["mBackerAlpha"] = var11

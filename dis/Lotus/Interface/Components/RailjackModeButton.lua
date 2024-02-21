@@ -130,7 +130,7 @@
      106 [-]: SETTABLEKS R10 R9 K32; var10["Update"] = var9
      107 [-]: MOVE R12 R1  ; var12 = var1
      108 [-]: LOADK R13 K43; var13 = "Title"
-     109 [-]: LOADN R14 38 ; var14 = 38
+     109 [-]: LOADN R14 40 ; var14 = 40
      110 [-]: LOADK R15 K44; var15 = "center"
      111 [-]: NAMECALL R10 R0 K45; var11 = var0; var10 = var0[0xE261AA96]
      112 [-]: CALL R10 6 1 ; var10(var11, var12, var13, var14, var15)

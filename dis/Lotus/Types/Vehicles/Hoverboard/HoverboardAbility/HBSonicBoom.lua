@@ -106,13 +106,13 @@
 ; Max Stack Size:  9
 
        0 [-]: GETIMPORT R2 2; var2 = _T["hbSonicBoom"]
-       1 [-]: FASTCALL1 62 R2 L0; 
+       1 [-]: FASTCALL1 64 R2 L0; 
        2 [-]: GETIMPORT R1 4; var1 = 0x7B998233
        3 [-]: CALL R1 2 2  ; var1 = var1(var2)
 L 0:   4 [-]: JUMPIF R1 L2 ; goto L2 if var1
        5 [-]: GETIMPORT R3 2; var3 = _T["hbSonicBoom"]
        6 [-]: GETTABLE R2 R3 R0; var2 = var3[var0]
-       7 [-]: FASTCALL1 62 R2 L1; 
+       7 [-]: FASTCALL1 64 R2 L1; 
        8 [-]: GETIMPORT R1 4; var1 = 0x7B998233
        9 [-]: CALL R1 2 2  ; var1 = var1(var2)
 L 1:  10 [-]: JUMPIF R1 L2 ; goto L2 if var1
@@ -136,7 +136,7 @@ L 1:  10 [-]: JUMPIF R1 L2 ; goto L2 if var1
       28 [-]: MOVE R3 R4   ; var3 = var4
       29 [-]: GETIMPORT R4 11; var4 = 0x59246D24
       30 [-]: GETTABLE R2 R4 R3; var2 = var4[var3]
-      31 [-]: JUMPIFNOTLT R1 R2 L2; goto L2 if var1 >= var65819
+      31 [-]: JUMPIFNOTLT R1 R2 L2; goto L2 if var1 >= var65798
       32 [-]: LOADB R1 1   ; var1 = true
       33 [-]: RETURN R1 1  ; 
 L 2:  34 [-]: LOADB R1 0   ; var1 = false
@@ -153,7 +153,7 @@ L 2:  34 [-]: LOADB R1 0   ; var1 = false
        0 [-]: NAMECALL R4 R0 K0; var5 = var0; var4 = var0[0x388577D5]
        1 [-]: CALL R4 2 2  ; var4 = var4(var5)
        2 [-]: SETUPVAL R2 0; upvalues[2] = var0
-L 0:   3 [-]: FASTCALL1 62 R0 L1; 
+L 0:   3 [-]: FASTCALL1 64 R0 L1; 
        4 [-]: MOVE R6 R0   ; var6 = var0
        5 [-]: GETIMPORT R5 2; var5 = 0x7B998233
        6 [-]: CALL R5 2 2  ; var5 = var5(var6)
@@ -168,7 +168,7 @@ L 1:   7 [-]: JUMPIF R5 L13; goto L13 if var5
       15 [-]: CALL R6 2 2  ; var6 = var6(var7)
       16 [-]: NAMECALL R6 R6 K8; var7 = var6; var6 = var6[0xF7D48EE0]
       17 [-]: CALL R6 2 2  ; var6 = var6(var7)
-      18 [-]: FASTCALL1 62 R5 L2; 
+      18 [-]: FASTCALL1 64 R5 L2; 
       19 [-]: MOVE R8 R5   ; var8 = var5
       20 [-]: GETIMPORT R7 2; var7 = 0x7B998233
       21 [-]: CALL R7 2 2  ; var7 = var7(var8)
@@ -176,7 +176,7 @@ L 2:  22 [-]: JUMPIF R7 L12; goto L12 if var7
       23 [-]: NAMECALL R8 R0 K9; var9 = var0; var8 = var0[0xE668799A]
       24 [-]: CALL R8 2 2  ; var8 = var8(var9)
       25 [-]: LOADN R9 2   ; var9 = 2
-      26 [-]: JUMPIFEQ R8 R9 L3; goto L3 if var8 == var16779035
+      26 [-]: JUMPIFEQ R8 R9 L3; goto L3 if var8 == var16779014
       27 [-]: LOADB R7 0 +1; var7 = false
 L 3:  28 [-]: LOADB R7 1   ; var7 = true
 L 4:  29 [-]: JUMPXEQKB R7 1 L11 NOT; 
@@ -216,7 +216,7 @@ L 4:  29 [-]: JUMPXEQKB R7 1 L11 NOT;
       63 [-]: NAMECALL R8 R8 K19; var9 = var8; var8 = var8[0x97DCFF30]
       64 [-]: CALL R8 18 1 ; var8(var9, var10, var11, var12, var13, var14, var15, var16, var17, var18, var19, var20, var21, var22, var23, var24, var25)
       65 [-]: GETIMPORT R9 21; var9 = 0xB8346E9B
-      66 [-]: FASTCALL1 62 R9 L5; 
+      66 [-]: FASTCALL1 64 R9 L5; 
       67 [-]: GETIMPORT R8 2; var8 = 0x7B998233
       68 [-]: CALL R8 2 2  ; var8 = var8(var9)
 L 5:  69 [-]: JUMPIF R8 L6 ; goto L6 if var8
@@ -228,7 +228,7 @@ L 5:  69 [-]: JUMPIF R8 L6 ; goto L6 if var8
       75 [-]: NAMECALL R8 R0 K28; var9 = var0; var8 = var0[0x47901F07]
       76 [-]: CALL R8 7 1  ; var8(var9, var10, var11, var12, var13, var14)
 L 6:  77 [-]: GETIMPORT R9 31; var9 = _T["hbSonicBoom"]
-      78 [-]: FASTCALL1 62 R9 L7; 
+      78 [-]: FASTCALL1 64 R9 L7; 
       79 [-]: GETIMPORT R8 2; var8 = 0x7B998233
       80 [-]: CALL R8 2 2  ; var8 = var8(var9)
 L 7:  81 [-]: JUMPIFNOT R8 L8; goto L8 if not var8
@@ -237,7 +237,7 @@ L 7:  81 [-]: JUMPIFNOT R8 L8; goto L8 if not var8
       84 [-]: SETTABLEKS R9 R8 K30; var9["hbSonicBoom"] = var8
 L 8:  85 [-]: GETIMPORT R10 31; var10 = _T["hbSonicBoom"]
       86 [-]: GETTABLE R9 R10 R4; var9 = var10[var4]
-      87 [-]: FASTCALL1 62 R9 L9; 
+      87 [-]: FASTCALL1 64 R9 L9; 
       88 [-]: GETIMPORT R8 2; var8 = 0x7B998233
       89 [-]: CALL R8 2 2  ; var8 = var8(var9)
 L 9:  90 [-]: JUMPIFNOT R8 L10; goto L10 if not var8

@@ -141,7 +141,7 @@ L18: 115 [-]: LOADK R10 K70; var10 = "TriggerPort"
      117 [-]: CALL R8 3 1  ; var8(var9, var10)
 L19: 118 [-]: FORGLOOP R3 L18 2 [inext]; 
 L20: 119 [-]: GETIMPORT R3 72; var3 = 0x924A770D
-     120 [-]: FASTCALL1 62 R3 L21; 
+     120 [-]: FASTCALL1 64 R3 L21; 
      121 [-]: GETIMPORT R2 74; var2 = 0x7B998233
      122 [-]: CALL R2 2 2  ; var2 = var2(var3)
 L21: 123 [-]: JUMPIF R2 L22; goto L22 if var2
@@ -179,7 +179,7 @@ L25: 154 [-]: FORGLOOP R2 L24 2 [inext];
      155 [-]: GETIMPORT R2 89; var2 = 0xF52B1004
      156 [-]: JUMPIFNOT R2 L27; goto L27 if not var2
      157 [-]: GETIMPORT R3 91; var3 = 0xBA7DFCD2
-     158 [-]: FASTCALL1 62 R3 L26; 
+     158 [-]: FASTCALL1 64 R3 L26; 
      159 [-]: GETIMPORT R2 74; var2 = 0x7B998233
      160 [-]: CALL R2 2 2  ; var2 = var2(var3)
 L26: 161 [-]: JUMPIF R2 L27; goto L27 if var2

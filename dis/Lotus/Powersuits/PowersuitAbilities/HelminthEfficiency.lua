@@ -62,7 +62,7 @@ L 2:  12 [-]: LOADN R1 5   ; var1 = 5
 ; Max Stack Size:  11
 
        0 [-]: GETUPVAL R1 0; var1 = upvalues[0]
-       1 [-]: FASTCALL1 62 R0 L0; 
+       1 [-]: FASTCALL1 64 R0 L0; 
        2 [-]: MOVE R3 R0   ; var3 = var0
        3 [-]: GETIMPORT R2 1; var2 = 0x7B998233
        4 [-]: CALL R2 2 2  ; var2 = var2(var3)
@@ -71,7 +71,7 @@ L 0:   5 [-]: JUMPIF R2 L2 ; goto L2 if var2
        7 [-]: CALL R2 2 2  ; var2 = var2(var3)
        8 [-]: NAMECALL R3 R2 K3; var4 = var2; var3 = var2[0xF7D48EE0]
        9 [-]: CALL R3 2 2  ; var3 = var3(var4)
-      10 [-]: FASTCALL1 62 R3 L1; 
+      10 [-]: FASTCALL1 64 R3 L1; 
       11 [-]: MOVE R5 R3   ; var5 = var3
       12 [-]: GETIMPORT R4 1; var4 = 0x7B998233
       13 [-]: CALL R4 2 2  ; var4 = var4(var5)
@@ -237,7 +237,7 @@ L 3:  14 [-]: GETUPVAL R4 1; var4 = upvalues[1]
       81 [-]: JUMPIFNOT R4 L4; goto L4 if not var4
       82 [-]: NAMECALL R4 R1 K35; var5 = var1; var4 = var1[0xDE321E6F]
       83 [-]: CALL R4 2 2  ; var4 = var4(var5)
-      84 [-]: LOADN R6 198 ; var6 = 198
+      84 [-]: LOADN R6 203 ; var6 = 203
       85 [-]: LOADN R7 2   ; var7 = 2
       86 [-]: LOADK R8 K36 ; var8 = 0.25
       87 [-]: NAMECALL R4 R4 K37; var5 = var4; var4 = var4[0x5E6704FF]
@@ -270,8 +270,8 @@ L 4:  89 [-]: GETIMPORT R4 6; var4 = 0x6687F6E0
      114 [-]: CALL R6 5 1  ; var6(var7, var8, var9, var10)
 L 5: 115 [-]: GETUPVAL R6 0; var6 = upvalues[0]
      116 [-]: LOADN R7 0   ; var7 = 0
-     117 [-]: JUMPIFNOTLT R7 R6 L7; goto L7 if var7 >= var50413131
-     118 [-]: FASTCALL1 62 R1 L6; 
+     117 [-]: JUMPIFNOTLT R7 R6 L7; goto L7 if var7 >= var50413629
+     118 [-]: FASTCALL1 64 R1 L6; 
      119 [-]: MOVE R7 R1   ; var7 = var1
      120 [-]: GETIMPORT R6 52; var6 = 0x7B998233
      121 [-]: CALL R6 2 2  ; var6 = var6(var7)
@@ -331,7 +331,7 @@ L 3:  23 [-]: GETIMPORT R5 11; var5 = 0x89326C93
       26 [-]: JUMPIFNOT R5 L4; goto L4 if not var5
       27 [-]: NAMECALL R5 R1 K13; var6 = var1; var5 = var1[0xDE321E6F]
       28 [-]: CALL R5 2 2  ; var5 = var5(var6)
-      29 [-]: LOADN R7 198 ; var7 = 198
+      29 [-]: LOADN R7 203 ; var7 = 203
       30 [-]: LOADN R8 2   ; var8 = 2
       31 [-]: LOADK R9 K14 ; var9 = 0.25
       32 [-]: NAMECALL R5 R5 K15; var6 = var5; var5 = var5[0x12DD9DA2]

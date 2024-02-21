@@ -26,13 +26,13 @@
        6 [-]: CALL R3 2 2  ; var3 = var3(var4)
        7 [-]: NAMECALL R4 R0 K4; var5 = var0; var4 = var0[0xCD73323E]
        8 [-]: CALL R4 2 2  ; var4 = var4(var5)
-       9 [-]: FASTCALL1 62 R4 L0; 
+       9 [-]: FASTCALL1 64 R4 L0; 
       10 [-]: MOVE R6 R4   ; var6 = var4
       11 [-]: GETIMPORT R5 6; var5 = 0x7B998233
       12 [-]: CALL R5 2 2  ; var5 = var5(var6)
 L 0:  13 [-]: JUMPIFNOT R5 L1; goto L1 if not var5
       14 [-]: RETURN R0 0  ; 
-L 1:  15 [-]: FASTCALL1 62 R1 L2; 
+L 1:  15 [-]: FASTCALL1 64 R1 L2; 
       16 [-]: MOVE R6 R1   ; var6 = var1
       17 [-]: GETIMPORT R5 6; var5 = 0x7B998233
       18 [-]: CALL R5 2 2  ; var5 = var5(var6)
@@ -68,7 +68,7 @@ L 3:  26 [-]: GETTABLEKS R6 R3 K12; var6 = var3["pitch"]
       48 [-]: NAMECALL R7 R5 K27; var8 = var5; var7 = var5[0xB6B094B2]
       49 [-]: CALL R7 4 1  ; var7(var8, var9, var10)
       50 [-]: LOADN R7 0   ; var7 = 0
-L 4:  51 [-]: FASTCALL1 62 R5 L5; 
+L 4:  51 [-]: FASTCALL1 64 R5 L5; 
       52 [-]: MOVE R9 R5   ; var9 = var5
       53 [-]: GETIMPORT R8 6; var8 = 0x7B998233
       54 [-]: CALL R8 2 2  ; var8 = var8(var9)
@@ -83,16 +83,16 @@ L 5:  55 [-]: JUMPIF R8 L6 ; goto L6 if var8
       63 [-]: CALL R8 1 2  ; var8 = var8()
       64 [-]: ADD R7 R7 R8 ; var7 = var7 + var8
       65 [-]: GETGLOBAL R8 K10; var8 = 0x1CBD55D3
-      66 [-]: JUMPIFLT R8 R7 L6; goto L6 if var8 < var-1507284
+      66 [-]: JUMPIFLT R8 R7 L6; goto L6 if var8 < var-1507258
       67 [-]: JUMPBACK L4  ; goto L4
-L 6:  68 [-]: FASTCALL1 62 R6 L7; 
+L 6:  68 [-]: FASTCALL1 64 R6 L7; 
       69 [-]: MOVE R9 R6   ; var9 = var6
       70 [-]: GETIMPORT R8 6; var8 = 0x7B998233
       71 [-]: CALL R8 2 2  ; var8 = var8(var9)
 L 7:  72 [-]: JUMPIF R8 L8 ; goto L8 if var8
       73 [-]: NAMECALL R8 R6 K31; var9 = var6; var8 = var6[0xA2880940]
       74 [-]: CALL R8 2 1  ; var8(var9)
-L 8:  75 [-]: FASTCALL1 62 R5 L9; 
+L 8:  75 [-]: FASTCALL1 64 R5 L9; 
       76 [-]: MOVE R9 R5   ; var9 = var5
       77 [-]: GETIMPORT R8 6; var8 = 0x7B998233
       78 [-]: CALL R8 2 2  ; var8 = var8(var9)

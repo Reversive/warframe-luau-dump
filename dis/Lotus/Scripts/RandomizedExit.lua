@@ -29,12 +29,12 @@ L 1:   7 [-]: GETIMPORT R0 7; var0 = 0xBE190284
        9 [-]: CALL R0 2 2  ; var0 = var0(var1)
       10 [-]: GETTABLEKS R1 R0 K9; var1 = var0["goalTag"]
       11 [-]: GETIMPORT R3 11; var3 = 0x667FCB5A
-      12 [-]: FASTCALL1 62 R3 L2; 
+      12 [-]: FASTCALL1 64 R3 L2; 
       13 [-]: GETIMPORT R2 13; var2 = 0x7B998233
       14 [-]: CALL R2 2 2  ; var2 = var2(var3)
 L 2:  15 [-]: JUMPIF R2 L3 ; goto L3 if var2
       16 [-]: GETIMPORT R2 11; var2 = 0x667FCB5A
-      17 [-]: JUMPIFNOTEQ R2 R1 L3; goto L3 if var2 ~= var983630
+      17 [-]: JUMPIFNOTEQ R2 R1 L3; goto L3 if var2 ~= var983585
       18 [-]: GETIMPORT R2 15; var2 = 0x2E7304D5
       19 [-]: JUMPIF R2 L3 ; goto L3 if var2
       20 [-]: RETURN R0 0  ; 
@@ -56,7 +56,7 @@ L 3:  21 [-]: GETIMPORT R2 17; var2 = 0x55730E1A
       36 [-]: NAMECALL R5 R5 K22; var6 = var5; var5 = var5[0x9307AA51]
       37 [-]: CALL R5 3 1  ; var5(var6, var7)
       38 [-]: GETIMPORT R6 24; var6 = 0xD13CF3A8
-      39 [-]: FASTCALL1 62 R6 L4; 
+      39 [-]: FASTCALL1 64 R6 L4; 
       40 [-]: GETIMPORT R5 13; var5 = 0x7B998233
       41 [-]: CALL R5 2 2  ; var5 = var5(var6)
 L 4:  42 [-]: JUMPIF R5 L5 ; goto L5 if var5

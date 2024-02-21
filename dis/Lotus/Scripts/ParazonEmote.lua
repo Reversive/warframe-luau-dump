@@ -30,7 +30,7 @@
        2 [-]: LOADN R5 11  ; var5 = 11
        3 [-]: NAMECALL R3 R2 K1; var4 = var2; var3 = var2[0xE85A2361]
        4 [-]: CALL R3 3 2  ; var3 = var3(var4, var5)
-       5 [-]: FASTCALL1 62 R3 L0; 
+       5 [-]: FASTCALL1 64 R3 L0; 
        6 [-]: MOVE R5 R3   ; var5 = var3
        7 [-]: GETIMPORT R4 3; var4 = 0x7B998233
        8 [-]: CALL R4 2 2  ; var4 = var4(var5)
@@ -38,7 +38,7 @@ L 0:   9 [-]: JUMPIF R4 L2 ; goto L2 if var4
       10 [-]: LOADN R6 0   ; var6 = 0
       11 [-]: NAMECALL R4 R2 K4; var5 = var2; var4 = var2[0x881B6B90]
       12 [-]: CALL R4 3 2  ; var4 = var4(var5, var6)
-      13 [-]: JUMPIFEQ R4 R3 L2; goto L2 if var4 == var394830
+      13 [-]: JUMPIFEQ R4 R3 L2; goto L2 if var4 == var394785
       14 [-]: GETIMPORT R6 6; var6 = 0x071DCBE3
       15 [-]: GETIMPORT R7 8; var7 = 0x0469F296
       16 [-]: LOADK R8 K9  ; var8 = "GAME_R1_TWIST2"
@@ -50,7 +50,7 @@ L 0:   9 [-]: JUMPIF R4 L2 ; goto L2 if var4
       22 [-]: CALL R4 7 2  ; var4 = var4(var5, var6, var7, var8, var9, var10)
       23 [-]: SETUPVAL R4 0; upvalues[4] = var0
       24 [-]: GETUPVAL R5 0; var5 = upvalues[0]
-      25 [-]: FASTCALL1 62 R5 L1; 
+      25 [-]: FASTCALL1 64 R5 L1; 
       26 [-]: GETIMPORT R4 3; var4 = 0x7B998233
       27 [-]: CALL R4 2 2  ; var4 = var4(var5)
 L 1:  28 [-]: JUMPIF R4 L2 ; goto L2 if var4
@@ -87,7 +87,7 @@ L 2:  38 [-]: RETURN R0 0  ;
 ; Max Stack Size:  5
 
        0 [-]: GETUPVAL R3 0; var3 = upvalues[0]
-       1 [-]: FASTCALL1 62 R3 L0; 
+       1 [-]: FASTCALL1 64 R3 L0; 
        2 [-]: GETIMPORT R2 1; var2 = 0x7B998233
        3 [-]: CALL R2 2 2  ; var2 = var2(var3)
 L 0:   4 [-]: JUMPIF R2 L1 ; goto L1 if var2

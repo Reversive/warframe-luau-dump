@@ -142,12 +142,12 @@
 ; Max Stack Size:  4
 
        0 [-]: GETUPVAL R1 0; var1 = upvalues[0]
-       1 [-]: JUMPIFNOTEQ R0 R1 L0; goto L0 if var0 ~= var263
+       1 [-]: JUMPIFNOTEQ R0 R1 L0; goto L0 if var0 ~= var316
        2 [-]: GETUPVAL R1 0; var1 = upvalues[0]
        3 [-]: NAMECALL R1 R1 K0; var2 = var1; var1 = var1[0xEFE6CAD1]
        4 [-]: CALL R1 2 2  ; var1 = var1(var2)
        5 [-]: LOADN R2 4   ; var2 = 4
-       6 [-]: JUMPIFNOTEQ R1 R2 L0; goto L0 if var1 ~= var65799
+       6 [-]: JUMPIFNOTEQ R1 R2 L0; goto L0 if var1 ~= var65852
        7 [-]: GETUPVAL R1 1; var1 = upvalues[1]
        8 [-]: LOADN R3 9   ; var3 = 9
        9 [-]: NAMECALL R1 R1 K1; var2 = var1; var1 = var1[0x8ABFF40E]
@@ -178,107 +178,108 @@ L 0:  11 [-]: RETURN R0 0  ;
 
        0 [-]: GETIMPORT R0 1; var0 = 0x3D106989
        1 [-]: LOADK R2 K2  ; var2 = "WAR-3048543 -- CrpFighterLaunchPadEncounter: CrewShipInitialize, state="
-       2 [-]: GETIMPORT R3 4; var3 = 0x64FB1586
-       3 [-]: GETUPVAL R4 0; var4 = upvalues[0]
-       4 [-]: CALL R3 2 2  ; var3 = var3(var4)
-       5 [-]: CONCAT R1 R2 R3; var1 = var2 .. var3
-       6 [-]: CALL R0 2 1  ; var0(var1)
-       7 [-]: GETIMPORT R0 6; var0 = 0x89326C93
-       8 [-]: GETIMPORT R2 8; var2 = 0x0469F296
-       9 [-]: LOADK R3 K9  ; var3 = "PoiSetupScript"
-      10 [-]: CALL R2 2 2  ; var2 = var2(var3)
-      11 [-]: GETUPVAL R3 1; var3 = upvalues[1]
-      12 [-]: NAMECALL R0 R0 K10; var1 = var0; var0 = var0[0xC7B81E8D]
-      13 [-]: CALL R0 4 2  ; var0 = var0(var1, var2, var3)
-      14 [-]: FASTCALL1 62 R0 L0; 
-      15 [-]: MOVE R2 R0   ; var2 = var0
-      16 [-]: GETIMPORT R1 12; var1 = 0x7B998233
-      17 [-]: CALL R1 2 2  ; var1 = var1(var2)
-L 0:  18 [-]: JUMPIF R1 L1 ; goto L1 if var1
-      19 [-]: LOADK R3 K13 ; var3 = "Execute"
-      20 [-]: NAMECALL R1 R0 K14; var2 = var0; var1 = var0[0x8EB2112D]
-      21 [-]: CALL R1 3 1  ; var1(var2, var3)
-      22 [-]: JUMP L2      ; goto L2
-L 1:  23 [-]: GETIMPORT R1 1; var1 = 0x3D106989
-      24 [-]: LOADK R2 K15 ; var2 = "POI - Could not find setup script"
-      25 [-]: CALL R1 2 1  ; var1(var2)
-L 2:  26 [-]: GETUPVAL R1 2; var1 = upvalues[2]
-      27 [-]: NAMECALL R1 R1 K16; var2 = var1; var1 = var1[0x1AC1655C]
-      28 [-]: CALL R1 2 2  ; var1 = var1(var2)
-      29 [-]: GETIMPORT R3 8; var3 = 0x0469F296
-      30 [-]: LOADK R4 K17 ; var4 = "CrewshipInvuln"
-      31 [-]: CALL R3 2 2  ; var3 = var3(var4)
-      32 [-]: LOADN R4 25  ; var4 = 25
-      33 [-]: LOADN R5 6   ; var5 = 6
-      34 [-]: LOADN R6 0   ; var6 = 0
-      35 [-]: NAMECALL R1 R1 K18; var2 = var1; var1 = var1[0xA383DE31]
-      36 [-]: CALL R1 6 1  ; var1(var2, var3, var4, var5, var6)
-      37 [-]: GETIMPORT R1 6; var1 = 0x89326C93
-      38 [-]: GETUPVAL R4 4; var4 = upvalues[4]
-      39 [-]: GETTABLEKS R3 R4 K19; var3 = var4["SYM_POI_MISSION_HINT_TAG"]
-      40 [-]: GETUPVAL R4 1; var4 = upvalues[1]
-      41 [-]: NAMECALL R1 R1 K10; var2 = var1; var1 = var1[0xC7B81E8D]
-      42 [-]: CALL R1 4 2  ; var1 = var1(var2, var3, var4)
-      43 [-]: SETUPVAL R1 3; upvalues[1] = var3
-      44 [-]: GETUPVAL R1 0; var1 = upvalues[0]
-      45 [-]: JUMPXEQKN R1 K20 L6 NOT; 
-      46 [-]: GETUPVAL R1 5; var1 = upvalues[5]
-      47 [-]: NAMECALL R1 R1 K21; var2 = var1; var1 = var1[0xF37943FF]
-      48 [-]: CALL R1 2 2  ; var1 = var1(var2)
-      49 [-]: JUMPIFNOT R1 L3; goto L3 if not var1
-      50 [-]: GETUPVAL R1 5; var1 = upvalues[5]
-      51 [-]: NAMECALL R1 R1 K22; var2 = var1; var1 = var1[0xA2D83ED4]
-      52 [-]: CALL R1 2 2  ; var1 = var1(var2)
-      53 [-]: JUMPIF R1 L4 ; goto L4 if var1
-L 3:  54 [-]: GETIMPORT R1 1; var1 = 0x3D106989
-      55 [-]: LOADK R2 K23 ; var2 = "Host left while starting POI Interior!!"
-      56 [-]: CALL R1 2 1  ; var1(var2)
-      57 [-]: JUMP L6      ; goto L6
-L 4:  58 [-]: GETUPVAL R1 5; var1 = upvalues[5]
-      59 [-]: GETUPVAL R3 3; var3 = upvalues[3]
-      60 [-]: NEWTABLE R4 0 2; var4 = {}
-      61 [-]: GETUPVAL R6 4; var6 = upvalues[4]
-      62 [-]: GETTABLEKS R5 R6 K24; var5 = var6["SYM_POI_MISSION_TAG"]
-      63 [-]: GETUPVAL R6 6; var6 = upvalues[6]
-      64 [-]: SETLIST R4 R5 2 [1]; var4[1] = var5; var4[2] = var6; var4[3] = var7; 
-      65 [-]: LOADN R5 0   ; var5 = 0
-      66 [-]: LOADN R6 0   ; var6 = 0
-      67 [-]: GETUPVAL R7 7; var7 = upvalues[7]
-      68 [-]: NAMECALL R1 R1 K25; var2 = var1; var1 = var1[0x17471168]
-      69 [-]: CALL R1 7 2  ; var1 = var1(var2, var3, var4, var5, var6, var7)
-      70 [-]: FASTCALL1 62 R1 L5; 
-      71 [-]: MOVE R3 R1   ; var3 = var1
-      72 [-]: GETIMPORT R2 12; var2 = 0x7B998233
-      73 [-]: CALL R2 2 2  ; var2 = var2(var3)
-L 5:  74 [-]: JUMPIFNOT R2 L6; goto L6 if not var2
-      75 [-]: GETIMPORT R2 1; var2 = 0x3D106989
-      76 [-]: LOADK R3 K26 ; var3 = "Starting default POI mission encounter"
-      77 [-]: CALL R2 2 1  ; var2(var3)
-      78 [-]: GETUPVAL R2 3; var2 = upvalues[3]
-      79 [-]: GETIMPORT R4 8; var4 = 0x0469F296
-      80 [-]: LOADK R5 K27 ; var5 = "DefaultPoiMission"
-      81 [-]: CALL R4 2 0  ; var4, ... = var4(var5)
-      82 [-]: NAMECALL R2 R2 K28; var3 = var2; var2 = var2[0xFA1A049A]
-      83 [-]: CALL R2 0 1  ; var2(var3, ...)
-      84 [-]: GETUPVAL R2 5; var2 = upvalues[5]
-      85 [-]: GETUPVAL R4 3; var4 = upvalues[3]
-      86 [-]: NEWTABLE R5 0 2; var5 = {}
-      87 [-]: GETUPVAL R7 4; var7 = upvalues[4]
-      88 [-]: GETTABLEKS R6 R7 K24; var6 = var7["SYM_POI_MISSION_TAG"]
-      89 [-]: GETUPVAL R7 6; var7 = upvalues[6]
-      90 [-]: SETLIST R5 R6 2 [1]; var5[1] = var6; var5[2] = var7; var5[3] = var8; 
-      91 [-]: LOADN R6 0   ; var6 = 0
-      92 [-]: LOADN R7 0   ; var7 = 0
-      93 [-]: GETUPVAL R8 7; var8 = upvalues[7]
-      94 [-]: NAMECALL R2 R2 K25; var3 = var2; var2 = var2[0x17471168]
-      95 [-]: CALL R2 7 2  ; var2 = var2(var3, var4, var5, var6, var7, var8)
-      96 [-]: MOVE R1 R2   ; var1 = var2
-L 6:  97 [-]: GETUPVAL R1 3; var1 = upvalues[3]
-      98 [-]: GETUPVAL R3 8; var3 = upvalues[8]
-      99 [-]: GETUPVAL R4 6; var4 = upvalues[6]
-     100 [-]: NAMECALL R1 R1 K29; var2 = var1; var1 = var1[0xBA654CA8]
-     101 [-]: CALL R1 4 1  ; var1(var2, var3, var4)
-     102 [-]: RETURN R0 0  ; 
+       2 [-]: GETUPVAL R4 0; var4 = upvalues[0]
+       3 [-]: FASTCALL1 63 R4 L0; 
+       4 [-]: GETIMPORT R3 4; var3 = 0x64FB1586
+       5 [-]: CALL R3 2 2  ; var3 = var3(var4)
+L 0:   6 [-]: CONCAT R1 R2 R3; var1 = var2 .. var3
+       7 [-]: CALL R0 2 1  ; var0(var1)
+       8 [-]: GETIMPORT R0 6; var0 = 0x89326C93
+       9 [-]: GETIMPORT R2 8; var2 = 0x0469F296
+      10 [-]: LOADK R3 K9  ; var3 = "PoiSetupScript"
+      11 [-]: CALL R2 2 2  ; var2 = var2(var3)
+      12 [-]: GETUPVAL R3 1; var3 = upvalues[1]
+      13 [-]: NAMECALL R0 R0 K10; var1 = var0; var0 = var0[0xC7B81E8D]
+      14 [-]: CALL R0 4 2  ; var0 = var0(var1, var2, var3)
+      15 [-]: FASTCALL1 64 R0 L1; 
+      16 [-]: MOVE R2 R0   ; var2 = var0
+      17 [-]: GETIMPORT R1 12; var1 = 0x7B998233
+      18 [-]: CALL R1 2 2  ; var1 = var1(var2)
+L 1:  19 [-]: JUMPIF R1 L2 ; goto L2 if var1
+      20 [-]: LOADK R3 K13 ; var3 = "Execute"
+      21 [-]: NAMECALL R1 R0 K14; var2 = var0; var1 = var0[0x8EB2112D]
+      22 [-]: CALL R1 3 1  ; var1(var2, var3)
+      23 [-]: JUMP L3      ; goto L3
+L 2:  24 [-]: GETIMPORT R1 1; var1 = 0x3D106989
+      25 [-]: LOADK R2 K15 ; var2 = "POI - Could not find setup script"
+      26 [-]: CALL R1 2 1  ; var1(var2)
+L 3:  27 [-]: GETUPVAL R1 2; var1 = upvalues[2]
+      28 [-]: NAMECALL R1 R1 K16; var2 = var1; var1 = var1[0x1AC1655C]
+      29 [-]: CALL R1 2 2  ; var1 = var1(var2)
+      30 [-]: GETIMPORT R3 8; var3 = 0x0469F296
+      31 [-]: LOADK R4 K17 ; var4 = "CrewshipInvuln"
+      32 [-]: CALL R3 2 2  ; var3 = var3(var4)
+      33 [-]: LOADN R4 25  ; var4 = 25
+      34 [-]: LOADN R5 6   ; var5 = 6
+      35 [-]: LOADN R6 0   ; var6 = 0
+      36 [-]: NAMECALL R1 R1 K18; var2 = var1; var1 = var1[0xA383DE31]
+      37 [-]: CALL R1 6 1  ; var1(var2, var3, var4, var5, var6)
+      38 [-]: GETIMPORT R1 6; var1 = 0x89326C93
+      39 [-]: GETUPVAL R4 4; var4 = upvalues[4]
+      40 [-]: GETTABLEKS R3 R4 K19; var3 = var4["SYM_POI_MISSION_HINT_TAG"]
+      41 [-]: GETUPVAL R4 1; var4 = upvalues[1]
+      42 [-]: NAMECALL R1 R1 K10; var2 = var1; var1 = var1[0xC7B81E8D]
+      43 [-]: CALL R1 4 2  ; var1 = var1(var2, var3, var4)
+      44 [-]: SETUPVAL R1 3; upvalues[1] = var3
+      45 [-]: GETUPVAL R1 0; var1 = upvalues[0]
+      46 [-]: JUMPXEQKN R1 K20 L7 NOT; 
+      47 [-]: GETUPVAL R1 5; var1 = upvalues[5]
+      48 [-]: NAMECALL R1 R1 K21; var2 = var1; var1 = var1[0xF37943FF]
+      49 [-]: CALL R1 2 2  ; var1 = var1(var2)
+      50 [-]: JUMPIFNOT R1 L4; goto L4 if not var1
+      51 [-]: GETUPVAL R1 5; var1 = upvalues[5]
+      52 [-]: NAMECALL R1 R1 K22; var2 = var1; var1 = var1[0xA2D83ED4]
+      53 [-]: CALL R1 2 2  ; var1 = var1(var2)
+      54 [-]: JUMPIF R1 L5 ; goto L5 if var1
+L 4:  55 [-]: GETIMPORT R1 1; var1 = 0x3D106989
+      56 [-]: LOADK R2 K23 ; var2 = "Host left while starting POI Interior!!"
+      57 [-]: CALL R1 2 1  ; var1(var2)
+      58 [-]: JUMP L7      ; goto L7
+L 5:  59 [-]: GETUPVAL R1 5; var1 = upvalues[5]
+      60 [-]: GETUPVAL R3 3; var3 = upvalues[3]
+      61 [-]: NEWTABLE R4 0 2; var4 = {}
+      62 [-]: GETUPVAL R6 4; var6 = upvalues[4]
+      63 [-]: GETTABLEKS R5 R6 K24; var5 = var6["SYM_POI_MISSION_TAG"]
+      64 [-]: GETUPVAL R6 6; var6 = upvalues[6]
+      65 [-]: SETLIST R4 R5 2 [1]; var4[1] = var5; var4[2] = var6; var4[3] = var7; 
+      66 [-]: LOADN R5 0   ; var5 = 0
+      67 [-]: LOADN R6 0   ; var6 = 0
+      68 [-]: GETUPVAL R7 7; var7 = upvalues[7]
+      69 [-]: NAMECALL R1 R1 K25; var2 = var1; var1 = var1[0x17471168]
+      70 [-]: CALL R1 7 2  ; var1 = var1(var2, var3, var4, var5, var6, var7)
+      71 [-]: FASTCALL1 64 R1 L6; 
+      72 [-]: MOVE R3 R1   ; var3 = var1
+      73 [-]: GETIMPORT R2 12; var2 = 0x7B998233
+      74 [-]: CALL R2 2 2  ; var2 = var2(var3)
+L 6:  75 [-]: JUMPIFNOT R2 L7; goto L7 if not var2
+      76 [-]: GETIMPORT R2 1; var2 = 0x3D106989
+      77 [-]: LOADK R3 K26 ; var3 = "Starting default POI mission encounter"
+      78 [-]: CALL R2 2 1  ; var2(var3)
+      79 [-]: GETUPVAL R2 3; var2 = upvalues[3]
+      80 [-]: GETIMPORT R4 8; var4 = 0x0469F296
+      81 [-]: LOADK R5 K27 ; var5 = "DefaultPoiMission"
+      82 [-]: CALL R4 2 0  ; var4, ... = var4(var5)
+      83 [-]: NAMECALL R2 R2 K28; var3 = var2; var2 = var2[0xFA1A049A]
+      84 [-]: CALL R2 0 1  ; var2(var3, ...)
+      85 [-]: GETUPVAL R2 5; var2 = upvalues[5]
+      86 [-]: GETUPVAL R4 3; var4 = upvalues[3]
+      87 [-]: NEWTABLE R5 0 2; var5 = {}
+      88 [-]: GETUPVAL R7 4; var7 = upvalues[4]
+      89 [-]: GETTABLEKS R6 R7 K24; var6 = var7["SYM_POI_MISSION_TAG"]
+      90 [-]: GETUPVAL R7 6; var7 = upvalues[6]
+      91 [-]: SETLIST R5 R6 2 [1]; var5[1] = var6; var5[2] = var7; var5[3] = var8; 
+      92 [-]: LOADN R6 0   ; var6 = 0
+      93 [-]: LOADN R7 0   ; var7 = 0
+      94 [-]: GETUPVAL R8 7; var8 = upvalues[7]
+      95 [-]: NAMECALL R2 R2 K25; var3 = var2; var2 = var2[0x17471168]
+      96 [-]: CALL R2 7 2  ; var2 = var2(var3, var4, var5, var6, var7, var8)
+      97 [-]: MOVE R1 R2   ; var1 = var2
+L 7:  98 [-]: GETUPVAL R1 3; var1 = upvalues[3]
+      99 [-]: GETUPVAL R3 8; var3 = upvalues[8]
+     100 [-]: GETUPVAL R4 6; var4 = upvalues[6]
+     101 [-]: NAMECALL R1 R1 K29; var2 = var1; var1 = var1[0xBA654CA8]
+     102 [-]: CALL R1 4 1  ; var1(var2, var3, var4)
+     103 [-]: RETURN R0 0  ; 
 
 
 ; Name:            
@@ -288,7 +289,7 @@ L 6:  97 [-]: GETUPVAL R1 3; var1 = upvalues[3]
 ; Is_vararg:       0
 ; Max Stack Size:  6
 
-       0 [-]: FASTCALL1 62 R0 L0; 
+       0 [-]: FASTCALL1 64 R0 L0; 
        1 [-]: MOVE R2 R0   ; var2 = var0
        2 [-]: GETIMPORT R1 1; var1 = 0x7B998233
        3 [-]: CALL R1 2 2  ; var1 = var1(var2)
@@ -341,7 +342,7 @@ L 0:   4 [-]: LOADN R6 0   ; var6 = 0
        6 [-]: LOADK R6 K4  ; var6 = 0.5
        7 [-]: GETIMPORT R9 6; var9 = 0xFE946AFB
        8 [-]: GETTABLE R8 R9 R4; var8 = var9[var4]
-       9 [-]: FASTCALL1 62 R8 L1; 
+       9 [-]: FASTCALL1 64 R8 L1; 
       10 [-]: GETIMPORT R7 8; var7 = 0x7B998233
       11 [-]: CALL R7 2 2  ; var7 = var7(var8)
 L 1:  12 [-]: JUMPIF R7 L2 ; goto L2 if var7
@@ -386,13 +387,13 @@ L 1:  12 [-]: GETUPVAL R1 1; var1 = upvalues[1]
       19 [-]: LOADB R0 0   ; var0 = false
       20 [-]: RETURN R0 1  ; 
 L 2:  21 [-]: GETUPVAL R1 3; var1 = upvalues[3]
-      22 [-]: FASTCALL1 62 R1 L3; 
+      22 [-]: FASTCALL1 64 R1 L3; 
       23 [-]: GETIMPORT R0 5; var0 = 0x7B998233
       24 [-]: CALL R0 2 2  ; var0 = var0(var1)
 L 3:  25 [-]: JUMPIFNOT R0 L4; goto L4 if not var0
       26 [-]: GETUPVAL R0 4; var0 = upvalues[4]
       27 [-]: LOADN R1 0   ; var1 = 0
-      28 [-]: JUMPIFNOTLE R0 R1 L6; goto L6 if var0 > var65563
+      28 [-]: JUMPIFNOTLE R0 R1 L6; goto L6 if var0 > var65542
       29 [-]: LOADB R0 1   ; var0 = true
       30 [-]: RETURN R0 1  ; 
       31 [-]: JUMP L6      ; goto L6
@@ -400,10 +401,10 @@ L 4:  32 [-]: GETUPVAL R0 3; var0 = upvalues[3]
       33 [-]: NAMECALL R0 R0 K6; var1 = var0; var0 = var0[0xEFE6CAD1]
       34 [-]: CALL R0 2 2  ; var0 = var0(var1)
       35 [-]: LOADN R1 3   ; var1 = 3
-      36 [-]: JUMPIFNOTLE R1 R0 L6; goto L6 if var1 > var262151
+      36 [-]: JUMPIFNOTLE R1 R0 L6; goto L6 if var1 > var262204
       37 [-]: GETUPVAL R0 4; var0 = upvalues[4]
       38 [-]: LOADN R1 0   ; var1 = 0
-      39 [-]: JUMPIFNOTLE R0 R1 L6; goto L6 if var0 > var14
+      39 [-]: JUMPIFNOTLE R0 R1 L6; goto L6 if var0 > var78
       40 [-]: LOADNIL R0   ; var0 = nil
       41 [-]: SETUPVAL R0 3; upvalues[0] = var3
       42 [-]: GETUPVAL R1 4; var1 = upvalues[4]
@@ -434,7 +435,7 @@ L 6:  51 [-]: LOADB R0 0   ; var0 = false
        5 [-]: NAMECALL R3 R0 K4; var4 = var0; var3 = var0[0x65C63FBE]
        6 [-]: CALL R3 2 0  ; var3, ... = var3(var4)
        7 [-]: CALL R1 0 2  ; var1 = var1(var2, ...)
-       8 [-]: FASTCALL1 62 R1 L0; 
+       8 [-]: FASTCALL1 64 R1 L0; 
        9 [-]: MOVE R3 R1   ; var3 = var1
       10 [-]: GETIMPORT R2 6; var2 = 0x7B998233
       11 [-]: CALL R2 2 2  ; var2 = var2(var3)
@@ -468,7 +469,7 @@ L 0:   4 [-]: GETUPVAL R0 2; var0 = upvalues[2]
        9 [-]: CALL R0 5 2  ; var0 = var0(var1, var2, var3, var4)
       10 [-]: SETUPVAL R0 1; upvalues[0] = var1
       11 [-]: GETUPVAL R1 1; var1 = upvalues[1]
-      12 [-]: FASTCALL1 62 R1 L1; 
+      12 [-]: FASTCALL1 64 R1 L1; 
       13 [-]: GETIMPORT R0 4; var0 = 0x7B998233
       14 [-]: CALL R0 2 2  ; var0 = var0(var1)
 L 1:  15 [-]: JUMPIF R0 L2 ; goto L2 if var0
@@ -500,7 +501,7 @@ L 2:  27 [-]: RETURN R0 0  ;
        4 [-]: GETUPVAL R0 2; var0 = upvalues[2]
        5 [-]: GETUPVAL R2 0; var2 = upvalues[0]
        6 [-]: LOADN R3 9   ; var3 = 9
-       7 [-]: JUMPIFLT R2 R3 L0; goto L0 if var2 < var16777499
+       7 [-]: JUMPIFLT R2 R3 L0; goto L0 if var2 < var16777478
        8 [-]: LOADB R1 0 +1; var1 = false
 L 0:   9 [-]: LOADB R1 1   ; var1 = true
 L 1:  10 [-]: CALL R0 2 1  ; var0(var1)
@@ -615,112 +616,114 @@ L 1:  14 [-]: GETIMPORT R1 8; var1 = 0x3D106989
       41 [-]: SETUPVAL R1 9; upvalues[1] = var9
       42 [-]: GETIMPORT R1 8; var1 = 0x3D106989
       43 [-]: LOADK R3 K18 ; var3 = "WAR-3048543 -- CrpFighterLaunchPadEncounter: mModeMgr "
-      44 [-]: GETIMPORT R4 20; var4 = 0x64FB1586
-      45 [-]: GETUPVAL R6 6; var6 = upvalues[6]
-      46 [-]: JUMPXEQKNIL R6 L2; 
-      47 [-]: LOADB R5 0 +1; var5 = false
-L 2:  48 [-]: LOADB R5 1   ; var5 = true
-L 3:  49 [-]: CALL R4 2 2  ; var4 = var4(var5)
-      50 [-]: CONCAT R2 R3 R4; var2 = var3 .. var4
-      51 [-]: CALL R1 2 1  ; var1(var2)
-      52 [-]: GETUPVAL R2 12; var2 = upvalues[12]
-      53 [-]: GETTABLEKS R1 R2 K21; var1 = var2[0xD2C39E3E]
-      54 [-]: GETIMPORT R2 23; var2 = 0x0469F296
-      55 [-]: LOADK R3 K24 ; var3 = "EnterPoiAction"
-      56 [-]: CALL R2 2 2  ; var2 = var2(var3)
-      57 [-]: GETUPVAL R3 2; var3 = upvalues[2]
-      58 [-]: NAMECALL R3 R3 K25; var4 = var3; var3 = var3[0x65C63FBE]
-      59 [-]: CALL R3 2 0  ; var3, ... = var3(var4)
-      60 [-]: CALL R1 0 2  ; var1 = var1(var2, ...)
-      61 [-]: SETUPVAL R1 11; upvalues[1] = var11
-      62 [-]: GETUPVAL R1 2; var1 = upvalues[2]
-      63 [-]: NAMECALL R1 R1 K26; var2 = var1; var1 = var1[0xABE61691]
-      64 [-]: CALL R1 2 2  ; var1 = var1(var2)
-      65 [-]: SETUPVAL R1 13; upvalues[1] = var13
-      66 [-]: GETIMPORT R1 8; var1 = 0x3D106989
-      67 [-]: LOADK R3 K27 ; var3 = "WAR-3048543 -- CrpFighterLaunchPadEncounter: Current state="
-      68 [-]: GETIMPORT R4 20; var4 = 0x64FB1586
+      44 [-]: GETUPVAL R6 6; var6 = upvalues[6]
+      45 [-]: JUMPXEQKNIL R6 L2; 
+      46 [-]: LOADB R5 0 +1; var5 = false
+L 2:  47 [-]: LOADB R5 1   ; var5 = true
+L 3:  48 [-]: FASTCALL1 63 R5 L4; 
+      49 [-]: GETIMPORT R4 20; var4 = 0x64FB1586
+      50 [-]: CALL R4 2 2  ; var4 = var4(var5)
+L 4:  51 [-]: CONCAT R2 R3 R4; var2 = var3 .. var4
+      52 [-]: CALL R1 2 1  ; var1(var2)
+      53 [-]: GETUPVAL R2 12; var2 = upvalues[12]
+      54 [-]: GETTABLEKS R1 R2 K21; var1 = var2[0xD2C39E3E]
+      55 [-]: GETIMPORT R2 23; var2 = 0x0469F296
+      56 [-]: LOADK R3 K24 ; var3 = "EnterPoiAction"
+      57 [-]: CALL R2 2 2  ; var2 = var2(var3)
+      58 [-]: GETUPVAL R3 2; var3 = upvalues[2]
+      59 [-]: NAMECALL R3 R3 K25; var4 = var3; var3 = var3[0x65C63FBE]
+      60 [-]: CALL R3 2 0  ; var3, ... = var3(var4)
+      61 [-]: CALL R1 0 2  ; var1 = var1(var2, ...)
+      62 [-]: SETUPVAL R1 11; upvalues[1] = var11
+      63 [-]: GETUPVAL R1 2; var1 = upvalues[2]
+      64 [-]: NAMECALL R1 R1 K26; var2 = var1; var1 = var1[0xABE61691]
+      65 [-]: CALL R1 2 2  ; var1 = var1(var2)
+      66 [-]: SETUPVAL R1 13; upvalues[1] = var13
+      67 [-]: GETIMPORT R1 8; var1 = 0x3D106989
+      68 [-]: LOADK R3 K27 ; var3 = "WAR-3048543 -- CrpFighterLaunchPadEncounter: Current state="
       69 [-]: GETUPVAL R5 13; var5 = upvalues[13]
-      70 [-]: CALL R4 2 2  ; var4 = var4(var5)
-      71 [-]: CONCAT R2 R3 R4; var2 = var3 .. var4
-      72 [-]: CALL R1 2 1  ; var1(var2)
-      73 [-]: GETUPVAL R1 13; var1 = upvalues[13]
-      74 [-]: LOADN R2 0   ; var2 = 0
-      75 [-]: JUMPIFNOTLT R2 R1 L4; goto L4 if var2 >= var786951
-      76 [-]: GETUPVAL R2 12; var2 = upvalues[12]
-      77 [-]: GETTABLEKS R1 R2 K28; var1 = var2[0x2656FD9E]
-      78 [-]: GETUPVAL R2 2; var2 = upvalues[2]
-      79 [-]: CALL R1 2 3  ; var1, var2 = var1(var2)
-      80 [-]: SETUPVAL R1 14; upvalues[1] = var14
-      81 [-]: SETUPVAL R2 15; upvalues[2] = var15
-      82 [-]: JUMP L5      ; goto L5
-L 4:  83 [-]: GETIMPORT R1 8; var1 = 0x3D106989
-      84 [-]: LOADK R2 K29 ; var2 = "WAR-3048543 -- CrpFighterLaunchPadEncounter: Creating a crewship"
-      85 [-]: CALL R1 2 1  ; var1(var2)
-      86 [-]: GETIMPORT R1 11; var1 = 0xBE190284
-      87 [-]: NAMECALL R1 R1 K30; var2 = var1; var1 = var1[0xD7D79B74]
-      88 [-]: CALL R1 2 2  ; var1 = var1(var2)
-      89 [-]: SETUPVAL R1 16; upvalues[1] = var16
-      90 [-]: GETUPVAL R1 16; var1 = upvalues[16]
-      91 [-]: GETIMPORT R3 32; var3 = 0x93CD7BE9
-      92 [-]: LOADNIL R4   ; var4 = nil
-      93 [-]: LOADB R5 0   ; var5 = false
-      94 [-]: LOADB R6 1   ; var6 = true
-      95 [-]: LOADK R7 K33 ; var7 = "ShipReady"
-      96 [-]: NAMECALL R1 R1 K34; var2 = var1; var1 = var1[0xE091CA15]
-      97 [-]: CALL R1 7 1  ; var1(var2, var3, var4, var5, var6, var7)
-L 5:  98 [-]: GETUPVAL R2 15; var2 = upvalues[15]
-      99 [-]: FASTCALL1 62 R2 L6; 
-     100 [-]: GETIMPORT R1 36; var1 = 0x7B998233
-     101 [-]: CALL R1 2 2  ; var1 = var1(var2)
-L 6: 102 [-]: JUMPIFNOT R1 L7; goto L7 if not var1
-     103 [-]: GETIMPORT R1 6; var1 = 0xCBD666E1
-     104 [-]: LOADN R2 0   ; var2 = 0
-     105 [-]: CALL R1 2 1  ; var1(var2)
-     106 [-]: JUMPBACK L5  ; goto L5
-L 7: 107 [-]: GETIMPORT R1 8; var1 = 0x3D106989
-     108 [-]: LOADK R2 K37 ; var2 = "WAR-3048543 -- CrpFighterLaunchPadEncounter: Crew ship ready"
-     109 [-]: CALL R1 2 1  ; var1(var2)
-     110 [-]: GETUPVAL R1 17; var1 = upvalues[17]
-     111 [-]: CALL R1 1 1  ; var1()
-     112 [-]: DUPTABLE R1 39; 
-     113 [-]: NEWTABLE R2 0 1; var2 = {}
-     114 [-]: GETUPVAL R4 15; var4 = upvalues[15]
-     115 [-]: NAMECALL R4 R4 K41; var5 = var4; var4 = var4[0x26E191C7]
-     116 [-]: CALL R4 2 2  ; var4 = var4(var5)
-     117 [-]: ADDK R3 R4 K40; var3 = var4 + 1
-     118 [-]: SETLIST R2 R3 1 [1]; var2[1] = var3; var2[2] = var4; 
-     119 [-]: SETTABLEKS R2 R1 K38; var2["disallowed"] = var1
-     120 [-]: SETUPVAL R1 18; upvalues[1] = var18
-     121 [-]: GETUPVAL R4 20; var4 = upvalues[20]
-     122 [-]: NAMECALL R4 R4 K42; var5 = var4; var4 = var4[0x6D604BA7]
-     123 [-]: CALL R4 2 2  ; var4 = var4(var5)
-     124 [-]: MOVE R2 R4   ; var2 = var4
-     125 [-]: GETUPVAL R3 2; var3 = upvalues[2]
-     126 [-]: NAMECALL R3 R3 K43; var4 = var3; var3 = var3[0xED4E0128]
-     127 [-]: CALL R3 2 2  ; var3 = var3(var4)
-     128 [-]: CONCAT R1 R2 R3; var1 = var2 .. var3
-     129 [-]: SETUPVAL R1 19; upvalues[1] = var19
-     130 [-]: GETUPVAL R1 0; var1 = upvalues[0]
-     131 [-]: GETUPVAL R3 21; var3 = upvalues[21]
-     132 [-]: NAMECALL R1 R1 K44; var2 = var1; var1 = var1[0x058C13A1]
-     133 [-]: CALL R1 3 1  ; var1(var2, var3)
-     134 [-]: GETUPVAL R1 6; var1 = upvalues[6]
-     135 [-]: GETUPVAL R4 22; var4 = upvalues[22]
-     136 [-]: GETTABLEKS R3 R4 K45; var3 = var4[0x06D055F9]
-     137 [-]: GETUPVAL R5 13; var5 = upvalues[13]
-     138 [-]: JUMPXEQKN R5 K46 L8; 
-     139 [-]: LOADB R4 0 +1; var4 = false
-L 8: 140 [-]: LOADB R4 1   ; var4 = true
-L 9: 141 [-]: LOADN R5 1   ; var5 = 1
-     142 [-]: GETUPVAL R6 13; var6 = upvalues[13]
-     143 [-]: CALL R3 4 0  ; var3, ... = var3(var4, var5, var6)
-     144 [-]: NAMECALL R1 R1 K47; var2 = var1; var1 = var1[0x8ABFF40E]
-     145 [-]: CALL R1 0 1  ; var1(var2, ...)
-     146 [-]: LOADN R3 2   ; var3 = 2
-     147 [-]: NAMECALL R1 R0 K48; var2 = var0; var1 = var0[0xFE9DC265]
-     148 [-]: CALL R1 3 1  ; var1(var2, var3)
-     149 [-]: RETURN R0 0  ; 
+      70 [-]: FASTCALL1 63 R5 L5; 
+      71 [-]: GETIMPORT R4 20; var4 = 0x64FB1586
+      72 [-]: CALL R4 2 2  ; var4 = var4(var5)
+L 5:  73 [-]: CONCAT R2 R3 R4; var2 = var3 .. var4
+      74 [-]: CALL R1 2 1  ; var1(var2)
+      75 [-]: GETUPVAL R1 13; var1 = upvalues[13]
+      76 [-]: LOADN R2 0   ; var2 = 0
+      77 [-]: JUMPIFNOTLT R2 R1 L6; goto L6 if var2 >= var787004
+      78 [-]: GETUPVAL R2 12; var2 = upvalues[12]
+      79 [-]: GETTABLEKS R1 R2 K28; var1 = var2[0x2656FD9E]
+      80 [-]: GETUPVAL R2 2; var2 = upvalues[2]
+      81 [-]: CALL R1 2 3  ; var1, var2 = var1(var2)
+      82 [-]: SETUPVAL R1 14; upvalues[1] = var14
+      83 [-]: SETUPVAL R2 15; upvalues[2] = var15
+      84 [-]: JUMP L7      ; goto L7
+L 6:  85 [-]: GETIMPORT R1 8; var1 = 0x3D106989
+      86 [-]: LOADK R2 K29 ; var2 = "WAR-3048543 -- CrpFighterLaunchPadEncounter: Creating a crewship"
+      87 [-]: CALL R1 2 1  ; var1(var2)
+      88 [-]: GETIMPORT R1 11; var1 = 0xBE190284
+      89 [-]: NAMECALL R1 R1 K30; var2 = var1; var1 = var1[0xD7D79B74]
+      90 [-]: CALL R1 2 2  ; var1 = var1(var2)
+      91 [-]: SETUPVAL R1 16; upvalues[1] = var16
+      92 [-]: GETUPVAL R1 16; var1 = upvalues[16]
+      93 [-]: GETIMPORT R3 32; var3 = 0x93CD7BE9
+      94 [-]: LOADNIL R4   ; var4 = nil
+      95 [-]: LOADB R5 0   ; var5 = false
+      96 [-]: LOADB R6 1   ; var6 = true
+      97 [-]: LOADK R7 K33 ; var7 = "ShipReady"
+      98 [-]: NAMECALL R1 R1 K34; var2 = var1; var1 = var1[0xE091CA15]
+      99 [-]: CALL R1 7 1  ; var1(var2, var3, var4, var5, var6, var7)
+L 7: 100 [-]: GETUPVAL R2 15; var2 = upvalues[15]
+     101 [-]: FASTCALL1 64 R2 L8; 
+     102 [-]: GETIMPORT R1 36; var1 = 0x7B998233
+     103 [-]: CALL R1 2 2  ; var1 = var1(var2)
+L 8: 104 [-]: JUMPIFNOT R1 L9; goto L9 if not var1
+     105 [-]: GETIMPORT R1 6; var1 = 0xCBD666E1
+     106 [-]: LOADN R2 0   ; var2 = 0
+     107 [-]: CALL R1 2 1  ; var1(var2)
+     108 [-]: JUMPBACK L7  ; goto L7
+L 9: 109 [-]: GETIMPORT R1 8; var1 = 0x3D106989
+     110 [-]: LOADK R2 K37 ; var2 = "WAR-3048543 -- CrpFighterLaunchPadEncounter: Crew ship ready"
+     111 [-]: CALL R1 2 1  ; var1(var2)
+     112 [-]: GETUPVAL R1 17; var1 = upvalues[17]
+     113 [-]: CALL R1 1 1  ; var1()
+     114 [-]: DUPTABLE R1 39; 
+     115 [-]: NEWTABLE R2 0 1; var2 = {}
+     116 [-]: GETUPVAL R4 15; var4 = upvalues[15]
+     117 [-]: NAMECALL R4 R4 K41; var5 = var4; var4 = var4[0x26E191C7]
+     118 [-]: CALL R4 2 2  ; var4 = var4(var5)
+     119 [-]: ADDK R3 R4 K40; var3 = var4 + 1
+     120 [-]: SETLIST R2 R3 1 [1]; var2[1] = var3; var2[2] = var4; 
+     121 [-]: SETTABLEKS R2 R1 K38; var2["disallowed"] = var1
+     122 [-]: SETUPVAL R1 18; upvalues[1] = var18
+     123 [-]: GETUPVAL R4 20; var4 = upvalues[20]
+     124 [-]: NAMECALL R4 R4 K42; var5 = var4; var4 = var4[0x6D604BA7]
+     125 [-]: CALL R4 2 2  ; var4 = var4(var5)
+     126 [-]: MOVE R2 R4   ; var2 = var4
+     127 [-]: GETUPVAL R3 2; var3 = upvalues[2]
+     128 [-]: NAMECALL R3 R3 K43; var4 = var3; var3 = var3[0xED4E0128]
+     129 [-]: CALL R3 2 2  ; var3 = var3(var4)
+     130 [-]: CONCAT R1 R2 R3; var1 = var2 .. var3
+     131 [-]: SETUPVAL R1 19; upvalues[1] = var19
+     132 [-]: GETUPVAL R1 0; var1 = upvalues[0]
+     133 [-]: GETUPVAL R3 21; var3 = upvalues[21]
+     134 [-]: NAMECALL R1 R1 K44; var2 = var1; var1 = var1[0x058C13A1]
+     135 [-]: CALL R1 3 1  ; var1(var2, var3)
+     136 [-]: GETUPVAL R1 6; var1 = upvalues[6]
+     137 [-]: GETUPVAL R4 22; var4 = upvalues[22]
+     138 [-]: GETTABLEKS R3 R4 K45; var3 = var4[0x06D055F9]
+     139 [-]: GETUPVAL R5 13; var5 = upvalues[13]
+     140 [-]: JUMPXEQKN R5 K46 L10; 
+     141 [-]: LOADB R4 0 +1; var4 = false
+L10: 142 [-]: LOADB R4 1   ; var4 = true
+L11: 143 [-]: LOADN R5 1   ; var5 = 1
+     144 [-]: GETUPVAL R6 13; var6 = upvalues[13]
+     145 [-]: CALL R3 4 0  ; var3, ... = var3(var4, var5, var6)
+     146 [-]: NAMECALL R1 R1 K47; var2 = var1; var1 = var1[0x8ABFF40E]
+     147 [-]: CALL R1 0 1  ; var1(var2, ...)
+     148 [-]: LOADN R3 2   ; var3 = 2
+     149 [-]: NAMECALL R1 R0 K48; var2 = var0; var1 = var0[0xFE9DC265]
+     150 [-]: CALL R1 3 1  ; var1(var2, var3)
+     151 [-]: RETURN R0 0  ; 
 
 
 ; Name:            
@@ -741,7 +744,7 @@ L 9: 141 [-]: LOADN R5 1   ; var5 = 1
        8 [-]: CALL R1 2 1  ; var1(var2)
        9 [-]: LOADN R1 0   ; var1 = 0
       10 [-]: LOADB R2 0   ; var2 = false
-L 0:  11 [-]: FASTCALL1 62 R0 L1; 
+L 0:  11 [-]: FASTCALL1 64 R0 L1; 
       12 [-]: MOVE R4 R0   ; var4 = var0
       13 [-]: GETIMPORT R3 5; var3 = 0x7B998233
       14 [-]: CALL R3 2 2  ; var3 = var3(var4)
@@ -757,7 +760,7 @@ L 1:  15 [-]: JUMPIF R3 L9 ; goto L9 if var3
       24 [-]: NAMECALL R3 R0 K10; var4 = var0; var3 = var0[0xEFE6CAD1]
       25 [-]: CALL R3 2 2  ; var3 = var3(var4)
       26 [-]: LOADN R4 4   ; var4 = 4
-      27 [-]: JUMPIFNOTLE R4 R3 L3; goto L3 if var4 > var66382
+      27 [-]: JUMPIFNOTLE R4 R3 L3; goto L3 if var4 > var66337
 L 2:  28 [-]: GETIMPORT R3 1; var3 = 0x3D106989
       29 [-]: LOADK R4 K11 ; var4 = "WAR-3048543 -- CrpFighterLaunchPadEncounter: Completed"
       30 [-]: CALL R3 2 1  ; var3(var4)

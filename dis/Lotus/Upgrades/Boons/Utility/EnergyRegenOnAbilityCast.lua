@@ -51,12 +51,12 @@ L 1:  13 [-]: MUL R2 R3 R0 ; var2 = var3 * var0
        1 [-]: NAMECALL R5 R5 K2; var6 = var5; var5 = var5[0x18D05D30]
        2 [-]: CALL R5 2 2  ; var5 = var5(var6)
        3 [-]: JUMPIFNOT R5 L2; goto L2 if not var5
-       4 [-]: FASTCALL1 62 R0 L0; 
+       4 [-]: FASTCALL1 64 R0 L0; 
        5 [-]: MOVE R6 R0   ; var6 = var0
        6 [-]: GETIMPORT R5 4; var5 = 0x7B998233
        7 [-]: CALL R5 2 2  ; var5 = var5(var6)
 L 0:   8 [-]: JUMPIF R5 L2 ; goto L2 if var5
-       9 [-]: FASTCALL1 62 R1 L1; 
+       9 [-]: FASTCALL1 64 R1 L1; 
       10 [-]: MOVE R6 R1   ; var6 = var1
       11 [-]: GETIMPORT R5 4; var5 = 0x7B998233
       12 [-]: CALL R5 2 2  ; var5 = var5(var6)
@@ -72,56 +72,65 @@ L 3:  19 [-]: NAMECALL R5 R1 K8; var6 = var1; var5 = var1[0xB1C24820]
       22 [-]: GETIMPORT R7 10; var7 = 0xAA2606C8
       23 [-]: NAMECALL R5 R1 K11; var6 = var1; var5 = var1[0xDADDFB73]
       24 [-]: CALL R5 3 2  ; var5 = var5(var6, var7)
-      25 [-]: FASTCALL1 62 R5 L4; 
+      25 [-]: FASTCALL1 64 R5 L4; 
       26 [-]: MOVE R7 R5   ; var7 = var5
       27 [-]: GETIMPORT R6 4; var6 = 0x7B998233
       28 [-]: CALL R6 2 2  ; var6 = var6(var7)
 L 4:  29 [-]: JUMPIF R6 L7 ; goto L7 if var6
       30 [-]: NAMECALL R6 R5 K12; var7 = var5; var6 = var5[0x7E627183]
       31 [-]: CALL R6 2 2  ; var6 = var6(var7)
-      32 [-]: GETIMPORT R10 14; var10 = 0x6BFF8E7B
-      33 [-]: MUL R9 R6 R10; var9 = var6 * var10
-      34 [-]: NAMECALL R7 R1 K15; var8 = var1; var7 = var1[0xFC80301E]
-      35 [-]: CALL R7 3 1  ; var7(var8, var9)
-      36 [-]: RETURN R0 0  ; 
-L 5:  37 [-]: NAMECALL R5 R0 K16; var6 = var0; var5 = var0[0xDE321E6F]
-      38 [-]: CALL R5 2 2  ; var5 = var5(var6)
-      39 [-]: GETIMPORT R7 18; var7 = 0xCB986761
-      40 [-]: LOADN R8 0   ; var8 = 0
-      41 [-]: LOADN R9 3   ; var9 = 3
-      42 [-]: GETIMPORT R10 20; var10 = 0xFB75602C
-      43 [-]: LOADNIL R11  ; var11 = nil
-      44 [-]: LOADNIL R12  ; var12 = nil
-      45 [-]: LOADN R13 25 ; var13 = 25
-      46 [-]: GETIMPORT R14 22; var14 = 0x0469F296
-      47 [-]: LOADK R15 K23; var15 = "BEAST_MODE"
-      48 [-]: CALL R14 2 0 ; var14, ... = var14(var15)
-      49 [-]: NAMECALL R5 R5 K24; var6 = var5; var5 = var5[0x617A63C6]
-      50 [-]: CALL R5 0 1  ; var5(var6, ...)
-      51 [-]: GETIMPORT R5 27; var5 = 0x6C97A788[0x608BC054]
-      52 [-]: CALL R5 1 2  ; var5 = var5()
-      53 [-]: SETTABLEKS R0 R5 K28; var0["instigator"] = var5
-      54 [-]: NEWTABLE R6 0 1; var6 = {}
-      55 [-]: MOVE R7 R0   ; var7 = var0
-      56 [-]: SETLIST R6 R7 1 [1]; var6[1] = var7; var6[2] = var8; 
-      57 [-]: SETTABLEKS R6 R5 K29; var6["affected"] = var5
-      58 [-]: SETTABLEKS R4 R5 K30; var4["abilityType"] = var5
-      59 [-]: LOADN R6 3   ; var6 = 3
-      60 [-]: SETTABLEKS R6 R5 K31; var6["buffType"] = var5
-      61 [-]: GETIMPORT R6 18; var6 = 0xCB986761
-      62 [-]: SETTABLEKS R6 R5 K32; var6["buffData"] = var5
-      63 [-]: GETIMPORT R8 20; var8 = 0xFB75602C
-      64 [-]: MULK R7 R8 K33; var7 = var8 * 100
-      65 [-]: FASTCALL1 12 R7 L6; 
-      66 [-]: GETIMPORT R6 36; var6 = 0x5BCED4C4[0x55F27C30]
-      67 [-]: CALL R6 2 2  ; var6 = var6(var7)
-L 6:  68 [-]: SETTABLEKS R6 R5 K37; var6["buffDataExtra"] = var5
-      69 [-]: MOVE R8 R5   ; var8 = var5
-      70 [-]: LOADB R9 1   ; var9 = true
-      71 [-]: LOADB R10 1  ; var10 = true
-      72 [-]: NAMECALL R6 R0 K38; var7 = var0; var6 = var0[0x37E45FB5]
-      73 [-]: CALL R6 5 1  ; var6(var7, var8, var9, var10)
-L 7:  74 [-]: RETURN R0 0  ; 
+      32 [-]: NAMECALL R7 R1 K13; var8 = var1; var7 = var1[0x58A4D5AC]
+      33 [-]: CALL R7 2 2  ; var7 = var7(var8)
+      34 [-]: GETIMPORT R11 15; var11 = 0x6BFF8E7B
+      35 [-]: MUL R10 R6 R11; var10 = var6 * var11
+      36 [-]: NAMECALL R8 R1 K16; var9 = var1; var8 = var1[0xFC80301E]
+      37 [-]: CALL R8 3 1  ; var8(var9, var10)
+      38 [-]: NAMECALL R10 R0 K17; var11 = var0; var10 = var0[0x5E651723]
+      39 [-]: CALL R10 2 2 ; var10 = var10(var11)
+      40 [-]: NAMECALL R12 R1 K13; var13 = var1; var12 = var1[0x58A4D5AC]
+      41 [-]: CALL R12 2 2 ; var12 = var12(var13)
+      42 [-]: SUB R11 R12 R7; var11 = var12 - var7
+      43 [-]: NAMECALL R8 R0 K18; var9 = var0; var8 = var0[0x95F901D0]
+      44 [-]: CALL R8 4 1  ; var8(var9, var10, var11)
+      45 [-]: RETURN R0 0  ; 
+L 5:  46 [-]: NAMECALL R5 R0 K19; var6 = var0; var5 = var0[0xDE321E6F]
+      47 [-]: CALL R5 2 2  ; var5 = var5(var6)
+      48 [-]: GETIMPORT R7 21; var7 = 0xCB986761
+      49 [-]: LOADN R8 0   ; var8 = 0
+      50 [-]: LOADN R9 3   ; var9 = 3
+      51 [-]: GETIMPORT R10 23; var10 = 0xFB75602C
+      52 [-]: LOADNIL R11  ; var11 = nil
+      53 [-]: LOADNIL R12  ; var12 = nil
+      54 [-]: LOADN R13 25 ; var13 = 25
+      55 [-]: GETIMPORT R14 25; var14 = 0x0469F296
+      56 [-]: LOADK R15 K26; var15 = "BEAST_MODE"
+      57 [-]: CALL R14 2 0 ; var14, ... = var14(var15)
+      58 [-]: NAMECALL R5 R5 K27; var6 = var5; var5 = var5[0x617A63C6]
+      59 [-]: CALL R5 0 1  ; var5(var6, ...)
+      60 [-]: GETIMPORT R5 30; var5 = 0x6C97A788[0x608BC054]
+      61 [-]: CALL R5 1 2  ; var5 = var5()
+      62 [-]: SETTABLEKS R0 R5 K31; var0["instigator"] = var5
+      63 [-]: NEWTABLE R6 0 1; var6 = {}
+      64 [-]: MOVE R7 R0   ; var7 = var0
+      65 [-]: SETLIST R6 R7 1 [1]; var6[1] = var7; var6[2] = var8; 
+      66 [-]: SETTABLEKS R6 R5 K32; var6["affected"] = var5
+      67 [-]: SETTABLEKS R4 R5 K33; var4["abilityType"] = var5
+      68 [-]: LOADN R6 3   ; var6 = 3
+      69 [-]: SETTABLEKS R6 R5 K34; var6["buffType"] = var5
+      70 [-]: GETIMPORT R6 21; var6 = 0xCB986761
+      71 [-]: SETTABLEKS R6 R5 K35; var6["buffData"] = var5
+      72 [-]: GETIMPORT R8 23; var8 = 0xFB75602C
+      73 [-]: MULK R7 R8 K36; var7 = var8 * 100
+      74 [-]: FASTCALL1 12 R7 L6; 
+      75 [-]: GETIMPORT R6 39; var6 = 0x5BCED4C4[0x55F27C30]
+      76 [-]: CALL R6 2 2  ; var6 = var6(var7)
+L 6:  77 [-]: SETTABLEKS R6 R5 K40; var6["buffDataExtra"] = var5
+      78 [-]: MOVE R8 R5   ; var8 = var5
+      79 [-]: LOADB R9 1   ; var9 = true
+      80 [-]: LOADB R10 1  ; var10 = true
+      81 [-]: NAMECALL R6 R0 K41; var7 = var0; var6 = var0[0x37E45FB5]
+      82 [-]: CALL R6 5 1  ; var6(var7, var8, var9, var10)
+L 7:  83 [-]: RETURN R0 0  ; 
 
 
 

@@ -45,7 +45,7 @@ L 0:   8 [-]: GETTABLE R2 R3 R4; var2 = var3[var4]
        0 [-]: GETIMPORT R5 2; var5 = 0x5BCED4C4[0x3630E649]
        1 [-]: CALL R5 1 2  ; var5 = var5()
        2 [-]: GETIMPORT R6 4; var6 = 0x1F68AE5A
-       3 [-]: JUMPIFNOTLT R6 R5 L0; goto L0 if var6 >= var65581
+       3 [-]: JUMPIFNOTLT R6 R5 L0; goto L0 if var6 >= var65571
        4 [-]: RETURN R0 0  ; 
 L 0:   5 [-]: GETIMPORT R5 6; var5 = 0x89326C93
        6 [-]: GETIMPORT R7 8; var7 = gLotusNpcAvatarType

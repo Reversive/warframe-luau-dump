@@ -3,7 +3,7 @@
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       1
-; Max Stack Size:  34
+; Max Stack Size:  32
 
        1 [-]: GETIMPORT R0 1; var0 = 0xAEABECDA
        2 [-]: GETVARARGS R1 1; var1 = ...
@@ -17,288 +17,279 @@
       10 [-]: GETIMPORT R1 9; var1 = 0xB009BBC6
       11 [-]: LOADK R2 K10 ; var2 = "/Lotus/Interface/Icons/GameModes/GenericObjectiveIcon.png"
       12 [-]: CALL R1 2 2  ; var1 = var1(var2)
-      13 [-]: LOADNIL R2   ; var2 = nil
-      14 [-]: GETIMPORT R3 12; var3 = 0x0469F296
-      15 [-]: LOADK R4 K13 ; var4 = "GhostTower"
-      16 [-]: CALL R3 2 2  ; var3 = var3(var4)
-      17 [-]: GETIMPORT R4 15; var4 = 0x2D0FAD09
-      18 [-]: LOADK R5 K16 ; var5 = "Lotus.Interface.LotusUtilities"
-      19 [-]: CALL R4 2 2  ; var4 = var4(var5)
-      20 [-]: GETIMPORT R5 15; var5 = 0x2D0FAD09
-      21 [-]: LOADK R6 K17 ; var6 = "EE.Interface.Utilities"
-      22 [-]: CALL R5 2 2  ; var5 = var5(var6)
-      23 [-]: LOADNIL R6   ; var6 = nil
-      24 [-]: DUPCLOSURE R7 K18; 
-      25 [-]: CAPTURE VAL R3; 
-      26 [-]: DUPCLOSURE R8 K19; 
-      27 [-]: DUPCLOSURE R9 K20; 
-      28 [-]: NEWCLOSURE R10 P3; 
-      29 [-]: CAPTURE REF R6; 
-      30 [-]: CAPTURE VAL R3; 
-      31 [-]: LOADN R11 0  ; var11 = 0
-      32 [-]: SETGLOBAL R11 K21; "NO_ICON" = var11
-      33 [-]: LOADN R11 1  ; var11 = 1
-      34 [-]: SETGLOBAL R11 K22; "GENERIC_ICON" = var11
-      35 [-]: LOADN R11 2  ; var11 = 2
-      36 [-]: SETGLOBAL R11 K23; "ATTACK_ICON" = var11
-      37 [-]: LOADN R11 3  ; var11 = 3
-      38 [-]: SETGLOBAL R11 K24; "EXTRACT_ICON" = var11
-      39 [-]: LOADN R11 4  ; var11 = 4
-      40 [-]: SETGLOBAL R11 K25; "LOOT_ICON" = var11
-      41 [-]: LOADN R11 5  ; var11 = 5
-      42 [-]: SETGLOBAL R11 K26; "DEFEND_ICON" = var11
-      43 [-]: LOADN R11 6  ; var11 = 6
-      44 [-]: SETGLOBAL R11 K27; "LETTER_ICON_A" = var11
-      45 [-]: LOADN R11 7  ; var11 = 7
-      46 [-]: SETGLOBAL R11 K28; "LETTER_ICON_B" = var11
-      47 [-]: LOADN R11 8  ; var11 = 8
-      48 [-]: SETGLOBAL R11 K29; "LETTER_ICON_C" = var11
-      49 [-]: LOADN R11 9  ; var11 = 9
-      50 [-]: SETGLOBAL R11 K30; "LETTER_ICON_D" = var11
-      51 [-]: LOADN R11 10 ; var11 = 10
-      52 [-]: SETGLOBAL R11 K31; "LETTER_ICON_E" = var11
-      53 [-]: LOADN R11 11 ; var11 = 11
-      54 [-]: SETGLOBAL R11 K32; "LETTER_ICON_F" = var11
-      55 [-]: LOADN R11 12 ; var11 = 12
-      56 [-]: SETGLOBAL R11 K33; "ALERT_PANEL" = var11
-      57 [-]: LOADN R11 13 ; var11 = 13
-      58 [-]: SETGLOBAL R11 K34; "NEW_QUEST" = var11
-      59 [-]: LOADN R11 14 ; var11 = 14
-      60 [-]: SETGLOBAL R11 K35; "GRINEEROBJ_ICON" = var11
-      61 [-]: LOADN R11 15 ; var11 = 15
-      62 [-]: SETGLOBAL R11 K36; "CORPUSOBJ_ICON" = var11
-      63 [-]: LOADN R11 16 ; var11 = 16
-      64 [-]: SETGLOBAL R11 K37; "TESHINOBJ_ICON" = var11
-      65 [-]: LOADN R11 17 ; var11 = 17
-      66 [-]: SETGLOBAL R11 K38; "DRIFTEROBJ_ICON" = var11
-      67 [-]: LOADNIL R11  ; var11 = nil
-      68 [-]: NEWCLOSURE R12 P4; 
-      69 [-]: CAPTURE REF R11; 
-      70 [-]: DUPCLOSURE R13 K39; 
-      71 [-]: DUPCLOSURE R14 K40; 
-      72 [-]: DUPCLOSURE R15 K41; 
-      73 [-]: CAPTURE VAL R12; 
-      74 [-]: DUPCLOSURE R16 K42; 
-      75 [-]: DUPCLOSURE R17 K43; 
-      76 [-]: DUPCLOSURE R18 K44; 
-      77 [-]: DUPCLOSURE R19 K45; 
-      78 [-]: DUPCLOSURE R20 K46; 
-      79 [-]: DUPCLOSURE R21 K47; 
-      80 [-]: LOADN R22 16 ; var22 = 16
-      81 [-]: SETGLOBAL R22 K48; "FONT_XS" = var22
-      82 [-]: LOADN R22 18 ; var22 = 18
-      83 [-]: SETGLOBAL R22 K49; "FONT_S" = var22
-      84 [-]: LOADN R22 20 ; var22 = 20
-      85 [-]: SETGLOBAL R22 K50; "FONT_M" = var22
-      86 [-]: LOADN R22 22 ; var22 = 22
-      87 [-]: SETGLOBAL R22 K51; "FONT_L" = var22
-      88 [-]: LOADN R22 24 ; var22 = 24
-      89 [-]: SETGLOBAL R22 K52; "FONT_XL" = var22
-      90 [-]: DUPCLOSURE R22 K53; 
-      91 [-]: SETGLOBAL R22 K54; "DestroyAllTrackers" = var22
-      92 [-]: DUPCLOSURE R22 K55; 
-      93 [-]: DUPCLOSURE R23 K56; 
-      94 [-]: CAPTURE VAL R10; 
-      95 [-]: CAPTURE VAL R5; 
-      96 [-]: CAPTURE VAL R4; 
-      97 [-]: SETGLOBAL R23 K57; "SetTitleObjText" = var23
-      98 [-]: DUPCLOSURE R23 K58; 
-      99 [-]: SETGLOBAL R23 K59; "ClearTitleObjText" = var23
-     100 [-]: DUPCLOSURE R23 K60; 
-     101 [-]: DUPCLOSURE R24 K61; 
-     102 [-]: CAPTURE VAL R10; 
-     103 [-]: CAPTURE VAL R5; 
-     104 [-]: CAPTURE VAL R4; 
-     105 [-]: SETGLOBAL R24 K62; "SetSubTitleObjText" = var24
-     106 [-]: DUPCLOSURE R24 K63; 
-     107 [-]: SETGLOBAL R24 K64; "ClearSubTitleObjText" = var24
-     108 [-]: DUPCLOSURE R24 K65; 
-     109 [-]: DUPCLOSURE R25 K66; 
-     110 [-]: CAPTURE VAL R10; 
-     111 [-]: CAPTURE VAL R5; 
-     112 [-]: CAPTURE VAL R4; 
-     113 [-]: CAPTURE VAL R15; 
-     114 [-]: SETGLOBAL R25 K67; "SetPrimaryObjText" = var25
-     115 [-]: DUPCLOSURE R25 K68; 
-     116 [-]: SETGLOBAL R25 K69; "ClearPrimaryObjText" = var25
-     117 [-]: DUPCLOSURE R25 K70; 
-     118 [-]: SETGLOBAL R25 K71; "SetPrimaryObjVisible" = var25
-     119 [-]: DUPCLOSURE R25 K72; 
-     120 [-]: DUPCLOSURE R26 K73; 
-     121 [-]: CAPTURE VAL R10; 
-     122 [-]: CAPTURE VAL R4; 
-     123 [-]: CAPTURE VAL R15; 
-     124 [-]: SETGLOBAL R26 K74; "SetSecondaryObjText" = var26
-     125 [-]: DUPCLOSURE R26 K75; 
-     126 [-]: CAPTURE VAL R18; 
-     127 [-]: SETGLOBAL R26 K76; "ClearSecondaryObjText" = var26
-     128 [-]: DUPCLOSURE R26 K77; 
-     129 [-]: CAPTURE VAL R18; 
-     130 [-]: SETGLOBAL R26 K78; "GetSecondaryObjTracker" = var26
-     131 [-]: DUPCLOSURE R26 K79; 
-     132 [-]: SETGLOBAL R26 K80; "SetSecondaryObjVisible" = var26
-     133 [-]: DUPCLOSURE R26 K81; 
-     134 [-]: DUPCLOSURE R27 K82; 
-     135 [-]: CAPTURE VAL R10; 
-     136 [-]: CAPTURE VAL R4; 
-     137 [-]: CAPTURE VAL R1; 
-     138 [-]: SETGLOBAL R27 K83; "SetObjProgressBar" = var27
-     139 [-]: DUPCLOSURE R27 K84; 
-     140 [-]: CAPTURE VAL R19; 
-     141 [-]: SETGLOBAL R27 K85; "SetObjProgressBarLabel" = var27
-     142 [-]: DUPCLOSURE R27 K86; 
-     143 [-]: CAPTURE VAL R19; 
-     144 [-]: SETGLOBAL R27 K87; "UpdateObjProgressBar" = var27
-     145 [-]: DUPCLOSURE R27 K88; 
-     146 [-]: CAPTURE VAL R19; 
-     147 [-]: SETGLOBAL R27 K89; "UpdateObjProgressBarPct" = var27
-     148 [-]: DUPCLOSURE R27 K90; 
-     149 [-]: CAPTURE VAL R19; 
-     150 [-]: SETGLOBAL R27 K91; "SetObjProgressBarColor" = var27
-     151 [-]: DUPCLOSURE R27 K92; 
-     152 [-]: SETGLOBAL R27 K93; "RemoveObjProgressBar" = var27
-     153 [-]: DUPCLOSURE R27 K94; 
-     154 [-]: CAPTURE VAL R19; 
-     155 [-]: SETGLOBAL R27 K95; "GetObjProgressBarTracker" = var27
-     156 [-]: DUPCLOSURE R27 K96; 
-     157 [-]: SETGLOBAL R27 K97; "SetObjProgressBarVisible" = var27
-     158 [-]: DUPCLOSURE R27 K98; 
-     159 [-]: DUPCLOSURE R28 K99; 
-     160 [-]: CAPTURE VAL R5; 
-     161 [-]: CAPTURE VAL R10; 
-     162 [-]: CAPTURE VAL R4; 
-     163 [-]: SETGLOBAL R28 K100; "SetConflictBar" = var28
-     164 [-]: DUPCLOSURE R28 K101; 
-     165 [-]: SETGLOBAL R28 K102; "GetConflictBar" = var28
-     166 [-]: DUPCLOSURE R28 K103; 
-     167 [-]: SETGLOBAL R28 K104; "ClearConflictBar" = var28
-     168 [-]: DUPCLOSURE R28 K105; 
-     169 [-]: DUPCLOSURE R29 K106; 
-     170 [-]: CAPTURE VAL R10; 
-     171 [-]: CAPTURE VAL R4; 
-     172 [-]: SETGLOBAL R29 K107; "SetNpcHealthTracker" = var29
-     173 [-]: DUPCLOSURE R29 K108; 
-     174 [-]: SETGLOBAL R29 K109; "GetNpcHealthTracker" = var29
-     175 [-]: DUPCLOSURE R29 K110; 
-     176 [-]: SETGLOBAL R29 K111; "ClearNpcHealthTracker" = var29
-     177 [-]: LOADN R29 0  ; var29 = 0
-     178 [-]: SETGLOBAL R29 K112; "BLANK_STRING" = var29
-     179 [-]: LOADN R29 1  ; var29 = 1
-     180 [-]: SETGLOBAL R29 K113; "TIMELEFT_STRING" = var29
-     181 [-]: LOADN R29 2  ; var29 = 2
-     182 [-]: SETGLOBAL R29 K114; "TIMELIMIT_STRING" = var29
-     183 [-]: LOADN R29 3  ; var29 = 3
-     184 [-]: SETGLOBAL R29 K115; "NEXTWAVE_STRING" = var29
-     185 [-]: DUPCLOSURE R29 K116; 
-     186 [-]: DUPCLOSURE R30 K117; 
-     187 [-]: CAPTURE VAL R10; 
-     188 [-]: CAPTURE VAL R4; 
-     189 [-]: CAPTURE VAL R0; 
-     190 [-]: SETGLOBAL R30 K118; "SetObjTimer" = var30
-     191 [-]: DUPCLOSURE R30 K119; 
-     192 [-]: CAPTURE VAL R20; 
-     193 [-]: SETGLOBAL R30 K120; "GetObjTime" = var30
-     194 [-]: DUPCLOSURE R30 K121; 
-     195 [-]: CAPTURE VAL R20; 
-     196 [-]: SETGLOBAL R30 K122; "GetObjTimeTracker" = var30
-     197 [-]: DUPCLOSURE R30 K123; 
-     198 [-]: CAPTURE VAL R20; 
-     199 [-]: SETGLOBAL R30 K124; "PauseObjTimer" = var30
-     200 [-]: DUPCLOSURE R30 K125; 
-     201 [-]: SETGLOBAL R30 K126; "RemoveObjTimer" = var30
-     202 [-]: DUPCLOSURE R30 K127; 
-     203 [-]: SETGLOBAL R30 K128; "SetObjTimerVisible" = var30
-     204 [-]: DUPCLOSURE R30 K129; 
-     205 [-]: CAPTURE VAL R10; 
-     206 [-]: CAPTURE VAL R4; 
-     207 [-]: CAPTURE VAL R15; 
-     208 [-]: SETGLOBAL R30 K130; "SetCachesObjectiveText" = var30
-     209 [-]: DUPCLOSURE R30 K131; 
-     210 [-]: CAPTURE VAL R10; 
-     211 [-]: CAPTURE VAL R4; 
-     212 [-]: CAPTURE VAL R15; 
-     213 [-]: CAPTURE VAL R0; 
-     214 [-]: SETGLOBAL R30 K132; "SetTimedChallengeObj" = var30
-     215 [-]: DUPCLOSURE R30 K133; 
-     216 [-]: SETGLOBAL R30 K134; "RemoveTimedChallengeObj" = var30
-     217 [-]: DUPCLOSURE R30 K135; 
-     218 [-]: CAPTURE VAL R10; 
-     219 [-]: CAPTURE VAL R4; 
-     220 [-]: CAPTURE VAL R15; 
-     221 [-]: SETGLOBAL R30 K136; "SetExtractObjText" = var30
-     222 [-]: DUPCLOSURE R30 K137; 
-     223 [-]: CAPTURE VAL R10; 
-     224 [-]: CAPTURE VAL R4; 
-     225 [-]: SETGLOBAL R30 K138; "SetExtractionTimer" = var30
-     226 [-]: DUPCLOSURE R30 K139; 
-     227 [-]: CAPTURE VAL R21; 
-     228 [-]: SETGLOBAL R30 K140; "GetExtractionTime" = var30
-     229 [-]: DUPCLOSURE R30 K141; 
-     230 [-]: SETGLOBAL R30 K142; "RemoveExtractionTimer" = var30
-     231 [-]: DUPCLOSURE R30 K143; 
-     232 [-]: SETGLOBAL R30 K144; "ClearExtractObjText" = var30
-     233 [-]: GETIMPORT R30 146; var30 = 0x7ED0A956
-     234 [-]: LOADK R31 K147; var31 = "/Lotus/Types/Keys/SolarisQuest/SolarisQuestKeyChain"
-     235 [-]: CALL R30 2 2 ; var30 = var30(var31)
-     236 [-]: GETIMPORT R31 146; var31 = 0x7ED0A956
-     237 [-]: LOADK R32 K148; var32 = "/Lotus/Types/Gameplay/InfestedMicroplanet/Jobs/VaultQuestBounty"
-     238 [-]: CALL R31 2 2 ; var31 = var31(var32)
-     239 [-]: DUPCLOSURE R32 K149; 
-     240 [-]: CAPTURE VAL R30; 
-     241 [-]: CAPTURE VAL R31; 
-     242 [-]: DUPCLOSURE R33 K150; 
-     243 [-]: CAPTURE VAL R32; 
-     244 [-]: CAPTURE VAL R10; 
-     245 [-]: CAPTURE VAL R4; 
-     246 [-]: SETGLOBAL R33 K151; "AddBountyBonus" = var33
-     247 [-]: DUPCLOSURE R33 K152; 
-     248 [-]: CAPTURE VAL R32; 
-     249 [-]: SETGLOBAL R33 K153; "SetBountyBonusAchieved" = var33
-     250 [-]: DUPCLOSURE R33 K154; 
-     251 [-]: CAPTURE VAL R32; 
-     252 [-]: SETGLOBAL R33 K155; "SetBountyBonusFailed" = var33
-     253 [-]: DUPCLOSURE R33 K156; 
-     254 [-]: CAPTURE VAL R32; 
-     255 [-]: SETGLOBAL R33 K157; "RemoveBountyBonus" = var33
-     256 [-]: DUPCLOSURE R33 K158; 
-     257 [-]: CAPTURE VAL R10; 
-     258 [-]: CAPTURE VAL R4; 
-     259 [-]: SETGLOBAL R33 K159; "SetBountyTitleText" = var33
-     260 [-]: DUPCLOSURE R33 K160; 
-     261 [-]: CAPTURE VAL R10; 
-     262 [-]: CAPTURE VAL R4; 
-     263 [-]: CAPTURE VAL R5; 
-     264 [-]: SETGLOBAL R33 K161; "SetZarimanBounty" = var33
-     265 [-]: DUPCLOSURE R33 K162; 
-     266 [-]: SETGLOBAL R33 K163; "RemoveZarimanBounty" = var33
-     267 [-]: DUPCLOSURE R33 K164; 
-     268 [-]: SETGLOBAL R33 K165; "SetDuviriActivityId" = var33
-     269 [-]: NEWCLOSURE R33 P71; 
-     270 [-]: CAPTURE REF R2; 
-     271 [-]: SETGLOBAL R33 K166; "ShowTutorialHint" = var33
-     272 [-]: NEWCLOSURE R33 P72; 
-     273 [-]: CAPTURE REF R2; 
-     274 [-]: SETGLOBAL R33 K167; "HideTutorialHint" = var33
-     275 [-]: DUPCLOSURE R33 K168; 
-     276 [-]: SETGLOBAL R33 K169; "SetDebugText" = var33
-     277 [-]: DUPCLOSURE R33 K170; 
-     278 [-]: SETGLOBAL R33 K171; "ClearDebugText" = var33
-     279 [-]: DUPCLOSURE R33 K172; 
-     280 [-]: SETGLOBAL R33 K173; "UpdateAlignments" = var33
-     281 [-]: DUPCLOSURE R33 K174; 
-     282 [-]: CAPTURE VAL R10; 
-     283 [-]: SETGLOBAL R33 K175; "GetPriorityOffset" = var33
-     284 [-]: DUPCLOSURE R33 K176; 
-     285 [-]: SETGLOBAL R33 K177; "GetSubObjIndents" = var33
-     286 [-]: DUPCLOSURE R33 K178; 
-     287 [-]: CAPTURE VAL R15; 
-     288 [-]: SETGLOBAL R33 K179; "SetObjectiveTextUI" = var33
-     289 [-]: CLOSEUPVALS R2; 
-     290 [-]: RETURN R0 0  ; 
+      13 [-]: GETIMPORT R2 12; var2 = 0x0469F296
+      14 [-]: LOADK R3 K13 ; var3 = "GhostTower"
+      15 [-]: CALL R2 2 2  ; var2 = var2(var3)
+      16 [-]: GETIMPORT R3 15; var3 = 0x2D0FAD09
+      17 [-]: LOADK R4 K16 ; var4 = "Lotus.Interface.LotusUtilities"
+      18 [-]: CALL R3 2 2  ; var3 = var3(var4)
+      19 [-]: GETIMPORT R4 15; var4 = 0x2D0FAD09
+      20 [-]: LOADK R5 K17 ; var5 = "EE.Interface.Utilities"
+      21 [-]: CALL R4 2 2  ; var4 = var4(var5)
+      22 [-]: LOADNIL R5   ; var5 = nil
+      23 [-]: DUPCLOSURE R6 K18; 
+      24 [-]: CAPTURE VAL R2; 
+      25 [-]: DUPCLOSURE R7 K19; 
+      26 [-]: DUPCLOSURE R8 K20; 
+      27 [-]: NEWCLOSURE R9 P3; 
+      28 [-]: CAPTURE REF R5; 
+      29 [-]: CAPTURE VAL R2; 
+      30 [-]: LOADN R10 0  ; var10 = 0
+      31 [-]: SETGLOBAL R10 K21; "NO_ICON" = var10
+      32 [-]: LOADN R10 1  ; var10 = 1
+      33 [-]: SETGLOBAL R10 K22; "GENERIC_ICON" = var10
+      34 [-]: LOADN R10 2  ; var10 = 2
+      35 [-]: SETGLOBAL R10 K23; "ATTACK_ICON" = var10
+      36 [-]: LOADN R10 3  ; var10 = 3
+      37 [-]: SETGLOBAL R10 K24; "EXTRACT_ICON" = var10
+      38 [-]: LOADN R10 4  ; var10 = 4
+      39 [-]: SETGLOBAL R10 K25; "LOOT_ICON" = var10
+      40 [-]: LOADN R10 5  ; var10 = 5
+      41 [-]: SETGLOBAL R10 K26; "DEFEND_ICON" = var10
+      42 [-]: LOADN R10 6  ; var10 = 6
+      43 [-]: SETGLOBAL R10 K27; "LETTER_ICON_A" = var10
+      44 [-]: LOADN R10 7  ; var10 = 7
+      45 [-]: SETGLOBAL R10 K28; "LETTER_ICON_B" = var10
+      46 [-]: LOADN R10 8  ; var10 = 8
+      47 [-]: SETGLOBAL R10 K29; "LETTER_ICON_C" = var10
+      48 [-]: LOADN R10 9  ; var10 = 9
+      49 [-]: SETGLOBAL R10 K30; "LETTER_ICON_D" = var10
+      50 [-]: LOADN R10 10 ; var10 = 10
+      51 [-]: SETGLOBAL R10 K31; "LETTER_ICON_E" = var10
+      52 [-]: LOADN R10 11 ; var10 = 11
+      53 [-]: SETGLOBAL R10 K32; "LETTER_ICON_F" = var10
+      54 [-]: LOADN R10 12 ; var10 = 12
+      55 [-]: SETGLOBAL R10 K33; "ALERT_PANEL" = var10
+      56 [-]: LOADN R10 13 ; var10 = 13
+      57 [-]: SETGLOBAL R10 K34; "NEW_QUEST" = var10
+      58 [-]: LOADN R10 14 ; var10 = 14
+      59 [-]: SETGLOBAL R10 K35; "GRINEEROBJ_ICON" = var10
+      60 [-]: LOADN R10 15 ; var10 = 15
+      61 [-]: SETGLOBAL R10 K36; "CORPUSOBJ_ICON" = var10
+      62 [-]: LOADN R10 16 ; var10 = 16
+      63 [-]: SETGLOBAL R10 K37; "TESHINOBJ_ICON" = var10
+      64 [-]: LOADN R10 17 ; var10 = 17
+      65 [-]: SETGLOBAL R10 K38; "DRIFTEROBJ_ICON" = var10
+      66 [-]: LOADNIL R10  ; var10 = nil
+      67 [-]: NEWCLOSURE R11 P4; 
+      68 [-]: CAPTURE REF R10; 
+      69 [-]: DUPCLOSURE R12 K39; 
+      70 [-]: DUPCLOSURE R13 K40; 
+      71 [-]: DUPCLOSURE R14 K41; 
+      72 [-]: CAPTURE VAL R11; 
+      73 [-]: DUPCLOSURE R15 K42; 
+      74 [-]: DUPCLOSURE R16 K43; 
+      75 [-]: DUPCLOSURE R17 K44; 
+      76 [-]: DUPCLOSURE R18 K45; 
+      77 [-]: DUPCLOSURE R19 K46; 
+      78 [-]: LOADN R20 16 ; var20 = 16
+      79 [-]: SETGLOBAL R20 K47; "FONT_XS" = var20
+      80 [-]: LOADN R20 18 ; var20 = 18
+      81 [-]: SETGLOBAL R20 K48; "FONT_S" = var20
+      82 [-]: LOADN R20 20 ; var20 = 20
+      83 [-]: SETGLOBAL R20 K49; "FONT_M" = var20
+      84 [-]: LOADN R20 22 ; var20 = 22
+      85 [-]: SETGLOBAL R20 K50; "FONT_L" = var20
+      86 [-]: LOADN R20 24 ; var20 = 24
+      87 [-]: SETGLOBAL R20 K51; "FONT_XL" = var20
+      88 [-]: DUPCLOSURE R20 K52; 
+      89 [-]: SETGLOBAL R20 K53; "DestroyAllTrackers" = var20
+      90 [-]: DUPCLOSURE R20 K54; 
+      91 [-]: DUPCLOSURE R21 K55; 
+      92 [-]: CAPTURE VAL R9; 
+      93 [-]: CAPTURE VAL R4; 
+      94 [-]: CAPTURE VAL R3; 
+      95 [-]: SETGLOBAL R21 K56; "SetTitleObjText" = var21
+      96 [-]: DUPCLOSURE R21 K57; 
+      97 [-]: SETGLOBAL R21 K58; "ClearTitleObjText" = var21
+      98 [-]: DUPCLOSURE R21 K59; 
+      99 [-]: DUPCLOSURE R22 K60; 
+     100 [-]: CAPTURE VAL R9; 
+     101 [-]: CAPTURE VAL R4; 
+     102 [-]: CAPTURE VAL R3; 
+     103 [-]: SETGLOBAL R22 K61; "SetSubTitleObjText" = var22
+     104 [-]: DUPCLOSURE R22 K62; 
+     105 [-]: SETGLOBAL R22 K63; "ClearSubTitleObjText" = var22
+     106 [-]: DUPCLOSURE R22 K64; 
+     107 [-]: DUPCLOSURE R23 K65; 
+     108 [-]: CAPTURE VAL R9; 
+     109 [-]: CAPTURE VAL R4; 
+     110 [-]: CAPTURE VAL R3; 
+     111 [-]: CAPTURE VAL R14; 
+     112 [-]: SETGLOBAL R23 K66; "SetPrimaryObjText" = var23
+     113 [-]: DUPCLOSURE R23 K67; 
+     114 [-]: SETGLOBAL R23 K68; "ClearPrimaryObjText" = var23
+     115 [-]: DUPCLOSURE R23 K69; 
+     116 [-]: SETGLOBAL R23 K70; "SetPrimaryObjVisible" = var23
+     117 [-]: DUPCLOSURE R23 K71; 
+     118 [-]: DUPCLOSURE R24 K72; 
+     119 [-]: CAPTURE VAL R9; 
+     120 [-]: CAPTURE VAL R3; 
+     121 [-]: CAPTURE VAL R14; 
+     122 [-]: SETGLOBAL R24 K73; "SetSecondaryObjText" = var24
+     123 [-]: DUPCLOSURE R24 K74; 
+     124 [-]: CAPTURE VAL R17; 
+     125 [-]: SETGLOBAL R24 K75; "ClearSecondaryObjText" = var24
+     126 [-]: DUPCLOSURE R24 K76; 
+     127 [-]: CAPTURE VAL R17; 
+     128 [-]: SETGLOBAL R24 K77; "GetSecondaryObjTracker" = var24
+     129 [-]: DUPCLOSURE R24 K78; 
+     130 [-]: SETGLOBAL R24 K79; "SetSecondaryObjVisible" = var24
+     131 [-]: DUPCLOSURE R24 K80; 
+     132 [-]: DUPCLOSURE R25 K81; 
+     133 [-]: CAPTURE VAL R9; 
+     134 [-]: CAPTURE VAL R3; 
+     135 [-]: CAPTURE VAL R1; 
+     136 [-]: SETGLOBAL R25 K82; "SetObjProgressBar" = var25
+     137 [-]: DUPCLOSURE R25 K83; 
+     138 [-]: SETGLOBAL R25 K84; "SetObjProgressBarLabel" = var25
+     139 [-]: DUPCLOSURE R25 K85; 
+     140 [-]: SETGLOBAL R25 K86; "UpdateObjProgressBar" = var25
+     141 [-]: DUPCLOSURE R25 K87; 
+     142 [-]: SETGLOBAL R25 K88; "UpdateObjProgressBarPct" = var25
+     143 [-]: DUPCLOSURE R25 K89; 
+     144 [-]: SETGLOBAL R25 K90; "SetObjProgressBarColor" = var25
+     145 [-]: DUPCLOSURE R25 K91; 
+     146 [-]: SETGLOBAL R25 K92; "RemoveObjProgressBar" = var25
+     147 [-]: DUPCLOSURE R25 K93; 
+     148 [-]: SETGLOBAL R25 K94; "GetObjProgressBarTracker" = var25
+     149 [-]: DUPCLOSURE R25 K95; 
+     150 [-]: SETGLOBAL R25 K96; "SetObjProgressBarVisible" = var25
+     151 [-]: DUPCLOSURE R25 K97; 
+     152 [-]: DUPCLOSURE R26 K98; 
+     153 [-]: CAPTURE VAL R4; 
+     154 [-]: CAPTURE VAL R9; 
+     155 [-]: CAPTURE VAL R3; 
+     156 [-]: SETGLOBAL R26 K99; "SetConflictBar" = var26
+     157 [-]: DUPCLOSURE R26 K100; 
+     158 [-]: SETGLOBAL R26 K101; "GetConflictBar" = var26
+     159 [-]: DUPCLOSURE R26 K102; 
+     160 [-]: SETGLOBAL R26 K103; "ClearConflictBar" = var26
+     161 [-]: DUPCLOSURE R26 K104; 
+     162 [-]: DUPCLOSURE R27 K105; 
+     163 [-]: CAPTURE VAL R9; 
+     164 [-]: CAPTURE VAL R3; 
+     165 [-]: SETGLOBAL R27 K106; "SetNpcHealthTracker" = var27
+     166 [-]: DUPCLOSURE R27 K107; 
+     167 [-]: SETGLOBAL R27 K108; "GetNpcHealthTracker" = var27
+     168 [-]: DUPCLOSURE R27 K109; 
+     169 [-]: SETGLOBAL R27 K110; "ClearNpcHealthTracker" = var27
+     170 [-]: LOADN R27 0  ; var27 = 0
+     171 [-]: SETGLOBAL R27 K111; "BLANK_STRING" = var27
+     172 [-]: LOADN R27 1  ; var27 = 1
+     173 [-]: SETGLOBAL R27 K112; "TIMELEFT_STRING" = var27
+     174 [-]: LOADN R27 2  ; var27 = 2
+     175 [-]: SETGLOBAL R27 K113; "TIMELIMIT_STRING" = var27
+     176 [-]: LOADN R27 3  ; var27 = 3
+     177 [-]: SETGLOBAL R27 K114; "NEXTWAVE_STRING" = var27
+     178 [-]: DUPCLOSURE R27 K115; 
+     179 [-]: DUPCLOSURE R28 K116; 
+     180 [-]: CAPTURE VAL R9; 
+     181 [-]: CAPTURE VAL R3; 
+     182 [-]: CAPTURE VAL R0; 
+     183 [-]: SETGLOBAL R28 K117; "SetObjTimer" = var28
+     184 [-]: DUPCLOSURE R28 K118; 
+     185 [-]: CAPTURE VAL R18; 
+     186 [-]: SETGLOBAL R28 K119; "GetObjTime" = var28
+     187 [-]: DUPCLOSURE R28 K120; 
+     188 [-]: CAPTURE VAL R18; 
+     189 [-]: SETGLOBAL R28 K121; "GetObjTimeTracker" = var28
+     190 [-]: DUPCLOSURE R28 K122; 
+     191 [-]: CAPTURE VAL R18; 
+     192 [-]: SETGLOBAL R28 K123; "PauseObjTimer" = var28
+     193 [-]: DUPCLOSURE R28 K124; 
+     194 [-]: SETGLOBAL R28 K125; "RemoveObjTimer" = var28
+     195 [-]: DUPCLOSURE R28 K126; 
+     196 [-]: SETGLOBAL R28 K127; "SetObjTimerVisible" = var28
+     197 [-]: DUPCLOSURE R28 K128; 
+     198 [-]: CAPTURE VAL R9; 
+     199 [-]: CAPTURE VAL R3; 
+     200 [-]: CAPTURE VAL R14; 
+     201 [-]: SETGLOBAL R28 K129; "SetCachesObjectiveText" = var28
+     202 [-]: DUPCLOSURE R28 K130; 
+     203 [-]: CAPTURE VAL R9; 
+     204 [-]: CAPTURE VAL R3; 
+     205 [-]: CAPTURE VAL R14; 
+     206 [-]: CAPTURE VAL R0; 
+     207 [-]: SETGLOBAL R28 K131; "SetTimedChallengeObj" = var28
+     208 [-]: DUPCLOSURE R28 K132; 
+     209 [-]: SETGLOBAL R28 K133; "RemoveTimedChallengeObj" = var28
+     210 [-]: DUPCLOSURE R28 K134; 
+     211 [-]: CAPTURE VAL R9; 
+     212 [-]: CAPTURE VAL R3; 
+     213 [-]: CAPTURE VAL R14; 
+     214 [-]: SETGLOBAL R28 K135; "SetExtractObjText" = var28
+     215 [-]: DUPCLOSURE R28 K136; 
+     216 [-]: CAPTURE VAL R9; 
+     217 [-]: CAPTURE VAL R3; 
+     218 [-]: SETGLOBAL R28 K137; "SetExtractionTimer" = var28
+     219 [-]: DUPCLOSURE R28 K138; 
+     220 [-]: CAPTURE VAL R19; 
+     221 [-]: SETGLOBAL R28 K139; "GetExtractionTime" = var28
+     222 [-]: DUPCLOSURE R28 K140; 
+     223 [-]: SETGLOBAL R28 K141; "RemoveExtractionTimer" = var28
+     224 [-]: DUPCLOSURE R28 K142; 
+     225 [-]: SETGLOBAL R28 K143; "ClearExtractObjText" = var28
+     226 [-]: GETIMPORT R28 145; var28 = 0x7ED0A956
+     227 [-]: LOADK R29 K146; var29 = "/Lotus/Types/Keys/SolarisQuest/SolarisQuestKeyChain"
+     228 [-]: CALL R28 2 2 ; var28 = var28(var29)
+     229 [-]: GETIMPORT R29 145; var29 = 0x7ED0A956
+     230 [-]: LOADK R30 K147; var30 = "/Lotus/Types/Gameplay/InfestedMicroplanet/Jobs/VaultQuestBounty"
+     231 [-]: CALL R29 2 2 ; var29 = var29(var30)
+     232 [-]: DUPCLOSURE R30 K148; 
+     233 [-]: CAPTURE VAL R28; 
+     234 [-]: CAPTURE VAL R29; 
+     235 [-]: DUPCLOSURE R31 K149; 
+     236 [-]: CAPTURE VAL R30; 
+     237 [-]: CAPTURE VAL R9; 
+     238 [-]: CAPTURE VAL R3; 
+     239 [-]: SETGLOBAL R31 K150; "AddBountyBonus" = var31
+     240 [-]: DUPCLOSURE R31 K151; 
+     241 [-]: CAPTURE VAL R30; 
+     242 [-]: SETGLOBAL R31 K152; "SetBountyBonusAchieved" = var31
+     243 [-]: DUPCLOSURE R31 K153; 
+     244 [-]: CAPTURE VAL R30; 
+     245 [-]: SETGLOBAL R31 K154; "SetBountyBonusFailed" = var31
+     246 [-]: DUPCLOSURE R31 K155; 
+     247 [-]: CAPTURE VAL R30; 
+     248 [-]: SETGLOBAL R31 K156; "RemoveBountyBonus" = var31
+     249 [-]: DUPCLOSURE R31 K157; 
+     250 [-]: CAPTURE VAL R9; 
+     251 [-]: CAPTURE VAL R3; 
+     252 [-]: SETGLOBAL R31 K158; "SetBountyTitleText" = var31
+     253 [-]: DUPCLOSURE R31 K159; 
+     254 [-]: CAPTURE VAL R9; 
+     255 [-]: CAPTURE VAL R3; 
+     256 [-]: CAPTURE VAL R4; 
+     257 [-]: SETGLOBAL R31 K160; "SetZarimanBounty" = var31
+     258 [-]: DUPCLOSURE R31 K161; 
+     259 [-]: SETGLOBAL R31 K162; "RemoveZarimanBounty" = var31
+     260 [-]: DUPCLOSURE R31 K163; 
+     261 [-]: SETGLOBAL R31 K164; "SetDuviriActivityId" = var31
+     262 [-]: DUPCLOSURE R31 K165; 
+     263 [-]: SETGLOBAL R31 K166; "ShowTutorialHint" = var31
+     264 [-]: DUPCLOSURE R31 K167; 
+     265 [-]: SETGLOBAL R31 K168; "HideTutorialHint" = var31
+     266 [-]: DUPCLOSURE R31 K169; 
+     267 [-]: SETGLOBAL R31 K170; "SetDebugText" = var31
+     268 [-]: DUPCLOSURE R31 K171; 
+     269 [-]: SETGLOBAL R31 K172; "ClearDebugText" = var31
+     270 [-]: DUPCLOSURE R31 K173; 
+     271 [-]: SETGLOBAL R31 K174; "UpdateAlignments" = var31
+     272 [-]: DUPCLOSURE R31 K175; 
+     273 [-]: CAPTURE VAL R9; 
+     274 [-]: SETGLOBAL R31 K176; "GetPriorityOffset" = var31
+     275 [-]: DUPCLOSURE R31 K177; 
+     276 [-]: SETGLOBAL R31 K178; "GetSubObjIndents" = var31
+     277 [-]: DUPCLOSURE R31 K179; 
+     278 [-]: CAPTURE VAL R14; 
+     279 [-]: SETGLOBAL R31 K180; "SetObjectiveTextUI" = var31
+     280 [-]: CLOSEUPVALS R5; 
+     281 [-]: RETURN R0 0  ; 
 
 
 ; Name:            
-; Defined at line: 40
+; Defined at line: 39
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -306,30 +297,31 @@
 
        0 [-]: GETTABLEKS R2 R0 K0; var2 = var0["goalTag"]
        1 [-]: GETUPVAL R3 0; var3 = upvalues[0]
-       2 [-]: JUMPIFEQ R2 R3 L0; goto L0 if var2 == var16777499
+       2 [-]: JUMPIFEQ R2 R3 L0; goto L0 if var2 == var16777478
        3 [-]: LOADB R1 0 +1; var1 = false
 L 0:   4 [-]: LOADB R1 1   ; var1 = true
 L 1:   5 [-]: RETURN R1 1  ; 
 
 
 ; Name:            
-; Defined at line: 44
+; Defined at line: 43
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
 ; Max Stack Size:  4
 
        0 [-]: GETIMPORT R1 2; var1 = 0x7F5022CF[0xA5C556B9]
-       1 [-]: GETIMPORT R2 4; var2 = 0x64FB1586
-       2 [-]: GETTABLEKS R3 R0 K5; var3 = var0["activeMissionTag"]
-       3 [-]: CALL R2 2 2  ; var2 = var2(var3)
-       4 [-]: LOADK R3 K6  ; var3 = "Void"
-       5 [-]: CALL R1 3 0  ; var1, ... = var1(var2, var3)
-       6 [-]: RETURN R1 -1 ; 
+       1 [-]: GETTABLEKS R3 R0 K3; var3 = var0["activeMissionTag"]
+       2 [-]: FASTCALL1 63 R3 L0; 
+       3 [-]: GETIMPORT R2 5; var2 = 0x64FB1586
+       4 [-]: CALL R2 2 2  ; var2 = var2(var3)
+L 0:   5 [-]: LOADK R3 K6  ; var3 = "Void"
+       6 [-]: CALL R1 3 0  ; var1, ... = var1(var2, var3)
+       7 [-]: RETURN R1 -1 ; 
 
 
 ; Name:            
-; Defined at line: 48
+; Defined at line: 47
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -337,61 +329,62 @@ L 1:   5 [-]: RETURN R1 1  ;
 
        0 [-]: GETTABLEKS R2 R0 K0; var2 = var0["missionType"]
        1 [-]: LOADN R3 28  ; var3 = 28
-       2 [-]: JUMPIFEQ R2 R3 L0; goto L0 if var2 == var16777499
+       2 [-]: JUMPIFEQ R2 R3 L0; goto L0 if var2 == var16777478
        3 [-]: LOADB R1 0 +1; var1 = false
 L 0:   4 [-]: LOADB R1 1   ; var1 = true
 L 1:   5 [-]: RETURN R1 1  ; 
 
 
 ; Name:            
-; Defined at line: 52
+; Defined at line: 51
 ; #Upvalues:       2
 ; #Parameters:     0
 ; Is_vararg:       0
 ; Max Stack Size:  4
 
        0 [-]: GETUPVAL R0 0; var0 = upvalues[0]
-       1 [-]: JUMPXEQKNIL R0 L7 NOT; 
+       1 [-]: JUMPXEQKNIL R0 L8 NOT; 
        2 [-]: LOADN R0 1   ; var0 = 1
        3 [-]: SETUPVAL R0 0; upvalues[0] = var0
        4 [-]: GETIMPORT R0 1; var0 = 0xBE190284
        5 [-]: NAMECALL R0 R0 K2; var1 = var0; var0 = var0[0xEF893AEC]
        6 [-]: CALL R0 2 2  ; var0 = var0(var1)
-       7 [-]: FASTCALL1 62 R0 L0; 
+       7 [-]: FASTCALL1 64 R0 L0; 
        8 [-]: MOVE R2 R0   ; var2 = var0
        9 [-]: GETIMPORT R1 4; var1 = 0x7B998233
       10 [-]: CALL R1 2 2  ; var1 = var1(var2)
-L 0:  11 [-]: JUMPIF R1 L7 ; goto L7 if var1
+L 0:  11 [-]: JUMPIF R1 L8 ; goto L8 if var1
       12 [-]: GETTABLEKS R2 R0 K5; var2 = var0["goalTag"]
       13 [-]: GETUPVAL R3 1; var3 = upvalues[1]
-      14 [-]: JUMPIFEQ R2 R3 L1; goto L1 if var2 == var16777499
+      14 [-]: JUMPIFEQ R2 R3 L1; goto L1 if var2 == var16777478
       15 [-]: LOADB R1 0 +1; var1 = false
 L 1:  16 [-]: LOADB R1 1   ; var1 = true
-L 2:  17 [-]: JUMPIF R1 L3 ; goto L3 if var1
+L 2:  17 [-]: JUMPIF R1 L4 ; goto L4 if var1
       18 [-]: GETIMPORT R1 8; var1 = 0x7F5022CF[0xA5C556B9]
-      19 [-]: GETIMPORT R2 10; var2 = 0x64FB1586
-      20 [-]: GETTABLEKS R3 R0 K11; var3 = var0["activeMissionTag"]
-      21 [-]: CALL R2 2 2  ; var2 = var2(var3)
-      22 [-]: LOADK R3 K12 ; var3 = "Void"
-      23 [-]: CALL R1 3 2  ; var1 = var1(var2, var3)
-      24 [-]: JUMPIFNOT R1 L4; goto L4 if not var1
-L 3:  25 [-]: LOADN R1 10  ; var1 = 10
-      26 [-]: SETUPVAL R1 0; upvalues[1] = var0
-      27 [-]: JUMP L7      ; goto L7
-L 4:  28 [-]: GETTABLEKS R2 R0 K13; var2 = var0["missionType"]
-      29 [-]: LOADN R3 28  ; var3 = 28
-      30 [-]: JUMPIFEQ R2 R3 L5; goto L5 if var2 == var16777499
-      31 [-]: LOADB R1 0 +1; var1 = false
-L 5:  32 [-]: LOADB R1 1   ; var1 = true
-L 6:  33 [-]: JUMPIFNOT R1 L7; goto L7 if not var1
-      34 [-]: LOADN R1 5   ; var1 = 5
-      35 [-]: SETUPVAL R1 0; upvalues[1] = var0
-L 7:  36 [-]: GETUPVAL R0 0; var0 = upvalues[0]
-      37 [-]: RETURN R0 1  ; 
+      19 [-]: GETTABLEKS R3 R0 K9; var3 = var0["activeMissionTag"]
+      20 [-]: FASTCALL1 63 R3 L3; 
+      21 [-]: GETIMPORT R2 11; var2 = 0x64FB1586
+      22 [-]: CALL R2 2 2  ; var2 = var2(var3)
+L 3:  23 [-]: LOADK R3 K12 ; var3 = "Void"
+      24 [-]: CALL R1 3 2  ; var1 = var1(var2, var3)
+      25 [-]: JUMPIFNOT R1 L5; goto L5 if not var1
+L 4:  26 [-]: LOADN R1 10  ; var1 = 10
+      27 [-]: SETUPVAL R1 0; upvalues[1] = var0
+      28 [-]: JUMP L8      ; goto L8
+L 5:  29 [-]: GETTABLEKS R2 R0 K13; var2 = var0["missionType"]
+      30 [-]: LOADN R3 28  ; var3 = 28
+      31 [-]: JUMPIFEQ R2 R3 L6; goto L6 if var2 == var16777478
+      32 [-]: LOADB R1 0 +1; var1 = false
+L 6:  33 [-]: LOADB R1 1   ; var1 = true
+L 7:  34 [-]: JUMPIFNOT R1 L8; goto L8 if not var1
+      35 [-]: LOADN R1 5   ; var1 = 5
+      36 [-]: SETUPVAL R1 0; upvalues[1] = var0
+L 8:  37 [-]: GETUPVAL R0 0; var0 = upvalues[0]
+      38 [-]: RETURN R0 1  ; 
 
 
 ; Name:            
-; Defined at line: 88
+; Defined at line: 87
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -402,7 +395,7 @@ L 7:  36 [-]: GETUPVAL R0 0; var0 = upvalues[0]
        2 [-]: DUPTABLE R0 2; 
        3 [-]: LOADK R1 K3  ; var1 = "<MISSION_MARKER_GENERIC>"
        4 [-]: SETTABLEKS R1 R0 K0; var1["icon"] = var0
-       5 [-]: LOADN R1 36  ; var1 = 36
+       5 [-]: LOADN R1 37  ; var1 = 37
        6 [-]: SETTABLEKS R1 R0 K1; var1["color"] = var0
        7 [-]: DUPTABLE R1 2; 
        8 [-]: LOADK R2 K4  ; var2 = "<MISSION_MARKER_ATTACK>"
@@ -412,77 +405,77 @@ L 7:  36 [-]: GETUPVAL R0 0; var0 = upvalues[0]
       12 [-]: DUPTABLE R2 2; 
       13 [-]: LOADK R3 K5  ; var3 = "<MISSION_MARKER_EXTRACTION>"
       14 [-]: SETTABLEKS R3 R2 K0; var3["icon"] = var2
-      15 [-]: LOADN R3 14  ; var3 = 14
+      15 [-]: LOADN R3 15  ; var3 = 15
       16 [-]: SETTABLEKS R3 R2 K1; var3["color"] = var2
       17 [-]: DUPTABLE R3 2; 
       18 [-]: LOADK R4 K6  ; var4 = "<MISSION_MARKER_LOOT>"
       19 [-]: SETTABLEKS R4 R3 K0; var4["icon"] = var3
-      20 [-]: LOADN R4 29  ; var4 = 29
+      20 [-]: LOADN R4 30  ; var4 = 30
       21 [-]: SETTABLEKS R4 R3 K1; var4["color"] = var3
       22 [-]: DUPTABLE R4 2; 
       23 [-]: LOADK R5 K7  ; var5 = "<MISSION_MARKER_DEFEND>"
       24 [-]: SETTABLEKS R5 R4 K0; var5["icon"] = var4
-      25 [-]: LOADN R5 36  ; var5 = 36
+      25 [-]: LOADN R5 37  ; var5 = 37
       26 [-]: SETTABLEKS R5 R4 K1; var5["color"] = var4
       27 [-]: DUPTABLE R5 2; 
       28 [-]: LOADK R6 K8  ; var6 = "<MISSION_MARKER_A>"
       29 [-]: SETTABLEKS R6 R5 K0; var6["icon"] = var5
-      30 [-]: LOADN R6 36  ; var6 = 36
+      30 [-]: LOADN R6 37  ; var6 = 37
       31 [-]: SETTABLEKS R6 R5 K1; var6["color"] = var5
       32 [-]: DUPTABLE R6 2; 
       33 [-]: LOADK R7 K9  ; var7 = "<MISSION_MARKER_B>"
       34 [-]: SETTABLEKS R7 R6 K0; var7["icon"] = var6
-      35 [-]: LOADN R7 36  ; var7 = 36
+      35 [-]: LOADN R7 37  ; var7 = 37
       36 [-]: SETTABLEKS R7 R6 K1; var7["color"] = var6
       37 [-]: DUPTABLE R7 2; 
       38 [-]: LOADK R8 K10 ; var8 = "<MISSION_MARKER_C>"
       39 [-]: SETTABLEKS R8 R7 K0; var8["icon"] = var7
-      40 [-]: LOADN R8 36  ; var8 = 36
+      40 [-]: LOADN R8 37  ; var8 = 37
       41 [-]: SETTABLEKS R8 R7 K1; var8["color"] = var7
       42 [-]: DUPTABLE R8 2; 
       43 [-]: LOADK R9 K11 ; var9 = "<MISSION_MARKER_D>"
       44 [-]: SETTABLEKS R9 R8 K0; var9["icon"] = var8
-      45 [-]: LOADN R9 36  ; var9 = 36
+      45 [-]: LOADN R9 37  ; var9 = 37
       46 [-]: SETTABLEKS R9 R8 K1; var9["color"] = var8
       47 [-]: DUPTABLE R9 2; 
       48 [-]: LOADK R10 K12; var10 = "<MISSION_MARKER_E>"
       49 [-]: SETTABLEKS R10 R9 K0; var10["icon"] = var9
-      50 [-]: LOADN R10 36 ; var10 = 36
+      50 [-]: LOADN R10 37 ; var10 = 37
       51 [-]: SETTABLEKS R10 R9 K1; var10["color"] = var9
       52 [-]: DUPTABLE R10 2; 
       53 [-]: LOADK R11 K13; var11 = "<MISSION_MARKER_F>"
       54 [-]: SETTABLEKS R11 R10 K0; var11["icon"] = var10
-      55 [-]: LOADN R11 36 ; var11 = 36
+      55 [-]: LOADN R11 37 ; var11 = 37
       56 [-]: SETTABLEKS R11 R10 K1; var11["color"] = var10
       57 [-]: DUPTABLE R11 2; 
       58 [-]: LOADK R12 K14; var12 = "<MISSION_MARKER_ALERT>"
       59 [-]: SETTABLEKS R12 R11 K0; var12["icon"] = var11
-      60 [-]: LOADN R12 36 ; var12 = 36
+      60 [-]: LOADN R12 37 ; var12 = 37
       61 [-]: SETTABLEKS R12 R11 K1; var12["color"] = var11
       62 [-]: DUPTABLE R12 2; 
       63 [-]: LOADK R13 K15; var13 = "<QUEST>"
       64 [-]: SETTABLEKS R13 R12 K0; var13["icon"] = var12
-      65 [-]: LOADN R13 17 ; var13 = 17
+      65 [-]: LOADN R13 18 ; var13 = 18
       66 [-]: SETTABLEKS R13 R12 K1; var13["color"] = var12
       67 [-]: DUPTABLE R13 2; 
       68 [-]: LOADK R14 K16; var14 = "<MISSION_MARKER_GRN>"
       69 [-]: SETTABLEKS R14 R13 K0; var14["icon"] = var13
-      70 [-]: LOADN R14 36 ; var14 = 36
+      70 [-]: LOADN R14 37 ; var14 = 37
       71 [-]: SETTABLEKS R14 R13 K1; var14["color"] = var13
       72 [-]: DUPTABLE R14 2; 
       73 [-]: LOADK R15 K17; var15 = "<MISSION_MARKER_CRP>"
       74 [-]: SETTABLEKS R15 R14 K0; var15["icon"] = var14
-      75 [-]: LOADN R15 36 ; var15 = 36
+      75 [-]: LOADN R15 37 ; var15 = 37
       76 [-]: SETTABLEKS R15 R14 K1; var15["color"] = var14
       77 [-]: DUPTABLE R15 2; 
       78 [-]: LOADK R16 K18; var16 = "<MISSION_MARKER_TSH>"
       79 [-]: SETTABLEKS R16 R15 K0; var16["icon"] = var15
-      80 [-]: LOADN R16 36 ; var16 = 36
+      80 [-]: LOADN R16 37 ; var16 = 37
       81 [-]: SETTABLEKS R16 R15 K1; var16["color"] = var15
       82 [-]: DUPTABLE R16 2; 
       83 [-]: LOADK R17 K19; var17 = "<MISSION_MARKER_DRFT>"
       84 [-]: SETTABLEKS R17 R16 K0; var17["icon"] = var16
-      85 [-]: LOADN R17 36 ; var17 = 36
+      85 [-]: LOADN R17 37 ; var17 = 37
       86 [-]: SETTABLEKS R17 R16 K1; var17["color"] = var16
       87 [-]: NEWTABLE R17 0 17; var17 = {}
       88 [-]: MOVE R18 R0  ; var18 = var0
@@ -510,18 +503,18 @@ L 0: 108 [-]: GETUPVAL R0 0; var0 = upvalues[0]
 
 
 ; Name:            
-; Defined at line: 115
+; Defined at line: 114
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
 ; Max Stack Size:  8
 
-       0 [-]: FASTCALL1 62 R1 L0; 
+       0 [-]: FASTCALL1 64 R1 L0; 
        1 [-]: MOVE R3 R1   ; var3 = var1
        2 [-]: GETIMPORT R2 1; var2 = 0x7B998233
        3 [-]: CALL R2 2 2  ; var2 = var2(var3)
 L 0:   4 [-]: JUMPIFNOT R2 L1; goto L1 if not var2
-       5 [-]: LOADN R1 17  ; var1 = 17
+       5 [-]: LOADN R1 18  ; var1 = 18
 L 1:   6 [-]: LOADK R3 K2  ; var3 = "<font color=\""
        7 [-]: GETTABLEKS R6 R0 K3; var6 = var0["Colorize"]
        8 [-]: MOVE R7 R1   ; var7 = var1
@@ -533,7 +526,7 @@ L 1:   6 [-]: LOADK R3 K2  ; var3 = "<font color=\""
 
 
 ; Name:            
-; Defined at line: 122
+; Defined at line: 121
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -544,99 +537,99 @@ L 1:   6 [-]: LOADK R3 K2  ; var3 = "<font color=\""
 
 
 ; Name:            
-; Defined at line: 126
+; Defined at line: 125
 ; #Upvalues:       1
-; #Parameters:     7
+; #Parameters:     8
 ; Is_vararg:       0
-; Max Stack Size:  20
+; Max Stack Size:  21
 
-       0 [-]: LOADK R7 K0  ; var7 = "<p>"
-       1 [-]: LOADK R8 K1  ; var8 = " "
-       2 [-]: GETUPVAL R9 0; var9 = upvalues[0]
-       3 [-]: CALL R9 1 2  ; var9 = var9()
-       4 [-]: LOADN R10 0  ; var10 = 0
-       5 [-]: JUMPIFNOTLT R10 R2 L2; goto L2 if var10 >= var592400
-       6 [-]: LENGTH R10 R9; var10 = #var9
-       7 [-]: JUMPIFNOTLE R2 R10 L2; goto L2 if var2 > var461334
-       8 [-]: MOVE R10 R7  ; var10 = var7
-       9 [-]: GETTABLE R15 R9 R2; var15 = var9[var2]
-      10 [-]: GETTABLEKS R14 R15 K2; var14 = var15["color"]
-      11 [-]: FASTCALL1 62 R14 L0; 
-      12 [-]: MOVE R16 R14 ; var16 = var14
-      13 [-]: GETIMPORT R15 4; var15 = 0x7B998233
-      14 [-]: CALL R15 2 2 ; var15 = var15(var16)
-L 0:  15 [-]: JUMPIFNOT R15 L1; goto L1 if not var15
-      16 [-]: LOADN R14 17 ; var14 = 17
-L 1:  17 [-]: LOADK R15 K5 ; var15 = "<font color=\""
-      18 [-]: GETTABLEKS R18 R0 K6; var18 = var0["Colorize"]
-      19 [-]: MOVE R19 R14 ; var19 = var14
-      20 [-]: CALL R18 2 2 ; var18 = var18(var19)
-      21 [-]: MOVE R16 R18 ; var16 = var18
-      22 [-]: LOADK R17 K7 ; var17 = "\">"
-      23 [-]: CONCAT R11 R15 R17; var11 = var15 .. var17
-      24 [-]: GETTABLEKS R14 R0 K8; var14 = var0["Localize"]
-      25 [-]: GETTABLE R16 R9 R2; var16 = var9[var2]
-      26 [-]: GETTABLEKS R15 R16 K9; var15 = var16["icon"]
-      27 [-]: CALL R14 2 2 ; var14 = var14(var15)
-      28 [-]: MOVE R12 R14 ; var12 = var14
-      29 [-]: LOADK R13 K10; var13 = "</font>"
-      30 [-]: CONCAT R7 R10 R13; var7 = var10 .. var13
+       0 [-]: LOADK R8 K0  ; var8 = "<p>"
+       1 [-]: LOADK R9 K1  ; var9 = " "
+       2 [-]: GETUPVAL R10 0; var10 = upvalues[0]
+       3 [-]: CALL R10 1 2 ; var10 = var10()
+       4 [-]: LOADN R11 0  ; var11 = 0
+       5 [-]: JUMPIFNOTLT R11 R2 L2; goto L2 if var11 >= var658176
+       6 [-]: LENGTH R11 R10; var11 = #var10
+       7 [-]: JUMPIFNOTLE R2 R11 L2; goto L2 if var2 > var527150
+       8 [-]: MOVE R11 R8  ; var11 = var8
+       9 [-]: GETTABLE R16 R10 R2; var16 = var10[var2]
+      10 [-]: GETTABLEKS R15 R16 K2; var15 = var16["color"]
+      11 [-]: FASTCALL1 64 R15 L0; 
+      12 [-]: MOVE R17 R15 ; var17 = var15
+      13 [-]: GETIMPORT R16 4; var16 = 0x7B998233
+      14 [-]: CALL R16 2 2 ; var16 = var16(var17)
+L 0:  15 [-]: JUMPIFNOT R16 L1; goto L1 if not var16
+      16 [-]: LOADN R15 18 ; var15 = 18
+L 1:  17 [-]: LOADK R16 K5 ; var16 = "<font color=\""
+      18 [-]: GETTABLEKS R19 R0 K6; var19 = var0["Colorize"]
+      19 [-]: MOVE R20 R15 ; var20 = var15
+      20 [-]: CALL R19 2 2 ; var19 = var19(var20)
+      21 [-]: MOVE R17 R19 ; var17 = var19
+      22 [-]: LOADK R18 K7 ; var18 = "\">"
+      23 [-]: CONCAT R12 R16 R18; var12 = var16 .. var18
+      24 [-]: GETTABLEKS R15 R0 K8; var15 = var0["Localize"]
+      25 [-]: GETTABLE R17 R10 R2; var17 = var10[var2]
+      26 [-]: GETTABLEKS R16 R17 K9; var16 = var17["icon"]
+      27 [-]: CALL R15 2 2 ; var15 = var15(var16)
+      28 [-]: MOVE R13 R15 ; var13 = var15
+      29 [-]: LOADK R14 K10; var14 = "</font>"
+      30 [-]: CONCAT R8 R11 R14; var8 = var11 .. var14
       31 [-]: JUMP L3      ; goto L3
 L 2:  32 [-]: JUMPXEQKN R2 K11 L3 NOT; 
-      33 [-]: LOADK R8 K12 ; var8 = ""
-L 3:  34 [-]: FASTCALL1 62 R6 L4; 
-      35 [-]: MOVE R11 R6  ; var11 = var6
-      36 [-]: GETIMPORT R10 4; var10 = 0x7B998233
-      37 [-]: CALL R10 2 2 ; var10 = var10(var11)
-L 4:  38 [-]: JUMPIFNOT R10 L5; goto L5 if not var10
+      33 [-]: LOADK R9 K12 ; var9 = ""
+L 3:  34 [-]: FASTCALL1 64 R6 L4; 
+      35 [-]: MOVE R12 R6  ; var12 = var6
+      36 [-]: GETIMPORT R11 4; var11 = 0x7B998233
+      37 [-]: CALL R11 2 2 ; var11 = var11(var12)
+L 4:  38 [-]: JUMPIFNOT R11 L5; goto L5 if not var11
       39 [-]: LOADB R6 1   ; var6 = true
-L 5:  40 [-]: GETTABLEKS R10 R0 K8; var10 = var0["Localize"]
-      41 [-]: MOVE R11 R1  ; var11 = var1
-      42 [-]: LOADNIL R12  ; var12 = nil
-      43 [-]: MOVE R13 R6  ; var13 = var6
-      44 [-]: CALL R10 4 2 ; var10 = var10(var11, var12, var13)
+L 5:  40 [-]: GETTABLEKS R11 R0 K8; var11 = var0["Localize"]
+      41 [-]: MOVE R12 R1  ; var12 = var1
+      42 [-]: MOVE R13 R7  ; var13 = var7
+      43 [-]: MOVE R14 R6  ; var14 = var6
+      44 [-]: CALL R11 4 2 ; var11 = var11(var12, var13, var14)
       45 [-]: JUMPIFNOT R5 L6; goto L6 if not var5
-      46 [-]: MOVE R11 R7  ; var11 = var7
-      47 [-]: LOADK R12 K13; var12 = "<font face=\"Noto Sans\" color=\""
-      48 [-]: GETTABLEKS R17 R0 K6; var17 = var0["Colorize"]
-      49 [-]: LOADN R18 38 ; var18 = 38
-      50 [-]: CALL R17 2 2 ; var17 = var17(var18)
-      51 [-]: MOVE R13 R17 ; var13 = var17
-      52 [-]: LOADK R14 K14; var14 = "\"><b>"
-      53 [-]: MOVE R15 R8  ; var15 = var8
-      54 [-]: MOVE R16 R10 ; var16 = var10
-      55 [-]: CONCAT R7 R11 R16; var7 = var11 .. var16
+      46 [-]: MOVE R12 R8  ; var12 = var8
+      47 [-]: LOADK R13 K13; var13 = "<font face=\"Noto Sans\" color=\""
+      48 [-]: GETTABLEKS R18 R0 K6; var18 = var0["Colorize"]
+      49 [-]: LOADN R19 39 ; var19 = 39
+      50 [-]: CALL R18 2 2 ; var18 = var18(var19)
+      51 [-]: MOVE R14 R18 ; var14 = var18
+      52 [-]: LOADK R15 K14; var15 = "\"><b>"
+      53 [-]: MOVE R16 R9  ; var16 = var9
+      54 [-]: MOVE R17 R11 ; var17 = var11
+      55 [-]: CONCAT R8 R12 R17; var8 = var12 .. var17
       56 [-]: JUMP L7      ; goto L7
-L 6:  57 [-]: MOVE R11 R7  ; var11 = var7
-      58 [-]: LOADK R12 K13; var12 = "<font face=\"Noto Sans\" color=\""
-      59 [-]: GETTABLEKS R17 R0 K6; var17 = var0["Colorize"]
-      60 [-]: LOADN R18 38 ; var18 = 38
-      61 [-]: CALL R17 2 2 ; var17 = var17(var18)
-      62 [-]: MOVE R13 R17 ; var13 = var17
-      63 [-]: LOADK R14 K7 ; var14 = "\">"
-      64 [-]: MOVE R15 R8  ; var15 = var8
-      65 [-]: MOVE R16 R10 ; var16 = var10
-      66 [-]: CONCAT R7 R11 R16; var7 = var11 .. var16
+L 6:  57 [-]: MOVE R12 R8  ; var12 = var8
+      58 [-]: LOADK R13 K13; var13 = "<font face=\"Noto Sans\" color=\""
+      59 [-]: GETTABLEKS R18 R0 K6; var18 = var0["Colorize"]
+      60 [-]: LOADN R19 39 ; var19 = 39
+      61 [-]: CALL R18 2 2 ; var18 = var18(var19)
+      62 [-]: MOVE R14 R18 ; var14 = var18
+      63 [-]: LOADK R15 K7 ; var15 = "\">"
+      64 [-]: MOVE R16 R9  ; var16 = var9
+      65 [-]: MOVE R17 R11 ; var17 = var11
+      66 [-]: CONCAT R8 R12 R17; var8 = var12 .. var17
 L 7:  67 [-]: JUMPIFNOT R3 L8; goto L8 if not var3
-      68 [-]: MOVE R11 R7  ; var11 = var7
-      69 [-]: MOVE R12 R3  ; var12 = var3
-      70 [-]: CONCAT R7 R11 R12; var7 = var11 .. var12
+      68 [-]: MOVE R12 R8  ; var12 = var8
+      69 [-]: MOVE R13 R3  ; var13 = var3
+      70 [-]: CONCAT R8 R12 R13; var8 = var12 .. var13
 L 8:  71 [-]: JUMPIFNOT R5 L9; goto L9 if not var5
-      72 [-]: MOVE R11 R7  ; var11 = var7
-      73 [-]: LOADK R12 K15; var12 = "</b></font></p>"
-      74 [-]: CONCAT R7 R11 R12; var7 = var11 .. var12
+      72 [-]: MOVE R12 R8  ; var12 = var8
+      73 [-]: LOADK R13 K15; var13 = "</b></font></p>"
+      74 [-]: CONCAT R8 R12 R13; var8 = var12 .. var13
       75 [-]: JUMP L10     ; goto L10
-L 9:  76 [-]: MOVE R11 R7  ; var11 = var7
-      77 [-]: LOADK R12 K16; var12 = "</font></p>"
-      78 [-]: CONCAT R7 R11 R12; var7 = var11 .. var12
-L10:  79 [-]: GETTABLEKS R11 R0 K17; var11 = var0["SetLabel"]
-      80 [-]: MOVE R12 R7  ; var12 = var7
-      81 [-]: CALL R11 2 1 ; var11(var12)
+L 9:  76 [-]: MOVE R12 R8  ; var12 = var8
+      77 [-]: LOADK R13 K16; var13 = "</font></p>"
+      78 [-]: CONCAT R8 R12 R13; var8 = var12 .. var13
+L10:  79 [-]: GETTABLEKS R12 R0 K17; var12 = var0["SetLabel"]
+      80 [-]: MOVE R13 R8  ; var13 = var8
+      81 [-]: CALL R12 2 1 ; var12(var13)
       82 [-]: RETURN R0 0  ; 
 
 
 ; Name:            
-; Defined at line: 156
+; Defined at line: 155
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -658,7 +651,7 @@ L 1:  12 [-]: RETURN R2 1  ;
 
 
 ; Name:            
-; Defined at line: 167
+; Defined at line: 166
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -667,7 +660,7 @@ L 1:  12 [-]: RETURN R2 1  ;
        0 [-]: GETTABLE R2 R0 R1; var2 = var0[var1]
        1 [-]: JUMPXEQKNIL R2 L2; 
        2 [-]: GETTABLEKS R4 R2 K0; var4 = var2["Movie"]
-       3 [-]: FASTCALL1 62 R4 L0; 
+       3 [-]: FASTCALL1 64 R4 L0; 
        4 [-]: GETIMPORT R3 2; var3 = 0x7B998233
        5 [-]: CALL R3 2 2  ; var3 = var3(var4)
 L 0:   6 [-]: JUMPIFNOT R3 L1; goto L1 if not var3
@@ -680,14 +673,14 @@ L 2:  11 [-]: LOADNIL R3   ; var3 = nil
 
 
 ; Name:            
-; Defined at line: 181
+; Defined at line: 180
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
 ; Max Stack Size:  8
 
        0 [-]: GETIMPORT R1 2; var1 = _T["SecObjectiveHudTracker"]
-       1 [-]: FASTCALL1 62 R1 L0; 
+       1 [-]: FASTCALL1 64 R1 L0; 
        2 [-]: GETIMPORT R0 4; var0 = 0x7B998233
        3 [-]: CALL R0 2 2  ; var0 = var0(var1)
 L 0:   4 [-]: JUMPIFNOT R0 L6; goto L6 if not var0
@@ -706,7 +699,7 @@ L 1:  14 [-]: LOADK R4 K8  ; var4 = "SecObjectiveUIText"
       17 [-]: GETIMPORT R4 6; var4 = _T["GetHudTracker"]
       18 [-]: MOVE R5 R3   ; var5 = var3
       19 [-]: CALL R4 2 2  ; var4 = var4(var5)
-      20 [-]: FASTCALL1 62 R4 L2; 
+      20 [-]: FASTCALL1 64 R4 L2; 
       21 [-]: MOVE R6 R4   ; var6 = var4
       22 [-]: GETIMPORT R5 4; var5 = 0x7B998233
       23 [-]: CALL R5 2 2  ; var5 = var5(var6)
@@ -714,7 +707,7 @@ L 2:  24 [-]: JUMPIF R5 L3 ; goto L3 if var5
       25 [-]: GETTABLEKS R5 R4 K9; var5 = var4["Removing"]
       26 [-]: JUMPIFNOT R5 L3; goto L3 if not var5
       27 [-]: LOADNIL R4   ; var4 = nil
-L 3:  28 [-]: FASTCALL1 62 R4 L4; 
+L 3:  28 [-]: FASTCALL1 64 R4 L4; 
       29 [-]: MOVE R6 R4   ; var6 = var4
       30 [-]: GETIMPORT R5 4; var5 = 0x7B998233
       31 [-]: CALL R5 2 2  ; var5 = var5(var6)
@@ -729,35 +722,7 @@ L 6:  39 [-]: RETURN R0 0  ;
 
 
 ; Name:            
-; Defined at line: 197
-; #Upvalues:       0
-; #Parameters:     1
-; Is_vararg:       0
-; Max Stack Size:  3
-
-       0 [-]: GETIMPORT R1 2; var1 = _T["ObjProgressBar"]
-       1 [-]: JUMPXEQKNIL R1 L0 NOT; 
-       2 [-]: GETIMPORT R1 3; var1 = _T
-       3 [-]: NEWTABLE R2 0 0; var2 = {}
-       4 [-]: SETTABLEKS R2 R1 K1; var2["ObjProgressBar"] = var1
-L 0:   5 [-]: GETIMPORT R2 2; var2 = _T["ObjProgressBar"]
-       6 [-]: GETTABLE R1 R2 R0; var1 = var2[var0]
-       7 [-]: JUMPXEQKNIL R1 L1 NOT; 
-       8 [-]: GETIMPORT R1 5; var1 = _T["GetHudTracker"]
-       9 [-]: JUMPIFNOT R1 L1; goto L1 if not var1
-      10 [-]: GETIMPORT R1 5; var1 = _T["GetHudTracker"]
-      11 [-]: MOVE R2 R0   ; var2 = var0
-      12 [-]: CALL R1 2 2  ; var1 = var1(var2)
-      13 [-]: JUMPXEQKNIL R1 L1; 
-      14 [-]: GETTABLEKS R2 R1 K6; var2 = var1["Removing"]
-      15 [-]: JUMPIF R2 L1 ; goto L1 if var2
-      16 [-]: GETIMPORT R2 2; var2 = _T["ObjProgressBar"]
-      17 [-]: SETTABLE R1 R2 R0; var1[var2] = var0
-L 1:  18 [-]: RETURN R0 0  ; 
-
-
-; Name:            
-; Defined at line: 210
+; Defined at line: 196
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -785,14 +750,14 @@ L 1:  18 [-]: RETURN R0 0  ;
 
 
 ; Name:            
-; Defined at line: 222
+; Defined at line: 208
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
 ; Max Stack Size:  3
 
        0 [-]: GETIMPORT R1 2; var1 = _T["ExtractionTimer"]
-       1 [-]: FASTCALL1 62 R1 L0; 
+       1 [-]: FASTCALL1 64 R1 L0; 
        2 [-]: GETIMPORT R0 4; var0 = 0x7B998233
        3 [-]: CALL R0 2 2  ; var0 = var0(var1)
 L 0:   4 [-]: JUMPIFNOT R0 L2; goto L2 if not var0
@@ -804,7 +769,7 @@ L 0:   4 [-]: JUMPIFNOT R0 L2; goto L2 if not var0
       10 [-]: CALL R1 2 2  ; var1 = var1(var2)
       11 [-]: SETTABLEKS R1 R0 K1; var1["ExtractionTimer"] = var0
       12 [-]: GETIMPORT R1 2; var1 = _T["ExtractionTimer"]
-      13 [-]: FASTCALL1 62 R1 L1; 
+      13 [-]: FASTCALL1 64 R1 L1; 
       14 [-]: GETIMPORT R0 4; var0 = 0x7B998233
       15 [-]: CALL R0 2 2  ; var0 = var0(var1)
 L 1:  16 [-]: JUMPIF R0 L2 ; goto L2 if var0
@@ -817,7 +782,7 @@ L 2:  22 [-]: RETURN R0 0  ;
 
 
 ; Name:            
-; Defined at line: 240
+; Defined at line: 226
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -837,39 +802,36 @@ L 2:  22 [-]: RETURN R0 0  ;
       11 [-]: SETTABLEKS R1 R0 K5; var1["SecObjectiveHudTracker"] = var0
       12 [-]: GETIMPORT R0 1; var0 = _T
       13 [-]: LOADNIL R1   ; var1 = nil
-      14 [-]: SETTABLEKS R1 R0 K6; var1["ObjProgressBar"] = var0
+      14 [-]: SETTABLEKS R1 R0 K6; var1["ConflictBarTracker"] = var0
       15 [-]: GETIMPORT R0 1; var0 = _T
       16 [-]: LOADNIL R1   ; var1 = nil
-      17 [-]: SETTABLEKS R1 R0 K7; var1["ConflictBarTracker"] = var0
+      17 [-]: SETTABLEKS R1 R0 K7; var1["NpcHealthTracker"] = var0
       18 [-]: GETIMPORT R0 1; var0 = _T
       19 [-]: LOADNIL R1   ; var1 = nil
-      20 [-]: SETTABLEKS R1 R0 K8; var1["NpcHealthTracker"] = var0
+      20 [-]: SETTABLEKS R1 R0 K8; var1["ObjectiveTimer"] = var0
       21 [-]: GETIMPORT R0 1; var0 = _T
       22 [-]: LOADNIL R1   ; var1 = nil
-      23 [-]: SETTABLEKS R1 R0 K9; var1["ObjectiveTimer"] = var0
+      23 [-]: SETTABLEKS R1 R0 K9; var1["CachesHudTracker"] = var0
       24 [-]: GETIMPORT R0 1; var0 = _T
       25 [-]: LOADNIL R1   ; var1 = nil
-      26 [-]: SETTABLEKS R1 R0 K10; var1["CachesHudTracker"] = var0
+      26 [-]: SETTABLEKS R1 R0 K10; var1["LootChallengeTitle"] = var0
       27 [-]: GETIMPORT R0 1; var0 = _T
       28 [-]: LOADNIL R1   ; var1 = nil
-      29 [-]: SETTABLEKS R1 R0 K11; var1["LootChallengeTitle"] = var0
+      29 [-]: SETTABLEKS R1 R0 K11; var1["LootChallengeTimer"] = var0
       30 [-]: GETIMPORT R0 1; var0 = _T
       31 [-]: LOADNIL R1   ; var1 = nil
-      32 [-]: SETTABLEKS R1 R0 K12; var1["LootChallengeTimer"] = var0
+      32 [-]: SETTABLEKS R1 R0 K12; var1["ExtractionTimer"] = var0
       33 [-]: GETIMPORT R0 1; var0 = _T
       34 [-]: LOADNIL R1   ; var1 = nil
-      35 [-]: SETTABLEKS R1 R0 K13; var1["ExtractionTimer"] = var0
+      35 [-]: SETTABLEKS R1 R0 K13; var1["BonusTracker"] = var0
       36 [-]: GETIMPORT R0 1; var0 = _T
       37 [-]: LOADNIL R1   ; var1 = nil
-      38 [-]: SETTABLEKS R1 R0 K14; var1["BonusTracker"] = var0
-      39 [-]: GETIMPORT R0 1; var0 = _T
-      40 [-]: LOADNIL R1   ; var1 = nil
-      41 [-]: SETTABLEKS R1 R0 K15; var1["DebugHudTracker"] = var0
-      42 [-]: RETURN R0 0  ; 
+      38 [-]: SETTABLEKS R1 R0 K14; var1["DebugHudTracker"] = var0
+      39 [-]: RETURN R0 0  ; 
 
 
 ; Name:            
-; Defined at line: 257
+; Defined at line: 242
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -892,7 +854,7 @@ L 1:  12 [-]: MOVE R1 R2   ; var1 = var2
 
 
 ; Name:            
-; Defined at line: 261
+; Defined at line: 246
 ; #Upvalues:       3
 ; #Parameters:     5
 ; Is_vararg:       0
@@ -901,7 +863,7 @@ L 1:  12 [-]: MOVE R1 R2   ; var1 = var2
        0 [-]: GETUPVAL R5 0; var5 = upvalues[0]
        1 [-]: CALL R5 1 2  ; var5 = var5()
        2 [-]: GETIMPORT R7 2; var7 = _T["AddHudTracker"]
-       3 [-]: FASTCALL1 62 R7 L0; 
+       3 [-]: FASTCALL1 64 R7 L0; 
        4 [-]: GETIMPORT R6 4; var6 = 0x7B998233
        5 [-]: CALL R6 2 2  ; var6 = var6(var7)
 L 0:   6 [-]: JUMPIFNOT R6 L1; goto L1 if not var6
@@ -932,7 +894,7 @@ L 4:  29 [-]: MOVE R6 R7   ; var6 = var7
       31 [-]: GETTABLE R9 R8 R6; var9 = var8[var6]
       32 [-]: JUMPXEQKNIL R9 L7; 
       33 [-]: GETTABLEKS R11 R9 K15; var11 = var9["Movie"]
-      34 [-]: FASTCALL1 62 R11 L5; 
+      34 [-]: FASTCALL1 64 R11 L5; 
       35 [-]: GETIMPORT R10 4; var10 = 0x7B998233
       36 [-]: CALL R10 2 2 ; var10 = var10(var11)
 L 5:  37 [-]: JUMPIFNOT R10 L6; goto L6 if not var10
@@ -962,13 +924,13 @@ L 8:  45 [-]: JUMPXEQKNIL R7 L10 NOT;
       61 [-]: CALL R8 2 1  ; var8(var9)
 L 9:  62 [-]: GETIMPORT R8 8; var8 = _T["ObjectiveTitleTracker"]
       63 [-]: SETTABLE R7 R8 R6; var7[var8] = var6
-L10:  64 [-]: FASTCALL1 62 R2 L11; 
+L10:  64 [-]: FASTCALL1 64 R2 L11; 
       65 [-]: MOVE R9 R2   ; var9 = var2
       66 [-]: GETIMPORT R8 4; var8 = 0x7B998233
       67 [-]: CALL R8 2 2  ; var8 = var8(var9)
 L11:  68 [-]: JUMPIFNOT R8 L12; goto L12 if not var8
       69 [-]: LOADB R2 1   ; var2 = true
-L12:  70 [-]: FASTCALL1 62 R3 L13; 
+L12:  70 [-]: FASTCALL1 64 R3 L13; 
       71 [-]: MOVE R9 R3   ; var9 = var3
       72 [-]: GETIMPORT R8 4; var8 = 0x7B998233
       73 [-]: CALL R8 2 2  ; var8 = var8(var9)
@@ -988,7 +950,7 @@ L15:  83 [-]: GETTABLEKS R8 R7 K23; var8 = var7["Localize"]
       87 [-]: CALL R8 4 2  ; var8 = var8(var9, var10, var11)
       88 [-]: LOADK R10 K24; var10 = "<p><font face=\"Noto Sans\" color=\""
       89 [-]: GETTABLEKS R16 R7 K25; var16 = var7["Colorize"]
-      90 [-]: LOADN R17 38 ; var17 = 38
+      90 [-]: LOADN R17 39 ; var17 = 39
       91 [-]: CALL R16 2 2 ; var16 = var16(var17)
       92 [-]: MOVE R11 R16 ; var11 = var16
       93 [-]: LOADK R12 K26; var12 = "\" size=\""
@@ -1010,7 +972,7 @@ L16: 102 [-]: MOVE R10 R9  ; var10 = var9
 
 
 ; Name:            
-; Defined at line: 302
+; Defined at line: 287
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1030,7 +992,7 @@ L 0:   8 [-]: JUMPXEQKNIL R0 L1;
       11 [-]: CONCAT R2 R3 R4; var2 = var3 .. var4
 L 1:  12 [-]: MOVE R1 R2   ; var1 = var2
       13 [-]: GETIMPORT R3 7; var3 = _T["RemoveHudTracker"]
-      14 [-]: FASTCALL1 62 R3 L2; 
+      14 [-]: FASTCALL1 64 R3 L2; 
       15 [-]: GETIMPORT R2 9; var2 = 0x7B998233
       16 [-]: CALL R2 2 2  ; var2 = var2(var3)
 L 2:  17 [-]: JUMPIF R2 L3 ; goto L3 if var2
@@ -1047,7 +1009,7 @@ L 4:  27 [-]: RETURN R0 0  ;
 
 
 ; Name:            
-; Defined at line: 312
+; Defined at line: 297
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1070,110 +1032,112 @@ L 1:  12 [-]: MOVE R1 R2   ; var1 = var2
 
 
 ; Name:            
-; Defined at line: 315
+; Defined at line: 300
 ; #Upvalues:       3
-; #Parameters:     3
+; #Parameters:     4
 ; Is_vararg:       0
-; Max Stack Size:  14
+; Max Stack Size:  15
 
-       0 [-]: GETUPVAL R4 0; var4 = upvalues[0]
-       1 [-]: CALL R4 1 2  ; var4 = var4()
-       2 [-]: ADDK R3 R4 K0; var3 = var4 + 1
-       3 [-]: GETIMPORT R5 3; var5 = _T["AddHudTracker"]
-       4 [-]: FASTCALL1 62 R5 L0; 
-       5 [-]: GETIMPORT R4 5; var4 = 0x7B998233
-       6 [-]: CALL R4 2 2  ; var4 = var4(var5)
-L 0:   7 [-]: JUMPIFNOT R4 L1; goto L1 if not var4
-       8 [-]: GETUPVAL R5 1; var5 = upvalues[1]
-       9 [-]: GETTABLEKS R4 R5 K6; var4 = var5[0xA53F5E12]
-      10 [-]: LOADK R5 K7  ; var5 = "[HC] SetSubTitleObjText _T.AddHudTracker is invalid!"
-      11 [-]: CALL R4 2 1  ; var4(var5)
-      12 [-]: RETURN R0 0  ; 
-L 1:  13 [-]: GETIMPORT R4 9; var4 = _T["ObjectiveSubTitleTracker"]
-      14 [-]: JUMPXEQKNIL R4 L2 NOT; 
-      15 [-]: GETIMPORT R4 10; var4 = _T
-      16 [-]: NEWTABLE R5 0 0; var5 = {}
-      17 [-]: SETTABLEKS R5 R4 K8; var5["ObjectiveSubTitleTracker"] = var4
-L 2:  18 [-]: LOADK R5 K11 ; var5 = "SubTitleUIText"
-      19 [-]: GETIMPORT R6 13; var6 = _T["DuviriActivityId"]
-      20 [-]: JUMPXEQKNIL R6 L3; 
-      21 [-]: MOVE R6 R5   ; var6 = var5
-      22 [-]: LOADK R7 K14 ; var7 = "_"
-      23 [-]: GETIMPORT R8 13; var8 = _T["DuviriActivityId"]
-      24 [-]: LOADK R9 K15 ; var9 = "d"
-      25 [-]: CONCAT R5 R6 R9; var5 = var6 .. var9
-L 3:  26 [-]: JUMPXEQKNIL R2 L4; 
-      27 [-]: MOVE R6 R5   ; var6 = var5
-      28 [-]: MOVE R7 R2   ; var7 = var2
-      29 [-]: CONCAT R5 R6 R7; var5 = var6 .. var7
-L 4:  30 [-]: MOVE R4 R5   ; var4 = var5
-      31 [-]: GETIMPORT R6 9; var6 = _T["ObjectiveSubTitleTracker"]
-      32 [-]: GETTABLE R7 R6 R4; var7 = var6[var4]
-      33 [-]: JUMPXEQKNIL R7 L7; 
-      34 [-]: GETTABLEKS R9 R7 K16; var9 = var7["Movie"]
-      35 [-]: FASTCALL1 62 R9 L5; 
-      36 [-]: GETIMPORT R8 5; var8 = 0x7B998233
-      37 [-]: CALL R8 2 2  ; var8 = var8(var9)
-L 5:  38 [-]: JUMPIFNOT R8 L6; goto L6 if not var8
-      39 [-]: LOADNIL R8   ; var8 = nil
-      40 [-]: SETTABLE R8 R6 R4; var8[var6] = var4
-      41 [-]: LOADNIL R5   ; var5 = nil
-      42 [-]: JUMP L8      ; goto L8
-L 6:  43 [-]: MOVE R5 R7   ; var5 = var7
-      44 [-]: JUMP L8      ; goto L8
-L 7:  45 [-]: LOADNIL R5   ; var5 = nil
-L 8:  46 [-]: JUMPXEQKNIL R5 L10 NOT; 
-      47 [-]: GETIMPORT R6 3; var6 = _T["AddHudTracker"]
-      48 [-]: MOVE R7 R4   ; var7 = var4
-      49 [-]: GETUPVAL R9 2; var9 = upvalues[2]
-      50 [-]: GETTABLEKS R8 R9 K17; var8 = var9["HT_LABEL"]
-      51 [-]: LOADK R9 K18 ; var9 = 0.5
-      52 [-]: MOVE R10 R3  ; var10 = var3
-      53 [-]: LOADB R11 1  ; var11 = true
-      54 [-]: CALL R6 6 2  ; var6 = var6(var7, var8, var9, var10, var11)
-      55 [-]: MOVE R5 R6   ; var5 = var6
-      56 [-]: GETIMPORT R6 13; var6 = _T["DuviriActivityId"]
-      57 [-]: JUMPXEQKNIL R6 L9; 
-      58 [-]: GETTABLEKS R6 R5 K19; var6 = var5["AddToLocation"]
-      59 [-]: DUPTABLE R7 21; 
-      60 [-]: GETIMPORT R8 13; var8 = _T["DuviriActivityId"]
-      61 [-]: SETTABLEKS R8 R7 K20; var8["ActivityId"] = var7
-      62 [-]: CALL R6 2 1  ; var6(var7)
-L 9:  63 [-]: GETIMPORT R6 9; var6 = _T["ObjectiveSubTitleTracker"]
-      64 [-]: SETTABLE R5 R6 R4; var5[var6] = var4
-L10:  65 [-]: GETTABLEKS R6 R5 K22; var6 = var5["Localize"]
-      66 [-]: MOVE R7 R0   ; var7 = var0
-      67 [-]: LOADNIL R8   ; var8 = nil
-      68 [-]: LOADB R9 1   ; var9 = true
-      69 [-]: CALL R6 4 2  ; var6 = var6(var7, var8, var9)
-      70 [-]: LOADK R8 K23 ; var8 = "<p><font face=\"Noto Sans\" color=\""
-      71 [-]: GETTABLEKS R12 R5 K24; var12 = var5["Colorize"]
-      72 [-]: LOADN R13 38 ; var13 = 38
-      73 [-]: CALL R12 2 2 ; var12 = var12(var13)
-      74 [-]: MOVE R9 R12  ; var9 = var12
-      75 [-]: LOADK R10 K25; var10 = "\" size=\"14\">"
-      76 [-]: MOVE R11 R6  ; var11 = var6
-      77 [-]: CONCAT R7 R8 R11; var7 = var8 .. var11
-      78 [-]: JUMPIFNOT R1 L11; goto L11 if not var1
-      79 [-]: MOVE R8 R7   ; var8 = var7
-      80 [-]: MOVE R9 R1   ; var9 = var1
-      81 [-]: CONCAT R7 R8 R9; var7 = var8 .. var9
-L11:  82 [-]: MOVE R8 R7   ; var8 = var7
-      83 [-]: LOADK R9 K26 ; var9 = "</font></p>"
-      84 [-]: CONCAT R7 R8 R9; var7 = var8 .. var9
-      85 [-]: GETTABLEKS R8 R5 K27; var8 = var5["SetLabel"]
-      86 [-]: MOVE R9 R7   ; var9 = var7
-      87 [-]: CALL R8 2 1  ; var8(var9)
-      88 [-]: GETTABLEKS R8 R5 K28; var8 = var5["SetOffset"]
-      89 [-]: LOADN R9 0   ; var9 = 0
-      90 [-]: LOADN R10 -15; var10 = -15
-      91 [-]: LOADB R11 1  ; var11 = true
-      92 [-]: CALL R8 4 1  ; var8(var9, var10, var11)
-      93 [-]: RETURN R0 0  ; 
+       0 [-]: GETUPVAL R5 0; var5 = upvalues[0]
+       1 [-]: CALL R5 1 2  ; var5 = var5()
+       2 [-]: ADDK R4 R5 K0; var4 = var5 + 1
+       3 [-]: JUMPIFNOT R3 L0; goto L0 if not var3
+       4 [-]: MOVE R4 R3   ; var4 = var3
+L 0:   5 [-]: GETIMPORT R6 3; var6 = _T["AddHudTracker"]
+       6 [-]: FASTCALL1 64 R6 L1; 
+       7 [-]: GETIMPORT R5 5; var5 = 0x7B998233
+       8 [-]: CALL R5 2 2  ; var5 = var5(var6)
+L 1:   9 [-]: JUMPIFNOT R5 L2; goto L2 if not var5
+      10 [-]: GETUPVAL R6 1; var6 = upvalues[1]
+      11 [-]: GETTABLEKS R5 R6 K6; var5 = var6[0xA53F5E12]
+      12 [-]: LOADK R6 K7  ; var6 = "[HC] SetSubTitleObjText _T.AddHudTracker is invalid!"
+      13 [-]: CALL R5 2 1  ; var5(var6)
+      14 [-]: RETURN R0 0  ; 
+L 2:  15 [-]: GETIMPORT R5 9; var5 = _T["ObjectiveSubTitleTracker"]
+      16 [-]: JUMPXEQKNIL R5 L3 NOT; 
+      17 [-]: GETIMPORT R5 10; var5 = _T
+      18 [-]: NEWTABLE R6 0 0; var6 = {}
+      19 [-]: SETTABLEKS R6 R5 K8; var6["ObjectiveSubTitleTracker"] = var5
+L 3:  20 [-]: LOADK R6 K11 ; var6 = "SubTitleUIText"
+      21 [-]: GETIMPORT R7 13; var7 = _T["DuviriActivityId"]
+      22 [-]: JUMPXEQKNIL R7 L4; 
+      23 [-]: MOVE R7 R6   ; var7 = var6
+      24 [-]: LOADK R8 K14 ; var8 = "_"
+      25 [-]: GETIMPORT R9 13; var9 = _T["DuviriActivityId"]
+      26 [-]: LOADK R10 K15; var10 = "d"
+      27 [-]: CONCAT R6 R7 R10; var6 = var7 .. var10
+L 4:  28 [-]: JUMPXEQKNIL R2 L5; 
+      29 [-]: MOVE R7 R6   ; var7 = var6
+      30 [-]: MOVE R8 R2   ; var8 = var2
+      31 [-]: CONCAT R6 R7 R8; var6 = var7 .. var8
+L 5:  32 [-]: MOVE R5 R6   ; var5 = var6
+      33 [-]: GETIMPORT R7 9; var7 = _T["ObjectiveSubTitleTracker"]
+      34 [-]: GETTABLE R8 R7 R5; var8 = var7[var5]
+      35 [-]: JUMPXEQKNIL R8 L8; 
+      36 [-]: GETTABLEKS R10 R8 K16; var10 = var8["Movie"]
+      37 [-]: FASTCALL1 64 R10 L6; 
+      38 [-]: GETIMPORT R9 5; var9 = 0x7B998233
+      39 [-]: CALL R9 2 2  ; var9 = var9(var10)
+L 6:  40 [-]: JUMPIFNOT R9 L7; goto L7 if not var9
+      41 [-]: LOADNIL R9   ; var9 = nil
+      42 [-]: SETTABLE R9 R7 R5; var9[var7] = var5
+      43 [-]: LOADNIL R6   ; var6 = nil
+      44 [-]: JUMP L9      ; goto L9
+L 7:  45 [-]: MOVE R6 R8   ; var6 = var8
+      46 [-]: JUMP L9      ; goto L9
+L 8:  47 [-]: LOADNIL R6   ; var6 = nil
+L 9:  48 [-]: JUMPXEQKNIL R6 L11 NOT; 
+      49 [-]: GETIMPORT R7 3; var7 = _T["AddHudTracker"]
+      50 [-]: MOVE R8 R5   ; var8 = var5
+      51 [-]: GETUPVAL R10 2; var10 = upvalues[2]
+      52 [-]: GETTABLEKS R9 R10 K17; var9 = var10["HT_LABEL"]
+      53 [-]: LOADK R10 K18; var10 = 0.5
+      54 [-]: MOVE R11 R4  ; var11 = var4
+      55 [-]: LOADB R12 1  ; var12 = true
+      56 [-]: CALL R7 6 2  ; var7 = var7(var8, var9, var10, var11, var12)
+      57 [-]: MOVE R6 R7   ; var6 = var7
+      58 [-]: GETIMPORT R7 13; var7 = _T["DuviriActivityId"]
+      59 [-]: JUMPXEQKNIL R7 L10; 
+      60 [-]: GETTABLEKS R7 R6 K19; var7 = var6["AddToLocation"]
+      61 [-]: DUPTABLE R8 21; 
+      62 [-]: GETIMPORT R9 13; var9 = _T["DuviriActivityId"]
+      63 [-]: SETTABLEKS R9 R8 K20; var9["ActivityId"] = var8
+      64 [-]: CALL R7 2 1  ; var7(var8)
+L10:  65 [-]: GETIMPORT R7 9; var7 = _T["ObjectiveSubTitleTracker"]
+      66 [-]: SETTABLE R6 R7 R5; var6[var7] = var5
+L11:  67 [-]: GETTABLEKS R7 R6 K22; var7 = var6["Localize"]
+      68 [-]: MOVE R8 R0   ; var8 = var0
+      69 [-]: LOADNIL R9   ; var9 = nil
+      70 [-]: LOADB R10 1  ; var10 = true
+      71 [-]: CALL R7 4 2  ; var7 = var7(var8, var9, var10)
+      72 [-]: LOADK R9 K23 ; var9 = "<p><font face=\"Noto Sans\" color=\""
+      73 [-]: GETTABLEKS R13 R6 K24; var13 = var6["Colorize"]
+      74 [-]: LOADN R14 39 ; var14 = 39
+      75 [-]: CALL R13 2 2 ; var13 = var13(var14)
+      76 [-]: MOVE R10 R13 ; var10 = var13
+      77 [-]: LOADK R11 K25; var11 = "\" size=\"14\">"
+      78 [-]: MOVE R12 R7  ; var12 = var7
+      79 [-]: CONCAT R8 R9 R12; var8 = var9 .. var12
+      80 [-]: JUMPIFNOT R1 L12; goto L12 if not var1
+      81 [-]: MOVE R9 R8   ; var9 = var8
+      82 [-]: MOVE R10 R1  ; var10 = var1
+      83 [-]: CONCAT R8 R9 R10; var8 = var9 .. var10
+L12:  84 [-]: MOVE R9 R8   ; var9 = var8
+      85 [-]: LOADK R10 K26; var10 = "</font></p>"
+      86 [-]: CONCAT R8 R9 R10; var8 = var9 .. var10
+      87 [-]: GETTABLEKS R9 R6 K27; var9 = var6["SetLabel"]
+      88 [-]: MOVE R10 R8  ; var10 = var8
+      89 [-]: CALL R9 2 1  ; var9(var10)
+      90 [-]: GETTABLEKS R9 R6 K28; var9 = var6["SetOffset"]
+      91 [-]: LOADN R10 0  ; var10 = 0
+      92 [-]: LOADN R11 -15; var11 = -15
+      93 [-]: LOADB R12 1  ; var12 = true
+      94 [-]: CALL R9 4 1  ; var9(var10, var11, var12)
+      95 [-]: RETURN R0 0  ; 
 
 
 ; Name:            
-; Defined at line: 347
+; Defined at line: 335
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1193,7 +1157,7 @@ L 0:   8 [-]: JUMPXEQKNIL R0 L1;
       11 [-]: CONCAT R2 R3 R4; var2 = var3 .. var4
 L 1:  12 [-]: MOVE R1 R2   ; var1 = var2
       13 [-]: GETIMPORT R3 7; var3 = _T["RemoveHudTracker"]
-      14 [-]: FASTCALL1 62 R3 L2; 
+      14 [-]: FASTCALL1 64 R3 L2; 
       15 [-]: GETIMPORT R2 9; var2 = 0x7B998233
       16 [-]: CALL R2 2 2  ; var2 = var2(var3)
 L 2:  17 [-]: JUMPIF R2 L3 ; goto L3 if var2
@@ -1210,7 +1174,7 @@ L 4:  27 [-]: RETURN R0 0  ;
 
 
 ; Name:            
-; Defined at line: 359
+; Defined at line: 347
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1233,130 +1197,134 @@ L 1:  12 [-]: MOVE R1 R2   ; var1 = var2
 
 
 ; Name:            
-; Defined at line: 363
+; Defined at line: 351
 ; #Upvalues:       4
-; #Parameters:     5
+; #Parameters:     7
 ; Is_vararg:       0
-; Max Stack Size:  18
+; Max Stack Size:  22
 
-       0 [-]: GETUPVAL R6 0; var6 = upvalues[0]
-       1 [-]: CALL R6 1 2  ; var6 = var6()
-       2 [-]: ADDK R5 R6 K0; var5 = var6 + 2
-       3 [-]: GETIMPORT R8 3; var8 = _T["ActiveJob"]
-       4 [-]: FASTCALL1 62 R8 L0; 
-       5 [-]: GETIMPORT R7 5; var7 = 0x7B998233
-       6 [-]: CALL R7 2 2  ; var7 = var7(var8)
-L 0:   7 [-]: NOT R6 R7    ; var6 = not var7
-       8 [-]: MOVE R7 R6   ; var7 = var6
-       9 [-]: JUMPIFNOT R7 L1; goto L1 if not var7
-      10 [-]: GETIMPORT R7 7; var7 = _T["ActiveJob"]["isQuest"]
-L 1:  11 [-]: LOADB R8 1   ; var8 = true
-      12 [-]: JUMPIFNOT R3 L2; goto L2 if not var3
-      13 [-]: LOADB R8 0   ; var8 = false
-L 2:  14 [-]: FASTCALL1 62 R1 L3; 
-      15 [-]: MOVE R10 R1  ; var10 = var1
-      16 [-]: GETIMPORT R9 5; var9 = 0x7B998233
-      17 [-]: CALL R9 2 2  ; var9 = var9(var10)
-L 3:  18 [-]: JUMPIF R9 L4 ; goto L4 if var9
-      19 [-]: LOADN R9 0   ; var9 = 0
-      20 [-]: JUMPIFNOTLT R1 R9 L5; goto L5 if var1 >= var65863
-L 4:  21 [-]: LOADN R1 1   ; var1 = 1
-L 5:  22 [-]: GETIMPORT R10 9; var10 = _T["AddHudTracker"]
-      23 [-]: FASTCALL1 62 R10 L6; 
-      24 [-]: GETIMPORT R9 5; var9 = 0x7B998233
-      25 [-]: CALL R9 2 2  ; var9 = var9(var10)
-L 6:  26 [-]: JUMPIFNOT R9 L7; goto L7 if not var9
-      27 [-]: GETUPVAL R10 1; var10 = upvalues[1]
-      28 [-]: GETTABLEKS R9 R10 K10; var9 = var10[0xA53F5E12]
-      29 [-]: LOADK R10 K11; var10 = "[HC] SetPrimaryObjText _T.AddHudTracker is invalid!"
-      30 [-]: CALL R9 2 1  ; var9(var10)
-      31 [-]: RETURN R0 0  ; 
-L 7:  32 [-]: GETIMPORT R9 13; var9 = _T["ObjectiveHudTracker"]
-      33 [-]: JUMPXEQKNIL R9 L8 NOT; 
-      34 [-]: GETIMPORT R9 14; var9 = _T
-      35 [-]: NEWTABLE R10 0 0; var10 = {}
-      36 [-]: SETTABLEKS R10 R9 K12; var10["ObjectiveHudTracker"] = var9
-L 8:  37 [-]: LOADK R10 K15; var10 = "ObjectiveUIText"
-      38 [-]: GETIMPORT R11 17; var11 = _T["DuviriActivityId"]
-      39 [-]: JUMPXEQKNIL R11 L9; 
-      40 [-]: MOVE R11 R10 ; var11 = var10
-      41 [-]: LOADK R12 K18; var12 = "_"
-      42 [-]: GETIMPORT R13 17; var13 = _T["DuviriActivityId"]
-      43 [-]: LOADK R14 K19; var14 = "d"
-      44 [-]: CONCAT R10 R11 R14; var10 = var11 .. var14
-L 9:  45 [-]: JUMPXEQKNIL R4 L10; 
-      46 [-]: MOVE R11 R10 ; var11 = var10
-      47 [-]: MOVE R12 R4  ; var12 = var4
-      48 [-]: CONCAT R10 R11 R12; var10 = var11 .. var12
-L10:  49 [-]: MOVE R9 R10  ; var9 = var10
-      50 [-]: GETIMPORT R11 13; var11 = _T["ObjectiveHudTracker"]
-      51 [-]: GETTABLE R12 R11 R9; var12 = var11[var9]
-      52 [-]: JUMPXEQKNIL R12 L13; 
-      53 [-]: GETTABLEKS R14 R12 K20; var14 = var12["Movie"]
-      54 [-]: FASTCALL1 62 R14 L11; 
-      55 [-]: GETIMPORT R13 5; var13 = 0x7B998233
-      56 [-]: CALL R13 2 2 ; var13 = var13(var14)
-L11:  57 [-]: JUMPIFNOT R13 L12; goto L12 if not var13
-      58 [-]: LOADNIL R13  ; var13 = nil
-      59 [-]: SETTABLE R13 R11 R9; var13[var11] = var9
-      60 [-]: LOADNIL R10  ; var10 = nil
-      61 [-]: JUMP L14     ; goto L14
-L12:  62 [-]: MOVE R10 R12 ; var10 = var12
-      63 [-]: JUMP L14     ; goto L14
-L13:  64 [-]: LOADNIL R10  ; var10 = nil
-L14:  65 [-]: JUMPXEQKNIL R10 L16 NOT; 
-      66 [-]: GETIMPORT R11 9; var11 = _T["AddHudTracker"]
-      67 [-]: MOVE R12 R9  ; var12 = var9
-      68 [-]: GETUPVAL R14 2; var14 = upvalues[2]
-      69 [-]: GETTABLEKS R13 R14 K21; var13 = var14["HT_LABEL"]
-      70 [-]: LOADK R14 K22; var14 = 0.5
-      71 [-]: MOVE R15 R5  ; var15 = var5
-      72 [-]: MOVE R16 R8  ; var16 = var8
-      73 [-]: CALL R11 6 2 ; var11 = var11(var12, var13, var14, var15, var16)
-      74 [-]: MOVE R10 R11 ; var10 = var11
-      75 [-]: GETIMPORT R11 17; var11 = _T["DuviriActivityId"]
-      76 [-]: JUMPXEQKNIL R11 L15; 
-      77 [-]: GETTABLEKS R11 R10 K23; var11 = var10["AddToLocation"]
-      78 [-]: DUPTABLE R12 25; 
-      79 [-]: GETIMPORT R13 17; var13 = _T["DuviriActivityId"]
-      80 [-]: SETTABLEKS R13 R12 K24; var13["ActivityId"] = var12
-      81 [-]: CALL R11 2 1 ; var11(var12)
-L15:  82 [-]: GETIMPORT R11 13; var11 = _T["ObjectiveHudTracker"]
-      83 [-]: SETTABLE R10 R11 R9; var10[var11] = var9
-L16:  84 [-]: GETIMPORT R12 27; var12 = _T["VoidTearProgress"]
-      85 [-]: FASTCALL1 62 R12 L17; 
-      86 [-]: GETIMPORT R11 5; var11 = 0x7B998233
-      87 [-]: CALL R11 2 2 ; var11 = var11(var12)
-L17:  88 [-]: JUMPIF R11 L18; goto L18 if var11
-      89 [-]: GETTABLEKS R11 R10 K28; var11 = var10["SetOffset"]
-      90 [-]: LOADN R12 0  ; var12 = 0
-      91 [-]: LOADN R13 20 ; var13 = 20
-      92 [-]: LOADB R14 1  ; var14 = true
-      93 [-]: CALL R11 4 1 ; var11(var12, var13, var14)
-      94 [-]: JUMP L19     ; goto L19
-L18:  95 [-]: GETTABLEKS R11 R10 K28; var11 = var10["SetOffset"]
-      96 [-]: LOADN R12 0  ; var12 = 0
-      97 [-]: GETUPVAL R14 1; var14 = upvalues[1]
-      98 [-]: GETTABLEKS R13 R14 K29; var13 = var14[0x06D055F9]
-      99 [-]: MOVE R14 R6  ; var14 = var6
-     100 [-]: LOADN R15 -5 ; var15 = -5
-     101 [-]: LOADN R16 0  ; var16 = 0
-     102 [-]: CALL R13 4 2 ; var13 = var13(var14, var15, var16)
-     103 [-]: LOADB R14 1  ; var14 = true
-     104 [-]: CALL R11 4 1 ; var11(var12, var13, var14)
-L19: 105 [-]: GETUPVAL R11 3; var11 = upvalues[3]
-     106 [-]: MOVE R12 R10 ; var12 = var10
-     107 [-]: MOVE R13 R0  ; var13 = var0
-     108 [-]: MOVE R14 R1  ; var14 = var1
-     109 [-]: MOVE R15 R2  ; var15 = var2
-     110 [-]: MOVE R16 R5  ; var16 = var5
-     111 [-]: NOT R17 R7   ; var17 = not var7
-     112 [-]: CALL R11 7 1 ; var11(var12, var13, var14, var15, var16, var17)
-     113 [-]: RETURN R10 1 ; 
+       0 [-]: GETUPVAL R8 0; var8 = upvalues[0]
+       1 [-]: CALL R8 1 2  ; var8 = var8()
+       2 [-]: ADDK R7 R8 K0; var7 = var8 + 2
+       3 [-]: JUMPIFNOT R6 L0; goto L0 if not var6
+       4 [-]: MOVE R7 R6   ; var7 = var6
+L 0:   5 [-]: GETIMPORT R10 3; var10 = _T["ActiveJob"]
+       6 [-]: FASTCALL1 64 R10 L1; 
+       7 [-]: GETIMPORT R9 5; var9 = 0x7B998233
+       8 [-]: CALL R9 2 2  ; var9 = var9(var10)
+L 1:   9 [-]: NOT R8 R9    ; var8 = not var9
+      10 [-]: MOVE R9 R8   ; var9 = var8
+      11 [-]: JUMPIFNOT R9 L2; goto L2 if not var9
+      12 [-]: GETIMPORT R9 7; var9 = _T["ActiveJob"]["isQuest"]
+L 2:  13 [-]: LOADB R10 1  ; var10 = true
+      14 [-]: JUMPIFNOT R3 L3; goto L3 if not var3
+      15 [-]: LOADB R10 0  ; var10 = false
+L 3:  16 [-]: FASTCALL1 64 R1 L4; 
+      17 [-]: MOVE R12 R1  ; var12 = var1
+      18 [-]: GETIMPORT R11 5; var11 = 0x7B998233
+      19 [-]: CALL R11 2 2 ; var11 = var11(var12)
+L 4:  20 [-]: JUMPIF R11 L5; goto L5 if var11
+      21 [-]: LOADN R11 0  ; var11 = 0
+      22 [-]: JUMPIFNOTLT R1 R11 L6; goto L6 if var1 >= var65840
+L 5:  23 [-]: LOADN R1 1   ; var1 = 1
+L 6:  24 [-]: GETIMPORT R12 9; var12 = _T["AddHudTracker"]
+      25 [-]: FASTCALL1 64 R12 L7; 
+      26 [-]: GETIMPORT R11 5; var11 = 0x7B998233
+      27 [-]: CALL R11 2 2 ; var11 = var11(var12)
+L 7:  28 [-]: JUMPIFNOT R11 L8; goto L8 if not var11
+      29 [-]: GETUPVAL R12 1; var12 = upvalues[1]
+      30 [-]: GETTABLEKS R11 R12 K10; var11 = var12[0xA53F5E12]
+      31 [-]: LOADK R12 K11; var12 = "[HC] SetPrimaryObjText _T.AddHudTracker is invalid!"
+      32 [-]: CALL R11 2 1 ; var11(var12)
+      33 [-]: RETURN R0 0  ; 
+L 8:  34 [-]: GETIMPORT R11 13; var11 = _T["ObjectiveHudTracker"]
+      35 [-]: JUMPXEQKNIL R11 L9 NOT; 
+      36 [-]: GETIMPORT R11 14; var11 = _T
+      37 [-]: NEWTABLE R12 0 0; var12 = {}
+      38 [-]: SETTABLEKS R12 R11 K12; var12["ObjectiveHudTracker"] = var11
+L 9:  39 [-]: LOADK R12 K15; var12 = "ObjectiveUIText"
+      40 [-]: GETIMPORT R13 17; var13 = _T["DuviriActivityId"]
+      41 [-]: JUMPXEQKNIL R13 L10; 
+      42 [-]: MOVE R13 R12 ; var13 = var12
+      43 [-]: LOADK R14 K18; var14 = "_"
+      44 [-]: GETIMPORT R15 17; var15 = _T["DuviriActivityId"]
+      45 [-]: LOADK R16 K19; var16 = "d"
+      46 [-]: CONCAT R12 R13 R16; var12 = var13 .. var16
+L10:  47 [-]: JUMPXEQKNIL R4 L11; 
+      48 [-]: MOVE R13 R12 ; var13 = var12
+      49 [-]: MOVE R14 R4  ; var14 = var4
+      50 [-]: CONCAT R12 R13 R14; var12 = var13 .. var14
+L11:  51 [-]: MOVE R11 R12 ; var11 = var12
+      52 [-]: GETIMPORT R13 13; var13 = _T["ObjectiveHudTracker"]
+      53 [-]: GETTABLE R14 R13 R11; var14 = var13[var11]
+      54 [-]: JUMPXEQKNIL R14 L14; 
+      55 [-]: GETTABLEKS R16 R14 K20; var16 = var14["Movie"]
+      56 [-]: FASTCALL1 64 R16 L12; 
+      57 [-]: GETIMPORT R15 5; var15 = 0x7B998233
+      58 [-]: CALL R15 2 2 ; var15 = var15(var16)
+L12:  59 [-]: JUMPIFNOT R15 L13; goto L13 if not var15
+      60 [-]: LOADNIL R15  ; var15 = nil
+      61 [-]: SETTABLE R15 R13 R11; var15[var13] = var11
+      62 [-]: LOADNIL R12  ; var12 = nil
+      63 [-]: JUMP L15     ; goto L15
+L13:  64 [-]: MOVE R12 R14 ; var12 = var14
+      65 [-]: JUMP L15     ; goto L15
+L14:  66 [-]: LOADNIL R12  ; var12 = nil
+L15:  67 [-]: JUMPXEQKNIL R12 L17 NOT; 
+      68 [-]: GETIMPORT R13 9; var13 = _T["AddHudTracker"]
+      69 [-]: MOVE R14 R11 ; var14 = var11
+      70 [-]: GETUPVAL R16 2; var16 = upvalues[2]
+      71 [-]: GETTABLEKS R15 R16 K21; var15 = var16["HT_LABEL"]
+      72 [-]: LOADK R16 K22; var16 = 0.5
+      73 [-]: MOVE R17 R7  ; var17 = var7
+      74 [-]: MOVE R18 R10 ; var18 = var10
+      75 [-]: CALL R13 6 2 ; var13 = var13(var14, var15, var16, var17, var18)
+      76 [-]: MOVE R12 R13 ; var12 = var13
+      77 [-]: GETIMPORT R13 17; var13 = _T["DuviriActivityId"]
+      78 [-]: JUMPXEQKNIL R13 L16; 
+      79 [-]: GETTABLEKS R13 R12 K23; var13 = var12["AddToLocation"]
+      80 [-]: DUPTABLE R14 25; 
+      81 [-]: GETIMPORT R15 17; var15 = _T["DuviriActivityId"]
+      82 [-]: SETTABLEKS R15 R14 K24; var15["ActivityId"] = var14
+      83 [-]: CALL R13 2 1 ; var13(var14)
+L16:  84 [-]: GETIMPORT R13 13; var13 = _T["ObjectiveHudTracker"]
+      85 [-]: SETTABLE R12 R13 R11; var12[var13] = var11
+L17:  86 [-]: GETIMPORT R14 27; var14 = _T["VoidTearProgress"]
+      87 [-]: FASTCALL1 64 R14 L18; 
+      88 [-]: GETIMPORT R13 5; var13 = 0x7B998233
+      89 [-]: CALL R13 2 2 ; var13 = var13(var14)
+L18:  90 [-]: JUMPIF R13 L19; goto L19 if var13
+      91 [-]: GETTABLEKS R13 R12 K28; var13 = var12["SetOffset"]
+      92 [-]: LOADN R14 0  ; var14 = 0
+      93 [-]: LOADN R15 20 ; var15 = 20
+      94 [-]: LOADB R16 1  ; var16 = true
+      95 [-]: CALL R13 4 1 ; var13(var14, var15, var16)
+      96 [-]: JUMP L20     ; goto L20
+L19:  97 [-]: GETTABLEKS R13 R12 K28; var13 = var12["SetOffset"]
+      98 [-]: LOADN R14 0  ; var14 = 0
+      99 [-]: GETUPVAL R16 1; var16 = upvalues[1]
+     100 [-]: GETTABLEKS R15 R16 K29; var15 = var16[0x06D055F9]
+     101 [-]: MOVE R16 R8  ; var16 = var8
+     102 [-]: LOADN R17 -5 ; var17 = -5
+     103 [-]: LOADN R18 0  ; var18 = 0
+     104 [-]: CALL R15 4 2 ; var15 = var15(var16, var17, var18)
+     105 [-]: LOADB R16 1  ; var16 = true
+     106 [-]: CALL R13 4 1 ; var13(var14, var15, var16)
+L20: 107 [-]: GETUPVAL R13 3; var13 = upvalues[3]
+     108 [-]: MOVE R14 R12 ; var14 = var12
+     109 [-]: MOVE R15 R0  ; var15 = var0
+     110 [-]: MOVE R16 R1  ; var16 = var1
+     111 [-]: MOVE R17 R2  ; var17 = var2
+     112 [-]: MOVE R18 R7  ; var18 = var7
+     113 [-]: NOT R19 R9   ; var19 = not var9
+     114 [-]: LOADB R20 1  ; var20 = true
+     115 [-]: MOVE R21 R5  ; var21 = var5
+     116 [-]: CALL R13 9 1 ; var13(var14, var15, var16, var17, var18, var19, var20, var21)
+     117 [-]: RETURN R12 1 ; 
 
 
 ; Name:            
-; Defined at line: 407
+; Defined at line: 398
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1387,7 +1355,7 @@ L 2:  19 [-]: JUMPXEQKNIL R0 L3;
       22 [-]: CONCAT R2 R3 R4; var2 = var3 .. var4
 L 3:  23 [-]: MOVE R1 R2   ; var1 = var2
       24 [-]: GETIMPORT R3 12; var3 = _T["RemoveHudTracker"]
-      25 [-]: FASTCALL1 62 R3 L4; 
+      25 [-]: FASTCALL1 64 R3 L4; 
       26 [-]: GETIMPORT R2 14; var2 = 0x7B998233
       27 [-]: CALL R2 2 2  ; var2 = var2(var3)
 L 4:  28 [-]: JUMPIF R2 L5 ; goto L5 if var2
@@ -1404,7 +1372,7 @@ L 6:  38 [-]: RETURN R0 0  ;
 
 
 ; Name:            
-; Defined at line: 423
+; Defined at line: 414
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -1439,7 +1407,7 @@ L 3:  20 [-]: GETIMPORT R5 2; var5 = _T["ObjectiveHudTracker"]
 
 
 ; Name:            
-; Defined at line: 437
+; Defined at line: 428
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1462,135 +1430,137 @@ L 1:  12 [-]: MOVE R1 R2   ; var1 = var2
 
 
 ; Name:            
-; Defined at line: 441
+; Defined at line: 432
 ; #Upvalues:       3
-; #Parameters:     5
+; #Parameters:     6
 ; Is_vararg:       0
-; Max Stack Size:  16
+; Max Stack Size:  17
 
-       0 [-]: GETUPVAL R6 0; var6 = upvalues[0]
-       1 [-]: CALL R6 1 2  ; var6 = var6()
-       2 [-]: ADDK R5 R6 K0; var5 = var6 + 3
-       3 [-]: FASTCALL1 62 R1 L0; 
-       4 [-]: MOVE R7 R1   ; var7 = var1
-       5 [-]: GETIMPORT R6 2; var6 = 0x7B998233
-       6 [-]: CALL R6 2 2  ; var6 = var6(var7)
-L 0:   7 [-]: JUMPIF R6 L1 ; goto L1 if var6
-       8 [-]: LOADN R6 0   ; var6 = 0
-       9 [-]: JUMPIFNOTLT R1 R6 L2; goto L2 if var1 >= var65863
-L 1:  10 [-]: LOADN R1 1   ; var1 = 1
-L 2:  11 [-]: FASTCALL1 62 R3 L3; 
-      12 [-]: MOVE R7 R3   ; var7 = var3
-      13 [-]: GETIMPORT R6 2; var6 = 0x7B998233
-      14 [-]: CALL R6 2 2  ; var6 = var6(var7)
-L 3:  15 [-]: JUMPIFNOT R6 L7; goto L7 if not var6
-      16 [-]: GETIMPORT R7 5; var7 = _T["SecObjectiveHudTracker"]
-      17 [-]: FASTCALL1 62 R7 L4; 
-      18 [-]: GETIMPORT R6 2; var6 = 0x7B998233
-      19 [-]: CALL R6 2 2  ; var6 = var6(var7)
-L 4:  20 [-]: JUMPIFNOT R6 L5; goto L5 if not var6
-      21 [-]: LOADN R3 1   ; var3 = 1
-      22 [-]: JUMP L7      ; goto L7
-L 5:  23 [-]: GETIMPORT R8 5; var8 = _T["SecObjectiveHudTracker"]
-      24 [-]: LENGTH R7 R8 ; var7 = #var8
-      25 [-]: FASTCALL2K 19 R7 K6 L6; 
-      26 [-]: LOADK R8 K6  ; var8 = 10
-      27 [-]: GETIMPORT R6 9; var6 = 0x5BCED4C4[0xAC1B386A]
-      28 [-]: CALL R6 3 2  ; var6 = var6(var7, var8)
-L 6:  29 [-]: MOVE R3 R6   ; var3 = var6
-L 7:  30 [-]: GETIMPORT R7 5; var7 = _T["SecObjectiveHudTracker"]
-      31 [-]: FASTCALL1 62 R7 L8; 
-      32 [-]: GETIMPORT R6 2; var6 = 0x7B998233
-      33 [-]: CALL R6 2 2  ; var6 = var6(var7)
-L 8:  34 [-]: JUMPIFNOT R6 L9; goto L9 if not var6
-      35 [-]: GETIMPORT R6 10; var6 = _T
-      36 [-]: NEWTABLE R7 0 0; var7 = {}
-      37 [-]: SETTABLEKS R7 R6 K4; var7["SecObjectiveHudTracker"] = var6
-L 9:  38 [-]: LOADN R8 1   ; var8 = 1
-      39 [-]: MOVE R6 R3   ; var6 = var3
-      40 [-]: LOADN R7 1   ; var7 = 1
-      41 [-]: FORNPREP R6 L13; nforprep start - [escape at L13] -- var6 = iterator
-L10:  42 [-]: GETIMPORT R11 5; var11 = _T["SecObjectiveHudTracker"]
-      43 [-]: GETTABLE R10 R11 R8; var10 = var11[var8]
-      44 [-]: FASTCALL1 62 R10 L11; 
-      45 [-]: GETIMPORT R9 2; var9 = 0x7B998233
-      46 [-]: CALL R9 2 2  ; var9 = var9(var10)
-L11:  47 [-]: JUMPIFNOT R9 L12; goto L12 if not var9
-      48 [-]: GETIMPORT R10 5; var10 = _T["SecObjectiveHudTracker"]
-      49 [-]: FASTCALL2K 52 R10 K11 L12; 
-      50 [-]: LOADK R11 K11; var11 = false
-      51 [-]: GETIMPORT R9 14; var9 = 0x33BDD652[0x23D5322F]
-      52 [-]: CALL R9 3 1  ; var9(var10, var11)
-L12:  53 [-]: FORNLOOP R6 L10; nforloop end - iterate + goto L10
-L13:  54 [-]: LOADB R6 1   ; var6 = true
-      55 [-]: JUMPIFNOT R4 L14; goto L14 if not var4
-      56 [-]: LOADB R6 0   ; var6 = false
-L14:  57 [-]: MOVE R8 R3   ; var8 = var3
-      58 [-]: LOADK R9 K15 ; var9 = "SecObjectiveUIText"
-      59 [-]: GETIMPORT R10 17; var10 = _T["DuviriActivityId"]
-      60 [-]: JUMPXEQKNIL R10 L15; 
-      61 [-]: MOVE R10 R9  ; var10 = var9
-      62 [-]: LOADK R11 K18; var11 = "_"
-      63 [-]: GETIMPORT R12 17; var12 = _T["DuviriActivityId"]
-      64 [-]: LOADK R13 K19; var13 = "d"
-      65 [-]: CONCAT R9 R10 R13; var9 = var10 .. var13
-L15:  66 [-]: JUMPXEQKNIL R8 L16; 
-      67 [-]: MOVE R10 R9  ; var10 = var9
-      68 [-]: MOVE R11 R8  ; var11 = var8
-      69 [-]: CONCAT R9 R10 R11; var9 = var10 .. var11
-L16:  70 [-]: MOVE R7 R9   ; var7 = var9
-      71 [-]: GETIMPORT R9 5; var9 = _T["SecObjectiveHudTracker"]
-      72 [-]: GETTABLE R10 R9 R7; var10 = var9[var7]
-      73 [-]: JUMPXEQKNIL R10 L19; 
-      74 [-]: GETTABLEKS R12 R10 K20; var12 = var10["Movie"]
-      75 [-]: FASTCALL1 62 R12 L17; 
-      76 [-]: GETIMPORT R11 2; var11 = 0x7B998233
-      77 [-]: CALL R11 2 2 ; var11 = var11(var12)
-L17:  78 [-]: JUMPIFNOT R11 L18; goto L18 if not var11
-      79 [-]: LOADNIL R11  ; var11 = nil
-      80 [-]: SETTABLE R11 R9 R7; var11[var9] = var7
-      81 [-]: LOADNIL R8   ; var8 = nil
-      82 [-]: JUMP L20     ; goto L20
-L18:  83 [-]: MOVE R8 R10  ; var8 = var10
-      84 [-]: JUMP L20     ; goto L20
-L19:  85 [-]: LOADNIL R8   ; var8 = nil
-L20:  86 [-]: JUMPXEQKNIL R8 L22 NOT; 
-      87 [-]: GETIMPORT R9 22; var9 = _T["AddHudTracker"]
-      88 [-]: MOVE R10 R7  ; var10 = var7
-      89 [-]: GETUPVAL R12 1; var12 = upvalues[1]
-      90 [-]: GETTABLEKS R11 R12 K23; var11 = var12["HT_LABEL"]
-      91 [-]: LOADK R12 K24; var12 = 0.5
-      92 [-]: MOVE R13 R5  ; var13 = var5
-      93 [-]: MOVE R14 R6  ; var14 = var6
-      94 [-]: CALL R9 6 2  ; var9 = var9(var10, var11, var12, var13, var14)
-      95 [-]: MOVE R8 R9   ; var8 = var9
-      96 [-]: GETTABLEKS R9 R8 K25; var9 = var8["SetOffset"]
-      97 [-]: LOADN R10 27 ; var10 = 27
-      98 [-]: LOADN R11 -14; var11 = -14
-      99 [-]: LOADB R12 1  ; var12 = true
-     100 [-]: CALL R9 4 1  ; var9(var10, var11, var12)
-     101 [-]: GETIMPORT R9 17; var9 = _T["DuviriActivityId"]
-     102 [-]: JUMPXEQKNIL R9 L21; 
-     103 [-]: GETTABLEKS R9 R8 K26; var9 = var8["AddToLocation"]
-     104 [-]: DUPTABLE R10 28; 
-     105 [-]: GETIMPORT R11 17; var11 = _T["DuviriActivityId"]
-     106 [-]: SETTABLEKS R11 R10 K27; var11["ActivityId"] = var10
-     107 [-]: CALL R9 2 1  ; var9(var10)
-L21: 108 [-]: GETIMPORT R9 5; var9 = _T["SecObjectiveHudTracker"]
-     109 [-]: SETTABLE R8 R9 R3; var8[var9] = var3
-L22: 110 [-]: GETUPVAL R9 2; var9 = upvalues[2]
-     111 [-]: MOVE R10 R8  ; var10 = var8
-     112 [-]: MOVE R11 R0  ; var11 = var0
-     113 [-]: MOVE R12 R1  ; var12 = var1
-     114 [-]: MOVE R13 R2  ; var13 = var2
-     115 [-]: MOVE R14 R5  ; var14 = var5
-     116 [-]: LOADB R15 0  ; var15 = false
-     117 [-]: CALL R9 7 1  ; var9(var10, var11, var12, var13, var14, var15)
-     118 [-]: RETURN R8 1  ; 
+       0 [-]: GETUPVAL R7 0; var7 = upvalues[0]
+       1 [-]: CALL R7 1 2  ; var7 = var7()
+       2 [-]: ADDK R6 R7 K0; var6 = var7 + 3
+       3 [-]: JUMPIFNOT R5 L0; goto L0 if not var5
+       4 [-]: MOVE R6 R5   ; var6 = var5
+L 0:   5 [-]: FASTCALL1 64 R1 L1; 
+       6 [-]: MOVE R8 R1   ; var8 = var1
+       7 [-]: GETIMPORT R7 2; var7 = 0x7B998233
+       8 [-]: CALL R7 2 2  ; var7 = var7(var8)
+L 1:   9 [-]: JUMPIF R7 L2 ; goto L2 if var7
+      10 [-]: LOADN R7 0   ; var7 = 0
+      11 [-]: JUMPIFNOTLT R1 R7 L3; goto L3 if var1 >= var65840
+L 2:  12 [-]: LOADN R1 1   ; var1 = 1
+L 3:  13 [-]: FASTCALL1 64 R3 L4; 
+      14 [-]: MOVE R8 R3   ; var8 = var3
+      15 [-]: GETIMPORT R7 2; var7 = 0x7B998233
+      16 [-]: CALL R7 2 2  ; var7 = var7(var8)
+L 4:  17 [-]: JUMPIFNOT R7 L8; goto L8 if not var7
+      18 [-]: GETIMPORT R8 5; var8 = _T["SecObjectiveHudTracker"]
+      19 [-]: FASTCALL1 64 R8 L5; 
+      20 [-]: GETIMPORT R7 2; var7 = 0x7B998233
+      21 [-]: CALL R7 2 2  ; var7 = var7(var8)
+L 5:  22 [-]: JUMPIFNOT R7 L6; goto L6 if not var7
+      23 [-]: LOADN R3 1   ; var3 = 1
+      24 [-]: JUMP L8      ; goto L8
+L 6:  25 [-]: GETIMPORT R9 5; var9 = _T["SecObjectiveHudTracker"]
+      26 [-]: LENGTH R8 R9 ; var8 = #var9
+      27 [-]: FASTCALL2K 19 R8 K6 L7; 
+      28 [-]: LOADK R9 K6  ; var9 = 10
+      29 [-]: GETIMPORT R7 9; var7 = 0x5BCED4C4[0xAC1B386A]
+      30 [-]: CALL R7 3 2  ; var7 = var7(var8, var9)
+L 7:  31 [-]: MOVE R3 R7   ; var3 = var7
+L 8:  32 [-]: GETIMPORT R8 5; var8 = _T["SecObjectiveHudTracker"]
+      33 [-]: FASTCALL1 64 R8 L9; 
+      34 [-]: GETIMPORT R7 2; var7 = 0x7B998233
+      35 [-]: CALL R7 2 2  ; var7 = var7(var8)
+L 9:  36 [-]: JUMPIFNOT R7 L10; goto L10 if not var7
+      37 [-]: GETIMPORT R7 10; var7 = _T
+      38 [-]: NEWTABLE R8 0 0; var8 = {}
+      39 [-]: SETTABLEKS R8 R7 K4; var8["SecObjectiveHudTracker"] = var7
+L10:  40 [-]: LOADN R9 1   ; var9 = 1
+      41 [-]: MOVE R7 R3   ; var7 = var3
+      42 [-]: LOADN R8 1   ; var8 = 1
+      43 [-]: FORNPREP R7 L14; nforprep start - [escape at L14] -- var7 = iterator
+L11:  44 [-]: GETIMPORT R12 5; var12 = _T["SecObjectiveHudTracker"]
+      45 [-]: GETTABLE R11 R12 R9; var11 = var12[var9]
+      46 [-]: FASTCALL1 64 R11 L12; 
+      47 [-]: GETIMPORT R10 2; var10 = 0x7B998233
+      48 [-]: CALL R10 2 2 ; var10 = var10(var11)
+L12:  49 [-]: JUMPIFNOT R10 L13; goto L13 if not var10
+      50 [-]: GETIMPORT R11 5; var11 = _T["SecObjectiveHudTracker"]
+      51 [-]: FASTCALL2K 52 R11 K11 L13; 
+      52 [-]: LOADK R12 K11; var12 = false
+      53 [-]: GETIMPORT R10 14; var10 = 0x33BDD652[0x23D5322F]
+      54 [-]: CALL R10 3 1 ; var10(var11, var12)
+L13:  55 [-]: FORNLOOP R7 L11; nforloop end - iterate + goto L11
+L14:  56 [-]: LOADB R7 1   ; var7 = true
+      57 [-]: JUMPIFNOT R4 L15; goto L15 if not var4
+      58 [-]: LOADB R7 0   ; var7 = false
+L15:  59 [-]: MOVE R9 R3   ; var9 = var3
+      60 [-]: LOADK R10 K15; var10 = "SecObjectiveUIText"
+      61 [-]: GETIMPORT R11 17; var11 = _T["DuviriActivityId"]
+      62 [-]: JUMPXEQKNIL R11 L16; 
+      63 [-]: MOVE R11 R10 ; var11 = var10
+      64 [-]: LOADK R12 K18; var12 = "_"
+      65 [-]: GETIMPORT R13 17; var13 = _T["DuviriActivityId"]
+      66 [-]: LOADK R14 K19; var14 = "d"
+      67 [-]: CONCAT R10 R11 R14; var10 = var11 .. var14
+L16:  68 [-]: JUMPXEQKNIL R9 L17; 
+      69 [-]: MOVE R11 R10 ; var11 = var10
+      70 [-]: MOVE R12 R9  ; var12 = var9
+      71 [-]: CONCAT R10 R11 R12; var10 = var11 .. var12
+L17:  72 [-]: MOVE R8 R10  ; var8 = var10
+      73 [-]: GETIMPORT R10 5; var10 = _T["SecObjectiveHudTracker"]
+      74 [-]: GETTABLE R11 R10 R8; var11 = var10[var8]
+      75 [-]: JUMPXEQKNIL R11 L20; 
+      76 [-]: GETTABLEKS R13 R11 K20; var13 = var11["Movie"]
+      77 [-]: FASTCALL1 64 R13 L18; 
+      78 [-]: GETIMPORT R12 2; var12 = 0x7B998233
+      79 [-]: CALL R12 2 2 ; var12 = var12(var13)
+L18:  80 [-]: JUMPIFNOT R12 L19; goto L19 if not var12
+      81 [-]: LOADNIL R12  ; var12 = nil
+      82 [-]: SETTABLE R12 R10 R8; var12[var10] = var8
+      83 [-]: LOADNIL R9   ; var9 = nil
+      84 [-]: JUMP L21     ; goto L21
+L19:  85 [-]: MOVE R9 R11  ; var9 = var11
+      86 [-]: JUMP L21     ; goto L21
+L20:  87 [-]: LOADNIL R9   ; var9 = nil
+L21:  88 [-]: JUMPXEQKNIL R9 L23 NOT; 
+      89 [-]: GETIMPORT R10 22; var10 = _T["AddHudTracker"]
+      90 [-]: MOVE R11 R8  ; var11 = var8
+      91 [-]: GETUPVAL R13 1; var13 = upvalues[1]
+      92 [-]: GETTABLEKS R12 R13 K23; var12 = var13["HT_LABEL"]
+      93 [-]: LOADK R13 K24; var13 = 0.5
+      94 [-]: MOVE R14 R6  ; var14 = var6
+      95 [-]: MOVE R15 R7  ; var15 = var7
+      96 [-]: CALL R10 6 2 ; var10 = var10(var11, var12, var13, var14, var15)
+      97 [-]: MOVE R9 R10  ; var9 = var10
+      98 [-]: GETTABLEKS R10 R9 K25; var10 = var9["SetOffset"]
+      99 [-]: LOADN R11 27 ; var11 = 27
+     100 [-]: LOADN R12 -14; var12 = -14
+     101 [-]: LOADB R13 1  ; var13 = true
+     102 [-]: CALL R10 4 1 ; var10(var11, var12, var13)
+     103 [-]: GETIMPORT R10 17; var10 = _T["DuviriActivityId"]
+     104 [-]: JUMPXEQKNIL R10 L22; 
+     105 [-]: GETTABLEKS R10 R9 K26; var10 = var9["AddToLocation"]
+     106 [-]: DUPTABLE R11 28; 
+     107 [-]: GETIMPORT R12 17; var12 = _T["DuviriActivityId"]
+     108 [-]: SETTABLEKS R12 R11 K27; var12["ActivityId"] = var11
+     109 [-]: CALL R10 2 1 ; var10(var11)
+L22: 110 [-]: GETIMPORT R10 5; var10 = _T["SecObjectiveHudTracker"]
+     111 [-]: SETTABLE R9 R10 R3; var9[var10] = var3
+L23: 112 [-]: GETUPVAL R10 2; var10 = upvalues[2]
+     113 [-]: MOVE R11 R9  ; var11 = var9
+     114 [-]: MOVE R12 R0  ; var12 = var0
+     115 [-]: MOVE R13 R1  ; var13 = var1
+     116 [-]: MOVE R14 R2  ; var14 = var2
+     117 [-]: MOVE R15 R6  ; var15 = var6
+     118 [-]: LOADB R16 0  ; var16 = false
+     119 [-]: CALL R10 7 1 ; var10(var11, var12, var13, var14, var15, var16)
+     120 [-]: RETURN R9 1  ; 
 
 
 ; Name:            
-; Defined at line: 485
+; Defined at line: 479
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1599,12 +1569,12 @@ L22: 110 [-]: GETUPVAL R9 2; var9 = upvalues[2]
        0 [-]: GETUPVAL R1 0; var1 = upvalues[0]
        1 [-]: CALL R1 1 1  ; var1()
        2 [-]: GETIMPORT R2 2; var2 = _T["SecObjectiveHudTracker"]
-       3 [-]: FASTCALL1 62 R2 L0; 
+       3 [-]: FASTCALL1 64 R2 L0; 
        4 [-]: GETIMPORT R1 4; var1 = 0x7B998233
        5 [-]: CALL R1 2 2  ; var1 = var1(var2)
 L 0:   6 [-]: JUMPIFNOT R1 L1; goto L1 if not var1
        7 [-]: RETURN R0 0  ; 
-L 1:   8 [-]: FASTCALL1 62 R0 L2; 
+L 1:   8 [-]: FASTCALL1 64 R0 L2; 
        9 [-]: MOVE R2 R0   ; var2 = var0
       10 [-]: GETIMPORT R1 4; var1 = 0x7B998233
       11 [-]: CALL R1 2 2  ; var1 = var1(var2)
@@ -1623,7 +1593,7 @@ L 3:  21 [-]: JUMPXEQKNIL R0 L4;
       24 [-]: CONCAT R2 R3 R4; var2 = var3 .. var4
 L 4:  25 [-]: MOVE R1 R2   ; var1 = var2
       26 [-]: GETIMPORT R3 11; var3 = _T["RemoveHudTracker"]
-      27 [-]: FASTCALL1 62 R3 L5; 
+      27 [-]: FASTCALL1 64 R3 L5; 
       28 [-]: GETIMPORT R2 4; var2 = 0x7B998233
       29 [-]: CALL R2 2 2  ; var2 = var2(var3)
 L 5:  30 [-]: JUMPIF R2 L6 ; goto L6 if var2
@@ -1636,7 +1606,7 @@ L 6:  35 [-]: GETIMPORT R2 2; var2 = _T["SecObjectiveHudTracker"]
       37 [-]: SETTABLE R3 R2 R0; var3[var2] = var0
       38 [-]: RETURN R0 0  ; 
 L 7:  39 [-]: GETIMPORT R2 11; var2 = _T["RemoveHudTracker"]
-      40 [-]: FASTCALL1 62 R2 L8; 
+      40 [-]: FASTCALL1 64 R2 L8; 
       41 [-]: GETIMPORT R1 4; var1 = 0x7B998233
       42 [-]: CALL R1 2 2  ; var1 = var1(var2)
 L 8:  43 [-]: JUMPIF R1 L12; goto L12 if var1
@@ -1670,19 +1640,19 @@ L12:  67 [-]: GETIMPORT R1 13; var1 = _T
 
 
 ; Name:            
-; Defined at line: 509
+; Defined at line: 503
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
 ; Max Stack Size:  4
 
        0 [-]: GETIMPORT R2 2; var2 = _T["SecObjectiveHudTracker"]
-       1 [-]: FASTCALL1 62 R2 L0; 
+       1 [-]: FASTCALL1 64 R2 L0; 
        2 [-]: GETIMPORT R1 4; var1 = 0x7B998233
        3 [-]: CALL R1 2 2  ; var1 = var1(var2)
 L 0:   4 [-]: JUMPIFNOT R1 L1; goto L1 if not var1
        5 [-]: RETURN R0 0  ; 
-L 1:   6 [-]: FASTCALL1 62 R0 L2; 
+L 1:   6 [-]: FASTCALL1 64 R0 L2; 
        7 [-]: MOVE R2 R0   ; var2 = var0
        8 [-]: GETIMPORT R1 4; var1 = 0x7B998233
        9 [-]: CALL R1 2 2  ; var1 = var1(var2)
@@ -1690,7 +1660,7 @@ L 2:  10 [-]: JUMPIFNOT R1 L3; goto L3 if not var1
       11 [-]: LOADN R0 1   ; var0 = 1
 L 3:  12 [-]: GETIMPORT R3 2; var3 = _T["SecObjectiveHudTracker"]
       13 [-]: GETTABLE R2 R3 R0; var2 = var3[var0]
-      14 [-]: FASTCALL1 62 R2 L4; 
+      14 [-]: FASTCALL1 64 R2 L4; 
       15 [-]: GETIMPORT R1 4; var1 = 0x7B998233
       16 [-]: CALL R1 2 2  ; var1 = var1(var2)
 L 4:  17 [-]: JUMPIF R1 L6 ; goto L6 if var1
@@ -1698,7 +1668,7 @@ L 4:  17 [-]: JUMPIF R1 L6 ; goto L6 if var1
       19 [-]: CALL R1 1 1  ; var1()
       20 [-]: GETIMPORT R3 2; var3 = _T["SecObjectiveHudTracker"]
       21 [-]: GETTABLE R2 R3 R0; var2 = var3[var0]
-      22 [-]: FASTCALL1 62 R2 L5; 
+      22 [-]: FASTCALL1 64 R2 L5; 
       23 [-]: GETIMPORT R1 4; var1 = 0x7B998233
       24 [-]: CALL R1 2 2  ; var1 = var1(var2)
 L 5:  25 [-]: JUMPIF R1 L6 ; goto L6 if var1
@@ -1709,7 +1679,7 @@ L 6:  29 [-]: RETURN R0 0  ;
 
 
 ; Name:            
-; Defined at line: 524
+; Defined at line: 518
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -1720,7 +1690,7 @@ L 6:  29 [-]: RETURN R0 0  ;
        2 [-]: RETURN R0 0  ; 
 L 0:   3 [-]: JUMPXEQKNIL R1 L4 NOT; 
        4 [-]: GETIMPORT R3 2; var3 = _T["SecObjectiveHudTracker"]
-       5 [-]: FASTCALL1 62 R3 L1; 
+       5 [-]: FASTCALL1 64 R3 L1; 
        6 [-]: GETIMPORT R2 4; var2 = 0x7B998233
        7 [-]: CALL R2 2 2  ; var2 = var2(var3)
 L 1:   8 [-]: JUMPIFNOT R2 L2; goto L2 if not var2
@@ -1760,7 +1730,7 @@ L 7:  36 [-]: GETIMPORT R5 2; var5 = _T["SecObjectiveHudTracker"]
 
 
 ; Name:            
-; Defined at line: 546
+; Defined at line: 540
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1783,514 +1753,402 @@ L 1:  12 [-]: MOVE R1 R2   ; var1 = var2
 
 
 ; Name:            
-; Defined at line: 550
+; Defined at line: 544
 ; #Upvalues:       3
-; #Parameters:     9
+; #Parameters:     10
 ; Is_vararg:       0
-; Max Stack Size:  19
+; Max Stack Size:  20
 
-       0 [-]: GETUPVAL R10 0; var10 = upvalues[0]
-       1 [-]: CALL R10 1 2 ; var10 = var10()
-       2 [-]: ADDK R9 R10 K0; var9 = var10 + 4
-       3 [-]: LOADB R10 1  ; var10 = true
-       4 [-]: JUMPIFNOT R6 L0; goto L0 if not var6
-       5 [-]: LOADB R10 0  ; var10 = false
-L 0:   6 [-]: GETIMPORT R11 3; var11 = _T["ObjProgressBar"]
-       7 [-]: JUMPXEQKNIL R11 L1 NOT; 
-       8 [-]: GETIMPORT R11 4; var11 = _T
-       9 [-]: NEWTABLE R12 0 0; var12 = {}
-      10 [-]: SETTABLEKS R12 R11 K2; var12["ObjProgressBar"] = var11
-L 1:  11 [-]: LOADK R12 K2 ; var12 = "ObjProgressBar"
-      12 [-]: GETIMPORT R13 6; var13 = _T["DuviriActivityId"]
-      13 [-]: JUMPXEQKNIL R13 L2; 
-      14 [-]: MOVE R13 R12 ; var13 = var12
-      15 [-]: LOADK R14 K7 ; var14 = "_"
-      16 [-]: GETIMPORT R15 6; var15 = _T["DuviriActivityId"]
-      17 [-]: LOADK R16 K8 ; var16 = "d"
-      18 [-]: CONCAT R12 R13 R16; var12 = var13 .. var16
-L 2:  19 [-]: JUMPXEQKNIL R8 L3; 
-      20 [-]: MOVE R13 R12 ; var13 = var12
-      21 [-]: MOVE R14 R8  ; var14 = var8
-      22 [-]: CONCAT R12 R13 R14; var12 = var13 .. var14
-L 3:  23 [-]: MOVE R11 R12 ; var11 = var12
-      24 [-]: GETIMPORT R13 3; var13 = _T["ObjProgressBar"]
-      25 [-]: GETTABLE R14 R13 R11; var14 = var13[var11]
-      26 [-]: JUMPXEQKNIL R14 L6; 
-      27 [-]: GETTABLEKS R16 R14 K9; var16 = var14["Movie"]
-      28 [-]: FASTCALL1 62 R16 L4; 
-      29 [-]: GETIMPORT R15 11; var15 = 0x7B998233
-      30 [-]: CALL R15 2 2 ; var15 = var15(var16)
-L 4:  31 [-]: JUMPIFNOT R15 L5; goto L5 if not var15
-      32 [-]: LOADNIL R15  ; var15 = nil
-      33 [-]: SETTABLE R15 R13 R11; var15[var13] = var11
-      34 [-]: LOADNIL R12  ; var12 = nil
-      35 [-]: JUMP L7      ; goto L7
-L 5:  36 [-]: MOVE R12 R14 ; var12 = var14
-      37 [-]: JUMP L7      ; goto L7
-L 6:  38 [-]: LOADNIL R12  ; var12 = nil
-L 7:  39 [-]: JUMPXEQKNIL R12 L9 NOT; 
-      40 [-]: GETIMPORT R13 13; var13 = _T["AddHudTracker"]
-      41 [-]: MOVE R14 R11 ; var14 = var11
-      42 [-]: GETUPVAL R16 1; var16 = upvalues[1]
-      43 [-]: GETTABLEKS R15 R16 K14; var15 = var16["HT_PROGRESS_BAR"]
-      44 [-]: LOADK R16 K15; var16 = 0.5
-      45 [-]: MOVE R17 R9  ; var17 = var9
-      46 [-]: MOVE R18 R10 ; var18 = var10
-      47 [-]: CALL R13 6 2 ; var13 = var13(var14, var15, var16, var17, var18)
-      48 [-]: MOVE R12 R13 ; var12 = var13
-      49 [-]: GETTABLEKS R13 R12 K16; var13 = var12["SetOffset"]
-      50 [-]: LOADN R14 30 ; var14 = 30
-      51 [-]: LOADN R15 8  ; var15 = 8
-      52 [-]: LOADB R16 1  ; var16 = true
-      53 [-]: CALL R13 4 1 ; var13(var14, var15, var16)
-      54 [-]: GETIMPORT R13 6; var13 = _T["DuviriActivityId"]
-      55 [-]: JUMPXEQKNIL R13 L8; 
-      56 [-]: GETTABLEKS R13 R12 K17; var13 = var12["AddToLocation"]
-      57 [-]: DUPTABLE R14 19; 
-      58 [-]: GETIMPORT R15 6; var15 = _T["DuviriActivityId"]
-      59 [-]: SETTABLEKS R15 R14 K18; var15["ActivityId"] = var14
-      60 [-]: CALL R13 2 1 ; var13(var14)
-L 8:  61 [-]: GETIMPORT R13 3; var13 = _T["ObjProgressBar"]
-      62 [-]: SETTABLE R12 R13 R11; var12[var13] = var11
-L 9:  63 [-]: LOADK R13 K20; var13 = "/Lotus/Language/Menu/ProgressXOfY"
-      64 [-]: JUMPIFNOT R4 L10; goto L10 if not var4
-      65 [-]: LOADK R13 K21; var13 = "/Lotus/Language/Menu/ProgressPercentage"
-L10:  66 [-]: FASTCALL1 62 R5 L11; 
-      67 [-]: MOVE R15 R5  ; var15 = var5
-      68 [-]: GETIMPORT R14 11; var14 = 0x7B998233
-      69 [-]: CALL R14 2 2 ; var14 = var14(var15)
-L11:  70 [-]: JUMPIF R14 L12; goto L12 if var14
-      71 [-]: MOVE R13 R5  ; var13 = var5
-L12:  72 [-]: FASTCALL1 62 R3 L13; 
-      73 [-]: MOVE R15 R3  ; var15 = var3
-      74 [-]: GETIMPORT R14 11; var14 = 0x7B998233
-      75 [-]: CALL R14 2 2 ; var14 = var14(var15)
-L13:  76 [-]: JUMPIFNOT R14 L14; goto L14 if not var14
-      77 [-]: GETUPVAL R3 2; var3 = upvalues[2]
-L14:  78 [-]: FASTCALL1 62 R1 L15; 
-      79 [-]: MOVE R15 R1  ; var15 = var1
-      80 [-]: GETIMPORT R14 11; var14 = 0x7B998233
-      81 [-]: CALL R14 2 2 ; var14 = var14(var15)
-L15:  82 [-]: JUMPIFNOT R14 L16; goto L16 if not var14
-      83 [-]: LOADN R1 0   ; var1 = 0
-L16:  84 [-]: FASTCALL1 62 R2 L17; 
-      85 [-]: MOVE R15 R2  ; var15 = var2
-      86 [-]: GETIMPORT R14 11; var14 = 0x7B998233
-      87 [-]: CALL R14 2 2 ; var14 = var14(var15)
-L17:  88 [-]: JUMPIF R14 L18; goto L18 if var14
-      89 [-]: JUMPXEQKN R2 K22 L19 NOT; 
-L18:  90 [-]: LOADN R2 100 ; var2 = 100
-L19:  91 [-]: FASTCALL1 62 R7 L20; 
-      92 [-]: MOVE R15 R7  ; var15 = var7
-      93 [-]: GETIMPORT R14 11; var14 = 0x7B998233
-      94 [-]: CALL R14 2 2 ; var14 = var14(var15)
-L20:  95 [-]: JUMPIF R14 L21; goto L21 if var14
-      96 [-]: GETTABLEKS R14 R12 K23; var14 = var12["SetIconSize"]
-      97 [-]: MOVE R15 R7  ; var15 = var7
-      98 [-]: CALL R14 2 1 ; var14(var15)
-L21:  99 [-]: GETTABLEKS R14 R12 K24; var14 = var12["SetSortPriority"]
-     100 [-]: MOVE R15 R9  ; var15 = var9
-     101 [-]: LOADB R16 0  ; var16 = false
-     102 [-]: CALL R14 3 1 ; var14(var15, var16)
-     103 [-]: GETTABLEKS R14 R12 K25; var14 = var12["SetIcon"]
-     104 [-]: MOVE R15 R3  ; var15 = var3
-     105 [-]: CALL R14 2 1 ; var14(var15)
-     106 [-]: GETTABLEKS R14 R12 K26; var14 = var12["SetLabel"]
-     107 [-]: MOVE R15 R0  ; var15 = var0
-     108 [-]: LOADN R16 1  ; var16 = 1
-     109 [-]: CALL R14 3 1 ; var14(var15, var16)
-     110 [-]: GETTABLEKS R14 R12 K27; var14 = var12["SetGoalLabel"]
-     111 [-]: GETTABLEKS R15 R12 K28; var15 = var12["Localize"]
-     112 [-]: MOVE R16 R13 ; var16 = var13
-     113 [-]: DUPTABLE R17 31; 
-     114 [-]: SETTABLEKS R1 R17 K29; var1["CURRENT"] = var17
-     115 [-]: SETTABLEKS R2 R17 K30; var2["TOTAL"] = var17
-     116 [-]: CALL R15 3 0 ; var15, ... = var15(var16, var17)
-     117 [-]: CALL R14 0 1 ; var14(var15, ...)
-     118 [-]: GETTABLEKS R14 R12 K32; var14 = var12["SetValue"]
-     119 [-]: DIV R15 R1 R2; var15 = var1 / var2
-     120 [-]: CALL R14 2 1 ; var14(var15)
-     121 [-]: RETURN R12 1 ; 
+       0 [-]: GETUPVAL R11 0; var11 = upvalues[0]
+       1 [-]: CALL R11 1 2 ; var11 = var11()
+       2 [-]: ADDK R10 R11 K0; var10 = var11 + 4
+       3 [-]: JUMPIFNOT R9 L0; goto L0 if not var9
+       4 [-]: MOVE R10 R9  ; var10 = var9
+L 0:   5 [-]: LOADB R11 1  ; var11 = true
+       6 [-]: JUMPIFNOT R6 L1; goto L1 if not var6
+       7 [-]: LOADB R11 0  ; var11 = false
+L 1:   8 [-]: LOADK R13 K1 ; var13 = "ObjProgressBar"
+       9 [-]: GETIMPORT R14 4; var14 = _T["DuviriActivityId"]
+      10 [-]: JUMPXEQKNIL R14 L2; 
+      11 [-]: MOVE R14 R13 ; var14 = var13
+      12 [-]: LOADK R15 K5 ; var15 = "_"
+      13 [-]: GETIMPORT R16 4; var16 = _T["DuviriActivityId"]
+      14 [-]: LOADK R17 K6 ; var17 = "d"
+      15 [-]: CONCAT R13 R14 R17; var13 = var14 .. var17
+L 2:  16 [-]: JUMPXEQKNIL R8 L3; 
+      17 [-]: MOVE R14 R13 ; var14 = var13
+      18 [-]: MOVE R15 R8  ; var15 = var8
+      19 [-]: CONCAT R13 R14 R15; var13 = var14 .. var15
+L 3:  20 [-]: MOVE R12 R13 ; var12 = var13
+      21 [-]: GETIMPORT R13 8; var13 = _T["GetHudTracker"]
+      22 [-]: MOVE R14 R12 ; var14 = var12
+      23 [-]: CALL R13 2 2 ; var13 = var13(var14)
+      24 [-]: JUMPXEQKNIL R13 L4 NOT; 
+      25 [-]: GETIMPORT R14 10; var14 = _T["AddHudTracker"]
+      26 [-]: MOVE R15 R12 ; var15 = var12
+      27 [-]: GETUPVAL R17 1; var17 = upvalues[1]
+      28 [-]: GETTABLEKS R16 R17 K11; var16 = var17["HT_PROGRESS_BAR"]
+      29 [-]: LOADK R17 K12; var17 = 0.5
+      30 [-]: MOVE R18 R10 ; var18 = var10
+      31 [-]: MOVE R19 R11 ; var19 = var11
+      32 [-]: CALL R14 6 2 ; var14 = var14(var15, var16, var17, var18, var19)
+      33 [-]: MOVE R13 R14 ; var13 = var14
+      34 [-]: GETTABLEKS R14 R13 K13; var14 = var13["SetOffset"]
+      35 [-]: LOADN R15 30 ; var15 = 30
+      36 [-]: LOADN R16 8  ; var16 = 8
+      37 [-]: LOADB R17 1  ; var17 = true
+      38 [-]: CALL R14 4 1 ; var14(var15, var16, var17)
+      39 [-]: GETIMPORT R14 4; var14 = _T["DuviriActivityId"]
+      40 [-]: JUMPXEQKNIL R14 L4; 
+      41 [-]: GETTABLEKS R14 R13 K14; var14 = var13["AddToLocation"]
+      42 [-]: DUPTABLE R15 16; 
+      43 [-]: GETIMPORT R16 4; var16 = _T["DuviriActivityId"]
+      44 [-]: SETTABLEKS R16 R15 K15; var16["ActivityId"] = var15
+      45 [-]: CALL R14 2 1 ; var14(var15)
+L 4:  46 [-]: LOADK R14 K17; var14 = "/Lotus/Language/Menu/ProgressXOfY"
+      47 [-]: JUMPIFNOT R4 L5; goto L5 if not var4
+      48 [-]: LOADK R14 K18; var14 = "/Lotus/Language/Menu/ProgressPercentage"
+L 5:  49 [-]: FASTCALL1 64 R5 L6; 
+      50 [-]: MOVE R16 R5  ; var16 = var5
+      51 [-]: GETIMPORT R15 20; var15 = 0x7B998233
+      52 [-]: CALL R15 2 2 ; var15 = var15(var16)
+L 6:  53 [-]: JUMPIF R15 L7; goto L7 if var15
+      54 [-]: MOVE R14 R5  ; var14 = var5
+L 7:  55 [-]: FASTCALL1 64 R3 L8; 
+      56 [-]: MOVE R16 R3  ; var16 = var3
+      57 [-]: GETIMPORT R15 20; var15 = 0x7B998233
+      58 [-]: CALL R15 2 2 ; var15 = var15(var16)
+L 8:  59 [-]: JUMPIFNOT R15 L9; goto L9 if not var15
+      60 [-]: GETUPVAL R3 2; var3 = upvalues[2]
+L 9:  61 [-]: FASTCALL1 64 R1 L10; 
+      62 [-]: MOVE R16 R1  ; var16 = var1
+      63 [-]: GETIMPORT R15 20; var15 = 0x7B998233
+      64 [-]: CALL R15 2 2 ; var15 = var15(var16)
+L10:  65 [-]: JUMPIFNOT R15 L11; goto L11 if not var15
+      66 [-]: LOADN R1 0   ; var1 = 0
+L11:  67 [-]: FASTCALL1 64 R2 L12; 
+      68 [-]: MOVE R16 R2  ; var16 = var2
+      69 [-]: GETIMPORT R15 20; var15 = 0x7B998233
+      70 [-]: CALL R15 2 2 ; var15 = var15(var16)
+L12:  71 [-]: JUMPIF R15 L13; goto L13 if var15
+      72 [-]: JUMPXEQKN R2 K21 L14 NOT; 
+L13:  73 [-]: LOADN R2 100 ; var2 = 100
+L14:  74 [-]: FASTCALL1 64 R7 L15; 
+      75 [-]: MOVE R16 R7  ; var16 = var7
+      76 [-]: GETIMPORT R15 20; var15 = 0x7B998233
+      77 [-]: CALL R15 2 2 ; var15 = var15(var16)
+L15:  78 [-]: JUMPIF R15 L16; goto L16 if var15
+      79 [-]: GETTABLEKS R15 R13 K22; var15 = var13["SetIconSize"]
+      80 [-]: MOVE R16 R7  ; var16 = var7
+      81 [-]: CALL R15 2 1 ; var15(var16)
+L16:  82 [-]: GETTABLEKS R15 R13 K23; var15 = var13["SetSortPriority"]
+      83 [-]: MOVE R16 R10 ; var16 = var10
+      84 [-]: LOADB R17 0  ; var17 = false
+      85 [-]: CALL R15 3 1 ; var15(var16, var17)
+      86 [-]: GETTABLEKS R15 R13 K24; var15 = var13["SetIcon"]
+      87 [-]: MOVE R16 R3  ; var16 = var3
+      88 [-]: CALL R15 2 1 ; var15(var16)
+      89 [-]: GETTABLEKS R15 R13 K25; var15 = var13["SetLabel"]
+      90 [-]: MOVE R16 R0  ; var16 = var0
+      91 [-]: LOADN R17 1  ; var17 = 1
+      92 [-]: CALL R15 3 1 ; var15(var16, var17)
+      93 [-]: GETTABLEKS R15 R13 K26; var15 = var13["SetGoalLabel"]
+      94 [-]: GETTABLEKS R16 R13 K27; var16 = var13["Localize"]
+      95 [-]: MOVE R17 R14 ; var17 = var14
+      96 [-]: DUPTABLE R18 30; 
+      97 [-]: SETTABLEKS R1 R18 K28; var1["CURRENT"] = var18
+      98 [-]: SETTABLEKS R2 R18 K29; var2["TOTAL"] = var18
+      99 [-]: CALL R16 3 0 ; var16, ... = var16(var17, var18)
+     100 [-]: CALL R15 0 1 ; var15(var16, ...)
+     101 [-]: GETTABLEKS R15 R13 K31; var15 = var13["SetValue"]
+     102 [-]: DIV R16 R1 R2; var16 = var1 / var2
+     103 [-]: CALL R15 2 1 ; var15(var16)
+     104 [-]: RETURN R13 1 ; 
 
 
 ; Name:            
-; Defined at line: 602
-; #Upvalues:       1
+; Defined at line: 596
+; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
 ; Max Stack Size:  8
 
-       0 [-]: GETIMPORT R2 2; var2 = _T["ObjProgressBar"]
-       1 [-]: JUMPXEQKNIL R2 L0 NOT; 
-       2 [-]: RETURN R0 0  ; 
-L 0:   3 [-]: LOADK R3 K1  ; var3 = "ObjProgressBar"
-       4 [-]: GETIMPORT R4 4; var4 = _T["DuviriActivityId"]
-       5 [-]: JUMPXEQKNIL R4 L1; 
-       6 [-]: MOVE R4 R3   ; var4 = var3
-       7 [-]: LOADK R5 K5  ; var5 = "_"
-       8 [-]: GETIMPORT R6 4; var6 = _T["DuviriActivityId"]
-       9 [-]: LOADK R7 K6  ; var7 = "d"
-      10 [-]: CONCAT R3 R4 R7; var3 = var4 .. var7
-L 1:  11 [-]: JUMPXEQKNIL R1 L2; 
-      12 [-]: MOVE R4 R3   ; var4 = var3
-      13 [-]: MOVE R5 R1   ; var5 = var1
-      14 [-]: CONCAT R3 R4 R5; var3 = var4 .. var5
-L 2:  15 [-]: MOVE R2 R3   ; var2 = var3
-      16 [-]: GETUPVAL R3 0; var3 = upvalues[0]
-      17 [-]: MOVE R4 R2   ; var4 = var2
-      18 [-]: CALL R3 2 1  ; var3(var4)
-      19 [-]: GETIMPORT R4 2; var4 = _T["ObjProgressBar"]
-      20 [-]: GETTABLE R5 R4 R2; var5 = var4[var2]
-      21 [-]: JUMPXEQKNIL R5 L5; 
-      22 [-]: GETTABLEKS R7 R5 K7; var7 = var5["Movie"]
-      23 [-]: FASTCALL1 62 R7 L3; 
-      24 [-]: GETIMPORT R6 9; var6 = 0x7B998233
-      25 [-]: CALL R6 2 2  ; var6 = var6(var7)
-L 3:  26 [-]: JUMPIFNOT R6 L4; goto L4 if not var6
-      27 [-]: LOADNIL R6   ; var6 = nil
-      28 [-]: SETTABLE R6 R4 R2; var6[var4] = var2
-      29 [-]: LOADNIL R3   ; var3 = nil
-      30 [-]: JUMP L6      ; goto L6
-L 4:  31 [-]: MOVE R3 R5   ; var3 = var5
-      32 [-]: JUMP L6      ; goto L6
-L 5:  33 [-]: LOADNIL R3   ; var3 = nil
-L 6:  34 [-]: JUMPXEQKNIL R3 L7 NOT; 
-      35 [-]: RETURN R0 0  ; 
-L 7:  36 [-]: GETTABLEKS R4 R3 K10; var4 = var3["SetLabel"]
-      37 [-]: MOVE R5 R0   ; var5 = var0
-      38 [-]: LOADN R6 1   ; var6 = 1
-      39 [-]: CALL R4 3 1  ; var4(var5, var6)
-      40 [-]: RETURN R0 0  ; 
+       0 [-]: LOADK R3 K0  ; var3 = "ObjProgressBar"
+       1 [-]: GETIMPORT R4 3; var4 = _T["DuviriActivityId"]
+       2 [-]: JUMPXEQKNIL R4 L0; 
+       3 [-]: MOVE R4 R3   ; var4 = var3
+       4 [-]: LOADK R5 K4  ; var5 = "_"
+       5 [-]: GETIMPORT R6 3; var6 = _T["DuviriActivityId"]
+       6 [-]: LOADK R7 K5  ; var7 = "d"
+       7 [-]: CONCAT R3 R4 R7; var3 = var4 .. var7
+L 0:   8 [-]: JUMPXEQKNIL R1 L1; 
+       9 [-]: MOVE R4 R3   ; var4 = var3
+      10 [-]: MOVE R5 R1   ; var5 = var1
+      11 [-]: CONCAT R3 R4 R5; var3 = var4 .. var5
+L 1:  12 [-]: MOVE R2 R3   ; var2 = var3
+      13 [-]: GETIMPORT R3 7; var3 = _T["GetHudTracker"]
+      14 [-]: MOVE R4 R2   ; var4 = var2
+      15 [-]: CALL R3 2 2  ; var3 = var3(var4)
+      16 [-]: JUMPXEQKNIL R3 L2 NOT; 
+      17 [-]: RETURN R0 0  ; 
+L 2:  18 [-]: GETTABLEKS R4 R3 K8; var4 = var3["SetLabel"]
+      19 [-]: MOVE R5 R0   ; var5 = var0
+      20 [-]: LOADN R6 1   ; var6 = 1
+      21 [-]: CALL R4 3 1  ; var4(var5, var6)
+      22 [-]: RETURN R0 0  ; 
 
 
 ; Name:            
-; Defined at line: 618
-; #Upvalues:       1
+; Defined at line: 608
+; #Upvalues:       0
 ; #Parameters:     4
 ; Is_vararg:       0
 ; Max Stack Size:  11
 
-       0 [-]: GETIMPORT R4 2; var4 = _T["ObjProgressBar"]
-       1 [-]: JUMPXEQKNIL R4 L0 NOT; 
-       2 [-]: RETURN R0 0  ; 
-L 0:   3 [-]: LOADK R5 K1  ; var5 = "ObjProgressBar"
-       4 [-]: GETIMPORT R6 4; var6 = _T["DuviriActivityId"]
-       5 [-]: JUMPXEQKNIL R6 L1; 
-       6 [-]: MOVE R6 R5   ; var6 = var5
-       7 [-]: LOADK R7 K5  ; var7 = "_"
-       8 [-]: GETIMPORT R8 4; var8 = _T["DuviriActivityId"]
-       9 [-]: LOADK R9 K6  ; var9 = "d"
-      10 [-]: CONCAT R5 R6 R9; var5 = var6 .. var9
-L 1:  11 [-]: JUMPXEQKNIL R3 L2; 
-      12 [-]: MOVE R6 R5   ; var6 = var5
-      13 [-]: MOVE R7 R3   ; var7 = var3
-      14 [-]: CONCAT R5 R6 R7; var5 = var6 .. var7
-L 2:  15 [-]: MOVE R4 R5   ; var4 = var5
-      16 [-]: GETUPVAL R5 0; var5 = upvalues[0]
-      17 [-]: MOVE R6 R4   ; var6 = var4
-      18 [-]: CALL R5 2 1  ; var5(var6)
-      19 [-]: GETIMPORT R6 2; var6 = _T["ObjProgressBar"]
-      20 [-]: GETTABLE R7 R6 R4; var7 = var6[var4]
-      21 [-]: JUMPXEQKNIL R7 L5; 
-      22 [-]: GETTABLEKS R9 R7 K7; var9 = var7["Movie"]
-      23 [-]: FASTCALL1 62 R9 L3; 
-      24 [-]: GETIMPORT R8 9; var8 = 0x7B998233
-      25 [-]: CALL R8 2 2  ; var8 = var8(var9)
-L 3:  26 [-]: JUMPIFNOT R8 L4; goto L4 if not var8
-      27 [-]: LOADNIL R8   ; var8 = nil
-      28 [-]: SETTABLE R8 R6 R4; var8[var6] = var4
-      29 [-]: LOADNIL R5   ; var5 = nil
-      30 [-]: JUMP L6      ; goto L6
-L 4:  31 [-]: MOVE R5 R7   ; var5 = var7
-      32 [-]: JUMP L6      ; goto L6
-L 5:  33 [-]: LOADNIL R5   ; var5 = nil
-L 6:  34 [-]: JUMPXEQKNIL R5 L7 NOT; 
-      35 [-]: RETURN R0 0  ; 
-L 7:  36 [-]: FASTCALL1 62 R1 L8; 
-      37 [-]: MOVE R7 R1   ; var7 = var1
-      38 [-]: GETIMPORT R6 9; var6 = 0x7B998233
-      39 [-]: CALL R6 2 2  ; var6 = var6(var7)
-L 8:  40 [-]: JUMPIF R6 L9 ; goto L9 if var6
-      41 [-]: JUMPXEQKN R1 K10 L10 NOT; 
-L 9:  42 [-]: LOADN R1 100 ; var1 = 100
-L10:  43 [-]: LOADK R6 K11 ; var6 = "/Lotus/Language/Menu/ProgressXOfY"
-      44 [-]: FASTCALL1 62 R2 L11; 
-      45 [-]: MOVE R8 R2   ; var8 = var2
-      46 [-]: GETIMPORT R7 9; var7 = 0x7B998233
-      47 [-]: CALL R7 2 2  ; var7 = var7(var8)
-L11:  48 [-]: JUMPIF R7 L12; goto L12 if var7
-      49 [-]: MOVE R6 R2   ; var6 = var2
-L12:  50 [-]: GETTABLEKS R7 R5 K12; var7 = var5["SetGoalLabel"]
-      51 [-]: GETTABLEKS R8 R5 K13; var8 = var5["Localize"]
-      52 [-]: MOVE R9 R6   ; var9 = var6
-      53 [-]: DUPTABLE R10 16; 
-      54 [-]: SETTABLEKS R0 R10 K14; var0["CURRENT"] = var10
-      55 [-]: SETTABLEKS R1 R10 K15; var1["TOTAL"] = var10
-      56 [-]: CALL R8 3 0  ; var8, ... = var8(var9, var10)
-      57 [-]: CALL R7 0 1  ; var7(var8, ...)
-      58 [-]: GETTABLEKS R7 R5 K17; var7 = var5["SetValue"]
-      59 [-]: LOADN R9 1   ; var9 = 1
-      60 [-]: DIV R10 R0 R1; var10 = var0 / var1
-      61 [-]: FASTCALL2 19 R9 R10 L13; 
-      62 [-]: GETIMPORT R8 20; var8 = 0x5BCED4C4[0xAC1B386A]
-      63 [-]: CALL R8 3 2  ; var8 = var8(var9, var10)
-L13:  64 [-]: CALL R7 2 1  ; var7(var8)
-      65 [-]: RETURN R0 0  ; 
+       0 [-]: LOADK R5 K0  ; var5 = "ObjProgressBar"
+       1 [-]: GETIMPORT R6 3; var6 = _T["DuviriActivityId"]
+       2 [-]: JUMPXEQKNIL R6 L0; 
+       3 [-]: MOVE R6 R5   ; var6 = var5
+       4 [-]: LOADK R7 K4  ; var7 = "_"
+       5 [-]: GETIMPORT R8 3; var8 = _T["DuviriActivityId"]
+       6 [-]: LOADK R9 K5  ; var9 = "d"
+       7 [-]: CONCAT R5 R6 R9; var5 = var6 .. var9
+L 0:   8 [-]: JUMPXEQKNIL R3 L1; 
+       9 [-]: MOVE R6 R5   ; var6 = var5
+      10 [-]: MOVE R7 R3   ; var7 = var3
+      11 [-]: CONCAT R5 R6 R7; var5 = var6 .. var7
+L 1:  12 [-]: MOVE R4 R5   ; var4 = var5
+      13 [-]: GETIMPORT R5 7; var5 = _T["GetHudTracker"]
+      14 [-]: MOVE R6 R4   ; var6 = var4
+      15 [-]: CALL R5 2 2  ; var5 = var5(var6)
+      16 [-]: JUMPXEQKNIL R5 L2 NOT; 
+      17 [-]: RETURN R0 0  ; 
+L 2:  18 [-]: FASTCALL1 64 R1 L3; 
+      19 [-]: MOVE R7 R1   ; var7 = var1
+      20 [-]: GETIMPORT R6 9; var6 = 0x7B998233
+      21 [-]: CALL R6 2 2  ; var6 = var6(var7)
+L 3:  22 [-]: JUMPIF R6 L4 ; goto L4 if var6
+      23 [-]: JUMPXEQKN R1 K10 L5 NOT; 
+L 4:  24 [-]: LOADN R1 100 ; var1 = 100
+L 5:  25 [-]: LOADK R6 K11 ; var6 = "/Lotus/Language/Menu/ProgressXOfY"
+      26 [-]: FASTCALL1 64 R2 L6; 
+      27 [-]: MOVE R8 R2   ; var8 = var2
+      28 [-]: GETIMPORT R7 9; var7 = 0x7B998233
+      29 [-]: CALL R7 2 2  ; var7 = var7(var8)
+L 6:  30 [-]: JUMPIF R7 L7 ; goto L7 if var7
+      31 [-]: MOVE R6 R2   ; var6 = var2
+L 7:  32 [-]: GETTABLEKS R7 R5 K12; var7 = var5["SetGoalLabel"]
+      33 [-]: GETTABLEKS R8 R5 K13; var8 = var5["Localize"]
+      34 [-]: MOVE R9 R6   ; var9 = var6
+      35 [-]: DUPTABLE R10 16; 
+      36 [-]: SETTABLEKS R0 R10 K14; var0["CURRENT"] = var10
+      37 [-]: SETTABLEKS R1 R10 K15; var1["TOTAL"] = var10
+      38 [-]: CALL R8 3 0  ; var8, ... = var8(var9, var10)
+      39 [-]: CALL R7 0 1  ; var7(var8, ...)
+      40 [-]: GETTABLEKS R7 R5 K17; var7 = var5["SetValue"]
+      41 [-]: LOADN R9 1   ; var9 = 1
+      42 [-]: DIV R10 R0 R1; var10 = var0 / var1
+      43 [-]: FASTCALL2 19 R9 R10 L8; 
+      44 [-]: GETIMPORT R8 20; var8 = 0x5BCED4C4[0xAC1B386A]
+      45 [-]: CALL R8 3 2  ; var8 = var8(var9, var10)
+L 8:  46 [-]: CALL R7 2 1  ; var7(var8)
+      47 [-]: RETURN R0 0  ; 
 
 
 ; Name:            
-; Defined at line: 644
-; #Upvalues:       1
+; Defined at line: 630
+; #Upvalues:       0
 ; #Parameters:     3
 ; Is_vararg:       0
 ; Max Stack Size:  9
 
-       0 [-]: GETIMPORT R3 2; var3 = _T["ObjProgressBar"]
-       1 [-]: JUMPXEQKNIL R3 L0 NOT; 
-       2 [-]: RETURN R0 0  ; 
-L 0:   3 [-]: LOADK R4 K1  ; var4 = "ObjProgressBar"
-       4 [-]: GETIMPORT R5 4; var5 = _T["DuviriActivityId"]
-       5 [-]: JUMPXEQKNIL R5 L1; 
-       6 [-]: MOVE R5 R4   ; var5 = var4
-       7 [-]: LOADK R6 K5  ; var6 = "_"
-       8 [-]: GETIMPORT R7 4; var7 = _T["DuviriActivityId"]
-       9 [-]: LOADK R8 K6  ; var8 = "d"
-      10 [-]: CONCAT R4 R5 R8; var4 = var5 .. var8
-L 1:  11 [-]: JUMPXEQKNIL R2 L2; 
-      12 [-]: MOVE R5 R4   ; var5 = var4
-      13 [-]: MOVE R6 R2   ; var6 = var2
-      14 [-]: CONCAT R4 R5 R6; var4 = var5 .. var6
-L 2:  15 [-]: MOVE R3 R4   ; var3 = var4
-      16 [-]: GETUPVAL R4 0; var4 = upvalues[0]
-      17 [-]: MOVE R5 R3   ; var5 = var3
-      18 [-]: CALL R4 2 1  ; var4(var5)
-      19 [-]: GETIMPORT R5 2; var5 = _T["ObjProgressBar"]
-      20 [-]: GETTABLE R6 R5 R3; var6 = var5[var3]
-      21 [-]: JUMPXEQKNIL R6 L5; 
-      22 [-]: GETTABLEKS R8 R6 K7; var8 = var6["Movie"]
-      23 [-]: FASTCALL1 62 R8 L3; 
-      24 [-]: GETIMPORT R7 9; var7 = 0x7B998233
-      25 [-]: CALL R7 2 2  ; var7 = var7(var8)
-L 3:  26 [-]: JUMPIFNOT R7 L4; goto L4 if not var7
-      27 [-]: LOADNIL R7   ; var7 = nil
-      28 [-]: SETTABLE R7 R5 R3; var7[var5] = var3
-      29 [-]: LOADNIL R4   ; var4 = nil
-      30 [-]: JUMP L6      ; goto L6
-L 4:  31 [-]: MOVE R4 R6   ; var4 = var6
-      32 [-]: JUMP L6      ; goto L6
-L 5:  33 [-]: LOADNIL R4   ; var4 = nil
-L 6:  34 [-]: JUMPXEQKNIL R4 L7 NOT; 
-      35 [-]: RETURN R0 0  ; 
-L 7:  36 [-]: FASTCALL1 62 R1 L8; 
-      37 [-]: MOVE R6 R1   ; var6 = var1
-      38 [-]: GETIMPORT R5 9; var5 = 0x7B998233
-      39 [-]: CALL R5 2 2  ; var5 = var5(var6)
-L 8:  40 [-]: JUMPIF R5 L9 ; goto L9 if var5
-      41 [-]: JUMPXEQKN R1 K10 L10 NOT; 
-L 9:  42 [-]: LOADN R1 100 ; var1 = 100
-L10:  43 [-]: GETTABLEKS R5 R4 K11; var5 = var4["SetGoalLabel"]
-      44 [-]: GETTABLEKS R6 R4 K12; var6 = var4["Localize"]
-      45 [-]: LOADK R7 K13 ; var7 = "/Lotus/Language/Menu/ProgressPercentage"
-      46 [-]: DUPTABLE R8 16; 
-      47 [-]: SETTABLEKS R0 R8 K14; var0["CURRENT"] = var8
-      48 [-]: SETTABLEKS R1 R8 K15; var1["TOTAL"] = var8
-      49 [-]: CALL R6 3 0  ; var6, ... = var6(var7, var8)
-      50 [-]: CALL R5 0 1  ; var5(var6, ...)
-      51 [-]: GETTABLEKS R5 R4 K17; var5 = var4["SetValue"]
-      52 [-]: DIV R6 R0 R1 ; var6 = var0 / var1
-      53 [-]: CALL R5 2 1  ; var5(var6)
-      54 [-]: RETURN R0 0  ; 
+       0 [-]: LOADK R4 K0  ; var4 = "ObjProgressBar"
+       1 [-]: GETIMPORT R5 3; var5 = _T["DuviriActivityId"]
+       2 [-]: JUMPXEQKNIL R5 L0; 
+       3 [-]: MOVE R5 R4   ; var5 = var4
+       4 [-]: LOADK R6 K4  ; var6 = "_"
+       5 [-]: GETIMPORT R7 3; var7 = _T["DuviriActivityId"]
+       6 [-]: LOADK R8 K5  ; var8 = "d"
+       7 [-]: CONCAT R4 R5 R8; var4 = var5 .. var8
+L 0:   8 [-]: JUMPXEQKNIL R2 L1; 
+       9 [-]: MOVE R5 R4   ; var5 = var4
+      10 [-]: MOVE R6 R2   ; var6 = var2
+      11 [-]: CONCAT R4 R5 R6; var4 = var5 .. var6
+L 1:  12 [-]: MOVE R3 R4   ; var3 = var4
+      13 [-]: GETIMPORT R4 7; var4 = _T["GetHudTracker"]
+      14 [-]: MOVE R5 R3   ; var5 = var3
+      15 [-]: CALL R4 2 2  ; var4 = var4(var5)
+      16 [-]: JUMPXEQKNIL R4 L2 NOT; 
+      17 [-]: RETURN R0 0  ; 
+L 2:  18 [-]: FASTCALL1 64 R1 L3; 
+      19 [-]: MOVE R6 R1   ; var6 = var1
+      20 [-]: GETIMPORT R5 9; var5 = 0x7B998233
+      21 [-]: CALL R5 2 2  ; var5 = var5(var6)
+L 3:  22 [-]: JUMPIF R5 L4 ; goto L4 if var5
+      23 [-]: JUMPXEQKN R1 K10 L5 NOT; 
+L 4:  24 [-]: LOADN R1 100 ; var1 = 100
+L 5:  25 [-]: GETTABLEKS R5 R4 K11; var5 = var4["SetGoalLabel"]
+      26 [-]: GETTABLEKS R6 R4 K12; var6 = var4["Localize"]
+      27 [-]: LOADK R7 K13 ; var7 = "/Lotus/Language/Menu/ProgressPercentage"
+      28 [-]: DUPTABLE R8 16; 
+      29 [-]: SETTABLEKS R0 R8 K14; var0["CURRENT"] = var8
+      30 [-]: SETTABLEKS R1 R8 K15; var1["TOTAL"] = var8
+      31 [-]: CALL R6 3 0  ; var6, ... = var6(var7, var8)
+      32 [-]: CALL R5 0 1  ; var5(var6, ...)
+      33 [-]: GETTABLEKS R5 R4 K17; var5 = var4["SetValue"]
+      34 [-]: DIV R6 R0 R1 ; var6 = var0 / var1
+      35 [-]: CALL R5 2 1  ; var5(var6)
+      36 [-]: RETURN R0 0  ; 
 
 
 ; Name:            
-; Defined at line: 664
-; #Upvalues:       1
+; Defined at line: 646
+; #Upvalues:       0
 ; #Parameters:     4
 ; Is_vararg:       0
 ; Max Stack Size:  10
 
-       0 [-]: GETIMPORT R4 2; var4 = _T["ObjProgressBar"]
-       1 [-]: JUMPXEQKNIL R4 L0 NOT; 
-       2 [-]: RETURN R0 0  ; 
-L 0:   3 [-]: LOADK R5 K1  ; var5 = "ObjProgressBar"
-       4 [-]: GETIMPORT R6 4; var6 = _T["DuviriActivityId"]
-       5 [-]: JUMPXEQKNIL R6 L1; 
-       6 [-]: MOVE R6 R5   ; var6 = var5
-       7 [-]: LOADK R7 K5  ; var7 = "_"
-       8 [-]: GETIMPORT R8 4; var8 = _T["DuviriActivityId"]
-       9 [-]: LOADK R9 K6  ; var9 = "d"
-      10 [-]: CONCAT R5 R6 R9; var5 = var6 .. var9
-L 1:  11 [-]: JUMPXEQKNIL R3 L2; 
-      12 [-]: MOVE R6 R5   ; var6 = var5
-      13 [-]: MOVE R7 R3   ; var7 = var3
-      14 [-]: CONCAT R5 R6 R7; var5 = var6 .. var7
-L 2:  15 [-]: MOVE R4 R5   ; var4 = var5
-      16 [-]: GETUPVAL R5 0; var5 = upvalues[0]
-      17 [-]: MOVE R6 R4   ; var6 = var4
-      18 [-]: CALL R5 2 1  ; var5(var6)
-      19 [-]: GETIMPORT R6 2; var6 = _T["ObjProgressBar"]
-      20 [-]: GETTABLE R7 R6 R4; var7 = var6[var4]
-      21 [-]: JUMPXEQKNIL R7 L5; 
-      22 [-]: GETTABLEKS R9 R7 K7; var9 = var7["Movie"]
-      23 [-]: FASTCALL1 62 R9 L3; 
-      24 [-]: GETIMPORT R8 9; var8 = 0x7B998233
-      25 [-]: CALL R8 2 2  ; var8 = var8(var9)
-L 3:  26 [-]: JUMPIFNOT R8 L4; goto L4 if not var8
-      27 [-]: LOADNIL R8   ; var8 = nil
-      28 [-]: SETTABLE R8 R6 R4; var8[var6] = var4
-      29 [-]: LOADNIL R5   ; var5 = nil
-      30 [-]: JUMP L6      ; goto L6
-L 4:  31 [-]: MOVE R5 R7   ; var5 = var7
-      32 [-]: JUMP L6      ; goto L6
-L 5:  33 [-]: LOADNIL R5   ; var5 = nil
-L 6:  34 [-]: JUMPXEQKNIL R5 L7 NOT; 
-      35 [-]: RETURN R0 0  ; 
-L 7:  36 [-]: FASTCALL1 40 R0 L8; 
-      37 [-]: MOVE R7 R0   ; var7 = var0
-      38 [-]: GETIMPORT R6 11; var6 = 0x0B96777E
-      39 [-]: CALL R6 2 2  ; var6 = var6(var7)
-L 8:  40 [-]: JUMPXEQKS R6 K12 L9; 
-      41 [-]: LOADN R0 38  ; var0 = 38
-L 9:  42 [-]: GETTABLEKS R6 R5 K13; var6 = var5["SetIconColor"]
-      43 [-]: MOVE R7 R0   ; var7 = var0
-      44 [-]: CALL R6 2 1  ; var6(var7)
-      45 [-]: GETTABLEKS R6 R5 K14; var6 = var5["SetGoalColor"]
-      46 [-]: MOVE R7 R0   ; var7 = var0
-      47 [-]: CALL R6 2 1  ; var6(var7)
-      48 [-]: GETTABLEKS R6 R5 K15; var6 = var5["SetLabelColor"]
-      49 [-]: MOVE R7 R0   ; var7 = var0
-      50 [-]: CALL R6 2 1  ; var6(var7)
-      51 [-]: GETTABLEKS R6 R5 K16; var6 = var5["SetProgressColor"]
-      52 [-]: MOVE R7 R0   ; var7 = var0
-      53 [-]: LOADB R8 1   ; var8 = true
-      54 [-]: CALL R6 3 1  ; var6(var7, var8)
-      55 [-]: GETTABLEKS R6 R5 K17; var6 = var5["SetBlinkColor"]
-      56 [-]: MOVE R7 R1   ; var7 = var1
-      57 [-]: MOVE R8 R2   ; var8 = var2
-      58 [-]: CALL R6 3 1  ; var6(var7, var8)
-      59 [-]: RETURN R0 0  ; 
+       0 [-]: LOADK R5 K0  ; var5 = "ObjProgressBar"
+       1 [-]: GETIMPORT R6 3; var6 = _T["DuviriActivityId"]
+       2 [-]: JUMPXEQKNIL R6 L0; 
+       3 [-]: MOVE R6 R5   ; var6 = var5
+       4 [-]: LOADK R7 K4  ; var7 = "_"
+       5 [-]: GETIMPORT R8 3; var8 = _T["DuviriActivityId"]
+       6 [-]: LOADK R9 K5  ; var9 = "d"
+       7 [-]: CONCAT R5 R6 R9; var5 = var6 .. var9
+L 0:   8 [-]: JUMPXEQKNIL R3 L1; 
+       9 [-]: MOVE R6 R5   ; var6 = var5
+      10 [-]: MOVE R7 R3   ; var7 = var3
+      11 [-]: CONCAT R5 R6 R7; var5 = var6 .. var7
+L 1:  12 [-]: MOVE R4 R5   ; var4 = var5
+      13 [-]: GETIMPORT R5 7; var5 = _T["GetHudTracker"]
+      14 [-]: MOVE R6 R4   ; var6 = var4
+      15 [-]: CALL R5 2 2  ; var5 = var5(var6)
+      16 [-]: JUMPXEQKNIL R5 L2 NOT; 
+      17 [-]: RETURN R0 0  ; 
+L 2:  18 [-]: FASTCALL1 40 R0 L3; 
+      19 [-]: MOVE R7 R0   ; var7 = var0
+      20 [-]: GETIMPORT R6 9; var6 = 0x0B96777E
+      21 [-]: CALL R6 2 2  ; var6 = var6(var7)
+L 3:  22 [-]: JUMPXEQKS R6 K10 L4; 
+      23 [-]: LOADN R0 39  ; var0 = 39
+L 4:  24 [-]: GETTABLEKS R6 R5 K11; var6 = var5["SetIconColor"]
+      25 [-]: MOVE R7 R0   ; var7 = var0
+      26 [-]: CALL R6 2 1  ; var6(var7)
+      27 [-]: GETTABLEKS R6 R5 K12; var6 = var5["SetGoalColor"]
+      28 [-]: MOVE R7 R0   ; var7 = var0
+      29 [-]: CALL R6 2 1  ; var6(var7)
+      30 [-]: GETTABLEKS R6 R5 K13; var6 = var5["SetLabelColor"]
+      31 [-]: MOVE R7 R0   ; var7 = var0
+      32 [-]: CALL R6 2 1  ; var6(var7)
+      33 [-]: GETTABLEKS R6 R5 K14; var6 = var5["SetProgressColor"]
+      34 [-]: MOVE R7 R0   ; var7 = var0
+      35 [-]: LOADB R8 1   ; var8 = true
+      36 [-]: CALL R6 3 1  ; var6(var7, var8)
+      37 [-]: GETTABLEKS R6 R5 K15; var6 = var5["SetBlinkColor"]
+      38 [-]: MOVE R7 R1   ; var7 = var1
+      39 [-]: MOVE R8 R2   ; var8 = var2
+      40 [-]: CALL R6 3 1  ; var6(var7, var8)
+      41 [-]: RETURN R0 0  ; 
 
 
 ; Name:            
-; Defined at line: 688
+; Defined at line: 666
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
 ; Max Stack Size:  7
 
-       0 [-]: GETIMPORT R1 2; var1 = _T["ObjProgressBar"]
-       1 [-]: JUMPXEQKNIL R1 L0 NOT; 
-       2 [-]: RETURN R0 0  ; 
-L 0:   3 [-]: LOADK R2 K1  ; var2 = "ObjProgressBar"
-       4 [-]: GETIMPORT R3 4; var3 = _T["DuviriActivityId"]
-       5 [-]: JUMPXEQKNIL R3 L1; 
-       6 [-]: MOVE R3 R2   ; var3 = var2
-       7 [-]: LOADK R4 K5  ; var4 = "_"
-       8 [-]: GETIMPORT R5 4; var5 = _T["DuviriActivityId"]
-       9 [-]: LOADK R6 K6  ; var6 = "d"
-      10 [-]: CONCAT R2 R3 R6; var2 = var3 .. var6
-L 1:  11 [-]: JUMPXEQKNIL R0 L2; 
-      12 [-]: MOVE R3 R2   ; var3 = var2
-      13 [-]: MOVE R4 R0   ; var4 = var0
-      14 [-]: CONCAT R2 R3 R4; var2 = var3 .. var4
-L 2:  15 [-]: MOVE R1 R2   ; var1 = var2
-      16 [-]: GETIMPORT R3 2; var3 = _T["ObjProgressBar"]
-      17 [-]: GETTABLE R2 R3 R1; var2 = var3[var1]
-      18 [-]: JUMPXEQKNIL R2 L5; 
-      19 [-]: GETIMPORT R3 8; var3 = _T["RemoveHudTracker"]
-      20 [-]: FASTCALL1 62 R3 L3; 
-      21 [-]: GETIMPORT R2 10; var2 = 0x7B998233
-      22 [-]: CALL R2 2 2  ; var2 = var2(var3)
-L 3:  23 [-]: JUMPIF R2 L4 ; goto L4 if var2
-      24 [-]: GETIMPORT R2 8; var2 = _T["RemoveHudTracker"]
-      25 [-]: MOVE R3 R1   ; var3 = var1
-      26 [-]: LOADK R4 K11 ; var4 = 0.5
-      27 [-]: CALL R2 3 1  ; var2(var3, var4)
-L 4:  28 [-]: GETIMPORT R2 2; var2 = _T["ObjProgressBar"]
-      29 [-]: LOADNIL R3   ; var3 = nil
-      30 [-]: SETTABLE R3 R2 R1; var3[var2] = var1
-L 5:  31 [-]: RETURN R0 0  ; 
+       0 [-]: LOADK R2 K0  ; var2 = "ObjProgressBar"
+       1 [-]: GETIMPORT R3 3; var3 = _T["DuviriActivityId"]
+       2 [-]: JUMPXEQKNIL R3 L0; 
+       3 [-]: MOVE R3 R2   ; var3 = var2
+       4 [-]: LOADK R4 K4  ; var4 = "_"
+       5 [-]: GETIMPORT R5 3; var5 = _T["DuviriActivityId"]
+       6 [-]: LOADK R6 K5  ; var6 = "d"
+       7 [-]: CONCAT R2 R3 R6; var2 = var3 .. var6
+L 0:   8 [-]: JUMPXEQKNIL R0 L1; 
+       9 [-]: MOVE R3 R2   ; var3 = var2
+      10 [-]: MOVE R4 R0   ; var4 = var0
+      11 [-]: CONCAT R2 R3 R4; var2 = var3 .. var4
+L 1:  12 [-]: MOVE R1 R2   ; var1 = var2
+      13 [-]: GETIMPORT R3 7; var3 = _T["RemoveHudTracker"]
+      14 [-]: FASTCALL1 64 R3 L2; 
+      15 [-]: GETIMPORT R2 9; var2 = 0x7B998233
+      16 [-]: CALL R2 2 2  ; var2 = var2(var3)
+L 2:  17 [-]: JUMPIF R2 L3 ; goto L3 if var2
+      18 [-]: GETIMPORT R2 7; var2 = _T["RemoveHudTracker"]
+      19 [-]: MOVE R3 R1   ; var3 = var1
+      20 [-]: LOADK R4 K10 ; var4 = 0.5
+      21 [-]: CALL R2 3 1  ; var2(var3, var4)
+L 3:  22 [-]: RETURN R0 0  ; 
 
 
 ; Name:            
-; Defined at line: 702
-; #Upvalues:       1
+; Defined at line: 675
+; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
 ; Max Stack Size:  7
 
-       0 [-]: GETIMPORT R1 2; var1 = _T["ObjProgressBar"]
-       1 [-]: JUMPXEQKNIL R1 L0 NOT; 
-       2 [-]: LOADNIL R1   ; var1 = nil
-       3 [-]: RETURN R1 1  ; 
-L 0:   4 [-]: LOADK R2 K1  ; var2 = "ObjProgressBar"
-       5 [-]: GETIMPORT R3 4; var3 = _T["DuviriActivityId"]
-       6 [-]: JUMPXEQKNIL R3 L1; 
-       7 [-]: MOVE R3 R2   ; var3 = var2
-       8 [-]: LOADK R4 K5  ; var4 = "_"
-       9 [-]: GETIMPORT R5 4; var5 = _T["DuviriActivityId"]
-      10 [-]: LOADK R6 K6  ; var6 = "d"
-      11 [-]: CONCAT R2 R3 R6; var2 = var3 .. var6
-L 1:  12 [-]: JUMPXEQKNIL R0 L2; 
-      13 [-]: MOVE R3 R2   ; var3 = var2
-      14 [-]: MOVE R4 R0   ; var4 = var0
-      15 [-]: CONCAT R2 R3 R4; var2 = var3 .. var4
-L 2:  16 [-]: MOVE R1 R2   ; var1 = var2
-      17 [-]: GETUPVAL R2 0; var2 = upvalues[0]
-      18 [-]: MOVE R3 R1   ; var3 = var1
-      19 [-]: CALL R2 2 1  ; var2(var3)
-      20 [-]: GETIMPORT R3 2; var3 = _T["ObjProgressBar"]
-      21 [-]: GETTABLE R2 R3 R1; var2 = var3[var1]
-      22 [-]: RETURN R2 1  ; 
+       0 [-]: GETIMPORT R2 2; var2 = _T["GetHudTracker"]
+       1 [-]: FASTCALL1 64 R2 L0; 
+       2 [-]: GETIMPORT R1 4; var1 = 0x7B998233
+       3 [-]: CALL R1 2 2  ; var1 = var1(var2)
+L 0:   4 [-]: JUMPIFNOT R1 L1; goto L1 if not var1
+       5 [-]: LOADNIL R1   ; var1 = nil
+       6 [-]: RETURN R1 1  ; 
+L 1:   7 [-]: LOADK R2 K5  ; var2 = "ObjProgressBar"
+       8 [-]: GETIMPORT R3 7; var3 = _T["DuviriActivityId"]
+       9 [-]: JUMPXEQKNIL R3 L2; 
+      10 [-]: MOVE R3 R2   ; var3 = var2
+      11 [-]: LOADK R4 K8  ; var4 = "_"
+      12 [-]: GETIMPORT R5 7; var5 = _T["DuviriActivityId"]
+      13 [-]: LOADK R6 K9  ; var6 = "d"
+      14 [-]: CONCAT R2 R3 R6; var2 = var3 .. var6
+L 2:  15 [-]: JUMPXEQKNIL R0 L3; 
+      16 [-]: MOVE R3 R2   ; var3 = var2
+      17 [-]: MOVE R4 R0   ; var4 = var0
+      18 [-]: CONCAT R2 R3 R4; var2 = var3 .. var4
+L 3:  19 [-]: MOVE R1 R2   ; var1 = var2
+      20 [-]: GETIMPORT R2 2; var2 = _T["GetHudTracker"]
+      21 [-]: MOVE R3 R1   ; var3 = var1
+      22 [-]: CALL R2 2 0  ; var2, ... = var2(var3)
+      23 [-]: RETURN R2 -1 ; 
 
 
 ; Name:            
-; Defined at line: 711
+; Defined at line: 683
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
 ; Max Stack Size:  8
 
-       0 [-]: GETIMPORT R2 2; var2 = _T["ObjProgressBar"]
-       1 [-]: JUMPXEQKNIL R2 L0 NOT; 
-       2 [-]: RETURN R0 0  ; 
-L 0:   3 [-]: LOADK R3 K1  ; var3 = "ObjProgressBar"
-       4 [-]: GETIMPORT R4 4; var4 = _T["DuviriActivityId"]
-       5 [-]: JUMPXEQKNIL R4 L1; 
-       6 [-]: MOVE R4 R3   ; var4 = var3
-       7 [-]: LOADK R5 K5  ; var5 = "_"
-       8 [-]: GETIMPORT R6 4; var6 = _T["DuviriActivityId"]
-       9 [-]: LOADK R7 K6  ; var7 = "d"
-      10 [-]: CONCAT R3 R4 R7; var3 = var4 .. var7
-L 1:  11 [-]: JUMPXEQKNIL R1 L2; 
-      12 [-]: MOVE R4 R3   ; var4 = var3
-      13 [-]: MOVE R5 R1   ; var5 = var1
-      14 [-]: CONCAT R3 R4 R5; var3 = var4 .. var5
-L 2:  15 [-]: MOVE R2 R3   ; var2 = var3
-      16 [-]: GETIMPORT R4 2; var4 = _T["ObjProgressBar"]
-      17 [-]: GETTABLE R5 R4 R2; var5 = var4[var2]
-      18 [-]: JUMPXEQKNIL R5 L5; 
-      19 [-]: GETTABLEKS R7 R5 K7; var7 = var5["Movie"]
-      20 [-]: FASTCALL1 62 R7 L3; 
-      21 [-]: GETIMPORT R6 9; var6 = 0x7B998233
-      22 [-]: CALL R6 2 2  ; var6 = var6(var7)
-L 3:  23 [-]: JUMPIFNOT R6 L4; goto L4 if not var6
-      24 [-]: LOADNIL R6   ; var6 = nil
-      25 [-]: SETTABLE R6 R4 R2; var6[var4] = var2
-      26 [-]: LOADNIL R3   ; var3 = nil
-      27 [-]: JUMP L6      ; goto L6
-L 4:  28 [-]: MOVE R3 R5   ; var3 = var5
-      29 [-]: JUMP L6      ; goto L6
-L 5:  30 [-]: LOADNIL R3   ; var3 = nil
-L 6:  31 [-]: JUMPXEQKNIL R3 L7; 
-      32 [-]: GETTABLEKS R4 R3 K10; var4 = var3["SetVisible"]
-      33 [-]: MOVE R5 R0   ; var5 = var0
-      34 [-]: CALL R4 2 1  ; var4(var5)
-L 7:  35 [-]: RETURN R0 0  ; 
+       0 [-]: LOADK R3 K0  ; var3 = "ObjProgressBar"
+       1 [-]: GETIMPORT R4 3; var4 = _T["DuviriActivityId"]
+       2 [-]: JUMPXEQKNIL R4 L0; 
+       3 [-]: MOVE R4 R3   ; var4 = var3
+       4 [-]: LOADK R5 K4  ; var5 = "_"
+       5 [-]: GETIMPORT R6 3; var6 = _T["DuviriActivityId"]
+       6 [-]: LOADK R7 K5  ; var7 = "d"
+       7 [-]: CONCAT R3 R4 R7; var3 = var4 .. var7
+L 0:   8 [-]: JUMPXEQKNIL R1 L1; 
+       9 [-]: MOVE R4 R3   ; var4 = var3
+      10 [-]: MOVE R5 R1   ; var5 = var1
+      11 [-]: CONCAT R3 R4 R5; var3 = var4 .. var5
+L 1:  12 [-]: MOVE R2 R3   ; var2 = var3
+      13 [-]: GETIMPORT R3 7; var3 = _T["GetHudTracker"]
+      14 [-]: MOVE R4 R2   ; var4 = var2
+      15 [-]: CALL R3 2 2  ; var3 = var3(var4)
+      16 [-]: JUMPXEQKNIL R3 L2; 
+      17 [-]: GETTABLEKS R4 R3 K8; var4 = var3["SetVisible"]
+      18 [-]: MOVE R5 R0   ; var5 = var0
+      19 [-]: CALL R4 2 1  ; var4(var5)
+L 2:  20 [-]: RETURN R0 0  ; 
 
 
 ; Name:            
-; Defined at line: 725
+; Defined at line: 693
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2313,14 +2171,14 @@ L 1:  12 [-]: MOVE R1 R2   ; var1 = var2
 
 
 ; Name:            
-; Defined at line: 729
+; Defined at line: 697
 ; #Upvalues:       3
 ; #Parameters:     4
 ; Is_vararg:       0
 ; Max Stack Size:  12
 
        0 [-]: GETIMPORT R5 2; var5 = _T["AddHudTracker"]
-       1 [-]: FASTCALL1 62 R5 L0; 
+       1 [-]: FASTCALL1 64 R5 L0; 
        2 [-]: GETIMPORT R4 4; var4 = 0x7B998233
        3 [-]: CALL R4 2 2  ; var4 = var4(var5)
 L 0:   4 [-]: JUMPIFNOT R4 L1; goto L1 if not var4
@@ -2351,7 +2209,7 @@ L 4:  27 [-]: MOVE R4 R5   ; var4 = var5
       29 [-]: GETTABLE R7 R6 R4; var7 = var6[var4]
       30 [-]: JUMPXEQKNIL R7 L7; 
       31 [-]: GETTABLEKS R9 R7 K15; var9 = var7["Movie"]
-      32 [-]: FASTCALL1 62 R9 L5; 
+      32 [-]: FASTCALL1 64 R9 L5; 
       33 [-]: GETIMPORT R8 4; var8 = 0x7B998233
       34 [-]: CALL R8 2 2  ; var8 = var8(var9)
 L 5:  35 [-]: JUMPIFNOT R8 L6; goto L6 if not var8
@@ -2388,10 +2246,10 @@ L10:  64 [-]: GETTABLEKS R6 R5 K22; var6 = var5["SetLabels"]
       66 [-]: MOVE R8 R1   ; var8 = var1
       67 [-]: CALL R6 3 1  ; var6(var7, var8)
       68 [-]: GETTABLEKS R6 R5 K23; var6 = var5["SetLeftColor"]
-      69 [-]: LOADN R7 16  ; var7 = 16
+      69 [-]: LOADN R7 17  ; var7 = 17
       70 [-]: CALL R6 2 1  ; var6(var7)
       71 [-]: GETTABLEKS R6 R5 K24; var6 = var5["SetRightColor"]
-      72 [-]: LOADN R7 12  ; var7 = 12
+      72 [-]: LOADN R7 13  ; var7 = 13
       73 [-]: CALL R6 2 1  ; var6(var7)
       74 [-]: GETTABLEKS R6 R5 K25; var6 = var5["SetCenterLabel"]
       75 [-]: LOADK R7 K26 ; var7 = ""
@@ -2400,7 +2258,7 @@ L10:  64 [-]: GETTABLEKS R6 R5 K22; var6 = var5["SetLabels"]
 
 
 ; Name:            
-; Defined at line: 758
+; Defined at line: 726
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2429,7 +2287,7 @@ L 2:  16 [-]: MOVE R1 R2   ; var1 = var2
 
 
 ; Name:            
-; Defined at line: 767
+; Defined at line: 735
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2467,7 +2325,7 @@ L 4:  28 [-]: RETURN R0 0  ;
 
 
 ; Name:            
-; Defined at line: 783
+; Defined at line: 751
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2490,92 +2348,94 @@ L 1:  12 [-]: MOVE R1 R2   ; var1 = var2
 
 
 ; Name:            
-; Defined at line: 787
+; Defined at line: 755
 ; #Upvalues:       2
-; #Parameters:     2
+; #Parameters:     3
 ; Is_vararg:       0
-; Max Stack Size:  11
+; Max Stack Size:  12
 
-       0 [-]: GETUPVAL R3 0; var3 = upvalues[0]
-       1 [-]: CALL R3 1 2  ; var3 = var3()
-       2 [-]: ADDK R2 R3 K0; var2 = var3 + 5
-       3 [-]: FASTCALL1 62 R1 L0; 
-       4 [-]: MOVE R4 R1   ; var4 = var1
-       5 [-]: GETIMPORT R3 2; var3 = 0x7B998233
-       6 [-]: CALL R3 2 2  ; var3 = var3(var4)
-L 0:   7 [-]: JUMPIFNOT R3 L1; goto L1 if not var3
-       8 [-]: LOADN R1 20  ; var1 = 20
-L 1:   9 [-]: GETIMPORT R3 5; var3 = _T["NpcHealthTracker"]
-      10 [-]: JUMPXEQKNIL R3 L2 NOT; 
-      11 [-]: GETIMPORT R3 6; var3 = _T
-      12 [-]: NEWTABLE R4 0 0; var4 = {}
-      13 [-]: SETTABLEKS R4 R3 K4; var4["NpcHealthTracker"] = var3
-L 2:  14 [-]: LOADK R4 K4  ; var4 = "NpcHealthTracker"
-      15 [-]: GETIMPORT R5 8; var5 = _T["DuviriActivityId"]
-      16 [-]: JUMPXEQKNIL R5 L3; 
-      17 [-]: MOVE R5 R4   ; var5 = var4
-      18 [-]: LOADK R6 K9  ; var6 = "_"
-      19 [-]: GETIMPORT R7 8; var7 = _T["DuviriActivityId"]
-      20 [-]: LOADK R8 K10 ; var8 = "d"
-      21 [-]: CONCAT R4 R5 R8; var4 = var5 .. var8
-L 3:  22 [-]: MOVE R3 R4   ; var3 = var4
-      23 [-]: GETIMPORT R5 5; var5 = _T["NpcHealthTracker"]
-      24 [-]: GETTABLE R6 R5 R3; var6 = var5[var3]
-      25 [-]: JUMPXEQKNIL R6 L6; 
-      26 [-]: GETTABLEKS R8 R6 K11; var8 = var6["Movie"]
-      27 [-]: FASTCALL1 62 R8 L4; 
-      28 [-]: GETIMPORT R7 2; var7 = 0x7B998233
-      29 [-]: CALL R7 2 2  ; var7 = var7(var8)
-L 4:  30 [-]: JUMPIFNOT R7 L5; goto L5 if not var7
-      31 [-]: LOADNIL R7   ; var7 = nil
-      32 [-]: SETTABLE R7 R5 R3; var7[var5] = var3
-      33 [-]: LOADNIL R4   ; var4 = nil
-      34 [-]: JUMP L7      ; goto L7
-L 5:  35 [-]: MOVE R4 R6   ; var4 = var6
-      36 [-]: JUMP L7      ; goto L7
-L 6:  37 [-]: LOADNIL R4   ; var4 = nil
-L 7:  38 [-]: JUMPXEQKNIL R4 L9 NOT; 
-      39 [-]: GETIMPORT R5 13; var5 = _T["AddHudTracker"]
-      40 [-]: MOVE R6 R3   ; var6 = var3
-      41 [-]: GETUPVAL R8 1; var8 = upvalues[1]
-      42 [-]: GETTABLEKS R7 R8 K14; var7 = var8["HT_HEALTH_TRACKER"]
-      43 [-]: LOADK R8 K15 ; var8 = 0.5
-      44 [-]: MOVE R9 R2   ; var9 = var2
-      45 [-]: LOADB R10 1  ; var10 = true
-      46 [-]: CALL R5 6 2  ; var5 = var5(var6, var7, var8, var9, var10)
-      47 [-]: MOVE R4 R5   ; var4 = var5
-      48 [-]: GETTABLEKS R5 R4 K16; var5 = var4["SetOffset"]
-      49 [-]: LOADN R6 30  ; var6 = 30
-      50 [-]: LOADN R7 5   ; var7 = 5
-      51 [-]: LOADB R8 1   ; var8 = true
-      52 [-]: CALL R5 4 1  ; var5(var6, var7, var8)
-      53 [-]: GETIMPORT R5 8; var5 = _T["DuviriActivityId"]
-      54 [-]: JUMPXEQKNIL R5 L8; 
-      55 [-]: GETTABLEKS R5 R4 K17; var5 = var4["AddToLocation"]
-      56 [-]: DUPTABLE R6 19; 
-      57 [-]: GETIMPORT R7 8; var7 = _T["DuviriActivityId"]
-      58 [-]: SETTABLEKS R7 R6 K18; var7["ActivityId"] = var6
-      59 [-]: CALL R5 2 1  ; var5(var6)
-L 8:  60 [-]: GETIMPORT R5 5; var5 = _T["NpcHealthTracker"]
-      61 [-]: SETTABLE R4 R5 R3; var4[var5] = var3
-L 9:  62 [-]: GETTABLEKS R5 R4 K20; var5 = var4["SetTarget"]
-      63 [-]: MOVE R6 R0   ; var6 = var0
-      64 [-]: CALL R5 2 1  ; var5(var6)
-      65 [-]: GETTABLEKS R5 R4 K21; var5 = var4["SetHealthWarningThreshold"]
-      66 [-]: MOVE R6 R1   ; var6 = var1
-      67 [-]: CALL R5 2 1  ; var5(var6)
-      68 [-]: GETTABLEKS R5 R4 K22; var5 = var4["SetRemoveOnNullTarget"]
-      69 [-]: LOADB R6 1   ; var6 = true
-      70 [-]: CALL R5 2 1  ; var5(var6)
-      71 [-]: GETTABLEKS R5 R4 K23; var5 = var4["SetSortPriority"]
-      72 [-]: MOVE R6 R2   ; var6 = var2
-      73 [-]: LOADB R7 0   ; var7 = false
-      74 [-]: CALL R5 3 1  ; var5(var6, var7)
-      75 [-]: RETURN R0 0  ; 
+       0 [-]: GETUPVAL R4 0; var4 = upvalues[0]
+       1 [-]: CALL R4 1 2  ; var4 = var4()
+       2 [-]: ADDK R3 R4 K0; var3 = var4 + 5
+       3 [-]: JUMPIFNOT R2 L0; goto L0 if not var2
+       4 [-]: MOVE R3 R2   ; var3 = var2
+L 0:   5 [-]: FASTCALL1 64 R1 L1; 
+       6 [-]: MOVE R5 R1   ; var5 = var1
+       7 [-]: GETIMPORT R4 2; var4 = 0x7B998233
+       8 [-]: CALL R4 2 2  ; var4 = var4(var5)
+L 1:   9 [-]: JUMPIFNOT R4 L2; goto L2 if not var4
+      10 [-]: LOADN R1 20  ; var1 = 20
+L 2:  11 [-]: GETIMPORT R4 5; var4 = _T["NpcHealthTracker"]
+      12 [-]: JUMPXEQKNIL R4 L3 NOT; 
+      13 [-]: GETIMPORT R4 6; var4 = _T
+      14 [-]: NEWTABLE R5 0 0; var5 = {}
+      15 [-]: SETTABLEKS R5 R4 K4; var5["NpcHealthTracker"] = var4
+L 3:  16 [-]: LOADK R5 K4  ; var5 = "NpcHealthTracker"
+      17 [-]: GETIMPORT R6 8; var6 = _T["DuviriActivityId"]
+      18 [-]: JUMPXEQKNIL R6 L4; 
+      19 [-]: MOVE R6 R5   ; var6 = var5
+      20 [-]: LOADK R7 K9  ; var7 = "_"
+      21 [-]: GETIMPORT R8 8; var8 = _T["DuviriActivityId"]
+      22 [-]: LOADK R9 K10 ; var9 = "d"
+      23 [-]: CONCAT R5 R6 R9; var5 = var6 .. var9
+L 4:  24 [-]: MOVE R4 R5   ; var4 = var5
+      25 [-]: GETIMPORT R6 5; var6 = _T["NpcHealthTracker"]
+      26 [-]: GETTABLE R7 R6 R4; var7 = var6[var4]
+      27 [-]: JUMPXEQKNIL R7 L7; 
+      28 [-]: GETTABLEKS R9 R7 K11; var9 = var7["Movie"]
+      29 [-]: FASTCALL1 64 R9 L5; 
+      30 [-]: GETIMPORT R8 2; var8 = 0x7B998233
+      31 [-]: CALL R8 2 2  ; var8 = var8(var9)
+L 5:  32 [-]: JUMPIFNOT R8 L6; goto L6 if not var8
+      33 [-]: LOADNIL R8   ; var8 = nil
+      34 [-]: SETTABLE R8 R6 R4; var8[var6] = var4
+      35 [-]: LOADNIL R5   ; var5 = nil
+      36 [-]: JUMP L8      ; goto L8
+L 6:  37 [-]: MOVE R5 R7   ; var5 = var7
+      38 [-]: JUMP L8      ; goto L8
+L 7:  39 [-]: LOADNIL R5   ; var5 = nil
+L 8:  40 [-]: JUMPXEQKNIL R5 L10 NOT; 
+      41 [-]: GETIMPORT R6 13; var6 = _T["AddHudTracker"]
+      42 [-]: MOVE R7 R4   ; var7 = var4
+      43 [-]: GETUPVAL R9 1; var9 = upvalues[1]
+      44 [-]: GETTABLEKS R8 R9 K14; var8 = var9["HT_HEALTH_TRACKER"]
+      45 [-]: LOADK R9 K15 ; var9 = 0.5
+      46 [-]: MOVE R10 R3  ; var10 = var3
+      47 [-]: LOADB R11 1  ; var11 = true
+      48 [-]: CALL R6 6 2  ; var6 = var6(var7, var8, var9, var10, var11)
+      49 [-]: MOVE R5 R6   ; var5 = var6
+      50 [-]: GETTABLEKS R6 R5 K16; var6 = var5["SetOffset"]
+      51 [-]: LOADN R7 30  ; var7 = 30
+      52 [-]: LOADN R8 5   ; var8 = 5
+      53 [-]: LOADB R9 1   ; var9 = true
+      54 [-]: CALL R6 4 1  ; var6(var7, var8, var9)
+      55 [-]: GETIMPORT R6 8; var6 = _T["DuviriActivityId"]
+      56 [-]: JUMPXEQKNIL R6 L9; 
+      57 [-]: GETTABLEKS R6 R5 K17; var6 = var5["AddToLocation"]
+      58 [-]: DUPTABLE R7 19; 
+      59 [-]: GETIMPORT R8 8; var8 = _T["DuviriActivityId"]
+      60 [-]: SETTABLEKS R8 R7 K18; var8["ActivityId"] = var7
+      61 [-]: CALL R6 2 1  ; var6(var7)
+L 9:  62 [-]: GETIMPORT R6 5; var6 = _T["NpcHealthTracker"]
+      63 [-]: SETTABLE R5 R6 R4; var5[var6] = var4
+L10:  64 [-]: GETTABLEKS R6 R5 K20; var6 = var5["SetTarget"]
+      65 [-]: MOVE R7 R0   ; var7 = var0
+      66 [-]: CALL R6 2 1  ; var6(var7)
+      67 [-]: GETTABLEKS R6 R5 K21; var6 = var5["SetHealthWarningThreshold"]
+      68 [-]: MOVE R7 R1   ; var7 = var1
+      69 [-]: CALL R6 2 1  ; var6(var7)
+      70 [-]: GETTABLEKS R6 R5 K22; var6 = var5["SetRemoveOnNullTarget"]
+      71 [-]: LOADB R7 1   ; var7 = true
+      72 [-]: CALL R6 2 1  ; var6(var7)
+      73 [-]: GETTABLEKS R6 R5 K23; var6 = var5["SetSortPriority"]
+      74 [-]: MOVE R7 R3   ; var7 = var3
+      75 [-]: LOADB R8 0   ; var8 = false
+      76 [-]: CALL R6 3 1  ; var6(var7, var8)
+      77 [-]: RETURN R0 0  ; 
 
 
 ; Name:            
-; Defined at line: 815
+; Defined at line: 786
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -2599,7 +2459,7 @@ L 1:  11 [-]: MOVE R0 R1   ; var0 = var1
 
 
 ; Name:            
-; Defined at line: 824
+; Defined at line: 795
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -2621,7 +2481,7 @@ L 1:  11 [-]: MOVE R0 R1   ; var0 = var1
       13 [-]: GETTABLE R1 R2 R0; var1 = var2[var0]
       14 [-]: JUMPIFNOT R1 L4; goto L4 if not var1
       15 [-]: GETIMPORT R2 8; var2 = _T["RemoveHudTracker"]
-      16 [-]: FASTCALL1 62 R2 L2; 
+      16 [-]: FASTCALL1 64 R2 L2; 
       17 [-]: GETIMPORT R1 10; var1 = 0x7B998233
       18 [-]: CALL R1 2 2  ; var1 = var1(var2)
 L 2:  19 [-]: JUMPIF R1 L3 ; goto L3 if var1
@@ -2636,7 +2496,7 @@ L 4:  27 [-]: RETURN R0 0  ;
 
 
 ; Name:            
-; Defined at line: 846
+; Defined at line: 817
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2659,147 +2519,150 @@ L 1:  12 [-]: MOVE R1 R2   ; var1 = var2
 
 
 ; Name:            
-; Defined at line: 850
+; Defined at line: 821
 ; #Upvalues:       3
-; #Parameters:     9
+; #Parameters:     10
 ; Is_vararg:       0
-; Max Stack Size:  19
+; Max Stack Size:  20
 
-       0 [-]: GETUPVAL R10 0; var10 = upvalues[0]
-       1 [-]: CALL R10 1 2 ; var10 = var10()
-       2 [-]: ADDK R9 R10 K0; var9 = var10 + 6
-       3 [-]: LOADB R10 1  ; var10 = true
-       4 [-]: JUMPIFNOT R8 L0; goto L0 if not var8
-       5 [-]: LOADB R10 0  ; var10 = false
-L 0:   6 [-]: GETIMPORT R11 3; var11 = _T["ObjectiveTimer"]
-       7 [-]: JUMPXEQKNIL R11 L1 NOT; 
-       8 [-]: GETIMPORT R11 4; var11 = _T
-       9 [-]: NEWTABLE R12 0 0; var12 = {}
-      10 [-]: SETTABLEKS R12 R11 K2; var12["ObjectiveTimer"] = var11
-L 1:  11 [-]: LOADK R12 K2 ; var12 = "ObjectiveTimer"
-      12 [-]: GETIMPORT R13 6; var13 = _T["DuviriActivityId"]
-      13 [-]: JUMPXEQKNIL R13 L2; 
-      14 [-]: MOVE R13 R12 ; var13 = var12
-      15 [-]: LOADK R14 K7 ; var14 = "_"
-      16 [-]: GETIMPORT R15 6; var15 = _T["DuviriActivityId"]
-      17 [-]: LOADK R16 K8 ; var16 = "d"
-      18 [-]: CONCAT R12 R13 R16; var12 = var13 .. var16
-L 2:  19 [-]: MOVE R11 R12 ; var11 = var12
-      20 [-]: GETIMPORT R13 3; var13 = _T["ObjectiveTimer"]
-      21 [-]: GETTABLE R14 R13 R11; var14 = var13[var11]
-      22 [-]: JUMPXEQKNIL R14 L5; 
-      23 [-]: GETTABLEKS R16 R14 K9; var16 = var14["Movie"]
-      24 [-]: FASTCALL1 62 R16 L3; 
-      25 [-]: GETIMPORT R15 11; var15 = 0x7B998233
-      26 [-]: CALL R15 2 2 ; var15 = var15(var16)
-L 3:  27 [-]: JUMPIFNOT R15 L4; goto L4 if not var15
-      28 [-]: LOADNIL R15  ; var15 = nil
-      29 [-]: SETTABLE R15 R13 R11; var15[var13] = var11
-      30 [-]: LOADNIL R12  ; var12 = nil
-      31 [-]: JUMP L6      ; goto L6
-L 4:  32 [-]: MOVE R12 R14 ; var12 = var14
-      33 [-]: JUMP L6      ; goto L6
-L 5:  34 [-]: LOADNIL R12  ; var12 = nil
-L 6:  35 [-]: JUMPXEQKNIL R12 L8 NOT; 
-      36 [-]: GETIMPORT R13 13; var13 = _T["AddHudTracker"]
-      37 [-]: MOVE R14 R11 ; var14 = var11
-      38 [-]: GETUPVAL R16 1; var16 = upvalues[1]
-      39 [-]: GETTABLEKS R15 R16 K14; var15 = var16["HT_TIMER"]
-      40 [-]: LOADK R16 K15; var16 = 0.5
-      41 [-]: MOVE R17 R9  ; var17 = var9
-      42 [-]: MOVE R18 R10 ; var18 = var10
-      43 [-]: CALL R13 6 2 ; var13 = var13(var14, var15, var16, var17, var18)
-      44 [-]: MOVE R12 R13 ; var12 = var13
-      45 [-]: GETTABLEKS R13 R12 K16; var13 = var12["SetOffset"]
-      46 [-]: LOADN R14 30 ; var14 = 30
-      47 [-]: LOADN R15 5  ; var15 = 5
-      48 [-]: LOADB R16 1  ; var16 = true
-      49 [-]: CALL R13 4 1 ; var13(var14, var15, var16)
-      50 [-]: GETIMPORT R13 6; var13 = _T["DuviriActivityId"]
-      51 [-]: JUMPXEQKNIL R13 L7; 
-      52 [-]: GETTABLEKS R13 R12 K17; var13 = var12["AddToLocation"]
-      53 [-]: DUPTABLE R14 19; 
-      54 [-]: GETIMPORT R15 6; var15 = _T["DuviriActivityId"]
-      55 [-]: SETTABLEKS R15 R14 K18; var15["ActivityId"] = var14
-      56 [-]: CALL R13 2 1 ; var13(var14)
-L 7:  57 [-]: GETIMPORT R13 3; var13 = _T["ObjectiveTimer"]
-      58 [-]: SETTABLE R12 R13 R11; var12[var13] = var11
-L 8:  59 [-]: FASTCALL1 62 R1 L9; 
-      60 [-]: MOVE R14 R1  ; var14 = var1
-      61 [-]: GETIMPORT R13 11; var13 = 0x7B998233
-      62 [-]: CALL R13 2 2 ; var13 = var13(var14)
-L 9:  63 [-]: JUMPIFNOT R13 L10; goto L10 if not var13
-      64 [-]: LOADB R1 0   ; var1 = false
-L10:  65 [-]: FASTCALL1 62 R2 L11; 
-      66 [-]: MOVE R14 R2  ; var14 = var2
-      67 [-]: GETIMPORT R13 11; var13 = 0x7B998233
-      68 [-]: CALL R13 2 2 ; var13 = var13(var14)
-L11:  69 [-]: JUMPIFNOT R13 L12; goto L12 if not var13
-      70 [-]: LOADB R2 1   ; var2 = true
-L12:  71 [-]: FASTCALL1 62 R3 L13; 
-      72 [-]: MOVE R14 R3  ; var14 = var3
-      73 [-]: GETIMPORT R13 11; var13 = 0x7B998233
-      74 [-]: CALL R13 2 2 ; var13 = var13(var14)
-L13:  75 [-]: JUMPIFNOT R13 L14; goto L14 if not var13
-      76 [-]: LOADB R3 0   ; var3 = false
-L14:  77 [-]: FASTCALL1 62 R5 L15; 
-      78 [-]: MOVE R14 R5  ; var14 = var5
-      79 [-]: GETIMPORT R13 11; var13 = 0x7B998233
-      80 [-]: CALL R13 2 2 ; var13 = var13(var14)
-L15:  81 [-]: JUMPIF R13 L18; goto L18 if var13
-      82 [-]: FASTCALL1 62 R6 L16; 
-      83 [-]: MOVE R14 R6  ; var14 = var6
-      84 [-]: GETIMPORT R13 11; var13 = 0x7B998233
-      85 [-]: CALL R13 2 2 ; var13 = var13(var14)
-L16:  86 [-]: JUMPIFNOT R13 L17; goto L17 if not var13
-      87 [-]: LOADN R6 3   ; var6 = 3
-L17:  88 [-]: GETTABLEKS R13 R12 K20; var13 = var12["ShowMessage"]
-      89 [-]: GETIMPORT R14 22; var14 = 0x64FB1586
-      90 [-]: MOVE R15 R5  ; var15 = var5
-      91 [-]: CALL R14 2 2 ; var14 = var14(var15)
-      92 [-]: MOVE R15 R6  ; var15 = var6
-      93 [-]: CALL R13 3 1 ; var13(var14, var15)
-L18:  94 [-]: FASTCALL1 62 R7 L19; 
-      95 [-]: MOVE R14 R7  ; var14 = var7
-      96 [-]: GETIMPORT R13 11; var13 = 0x7B998233
-      97 [-]: CALL R13 2 2 ; var13 = var13(var14)
-L19:  98 [-]: JUMPIF R13 L20; goto L20 if var13
-      99 [-]: GETTABLEKS R13 R12 K23; var13 = var12["SetLabel"]
-     100 [-]: MOVE R14 R7  ; var14 = var7
-     101 [-]: CALL R13 2 1 ; var13(var14)
-     102 [-]: JUMP L22     ; goto L22
-L20: 103 [-]: FASTCALL1 62 R4 L21; 
-     104 [-]: MOVE R14 R4  ; var14 = var4
-     105 [-]: GETIMPORT R13 11; var13 = 0x7B998233
-     106 [-]: CALL R13 2 2 ; var13 = var13(var14)
-L21: 107 [-]: JUMPIF R13 L22; goto L22 if var13
-     108 [-]: LOADN R13 0  ; var13 = 0
-     109 [-]: JUMPIFNOTLT R13 R4 L22; goto L22 if var13 >= var134663
-     110 [-]: GETUPVAL R14 2; var14 = upvalues[2]
-     111 [-]: LENGTH R13 R14; var13 = #var14
-     112 [-]: JUMPIFNOTLE R4 R13 L22; goto L22 if var4 > var-32764644
-     113 [-]: GETTABLEKS R13 R12 K23; var13 = var12["SetLabel"]
-     114 [-]: GETUPVAL R15 2; var15 = upvalues[2]
-     115 [-]: GETTABLE R14 R15 R4; var14 = var15[var4]
-     116 [-]: CALL R13 2 1 ; var13(var14)
-L22: 117 [-]: GETTABLEKS R13 R12 K24; var13 = var12["StartTimer"]
-     118 [-]: MOVE R14 R0  ; var14 = var0
-     119 [-]: MOVE R15 R1  ; var15 = var1
-     120 [-]: MOVE R16 R2  ; var16 = var2
-     121 [-]: MOVE R17 R3  ; var17 = var3
-     122 [-]: NEWCLOSURE R18 P0; 
-     123 [-]: CAPTURE REF R2; 
-     124 [-]: CALL R13 6 1 ; var13(var14, var15, var16, var17, var18)
-     125 [-]: GETTABLEKS R13 R12 K25; var13 = var12["SetSortPriority"]
-     126 [-]: MOVE R14 R9  ; var14 = var9
-     127 [-]: LOADB R15 0  ; var15 = false
-     128 [-]: CALL R13 3 1 ; var13(var14, var15)
-     129 [-]: CLOSEUPVALS R2; 
-     130 [-]: RETURN R12 1 ; 
+       0 [-]: GETUPVAL R11 0; var11 = upvalues[0]
+       1 [-]: CALL R11 1 2 ; var11 = var11()
+       2 [-]: ADDK R10 R11 K0; var10 = var11 + 6
+       3 [-]: JUMPIFNOT R9 L0; goto L0 if not var9
+       4 [-]: MOVE R10 R9  ; var10 = var9
+L 0:   5 [-]: LOADB R11 1  ; var11 = true
+       6 [-]: JUMPIFNOT R8 L1; goto L1 if not var8
+       7 [-]: LOADB R11 0  ; var11 = false
+L 1:   8 [-]: GETIMPORT R12 3; var12 = _T["ObjectiveTimer"]
+       9 [-]: JUMPXEQKNIL R12 L2 NOT; 
+      10 [-]: GETIMPORT R12 4; var12 = _T
+      11 [-]: NEWTABLE R13 0 0; var13 = {}
+      12 [-]: SETTABLEKS R13 R12 K2; var13["ObjectiveTimer"] = var12
+L 2:  13 [-]: LOADK R13 K2 ; var13 = "ObjectiveTimer"
+      14 [-]: GETIMPORT R14 6; var14 = _T["DuviriActivityId"]
+      15 [-]: JUMPXEQKNIL R14 L3; 
+      16 [-]: MOVE R14 R13 ; var14 = var13
+      17 [-]: LOADK R15 K7 ; var15 = "_"
+      18 [-]: GETIMPORT R16 6; var16 = _T["DuviriActivityId"]
+      19 [-]: LOADK R17 K8 ; var17 = "d"
+      20 [-]: CONCAT R13 R14 R17; var13 = var14 .. var17
+L 3:  21 [-]: MOVE R12 R13 ; var12 = var13
+      22 [-]: GETIMPORT R14 3; var14 = _T["ObjectiveTimer"]
+      23 [-]: GETTABLE R15 R14 R12; var15 = var14[var12]
+      24 [-]: JUMPXEQKNIL R15 L6; 
+      25 [-]: GETTABLEKS R17 R15 K9; var17 = var15["Movie"]
+      26 [-]: FASTCALL1 64 R17 L4; 
+      27 [-]: GETIMPORT R16 11; var16 = 0x7B998233
+      28 [-]: CALL R16 2 2 ; var16 = var16(var17)
+L 4:  29 [-]: JUMPIFNOT R16 L5; goto L5 if not var16
+      30 [-]: LOADNIL R16  ; var16 = nil
+      31 [-]: SETTABLE R16 R14 R12; var16[var14] = var12
+      32 [-]: LOADNIL R13  ; var13 = nil
+      33 [-]: JUMP L7      ; goto L7
+L 5:  34 [-]: MOVE R13 R15 ; var13 = var15
+      35 [-]: JUMP L7      ; goto L7
+L 6:  36 [-]: LOADNIL R13  ; var13 = nil
+L 7:  37 [-]: JUMPXEQKNIL R13 L9 NOT; 
+      38 [-]: GETIMPORT R14 13; var14 = _T["AddHudTracker"]
+      39 [-]: MOVE R15 R12 ; var15 = var12
+      40 [-]: GETUPVAL R17 1; var17 = upvalues[1]
+      41 [-]: GETTABLEKS R16 R17 K14; var16 = var17["HT_TIMER"]
+      42 [-]: LOADK R17 K15; var17 = 0.5
+      43 [-]: MOVE R18 R10 ; var18 = var10
+      44 [-]: MOVE R19 R11 ; var19 = var11
+      45 [-]: CALL R14 6 2 ; var14 = var14(var15, var16, var17, var18, var19)
+      46 [-]: MOVE R13 R14 ; var13 = var14
+      47 [-]: GETTABLEKS R14 R13 K16; var14 = var13["SetOffset"]
+      48 [-]: LOADN R15 30 ; var15 = 30
+      49 [-]: LOADN R16 5  ; var16 = 5
+      50 [-]: LOADB R17 1  ; var17 = true
+      51 [-]: CALL R14 4 1 ; var14(var15, var16, var17)
+      52 [-]: GETIMPORT R14 6; var14 = _T["DuviriActivityId"]
+      53 [-]: JUMPXEQKNIL R14 L8; 
+      54 [-]: GETTABLEKS R14 R13 K17; var14 = var13["AddToLocation"]
+      55 [-]: DUPTABLE R15 19; 
+      56 [-]: GETIMPORT R16 6; var16 = _T["DuviriActivityId"]
+      57 [-]: SETTABLEKS R16 R15 K18; var16["ActivityId"] = var15
+      58 [-]: CALL R14 2 1 ; var14(var15)
+L 8:  59 [-]: GETIMPORT R14 3; var14 = _T["ObjectiveTimer"]
+      60 [-]: SETTABLE R13 R14 R12; var13[var14] = var12
+L 9:  61 [-]: FASTCALL1 64 R1 L10; 
+      62 [-]: MOVE R15 R1  ; var15 = var1
+      63 [-]: GETIMPORT R14 11; var14 = 0x7B998233
+      64 [-]: CALL R14 2 2 ; var14 = var14(var15)
+L10:  65 [-]: JUMPIFNOT R14 L11; goto L11 if not var14
+      66 [-]: LOADB R1 0   ; var1 = false
+L11:  67 [-]: FASTCALL1 64 R2 L12; 
+      68 [-]: MOVE R15 R2  ; var15 = var2
+      69 [-]: GETIMPORT R14 11; var14 = 0x7B998233
+      70 [-]: CALL R14 2 2 ; var14 = var14(var15)
+L12:  71 [-]: JUMPIFNOT R14 L13; goto L13 if not var14
+      72 [-]: LOADB R2 1   ; var2 = true
+L13:  73 [-]: FASTCALL1 64 R3 L14; 
+      74 [-]: MOVE R15 R3  ; var15 = var3
+      75 [-]: GETIMPORT R14 11; var14 = 0x7B998233
+      76 [-]: CALL R14 2 2 ; var14 = var14(var15)
+L14:  77 [-]: JUMPIFNOT R14 L15; goto L15 if not var14
+      78 [-]: LOADB R3 0   ; var3 = false
+L15:  79 [-]: FASTCALL1 64 R5 L16; 
+      80 [-]: MOVE R15 R5  ; var15 = var5
+      81 [-]: GETIMPORT R14 11; var14 = 0x7B998233
+      82 [-]: CALL R14 2 2 ; var14 = var14(var15)
+L16:  83 [-]: JUMPIF R14 L20; goto L20 if var14
+      84 [-]: FASTCALL1 64 R6 L17; 
+      85 [-]: MOVE R15 R6  ; var15 = var6
+      86 [-]: GETIMPORT R14 11; var14 = 0x7B998233
+      87 [-]: CALL R14 2 2 ; var14 = var14(var15)
+L17:  88 [-]: JUMPIFNOT R14 L18; goto L18 if not var14
+      89 [-]: LOADN R6 3   ; var6 = 3
+L18:  90 [-]: GETTABLEKS R14 R13 K20; var14 = var13["ShowMessage"]
+      91 [-]: FASTCALL1 63 R5 L19; 
+      92 [-]: MOVE R16 R5  ; var16 = var5
+      93 [-]: GETIMPORT R15 22; var15 = 0x64FB1586
+      94 [-]: CALL R15 2 2 ; var15 = var15(var16)
+L19:  95 [-]: MOVE R16 R6  ; var16 = var6
+      96 [-]: CALL R14 3 1 ; var14(var15, var16)
+L20:  97 [-]: FASTCALL1 64 R7 L21; 
+      98 [-]: MOVE R15 R7  ; var15 = var7
+      99 [-]: GETIMPORT R14 11; var14 = 0x7B998233
+     100 [-]: CALL R14 2 2 ; var14 = var14(var15)
+L21: 101 [-]: JUMPIF R14 L22; goto L22 if var14
+     102 [-]: GETTABLEKS R14 R13 K23; var14 = var13["SetLabel"]
+     103 [-]: MOVE R15 R7  ; var15 = var7
+     104 [-]: CALL R14 2 1 ; var14(var15)
+     105 [-]: JUMP L24     ; goto L24
+L22: 106 [-]: FASTCALL1 64 R4 L23; 
+     107 [-]: MOVE R15 R4  ; var15 = var4
+     108 [-]: GETIMPORT R14 11; var14 = 0x7B998233
+     109 [-]: CALL R14 2 2 ; var14 = var14(var15)
+L23: 110 [-]: JUMPIF R14 L24; goto L24 if var14
+     111 [-]: LOADN R14 0  ; var14 = 0
+     112 [-]: JUMPIFNOTLT R14 R4 L24; goto L24 if var14 >= var134972
+     113 [-]: GETUPVAL R15 2; var15 = upvalues[2]
+     114 [-]: LENGTH R14 R15; var14 = #var15
+     115 [-]: JUMPIFNOTLE R4 R14 L24; goto L24 if var4 > var-32698817
+     116 [-]: GETTABLEKS R14 R13 K23; var14 = var13["SetLabel"]
+     117 [-]: GETUPVAL R16 2; var16 = upvalues[2]
+     118 [-]: GETTABLE R15 R16 R4; var15 = var16[var4]
+     119 [-]: CALL R14 2 1 ; var14(var15)
+L24: 120 [-]: GETTABLEKS R14 R13 K24; var14 = var13["StartTimer"]
+     121 [-]: MOVE R15 R0  ; var15 = var0
+     122 [-]: MOVE R16 R1  ; var16 = var1
+     123 [-]: MOVE R17 R2  ; var17 = var2
+     124 [-]: MOVE R18 R3  ; var18 = var3
+     125 [-]: NEWCLOSURE R19 P0; 
+     126 [-]: CAPTURE REF R2; 
+     127 [-]: CALL R14 6 1 ; var14(var15, var16, var17, var18, var19)
+     128 [-]: GETTABLEKS R14 R13 K25; var14 = var13["SetSortPriority"]
+     129 [-]: MOVE R15 R10 ; var15 = var10
+     130 [-]: LOADB R16 0  ; var16 = false
+     131 [-]: CALL R14 3 1 ; var14(var15, var16)
+     132 [-]: CLOSEUPVALS R2; 
+     133 [-]: RETURN R13 1 ; 
 
 
 ; Name:            
-; Defined at line: 904
+; Defined at line: 878
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -2834,7 +2697,7 @@ L 2:  24 [-]: LOADN R1 0   ; var1 = 0
 
 
 ; Name:            
-; Defined at line: 918
+; Defined at line: 892
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -2861,7 +2724,7 @@ L 1:  15 [-]: GETIMPORT R2 6; var2 = _T["ObjectiveTimer"]
 
 
 ; Name:            
-; Defined at line: 928
+; Defined at line: 902
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2895,7 +2758,7 @@ L 2:  24 [-]: RETURN R0 0  ;
 
 
 ; Name:            
-; Defined at line: 940
+; Defined at line: 914
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -2917,7 +2780,7 @@ L 1:  11 [-]: MOVE R0 R1   ; var0 = var1
       13 [-]: GETTABLE R1 R2 R0; var1 = var2[var0]
       14 [-]: JUMPXEQKNIL R1 L4; 
       15 [-]: GETIMPORT R2 8; var2 = _T["RemoveHudTracker"]
-      16 [-]: FASTCALL1 62 R2 L2; 
+      16 [-]: FASTCALL1 64 R2 L2; 
       17 [-]: GETIMPORT R1 10; var1 = 0x7B998233
       18 [-]: CALL R1 2 2  ; var1 = var1(var2)
 L 2:  19 [-]: JUMPIF R1 L3 ; goto L3 if var1
@@ -2932,7 +2795,7 @@ L 4:  27 [-]: RETURN R0 0  ;
 
 
 ; Name:            
-; Defined at line: 954
+; Defined at line: 928
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2963,93 +2826,96 @@ L 2:  16 [-]: GETIMPORT R4 2; var4 = _T["ObjectiveTimer"]
 
 
 ; Name:            
-; Defined at line: 969
+; Defined at line: 943
 ; #Upvalues:       3
-; #Parameters:     3
+; #Parameters:     4
 ; Is_vararg:       0
-; Max Stack Size:  12
+; Max Stack Size:  13
 
-       0 [-]: GETUPVAL R4 0; var4 = upvalues[0]
-       1 [-]: CALL R4 1 2  ; var4 = var4()
-       2 [-]: ADDK R3 R4 K0; var3 = var4 + 7
-       3 [-]: GETIMPORT R5 3; var5 = _T["CachesHudTracker"]
-       4 [-]: FASTCALL1 62 R5 L0; 
-       5 [-]: GETIMPORT R4 5; var4 = 0x7B998233
-       6 [-]: CALL R4 2 2  ; var4 = var4(var5)
-L 0:   7 [-]: JUMPIFNOT R4 L7; goto L7 if not var4
-       8 [-]: GETIMPORT R4 6; var4 = _T
-       9 [-]: GETIMPORT R5 8; var5 = _T["AddHudTracker"]
-      10 [-]: LOADK R6 K9  ; var6 = "CachesUiTracker"
-      11 [-]: GETUPVAL R8 1; var8 = upvalues[1]
-      12 [-]: GETTABLEKS R7 R8 K10; var7 = var8["HT_LABEL"]
-      13 [-]: LOADK R8 K11 ; var8 = 0.5
-      14 [-]: MOVE R9 R3   ; var9 = var3
-      15 [-]: LOADB R10 1  ; var10 = true
-      16 [-]: CALL R5 6 2  ; var5 = var5(var6, var7, var8, var9, var10)
-      17 [-]: SETTABLEKS R5 R4 K2; var5["CachesHudTracker"] = var4
-      18 [-]: GETIMPORT R5 3; var5 = _T["CachesHudTracker"]
-      19 [-]: FASTCALL1 62 R5 L1; 
-      20 [-]: GETIMPORT R4 5; var4 = 0x7B998233
-      21 [-]: CALL R4 2 2  ; var4 = var4(var5)
-L 1:  22 [-]: JUMPIF R4 L7 ; goto L7 if var4
-      23 [-]: GETIMPORT R5 13; var5 = _T["NpcHealthTracker"]
-      24 [-]: FASTCALL1 62 R5 L2; 
-      25 [-]: GETIMPORT R4 5; var4 = 0x7B998233
-      26 [-]: CALL R4 2 2  ; var4 = var4(var5)
-L 2:  27 [-]: JUMPIFNOT R4 L5; goto L5 if not var4
-      28 [-]: GETIMPORT R5 15; var5 = _T["ObjectiveTimer"]
-      29 [-]: FASTCALL1 62 R5 L3; 
-      30 [-]: GETIMPORT R4 5; var4 = 0x7B998233
-      31 [-]: CALL R4 2 2  ; var4 = var4(var5)
-L 3:  32 [-]: JUMPIFNOT R4 L5; goto L5 if not var4
-      33 [-]: GETIMPORT R5 17; var5 = _T["ExtractionTimer"]
-      34 [-]: FASTCALL1 62 R5 L4; 
-      35 [-]: GETIMPORT R4 5; var4 = 0x7B998233
-      36 [-]: CALL R4 2 2  ; var4 = var4(var5)
-L 4:  37 [-]: JUMPIF R4 L6 ; goto L6 if var4
-L 5:  38 [-]: GETIMPORT R4 19; var4 = _T["CachesHudTracker"]["SetOffset"]
-      39 [-]: LOADN R5 0   ; var5 = 0
-      40 [-]: LOADN R6 10  ; var6 = 10
-      41 [-]: LOADB R7 1   ; var7 = true
-      42 [-]: CALL R4 4 1  ; var4(var5, var6, var7)
-      43 [-]: JUMP L7      ; goto L7
-L 6:  44 [-]: GETIMPORT R4 19; var4 = _T["CachesHudTracker"]["SetOffset"]
-      45 [-]: LOADN R5 0   ; var5 = 0
-      46 [-]: LOADN R6 0   ; var6 = 0
-      47 [-]: LOADB R7 1   ; var7 = true
-      48 [-]: CALL R4 4 1  ; var4(var5, var6, var7)
-L 7:  49 [-]: LOADK R4 K20 ; var4 = ""
-      50 [-]: FASTCALL1 62 R1 L8; 
-      51 [-]: MOVE R6 R1   ; var6 = var1
-      52 [-]: GETIMPORT R5 5; var5 = 0x7B998233
-      53 [-]: CALL R5 2 2  ; var5 = var5(var6)
-L 8:  54 [-]: JUMPIF R5 L10; goto L10 if var5
-      55 [-]: FASTCALL1 62 R2 L9; 
-      56 [-]: MOVE R6 R2   ; var6 = var2
-      57 [-]: GETIMPORT R5 5; var5 = 0x7B998233
-      58 [-]: CALL R5 2 2  ; var5 = var5(var6)
-L 9:  59 [-]: JUMPIF R5 L10; goto L10 if var5
-      60 [-]: GETIMPORT R5 22; var5 = 0x64FB1586
-      61 [-]: LOADK R7 K23 ; var7 = ": "
-      62 [-]: MOVE R8 R1   ; var8 = var1
-      63 [-]: LOADK R9 K24 ; var9 = " / "
-      64 [-]: MOVE R10 R2  ; var10 = var2
-      65 [-]: CONCAT R6 R7 R10; var6 = var7 .. var10
-      66 [-]: CALL R5 2 2  ; var5 = var5(var6)
-      67 [-]: MOVE R4 R5   ; var4 = var5
-L10:  68 [-]: GETUPVAL R5 2; var5 = upvalues[2]
-      69 [-]: GETIMPORT R6 3; var6 = _T["CachesHudTracker"]
-      70 [-]: MOVE R7 R0   ; var7 = var0
-      71 [-]: LOADN R8 4   ; var8 = 4
-      72 [-]: MOVE R9 R4   ; var9 = var4
-      73 [-]: MOVE R10 R3  ; var10 = var3
-      74 [-]: LOADB R11 0  ; var11 = false
-      75 [-]: CALL R5 7 1  ; var5(var6, var7, var8, var9, var10, var11)
-      76 [-]: RETURN R0 0  ; 
+       0 [-]: GETUPVAL R5 0; var5 = upvalues[0]
+       1 [-]: CALL R5 1 2  ; var5 = var5()
+       2 [-]: ADDK R4 R5 K0; var4 = var5 + 7
+       3 [-]: JUMPIFNOT R3 L0; goto L0 if not var3
+       4 [-]: MOVE R4 R3   ; var4 = var3
+L 0:   5 [-]: GETIMPORT R6 3; var6 = _T["CachesHudTracker"]
+       6 [-]: FASTCALL1 64 R6 L1; 
+       7 [-]: GETIMPORT R5 5; var5 = 0x7B998233
+       8 [-]: CALL R5 2 2  ; var5 = var5(var6)
+L 1:   9 [-]: JUMPIFNOT R5 L8; goto L8 if not var5
+      10 [-]: GETIMPORT R5 6; var5 = _T
+      11 [-]: GETIMPORT R6 8; var6 = _T["AddHudTracker"]
+      12 [-]: LOADK R7 K9  ; var7 = "CachesUiTracker"
+      13 [-]: GETUPVAL R9 1; var9 = upvalues[1]
+      14 [-]: GETTABLEKS R8 R9 K10; var8 = var9["HT_LABEL"]
+      15 [-]: LOADK R9 K11 ; var9 = 0.5
+      16 [-]: MOVE R10 R4  ; var10 = var4
+      17 [-]: LOADB R11 1  ; var11 = true
+      18 [-]: CALL R6 6 2  ; var6 = var6(var7, var8, var9, var10, var11)
+      19 [-]: SETTABLEKS R6 R5 K2; var6["CachesHudTracker"] = var5
+      20 [-]: GETIMPORT R6 3; var6 = _T["CachesHudTracker"]
+      21 [-]: FASTCALL1 64 R6 L2; 
+      22 [-]: GETIMPORT R5 5; var5 = 0x7B998233
+      23 [-]: CALL R5 2 2  ; var5 = var5(var6)
+L 2:  24 [-]: JUMPIF R5 L8 ; goto L8 if var5
+      25 [-]: GETIMPORT R6 13; var6 = _T["NpcHealthTracker"]
+      26 [-]: FASTCALL1 64 R6 L3; 
+      27 [-]: GETIMPORT R5 5; var5 = 0x7B998233
+      28 [-]: CALL R5 2 2  ; var5 = var5(var6)
+L 3:  29 [-]: JUMPIFNOT R5 L6; goto L6 if not var5
+      30 [-]: GETIMPORT R6 15; var6 = _T["ObjectiveTimer"]
+      31 [-]: FASTCALL1 64 R6 L4; 
+      32 [-]: GETIMPORT R5 5; var5 = 0x7B998233
+      33 [-]: CALL R5 2 2  ; var5 = var5(var6)
+L 4:  34 [-]: JUMPIFNOT R5 L6; goto L6 if not var5
+      35 [-]: GETIMPORT R6 17; var6 = _T["ExtractionTimer"]
+      36 [-]: FASTCALL1 64 R6 L5; 
+      37 [-]: GETIMPORT R5 5; var5 = 0x7B998233
+      38 [-]: CALL R5 2 2  ; var5 = var5(var6)
+L 5:  39 [-]: JUMPIF R5 L7 ; goto L7 if var5
+L 6:  40 [-]: GETIMPORT R5 19; var5 = _T["CachesHudTracker"]["SetOffset"]
+      41 [-]: LOADN R6 0   ; var6 = 0
+      42 [-]: LOADN R7 10  ; var7 = 10
+      43 [-]: LOADB R8 1   ; var8 = true
+      44 [-]: CALL R5 4 1  ; var5(var6, var7, var8)
+      45 [-]: JUMP L8      ; goto L8
+L 7:  46 [-]: GETIMPORT R5 19; var5 = _T["CachesHudTracker"]["SetOffset"]
+      47 [-]: LOADN R6 0   ; var6 = 0
+      48 [-]: LOADN R7 0   ; var7 = 0
+      49 [-]: LOADB R8 1   ; var8 = true
+      50 [-]: CALL R5 4 1  ; var5(var6, var7, var8)
+L 8:  51 [-]: LOADK R5 K20 ; var5 = ""
+      52 [-]: FASTCALL1 64 R1 L9; 
+      53 [-]: MOVE R7 R1   ; var7 = var1
+      54 [-]: GETIMPORT R6 5; var6 = 0x7B998233
+      55 [-]: CALL R6 2 2  ; var6 = var6(var7)
+L 9:  56 [-]: JUMPIF R6 L12; goto L12 if var6
+      57 [-]: FASTCALL1 64 R2 L10; 
+      58 [-]: MOVE R7 R2   ; var7 = var2
+      59 [-]: GETIMPORT R6 5; var6 = 0x7B998233
+      60 [-]: CALL R6 2 2  ; var6 = var6(var7)
+L10:  61 [-]: JUMPIF R6 L12; goto L12 if var6
+      62 [-]: LOADK R8 K21 ; var8 = ": "
+      63 [-]: MOVE R9 R1   ; var9 = var1
+      64 [-]: LOADK R10 K22; var10 = " / "
+      65 [-]: MOVE R11 R2  ; var11 = var2
+      66 [-]: CONCAT R7 R8 R11; var7 = var8 .. var11
+      67 [-]: FASTCALL1 63 R7 L11; 
+      68 [-]: GETIMPORT R6 24; var6 = 0x64FB1586
+      69 [-]: CALL R6 2 2  ; var6 = var6(var7)
+L11:  70 [-]: MOVE R5 R6   ; var5 = var6
+L12:  71 [-]: GETUPVAL R6 2; var6 = upvalues[2]
+      72 [-]: GETIMPORT R7 3; var7 = _T["CachesHudTracker"]
+      73 [-]: MOVE R8 R0   ; var8 = var0
+      74 [-]: LOADN R9 4   ; var9 = 4
+      75 [-]: MOVE R10 R5  ; var10 = var5
+      76 [-]: MOVE R11 R4  ; var11 = var4
+      77 [-]: LOADB R12 0  ; var12 = false
+      78 [-]: CALL R6 7 1  ; var6(var7, var8, var9, var10, var11, var12)
+      79 [-]: RETURN R0 0  ; 
 
 
 ; Name:            
-; Defined at line: 994
+; Defined at line: 971
 ; #Upvalues:       4
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -3064,13 +2930,13 @@ L10:  68 [-]: GETUPVAL R5 2; var5 = upvalues[2]
        6 [-]: LOADB R6 1   ; var6 = true
        7 [-]: JUMPIFNOT R3 L0; goto L0 if not var3
        8 [-]: LOADB R6 0   ; var6 = false
-L 0:   9 [-]: FASTCALL1 62 R2 L1; 
+L 0:   9 [-]: FASTCALL1 64 R2 L1; 
       10 [-]: MOVE R8 R2   ; var8 = var2
       11 [-]: GETIMPORT R7 3; var7 = 0x7B998233
       12 [-]: CALL R7 2 2  ; var7 = var7(var8)
 L 1:  13 [-]: JUMPIF R7 L4 ; goto L4 if var7
       14 [-]: GETIMPORT R8 6; var8 = _T["LootChallengeTitle"]
-      15 [-]: FASTCALL1 62 R8 L2; 
+      15 [-]: FASTCALL1 64 R8 L2; 
       16 [-]: GETIMPORT R7 3; var7 = 0x7B998233
       17 [-]: CALL R7 2 2  ; var7 = var7(var8)
 L 2:  18 [-]: JUMPIFNOT R7 L3; goto L3 if not var7
@@ -3098,7 +2964,7 @@ L 3:  29 [-]: GETUPVAL R7 2; var7 = upvalues[2]
       40 [-]: LOADB R10 1  ; var10 = true
       41 [-]: CALL R7 4 1  ; var7(var8, var9, var10)
 L 4:  42 [-]: GETIMPORT R8 16; var8 = _T["LootChallengeTimer"]
-      43 [-]: FASTCALL1 62 R8 L5; 
+      43 [-]: FASTCALL1 64 R8 L5; 
       44 [-]: GETIMPORT R7 3; var7 = 0x7B998233
       45 [-]: CALL R7 2 2  ; var7 = var7(var8)
 L 5:  46 [-]: JUMPIFNOT R7 L6; goto L6 if not var7
@@ -3112,48 +2978,49 @@ L 5:  46 [-]: JUMPIFNOT R7 L6; goto L6 if not var7
       54 [-]: MOVE R13 R6  ; var13 = var6
       55 [-]: CALL R8 6 2  ; var8 = var8(var9, var10, var11, var12, var13)
       56 [-]: SETTABLEKS R8 R7 K15; var8["LootChallengeTimer"] = var7
-L 6:  57 [-]: FASTCALL1 62 R1 L7; 
+L 6:  57 [-]: FASTCALL1 64 R1 L7; 
       58 [-]: MOVE R8 R1   ; var8 = var1
       59 [-]: GETIMPORT R7 3; var7 = 0x7B998233
       60 [-]: CALL R7 2 2  ; var7 = var7(var8)
-L 7:  61 [-]: JUMPIF R7 L8 ; goto L8 if var7
+L 7:  61 [-]: JUMPIF R7 L9 ; goto L9 if var7
       62 [-]: GETIMPORT R7 20; var7 = _T["LootChallengeTimer"]["ShowMessage"]
-      63 [-]: GETIMPORT R8 22; var8 = 0x64FB1586
+      63 [-]: FASTCALL1 63 R1 L8; 
       64 [-]: MOVE R9 R1   ; var9 = var1
-      65 [-]: CALL R8 2 2  ; var8 = var8(var9)
-      66 [-]: LOADN R9 3   ; var9 = 3
-      67 [-]: CALL R7 3 1  ; var7(var8, var9)
-L 8:  68 [-]: GETIMPORT R7 24; var7 = _T["LootChallengeTimer"]["SetLabel"]
-      69 [-]: GETUPVAL R9 3; var9 = upvalues[3]
-      70 [-]: GETTABLEN R8 R9 2; var8 = var9[2]
-      71 [-]: CALL R7 2 1  ; var7(var8)
-      72 [-]: GETIMPORT R7 26; var7 = _T["LootChallengeTimer"]["StartTimer"]
-      73 [-]: MOVE R8 R0   ; var8 = var0
-      74 [-]: LOADB R9 0   ; var9 = false
-      75 [-]: LOADB R10 0  ; var10 = false
-      76 [-]: LOADB R11 0  ; var11 = false
-      77 [-]: CALL R7 5 1  ; var7(var8, var9, var10, var11)
-      78 [-]: GETIMPORT R7 28; var7 = _T["LootChallengeTimer"]["SetSortPriority"]
-      79 [-]: MOVE R8 R5   ; var8 = var5
-      80 [-]: LOADB R9 0   ; var9 = false
-      81 [-]: CALL R7 3 1  ; var7(var8, var9)
-      82 [-]: GETIMPORT R7 29; var7 = _T["LootChallengeTimer"]["SetOffset"]
-      83 [-]: LOADN R8 30  ; var8 = 30
-      84 [-]: LOADN R9 0   ; var9 = 0
-      85 [-]: LOADB R10 1  ; var10 = true
-      86 [-]: CALL R7 4 1  ; var7(var8, var9, var10)
-      87 [-]: RETURN R0 0  ; 
+      65 [-]: GETIMPORT R8 22; var8 = 0x64FB1586
+      66 [-]: CALL R8 2 2  ; var8 = var8(var9)
+L 8:  67 [-]: LOADN R9 3   ; var9 = 3
+      68 [-]: CALL R7 3 1  ; var7(var8, var9)
+L 9:  69 [-]: GETIMPORT R7 24; var7 = _T["LootChallengeTimer"]["SetLabel"]
+      70 [-]: GETUPVAL R9 3; var9 = upvalues[3]
+      71 [-]: GETTABLEN R8 R9 2; var8 = var9[2]
+      72 [-]: CALL R7 2 1  ; var7(var8)
+      73 [-]: GETIMPORT R7 26; var7 = _T["LootChallengeTimer"]["StartTimer"]
+      74 [-]: MOVE R8 R0   ; var8 = var0
+      75 [-]: LOADB R9 0   ; var9 = false
+      76 [-]: LOADB R10 0  ; var10 = false
+      77 [-]: LOADB R11 0  ; var11 = false
+      78 [-]: CALL R7 5 1  ; var7(var8, var9, var10, var11)
+      79 [-]: GETIMPORT R7 28; var7 = _T["LootChallengeTimer"]["SetSortPriority"]
+      80 [-]: MOVE R8 R5   ; var8 = var5
+      81 [-]: LOADB R9 0   ; var9 = false
+      82 [-]: CALL R7 3 1  ; var7(var8, var9)
+      83 [-]: GETIMPORT R7 29; var7 = _T["LootChallengeTimer"]["SetOffset"]
+      84 [-]: LOADN R8 30  ; var8 = 30
+      85 [-]: LOADN R9 0   ; var9 = 0
+      86 [-]: LOADB R10 1  ; var10 = true
+      87 [-]: CALL R7 4 1  ; var7(var8, var9, var10)
+      88 [-]: RETURN R0 0  ; 
 
 
 ; Name:            
-; Defined at line: 1025
+; Defined at line: 1002
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
 ; Max Stack Size:  3
 
        0 [-]: GETIMPORT R1 2; var1 = _T["RemoveHudTracker"]
-       1 [-]: FASTCALL1 62 R1 L0; 
+       1 [-]: FASTCALL1 64 R1 L0; 
        2 [-]: GETIMPORT R0 4; var0 = 0x7B998233
        3 [-]: CALL R0 2 2  ; var0 = var0(var1)
 L 0:   4 [-]: JUMPIF R0 L1 ; goto L1 if var0
@@ -3175,7 +3042,7 @@ L 1:  13 [-]: GETIMPORT R0 8; var0 = _T
 
 
 ; Name:            
-; Defined at line: 1038
+; Defined at line: 1015
 ; #Upvalues:       3
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -3202,7 +3069,7 @@ L 1:  16 [-]: MOVE R2 R3   ; var2 = var3
       18 [-]: GETTABLE R5 R4 R2; var5 = var4[var2]
       19 [-]: JUMPXEQKNIL R5 L4; 
       20 [-]: GETTABLEKS R7 R5 K10; var7 = var5["Movie"]
-      21 [-]: FASTCALL1 62 R7 L2; 
+      21 [-]: FASTCALL1 64 R7 L2; 
       22 [-]: GETIMPORT R6 12; var6 = 0x7B998233
       23 [-]: CALL R6 2 2  ; var6 = var6(var7)
 L 2:  24 [-]: JUMPIFNOT R6 L3; goto L3 if not var6
@@ -3226,7 +3093,7 @@ L 5:  32 [-]: JUMPXEQKNIL R3 L6 NOT;
       42 [-]: GETIMPORT R4 3; var4 = _T["ObjectiveHudTracker"]
       43 [-]: SETTABLE R3 R4 R2; var3[var4] = var2
 L 6:  44 [-]: LOADK R4 K17 ; var4 = "/Lotus/Language/Objectives/GetToExtraction"
-      45 [-]: FASTCALL1 62 R0 L7; 
+      45 [-]: FASTCALL1 64 R0 L7; 
       46 [-]: MOVE R6 R0   ; var6 = var0
       47 [-]: GETIMPORT R5 12; var5 = 0x7B998233
       48 [-]: CALL R5 2 2  ; var5 = var5(var6)
@@ -3244,7 +3111,7 @@ L 8:  51 [-]: GETUPVAL R5 2; var5 = upvalues[2]
 
 
 ; Name:            
-; Defined at line: 1059
+; Defined at line: 1036
 ; #Upvalues:       2
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -3254,7 +3121,7 @@ L 8:  51 [-]: GETUPVAL R5 2; var5 = upvalues[2]
        1 [-]: CALL R3 1 2  ; var3 = var3()
        2 [-]: ADDK R2 R3 K0; var2 = var3 + 30
        3 [-]: GETIMPORT R4 3; var4 = _T["ExtractionTimer"]
-       4 [-]: FASTCALL1 62 R4 L0; 
+       4 [-]: FASTCALL1 64 R4 L0; 
        5 [-]: GETIMPORT R3 5; var3 = 0x7B998233
        6 [-]: CALL R3 2 2  ; var3 = var3(var4)
 L 0:   7 [-]: JUMPIFNOT R3 L1; goto L1 if not var3
@@ -3273,35 +3140,36 @@ L 0:   7 [-]: JUMPIFNOT R3 L1; goto L1 if not var3
       20 [-]: LOADN R5 5   ; var5 = 5
       21 [-]: LOADB R6 1   ; var6 = true
       22 [-]: CALL R3 4 1  ; var3(var4, var5, var6)
-L 1:  23 [-]: FASTCALL1 62 R1 L2; 
+L 1:  23 [-]: FASTCALL1 64 R1 L2; 
       24 [-]: MOVE R4 R1   ; var4 = var1
       25 [-]: GETIMPORT R3 5; var3 = 0x7B998233
       26 [-]: CALL R3 2 2  ; var3 = var3(var4)
-L 2:  27 [-]: JUMPIF R3 L3 ; goto L3 if var3
+L 2:  27 [-]: JUMPIF R3 L4 ; goto L4 if var3
       28 [-]: GETIMPORT R3 14; var3 = _T["ExtractionTimer"]["ShowMessage"]
-      29 [-]: GETIMPORT R4 16; var4 = 0x64FB1586
+      29 [-]: FASTCALL1 63 R1 L3; 
       30 [-]: MOVE R5 R1   ; var5 = var1
-      31 [-]: CALL R4 2 2  ; var4 = var4(var5)
-      32 [-]: LOADN R5 3   ; var5 = 3
-      33 [-]: CALL R3 3 1  ; var3(var4, var5)
-L 3:  34 [-]: GETIMPORT R3 18; var3 = _T["ExtractionTimer"]["SetLabel"]
-      35 [-]: LOADK R4 K19 ; var4 = "/Lotus/Language/Objectives/ExtractionCountdown"
-      36 [-]: CALL R3 2 1  ; var3(var4)
-      37 [-]: GETIMPORT R3 21; var3 = _T["ExtractionTimer"]["StartTimer"]
-      38 [-]: MOVE R4 R0   ; var4 = var0
-      39 [-]: LOADB R5 0   ; var5 = false
-      40 [-]: LOADB R6 1   ; var6 = true
-      41 [-]: LOADB R7 0   ; var7 = false
-      42 [-]: CALL R3 5 1  ; var3(var4, var5, var6, var7)
-      43 [-]: GETIMPORT R3 23; var3 = _T["ExtractionTimer"]["SetSortPriority"]
-      44 [-]: MOVE R4 R2   ; var4 = var2
-      45 [-]: LOADB R5 0   ; var5 = false
-      46 [-]: CALL R3 3 1  ; var3(var4, var5)
-      47 [-]: RETURN R0 0  ; 
+      31 [-]: GETIMPORT R4 16; var4 = 0x64FB1586
+      32 [-]: CALL R4 2 2  ; var4 = var4(var5)
+L 3:  33 [-]: LOADN R5 3   ; var5 = 3
+      34 [-]: CALL R3 3 1  ; var3(var4, var5)
+L 4:  35 [-]: GETIMPORT R3 18; var3 = _T["ExtractionTimer"]["SetLabel"]
+      36 [-]: LOADK R4 K19 ; var4 = "/Lotus/Language/Objectives/ExtractionCountdown"
+      37 [-]: CALL R3 2 1  ; var3(var4)
+      38 [-]: GETIMPORT R3 21; var3 = _T["ExtractionTimer"]["StartTimer"]
+      39 [-]: MOVE R4 R0   ; var4 = var0
+      40 [-]: LOADB R5 0   ; var5 = false
+      41 [-]: LOADB R6 1   ; var6 = true
+      42 [-]: LOADB R7 0   ; var7 = false
+      43 [-]: CALL R3 5 1  ; var3(var4, var5, var6, var7)
+      44 [-]: GETIMPORT R3 23; var3 = _T["ExtractionTimer"]["SetSortPriority"]
+      45 [-]: MOVE R4 R2   ; var4 = var2
+      46 [-]: LOADB R5 0   ; var5 = false
+      47 [-]: CALL R3 3 1  ; var3(var4, var5)
+      48 [-]: RETURN R0 0  ; 
 
 
 ; Name:            
-; Defined at line: 1075
+; Defined at line: 1052
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -3310,7 +3178,7 @@ L 3:  34 [-]: GETIMPORT R3 18; var3 = _T["ExtractionTimer"]["SetLabel"]
        0 [-]: GETUPVAL R0 0; var0 = upvalues[0]
        1 [-]: CALL R0 1 1  ; var0()
        2 [-]: GETIMPORT R1 2; var1 = _T["ExtractionTimer"]
-       3 [-]: FASTCALL1 62 R1 L0; 
+       3 [-]: FASTCALL1 64 R1 L0; 
        4 [-]: GETIMPORT R0 4; var0 = 0x7B998233
        5 [-]: CALL R0 2 2  ; var0 = var0(var1)
 L 0:   6 [-]: JUMPIF R0 L1 ; goto L1 if var0
@@ -3322,14 +3190,14 @@ L 1:  10 [-]: LOADN R0 0   ; var0 = 0
 
 
 ; Name:            
-; Defined at line: 1084
+; Defined at line: 1061
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
 ; Max Stack Size:  3
 
        0 [-]: GETIMPORT R1 2; var1 = _T["RemoveHudTracker"]
-       1 [-]: FASTCALL1 62 R1 L0; 
+       1 [-]: FASTCALL1 64 R1 L0; 
        2 [-]: GETIMPORT R0 4; var0 = 0x7B998233
        3 [-]: CALL R0 2 2  ; var0 = var0(var1)
 L 0:   4 [-]: JUMPIF R0 L1 ; goto L1 if var0
@@ -3344,14 +3212,14 @@ L 1:   9 [-]: GETIMPORT R0 7; var0 = _T
 
 
 ; Name:            
-; Defined at line: 1092
+; Defined at line: 1069
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
 ; Max Stack Size:  3
 
        0 [-]: GETIMPORT R1 2; var1 = _T["RemoveHudTracker"]
-       1 [-]: FASTCALL1 62 R1 L0; 
+       1 [-]: FASTCALL1 64 R1 L0; 
        2 [-]: GETIMPORT R0 4; var0 = 0x7B998233
        3 [-]: CALL R0 2 2  ; var0 = var0(var1)
 L 0:   4 [-]: JUMPIF R0 L1 ; goto L1 if var0
@@ -3366,7 +3234,7 @@ L 1:   9 [-]: GETIMPORT R0 7; var0 = _T
 
 
 ; Name:            
-; Defined at line: 1103
+; Defined at line: 1080
 ; #Upvalues:       2
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -3377,26 +3245,26 @@ L 1:   9 [-]: GETIMPORT R0 7; var0 = _T
        2 [-]: CALL R0 2 2  ; var0 = var0(var1)
        3 [-]: NAMECALL R0 R0 K3; var1 = var0; var0 = var0[0x8E7C3B5E]
        4 [-]: CALL R0 2 2  ; var0 = var0(var1)
-       5 [-]: FASTCALL1 62 R0 L0; 
+       5 [-]: FASTCALL1 64 R0 L0; 
        6 [-]: MOVE R2 R0   ; var2 = var0
        7 [-]: GETIMPORT R1 5; var1 = 0x7B998233
        8 [-]: CALL R1 2 2  ; var1 = var1(var2)
 L 0:   9 [-]: JUMPIF R1 L1 ; goto L1 if var1
       10 [-]: GETUPVAL R1 0; var1 = upvalues[0]
-      11 [-]: JUMPIFNOTEQ R0 R1 L1; goto L1 if var0 ~= var459086
+      11 [-]: JUMPIFNOTEQ R0 R1 L1; goto L1 if var0 ~= var459041
       12 [-]: GETIMPORT R1 7; var1 = 0x3D106989
       13 [-]: LOADK R2 K8  ; var2 = "SolarisQuest is active, no Bonus UI"
       14 [-]: CALL R1 2 1  ; var1(var2)
       15 [-]: LOADB R1 0   ; var1 = false
       16 [-]: RETURN R1 1  ; 
 L 1:  17 [-]: GETIMPORT R2 11; var2 = _T["ActiveJob"]
-      18 [-]: FASTCALL1 62 R2 L2; 
+      18 [-]: FASTCALL1 64 R2 L2; 
       19 [-]: GETIMPORT R1 5; var1 = 0x7B998233
       20 [-]: CALL R1 2 2  ; var1 = var1(var2)
 L 2:  21 [-]: JUMPIF R1 L3 ; goto L3 if var1
       22 [-]: GETIMPORT R1 13; var1 = _T["ActiveJob"]["jobType"]
       23 [-]: GETUPVAL R2 1; var2 = upvalues[1]
-      24 [-]: JUMPIFNOTEQ R1 R2 L3; goto L3 if var1 ~= var459086
+      24 [-]: JUMPIFNOTEQ R1 R2 L3; goto L3 if var1 ~= var459041
       25 [-]: GETIMPORT R1 7; var1 = 0x3D106989
       26 [-]: LOADK R2 K14 ; var2 = "TC Demo active, no bonus UI"
       27 [-]: CALL R1 2 1  ; var1(var2)
@@ -3407,7 +3275,7 @@ L 3:  30 [-]: LOADB R1 1   ; var1 = true
 
 
 ; Name:            
-; Defined at line: 1119
+; Defined at line: 1096
 ; #Upvalues:       3
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -3431,7 +3299,7 @@ L 0:   4 [-]: GETUPVAL R3 1; var3 = upvalues[1]
       15 [-]: SETTABLEKS R4 R3 K7; var4["BonusTracker"] = var3
       16 [-]: LOADK R4 K8  ; var4 = "<p><font face=\"Noto Sans\" color=\""
       17 [-]: GETIMPORT R7 10; var7 = _T["BonusTracker"]["Colorize"]
-      18 [-]: LOADN R8 38  ; var8 = 38
+      18 [-]: LOADN R8 39  ; var8 = 39
       19 [-]: CALL R7 2 2  ; var7 = var7(var8)
       20 [-]: MOVE R5 R7   ; var5 = var7
       21 [-]: LOADK R6 K11 ; var6 = "\">"
@@ -3467,7 +3335,7 @@ L 0:   4 [-]: GETUPVAL R3 1; var3 = upvalues[1]
 
 
 ; Name:            
-; Defined at line: 1135
+; Defined at line: 1112
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -3485,13 +3353,13 @@ L 0:   4 [-]: GETIMPORT R2 2; var2 = _T["BonusTracker"]
        9 [-]: CALL R3 2 2  ; var3 = var3(var4)
       10 [-]: SETTABLEKS R3 R2 K1; var3["BonusTracker"] = var2
 L 1:  11 [-]: GETIMPORT R3 2; var3 = _T["BonusTracker"]
-      12 [-]: FASTCALL1 62 R3 L2; 
+      12 [-]: FASTCALL1 64 R3 L2; 
       13 [-]: GETIMPORT R2 8; var2 = 0x7B998233
       14 [-]: CALL R2 2 2  ; var2 = var2(var3)
 L 2:  15 [-]: JUMPIF R2 L3 ; goto L3 if var2
       16 [-]: LOADK R3 K9  ; var3 = "<p><font face=\"Noto Sans\" color=\""
       17 [-]: GETIMPORT R6 11; var6 = _T["BonusTracker"]["Colorize"]
-      18 [-]: LOADN R7 38  ; var7 = 38
+      18 [-]: LOADN R7 39  ; var7 = 39
       19 [-]: CALL R6 2 2  ; var6 = var6(var7)
       20 [-]: MOVE R4 R6   ; var4 = var6
       21 [-]: LOADK R5 K12 ; var5 = "\">"
@@ -3526,7 +3394,7 @@ L 3:  46 [-]: GETIMPORT R2 23; var2 = 0x3D106989
 
 
 ; Name:            
-; Defined at line: 1154
+; Defined at line: 1131
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -3544,13 +3412,13 @@ L 0:   4 [-]: GETIMPORT R2 2; var2 = _T["BonusTracker"]
        9 [-]: CALL R3 2 2  ; var3 = var3(var4)
       10 [-]: SETTABLEKS R3 R2 K1; var3["BonusTracker"] = var2
 L 1:  11 [-]: GETIMPORT R3 2; var3 = _T["BonusTracker"]
-      12 [-]: FASTCALL1 62 R3 L2; 
+      12 [-]: FASTCALL1 64 R3 L2; 
       13 [-]: GETIMPORT R2 8; var2 = 0x7B998233
       14 [-]: CALL R2 2 2  ; var2 = var2(var3)
 L 2:  15 [-]: JUMPIF R2 L3 ; goto L3 if var2
       16 [-]: LOADK R3 K9  ; var3 = "<p><font face=\"Noto Sans\" color=\""
       17 [-]: GETIMPORT R6 11; var6 = _T["BonusTracker"]["Colorize"]
-      18 [-]: LOADN R7 10  ; var7 = 10
+      18 [-]: LOADN R7 11  ; var7 = 11
       19 [-]: CALL R6 2 2  ; var6 = var6(var7)
       20 [-]: MOVE R4 R6   ; var4 = var6
       21 [-]: LOADK R5 K12 ; var5 = "\">"
@@ -3585,7 +3453,7 @@ L 3:  46 [-]: GETIMPORT R2 23; var2 = 0x3D106989
 
 
 ; Name:            
-; Defined at line: 1173
+; Defined at line: 1150
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -3603,12 +3471,12 @@ L 0:   4 [-]: GETIMPORT R0 2; var0 = _T["BonusTracker"]
        9 [-]: CALL R1 2 2  ; var1 = var1(var2)
       10 [-]: SETTABLEKS R1 R0 K1; var1["BonusTracker"] = var0
 L 1:  11 [-]: GETIMPORT R1 2; var1 = _T["BonusTracker"]
-      12 [-]: FASTCALL1 62 R1 L2; 
+      12 [-]: FASTCALL1 64 R1 L2; 
       13 [-]: GETIMPORT R0 8; var0 = 0x7B998233
       14 [-]: CALL R0 2 2  ; var0 = var0(var1)
 L 2:  15 [-]: JUMPIF R0 L4 ; goto L4 if var0
       16 [-]: GETIMPORT R1 10; var1 = _T["RemoveHudTracker"]
-      17 [-]: FASTCALL1 62 R1 L3; 
+      17 [-]: FASTCALL1 64 R1 L3; 
       18 [-]: GETIMPORT R0 8; var0 = 0x7B998233
       19 [-]: CALL R0 2 2  ; var0 = var0(var1)
 L 3:  20 [-]: JUMPIF R0 L4 ; goto L4 if var0
@@ -3623,7 +3491,7 @@ L 4:  25 [-]: GETIMPORT R0 12; var0 = 0x3D106989
 
 
 ; Name:            
-; Defined at line: 1192
+; Defined at line: 1169
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -3633,7 +3501,7 @@ L 4:  25 [-]: GETIMPORT R0 12; var0 = 0x3D106989
        1 [-]: CALL R2 1 2  ; var2 = var2()
        2 [-]: ADDK R1 R2 K0; var1 = var2 + 20
        3 [-]: GETIMPORT R3 3; var3 = _T["BountyTitleTracker"]
-       4 [-]: FASTCALL1 62 R3 L0; 
+       4 [-]: FASTCALL1 64 R3 L0; 
        5 [-]: GETIMPORT R2 5; var2 = 0x7B998233
        6 [-]: CALL R2 2 2  ; var2 = var2(var3)
 L 0:   7 [-]: JUMPIFNOT R2 L1; goto L1 if not var2
@@ -3654,7 +3522,7 @@ L 1:  18 [-]: GETIMPORT R2 13; var2 = _T["BountyTitleTracker"]["Localize"]
       22 [-]: CALL R2 4 2  ; var2 = var2(var3, var4, var5)
       23 [-]: LOADK R4 K14 ; var4 = "<p><font face=\"Noto Sans\" color=\""
       24 [-]: GETIMPORT R9 16; var9 = _T["BountyTitleTracker"]["Colorize"]
-      25 [-]: LOADN R10 38 ; var10 = 38
+      25 [-]: LOADN R10 39 ; var10 = 39
       26 [-]: CALL R9 2 2  ; var9 = var9(var10)
       27 [-]: MOVE R5 R9   ; var5 = var9
       28 [-]: LOADK R6 K17 ; var6 = "\"><b>"
@@ -3672,22 +3540,22 @@ L 1:  18 [-]: GETIMPORT R2 13; var2 = _T["BountyTitleTracker"]["Localize"]
 
 
 ; Name:            
-; Defined at line: 1205
+; Defined at line: 1182
 ; #Upvalues:       3
 ; #Parameters:     5
 ; Is_vararg:       0
 ; Max Stack Size:  22
 
-       0 [-]: FASTCALL1 62 R0 L0; 
+       0 [-]: FASTCALL1 64 R0 L0; 
        1 [-]: MOVE R6 R0   ; var6 = var0
        2 [-]: GETIMPORT R5 1; var5 = 0x7B998233
        3 [-]: CALL R5 2 2  ; var5 = var5(var6)
 L 0:   4 [-]: JUMPIF R5 L1 ; goto L1 if var5
        5 [-]: LOADN R5 0   ; var5 = 0
-       6 [-]: JUMPIFNOTLE R0 R5 L2; goto L2 if var0 > var65607
+       6 [-]: JUMPIFNOTLE R0 R5 L2; goto L2 if var0 > var65584
 L 1:   7 [-]: LOADN R0 1   ; var0 = 1
 L 2:   8 [-]: GETIMPORT R6 4; var6 = _T["ZarimanBountyTrackers"]
-       9 [-]: FASTCALL1 62 R6 L3; 
+       9 [-]: FASTCALL1 64 R6 L3; 
       10 [-]: GETIMPORT R5 1; var5 = 0x7B998233
       11 [-]: CALL R5 2 2  ; var5 = var5(var6)
 L 3:  12 [-]: JUMPIFNOT R5 L4; goto L4 if not var5
@@ -3696,7 +3564,7 @@ L 3:  12 [-]: JUMPIFNOT R5 L4; goto L4 if not var5
       15 [-]: SETTABLEKS R6 R5 K3; var6["ZarimanBountyTrackers"] = var5
 L 4:  16 [-]: GETIMPORT R7 4; var7 = _T["ZarimanBountyTrackers"]
       17 [-]: GETTABLE R6 R7 R0; var6 = var7[var0]
-      18 [-]: FASTCALL1 62 R6 L5; 
+      18 [-]: FASTCALL1 64 R6 L5; 
       19 [-]: GETIMPORT R5 1; var5 = 0x7B998233
       20 [-]: CALL R5 2 2  ; var5 = var5(var6)
 L 5:  21 [-]: JUMPIFNOT R5 L6; goto L6 if not var5
@@ -3727,7 +3595,7 @@ L 6:  45 [-]: LOADK R6 K12 ; var6 = "<p><font face=\"Noto Sans\" color=\""
       46 [-]: GETIMPORT R11 4; var11 = _T["ZarimanBountyTrackers"]
       47 [-]: GETTABLE R10 R11 R0; var10 = var11[var0]
       48 [-]: GETTABLEKS R9 R10 K13; var9 = var10["Colorize"]
-      49 [-]: LOADN R10 38 ; var10 = 38
+      49 [-]: LOADN R10 39 ; var10 = 39
       50 [-]: CALL R9 2 2  ; var9 = var9(var10)
       51 [-]: MOVE R7 R9   ; var7 = var9
       52 [-]: LOADK R8 K14 ; var8 = "\">"
@@ -3739,7 +3607,7 @@ L 6:  45 [-]: LOADK R6 K12 ; var6 = "<p><font face=\"Noto Sans\" color=\""
       58 [-]: GETIMPORT R12 4; var12 = _T["ZarimanBountyTrackers"]
       59 [-]: GETTABLE R11 R12 R0; var11 = var12[var0]
       60 [-]: GETTABLEKS R10 R11 K13; var10 = var11["Colorize"]
-      61 [-]: LOADN R11 10 ; var11 = 10
+      61 [-]: LOADN R11 11 ; var11 = 11
       62 [-]: CALL R10 2 2 ; var10 = var10(var11)
       63 [-]: MOVE R8 R10  ; var8 = var10
       64 [-]: LOADK R9 K14 ; var9 = "\">"
@@ -3793,7 +3661,7 @@ L 8:  69 [-]: DUPTABLE R7 21;
 
 
 ; Name:            
-; Defined at line: 1235
+; Defined at line: 1212
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -3807,12 +3675,12 @@ L 8:  69 [-]: DUPTABLE R7 21;
        5 [-]: CALL R1 2 2  ; var1 = var1(var2)
        6 [-]: SETTABLEKS R1 R0 K1; var1["ZarimanBountyTracker"] = var0
 L 0:   7 [-]: GETIMPORT R1 2; var1 = _T["ZarimanBountyTracker"]
-       8 [-]: FASTCALL1 62 R1 L1; 
+       8 [-]: FASTCALL1 64 R1 L1; 
        9 [-]: GETIMPORT R0 8; var0 = 0x7B998233
       10 [-]: CALL R0 2 2  ; var0 = var0(var1)
 L 1:  11 [-]: JUMPIF R0 L3 ; goto L3 if var0
       12 [-]: GETIMPORT R1 10; var1 = _T["RemoveHudTracker"]
-      13 [-]: FASTCALL1 62 R1 L2; 
+      13 [-]: FASTCALL1 64 R1 L2; 
       14 [-]: GETIMPORT R0 8; var0 = 0x7B998233
       15 [-]: CALL R0 2 2  ; var0 = var0(var1)
 L 2:  16 [-]: JUMPIF R0 L3 ; goto L3 if var0
@@ -3827,7 +3695,7 @@ L 3:  21 [-]: GETIMPORT R0 12; var0 = 0x3D106989
 
 
 ; Name:            
-; Defined at line: 1249
+; Defined at line: 1226
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -3839,71 +3707,70 @@ L 3:  21 [-]: GETIMPORT R0 12; var0 = 0x3D106989
 
 
 ; Name:            
-; Defined at line: 1255
-; #Upvalues:       1
+; Defined at line: 1232
+; #Upvalues:       0
 ; #Parameters:     3
 ; Is_vararg:       0
 ; Max Stack Size:  15
 
-       0 [-]: SETUPVAL R0 0; upvalues[0] = var0
-       1 [-]: GETIMPORT R3 1; var3 = 0x64FB1586
-       2 [-]: MOVE R4 R0   ; var4 = var0
+       0 [-]: FASTCALL1 63 R0 L0; 
+       1 [-]: MOVE R4 R0   ; var4 = var0
+       2 [-]: GETIMPORT R3 1; var3 = 0x64FB1586
        3 [-]: CALL R3 2 2  ; var3 = var3(var4)
-       4 [-]: MOVE R0 R3   ; var0 = var3
-       5 [-]: GETIMPORT R3 4; var3 = 0x03F57322
+L 0:   4 [-]: MOVE R0 R3   ; var0 = var3
+       5 [-]: FASTCALL1 62 R1 L1; 
        6 [-]: MOVE R4 R1   ; var4 = var1
-       7 [-]: CALL R3 2 2  ; var3 = var3(var4)
-       8 [-]: ORK R1 R3 K2 ; var1 = var3 or -1
-       9 [-]: GETIMPORT R3 7; var3 = _T["ShowImpactMessage"]
-      10 [-]: MOVE R4 R0   ; var4 = var0
-      11 [-]: MOVE R5 R1   ; var5 = var1
-      12 [-]: LOADB R6 1   ; var6 = true
-      13 [-]: LOADNIL R7   ; var7 = nil
-      14 [-]: LOADB R8 0   ; var8 = false
-      15 [-]: LOADNIL R9   ; var9 = nil
-      16 [-]: LOADN R10 3  ; var10 = 3
-      17 [-]: LOADNIL R11  ; var11 = nil
-      18 [-]: LOADNIL R12  ; var12 = nil
-      19 [-]: LOADNIL R13  ; var13 = nil
-      20 [-]: MOVE R14 R2  ; var14 = var2
-      21 [-]: CALL R3 12 1 ; var3(var4, var5, var6, var7, var8, var9, var10, var11, var12, var13, var14)
-      22 [-]: GETIMPORT R3 8; var3 = _T
-      23 [-]: LOADB R4 1   ; var4 = true
-      24 [-]: SETTABLEKS R4 R3 K9; var4["HintActive"] = var3
-      25 [-]: RETURN R0 0  ; 
+       7 [-]: GETIMPORT R3 4; var3 = 0x03F57322
+       8 [-]: CALL R3 2 2  ; var3 = var3(var4)
+L 1:   9 [-]: ORK R1 R3 K2 ; var1 = var3 or -1
+      10 [-]: GETIMPORT R3 7; var3 = _T["ShowImpactMessage"]
+      11 [-]: MOVE R4 R0   ; var4 = var0
+      12 [-]: MOVE R5 R1   ; var5 = var1
+      13 [-]: LOADB R6 1   ; var6 = true
+      14 [-]: LOADNIL R7   ; var7 = nil
+      15 [-]: LOADB R8 0   ; var8 = false
+      16 [-]: LOADNIL R9   ; var9 = nil
+      17 [-]: LOADN R10 3  ; var10 = 3
+      18 [-]: LOADNIL R11  ; var11 = nil
+      19 [-]: LOADNIL R12  ; var12 = nil
+      20 [-]: LOADNIL R13  ; var13 = nil
+      21 [-]: MOVE R14 R2  ; var14 = var2
+      22 [-]: CALL R3 12 1 ; var3(var4, var5, var6, var7, var8, var9, var10, var11, var12, var13, var14)
+      23 [-]: GETIMPORT R3 8; var3 = _T
+      24 [-]: LOADB R4 1   ; var4 = true
+      25 [-]: SETTABLEKS R4 R3 K9; var4["HintActive"] = var3
+      26 [-]: RETURN R0 0  ; 
 
 
 ; Name:            
-; Defined at line: 1263
-; #Upvalues:       1
+; Defined at line: 1239
+; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
 ; Max Stack Size:  2
 
-       0 [-]: LOADNIL R0   ; var0 = nil
-       1 [-]: SETUPVAL R0 0; upvalues[0] = var0
-       2 [-]: GETIMPORT R1 2; var1 = _T["HideImpactMessage"]
-       3 [-]: FASTCALL1 62 R1 L0; 
-       4 [-]: GETIMPORT R0 4; var0 = 0x7B998233
-       5 [-]: CALL R0 2 2  ; var0 = var0(var1)
-L 0:   6 [-]: JUMPIF R0 L1 ; goto L1 if var0
-       7 [-]: GETIMPORT R0 2; var0 = _T["HideImpactMessage"]
-       8 [-]: CALL R0 1 1  ; var0()
-L 1:   9 [-]: GETIMPORT R0 5; var0 = _T
-      10 [-]: LOADB R1 0   ; var1 = false
-      11 [-]: SETTABLEKS R1 R0 K6; var1["HintActive"] = var0
-      12 [-]: RETURN R0 0  ; 
+       0 [-]: GETIMPORT R1 2; var1 = _T["HideImpactMessage"]
+       1 [-]: FASTCALL1 64 R1 L0; 
+       2 [-]: GETIMPORT R0 4; var0 = 0x7B998233
+       3 [-]: CALL R0 2 2  ; var0 = var0(var1)
+L 0:   4 [-]: JUMPIF R0 L1 ; goto L1 if var0
+       5 [-]: GETIMPORT R0 2; var0 = _T["HideImpactMessage"]
+       6 [-]: CALL R0 1 1  ; var0()
+L 1:   7 [-]: GETIMPORT R0 5; var0 = _T
+       8 [-]: LOADB R1 0   ; var1 = false
+       9 [-]: SETTABLEKS R1 R0 K6; var1["HintActive"] = var0
+      10 [-]: RETURN R0 0  ; 
 
 
 ; Name:            
-; Defined at line: 1273
+; Defined at line: 1248
 ; #Upvalues:       0
 ; #Parameters:     4
 ; Is_vararg:       0
 ; Max Stack Size:  6
 
        0 [-]: GETIMPORT R5 2; var5 = _T["AddHudTracker"]
-       1 [-]: FASTCALL1 62 R5 L0; 
+       1 [-]: FASTCALL1 64 R5 L0; 
        2 [-]: GETIMPORT R4 4; var4 = 0x7B998233
        3 [-]: CALL R4 2 2  ; var4 = var4(var5)
 L 0:   4 [-]: JUMPIFNOT R4 L1; goto L1 if not var4
@@ -3912,14 +3779,14 @@ L 1:   6 [-]: RETURN R0 0  ;
 
 
 ; Name:            
-; Defined at line: 1293
+; Defined at line: 1268
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
 ; Max Stack Size:  3
 
        0 [-]: GETIMPORT R1 2; var1 = _T["RemoveHudTracker"]
-       1 [-]: FASTCALL1 62 R1 L0; 
+       1 [-]: FASTCALL1 64 R1 L0; 
        2 [-]: GETIMPORT R0 4; var0 = 0x7B998233
        3 [-]: CALL R0 2 2  ; var0 = var0(var1)
 L 0:   4 [-]: JUMPIF R0 L1 ; goto L1 if var0
@@ -3934,7 +3801,7 @@ L 1:   9 [-]: GETIMPORT R0 7; var0 = _T
 
 
 ; Name:            
-; Defined at line: 1303
+; Defined at line: 1278
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -3954,7 +3821,7 @@ L 1:   9 [-]: FORGLOOP R1 L0 2 [inext];
 
 
 ; Name:            
-; Defined at line: 1309
+; Defined at line: 1284
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -3966,7 +3833,7 @@ L 1:   9 [-]: FORGLOOP R1 L0 2 [inext];
 
 
 ; Name:            
-; Defined at line: 1313
+; Defined at line: 1288
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -3976,7 +3843,7 @@ L 1:   9 [-]: FORGLOOP R1 L0 2 [inext];
        1 [-]: LOADN R2 0   ; var2 = 0
        2 [-]: JUMPIF R0 L1 ; goto L1 if var0
        3 [-]: GETIMPORT R4 2; var4 = _T["ObjectiveHudTracker"]
-       4 [-]: FASTCALL1 62 R4 L0; 
+       4 [-]: FASTCALL1 64 R4 L0; 
        5 [-]: GETIMPORT R3 4; var3 = 0x7B998233
        6 [-]: CALL R3 2 2  ; var3 = var3(var4)
 L 0:   7 [-]: JUMPIF R3 L2 ; goto L2 if var3
@@ -3986,7 +3853,7 @@ L 2:  10 [-]: RETURN R1 2  ;
 
 
 ; Name:            
-; Defined at line: 1323
+; Defined at line: 1298
 ; #Upvalues:       1
 ; #Parameters:     7
 ; Is_vararg:       0

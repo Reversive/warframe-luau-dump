@@ -96,60 +96,61 @@
       89 [-]: CAPTURE VAL R31; 
       90 [-]: CAPTURE REF R6; 
       91 [-]: CAPTURE VAL R28; 
-      92 [-]: CAPTURE VAL R32; 
-      93 [-]: CAPTURE REF R22; 
-      94 [-]: NEWCLOSURE R34 P6; 
-      95 [-]: CAPTURE REF R6; 
-      96 [-]: CAPTURE REF R5; 
-      97 [-]: CAPTURE REF R7; 
-      98 [-]: CAPTURE REF R11; 
-      99 [-]: CAPTURE REF R8; 
-     100 [-]: CAPTURE REF R9; 
-     101 [-]: CAPTURE REF R10; 
-     102 [-]: CAPTURE REF R15; 
-     103 [-]: CAPTURE REF R12; 
-     104 [-]: CAPTURE REF R17; 
-     105 [-]: CAPTURE REF R16; 
-     106 [-]: CAPTURE REF R19; 
-     107 [-]: CAPTURE REF R14; 
-     108 [-]: CAPTURE VAL R1; 
-     109 [-]: CAPTURE VAL R33; 
-     110 [-]: CAPTURE VAL R25; 
-     111 [-]: CAPTURE VAL R26; 
-     112 [-]: CAPTURE REF R13; 
-     113 [-]: CAPTURE VAL R3; 
-     114 [-]: CAPTURE REF R21; 
-     115 [-]: CAPTURE REF R22; 
-     116 [-]: CAPTURE VAL R0; 
-     117 [-]: NEWCLOSURE R35 P7; 
-     118 [-]: CAPTURE VAL R34; 
-     119 [-]: CAPTURE REF R14; 
-     120 [-]: CAPTURE REF R21; 
-     121 [-]: CAPTURE VAL R4; 
-     122 [-]: CAPTURE VAL R31; 
-     123 [-]: CAPTURE VAL R23; 
-     124 [-]: CAPTURE VAL R24; 
-     125 [-]: CAPTURE REF R6; 
-     126 [-]: CAPTURE REF R18; 
-     127 [-]: CAPTURE REF R22; 
-     128 [-]: CAPTURE REF R13; 
-     129 [-]: CAPTURE VAL R1; 
-     130 [-]: CAPTURE REF R7; 
-     131 [-]: SETGLOBAL R35 K13; "Start" = var35
-     132 [-]: DUPCLOSURE R35 K14; 
-     133 [-]: SETGLOBAL R35 K15; "DefenseConsoleHacked" = var35
-     134 [-]: DUPCLOSURE R35 K16; 
-     135 [-]: SETGLOBAL R35 K17; "AmarystConsoleHacked" = var35
-     136 [-]: NEWCLOSURE R35 P10; 
-     137 [-]: CAPTURE VAL R1; 
-     138 [-]: CAPTURE REF R7; 
-     139 [-]: SETGLOBAL R35 K18; "PlayersLeaving" = var35
-     140 [-]: NEWCLOSURE R35 P11; 
-     141 [-]: CAPTURE VAL R1; 
-     142 [-]: CAPTURE REF R7; 
-     143 [-]: SETGLOBAL R35 K19; "PlayersReturning" = var35
-     144 [-]: CLOSEUPVALS R5; 
-     145 [-]: RETURN R0 0  ; 
+      92 [-]: CAPTURE VAL R1; 
+      93 [-]: CAPTURE REF R11; 
+      94 [-]: CAPTURE REF R22; 
+      95 [-]: NEWCLOSURE R34 P6; 
+      96 [-]: CAPTURE REF R6; 
+      97 [-]: CAPTURE REF R5; 
+      98 [-]: CAPTURE REF R7; 
+      99 [-]: CAPTURE REF R11; 
+     100 [-]: CAPTURE REF R8; 
+     101 [-]: CAPTURE REF R9; 
+     102 [-]: CAPTURE REF R10; 
+     103 [-]: CAPTURE REF R15; 
+     104 [-]: CAPTURE REF R12; 
+     105 [-]: CAPTURE REF R17; 
+     106 [-]: CAPTURE REF R16; 
+     107 [-]: CAPTURE REF R19; 
+     108 [-]: CAPTURE REF R14; 
+     109 [-]: CAPTURE VAL R1; 
+     110 [-]: CAPTURE VAL R33; 
+     111 [-]: CAPTURE VAL R25; 
+     112 [-]: CAPTURE VAL R26; 
+     113 [-]: CAPTURE REF R13; 
+     114 [-]: CAPTURE VAL R3; 
+     115 [-]: CAPTURE REF R21; 
+     116 [-]: CAPTURE REF R22; 
+     117 [-]: CAPTURE VAL R0; 
+     118 [-]: NEWCLOSURE R35 P7; 
+     119 [-]: CAPTURE VAL R34; 
+     120 [-]: CAPTURE REF R14; 
+     121 [-]: CAPTURE REF R21; 
+     122 [-]: CAPTURE VAL R4; 
+     123 [-]: CAPTURE VAL R31; 
+     124 [-]: CAPTURE VAL R23; 
+     125 [-]: CAPTURE VAL R24; 
+     126 [-]: CAPTURE REF R6; 
+     127 [-]: CAPTURE REF R18; 
+     128 [-]: CAPTURE REF R22; 
+     129 [-]: CAPTURE REF R13; 
+     130 [-]: CAPTURE VAL R1; 
+     131 [-]: CAPTURE REF R7; 
+     132 [-]: SETGLOBAL R35 K13; "Start" = var35
+     133 [-]: DUPCLOSURE R35 K14; 
+     134 [-]: SETGLOBAL R35 K15; "DefenseConsoleHacked" = var35
+     135 [-]: DUPCLOSURE R35 K16; 
+     136 [-]: SETGLOBAL R35 K17; "AmarystConsoleHacked" = var35
+     137 [-]: NEWCLOSURE R35 P10; 
+     138 [-]: CAPTURE VAL R1; 
+     139 [-]: CAPTURE REF R7; 
+     140 [-]: SETGLOBAL R35 K18; "PlayersLeaving" = var35
+     141 [-]: NEWCLOSURE R35 P11; 
+     142 [-]: CAPTURE VAL R1; 
+     143 [-]: CAPTURE REF R7; 
+     144 [-]: SETGLOBAL R35 K19; "PlayersReturning" = var35
+     145 [-]: CLOSEUPVALS R5; 
+     146 [-]: RETURN R0 0  ; 
 
 
 ; Name:            
@@ -160,7 +161,7 @@
 ; Max Stack Size:  7
 
        0 [-]: GETUPVAL R2 0; var2 = upvalues[0]
-       1 [-]: FASTCALL1 62 R2 L0; 
+       1 [-]: FASTCALL1 64 R2 L0; 
        2 [-]: GETIMPORT R1 1; var1 = 0x7B998233
        3 [-]: CALL R1 2 2  ; var1 = var1(var2)
 L 0:   4 [-]: JUMPIF R1 L2 ; goto L2 if var1
@@ -221,14 +222,14 @@ L 2:  38 [-]: RETURN R0 0  ;
       11 [-]: CALL R2 2 2  ; var2 = var2(var3)
       12 [-]: GETTABLEN R1 R2 1; var1 = var2[1]
       13 [-]: LOADNIL R2   ; var2 = nil
-L 0:  14 [-]: FASTCALL1 62 R2 L1; 
+L 0:  14 [-]: FASTCALL1 64 R2 L1; 
       15 [-]: MOVE R4 R2   ; var4 = var2
       16 [-]: GETIMPORT R3 7; var3 = 0x7B998233
       17 [-]: CALL R3 2 2  ; var3 = var3(var4)
 L 1:  18 [-]: JUMPIFNOT R3 L4; goto L4 if not var3
       19 [-]: NAMECALL R3 R1 K8; var4 = var1; var3 = var1[0x1E3535E5]
       20 [-]: CALL R3 2 2  ; var3 = var3(var4)
-      21 [-]: FASTCALL1 62 R3 L2; 
+      21 [-]: FASTCALL1 64 R3 L2; 
       22 [-]: MOVE R5 R3   ; var5 = var3
       23 [-]: GETIMPORT R4 7; var4 = 0x7B998233
       24 [-]: CALL R4 2 2  ; var4 = var4(var5)
@@ -271,18 +272,18 @@ L 1:   9 [-]: GETIMPORT R2 4; var2 = 0x5BCED4C4[0x3630E649]
       14 [-]: FORNPREP R3 L6; nforprep start - [escape at L6] -- var3 = iterator
 L 2:  15 [-]: LOADN R6 0   ; var6 = 0
       16 [-]: LOADN R7 1   ; var7 = 1
-      17 [-]: JUMPIFNOTLT R7 R5 L3; goto L3 if var7 >= var84215847
+      17 [-]: JUMPIFNOTLT R7 R5 L3; goto L3 if var7 >= var84215810
       18 [-]: SUBK R8 R5 K5; var8 = var5 - 1
       19 [-]: GETTABLE R7 R0 R8; var7 = var0[var8]
       20 [-]: DIV R6 R7 R1 ; var6 = var7 / var1
-L 3:  21 [-]: LOADK R7 K6  ; var7 = 1.1000000000000001
+L 3:  21 [-]: LOADK R7 K6  ; var7 = 1.1000000238418579
       22 [-]: LENGTH R8 R0 ; var8 = #var0
-      23 [-]: JUMPIFNOTLT R5 R8 L4; goto L4 if var5 >= var84216104
+      23 [-]: JUMPIFNOTLT R5 R8 L4; goto L4 if var5 >= var84216072
       24 [-]: ADDK R9 R5 K5; var9 = var5 + 1
       25 [-]: GETTABLE R8 R0 R9; var8 = var0[var9]
       26 [-]: DIV R7 R8 R1 ; var7 = var8 / var1
-L 4:  27 [-]: JUMPIFNOTLE R6 R2 L5; goto L5 if var6 > var328204
-      28 [-]: JUMPIFNOTLT R2 R7 L5; goto L5 if var2 >= var526670
+L 4:  27 [-]: JUMPIFNOTLE R6 R2 L5; goto L5 if var6 > var328256
+      28 [-]: JUMPIFNOTLT R2 R7 L5; goto L5 if var2 >= var526625
       29 [-]: GETIMPORT R9 8; var9 = 0xCC240205
       30 [-]: GETTABLE R8 R9 R5; var8 = var9[var5]
       31 [-]: RETURN R8 1  ; 
@@ -301,10 +302,10 @@ L 6:  33 [-]: RETURN R0 0  ;
        1 [-]: NAMECALL R0 R0 K0; var1 = var0; var0 = var0[0x39E33D94]
        2 [-]: CALL R0 2 2  ; var0 = var0(var1)
        3 [-]: LOADN R1 7   ; var1 = 7
-       4 [-]: JUMPIFNOTLT R0 R1 L2; goto L2 if var0 >= var65863
+       4 [-]: JUMPIFNOTLT R0 R1 L2; goto L2 if var0 >= var65840
        5 [-]: LOADN R1 1   ; var1 = 1
        6 [-]: LOADN R2 3   ; var2 = 3
-       7 [-]: JUMPIFNOTLE R0 R2 L0; goto L0 if var0 > var131399
+       7 [-]: JUMPIFNOTLE R0 R2 L0; goto L0 if var0 > var131376
        8 [-]: LOADN R1 2   ; var1 = 2
 L 0:   9 [-]: LOADN R4 1   ; var4 = 1
       10 [-]: MOVE R2 R1   ; var2 = var1
@@ -342,7 +343,7 @@ L 2:  29 [-]: RETURN R0 0  ;
        3 [-]: LOADNIL R3   ; var3 = nil
        4 [-]: MOVE R4 R0   ; var4 = var0
        5 [-]: CALL R1 4 2  ; var1 = var1(var2, var3, var4)
-       6 [-]: FASTCALL1 62 R1 L0; 
+       6 [-]: FASTCALL1 64 R1 L0; 
        7 [-]: MOVE R3 R1   ; var3 = var1
        8 [-]: GETIMPORT R2 2; var2 = 0x7B998233
        9 [-]: CALL R2 2 2  ; var2 = var2(var3)
@@ -352,19 +353,20 @@ L 0:  10 [-]: JUMPIF R2 L1 ; goto L1 if var2
       13 [-]: CALL R2 3 1  ; var2(var3, var4)
 L 1:  14 [-]: GETIMPORT R2 6; var2 = 0xD644C2F1
       15 [-]: LOADK R4 K7  ; var4 = "Solaris Quest: "
-      16 [-]: GETIMPORT R7 9; var7 = 0x64FB1586
+      16 [-]: FASTCALL1 63 R0 L2; 
       17 [-]: MOVE R8 R0   ; var8 = var0
-      18 [-]: CALL R7 2 2  ; var7 = var7(var8)
-      19 [-]: MOVE R5 R7   ; var5 = var7
-      20 [-]: LOADK R6 K10 ; var6 = " event"
-      21 [-]: CONCAT R3 R4 R6; var3 = var4 .. var6
-      22 [-]: CALL R2 2 1  ; var2(var3)
-      23 [-]: RETURN R0 0  ; 
+      18 [-]: GETIMPORT R7 9; var7 = 0x64FB1586
+      19 [-]: CALL R7 2 2  ; var7 = var7(var8)
+L 2:  20 [-]: MOVE R5 R7   ; var5 = var7
+      21 [-]: LOADK R6 K10 ; var6 = " event"
+      22 [-]: CONCAT R3 R4 R6; var3 = var4 .. var6
+      23 [-]: CALL R2 2 1  ; var2(var3)
+      24 [-]: RETURN R0 0  ; 
 
 
 ; Name:            
 ; Defined at line: 154
-; #Upvalues:       14
+; #Upvalues:       15
 ; #Parameters:     0
 ; Is_vararg:       0
 ; Max Stack Size:  10
@@ -375,342 +377,453 @@ L 1:  14 [-]: GETIMPORT R2 6; var2 = 0xD644C2F1
        3 [-]: GETUPVAL R2 1; var2 = upvalues[1]
        4 [-]: GETTABLEKS R1 R2 K1; var1 = var2[0x2BEB71D2]
        5 [-]: LOADK R2 K2  ; var2 = "DEBUG STAGE: "
-       6 [-]: GETIMPORT R3 4; var3 = 0x64FB1586
+       6 [-]: FASTCALL1 63 R0 L0; 
        7 [-]: MOVE R4 R0   ; var4 = var0
-       8 [-]: CALL R3 2 0  ; var3, ... = var3(var4)
-       9 [-]: CALL R1 0 1  ; var1(var2, ...)
-      10 [-]: JUMPXEQKN R0 K5 L0 NOT; 
-      11 [-]: GETIMPORT R1 7; var1 = 0x3D106989
-      12 [-]: LOADK R2 K8  ; var2 = "Solaris United Quest: State Change: ARRIVED"
-      13 [-]: CALL R1 2 1  ; var1(var2)
-      14 [-]: GETUPVAL R2 1; var2 = upvalues[1]
-      15 [-]: GETTABLEKS R1 R2 K9; var1 = var2[0xDC3B2033]
-      16 [-]: CALL R1 1 1  ; var1()
-      17 [-]: GETUPVAL R2 2; var2 = upvalues[2]
-      18 [-]: GETTABLEKS R1 R2 K10; var1 = var2[0x9742B85B]
-      19 [-]: GETUPVAL R2 3; var2 = upvalues[3]
-      20 [-]: GETIMPORT R3 12; var3 = 0x0469F296
-      21 [-]: GETUPVAL R5 4; var5 = upvalues[4]
-      22 [-]: LOADK R6 K13 ; var6 = "_Arrived"
-      23 [-]: CONCAT R4 R5 R6; var4 = var5 .. var6
-      24 [-]: CALL R3 2 0  ; var3, ... = var3(var4)
-      25 [-]: CALL R1 0 1  ; var1(var2, ...)
-      26 [-]: GETUPVAL R2 2; var2 = upvalues[2]
-      27 [-]: GETTABLEKS R1 R2 K14; var1 = var2[0xFC87A231]
-      28 [-]: CALL R1 1 1  ; var1()
-      29 [-]: GETUPVAL R2 1; var2 = upvalues[1]
-      30 [-]: GETTABLEKS R1 R2 K15; var1 = var2[0xA1DF01D6]
-      31 [-]: LOADK R2 K16 ; var2 = "/Lotus/Language/SolarisQuest/HackConsoleObjective"
-      32 [-]: CALL R1 2 1  ; var1(var2)
-      33 [-]: GETUPVAL R1 5; var1 = upvalues[5]
-      34 [-]: NAMECALL R1 R1 K17; var2 = var1; var1 = var1[0x383D2E7D]
-      35 [-]: CALL R1 2 1  ; var1(var2)
-      36 [-]: GETIMPORT R1 19; var1 = 0x492C7F2A
-      37 [-]: GETUPVAL R2 5; var2 = upvalues[5]
-      38 [-]: NAMECALL R2 R2 K20; var3 = var2; var2 = var2[0xA02EE9EF]
-      39 [-]: CALL R2 2 2  ; var2 = var2(var3)
-      40 [-]: GETUPVAL R3 5; var3 = upvalues[5]
-      41 [-]: NAMECALL R3 R3 K21; var4 = var3; var3 = var3[0xCB3851B8]
-      42 [-]: CALL R3 2 0  ; var3, ... = var3(var4)
-      43 [-]: CALL R1 0 2  ; var1 = var1(var2, ...)
-      44 [-]: GETIMPORT R2 23; var2 = 0x89326C93
-      45 [-]: GETIMPORT R4 25; var4 = 0x7760462D
-      46 [-]: GETUPVAL R6 5; var6 = upvalues[5]
-      47 [-]: NAMECALL R6 R6 K26; var7 = var6; var6 = var6[0xD1586535]
-      48 [-]: CALL R6 2 2  ; var6 = var6(var7)
-      49 [-]: ADD R5 R6 R1 ; var5 = var6 + var1
-      50 [-]: GETIMPORT R6 28; var6 = ZERO_ROTATION
-      51 [-]: NAMECALL R2 R2 K29; var3 = var2; var2 = var2[0x05909209]
-      52 [-]: CALL R2 5 2  ; var2 = var2(var3, var4, var5, var6)
-      53 [-]: SETUPVAL R2 6; upvalues[2] = var6
-      54 [-]: JUMP L14     ; goto L14
-L 0:  55 [-]: JUMPXEQKN R0 K30 L3 NOT; 
-      56 [-]: GETIMPORT R1 7; var1 = 0x3D106989
-      57 [-]: LOADK R2 K31 ; var2 = "Solaris United Quest: State Change: CONSOLE_HACKED"
-      58 [-]: CALL R1 2 1  ; var1(var2)
-      59 [-]: GETUPVAL R2 6; var2 = upvalues[6]
-      60 [-]: FASTCALL1 62 R2 L1; 
-      61 [-]: GETIMPORT R1 33; var1 = 0x7B998233
-      62 [-]: CALL R1 2 2  ; var1 = var1(var2)
-L 1:  63 [-]: JUMPIF R1 L2 ; goto L2 if var1
-      64 [-]: GETUPVAL R1 6; var1 = upvalues[6]
-      65 [-]: NAMECALL R1 R1 K34; var2 = var1; var1 = var1[0xA2880940]
-      66 [-]: CALL R1 2 1  ; var1(var2)
-L 2:  67 [-]: GETUPVAL R1 7; var1 = upvalues[7]
-      68 [-]: CALL R1 1 1  ; var1()
-      69 [-]: GETIMPORT R1 23; var1 = 0x89326C93
-      70 [-]: GETIMPORT R3 36; var3 = 0x30A9FA98
-      71 [-]: GETUPVAL R5 8; var5 = upvalues[8]
-      72 [-]: NAMECALL R5 R5 K26; var6 = var5; var5 = var5[0xD1586535]
-      73 [-]: CALL R5 2 2  ; var5 = var5(var6)
-      74 [-]: GETIMPORT R6 38; var6 = 0xA421AF95
-      75 [-]: LOADN R7 0   ; var7 = 0
-      76 [-]: LOADN R8 1   ; var8 = 1
-      77 [-]: LOADN R9 0   ; var9 = 0
-      78 [-]: CALL R6 4 2  ; var6 = var6(var7, var8, var9)
-      79 [-]: ADD R4 R5 R6 ; var4 = var5 + var6
-      80 [-]: GETIMPORT R5 28; var5 = ZERO_ROTATION
-      81 [-]: NAMECALL R1 R1 K29; var2 = var1; var1 = var1[0x05909209]
-      82 [-]: CALL R1 5 2  ; var1 = var1(var2, var3, var4, var5)
-      83 [-]: SETUPVAL R1 6; upvalues[1] = var6
-      84 [-]: GETUPVAL R2 1; var2 = upvalues[1]
-      85 [-]: GETTABLEKS R1 R2 K15; var1 = var2[0xA1DF01D6]
-      86 [-]: LOADK R2 K39 ; var2 = "/Lotus/Language/SolarisQuest/DefendConsoleObjective"
-      87 [-]: GETUPVAL R4 1; var4 = upvalues[1]
-      88 [-]: GETTABLEKS R3 R4 K40; var3 = var4["DEFEND_ICON"]
-      89 [-]: CALL R1 3 1  ; var1(var2, var3)
-      90 [-]: GETUPVAL R2 2; var2 = upvalues[2]
-      91 [-]: GETTABLEKS R1 R2 K10; var1 = var2[0x9742B85B]
-      92 [-]: GETUPVAL R2 3; var2 = upvalues[3]
-      93 [-]: GETIMPORT R3 12; var3 = 0x0469F296
-      94 [-]: GETUPVAL R5 4; var5 = upvalues[4]
-      95 [-]: LOADK R6 K41 ; var6 = "_Started"
-      96 [-]: CONCAT R4 R5 R6; var4 = var5 .. var6
-      97 [-]: CALL R3 2 0  ; var3, ... = var3(var4)
-      98 [-]: CALL R1 0 1  ; var1(var2, ...)
-      99 [-]: GETUPVAL R2 2; var2 = upvalues[2]
-     100 [-]: GETTABLEKS R1 R2 K14; var1 = var2[0xFC87A231]
-     101 [-]: CALL R1 1 1  ; var1()
-     102 [-]: GETUPVAL R1 0; var1 = upvalues[0]
-     103 [-]: LOADN R3 3   ; var3 = 3
-     104 [-]: NAMECALL R1 R1 K42; var2 = var1; var1 = var1[0x8ABFF40E]
-     105 [-]: CALL R1 3 1  ; var1(var2, var3)
-     106 [-]: JUMP L14     ; goto L14
-L 3: 107 [-]: JUMPXEQKN R0 K43 L4 NOT; 
-     108 [-]: GETIMPORT R1 7; var1 = 0x3D106989
-     109 [-]: LOADK R2 K44 ; var2 = "Solaris United Quest: State Change: DEFEND_INTRO"
-     110 [-]: CALL R1 2 1  ; var1(var2)
-     111 [-]: GETUPVAL R2 2; var2 = upvalues[2]
-     112 [-]: GETTABLEKS R1 R2 K10; var1 = var2[0x9742B85B]
-     113 [-]: GETUPVAL R2 3; var2 = upvalues[3]
-     114 [-]: GETIMPORT R3 12; var3 = 0x0469F296
-     115 [-]: GETUPVAL R5 4; var5 = upvalues[4]
-     116 [-]: LOADK R6 K45 ; var6 = "_StartedNef"
-     117 [-]: CONCAT R4 R5 R6; var4 = var5 .. var6
-     118 [-]: CALL R3 2 0  ; var3, ... = var3(var4)
-     119 [-]: CALL R1 0 1  ; var1(var2, ...)
-     120 [-]: GETIMPORT R1 47; var1 = 0xCBD666E1
-     121 [-]: LOADN R2 10  ; var2 = 10
-     122 [-]: CALL R1 2 1  ; var1(var2)
-     123 [-]: GETUPVAL R1 9; var1 = upvalues[9]
-     124 [-]: CALL R1 1 1  ; var1()
-     125 [-]: GETUPVAL R1 10; var1 = upvalues[10]
-     126 [-]: GETUPVAL R3 8; var3 = upvalues[8]
-     127 [-]: NAMECALL R1 R1 K48; var2 = var1; var1 = var1[0xCC6AA982]
-     128 [-]: CALL R1 3 1  ; var1(var2, var3)
-     129 [-]: GETUPVAL R1 11; var1 = upvalues[11]
-     130 [-]: LOADB R2 0   ; var2 = false
-     131 [-]: CALL R1 2 1  ; var1(var2)
-     132 [-]: GETUPVAL R2 1; var2 = upvalues[1]
-     133 [-]: GETTABLEKS R1 R2 K49; var1 = var2[0x1551AA65]
-     134 [-]: GETUPVAL R2 8; var2 = upvalues[8]
-     135 [-]: CALL R1 2 1  ; var1(var2)
-     136 [-]: GETUPVAL R2 2; var2 = upvalues[2]
-     137 [-]: GETTABLEKS R1 R2 K14; var1 = var2[0xFC87A231]
-     138 [-]: CALL R1 1 1  ; var1()
-     139 [-]: GETUPVAL R2 2; var2 = upvalues[2]
-     140 [-]: GETTABLEKS R1 R2 K10; var1 = var2[0x9742B85B]
-     141 [-]: GETUPVAL R2 3; var2 = upvalues[3]
-     142 [-]: GETIMPORT R3 12; var3 = 0x0469F296
-     143 [-]: GETUPVAL R5 4; var5 = upvalues[4]
-     144 [-]: LOADK R6 K50 ; var6 = "_TurnUpHeat"
-     145 [-]: CONCAT R4 R5 R6; var4 = var5 .. var6
-     146 [-]: CALL R3 2 0  ; var3, ... = var3(var4)
-     147 [-]: CALL R1 0 1  ; var1(var2, ...)
-     148 [-]: GETUPVAL R1 12; var1 = upvalues[12]
-     149 [-]: GETIMPORT R2 12; var2 = 0x0469F296
-     150 [-]: LOADK R3 K51 ; var3 = "SQFinalTower_Rumble"
-     151 [-]: CALL R2 2 0  ; var2, ... = var2(var3)
-     152 [-]: CALL R1 0 1  ; var1(var2, ...)
-     153 [-]: GETUPVAL R2 2; var2 = upvalues[2]
-     154 [-]: GETTABLEKS R1 R2 K14; var1 = var2[0xFC87A231]
-     155 [-]: CALL R1 1 1  ; var1()
-     156 [-]: GETUPVAL R1 0; var1 = upvalues[0]
-     157 [-]: LOADN R3 4   ; var3 = 4
-     158 [-]: NAMECALL R1 R1 K42; var2 = var1; var1 = var1[0x8ABFF40E]
-     159 [-]: CALL R1 3 1  ; var1(var2, var3)
-     160 [-]: JUMP L14     ; goto L14
-L 4: 161 [-]: JUMPXEQKN R0 K52 L5 NOT; 
-     162 [-]: GETIMPORT R1 7; var1 = 0x3D106989
-     163 [-]: LOADK R2 K53 ; var2 = "Solaris United Quest: State Change: DEFEND_A"
-     164 [-]: CALL R1 2 1  ; var1(var2)
-     165 [-]: GETUPVAL R2 1; var2 = upvalues[1]
-     166 [-]: GETTABLEKS R1 R2 K54; var1 = var2[0xEA753E99]
-     167 [-]: LOADK R2 K55 ; var2 = "/Lotus/Language/SolarisQuest/TowerOverheatObjective"
-     168 [-]: LOADN R3 0   ; var3 = 0
-     169 [-]: LOADN R4 100 ; var4 = 100
-     170 [-]: LOADNIL R5   ; var5 = nil
-     171 [-]: LOADB R6 1   ; var6 = true
-     172 [-]: CALL R1 6 1  ; var1(var2, var3, var4, var5, var6)
-     173 [-]: GETUPVAL R2 2; var2 = upvalues[2]
-     174 [-]: GETTABLEKS R1 R2 K10; var1 = var2[0x9742B85B]
-     175 [-]: GETUPVAL R2 3; var2 = upvalues[3]
-     176 [-]: GETIMPORT R3 12; var3 = 0x0469F296
-     177 [-]: GETUPVAL R5 4; var5 = upvalues[4]
-     178 [-]: LOADK R6 K56 ; var6 = "_DefendStart"
-     179 [-]: CONCAT R4 R5 R6; var4 = var5 .. var6
-     180 [-]: CALL R3 2 0  ; var3, ... = var3(var4)
-     181 [-]: CALL R1 0 1  ; var1(var2, ...)
-     182 [-]: JUMP L14     ; goto L14
-L 5: 183 [-]: JUMPXEQKN R0 K57 L6 NOT; 
-     184 [-]: GETIMPORT R1 7; var1 = 0x3D106989
-     185 [-]: LOADK R2 K58 ; var2 = "Solaris United Quest: State Change: DEFEND_B"
-     186 [-]: CALL R1 2 1  ; var1(var2)
-     187 [-]: GETUPVAL R2 2; var2 = upvalues[2]
-     188 [-]: GETTABLEKS R1 R2 K10; var1 = var2[0x9742B85B]
-     189 [-]: GETUPVAL R2 3; var2 = upvalues[3]
-     190 [-]: GETIMPORT R3 12; var3 = 0x0469F296
-     191 [-]: GETUPVAL R5 4; var5 = upvalues[4]
-     192 [-]: LOADK R6 K59 ; var6 = "_EventA"
-     193 [-]: CONCAT R4 R5 R6; var4 = var5 .. var6
-     194 [-]: CALL R3 2 0  ; var3, ... = var3(var4)
-     195 [-]: CALL R1 0 1  ; var1(var2, ...)
-     196 [-]: GETUPVAL R1 12; var1 = upvalues[12]
-     197 [-]: GETIMPORT R2 12; var2 = 0x0469F296
-     198 [-]: LOADK R3 K60 ; var3 = "SQFinalTower_Smoke"
-     199 [-]: CALL R2 2 0  ; var2, ... = var2(var3)
-     200 [-]: CALL R1 0 1  ; var1(var2, ...)
-     201 [-]: JUMP L14     ; goto L14
-L 6: 202 [-]: JUMPXEQKN R0 K61 L7 NOT; 
-     203 [-]: GETIMPORT R1 7; var1 = 0x3D106989
-     204 [-]: LOADK R2 K62 ; var2 = "Solaris United Quest: State Change: DEFEND_C"
-     205 [-]: CALL R1 2 1  ; var1(var2)
-     206 [-]: GETUPVAL R2 2; var2 = upvalues[2]
-     207 [-]: GETTABLEKS R1 R2 K10; var1 = var2[0x9742B85B]
-     208 [-]: GETUPVAL R2 3; var2 = upvalues[3]
-     209 [-]: GETIMPORT R3 12; var3 = 0x0469F296
-     210 [-]: GETUPVAL R5 4; var5 = upvalues[4]
-     211 [-]: LOADK R6 K63 ; var6 = "_EventB"
-     212 [-]: CONCAT R4 R5 R6; var4 = var5 .. var6
-     213 [-]: CALL R3 2 0  ; var3, ... = var3(var4)
-     214 [-]: CALL R1 0 1  ; var1(var2, ...)
-     215 [-]: GETUPVAL R1 12; var1 = upvalues[12]
-     216 [-]: GETIMPORT R2 12; var2 = 0x0469F296
-     217 [-]: LOADK R3 K64 ; var3 = "SQFinalTower_Glow"
-     218 [-]: CALL R2 2 0  ; var2, ... = var2(var3)
-     219 [-]: CALL R1 0 1  ; var1(var2, ...)
-     220 [-]: JUMP L14     ; goto L14
-L 7: 221 [-]: JUMPXEQKN R0 K65 L8 NOT; 
-     222 [-]: GETIMPORT R1 7; var1 = 0x3D106989
-     223 [-]: LOADK R2 K66 ; var2 = "Solaris United Quest: State Change: DEFEND_D"
-     224 [-]: CALL R1 2 1  ; var1(var2)
-     225 [-]: GETUPVAL R2 2; var2 = upvalues[2]
-     226 [-]: GETTABLEKS R1 R2 K10; var1 = var2[0x9742B85B]
-     227 [-]: GETUPVAL R2 3; var2 = upvalues[3]
-     228 [-]: GETIMPORT R3 12; var3 = 0x0469F296
-     229 [-]: GETUPVAL R5 4; var5 = upvalues[4]
-     230 [-]: LOADK R6 K67 ; var6 = "_EventC"
-     231 [-]: CONCAT R4 R5 R6; var4 = var5 .. var6
-     232 [-]: CALL R3 2 0  ; var3, ... = var3(var4)
-     233 [-]: CALL R1 0 1  ; var1(var2, ...)
-     234 [-]: GETUPVAL R1 12; var1 = upvalues[12]
-     235 [-]: GETIMPORT R2 12; var2 = 0x0469F296
-     236 [-]: LOADK R3 K68 ; var3 = "SQFinalTower_Shockwave"
-     237 [-]: CALL R2 2 0  ; var2, ... = var2(var3)
-     238 [-]: CALL R1 0 1  ; var1(var2, ...)
-     239 [-]: JUMP L14     ; goto L14
-L 8: 240 [-]: JUMPXEQKN R0 K69 L11 NOT; 
-     241 [-]: GETIMPORT R1 7; var1 = 0x3D106989
-     242 [-]: LOADK R2 K70 ; var2 = "Solaris United Quest: State Change: DEFEND_DONE"
-     243 [-]: CALL R1 2 1  ; var1(var2)
-     244 [-]: GETUPVAL R2 6; var2 = upvalues[6]
-     245 [-]: FASTCALL1 62 R2 L9; 
-     246 [-]: GETIMPORT R1 33; var1 = 0x7B998233
-     247 [-]: CALL R1 2 2  ; var1 = var1(var2)
-L 9: 248 [-]: JUMPIF R1 L10; goto L10 if var1
-     249 [-]: GETUPVAL R1 6; var1 = upvalues[6]
-     250 [-]: NAMECALL R1 R1 K34; var2 = var1; var1 = var1[0xA2880940]
-     251 [-]: CALL R1 2 1  ; var1(var2)
-L10: 252 [-]: GETUPVAL R2 2; var2 = upvalues[2]
-     253 [-]: GETTABLEKS R1 R2 K10; var1 = var2[0x9742B85B]
-     254 [-]: GETUPVAL R2 3; var2 = upvalues[3]
-     255 [-]: GETIMPORT R3 12; var3 = 0x0469F296
-     256 [-]: GETUPVAL R5 4; var5 = upvalues[4]
-     257 [-]: LOADK R6 K71 ; var6 = "_DefendStop"
-     258 [-]: CONCAT R4 R5 R6; var4 = var5 .. var6
-     259 [-]: CALL R3 2 0  ; var3, ... = var3(var4)
-     260 [-]: CALL R1 0 1  ; var1(var2, ...)
-     261 [-]: GETUPVAL R1 10; var1 = upvalues[10]
-     262 [-]: LOADN R3 0   ; var3 = 0
-     263 [-]: NAMECALL R1 R1 K72; var2 = var1; var1 = var1[0x27D04ADD]
-     264 [-]: CALL R1 3 1  ; var1(var2, var3)
-     265 [-]: GETUPVAL R1 10; var1 = upvalues[10]
-     266 [-]: GETUPVAL R3 8; var3 = upvalues[8]
-     267 [-]: NAMECALL R1 R1 K73; var2 = var1; var1 = var1[0x996C2CAB]
-     268 [-]: CALL R1 3 1  ; var1(var2, var3)
-     269 [-]: GETUPVAL R2 1; var2 = upvalues[1]
-     270 [-]: GETTABLEKS R1 R2 K74; var1 = var2[0xEDF59000]
-     271 [-]: CALL R1 1 1  ; var1()
-     272 [-]: GETUPVAL R1 11; var1 = upvalues[11]
-     273 [-]: LOADB R2 1   ; var2 = true
-     274 [-]: CALL R1 2 1  ; var1(var2)
-     275 [-]: GETUPVAL R2 2; var2 = upvalues[2]
-     276 [-]: GETTABLEKS R1 R2 K14; var1 = var2[0xFC87A231]
-     277 [-]: CALL R1 1 1  ; var1()
-     278 [-]: GETUPVAL R1 0; var1 = upvalues[0]
-     279 [-]: LOADN R3 9   ; var3 = 9
-     280 [-]: NAMECALL R1 R1 K42; var2 = var1; var1 = var1[0x8ABFF40E]
-     281 [-]: CALL R1 3 1  ; var1(var2, var3)
-     282 [-]: JUMP L14     ; goto L14
-L11: 283 [-]: JUMPXEQKN R0 K75 L12 NOT; 
-     284 [-]: GETIMPORT R1 7; var1 = 0x3D106989
-     285 [-]: LOADK R2 K76 ; var2 = "Solaris United Quest: State Change: AMARYST"
-     286 [-]: CALL R1 2 1  ; var1(var2)
-     287 [-]: GETUPVAL R2 1; var2 = upvalues[1]
-     288 [-]: GETTABLEKS R1 R2 K77; var1 = var2[0xBD3CE95D]
-     289 [-]: CALL R1 1 1  ; var1()
-     290 [-]: GETUPVAL R2 1; var2 = upvalues[1]
-     291 [-]: GETTABLEKS R1 R2 K15; var1 = var2[0xA1DF01D6]
-     292 [-]: LOADK R2 K78 ; var2 = "/Lotus/Language/SolarisQuest/AmarystStageObjective"
-     293 [-]: CALL R1 2 1  ; var1(var2)
-     294 [-]: GETUPVAL R1 13; var1 = upvalues[13]
-     295 [-]: NAMECALL R1 R1 K17; var2 = var1; var1 = var1[0x383D2E7D]
-     296 [-]: CALL R1 2 1  ; var1(var2)
-     297 [-]: JUMP L14     ; goto L14
-L12: 298 [-]: JUMPXEQKN R0 K79 L13 NOT; 
-     299 [-]: GETIMPORT R1 7; var1 = 0x3D106989
-     300 [-]: LOADK R2 K80 ; var2 = "Solaris United Quest: State Change: COMPLETE"
-     301 [-]: CALL R1 2 1  ; var1(var2)
-     302 [-]: GETUPVAL R2 2; var2 = upvalues[2]
-     303 [-]: GETTABLEKS R1 R2 K10; var1 = var2[0x9742B85B]
-     304 [-]: GETUPVAL R2 3; var2 = upvalues[3]
-     305 [-]: GETIMPORT R3 12; var3 = 0x0469F296
-     306 [-]: GETUPVAL R5 4; var5 = upvalues[4]
-     307 [-]: LOADK R6 K81 ; var6 = "_Done"
-     308 [-]: CONCAT R4 R5 R6; var4 = var5 .. var6
-     309 [-]: CALL R3 2 0  ; var3, ... = var3(var4)
-     310 [-]: CALL R1 0 1  ; var1(var2, ...)
-     311 [-]: GETUPVAL R1 12; var1 = upvalues[12]
-     312 [-]: GETIMPORT R2 12; var2 = 0x0469F296
-     313 [-]: LOADK R3 K82 ; var3 = "SQFinalTower_Cooldown"
-     314 [-]: CALL R2 2 0  ; var2, ... = var2(var3)
-     315 [-]: CALL R1 0 1  ; var1(var2, ...)
-     316 [-]: JUMP L14     ; goto L14
-L13: 317 [-]: JUMPXEQKN R0 K83 L14 NOT; 
-     318 [-]: GETIMPORT R1 7; var1 = 0x3D106989
-     319 [-]: LOADK R2 K84 ; var2 = "Solaris United Quest: State Change: FAILED"
-     320 [-]: CALL R1 2 1  ; var1(var2)
-     321 [-]: GETIMPORT R1 47; var1 = 0xCBD666E1
-     322 [-]: LOADN R2 3   ; var2 = 3
-     323 [-]: CALL R1 2 1  ; var1(var2)
-L14: 324 [-]: LOADN R1 10  ; var1 = 10
-     325 [-]: JUMPIFNOTLE R1 R0 L15; goto L15 if var1 > var66055
-     326 [-]: GETUPVAL R2 1; var2 = upvalues[1]
-     327 [-]: GETTABLEKS R1 R2 K85; var1 = var2[0xF158D74D]
-     328 [-]: CALL R1 1 1  ; var1()
-     329 [-]: GETUPVAL R2 1; var2 = upvalues[1]
-     330 [-]: GETTABLEKS R1 R2 K74; var1 = var2[0xEDF59000]
-     331 [-]: CALL R1 1 1  ; var1()
-     332 [-]: GETUPVAL R2 1; var2 = upvalues[1]
-     333 [-]: GETTABLEKS R1 R2 K77; var1 = var2[0xBD3CE95D]
-     334 [-]: CALL R1 1 1  ; var1()
-     335 [-]: GETUPVAL R2 1; var2 = upvalues[1]
-     336 [-]: GETTABLEKS R1 R2 K9; var1 = var2[0xDC3B2033]
-     337 [-]: CALL R1 1 1  ; var1()
-     338 [-]: GETUPVAL R1 0; var1 = upvalues[0]
-     339 [-]: NAMECALL R1 R1 K86; var2 = var1; var1 = var1[0x588ED000]
+       8 [-]: GETIMPORT R3 4; var3 = 0x64FB1586
+       9 [-]: CALL R3 2 2  ; var3 = var3(var4)
+L 0:  10 [-]: CALL R1 3 1  ; var1(var2, var3)
+      11 [-]: JUMPXEQKN R0 K5 L1 NOT; 
+      12 [-]: GETIMPORT R1 7; var1 = 0x3D106989
+      13 [-]: LOADK R2 K8  ; var2 = "Solaris United Quest: State Change: ARRIVED"
+      14 [-]: CALL R1 2 1  ; var1(var2)
+      15 [-]: GETUPVAL R2 1; var2 = upvalues[1]
+      16 [-]: GETTABLEKS R1 R2 K9; var1 = var2[0xDC3B2033]
+      17 [-]: CALL R1 1 1  ; var1()
+      18 [-]: GETUPVAL R2 2; var2 = upvalues[2]
+      19 [-]: GETTABLEKS R1 R2 K10; var1 = var2[0x9742B85B]
+      20 [-]: GETUPVAL R2 3; var2 = upvalues[3]
+      21 [-]: GETIMPORT R3 12; var3 = 0x0469F296
+      22 [-]: GETUPVAL R5 4; var5 = upvalues[4]
+      23 [-]: LOADK R6 K13 ; var6 = "_Arrived"
+      24 [-]: CONCAT R4 R5 R6; var4 = var5 .. var6
+      25 [-]: CALL R3 2 0  ; var3, ... = var3(var4)
+      26 [-]: CALL R1 0 1  ; var1(var2, ...)
+      27 [-]: GETUPVAL R2 2; var2 = upvalues[2]
+      28 [-]: GETTABLEKS R1 R2 K14; var1 = var2[0xFC87A231]
+      29 [-]: CALL R1 1 1  ; var1()
+      30 [-]: GETUPVAL R2 1; var2 = upvalues[1]
+      31 [-]: GETTABLEKS R1 R2 K15; var1 = var2[0xA1DF01D6]
+      32 [-]: LOADK R2 K16 ; var2 = "/Lotus/Language/SolarisQuest/HackConsoleObjective"
+      33 [-]: CALL R1 2 1  ; var1(var2)
+      34 [-]: GETUPVAL R1 5; var1 = upvalues[5]
+      35 [-]: NAMECALL R1 R1 K17; var2 = var1; var1 = var1[0x383D2E7D]
+      36 [-]: CALL R1 2 1  ; var1(var2)
+      37 [-]: GETIMPORT R1 19; var1 = 0x492C7F2A
+      38 [-]: GETUPVAL R2 5; var2 = upvalues[5]
+      39 [-]: NAMECALL R2 R2 K20; var3 = var2; var2 = var2[0xA02EE9EF]
+      40 [-]: CALL R2 2 2  ; var2 = var2(var3)
+      41 [-]: GETUPVAL R3 5; var3 = upvalues[5]
+      42 [-]: NAMECALL R3 R3 K21; var4 = var3; var3 = var3[0xCB3851B8]
+      43 [-]: CALL R3 2 0  ; var3, ... = var3(var4)
+      44 [-]: CALL R1 0 2  ; var1 = var1(var2, ...)
+      45 [-]: GETIMPORT R2 23; var2 = 0x89326C93
+      46 [-]: GETIMPORT R4 25; var4 = 0x7760462D
+      47 [-]: GETUPVAL R6 5; var6 = upvalues[5]
+      48 [-]: NAMECALL R6 R6 K26; var7 = var6; var6 = var6[0xD1586535]
+      49 [-]: CALL R6 2 2  ; var6 = var6(var7)
+      50 [-]: ADD R5 R6 R1 ; var5 = var6 + var1
+      51 [-]: GETIMPORT R6 28; var6 = ZERO_ROTATION
+      52 [-]: NAMECALL R2 R2 K29; var3 = var2; var2 = var2[0x05909209]
+      53 [-]: CALL R2 5 2  ; var2 = var2(var3, var4, var5, var6)
+      54 [-]: SETUPVAL R2 6; upvalues[2] = var6
+      55 [-]: JUMP L30     ; goto L30
+L 1:  56 [-]: JUMPXEQKN R0 K30 L4 NOT; 
+      57 [-]: GETIMPORT R1 7; var1 = 0x3D106989
+      58 [-]: LOADK R2 K31 ; var2 = "Solaris United Quest: State Change: CONSOLE_HACKED"
+      59 [-]: CALL R1 2 1  ; var1(var2)
+      60 [-]: GETUPVAL R2 6; var2 = upvalues[6]
+      61 [-]: FASTCALL1 64 R2 L2; 
+      62 [-]: GETIMPORT R1 33; var1 = 0x7B998233
+      63 [-]: CALL R1 2 2  ; var1 = var1(var2)
+L 2:  64 [-]: JUMPIF R1 L3 ; goto L3 if var1
+      65 [-]: GETUPVAL R1 6; var1 = upvalues[6]
+      66 [-]: NAMECALL R1 R1 K34; var2 = var1; var1 = var1[0xA2880940]
+      67 [-]: CALL R1 2 1  ; var1(var2)
+L 3:  68 [-]: GETUPVAL R1 7; var1 = upvalues[7]
+      69 [-]: CALL R1 1 1  ; var1()
+      70 [-]: GETIMPORT R1 23; var1 = 0x89326C93
+      71 [-]: GETIMPORT R3 36; var3 = 0x30A9FA98
+      72 [-]: GETUPVAL R5 8; var5 = upvalues[8]
+      73 [-]: NAMECALL R5 R5 K26; var6 = var5; var5 = var5[0xD1586535]
+      74 [-]: CALL R5 2 2  ; var5 = var5(var6)
+      75 [-]: GETIMPORT R6 38; var6 = 0xA421AF95
+      76 [-]: LOADN R7 0   ; var7 = 0
+      77 [-]: LOADN R8 1   ; var8 = 1
+      78 [-]: LOADN R9 0   ; var9 = 0
+      79 [-]: CALL R6 4 2  ; var6 = var6(var7, var8, var9)
+      80 [-]: ADD R4 R5 R6 ; var4 = var5 + var6
+      81 [-]: GETIMPORT R5 28; var5 = ZERO_ROTATION
+      82 [-]: NAMECALL R1 R1 K29; var2 = var1; var1 = var1[0x05909209]
+      83 [-]: CALL R1 5 2  ; var1 = var1(var2, var3, var4, var5)
+      84 [-]: SETUPVAL R1 6; upvalues[1] = var6
+      85 [-]: GETUPVAL R2 1; var2 = upvalues[1]
+      86 [-]: GETTABLEKS R1 R2 K15; var1 = var2[0xA1DF01D6]
+      87 [-]: LOADK R2 K39 ; var2 = "/Lotus/Language/SolarisQuest/DefendConsoleObjective"
+      88 [-]: GETUPVAL R4 1; var4 = upvalues[1]
+      89 [-]: GETTABLEKS R3 R4 K40; var3 = var4["DEFEND_ICON"]
+      90 [-]: CALL R1 3 1  ; var1(var2, var3)
+      91 [-]: GETUPVAL R2 2; var2 = upvalues[2]
+      92 [-]: GETTABLEKS R1 R2 K10; var1 = var2[0x9742B85B]
+      93 [-]: GETUPVAL R2 3; var2 = upvalues[3]
+      94 [-]: GETIMPORT R3 12; var3 = 0x0469F296
+      95 [-]: GETUPVAL R5 4; var5 = upvalues[4]
+      96 [-]: LOADK R6 K41 ; var6 = "_Started"
+      97 [-]: CONCAT R4 R5 R6; var4 = var5 .. var6
+      98 [-]: CALL R3 2 0  ; var3, ... = var3(var4)
+      99 [-]: CALL R1 0 1  ; var1(var2, ...)
+     100 [-]: GETUPVAL R2 2; var2 = upvalues[2]
+     101 [-]: GETTABLEKS R1 R2 K14; var1 = var2[0xFC87A231]
+     102 [-]: CALL R1 1 1  ; var1()
+     103 [-]: GETUPVAL R1 0; var1 = upvalues[0]
+     104 [-]: LOADN R3 3   ; var3 = 3
+     105 [-]: NAMECALL R1 R1 K42; var2 = var1; var1 = var1[0x8ABFF40E]
+     106 [-]: CALL R1 3 1  ; var1(var2, var3)
+     107 [-]: JUMP L30     ; goto L30
+L 4: 108 [-]: JUMPXEQKN R0 K43 L8 NOT; 
+     109 [-]: GETIMPORT R1 7; var1 = 0x3D106989
+     110 [-]: LOADK R2 K44 ; var2 = "Solaris United Quest: State Change: DEFEND_INTRO"
+     111 [-]: CALL R1 2 1  ; var1(var2)
+     112 [-]: GETUPVAL R2 2; var2 = upvalues[2]
+     113 [-]: GETTABLEKS R1 R2 K10; var1 = var2[0x9742B85B]
+     114 [-]: GETUPVAL R2 3; var2 = upvalues[3]
+     115 [-]: GETIMPORT R3 12; var3 = 0x0469F296
+     116 [-]: GETUPVAL R5 4; var5 = upvalues[4]
+     117 [-]: LOADK R6 K45 ; var6 = "_StartedNef"
+     118 [-]: CONCAT R4 R5 R6; var4 = var5 .. var6
+     119 [-]: CALL R3 2 0  ; var3, ... = var3(var4)
+     120 [-]: CALL R1 0 1  ; var1(var2, ...)
+     121 [-]: GETIMPORT R1 47; var1 = 0xCBD666E1
+     122 [-]: LOADN R2 10  ; var2 = 10
+     123 [-]: CALL R1 2 1  ; var1(var2)
+     124 [-]: GETUPVAL R1 9; var1 = upvalues[9]
+     125 [-]: CALL R1 1 1  ; var1()
+     126 [-]: GETUPVAL R1 10; var1 = upvalues[10]
+     127 [-]: GETUPVAL R3 8; var3 = upvalues[8]
+     128 [-]: NAMECALL R1 R1 K48; var2 = var1; var1 = var1[0xCC6AA982]
+     129 [-]: CALL R1 3 1  ; var1(var2, var3)
+     130 [-]: GETUPVAL R1 11; var1 = upvalues[11]
+     131 [-]: LOADB R2 0   ; var2 = false
+     132 [-]: CALL R1 2 1  ; var1(var2)
+     133 [-]: GETUPVAL R2 1; var2 = upvalues[1]
+     134 [-]: GETTABLEKS R1 R2 K49; var1 = var2[0x1551AA65]
+     135 [-]: GETUPVAL R2 8; var2 = upvalues[8]
+     136 [-]: CALL R1 2 1  ; var1(var2)
+     137 [-]: GETUPVAL R2 2; var2 = upvalues[2]
+     138 [-]: GETTABLEKS R1 R2 K14; var1 = var2[0xFC87A231]
+     139 [-]: CALL R1 1 1  ; var1()
+     140 [-]: GETUPVAL R2 2; var2 = upvalues[2]
+     141 [-]: GETTABLEKS R1 R2 K10; var1 = var2[0x9742B85B]
+     142 [-]: GETUPVAL R2 3; var2 = upvalues[3]
+     143 [-]: GETIMPORT R3 12; var3 = 0x0469F296
+     144 [-]: GETUPVAL R5 4; var5 = upvalues[4]
+     145 [-]: LOADK R6 K50 ; var6 = "_TurnUpHeat"
+     146 [-]: CONCAT R4 R5 R6; var4 = var5 .. var6
+     147 [-]: CALL R3 2 0  ; var3, ... = var3(var4)
+     148 [-]: CALL R1 0 1  ; var1(var2, ...)
+     149 [-]: GETIMPORT R1 12; var1 = 0x0469F296
+     150 [-]: LOADK R2 K51 ; var2 = "SQFinalTower_Rumble"
+     151 [-]: CALL R1 2 2  ; var1 = var1(var2)
+     152 [-]: GETUPVAL R3 12; var3 = upvalues[12]
+     153 [-]: GETTABLEKS R2 R3 K52; var2 = var3[0xBD9A0502]
+     154 [-]: GETUPVAL R3 13; var3 = upvalues[13]
+     155 [-]: LOADNIL R4   ; var4 = nil
+     156 [-]: MOVE R5 R1   ; var5 = var1
+     157 [-]: CALL R2 4 2  ; var2 = var2(var3, var4, var5)
+     158 [-]: FASTCALL1 64 R2 L5; 
+     159 [-]: MOVE R4 R2   ; var4 = var2
+     160 [-]: GETIMPORT R3 33; var3 = 0x7B998233
+     161 [-]: CALL R3 2 2  ; var3 = var3(var4)
+L 5: 162 [-]: JUMPIF R3 L6 ; goto L6 if var3
+     163 [-]: LOADK R5 K53 ; var5 = "TriggerPort"
+     164 [-]: NAMECALL R3 R2 K54; var4 = var2; var3 = var2[0x8EB2112D]
+     165 [-]: CALL R3 3 1  ; var3(var4, var5)
+L 6: 166 [-]: GETIMPORT R3 56; var3 = 0xD644C2F1
+     167 [-]: LOADK R5 K57 ; var5 = "Solaris Quest: "
+     168 [-]: FASTCALL1 63 R1 L7; 
+     169 [-]: MOVE R9 R1   ; var9 = var1
+     170 [-]: GETIMPORT R8 4; var8 = 0x64FB1586
+     171 [-]: CALL R8 2 2  ; var8 = var8(var9)
+L 7: 172 [-]: MOVE R6 R8   ; var6 = var8
+     173 [-]: LOADK R7 K58 ; var7 = " event"
+     174 [-]: CONCAT R4 R5 R7; var4 = var5 .. var7
+     175 [-]: CALL R3 2 1  ; var3(var4)
+     176 [-]: GETUPVAL R2 2; var2 = upvalues[2]
+     177 [-]: GETTABLEKS R1 R2 K14; var1 = var2[0xFC87A231]
+     178 [-]: CALL R1 1 1  ; var1()
+     179 [-]: GETUPVAL R1 0; var1 = upvalues[0]
+     180 [-]: LOADN R3 4   ; var3 = 4
+     181 [-]: NAMECALL R1 R1 K42; var2 = var1; var1 = var1[0x8ABFF40E]
+     182 [-]: CALL R1 3 1  ; var1(var2, var3)
+     183 [-]: JUMP L30     ; goto L30
+L 8: 184 [-]: JUMPXEQKN R0 K59 L9 NOT; 
+     185 [-]: GETIMPORT R1 7; var1 = 0x3D106989
+     186 [-]: LOADK R2 K60 ; var2 = "Solaris United Quest: State Change: DEFEND_A"
+     187 [-]: CALL R1 2 1  ; var1(var2)
+     188 [-]: GETUPVAL R2 1; var2 = upvalues[1]
+     189 [-]: GETTABLEKS R1 R2 K61; var1 = var2[0xEA753E99]
+     190 [-]: LOADK R2 K62 ; var2 = "/Lotus/Language/SolarisQuest/TowerOverheatObjective"
+     191 [-]: LOADN R3 0   ; var3 = 0
+     192 [-]: LOADN R4 100 ; var4 = 100
+     193 [-]: LOADNIL R5   ; var5 = nil
+     194 [-]: LOADB R6 1   ; var6 = true
+     195 [-]: CALL R1 6 1  ; var1(var2, var3, var4, var5, var6)
+     196 [-]: GETUPVAL R2 2; var2 = upvalues[2]
+     197 [-]: GETTABLEKS R1 R2 K10; var1 = var2[0x9742B85B]
+     198 [-]: GETUPVAL R2 3; var2 = upvalues[3]
+     199 [-]: GETIMPORT R3 12; var3 = 0x0469F296
+     200 [-]: GETUPVAL R5 4; var5 = upvalues[4]
+     201 [-]: LOADK R6 K63 ; var6 = "_DefendStart"
+     202 [-]: CONCAT R4 R5 R6; var4 = var5 .. var6
+     203 [-]: CALL R3 2 0  ; var3, ... = var3(var4)
+     204 [-]: CALL R1 0 1  ; var1(var2, ...)
+     205 [-]: JUMP L30     ; goto L30
+L 9: 206 [-]: JUMPXEQKN R0 K64 L13 NOT; 
+     207 [-]: GETIMPORT R1 7; var1 = 0x3D106989
+     208 [-]: LOADK R2 K65 ; var2 = "Solaris United Quest: State Change: DEFEND_B"
+     209 [-]: CALL R1 2 1  ; var1(var2)
+     210 [-]: GETUPVAL R2 2; var2 = upvalues[2]
+     211 [-]: GETTABLEKS R1 R2 K10; var1 = var2[0x9742B85B]
+     212 [-]: GETUPVAL R2 3; var2 = upvalues[3]
+     213 [-]: GETIMPORT R3 12; var3 = 0x0469F296
+     214 [-]: GETUPVAL R5 4; var5 = upvalues[4]
+     215 [-]: LOADK R6 K66 ; var6 = "_EventA"
+     216 [-]: CONCAT R4 R5 R6; var4 = var5 .. var6
+     217 [-]: CALL R3 2 0  ; var3, ... = var3(var4)
+     218 [-]: CALL R1 0 1  ; var1(var2, ...)
+     219 [-]: GETIMPORT R1 12; var1 = 0x0469F296
+     220 [-]: LOADK R2 K67 ; var2 = "SQFinalTower_Smoke"
+     221 [-]: CALL R1 2 2  ; var1 = var1(var2)
+     222 [-]: GETUPVAL R3 12; var3 = upvalues[12]
+     223 [-]: GETTABLEKS R2 R3 K52; var2 = var3[0xBD9A0502]
+     224 [-]: GETUPVAL R3 13; var3 = upvalues[13]
+     225 [-]: LOADNIL R4   ; var4 = nil
+     226 [-]: MOVE R5 R1   ; var5 = var1
+     227 [-]: CALL R2 4 2  ; var2 = var2(var3, var4, var5)
+     228 [-]: FASTCALL1 64 R2 L10; 
+     229 [-]: MOVE R4 R2   ; var4 = var2
+     230 [-]: GETIMPORT R3 33; var3 = 0x7B998233
+     231 [-]: CALL R3 2 2  ; var3 = var3(var4)
+L10: 232 [-]: JUMPIF R3 L11; goto L11 if var3
+     233 [-]: LOADK R5 K53 ; var5 = "TriggerPort"
+     234 [-]: NAMECALL R3 R2 K54; var4 = var2; var3 = var2[0x8EB2112D]
+     235 [-]: CALL R3 3 1  ; var3(var4, var5)
+L11: 236 [-]: GETIMPORT R3 56; var3 = 0xD644C2F1
+     237 [-]: LOADK R5 K57 ; var5 = "Solaris Quest: "
+     238 [-]: FASTCALL1 63 R1 L12; 
+     239 [-]: MOVE R9 R1   ; var9 = var1
+     240 [-]: GETIMPORT R8 4; var8 = 0x64FB1586
+     241 [-]: CALL R8 2 2  ; var8 = var8(var9)
+L12: 242 [-]: MOVE R6 R8   ; var6 = var8
+     243 [-]: LOADK R7 K58 ; var7 = " event"
+     244 [-]: CONCAT R4 R5 R7; var4 = var5 .. var7
+     245 [-]: CALL R3 2 1  ; var3(var4)
+     246 [-]: JUMP L30     ; goto L30
+L13: 247 [-]: JUMPXEQKN R0 K68 L17 NOT; 
+     248 [-]: GETIMPORT R1 7; var1 = 0x3D106989
+     249 [-]: LOADK R2 K69 ; var2 = "Solaris United Quest: State Change: DEFEND_C"
+     250 [-]: CALL R1 2 1  ; var1(var2)
+     251 [-]: GETUPVAL R2 2; var2 = upvalues[2]
+     252 [-]: GETTABLEKS R1 R2 K10; var1 = var2[0x9742B85B]
+     253 [-]: GETUPVAL R2 3; var2 = upvalues[3]
+     254 [-]: GETIMPORT R3 12; var3 = 0x0469F296
+     255 [-]: GETUPVAL R5 4; var5 = upvalues[4]
+     256 [-]: LOADK R6 K70 ; var6 = "_EventB"
+     257 [-]: CONCAT R4 R5 R6; var4 = var5 .. var6
+     258 [-]: CALL R3 2 0  ; var3, ... = var3(var4)
+     259 [-]: CALL R1 0 1  ; var1(var2, ...)
+     260 [-]: GETIMPORT R1 12; var1 = 0x0469F296
+     261 [-]: LOADK R2 K71 ; var2 = "SQFinalTower_Glow"
+     262 [-]: CALL R1 2 2  ; var1 = var1(var2)
+     263 [-]: GETUPVAL R3 12; var3 = upvalues[12]
+     264 [-]: GETTABLEKS R2 R3 K52; var2 = var3[0xBD9A0502]
+     265 [-]: GETUPVAL R3 13; var3 = upvalues[13]
+     266 [-]: LOADNIL R4   ; var4 = nil
+     267 [-]: MOVE R5 R1   ; var5 = var1
+     268 [-]: CALL R2 4 2  ; var2 = var2(var3, var4, var5)
+     269 [-]: FASTCALL1 64 R2 L14; 
+     270 [-]: MOVE R4 R2   ; var4 = var2
+     271 [-]: GETIMPORT R3 33; var3 = 0x7B998233
+     272 [-]: CALL R3 2 2  ; var3 = var3(var4)
+L14: 273 [-]: JUMPIF R3 L15; goto L15 if var3
+     274 [-]: LOADK R5 K53 ; var5 = "TriggerPort"
+     275 [-]: NAMECALL R3 R2 K54; var4 = var2; var3 = var2[0x8EB2112D]
+     276 [-]: CALL R3 3 1  ; var3(var4, var5)
+L15: 277 [-]: GETIMPORT R3 56; var3 = 0xD644C2F1
+     278 [-]: LOADK R5 K57 ; var5 = "Solaris Quest: "
+     279 [-]: FASTCALL1 63 R1 L16; 
+     280 [-]: MOVE R9 R1   ; var9 = var1
+     281 [-]: GETIMPORT R8 4; var8 = 0x64FB1586
+     282 [-]: CALL R8 2 2  ; var8 = var8(var9)
+L16: 283 [-]: MOVE R6 R8   ; var6 = var8
+     284 [-]: LOADK R7 K58 ; var7 = " event"
+     285 [-]: CONCAT R4 R5 R7; var4 = var5 .. var7
+     286 [-]: CALL R3 2 1  ; var3(var4)
+     287 [-]: JUMP L30     ; goto L30
+L17: 288 [-]: JUMPXEQKN R0 K72 L21 NOT; 
+     289 [-]: GETIMPORT R1 7; var1 = 0x3D106989
+     290 [-]: LOADK R2 K73 ; var2 = "Solaris United Quest: State Change: DEFEND_D"
+     291 [-]: CALL R1 2 1  ; var1(var2)
+     292 [-]: GETUPVAL R2 2; var2 = upvalues[2]
+     293 [-]: GETTABLEKS R1 R2 K10; var1 = var2[0x9742B85B]
+     294 [-]: GETUPVAL R2 3; var2 = upvalues[3]
+     295 [-]: GETIMPORT R3 12; var3 = 0x0469F296
+     296 [-]: GETUPVAL R5 4; var5 = upvalues[4]
+     297 [-]: LOADK R6 K74 ; var6 = "_EventC"
+     298 [-]: CONCAT R4 R5 R6; var4 = var5 .. var6
+     299 [-]: CALL R3 2 0  ; var3, ... = var3(var4)
+     300 [-]: CALL R1 0 1  ; var1(var2, ...)
+     301 [-]: GETIMPORT R1 12; var1 = 0x0469F296
+     302 [-]: LOADK R2 K75 ; var2 = "SQFinalTower_Shockwave"
+     303 [-]: CALL R1 2 2  ; var1 = var1(var2)
+     304 [-]: GETUPVAL R3 12; var3 = upvalues[12]
+     305 [-]: GETTABLEKS R2 R3 K52; var2 = var3[0xBD9A0502]
+     306 [-]: GETUPVAL R3 13; var3 = upvalues[13]
+     307 [-]: LOADNIL R4   ; var4 = nil
+     308 [-]: MOVE R5 R1   ; var5 = var1
+     309 [-]: CALL R2 4 2  ; var2 = var2(var3, var4, var5)
+     310 [-]: FASTCALL1 64 R2 L18; 
+     311 [-]: MOVE R4 R2   ; var4 = var2
+     312 [-]: GETIMPORT R3 33; var3 = 0x7B998233
+     313 [-]: CALL R3 2 2  ; var3 = var3(var4)
+L18: 314 [-]: JUMPIF R3 L19; goto L19 if var3
+     315 [-]: LOADK R5 K53 ; var5 = "TriggerPort"
+     316 [-]: NAMECALL R3 R2 K54; var4 = var2; var3 = var2[0x8EB2112D]
+     317 [-]: CALL R3 3 1  ; var3(var4, var5)
+L19: 318 [-]: GETIMPORT R3 56; var3 = 0xD644C2F1
+     319 [-]: LOADK R5 K57 ; var5 = "Solaris Quest: "
+     320 [-]: FASTCALL1 63 R1 L20; 
+     321 [-]: MOVE R9 R1   ; var9 = var1
+     322 [-]: GETIMPORT R8 4; var8 = 0x64FB1586
+     323 [-]: CALL R8 2 2  ; var8 = var8(var9)
+L20: 324 [-]: MOVE R6 R8   ; var6 = var8
+     325 [-]: LOADK R7 K58 ; var7 = " event"
+     326 [-]: CONCAT R4 R5 R7; var4 = var5 .. var7
+     327 [-]: CALL R3 2 1  ; var3(var4)
+     328 [-]: JUMP L30     ; goto L30
+L21: 329 [-]: JUMPXEQKN R0 K76 L24 NOT; 
+     330 [-]: GETIMPORT R1 7; var1 = 0x3D106989
+     331 [-]: LOADK R2 K77 ; var2 = "Solaris United Quest: State Change: DEFEND_DONE"
+     332 [-]: CALL R1 2 1  ; var1(var2)
+     333 [-]: GETUPVAL R2 6; var2 = upvalues[6]
+     334 [-]: FASTCALL1 64 R2 L22; 
+     335 [-]: GETIMPORT R1 33; var1 = 0x7B998233
+     336 [-]: CALL R1 2 2  ; var1 = var1(var2)
+L22: 337 [-]: JUMPIF R1 L23; goto L23 if var1
+     338 [-]: GETUPVAL R1 6; var1 = upvalues[6]
+     339 [-]: NAMECALL R1 R1 K34; var2 = var1; var1 = var1[0xA2880940]
      340 [-]: CALL R1 2 1  ; var1(var2)
-L15: 341 [-]: RETURN R0 0  ; 
+L23: 341 [-]: GETUPVAL R2 2; var2 = upvalues[2]
+     342 [-]: GETTABLEKS R1 R2 K10; var1 = var2[0x9742B85B]
+     343 [-]: GETUPVAL R2 3; var2 = upvalues[3]
+     344 [-]: GETIMPORT R3 12; var3 = 0x0469F296
+     345 [-]: GETUPVAL R5 4; var5 = upvalues[4]
+     346 [-]: LOADK R6 K78 ; var6 = "_DefendStop"
+     347 [-]: CONCAT R4 R5 R6; var4 = var5 .. var6
+     348 [-]: CALL R3 2 0  ; var3, ... = var3(var4)
+     349 [-]: CALL R1 0 1  ; var1(var2, ...)
+     350 [-]: GETUPVAL R1 10; var1 = upvalues[10]
+     351 [-]: LOADN R3 0   ; var3 = 0
+     352 [-]: NAMECALL R1 R1 K79; var2 = var1; var1 = var1[0x27D04ADD]
+     353 [-]: CALL R1 3 1  ; var1(var2, var3)
+     354 [-]: GETUPVAL R1 10; var1 = upvalues[10]
+     355 [-]: GETUPVAL R3 8; var3 = upvalues[8]
+     356 [-]: NAMECALL R1 R1 K80; var2 = var1; var1 = var1[0x996C2CAB]
+     357 [-]: CALL R1 3 1  ; var1(var2, var3)
+     358 [-]: GETUPVAL R2 1; var2 = upvalues[1]
+     359 [-]: GETTABLEKS R1 R2 K81; var1 = var2[0xEDF59000]
+     360 [-]: CALL R1 1 1  ; var1()
+     361 [-]: GETUPVAL R1 11; var1 = upvalues[11]
+     362 [-]: LOADB R2 1   ; var2 = true
+     363 [-]: CALL R1 2 1  ; var1(var2)
+     364 [-]: GETUPVAL R2 2; var2 = upvalues[2]
+     365 [-]: GETTABLEKS R1 R2 K14; var1 = var2[0xFC87A231]
+     366 [-]: CALL R1 1 1  ; var1()
+     367 [-]: GETUPVAL R1 0; var1 = upvalues[0]
+     368 [-]: LOADN R3 9   ; var3 = 9
+     369 [-]: NAMECALL R1 R1 K42; var2 = var1; var1 = var1[0x8ABFF40E]
+     370 [-]: CALL R1 3 1  ; var1(var2, var3)
+     371 [-]: JUMP L30     ; goto L30
+L24: 372 [-]: JUMPXEQKN R0 K82 L25 NOT; 
+     373 [-]: GETIMPORT R1 7; var1 = 0x3D106989
+     374 [-]: LOADK R2 K83 ; var2 = "Solaris United Quest: State Change: AMARYST"
+     375 [-]: CALL R1 2 1  ; var1(var2)
+     376 [-]: GETUPVAL R2 1; var2 = upvalues[1]
+     377 [-]: GETTABLEKS R1 R2 K84; var1 = var2[0xBD3CE95D]
+     378 [-]: CALL R1 1 1  ; var1()
+     379 [-]: GETUPVAL R2 1; var2 = upvalues[1]
+     380 [-]: GETTABLEKS R1 R2 K15; var1 = var2[0xA1DF01D6]
+     381 [-]: LOADK R2 K85 ; var2 = "/Lotus/Language/SolarisQuest/AmarystStageObjective"
+     382 [-]: CALL R1 2 1  ; var1(var2)
+     383 [-]: GETUPVAL R1 14; var1 = upvalues[14]
+     384 [-]: NAMECALL R1 R1 K17; var2 = var1; var1 = var1[0x383D2E7D]
+     385 [-]: CALL R1 2 1  ; var1(var2)
+     386 [-]: JUMP L30     ; goto L30
+L25: 387 [-]: JUMPXEQKN R0 K86 L29 NOT; 
+     388 [-]: GETIMPORT R1 7; var1 = 0x3D106989
+     389 [-]: LOADK R2 K87 ; var2 = "Solaris United Quest: State Change: COMPLETE"
+     390 [-]: CALL R1 2 1  ; var1(var2)
+     391 [-]: GETUPVAL R2 2; var2 = upvalues[2]
+     392 [-]: GETTABLEKS R1 R2 K10; var1 = var2[0x9742B85B]
+     393 [-]: GETUPVAL R2 3; var2 = upvalues[3]
+     394 [-]: GETIMPORT R3 12; var3 = 0x0469F296
+     395 [-]: GETUPVAL R5 4; var5 = upvalues[4]
+     396 [-]: LOADK R6 K88 ; var6 = "_Done"
+     397 [-]: CONCAT R4 R5 R6; var4 = var5 .. var6
+     398 [-]: CALL R3 2 0  ; var3, ... = var3(var4)
+     399 [-]: CALL R1 0 1  ; var1(var2, ...)
+     400 [-]: GETIMPORT R1 12; var1 = 0x0469F296
+     401 [-]: LOADK R2 K89 ; var2 = "SQFinalTower_Cooldown"
+     402 [-]: CALL R1 2 2  ; var1 = var1(var2)
+     403 [-]: GETUPVAL R3 12; var3 = upvalues[12]
+     404 [-]: GETTABLEKS R2 R3 K52; var2 = var3[0xBD9A0502]
+     405 [-]: GETUPVAL R3 13; var3 = upvalues[13]
+     406 [-]: LOADNIL R4   ; var4 = nil
+     407 [-]: MOVE R5 R1   ; var5 = var1
+     408 [-]: CALL R2 4 2  ; var2 = var2(var3, var4, var5)
+     409 [-]: FASTCALL1 64 R2 L26; 
+     410 [-]: MOVE R4 R2   ; var4 = var2
+     411 [-]: GETIMPORT R3 33; var3 = 0x7B998233
+     412 [-]: CALL R3 2 2  ; var3 = var3(var4)
+L26: 413 [-]: JUMPIF R3 L27; goto L27 if var3
+     414 [-]: LOADK R5 K53 ; var5 = "TriggerPort"
+     415 [-]: NAMECALL R3 R2 K54; var4 = var2; var3 = var2[0x8EB2112D]
+     416 [-]: CALL R3 3 1  ; var3(var4, var5)
+L27: 417 [-]: GETIMPORT R3 56; var3 = 0xD644C2F1
+     418 [-]: LOADK R5 K57 ; var5 = "Solaris Quest: "
+     419 [-]: FASTCALL1 63 R1 L28; 
+     420 [-]: MOVE R9 R1   ; var9 = var1
+     421 [-]: GETIMPORT R8 4; var8 = 0x64FB1586
+     422 [-]: CALL R8 2 2  ; var8 = var8(var9)
+L28: 423 [-]: MOVE R6 R8   ; var6 = var8
+     424 [-]: LOADK R7 K58 ; var7 = " event"
+     425 [-]: CONCAT R4 R5 R7; var4 = var5 .. var7
+     426 [-]: CALL R3 2 1  ; var3(var4)
+     427 [-]: JUMP L30     ; goto L30
+L29: 428 [-]: JUMPXEQKN R0 K90 L30 NOT; 
+     429 [-]: GETIMPORT R1 7; var1 = 0x3D106989
+     430 [-]: LOADK R2 K91 ; var2 = "Solaris United Quest: State Change: FAILED"
+     431 [-]: CALL R1 2 1  ; var1(var2)
+     432 [-]: GETIMPORT R1 47; var1 = 0xCBD666E1
+     433 [-]: LOADN R2 3   ; var2 = 3
+     434 [-]: CALL R1 2 1  ; var1(var2)
+L30: 435 [-]: LOADN R1 10  ; var1 = 10
+     436 [-]: JUMPIFNOTLE R1 R0 L31; goto L31 if var1 > var66108
+     437 [-]: GETUPVAL R2 1; var2 = upvalues[1]
+     438 [-]: GETTABLEKS R1 R2 K92; var1 = var2[0xF158D74D]
+     439 [-]: CALL R1 1 1  ; var1()
+     440 [-]: GETUPVAL R2 1; var2 = upvalues[1]
+     441 [-]: GETTABLEKS R1 R2 K81; var1 = var2[0xEDF59000]
+     442 [-]: CALL R1 1 1  ; var1()
+     443 [-]: GETUPVAL R2 1; var2 = upvalues[1]
+     444 [-]: GETTABLEKS R1 R2 K84; var1 = var2[0xBD3CE95D]
+     445 [-]: CALL R1 1 1  ; var1()
+     446 [-]: GETUPVAL R2 1; var2 = upvalues[1]
+     447 [-]: GETTABLEKS R1 R2 K9; var1 = var2[0xDC3B2033]
+     448 [-]: CALL R1 1 1  ; var1()
+     449 [-]: GETUPVAL R1 0; var1 = upvalues[0]
+     450 [-]: NAMECALL R1 R1 K93; var2 = var1; var1 = var1[0x588ED000]
+     451 [-]: CALL R1 2 1  ; var1(var2)
+L31: 452 [-]: RETURN R0 0  ; 
 
 
 ; Name:            
@@ -842,7 +955,7 @@ L 4: 114 [-]: LOADN R6 1   ; var6 = 1
      119 [-]: NAMECALL R2 R0 K42; var3 = var0; var2 = var0[0xEFE6CAD1]
      120 [-]: CALL R2 2 2  ; var2 = var2(var3)
      121 [-]: LOADN R3 1   ; var3 = 1
-     122 [-]: JUMPIFNOTEQ R2 R3 L5; goto L5 if var2 ~= var132167
+     122 [-]: JUMPIFNOTEQ R2 R3 L5; goto L5 if var2 ~= var132144
      123 [-]: LOADN R4 2   ; var4 = 2
      124 [-]: NAMECALL R2 R0 K43; var3 = var0; var2 = var0[0xFE9DC265]
      125 [-]: CALL R2 3 1  ; var2(var3, var4)
@@ -868,11 +981,11 @@ L 5: 126 [-]: RETURN R0 0  ;
        9 [-]: LOADN R4 0   ; var4 = 0
       10 [-]: LOADN R5 0   ; var5 = 0
 L 0:  11 [-]: LOADN R6 10  ; var6 = 10
-      12 [-]: JUMPIFNOTLT R5 R6 L14; goto L14 if var5 >= var-788527547
+      12 [-]: JUMPIFNOTLT R5 R6 L14; goto L14 if var5 >= var-788527540
       13 [-]: NAMECALL R6 R0 K3; var7 = var0; var6 = var0[0xEFE6CAD1]
       14 [-]: CALL R6 2 2  ; var6 = var6(var7)
       15 [-]: LOADN R7 4   ; var7 = 4
-      16 [-]: JUMPIFNOTLT R6 R7 L14; goto L14 if var6 >= var329294
+      16 [-]: JUMPIFNOTLT R6 R7 L14; goto L14 if var6 >= var329249
       17 [-]: GETIMPORT R6 5; var6 = 0xFFF641AF
       18 [-]: CALL R6 1 2  ; var6 = var6()
       19 [-]: MOVE R4 R6   ; var4 = var6
@@ -894,12 +1007,11 @@ L 0:  11 [-]: LOADN R6 10  ; var6 = 10
       35 [-]: CALL R6 3 1  ; var6(var7, var8)
       36 [-]: JUMP L12     ; goto L12
 L 1:  37 [-]: LOADN R6 4   ; var6 = 4
-      38 [-]: JUMPIFNOTLE R6 R5 L11; goto L11 if var6 > var460359
+      38 [-]: JUMPIFNOTLE R6 R5 L11; goto L11 if var6 > var460336
       39 [-]: LOADN R6 7   ; var6 = 7
-      40 [-]: JUMPIFNOTLE R5 R6 L11; goto L11 if var5 > var67306316
+      40 [-]: JUMPIFNOTLE R5 R6 L11; goto L11 if var5 > var67306302
       41 [-]: ADD R3 R3 R4 ; var3 = var3 + var4
-      42 [-]: DIVK R8 R3 K12; var8 = var3 / 180
-      43 [-]: MULK R7 R8 K11; var7 = var8 * 100
+           43 [-]: MULK R7 R8 K11; var7 = var8 * 100
       44 [-]: FASTCALL1 12 R7 L2; 
       45 [-]: GETIMPORT R6 15; var6 = 0x5BCED4C4[0x55F27C30]
       46 [-]: CALL R6 2 2  ; var6 = var6(var7)
@@ -910,23 +1022,22 @@ L 2:  47 [-]: GETUPVAL R8 3; var8 = upvalues[3]
       51 [-]: CALL R7 3 1  ; var7(var8, var9)
       52 [-]: SUB R1 R1 R4 ; var1 = var1 - var4
       53 [-]: LOADN R7 0   ; var7 = 0
-      54 [-]: JUMPIFNOTLE R1 R7 L3; goto L3 if var1 > var263943
+      54 [-]: JUMPIFNOTLE R1 R7 L3; goto L3 if var1 > var263996
       55 [-]: GETUPVAL R7 4; var7 = upvalues[4]
       56 [-]: CALL R7 1 1  ; var7()
       57 [-]: GETIMPORT R7 18; var7 = 0x9BAFFFE3
       58 [-]: LOADN R8 13  ; var8 = 13
       59 [-]: LOADN R9 4   ; var9 = 4
-      60 [-]: DIVK R10 R6 K11; var10 = var6 / 100
-      61 [-]: CALL R7 4 2  ; var7 = var7(var8, var9, var10)
+           61 [-]: CALL R7 4 2  ; var7 = var7(var8, var9, var10)
       62 [-]: MOVE R1 R7   ; var1 = var7
 L 3:  63 [-]: LOADN R9 4   ; var9 = 4
       64 [-]: LOADN R7 7   ; var7 = 7
       65 [-]: LOADN R8 1   ; var8 = 1
       66 [-]: FORNPREP R7 L6; nforprep start - [escape at L6] -- var7 = iterator
-L 4:  67 [-]: JUMPIFNOTLT R5 R9 L5; goto L5 if var5 >= var330503
+L 4:  67 [-]: JUMPIFNOTLT R5 R9 L5; goto L5 if var5 >= var330556
       68 [-]: GETUPVAL R11 5; var11 = upvalues[5]
       69 [-]: GETTABLE R10 R11 R9; var10 = var11[var9]
-      70 [-]: JUMPIFNOTLE R10 R3 L5; goto L5 if var10 > var68103
+      70 [-]: JUMPIFNOTLE R10 R3 L5; goto L5 if var10 > var68156
       71 [-]: GETUPVAL R10 1; var10 = upvalues[1]
       72 [-]: MOVE R12 R9  ; var12 = var9
       73 [-]: NAMECALL R10 R10 K10; var11 = var10; var10 = var10[0x8ABFF40E]
@@ -942,7 +1053,7 @@ L 6:  78 [-]: GETUPVAL R7 7; var7 = upvalues[7]
       83 [-]: MOVE R10 R2  ; var10 = var2
       84 [-]: GETIMPORT R8 21; var8 = 0x5BCED4C4[0xB62ECFE0]
       85 [-]: CALL R8 3 2  ; var8 = var8(var9, var10)
-L 7:  86 [-]: JUMPIFNOTLT R7 R8 L8; goto L8 if var7 >= var461063
+L 7:  86 [-]: JUMPIFNOTLT R7 R8 L8; goto L8 if var7 >= var461116
       87 [-]: GETUPVAL R9 7; var9 = upvalues[7]
       88 [-]: MOVE R11 R8  ; var11 = var8
       89 [-]: NAMECALL R9 R9 K22; var10 = var9; var9 = var9[0x27D04ADD]
@@ -954,14 +1065,14 @@ L 7:  86 [-]: JUMPIFNOTLT R7 R8 L8; goto L8 if var7 >= var461063
       95 [-]: CALL R9 2 1  ; var9(var10)
 L 8:  96 [-]: JUMPXEQKN R5 K26 L9 NOT; 
       97 [-]: LOADN R9 0   ; var9 = 0
-      98 [-]: JUMPIFNOTLT R9 R3 L9; goto L9 if var9 >= var67847
+      98 [-]: JUMPIFNOTLT R9 R3 L9; goto L9 if var9 >= var67900
       99 [-]: GETUPVAL R9 1; var9 = upvalues[1]
      100 [-]: LOADN R11 8  ; var11 = 8
      101 [-]: NAMECALL R9 R9 K10; var10 = var9; var9 = var9[0x8ABFF40E]
      102 [-]: CALL R9 3 1  ; var9(var10, var11)
      103 [-]: JUMP L12     ; goto L12
 L 9: 104 [-]: GETUPVAL R10 8; var10 = upvalues[8]
-     105 [-]: FASTCALL1 62 R10 L10; 
+     105 [-]: FASTCALL1 64 R10 L10; 
      106 [-]: GETIMPORT R9 28; var9 = 0x7B998233
      107 [-]: CALL R9 2 2  ; var9 = var9(var10)
 L10: 108 [-]: JUMPIF R9 L12; goto L12 if var9
@@ -969,7 +1080,7 @@ L10: 108 [-]: JUMPIF R9 L12; goto L12 if var9
      110 [-]: NAMECALL R9 R9 K29; var10 = var9; var9 = var9[0xD2715720]
      111 [-]: CALL R9 2 2  ; var9 = var9(var10)
      112 [-]: LOADN R10 0  ; var10 = 0
-     113 [-]: JUMPIFNOTLE R9 R10 L12; goto L12 if var9 > var67847
+     113 [-]: JUMPIFNOTLE R9 R10 L12; goto L12 if var9 > var67900
      114 [-]: GETUPVAL R9 1; var9 = upvalues[1]
      115 [-]: LOADN R11 11 ; var11 = 11
      116 [-]: NAMECALL R9 R9 K10; var10 = var9; var9 = var9[0x8ABFF40E]

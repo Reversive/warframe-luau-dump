@@ -74,7 +74,7 @@ L 2:  18 [-]: LOADN R1 12  ; var1 = 12
 
        0 [-]: GETUPVAL R1 0; var1 = upvalues[0]
        1 [-]: GETUPVAL R2 1; var2 = upvalues[1]
-       2 [-]: FASTCALL1 62 R0 L0; 
+       2 [-]: FASTCALL1 64 R0 L0; 
        3 [-]: MOVE R4 R0   ; var4 = var0
        4 [-]: GETIMPORT R3 1; var3 = 0x7B998233
        5 [-]: CALL R3 2 2  ; var3 = var3(var4)
@@ -83,7 +83,7 @@ L 0:   6 [-]: JUMPIF R3 L2 ; goto L2 if var3
        8 [-]: CALL R3 2 2  ; var3 = var3(var4)
        9 [-]: NAMECALL R4 R3 K3; var5 = var3; var4 = var3[0xF7D48EE0]
       10 [-]: CALL R4 2 2  ; var4 = var4(var5)
-      11 [-]: FASTCALL1 62 R4 L1; 
+      11 [-]: FASTCALL1 64 R4 L1; 
       12 [-]: MOVE R6 R4   ; var6 = var4
       13 [-]: GETIMPORT R5 1; var5 = 0x7B998233
       14 [-]: CALL R5 2 2  ; var5 = var5(var6)
@@ -302,7 +302,7 @@ L 4:  91 [-]: MOVE R16 R1  ; var16 = var1
      107 [-]: MOVE R17 R6  ; var17 = var6
      108 [-]: CALL R15 3 2 ; var15 = var15(var16, var17)
      109 [-]: LOADN R16 45 ; var16 = 45
-     110 [-]: JUMPIFNOTLE R15 R16 L5; goto L5 if var15 > var856342
+     110 [-]: JUMPIFNOTLE R15 R16 L5; goto L5 if var15 > var856366
      111 [-]: MOVE R17 R13 ; var17 = var13
      112 [-]: NAMECALL R15 R5 K45; var16 = var5; var15 = var5[0x277BF617]
      113 [-]: CALL R15 3 1 ; var15(var16, var17)
@@ -394,7 +394,7 @@ L 1:  47 [-]: LOADN R17 6  ; var17 = 6
 L 2:  61 [-]: JUMPIFNOT R5 L7; goto L7 if not var5
       62 [-]: ADD R15 R12 R13; var15 = var12 + var13
       63 [-]: LOADN R16 0  ; var16 = 0
-      64 [-]: JUMPIFNOTLT R16 R15 L3; goto L3 if var16 >= var1511502
+      64 [-]: JUMPIFNOTLT R16 R15 L3; goto L3 if var16 >= var1511457
       65 [-]: GETIMPORT R16 23; var16 = 0x34291F5C[0x7258F36F]
       66 [-]: MOVE R17 R15 ; var17 = var15
       67 [-]: CALL R16 2 2 ; var16 = var16(var17)
@@ -421,7 +421,7 @@ L 4:  86 [-]: GETIMPORT R16 30; var16 = 0xC163F229
       88 [-]: LOADN R18 1  ; var18 = 1
       89 [-]: CALL R16 3 2 ; var16 = var16(var17, var18)
       90 [-]: LOADK R17 K31; var17 = 0.5
-      91 [-]: JUMPIFNOTLT R16 R17 L5; goto L5 if var16 >= var1053255
+      91 [-]: JUMPIFNOTLT R16 R17 L5; goto L5 if var16 >= var1053232
       92 [-]: LOADN R18 16 ; var18 = 16
       93 [-]: LOADB R19 1  ; var19 = true
       94 [-]: NAMECALL R16 R6 K32; var17 = var6; var16 = var6[0xFC0E440A]

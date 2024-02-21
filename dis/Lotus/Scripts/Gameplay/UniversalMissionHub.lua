@@ -174,17 +174,17 @@ L 0:   6 [-]: GETIMPORT R1 4; var1 = 0x9BA7909F
        9 [-]: CALL R3 1 0  ; var3, ... = var3()
       10 [-]: NAMECALL R1 R1 K6; var2 = var1; var1 = var1[0xBCFB64AB]
       11 [-]: CALL R1 0 2  ; var1 = var1(var2, ...)
-      12 [-]: FASTCALL1 62 R1 L1; 
+      12 [-]: FASTCALL1 64 R1 L1; 
       13 [-]: MOVE R3 R1   ; var3 = var1
       14 [-]: GETIMPORT R2 8; var2 = 0x7B998233
       15 [-]: CALL R2 2 2  ; var2 = var2(var3)
 L 1:  16 [-]: JUMPIF R2 L3 ; goto L3 if var2
       17 [-]: GETIMPORT R3 10; var3 = 0xE7F2B02F
       18 [-]: NAMECALL R3 R3 K11; var4 = var3; var3 = var3[0x0B151D80]
-      19 [-]: CALL R3 2 2  ; var3 = var3(var4)
-      20 [-]: FASTCALL1 62 R3 L2; 
+      19 [-]: CALL R3 2 0  ; var3, ... = var3(var4)
+      20 [-]: FASTCALL 64 L2; 
       21 [-]: GETIMPORT R2 8; var2 = 0x7B998233
-      22 [-]: CALL R2 2 2  ; var2 = var2(var3)
+      22 [-]: CALL R2 0 2  ; var2 = var2(var3, ...)
 L 2:  23 [-]: JUMPIF R2 L3 ; goto L3 if var2
       24 [-]: GETIMPORT R2 10; var2 = 0xE7F2B02F
       25 [-]: NAMECALL R2 R2 K11; var3 = var2; var2 = var2[0x0B151D80]
@@ -240,7 +240,7 @@ L 4:  22 [-]: GETIMPORT R7 2; var7 = 0x0032441C
       23 [-]: GETTABLEKS R6 R7 K3; var6 = var7["Scenario"]
       24 [-]: GETTABLEKS R5 R6 K8; var5 = var6["EpochNum"]
       25 [-]: GETIMPORT R7 10; var7 = 0xBE190284
-      26 [-]: FASTCALL1 62 R7 L5; 
+      26 [-]: FASTCALL1 64 R7 L5; 
       27 [-]: GETIMPORT R6 12; var6 = 0x7B998233
       28 [-]: CALL R6 2 2  ; var6 = var6(var7)
 L 5:  29 [-]: JUMPIF R6 L9 ; goto L9 if var6
@@ -279,162 +279,168 @@ L 8:  61 [-]: MOVE R5 R10  ; var5 = var10
 L 9:  62 [-]: JUMPXEQKNIL R5 L10 NOT; 
       63 [-]: LOADN R5 0   ; var5 = 0
 L10:  64 [-]: LOADK R7 K25 ; var7 = "UniversalMissionHub::SendScenarioHubEvent for epochNum="
-      65 [-]: GETIMPORT R10 27; var10 = 0x64FB1586
+      65 [-]: FASTCALL1 63 R5 L11; 
       66 [-]: MOVE R11 R5  ; var11 = var5
-      67 [-]: CALL R10 2 2 ; var10 = var10(var11)
-      68 [-]: MOVE R8 R10  ; var8 = var10
-      69 [-]: LOADK R9 K28 ; var9 = "\n"
-      70 [-]: CONCAT R6 R7 R9; var6 = var7 .. var9
-      71 [-]: JUMPIFNOT R0 L11; goto L11 if not var0
-      72 [-]: MOVE R7 R6   ; var7 = var6
-      73 [-]: LOADK R8 K29 ; var8 = " eventName="
-      74 [-]: GETIMPORT R9 27; var9 = 0x64FB1586
-      75 [-]: MOVE R10 R0  ; var10 = var0
-      76 [-]: CALL R9 2 2  ; var9 = var9(var10)
-      77 [-]: CONCAT R6 R7 R9; var6 = var7 .. var9
-L11:  78 [-]: JUMPIFNOT R1 L12; goto L12 if not var1
-      79 [-]: MOVE R7 R6   ; var7 = var6
-      80 [-]: LOADK R8 K30 ; var8 = " eventValues="
-      81 [-]: GETIMPORT R9 27; var9 = 0x64FB1586
-      82 [-]: MOVE R10 R1  ; var10 = var1
-      83 [-]: CALL R9 2 2  ; var9 = var9(var10)
-      84 [-]: CONCAT R6 R7 R9; var6 = var7 .. var9
-L12:  85 [-]: JUMPIFNOT R2 L13; goto L13 if not var2
-      86 [-]: MOVE R7 R6   ; var7 = var6
-      87 [-]: LOADK R8 K31 ; var8 = " propName="
-      88 [-]: GETIMPORT R9 27; var9 = 0x64FB1586
-      89 [-]: MOVE R10 R2  ; var10 = var2
-      90 [-]: CALL R9 2 2  ; var9 = var9(var10)
-      91 [-]: CONCAT R6 R7 R9; var6 = var7 .. var9
-L13:  92 [-]: JUMPIFNOT R3 L14; goto L14 if not var3
-      93 [-]: MOVE R7 R6   ; var7 = var6
-      94 [-]: LOADK R8 K32 ; var8 = " propValue="
-      95 [-]: GETIMPORT R9 27; var9 = 0x64FB1586
-      96 [-]: MOVE R10 R3  ; var10 = var3
-      97 [-]: CALL R9 2 2  ; var9 = var9(var10)
-      98 [-]: CONCAT R6 R7 R9; var6 = var7 .. var9
-L14:  99 [-]: JUMPIFNOT R4 L15; goto L15 if not var4
-     100 [-]: MOVE R7 R6   ; var7 = var6
-     101 [-]: LOADK R8 K33 ; var8 = " propOp="
-     102 [-]: GETIMPORT R9 27; var9 = 0x64FB1586
-     103 [-]: MOVE R10 R4  ; var10 = var4
-     104 [-]: CALL R9 2 2  ; var9 = var9(var10)
-     105 [-]: CONCAT R6 R7 R9; var6 = var7 .. var9
-L15: 106 [-]: GETIMPORT R7 5; var7 = 0x3D106989
-     107 [-]: MOVE R8 R6   ; var8 = var6
-     108 [-]: CALL R7 2 1  ; var7(var8)
-     109 [-]: JUMPXEQKNIL R0 L18; 
-     110 [-]: JUMPXEQKS R0 K0 L18; 
-     111 [-]: FASTCALL1 40 R1 L16; 
-     112 [-]: MOVE R8 R1   ; var8 = var1
-     113 [-]: GETIMPORT R7 35; var7 = 0x0B96777E
-     114 [-]: CALL R7 2 2  ; var7 = var7(var8)
-L16: 115 [-]: JUMPXEQKS R7 K36 L17; 
-     116 [-]: NEWTABLE R7 0 1; var7 = {}
-     117 [-]: MOVE R8 R1   ; var8 = var1
-     118 [-]: SETLIST R7 R8 1 [1]; var7[1] = var8; var7[2] = var9; 
-     119 [-]: MOVE R1 R7   ; var1 = var7
-L17: 120 [-]: GETIMPORT R9 2; var9 = 0x0032441C
-     121 [-]: GETTABLEKS R8 R9 K3; var8 = var9["Scenario"]
-     122 [-]: GETTABLEKS R7 R8 K7; var7 = var8["SendObj"]
-     123 [-]: DUPTABLE R8 40; 
-     124 [-]: SETTABLEKS R0 R8 K37; var0["eventName"] = var8
-     125 [-]: SETTABLEKS R1 R8 K38; var1["eventValues"] = var8
-     126 [-]: SETTABLEKS R5 R8 K39; var5["epochNum"] = var8
-     127 [-]: SETTABLE R8 R7 R0; var8[var7] = var0
-L18: 128 [-]: JUMPXEQKNIL R2 L29; 
-     129 [-]: JUMPXEQKS R2 K0 L29; 
-     130 [-]: JUMPXEQKS R4 K41 L28 NOT; 
-     131 [-]: GETIMPORT R10 2; var10 = 0x0032441C
-     132 [-]: GETTABLEKS R9 R10 K3; var9 = var10["Scenario"]
-     133 [-]: GETTABLEKS R8 R9 K7; var8 = var9["SendObj"]
-     134 [-]: GETTABLE R7 R8 R2; var7 = var8[var2]
-     135 [-]: JUMPIFNOT R7 L28; goto L28 if not var7
-     136 [-]: GETIMPORT R11 2; var11 = 0x0032441C
-     137 [-]: GETTABLEKS R10 R11 K3; var10 = var11["Scenario"]
-     138 [-]: GETTABLEKS R9 R10 K7; var9 = var10["SendObj"]
-     139 [-]: GETTABLE R8 R9 R2; var8 = var9[var2]
-     140 [-]: GETTABLEKS R7 R8 K42; var7 = var8["propValue"]
-     141 [-]: JUMPXEQKNIL R7 L28; 
-     142 [-]: GETIMPORT R12 2; var12 = 0x0032441C
-     143 [-]: GETTABLEKS R11 R12 K3; var11 = var12["Scenario"]
-     144 [-]: GETTABLEKS R10 R11 K7; var10 = var11["SendObj"]
-     145 [-]: GETTABLE R9 R10 R2; var9 = var10[var2]
-     146 [-]: GETTABLEKS R8 R9 K42; var8 = var9["propValue"]
-     147 [-]: FASTCALL1 40 R8 L19; 
-     148 [-]: GETIMPORT R7 35; var7 = 0x0B96777E
-     149 [-]: CALL R7 2 2  ; var7 = var7(var8)
-L19: 150 [-]: JUMPXEQKS R7 K43 L20 NOT; 
-     151 [-]: GETIMPORT R12 2; var12 = 0x0032441C
-     152 [-]: GETTABLEKS R11 R12 K3; var11 = var12["Scenario"]
-     153 [-]: GETTABLEKS R10 R11 K7; var10 = var11["SendObj"]
-     154 [-]: GETTABLE R9 R10 R2; var9 = var10[var2]
-     155 [-]: GETTABLEKS R8 R9 K42; var8 = var9["propValue"]
-     156 [-]: ADD R3 R8 R3 ; var3 = var8 + var3
-     157 [-]: JUMP L28     ; goto L28
-L20: 158 [-]: JUMPXEQKS R7 K44 L28 NOT; 
-     159 [-]: FASTCALL1 40 R3 L21; 
-     160 [-]: MOVE R9 R3   ; var9 = var3
-     161 [-]: GETIMPORT R8 35; var8 = 0x0B96777E
-     162 [-]: CALL R8 2 2  ; var8 = var8(var9)
-L21: 163 [-]: JUMPXEQKS R8 K44 L28 NOT; 
-     164 [-]: GETIMPORT R8 47; var8 = cjson[0x7AB914D8]
-     165 [-]: MOVE R9 R3   ; var9 = var3
-     166 [-]: CALL R8 2 2  ; var8 = var8(var9)
-     167 [-]: GETIMPORT R9 47; var9 = cjson[0x7AB914D8]
-     168 [-]: GETIMPORT R14 2; var14 = 0x0032441C
-     169 [-]: GETTABLEKS R13 R14 K3; var13 = var14["Scenario"]
-     170 [-]: GETTABLEKS R12 R13 K7; var12 = var13["SendObj"]
-     171 [-]: GETTABLE R11 R12 R2; var11 = var12[var2]
-     172 [-]: GETTABLEKS R10 R11 K42; var10 = var11["propValue"]
-     173 [-]: CALL R9 2 2  ; var9 = var9(var10)
-     174 [-]: JUMPXEQKNIL R9 L28; 
-     175 [-]: JUMPXEQKNIL R8 L28; 
-     176 [-]: GETIMPORT R10 49; var10 = 0xCFC01047
-     177 [-]: MOVE R11 R9  ; var11 = var9
-     178 [-]: CALL R10 2 4 ; var10, var11, var12 = var10(var11)
-     179 [-]: FORGPREP_NEXT R10 L25; 
-L22: 180 [-]: GETTABLE R16 R8 R13; var16 = var8[var13]
-     181 [-]: FASTCALL1 40 R16 L23; 
-     182 [-]: GETIMPORT R15 35; var15 = 0x0B96777E
-     183 [-]: CALL R15 2 2 ; var15 = var15(var16)
-L23: 184 [-]: JUMPXEQKS R15 K43 L25 NOT; 
-     185 [-]: FASTCALL1 40 R14 L24; 
-     186 [-]: MOVE R16 R14 ; var16 = var14
-     187 [-]: GETIMPORT R15 35; var15 = 0x0B96777E
-     188 [-]: CALL R15 2 2 ; var15 = var15(var16)
-L24: 189 [-]: JUMPXEQKS R15 K43 L25 NOT; 
-     190 [-]: GETTABLE R16 R8 R13; var16 = var8[var13]
-     191 [-]: ADD R15 R14 R16; var15 = var14 + var16
-     192 [-]: SETTABLE R15 R9 R13; var15[var9] = var13
-     193 [-]: LOADNIL R15  ; var15 = nil
-     194 [-]: SETTABLE R15 R8 R13; var15[var8] = var13
-L25: 195 [-]: FORGLOOP R10 L22 2; 
-     196 [-]: GETIMPORT R10 49; var10 = 0xCFC01047
-     197 [-]: MOVE R11 R8  ; var11 = var8
-     198 [-]: CALL R10 2 4 ; var10, var11, var12 = var10(var11)
-     199 [-]: FORGPREP_NEXT R10 L27; 
-L26: 200 [-]: SETTABLE R14 R9 R13; var14[var9] = var13
-L27: 201 [-]: FORGLOOP R10 L26 2; 
-     202 [-]: GETIMPORT R10 51; var10 = cjson[0xB139D7BC]
-     203 [-]: MOVE R11 R9  ; var11 = var9
-     204 [-]: CALL R10 2 2 ; var10 = var10(var11)
-     205 [-]: MOVE R3 R10  ; var3 = var10
-L28: 206 [-]: GETIMPORT R9 2; var9 = 0x0032441C
-     207 [-]: GETTABLEKS R8 R9 K3; var8 = var9["Scenario"]
-     208 [-]: GETTABLEKS R7 R8 K7; var7 = var8["SendObj"]
-     209 [-]: DUPTABLE R8 53; 
-     210 [-]: SETTABLEKS R2 R8 K52; var2["propName"] = var8
-     211 [-]: SETTABLEKS R3 R8 K42; var3["propValue"] = var8
-     212 [-]: SETTABLEKS R5 R8 K39; var5["epochNum"] = var8
-     213 [-]: SETTABLE R8 R7 R2; var8[var7] = var2
-     214 [-]: JUMPXEQKS R4 K0 L29; 
-     215 [-]: GETIMPORT R10 2; var10 = 0x0032441C
-     216 [-]: GETTABLEKS R9 R10 K3; var9 = var10["Scenario"]
-     217 [-]: GETTABLEKS R8 R9 K7; var8 = var9["SendObj"]
-     218 [-]: GETTABLE R7 R8 R2; var7 = var8[var2]
-     219 [-]: SETTABLEKS R4 R7 K54; var4["propOp"] = var7
-L29: 220 [-]: RETURN R0 0  ; 
+      67 [-]: GETIMPORT R10 27; var10 = 0x64FB1586
+      68 [-]: CALL R10 2 2 ; var10 = var10(var11)
+L11:  69 [-]: MOVE R8 R10  ; var8 = var10
+      70 [-]: LOADK R9 K28 ; var9 = "\n"
+      71 [-]: CONCAT R6 R7 R9; var6 = var7 .. var9
+      72 [-]: JUMPIFNOT R0 L13; goto L13 if not var0
+      73 [-]: MOVE R7 R6   ; var7 = var6
+      74 [-]: LOADK R8 K29 ; var8 = " eventName="
+      75 [-]: FASTCALL1 63 R0 L12; 
+      76 [-]: MOVE R10 R0  ; var10 = var0
+      77 [-]: GETIMPORT R9 27; var9 = 0x64FB1586
+      78 [-]: CALL R9 2 2  ; var9 = var9(var10)
+L12:  79 [-]: CONCAT R6 R7 R9; var6 = var7 .. var9
+L13:  80 [-]: JUMPIFNOT R1 L15; goto L15 if not var1
+      81 [-]: MOVE R7 R6   ; var7 = var6
+      82 [-]: LOADK R8 K30 ; var8 = " eventValues="
+      83 [-]: FASTCALL1 63 R1 L14; 
+      84 [-]: MOVE R10 R1  ; var10 = var1
+      85 [-]: GETIMPORT R9 27; var9 = 0x64FB1586
+      86 [-]: CALL R9 2 2  ; var9 = var9(var10)
+L14:  87 [-]: CONCAT R6 R7 R9; var6 = var7 .. var9
+L15:  88 [-]: JUMPIFNOT R2 L17; goto L17 if not var2
+      89 [-]: MOVE R7 R6   ; var7 = var6
+      90 [-]: LOADK R8 K31 ; var8 = " propName="
+      91 [-]: FASTCALL1 63 R2 L16; 
+      92 [-]: MOVE R10 R2  ; var10 = var2
+      93 [-]: GETIMPORT R9 27; var9 = 0x64FB1586
+      94 [-]: CALL R9 2 2  ; var9 = var9(var10)
+L16:  95 [-]: CONCAT R6 R7 R9; var6 = var7 .. var9
+L17:  96 [-]: JUMPIFNOT R3 L19; goto L19 if not var3
+      97 [-]: MOVE R7 R6   ; var7 = var6
+      98 [-]: LOADK R8 K32 ; var8 = " propValue="
+      99 [-]: FASTCALL1 63 R3 L18; 
+     100 [-]: MOVE R10 R3  ; var10 = var3
+     101 [-]: GETIMPORT R9 27; var9 = 0x64FB1586
+     102 [-]: CALL R9 2 2  ; var9 = var9(var10)
+L18: 103 [-]: CONCAT R6 R7 R9; var6 = var7 .. var9
+L19: 104 [-]: JUMPIFNOT R4 L21; goto L21 if not var4
+     105 [-]: MOVE R7 R6   ; var7 = var6
+     106 [-]: LOADK R8 K33 ; var8 = " propOp="
+     107 [-]: FASTCALL1 63 R4 L20; 
+     108 [-]: MOVE R10 R4  ; var10 = var4
+     109 [-]: GETIMPORT R9 27; var9 = 0x64FB1586
+     110 [-]: CALL R9 2 2  ; var9 = var9(var10)
+L20: 111 [-]: CONCAT R6 R7 R9; var6 = var7 .. var9
+L21: 112 [-]: GETIMPORT R7 5; var7 = 0x3D106989
+     113 [-]: MOVE R8 R6   ; var8 = var6
+     114 [-]: CALL R7 2 1  ; var7(var8)
+     115 [-]: JUMPXEQKNIL R0 L24; 
+     116 [-]: JUMPXEQKS R0 K0 L24; 
+     117 [-]: FASTCALL1 40 R1 L22; 
+     118 [-]: MOVE R8 R1   ; var8 = var1
+     119 [-]: GETIMPORT R7 35; var7 = 0x0B96777E
+     120 [-]: CALL R7 2 2  ; var7 = var7(var8)
+L22: 121 [-]: JUMPXEQKS R7 K36 L23; 
+     122 [-]: NEWTABLE R7 0 1; var7 = {}
+     123 [-]: MOVE R8 R1   ; var8 = var1
+     124 [-]: SETLIST R7 R8 1 [1]; var7[1] = var8; var7[2] = var9; 
+     125 [-]: MOVE R1 R7   ; var1 = var7
+L23: 126 [-]: GETIMPORT R9 2; var9 = 0x0032441C
+     127 [-]: GETTABLEKS R8 R9 K3; var8 = var9["Scenario"]
+     128 [-]: GETTABLEKS R7 R8 K7; var7 = var8["SendObj"]
+     129 [-]: DUPTABLE R8 40; 
+     130 [-]: SETTABLEKS R0 R8 K37; var0["eventName"] = var8
+     131 [-]: SETTABLEKS R1 R8 K38; var1["eventValues"] = var8
+     132 [-]: SETTABLEKS R5 R8 K39; var5["epochNum"] = var8
+     133 [-]: SETTABLE R8 R7 R0; var8[var7] = var0
+L24: 134 [-]: JUMPXEQKNIL R2 L35; 
+     135 [-]: JUMPXEQKS R2 K0 L35; 
+     136 [-]: JUMPXEQKS R4 K41 L34 NOT; 
+     137 [-]: GETIMPORT R10 2; var10 = 0x0032441C
+     138 [-]: GETTABLEKS R9 R10 K3; var9 = var10["Scenario"]
+     139 [-]: GETTABLEKS R8 R9 K7; var8 = var9["SendObj"]
+     140 [-]: GETTABLE R7 R8 R2; var7 = var8[var2]
+     141 [-]: JUMPIFNOT R7 L34; goto L34 if not var7
+     142 [-]: GETIMPORT R11 2; var11 = 0x0032441C
+     143 [-]: GETTABLEKS R10 R11 K3; var10 = var11["Scenario"]
+     144 [-]: GETTABLEKS R9 R10 K7; var9 = var10["SendObj"]
+     145 [-]: GETTABLE R8 R9 R2; var8 = var9[var2]
+     146 [-]: GETTABLEKS R7 R8 K42; var7 = var8["propValue"]
+     147 [-]: JUMPXEQKNIL R7 L34; 
+     148 [-]: GETIMPORT R12 2; var12 = 0x0032441C
+     149 [-]: GETTABLEKS R11 R12 K3; var11 = var12["Scenario"]
+     150 [-]: GETTABLEKS R10 R11 K7; var10 = var11["SendObj"]
+     151 [-]: GETTABLE R9 R10 R2; var9 = var10[var2]
+     152 [-]: GETTABLEKS R8 R9 K42; var8 = var9["propValue"]
+     153 [-]: FASTCALL1 40 R8 L25; 
+     154 [-]: GETIMPORT R7 35; var7 = 0x0B96777E
+     155 [-]: CALL R7 2 2  ; var7 = var7(var8)
+L25: 156 [-]: JUMPXEQKS R7 K43 L26 NOT; 
+     157 [-]: GETIMPORT R12 2; var12 = 0x0032441C
+     158 [-]: GETTABLEKS R11 R12 K3; var11 = var12["Scenario"]
+     159 [-]: GETTABLEKS R10 R11 K7; var10 = var11["SendObj"]
+     160 [-]: GETTABLE R9 R10 R2; var9 = var10[var2]
+     161 [-]: GETTABLEKS R8 R9 K42; var8 = var9["propValue"]
+     162 [-]: ADD R3 R8 R3 ; var3 = var8 + var3
+     163 [-]: JUMP L34     ; goto L34
+L26: 164 [-]: JUMPXEQKS R7 K44 L34 NOT; 
+     165 [-]: FASTCALL1 40 R3 L27; 
+     166 [-]: MOVE R9 R3   ; var9 = var3
+     167 [-]: GETIMPORT R8 35; var8 = 0x0B96777E
+     168 [-]: CALL R8 2 2  ; var8 = var8(var9)
+L27: 169 [-]: JUMPXEQKS R8 K44 L34 NOT; 
+     170 [-]: GETIMPORT R8 47; var8 = cjson[0x7AB914D8]
+     171 [-]: MOVE R9 R3   ; var9 = var3
+     172 [-]: CALL R8 2 2  ; var8 = var8(var9)
+     173 [-]: GETIMPORT R9 47; var9 = cjson[0x7AB914D8]
+     174 [-]: GETIMPORT R14 2; var14 = 0x0032441C
+     175 [-]: GETTABLEKS R13 R14 K3; var13 = var14["Scenario"]
+     176 [-]: GETTABLEKS R12 R13 K7; var12 = var13["SendObj"]
+     177 [-]: GETTABLE R11 R12 R2; var11 = var12[var2]
+     178 [-]: GETTABLEKS R10 R11 K42; var10 = var11["propValue"]
+     179 [-]: CALL R9 2 2  ; var9 = var9(var10)
+     180 [-]: JUMPXEQKNIL R9 L34; 
+     181 [-]: JUMPXEQKNIL R8 L34; 
+     182 [-]: GETIMPORT R10 49; var10 = 0xCFC01047
+     183 [-]: MOVE R11 R9  ; var11 = var9
+     184 [-]: CALL R10 2 4 ; var10, var11, var12 = var10(var11)
+     185 [-]: FORGPREP_NEXT R10 L31; 
+L28: 186 [-]: GETTABLE R16 R8 R13; var16 = var8[var13]
+     187 [-]: FASTCALL1 40 R16 L29; 
+     188 [-]: GETIMPORT R15 35; var15 = 0x0B96777E
+     189 [-]: CALL R15 2 2 ; var15 = var15(var16)
+L29: 190 [-]: JUMPXEQKS R15 K43 L31 NOT; 
+     191 [-]: FASTCALL1 40 R14 L30; 
+     192 [-]: MOVE R16 R14 ; var16 = var14
+     193 [-]: GETIMPORT R15 35; var15 = 0x0B96777E
+     194 [-]: CALL R15 2 2 ; var15 = var15(var16)
+L30: 195 [-]: JUMPXEQKS R15 K43 L31 NOT; 
+     196 [-]: GETTABLE R16 R8 R13; var16 = var8[var13]
+     197 [-]: ADD R15 R14 R16; var15 = var14 + var16
+     198 [-]: SETTABLE R15 R9 R13; var15[var9] = var13
+     199 [-]: LOADNIL R15  ; var15 = nil
+     200 [-]: SETTABLE R15 R8 R13; var15[var8] = var13
+L31: 201 [-]: FORGLOOP R10 L28 2; 
+     202 [-]: GETIMPORT R10 49; var10 = 0xCFC01047
+     203 [-]: MOVE R11 R8  ; var11 = var8
+     204 [-]: CALL R10 2 4 ; var10, var11, var12 = var10(var11)
+     205 [-]: FORGPREP_NEXT R10 L33; 
+L32: 206 [-]: SETTABLE R14 R9 R13; var14[var9] = var13
+L33: 207 [-]: FORGLOOP R10 L32 2; 
+     208 [-]: GETIMPORT R10 51; var10 = cjson[0xB139D7BC]
+     209 [-]: MOVE R11 R9  ; var11 = var9
+     210 [-]: CALL R10 2 2 ; var10 = var10(var11)
+     211 [-]: MOVE R3 R10  ; var3 = var10
+L34: 212 [-]: GETIMPORT R9 2; var9 = 0x0032441C
+     213 [-]: GETTABLEKS R8 R9 K3; var8 = var9["Scenario"]
+     214 [-]: GETTABLEKS R7 R8 K7; var7 = var8["SendObj"]
+     215 [-]: DUPTABLE R8 53; 
+     216 [-]: SETTABLEKS R2 R8 K52; var2["propName"] = var8
+     217 [-]: SETTABLEKS R3 R8 K42; var3["propValue"] = var8
+     218 [-]: SETTABLEKS R5 R8 K39; var5["epochNum"] = var8
+     219 [-]: SETTABLE R8 R7 R2; var8[var7] = var2
+     220 [-]: JUMPXEQKS R4 K0 L35; 
+     221 [-]: GETIMPORT R10 2; var10 = 0x0032441C
+     222 [-]: GETTABLEKS R9 R10 K3; var9 = var10["Scenario"]
+     223 [-]: GETTABLEKS R8 R9 K7; var8 = var9["SendObj"]
+     224 [-]: GETTABLE R7 R8 R2; var7 = var8[var2]
+     225 [-]: SETTABLEKS R4 R7 K54; var4["propOp"] = var7
+L35: 226 [-]: RETURN R0 0  ; 
 
 
 ; Name:            
@@ -572,7 +578,7 @@ L 4:  56 [-]: FORGLOOP R9 L3 2;
       65 [-]: CALL R11 2 4 ; var11, var12, var13 = var11(var12)
       66 [-]: FORGPREP_INEXT R11 L13; 
 L 5:  67 [-]: GETTABLEKS R16 R15 K10; var16 = var15["score"]
-      68 [-]: JUMPIFEQ R16 R10 L6; goto L6 if var16 == var-1039201764
+      68 [-]: JUMPIFEQ R16 R10 L6; goto L6 if var16 == var-1039201729
       69 [-]: GETTABLEKS R10 R15 K10; var10 = var15["score"]
       70 [-]: ADDK R9 R9 K21; var9 = var9 + 1
 L 6:  71 [-]: SETTABLEKS R9 R15 K11; var9["rank"] = var15
@@ -587,7 +593,7 @@ L 8:  77 [-]: LENGTH R19 R16; var19 = #var16
       80 [-]: FORNPREP R17 L13; nforprep start - [escape at L13] -- var17 = iterator
 L 9:  81 [-]: GETTABLEKS R20 R15 K10; var20 = var15["score"]
       82 [-]: GETTABLE R21 R16 R19; var21 = var16[var19]
-      83 [-]: JUMPIFNOTLE R21 R20 L12; goto L12 if var21 > var1510937628
+      83 [-]: JUMPIFNOTLE R21 R20 L12; goto L12 if var21 > var1510937663
       84 [-]: GETTABLEKS R20 R15 K9; var20 = var15["name"]
       85 [-]: GETTABLEKS R22 R0 K2; var22 = var0["Medalists"]
       86 [-]: GETTABLE R21 R22 R20; var21 = var22[var20]
@@ -628,28 +634,29 @@ L15: 102 [-]: GETIMPORT R1 23; var1 = 0x9BA7909F
        4 [-]: SETTABLEKS R3 R2 K1; var3["ScenarioTransmissions"] = var2
 L 0:   5 [-]: GETIMPORT R2 5; var2 = 0x3D106989
        6 [-]: LOADK R4 K6  ; var4 = "ShowSupportTransmission from "
-       7 [-]: GETIMPORT R8 8; var8 = 0x64FB1586
+       7 [-]: FASTCALL1 63 R0 L1; 
        8 [-]: MOVE R9 R0   ; var9 = var0
-       9 [-]: CALL R8 2 2  ; var8 = var8(var9)
-      10 [-]: MOVE R5 R8   ; var5 = var8
-      11 [-]: LOADK R6 K9  ; var6 = " for "
-      12 [-]: MOVE R7 R1   ; var7 = var1
-      13 [-]: CONCAT R3 R4 R7; var3 = var4 .. var7
-      14 [-]: CALL R2 2 1  ; var2(var3)
-      15 [-]: GETIMPORT R3 2; var3 = _T["ScenarioTransmissions"]
-      16 [-]: DUPTABLE R4 13; 
-      17 [-]: SETTABLEKS R0 R4 K10; var0["playerName"] = var4
-      18 [-]: SETTABLEKS R1 R4 K11; var1["message"] = var4
-      19 [-]: GETUPVAL R5 0; var5 = upvalues[0]
-      20 [-]: SETTABLEKS R5 R4 K12; var5["transmission"] = var4
-      21 [-]: FASTCALL2 52 R3 R4 L1; 
-      22 [-]: GETIMPORT R2 16; var2 = 0x33BDD652[0x23D5322F]
-      23 [-]: CALL R2 3 1  ; var2(var3, var4)
-L 1:  24 [-]: GETUPVAL R3 1; var3 = upvalues[1]
-      25 [-]: GETTABLEKS R2 R3 K17; var2 = var3[0x1F60D532]
-      26 [-]: GETUPVAL R3 0; var3 = upvalues[0]
-      27 [-]: CALL R2 2 1  ; var2(var3)
-      28 [-]: RETURN R0 0  ; 
+       9 [-]: GETIMPORT R8 8; var8 = 0x64FB1586
+      10 [-]: CALL R8 2 2  ; var8 = var8(var9)
+L 1:  11 [-]: MOVE R5 R8   ; var5 = var8
+      12 [-]: LOADK R6 K9  ; var6 = " for "
+      13 [-]: MOVE R7 R1   ; var7 = var1
+      14 [-]: CONCAT R3 R4 R7; var3 = var4 .. var7
+      15 [-]: CALL R2 2 1  ; var2(var3)
+      16 [-]: GETIMPORT R3 2; var3 = _T["ScenarioTransmissions"]
+      17 [-]: DUPTABLE R4 13; 
+      18 [-]: SETTABLEKS R0 R4 K10; var0["playerName"] = var4
+      19 [-]: SETTABLEKS R1 R4 K11; var1["message"] = var4
+      20 [-]: GETUPVAL R5 0; var5 = upvalues[0]
+      21 [-]: SETTABLEKS R5 R4 K12; var5["transmission"] = var4
+      22 [-]: FASTCALL2 52 R3 R4 L2; 
+      23 [-]: GETIMPORT R2 16; var2 = 0x33BDD652[0x23D5322F]
+      24 [-]: CALL R2 3 1  ; var2(var3, var4)
+L 2:  25 [-]: GETUPVAL R3 1; var3 = upvalues[1]
+      26 [-]: GETTABLEKS R2 R3 K17; var2 = var3[0x1F60D532]
+      27 [-]: GETUPVAL R3 0; var3 = upvalues[0]
+      28 [-]: CALL R2 2 1  ; var2(var3)
+      29 [-]: RETURN R0 0  ; 
 
 
 ; Name:            
@@ -664,382 +671,388 @@ L 1:  24 [-]: GETUPVAL R3 1; var3 = upvalues[1]
        2 [-]: JUMPIF R0 L0 ; goto L0 if var0
        3 [-]: RETURN R0 0  ; 
 L 0:   4 [-]: LOADK R1 K3  ; var1 = "\r\nLocation: "
-       5 [-]: GETIMPORT R2 5; var2 = 0x64FB1586
-       6 [-]: GETIMPORT R3 7; var3 = 0xE7F2B02F
-       7 [-]: NAMECALL R3 R3 K8; var4 = var3; var3 = var3[0x776913BC]
-       8 [-]: CALL R3 2 0  ; var3, ... = var3(var4)
-       9 [-]: CALL R2 0 2  ; var2 = var2(var3, ...)
-      10 [-]: CONCAT R0 R1 R2; var0 = var1 .. var2
-      11 [-]: GETIMPORT R3 1; var3 = 0x0032441C
-      12 [-]: GETTABLEKS R2 R3 K2; var2 = var3["Scenario"]
-      13 [-]: GETTABLEKS R1 R2 K9; var1 = var2["ScenarioId"]
-      14 [-]: JUMPIFNOT R1 L1; goto L1 if not var1
-      15 [-]: MOVE R1 R0   ; var1 = var0
-      16 [-]: LOADK R2 K10 ; var2 = "\r\nScenarioId: "
-      17 [-]: GETIMPORT R5 1; var5 = 0x0032441C
-      18 [-]: GETTABLEKS R4 R5 K2; var4 = var5["Scenario"]
-      19 [-]: GETTABLEKS R3 R4 K9; var3 = var4["ScenarioId"]
-      20 [-]: CONCAT R0 R1 R3; var0 = var1 .. var3
-L 1:  21 [-]: GETIMPORT R3 1; var3 = 0x0032441C
-      22 [-]: GETTABLEKS R2 R3 K2; var2 = var3["Scenario"]
-      23 [-]: GETTABLEKS R1 R2 K11; var1 = var2["StartTime"]
-      24 [-]: JUMPIFNOT R1 L2; goto L2 if not var1
-      25 [-]: MOVE R1 R0   ; var1 = var0
-      26 [-]: LOADK R2 K12 ; var2 = "\r\nStartTime: "
-      27 [-]: GETIMPORT R5 1; var5 = 0x0032441C
-      28 [-]: GETTABLEKS R4 R5 K2; var4 = var5["Scenario"]
-      29 [-]: GETTABLEKS R3 R4 K11; var3 = var4["StartTime"]
-      30 [-]: CONCAT R0 R1 R3; var0 = var1 .. var3
-L 2:  31 [-]: GETIMPORT R3 1; var3 = 0x0032441C
-      32 [-]: GETTABLEKS R2 R3 K2; var2 = var3["Scenario"]
-      33 [-]: GETTABLEKS R1 R2 K13; var1 = var2["EndTime"]
-      34 [-]: JUMPIFNOT R1 L3; goto L3 if not var1
-      35 [-]: MOVE R1 R0   ; var1 = var0
-      36 [-]: LOADK R2 K14 ; var2 = "\r\nEndTime: "
-      37 [-]: GETIMPORT R5 1; var5 = 0x0032441C
-      38 [-]: GETTABLEKS R4 R5 K2; var4 = var5["Scenario"]
-      39 [-]: GETTABLEKS R3 R4 K13; var3 = var4["EndTime"]
-      40 [-]: CONCAT R0 R1 R3; var0 = var1 .. var3
-L 3:  41 [-]: GETIMPORT R3 1; var3 = 0x0032441C
-      42 [-]: GETTABLEKS R2 R3 K2; var2 = var3["Scenario"]
-      43 [-]: GETTABLEKS R1 R2 K15; var1 = var2["ProgressReq"]
-      44 [-]: JUMPIFNOT R1 L5; goto L5 if not var1
-      45 [-]: GETIMPORT R3 1; var3 = 0x0032441C
-      46 [-]: GETTABLEKS R2 R3 K2; var2 = var3["Scenario"]
-      47 [-]: GETTABLEKS R1 R2 K15; var1 = var2["ProgressReq"]
-      48 [-]: GETIMPORT R4 1; var4 = 0x0032441C
-      49 [-]: GETTABLEKS R3 R4 K2; var3 = var4["Scenario"]
-      50 [-]: GETTABLEKS R2 R3 K16; var2 = var3["State"]
-      51 [-]: JUMPIFNOT R2 L4; goto L4 if not var2
-      52 [-]: GETIMPORT R5 1; var5 = 0x0032441C
-      53 [-]: GETTABLEKS R4 R5 K2; var4 = var5["Scenario"]
-      54 [-]: GETTABLEKS R3 R4 K16; var3 = var4["State"]
-      55 [-]: GETTABLEKS R2 R3 K17; var2 = var3["Progress"]
-      56 [-]: JUMPIFNOT R2 L4; goto L4 if not var2
-      57 [-]: GETIMPORT R5 5; var5 = 0x64FB1586
+       5 [-]: GETIMPORT R3 5; var3 = 0xE7F2B02F
+       6 [-]: NAMECALL R3 R3 K6; var4 = var3; var3 = var3[0x776913BC]
+       7 [-]: CALL R3 2 0  ; var3, ... = var3(var4)
+       8 [-]: FASTCALL 63 L1; 
+       9 [-]: GETIMPORT R2 8; var2 = 0x64FB1586
+      10 [-]: CALL R2 0 2  ; var2 = var2(var3, ...)
+L 1:  11 [-]: CONCAT R0 R1 R2; var0 = var1 .. var2
+      12 [-]: GETIMPORT R3 1; var3 = 0x0032441C
+      13 [-]: GETTABLEKS R2 R3 K2; var2 = var3["Scenario"]
+      14 [-]: GETTABLEKS R1 R2 K9; var1 = var2["ScenarioId"]
+      15 [-]: JUMPIFNOT R1 L2; goto L2 if not var1
+      16 [-]: MOVE R1 R0   ; var1 = var0
+      17 [-]: LOADK R2 K10 ; var2 = "\r\nScenarioId: "
+      18 [-]: GETIMPORT R5 1; var5 = 0x0032441C
+      19 [-]: GETTABLEKS R4 R5 K2; var4 = var5["Scenario"]
+      20 [-]: GETTABLEKS R3 R4 K9; var3 = var4["ScenarioId"]
+      21 [-]: CONCAT R0 R1 R3; var0 = var1 .. var3
+L 2:  22 [-]: GETIMPORT R3 1; var3 = 0x0032441C
+      23 [-]: GETTABLEKS R2 R3 K2; var2 = var3["Scenario"]
+      24 [-]: GETTABLEKS R1 R2 K11; var1 = var2["StartTime"]
+      25 [-]: JUMPIFNOT R1 L3; goto L3 if not var1
+      26 [-]: MOVE R1 R0   ; var1 = var0
+      27 [-]: LOADK R2 K12 ; var2 = "\r\nStartTime: "
+      28 [-]: GETIMPORT R5 1; var5 = 0x0032441C
+      29 [-]: GETTABLEKS R4 R5 K2; var4 = var5["Scenario"]
+      30 [-]: GETTABLEKS R3 R4 K11; var3 = var4["StartTime"]
+      31 [-]: CONCAT R0 R1 R3; var0 = var1 .. var3
+L 3:  32 [-]: GETIMPORT R3 1; var3 = 0x0032441C
+      33 [-]: GETTABLEKS R2 R3 K2; var2 = var3["Scenario"]
+      34 [-]: GETTABLEKS R1 R2 K13; var1 = var2["EndTime"]
+      35 [-]: JUMPIFNOT R1 L4; goto L4 if not var1
+      36 [-]: MOVE R1 R0   ; var1 = var0
+      37 [-]: LOADK R2 K14 ; var2 = "\r\nEndTime: "
+      38 [-]: GETIMPORT R5 1; var5 = 0x0032441C
+      39 [-]: GETTABLEKS R4 R5 K2; var4 = var5["Scenario"]
+      40 [-]: GETTABLEKS R3 R4 K13; var3 = var4["EndTime"]
+      41 [-]: CONCAT R0 R1 R3; var0 = var1 .. var3
+L 4:  42 [-]: GETIMPORT R3 1; var3 = 0x0032441C
+      43 [-]: GETTABLEKS R2 R3 K2; var2 = var3["Scenario"]
+      44 [-]: GETTABLEKS R1 R2 K15; var1 = var2["ProgressReq"]
+      45 [-]: JUMPIFNOT R1 L7; goto L7 if not var1
+      46 [-]: GETIMPORT R3 1; var3 = 0x0032441C
+      47 [-]: GETTABLEKS R2 R3 K2; var2 = var3["Scenario"]
+      48 [-]: GETTABLEKS R1 R2 K15; var1 = var2["ProgressReq"]
+      49 [-]: GETIMPORT R4 1; var4 = 0x0032441C
+      50 [-]: GETTABLEKS R3 R4 K2; var3 = var4["Scenario"]
+      51 [-]: GETTABLEKS R2 R3 K16; var2 = var3["State"]
+      52 [-]: JUMPIFNOT R2 L6; goto L6 if not var2
+      53 [-]: GETIMPORT R5 1; var5 = 0x0032441C
+      54 [-]: GETTABLEKS R4 R5 K2; var4 = var5["Scenario"]
+      55 [-]: GETTABLEKS R3 R4 K16; var3 = var4["State"]
+      56 [-]: GETTABLEKS R2 R3 K17; var2 = var3["Progress"]
+      57 [-]: JUMPIFNOT R2 L6; goto L6 if not var2
       58 [-]: GETIMPORT R9 1; var9 = 0x0032441C
       59 [-]: GETTABLEKS R8 R9 K2; var8 = var9["Scenario"]
       60 [-]: GETTABLEKS R7 R8 K16; var7 = var8["State"]
       61 [-]: GETTABLEKS R6 R7 K17; var6 = var7["Progress"]
-      62 [-]: CALL R5 2 2  ; var5 = var5(var6)
-      63 [-]: MOVE R2 R5   ; var2 = var5
-      64 [-]: LOADK R3 K18 ; var3 = " / "
-      65 [-]: GETIMPORT R6 1; var6 = 0x0032441C
-      66 [-]: GETTABLEKS R5 R6 K2; var5 = var6["Scenario"]
-      67 [-]: GETTABLEKS R4 R5 K15; var4 = var5["ProgressReq"]
-      68 [-]: CONCAT R1 R2 R4; var1 = var2 .. var4
-L 4:  69 [-]: MOVE R2 R0   ; var2 = var0
-      70 [-]: LOADK R3 K19 ; var3 = "\r\nRequiredProgress: "
-      71 [-]: MOVE R4 R1   ; var4 = var1
-      72 [-]: CONCAT R0 R2 R4; var0 = var2 .. var4
-L 5:  73 [-]: MOVE R1 R0   ; var1 = var0
-      74 [-]: LOADK R2 K20 ; var2 = "\r\n"
-      75 [-]: LOADK R3 K21 ; var3 = "Players: "
-      76 [-]: CONCAT R0 R1 R3; var0 = var1 .. var3
-      77 [-]: GETIMPORT R1 7; var1 = 0xE7F2B02F
-      78 [-]: NAMECALL R1 R1 K22; var2 = var1; var1 = var1[0xDC716CB8]
-      79 [-]: CALL R1 2 2  ; var1 = var1(var2)
-      80 [-]: LOADN R4 1   ; var4 = 1
-      81 [-]: LENGTH R2 R1 ; var2 = #var1
-      82 [-]: LOADN R3 1   ; var3 = 1
-      83 [-]: FORNPREP R2 L10; nforprep start - [escape at L10] -- var2 = iterator
-L 6:  84 [-]: MOVE R5 R0   ; var5 = var0
-      85 [-]: GETTABLE R6 R1 R4; var6 = var1[var4]
-      86 [-]: CONCAT R0 R5 R6; var0 = var5 .. var6
-      87 [-]: GETIMPORT R5 25; var5 = _T["ScenarioInitiator"]
-      88 [-]: JUMPIFNOT R5 L7; goto L7 if not var5
-      89 [-]: GETTABLE R5 R1 R4; var5 = var1[var4]
-      90 [-]: GETIMPORT R6 25; var6 = _T["ScenarioInitiator"]
-      91 [-]: JUMPIFNOTEQ R5 R6 L7; goto L7 if var5 ~= var1302
-      92 [-]: MOVE R5 R0   ; var5 = var0
-      93 [-]: LOADK R6 K26 ; var6 = "[*]"
-      94 [-]: CONCAT R0 R5 R6; var0 = var5 .. var6
-L 7:  95 [-]: LENGTH R5 R1 ; var5 = #var1
-      96 [-]: JUMPIFNOTLT R4 R5 L8; goto L8 if var4 >= var1302
-      97 [-]: MOVE R5 R0   ; var5 = var0
-      98 [-]: LOADK R6 K27 ; var6 = ", "
-      99 [-]: CONCAT R0 R5 R6; var0 = var5 .. var6
-     100 [-]: JUMP L9      ; goto L9
-L 8: 101 [-]: MOVE R5 R0   ; var5 = var0
-     102 [-]: LOADK R6 K20 ; var6 = "\r\n"
-     103 [-]: CONCAT R0 R5 R6; var0 = var5 .. var6
-L 9: 104 [-]: FORNLOOP R2 L6; nforloop end - iterate + goto L6
-L10: 105 [-]: GETIMPORT R4 1; var4 = 0x0032441C
-     106 [-]: GETTABLEKS R3 R4 K2; var3 = var4["Scenario"]
-     107 [-]: GETTABLEKS R2 R3 K28; var2 = var3["SquadInfos"]
-     108 [-]: JUMPIFNOT R2 L13; goto L13 if not var2
-     109 [-]: MOVE R2 R0   ; var2 = var0
-     110 [-]: LOADK R3 K29 ; var3 = "Squads:\r\n"
-     111 [-]: CONCAT R0 R2 R3; var0 = var2 .. var3
-     112 [-]: GETIMPORT R2 31; var2 = 0xCFC01047
-     113 [-]: GETIMPORT R6 1; var6 = 0x0032441C
-     114 [-]: GETTABLEKS R5 R6 K2; var5 = var6["Scenario"]
-     115 [-]: GETTABLEKS R3 R5 K28; var3 = var5["SquadInfos"]
-     116 [-]: CALL R2 2 4  ; var2, var3, var4 = var2(var3)
-     117 [-]: FORGPREP_NEXT R2 L12; 
-L11: 118 [-]: MOVE R7 R0   ; var7 = var0
-     119 [-]: LOADK R8 K32 ; var8 = "  "
-     120 [-]: MOVE R9 R5   ; var9 = var5
-     121 [-]: LOADK R10 K33; var10 = "=["
-     122 [-]: GETIMPORT R13 36; var13 = cjson[0xB139D7BC]
-     123 [-]: MOVE R14 R6  ; var14 = var6
-     124 [-]: CALL R13 2 2 ; var13 = var13(var14)
-     125 [-]: MOVE R11 R13 ; var11 = var13
-     126 [-]: LOADK R12 K37; var12 = "]\r\n"
-     127 [-]: CONCAT R0 R7 R12; var0 = var7 .. var12
-L12: 128 [-]: FORGLOOP R2 L11 2; 
-L13: 129 [-]: GETIMPORT R2 31; var2 = 0xCFC01047
-     130 [-]: GETIMPORT R6 1; var6 = 0x0032441C
-     131 [-]: GETTABLEKS R5 R6 K2; var5 = var6["Scenario"]
-     132 [-]: GETTABLEKS R3 R5 K16; var3 = var5["State"]
-     133 [-]: CALL R2 2 4  ; var2, var3, var4 = var2(var3)
-     134 [-]: FORGPREP_NEXT R2 L19; 
-L14: 135 [-]: MOVE R7 R0   ; var7 = var0
-     136 [-]: MOVE R8 R5   ; var8 = var5
-     137 [-]: LOADK R9 K38 ; var9 = "="
-     138 [-]: CONCAT R0 R7 R9; var0 = var7 .. var9
-     139 [-]: FASTCALL1 40 R6 L15; 
-     140 [-]: MOVE R8 R6   ; var8 = var6
-     141 [-]: GETIMPORT R7 40; var7 = 0x0B96777E
-     142 [-]: CALL R7 2 2  ; var7 = var7(var8)
-L15: 143 [-]: JUMPXEQKS R7 K41 L18 NOT; 
-     144 [-]: GETIMPORT R7 31; var7 = 0xCFC01047
-     145 [-]: MOVE R8 R6   ; var8 = var6
-     146 [-]: CALL R7 2 4  ; var7, var8, var9 = var7(var8)
-     147 [-]: FORGPREP_NEXT R7 L17; 
-L16: 148 [-]: MOVE R12 R0  ; var12 = var0
-     149 [-]: GETIMPORT R15 5; var15 = 0x64FB1586
-     150 [-]: MOVE R16 R11 ; var16 = var11
-     151 [-]: CALL R15 2 2 ; var15 = var15(var16)
-     152 [-]: MOVE R13 R15 ; var13 = var15
-     153 [-]: LOADK R14 K42; var14 = ","
-     154 [-]: CONCAT R0 R12 R14; var0 = var12 .. var14
-L17: 155 [-]: FORGLOOP R7 L16 2; 
-     156 [-]: MOVE R7 R0   ; var7 = var0
-     157 [-]: LOADK R8 K20 ; var8 = "\r\n"
-     158 [-]: CONCAT R0 R7 R8; var0 = var7 .. var8
-     159 [-]: JUMP L19     ; goto L19
-L18: 160 [-]: MOVE R7 R0   ; var7 = var0
-     161 [-]: GETIMPORT R10 5; var10 = 0x64FB1586
-     162 [-]: MOVE R11 R6  ; var11 = var6
-     163 [-]: CALL R10 2 2 ; var10 = var10(var11)
-     164 [-]: MOVE R8 R10  ; var8 = var10
-     165 [-]: LOADK R9 K20 ; var9 = "\r\n"
-     166 [-]: CONCAT R0 R7 R9; var0 = var7 .. var9
-L19: 167 [-]: FORGLOOP R2 L14 2; 
-     168 [-]: GETIMPORT R4 1; var4 = 0x0032441C
-     169 [-]: GETTABLEKS R3 R4 K2; var3 = var4["Scenario"]
-     170 [-]: GETTABLEKS R2 R3 K43; var2 = var3["LastEvent"]
-     171 [-]: JUMPIFNOT R2 L20; goto L20 if not var2
-     172 [-]: MOVE R2 R0   ; var2 = var0
-     173 [-]: LOADK R3 K44 ; var3 = "LastEvent: "
-     174 [-]: GETIMPORT R6 36; var6 = cjson[0xB139D7BC]
-     175 [-]: GETIMPORT R9 1; var9 = 0x0032441C
-     176 [-]: GETTABLEKS R8 R9 K2; var8 = var9["Scenario"]
-     177 [-]: GETTABLEKS R7 R8 K43; var7 = var8["LastEvent"]
-     178 [-]: CALL R6 2 2  ; var6 = var6(var7)
-     179 [-]: MOVE R4 R6   ; var4 = var6
-     180 [-]: LOADK R5 K20 ; var5 = "\r\n"
-     181 [-]: CONCAT R0 R2 R5; var0 = var2 .. var5
-L20: 182 [-]: GETIMPORT R4 1; var4 = 0x0032441C
-     183 [-]: GETTABLEKS R3 R4 K2; var3 = var4["Scenario"]
-     184 [-]: GETTABLEKS R2 R3 K45; var2 = var3["PushQueue"]
-     185 [-]: JUMPIFNOT R2 L25; goto L25 if not var2
-     186 [-]: MOVE R2 R0   ; var2 = var0
-     187 [-]: LOADK R3 K46 ; var3 = "PushQueue: "
-     188 [-]: CONCAT R0 R2 R3; var0 = var2 .. var3
-     189 [-]: GETIMPORT R2 31; var2 = 0xCFC01047
-     190 [-]: GETIMPORT R6 1; var6 = 0x0032441C
-     191 [-]: GETTABLEKS R5 R6 K2; var5 = var6["Scenario"]
-     192 [-]: GETTABLEKS R3 R5 K45; var3 = var5["PushQueue"]
-     193 [-]: CALL R2 2 4  ; var2, var3, var4 = var2(var3)
-     194 [-]: FORGPREP_NEXT R2 L24; 
-L21: 195 [-]: MOVE R7 R0   ; var7 = var0
-     196 [-]: LOADK R8 K47 ; var8 = "\""
-     197 [-]: MOVE R9 R5   ; var9 = var5
-     198 [-]: LOADK R10 K48; var10 = "\"=["
-     199 [-]: CONCAT R0 R7 R10; var0 = var7 .. var10
-     200 [-]: GETIMPORT R7 31; var7 = 0xCFC01047
-     201 [-]: MOVE R8 R6   ; var8 = var6
-     202 [-]: CALL R7 2 4  ; var7, var8, var9 = var7(var8)
-     203 [-]: FORGPREP_NEXT R7 L23; 
-L22: 204 [-]: MOVE R12 R0  ; var12 = var0
-     205 [-]: MOVE R13 R11 ; var13 = var11
-     206 [-]: LOADK R14 K27; var14 = ", "
-     207 [-]: CONCAT R0 R12 R14; var0 = var12 .. var14
-L23: 208 [-]: FORGLOOP R7 L22 2; 
-     209 [-]: MOVE R7 R0   ; var7 = var0
-     210 [-]: LOADK R8 K49 ; var8 = "] "
-     211 [-]: CONCAT R0 R7 R8; var0 = var7 .. var8
-L24: 212 [-]: FORGLOOP R2 L21 2; 
-     213 [-]: MOVE R2 R0   ; var2 = var0
-     214 [-]: LOADK R3 K20 ; var3 = "\r\n"
-     215 [-]: CONCAT R0 R2 R3; var0 = var2 .. var3
-L25: 216 [-]: GETIMPORT R4 1; var4 = 0x0032441C
-     217 [-]: GETTABLEKS R3 R4 K2; var3 = var4["Scenario"]
-     218 [-]: GETTABLEKS R2 R3 K50; var2 = var3["PullQueue"]
-     219 [-]: JUMPIFNOT R2 L30; goto L30 if not var2
-     220 [-]: MOVE R2 R0   ; var2 = var0
-     221 [-]: LOADK R3 K51 ; var3 = "PullQueue: "
-     222 [-]: CONCAT R0 R2 R3; var0 = var2 .. var3
-     223 [-]: GETIMPORT R2 31; var2 = 0xCFC01047
-     224 [-]: GETIMPORT R6 1; var6 = 0x0032441C
-     225 [-]: GETTABLEKS R5 R6 K2; var5 = var6["Scenario"]
-     226 [-]: GETTABLEKS R3 R5 K50; var3 = var5["PullQueue"]
-     227 [-]: CALL R2 2 4  ; var2, var3, var4 = var2(var3)
-     228 [-]: FORGPREP_NEXT R2 L29; 
-L26: 229 [-]: MOVE R7 R0   ; var7 = var0
-     230 [-]: LOADK R8 K47 ; var8 = "\""
-     231 [-]: MOVE R9 R5   ; var9 = var5
-     232 [-]: LOADK R10 K48; var10 = "\"=["
-     233 [-]: CONCAT R0 R7 R10; var0 = var7 .. var10
-     234 [-]: GETIMPORT R7 31; var7 = 0xCFC01047
-     235 [-]: MOVE R8 R6   ; var8 = var6
-     236 [-]: CALL R7 2 4  ; var7, var8, var9 = var7(var8)
-     237 [-]: FORGPREP_NEXT R7 L28; 
-L27: 238 [-]: MOVE R12 R0  ; var12 = var0
-     239 [-]: MOVE R13 R11 ; var13 = var11
-     240 [-]: LOADK R14 K27; var14 = ", "
-     241 [-]: CONCAT R0 R12 R14; var0 = var12 .. var14
-L28: 242 [-]: FORGLOOP R7 L27 2; 
-     243 [-]: MOVE R7 R0   ; var7 = var0
-     244 [-]: LOADK R8 K49 ; var8 = "] "
-     245 [-]: CONCAT R0 R7 R8; var0 = var7 .. var8
-L29: 246 [-]: FORGLOOP R2 L26 2; 
-     247 [-]: MOVE R2 R0   ; var2 = var0
-     248 [-]: LOADK R3 K20 ; var3 = "\r\n"
-     249 [-]: CONCAT R0 R2 R3; var0 = var2 .. var3
-L30: 250 [-]: GETIMPORT R4 1; var4 = 0x0032441C
-     251 [-]: GETTABLEKS R3 R4 K2; var3 = var4["Scenario"]
-     252 [-]: GETTABLEKS R2 R3 K52; var2 = var3["pushStats"]
-     253 [-]: JUMPIFNOT R2 L35; goto L35 if not var2
-     254 [-]: MOVE R2 R0   ; var2 = var0
-     255 [-]: LOADK R3 K53 ; var3 = "PushStats: "
-     256 [-]: CONCAT R0 R2 R3; var0 = var2 .. var3
-     257 [-]: GETIMPORT R2 31; var2 = 0xCFC01047
-     258 [-]: GETIMPORT R6 1; var6 = 0x0032441C
-     259 [-]: GETTABLEKS R5 R6 K2; var5 = var6["Scenario"]
-     260 [-]: GETTABLEKS R3 R5 K52; var3 = var5["pushStats"]
-     261 [-]: CALL R2 2 4  ; var2, var3, var4 = var2(var3)
-     262 [-]: FORGPREP_NEXT R2 L34; 
-L31: 263 [-]: MOVE R7 R0   ; var7 = var0
-     264 [-]: MOVE R8 R5   ; var8 = var5
-     265 [-]: LOADK R9 K54 ; var9 = ": "
-     266 [-]: CONCAT R0 R7 R9; var0 = var7 .. var9
-     267 [-]: GETIMPORT R7 31; var7 = 0xCFC01047
-     268 [-]: MOVE R8 R6   ; var8 = var6
-     269 [-]: CALL R7 2 4  ; var7, var8, var9 = var7(var8)
-     270 [-]: FORGPREP_NEXT R7 L33; 
-L32: 271 [-]: MOVE R12 R0  ; var12 = var0
-     272 [-]: MOVE R13 R10 ; var13 = var10
-     273 [-]: LOADK R14 K38; var14 = "="
-     274 [-]: GETIMPORT R17 5; var17 = 0x64FB1586
-     275 [-]: MOVE R18 R11 ; var18 = var11
-     276 [-]: CALL R17 2 2 ; var17 = var17(var18)
-     277 [-]: MOVE R15 R17 ; var15 = var17
-     278 [-]: LOADK R16 K27; var16 = ", "
-     279 [-]: CONCAT R0 R12 R16; var0 = var12 .. var16
-L33: 280 [-]: FORGLOOP R7 L32 2; 
-L34: 281 [-]: FORGLOOP R2 L31 2; 
-     282 [-]: MOVE R2 R0   ; var2 = var0
-     283 [-]: LOADK R3 K20 ; var3 = "\r\n"
-     284 [-]: CONCAT R0 R2 R3; var0 = var2 .. var3
-L35: 285 [-]: GETIMPORT R4 1; var4 = 0x0032441C
-     286 [-]: GETTABLEKS R3 R4 K2; var3 = var4["Scenario"]
-     287 [-]: GETTABLEKS R2 R3 K55; var2 = var3["pullStats"]
-     288 [-]: JUMPIFNOT R2 L40; goto L40 if not var2
-     289 [-]: MOVE R2 R0   ; var2 = var0
-     290 [-]: LOADK R3 K56 ; var3 = "PullStats: "
-     291 [-]: CONCAT R0 R2 R3; var0 = var2 .. var3
-     292 [-]: GETIMPORT R2 31; var2 = 0xCFC01047
-     293 [-]: GETIMPORT R6 1; var6 = 0x0032441C
-     294 [-]: GETTABLEKS R5 R6 K2; var5 = var6["Scenario"]
-     295 [-]: GETTABLEKS R3 R5 K55; var3 = var5["pullStats"]
-     296 [-]: CALL R2 2 4  ; var2, var3, var4 = var2(var3)
-     297 [-]: FORGPREP_NEXT R2 L39; 
-L36: 298 [-]: MOVE R7 R0   ; var7 = var0
-     299 [-]: MOVE R8 R5   ; var8 = var5
-     300 [-]: LOADK R9 K54 ; var9 = ": "
-     301 [-]: CONCAT R0 R7 R9; var0 = var7 .. var9
-     302 [-]: GETIMPORT R7 31; var7 = 0xCFC01047
-     303 [-]: MOVE R8 R6   ; var8 = var6
-     304 [-]: CALL R7 2 4  ; var7, var8, var9 = var7(var8)
-     305 [-]: FORGPREP_NEXT R7 L38; 
-L37: 306 [-]: MOVE R12 R0  ; var12 = var0
-     307 [-]: MOVE R13 R10 ; var13 = var10
-     308 [-]: LOADK R14 K38; var14 = "="
-     309 [-]: GETIMPORT R17 5; var17 = 0x64FB1586
-     310 [-]: MOVE R18 R11 ; var18 = var11
-     311 [-]: CALL R17 2 2 ; var17 = var17(var18)
-     312 [-]: MOVE R15 R17 ; var15 = var17
-     313 [-]: LOADK R16 K27; var16 = ", "
-     314 [-]: CONCAT R0 R12 R16; var0 = var12 .. var16
-L38: 315 [-]: FORGLOOP R7 L37 2; 
-L39: 316 [-]: FORGLOOP R2 L36 2; 
-     317 [-]: MOVE R2 R0   ; var2 = var0
-     318 [-]: LOADK R3 K20 ; var3 = "\r\n"
-     319 [-]: CONCAT R0 R2 R3; var0 = var2 .. var3
-L40: 320 [-]: GETIMPORT R4 1; var4 = 0x0032441C
-     321 [-]: GETTABLEKS R3 R4 K2; var3 = var4["Scenario"]
-     322 [-]: GETTABLEKS R2 R3 K57; var2 = var3["PushResult"]
-     323 [-]: JUMPIFNOT R2 L43; goto L43 if not var2
-     324 [-]: GETIMPORT R5 1; var5 = 0x0032441C
-     325 [-]: GETTABLEKS R4 R5 K2; var4 = var5["Scenario"]
-     326 [-]: GETTABLEKS R3 R4 K57; var3 = var4["PushResult"]
-     327 [-]: GETTABLEKS R2 R3 K58; var2 = var3["consumer"]
-     328 [-]: JUMPXEQKNIL R2 L41; 
-     329 [-]: JUMPXEQKS R2 K59 L42 NOT; 
-L41: 330 [-]: LOADK R2 K60 ; var2 = "pending"
-L42: 331 [-]: MOVE R3 R0   ; var3 = var0
-     332 [-]: LOADK R4 K61 ; var4 = "LastPushResult: "
-     333 [-]: GETIMPORT R13 1; var13 = 0x0032441C
-     334 [-]: GETTABLEKS R12 R13 K2; var12 = var13["Scenario"]
-     335 [-]: GETTABLEKS R11 R12 K57; var11 = var12["PushResult"]
-     336 [-]: GETTABLEKS R5 R11 K62; var5 = var11["name"]
-     337 [-]: LOADK R6 K63 ; var6 = " pushed "
-     338 [-]: GETIMPORT R13 1; var13 = 0x0032441C
-     339 [-]: GETTABLEKS R12 R13 K2; var12 = var13["Scenario"]
-     340 [-]: GETTABLEKS R11 R12 K57; var11 = var12["PushResult"]
-     341 [-]: GETTABLEKS R7 R11 K64; var7 = var11["prop"]
-     342 [-]: LOADK R8 K65 ; var8 = " -> "
-     343 [-]: MOVE R9 R2   ; var9 = var2
-     344 [-]: LOADK R10 K20; var10 = "\r\n"
-     345 [-]: CONCAT R0 R3 R10; var0 = var3 .. var10
-L43: 346 [-]: GETIMPORT R4 1; var4 = 0x0032441C
-     347 [-]: GETTABLEKS R3 R4 K2; var3 = var4["Scenario"]
-     348 [-]: GETTABLEKS R2 R3 K66; var2 = var3["PullResult"]
-     349 [-]: JUMPIFNOT R2 L46; goto L46 if not var2
-     350 [-]: GETIMPORT R5 1; var5 = 0x0032441C
-     351 [-]: GETTABLEKS R4 R5 K2; var4 = var5["Scenario"]
-     352 [-]: GETTABLEKS R3 R4 K66; var3 = var4["PullResult"]
-     353 [-]: GETTABLEKS R2 R3 K67; var2 = var3["producer"]
-     354 [-]: JUMPXEQKNIL R2 L44; 
-     355 [-]: JUMPXEQKS R2 K59 L45 NOT; 
-L44: 356 [-]: LOADK R2 K68 ; var2 = "waiting"
-L45: 357 [-]: MOVE R3 R0   ; var3 = var0
-     358 [-]: LOADK R4 K69 ; var4 = "LastPullResult: "
-     359 [-]: GETIMPORT R13 1; var13 = 0x0032441C
-     360 [-]: GETTABLEKS R12 R13 K2; var12 = var13["Scenario"]
-     361 [-]: GETTABLEKS R11 R12 K66; var11 = var12["PullResult"]
-     362 [-]: GETTABLEKS R5 R11 K62; var5 = var11["name"]
-     363 [-]: LOADK R6 K70 ; var6 = " pulled "
-     364 [-]: GETIMPORT R13 1; var13 = 0x0032441C
-     365 [-]: GETTABLEKS R12 R13 K2; var12 = var13["Scenario"]
-     366 [-]: GETTABLEKS R11 R12 K66; var11 = var12["PullResult"]
-     367 [-]: GETTABLEKS R7 R11 K64; var7 = var11["prop"]
-     368 [-]: LOADK R8 K65 ; var8 = " -> "
-     369 [-]: MOVE R9 R2   ; var9 = var2
-     370 [-]: LOADK R10 K20; var10 = "\r\n"
-     371 [-]: CONCAT R0 R3 R10; var0 = var3 .. var10
-L46: 372 [-]: GETIMPORT R2 7; var2 = 0xE7F2B02F
-     373 [-]: MOVE R4 R0   ; var4 = var0
-     374 [-]: NAMECALL R2 R2 K71; var3 = var2; var2 = var2[0x062451A5]
-     375 [-]: CALL R2 3 1  ; var2(var3, var4)
-     376 [-]: GETIMPORT R2 73; var2 = _T["ScenarioDebugInfoChangedCallback"]
-     377 [-]: JUMPIFNOT R2 L47; goto L47 if not var2
-     378 [-]: GETIMPORT R2 73; var2 = _T["ScenarioDebugInfoChangedCallback"]
-     379 [-]: CALL R2 1 1  ; var2()
-L47: 380 [-]: RETURN R0 0  ; 
+      62 [-]: FASTCALL1 63 R6 L5; 
+      63 [-]: GETIMPORT R5 8; var5 = 0x64FB1586
+      64 [-]: CALL R5 2 2  ; var5 = var5(var6)
+L 5:  65 [-]: MOVE R2 R5   ; var2 = var5
+      66 [-]: LOADK R3 K18 ; var3 = " / "
+      67 [-]: GETIMPORT R6 1; var6 = 0x0032441C
+      68 [-]: GETTABLEKS R5 R6 K2; var5 = var6["Scenario"]
+      69 [-]: GETTABLEKS R4 R5 K15; var4 = var5["ProgressReq"]
+      70 [-]: CONCAT R1 R2 R4; var1 = var2 .. var4
+L 6:  71 [-]: MOVE R2 R0   ; var2 = var0
+      72 [-]: LOADK R3 K19 ; var3 = "\r\nRequiredProgress: "
+      73 [-]: MOVE R4 R1   ; var4 = var1
+      74 [-]: CONCAT R0 R2 R4; var0 = var2 .. var4
+L 7:  75 [-]: MOVE R1 R0   ; var1 = var0
+      76 [-]: LOADK R2 K20 ; var2 = "\r\n"
+      77 [-]: LOADK R3 K21 ; var3 = "Players: "
+      78 [-]: CONCAT R0 R1 R3; var0 = var1 .. var3
+      79 [-]: GETIMPORT R1 5; var1 = 0xE7F2B02F
+      80 [-]: NAMECALL R1 R1 K22; var2 = var1; var1 = var1[0xDC716CB8]
+      81 [-]: CALL R1 2 2  ; var1 = var1(var2)
+      82 [-]: LOADN R4 1   ; var4 = 1
+      83 [-]: LENGTH R2 R1 ; var2 = #var1
+      84 [-]: LOADN R3 1   ; var3 = 1
+      85 [-]: FORNPREP R2 L12; nforprep start - [escape at L12] -- var2 = iterator
+L 8:  86 [-]: MOVE R5 R0   ; var5 = var0
+      87 [-]: GETTABLE R6 R1 R4; var6 = var1[var4]
+      88 [-]: CONCAT R0 R5 R6; var0 = var5 .. var6
+      89 [-]: GETIMPORT R5 25; var5 = _T["ScenarioInitiator"]
+      90 [-]: JUMPIFNOT R5 L9; goto L9 if not var5
+      91 [-]: GETTABLE R5 R1 R4; var5 = var1[var4]
+      92 [-]: GETIMPORT R6 25; var6 = _T["ScenarioInitiator"]
+      93 [-]: JUMPIFNOTEQ R5 R6 L9; goto L9 if var5 ~= var1326
+      94 [-]: MOVE R5 R0   ; var5 = var0
+      95 [-]: LOADK R6 K26 ; var6 = "[*]"
+      96 [-]: CONCAT R0 R5 R6; var0 = var5 .. var6
+L 9:  97 [-]: LENGTH R5 R1 ; var5 = #var1
+      98 [-]: JUMPIFNOTLT R4 R5 L10; goto L10 if var4 >= var1326
+      99 [-]: MOVE R5 R0   ; var5 = var0
+     100 [-]: LOADK R6 K27 ; var6 = ", "
+     101 [-]: CONCAT R0 R5 R6; var0 = var5 .. var6
+     102 [-]: JUMP L11     ; goto L11
+L10: 103 [-]: MOVE R5 R0   ; var5 = var0
+     104 [-]: LOADK R6 K20 ; var6 = "\r\n"
+     105 [-]: CONCAT R0 R5 R6; var0 = var5 .. var6
+L11: 106 [-]: FORNLOOP R2 L8; nforloop end - iterate + goto L8
+L12: 107 [-]: GETIMPORT R4 1; var4 = 0x0032441C
+     108 [-]: GETTABLEKS R3 R4 K2; var3 = var4["Scenario"]
+     109 [-]: GETTABLEKS R2 R3 K28; var2 = var3["SquadInfos"]
+     110 [-]: JUMPIFNOT R2 L15; goto L15 if not var2
+     111 [-]: MOVE R2 R0   ; var2 = var0
+     112 [-]: LOADK R3 K29 ; var3 = "Squads:\r\n"
+     113 [-]: CONCAT R0 R2 R3; var0 = var2 .. var3
+     114 [-]: GETIMPORT R2 31; var2 = 0xCFC01047
+     115 [-]: GETIMPORT R6 1; var6 = 0x0032441C
+     116 [-]: GETTABLEKS R5 R6 K2; var5 = var6["Scenario"]
+     117 [-]: GETTABLEKS R3 R5 K28; var3 = var5["SquadInfos"]
+     118 [-]: CALL R2 2 4  ; var2, var3, var4 = var2(var3)
+     119 [-]: FORGPREP_NEXT R2 L14; 
+L13: 120 [-]: MOVE R7 R0   ; var7 = var0
+     121 [-]: LOADK R8 K32 ; var8 = "  "
+     122 [-]: MOVE R9 R5   ; var9 = var5
+     123 [-]: LOADK R10 K33; var10 = "=["
+     124 [-]: GETIMPORT R13 36; var13 = cjson[0xB139D7BC]
+     125 [-]: MOVE R14 R6  ; var14 = var6
+     126 [-]: CALL R13 2 2 ; var13 = var13(var14)
+     127 [-]: MOVE R11 R13 ; var11 = var13
+     128 [-]: LOADK R12 K37; var12 = "]\r\n"
+     129 [-]: CONCAT R0 R7 R12; var0 = var7 .. var12
+L14: 130 [-]: FORGLOOP R2 L13 2; 
+L15: 131 [-]: GETIMPORT R2 31; var2 = 0xCFC01047
+     132 [-]: GETIMPORT R6 1; var6 = 0x0032441C
+     133 [-]: GETTABLEKS R5 R6 K2; var5 = var6["Scenario"]
+     134 [-]: GETTABLEKS R3 R5 K16; var3 = var5["State"]
+     135 [-]: CALL R2 2 4  ; var2, var3, var4 = var2(var3)
+     136 [-]: FORGPREP_NEXT R2 L23; 
+L16: 137 [-]: MOVE R7 R0   ; var7 = var0
+     138 [-]: MOVE R8 R5   ; var8 = var5
+     139 [-]: LOADK R9 K38 ; var9 = "="
+     140 [-]: CONCAT R0 R7 R9; var0 = var7 .. var9
+     141 [-]: FASTCALL1 40 R6 L17; 
+     142 [-]: MOVE R8 R6   ; var8 = var6
+     143 [-]: GETIMPORT R7 40; var7 = 0x0B96777E
+     144 [-]: CALL R7 2 2  ; var7 = var7(var8)
+L17: 145 [-]: JUMPXEQKS R7 K41 L21 NOT; 
+     146 [-]: GETIMPORT R7 31; var7 = 0xCFC01047
+     147 [-]: MOVE R8 R6   ; var8 = var6
+     148 [-]: CALL R7 2 4  ; var7, var8, var9 = var7(var8)
+     149 [-]: FORGPREP_NEXT R7 L20; 
+L18: 150 [-]: MOVE R12 R0  ; var12 = var0
+     151 [-]: FASTCALL1 63 R11 L19; 
+     152 [-]: MOVE R16 R11 ; var16 = var11
+     153 [-]: GETIMPORT R15 8; var15 = 0x64FB1586
+     154 [-]: CALL R15 2 2 ; var15 = var15(var16)
+L19: 155 [-]: MOVE R13 R15 ; var13 = var15
+     156 [-]: LOADK R14 K42; var14 = ","
+     157 [-]: CONCAT R0 R12 R14; var0 = var12 .. var14
+L20: 158 [-]: FORGLOOP R7 L18 2; 
+     159 [-]: MOVE R7 R0   ; var7 = var0
+     160 [-]: LOADK R8 K20 ; var8 = "\r\n"
+     161 [-]: CONCAT R0 R7 R8; var0 = var7 .. var8
+     162 [-]: JUMP L23     ; goto L23
+L21: 163 [-]: MOVE R7 R0   ; var7 = var0
+     164 [-]: FASTCALL1 63 R6 L22; 
+     165 [-]: MOVE R11 R6  ; var11 = var6
+     166 [-]: GETIMPORT R10 8; var10 = 0x64FB1586
+     167 [-]: CALL R10 2 2 ; var10 = var10(var11)
+L22: 168 [-]: MOVE R8 R10  ; var8 = var10
+     169 [-]: LOADK R9 K20 ; var9 = "\r\n"
+     170 [-]: CONCAT R0 R7 R9; var0 = var7 .. var9
+L23: 171 [-]: FORGLOOP R2 L16 2; 
+     172 [-]: GETIMPORT R4 1; var4 = 0x0032441C
+     173 [-]: GETTABLEKS R3 R4 K2; var3 = var4["Scenario"]
+     174 [-]: GETTABLEKS R2 R3 K43; var2 = var3["LastEvent"]
+     175 [-]: JUMPIFNOT R2 L24; goto L24 if not var2
+     176 [-]: MOVE R2 R0   ; var2 = var0
+     177 [-]: LOADK R3 K44 ; var3 = "LastEvent: "
+     178 [-]: GETIMPORT R6 36; var6 = cjson[0xB139D7BC]
+     179 [-]: GETIMPORT R9 1; var9 = 0x0032441C
+     180 [-]: GETTABLEKS R8 R9 K2; var8 = var9["Scenario"]
+     181 [-]: GETTABLEKS R7 R8 K43; var7 = var8["LastEvent"]
+     182 [-]: CALL R6 2 2  ; var6 = var6(var7)
+     183 [-]: MOVE R4 R6   ; var4 = var6
+     184 [-]: LOADK R5 K20 ; var5 = "\r\n"
+     185 [-]: CONCAT R0 R2 R5; var0 = var2 .. var5
+L24: 186 [-]: GETIMPORT R4 1; var4 = 0x0032441C
+     187 [-]: GETTABLEKS R3 R4 K2; var3 = var4["Scenario"]
+     188 [-]: GETTABLEKS R2 R3 K45; var2 = var3["PushQueue"]
+     189 [-]: JUMPIFNOT R2 L29; goto L29 if not var2
+     190 [-]: MOVE R2 R0   ; var2 = var0
+     191 [-]: LOADK R3 K46 ; var3 = "PushQueue: "
+     192 [-]: CONCAT R0 R2 R3; var0 = var2 .. var3
+     193 [-]: GETIMPORT R2 31; var2 = 0xCFC01047
+     194 [-]: GETIMPORT R6 1; var6 = 0x0032441C
+     195 [-]: GETTABLEKS R5 R6 K2; var5 = var6["Scenario"]
+     196 [-]: GETTABLEKS R3 R5 K45; var3 = var5["PushQueue"]
+     197 [-]: CALL R2 2 4  ; var2, var3, var4 = var2(var3)
+     198 [-]: FORGPREP_NEXT R2 L28; 
+L25: 199 [-]: MOVE R7 R0   ; var7 = var0
+     200 [-]: LOADK R8 K47 ; var8 = "\""
+     201 [-]: MOVE R9 R5   ; var9 = var5
+     202 [-]: LOADK R10 K48; var10 = "\"=["
+     203 [-]: CONCAT R0 R7 R10; var0 = var7 .. var10
+     204 [-]: GETIMPORT R7 31; var7 = 0xCFC01047
+     205 [-]: MOVE R8 R6   ; var8 = var6
+     206 [-]: CALL R7 2 4  ; var7, var8, var9 = var7(var8)
+     207 [-]: FORGPREP_NEXT R7 L27; 
+L26: 208 [-]: MOVE R12 R0  ; var12 = var0
+     209 [-]: MOVE R13 R11 ; var13 = var11
+     210 [-]: LOADK R14 K27; var14 = ", "
+     211 [-]: CONCAT R0 R12 R14; var0 = var12 .. var14
+L27: 212 [-]: FORGLOOP R7 L26 2; 
+     213 [-]: MOVE R7 R0   ; var7 = var0
+     214 [-]: LOADK R8 K49 ; var8 = "] "
+     215 [-]: CONCAT R0 R7 R8; var0 = var7 .. var8
+L28: 216 [-]: FORGLOOP R2 L25 2; 
+     217 [-]: MOVE R2 R0   ; var2 = var0
+     218 [-]: LOADK R3 K20 ; var3 = "\r\n"
+     219 [-]: CONCAT R0 R2 R3; var0 = var2 .. var3
+L29: 220 [-]: GETIMPORT R4 1; var4 = 0x0032441C
+     221 [-]: GETTABLEKS R3 R4 K2; var3 = var4["Scenario"]
+     222 [-]: GETTABLEKS R2 R3 K50; var2 = var3["PullQueue"]
+     223 [-]: JUMPIFNOT R2 L34; goto L34 if not var2
+     224 [-]: MOVE R2 R0   ; var2 = var0
+     225 [-]: LOADK R3 K51 ; var3 = "PullQueue: "
+     226 [-]: CONCAT R0 R2 R3; var0 = var2 .. var3
+     227 [-]: GETIMPORT R2 31; var2 = 0xCFC01047
+     228 [-]: GETIMPORT R6 1; var6 = 0x0032441C
+     229 [-]: GETTABLEKS R5 R6 K2; var5 = var6["Scenario"]
+     230 [-]: GETTABLEKS R3 R5 K50; var3 = var5["PullQueue"]
+     231 [-]: CALL R2 2 4  ; var2, var3, var4 = var2(var3)
+     232 [-]: FORGPREP_NEXT R2 L33; 
+L30: 233 [-]: MOVE R7 R0   ; var7 = var0
+     234 [-]: LOADK R8 K47 ; var8 = "\""
+     235 [-]: MOVE R9 R5   ; var9 = var5
+     236 [-]: LOADK R10 K48; var10 = "\"=["
+     237 [-]: CONCAT R0 R7 R10; var0 = var7 .. var10
+     238 [-]: GETIMPORT R7 31; var7 = 0xCFC01047
+     239 [-]: MOVE R8 R6   ; var8 = var6
+     240 [-]: CALL R7 2 4  ; var7, var8, var9 = var7(var8)
+     241 [-]: FORGPREP_NEXT R7 L32; 
+L31: 242 [-]: MOVE R12 R0  ; var12 = var0
+     243 [-]: MOVE R13 R11 ; var13 = var11
+     244 [-]: LOADK R14 K27; var14 = ", "
+     245 [-]: CONCAT R0 R12 R14; var0 = var12 .. var14
+L32: 246 [-]: FORGLOOP R7 L31 2; 
+     247 [-]: MOVE R7 R0   ; var7 = var0
+     248 [-]: LOADK R8 K49 ; var8 = "] "
+     249 [-]: CONCAT R0 R7 R8; var0 = var7 .. var8
+L33: 250 [-]: FORGLOOP R2 L30 2; 
+     251 [-]: MOVE R2 R0   ; var2 = var0
+     252 [-]: LOADK R3 K20 ; var3 = "\r\n"
+     253 [-]: CONCAT R0 R2 R3; var0 = var2 .. var3
+L34: 254 [-]: GETIMPORT R4 1; var4 = 0x0032441C
+     255 [-]: GETTABLEKS R3 R4 K2; var3 = var4["Scenario"]
+     256 [-]: GETTABLEKS R2 R3 K52; var2 = var3["pushStats"]
+     257 [-]: JUMPIFNOT R2 L40; goto L40 if not var2
+     258 [-]: MOVE R2 R0   ; var2 = var0
+     259 [-]: LOADK R3 K53 ; var3 = "PushStats: "
+     260 [-]: CONCAT R0 R2 R3; var0 = var2 .. var3
+     261 [-]: GETIMPORT R2 31; var2 = 0xCFC01047
+     262 [-]: GETIMPORT R6 1; var6 = 0x0032441C
+     263 [-]: GETTABLEKS R5 R6 K2; var5 = var6["Scenario"]
+     264 [-]: GETTABLEKS R3 R5 K52; var3 = var5["pushStats"]
+     265 [-]: CALL R2 2 4  ; var2, var3, var4 = var2(var3)
+     266 [-]: FORGPREP_NEXT R2 L39; 
+L35: 267 [-]: MOVE R7 R0   ; var7 = var0
+     268 [-]: MOVE R8 R5   ; var8 = var5
+     269 [-]: LOADK R9 K54 ; var9 = ": "
+     270 [-]: CONCAT R0 R7 R9; var0 = var7 .. var9
+     271 [-]: GETIMPORT R7 31; var7 = 0xCFC01047
+     272 [-]: MOVE R8 R6   ; var8 = var6
+     273 [-]: CALL R7 2 4  ; var7, var8, var9 = var7(var8)
+     274 [-]: FORGPREP_NEXT R7 L38; 
+L36: 275 [-]: MOVE R12 R0  ; var12 = var0
+     276 [-]: MOVE R13 R10 ; var13 = var10
+     277 [-]: LOADK R14 K38; var14 = "="
+     278 [-]: FASTCALL1 63 R11 L37; 
+     279 [-]: MOVE R18 R11 ; var18 = var11
+     280 [-]: GETIMPORT R17 8; var17 = 0x64FB1586
+     281 [-]: CALL R17 2 2 ; var17 = var17(var18)
+L37: 282 [-]: MOVE R15 R17 ; var15 = var17
+     283 [-]: LOADK R16 K27; var16 = ", "
+     284 [-]: CONCAT R0 R12 R16; var0 = var12 .. var16
+L38: 285 [-]: FORGLOOP R7 L36 2; 
+L39: 286 [-]: FORGLOOP R2 L35 2; 
+     287 [-]: MOVE R2 R0   ; var2 = var0
+     288 [-]: LOADK R3 K20 ; var3 = "\r\n"
+     289 [-]: CONCAT R0 R2 R3; var0 = var2 .. var3
+L40: 290 [-]: GETIMPORT R4 1; var4 = 0x0032441C
+     291 [-]: GETTABLEKS R3 R4 K2; var3 = var4["Scenario"]
+     292 [-]: GETTABLEKS R2 R3 K55; var2 = var3["pullStats"]
+     293 [-]: JUMPIFNOT R2 L46; goto L46 if not var2
+     294 [-]: MOVE R2 R0   ; var2 = var0
+     295 [-]: LOADK R3 K56 ; var3 = "PullStats: "
+     296 [-]: CONCAT R0 R2 R3; var0 = var2 .. var3
+     297 [-]: GETIMPORT R2 31; var2 = 0xCFC01047
+     298 [-]: GETIMPORT R6 1; var6 = 0x0032441C
+     299 [-]: GETTABLEKS R5 R6 K2; var5 = var6["Scenario"]
+     300 [-]: GETTABLEKS R3 R5 K55; var3 = var5["pullStats"]
+     301 [-]: CALL R2 2 4  ; var2, var3, var4 = var2(var3)
+     302 [-]: FORGPREP_NEXT R2 L45; 
+L41: 303 [-]: MOVE R7 R0   ; var7 = var0
+     304 [-]: MOVE R8 R5   ; var8 = var5
+     305 [-]: LOADK R9 K54 ; var9 = ": "
+     306 [-]: CONCAT R0 R7 R9; var0 = var7 .. var9
+     307 [-]: GETIMPORT R7 31; var7 = 0xCFC01047
+     308 [-]: MOVE R8 R6   ; var8 = var6
+     309 [-]: CALL R7 2 4  ; var7, var8, var9 = var7(var8)
+     310 [-]: FORGPREP_NEXT R7 L44; 
+L42: 311 [-]: MOVE R12 R0  ; var12 = var0
+     312 [-]: MOVE R13 R10 ; var13 = var10
+     313 [-]: LOADK R14 K38; var14 = "="
+     314 [-]: FASTCALL1 63 R11 L43; 
+     315 [-]: MOVE R18 R11 ; var18 = var11
+     316 [-]: GETIMPORT R17 8; var17 = 0x64FB1586
+     317 [-]: CALL R17 2 2 ; var17 = var17(var18)
+L43: 318 [-]: MOVE R15 R17 ; var15 = var17
+     319 [-]: LOADK R16 K27; var16 = ", "
+     320 [-]: CONCAT R0 R12 R16; var0 = var12 .. var16
+L44: 321 [-]: FORGLOOP R7 L42 2; 
+L45: 322 [-]: FORGLOOP R2 L41 2; 
+     323 [-]: MOVE R2 R0   ; var2 = var0
+     324 [-]: LOADK R3 K20 ; var3 = "\r\n"
+     325 [-]: CONCAT R0 R2 R3; var0 = var2 .. var3
+L46: 326 [-]: GETIMPORT R4 1; var4 = 0x0032441C
+     327 [-]: GETTABLEKS R3 R4 K2; var3 = var4["Scenario"]
+     328 [-]: GETTABLEKS R2 R3 K57; var2 = var3["PushResult"]
+     329 [-]: JUMPIFNOT R2 L49; goto L49 if not var2
+     330 [-]: GETIMPORT R5 1; var5 = 0x0032441C
+     331 [-]: GETTABLEKS R4 R5 K2; var4 = var5["Scenario"]
+     332 [-]: GETTABLEKS R3 R4 K57; var3 = var4["PushResult"]
+     333 [-]: GETTABLEKS R2 R3 K58; var2 = var3["consumer"]
+     334 [-]: JUMPXEQKNIL R2 L47; 
+     335 [-]: JUMPXEQKS R2 K59 L48 NOT; 
+L47: 336 [-]: LOADK R2 K60 ; var2 = "pending"
+L48: 337 [-]: MOVE R3 R0   ; var3 = var0
+     338 [-]: LOADK R4 K61 ; var4 = "LastPushResult: "
+     339 [-]: GETIMPORT R13 1; var13 = 0x0032441C
+     340 [-]: GETTABLEKS R12 R13 K2; var12 = var13["Scenario"]
+     341 [-]: GETTABLEKS R11 R12 K57; var11 = var12["PushResult"]
+     342 [-]: GETTABLEKS R5 R11 K62; var5 = var11["name"]
+     343 [-]: LOADK R6 K63 ; var6 = " pushed "
+     344 [-]: GETIMPORT R13 1; var13 = 0x0032441C
+     345 [-]: GETTABLEKS R12 R13 K2; var12 = var13["Scenario"]
+     346 [-]: GETTABLEKS R11 R12 K57; var11 = var12["PushResult"]
+     347 [-]: GETTABLEKS R7 R11 K64; var7 = var11["prop"]
+     348 [-]: LOADK R8 K65 ; var8 = " -> "
+     349 [-]: MOVE R9 R2   ; var9 = var2
+     350 [-]: LOADK R10 K20; var10 = "\r\n"
+     351 [-]: CONCAT R0 R3 R10; var0 = var3 .. var10
+L49: 352 [-]: GETIMPORT R4 1; var4 = 0x0032441C
+     353 [-]: GETTABLEKS R3 R4 K2; var3 = var4["Scenario"]
+     354 [-]: GETTABLEKS R2 R3 K66; var2 = var3["PullResult"]
+     355 [-]: JUMPIFNOT R2 L52; goto L52 if not var2
+     356 [-]: GETIMPORT R5 1; var5 = 0x0032441C
+     357 [-]: GETTABLEKS R4 R5 K2; var4 = var5["Scenario"]
+     358 [-]: GETTABLEKS R3 R4 K66; var3 = var4["PullResult"]
+     359 [-]: GETTABLEKS R2 R3 K67; var2 = var3["producer"]
+     360 [-]: JUMPXEQKNIL R2 L50; 
+     361 [-]: JUMPXEQKS R2 K59 L51 NOT; 
+L50: 362 [-]: LOADK R2 K68 ; var2 = "waiting"
+L51: 363 [-]: MOVE R3 R0   ; var3 = var0
+     364 [-]: LOADK R4 K69 ; var4 = "LastPullResult: "
+     365 [-]: GETIMPORT R13 1; var13 = 0x0032441C
+     366 [-]: GETTABLEKS R12 R13 K2; var12 = var13["Scenario"]
+     367 [-]: GETTABLEKS R11 R12 K66; var11 = var12["PullResult"]
+     368 [-]: GETTABLEKS R5 R11 K62; var5 = var11["name"]
+     369 [-]: LOADK R6 K70 ; var6 = " pulled "
+     370 [-]: GETIMPORT R13 1; var13 = 0x0032441C
+     371 [-]: GETTABLEKS R12 R13 K2; var12 = var13["Scenario"]
+     372 [-]: GETTABLEKS R11 R12 K66; var11 = var12["PullResult"]
+     373 [-]: GETTABLEKS R7 R11 K64; var7 = var11["prop"]
+     374 [-]: LOADK R8 K65 ; var8 = " -> "
+     375 [-]: MOVE R9 R2   ; var9 = var2
+     376 [-]: LOADK R10 K20; var10 = "\r\n"
+     377 [-]: CONCAT R0 R3 R10; var0 = var3 .. var10
+L52: 378 [-]: GETIMPORT R2 5; var2 = 0xE7F2B02F
+     379 [-]: MOVE R4 R0   ; var4 = var0
+     380 [-]: NAMECALL R2 R2 K71; var3 = var2; var2 = var2[0x062451A5]
+     381 [-]: CALL R2 3 1  ; var2(var3, var4)
+     382 [-]: GETIMPORT R2 73; var2 = _T["ScenarioDebugInfoChangedCallback"]
+     383 [-]: JUMPIFNOT R2 L53; goto L53 if not var2
+     384 [-]: GETIMPORT R2 73; var2 = _T["ScenarioDebugInfoChangedCallback"]
+     385 [-]: CALL R2 1 1  ; var2()
+L53: 386 [-]: RETURN R0 0  ; 
 
 
 ; Name:            
@@ -1106,10 +1119,10 @@ L47: 380 [-]: RETURN R0 0  ;
        9 [-]: GETIMPORT R1 6; var1 = 0x76EA806B
       10 [-]: LOADN R3 0   ; var3 = 0
       11 [-]: NAMECALL R1 R1 K7; var2 = var1; var1 = var1[0x3F3AE64C]
-      12 [-]: CALL R1 3 2  ; var1 = var1(var2, var3)
-      13 [-]: FASTCALL1 62 R1 L0; 
+      12 [-]: CALL R1 3 0  ; var1, ... = var1(var2, var3)
+      13 [-]: FASTCALL 64 L0; 
       14 [-]: GETIMPORT R0 9; var0 = 0x7B998233
-      15 [-]: CALL R0 2 2  ; var0 = var0(var1)
+      15 [-]: CALL R0 0 2  ; var0 = var0(var1, ...)
 L 0:  16 [-]: JUMPIFNOT R0 L2; goto L2 if not var0
 L 1:  17 [-]: RETURN R0 0  ; 
 L 2:  18 [-]: GETIMPORT R0 12; var0 = _T["ScenarioProcessDelayTest"]
@@ -1122,7 +1135,7 @@ L 2:  18 [-]: GETIMPORT R0 12; var0 = _T["ScenarioProcessDelayTest"]
       25 [-]: SETTABLEKS R1 R0 K11; var1["ScenarioProcessDelayTest"] = var0
       26 [-]: GETIMPORT R0 12; var0 = _T["ScenarioProcessDelayTest"]
       27 [-]: LOADN R1 0   ; var1 = 0
-      28 [-]: JUMPIFNOTLT R1 R0 L3; goto L3 if var1 >= var65581
+      28 [-]: JUMPIFNOTLT R1 R0 L3; goto L3 if var1 >= var65571
       29 [-]: RETURN R0 0  ; 
 L 3:  30 [-]: GETIMPORT R3 1; var3 = 0x0032441C
       31 [-]: GETTABLEKS R2 R3 K2; var2 = var3["Scenario"]
@@ -1138,13 +1151,13 @@ L 5:  36 [-]: GETIMPORT R2 1; var2 = 0x0032441C
 L 6:  41 [-]: GETIMPORT R4 1; var4 = 0x0032441C
       42 [-]: GETTABLEKS R3 R4 K2; var3 = var4["Scenario"]
       43 [-]: GETTABLEKS R2 R3 K3; var2 = var3["ChangesReceived"]
-      44 [-]: JUMPIFNOT R2 L87; goto L87 if not var2
+      44 [-]: JUMPIFNOT R2 L89; goto L89 if not var2
       45 [-]: GETIMPORT R5 1; var5 = 0x0032441C
       46 [-]: GETTABLEKS R4 R5 K2; var4 = var5["Scenario"]
       47 [-]: GETTABLEKS R3 R4 K3; var3 = var4["ChangesReceived"]
       48 [-]: LENGTH R2 R3 ; var2 = #var3
       49 [-]: LOADN R3 0   ; var3 = 0
-      50 [-]: JUMPIFNOTLT R3 R2 L87; goto L87 if var3 >= var1245774
+      50 [-]: JUMPIFNOTLT R3 R2 L89; goto L89 if var3 >= var1245729
       51 [-]: GETIMPORT R2 19; var2 = 0x33BDD652[0x9C1F3B5A]
       52 [-]: GETIMPORT R5 1; var5 = 0x0032441C
       53 [-]: GETTABLEKS R4 R5 K2; var4 = var5["Scenario"]
@@ -1169,7 +1182,7 @@ L 6:  41 [-]: GETIMPORT R4 1; var4 = 0x0032441C
       72 [-]: GETTABLEKS R6 R7 K2; var6 = var7["Scenario"]
       73 [-]: GETTABLEKS R5 R6 K25; var5 = var6["LastEvent"]
       74 [-]: GETTABLEKS R4 R5 K26; var4 = var5["id"]
-      75 [-]: JUMPIFEQ R3 R4 L24; goto L24 if var3 == var66638
+      75 [-]: JUMPIFEQ R3 R4 L24; goto L24 if var3 == var66593
 L 7:  76 [-]: GETIMPORT R4 1; var4 = 0x0032441C
       77 [-]: GETTABLEKS R3 R4 K2; var3 = var4["Scenario"]
       78 [-]: GETTABLEKS R4 R2 K24; var4 = var2["lastEvent"]
@@ -1207,10 +1220,10 @@ L 9:  94 [-]: JUMPIFNOT R6 L18; goto L18 if not var6
      110 [-]: LOADNIL R10  ; var10 = nil
      111 [-]: GETIMPORT R12 36; var12 = 0xE7F2B02F
      112 [-]: NAMECALL R12 R12 K37; var13 = var12; var12 = var12[0x565BE9EE]
-     113 [-]: CALL R12 2 2 ; var12 = var12(var13)
-     114 [-]: FASTCALL1 62 R12 L10; 
+     113 [-]: CALL R12 2 0 ; var12, ... = var12(var13)
+     114 [-]: FASTCALL 64 L10; 
      115 [-]: GETIMPORT R11 9; var11 = 0x7B998233
-     116 [-]: CALL R11 2 2 ; var11 = var11(var12)
+     116 [-]: CALL R11 0 2 ; var11 = var11(var12, ...)
 L10: 117 [-]: JUMPIF R11 L11; goto L11 if var11
      118 [-]: GETIMPORT R11 36; var11 = 0xE7F2B02F
      119 [-]: NAMECALL R11 R11 K37; var12 = var11; var11 = var11[0x565BE9EE]
@@ -1218,9 +1231,9 @@ L10: 117 [-]: JUMPIF R11 L11; goto L11 if var11
      121 [-]: NAMECALL R11 R11 K38; var12 = var11; var11 = var11[0x2FB816CF]
      122 [-]: CALL R11 2 2 ; var11 = var11(var12)
      123 [-]: MOVE R10 R11 ; var10 = var11
-L11: 124 [-]: JUMPIFEQ R7 R9 L12; goto L12 if var7 == var1444387
+L11: 124 [-]: JUMPIFEQ R7 R9 L12; goto L12 if var7 == var1444372
      125 [-]: JUMPIFNOT R10 L14; goto L14 if not var10
-     126 [-]: JUMPIFNOTEQ R7 R10 L14; goto L14 if var7 ~= var2624334
+     126 [-]: JUMPIFNOTEQ R7 R10 L14; goto L14 if var7 ~= var2624289
 L12: 127 [-]: GETIMPORT R11 40; var11 = _T["ScenarioSquadSupportReceived"]
      128 [-]: JUMPXEQKNIL R11 L13 NOT; 
      129 [-]: GETIMPORT R11 42; var11 = 0x603636AD
@@ -1237,9 +1250,9 @@ L12: 127 [-]: GETIMPORT R11 40; var11 = _T["ScenarioSquadSupportReceived"]
      140 [-]: CALL R12 3 1 ; var12(var13, var14)
 L13: 141 [-]: LOADB R3 1   ; var3 = true
      142 [-]: JUMP L17     ; goto L17
-L14: 143 [-]: JUMPIFEQ R8 R9 L15; goto L15 if var8 == var1051171
+L14: 143 [-]: JUMPIFEQ R8 R9 L15; goto L15 if var8 == var1051156
      144 [-]: JUMPIFNOT R10 L16; goto L16 if not var10
-     145 [-]: JUMPIFNOTEQ R8 R10 L16; goto L16 if var8 ~= var2755406
+     145 [-]: JUMPIFNOTEQ R8 R10 L16; goto L16 if var8 ~= var2755361
 L15: 146 [-]: GETIMPORT R11 42; var11 = 0x603636AD
      147 [-]: LOADK R13 K43; var13 = "/Lotus/Language/SquadLink/"
      148 [-]: MOVE R14 R5  ; var14 = var5
@@ -1395,7 +1408,7 @@ L34: 294 [-]: GETTABLEKS R3 R2 K82; var3 = var2["lastScenario"]
      298 [-]: GETTABLEKS R4 R2 K82; var4 = var2["lastScenario"]
      299 [-]: SETTABLEKS R4 R3 K83; var4["LastScenario"] = var3
 L35: 300 [-]: GETTABLEKS R3 R2 K84; var3 = var2["state"]
-     301 [-]: JUMPIFNOT R3 L46; goto L46 if not var3
+     301 [-]: JUMPIFNOT R3 L48; goto L48 if not var3
      302 [-]: GETIMPORT R5 1; var5 = 0x0032441C
      303 [-]: GETTABLEKS R4 R5 K2; var4 = var5["Scenario"]
      304 [-]: GETTABLEKS R3 R4 K85; var3 = var4["State"]
@@ -1417,11 +1430,11 @@ L37: 311 [-]: GETTABLEKS R6 R2 K87; var6 = var2["lastStateModifier"]
      320 [-]: GETTABLEKS R3 R4 K2; var3 = var4["Scenario"]
      321 [-]: NEWTABLE R4 0 0; var4 = {}
      322 [-]: SETTABLEKS R4 R3 K85; var4["State"] = var3
-     323 [-]: JUMP L46     ; goto L46
+     323 [-]: JUMP L48     ; goto L48
 L38: 324 [-]: GETIMPORT R3 92; var3 = 0xCFC01047
      325 [-]: GETTABLEKS R4 R2 K84; var4 = var2["state"]
      326 [-]: CALL R3 2 4  ; var3, var4, var5 = var3(var4)
-     327 [-]: FORGPREP_NEXT R3 L45; 
+     327 [-]: FORGPREP_NEXT R3 L47; 
 L39: 328 [-]: GETIMPORT R11 1; var11 = 0x0032441C
      329 [-]: GETTABLEKS R10 R11 K2; var10 = var11["Scenario"]
      330 [-]: GETTABLEKS R9 R10 K85; var9 = var10["State"]
@@ -1431,9 +1444,9 @@ L39: 328 [-]: GETIMPORT R11 1; var11 = 0x0032441C
      334 [-]: GETTABLEKS R10 R11 K2; var10 = var11["Scenario"]
      335 [-]: GETTABLEKS R9 R10 K85; var9 = var10["State"]
      336 [-]: GETTABLE R8 R9 R6; var8 = var9[var6]
-     337 [-]: JUMPIFEQ R8 R7 L45; goto L45 if var8 == var2062
+     337 [-]: JUMPIFEQ R8 R7 L47; goto L47 if var8 == var2126
 L40: 338 [-]: LOADNIL R8   ; var8 = nil
-     339 [-]: JUMPXEQKS R6 K93 L41 NOT; 
+     339 [-]: JUMPXEQKS R6 K93 L42 NOT; 
      340 [-]: GETIMPORT R9 42; var9 = 0x603636AD
      341 [-]: LOADK R10 K94; var10 = "/Lotus/Language/SquadLink/SquadStateProgressChangeLog"
      342 [-]: DUPTABLE R11 95; 
@@ -1442,402 +1455,404 @@ L40: 338 [-]: LOADNIL R8   ; var8 = nil
      345 [-]: GETTABLEKS R13 R14 K85; var13 = var14["State"]
      346 [-]: GETTABLEKS R12 R13 K88; var12 = var13["LastStateModifier"]
      347 [-]: SETTABLEKS R12 R11 K45; var12["PLAYER_NAME"] = var11
-     348 [-]: GETIMPORT R12 97; var12 = 0x64FB1586
+     348 [-]: FASTCALL1 63 R7 L41; 
      349 [-]: MOVE R13 R7  ; var13 = var7
-     350 [-]: CALL R12 2 2 ; var12 = var12(var13)
-     351 [-]: SETTABLEKS R12 R11 K62; var12["VALUE"] = var11
-     352 [-]: CALL R9 3 2  ; var9 = var9(var10, var11)
-     353 [-]: MOVE R8 R9   ; var8 = var9
-     354 [-]: JUMP L42     ; goto L42
-L41: 355 [-]: GETIMPORT R9 42; var9 = 0x603636AD
-     356 [-]: LOADK R10 K98; var10 = "/Lotus/Language/SquadLink/SquadStateChangeLog"
-     357 [-]: DUPTABLE R11 100; 
-     358 [-]: GETIMPORT R15 1; var15 = 0x0032441C
-     359 [-]: GETTABLEKS R14 R15 K2; var14 = var15["Scenario"]
-     360 [-]: GETTABLEKS R13 R14 K85; var13 = var14["State"]
-     361 [-]: GETTABLEKS R12 R13 K88; var12 = var13["LastStateModifier"]
-     362 [-]: SETTABLEKS R12 R11 K45; var12["PLAYER_NAME"] = var11
-     363 [-]: SETTABLEKS R6 R11 K99; var6["PROPERTY_NAME"] = var11
-     364 [-]: GETIMPORT R12 97; var12 = 0x64FB1586
-     365 [-]: MOVE R13 R7  ; var13 = var7
-     366 [-]: CALL R12 2 2 ; var12 = var12(var13)
-     367 [-]: SETTABLEKS R12 R11 K62; var12["VALUE"] = var11
-     368 [-]: CALL R9 3 2  ; var9 = var9(var10, var11)
-     369 [-]: MOVE R8 R9   ; var8 = var9
-L42: 370 [-]: JUMPIF R0 L43; goto L43 if var0
-     371 [-]: GETUPVAL R9 1; var9 = upvalues[1]
-     372 [-]: MOVE R10 R8  ; var10 = var8
-     373 [-]: CALL R9 2 1  ; var9(var10)
-L43: 374 [-]: GETIMPORT R9 102; var9 = _T["ScenarioStateChangeHandlers"]
-     375 [-]: JUMPIFNOT R9 L44; goto L44 if not var9
-     376 [-]: GETIMPORT R10 102; var10 = _T["ScenarioStateChangeHandlers"]
-     377 [-]: GETTABLE R9 R10 R6; var9 = var10[var6]
-     378 [-]: JUMPIFNOT R9 L44; goto L44 if not var9
-     379 [-]: GETIMPORT R10 102; var10 = _T["ScenarioStateChangeHandlers"]
-     380 [-]: GETTABLE R9 R10 R6; var9 = var10[var6]
-     381 [-]: GETIMPORT R13 1; var13 = 0x0032441C
-     382 [-]: GETTABLEKS R12 R13 K2; var12 = var13["Scenario"]
-     383 [-]: GETTABLEKS R11 R12 K85; var11 = var12["State"]
-     384 [-]: GETTABLE R10 R11 R6; var10 = var11[var6]
-     385 [-]: MOVE R11 R7  ; var11 = var7
-     386 [-]: CALL R9 3 1  ; var9(var10, var11)
-L44: 387 [-]: GETIMPORT R11 1; var11 = 0x0032441C
-     388 [-]: GETTABLEKS R10 R11 K2; var10 = var11["Scenario"]
-     389 [-]: GETTABLEKS R9 R10 K85; var9 = var10["State"]
-     390 [-]: SETTABLE R7 R9 R6; var7[var9] = var6
-L45: 391 [-]: FORGLOOP R3 L39 2; 
-L46: 392 [-]: GETTABLEKS R3 R2 K103; var3 = var2["squads"]
-     393 [-]: JUMPIFNOT R3 L61; goto L61 if not var3
-     394 [-]: GETIMPORT R6 1; var6 = 0x0032441C
-     395 [-]: GETTABLEKS R5 R6 K2; var5 = var6["Scenario"]
-     396 [-]: GETTABLEKS R4 R5 K104; var4 = var5["PeerNamesAnnounced"]
-     397 [-]: JUMPXEQKNIL R4 L47; 
-     398 [-]: LOADB R3 0 +1; var3 = false
-L47: 399 [-]: LOADB R3 1   ; var3 = true
-L48: 400 [-]: JUMPIFNOT R3 L49; goto L49 if not var3
-     401 [-]: GETIMPORT R5 1; var5 = 0x0032441C
-     402 [-]: GETTABLEKS R4 R5 K2; var4 = var5["Scenario"]
-     403 [-]: NEWTABLE R5 0 0; var5 = {}
-     404 [-]: SETTABLEKS R5 R4 K104; var5["PeerNamesAnnounced"] = var4
-L49: 405 [-]: GETIMPORT R4 92; var4 = 0xCFC01047
-     406 [-]: GETTABLEKS R5 R2 K103; var5 = var2["squads"]
-     407 [-]: CALL R4 2 4  ; var4, var5, var6 = var4(var5)
-     408 [-]: FORGPREP_NEXT R4 L60; 
-L50: 409 [-]: JUMPXEQKS R8 K105 L51 NOT; 
-     410 [-]: GETIMPORT R12 1; var12 = 0x0032441C
-     411 [-]: GETTABLEKS R11 R12 K2; var11 = var12["Scenario"]
-     412 [-]: GETTABLEKS R10 R11 K106; var10 = var11["SquadInfos"]
-     413 [-]: GETTABLE R9 R10 R7; var9 = var10[var7]
-     414 [-]: JUMPIFNOT R9 L60; goto L60 if not var9
-     415 [-]: GETIMPORT R11 1; var11 = 0x0032441C
-     416 [-]: GETTABLEKS R10 R11 K2; var10 = var11["Scenario"]
-     417 [-]: GETTABLEKS R9 R10 K106; var9 = var10["SquadInfos"]
-     418 [-]: LOADNIL R10  ; var10 = nil
-     419 [-]: SETTABLE R10 R9 R7; var10[var9] = var7
-     420 [-]: JUMP L60     ; goto L60
-L51: 421 [-]: GETIMPORT R9 109; var9 = cjson[0x7AB914D8]
-     422 [-]: MOVE R10 R8  ; var10 = var8
-     423 [-]: CALL R9 2 2  ; var9 = var9(var10)
-     424 [-]: GETTABLEKS R10 R9 K110; var10 = var9["location"]
-     425 [-]: GETTABLEKS R11 R9 K110; var11 = var9["location"]
-     426 [-]: JUMPIFNOT R11 L56; goto L56 if not var11
-     427 [-]: LOADK R11 K55; var11 = ""
-     428 [-]: SETTABLEKS R11 R9 K111; var11["locationDesc"] = var9
-     429 [-]: GETIMPORT R11 30; var11 = 0x7F5022CF[0xA5C556B9]
-     430 [-]: MOVE R12 R10 ; var12 = var10
-     431 [-]: LOADK R13 K112; var13 = "CrewBattle"
-     432 [-]: CALL R11 3 2 ; var11 = var11(var12, var13)
-     433 [-]: JUMPIF R11 L52; goto L52 if var11
-     434 [-]: GETIMPORT R11 30; var11 = 0x7F5022CF[0xA5C556B9]
-     435 [-]: MOVE R12 R10 ; var12 = var10
-     436 [-]: LOADK R13 K113; var13 = "DeepSpace"
-     437 [-]: CALL R11 3 2 ; var11 = var11(var12, var13)
-     438 [-]: JUMPIFNOT R11 L53; goto L53 if not var11
-L52: 439 [-]: LOADK R11 K114; var11 = "Space"
-     440 [-]: SETTABLEKS R11 R9 K111; var11["locationDesc"] = var9
-     441 [-]: JUMP L55     ; goto L55
-L53: 442 [-]: GETIMPORT R11 30; var11 = 0x7F5022CF[0xA5C556B9]
-     443 [-]: MOVE R12 R10 ; var12 = var10
-     444 [-]: LOADK R13 K115; var13 = "ForestOpLink"
-     445 [-]: CALL R11 3 2 ; var11 = var11(var12, var13)
-     446 [-]: JUMPIFNOT R11 L54; goto L54 if not var11
-     447 [-]: LOADK R11 K116; var11 = "Ground"
-     448 [-]: SETTABLEKS R11 R9 K111; var11["locationDesc"] = var9
-     449 [-]: JUMP L55     ; goto L55
-L54: 450 [-]: LOADK R11 K117; var11 = "Flotilla"
-     451 [-]: SETTABLEKS R11 R9 K111; var11["locationDesc"] = var9
-L55: 452 [-]: JUMPIF R0 L56; goto L56 if var0
-     453 [-]: GETIMPORT R14 1; var14 = 0x0032441C
-     454 [-]: GETTABLEKS R13 R14 K2; var13 = var14["Scenario"]
-     455 [-]: GETTABLEKS R12 R13 K106; var12 = var13["SquadInfos"]
-     456 [-]: GETTABLE R11 R12 R7; var11 = var12[var7]
-     457 [-]: JUMPIFNOT R11 L56; goto L56 if not var11
-     458 [-]: GETIMPORT R15 1; var15 = 0x0032441C
-     459 [-]: GETTABLEKS R14 R15 K2; var14 = var15["Scenario"]
-     460 [-]: GETTABLEKS R13 R14 K106; var13 = var14["SquadInfos"]
-     461 [-]: GETTABLE R12 R13 R7; var12 = var13[var7]
-     462 [-]: GETTABLEKS R11 R12 K111; var11 = var12["locationDesc"]
-     463 [-]: JUMPIFNOT R11 L56; goto L56 if not var11
-     464 [-]: GETTABLEKS R11 R9 K111; var11 = var9["locationDesc"]
-     465 [-]: GETIMPORT R16 1; var16 = 0x0032441C
-     466 [-]: GETTABLEKS R15 R16 K2; var15 = var16["Scenario"]
-     467 [-]: GETTABLEKS R14 R15 K106; var14 = var15["SquadInfos"]
-     468 [-]: GETTABLE R13 R14 R7; var13 = var14[var7]
-     469 [-]: GETTABLEKS R12 R13 K111; var12 = var13["locationDesc"]
-     470 [-]: JUMPIFEQ R11 R12 L56; goto L56 if var11 == var68359
-     471 [-]: GETUPVAL R11 1; var11 = upvalues[1]
-     472 [-]: GETIMPORT R12 42; var12 = 0x603636AD
-     473 [-]: LOADK R13 K118; var13 = "/Lotus/Language/SquadLink/SquadChangedLocation"
-     474 [-]: DUPTABLE R14 120; 
-     475 [-]: SETTABLEKS R7 R14 K45; var7["PLAYER_NAME"] = var14
-     476 [-]: GETIMPORT R15 42; var15 = 0x603636AD
-     477 [-]: LOADK R17 K121; var17 = "/Lotus/Language/SquadLink/Location"
-     478 [-]: GETTABLEKS R18 R9 K111; var18 = var9["locationDesc"]
-     479 [-]: CONCAT R16 R17 R18; var16 = var17 .. var18
-     480 [-]: LOADNIL R17  ; var17 = nil
-     481 [-]: CALL R15 3 2 ; var15 = var15(var16, var17)
-     482 [-]: SETTABLEKS R15 R14 K119; var15["LOCATION"] = var14
-     483 [-]: CALL R12 3 0 ; var12, ... = var12(var13, var14)
-     484 [-]: CALL R11 0 1 ; var11(var12, ...)
-L56: 485 [-]: JUMPIFNOT R3 L59; goto L59 if not var3
-     486 [-]: GETIMPORT R11 92; var11 = 0xCFC01047
-     487 [-]: GETTABLEKS R12 R9 K122; var12 = var9["members"]
-     488 [-]: CALL R11 2 4 ; var11, var12, var13 = var11(var12)
-     489 [-]: FORGPREP_NEXT R11 L58; 
-L57: 490 [-]: GETIMPORT R18 1; var18 = 0x0032441C
-     491 [-]: GETTABLEKS R17 R18 K2; var17 = var18["Scenario"]
-     492 [-]: GETTABLEKS R16 R17 K104; var16 = var17["PeerNamesAnnounced"]
-     493 [-]: LOADB R17 1  ; var17 = true
-     494 [-]: SETTABLE R17 R16 R15; var17[var16] = var15
-L58: 495 [-]: FORGLOOP R11 L57 2; 
-L59: 496 [-]: GETIMPORT R13 1; var13 = 0x0032441C
-     497 [-]: GETTABLEKS R12 R13 K2; var12 = var13["Scenario"]
-     498 [-]: GETTABLEKS R11 R12 K106; var11 = var12["SquadInfos"]
-     499 [-]: SETTABLE R9 R11 R7; var9[var11] = var7
-L60: 500 [-]: FORGLOOP R4 L50 2; 
-L61: 501 [-]: GETTABLEKS R3 R2 K123; var3 = var2["initiator"]
-     502 [-]: JUMPIFNOT R3 L62; goto L62 if not var3
-     503 [-]: GETIMPORT R3 13; var3 = _T
-     504 [-]: GETTABLEKS R4 R2 K123; var4 = var2["initiator"]
-     505 [-]: SETTABLEKS R4 R3 K124; var4["ScenarioInitiator"] = var3
-L62: 506 [-]: GETTABLEKS R3 R2 K125; var3 = var2["pushQueue"]
-     507 [-]: JUMPIFNOT R3 L63; goto L63 if not var3
-     508 [-]: GETIMPORT R4 1; var4 = 0x0032441C
-     509 [-]: GETTABLEKS R3 R4 K2; var3 = var4["Scenario"]
-     510 [-]: GETTABLEKS R4 R2 K125; var4 = var2["pushQueue"]
-     511 [-]: SETTABLEKS R4 R3 K126; var4["PushQueue"] = var3
-L63: 512 [-]: GETTABLEKS R3 R2 K127; var3 = var2["pullQueue"]
-     513 [-]: JUMPIFNOT R3 L64; goto L64 if not var3
-     514 [-]: GETIMPORT R4 1; var4 = 0x0032441C
-     515 [-]: GETTABLEKS R3 R4 K2; var3 = var4["Scenario"]
-     516 [-]: GETTABLEKS R4 R2 K127; var4 = var2["pullQueue"]
-     517 [-]: SETTABLEKS R4 R3 K128; var4["PullQueue"] = var3
-L64: 518 [-]: GETTABLEKS R3 R2 K129; var3 = var2["pushResult"]
-     519 [-]: JUMPIFNOT R3 L71; goto L71 if not var3
-     520 [-]: LOADNIL R3   ; var3 = nil
-     521 [-]: LOADNIL R4   ; var4 = nil
-     522 [-]: LOADK R6 K130; var6 = "/Lotus/Language/SquadLink/Flotilla"
-     523 [-]: GETTABLEKS R8 R2 K129; var8 = var2["pushResult"]
-     524 [-]: GETTABLEKS R7 R8 K131; var7 = var8["prop"]
-     525 [-]: CONCAT R5 R6 R7; var5 = var6 .. var7
-     526 [-]: GETTABLEKS R7 R2 K129; var7 = var2["pushResult"]
-     527 [-]: GETTABLEKS R6 R7 K132; var6 = var7["pushedTo"]
-     528 [-]: JUMPIFNOT R6 L65; goto L65 if not var6
-     529 [-]: GETTABLEKS R7 R2 K129; var7 = var2["pushResult"]
-     530 [-]: GETTABLEKS R6 R7 K132; var6 = var7["pushedTo"]
-     531 [-]: JUMPXEQKS R6 K55 L66 NOT; 
-L65: 532 [-]: MOVE R6 R5   ; var6 = var5
-     533 [-]: LOADK R7 K133; var7 = "Single"
-     534 [-]: CONCAT R5 R6 R7; var5 = var6 .. var7
-L66: 535 [-]: GETIMPORT R6 42; var6 = 0x603636AD
-     536 [-]: MOVE R7 R5   ; var7 = var5
-     537 [-]: NEWTABLE R8 0 0; var8 = {}
-     538 [-]: CALL R6 3 2  ; var6 = var6(var7, var8)
-     539 [-]: GETTABLEKS R8 R2 K129; var8 = var2["pushResult"]
-     540 [-]: GETTABLEKS R7 R8 K132; var7 = var8["pushedTo"]
-     541 [-]: JUMPXEQKS R7 K55 L67; 
-     542 [-]: LOADK R3 K134; var3 = "/Lotus/Language/SquadLink/SquadPushedItemToPlayer"
-     543 [-]: DUPTABLE R7 52; 
-     544 [-]: GETTABLEKS R9 R2 K129; var9 = var2["pushResult"]
-     545 [-]: GETTABLEKS R8 R9 K27; var8 = var9["name"]
-     546 [-]: SETTABLEKS R8 R7 K45; var8["PLAYER_NAME"] = var7
-     547 [-]: SETTABLEKS R6 R7 K50; var6["ITEM_NAME"] = var7
-     548 [-]: GETTABLEKS R9 R2 K129; var9 = var2["pushResult"]
-     549 [-]: GETTABLEKS R8 R9 K132; var8 = var9["pushedTo"]
-     550 [-]: SETTABLEKS R8 R7 K51; var8["RECEIVER_NAME"] = var7
-     551 [-]: MOVE R4 R7   ; var4 = var7
-     552 [-]: JUMP L68     ; goto L68
-L67: 553 [-]: LOADK R3 K135; var3 = "/Lotus/Language/SquadLink/SquadPushedItem"
-     554 [-]: DUPTABLE R7 136; 
-     555 [-]: GETTABLEKS R9 R2 K129; var9 = var2["pushResult"]
-     556 [-]: GETTABLEKS R8 R9 K27; var8 = var9["name"]
-     557 [-]: SETTABLEKS R8 R7 K45; var8["PLAYER_NAME"] = var7
-     558 [-]: SETTABLEKS R6 R7 K50; var6["ITEM_NAME"] = var7
-     559 [-]: MOVE R4 R7   ; var4 = var7
-L68: 560 [-]: GETUPVAL R7 1; var7 = upvalues[1]
-     561 [-]: GETIMPORT R8 42; var8 = 0x603636AD
-     562 [-]: MOVE R9 R3   ; var9 = var3
-     563 [-]: MOVE R10 R4  ; var10 = var4
-     564 [-]: CALL R8 3 0  ; var8, ... = var8(var9, var10)
-     565 [-]: CALL R7 0 1  ; var7(var8, ...)
-     566 [-]: GETIMPORT R7 138; var7 = _T["ScenarioPushHandlers"]
-     567 [-]: JUMPIFNOT R7 L69; goto L69 if not var7
-     568 [-]: GETIMPORT R8 138; var8 = _T["ScenarioPushHandlers"]
-     569 [-]: GETTABLEKS R10 R2 K129; var10 = var2["pushResult"]
-     570 [-]: GETTABLEKS R9 R10 K131; var9 = var10["prop"]
-     571 [-]: GETTABLE R7 R8 R9; var7 = var8[var9]
-     572 [-]: JUMPIFNOT R7 L69; goto L69 if not var7
-     573 [-]: GETIMPORT R8 138; var8 = _T["ScenarioPushHandlers"]
-     574 [-]: GETTABLEKS R10 R2 K129; var10 = var2["pushResult"]
-     575 [-]: GETTABLEKS R9 R10 K131; var9 = var10["prop"]
-     576 [-]: GETTABLE R7 R8 R9; var7 = var8[var9]
-     577 [-]: GETTABLEKS R9 R2 K129; var9 = var2["pushResult"]
-     578 [-]: GETTABLEKS R8 R9 K27; var8 = var9["name"]
-     579 [-]: CALL R7 2 1  ; var7(var8)
-L69: 580 [-]: GETTABLEKS R8 R2 K129; var8 = var2["pushResult"]
-     581 [-]: GETTABLEKS R7 R8 K132; var7 = var8["pushedTo"]
-     582 [-]: JUMPXEQKS R7 K55 L70; 
-     583 [-]: GETIMPORT R7 140; var7 = _T["ScenarioPullHandlers"]
-     584 [-]: JUMPIFNOT R7 L70; goto L70 if not var7
-     585 [-]: GETIMPORT R8 140; var8 = _T["ScenarioPullHandlers"]
-     586 [-]: GETTABLEKS R10 R2 K129; var10 = var2["pushResult"]
-     587 [-]: GETTABLEKS R9 R10 K131; var9 = var10["prop"]
-     588 [-]: GETTABLE R7 R8 R9; var7 = var8[var9]
-     589 [-]: JUMPIFNOT R7 L70; goto L70 if not var7
-     590 [-]: GETIMPORT R8 140; var8 = _T["ScenarioPullHandlers"]
-     591 [-]: GETTABLEKS R10 R2 K129; var10 = var2["pushResult"]
-     592 [-]: GETTABLEKS R9 R10 K131; var9 = var10["prop"]
-     593 [-]: GETTABLE R7 R8 R9; var7 = var8[var9]
-     594 [-]: GETTABLEKS R9 R2 K129; var9 = var2["pushResult"]
-     595 [-]: GETTABLEKS R8 R9 K132; var8 = var9["pushedTo"]
-     596 [-]: GETTABLEKS R10 R2 K129; var10 = var2["pushResult"]
-     597 [-]: GETTABLEKS R9 R10 K27; var9 = var10["name"]
-     598 [-]: CALL R7 3 1  ; var7(var8, var9)
-L70: 599 [-]: GETIMPORT R8 1; var8 = 0x0032441C
-     600 [-]: GETTABLEKS R7 R8 K2; var7 = var8["Scenario"]
-     601 [-]: GETTABLEKS R8 R2 K129; var8 = var2["pushResult"]
-     602 [-]: SETTABLEKS R8 R7 K141; var8["PushResult"] = var7
-L71: 603 [-]: GETTABLEKS R3 R2 K142; var3 = var2["pullResult"]
-     604 [-]: JUMPIFNOT R3 L75; goto L75 if not var3
-     605 [-]: LOADNIL R3   ; var3 = nil
-     606 [-]: LOADNIL R4   ; var4 = nil
-     607 [-]: GETIMPORT R5 42; var5 = 0x603636AD
-     608 [-]: LOADK R7 K130; var7 = "/Lotus/Language/SquadLink/Flotilla"
-     609 [-]: GETTABLEKS R9 R2 K142; var9 = var2["pullResult"]
-     610 [-]: GETTABLEKS R8 R9 K131; var8 = var9["prop"]
-     611 [-]: CONCAT R6 R7 R8; var6 = var7 .. var8
-     612 [-]: NEWTABLE R7 0 0; var7 = {}
-     613 [-]: CALL R5 3 2  ; var5 = var5(var6, var7)
-     614 [-]: GETTABLEKS R7 R2 K142; var7 = var2["pullResult"]
-     615 [-]: GETTABLEKS R6 R7 K143; var6 = var7["pulledFrom"]
-     616 [-]: JUMPXEQKS R6 K55 L72; 
-     617 [-]: LOADK R3 K144; var3 = "/Lotus/Language/SquadLink/SquadPulledItemFromPlayer"
-     618 [-]: DUPTABLE R6 52; 
-     619 [-]: GETTABLEKS R8 R2 K142; var8 = var2["pullResult"]
-     620 [-]: GETTABLEKS R7 R8 K143; var7 = var8["pulledFrom"]
-     621 [-]: SETTABLEKS R7 R6 K45; var7["PLAYER_NAME"] = var6
-     622 [-]: SETTABLEKS R5 R6 K50; var5["ITEM_NAME"] = var6
-     623 [-]: GETTABLEKS R8 R2 K142; var8 = var2["pullResult"]
-     624 [-]: GETTABLEKS R7 R8 K27; var7 = var8["name"]
-     625 [-]: SETTABLEKS R7 R6 K51; var7["RECEIVER_NAME"] = var6
-     626 [-]: MOVE R4 R6   ; var4 = var6
-     627 [-]: JUMP L73     ; goto L73
-L72: 628 [-]: LOADK R3 K145; var3 = "/Lotus/Language/SquadLink/SquadPulledItem"
-     629 [-]: DUPTABLE R6 52; 
-     630 [-]: GETTABLEKS R8 R2 K142; var8 = var2["pullResult"]
-     631 [-]: GETTABLEKS R7 R8 K27; var7 = var8["name"]
-     632 [-]: SETTABLEKS R7 R6 K45; var7["PLAYER_NAME"] = var6
-     633 [-]: SETTABLEKS R5 R6 K50; var5["ITEM_NAME"] = var6
-     634 [-]: GETTABLEKS R8 R2 K142; var8 = var2["pullResult"]
-     635 [-]: GETTABLEKS R7 R8 K143; var7 = var8["pulledFrom"]
-     636 [-]: SETTABLEKS R7 R6 K51; var7["RECEIVER_NAME"] = var6
-     637 [-]: MOVE R4 R6   ; var4 = var6
-L73: 638 [-]: GETUPVAL R6 1; var6 = upvalues[1]
-     639 [-]: GETIMPORT R7 42; var7 = 0x603636AD
-     640 [-]: MOVE R8 R3   ; var8 = var3
-     641 [-]: MOVE R9 R4   ; var9 = var4
-     642 [-]: CALL R7 3 0  ; var7, ... = var7(var8, var9)
-     643 [-]: CALL R6 0 1  ; var6(var7, ...)
-     644 [-]: GETIMPORT R6 140; var6 = _T["ScenarioPullHandlers"]
-     645 [-]: JUMPIFNOT R6 L74; goto L74 if not var6
-     646 [-]: GETIMPORT R7 140; var7 = _T["ScenarioPullHandlers"]
-     647 [-]: GETTABLEKS R9 R2 K142; var9 = var2["pullResult"]
-     648 [-]: GETTABLEKS R8 R9 K131; var8 = var9["prop"]
-     649 [-]: GETTABLE R6 R7 R8; var6 = var7[var8]
-     650 [-]: JUMPIFNOT R6 L74; goto L74 if not var6
-     651 [-]: GETIMPORT R7 140; var7 = _T["ScenarioPullHandlers"]
-     652 [-]: GETTABLEKS R9 R2 K142; var9 = var2["pullResult"]
-     653 [-]: GETTABLEKS R8 R9 K131; var8 = var9["prop"]
-     654 [-]: GETTABLE R6 R7 R8; var6 = var7[var8]
-     655 [-]: GETTABLEKS R8 R2 K142; var8 = var2["pullResult"]
-     656 [-]: GETTABLEKS R7 R8 K27; var7 = var8["name"]
-     657 [-]: GETTABLEKS R9 R2 K142; var9 = var2["pullResult"]
-     658 [-]: GETTABLEKS R8 R9 K143; var8 = var9["pulledFrom"]
-     659 [-]: CALL R6 3 1  ; var6(var7, var8)
-L74: 660 [-]: GETIMPORT R7 1; var7 = 0x0032441C
-     661 [-]: GETTABLEKS R6 R7 K2; var6 = var7["Scenario"]
-     662 [-]: GETTABLEKS R7 R2 K142; var7 = var2["pullResult"]
-     663 [-]: SETTABLEKS R7 R6 K146; var7["PullResult"] = var6
-L75: 664 [-]: GETTABLEKS R3 R2 K147; var3 = var2["pushStats"]
-     665 [-]: JUMPIFNOT R3 L76; goto L76 if not var3
-     666 [-]: GETIMPORT R4 1; var4 = 0x0032441C
-     667 [-]: GETTABLEKS R3 R4 K2; var3 = var4["Scenario"]
-     668 [-]: GETTABLEKS R4 R2 K147; var4 = var2["pushStats"]
-     669 [-]: SETTABLEKS R4 R3 K147; var4["pushStats"] = var3
-L76: 670 [-]: GETTABLEKS R3 R2 K148; var3 = var2["pullStats"]
-     671 [-]: JUMPIFNOT R3 L77; goto L77 if not var3
-     672 [-]: GETIMPORT R4 1; var4 = 0x0032441C
-     673 [-]: GETTABLEKS R3 R4 K2; var3 = var4["Scenario"]
-     674 [-]: GETTABLEKS R4 R2 K148; var4 = var2["pullStats"]
-     675 [-]: SETTABLEKS R4 R3 K148; var4["pullStats"] = var3
-L77: 676 [-]: GETTABLEKS R3 R2 K149; var3 = var2["scoreStats"]
-     677 [-]: JUMPIF R3 L78; goto L78 if var3
-     678 [-]: GETTABLEKS R3 R2 K64; var3 = var2["reset"]
-     679 [-]: JUMPIFNOT R3 L86; goto L86 if not var3
-L78: 680 [-]: GETIMPORT R4 1; var4 = 0x0032441C
-     681 [-]: GETTABLEKS R3 R4 K2; var3 = var4["Scenario"]
-     682 [-]: GETTABLEKS R4 R2 K149; var4 = var2["scoreStats"]
-     683 [-]: GETTABLEKS R5 R2 K64; var5 = var2["reset"]
-     684 [-]: JUMPIFNOT R5 L79; goto L79 if not var5
-     685 [-]: GETIMPORT R6 1; var6 = 0x0032441C
-     686 [-]: GETTABLEKS R5 R6 K2; var5 = var6["Scenario"]
-     687 [-]: GETTABLEKS R3 R5 K83; var3 = var5["LastScenario"]
-     688 [-]: JUMPIFNOT R3 L79; goto L79 if not var3
-     689 [-]: GETTABLEKS R4 R3 K149; var4 = var3["scoreStats"]
-L79: 690 [-]: JUMPIFNOT R3 L86; goto L86 if not var3
-     691 [-]: JUMPIFNOT R4 L86; goto L86 if not var4
-     692 [-]: GETTABLEKS R5 R3 K149; var5 = var3["scoreStats"]
-     693 [-]: JUMPIF R5 L80; goto L80 if var5
-     694 [-]: NEWTABLE R5 0 0; var5 = {}
-     695 [-]: SETTABLEKS R5 R3 K149; var5["scoreStats"] = var3
-L80: 696 [-]: GETIMPORT R5 92; var5 = 0xCFC01047
-     697 [-]: MOVE R6 R4   ; var6 = var4
-     698 [-]: CALL R5 2 4  ; var5, var6, var7 = var5(var6)
-     699 [-]: FORGPREP_NEXT R5 L85; 
-L81: 700 [-]: GETTABLEKS R11 R3 K149; var11 = var3["scoreStats"]
-     701 [-]: GETTABLE R10 R11 R8; var10 = var11[var8]
-     702 [-]: JUMPXEQKNIL R10 L82 NOT; 
-     703 [-]: GETTABLEKS R10 R3 K149; var10 = var3["scoreStats"]
-     704 [-]: NEWTABLE R11 0 0; var11 = {}
-     705 [-]: SETTABLE R11 R10 R8; var11[var10] = var8
-L82: 706 [-]: GETIMPORT R10 92; var10 = 0xCFC01047
-     707 [-]: MOVE R11 R9  ; var11 = var9
-     708 [-]: CALL R10 2 4 ; var10, var11, var12 = var10(var11)
-     709 [-]: FORGPREP_NEXT R10 L84; 
-L83: 710 [-]: GETTABLEKS R16 R3 K149; var16 = var3["scoreStats"]
-     711 [-]: GETTABLE R15 R16 R8; var15 = var16[var8]
-     712 [-]: SETTABLE R14 R15 R13; var14[var15] = var13
-L84: 713 [-]: FORGLOOP R10 L83 2; 
-L85: 714 [-]: FORGLOOP R5 L81 2; 
-     715 [-]: GETUPVAL R5 4; var5 = upvalues[4]
-     716 [-]: MOVE R6 R3   ; var6 = var3
-     717 [-]: CALL R5 2 1  ; var5(var6)
-L86: 718 [-]: JUMPBACK L6  ; goto L6
-L87: 719 [-]: GETIMPORT R4 1; var4 = 0x0032441C
-     720 [-]: GETTABLEKS R3 R4 K2; var3 = var4["Scenario"]
-     721 [-]: GETTABLEKS R2 R3 K150; var2 = var3["KickReconnectPending"]
-     722 [-]: JUMPIFNOT R2 L91; goto L91 if not var2
-     723 [-]: GETIMPORT R3 1; var3 = 0x0032441C
-     724 [-]: GETTABLEKS R2 R3 K2; var2 = var3["Scenario"]
-     725 [-]: LOADNIL R3   ; var3 = nil
-     726 [-]: SETTABLEKS R3 R2 K150; var3["KickReconnectPending"] = var2
-     727 [-]: GETIMPORT R2 152; var2 = _T["ScenarioKickRejoinHandlers"]
-     728 [-]: JUMPIFNOT R2 L91; goto L91 if not var2
-     729 [-]: GETIMPORT R2 92; var2 = 0xCFC01047
-     730 [-]: GETIMPORT R3 152; var3 = _T["ScenarioKickRejoinHandlers"]
-     731 [-]: CALL R2 2 4  ; var2, var3, var4 = var2(var3)
-     732 [-]: FORGPREP_NEXT R2 L90; 
-L88: 733 [-]: FASTCALL1 40 R6 L89; 
-     734 [-]: MOVE R8 R6   ; var8 = var6
-     735 [-]: GETIMPORT R7 154; var7 = 0x0B96777E
-     736 [-]: CALL R7 2 2  ; var7 = var7(var8)
-L89: 737 [-]: JUMPXEQKS R7 K155 L90 NOT; 
-     738 [-]: MOVE R7 R6   ; var7 = var6
-     739 [-]: CALL R7 1 1  ; var7()
-L90: 740 [-]: FORGLOOP R2 L88 2; 
-L91: 741 [-]: GETUPVAL R2 5; var2 = upvalues[5]
-     742 [-]: CALL R2 1 1  ; var2()
-     743 [-]: RETURN R0 0  ; 
+     350 [-]: GETIMPORT R12 97; var12 = 0x64FB1586
+     351 [-]: CALL R12 2 2 ; var12 = var12(var13)
+L41: 352 [-]: SETTABLEKS R12 R11 K62; var12["VALUE"] = var11
+     353 [-]: CALL R9 3 2  ; var9 = var9(var10, var11)
+     354 [-]: MOVE R8 R9   ; var8 = var9
+     355 [-]: JUMP L44     ; goto L44
+L42: 356 [-]: GETIMPORT R9 42; var9 = 0x603636AD
+     357 [-]: LOADK R10 K98; var10 = "/Lotus/Language/SquadLink/SquadStateChangeLog"
+     358 [-]: DUPTABLE R11 100; 
+     359 [-]: GETIMPORT R15 1; var15 = 0x0032441C
+     360 [-]: GETTABLEKS R14 R15 K2; var14 = var15["Scenario"]
+     361 [-]: GETTABLEKS R13 R14 K85; var13 = var14["State"]
+     362 [-]: GETTABLEKS R12 R13 K88; var12 = var13["LastStateModifier"]
+     363 [-]: SETTABLEKS R12 R11 K45; var12["PLAYER_NAME"] = var11
+     364 [-]: SETTABLEKS R6 R11 K99; var6["PROPERTY_NAME"] = var11
+     365 [-]: FASTCALL1 63 R7 L43; 
+     366 [-]: MOVE R13 R7  ; var13 = var7
+     367 [-]: GETIMPORT R12 97; var12 = 0x64FB1586
+     368 [-]: CALL R12 2 2 ; var12 = var12(var13)
+L43: 369 [-]: SETTABLEKS R12 R11 K62; var12["VALUE"] = var11
+     370 [-]: CALL R9 3 2  ; var9 = var9(var10, var11)
+     371 [-]: MOVE R8 R9   ; var8 = var9
+L44: 372 [-]: JUMPIF R0 L45; goto L45 if var0
+     373 [-]: GETUPVAL R9 1; var9 = upvalues[1]
+     374 [-]: MOVE R10 R8  ; var10 = var8
+     375 [-]: CALL R9 2 1  ; var9(var10)
+L45: 376 [-]: GETIMPORT R9 102; var9 = _T["ScenarioStateChangeHandlers"]
+     377 [-]: JUMPIFNOT R9 L46; goto L46 if not var9
+     378 [-]: GETIMPORT R10 102; var10 = _T["ScenarioStateChangeHandlers"]
+     379 [-]: GETTABLE R9 R10 R6; var9 = var10[var6]
+     380 [-]: JUMPIFNOT R9 L46; goto L46 if not var9
+     381 [-]: GETIMPORT R10 102; var10 = _T["ScenarioStateChangeHandlers"]
+     382 [-]: GETTABLE R9 R10 R6; var9 = var10[var6]
+     383 [-]: GETIMPORT R13 1; var13 = 0x0032441C
+     384 [-]: GETTABLEKS R12 R13 K2; var12 = var13["Scenario"]
+     385 [-]: GETTABLEKS R11 R12 K85; var11 = var12["State"]
+     386 [-]: GETTABLE R10 R11 R6; var10 = var11[var6]
+     387 [-]: MOVE R11 R7  ; var11 = var7
+     388 [-]: CALL R9 3 1  ; var9(var10, var11)
+L46: 389 [-]: GETIMPORT R11 1; var11 = 0x0032441C
+     390 [-]: GETTABLEKS R10 R11 K2; var10 = var11["Scenario"]
+     391 [-]: GETTABLEKS R9 R10 K85; var9 = var10["State"]
+     392 [-]: SETTABLE R7 R9 R6; var7[var9] = var6
+L47: 393 [-]: FORGLOOP R3 L39 2; 
+L48: 394 [-]: GETTABLEKS R3 R2 K103; var3 = var2["squads"]
+     395 [-]: JUMPIFNOT R3 L63; goto L63 if not var3
+     396 [-]: GETIMPORT R6 1; var6 = 0x0032441C
+     397 [-]: GETTABLEKS R5 R6 K2; var5 = var6["Scenario"]
+     398 [-]: GETTABLEKS R4 R5 K104; var4 = var5["PeerNamesAnnounced"]
+     399 [-]: JUMPXEQKNIL R4 L49; 
+     400 [-]: LOADB R3 0 +1; var3 = false
+L49: 401 [-]: LOADB R3 1   ; var3 = true
+L50: 402 [-]: JUMPIFNOT R3 L51; goto L51 if not var3
+     403 [-]: GETIMPORT R5 1; var5 = 0x0032441C
+     404 [-]: GETTABLEKS R4 R5 K2; var4 = var5["Scenario"]
+     405 [-]: NEWTABLE R5 0 0; var5 = {}
+     406 [-]: SETTABLEKS R5 R4 K104; var5["PeerNamesAnnounced"] = var4
+L51: 407 [-]: GETIMPORT R4 92; var4 = 0xCFC01047
+     408 [-]: GETTABLEKS R5 R2 K103; var5 = var2["squads"]
+     409 [-]: CALL R4 2 4  ; var4, var5, var6 = var4(var5)
+     410 [-]: FORGPREP_NEXT R4 L62; 
+L52: 411 [-]: JUMPXEQKS R8 K105 L53 NOT; 
+     412 [-]: GETIMPORT R12 1; var12 = 0x0032441C
+     413 [-]: GETTABLEKS R11 R12 K2; var11 = var12["Scenario"]
+     414 [-]: GETTABLEKS R10 R11 K106; var10 = var11["SquadInfos"]
+     415 [-]: GETTABLE R9 R10 R7; var9 = var10[var7]
+     416 [-]: JUMPIFNOT R9 L62; goto L62 if not var9
+     417 [-]: GETIMPORT R11 1; var11 = 0x0032441C
+     418 [-]: GETTABLEKS R10 R11 K2; var10 = var11["Scenario"]
+     419 [-]: GETTABLEKS R9 R10 K106; var9 = var10["SquadInfos"]
+     420 [-]: LOADNIL R10  ; var10 = nil
+     421 [-]: SETTABLE R10 R9 R7; var10[var9] = var7
+     422 [-]: JUMP L62     ; goto L62
+L53: 423 [-]: GETIMPORT R9 109; var9 = cjson[0x7AB914D8]
+     424 [-]: MOVE R10 R8  ; var10 = var8
+     425 [-]: CALL R9 2 2  ; var9 = var9(var10)
+     426 [-]: GETTABLEKS R10 R9 K110; var10 = var9["location"]
+     427 [-]: GETTABLEKS R11 R9 K110; var11 = var9["location"]
+     428 [-]: JUMPIFNOT R11 L58; goto L58 if not var11
+     429 [-]: LOADK R11 K55; var11 = ""
+     430 [-]: SETTABLEKS R11 R9 K111; var11["locationDesc"] = var9
+     431 [-]: GETIMPORT R11 30; var11 = 0x7F5022CF[0xA5C556B9]
+     432 [-]: MOVE R12 R10 ; var12 = var10
+     433 [-]: LOADK R13 K112; var13 = "CrewBattle"
+     434 [-]: CALL R11 3 2 ; var11 = var11(var12, var13)
+     435 [-]: JUMPIF R11 L54; goto L54 if var11
+     436 [-]: GETIMPORT R11 30; var11 = 0x7F5022CF[0xA5C556B9]
+     437 [-]: MOVE R12 R10 ; var12 = var10
+     438 [-]: LOADK R13 K113; var13 = "DeepSpace"
+     439 [-]: CALL R11 3 2 ; var11 = var11(var12, var13)
+     440 [-]: JUMPIFNOT R11 L55; goto L55 if not var11
+L54: 441 [-]: LOADK R11 K114; var11 = "Space"
+     442 [-]: SETTABLEKS R11 R9 K111; var11["locationDesc"] = var9
+     443 [-]: JUMP L57     ; goto L57
+L55: 444 [-]: GETIMPORT R11 30; var11 = 0x7F5022CF[0xA5C556B9]
+     445 [-]: MOVE R12 R10 ; var12 = var10
+     446 [-]: LOADK R13 K115; var13 = "ForestOpLink"
+     447 [-]: CALL R11 3 2 ; var11 = var11(var12, var13)
+     448 [-]: JUMPIFNOT R11 L56; goto L56 if not var11
+     449 [-]: LOADK R11 K116; var11 = "Ground"
+     450 [-]: SETTABLEKS R11 R9 K111; var11["locationDesc"] = var9
+     451 [-]: JUMP L57     ; goto L57
+L56: 452 [-]: LOADK R11 K117; var11 = "Flotilla"
+     453 [-]: SETTABLEKS R11 R9 K111; var11["locationDesc"] = var9
+L57: 454 [-]: JUMPIF R0 L58; goto L58 if var0
+     455 [-]: GETIMPORT R14 1; var14 = 0x0032441C
+     456 [-]: GETTABLEKS R13 R14 K2; var13 = var14["Scenario"]
+     457 [-]: GETTABLEKS R12 R13 K106; var12 = var13["SquadInfos"]
+     458 [-]: GETTABLE R11 R12 R7; var11 = var12[var7]
+     459 [-]: JUMPIFNOT R11 L58; goto L58 if not var11
+     460 [-]: GETIMPORT R15 1; var15 = 0x0032441C
+     461 [-]: GETTABLEKS R14 R15 K2; var14 = var15["Scenario"]
+     462 [-]: GETTABLEKS R13 R14 K106; var13 = var14["SquadInfos"]
+     463 [-]: GETTABLE R12 R13 R7; var12 = var13[var7]
+     464 [-]: GETTABLEKS R11 R12 K111; var11 = var12["locationDesc"]
+     465 [-]: JUMPIFNOT R11 L58; goto L58 if not var11
+     466 [-]: GETTABLEKS R11 R9 K111; var11 = var9["locationDesc"]
+     467 [-]: GETIMPORT R16 1; var16 = 0x0032441C
+     468 [-]: GETTABLEKS R15 R16 K2; var15 = var16["Scenario"]
+     469 [-]: GETTABLEKS R14 R15 K106; var14 = var15["SquadInfos"]
+     470 [-]: GETTABLE R13 R14 R7; var13 = var14[var7]
+     471 [-]: GETTABLEKS R12 R13 K111; var12 = var13["locationDesc"]
+     472 [-]: JUMPIFEQ R11 R12 L58; goto L58 if var11 == var68412
+     473 [-]: GETUPVAL R11 1; var11 = upvalues[1]
+     474 [-]: GETIMPORT R12 42; var12 = 0x603636AD
+     475 [-]: LOADK R13 K118; var13 = "/Lotus/Language/SquadLink/SquadChangedLocation"
+     476 [-]: DUPTABLE R14 120; 
+     477 [-]: SETTABLEKS R7 R14 K45; var7["PLAYER_NAME"] = var14
+     478 [-]: GETIMPORT R15 42; var15 = 0x603636AD
+     479 [-]: LOADK R17 K121; var17 = "/Lotus/Language/SquadLink/Location"
+     480 [-]: GETTABLEKS R18 R9 K111; var18 = var9["locationDesc"]
+     481 [-]: CONCAT R16 R17 R18; var16 = var17 .. var18
+     482 [-]: LOADNIL R17  ; var17 = nil
+     483 [-]: CALL R15 3 2 ; var15 = var15(var16, var17)
+     484 [-]: SETTABLEKS R15 R14 K119; var15["LOCATION"] = var14
+     485 [-]: CALL R12 3 0 ; var12, ... = var12(var13, var14)
+     486 [-]: CALL R11 0 1 ; var11(var12, ...)
+L58: 487 [-]: JUMPIFNOT R3 L61; goto L61 if not var3
+     488 [-]: GETIMPORT R11 92; var11 = 0xCFC01047
+     489 [-]: GETTABLEKS R12 R9 K122; var12 = var9["members"]
+     490 [-]: CALL R11 2 4 ; var11, var12, var13 = var11(var12)
+     491 [-]: FORGPREP_NEXT R11 L60; 
+L59: 492 [-]: GETIMPORT R18 1; var18 = 0x0032441C
+     493 [-]: GETTABLEKS R17 R18 K2; var17 = var18["Scenario"]
+     494 [-]: GETTABLEKS R16 R17 K104; var16 = var17["PeerNamesAnnounced"]
+     495 [-]: LOADB R17 1  ; var17 = true
+     496 [-]: SETTABLE R17 R16 R15; var17[var16] = var15
+L60: 497 [-]: FORGLOOP R11 L59 2; 
+L61: 498 [-]: GETIMPORT R13 1; var13 = 0x0032441C
+     499 [-]: GETTABLEKS R12 R13 K2; var12 = var13["Scenario"]
+     500 [-]: GETTABLEKS R11 R12 K106; var11 = var12["SquadInfos"]
+     501 [-]: SETTABLE R9 R11 R7; var9[var11] = var7
+L62: 502 [-]: FORGLOOP R4 L52 2; 
+L63: 503 [-]: GETTABLEKS R3 R2 K123; var3 = var2["initiator"]
+     504 [-]: JUMPIFNOT R3 L64; goto L64 if not var3
+     505 [-]: GETIMPORT R3 13; var3 = _T
+     506 [-]: GETTABLEKS R4 R2 K123; var4 = var2["initiator"]
+     507 [-]: SETTABLEKS R4 R3 K124; var4["ScenarioInitiator"] = var3
+L64: 508 [-]: GETTABLEKS R3 R2 K125; var3 = var2["pushQueue"]
+     509 [-]: JUMPIFNOT R3 L65; goto L65 if not var3
+     510 [-]: GETIMPORT R4 1; var4 = 0x0032441C
+     511 [-]: GETTABLEKS R3 R4 K2; var3 = var4["Scenario"]
+     512 [-]: GETTABLEKS R4 R2 K125; var4 = var2["pushQueue"]
+     513 [-]: SETTABLEKS R4 R3 K126; var4["PushQueue"] = var3
+L65: 514 [-]: GETTABLEKS R3 R2 K127; var3 = var2["pullQueue"]
+     515 [-]: JUMPIFNOT R3 L66; goto L66 if not var3
+     516 [-]: GETIMPORT R4 1; var4 = 0x0032441C
+     517 [-]: GETTABLEKS R3 R4 K2; var3 = var4["Scenario"]
+     518 [-]: GETTABLEKS R4 R2 K127; var4 = var2["pullQueue"]
+     519 [-]: SETTABLEKS R4 R3 K128; var4["PullQueue"] = var3
+L66: 520 [-]: GETTABLEKS R3 R2 K129; var3 = var2["pushResult"]
+     521 [-]: JUMPIFNOT R3 L73; goto L73 if not var3
+     522 [-]: LOADNIL R3   ; var3 = nil
+     523 [-]: LOADNIL R4   ; var4 = nil
+     524 [-]: LOADK R6 K130; var6 = "/Lotus/Language/SquadLink/Flotilla"
+     525 [-]: GETTABLEKS R8 R2 K129; var8 = var2["pushResult"]
+     526 [-]: GETTABLEKS R7 R8 K131; var7 = var8["prop"]
+     527 [-]: CONCAT R5 R6 R7; var5 = var6 .. var7
+     528 [-]: GETTABLEKS R7 R2 K129; var7 = var2["pushResult"]
+     529 [-]: GETTABLEKS R6 R7 K132; var6 = var7["pushedTo"]
+     530 [-]: JUMPIFNOT R6 L67; goto L67 if not var6
+     531 [-]: GETTABLEKS R7 R2 K129; var7 = var2["pushResult"]
+     532 [-]: GETTABLEKS R6 R7 K132; var6 = var7["pushedTo"]
+     533 [-]: JUMPXEQKS R6 K55 L68 NOT; 
+L67: 534 [-]: MOVE R6 R5   ; var6 = var5
+     535 [-]: LOADK R7 K133; var7 = "Single"
+     536 [-]: CONCAT R5 R6 R7; var5 = var6 .. var7
+L68: 537 [-]: GETIMPORT R6 42; var6 = 0x603636AD
+     538 [-]: MOVE R7 R5   ; var7 = var5
+     539 [-]: NEWTABLE R8 0 0; var8 = {}
+     540 [-]: CALL R6 3 2  ; var6 = var6(var7, var8)
+     541 [-]: GETTABLEKS R8 R2 K129; var8 = var2["pushResult"]
+     542 [-]: GETTABLEKS R7 R8 K132; var7 = var8["pushedTo"]
+     543 [-]: JUMPXEQKS R7 K55 L69; 
+     544 [-]: LOADK R3 K134; var3 = "/Lotus/Language/SquadLink/SquadPushedItemToPlayer"
+     545 [-]: DUPTABLE R7 52; 
+     546 [-]: GETTABLEKS R9 R2 K129; var9 = var2["pushResult"]
+     547 [-]: GETTABLEKS R8 R9 K27; var8 = var9["name"]
+     548 [-]: SETTABLEKS R8 R7 K45; var8["PLAYER_NAME"] = var7
+     549 [-]: SETTABLEKS R6 R7 K50; var6["ITEM_NAME"] = var7
+     550 [-]: GETTABLEKS R9 R2 K129; var9 = var2["pushResult"]
+     551 [-]: GETTABLEKS R8 R9 K132; var8 = var9["pushedTo"]
+     552 [-]: SETTABLEKS R8 R7 K51; var8["RECEIVER_NAME"] = var7
+     553 [-]: MOVE R4 R7   ; var4 = var7
+     554 [-]: JUMP L70     ; goto L70
+L69: 555 [-]: LOADK R3 K135; var3 = "/Lotus/Language/SquadLink/SquadPushedItem"
+     556 [-]: DUPTABLE R7 136; 
+     557 [-]: GETTABLEKS R9 R2 K129; var9 = var2["pushResult"]
+     558 [-]: GETTABLEKS R8 R9 K27; var8 = var9["name"]
+     559 [-]: SETTABLEKS R8 R7 K45; var8["PLAYER_NAME"] = var7
+     560 [-]: SETTABLEKS R6 R7 K50; var6["ITEM_NAME"] = var7
+     561 [-]: MOVE R4 R7   ; var4 = var7
+L70: 562 [-]: GETUPVAL R7 1; var7 = upvalues[1]
+     563 [-]: GETIMPORT R8 42; var8 = 0x603636AD
+     564 [-]: MOVE R9 R3   ; var9 = var3
+     565 [-]: MOVE R10 R4  ; var10 = var4
+     566 [-]: CALL R8 3 0  ; var8, ... = var8(var9, var10)
+     567 [-]: CALL R7 0 1  ; var7(var8, ...)
+     568 [-]: GETIMPORT R7 138; var7 = _T["ScenarioPushHandlers"]
+     569 [-]: JUMPIFNOT R7 L71; goto L71 if not var7
+     570 [-]: GETIMPORT R8 138; var8 = _T["ScenarioPushHandlers"]
+     571 [-]: GETTABLEKS R10 R2 K129; var10 = var2["pushResult"]
+     572 [-]: GETTABLEKS R9 R10 K131; var9 = var10["prop"]
+     573 [-]: GETTABLE R7 R8 R9; var7 = var8[var9]
+     574 [-]: JUMPIFNOT R7 L71; goto L71 if not var7
+     575 [-]: GETIMPORT R8 138; var8 = _T["ScenarioPushHandlers"]
+     576 [-]: GETTABLEKS R10 R2 K129; var10 = var2["pushResult"]
+     577 [-]: GETTABLEKS R9 R10 K131; var9 = var10["prop"]
+     578 [-]: GETTABLE R7 R8 R9; var7 = var8[var9]
+     579 [-]: GETTABLEKS R9 R2 K129; var9 = var2["pushResult"]
+     580 [-]: GETTABLEKS R8 R9 K27; var8 = var9["name"]
+     581 [-]: CALL R7 2 1  ; var7(var8)
+L71: 582 [-]: GETTABLEKS R8 R2 K129; var8 = var2["pushResult"]
+     583 [-]: GETTABLEKS R7 R8 K132; var7 = var8["pushedTo"]
+     584 [-]: JUMPXEQKS R7 K55 L72; 
+     585 [-]: GETIMPORT R7 140; var7 = _T["ScenarioPullHandlers"]
+     586 [-]: JUMPIFNOT R7 L72; goto L72 if not var7
+     587 [-]: GETIMPORT R8 140; var8 = _T["ScenarioPullHandlers"]
+     588 [-]: GETTABLEKS R10 R2 K129; var10 = var2["pushResult"]
+     589 [-]: GETTABLEKS R9 R10 K131; var9 = var10["prop"]
+     590 [-]: GETTABLE R7 R8 R9; var7 = var8[var9]
+     591 [-]: JUMPIFNOT R7 L72; goto L72 if not var7
+     592 [-]: GETIMPORT R8 140; var8 = _T["ScenarioPullHandlers"]
+     593 [-]: GETTABLEKS R10 R2 K129; var10 = var2["pushResult"]
+     594 [-]: GETTABLEKS R9 R10 K131; var9 = var10["prop"]
+     595 [-]: GETTABLE R7 R8 R9; var7 = var8[var9]
+     596 [-]: GETTABLEKS R9 R2 K129; var9 = var2["pushResult"]
+     597 [-]: GETTABLEKS R8 R9 K132; var8 = var9["pushedTo"]
+     598 [-]: GETTABLEKS R10 R2 K129; var10 = var2["pushResult"]
+     599 [-]: GETTABLEKS R9 R10 K27; var9 = var10["name"]
+     600 [-]: CALL R7 3 1  ; var7(var8, var9)
+L72: 601 [-]: GETIMPORT R8 1; var8 = 0x0032441C
+     602 [-]: GETTABLEKS R7 R8 K2; var7 = var8["Scenario"]
+     603 [-]: GETTABLEKS R8 R2 K129; var8 = var2["pushResult"]
+     604 [-]: SETTABLEKS R8 R7 K141; var8["PushResult"] = var7
+L73: 605 [-]: GETTABLEKS R3 R2 K142; var3 = var2["pullResult"]
+     606 [-]: JUMPIFNOT R3 L77; goto L77 if not var3
+     607 [-]: LOADNIL R3   ; var3 = nil
+     608 [-]: LOADNIL R4   ; var4 = nil
+     609 [-]: GETIMPORT R5 42; var5 = 0x603636AD
+     610 [-]: LOADK R7 K130; var7 = "/Lotus/Language/SquadLink/Flotilla"
+     611 [-]: GETTABLEKS R9 R2 K142; var9 = var2["pullResult"]
+     612 [-]: GETTABLEKS R8 R9 K131; var8 = var9["prop"]
+     613 [-]: CONCAT R6 R7 R8; var6 = var7 .. var8
+     614 [-]: NEWTABLE R7 0 0; var7 = {}
+     615 [-]: CALL R5 3 2  ; var5 = var5(var6, var7)
+     616 [-]: GETTABLEKS R7 R2 K142; var7 = var2["pullResult"]
+     617 [-]: GETTABLEKS R6 R7 K143; var6 = var7["pulledFrom"]
+     618 [-]: JUMPXEQKS R6 K55 L74; 
+     619 [-]: LOADK R3 K144; var3 = "/Lotus/Language/SquadLink/SquadPulledItemFromPlayer"
+     620 [-]: DUPTABLE R6 52; 
+     621 [-]: GETTABLEKS R8 R2 K142; var8 = var2["pullResult"]
+     622 [-]: GETTABLEKS R7 R8 K143; var7 = var8["pulledFrom"]
+     623 [-]: SETTABLEKS R7 R6 K45; var7["PLAYER_NAME"] = var6
+     624 [-]: SETTABLEKS R5 R6 K50; var5["ITEM_NAME"] = var6
+     625 [-]: GETTABLEKS R8 R2 K142; var8 = var2["pullResult"]
+     626 [-]: GETTABLEKS R7 R8 K27; var7 = var8["name"]
+     627 [-]: SETTABLEKS R7 R6 K51; var7["RECEIVER_NAME"] = var6
+     628 [-]: MOVE R4 R6   ; var4 = var6
+     629 [-]: JUMP L75     ; goto L75
+L74: 630 [-]: LOADK R3 K145; var3 = "/Lotus/Language/SquadLink/SquadPulledItem"
+     631 [-]: DUPTABLE R6 52; 
+     632 [-]: GETTABLEKS R8 R2 K142; var8 = var2["pullResult"]
+     633 [-]: GETTABLEKS R7 R8 K27; var7 = var8["name"]
+     634 [-]: SETTABLEKS R7 R6 K45; var7["PLAYER_NAME"] = var6
+     635 [-]: SETTABLEKS R5 R6 K50; var5["ITEM_NAME"] = var6
+     636 [-]: GETTABLEKS R8 R2 K142; var8 = var2["pullResult"]
+     637 [-]: GETTABLEKS R7 R8 K143; var7 = var8["pulledFrom"]
+     638 [-]: SETTABLEKS R7 R6 K51; var7["RECEIVER_NAME"] = var6
+     639 [-]: MOVE R4 R6   ; var4 = var6
+L75: 640 [-]: GETUPVAL R6 1; var6 = upvalues[1]
+     641 [-]: GETIMPORT R7 42; var7 = 0x603636AD
+     642 [-]: MOVE R8 R3   ; var8 = var3
+     643 [-]: MOVE R9 R4   ; var9 = var4
+     644 [-]: CALL R7 3 0  ; var7, ... = var7(var8, var9)
+     645 [-]: CALL R6 0 1  ; var6(var7, ...)
+     646 [-]: GETIMPORT R6 140; var6 = _T["ScenarioPullHandlers"]
+     647 [-]: JUMPIFNOT R6 L76; goto L76 if not var6
+     648 [-]: GETIMPORT R7 140; var7 = _T["ScenarioPullHandlers"]
+     649 [-]: GETTABLEKS R9 R2 K142; var9 = var2["pullResult"]
+     650 [-]: GETTABLEKS R8 R9 K131; var8 = var9["prop"]
+     651 [-]: GETTABLE R6 R7 R8; var6 = var7[var8]
+     652 [-]: JUMPIFNOT R6 L76; goto L76 if not var6
+     653 [-]: GETIMPORT R7 140; var7 = _T["ScenarioPullHandlers"]
+     654 [-]: GETTABLEKS R9 R2 K142; var9 = var2["pullResult"]
+     655 [-]: GETTABLEKS R8 R9 K131; var8 = var9["prop"]
+     656 [-]: GETTABLE R6 R7 R8; var6 = var7[var8]
+     657 [-]: GETTABLEKS R8 R2 K142; var8 = var2["pullResult"]
+     658 [-]: GETTABLEKS R7 R8 K27; var7 = var8["name"]
+     659 [-]: GETTABLEKS R9 R2 K142; var9 = var2["pullResult"]
+     660 [-]: GETTABLEKS R8 R9 K143; var8 = var9["pulledFrom"]
+     661 [-]: CALL R6 3 1  ; var6(var7, var8)
+L76: 662 [-]: GETIMPORT R7 1; var7 = 0x0032441C
+     663 [-]: GETTABLEKS R6 R7 K2; var6 = var7["Scenario"]
+     664 [-]: GETTABLEKS R7 R2 K142; var7 = var2["pullResult"]
+     665 [-]: SETTABLEKS R7 R6 K146; var7["PullResult"] = var6
+L77: 666 [-]: GETTABLEKS R3 R2 K147; var3 = var2["pushStats"]
+     667 [-]: JUMPIFNOT R3 L78; goto L78 if not var3
+     668 [-]: GETIMPORT R4 1; var4 = 0x0032441C
+     669 [-]: GETTABLEKS R3 R4 K2; var3 = var4["Scenario"]
+     670 [-]: GETTABLEKS R4 R2 K147; var4 = var2["pushStats"]
+     671 [-]: SETTABLEKS R4 R3 K147; var4["pushStats"] = var3
+L78: 672 [-]: GETTABLEKS R3 R2 K148; var3 = var2["pullStats"]
+     673 [-]: JUMPIFNOT R3 L79; goto L79 if not var3
+     674 [-]: GETIMPORT R4 1; var4 = 0x0032441C
+     675 [-]: GETTABLEKS R3 R4 K2; var3 = var4["Scenario"]
+     676 [-]: GETTABLEKS R4 R2 K148; var4 = var2["pullStats"]
+     677 [-]: SETTABLEKS R4 R3 K148; var4["pullStats"] = var3
+L79: 678 [-]: GETTABLEKS R3 R2 K149; var3 = var2["scoreStats"]
+     679 [-]: JUMPIF R3 L80; goto L80 if var3
+     680 [-]: GETTABLEKS R3 R2 K64; var3 = var2["reset"]
+     681 [-]: JUMPIFNOT R3 L88; goto L88 if not var3
+L80: 682 [-]: GETIMPORT R4 1; var4 = 0x0032441C
+     683 [-]: GETTABLEKS R3 R4 K2; var3 = var4["Scenario"]
+     684 [-]: GETTABLEKS R4 R2 K149; var4 = var2["scoreStats"]
+     685 [-]: GETTABLEKS R5 R2 K64; var5 = var2["reset"]
+     686 [-]: JUMPIFNOT R5 L81; goto L81 if not var5
+     687 [-]: GETIMPORT R6 1; var6 = 0x0032441C
+     688 [-]: GETTABLEKS R5 R6 K2; var5 = var6["Scenario"]
+     689 [-]: GETTABLEKS R3 R5 K83; var3 = var5["LastScenario"]
+     690 [-]: JUMPIFNOT R3 L81; goto L81 if not var3
+     691 [-]: GETTABLEKS R4 R3 K149; var4 = var3["scoreStats"]
+L81: 692 [-]: JUMPIFNOT R3 L88; goto L88 if not var3
+     693 [-]: JUMPIFNOT R4 L88; goto L88 if not var4
+     694 [-]: GETTABLEKS R5 R3 K149; var5 = var3["scoreStats"]
+     695 [-]: JUMPIF R5 L82; goto L82 if var5
+     696 [-]: NEWTABLE R5 0 0; var5 = {}
+     697 [-]: SETTABLEKS R5 R3 K149; var5["scoreStats"] = var3
+L82: 698 [-]: GETIMPORT R5 92; var5 = 0xCFC01047
+     699 [-]: MOVE R6 R4   ; var6 = var4
+     700 [-]: CALL R5 2 4  ; var5, var6, var7 = var5(var6)
+     701 [-]: FORGPREP_NEXT R5 L87; 
+L83: 702 [-]: GETTABLEKS R11 R3 K149; var11 = var3["scoreStats"]
+     703 [-]: GETTABLE R10 R11 R8; var10 = var11[var8]
+     704 [-]: JUMPXEQKNIL R10 L84 NOT; 
+     705 [-]: GETTABLEKS R10 R3 K149; var10 = var3["scoreStats"]
+     706 [-]: NEWTABLE R11 0 0; var11 = {}
+     707 [-]: SETTABLE R11 R10 R8; var11[var10] = var8
+L84: 708 [-]: GETIMPORT R10 92; var10 = 0xCFC01047
+     709 [-]: MOVE R11 R9  ; var11 = var9
+     710 [-]: CALL R10 2 4 ; var10, var11, var12 = var10(var11)
+     711 [-]: FORGPREP_NEXT R10 L86; 
+L85: 712 [-]: GETTABLEKS R16 R3 K149; var16 = var3["scoreStats"]
+     713 [-]: GETTABLE R15 R16 R8; var15 = var16[var8]
+     714 [-]: SETTABLE R14 R15 R13; var14[var15] = var13
+L86: 715 [-]: FORGLOOP R10 L85 2; 
+L87: 716 [-]: FORGLOOP R5 L83 2; 
+     717 [-]: GETUPVAL R5 4; var5 = upvalues[4]
+     718 [-]: MOVE R6 R3   ; var6 = var3
+     719 [-]: CALL R5 2 1  ; var5(var6)
+L88: 720 [-]: JUMPBACK L6  ; goto L6
+L89: 721 [-]: GETIMPORT R4 1; var4 = 0x0032441C
+     722 [-]: GETTABLEKS R3 R4 K2; var3 = var4["Scenario"]
+     723 [-]: GETTABLEKS R2 R3 K150; var2 = var3["KickReconnectPending"]
+     724 [-]: JUMPIFNOT R2 L93; goto L93 if not var2
+     725 [-]: GETIMPORT R3 1; var3 = 0x0032441C
+     726 [-]: GETTABLEKS R2 R3 K2; var2 = var3["Scenario"]
+     727 [-]: LOADNIL R3   ; var3 = nil
+     728 [-]: SETTABLEKS R3 R2 K150; var3["KickReconnectPending"] = var2
+     729 [-]: GETIMPORT R2 152; var2 = _T["ScenarioKickRejoinHandlers"]
+     730 [-]: JUMPIFNOT R2 L93; goto L93 if not var2
+     731 [-]: GETIMPORT R2 92; var2 = 0xCFC01047
+     732 [-]: GETIMPORT R3 152; var3 = _T["ScenarioKickRejoinHandlers"]
+     733 [-]: CALL R2 2 4  ; var2, var3, var4 = var2(var3)
+     734 [-]: FORGPREP_NEXT R2 L92; 
+L90: 735 [-]: FASTCALL1 40 R6 L91; 
+     736 [-]: MOVE R8 R6   ; var8 = var6
+     737 [-]: GETIMPORT R7 154; var7 = 0x0B96777E
+     738 [-]: CALL R7 2 2  ; var7 = var7(var8)
+L91: 739 [-]: JUMPXEQKS R7 K155 L92 NOT; 
+     740 [-]: MOVE R7 R6   ; var7 = var6
+     741 [-]: CALL R7 1 1  ; var7()
+L92: 742 [-]: FORGLOOP R2 L90 2; 
+L93: 743 [-]: GETUPVAL R2 5; var2 = upvalues[5]
+     744 [-]: CALL R2 1 1  ; var2()
+     745 [-]: RETURN R0 0  ; 
 
 
 ; Name:            
@@ -1853,19 +1868,19 @@ L91: 741 [-]: GETUPVAL R2 5; var2 = upvalues[5]
        3 [-]: JUMPIF R1 L1 ; goto L1 if var1
        4 [-]: GETIMPORT R2 1; var2 = 0xE7F2B02F
        5 [-]: NAMECALL R2 R2 K3; var3 = var2; var2 = var2[0x565BE9EE]
-       6 [-]: CALL R2 2 2  ; var2 = var2(var3)
-       7 [-]: FASTCALL1 62 R2 L0; 
+       6 [-]: CALL R2 2 0  ; var2, ... = var2(var3)
+       7 [-]: FASTCALL 64 L0; 
        8 [-]: GETIMPORT R1 5; var1 = 0x7B998233
-       9 [-]: CALL R1 2 2  ; var1 = var1(var2)
+       9 [-]: CALL R1 0 2  ; var1 = var1(var2, ...)
 L 0:  10 [-]: JUMPIF R1 L1 ; goto L1 if var1
       11 [-]: RETURN R0 0  ; 
 L 1:  12 [-]: GETIMPORT R2 7; var2 = 0x76EA806B
       13 [-]: LOADN R4 0   ; var4 = 0
       14 [-]: NAMECALL R2 R2 K8; var3 = var2; var2 = var2[0x3F3AE64C]
-      15 [-]: CALL R2 3 2  ; var2 = var2(var3, var4)
-      16 [-]: FASTCALL1 62 R2 L2; 
+      15 [-]: CALL R2 3 0  ; var2, ... = var2(var3, var4)
+      16 [-]: FASTCALL 64 L2; 
       17 [-]: GETIMPORT R1 5; var1 = 0x7B998233
-      18 [-]: CALL R1 2 2  ; var1 = var1(var2)
+      18 [-]: CALL R1 0 2  ; var1 = var1(var2, ...)
 L 2:  19 [-]: JUMPIFNOT R1 L3; goto L3 if not var1
       20 [-]: RETURN R0 0  ; 
 L 3:  21 [-]: NEWTABLE R1 8 0; var1 = {}
@@ -1969,7 +1984,7 @@ L12:  82 [-]: GETIMPORT R5 40; var5 = cjson[0xB139D7BC]
       11 [-]: CALL R3 2 4  ; var3, var4, var5 = var3(var4)
       12 [-]: FORGPREP_NEXT R3 L7; 
 L 0:  13 [-]: GETTABLEKS R8 R7 K9; var8 = var7["mTag"]
-      14 [-]: JUMPIFNOTEQ R8 R0 L7; goto L7 if var8 ~= var856098885
+      14 [-]: JUMPIFNOTEQ R8 R0 L7; goto L7 if var8 ~= var856098892
       15 [-]: NAMECALL R8 R7 K10; var9 = var7; var8 = var7[0x8F89D633]
       16 [-]: CALL R8 2 2  ; var8 = var8(var9)
       17 [-]: SETUPVAL R8 0; upvalues[8] = var0
@@ -1992,7 +2007,7 @@ L 1:  33 [-]: GETTABLEKS R15 R10 K16; var15 = var10["groundTiers"]
       34 [-]: GETTABLE R14 R15 R13; var14 = var15[var13]
       35 [-]: GETUPVAL R16 1; var16 = upvalues[1]
       36 [-]: GETTABLE R15 R16 R13; var15 = var16[var13]
-      37 [-]: JUMPIFEQ R14 R15 L2; goto L2 if var14 == var67867
+      37 [-]: JUMPIFEQ R14 R15 L2; goto L2 if var14 == var67846
       38 [-]: LOADB R9 1   ; var9 = true
       39 [-]: GETUPVAL R14 1; var14 = upvalues[1]
       40 [-]: GETTABLEKS R16 R10 K16; var16 = var10["groundTiers"]
@@ -2010,7 +2025,7 @@ L 4:  51 [-]: GETTABLEKS R15 R10 K17; var15 = var10["spaceTiers"]
       52 [-]: GETTABLE R14 R15 R13; var14 = var15[var13]
       53 [-]: GETUPVAL R16 2; var16 = upvalues[2]
       54 [-]: GETTABLE R15 R16 R13; var15 = var16[var13]
-      55 [-]: JUMPIFEQ R14 R15 L5; goto L5 if var14 == var67867
+      55 [-]: JUMPIFEQ R14 R15 L5; goto L5 if var14 == var67846
       56 [-]: LOADB R9 1   ; var9 = true
       57 [-]: GETUPVAL R14 2; var14 = upvalues[2]
       58 [-]: GETTABLEKS R16 R10 K17; var16 = var10["spaceTiers"]
@@ -2084,7 +2099,7 @@ L 1:  18 [-]: FORGLOOP R1 L0 2;
 ; Max Stack Size:  7
 
 L 0:   0 [-]: GETIMPORT R1 1; var1 = 0xBE190284
-       1 [-]: FASTCALL1 62 R1 L1; 
+       1 [-]: FASTCALL1 64 R1 L1; 
        2 [-]: GETIMPORT R0 3; var0 = 0x7B998233
        3 [-]: CALL R0 2 2  ; var0 = var0(var1)
 L 1:   4 [-]: JUMPIFNOT R0 L2; goto L2 if not var0
@@ -2163,7 +2178,7 @@ L 8:  63 [-]: GETIMPORT R1 29; var1 = 0xB693B6C1
       77 [-]: GETTABLEKS R3 R4 K8; var3 = var4["Scenario"]
       78 [-]: GETTABLEKS R2 R3 K30; var2 = var3["SendObjTimer"]
       79 [-]: LOADN R3 0   ; var3 = 0
-      80 [-]: JUMPIFNOTLE R2 R3 L9; goto L9 if var2 > var328199
+      80 [-]: JUMPIFNOTLE R2 R3 L9; goto L9 if var2 > var328252
       81 [-]: GETUPVAL R2 5; var2 = upvalues[5]
       82 [-]: CALL R2 1 1  ; var2()
       83 [-]: GETIMPORT R3 7; var3 = 0x0032441C
@@ -2178,7 +2193,7 @@ L 9:  87 [-]: GETUPVAL R2 6; var2 = upvalues[6]
       92 [-]: MOVE R3 R1   ; var3 = var1
       93 [-]: CALL R2 2 1  ; var2(var3)
 L10:  94 [-]: GETIMPORT R3 1; var3 = 0xBE190284
-      95 [-]: FASTCALL1 62 R3 L11; 
+      95 [-]: FASTCALL1 64 R3 L11; 
       96 [-]: GETIMPORT R2 3; var2 = 0x7B998233
       97 [-]: CALL R2 2 2  ; var2 = var2(var3)
 L11:  98 [-]: JUMPIF R2 L13; goto L13 if var2
@@ -2299,7 +2314,7 @@ L 0:   6 [-]: GETIMPORT R3 5; var3 = 0x3D106989
       12 [-]: JUMPXEQKNIL R3 L1; 
       13 [-]: GETIMPORT R3 9; var3 = _T["ScenarioProcessDelayTest"]
       14 [-]: LOADN R4 0   ; var4 = 0
-      15 [-]: JUMPIFNOTLT R3 R4 L1; goto L1 if var3 >= var656206
+      15 [-]: JUMPIFNOTLT R3 R4 L1; goto L1 if var3 >= var656161
       16 [-]: GETIMPORT R3 10; var3 = _T
       17 [-]: GETIMPORT R4 12; var4 = 0xC163F229
       18 [-]: LOADN R5 1   ; var5 = 1
@@ -2334,10 +2349,10 @@ L 3:  37 [-]: RETURN R0 0  ;
        0 [-]: GETIMPORT R3 1; var3 = 0x76EA806B
        1 [-]: LOADN R5 0   ; var5 = 0
        2 [-]: NAMECALL R3 R3 K2; var4 = var3; var3 = var3[0x3F3AE64C]
-       3 [-]: CALL R3 3 2  ; var3 = var3(var4, var5)
-       4 [-]: FASTCALL1 62 R3 L0; 
+       3 [-]: CALL R3 3 0  ; var3, ... = var3(var4, var5)
+       4 [-]: FASTCALL 64 L0; 
        5 [-]: GETIMPORT R2 4; var2 = 0x7B998233
-       6 [-]: CALL R2 2 2  ; var2 = var2(var3)
+       6 [-]: CALL R2 0 2  ; var2 = var2(var3, ...)
 L 0:   7 [-]: JUMPIFNOT R2 L1; goto L1 if not var2
        8 [-]: RETURN R0 0  ; 
 L 1:   9 [-]: GETIMPORT R2 6; var2 = 0xE7F2B02F
@@ -2359,7 +2374,7 @@ L 3:  20 [-]: LOADB R3 0   ; var3 = false
 L 4:  25 [-]: GETIMPORT R9 14; var9 = _T["ScenarioInitiator"]
       26 [-]: JUMPIFNOT R9 L5; goto L5 if not var9
       27 [-]: GETIMPORT R9 14; var9 = _T["ScenarioInitiator"]
-      28 [-]: JUMPIFNOTEQ R9 R8 L5; goto L5 if var9 ~= var66331
+      28 [-]: JUMPIFNOTEQ R9 R8 L5; goto L5 if var9 ~= var66310
       29 [-]: LOADB R3 1   ; var3 = true
 L 5:  30 [-]: FORGLOOP R4 L4 2; 
       31 [-]: GETIMPORT R4 14; var4 = _T["ScenarioInitiator"]
@@ -2369,7 +2384,7 @@ L 5:  30 [-]: FORGLOOP R4 L4 2;
       35 [-]: CALL R5 3 2  ; var5 = var5(var6, var7)
       36 [-]: NAMECALL R5 R5 K15; var6 = var5; var5 = var5[0x5CA33548]
       37 [-]: CALL R5 2 2  ; var5 = var5(var6)
-      38 [-]: JUMPIFNOTEQ R4 R5 L7; goto L7 if var4 ~= var132112
+      38 [-]: JUMPIFNOTEQ R4 R5 L7; goto L7 if var4 ~= var132096
       39 [-]: LENGTH R4 R2 ; var4 = #var2
       40 [-]: JUMPXEQKN R4 K16 L9 NOT; 
       41 [-]: GETIMPORT R4 18; var4 = _T["ShowNotification"]
@@ -2470,10 +2485,10 @@ L13: 118 [-]: GETUPVAL R4 2; var4 = upvalues[2]
        4 [-]: GETIMPORT R5 1; var5 = 0x76EA806B
        5 [-]: LOADN R7 0   ; var7 = 0
        6 [-]: NAMECALL R5 R5 K2; var6 = var5; var5 = var5[0x3F3AE64C]
-       7 [-]: CALL R5 3 2  ; var5 = var5(var6, var7)
-       8 [-]: FASTCALL1 62 R5 L0; 
+       7 [-]: CALL R5 3 0  ; var5, ... = var5(var6, var7)
+       8 [-]: FASTCALL 64 L0; 
        9 [-]: GETIMPORT R4 4; var4 = 0x7B998233
-      10 [-]: CALL R4 2 2  ; var4 = var4(var5)
+      10 [-]: CALL R4 0 2  ; var4 = var4(var5, ...)
 L 0:  11 [-]: NOT R3 R4    ; var3 = not var4
       12 [-]: JUMPIFNOT R3 L2; goto L2 if not var3
       13 [-]: GETIMPORT R4 1; var4 = 0x76EA806B
@@ -2482,7 +2497,7 @@ L 0:  11 [-]: NOT R3 R4    ; var3 = not var4
       16 [-]: CALL R4 3 2  ; var4 = var4(var5, var6)
       17 [-]: NAMECALL R4 R4 K5; var5 = var4; var4 = var4[0x5CA33548]
       18 [-]: CALL R4 2 2  ; var4 = var4(var5)
-      19 [-]: JUMPIFEQ R0 R4 L1; goto L1 if var0 == var16778011
+      19 [-]: JUMPIFEQ R0 R4 L1; goto L1 if var0 == var16777990
       20 [-]: LOADB R3 0 +1; var3 = false
 L 1:  21 [-]: LOADB R3 1   ; var3 = true
 L 2:  22 [-]: JUMPIFNOT R3 L3; goto L3 if not var3
@@ -2509,9 +2524,9 @@ L 3:  31 [-]: GETUPVAL R4 1; var4 = upvalues[1]
        0 [-]: GETIMPORT R2 2; var2 = _T["ScenarioLocalSquadMissionStatus"]
        1 [-]: JUMPIFNOT R2 L0; goto L0 if not var2
        2 [-]: GETIMPORT R2 4; var2 = _T["ScenarioLocalSquadMissionStatus"]["tag"]
-       3 [-]: JUMPIFNOTEQ R2 R0 L0; goto L0 if var2 ~= var393806
+       3 [-]: JUMPIFNOTEQ R2 R0 L0; goto L0 if var2 ~= var393761
        4 [-]: GETIMPORT R2 6; var2 = _T["ScenarioLocalSquadMissionStatus"]["value"]
-       5 [-]: JUMPIFEQ R2 R1 L1; goto L1 if var2 == var459342
+       5 [-]: JUMPIFEQ R2 R1 L1; goto L1 if var2 == var459297
 L 0:   6 [-]: GETIMPORT R2 7; var2 = _T
        7 [-]: DUPTABLE R3 8; 
        8 [-]: SETTABLEKS R0 R3 K3; var0["tag"] = var3
@@ -2630,7 +2645,7 @@ L 0:  15 [-]: GETIMPORT R1 7; var1 = _T
       18 [-]: SETTABLEKS R2 R1 K5; var2["ScenarioDebugPullKillCodeCounter"] = var1
       19 [-]: GETIMPORT R1 6; var1 = _T["ScenarioDebugPullKillCodeCounter"]
       20 [-]: LOADN R2 9   ; var2 = 9
-      21 [-]: JUMPIFNOTLE R2 R1 L3; goto L3 if var2 > var459086
+      21 [-]: JUMPIFNOTLE R2 R1 L3; goto L3 if var2 > var459041
       22 [-]: GETIMPORT R1 7; var1 = _T
       23 [-]: LOADN R2 0   ; var2 = 0
       24 [-]: SETTABLEKS R2 R1 K5; var2["ScenarioDebugPullKillCodeCounter"] = var1
@@ -2671,7 +2686,7 @@ L 3:  47 [-]: RETURN R0 0  ;
        2 [-]: GETTABLEKS R2 R3 K4; var2 = var3["UIMovie_GenericMenu"]
        3 [-]: NAMECALL R0 R0 K5; var1 = var0; var0 = var0[0xCFBA257F]
        4 [-]: CALL R0 3 2  ; var0 = var0(var1, var2)
-       5 [-]: FASTCALL1 62 R0 L0; 
+       5 [-]: FASTCALL1 64 R0 L0; 
        6 [-]: MOVE R2 R0   ; var2 = var0
        7 [-]: GETIMPORT R1 7; var1 = 0x7B998233
        8 [-]: CALL R1 2 2  ; var1 = var1(var2)
@@ -2720,8 +2735,8 @@ L 0:   4 [-]: GETIMPORT R3 1; var3 = 0xC163F229
        5 [-]: LOADN R4 0   ; var4 = 0
        6 [-]: LOADN R5 1   ; var5 = 1
        7 [-]: CALL R3 3 2  ; var3 = var3(var4, var5)
-       8 [-]: LOADK R4 K2  ; var4 = 0.55000000000000004
-       9 [-]: JUMPIFNOTLT R3 R4 L1; goto L1 if var3 >= var775
+       8 [-]: LOADK R4 K2  ; var4 = 0.55000001192092896
+       9 [-]: JUMPIFNOTLT R3 R4 L1; goto L1 if var3 >= var828
       10 [-]: GETUPVAL R3 0; var3 = upvalues[0]
       11 [-]: LOADK R4 K3  ; var4 = "push"
       12 [-]: CALL R3 2 1  ; var3(var4)
@@ -2753,7 +2768,7 @@ L 3:  21 [-]: RETURN R0 0  ;
        7 [-]: NAMECALL R0 R0 K7; var1 = var0; var0 = var0[0xBCFB64AB]
        8 [-]: CALL R0 3 2  ; var0 = var0(var1, var2)
        9 [-]: LOADK R3 K8  ; var3 = "Dialog.Label"
-      10 [-]: LOADN R4 37  ; var4 = 37
+      10 [-]: LOADN R4 39  ; var4 = 39
       11 [-]: LOADK R5 K9  ; var5 = "left"
       12 [-]: NAMECALL R1 R0 K10; var2 = var0; var1 = var0[0x5F56EEAB]
       13 [-]: CALL R1 5 1  ; var1(var2, var3, var4, var5)
@@ -2766,7 +2781,7 @@ L 3:  21 [-]: RETURN R0 0  ;
       20 [-]: CALL R1 2 1  ; var1(var2)
       21 [-]: GETIMPORT R1 16; var1 = _T["ScenarioDebugInfoChangedCallback"]
       22 [-]: CALL R1 1 1  ; var1()
-L 0:  23 [-]: FASTCALL1 62 R0 L1; 
+L 0:  23 [-]: FASTCALL1 64 R0 L1; 
       24 [-]: MOVE R2 R0   ; var2 = var0
       25 [-]: GETIMPORT R1 18; var1 = 0x7B998233
       26 [-]: CALL R1 2 2  ; var1 = var1(var2)
@@ -2816,7 +2831,7 @@ L 2:  32 [-]: GETIMPORT R1 12; var1 = _T
       25 [-]: NAMECALL R3 R0 K10; var4 = var0; var3 = var0[0xB40C191A]
       26 [-]: CALL R3 2 2  ; var3 = var3(var4)
       27 [-]: LOADN R4 0   ; var4 = 0
-L 0:  28 [-]: FASTCALL1 62 R0 L1; 
+L 0:  28 [-]: FASTCALL1 64 R0 L1; 
       29 [-]: MOVE R6 R0   ; var6 = var0
       30 [-]: GETIMPORT R5 14; var5 = 0x7B998233
       31 [-]: CALL R5 2 2  ; var5 = var5(var6)
@@ -2829,10 +2844,10 @@ L 1:  32 [-]: JUMPIF R5 L7 ; goto L7 if var5
       38 [-]: GETIMPORT R5 18; var5 = _T["scenarioBeaconHeals"]
       39 [-]: GETUPVAL R7 1; var7 = upvalues[1]
       40 [-]: GETTABLEKS R6 R7 K19; var6 = var7["maxHeals"]
-      41 [-]: JUMPIFNOTLT R5 R6 L7; goto L7 if var5 >= var536872261
+      41 [-]: JUMPIFNOTLT R5 R6 L7; goto L7 if var5 >= var536872268
       42 [-]: NAMECALL R5 R0 K20; var6 = var0; var5 = var0[0xD2715720]
       43 [-]: CALL R5 2 2  ; var5 = var5(var6)
-      44 [-]: JUMPIFNOTLT R5 R3 L5; goto L5 if var5 >= var67591
+      44 [-]: JUMPIFNOTLT R5 R3 L5; goto L5 if var5 >= var67644
       45 [-]: GETUPVAL R8 1; var8 = upvalues[1]
       46 [-]: GETTABLEKS R7 R8 K21; var7 = var8["healthPerSecond"]
       47 [-]: GETIMPORT R8 23; var8 = 0x67652851
@@ -2840,13 +2855,13 @@ L 1:  32 [-]: JUMPIF R5 L7 ; goto L7 if var5
       49 [-]: MUL R6 R7 R8 ; var6 = var7 * var8
       50 [-]: ADD R4 R4 R6 ; var4 = var4 + var6
       51 [-]: ADD R6 R5 R4 ; var6 = var5 + var4
-      52 [-]: JUMPIFNOTLT R3 R6 L2; goto L2 if var3 >= var84083723
+      52 [-]: JUMPIFNOTLT R3 R6 L2; goto L2 if var3 >= var84083729
       53 [-]: SUB R4 R3 R5 ; var4 = var3 - var5
 L 2:  54 [-]: GETIMPORT R7 18; var7 = _T["scenarioBeaconHeals"]
       55 [-]: ADD R6 R7 R4 ; var6 = var7 + var4
       56 [-]: GETUPVAL R8 1; var8 = upvalues[1]
       57 [-]: GETTABLEKS R7 R8 K19; var7 = var8["maxHeals"]
-      58 [-]: JUMPIFNOTLE R6 R7 L4; goto L4 if var6 > var50596939
+      58 [-]: JUMPIFNOTLE R6 R7 L4; goto L4 if var6 > var50596925
       59 [-]: FASTCALL1 12 R4 L3; 
       60 [-]: MOVE R7 R4   ; var7 = var4
       61 [-]: GETIMPORT R6 26; var6 = 0x5BCED4C4[0x55F27C30]
@@ -2864,7 +2879,7 @@ L 3:  63 [-]: GETIMPORT R7 27; var7 = _T
 L 4:  73 [-]: GETIMPORT R6 18; var6 = _T["scenarioBeaconHeals"]
       74 [-]: GETUPVAL R8 1; var8 = upvalues[1]
       75 [-]: GETTABLEKS R7 R8 K19; var7 = var8["maxHeals"]
-      76 [-]: JUMPIFNOTLT R6 R7 L6; goto L6 if var6 >= var67591
+      76 [-]: JUMPIFNOTLT R6 R7 L6; goto L6 if var6 >= var67644
       77 [-]: GETUPVAL R8 1; var8 = upvalues[1]
       78 [-]: GETTABLEKS R7 R8 K19; var7 = var8["maxHeals"]
       79 [-]: GETIMPORT R8 18; var8 = _T["scenarioBeaconHeals"]
@@ -2883,7 +2898,7 @@ L 6:  91 [-]: GETIMPORT R6 30; var6 = 0xCBD666E1
       92 [-]: LOADN R7 0   ; var7 = 0
       93 [-]: CALL R6 2 1  ; var6(var7)
       94 [-]: JUMPBACK L0  ; goto L0
-L 7:  95 [-]: FASTCALL1 62 R2 L8; 
+L 7:  95 [-]: FASTCALL1 64 R2 L8; 
       96 [-]: MOVE R6 R2   ; var6 = var2
       97 [-]: GETIMPORT R5 14; var5 = 0x7B998233
       98 [-]: CALL R5 2 2  ; var5 = var5(var6)

@@ -37,7 +37,7 @@
        1 [-]: CALL R3 2 2  ; var3 = var3(var4)
        2 [-]: NAMECALL R4 R3 K1; var5 = var3; var4 = var3[0x7C09E541]
        3 [-]: CALL R4 2 2  ; var4 = var4(var5)
-       4 [-]: FASTCALL1 62 R4 L0; 
+       4 [-]: FASTCALL1 64 R4 L0; 
        5 [-]: MOVE R6 R4   ; var6 = var4
        6 [-]: GETIMPORT R5 3; var5 = 0x7B998233
        7 [-]: CALL R5 2 2  ; var5 = var5(var6)
@@ -54,10 +54,10 @@ L 1:  13 [-]: GETIMPORT R7 8; var7 = 0x0469F296
       18 [-]: LOADB R5 0   ; var5 = false
       19 [-]: RETURN R5 1  ; 
 L 2:  20 [-]: NAMECALL R6 R4 K11; var7 = var4; var6 = var4[0x5E651723]
-      21 [-]: CALL R6 2 2  ; var6 = var6(var7)
-      22 [-]: FASTCALL1 62 R6 L3; 
+      21 [-]: CALL R6 2 0  ; var6, ... = var6(var7)
+      22 [-]: FASTCALL 64 L3; 
       23 [-]: GETIMPORT R5 3; var5 = 0x7B998233
-      24 [-]: CALL R5 2 2  ; var5 = var5(var6)
+      24 [-]: CALL R5 0 2  ; var5 = var5(var6, ...)
 L 3:  25 [-]: JUMPIFNOT R5 L4; goto L4 if not var5
       26 [-]: GETIMPORT R7 8; var7 = 0x0469F296
       27 [-]: LOADK R8 K9  ; var8 = "/Lotus/Language/Game/AbilityErrorInvalidTarget"
@@ -67,7 +67,7 @@ L 3:  25 [-]: JUMPIFNOT R5 L4; goto L4 if not var5
       31 [-]: LOADB R5 0   ; var5 = false
       32 [-]: RETURN R5 1  ; 
 L 4:  33 [-]: GETIMPORT R6 14; var6 = _T["gProtectAbilityStateData"]
-      34 [-]: FASTCALL1 62 R6 L5; 
+      34 [-]: FASTCALL1 64 R6 L5; 
       35 [-]: GETIMPORT R5 3; var5 = 0x7B998233
       36 [-]: CALL R5 2 2  ; var5 = var5(var6)
 L 5:  37 [-]: JUMPIF R5 L7 ; goto L7 if var5
@@ -77,7 +77,7 @@ L 5:  37 [-]: JUMPIF R5 L7 ; goto L7 if var5
       41 [-]: NAMECALL R8 R8 K15; var9 = var8; var8 = var8[0x8B72B36E]
       42 [-]: CALL R8 2 2  ; var8 = var8(var9)
       43 [-]: GETTABLE R6 R7 R8; var6 = var7[var8]
-      44 [-]: FASTCALL1 62 R6 L6; 
+      44 [-]: FASTCALL1 64 R6 L6; 
       45 [-]: GETIMPORT R5 3; var5 = 0x7B998233
       46 [-]: CALL R5 2 2  ; var5 = var5(var6)
 L 6:  47 [-]: JUMPIF R5 L7 ; goto L7 if var5
@@ -111,7 +111,7 @@ L11:  66 [-]: NAMECALL R6 R1 K0; var7 = var1; var6 = var1[0xDE321E6F]
       75 [-]: MOVE R9 R1   ; var9 = var1
       76 [-]: NAMECALL R7 R4 K23; var8 = var4; var7 = var4[0xBEBAD19F]
       77 [-]: CALL R7 3 2  ; var7 = var7(var8, var9)
-      78 [-]: JUMPIFNOTLT R6 R7 L12; goto L12 if var6 >= var526926
+      78 [-]: JUMPIFNOTLT R6 R7 L12; goto L12 if var6 >= var526881
       79 [-]: GETIMPORT R10 8; var10 = 0x0469F296
       80 [-]: LOADK R11 K24; var11 = "/Lotus/Language/Game/AbilityErrorOutOfRange"
       81 [-]: CALL R10 2 0 ; var10, ... = var10(var11)
@@ -165,7 +165,7 @@ L 3:  11 [-]: NAMECALL R5 R1 K3; var6 = var1; var5 = var1[0xDE321E6F]
       29 [-]: LOADN R8 1   ; var8 = 1
       30 [-]: SETTABLEKS R8 R7 K10; var8["damageMult"] = var7
       31 [-]: GETIMPORT R9 14; var9 = _T["gProtectAbilityStateData"]
-      32 [-]: FASTCALL1 62 R9 L4; 
+      32 [-]: FASTCALL1 64 R9 L4; 
       33 [-]: GETIMPORT R8 16; var8 = 0x7B998233
       34 [-]: CALL R8 2 2  ; var8 = var8(var9)
 L 4:  35 [-]: JUMPIFNOT R8 L5; goto L5 if not var8
@@ -175,7 +175,7 @@ L 4:  35 [-]: JUMPIFNOT R8 L5; goto L5 if not var8
 L 5:  39 [-]: LOADB R8 0   ; var8 = false
       40 [-]: GETIMPORT R11 14; var11 = _T["gProtectAbilityStateData"]
       41 [-]: GETTABLE R10 R11 R6; var10 = var11[var6]
-      42 [-]: FASTCALL1 62 R10 L6; 
+      42 [-]: FASTCALL1 64 R10 L6; 
       43 [-]: GETIMPORT R9 16; var9 = 0x7B998233
       44 [-]: CALL R9 2 2  ; var9 = var9(var10)
 L 6:  45 [-]: JUMPIFNOT R9 L7; goto L7 if not var9
@@ -285,16 +285,16 @@ L 0:   7 [-]: GETTABLE R5 R1 R4; var5 = var1[var4]
        9 [-]: CALL R6 2 2  ; var6 = var6(var7)
       10 [-]: JUMPIF R6 L2 ; goto L2 if var6
       11 [-]: NAMECALL R7 R5 K4; var8 = var5; var7 = var5[0xFA9E477F]
-      12 [-]: CALL R7 2 2  ; var7 = var7(var8)
-      13 [-]: FASTCALL1 62 R7 L1; 
+      12 [-]: CALL R7 2 0  ; var7, ... = var7(var8)
+      13 [-]: FASTCALL 64 L1; 
       14 [-]: GETIMPORT R6 6; var6 = 0x7B998233
-      15 [-]: CALL R6 2 2  ; var6 = var6(var7)
+      15 [-]: CALL R6 0 2  ; var6 = var6(var7, ...)
 L 1:  16 [-]: JUMPIFNOT R6 L2; goto L2 if not var6
       17 [-]: MOVE R8 R0   ; var8 = var0
       18 [-]: NAMECALL R6 R5 K7; var7 = var5; var6 = var5[0x1F420A3A]
       19 [-]: CALL R6 3 2  ; var6 = var6(var7, var8)
-      20 [-]: LOADK R7 K8  ; var7 = 1.2
-      21 [-]: JUMPIFNOTLT R6 R7 L2; goto L2 if var6 >= var822413125
+      20 [-]: LOADK R7 K8  ; var7 = 1.2000000476837158
+      21 [-]: JUMPIFNOTLT R6 R7 L2; goto L2 if var6 >= var822413132
       22 [-]: NAMECALL R7 R5 K9; var8 = var5; var7 = var5[0x020D4331]
       23 [-]: CALL R7 2 2  ; var7 = var7(var8)
       24 [-]: NAMECALL R7 R7 K10; var8 = var7; var7 = var7[0x786F739D]
@@ -315,13 +315,13 @@ L 3:  27 [-]: RETURN R0 0  ;
        2 [-]: NAMECALL R3 R3 K1; var4 = var3; var3 = var3[0x8B72B36E]
        3 [-]: CALL R3 2 2  ; var3 = var3(var4)
        4 [-]: GETIMPORT R5 4; var5 = _T["gProtectAbilityStateData"]
-       5 [-]: FASTCALL1 62 R5 L0; 
+       5 [-]: FASTCALL1 64 R5 L0; 
        6 [-]: GETIMPORT R4 6; var4 = 0x7B998233
        7 [-]: CALL R4 2 2  ; var4 = var4(var5)
 L 0:   8 [-]: JUMPIF R4 L4 ; goto L4 if var4
        9 [-]: GETIMPORT R6 4; var6 = _T["gProtectAbilityStateData"]
       10 [-]: GETTABLE R5 R6 R3; var5 = var6[var3]
-      11 [-]: FASTCALL1 62 R5 L1; 
+      11 [-]: FASTCALL1 64 R5 L1; 
       12 [-]: GETIMPORT R4 6; var4 = 0x7B998233
       13 [-]: CALL R4 2 2  ; var4 = var4(var5)
 L 1:  14 [-]: JUMPIF R4 L4 ; goto L4 if var4

@@ -46,7 +46,7 @@ L 0:   5 [-]: NAMECALL R2 R0 K3; var3 = var0; var2 = var0[0x2B54251B]
       12 [-]: GETIMPORT R6 7; var6 = gLookTriggerType
       13 [-]: NAMECALL R4 R2 K8; var5 = var2; var4 = var2[0xC9F6A7D7]
       14 [-]: CALL R4 3 2  ; var4 = var4(var5, var6)
-      15 [-]: FASTCALL1 62 R4 L1; 
+      15 [-]: FASTCALL1 64 R4 L1; 
       16 [-]: MOVE R6 R4   ; var6 = var4
       17 [-]: GETIMPORT R5 10; var5 = 0x7B998233
       18 [-]: CALL R5 2 2  ; var5 = var5(var6)
@@ -87,7 +87,7 @@ L 2:  22 [-]: NAMECALL R7 R2 K12; var8 = var2; var7 = var2[0xD1586535]
 ; Max Stack Size:  5
 
 L 0:   0 [-]: GETIMPORT R2 1; var2 = 0xBE190284
-       1 [-]: FASTCALL1 62 R2 L1; 
+       1 [-]: FASTCALL1 64 R2 L1; 
        2 [-]: GETIMPORT R1 3; var1 = 0x7B998233
        3 [-]: CALL R1 2 2  ; var1 = var1(var2)
 L 1:   4 [-]: JUMPIFNOT R1 L3; goto L3 if not var1
@@ -107,7 +107,7 @@ L 3:  16 [-]: GETIMPORT R1 1; var1 = 0xBE190284
       18 [-]: NAMECALL R1 R1 K11; var2 = var1; var1 = var1[0x0EB34C69]
       19 [-]: CALL R1 3 2  ; var1 = var1(var2, var3)
       20 [-]: LOADN R2 1   ; var2 = 1
-      21 [-]: JUMPIFNOTLE R1 R2 L4; goto L4 if var1 > var65581
+      21 [-]: JUMPIFNOTLE R1 R2 L4; goto L4 if var1 > var65571
       22 [-]: RETURN R0 0  ; 
 L 4:  23 [-]: GETIMPORT R2 14; var2 = _T["HeatModeFissuresOpen"]
       24 [-]: JUMPXEQKNIL R2 L5 NOT; 
@@ -165,7 +165,7 @@ L 1:  19 [-]: RETURN R0 0  ;
        4 [-]: NAMECALL R3 R3 K3; var4 = var3; var3 = var3[0x0EB34C69]
        5 [-]: CALL R3 3 2  ; var3 = var3(var4, var5)
        6 [-]: LOADN R4 1   ; var4 = 1
-       7 [-]: JUMPIFNOTLE R3 R4 L10; goto L10 if var3 > var328782
+       7 [-]: JUMPIFNOTLE R3 R4 L10; goto L10 if var3 > var328737
        8 [-]: GETIMPORT R4 5; var4 = 0x89326C93
        9 [-]: NAMECALL R4 R4 K6; var5 = var4; var4 = var4[0x29EF273D]
       10 [-]: CALL R4 2 2  ; var4 = var4(var5)
@@ -176,7 +176,7 @@ L 1:  19 [-]: RETURN R0 0  ;
       15 [-]: GETIMPORT R5 2; var5 = 0xBE190284
       16 [-]: NAMECALL R5 R5 K11; var6 = var5; var5 = var5[0x33307F92]
       17 [-]: CALL R5 2 2  ; var5 = var5(var6)
-      18 [-]: FASTCALL1 62 R5 L0; 
+      18 [-]: FASTCALL1 64 R5 L0; 
       19 [-]: MOVE R7 R5   ; var7 = var5
       20 [-]: GETIMPORT R6 13; var6 = 0x7B998233
       21 [-]: CALL R6 2 2  ; var6 = var6(var7)
@@ -191,7 +191,7 @@ L 2:  28 [-]: GETIMPORT R5 18; var5 = _T["gHeatFissureHarvesters"]
       30 [-]: NAMECALL R5 R5 K19; var6 = var5; var5 = var5[0x4D8F4EC4]
       31 [-]: CALL R5 3 2  ; var5 = var5(var6, var7)
       32 [-]: LOADNIL R6   ; var6 = nil
-      33 [-]: FASTCALL1 62 R5 L3; 
+      33 [-]: FASTCALL1 64 R5 L3; 
       34 [-]: MOVE R8 R5   ; var8 = var5
       35 [-]: GETIMPORT R7 13; var7 = 0x7B998233
       36 [-]: CALL R7 2 2  ; var7 = var7(var8)
@@ -239,7 +239,7 @@ L 6:  71 [-]: GETIMPORT R9 31; var9 = 0xD19AC5E5
       78 [-]: MOVE R12 R1  ; var12 = var1
       79 [-]: NAMECALL R10 R10 K19; var11 = var10; var10 = var10[0x4D8F4EC4]
       80 [-]: CALL R10 3 2 ; var10 = var10(var11, var12)
-      81 [-]: FASTCALL1 62 R10 L7; 
+      81 [-]: FASTCALL1 64 R10 L7; 
       82 [-]: MOVE R12 R10 ; var12 = var10
       83 [-]: GETIMPORT R11 13; var11 = 0x7B998233
       84 [-]: CALL R11 2 2 ; var11 = var11(var12)
@@ -304,7 +304,7 @@ L10: 128 [-]: GETIMPORT R4 5; var4 = 0x89326C93
      143 [-]: NAMECALL R4 R4 K54; var5 = var4; var4 = var4[0x05909209]
      144 [-]: CALL R4 0 2  ; var4 = var4(var5, ...)
      145 [-]: GETIMPORT R6 56; var6 = 0x85569D00
-     146 [-]: FASTCALL1 62 R6 L11; 
+     146 [-]: FASTCALL1 64 R6 L11; 
      147 [-]: GETIMPORT R5 13; var5 = 0x7B998233
      148 [-]: CALL R5 2 2  ; var5 = var5(var6)
 L11: 149 [-]: JUMPIF R5 L12; goto L12 if var5
@@ -324,7 +324,7 @@ L12: 159 [-]: LOADN R7 1   ; var7 = 1
      163 [-]: FORNPREP R5 L15; nforprep start - [escape at L15] -- var5 = iterator
 L13: 164 [-]: GETIMPORT R9 64; var9 = _T["HeatModeFissuresOpen"]
      165 [-]: GETTABLE R8 R9 R7; var8 = var9[var7]
-     166 [-]: JUMPIFNOTEQ R8 R2 L14; goto L14 if var8 ~= var4393038
+     166 [-]: JUMPIFNOTEQ R8 R2 L14; goto L14 if var8 ~= var4392993
      167 [-]: GETIMPORT R8 67; var8 = 0x33BDD652[0x9C1F3B5A]
      168 [-]: GETIMPORT R9 64; var9 = _T["HeatModeFissuresOpen"]
      169 [-]: MOVE R10 R7  ; var10 = var7

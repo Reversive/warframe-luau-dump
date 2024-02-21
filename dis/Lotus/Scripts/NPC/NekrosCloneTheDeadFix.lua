@@ -38,11 +38,11 @@
 ; Max Stack Size:  13
 
        0 [-]: GETIMPORT R2 2; var2 = _T["cloneTheDeadAbility"]
-       1 [-]: FASTCALL1 62 R2 L0; 
+       1 [-]: FASTCALL1 64 R2 L0; 
        2 [-]: GETIMPORT R1 4; var1 = 0x7B998233
        3 [-]: CALL R1 2 2  ; var1 = var1(var2)
 L 0:   4 [-]: JUMPIF R1 L2 ; goto L2 if var1
-       5 [-]: FASTCALL1 62 R0 L1; 
+       5 [-]: FASTCALL1 64 R0 L1; 
        6 [-]: MOVE R2 R0   ; var2 = var0
        7 [-]: GETIMPORT R1 4; var1 = 0x7B998233
        8 [-]: CALL R1 2 2  ; var1 = var1(var2)
@@ -59,7 +59,7 @@ L 4:  16 [-]: GETTABLEKS R6 R5 K7; var6 = var5["clones"]
       19 [-]: CALL R7 2 4  ; var7, var8, var9 = var7(var8)
       20 [-]: FORGPREP_INEXT R7 L6; 
 L 5:  21 [-]: GETTABLEKS R12 R11 K10; var12 = var11["entity"]
-      22 [-]: JUMPIFNOTEQ R12 R0 L6; goto L6 if var12 ~= var68635
+      22 [-]: JUMPIFNOTEQ R12 R0 L6; goto L6 if var12 ~= var68614
       23 [-]: LOADB R12 1  ; var12 = true
       24 [-]: RETURN R12 1 ; 
 L 6:  25 [-]: FORGLOOP R7 L5 2 [inext]; 
@@ -76,14 +76,14 @@ L 7:  26 [-]: FORGLOOP R1 L4 2;
 ; Max Stack Size:  14
 
        0 [-]: GETIMPORT R2 2; var2 = _T["cloneTheDeadAbility"]
-       1 [-]: FASTCALL1 62 R2 L0; 
+       1 [-]: FASTCALL1 64 R2 L0; 
        2 [-]: GETIMPORT R1 4; var1 = 0x7B998233
        3 [-]: CALL R1 2 2  ; var1 = var1(var2)
 L 0:   4 [-]: JUMPIFNOT R1 L1; goto L1 if not var1
        5 [-]: LOADNIL R1   ; var1 = nil
        6 [-]: RETURN R1 1  ; 
 L 1:   7 [-]: GETIMPORT R2 2; var2 = _T["cloneTheDeadAbility"]
-       8 [-]: FASTCALL1 62 R2 L2; 
+       8 [-]: FASTCALL1 64 R2 L2; 
        9 [-]: GETIMPORT R1 4; var1 = 0x7B998233
       10 [-]: CALL R1 2 2  ; var1 = var1(var2)
 L 2:  11 [-]: JUMPIF R1 L8 ; goto L8 if var1
@@ -98,7 +98,7 @@ L 3:  19 [-]: NAMECALL R7 R6 K10; var8 = var6; var7 = var6[0x388577D5]
       20 [-]: CALL R7 2 2  ; var7 = var7(var8)
       21 [-]: GETIMPORT R10 2; var10 = _T["cloneTheDeadAbility"]
       22 [-]: GETTABLE R9 R10 R7; var9 = var10[var7]
-      23 [-]: FASTCALL1 62 R9 L4; 
+      23 [-]: FASTCALL1 64 R9 L4; 
       24 [-]: GETIMPORT R8 4; var8 = 0x7B998233
       25 [-]: CALL R8 2 2  ; var8 = var8(var9)
 L 4:  26 [-]: JUMPIF R8 L7 ; goto L7 if var8
@@ -109,7 +109,7 @@ L 4:  26 [-]: JUMPIF R8 L7 ; goto L7 if var8
       31 [-]: CALL R8 2 4  ; var8, var9, var10 = var8(var9)
       32 [-]: FORGPREP_INEXT R8 L6; 
 L 5:  33 [-]: GETTABLEKS R13 R12 K12; var13 = var12["entity"]
-      34 [-]: JUMPIFNOTEQ R13 R0 L6; goto L6 if var13 ~= var132653
+      34 [-]: JUMPIFNOTEQ R13 R0 L6; goto L6 if var13 ~= var132643
       35 [-]: RETURN R6 1  ; 
 L 6:  36 [-]: FORGLOOP R8 L5 2 [inext]; 
 L 7:  37 [-]: FORGLOOP R2 L3 2 [inext]; 
@@ -128,12 +128,12 @@ L 8:  38 [-]: LOADNIL R1   ; var1 = nil
        1 [-]: NAMECALL R2 R2 K2; var3 = var2; var2 = var2[0x18D05D30]
        2 [-]: CALL R2 2 2  ; var2 = var2(var3)
        3 [-]: JUMPIFNOT R2 L2; goto L2 if not var2
-       4 [-]: FASTCALL1 62 R0 L0; 
+       4 [-]: FASTCALL1 64 R0 L0; 
        5 [-]: MOVE R3 R0   ; var3 = var0
        6 [-]: GETIMPORT R2 4; var2 = 0x7B998233
        7 [-]: CALL R2 2 2  ; var2 = var2(var3)
 L 0:   8 [-]: JUMPIF R2 L2 ; goto L2 if var2
-       9 [-]: FASTCALL1 62 R1 L1; 
+       9 [-]: FASTCALL1 64 R1 L1; 
       10 [-]: MOVE R3 R1   ; var3 = var1
       11 [-]: GETIMPORT R2 4; var2 = 0x7B998233
       12 [-]: CALL R2 2 2  ; var2 = var2(var3)
@@ -149,7 +149,7 @@ L 3:  15 [-]: GETIMPORT R4 6; var4 = gLotusNpcAvatarType
       22 [-]: JUMPIFNOT R2 L5; goto L5 if not var2
       23 [-]: NAMECALL R3 R0 K8; var4 = var0; var3 = var0[0xE4B9DB64]
       24 [-]: CALL R3 2 0  ; var3, ... = var3(var4)
-      25 [-]: FASTCALL 62 L4; 
+      25 [-]: FASTCALL 64 L4; 
       26 [-]: GETIMPORT R2 4; var2 = 0x7B998233
       27 [-]: CALL R2 0 2  ; var2 = var2(var3, ...)
 L 4:  28 [-]: JUMPIF R2 L5 ; goto L5 if var2
@@ -159,7 +159,7 @@ L 4:  28 [-]: JUMPIF R2 L5 ; goto L5 if var2
 L 5:  32 [-]: GETUPVAL R2 0; var2 = upvalues[0]
       33 [-]: MOVE R3 R0   ; var3 = var0
       34 [-]: CALL R2 2 2  ; var2 = var2(var3)
-      35 [-]: FASTCALL1 62 R2 L6; 
+      35 [-]: FASTCALL1 64 R2 L6; 
       36 [-]: MOVE R4 R2   ; var4 = var2
       37 [-]: GETIMPORT R3 4; var3 = 0x7B998233
       38 [-]: CALL R3 2 2  ; var3 = var3(var4)
@@ -194,12 +194,12 @@ L 7:  56 [-]: RETURN R0 0  ;
        1 [-]: NAMECALL R2 R2 K2; var3 = var2; var2 = var2[0x18D05D30]
        2 [-]: CALL R2 2 2  ; var2 = var2(var3)
        3 [-]: JUMPIFNOT R2 L2; goto L2 if not var2
-       4 [-]: FASTCALL1 62 R0 L0; 
+       4 [-]: FASTCALL1 64 R0 L0; 
        5 [-]: MOVE R3 R0   ; var3 = var0
        6 [-]: GETIMPORT R2 4; var2 = 0x7B998233
        7 [-]: CALL R2 2 2  ; var2 = var2(var3)
 L 0:   8 [-]: JUMPIF R2 L2 ; goto L2 if var2
-       9 [-]: FASTCALL1 62 R1 L1; 
+       9 [-]: FASTCALL1 64 R1 L1; 
       10 [-]: MOVE R3 R1   ; var3 = var1
       11 [-]: GETIMPORT R2 4; var2 = 0x7B998233
       12 [-]: CALL R2 2 2  ; var2 = var2(var3)
@@ -215,7 +215,7 @@ L 3:  15 [-]: GETIMPORT R4 6; var4 = gLotusNpcAvatarType
       22 [-]: JUMPIFNOT R2 L5; goto L5 if not var2
       23 [-]: NAMECALL R3 R0 K8; var4 = var0; var3 = var0[0xE4B9DB64]
       24 [-]: CALL R3 2 0  ; var3, ... = var3(var4)
-      25 [-]: FASTCALL 62 L4; 
+      25 [-]: FASTCALL 64 L4; 
       26 [-]: GETIMPORT R2 4; var2 = 0x7B998233
       27 [-]: CALL R2 0 2  ; var2 = var2(var3, ...)
 L 4:  28 [-]: JUMPIF R2 L5 ; goto L5 if var2
@@ -225,7 +225,7 @@ L 4:  28 [-]: JUMPIF R2 L5 ; goto L5 if var2
 L 5:  32 [-]: GETUPVAL R2 0; var2 = upvalues[0]
       33 [-]: MOVE R3 R0   ; var3 = var0
       34 [-]: CALL R2 2 2  ; var2 = var2(var3)
-      35 [-]: FASTCALL1 62 R2 L6; 
+      35 [-]: FASTCALL1 64 R2 L6; 
       36 [-]: MOVE R4 R2   ; var4 = var2
       37 [-]: GETIMPORT R3 4; var3 = 0x7B998233
       38 [-]: CALL R3 2 2  ; var3 = var3(var4)

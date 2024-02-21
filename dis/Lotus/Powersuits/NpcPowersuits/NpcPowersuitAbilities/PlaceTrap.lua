@@ -31,7 +31,7 @@
        7 [-]: CALL R2 6 2  ; var2 = var2(var3, var4, var5, var6, var7)
        8 [-]: LENGTH R3 R2 ; var3 = #var2
        9 [-]: GETIMPORT R4 9; var4 = 0x15D90492
-      10 [-]: JUMPIFNOTLT R3 R4 L0; goto L0 if var3 >= var66375
+      10 [-]: JUMPIFNOTLT R3 R4 L0; goto L0 if var3 >= var66352
       11 [-]: LOADN R3 1   ; var3 = 1
       12 [-]: RETURN R3 1  ; 
 L 0:  13 [-]: LOADN R3 0   ; var3 = 0
@@ -90,7 +90,7 @@ L 0:  13 [-]: LOADN R3 0   ; var3 = 0
       42 [-]: MOVE R15 R1  ; var15 = var1
       43 [-]: NAMECALL R10 R10 K21; var11 = var10; var10 = var10[0x05909209]
       44 [-]: CALL R10 6 2 ; var10 = var10(var11, var12, var13, var14, var15)
-      45 [-]: FASTCALL1 62 R10 L0; 
+      45 [-]: FASTCALL1 64 R10 L0; 
       46 [-]: MOVE R12 R10 ; var12 = var10
       47 [-]: GETIMPORT R11 23; var11 = 0x7B998233
       48 [-]: CALL R11 2 2 ; var11 = var11(var12)
@@ -115,7 +115,7 @@ L 1:  53 [-]: GETIMPORT R8 26; var8 = 0xAEC1ADA0
        0 [-]: GETIMPORT R1 1; var1 = 0xCBD666E1
        1 [-]: GETIMPORT R2 3; var2 = 0xC9ECF83C
        2 [-]: CALL R1 2 1  ; var1(var2)
-       3 [-]: FASTCALL1 62 R0 L0; 
+       3 [-]: FASTCALL1 64 R0 L0; 
        4 [-]: MOVE R2 R0   ; var2 = var0
        5 [-]: GETIMPORT R1 5; var1 = 0x7B998233
        6 [-]: CALL R1 2 2  ; var1 = var1(var2)

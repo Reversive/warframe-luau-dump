@@ -19,8 +19,8 @@
 
        0 [-]: LOADN R1 0   ; var1 = 0
 L 0:   1 [-]: GETIMPORT R2 1; var2 = 0x38B4BF3D
-       2 [-]: JUMPIFNOTLT R1 R2 L2; goto L2 if var1 >= var50347595
-       3 [-]: FASTCALL1 62 R0 L1; 
+       2 [-]: JUMPIFNOTLT R1 R2 L2; goto L2 if var1 >= var50348093
+       3 [-]: FASTCALL1 64 R0 L1; 
        4 [-]: MOVE R3 R0   ; var3 = var0
        5 [-]: GETIMPORT R2 3; var2 = 0x7B998233
        6 [-]: CALL R2 2 2  ; var2 = var2(var3)

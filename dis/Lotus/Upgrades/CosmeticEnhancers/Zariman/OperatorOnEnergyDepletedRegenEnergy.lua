@@ -64,12 +64,12 @@ L 0:   8 [-]: GETTABLE R2 R3 R4; var2 = var3[var4]
       15 [-]: GETIMPORT R8 11; var8 = 0x5BCED4C4[0xAC1B386A]
       16 [-]: CALL R8 3 2  ; var8 = var8(var9, var10)
 L 0:  17 [-]: GETTABLE R6 R7 R8; var6 = var7[var8]
-L 1:  18 [-]: FASTCALL1 62 R0 L2; 
+L 1:  18 [-]: FASTCALL1 64 R0 L2; 
       19 [-]: MOVE R8 R0   ; var8 = var0
       20 [-]: GETIMPORT R7 13; var7 = 0x7B998233
       21 [-]: CALL R7 2 2  ; var7 = var7(var8)
 L 2:  22 [-]: JUMPIF R7 L8 ; goto L8 if var7
-      23 [-]: FASTCALL1 62 R1 L3; 
+      23 [-]: FASTCALL1 64 R1 L3; 
       24 [-]: MOVE R8 R1   ; var8 = var1
       25 [-]: GETIMPORT R7 13; var7 = 0x7B998233
       26 [-]: CALL R7 2 2  ; var7 = var7(var8)
@@ -77,7 +77,7 @@ L 3:  27 [-]: JUMPIF R7 L8 ; goto L8 if var7
       28 [-]: NAMECALL R7 R1 K14; var8 = var1; var7 = var1[0x58A4D5AC]
       29 [-]: CALL R7 2 2  ; var7 = var7(var8)
       30 [-]: GETIMPORT R8 16; var8 = 0x1C01C7EA
-      31 [-]: JUMPIFNOTLE R7 R8 L7; goto L7 if var7 > var285607683
+      31 [-]: JUMPIFNOTLE R7 R8 L7; goto L7 if var7 > var285607749
       32 [-]: MULK R7 R6 K17; var7 = var6 * 100
       33 [-]: SETTABLEKS R7 R5 K18; var7["buffData"] = var5
       34 [-]: LOADN R7 2   ; var7 = 2
@@ -109,7 +109,7 @@ L 5:  50 [-]: LOADN R7 3   ; var7 = 3
       60 [-]: CALL R7 5 1  ; var7(var8, var9, var10, var11)
       61 [-]: NAMECALL R7 R0 K28; var8 = var0; var7 = var0[0xDE321E6F]
       62 [-]: CALL R7 2 2  ; var7 = var7(var8)
-      63 [-]: LOADN R9 48  ; var9 = 48
+      63 [-]: LOADN R9 51  ; var9 = 51
       64 [-]: LOADN R10 3  ; var10 = 3
       65 [-]: MOVE R11 R6  ; var11 = var6
       66 [-]: NAMECALL R7 R7 K29; var8 = var7; var7 = var7[0x5E6704FF]
@@ -119,7 +119,7 @@ L 5:  50 [-]: LOADN R7 3   ; var7 = 3
       70 [-]: CALL R7 2 1  ; var7(var8)
       71 [-]: NAMECALL R7 R0 K28; var8 = var0; var7 = var0[0xDE321E6F]
       72 [-]: CALL R7 2 2  ; var7 = var7(var8)
-      73 [-]: LOADN R9 48  ; var9 = 48
+      73 [-]: LOADN R9 51  ; var9 = 51
       74 [-]: LOADN R10 3  ; var10 = 3
       75 [-]: MOVE R11 R6  ; var11 = var6
       76 [-]: NAMECALL R7 R7 K30; var8 = var7; var7 = var7[0x12DD9DA2]

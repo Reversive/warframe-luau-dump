@@ -124,7 +124,7 @@ L 1:  18 [-]: FORGLOOP R2 L0 2 [inext];
       22 [-]: CALL R4 2 0  ; var4, ... = var4(var5)
       23 [-]: NAMECALL R2 R2 K13; var3 = var2; var2 = var2[0x46A0EBF5]
       24 [-]: CALL R2 0 2  ; var2 = var2(var3, ...)
-      25 [-]: FASTCALL1 62 R2 L2; 
+      25 [-]: FASTCALL1 64 R2 L2; 
       26 [-]: MOVE R4 R2   ; var4 = var2
       27 [-]: GETIMPORT R3 15; var3 = 0x7B998233
       28 [-]: CALL R3 2 2  ; var3 = var3(var4)

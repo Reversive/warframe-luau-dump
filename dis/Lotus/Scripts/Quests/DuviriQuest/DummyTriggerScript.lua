@@ -30,7 +30,7 @@
        3 [-]: SETLIST R5 R6 1 [1]; var5[1] = var6; var5[2] = var7; 
        4 [-]: NAMECALL R3 R3 K2; var4 = var3; var3 = var3[0xE985E1E0]
        5 [-]: CALL R3 3 2  ; var3 = var3(var4, var5)
-       6 [-]: FASTCALL1 62 R3 L0; 
+       6 [-]: FASTCALL1 64 R3 L0; 
        7 [-]: MOVE R5 R3   ; var5 = var3
        8 [-]: GETIMPORT R4 4; var4 = 0x7B998233
        9 [-]: CALL R4 2 2  ; var4 = var4(var5)
@@ -61,7 +61,7 @@ L 1:  21 [-]: RETURN R0 0  ;
        3 [-]: SETLIST R5 R6 1 [1]; var5[1] = var6; var5[2] = var7; 
        4 [-]: NAMECALL R3 R3 K2; var4 = var3; var3 = var3[0xE985E1E0]
        5 [-]: CALL R3 3 2  ; var3 = var3(var4, var5)
-       6 [-]: FASTCALL1 62 R3 L0; 
+       6 [-]: FASTCALL1 64 R3 L0; 
        7 [-]: MOVE R5 R3   ; var5 = var3
        8 [-]: GETIMPORT R4 4; var4 = 0x7B998233
        9 [-]: CALL R4 2 2  ; var4 = var4(var5)

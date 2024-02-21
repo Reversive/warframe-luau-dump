@@ -27,7 +27,7 @@
 
        0 [-]: NAMECALL R1 R0 K0; var2 = var0; var1 = var0[0x2B54251B]
        1 [-]: CALL R1 2 2  ; var1 = var1(var2)
-       2 [-]: FASTCALL1 62 R1 L0; 
+       2 [-]: FASTCALL1 64 R1 L0; 
        3 [-]: MOVE R3 R1   ; var3 = var1
        4 [-]: GETIMPORT R2 2; var2 = 0x7B998233
        5 [-]: CALL R2 2 2  ; var2 = var2(var3)
@@ -46,7 +46,7 @@ L 1:   8 [-]: LOADK R4 K3  ; var4 = "Destroy"
 ; Is_vararg:       0
 ; Max Stack Size:  9
 
-       0 [-]: FASTCALL1 62 R0 L0; 
+       0 [-]: FASTCALL1 64 R0 L0; 
        1 [-]: MOVE R2 R0   ; var2 = var0
        2 [-]: GETIMPORT R1 1; var1 = 0x7B998233
        3 [-]: CALL R1 2 2  ; var1 = var1(var2)
@@ -70,7 +70,7 @@ L 1:   6 [-]: GETIMPORT R3 4; var3 = 0x6C97A788["TINT_COLOR"]
 ; Is_vararg:       0
 ; Max Stack Size:  4
 
-       0 [-]: FASTCALL1 62 R0 L0; 
+       0 [-]: FASTCALL1 64 R0 L0; 
        1 [-]: MOVE R2 R0   ; var2 = var0
        2 [-]: GETIMPORT R1 1; var1 = 0x7B998233
        3 [-]: CALL R1 2 2  ; var1 = var1(var2)
@@ -89,7 +89,7 @@ L 1:   6 [-]: GETIMPORT R3 4; var3 = 0x6C97A788["TINT_COLOR"]
 ; Is_vararg:       0
 ; Max Stack Size:  9
 
-       0 [-]: FASTCALL1 62 R0 L0; 
+       0 [-]: FASTCALL1 64 R0 L0; 
        1 [-]: MOVE R2 R0   ; var2 = var0
        2 [-]: GETIMPORT R1 1; var1 = 0x7B998233
        3 [-]: CALL R1 2 2  ; var1 = var1(var2)
@@ -100,14 +100,10 @@ L 1:   6 [-]: GETIMPORT R3 4; var3 = 0x6C97A788["EMISSIVE_TINT_COLOR"]
        8 [-]: CALL R1 3 1  ; var1(var2, var3)
        9 [-]: GETIMPORT R3 4; var3 = 0x6C97A788["EMISSIVE_TINT_COLOR"]
       10 [-]: GETIMPORT R5 9; var5 = 0x82BF2571["red"]
-      11 [-]: DIVK R4 R5 K6; var4 = var5 / 255
-      12 [-]: GETIMPORT R6 11; var6 = 0x82BF2571["blue"]
-      13 [-]: DIVK R5 R6 K6; var5 = var6 / 255
-      14 [-]: GETIMPORT R7 13; var7 = 0x82BF2571["green"]
-      15 [-]: DIVK R6 R7 K6; var6 = var7 / 255
-      16 [-]: GETIMPORT R8 15; var8 = 0x82BF2571["alpha"]
-      17 [-]: DIVK R7 R8 K6; var7 = var8 / 255
-      18 [-]: LOADB R8 1   ; var8 = true
+           12 [-]: GETIMPORT R6 11; var6 = 0x82BF2571["blue"]
+           14 [-]: GETIMPORT R7 13; var7 = 0x82BF2571["green"]
+           16 [-]: GETIMPORT R8 15; var8 = 0x82BF2571["alpha"]
+           18 [-]: LOADB R8 1   ; var8 = true
       19 [-]: NAMECALL R1 R0 K16; var2 = var0; var1 = var0[0x986D2AB8]
       20 [-]: CALL R1 8 1  ; var1(var2, var3, var4, var5, var6, var7, var8)
       21 [-]: RETURN R0 0  ; 
@@ -120,7 +116,7 @@ L 1:   6 [-]: GETIMPORT R3 4; var3 = 0x6C97A788["EMISSIVE_TINT_COLOR"]
 ; Is_vararg:       0
 ; Max Stack Size:  11
 
-       0 [-]: FASTCALL1 62 R0 L0; 
+       0 [-]: FASTCALL1 64 R0 L0; 
        1 [-]: MOVE R2 R0   ; var2 = var0
        2 [-]: GETIMPORT R1 1; var1 = 0x7B998233
        3 [-]: CALL R1 2 2  ; var1 = var1(var2)

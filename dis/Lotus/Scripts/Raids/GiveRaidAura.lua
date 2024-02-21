@@ -24,7 +24,7 @@
 ; Max Stack Size:  7
 
        0 [-]: LOADNIL R1   ; var1 = nil
-       1 [-]: FASTCALL1 62 R0 L0; 
+       1 [-]: FASTCALL1 64 R0 L0; 
        2 [-]: MOVE R3 R0   ; var3 = var0
        3 [-]: GETIMPORT R2 1; var2 = 0x7B998233
        4 [-]: CALL R2 2 2  ; var2 = var2(var3)
@@ -55,7 +55,7 @@ L 1:   9 [-]: GETIMPORT R2 4; var2 = _T
        4 [-]: NAMECALL R0 R0 K5; var1 = var0; var0 = var0[0xC7FCADA9]
        5 [-]: CALL R0 0 2  ; var0 = var0(var1, ...)
        6 [-]: GETTABLEN R2 R0 1; var2 = var0[1]
-       7 [-]: FASTCALL1 62 R2 L0; 
+       7 [-]: FASTCALL1 64 R2 L0; 
        8 [-]: GETIMPORT R1 7; var1 = 0x7B998233
        9 [-]: CALL R1 2 2  ; var1 = var1(var2)
 L 0:  10 [-]: JUMPIFNOT R1 L1; goto L1 if not var1
@@ -76,13 +76,13 @@ L 2:  20 [-]: GETIMPORT R2 1; var2 = 0x89326C93
       25 [-]: NAMECALL R2 R2 K17; var3 = var2; var2 = var2[0x4E5939A5]
       26 [-]: CALL R2 5 2  ; var2 = var2(var3, var4, var5, var6)
       27 [-]: MOVE R1 R2   ; var1 = var2
-      28 [-]: FASTCALL1 62 R1 L3; 
+      28 [-]: FASTCALL1 64 R1 L3; 
       29 [-]: MOVE R3 R1   ; var3 = var1
       30 [-]: GETIMPORT R2 7; var2 = 0x7B998233
       31 [-]: CALL R2 2 2  ; var2 = var2(var3)
 L 3:  32 [-]: JUMPIF R2 L5 ; goto L5 if var2
       33 [-]: GETIMPORT R3 20; var3 = _T["RaidAura"]
-      34 [-]: FASTCALL1 62 R3 L4; 
+      34 [-]: FASTCALL1 64 R3 L4; 
       35 [-]: GETIMPORT R2 7; var2 = 0x7B998233
       36 [-]: CALL R2 2 2  ; var2 = var2(var3)
 L 4:  37 [-]: JUMPIF R2 L5 ; goto L5 if var2
@@ -122,7 +122,7 @@ L 0:  13 [-]: GETTABLE R6 R1 R5; var6 = var1[var5]
       15 [-]: NAMECALL R6 R6 K8; var7 = var6; var6 = var6[0xC9F6A7D7]
       16 [-]: CALL R6 3 2  ; var6 = var6(var7, var8)
       17 [-]: MOVE R2 R6   ; var2 = var6
-      18 [-]: FASTCALL1 62 R2 L1; 
+      18 [-]: FASTCALL1 64 R2 L1; 
       19 [-]: MOVE R7 R2   ; var7 = var2
       20 [-]: GETIMPORT R6 10; var6 = 0x7B998233
       21 [-]: CALL R6 2 2  ; var6 = var6(var7)
@@ -144,7 +144,7 @@ L 3:  26 [-]: RETURN R0 0  ;
        1 [-]: GETIMPORT R3 3; var3 = gLotusNpcAvatarType
        2 [-]: NAMECALL R4 R0 K4; var5 = var0; var4 = var0[0xD1586535]
        3 [-]: CALL R4 2 2  ; var4 = var4(var5)
-       4 [-]: LOADK R5 K5  ; var5 = 15.1
+       4 [-]: LOADK R5 K5  ; var5 = 15.100000381469727
        5 [-]: LOADN R6 25  ; var6 = 25
        6 [-]: NAMECALL R1 R1 K6; var2 = var1; var1 = var1[0xFB669000]
        7 [-]: CALL R1 6 2  ; var1 = var1(var2, var3, var4, var5, var6)
@@ -158,7 +158,7 @@ L 0:  13 [-]: GETTABLE R6 R1 R5; var6 = var1[var5]
       15 [-]: NAMECALL R6 R6 K9; var7 = var6; var6 = var6[0xC9F6A7D7]
       16 [-]: CALL R6 3 2  ; var6 = var6(var7, var8)
       17 [-]: MOVE R2 R6   ; var2 = var6
-      18 [-]: FASTCALL1 62 R2 L1; 
+      18 [-]: FASTCALL1 64 R2 L1; 
       19 [-]: MOVE R7 R2   ; var7 = var2
       20 [-]: GETIMPORT R6 11; var6 = 0x7B998233
       21 [-]: CALL R6 2 2  ; var6 = var6(var7)

@@ -28,7 +28,7 @@
        4 [-]: GETIMPORT R2 5; var2 = 0x60130201
        5 [-]: CALL R2 1 2  ; var2 = var2()
 L 0:   6 [-]: GETIMPORT R3 7; var3 = 0x1719295A
-       7 [-]: JUMPIFNOTLT R1 R3 L1; goto L1 if var1 >= var590670
+       7 [-]: JUMPIFNOTLT R1 R3 L1; goto L1 if var1 >= var590625
        8 [-]: GETIMPORT R3 9; var3 = 0x9BAFFFE3
        9 [-]: GETIMPORT R4 12; var4 = 0x906FBDE5["red"]
       10 [-]: GETIMPORT R5 14; var5 = 0xB8B9F7DC["red"]
@@ -59,14 +59,10 @@ L 0:   6 [-]: GETIMPORT R3 7; var3 = 0x1719295A
       35 [-]: SETTABLEKS R3 R2 K21; var3["alpha"] = var2
       36 [-]: GETIMPORT R5 26; var5 = 0x6C97A788["TINT_COLOR"]
       37 [-]: GETTABLEKS R7 R2 K11; var7 = var2["red"]
-      38 [-]: DIVK R6 R7 K27; var6 = var7 / 255
-      39 [-]: GETTABLEKS R8 R2 K15; var8 = var2["green"]
-      40 [-]: DIVK R7 R8 K27; var7 = var8 / 255
-      41 [-]: GETTABLEKS R9 R2 K18; var9 = var2["blue"]
-      42 [-]: DIVK R8 R9 K27; var8 = var9 / 255
-      43 [-]: GETTABLEKS R10 R2 K21; var10 = var2["alpha"]
-      44 [-]: DIVK R9 R10 K27; var9 = var10 / 255
-      45 [-]: NAMECALL R3 R0 K28; var4 = var0; var3 = var0[0x986D2AB8]
+           39 [-]: GETTABLEKS R8 R2 K15; var8 = var2["green"]
+           41 [-]: GETTABLEKS R9 R2 K18; var9 = var2["blue"]
+           43 [-]: GETTABLEKS R10 R2 K21; var10 = var2["alpha"]
+           45 [-]: NAMECALL R3 R0 K28; var4 = var0; var3 = var0[0x986D2AB8]
       46 [-]: CALL R3 7 1  ; var3(var4, var5, var6, var7, var8, var9)
       47 [-]: GETIMPORT R3 30; var3 = 0x67652851
       48 [-]: CALL R3 1 2  ; var3 = var3()
@@ -92,7 +88,7 @@ L 1:  54 [-]: RETURN R0 0  ;
        4 [-]: GETIMPORT R2 5; var2 = 0x60130201
        5 [-]: CALL R2 1 2  ; var2 = var2()
 L 0:   6 [-]: GETIMPORT R3 7; var3 = 0x1719295A
-       7 [-]: JUMPIFNOTLT R1 R3 L1; goto L1 if var1 >= var590670
+       7 [-]: JUMPIFNOTLT R1 R3 L1; goto L1 if var1 >= var590625
        8 [-]: GETIMPORT R3 9; var3 = 0x9BAFFFE3
        9 [-]: GETIMPORT R4 12; var4 = 0x906FBDE5["red"]
       10 [-]: GETIMPORT R5 14; var5 = 0xB8B9F7DC["red"]
@@ -123,14 +119,10 @@ L 0:   6 [-]: GETIMPORT R3 7; var3 = 0x1719295A
       35 [-]: SETTABLEKS R3 R2 K21; var3["alpha"] = var2
       36 [-]: GETIMPORT R5 25; var5 = 0xB956C3BE
       37 [-]: GETTABLEKS R7 R2 K11; var7 = var2["red"]
-      38 [-]: DIVK R6 R7 K26; var6 = var7 / 255
-      39 [-]: GETTABLEKS R8 R2 K15; var8 = var2["green"]
-      40 [-]: DIVK R7 R8 K26; var7 = var8 / 255
-      41 [-]: GETTABLEKS R9 R2 K18; var9 = var2["blue"]
-      42 [-]: DIVK R8 R9 K26; var8 = var9 / 255
-      43 [-]: GETTABLEKS R10 R2 K21; var10 = var2["alpha"]
-      44 [-]: DIVK R9 R10 K26; var9 = var10 / 255
-      45 [-]: NAMECALL R3 R0 K27; var4 = var0; var3 = var0[0x986D2AB8]
+           39 [-]: GETTABLEKS R8 R2 K15; var8 = var2["green"]
+           41 [-]: GETTABLEKS R9 R2 K18; var9 = var2["blue"]
+           43 [-]: GETTABLEKS R10 R2 K21; var10 = var2["alpha"]
+           45 [-]: NAMECALL R3 R0 K27; var4 = var0; var3 = var0[0x986D2AB8]
       46 [-]: CALL R3 7 1  ; var3(var4, var5, var6, var7, var8, var9)
       47 [-]: GETIMPORT R3 29; var3 = 0x67652851
       48 [-]: CALL R3 1 2  ; var3 = var3()
@@ -157,7 +149,7 @@ L 1:  54 [-]: RETURN R0 0  ;
        5 [-]: GETIMPORT R2 7; var2 = 0x60130201
        6 [-]: CALL R2 1 2  ; var2 = var2()
 L 0:   7 [-]: GETIMPORT R3 9; var3 = 0x1719295A
-       8 [-]: JUMPIFNOTLT R1 R3 L3; goto L3 if var1 >= var721742
+       8 [-]: JUMPIFNOTLT R1 R3 L3; goto L3 if var1 >= var721697
        9 [-]: GETIMPORT R3 11; var3 = 0x9BAFFFE3
       10 [-]: GETIMPORT R4 14; var4 = 0x906FBDE5["red"]
       11 [-]: GETIMPORT R5 16; var5 = 0xB8B9F7DC["red"]
@@ -186,21 +178,17 @@ L 0:   7 [-]: GETIMPORT R3 9; var3 = 0x1719295A
       34 [-]: DIV R6 R1 R7 ; var6 = var1 / var7
       35 [-]: CALL R3 4 2  ; var3 = var3(var4, var5, var6)
       36 [-]: SETTABLEKS R3 R2 K23; var3["alpha"] = var2
-      37 [-]: FASTCALL1 62 R0 L1; 
+      37 [-]: FASTCALL1 64 R0 L1; 
       38 [-]: MOVE R4 R0   ; var4 = var0
       39 [-]: GETIMPORT R3 27; var3 = 0x7B998233
       40 [-]: CALL R3 2 2  ; var3 = var3(var4)
 L 1:  41 [-]: JUMPIF R3 L2 ; goto L2 if var3
       42 [-]: GETIMPORT R5 29; var5 = 0xB956C3BE
       43 [-]: GETTABLEKS R7 R2 K13; var7 = var2["red"]
-      44 [-]: DIVK R6 R7 K30; var6 = var7 / 255
-      45 [-]: GETTABLEKS R8 R2 K17; var8 = var2["green"]
-      46 [-]: DIVK R7 R8 K30; var7 = var8 / 255
-      47 [-]: GETTABLEKS R9 R2 K20; var9 = var2["blue"]
-      48 [-]: DIVK R8 R9 K30; var8 = var9 / 255
-      49 [-]: GETTABLEKS R10 R2 K23; var10 = var2["alpha"]
-      50 [-]: DIVK R9 R10 K30; var9 = var10 / 255
-      51 [-]: NAMECALL R3 R0 K31; var4 = var0; var3 = var0[0x986D2AB8]
+           45 [-]: GETTABLEKS R8 R2 K17; var8 = var2["green"]
+           47 [-]: GETTABLEKS R9 R2 K20; var9 = var2["blue"]
+           49 [-]: GETTABLEKS R10 R2 K23; var10 = var2["alpha"]
+           51 [-]: NAMECALL R3 R0 K31; var4 = var0; var3 = var0[0x986D2AB8]
       52 [-]: CALL R3 7 1  ; var3(var4, var5, var6, var7, var8, var9)
 L 2:  53 [-]: GETIMPORT R3 33; var3 = 0x67652851
       54 [-]: CALL R3 1 2  ; var3 = var3()

@@ -27,19 +27,19 @@
        7 [-]: CALL R2 1 2  ; var2 = var2()
        8 [-]: GETIMPORT R3 8; var3 = 0x00046924
        9 [-]: CALL R3 1 2  ; var3 = var3()
-L 0:  10 [-]: FASTCALL1 62 R0 L1; 
+L 0:  10 [-]: FASTCALL1 64 R0 L1; 
       11 [-]: MOVE R5 R0   ; var5 = var0
       12 [-]: GETIMPORT R4 10; var4 = 0x7B998233
       13 [-]: CALL R4 2 2  ; var4 = var4(var5)
 L 1:  14 [-]: JUMPIF R4 L10; goto L10 if var4
       15 [-]: GETIMPORT R4 13; var4 = _T["TransmissionSoundInstance"]
       16 [-]: GETIMPORT R5 15; var5 = _T["curTransmission"]
-      17 [-]: FASTCALL1 62 R4 L2; 
+      17 [-]: FASTCALL1 64 R4 L2; 
       18 [-]: MOVE R7 R4   ; var7 = var4
       19 [-]: GETIMPORT R6 10; var6 = 0x7B998233
       20 [-]: CALL R6 2 2  ; var6 = var6(var7)
 L 2:  21 [-]: JUMPIF R6 L4 ; goto L4 if var6
-      22 [-]: FASTCALL1 62 R5 L3; 
+      22 [-]: FASTCALL1 64 R5 L3; 
       23 [-]: MOVE R7 R5   ; var7 = var5
       24 [-]: GETIMPORT R6 10; var6 = 0x7B998233
       25 [-]: CALL R6 2 2  ; var6 = var6(var7)
@@ -48,12 +48,12 @@ L 3:  26 [-]: JUMPIF R6 L4 ; goto L4 if var6
       28 [-]: CALL R6 2 2  ; var6 = var6(var7)
       29 [-]: NAMECALL R7 R0 K17; var8 = var0; var7 = var0[0xCDE10C4A]
       30 [-]: CALL R7 2 2  ; var7 = var7(var8)
-      31 [-]: JUMPIFNOTEQ R6 R7 L4; goto L4 if var6 ~= var65600
+      31 [-]: JUMPIFNOTEQ R6 R7 L4; goto L4 if var6 ~= var65568
       32 [-]: JUMP L5      ; goto L5
 L 4:  33 [-]: LOADNIL R4   ; var4 = nil
 L 5:  34 [-]: LOADN R6 0   ; var6 = 0
       35 [-]: LOADN R7 1   ; var7 = 1
-      36 [-]: FASTCALL1 62 R4 L6; 
+      36 [-]: FASTCALL1 64 R4 L6; 
       37 [-]: MOVE R9 R4   ; var9 = var4
       38 [-]: GETIMPORT R8 10; var8 = 0x7B998233
       39 [-]: CALL R8 2 2  ; var8 = var8(var9)
@@ -84,41 +84,41 @@ L 8:  56 [-]: GETTABLE R11 R1 R10; var11 = var1[var10]
       64 [-]: FORNLOOP R8 L8; nforloop end - iterate + goto L8
 L 9:  65 [-]: GETIMPORT R9 26; var9 = 0xDEF8AEAE
       66 [-]: LOADN R10 3  ; var10 = 3
-      67 [-]: LOADK R11 K27; var11 = 0.80000000000000004
+      67 [-]: LOADK R11 K27; var11 = 0.80000001192092896
       68 [-]: GETIMPORT R14 31; var14 = 0x55156FF7
       69 [-]: CALL R14 1 2 ; var14 = var14()
-      70 [-]: MULK R13 R14 K29; var13 = var14 * 0.033000000000000002
-      71 [-]: ADDK R12 R13 K28; var12 = var13 + 0.29999999999999999
-      72 [-]: LOADK R13 K32; var13 = 0.10000000000000001
+      70 [-]: MULK R13 R14 K29; var13 = var14 * 0.032999999821186066
+      71 [-]: ADDK R12 R13 K28; var12 = var13 + 0.30000001192092896
+      72 [-]: LOADK R13 K32; var13 = 0.10000000149011612
       73 [-]: CALL R9 5 2  ; var9 = var9(var10, var11, var12, var13)
       74 [-]: MULK R8 R9 K24; var8 = var9 * 4
       75 [-]: SETTABLEKS R8 R3 K33; var8["bank"] = var3
       76 [-]: GETIMPORT R9 26; var9 = 0xDEF8AEAE
       77 [-]: LOADN R10 3  ; var10 = 3
-      78 [-]: LOADK R11 K27; var11 = 0.80000000000000004
+      78 [-]: LOADK R11 K27; var11 = 0.80000001192092896
       79 [-]: GETIMPORT R13 31; var13 = 0x55156FF7
       80 [-]: CALL R13 1 2 ; var13 = var13()
-      81 [-]: MULK R12 R13 K29; var12 = var13 * 0.033000000000000002
+      81 [-]: MULK R12 R13 K29; var12 = var13 * 0.032999999821186066
       82 [-]: LOADK R13 K34; var13 = 0.5
       83 [-]: CALL R9 5 2  ; var9 = var9(var10, var11, var12, var13)
       84 [-]: MULK R8 R9 K24; var8 = var9 * 4
       85 [-]: SETTABLEKS R8 R3 K35; var8["heading"] = var3
       86 [-]: GETIMPORT R9 26; var9 = 0xDEF8AEAE
       87 [-]: LOADN R10 3  ; var10 = 3
-      88 [-]: LOADK R11 K27; var11 = 0.80000000000000004
+      88 [-]: LOADK R11 K27; var11 = 0.80000001192092896
       89 [-]: GETIMPORT R13 31; var13 = 0x55156FF7
       90 [-]: CALL R13 1 2 ; var13 = var13()
-      91 [-]: MULK R12 R13 K29; var12 = var13 * 0.033000000000000002
-      92 [-]: LOADK R13 K36; var13 = 0.34999999999999998
+      91 [-]: MULK R12 R13 K29; var12 = var13 * 0.032999999821186066
+      92 [-]: LOADK R13 K36; var13 = 0.34999999403953552
       93 [-]: CALL R9 5 2  ; var9 = var9(var10, var11, var12, var13)
       94 [-]: MULK R8 R9 K24; var8 = var9 * 4
       95 [-]: SETTABLEKS R8 R3 K37; var8["pitch"] = var3
       96 [-]: GETIMPORT R9 26; var9 = 0xDEF8AEAE
       97 [-]: LOADN R10 3  ; var10 = 3
-      98 [-]: LOADK R11 K27; var11 = 0.80000000000000004
+      98 [-]: LOADK R11 K27; var11 = 0.80000001192092896
       99 [-]: GETIMPORT R13 31; var13 = 0x55156FF7
      100 [-]: CALL R13 1 2 ; var13 = var13()
-     101 [-]: MULK R12 R13 K29; var12 = var13 * 0.033000000000000002
+     101 [-]: MULK R12 R13 K29; var12 = var13 * 0.032999999821186066
      102 [-]: LOADK R13 K22; var13 = 0.75
      103 [-]: CALL R9 5 2  ; var9 = var9(var10, var11, var12, var13)
      104 [-]: MULK R8 R9 K38; var8 = var9 * 2

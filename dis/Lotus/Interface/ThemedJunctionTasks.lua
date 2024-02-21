@@ -138,7 +138,7 @@
        1 [-]: LOADNIL R1   ; var1 = nil
        2 [-]: SETTABLEKS R1 R0 K2; var1["JunctionTasksRelayReconstruction"] = var0
        3 [-]: GETIMPORT R1 4; var1 = 0xAE91E43B
-       4 [-]: FASTCALL1 62 R1 L0; 
+       4 [-]: FASTCALL1 64 R1 L0; 
        5 [-]: GETIMPORT R0 6; var0 = 0x7B998233
        6 [-]: CALL R0 2 2  ; var0 = var0(var1)
 L 0:   7 [-]: JUMPIF R0 L1 ; goto L1 if var0
@@ -159,7 +159,7 @@ L 1:  11 [-]: RETURN R0 0  ;
        1 [-]: LOADNIL R1   ; var1 = nil
        2 [-]: SETTABLEKS R1 R0 K2; var1["JunctionTasksRelayReconstruction"] = var0
        3 [-]: GETIMPORT R1 4; var1 = 0xAE91E43B
-       4 [-]: FASTCALL1 62 R1 L0; 
+       4 [-]: FASTCALL1 64 R1 L0; 
        5 [-]: GETIMPORT R0 6; var0 = 0x7B998233
        6 [-]: CALL R0 2 2  ; var0 = var0(var1)
 L 0:   7 [-]: JUMPIF R0 L1 ; goto L1 if var0
@@ -262,7 +262,7 @@ L 1:  11 [-]: RETURN R0 0  ;
       70 [-]: GETIMPORT R1 13; var1 = 0x0032441C
       71 [-]: GETTABLEKS R0 R1 K14; var0 = var1["UIMaterial_RectangleNoDepth"]
       72 [-]: GETUPVAL R2 3; var2 = upvalues[3]
-      73 [-]: FASTCALL1 62 R2 L0; 
+      73 [-]: FASTCALL1 64 R2 L0; 
       74 [-]: GETIMPORT R1 16; var1 = 0x7B998233
       75 [-]: CALL R1 2 2  ; var1 = var1(var2)
 L 0:  76 [-]: JUMPIF R1 L1 ; goto L1 if var1
@@ -285,7 +285,7 @@ L 1:  79 [-]: GETIMPORT R1 19; var1 = 0xAE91E43B
       93 [-]: GETUPVAL R9 0; var9 = upvalues[0]
       94 [-]: GETTABLEKS R8 R9 K3; var8 = var9["Background1Object"]
       95 [-]: GETTABLEKS R7 R8 K25; var7 = var8["b"]
-      96 [-]: LOADK R8 K26 ; var8 = 0.90000000000000002
+      96 [-]: LOADK R8 K26 ; var8 = 0.89999997615814209
       97 [-]: NAMECALL R1 R1 K27; var2 = var1; var1 = var1[0x91E13703]
       98 [-]: CALL R1 8 1  ; var1(var2, var3, var4, var5, var6, var7, var8)
       99 [-]: GETIMPORT R1 19; var1 = 0xAE91E43B
@@ -300,7 +300,7 @@ L 1:  79 [-]: GETIMPORT R1 19; var1 = 0xAE91E43B
      108 [-]: GETUPVAL R9 0; var9 = upvalues[0]
      109 [-]: GETTABLEKS R8 R9 K7; var8 = var9["FloatingContentObject"]
      110 [-]: GETTABLEKS R7 R8 K25; var7 = var8["b"]
-     111 [-]: LOADK R8 K29 ; var8 = 0.59999999999999998
+     111 [-]: LOADK R8 K29 ; var8 = 0.60000002384185791
      112 [-]: NAMECALL R1 R1 K27; var2 = var1; var1 = var1[0x91E13703]
      113 [-]: CALL R1 8 1  ; var1(var2, var3, var4, var5, var6, var7, var8)
      114 [-]: GETIMPORT R1 19; var1 = 0xAE91E43B
@@ -312,14 +312,14 @@ L 1:  79 [-]: GETIMPORT R1 19; var1 = 0xAE91E43B
      120 [-]: CALL R1 5 1  ; var1(var2, var3, var4, var5)
      121 [-]: GETIMPORT R1 19; var1 = 0xAE91E43B
      122 [-]: LOADK R3 K32 ; var3 = "Junction.JunctionName"
-     123 [-]: LOADN R4 36  ; var4 = 36
+     123 [-]: LOADN R4 38  ; var4 = 38
      124 [-]: GETUPVAL R6 0; var6 = upvalues[0]
      125 [-]: GETTABLEKS R5 R6 K8; var5 = var6["FloatingContentHighlight"]
      126 [-]: NAMECALL R1 R1 K31; var2 = var1; var1 = var1[0x67BC869F]
      127 [-]: CALL R1 5 1  ; var1(var2, var3, var4, var5)
      128 [-]: GETIMPORT R1 19; var1 = 0xAE91E43B
      129 [-]: LOADK R3 K33 ; var3 = "Junction.JunctionDesc"
-     130 [-]: LOADN R4 36  ; var4 = 36
+     130 [-]: LOADN R4 38  ; var4 = 38
      131 [-]: GETUPVAL R6 0; var6 = upvalues[0]
      132 [-]: GETTABLEKS R5 R6 K6; var5 = var6["FloatingContent"]
      133 [-]: NAMECALL R1 R1 K31; var2 = var1; var1 = var1[0x67BC869F]
@@ -361,7 +361,7 @@ L 1:  79 [-]: GETIMPORT R1 19; var1 = 0xAE91E43B
      169 [-]: GETUPVAL R9 0; var9 = upvalues[0]
      170 [-]: GETTABLEKS R8 R9 K3; var8 = var9["Background1Object"]
      171 [-]: GETTABLEKS R7 R8 K25; var7 = var8["b"]
-     172 [-]: LOADK R8 K37 ; var8 = 0.69999999999999996
+     172 [-]: LOADK R8 K37 ; var8 = 0.69999998807907104
      173 [-]: NAMECALL R1 R1 K27; var2 = var1; var1 = var1[0x91E13703]
      174 [-]: CALL R1 8 1  ; var1(var2, var3, var4, var5, var6, var7, var8)
      175 [-]: GETIMPORT R1 19; var1 = 0xAE91E43B
@@ -376,7 +376,7 @@ L 1:  79 [-]: GETIMPORT R1 19; var1 = 0xAE91E43B
      184 [-]: GETUPVAL R9 0; var9 = upvalues[0]
      185 [-]: GETTABLEKS R8 R9 K7; var8 = var9["FloatingContentObject"]
      186 [-]: GETTABLEKS R7 R8 K25; var7 = var8["b"]
-     187 [-]: LOADK R8 K38 ; var8 = 0.050000000000000003
+     187 [-]: LOADK R8 K38 ; var8 = 0.05000000074505806
      188 [-]: NAMECALL R1 R1 K27; var2 = var1; var1 = var1[0x91E13703]
      189 [-]: CALL R1 8 1  ; var1(var2, var3, var4, var5, var6, var7, var8)
      190 [-]: GETIMPORT R1 19; var1 = 0xAE91E43B
@@ -394,14 +394,14 @@ L 1:  79 [-]: GETIMPORT R1 19; var1 = 0xAE91E43B
      202 [-]: CALL R1 5 1  ; var1(var2, var3, var4, var5)
      203 [-]: GETIMPORT R1 19; var1 = 0xAE91E43B
      204 [-]: LOADK R3 K40 ; var3 = "Junction.Rewards.Header.Title"
-     205 [-]: LOADN R4 36  ; var4 = 36
+     205 [-]: LOADN R4 38  ; var4 = 38
      206 [-]: GETUPVAL R6 0; var6 = upvalues[0]
      207 [-]: GETTABLEKS R5 R6 K6; var5 = var6["FloatingContent"]
      208 [-]: NAMECALL R1 R1 K31; var2 = var1; var1 = var1[0x67BC869F]
      209 [-]: CALL R1 5 1  ; var1(var2, var3, var4, var5)
      210 [-]: GETIMPORT R1 19; var1 = 0xAE91E43B
      211 [-]: LOADK R3 K41 ; var3 = "Junction.Rewards.Header.RewardCount"
-     212 [-]: LOADN R4 36  ; var4 = 36
+     212 [-]: LOADN R4 38  ; var4 = 38
      213 [-]: GETUPVAL R6 0; var6 = upvalues[0]
      214 [-]: GETTABLEKS R5 R6 K6; var5 = var6["FloatingContent"]
      215 [-]: NAMECALL R1 R1 K31; var2 = var1; var1 = var1[0x67BC869F]
@@ -446,7 +446,7 @@ L 1:  79 [-]: GETIMPORT R1 19; var1 = 0xAE91E43B
        0 [-]: GETIMPORT R1 1; var1 = 0x0032441C
        1 [-]: GETTABLEKS R0 R1 K2; var0 = var1["UIMaterial_RectangleNoDepth"]
        2 [-]: GETUPVAL R2 0; var2 = upvalues[0]
-       3 [-]: FASTCALL1 62 R2 L0; 
+       3 [-]: FASTCALL1 64 R2 L0; 
        4 [-]: GETIMPORT R1 4; var1 = 0x7B998233
        5 [-]: CALL R1 2 2  ; var1 = var1(var2)
 L 0:   6 [-]: JUMPIF R1 L1 ; goto L1 if var1
@@ -489,7 +489,7 @@ L 1:   9 [-]: GETIMPORT R1 7; var1 = 0x2D0FAD09
       43 [-]: NAMECALL R2 R2 K22; var3 = var2; var2 = var2[0x20B98DB3]
       44 [-]: CALL R2 4 1  ; var2(var3, var4, var5)
       45 [-]: GETUPVAL R4 0; var4 = upvalues[0]
-      46 [-]: FASTCALL1 62 R4 L2; 
+      46 [-]: FASTCALL1 64 R4 L2; 
       47 [-]: GETIMPORT R3 4; var3 = 0x7B998233
       48 [-]: CALL R3 2 2  ; var3 = var3(var4)
 L 2:  49 [-]: NOT R2 R3    ; var2 = not var3
@@ -654,7 +654,7 @@ L 8:  47 [-]: FASTCALL2 52 R0 R5 L9;
 L 9:  52 [-]: FORGLOOP R1 L8 2; 
       53 [-]: LOADB R1 0   ; var1 = false
       54 [-]: GETUPVAL R3 0; var3 = upvalues[0]
-      55 [-]: FASTCALL1 62 R3 L10; 
+      55 [-]: FASTCALL1 64 R3 L10; 
       56 [-]: GETIMPORT R2 27; var2 = 0x7B998233
       57 [-]: CALL R2 2 2  ; var2 = var2(var3)
 L10:  58 [-]: JUMPIF R2 L11; goto L11 if var2
@@ -662,7 +662,7 @@ L10:  58 [-]: JUMPIF R2 L11; goto L11 if var2
       60 [-]: NAMECALL R2 R2 K28; var3 = var2; var2 = var2[0x5FBDDC1A]
       61 [-]: CALL R2 2 2  ; var2 = var2(var3)
       62 [-]: LOADN R3 4   ; var3 = 4
-      63 [-]: JUMPIFNOTLE R3 R2 L11; goto L11 if var3 > var65819
+      63 [-]: JUMPIFNOTLE R3 R2 L11; goto L11 if var3 > var65798
       64 [-]: LOADB R1 1   ; var1 = true
 L11:  65 [-]: GETUPVAL R3 1; var3 = upvalues[1]
       66 [-]: GETUPVAL R5 2; var5 = upvalues[2]
@@ -774,20 +774,20 @@ L 1:  17 [-]: GETIMPORT R5 11; var5 = 0x603636AD
       23 [-]: MOVE R2 R5   ; var2 = var5
       24 [-]: GETTABLEKS R5 R0 K14; var5 = var0["mission"]
       25 [-]: GETTABLEKS R1 R0 K15; var1 = var0["challenges"]
-      26 [-]: FASTCALL1 62 R1 L2; 
+      26 [-]: FASTCALL1 64 R1 L2; 
       27 [-]: MOVE R7 R1   ; var7 = var1
       28 [-]: GETIMPORT R6 17; var6 = 0x7B998233
       29 [-]: CALL R6 2 2  ; var6 = var6(var7)
 L 2:  30 [-]: JUMPIF R6 L4 ; goto L4 if var6
       31 [-]: GETIMPORT R7 19; var7 = _T["JunctionTasksRelayReconstruction"]
-      32 [-]: FASTCALL1 62 R7 L3; 
+      32 [-]: FASTCALL1 64 R7 L3; 
       33 [-]: GETIMPORT R6 17; var6 = 0x7B998233
       34 [-]: CALL R6 2 2  ; var6 = var6(var7)
 L 3:  35 [-]: JUMPIF R6 L13; goto L13 if var6
 L 4:  36 [-]: NEWTABLE R6 0 0; var6 = {}
       37 [-]: NEWTABLE R1 0 0; var1 = {}
       38 [-]: GETIMPORT R8 19; var8 = _T["JunctionTasksRelayReconstruction"]
-      39 [-]: FASTCALL1 62 R8 L5; 
+      39 [-]: FASTCALL1 64 R8 L5; 
       40 [-]: GETIMPORT R7 17; var7 = 0x7B998233
       41 [-]: CALL R7 2 2  ; var7 = var7(var8)
 L 5:  42 [-]: JUMPIF R7 L6 ; goto L6 if var7
@@ -801,7 +801,7 @@ L 6:  45 [-]: GETIMPORT R7 23; var7 = _T["CachedConstructionProjects"]
 L 7:  50 [-]: GETTABLE R12 R7 R10; var12 = var7[var10]
       51 [-]: GETTABLEKS R11 R12 K24; var11 = var12["rebuildNode"]
       52 [-]: GETTABLEKS R12 R0 K25; var12 = var0["name"]
-      53 [-]: JUMPIFNOTEQ R11 R12 L8; goto L8 if var11 ~= var168234295
+      53 [-]: JUMPIFNOTEQ R11 R12 L8; goto L8 if var11 ~= var168234269
       54 [-]: GETTABLE R13 R7 R10; var13 = var7[var10]
       55 [-]: GETTABLEKS R12 R13 K26; var12 = var13["info"]
       56 [-]: GETTABLEKS R6 R12 K20; var6 = var12["mTasks"]
@@ -809,7 +809,7 @@ L 7:  50 [-]: GETTABLE R12 R7 R10; var12 = var7[var10]
 L 8:  58 [-]: FORNLOOP R8 L7; nforloop end - iterate + goto L7
 L 9:  59 [-]: LENGTH R7 R6 ; var7 = #var6
       60 [-]: LOADN R8 0   ; var8 = 0
-      61 [-]: JUMPIFNOTLT R8 R7 L10; goto L10 if var8 >= var66587
+      61 [-]: JUMPIFNOTLT R8 R7 L10; goto L10 if var8 >= var66566
       62 [-]: LOADB R4 1   ; var4 = true
       63 [-]: LOADK R3 K27 ; var3 = "/Lotus/Language/Junction/RelayReconDesc"
 L10:  64 [-]: GETIMPORT R7 29; var7 = 0xC8802016
@@ -840,7 +840,7 @@ L13:  76 [-]: GETUPVAL R7 1; var7 = upvalues[1]
 L14:  89 [-]: LOADNIL R10  ; var10 = nil
       90 [-]: GETTABLE R13 R6 R9; var13 = var6[var9]
       91 [-]: GETTABLEKS R12 R13 K38; var12 = var13["StoreItem"]
-      92 [-]: FASTCALL1 62 R12 L15; 
+      92 [-]: FASTCALL1 64 R12 L15; 
       93 [-]: GETIMPORT R11 17; var11 = 0x7B998233
       94 [-]: CALL R11 2 2 ; var11 = var11(var12)
 L15:  95 [-]: JUMPIF R11 L16; goto L16 if var11
@@ -858,7 +858,7 @@ L15:  95 [-]: JUMPIF R11 L16; goto L16 if var11
      107 [-]: JUMP L20     ; goto L20
 L16: 108 [-]: GETTABLE R13 R6 R9; var13 = var6[var9]
      109 [-]: GETTABLEKS R12 R13 K42; var12 = var13["ItemType"]
-     110 [-]: FASTCALL1 62 R12 L17; 
+     110 [-]: FASTCALL1 64 R12 L17; 
      111 [-]: GETIMPORT R11 17; var11 = 0x7B998233
      112 [-]: CALL R11 2 2 ; var11 = var11(var12)
 L17: 113 [-]: JUMPIF R11 L18; goto L18 if var11
@@ -874,7 +874,7 @@ L17: 113 [-]: JUMPIF R11 L18; goto L18 if var11
      123 [-]: JUMP L20     ; goto L20
 L18: 124 [-]: GETTABLE R13 R6 R9; var13 = var6[var9]
      125 [-]: GETTABLEKS R12 R13 K44; var12 = var13["Icon"]
-     126 [-]: FASTCALL1 62 R12 L19; 
+     126 [-]: FASTCALL1 64 R12 L19; 
      127 [-]: GETIMPORT R11 17; var11 = 0x7B998233
      128 [-]: CALL R11 2 2 ; var11 = var11(var12)
 L19: 129 [-]: JUMPIF R11 L20; goto L20 if var11
@@ -909,12 +909,12 @@ L22: 150 [-]: GETUPVAL R7 2; var7 = upvalues[2]
      158 [-]: CALL R7 2 2  ; var7 = var7(var8)
      159 [-]: GETIMPORT R8 41; var8 = 0xAE91E43B
      160 [-]: LOADK R10 K52; var10 = "Junction.Rewards.Header.RewardCount"
-     161 [-]: LOADN R11 29 ; var11 = 29
+     161 [-]: LOADN R11 31 ; var11 = 31
      162 [-]: MOVE R12 R7  ; var12 = var7
      163 [-]: NAMECALL R8 R8 K53; var9 = var8; var8 = var8[0x5F56EEAB]
      164 [-]: CALL R8 5 1  ; var8(var9, var10, var11, var12)
      165 [-]: LOADN R9 3   ; var9 = 3
-     166 [-]: JUMPIFLT R9 R7 L23; goto L23 if var9 < var16779291
+     166 [-]: JUMPIFLT R9 R7 L23; goto L23 if var9 < var16779270
      167 [-]: LOADB R8 0 +1; var8 = false
 L23: 168 [-]: LOADB R8 1   ; var8 = true
 L24: 169 [-]: SETUPVAL R8 4; upvalues[8] = var4
@@ -931,7 +931,7 @@ L24: 169 [-]: SETUPVAL R8 4; upvalues[8] = var4
      180 [-]: SUB R9 R10 R11; var9 = var10 - var11
      181 [-]: SUBK R8 R9 K54; var8 = var9 - 22
      182 [-]: SETUPVAL R8 5; upvalues[8] = var5
-     183 [-]: SUBK R9 R7 K59; var9 = var7 - 3.7999999999999998
+     183 [-]: SUBK R9 R7 K59; var9 = var7 - 3.7999999523162842
      184 [-]: MULK R8 R9 K58; var8 = var9 * 2
      185 [-]: SETUPVAL R8 7; upvalues[8] = var7
      186 [-]: LOADB R8 1   ; var8 = true
@@ -941,9 +941,9 @@ L25: 188 [-]: GETIMPORT R8 41; var8 = 0xAE91E43B
      190 [-]: LOADN R11 11 ; var11 = 11
      191 [-]: LOADB R12 0  ; var12 = false
      192 [-]: LOADN R13 0  ; var13 = 0
-     193 [-]: JUMPIFNOTLT R13 R7 L27; goto L27 if var13 >= var265543
+     193 [-]: JUMPIFNOTLT R13 R7 L27; goto L27 if var13 >= var265520
      194 [-]: LOADN R13 4  ; var13 = 4
-     195 [-]: JUMPIFLT R7 R13 L26; goto L26 if var7 < var16780315
+     195 [-]: JUMPIFLT R7 R13 L26; goto L26 if var7 < var16780294
      196 [-]: LOADB R12 0 +1; var12 = false
 L26: 197 [-]: LOADB R12 1  ; var12 = true
 L27: 198 [-]: NAMECALL R8 R8 K61; var9 = var8; var8 = var8[0xAADE900E]
@@ -953,9 +953,9 @@ L27: 198 [-]: NAMECALL R8 R8 K61; var9 = var8; var8 = var8[0xAADE900E]
      202 [-]: LOADN R11 11 ; var11 = 11
      203 [-]: LOADB R12 0  ; var12 = false
      204 [-]: LOADN R13 0  ; var13 = 0
-     205 [-]: JUMPIFNOTLT R13 R7 L29; goto L29 if var13 >= var265543
+     205 [-]: JUMPIFNOTLT R13 R7 L29; goto L29 if var13 >= var265520
      206 [-]: LOADN R13 4  ; var13 = 4
-     207 [-]: JUMPIFLT R7 R13 L28; goto L28 if var7 < var16780315
+     207 [-]: JUMPIFLT R7 R13 L28; goto L28 if var7 < var16780294
      208 [-]: LOADB R12 0 +1; var12 = false
 L28: 209 [-]: LOADB R12 1  ; var12 = true
 L29: 210 [-]: NAMECALL R8 R8 K61; var9 = var8; var8 = var8[0xAADE900E]
@@ -968,14 +968,14 @@ L29: 210 [-]: NAMECALL R8 R8 K61; var9 = var8; var8 = var8[0xAADE900E]
      217 [-]: NOT R12 R4   ; var12 = not var4
      218 [-]: JUMPIFNOT R12 L31; goto L31 if not var12
      219 [-]: LOADN R13 0  ; var13 = 0
-     220 [-]: JUMPIFLT R13 R7 L30; goto L30 if var13 < var16780315
+     220 [-]: JUMPIFLT R13 R7 L30; goto L30 if var13 < var16780294
      221 [-]: LOADB R12 0 +1; var12 = false
 L30: 222 [-]: LOADB R12 1  ; var12 = true
 L31: 223 [-]: NAMECALL R8 R8 K61; var9 = var8; var8 = var8[0xAADE900E]
      224 [-]: CALL R8 5 1  ; var8(var9, var10, var11, var12)
      225 [-]: GETIMPORT R8 41; var8 = 0xAE91E43B
      226 [-]: LOADK R10 K64; var10 = "Junction.JunctionName"
-     227 [-]: LOADN R11 38 ; var11 = 38
+     227 [-]: LOADN R11 40 ; var11 = 40
      228 [-]: LOADK R12 K65; var12 = "center"
      229 [-]: NAMECALL R8 R8 K53; var9 = var8; var8 = var8[0x5F56EEAB]
      230 [-]: CALL R8 5 1  ; var8(var9, var10, var11, var12)
@@ -988,7 +988,7 @@ L31: 223 [-]: NAMECALL R8 R8 K61; var9 = var8; var8 = var8[0xAADE900E]
      237 [-]: CALL R8 0 1  ; var8(var9, ...)
      238 [-]: GETIMPORT R8 41; var8 = 0xAE91E43B
      239 [-]: LOADK R10 K64; var10 = "Junction.JunctionName"
-     240 [-]: LOADN R11 33 ; var11 = 33
+     240 [-]: LOADN R11 35 ; var11 = 35
      241 [-]: NAMECALL R8 R8 K71; var9 = var8; var8 = var8[0x91A24E4B]
      242 [-]: CALL R8 4 2  ; var8 = var8(var9, var10, var11)
      243 [-]: GETIMPORT R10 41; var10 = 0xAE91E43B
@@ -1005,24 +1005,21 @@ L31: 223 [-]: NAMECALL R8 R8 K61; var9 = var8; var8 = var8[0xAADE900E]
      254 [-]: GETIMPORT R11 41; var11 = 0xAE91E43B
      255 [-]: LOADK R13 K64; var13 = "Junction.JunctionName"
      256 [-]: LOADN R14 0  ; var14 = 0
-     257 [-]: DIVK R18 R8 K58; var18 = var8 / 2
-     258 [-]: SUB R17 R10 R18; var17 = var10 - var18
-     259 [-]: DIVK R18 R9 K58; var18 = var9 / 2
-     260 [-]: ADD R16 R17 R18; var16 = var17 + var18
+          258 [-]: SUB R17 R10 R18; var17 = var10 - var18
+          260 [-]: ADD R16 R17 R18; var16 = var17 + var18
      261 [-]: ADDK R15 R16 K75; var15 = var16 + 5
      262 [-]: NAMECALL R11 R11 K76; var12 = var11; var11 = var11[0x67BC869F]
      263 [-]: CALL R11 5 1 ; var11(var12, var13, var14, var15)
      264 [-]: GETIMPORT R11 41; var11 = 0xAE91E43B
      265 [-]: LOADK R13 K73; var13 = "Junction.JunctionIcon"
      266 [-]: LOADN R14 0  ; var14 = 0
-     267 [-]: DIVK R17 R8 K58; var17 = var8 / 2
-     268 [-]: SUB R16 R10 R17; var16 = var10 - var17
+          268 [-]: SUB R16 R10 R17; var16 = var10 - var17
      269 [-]: SUBK R15 R16 K75; var15 = var16 - 5
      270 [-]: NAMECALL R11 R11 K76; var12 = var11; var11 = var11[0x67BC869F]
      271 [-]: CALL R11 5 1 ; var11(var12, var13, var14, var15)
      272 [-]: GETIMPORT R11 41; var11 = 0xAE91E43B
      273 [-]: LOADK R13 K77; var13 = "Junction.JunctionDesc"
-     274 [-]: LOADN R14 38 ; var14 = 38
+     274 [-]: LOADN R14 40 ; var14 = 40
      275 [-]: LOADK R15 K65; var15 = "center"
      276 [-]: NAMECALL R11 R11 K53; var12 = var11; var11 = var11[0x5F56EEAB]
      277 [-]: CALL R11 5 1 ; var11(var12, var13, var14, var15)
@@ -1074,7 +1071,7 @@ L33: 319 [-]: GETIMPORT R24 91; var24 = 0xBA7DFCD2
      323 [-]: CALL R24 0 2 ; var24 = var24(var25, ...)
      324 [-]: NAMECALL R25 R23 K94; var26 = var23; var25 = var23[0x2F5D21D2]
      325 [-]: CALL R25 2 2 ; var25 = var25(var26)
-     326 [-]: JUMPIFNOTLT R24 R25 L34; goto L34 if var24 >= var4379
+     326 [-]: JUMPIFNOTLT R24 R25 L34; goto L34 if var24 >= var4358
      327 [-]: LOADB R17 0  ; var17 = false
      328 [-]: JUMP L35     ; goto L35
 L34: 329 [-]: FORGLOOP R19 L33 2; 
@@ -1089,7 +1086,7 @@ L35: 330 [-]: JUMPIFNOT R17 L43; goto L43 if not var17
      338 [-]: GETTABLE R21 R1 R15; var21 = var1[var15]
      339 [-]: NAMECALL R21 R21 K94; var22 = var21; var21 = var21[0x2F5D21D2]
      340 [-]: CALL R21 2 2 ; var21 = var21(var22)
-     341 [-]: JUMPIFLE R21 R20 L36; goto L36 if var21 <= var16782875
+     341 [-]: JUMPIFLE R21 R20 L36; goto L36 if var21 <= var16782854
      342 [-]: LOADB R22 0 +1; var22 = false
 L36: 343 [-]: LOADB R22 1  ; var22 = true
 L37: 344 [-]: GETUPVAL R24 12; var24 = upvalues[12]
@@ -1134,7 +1131,7 @@ L40: 375 [-]: MOVE R27 R29 ; var27 = var29
      383 [-]: MOVE R24 R26 ; var24 = var26
      384 [-]: LENGTH R26 R24; var26 = #var24
      385 [-]: LOADN R27 0  ; var27 = 0
-     386 [-]: JUMPIFNOTLT R27 R26 L42; goto L42 if var27 >= var1579798
+     386 [-]: JUMPIFNOTLT R27 R26 L42; goto L42 if var27 >= var1579822
      387 [-]: MOVE R27 R24 ; var27 = var24
      388 [-]: LOADN R28 1  ; var28 = 1
      389 [-]: LOADN R29 1  ; var29 = 1
@@ -1158,7 +1155,7 @@ L42: 395 [-]: GETUPVAL R25 11; var25 = upvalues[11]
      407 [-]: NAMECALL R25 R25 K49; var26 = var25; var25 = var25[0xBAD4316F]
      408 [-]: CALL R25 4 1 ; var25(var26, var27, var28)
 L43: 409 [-]: FORNLOOP R13 L32; nforloop end - iterate + goto L32
-L44: 410 [-]: JUMPIFLE R12 R11 L45; goto L45 if var12 <= var131136
+L44: 410 [-]: JUMPIFLE R12 R11 L45; goto L45 if var12 <= var131104
      411 [-]: JUMP L46     ; goto L46
 L45: 412 [-]: LOADB R13 1  ; var13 = true
      413 [-]: SETUPVAL R13 13; upvalues[13] = var13
@@ -1170,7 +1167,7 @@ L46: 414 [-]: GETUPVAL R13 13; var13 = upvalues[13]
      419 [-]: CALL R15 2 0 ; var15, ... = var15(var16)
      420 [-]: NAMECALL R13 R13 K115; var14 = var13; var13 = var13[0x46A0EBF5]
      421 [-]: CALL R13 0 2 ; var13 = var13(var14, ...)
-     422 [-]: FASTCALL1 62 R13 L47; 
+     422 [-]: FASTCALL1 64 R13 L47; 
      423 [-]: MOVE R15 R13 ; var15 = var13
      424 [-]: GETIMPORT R14 17; var14 = 0x7B998233
      425 [-]: CALL R14 2 2 ; var14 = var14(var15)
@@ -1239,12 +1236,10 @@ L48: 430 [-]: GETUPVAL R13 11; var13 = upvalues[11]
       10 [-]: NAMECALL R3 R3 K5; var4 = var3; var3 = var3[0x091C120E]
       11 [-]: CALL R3 2 2  ; var3 = var3(var4)
       12 [-]: GETUPVAL R6 0; var6 = upvalues[0]
-      13 [-]: DIVK R5 R6 K7; var5 = var6 / 2
-      14 [-]: ADDK R4 R5 K6; var4 = var5 + 80
+           14 [-]: ADDK R4 R5 K6; var4 = var5 + 80
       15 [-]: SUB R2 R3 R4 ; var2 = var3 - var4
       16 [-]: GETUPVAL R5 0; var5 = upvalues[0]
-      17 [-]: DIVK R4 R5 K7; var4 = var5 / 2
-      18 [-]: ADDK R3 R4 K6; var3 = var4 + 80
+           18 [-]: ADDK R3 R4 K6; var3 = var4 + 80
       19 [-]: CALL R0 4 2  ; var0 = var0(var1, var2, var3)
       20 [-]: SETUPVAL R0 1; upvalues[0] = var1
       21 [-]: GETIMPORT R0 1; var0 = 0xAE91E43B
@@ -1303,7 +1298,7 @@ L48: 430 [-]: GETUPVAL R13 11; var13 = upvalues[11]
       37 [-]: GETTABLEKS R1 R2 K14; var1 = var2["UIMaterial_DepthTestText"]
       38 [-]: GETUPVAL R3 1; var3 = upvalues[1]
       39 [-]: GETTABLEKS R2 R3 K15; var2 = var3["UI_MODE_IN_SPACE_SHIP"]
-      40 [-]: JUMPIFNOTEQ R0 R2 L0; goto L0 if var0 ~= var852558
+      40 [-]: JUMPIFNOTEQ R0 R2 L0; goto L0 if var0 ~= var852513
       41 [-]: GETIMPORT R2 13; var2 = 0x0032441C
       42 [-]: GETTABLEKS R1 R2 K16; var1 = var2["UIMaterial_PlainText"]
 L 0:  43 [-]: GETIMPORT R2 5; var2 = 0xAE91E43B
@@ -1341,7 +1336,7 @@ L 0:  43 [-]: GETIMPORT R2 5; var2 = 0xAE91E43B
       75 [-]: LOADN R11 0  ; var11 = 0
       76 [-]: CALL R8 4 0  ; var8, ... = var8(var9, var10, var11)
       77 [-]: SETLIST R7 R8 -1 [1]; 
-      78 [-]: LOADK R8 K28 ; var8 = 0.01
+      78 [-]: LOADK R8 K28 ; var8 = 0.0099999997764825821
       79 [-]: LOADN R9 0   ; var9 = 0
       80 [-]: DUPCLOSURE R10 K29; 
       81 [-]: CAPTURE UPVAL U5; 
@@ -1380,7 +1375,7 @@ L 0:  13 [-]: GETIMPORT R0 7; var0 = _T["IsScreenOpen"]
       18 [-]: LOADNIL R1   ; var1 = nil
       19 [-]: SETTABLEKS R1 R0 K10; var1["JunctionTasksRelayReconstruction"] = var0
       20 [-]: GETIMPORT R1 1; var1 = 0xAE91E43B
-      21 [-]: FASTCALL1 62 R1 L1; 
+      21 [-]: FASTCALL1 64 R1 L1; 
       22 [-]: GETIMPORT R0 12; var0 = 0x7B998233
       23 [-]: CALL R0 2 2  ; var0 = var0(var1)
 L 1:  24 [-]: JUMPIF R0 L2 ; goto L2 if var0
@@ -1403,7 +1398,7 @@ L 2:  28 [-]: RETURN R0 0  ;
        3 [-]: LOADNIL R1   ; var1 = nil
        4 [-]: SETTABLEKS R1 R0 K2; var1["JunctionTasksRelayReconstruction"] = var0
        5 [-]: GETIMPORT R1 4; var1 = 0xAE91E43B
-       6 [-]: FASTCALL1 62 R1 L0; 
+       6 [-]: FASTCALL1 64 R1 L0; 
        7 [-]: GETIMPORT R0 6; var0 = 0x7B998233
        8 [-]: CALL R0 2 2  ; var0 = var0(var1)
 L 0:   9 [-]: JUMPIF R0 L1 ; goto L1 if var0
@@ -1431,7 +1426,7 @@ L 1:  13 [-]: RETURN R0 0  ;
        8 [-]: LOADNIL R1   ; var1 = nil
        9 [-]: SETTABLEKS R1 R0 K6; var1["JunctionTasksRelayReconstruction"] = var0
       10 [-]: GETIMPORT R1 8; var1 = 0xAE91E43B
-      11 [-]: FASTCALL1 62 R1 L0; 
+      11 [-]: FASTCALL1 64 R1 L0; 
       12 [-]: GETIMPORT R0 10; var0 = 0x7B998233
       13 [-]: CALL R0 2 2  ; var0 = var0(var1)
 L 0:  14 [-]: JUMPIF R0 L1 ; goto L1 if var0
@@ -1461,7 +1456,7 @@ L 1:  18 [-]: RETURN R0 0  ;
       10 [-]: LOADNIL R1   ; var1 = nil
       11 [-]: SETTABLEKS R1 R0 K6; var1["JunctionTasksRelayReconstruction"] = var0
       12 [-]: GETIMPORT R1 8; var1 = 0xAE91E43B
-      13 [-]: FASTCALL1 62 R1 L0; 
+      13 [-]: FASTCALL1 64 R1 L0; 
       14 [-]: GETIMPORT R0 10; var0 = 0x7B998233
       15 [-]: CALL R0 2 2  ; var0 = var0(var1)
 L 0:  16 [-]: JUMPIF R0 L1 ; goto L1 if var0
@@ -1529,7 +1524,7 @@ L 1:   3 [-]: SETUPVAL R1 0; upvalues[1] = var0
 ; Max Stack Size:  2
 
        0 [-]: GETUPVAL R1 0; var1 = upvalues[0]
-       1 [-]: FASTCALL1 62 R1 L0; 
+       1 [-]: FASTCALL1 64 R1 L0; 
        2 [-]: GETIMPORT R0 1; var0 = 0x7B998233
        3 [-]: CALL R0 2 2  ; var0 = var0(var1)
 L 0:   4 [-]: JUMPIF R0 L1 ; goto L1 if var0

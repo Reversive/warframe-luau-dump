@@ -44,7 +44,7 @@ L 0:   6 [-]: SETTABLEKS R2 R1 K0; var2["val"] = var1
        2 [-]: CALL R5 2 2  ; var5 = var5(var6)
        3 [-]: JUMPIF R5 L0 ; goto L0 if var5
        4 [-]: RETURN R0 0  ; 
-L 0:   5 [-]: FASTCALL1 62 R1 L1; 
+L 0:   5 [-]: FASTCALL1 64 R1 L1; 
        6 [-]: MOVE R6 R1   ; var6 = var1
        7 [-]: GETIMPORT R5 4; var5 = 0x7B998233
        8 [-]: CALL R5 2 2  ; var5 = var5(var6)
@@ -55,7 +55,7 @@ L 1:   9 [-]: JUMPIF R5 L3 ; goto L3 if var5
       13 [-]: NAMECALL R5 R5 K6; var6 = var5; var5 = var5[0x36CD91BC]
       14 [-]: CALL R5 3 2  ; var5 = var5(var6, var7)
       15 [-]: LOADN R6 0   ; var6 = 0
-      16 [-]: JUMPIFNOTLT R6 R5 L3; goto L3 if var6 >= var526414
+      16 [-]: JUMPIFNOTLT R6 R5 L3; goto L3 if var6 >= var526369
       17 [-]: GETIMPORT R8 8; var8 = 0x35A3F2CD
       18 [-]: MUL R7 R8 R5 ; var7 = var8 * var5
       19 [-]: FASTCALL1 7 R7 L2; 

@@ -7,7 +7,7 @@
 
        1 [-]: NEWTABLE R0 0 2; var0 = {}
        2 [-]: DUPTABLE R1 4; 
-       3 [-]: LOADN R2 340 ; var2 = 340
+       3 [-]: LOADN R2 352 ; var2 = 352
        4 [-]: SETTABLEKS R2 R1 K0; var2["upgradeType"] = var1
        5 [-]: LOADN R2 0   ; var2 = 0
        6 [-]: SETTABLEKS R2 R1 K1; var2["operation"] = var1
@@ -24,7 +24,7 @@
       17 [-]: CALL R2 2 2  ; var2 = var2(var3)
       18 [-]: SETTABLEKS R2 R1 K3; var2["notificationType"] = var1
       19 [-]: DUPTABLE R2 4; 
-      20 [-]: LOADN R3 339 ; var3 = 339
+      20 [-]: LOADN R3 351 ; var3 = 351
       21 [-]: SETTABLEKS R3 R2 K0; var3["upgradeType"] = var2
       22 [-]: LOADN R3 3   ; var3 = 3
       23 [-]: SETTABLEKS R3 R2 K1; var3["operation"] = var2
@@ -99,7 +99,7 @@ L 0:  40 [-]: GETIMPORT R6 6; var6 = _T["EvoShotgunShellReloadToggle"]
       42 [-]: GETIMPORT R6 6; var6 = _T["EvoShotgunShellReloadToggle"]
       43 [-]: GETUPVAL R8 0; var8 = upvalues[0]
       44 [-]: LENGTH R7 R8 ; var7 = #var8
-      45 [-]: JUMPIFNOTEQ R6 R7 L2; goto L2 if var6 ~= var1508942
+      45 [-]: JUMPIFNOTEQ R6 R7 L2; goto L2 if var6 ~= var1508897
 L 1:  46 [-]: GETIMPORT R6 23; var6 = _T
       47 [-]: LOADN R7 1   ; var7 = 1
       48 [-]: SETTABLEKS R7 R6 K5; var7["EvoShotgunShellReloadToggle"] = var6
@@ -134,7 +134,7 @@ L 3:  54 [-]: GETUPVAL R7 0; var7 = upvalues[0]
       77 [-]: SETTABLEKS R8 R7 K19; var8["affected"] = var7
       78 [-]: GETTABLEKS R8 R6 K9; var8 = var6["operation"]
       79 [-]: LOADN R9 3   ; var9 = 3
-      80 [-]: JUMPIFNOTEQ R8 R9 L4; goto L4 if var8 ~= var133191
+      80 [-]: JUMPIFNOTEQ R8 R9 L4; goto L4 if var8 ~= var133168
       81 [-]: LOADN R8 2   ; var8 = 2
       82 [-]: SETTABLEKS R8 R7 K26; var8["buffType"] = var7
       83 [-]: GETTABLEKS R10 R6 K10; var10 = var6["amounts"]

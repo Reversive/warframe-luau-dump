@@ -27,7 +27,7 @@
        1 [-]: CALL R2 2 2  ; var2 = var2(var3)
        2 [-]: NAMECALL R3 R2 K1; var4 = var2; var3 = var2[0x7C09E541]
        3 [-]: CALL R3 2 2  ; var3 = var3(var4)
-       4 [-]: FASTCALL1 62 R3 L0; 
+       4 [-]: FASTCALL1 64 R3 L0; 
        5 [-]: MOVE R5 R3   ; var5 = var3
        6 [-]: GETIMPORT R4 3; var4 = 0x7B998233
        7 [-]: CALL R4 2 2  ; var4 = var4(var5)
@@ -55,7 +55,7 @@ L 2:  20 [-]: MOVE R6 R1   ; var6 = var1
       29 [-]: MOVE R10 R0  ; var10 = var0
       30 [-]: NAMECALL R5 R5 K15; var6 = var5; var5 = var5[0xE9F54086]
       31 [-]: CALL R5 6 2  ; var5 = var5(var6, var7, var8, var9, var10)
-      32 [-]: JUMPIFNOTLT R5 R4 L3; goto L3 if var5 >= var526414
+      32 [-]: JUMPIFNOTLT R5 R4 L3; goto L3 if var5 >= var526369
       33 [-]: GETIMPORT R8 8; var8 = 0x0469F296
       34 [-]: LOADK R9 K16 ; var9 = "/Lotus/Language/Game/AbilityErrorOutOfRange"
       35 [-]: CALL R8 2 0  ; var8, ... = var8(var9)
@@ -97,7 +97,7 @@ L 1:  15 [-]: GETIMPORT R5 4; var5 = 0x0ED8B456
       17 [-]: CALL R3 3 2  ; var3 = var3(var4, var5)
       18 [-]: JUMPIFNOT R3 L2; goto L2 if not var3
       19 [-]: GETIMPORT R3 7; var3 = 0xCBD666E1
-      20 [-]: LOADK R4 K10 ; var4 = 0.10000000000000001
+      20 [-]: LOADK R4 K10 ; var4 = 0.10000000149011612
       21 [-]: CALL R3 2 1  ; var3(var4)
       22 [-]: JUMPBACK L1  ; goto L1
 L 2:  23 [-]: NAMECALL R3 R1 K11; var4 = var1; var3 = var1[0x35844CF2]

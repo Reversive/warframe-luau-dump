@@ -21,7 +21,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  20
 
-       0 [-]: FASTCALL1 62 R1 L0; 
+       0 [-]: FASTCALL1 64 R1 L0; 
        1 [-]: MOVE R3 R1   ; var3 = var1
        2 [-]: GETIMPORT R2 1; var2 = 0x7B998233
        3 [-]: CALL R2 2 2  ; var2 = var2(var3)
@@ -47,8 +47,7 @@ L 4:  21 [-]: GETIMPORT R10 13; var10 = 0xAE2294FA
       23 [-]: CALL R12 2 2 ; var12 = var12(var13)
       24 [-]: SUB R11 R3 R12; var11 = var3 - var12
       25 [-]: CALL R10 2 2 ; var10 = var10(var11)
-      26 [-]: DIVK R9 R10 K11; var9 = var10 / 10
-      27 [-]: GETIMPORT R10 16; var10 = 0x9BAFFFE3
+           27 [-]: GETIMPORT R10 16; var10 = 0x9BAFFFE3
       28 [-]: LOADN R11 4  ; var11 = 4
       29 [-]: LOADN R12 1  ; var12 = 1
       30 [-]: GETIMPORT R13 18; var13 = 0x42DCC9F5
@@ -72,16 +71,13 @@ L 5:  46 [-]: SETTABLE R10 R2 R7; var10[var2] = var7
       48 [-]: GETIMPORT R15 26; var15 = 0x6CAA63F4
       49 [-]: GETIMPORT R16 29; var16 = 0xC7E50320["red"]
       50 [-]: MUL R14 R15 R16; var14 = var15 * var16
-      51 [-]: DIVK R13 R14 K24; var13 = var14 / 255
-      52 [-]: GETIMPORT R16 26; var16 = 0x6CAA63F4
+           52 [-]: GETIMPORT R16 26; var16 = 0x6CAA63F4
       53 [-]: GETIMPORT R17 31; var17 = 0xC7E50320["green"]
       54 [-]: MUL R15 R16 R17; var15 = var16 * var17
-      55 [-]: DIVK R14 R15 K24; var14 = var15 / 255
-      56 [-]: GETIMPORT R17 26; var17 = 0x6CAA63F4
+           56 [-]: GETIMPORT R17 26; var17 = 0x6CAA63F4
       57 [-]: GETIMPORT R18 33; var18 = 0xC7E50320["blue"]
       58 [-]: MUL R16 R17 R18; var16 = var17 * var18
-      59 [-]: DIVK R15 R16 K24; var15 = var16 / 255
-      60 [-]: LOADN R16 1  ; var16 = 1
+           60 [-]: LOADN R16 1  ; var16 = 1
       61 [-]: NAMECALL R10 R8 K34; var11 = var8; var10 = var8[0x986D2AB8]
       62 [-]: CALL R10 7 1 ; var10(var11, var12, var13, var14, var15, var16)
 L 6:  63 [-]: FORGLOOP R4 L4 2 [inext]; 
@@ -104,8 +100,8 @@ L 6:  63 [-]: FORGLOOP R4 L4 2 [inext];
 L 7:  80 [-]: LOADN R6 0   ; var6 = 0
       81 [-]: LOADNIL R7   ; var7 = nil
 L 8:  82 [-]: LOADN R8 1   ; var8 = 1
-      83 [-]: JUMPIFNOTLT R6 R8 L14; goto L14 if var6 >= var50413131
-      84 [-]: FASTCALL1 62 R1 L9; 
+      83 [-]: JUMPIFNOTLT R6 R8 L14; goto L14 if var6 >= var50413629
+      84 [-]: FASTCALL1 64 R1 L9; 
       85 [-]: MOVE R9 R1   ; var9 = var1
       86 [-]: GETIMPORT R8 1; var8 = 0x7B998233
       87 [-]: CALL R8 2 2  ; var8 = var8(var9)

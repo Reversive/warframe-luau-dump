@@ -44,7 +44,7 @@
        6 [-]: GETUPVAL R3 0; var3 = upvalues[0]
        7 [-]: NAMECALL R3 R3 K4; var4 = var3; var3 = var3[0xDE89CF48]
        8 [-]: CALL R3 2 2  ; var3 = var3(var4)
-       9 [-]: JUMPIFNOTLE R3 R2 L0; goto L0 if var3 > var393806
+       9 [-]: JUMPIFNOTLE R3 R2 L0; goto L0 if var3 > var393761
       10 [-]: GETIMPORT R2 6; var2 = 0x3D106989
       11 [-]: LOADK R3 K7  ; var3 = "FishingMonitor.lua::FishCaughtCallback - Caught fish too far from trigger"
       12 [-]: CALL R2 2 1  ; var2(var3)
@@ -54,7 +54,7 @@ L 0:  14 [-]: GETUPVAL R3 1; var3 = upvalues[1]
       16 [-]: SETUPVAL R2 1; upvalues[2] = var1
       17 [-]: GETUPVAL R2 1; var2 = upvalues[1]
       18 [-]: GETUPVAL R3 2; var3 = upvalues[2]
-      19 [-]: JUMPIFNOTLE R3 R2 L1; goto L1 if var3 > var393806
+      19 [-]: JUMPIFNOTLE R3 R2 L1; goto L1 if var3 > var393761
       20 [-]: GETIMPORT R2 6; var2 = 0x3D106989
       21 [-]: LOADK R4 K9  ; var4 = "FishingMonitor.lua::FishCaughtCallback - Found "
       22 [-]: GETIMPORT R7 11; var7 = 0x85FEEA7B
@@ -96,7 +96,7 @@ L 0:  10 [-]: SUBK R6 R3 K2; var6 = var3 - 1
       11 [-]: LOADN R7 0   ; var7 = 0
       12 [-]: NAMECALL R4 R0 K3; var5 = var0; var4 = var0[0xE6E56442]
       13 [-]: CALL R4 4 2  ; var4 = var4(var5, var6, var7)
-      14 [-]: FASTCALL1 62 R4 L1; 
+      14 [-]: FASTCALL1 64 R4 L1; 
       15 [-]: MOVE R6 R4   ; var6 = var4
       16 [-]: GETIMPORT R5 5; var5 = 0x7B998233
       17 [-]: CALL R5 2 2  ; var5 = var5(var6)
@@ -110,7 +110,7 @@ L 1:  18 [-]: JUMPIF R5 L2 ; goto L2 if var5
       25 [-]: NAMECALL R5 R0 K9; var6 = var0; var5 = var0[0x3DC59189]
       26 [-]: CALL R5 4 2  ; var5 = var5(var6, var7, var8)
       27 [-]: LOADN R6 0   ; var6 = 0
-      28 [-]: JUMPIFNOTLT R6 R5 L2; goto L2 if var6 >= var66843
+      28 [-]: JUMPIFNOTLT R6 R5 L2; goto L2 if var6 >= var66822
       29 [-]: LOADB R5 1   ; var5 = true
       30 [-]: RETURN R5 1  ; 
 L 2:  31 [-]: FORNLOOP R1 L0; nforloop end - iterate + goto L0
@@ -182,7 +182,7 @@ L 4:  38 [-]: GETUPVAL R1 1; var1 = upvalues[1]
       54 [-]: CONCAT R3 R4 R5; var3 = var4 .. var5
       55 [-]: CALL R2 2 1  ; var2(var3)
 L 5:  56 [-]: GETUPVAL R3 2; var3 = upvalues[2]
-      57 [-]: FASTCALL1 62 R3 L6; 
+      57 [-]: FASTCALL1 64 R3 L6; 
       58 [-]: GETIMPORT R2 31; var2 = 0x7B998233
       59 [-]: CALL R2 2 2  ; var2 = var2(var3)
 L 6:  60 [-]: JUMPIF R2 L7 ; goto L7 if var2
@@ -193,7 +193,7 @@ L 7:  64 [-]: GETIMPORT R2 7; var2 = 0xCBD666E1
       65 [-]: LOADK R3 K32 ; var3 = 0.5
       66 [-]: CALL R2 2 1  ; var2(var3)
 L 8:  67 [-]: GETUPVAL R3 2; var3 = upvalues[2]
-      68 [-]: FASTCALL1 62 R3 L9; 
+      68 [-]: FASTCALL1 64 R3 L9; 
       69 [-]: GETIMPORT R2 31; var2 = 0x7B998233
       70 [-]: CALL R2 2 2  ; var2 = var2(var3)
 L 9:  71 [-]: JUMPIFNOT R2 L10; goto L10 if not var2

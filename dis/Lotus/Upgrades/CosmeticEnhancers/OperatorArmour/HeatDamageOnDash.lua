@@ -67,7 +67,7 @@ L 3:  30 [-]: GETTABLE R2 R3 R4; var2 = var3[var4]
 ; Max Stack Size:  14
 
        0 [-]: GETIMPORT R2 2; var2 = _T["heatDashDamage"]
-       1 [-]: FASTCALL1 62 R2 L0; 
+       1 [-]: FASTCALL1 64 R2 L0; 
        2 [-]: GETIMPORT R1 4; var1 = 0x7B998233
        3 [-]: CALL R1 2 2  ; var1 = var1(var2)
 L 0:   4 [-]: JUMPIFNOT R1 L1; goto L1 if not var1
@@ -78,8 +78,8 @@ L 2:   8 [-]: GETIMPORT R4 2; var4 = _T["heatDashDamage"]
        9 [-]: GETTABLE R3 R4 R1; var3 = var4[var1]
       10 [-]: GETTABLEKS R2 R3 K6; var2 = var3["timer"]
       11 [-]: LOADN R3 0   ; var3 = 0
-      12 [-]: JUMPIFNOTLT R3 R2 L4; goto L4 if var3 >= var50347595
-      13 [-]: FASTCALL1 62 R0 L3; 
+      12 [-]: JUMPIFNOTLT R3 R2 L4; goto L4 if var3 >= var50348093
+      13 [-]: FASTCALL1 64 R0 L3; 
       14 [-]: MOVE R3 R0   ; var3 = var0
       15 [-]: GETIMPORT R2 4; var2 = 0x7B998233
       16 [-]: CALL R2 2 2  ; var2 = var2(var3)
@@ -111,7 +111,7 @@ L 4:  34 [-]: GETIMPORT R4 2; var4 = _T["heatDashDamage"]
       42 [-]: FORNPREP R3 L6; nforprep start - [escape at L6] -- var3 = iterator
 L 5:  43 [-]: NAMECALL R6 R0 K14; var7 = var0; var6 = var0[0xDE321E6F]
       44 [-]: CALL R6 2 2  ; var6 = var6(var7)
-      45 [-]: LOADN R8 320 ; var8 = 320
+      45 [-]: LOADN R8 330 ; var8 = 330
       46 [-]: LOADN R9 0   ; var9 = 0
       47 [-]: MOVE R10 R2  ; var10 = var2
       48 [-]: LOADNIL R11  ; var11 = nil
@@ -139,7 +139,7 @@ L 6:  54 [-]: GETIMPORT R3 2; var3 = _T["heatDashDamage"]
        3 [-]: JUMPIF R5 L0 ; goto L0 if var5
        4 [-]: RETURN R0 0  ; 
 L 0:   5 [-]: GETIMPORT R6 5; var6 = _T["heatDashDamage"]
-       6 [-]: FASTCALL1 62 R6 L1; 
+       6 [-]: FASTCALL1 64 R6 L1; 
        7 [-]: GETIMPORT R5 7; var5 = 0x7B998233
        8 [-]: CALL R5 2 2  ; var5 = var5(var6)
 L 1:   9 [-]: JUMPIFNOT R5 L2; goto L2 if not var5
@@ -167,7 +167,7 @@ L 4:  28 [-]: GETTABLE R6 R7 R8; var6 = var7[var8]
       31 [-]: LOADB R8 0   ; var8 = false
       32 [-]: GETIMPORT R11 5; var11 = _T["heatDashDamage"]
       33 [-]: GETTABLE R10 R11 R7; var10 = var11[var7]
-      34 [-]: FASTCALL1 62 R10 L5; 
+      34 [-]: FASTCALL1 64 R10 L5; 
       35 [-]: GETIMPORT R9 7; var9 = 0x7B998233
       36 [-]: CALL R9 2 2  ; var9 = var9(var10)
 L 5:  37 [-]: JUMPIFNOT R9 L6; goto L6 if not var9
@@ -202,7 +202,7 @@ L 6:  58 [-]: GETIMPORT R11 5; var11 = _T["heatDashDamage"]
       66 [-]: GETIMPORT R12 13; var12 = 0x5BCED4C4[0xAC1B386A]
       67 [-]: CALL R12 3 2 ; var12 = var12(var13, var14)
 L 7:  68 [-]: GETTABLE R10 R11 R12; var10 = var11[var12]
-      69 [-]: JUMPIFLE R10 R9 L8; goto L8 if var10 <= var16779291
+      69 [-]: JUMPIFLE R10 R9 L8; goto L8 if var10 <= var16779270
       70 [-]: LOADB R8 0 +1; var8 = false
 L 8:  71 [-]: LOADB R8 1   ; var8 = true
 L 9:  72 [-]: GETIMPORT R10 5; var10 = _T["heatDashDamage"]
@@ -243,7 +243,7 @@ L10:  83 [-]: GETIMPORT R9 29; var9 = 0x6C97A788[0x608BC054]
      107 [-]: RETURN R0 0  ; 
 L11: 108 [-]: NAMECALL R10 R0 K37; var11 = var0; var10 = var0[0xDE321E6F]
      109 [-]: CALL R10 2 2 ; var10 = var10(var11)
-     110 [-]: LOADN R12 320; var12 = 320
+     110 [-]: LOADN R12 330; var12 = 330
      111 [-]: LOADN R13 0  ; var13 = 0
      112 [-]: MOVE R14 R5  ; var14 = var5
      113 [-]: LOADNIL R15  ; var15 = nil

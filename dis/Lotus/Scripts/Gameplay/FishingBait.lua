@@ -39,7 +39,7 @@ L 0:   5 [-]: GETUPVAL R5 0; var5 = upvalues[0]
        6 [-]: GETTABLE R4 R5 R3; var4 = var5[var3]
        7 [-]: GETTABLEKS R5 R4 K0; var5 = var4["surface"]
        8 [-]: GETTABLEKS R6 R4 K1; var6 = var4["bait"]
-       9 [-]: FASTCALL1 62 R6 L1; 
+       9 [-]: FASTCALL1 64 R6 L1; 
       10 [-]: MOVE R8 R6   ; var8 = var6
       11 [-]: GETIMPORT R7 3; var7 = 0x7B998233
       12 [-]: CALL R7 2 2  ; var7 = var7(var8)
@@ -54,7 +54,7 @@ L 2:  19 [-]: GETTABLEKS R8 R4 K7; var8 = var4["timer"]
       21 [-]: SETTABLEKS R7 R4 K7; var7["timer"] = var4
       22 [-]: GETTABLEKS R7 R4 K7; var7 = var4["timer"]
       23 [-]: GETIMPORT R8 9; var8 = 0xF25D0408
-      24 [-]: JUMPIFNOTLE R8 R7 L3; goto L3 if var8 > var-1476131044
+      24 [-]: JUMPIFNOTLE R8 R7 L3; goto L3 if var8 > var-1476131009
       25 [-]: GETTABLEKS R7 R4 K10; var7 = var4["sink"]
       26 [-]: JUMPIF R7 L3 ; goto L3 if var7
       27 [-]: LOADB R7 1   ; var7 = true
@@ -66,7 +66,7 @@ L 3:  32 [-]: GETTABLEKS R7 R4 K12; var7 = var4["vel"]
       33 [-]: NAMECALL R8 R6 K13; var9 = var6; var8 = var6[0xD1586535]
       34 [-]: CALL R8 2 2  ; var8 = var8(var9)
       35 [-]: GETTABLEKS R10 R4 K14; var10 = var4["spline"]
-      36 [-]: FASTCALL1 62 R10 L4; 
+      36 [-]: FASTCALL1 64 R10 L4; 
       37 [-]: GETIMPORT R9 3; var9 = 0x7B998233
       38 [-]: CALL R9 2 2  ; var9 = var9(var10)
 L 4:  39 [-]: JUMPIF R9 L11; goto L11 if var9
@@ -80,7 +80,7 @@ L 4:  39 [-]: JUMPIF R9 L11; goto L11 if var9
       47 [-]: LOADNIL R10  ; var10 = nil
       48 [-]: GETTABLEKS R11 R4 K18; var11 = var4["riverSway"]
       49 [-]: LOADN R12 0  ; var12 = 0
-      50 [-]: JUMPIFNOTLT R11 R12 L5; goto L5 if var11 >= var-1090254052
+      50 [-]: JUMPIFNOTLT R11 R12 L5; goto L5 if var11 >= var-1090254017
       51 [-]: GETTABLEKS R11 R4 K14; var11 = var4["spline"]
       52 [-]: GETTABLEKS R13 R4 K16; var13 = var4["splineIndex"]
       53 [-]: GETTABLEKS R14 R4 K15; var14 = var4["riverDelta"]
@@ -100,8 +100,8 @@ L 6:  64 [-]: GETIMPORT R11 22; var11 = 0x5DB3CE80
       67 [-]: GETTABLEKS R15 R4 K18; var15 = var4["riverSway"]
       68 [-]: FASTCALL1 2 R15 L7; 
       69 [-]: GETIMPORT R14 25; var14 = 0x5BCED4C4[0xE4A5B3CA]
-      70 [-]: CALL R14 2 0 ; var14, ... = var14(var15)
-L 7:  71 [-]: CALL R11 0 2 ; var11 = var11(var12, ...)
+      70 [-]: CALL R14 2 2 ; var14 = var14(var15)
+L 7:  71 [-]: CALL R11 4 2 ; var11 = var11(var12, var13, var14)
       72 [-]: GETIMPORT R12 27; var12 = 0xA421AF95
       73 [-]: CALL R12 1 2 ; var12 = var12()
       74 [-]: GETIMPORT R13 29; var13 = 0x89326C93
@@ -140,7 +140,7 @@ L 9:  97 [-]: GETTABLEKS R5 R11 K31; var5 = var11["y"]
      107 [-]: GETIMPORT R17 37; var17 = 0xC2892F65
      108 [-]: MOVE R18 R15 ; var18 = var15
      109 [-]: CALL R17 2 1 ; var17(var18)
-     110 [-]: LOADK R22 K39; var22 = 0.20000000000000001
+     110 [-]: LOADK R22 K39; var22 = 0.20000000298023224
      111 [-]: MUL R21 R22 R0; var21 = var22 * var0
      112 [-]: MULK R20 R21 K38; var20 = var21 * 3
      113 [-]: FASTCALL2 19 R16 R20 L10; 
@@ -155,7 +155,7 @@ L10: 117 [-]: MUL R17 R15 R18; var17 = var15 * var18
      122 [-]: GETTABLEKS R17 R4 K14; var17 = var4["spline"]
      123 [-]: GETTABLEKS R19 R4 K16; var19 = var4["splineIndex"]
      124 [-]: GETTABLEKS R20 R4 K15; var20 = var4["riverDelta"]
-     125 [-]: LOADK R22 K39; var22 = 0.20000000000000001
+     125 [-]: LOADK R22 K39; var22 = 0.20000000298023224
      126 [-]: MUL R21 R22 R0; var21 = var22 * var0
      127 [-]: NAMECALL R17 R17 K43; var18 = var17; var17 = var17[0x85547E2E]
      128 [-]: CALL R17 5 3 ; var17, var18 = var17(var18, var19, var20, var21)
@@ -169,7 +169,7 @@ L11: 130 [-]: LOADN R9 30  ; var9 = 30
      136 [-]: ADDK R10 R11 K44; var10 = var11 + 1
      137 [-]: DIV R9 R9 R10; var9 = var9 / var10
 L12: 138 [-]: LOADN R11 0  ; var11 = 0
-     139 [-]: SUBK R14 R5 K45; var14 = var5 - -0.070000000000000007
+     139 [-]: SUBK R14 R5 K45; var14 = var5 - -0.070000000298023224
      140 [-]: GETTABLEKS R15 R8 K31; var15 = var8["y"]
      141 [-]: SUB R13 R14 R15; var13 = var14 - var15
      142 [-]: MUL R12 R13 R9; var12 = var13 * var9
@@ -183,7 +183,7 @@ L13: 146 [-]: LOADN R12 -5 ; var12 = -5
      150 [-]: ADD R12 R13 R14; var12 = var13 + var14
      151 [-]: SETTABLEKS R12 R7 K31; var12["y"] = var7
      152 [-]: GETTABLEKS R12 R8 K31; var12 = var8["y"]
-     153 [-]: JUMPIFNOTLT R12 R5 L25; goto L25 if var12 >= var1057229852
+     153 [-]: JUMPIFNOTLT R12 R5 L25; goto L25 if var12 >= var1057229887
      154 [-]: GETTABLEKS R12 R4 K46; var12 = var4["xPositive"]
      155 [-]: JUMPIFNOT R12 L15; goto L15 if not var12
      156 [-]: LOADN R13 0  ; var13 = 0
@@ -240,7 +240,7 @@ L19: 196 [-]: LOADN R13 0  ; var13 = 0
 L20: 207 [-]: SETTABLEKS R12 R7 K33; var12["z"] = var7
 L21: 208 [-]: GETTABLEKS R12 R7 K31; var12 = var7["y"]
      209 [-]: LOADN R13 0  ; var13 = 0
-     210 [-]: JUMPIFNOTLT R13 R12 L23; goto L23 if var13 >= var3399
+     210 [-]: JUMPIFNOTLT R13 R12 L23; goto L23 if var13 >= var3376
      211 [-]: LOADN R13 0  ; var13 = 0
      212 [-]: GETTABLEKS R15 R7 K31; var15 = var7["y"]
      213 [-]: GETTABLEKS R19 R7 K31; var19 = var7["y"]
@@ -283,7 +283,7 @@ L28: 246 [-]: LOADB R5 0   ; var5 = false
      250 [-]: GETTABLEKS R8 R6 K50; var8 = var6["trigger"]
      251 [-]: GETTABLEKS R9 R6 K14; var9 = var6["spline"]
      252 [-]: GETTABLEKS R10 R6 K0; var10 = var6["surface"]
-     253 [-]: FASTCALL1 62 R7 L29; 
+     253 [-]: FASTCALL1 64 R7 L29; 
      254 [-]: MOVE R12 R7  ; var12 = var7
      255 [-]: GETIMPORT R11 3; var11 = 0x7B998233
      256 [-]: CALL R11 2 2 ; var11 = var11(var12)
@@ -296,7 +296,7 @@ L29: 257 [-]: JUMPIF R11 L52; goto L52 if var11
 L30: 263 [-]: GETUPVAL R16 0; var16 = upvalues[0]
      264 [-]: GETTABLE R15 R16 R13; var15 = var16[var13]
      265 [-]: GETTABLEKS R14 R15 K1; var14 = var15["bait"]
-     266 [-]: JUMPIFNOTEQ R14 R7 L31; goto L31 if var14 ~= var66843
+     266 [-]: JUMPIFNOTEQ R14 R7 L31; goto L31 if var14 ~= var66822
      267 [-]: LOADB R5 1   ; var5 = true
      268 [-]: GETUPVAL R15 0; var15 = upvalues[0]
      269 [-]: GETTABLE R14 R15 R13; var14 = var15[var13]
@@ -319,20 +319,20 @@ L32: 275 [-]: JUMPIF R5 L52; goto L52 if var5
      286 [-]: MOVE R15 R13 ; var15 = var13
      287 [-]: CALL R14 2 4 ; var14, var15, var16 = var14(var15)
      288 [-]: FORGPREP_NEXT R14 L38; 
-L33: 289 [-]: FASTCALL1 62 R8 L34; 
+L33: 289 [-]: FASTCALL1 64 R8 L34; 
      290 [-]: MOVE R20 R8  ; var20 = var8
      291 [-]: GETIMPORT R19 3; var19 = 0x7B998233
      292 [-]: CALL R19 2 2 ; var19 = var19(var20)
 L34: 293 [-]: JUMPIF R19 L35; goto L35 if var19
      294 [-]: GETTABLEKS R19 R18 K50; var19 = var18["trigger"]
-     295 [-]: JUMPIFEQ R19 R8 L37; goto L37 if var19 == var50937419
-L35: 296 [-]: FASTCALL1 62 R9 L36; 
+     295 [-]: JUMPIFEQ R19 R8 L37; goto L37 if var19 == var50937917
+L35: 296 [-]: FASTCALL1 64 R9 L36; 
      297 [-]: MOVE R20 R9  ; var20 = var9
      298 [-]: GETIMPORT R19 3; var19 = 0x7B998233
      299 [-]: CALL R19 2 2 ; var19 = var19(var20)
 L36: 300 [-]: JUMPIF R19 L38; goto L38 if var19
      301 [-]: GETTABLEKS R19 R18 K14; var19 = var18["spline"]
-     302 [-]: JUMPIFNOTEQ R19 R9 L38; goto L38 if var19 ~= var1762790428
+     302 [-]: JUMPIFNOTEQ R19 R9 L38; goto L38 if var19 ~= var1762790463
 L37: 303 [-]: GETTABLEKS R12 R18 K62; var12 = var18["deco"]
      304 [-]: JUMP L39     ; goto L39
 L38: 305 [-]: FORGLOOP R14 L33 2; 
@@ -347,7 +347,7 @@ L39: 306 [-]: DUPTABLE R14 66;
      314 [-]: GETIMPORT R15 69; var15 = 0x7CFC4A5F
      315 [-]: SETTABLEKS R15 R14 K64; var15["range"] = var14
      316 [-]: SETTABLEKS R12 R14 K65; var12["waterDeco"] = var14
-     317 [-]: FASTCALL1 62 R8 L40; 
+     317 [-]: FASTCALL1 64 R8 L40; 
      318 [-]: MOVE R16 R8  ; var16 = var8
      319 [-]: GETIMPORT R15 3; var15 = 0x7B998233
      320 [-]: CALL R15 2 2 ; var15 = var15(var16)
@@ -355,10 +355,10 @@ L40: 321 [-]: JUMPIF R15 L41; goto L41 if var15
      322 [-]: NAMECALL R17 R8 K13; var18 = var8; var17 = var8[0xD1586535]
      323 [-]: CALL R17 2 2 ; var17 = var17(var18)
      324 [-]: GETTABLEKS R16 R17 K31; var16 = var17["y"]
-     325 [-]: SUBK R15 R16 K70; var15 = var16 - 0.10000000000000001
+     325 [-]: SUBK R15 R16 K70; var15 = var16 - 0.10000000149011612
      326 [-]: SETTABLEKS R15 R14 K0; var15["surface"] = var14
      327 [-]: JUMP L45     ; goto L45
-L41: 328 [-]: FASTCALL1 62 R9 L42; 
+L41: 328 [-]: FASTCALL1 64 R9 L42; 
      329 [-]: MOVE R16 R9  ; var16 = var9
      330 [-]: GETIMPORT R15 3; var15 = 0x7B998233
      331 [-]: CALL R15 2 2 ; var15 = var15(var16)
@@ -385,7 +385,7 @@ L42: 332 [-]: JUMPIF R15 L45; goto L45 if var15
      352 [-]: MOVE R24 R18 ; var24 = var18
      353 [-]: CALL R22 3 2 ; var22 = var22(var23, var24)
      354 [-]: LOADN R23 0  ; var23 = 0
-     355 [-]: JUMPIFNOTLT R22 R23 L43; goto L43 if var22 >= var1054742
+     355 [-]: JUMPIFNOTLT R22 R23 L43; goto L43 if var22 >= var1054766
      356 [-]: MOVE R24 R16 ; var24 = var16
      357 [-]: MOVE R25 R17 ; var25 = var17
      358 [-]: NAMECALL R22 R9 K19; var23 = var9; var22 = var9[0x1A03B5E6]
@@ -415,20 +415,20 @@ L44: 368 [-]: SUB R22 R21 R15; var22 = var21 - var15
      382 [-]: SETTABLEKS R25 R14 K18; var25["riverSway"] = var14
 L45: 383 [-]: GETTABLEKS R16 R11 K32; var16 = var11["x"]
      384 [-]: LOADN R17 0  ; var17 = 0
-     385 [-]: JUMPIFLT R17 R16 L46; goto L46 if var17 < var16781083
+     385 [-]: JUMPIFLT R17 R16 L46; goto L46 if var17 < var16781062
      386 [-]: LOADB R15 0 +1; var15 = false
 L46: 387 [-]: LOADB R15 1  ; var15 = true
 L47: 388 [-]: SETTABLEKS R15 R14 K46; var15["xPositive"] = var14
      389 [-]: GETTABLEKS R16 R11 K33; var16 = var11["z"]
      390 [-]: LOADN R17 0  ; var17 = 0
-     391 [-]: JUMPIFLT R17 R16 L48; goto L48 if var17 < var16781083
+     391 [-]: JUMPIFLT R17 R16 L48; goto L48 if var17 < var16781062
      392 [-]: LOADB R15 0 +1; var15 = false
 L48: 393 [-]: LOADB R15 1  ; var15 = true
 L49: 394 [-]: SETTABLEKS R15 R14 K48; var15["zPositive"] = var14
      395 [-]: GETIMPORT R17 76; var17 = gTriggerType
      396 [-]: NAMECALL R15 R7 K77; var16 = var7; var15 = var7[0xC9F6A7D7]
      397 [-]: CALL R15 3 2 ; var15 = var15(var16, var17)
-     398 [-]: FASTCALL1 62 R15 L50; 
+     398 [-]: FASTCALL1 64 R15 L50; 
      399 [-]: MOVE R17 R15 ; var17 = var15
      400 [-]: GETIMPORT R16 3; var16 = 0x7B998233
      401 [-]: CALL R16 2 2 ; var16 = var16(var17)

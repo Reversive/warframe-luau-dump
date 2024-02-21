@@ -54,7 +54,7 @@ L 1:  16 [-]: RETURN R0 0  ;
        4 [-]: GETIMPORT R2 5; var2 = 0xBA52E8DD
        5 [-]: GETIMPORT R3 7; var3 = 0xB952E74A
 L 0:   6 [-]: GETIMPORT R4 9; var4 = 0xFDCAF080
-       7 [-]: JUMPIFNOTLT R1 R4 L1; goto L1 if var1 >= var591182
+       7 [-]: JUMPIFNOTLT R1 R4 L1; goto L1 if var1 >= var591137
        8 [-]: GETIMPORT R5 9; var5 = 0xFDCAF080
        9 [-]: DIV R4 R1 R5 ; var4 = var1 / var5
       10 [-]: GETIMPORT R5 11; var5 = 0x9BAFFFE3
@@ -99,7 +99,7 @@ L 1:  36 [-]: RETURN R0 0  ;
        3 [-]: LOADN R1 0   ; var1 = 0
        4 [-]: GETIMPORT R2 5; var2 = 0x1026B71D
 L 0:   5 [-]: GETIMPORT R3 7; var3 = 0x98C79A92
-       6 [-]: JUMPIFNOTLT R1 R3 L1; goto L1 if var1 >= var590670
+       6 [-]: JUMPIFNOTLT R1 R3 L1; goto L1 if var1 >= var590625
        7 [-]: GETIMPORT R3 9; var3 = 0x9BAFFFE3
        8 [-]: GETIMPORT R4 5; var4 = 0x1026B71D
        9 [-]: GETIMPORT R5 11; var5 = 0x9D1CB444

@@ -121,7 +121,7 @@ L 0:  16 [-]: GETIMPORT R9 10; var9 = 0x93311327
       26 [-]: MOVE R13 R3  ; var13 = var3
       27 [-]: NAMECALL R7 R2 K15; var8 = var2; var7 = var2[0x6CD833C5]
       28 [-]: CALL R7 7 2  ; var7 = var7(var8, var9, var10, var11, var12, var13)
-      29 [-]: FASTCALL1 62 R7 L1; 
+      29 [-]: FASTCALL1 64 R7 L1; 
       30 [-]: MOVE R9 R7   ; var9 = var7
       31 [-]: GETIMPORT R8 17; var8 = 0x7B998233
       32 [-]: CALL R8 2 2  ; var8 = var8(var9)
@@ -210,7 +210,7 @@ L 1:  44 [-]: RETURN R0 0  ;
       14 [-]: MOVE R7 R4   ; var7 = var4
       15 [-]: CALL R5 3 2  ; var5 = var5(var6, var7)
       16 [-]: GETIMPORT R7 10; var7 = 0x80D3D46B
-      17 [-]: FASTCALL1 62 R7 L0; 
+      17 [-]: FASTCALL1 64 R7 L0; 
       18 [-]: GETIMPORT R6 12; var6 = 0x7B998233
       19 [-]: CALL R6 2 2  ; var6 = var6(var7)
 L 0:  20 [-]: JUMPIFNOT R6 L1; goto L1 if not var6
@@ -244,7 +244,7 @@ L 5:  42 [-]: FORGLOOP R7 L4 2 [inext];
       48 [-]: CALL R8 2 4  ; var8, var9, var10 = var8(var9)
       49 [-]: FORGPREP_INEXT R8 L8; 
 L 6:  50 [-]: GETTABLEKS R13 R12 K26; var13 = var12["Weight"]
-      51 [-]: JUMPIFNOTLE R7 R13 L7; goto L7 if var7 > var-2012476132
+      51 [-]: JUMPIFNOTLE R7 R13 L7; goto L7 if var7 > var-2012476097
       52 [-]: GETTABLEKS R13 R12 K30; var13 = var12["Function"]
       53 [-]: MOVE R14 R0  ; var14 = var0
       54 [-]: CALL R13 2 1 ; var13(var14)

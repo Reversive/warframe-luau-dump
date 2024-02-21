@@ -29,14 +29,14 @@
        9 [-]: CALL R2 0 2  ; var2 = var2(var3, ...)
       10 [-]: LOADN R3 4   ; var3 = 4
       11 [-]: LOADK R4 K10 ; var4 = 0.5
-      12 [-]: JUMPIFNOTLT R1 R4 L0; goto L0 if var1 >= var328519
+      12 [-]: JUMPIFNOTLT R1 R4 L0; goto L0 if var1 >= var328496
       13 [-]: LOADN R3 5   ; var3 = 5
       14 [-]: JUMP L1      ; goto L1
 L 0:  15 [-]: LOADK R4 K10 ; var4 = 0.5
-      16 [-]: JUMPIFNOTLE R4 R1 L1; goto L1 if var4 > var394055
+      16 [-]: JUMPIFNOTLE R4 R1 L1; goto L1 if var4 > var394032
       17 [-]: LOADN R3 6   ; var3 = 6
-      18 [-]: LOADK R4 K11 ; var4 = 0.80000000000000004
-      19 [-]: JUMPIFNOTLT R4 R1 L1; goto L1 if var4 >= var459591
+      18 [-]: LOADK R4 K11 ; var4 = 0.80000001192092896
+      19 [-]: JUMPIFNOTLT R4 R1 L1; goto L1 if var4 >= var459568
       20 [-]: LOADN R3 7   ; var3 = 7
 L 1:  21 [-]: LOADN R6 1   ; var6 = 1
       22 [-]: MOVE R4 R3   ; var4 = var3

@@ -92,7 +92,7 @@ L 0:  20 [-]: JUMPXEQKN R1 K7 L1;
 L 1:  25 [-]: GETIMPORT R2 12; var2 = 0x5BCED4C4[0x3630E649]
       26 [-]: CALL R2 1 2  ; var2 = var2()
       27 [-]: LOADK R3 K13 ; var3 = 0.5
-      28 [-]: JUMPIFNOTLT R3 R2 L2; goto L2 if var3 >= var328711
+      28 [-]: JUMPIFNOTLT R3 R2 L2; goto L2 if var3 >= var328764
       29 [-]: GETUPVAL R4 5; var4 = upvalues[5]
       30 [-]: GETTABLEKS R3 R4 K14; var3 = var4[0x9742B85B]
       31 [-]: GETUPVAL R4 3; var4 = upvalues[3]

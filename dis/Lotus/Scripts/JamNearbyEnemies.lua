@@ -111,7 +111,7 @@ L 0:  10 [-]: GETTABLE R3 R4 R5; var3 = var4[var5]
        5 [-]: GETTABLEKS R5 R3 K5; var5 = var3["cooldownRemaining"]
        6 [-]: SETTABLEKS R5 R4 K6; var5["buffData"] = var4
        7 [-]: GETTABLEKS R4 R3 K7; var4 = var3["isBuffVisible"]
-       8 [-]: JUMPIFNOTEQ R4 R1 L0; goto L0 if var4 ~= var655666
+       8 [-]: JUMPIFNOTEQ R4 R1 L0; goto L0 if var4 ~= var655629
        9 [-]: JUMPXEQKB R1 1 L1 NOT; 
 L 0:  10 [-]: GETTABLEKS R6 R3 K4; var6 = var3["buffStatus"]
       11 [-]: MOVE R7 R1   ; var7 = var1
@@ -141,7 +141,7 @@ L 1:  16 [-]: RETURN R0 0  ;
        9 [-]: MOVE R5 R3   ; var5 = var3
       10 [-]: CALL R4 2 4  ; var4, var5, var6 = var4(var5)
       11 [-]: FORGPREP_INEXT R4 L2; 
-L 0:  12 [-]: FASTCALL1 62 R8 L1; 
+L 0:  12 [-]: FASTCALL1 64 R8 L1; 
       13 [-]: MOVE R10 R8  ; var10 = var8
       14 [-]: GETIMPORT R9 11; var9 = 0x7B998233
       15 [-]: CALL R9 2 2  ; var9 = var9(var10)
@@ -259,7 +259,7 @@ L 4: 113 [-]: GETTABLEKS R9 R6 K44; var9 = var6["buffStatus"]
 ; Is_vararg:       0
 ; Max Stack Size:  12
 
-       0 [-]: FASTCALL1 62 R0 L0; 
+       0 [-]: FASTCALL1 64 R0 L0; 
        1 [-]: MOVE R2 R0   ; var2 = var0
        2 [-]: GETIMPORT R1 1; var1 = 0x7B998233
        3 [-]: CALL R1 2 2  ; var1 = var1(var2)
@@ -286,8 +286,8 @@ L 3:  21 [-]: SETTABLEKS R3 R2 K7; var3["cooldownRemaining"] = var2
       24 [-]: FASTCALL1 2 R5 L4; 
       25 [-]: GETIMPORT R4 15; var4 = 0x5BCED4C4[0xE4A5B3CA]
       26 [-]: CALL R4 2 2  ; var4 = var4(var5)
-L 4:  27 [-]: LOADK R5 K16 ; var5 = 9.9999999999999995e-07
-      28 [-]: JUMPIFNOTLT R4 R5 L5; goto L5 if var4 >= var795
+L 4:  27 [-]: LOADK R5 K16 ; var5 = 9.9999999747524271e-07
+      28 [-]: JUMPIFNOTLT R4 R5 L5; goto L5 if var4 >= var774
       29 [-]: LOADB R3 0   ; var3 = false
 L 5:  30 [-]: MOVE R4 R3   ; var4 = var3
       31 [-]: NAMECALL R5 R0 K2; var6 = var0; var5 = var0[0x388577D5]
@@ -298,7 +298,7 @@ L 5:  30 [-]: MOVE R4 R3   ; var4 = var3
       36 [-]: GETTABLEKS R8 R6 K7; var8 = var6["cooldownRemaining"]
       37 [-]: SETTABLEKS R8 R7 K18; var8["buffData"] = var7
       38 [-]: GETTABLEKS R7 R6 K19; var7 = var6["isBuffVisible"]
-      39 [-]: JUMPIFNOTEQ R7 R4 L6; goto L6 if var7 ~= var656434
+      39 [-]: JUMPIFNOTEQ R7 R4 L6; goto L6 if var7 ~= var656397
       40 [-]: JUMPXEQKB R4 1 L7 NOT; 
 L 6:  41 [-]: GETTABLEKS R9 R6 K17; var9 = var6["buffStatus"]
       42 [-]: MOVE R10 R4  ; var10 = var4
@@ -334,7 +334,7 @@ L 8:  51 [-]: GETIMPORT R3 5; var3 = _T["JamNearbyEnemies"]
        8 [-]: NAMECALL R5 R0 K4; var6 = var0; var5 = var0[0x388577D5]
        9 [-]: CALL R5 2 2  ; var5 = var5(var6)
       10 [-]: GETIMPORT R7 7; var7 = _T["JamNearbyEnemies"]
-      11 [-]: FASTCALL1 62 R7 L0; 
+      11 [-]: FASTCALL1 64 R7 L0; 
       12 [-]: GETIMPORT R6 9; var6 = 0x7B998233
       13 [-]: CALL R6 2 2  ; var6 = var6(var7)
 L 0:  14 [-]: JUMPIFNOT R6 L1; goto L1 if not var6
@@ -343,7 +343,7 @@ L 0:  14 [-]: JUMPIFNOT R6 L1; goto L1 if not var6
       17 [-]: SETTABLEKS R7 R6 K6; var7["JamNearbyEnemies"] = var6
 L 1:  18 [-]: GETIMPORT R8 7; var8 = _T["JamNearbyEnemies"]
       19 [-]: GETTABLE R7 R8 R5; var7 = var8[var5]
-      20 [-]: FASTCALL1 62 R7 L2; 
+      20 [-]: FASTCALL1 64 R7 L2; 
       21 [-]: GETIMPORT R6 9; var6 = 0x7B998233
       22 [-]: CALL R6 2 2  ; var6 = var6(var7)
 L 2:  23 [-]: JUMPIFNOT R6 L3; goto L3 if not var6
@@ -378,7 +378,7 @@ L 2:  23 [-]: JUMPIFNOT R6 L3; goto L3 if not var6
 L 3:  52 [-]: NAMECALL R6 R4 K28; var7 = var4; var6 = var4[0x5EFCA02D]
       53 [-]: CALL R6 2 2  ; var6 = var6(var7)
       54 [-]: GETTABLEKS R8 R6 K29; var8 = var6["victim"]
-      55 [-]: FASTCALL1 62 R8 L4; 
+      55 [-]: FASTCALL1 64 R8 L4; 
       56 [-]: GETIMPORT R7 9; var7 = 0x7B998233
       57 [-]: CALL R7 2 2  ; var7 = var7(var8)
 L 4:  58 [-]: JUMPIFNOT R7 L5; goto L5 if not var7
@@ -389,8 +389,8 @@ L 5:  60 [-]: GETIMPORT R10 7; var10 = _T["JamNearbyEnemies"]
       63 [-]: FASTCALL1 2 R8 L6; 
       64 [-]: GETIMPORT R7 32; var7 = 0x5BCED4C4[0xE4A5B3CA]
       65 [-]: CALL R7 2 2  ; var7 = var7(var8)
-L 6:  66 [-]: LOADK R8 K33 ; var8 = 9.9999999999999995e-07
-      67 [-]: JUMPIFNOTLT R7 R8 L7; goto L7 if var7 >= var67335
+L 6:  66 [-]: LOADK R8 K33 ; var8 = 9.9999999747524271e-07
+      67 [-]: JUMPIFNOTLT R7 R8 L7; goto L7 if var7 >= var67388
       68 [-]: GETUPVAL R7 1; var7 = upvalues[1]
       69 [-]: MOVE R8 R0   ; var8 = var0
       70 [-]: GETTABLEKS R9 R6 K29; var9 = var6["victim"]

@@ -21,7 +21,7 @@
 ; Max Stack Size:  6
 
        0 [-]: GETIMPORT R2 2; var2 = _T["Antigrav"]
-       1 [-]: FASTCALL1 62 R2 L0; 
+       1 [-]: FASTCALL1 64 R2 L0; 
        2 [-]: GETIMPORT R1 4; var1 = 0x7B998233
        3 [-]: CALL R1 2 2  ; var1 = var1(var2)
 L 0:   4 [-]: JUMPIFNOT R1 L1; goto L1 if not var1
@@ -31,7 +31,7 @@ L 1:   7 [-]: GETIMPORT R3 2; var3 = _T["Antigrav"]
        8 [-]: NAMECALL R4 R0 K5; var5 = var0; var4 = var0[0x388577D5]
        9 [-]: CALL R4 2 2  ; var4 = var4(var5)
       10 [-]: GETTABLE R2 R3 R4; var2 = var3[var4]
-      11 [-]: FASTCALL1 62 R2 L2; 
+      11 [-]: FASTCALL1 64 R2 L2; 
       12 [-]: GETIMPORT R1 4; var1 = 0x7B998233
       13 [-]: CALL R1 2 2  ; var1 = var1(var2)
 L 2:  14 [-]: JUMPIFNOT R1 L3; goto L3 if not var1
@@ -50,13 +50,13 @@ L 3:  17 [-]: LOADB R1 1   ; var1 = true
 
        0 [-]: NAMECALL R3 R1 K0; var4 = var1; var3 = var1[0x1C881607]
        1 [-]: CALL R3 2 2  ; var3 = var3(var4)
-       2 [-]: FASTCALL1 62 R3 L0; 
+       2 [-]: FASTCALL1 64 R3 L0; 
        3 [-]: MOVE R5 R3   ; var5 = var3
        4 [-]: GETIMPORT R4 2; var4 = 0x7B998233
        5 [-]: CALL R4 2 2  ; var4 = var4(var5)
 L 0:   6 [-]: JUMPIF R4 L6 ; goto L6 if var4
        7 [-]: GETIMPORT R6 5; var6 = _T["Antigrav"]
-       8 [-]: FASTCALL1 62 R6 L1; 
+       8 [-]: FASTCALL1 64 R6 L1; 
        9 [-]: GETIMPORT R5 2; var5 = 0x7B998233
       10 [-]: CALL R5 2 2  ; var5 = var5(var6)
 L 1:  11 [-]: JUMPIFNOT R5 L2; goto L2 if not var5
@@ -66,7 +66,7 @@ L 2:  14 [-]: GETIMPORT R7 5; var7 = _T["Antigrav"]
       15 [-]: NAMECALL R8 R3 K6; var9 = var3; var8 = var3[0x388577D5]
       16 [-]: CALL R8 2 2  ; var8 = var8(var9)
       17 [-]: GETTABLE R6 R7 R8; var6 = var7[var8]
-      18 [-]: FASTCALL1 62 R6 L3; 
+      18 [-]: FASTCALL1 64 R6 L3; 
       19 [-]: GETIMPORT R5 2; var5 = 0x7B998233
       20 [-]: CALL R5 2 2  ; var5 = var5(var6)
 L 3:  21 [-]: JUMPIFNOT R5 L4; goto L4 if not var5
@@ -89,7 +89,7 @@ L 7:  28 [-]: LOADN R4 1   ; var4 = 1
 
        0 [-]: NAMECALL R5 R1 K0; var6 = var1; var5 = var1[0x1C881607]
        1 [-]: CALL R5 2 2  ; var5 = var5(var6)
-       2 [-]: FASTCALL1 62 R5 L0; 
+       2 [-]: FASTCALL1 64 R5 L0; 
        3 [-]: MOVE R7 R5   ; var7 = var5
        4 [-]: GETIMPORT R6 2; var6 = 0x7B998233
        5 [-]: CALL R6 2 2  ; var6 = var6(var7)
@@ -100,7 +100,7 @@ L 0:   6 [-]: JUMPIF R6 L3 ; goto L3 if var6
       10 [-]: JUMPIFNOT R6 L3; goto L3 if not var6
       11 [-]: NAMECALL R6 R5 K6; var7 = var5; var6 = var5[0xDE321E6F]
       12 [-]: CALL R6 2 2  ; var6 = var6(var7)
-      13 [-]: LOADN R8 74  ; var8 = 74
+      13 [-]: LOADN R8 77  ; var8 = 77
       14 [-]: LOADN R9 3   ; var9 = 3
       15 [-]: GETIMPORT R11 8; var11 = 0x7591057E
       16 [-]: GETTABLE R10 R11 R3; var10 = var11[var3]
@@ -115,7 +115,7 @@ L 0:   6 [-]: JUMPIF R6 L3 ; goto L3 if var6
       25 [-]: NAMECALL R6 R6 K9; var7 = var6; var6 = var6[0x5E6704FF]
       26 [-]: CALL R6 5 1  ; var6(var7, var8, var9, var10)
       27 [-]: GETIMPORT R7 12; var7 = _T["Antigrav"]
-      28 [-]: FASTCALL1 62 R7 L1; 
+      28 [-]: FASTCALL1 64 R7 L1; 
       29 [-]: GETIMPORT R6 2; var6 = 0x7B998233
       30 [-]: CALL R6 2 2  ; var6 = var6(var7)
 L 1:  31 [-]: JUMPIFNOT R6 L2; goto L2 if not var6

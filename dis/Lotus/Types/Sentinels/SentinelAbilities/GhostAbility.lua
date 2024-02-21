@@ -5,7 +5,7 @@
 ; Is_vararg:       1
 ; Max Stack Size:  7
 
-       1 [-]: LOADK R0 K0  ; var0 = 0.29999999999999999
+       1 [-]: LOADK R0 K0  ; var0 = 0.30000001192092896
        2 [-]: LOADN R1 3   ; var1 = 3
        3 [-]: GETIMPORT R2 2; var2 = 0x2D0FAD09
        4 [-]: LOADK R3 K3  ; var3 = "Lotus.Scripts.Libs.AbilitiesLib"
@@ -63,26 +63,26 @@
 ; Max Stack Size:  3
 
        0 [-]: LOADN R2 1   ; var2 = 1
-       1 [-]: JUMPIFNOTEQ R1 R2 L3; goto L3 if var1 ~= var393264
+       1 [-]: JUMPIFNOTEQ R1 R2 L3; goto L3 if var1 ~= var393270
        2 [-]: JUMPXEQKN R0 K0 L0 NOT; 
-       3 [-]: LOADK R2 K1  ; var2 = 0.59999999999999998
+       3 [-]: LOADK R2 K1  ; var2 = 0.60000002384185791
        4 [-]: SETUPVAL R2 0; upvalues[2] = var0
        5 [-]: LOADN R2 3   ; var2 = 3
        6 [-]: SETUPVAL R2 1; upvalues[2] = var1
        7 [-]: RETURN R0 0  ; 
 L 0:   8 [-]: JUMPXEQKN R0 K2 L1 NOT; 
-       9 [-]: LOADK R2 K3  ; var2 = 1.2
+       9 [-]: LOADK R2 K3  ; var2 = 1.2000000476837158
       10 [-]: SETUPVAL R2 0; upvalues[2] = var0
       11 [-]: LOADN R2 3   ; var2 = 3
       12 [-]: SETUPVAL R2 1; upvalues[2] = var1
       13 [-]: RETURN R0 0  ; 
 L 1:  14 [-]: JUMPXEQKN R0 K4 L2 NOT; 
-      15 [-]: LOADK R2 K5  ; var2 = 1.8
+      15 [-]: LOADK R2 K5  ; var2 = 1.7999999523162842
       16 [-]: SETUPVAL R2 0; upvalues[2] = var0
       17 [-]: LOADN R2 3   ; var2 = 3
       18 [-]: SETUPVAL R2 1; upvalues[2] = var1
       19 [-]: RETURN R0 0  ; 
-L 2:  20 [-]: LOADK R2 K6  ; var2 = 2.3999999999999999
+L 2:  20 [-]: LOADK R2 K6  ; var2 = 2.4000000953674316
       21 [-]: SETUPVAL R2 0; upvalues[2] = var0
       22 [-]: LOADN R2 3   ; var2 = 3
       23 [-]: SETUPVAL R2 1; upvalues[2] = var1
@@ -98,31 +98,31 @@ L 3:  24 [-]: RETURN R0 0  ;
 
        0 [-]: NEWTABLE R2 0 0; var2 = {}
        1 [-]: LOADN R3 1   ; var3 = 1
-       2 [-]: JUMPIFNOTEQ R1 R3 L3; goto L3 if var1 ~= var393264
+       2 [-]: JUMPIFNOTEQ R1 R3 L3; goto L3 if var1 ~= var393270
        3 [-]: JUMPXEQKN R0 K0 L0 NOT; 
-       4 [-]: LOADK R3 K1  ; var3 = 0.59999999999999998
+       4 [-]: LOADK R3 K1  ; var3 = 0.60000002384185791
        5 [-]: SETUPVAL R3 0; upvalues[3] = var0
        6 [-]: LOADN R3 3   ; var3 = 3
        7 [-]: SETUPVAL R3 1; upvalues[3] = var1
        8 [-]: JUMP L3      ; goto L3
 L 0:   9 [-]: JUMPXEQKN R0 K2 L1 NOT; 
-      10 [-]: LOADK R3 K3  ; var3 = 1.2
+      10 [-]: LOADK R3 K3  ; var3 = 1.2000000476837158
       11 [-]: SETUPVAL R3 0; upvalues[3] = var0
       12 [-]: LOADN R3 3   ; var3 = 3
       13 [-]: SETUPVAL R3 1; upvalues[3] = var1
       14 [-]: JUMP L3      ; goto L3
 L 1:  15 [-]: JUMPXEQKN R0 K4 L2 NOT; 
-      16 [-]: LOADK R3 K5  ; var3 = 1.8
+      16 [-]: LOADK R3 K5  ; var3 = 1.7999999523162842
       17 [-]: SETUPVAL R3 0; upvalues[3] = var0
       18 [-]: LOADN R3 3   ; var3 = 3
       19 [-]: SETUPVAL R3 1; upvalues[3] = var1
       20 [-]: JUMP L3      ; goto L3
-L 2:  21 [-]: LOADK R3 K6  ; var3 = 2.3999999999999999
+L 2:  21 [-]: LOADK R3 K6  ; var3 = 2.4000000953674316
       22 [-]: SETUPVAL R3 0; upvalues[3] = var0
       23 [-]: LOADN R3 3   ; var3 = 3
       24 [-]: SETUPVAL R3 1; upvalues[3] = var1
 L 3:  25 [-]: LOADN R3 1   ; var3 = 1
-      26 [-]: JUMPIFNOTEQ R1 R3 L5; goto L5 if var1 ~= var590625
+      26 [-]: JUMPIFNOTEQ R1 R3 L5; goto L5 if var1 ~= var590643
       27 [-]: DUPTABLE R3 9; 
       28 [-]: GETUPVAL R6 0; var6 = upvalues[0]
       29 [-]: MULK R5 R6 K10; var5 = var6 * 100
@@ -153,7 +153,7 @@ L 5:  37 [-]: GETIMPORT R3 16; var3 = cjson[0xB139D7BC]
        4 [-]: MUL R2 R3 R4 ; var2 = var3 * var4
        5 [-]: LOADN R3 3   ; var3 = 3
        6 [-]: LOADN R4 10  ; var4 = 10
-       7 [-]: JUMPIFNOTLE R4 R2 L0; goto L0 if var4 > var262983
+       7 [-]: JUMPIFNOTLE R4 R2 L0; goto L0 if var4 > var262960
        8 [-]: LOADN R3 4   ; var3 = 4
 L 0:   9 [-]: DUPTABLE R4 1; 
       10 [-]: LOADK R7 K2  ; var7 = ""
@@ -180,7 +180,7 @@ L 1:  18 [-]: SETTABLEKS R5 R4 K0; var5["RANGE"] = var4
 
        0 [-]: NAMECALL R4 R1 K0; var5 = var1; var4 = var1[0x1C881607]
        1 [-]: CALL R4 2 2  ; var4 = var4(var5)
-       2 [-]: FASTCALL1 62 R4 L0; 
+       2 [-]: FASTCALL1 64 R4 L0; 
        3 [-]: MOVE R6 R4   ; var6 = var4
        4 [-]: GETIMPORT R5 2; var5 = 0x7B998233
        5 [-]: CALL R5 2 2  ; var5 = var5(var6)
@@ -194,22 +194,22 @@ L 0:   6 [-]: JUMPIF R5 L1 ; goto L1 if var5
       13 [-]: NAMECALL R5 R1 K5; var6 = var1; var5 = var1[0x8795D209]
       14 [-]: CALL R5 2 2  ; var5 = var5(var6)
       15 [-]: LOADN R6 6   ; var6 = 6
-      16 [-]: JUMPIFLT R5 R6 L1; goto L1 if var5 < var1073808709
+      16 [-]: JUMPIFLT R5 R6 L1; goto L1 if var5 < var1073808716
       17 [-]: NAMECALL R5 R1 K6; var6 = var1; var5 = var1[0x7E6A6740]
       18 [-]: CALL R5 2 2  ; var5 = var5(var6)
       19 [-]: LOADN R6 6   ; var6 = 6
-      20 [-]: JUMPIFLT R5 R6 L1; goto L1 if var5 < var-1945893563
+      20 [-]: JUMPIFLT R5 R6 L1; goto L1 if var5 < var-1945893556
       21 [-]: NAMECALL R5 R4 K7; var6 = var4; var5 = var4[0xE5F89B8C]
       22 [-]: CALL R5 2 2  ; var5 = var5(var6)
       23 [-]: LOADN R6 3   ; var6 = 3
-      24 [-]: JUMPIFNOTLT R6 R5 L2; goto L2 if var6 >= var1351
+      24 [-]: JUMPIFNOTLT R6 R5 L2; goto L2 if var6 >= var1328
 L 1:  25 [-]: LOADN R5 0   ; var5 = 0
       26 [-]: RETURN R5 1  ; 
 L 2:  27 [-]: NAMECALL R5 R4 K8; var6 = var4; var5 = var4[0xDE321E6F]
       28 [-]: CALL R5 2 2  ; var5 = var5(var6)
       29 [-]: NAMECALL R5 R5 K9; var6 = var5; var5 = var5[0xF7D48EE0]
       30 [-]: CALL R5 2 2  ; var5 = var5(var6)
-      31 [-]: FASTCALL1 62 R5 L3; 
+      31 [-]: FASTCALL1 64 R5 L3; 
       32 [-]: MOVE R7 R5   ; var7 = var5
       33 [-]: GETIMPORT R6 2; var6 = 0x7B998233
       34 [-]: CALL R6 2 2  ; var6 = var6(var7)
@@ -253,7 +253,7 @@ L 0:   4 [-]: SETTABLEKS R6 R5 K2; var6["ghostAbilityApplied"] = var5
        5 [-]: NAMECALL R5 R1 K4; var6 = var1; var5 = var1[0xDE321E6F]
        6 [-]: CALL R5 2 2  ; var5 = var5(var6)
        7 [-]: LOADN R7 1   ; var7 = 1
-       8 [-]: LOADN R8 23  ; var8 = 23
+       8 [-]: LOADN R8 25  ; var8 = 25
        9 [-]: NAMECALL R9 R0 K5; var10 = var0; var9 = var0[0xCDE10C4A]
       10 [-]: CALL R9 2 2  ; var9 = var9(var10)
       11 [-]: MOVE R10 R0  ; var10 = var0
@@ -299,7 +299,7 @@ L 0:   4 [-]: SETTABLEKS R6 R5 K2; var6["ghostAbilityApplied"] = var5
       51 [-]: NAMECALL R9 R9 K28; var10 = var9; var9 = var9[0x05909209]
       52 [-]: CALL R9 5 1  ; var9(var10, var11, var12, var13)
       53 [-]: LOADNIL R9   ; var9 = nil
-      54 [-]: FASTCALL1 62 R7 L1; 
+      54 [-]: FASTCALL1 64 R7 L1; 
       55 [-]: MOVE R11 R7  ; var11 = var7
       56 [-]: GETIMPORT R10 30; var10 = 0x7B998233
       57 [-]: CALL R10 2 2 ; var10 = var10(var11)
@@ -321,7 +321,7 @@ L 2:  64 [-]: GETIMPORT R10 33; var10 = 0xCBD666E1
       73 [-]: JUMPIFNOT R10 L15; goto L15 if not var10
       74 [-]: NAMECALL R10 R1 K13; var11 = var1; var10 = var1[0x1C881607]
       75 [-]: CALL R10 2 2 ; var10 = var10(var11)
-      76 [-]: FASTCALL1 62 R10 L3; 
+      76 [-]: FASTCALL1 64 R10 L3; 
       77 [-]: MOVE R12 R10 ; var12 = var10
       78 [-]: GETIMPORT R11 30; var11 = 0x7B998233
       79 [-]: CALL R11 2 2 ; var11 = var11(var12)
@@ -340,35 +340,35 @@ L 3:  80 [-]: JUMPIF R11 L8; goto L8 if var11
       92 [-]: NAMECALL R11 R11 K6; var12 = var11; var11 = var11[0xE9F54086]
       93 [-]: CALL R11 0 2 ; var11 = var11(var12, ...)
       94 [-]: LOADN R12 0  ; var12 = 0
-      95 [-]: JUMPIFNOTLT R12 R11 L8; goto L8 if var12 >= var68679
+      95 [-]: JUMPIFNOTLT R12 R11 L8; goto L8 if var12 >= var68656
       96 [-]: LOADN R12 1  ; var12 = 1
       97 [-]: LOADN R13 1  ; var13 = 1
-      98 [-]: JUMPIFNOTEQ R12 R13 L7; goto L7 if var12 ~= var396080
+      98 [-]: JUMPIFNOTEQ R12 R13 L7; goto L7 if var12 ~= var396086
       99 [-]: JUMPXEQKN R11 K39 L4 NOT; 
-     100 [-]: LOADK R13 K40; var13 = 0.59999999999999998
+     100 [-]: LOADK R13 K40; var13 = 0.60000002384185791
      101 [-]: SETUPVAL R13 1; upvalues[13] = var1
      102 [-]: LOADN R13 3  ; var13 = 3
      103 [-]: SETUPVAL R13 2; upvalues[13] = var2
      104 [-]: JUMP L7      ; goto L7
 L 4: 105 [-]: JUMPXEQKN R11 K41 L5 NOT; 
-     106 [-]: LOADK R13 K42; var13 = 1.2
+     106 [-]: LOADK R13 K42; var13 = 1.2000000476837158
      107 [-]: SETUPVAL R13 1; upvalues[13] = var1
      108 [-]: LOADN R13 3  ; var13 = 3
      109 [-]: SETUPVAL R13 2; upvalues[13] = var2
      110 [-]: JUMP L7      ; goto L7
 L 5: 111 [-]: JUMPXEQKN R11 K43 L6 NOT; 
-     112 [-]: LOADK R13 K44; var13 = 1.8
+     112 [-]: LOADK R13 K44; var13 = 1.7999999523162842
      113 [-]: SETUPVAL R13 1; upvalues[13] = var1
      114 [-]: LOADN R13 3  ; var13 = 3
      115 [-]: SETUPVAL R13 2; upvalues[13] = var2
      116 [-]: JUMP L7      ; goto L7
-L 6: 117 [-]: LOADK R13 K45; var13 = 2.3999999999999999
+L 6: 117 [-]: LOADK R13 K45; var13 = 2.4000000953674316
      118 [-]: SETUPVAL R13 1; upvalues[13] = var1
      119 [-]: LOADN R13 3  ; var13 = 3
      120 [-]: SETUPVAL R13 2; upvalues[13] = var2
 L 7: 121 [-]: NAMECALL R12 R10 K4; var13 = var10; var12 = var10[0xDE321E6F]
      122 [-]: CALL R12 2 2 ; var12 = var12(var13)
-     123 [-]: LOADN R14 228; var14 = 228
+     123 [-]: LOADN R14 235; var14 = 235
      124 [-]: LOADN R15 3  ; var15 = 3
      125 [-]: GETUPVAL R16 1; var16 = upvalues[1]
      126 [-]: GETUPVAL R17 3; var17 = upvalues[3]
@@ -379,7 +379,7 @@ L 8: 129 [-]: LOADN R12 12 ; var12 = 12
      131 [-]: DIV R15 R3 R4; var15 = var3 / var4
      132 [-]: ADD R13 R14 R15; var13 = var14 + var15
      133 [-]: MUL R11 R12 R13; var11 = var12 * var13
-L 9: 134 [-]: FASTCALL1 62 R7 L10; 
+L 9: 134 [-]: FASTCALL1 64 R7 L10; 
      135 [-]: MOVE R13 R7  ; var13 = var7
      136 [-]: GETIMPORT R12 30; var12 = 0x7B998233
      137 [-]: CALL R12 2 2 ; var12 = var12(var13)
@@ -393,8 +393,8 @@ L10: 138 [-]: JUMPIF R12 L14; goto L14 if var12
      145 [-]: NAMECALL R12 R1 K49; var13 = var1; var12 = var1[0x8795D209]
      146 [-]: CALL R12 2 2 ; var12 = var12(var13)
      147 [-]: LOADN R13 6  ; var13 = 6
-     148 [-]: JUMPIFNOTLT R13 R12 L14; goto L14 if var13 >= var50871883
-     149 [-]: FASTCALL1 62 R8 L11; 
+     148 [-]: JUMPIFNOTLT R13 R12 L14; goto L14 if var13 >= var50872381
+     149 [-]: FASTCALL1 64 R8 L11; 
      150 [-]: MOVE R13 R8  ; var13 = var8
      151 [-]: GETIMPORT R12 30; var12 = 0x7B998233
      152 [-]: CALL R12 2 2 ; var12 = var12(var13)
@@ -405,7 +405,7 @@ L11: 153 [-]: JUMPIF R12 L14; goto L14 if var12
      157 [-]: NAMECALL R12 R12 K51; var13 = var12; var12 = var12[0x37E4785A]
      158 [-]: CALL R12 2 2 ; var12 = var12(var13)
      159 [-]: JUMPIFNOT R12 L14; goto L14 if not var12
-     160 [-]: FASTCALL1 62 R9 L12; 
+     160 [-]: FASTCALL1 64 R9 L12; 
      161 [-]: MOVE R13 R9  ; var13 = var9
      162 [-]: GETIMPORT R12 30; var12 = 0x7B998233
      163 [-]: CALL R12 2 2 ; var12 = var12(var13)
@@ -416,7 +416,7 @@ L12: 164 [-]: JUMPIF R12 L13; goto L13 if var12
 L13: 168 [-]: NAMECALL R12 R7 K53; var13 = var7; var12 = var7[0xE5F89B8C]
      169 [-]: CALL R12 2 2 ; var12 = var12(var13)
      170 [-]: LOADN R13 3  ; var13 = 3
-     171 [-]: JUMPIFNOTLE R12 R13 L14; goto L14 if var12 > var2165838
+     171 [-]: JUMPIFNOTLE R12 R13 L14; goto L14 if var12 > var2165793
      172 [-]: GETIMPORT R12 33; var12 = 0xCBD666E1
      173 [-]: LOADN R13 0  ; var13 = 0
      174 [-]: CALL R12 2 1 ; var12(var13)
@@ -424,7 +424,7 @@ L13: 168 [-]: NAMECALL R12 R7 K53; var13 = var7; var12 = var7[0xE5F89B8C]
 L14: 176 [-]: NAMECALL R12 R0 K54; var13 = var0; var12 = var0[0x949398C2]
      177 [-]: CALL R12 2 1 ; var12(var13)
      178 [-]: RETURN R0 0  ; 
-L15: 179 [-]: FASTCALL1 62 R7 L16; 
+L15: 179 [-]: FASTCALL1 64 R7 L16; 
      180 [-]: MOVE R11 R7  ; var11 = var7
      181 [-]: GETIMPORT R10 30; var10 = 0x7B998233
      182 [-]: CALL R10 2 2 ; var10 = var10(var11)
@@ -438,8 +438,8 @@ L16: 183 [-]: JUMPIF R10 L19; goto L19 if var10
      190 [-]: NAMECALL R10 R1 K49; var11 = var1; var10 = var1[0x8795D209]
      191 [-]: CALL R10 2 2 ; var10 = var10(var11)
      192 [-]: LOADN R11 6  ; var11 = 6
-     193 [-]: JUMPIFNOTLT R11 R10 L19; goto L19 if var11 >= var50937419
-     194 [-]: FASTCALL1 62 R9 L17; 
+     193 [-]: JUMPIFNOTLT R11 R10 L19; goto L19 if var11 >= var50937917
+     194 [-]: FASTCALL1 64 R9 L17; 
      195 [-]: MOVE R11 R9  ; var11 = var9
      196 [-]: GETIMPORT R10 30; var10 = 0x7B998233
      197 [-]: CALL R10 2 2 ; var10 = var10(var11)
@@ -480,7 +480,7 @@ L19: 206 [-]: RETURN R0 0  ;
       16 [-]: SETTABLE R6 R5 R4; var6[var5] = var4
       17 [-]: NAMECALL R5 R1 K5; var6 = var1; var5 = var1[0x1C881607]
       18 [-]: CALL R5 2 2  ; var5 = var5(var6)
-      19 [-]: FASTCALL1 62 R5 L0; 
+      19 [-]: FASTCALL1 64 R5 L0; 
       20 [-]: MOVE R7 R5   ; var7 = var5
       21 [-]: GETIMPORT R6 7; var6 = 0x7B998233
       22 [-]: CALL R6 2 2  ; var6 = var6(var7)
@@ -499,29 +499,29 @@ L 0:  23 [-]: JUMPIF R6 L7 ; goto L7 if var6
       35 [-]: NAMECALL R6 R6 K13; var7 = var6; var6 = var6[0xE9F54086]
       36 [-]: CALL R6 0 2  ; var6 = var6(var7, ...)
       37 [-]: LOADN R7 0   ; var7 = 0
-      38 [-]: JUMPIFNOTLT R7 R6 L7; goto L7 if var7 >= var67399
+      38 [-]: JUMPIFNOTLT R7 R6 L7; goto L7 if var7 >= var67376
       39 [-]: LOADN R7 1   ; var7 = 1
       40 [-]: LOADN R8 1   ; var8 = 1
-      41 [-]: JUMPIFNOTEQ R7 R8 L4; goto L4 if var7 ~= var394800
+      41 [-]: JUMPIFNOTEQ R7 R8 L4; goto L4 if var7 ~= var394806
       42 [-]: JUMPXEQKN R6 K14 L1 NOT; 
-      43 [-]: LOADK R8 K15 ; var8 = 0.59999999999999998
+      43 [-]: LOADK R8 K15 ; var8 = 0.60000002384185791
       44 [-]: SETUPVAL R8 1; upvalues[8] = var1
       45 [-]: LOADN R8 3   ; var8 = 3
       46 [-]: SETUPVAL R8 2; upvalues[8] = var2
       47 [-]: JUMP L4      ; goto L4
 L 1:  48 [-]: JUMPXEQKN R6 K16 L2 NOT; 
-      49 [-]: LOADK R8 K17 ; var8 = 1.2
+      49 [-]: LOADK R8 K17 ; var8 = 1.2000000476837158
       50 [-]: SETUPVAL R8 1; upvalues[8] = var1
       51 [-]: LOADN R8 3   ; var8 = 3
       52 [-]: SETUPVAL R8 2; upvalues[8] = var2
       53 [-]: JUMP L4      ; goto L4
 L 2:  54 [-]: JUMPXEQKN R6 K18 L3 NOT; 
-      55 [-]: LOADK R8 K19 ; var8 = 1.8
+      55 [-]: LOADK R8 K19 ; var8 = 1.7999999523162842
       56 [-]: SETUPVAL R8 1; upvalues[8] = var1
       57 [-]: LOADN R8 3   ; var8 = 3
       58 [-]: SETUPVAL R8 2; upvalues[8] = var2
       59 [-]: JUMP L4      ; goto L4
-L 3:  60 [-]: LOADK R8 K20 ; var8 = 2.3999999999999999
+L 3:  60 [-]: LOADK R8 K20 ; var8 = 2.4000000953674316
       61 [-]: SETUPVAL R8 1; upvalues[8] = var1
       62 [-]: LOADN R8 3   ; var8 = 3
       63 [-]: SETUPVAL R8 2; upvalues[8] = var2
@@ -531,14 +531,14 @@ L 4:  64 [-]: GETIMPORT R7 22; var7 = 0x89326C93
       67 [-]: JUMPIFNOT R7 L5; goto L5 if not var7
       68 [-]: NAMECALL R7 R5 K8; var8 = var5; var7 = var5[0xDE321E6F]
       69 [-]: CALL R7 2 2  ; var7 = var7(var8)
-      70 [-]: LOADN R10 228; var10 = 228
+      70 [-]: LOADN R10 235; var10 = 235
       71 [-]: LOADN R11 3  ; var11 = 3
       72 [-]: GETUPVAL R12 1; var12 = upvalues[1]
       73 [-]: GETUPVAL R13 3; var13 = upvalues[3]
       74 [-]: NAMECALL R8 R7 K24; var9 = var7; var8 = var7[0x12DD9DA2]
       75 [-]: CALL R8 6 1  ; var8(var9, var10, var11, var12, var13)
       76 [-]: GETUPVAL R10 2; var10 = upvalues[2]
-      77 [-]: LOADN R11 228; var11 = 228
+      77 [-]: LOADN R11 235; var11 = 235
       78 [-]: LOADN R12 3  ; var12 = 3
       79 [-]: GETUPVAL R13 1; var13 = upvalues[1]
       80 [-]: GETUPVAL R14 3; var14 = upvalues[3]

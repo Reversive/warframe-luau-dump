@@ -92,7 +92,7 @@
        2 [-]: DUPTABLE R0 2; 
        3 [-]: LOADK R1 K3  ; var1 = "<MISSION_MARKER_GENERIC>"
        4 [-]: SETTABLEKS R1 R0 K0; var1["icon"] = var0
-       5 [-]: LOADN R1 36  ; var1 = 36
+       5 [-]: LOADN R1 37  ; var1 = 37
        6 [-]: SETTABLEKS R1 R0 K1; var1["color"] = var0
        7 [-]: DUPTABLE R1 2; 
        8 [-]: LOADK R2 K4  ; var2 = "<MISSION_MARKER_ATTACK>"
@@ -102,22 +102,22 @@
       12 [-]: DUPTABLE R2 2; 
       13 [-]: LOADK R3 K5  ; var3 = "<MISSION_MARKER_EXTRACTION>"
       14 [-]: SETTABLEKS R3 R2 K0; var3["icon"] = var2
-      15 [-]: LOADN R3 14  ; var3 = 14
+      15 [-]: LOADN R3 15  ; var3 = 15
       16 [-]: SETTABLEKS R3 R2 K1; var3["color"] = var2
       17 [-]: DUPTABLE R3 2; 
       18 [-]: LOADK R4 K6  ; var4 = "<MISSION_MARKER_LOOT>"
       19 [-]: SETTABLEKS R4 R3 K0; var4["icon"] = var3
-      20 [-]: LOADN R4 29  ; var4 = 29
+      20 [-]: LOADN R4 30  ; var4 = 30
       21 [-]: SETTABLEKS R4 R3 K1; var4["color"] = var3
       22 [-]: DUPTABLE R4 2; 
       23 [-]: LOADK R5 K7  ; var5 = "<MISSION_MARKER_DEFEND>"
       24 [-]: SETTABLEKS R5 R4 K0; var5["icon"] = var4
-      25 [-]: LOADN R5 36  ; var5 = 36
+      25 [-]: LOADN R5 37  ; var5 = 37
       26 [-]: SETTABLEKS R5 R4 K1; var5["color"] = var4
       27 [-]: DUPTABLE R5 2; 
       28 [-]: LOADK R6 K8  ; var6 = "<OPTIONAL_OBJECTIVE>"
       29 [-]: SETTABLEKS R6 R5 K0; var6["icon"] = var5
-      30 [-]: LOADN R6 17  ; var6 = 17
+      30 [-]: LOADN R6 18  ; var6 = 18
       31 [-]: SETTABLEKS R6 R5 K1; var6["color"] = var5
       32 [-]: NEWTABLE R6 0 6; var6 = {}
       33 [-]: MOVE R7 R0   ; var7 = var0
@@ -141,12 +141,12 @@ L 0:  41 [-]: GETUPVAL R0 0; var0 = upvalues[0]
 
        0 [-]: LOADN R1 0   ; var1 = 0
 L 0:   1 [-]: GETIMPORT R3 2; var3 = _T["UiEncounterOrder"]
-       2 [-]: FASTCALL1 62 R3 L1; 
+       2 [-]: FASTCALL1 64 R3 L1; 
        3 [-]: GETIMPORT R2 4; var2 = 0x7B998233
        4 [-]: CALL R2 2 2  ; var2 = var2(var3)
 L 1:   5 [-]: JUMPIFNOT R2 L2; goto L2 if not var2
        6 [-]: LOADN R2 1   ; var2 = 1
-       7 [-]: JUMPIFNOTLT R1 R2 L2; goto L2 if var1 >= var393806
+       7 [-]: JUMPIFNOTLT R1 R2 L2; goto L2 if var1 >= var393761
        8 [-]: GETIMPORT R2 6; var2 = 0x67652851
        9 [-]: CALL R2 1 2  ; var2 = var2()
       10 [-]: ADD R1 R1 R2 ; var1 = var1 + var2
@@ -155,7 +155,7 @@ L 1:   5 [-]: JUMPIFNOT R2 L2; goto L2 if not var2
       13 [-]: CALL R2 2 1  ; var2(var3)
       14 [-]: JUMPBACK L0  ; goto L0
 L 2:  15 [-]: GETIMPORT R3 2; var3 = _T["UiEncounterOrder"]
-      16 [-]: FASTCALL1 62 R3 L3; 
+      16 [-]: FASTCALL1 64 R3 L3; 
       17 [-]: GETIMPORT R2 4; var2 = 0x7B998233
       18 [-]: CALL R2 2 2  ; var2 = var2(var3)
 L 3:  19 [-]: JUMPIFNOT R2 L4; goto L4 if not var2
@@ -170,7 +170,7 @@ L 4:  23 [-]: LOADNIL R2   ; var2 = nil
       28 [-]: FORNPREP R3 L8; nforprep start - [escape at L8] -- var3 = iterator
 L 5:  29 [-]: GETIMPORT R8 2; var8 = _T["UiEncounterOrder"]
       30 [-]: GETTABLE R7 R8 R5; var7 = var8[var5]
-      31 [-]: FASTCALL1 62 R7 L6; 
+      31 [-]: FASTCALL1 64 R7 L6; 
       32 [-]: GETIMPORT R6 4; var6 = 0x7B998233
       33 [-]: CALL R6 2 2  ; var6 = var6(var7)
 L 6:  34 [-]: JUMPIF R6 L7 ; goto L7 if var6
@@ -182,7 +182,7 @@ L 6:  34 [-]: JUMPIF R6 L7 ; goto L7 if var6
       40 [-]: MULK R2 R5 K11; var2 = var5 * 10
       41 [-]: JUMP L8      ; goto L8
 L 7:  42 [-]: FORNLOOP R3 L5; nforloop end - iterate + goto L5
-L 8:  43 [-]: FASTCALL1 62 R2 L9; 
+L 8:  43 [-]: FASTCALL1 64 R2 L9; 
       44 [-]: MOVE R4 R2   ; var4 = var2
       45 [-]: GETIMPORT R3 4; var3 = 0x7B998233
       46 [-]: CALL R3 2 2  ; var3 = var3(var4)
@@ -208,7 +208,7 @@ L11:  58 [-]: RETURN R2 1  ;
 ; Max Stack Size:  17
 
        0 [-]: LOADK R5 K0  ; var5 = "<p>"
-       1 [-]: FASTCALL1 62 R4 L0; 
+       1 [-]: FASTCALL1 64 R4 L0; 
        2 [-]: MOVE R7 R4   ; var7 = var4
        3 [-]: GETIMPORT R6 2; var6 = 0x7B998233
        4 [-]: CALL R6 2 2  ; var6 = var6(var7)
@@ -241,7 +241,7 @@ L 1:  25 [-]: GETTABLEKS R6 R0 K7; var6 = var0["Localize"]
       31 [-]: MOVE R7 R5   ; var7 = var5
       32 [-]: LOADK R8 K11 ; var8 = "<font face=\"Noto Sans\" color=\""
       33 [-]: GETTABLEKS R14 R0 K4; var14 = var0["Colorize"]
-      34 [-]: LOADN R15 38 ; var15 = 38
+      34 [-]: LOADN R15 39 ; var15 = 39
       35 [-]: CALL R14 2 2 ; var14 = var14(var15)
       36 [-]: MOVE R9 R14  ; var9 = var14
       37 [-]: LOADK R10 K6 ; var10 = "\">"
@@ -255,13 +255,13 @@ L 1:  25 [-]: GETTABLEKS R6 R0 K7; var6 = var0["Localize"]
 L 2:  45 [-]: MOVE R7 R5   ; var7 = var5
       46 [-]: LOADK R8 K11 ; var8 = "<font face=\"Noto Sans\" color=\""
       47 [-]: GETTABLEKS R12 R0 K4; var12 = var0["Colorize"]
-      48 [-]: LOADN R13 38 ; var13 = 38
+      48 [-]: LOADN R13 39 ; var13 = 39
       49 [-]: CALL R12 2 2 ; var12 = var12(var13)
       50 [-]: MOVE R9 R12  ; var9 = var12
       51 [-]: LOADK R10 K6 ; var10 = "\">"
       52 [-]: MOVE R11 R6  ; var11 = var6
       53 [-]: CONCAT R5 R7 R11; var5 = var7 .. var11
-L 3:  54 [-]: FASTCALL1 62 R3 L4; 
+L 3:  54 [-]: FASTCALL1 64 R3 L4; 
       55 [-]: MOVE R8 R3   ; var8 = var3
       56 [-]: GETIMPORT R7 2; var7 = 0x7B998233
       57 [-]: CALL R7 2 2  ; var7 = var7(var8)
@@ -323,7 +323,7 @@ L 5:  62 [-]: MOVE R7 R5   ; var7 = var5
 
        0 [-]: NAMECALL R7 R0 K0; var8 = var0; var7 = var0[0x4C976EDA]
        1 [-]: CALL R7 2 2  ; var7 = var7(var8)
-       2 [-]: FASTCALL1 62 R7 L0; 
+       2 [-]: FASTCALL1 64 R7 L0; 
        3 [-]: MOVE R9 R7   ; var9 = var7
        4 [-]: GETIMPORT R8 2; var8 = 0x7B998233
        5 [-]: CALL R8 2 2  ; var8 = var8(var9)
@@ -359,7 +359,7 @@ L 2:  33 [-]: GETIMPORT R11 4; var11 = 0x3D106989
       35 [-]: MOVE R14 R1  ; var14 = var1
       36 [-]: CONCAT R12 R13 R14; var12 = var13 .. var14
       37 [-]: CALL R11 2 1 ; var11(var12)
-      38 [-]: FASTCALL1 62 R3 L3; 
+      38 [-]: FASTCALL1 64 R3 L3; 
       39 [-]: MOVE R12 R3  ; var12 = var3
       40 [-]: GETIMPORT R11 2; var11 = 0x7B998233
       41 [-]: CALL R11 2 2 ; var11 = var11(var12)
@@ -399,7 +399,7 @@ L 5:  57 [-]: GETUPVAL R11 3; var11 = upvalues[3]
        1 [-]: CALL R3 2 2  ; var3 = var3(var4)
        2 [-]: NAMECALL R3 R3 K1; var4 = var3; var3 = var3[0xED4E0128]
        3 [-]: CALL R3 2 2  ; var3 = var3(var4)
-       4 [-]: FASTCALL1 62 R1 L0; 
+       4 [-]: FASTCALL1 64 R1 L0; 
        5 [-]: MOVE R5 R1   ; var5 = var1
        6 [-]: GETIMPORT R4 3; var4 = 0x7B998233
        7 [-]: CALL R4 2 2  ; var4 = var4(var5)
@@ -415,14 +415,14 @@ L 1:  14 [-]: MOVE R4 R3   ; var4 = var3
 L 2:  17 [-]: GETIMPORT R4 8; var4 = _T["GetHudTracker"]
       18 [-]: MOVE R5 R3   ; var5 = var3
       19 [-]: CALL R4 2 2  ; var4 = var4(var5)
-      20 [-]: FASTCALL1 62 R4 L3; 
+      20 [-]: FASTCALL1 64 R4 L3; 
       21 [-]: MOVE R6 R4   ; var6 = var4
       22 [-]: GETIMPORT R5 3; var5 = 0x7B998233
       23 [-]: CALL R5 2 2  ; var5 = var5(var6)
-L 3:  24 [-]: JUMPIF R5 L6 ; goto L6 if var5
+L 3:  24 [-]: JUMPIF R5 L7 ; goto L7 if var5
       25 [-]: GETTABLEKS R6 R4 K9; var6 = var4["Data"]
       26 [-]: GETTABLEKS R5 R6 K10; var5 = var6["Visible"]
-      27 [-]: JUMPIFNOT R5 L6; goto L6 if not var5
+      27 [-]: JUMPIFNOT R5 L7; goto L7 if not var5
       28 [-]: GETTABLEKS R6 R4 K9; var6 = var4["Data"]
       29 [-]: GETTABLEKS R5 R6 K11; var5 = var6["Location"]
       30 [-]: JUMPIFNOT R5 L5; goto L5 if not var5
@@ -439,12 +439,13 @@ L 5:  37 [-]: GETTABLEKS R6 R4 K13; var6 = var4["SetVisible"]
       41 [-]: LOADK R8 K16 ; var8 = "RAILOBJ - Setting SubObjective visible: "
       42 [-]: MOVE R9 R1   ; var9 = var1
       43 [-]: LOADK R10 K17; var10 = ", visible = "
-      44 [-]: GETIMPORT R11 19; var11 = 0x64FB1586
+      44 [-]: FASTCALL1 63 R2 L6; 
       45 [-]: MOVE R12 R2  ; var12 = var2
-      46 [-]: CALL R11 2 2 ; var11 = var11(var12)
-      47 [-]: CONCAT R7 R8 R11; var7 = var8 .. var11
-      48 [-]: CALL R6 2 1  ; var6(var7)
-L 6:  49 [-]: RETURN R0 0  ; 
+      46 [-]: GETIMPORT R11 19; var11 = 0x64FB1586
+      47 [-]: CALL R11 2 2 ; var11 = var11(var12)
+L 6:  48 [-]: CONCAT R7 R8 R11; var7 = var8 .. var11
+      49 [-]: CALL R6 2 1  ; var6(var7)
+L 7:  50 [-]: RETURN R0 0  ; 
 
 
 ; Name:            
@@ -455,27 +456,27 @@ L 6:  49 [-]: RETURN R0 0  ;
 ; Max Stack Size:  8
 
        0 [-]: GETIMPORT R3 2; var3 = _T["RemoveHudTracker"]
-       1 [-]: FASTCALL1 62 R3 L0; 
+       1 [-]: FASTCALL1 64 R3 L0; 
        2 [-]: GETIMPORT R2 4; var2 = 0x7B998233
        3 [-]: CALL R2 2 2  ; var2 = var2(var3)
 L 0:   4 [-]: JUMPIF R2 L11; goto L11 if var2
-       5 [-]: FASTCALL1 62 R0 L1; 
+       5 [-]: FASTCALL1 64 R0 L1; 
        6 [-]: MOVE R3 R0   ; var3 = var0
        7 [-]: GETIMPORT R2 4; var2 = 0x7B998233
        8 [-]: CALL R2 2 2  ; var2 = var2(var3)
 L 1:   9 [-]: JUMPIF R2 L3 ; goto L3 if var2
       10 [-]: NAMECALL R3 R0 K5; var4 = var0; var3 = var0[0x4C976EDA]
-      11 [-]: CALL R3 2 2  ; var3 = var3(var4)
-      12 [-]: FASTCALL1 62 R3 L2; 
+      11 [-]: CALL R3 2 0  ; var3, ... = var3(var4)
+      12 [-]: FASTCALL 64 L2; 
       13 [-]: GETIMPORT R2 4; var2 = 0x7B998233
-      14 [-]: CALL R2 2 2  ; var2 = var2(var3)
+      14 [-]: CALL R2 0 2  ; var2 = var2(var3, ...)
 L 2:  15 [-]: JUMPIFNOT R2 L4; goto L4 if not var2
 L 3:  16 [-]: RETURN R0 0  ; 
 L 4:  17 [-]: NAMECALL R2 R0 K5; var3 = var0; var2 = var0[0x4C976EDA]
       18 [-]: CALL R2 2 2  ; var2 = var2(var3)
       19 [-]: NAMECALL R2 R2 K6; var3 = var2; var2 = var2[0xED4E0128]
       20 [-]: CALL R2 2 2  ; var2 = var2(var3)
-      21 [-]: FASTCALL1 62 R1 L5; 
+      21 [-]: FASTCALL1 64 R1 L5; 
       22 [-]: MOVE R4 R1   ; var4 = var1
       23 [-]: GETIMPORT R3 4; var3 = 0x7B998233
       24 [-]: CALL R3 2 2  ; var3 = var3(var4)
@@ -491,7 +492,7 @@ L 6:  31 [-]: MOVE R3 R2   ; var3 = var2
 L 7:  34 [-]: GETIMPORT R3 10; var3 = _T["GetHudTracker"]
       35 [-]: MOVE R4 R2   ; var4 = var2
       36 [-]: CALL R3 2 2  ; var3 = var3(var4)
-      37 [-]: FASTCALL1 62 R3 L8; 
+      37 [-]: FASTCALL1 64 R3 L8; 
       38 [-]: MOVE R5 R3   ; var5 = var3
       39 [-]: GETIMPORT R4 4; var4 = 0x7B998233
       40 [-]: CALL R4 2 2  ; var4 = var4(var5)
@@ -527,7 +528,7 @@ L11:  60 [-]: RETURN R0 0  ;
        0 [-]: GETIMPORT R1 2; var1 = _T["GetHudTracker"]
        1 [-]: LOADK R2 K3  ; var2 = "ReturnToRailjackText"
        2 [-]: CALL R1 2 2  ; var1 = var1(var2)
-       3 [-]: FASTCALL1 62 R1 L0; 
+       3 [-]: FASTCALL1 64 R1 L0; 
        4 [-]: MOVE R3 R1   ; var3 = var1
        5 [-]: GETIMPORT R2 5; var2 = 0x7B998233
        6 [-]: CALL R2 2 2  ; var2 = var2(var3)
@@ -548,26 +549,26 @@ L 1:  17 [-]: GETUPVAL R2 1; var2 = upvalues[1]
       21 [-]: LOADNIL R6   ; var6 = nil
       22 [-]: GETGLOBAL R7 K11; var7 = "EXTRACT_ICON"
       23 [-]: CALL R2 6 1  ; var2(var3, var4, var5, var6, var7)
-      24 [-]: FASTCALL1 62 R0 L2; 
+      24 [-]: FASTCALL1 64 R0 L2; 
       25 [-]: MOVE R3 R0   ; var3 = var0
       26 [-]: GETIMPORT R2 5; var2 = 0x7B998233
       27 [-]: CALL R2 2 2  ; var2 = var2(var3)
 L 2:  28 [-]: JUMPIF R2 L3 ; goto L3 if var2
       29 [-]: LOADN R2 0   ; var2 = 0
-      30 [-]: JUMPIFNOTLT R2 R0 L8; goto L8 if var2 >= var1966663
+      30 [-]: JUMPIFNOTLT R2 R0 L8; goto L8 if var2 >= var1966640
 L 3:  31 [-]: LOADN R2 30  ; var2 = 30
-      32 [-]: FASTCALL1 62 R0 L4; 
+      32 [-]: FASTCALL1 64 R0 L4; 
       33 [-]: MOVE R4 R0   ; var4 = var0
       34 [-]: GETIMPORT R3 5; var3 = 0x7B998233
       35 [-]: CALL R3 2 2  ; var3 = var3(var4)
 L 4:  36 [-]: JUMPIF R3 L5 ; goto L5 if var3
       37 [-]: LOADN R3 0   ; var3 = 0
-      38 [-]: JUMPIFNOTLT R3 R0 L5; goto L5 if var3 >= var534
+      38 [-]: JUMPIFNOTLT R3 R0 L5; goto L5 if var3 >= var558
       39 [-]: MOVE R2 R0   ; var2 = var0
 L 5:  40 [-]: GETIMPORT R3 2; var3 = _T["GetHudTracker"]
       41 [-]: LOADK R4 K12 ; var4 = "ReturnToRailjackTimer"
       42 [-]: CALL R3 2 2  ; var3 = var3(var4)
-      43 [-]: FASTCALL1 62 R3 L6; 
+      43 [-]: FASTCALL1 64 R3 L6; 
       44 [-]: MOVE R5 R3   ; var5 = var3
       45 [-]: GETIMPORT R4 5; var4 = 0x7B998233
       46 [-]: CALL R4 2 2  ; var4 = var4(var5)
@@ -612,7 +613,7 @@ L 8:  77 [-]: RETURN R0 0  ;
 ; Max Stack Size:  5
 
        0 [-]: GETIMPORT R1 2; var1 = _T["GetHudTracker"]
-       1 [-]: FASTCALL1 62 R1 L0; 
+       1 [-]: FASTCALL1 64 R1 L0; 
        2 [-]: GETIMPORT R0 4; var0 = 0x7B998233
        3 [-]: CALL R0 2 2  ; var0 = var0(var1)
 L 0:   4 [-]: JUMPIFNOT R0 L1; goto L1 if not var0
@@ -620,7 +621,7 @@ L 0:   4 [-]: JUMPIFNOT R0 L1; goto L1 if not var0
 L 1:   6 [-]: GETIMPORT R0 2; var0 = _T["GetHudTracker"]
        7 [-]: LOADK R1 K5  ; var1 = "ReturnToRailjackText"
        8 [-]: CALL R0 2 2  ; var0 = var0(var1)
-       9 [-]: FASTCALL1 62 R0 L2; 
+       9 [-]: FASTCALL1 64 R0 L2; 
       10 [-]: MOVE R2 R0   ; var2 = var0
       11 [-]: GETIMPORT R1 4; var1 = 0x7B998233
       12 [-]: CALL R1 2 2  ; var1 = var1(var2)
@@ -634,7 +635,7 @@ L 2:  13 [-]: JUMPIF R1 L3 ; goto L3 if var1
 L 3:  20 [-]: GETIMPORT R1 2; var1 = _T["GetHudTracker"]
       21 [-]: LOADK R2 K10 ; var2 = "ReturnToRailjackTimer"
       22 [-]: CALL R1 2 2  ; var1 = var1(var2)
-      23 [-]: FASTCALL1 62 R1 L4; 
+      23 [-]: FASTCALL1 64 R1 L4; 
       24 [-]: MOVE R3 R1   ; var3 = var1
       25 [-]: GETIMPORT R2 4; var2 = 0x7B998233
       26 [-]: CALL R2 2 2  ; var2 = var2(var3)
@@ -656,7 +657,7 @@ L 5:  34 [-]: RETURN R0 0  ;
 ; Max Stack Size:  3
 
        0 [-]: GETIMPORT R1 2; var1 = _T["ReturnToRailjackTimer"]
-       1 [-]: FASTCALL1 62 R1 L0; 
+       1 [-]: FASTCALL1 64 R1 L0; 
        2 [-]: GETIMPORT R0 4; var0 = 0x7B998233
        3 [-]: CALL R0 2 2  ; var0 = var0(var1)
 L 0:   4 [-]: JUMPIFNOT R0 L2; goto L2 if not var0
@@ -668,7 +669,7 @@ L 0:   4 [-]: JUMPIFNOT R0 L2; goto L2 if not var0
       10 [-]: CALL R1 2 2  ; var1 = var1(var2)
       11 [-]: SETTABLEKS R1 R0 K1; var1["ReturnToRailjackTimer"] = var0
       12 [-]: GETIMPORT R1 2; var1 = _T["ReturnToRailjackTimer"]
-      13 [-]: FASTCALL1 62 R1 L1; 
+      13 [-]: FASTCALL1 64 R1 L1; 
       14 [-]: GETIMPORT R0 4; var0 = 0x7B998233
       15 [-]: CALL R0 2 2  ; var0 = var0(var1)
 L 1:  16 [-]: JUMPIF R0 L2 ; goto L2 if var0
@@ -678,7 +679,7 @@ L 1:  16 [-]: JUMPIF R0 L2 ; goto L2 if var0
       20 [-]: LOADNIL R1   ; var1 = nil
       21 [-]: SETTABLEKS R1 R0 K1; var1["ReturnToRailjackTimer"] = var0
 L 2:  22 [-]: GETIMPORT R1 2; var1 = _T["ReturnToRailjackTimer"]
-      23 [-]: FASTCALL1 62 R1 L3; 
+      23 [-]: FASTCALL1 64 R1 L3; 
       24 [-]: GETIMPORT R0 4; var0 = 0x7B998233
       25 [-]: CALL R0 2 2  ; var0 = var0(var1)
 L 3:  26 [-]: JUMPIF R0 L4 ; goto L4 if var0
@@ -738,10 +739,10 @@ L 4:  30 [-]: LOADN R0 0   ; var0 = 0
        7 [-]: CONCAT R3 R4 R6; var3 = var4 .. var6
        8 [-]: GETIMPORT R6 5; var6 = _T["GetHudTracker"]
        9 [-]: MOVE R7 R3   ; var7 = var3
-      10 [-]: CALL R6 2 2  ; var6 = var6(var7)
-      11 [-]: FASTCALL1 62 R6 L0; 
+      10 [-]: CALL R6 2 0  ; var6, ... = var6(var7)
+      11 [-]: FASTCALL 64 L0; 
       12 [-]: GETIMPORT R5 7; var5 = 0x7B998233
-      13 [-]: CALL R5 2 2  ; var5 = var5(var6)
+      13 [-]: CALL R5 0 2  ; var5 = var5(var6, ...)
 L 0:  14 [-]: NOT R4 R5    ; var4 = not var5
       15 [-]: RETURN R4 1  ; 
 
@@ -762,10 +763,10 @@ L 0:  14 [-]: NOT R4 R5    ; var4 = not var5
        6 [-]: CONCAT R1 R2 R3; var1 = var2 .. var3
        7 [-]: GETIMPORT R4 5; var4 = _T["GetHudTracker"]
        8 [-]: MOVE R5 R1   ; var5 = var1
-       9 [-]: CALL R4 2 2  ; var4 = var4(var5)
-      10 [-]: FASTCALL1 62 R4 L0; 
+       9 [-]: CALL R4 2 0  ; var4, ... = var4(var5)
+      10 [-]: FASTCALL 64 L0; 
       11 [-]: GETIMPORT R3 7; var3 = 0x7B998233
-      12 [-]: CALL R3 2 2  ; var3 = var3(var4)
+      12 [-]: CALL R3 0 2  ; var3 = var3(var4, ...)
 L 0:  13 [-]: NOT R2 R3    ; var2 = not var3
       14 [-]: RETURN R2 1  ; 
 

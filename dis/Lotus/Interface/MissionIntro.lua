@@ -60,7 +60,7 @@
        7 [-]: NEWTABLE R5 0 1; var5 = {}
        8 [-]: LOADN R6 0   ; var6 = 0
        9 [-]: SETLIST R5 R6 1 [1]; var5[1] = var6; var5[2] = var7; 
-      10 [-]: LOADK R6 K5  ; var6 = 0.34999999999999998
+      10 [-]: LOADK R6 K5  ; var6 = 0.34999999403953552
       11 [-]: LOADN R7 7   ; var7 = 7
       12 [-]: NEWCLOSURE R8 P0; 
       13 [-]: CAPTURE UPVAL U0; 
@@ -76,7 +76,7 @@
 ; Max Stack Size:  8
 
        0 [-]: GETUPVAL R5 0; var5 = upvalues[0]
-       1 [-]: FASTCALL1 62 R5 L0; 
+       1 [-]: FASTCALL1 64 R5 L0; 
        2 [-]: GETIMPORT R4 1; var4 = 0x7B998233
        3 [-]: CALL R4 2 2  ; var4 = var4(var5)
 L 0:   4 [-]: JUMPIF R4 L1 ; goto L1 if var4
@@ -96,7 +96,7 @@ L 1:  10 [-]: RETURN R0 0  ;
 ; Max Stack Size:  9
 
        0 [-]: GETIMPORT R1 1; var1 = 0xBE190284
-       1 [-]: FASTCALL1 62 R1 L0; 
+       1 [-]: FASTCALL1 64 R1 L0; 
        2 [-]: GETIMPORT R0 3; var0 = 0x7B998233
        3 [-]: CALL R0 2 2  ; var0 = var0(var1)
 L 0:   4 [-]: JUMPIF R0 L3 ; goto L3 if var0
@@ -109,7 +109,7 @@ L 0:   4 [-]: JUMPIF R0 L3 ; goto L3 if var0
       11 [-]: NAMECALL R1 R1 K7; var2 = var1; var1 = var1[0xEF893AEC]
       12 [-]: CALL R1 2 2  ; var1 = var1(var2)
       13 [-]: GETTABLEKS R0 R1 K8; var0 = var1["keyChainName"]
-      14 [-]: FASTCALL1 62 R0 L1; 
+      14 [-]: FASTCALL1 64 R0 L1; 
       15 [-]: MOVE R2 R0   ; var2 = var0
       16 [-]: GETIMPORT R1 3; var1 = 0x7B998233
       17 [-]: CALL R1 2 2  ; var1 = var1(var2)
@@ -117,7 +117,7 @@ L 1:  18 [-]: JUMPIF R1 L3 ; goto L3 if var1
       19 [-]: GETIMPORT R1 10; var1 = 0x7ED0A956
       20 [-]: LOADK R2 K11 ; var2 = "/Lotus/Types/Keys/NewWarQuest/NewWarQuestKeyChain"
       21 [-]: CALL R1 2 2  ; var1 = var1(var2)
-      22 [-]: FASTCALL1 62 R1 L2; 
+      22 [-]: FASTCALL1 64 R1 L2; 
       23 [-]: MOVE R3 R1   ; var3 = var1
       24 [-]: GETIMPORT R2 3; var2 = 0x7B998233
       25 [-]: CALL R2 2 2  ; var2 = var2(var3)
@@ -213,7 +213,7 @@ L 3:  35 [-]: GETUPVAL R1 1; var1 = upvalues[1]
 ; Max Stack Size:  4
 
        0 [-]: GETIMPORT R1 1; var1 = 0xAE91E43B
-       1 [-]: FASTCALL1 62 R1 L0; 
+       1 [-]: FASTCALL1 64 R1 L0; 
        2 [-]: GETIMPORT R0 3; var0 = 0x7B998233
        3 [-]: CALL R0 2 2  ; var0 = var0(var1)
 L 0:   4 [-]: JUMPIF R0 L1 ; goto L1 if var0
@@ -226,7 +226,7 @@ L 2:   8 [-]: GETUPVAL R0 1; var0 = upvalues[1]
       11 [-]: GETTABLEKS R0 R1 K4; var0 = var1[0xA9882367]
       12 [-]: LOADK R1 K5  ; var1 = "MainMenu"
       13 [-]: CALL R0 2 2  ; var0 = var0(var1)
-      14 [-]: FASTCALL1 62 R0 L3; 
+      14 [-]: FASTCALL1 64 R0 L3; 
       15 [-]: MOVE R2 R0   ; var2 = var0
       16 [-]: GETIMPORT R1 3; var1 = 0x7B998233
       17 [-]: CALL R1 2 2  ; var1 = var1(var2)
@@ -244,7 +244,7 @@ L 5:  26 [-]: GETIMPORT R0 1; var0 = 0xAE91E43B
       29 [-]: NAMECALL R0 R0 K11; var1 = var0; var0 = var0[0x8A8C8D5A]
       30 [-]: CALL R0 0 1  ; var0(var1, ...)
       31 [-]: GETUPVAL R1 3; var1 = upvalues[3]
-      32 [-]: FASTCALL1 62 R1 L6; 
+      32 [-]: FASTCALL1 64 R1 L6; 
       33 [-]: GETIMPORT R0 3; var0 = 0x7B998233
       34 [-]: CALL R0 2 2  ; var0 = var0(var1)
 L 6:  35 [-]: JUMPIF R0 L7 ; goto L7 if var0

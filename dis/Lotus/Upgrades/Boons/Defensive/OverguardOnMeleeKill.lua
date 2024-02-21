@@ -47,9 +47,9 @@
 ; #Upvalues:       0
 ; #Parameters:     5
 ; Is_vararg:       0
-; Max Stack Size:  12
+; Max Stack Size:  13
 
-       0 [-]: FASTCALL1 62 R0 L0; 
+       0 [-]: FASTCALL1 64 R0 L0; 
        1 [-]: MOVE R6 R0   ; var6 = var0
        2 [-]: GETIMPORT R5 1; var5 = 0x7B998233
        3 [-]: CALL R5 2 2  ; var5 = var5(var6)
@@ -68,19 +68,26 @@ L 1:   6 [-]: GETIMPORT R6 3; var6 = 0x72310365
       16 [-]: MUL R5 R5 R6 ; var5 = var5 * var6
 L 2:  17 [-]: NAMECALL R6 R0 K10; var7 = var0; var6 = var0[0x1AC1655C]
       18 [-]: CALL R6 2 2  ; var6 = var6(var7)
-      19 [-]: NAMECALL R10 R6 K11; var11 = var6; var10 = var6[0xCA7B43B1]
-      20 [-]: CALL R10 2 2 ; var10 = var10(var11)
-      21 [-]: FASTCALL2 18 R10 R5 L3; 
-      22 [-]: MOVE R11 R5  ; var11 = var5
-      23 [-]: GETIMPORT R9 14; var9 = 0x5BCED4C4[0xB62ECFE0]
-      24 [-]: CALL R9 3 0  ; var9, ... = var9(var10, var11)
-L 3:  25 [-]: NAMECALL R7 R6 K15; var8 = var6; var7 = var6[0xD687233D]
-      26 [-]: CALL R7 0 1  ; var7(var8, ...)
-      27 [-]: GETIMPORT R9 17; var9 = 0xA3F9B71A
-      28 [-]: GETIMPORT R10 19; var10 = EMPTY_SYMBOL
-      29 [-]: NAMECALL R7 R0 K20; var8 = var0; var7 = var0[0x47901F07]
-      30 [-]: CALL R7 4 1  ; var7(var8, var9, var10)
-      31 [-]: RETURN R0 0  ; 
+      19 [-]: NAMECALL R7 R6 K11; var8 = var6; var7 = var6[0xCA7B43B1]
+      20 [-]: CALL R7 2 2  ; var7 = var7(var8)
+      21 [-]: FASTCALL2 18 R7 R5 L3; 
+      22 [-]: MOVE R11 R7  ; var11 = var7
+      23 [-]: MOVE R12 R5  ; var12 = var5
+      24 [-]: GETIMPORT R10 14; var10 = 0x5BCED4C4[0xB62ECFE0]
+      25 [-]: CALL R10 3 2 ; var10 = var10(var11, var12)
+L 3:  26 [-]: NAMECALL R8 R6 K15; var9 = var6; var8 = var6[0xD687233D]
+      27 [-]: CALL R8 3 1  ; var8(var9, var10)
+      28 [-]: JUMPIFNOTLT R7 R5 L4; goto L4 if var7 >= var587205196
+      29 [-]: NAMECALL R10 R0 K16; var11 = var0; var10 = var0[0x5E651723]
+      30 [-]: CALL R10 2 2 ; var10 = var10(var11)
+      31 [-]: SUB R11 R5 R7; var11 = var5 - var7
+      32 [-]: NAMECALL R8 R0 K17; var9 = var0; var8 = var0[0x732331E5]
+      33 [-]: CALL R8 4 1  ; var8(var9, var10, var11)
+L 4:  34 [-]: GETIMPORT R10 19; var10 = 0xA3F9B71A
+      35 [-]: GETIMPORT R11 21; var11 = EMPTY_SYMBOL
+      36 [-]: NAMECALL R8 R0 K22; var9 = var0; var8 = var0[0x47901F07]
+      37 [-]: CALL R8 4 1  ; var8(var9, var10, var11)
+      38 [-]: RETURN R0 0  ; 
 
 
 

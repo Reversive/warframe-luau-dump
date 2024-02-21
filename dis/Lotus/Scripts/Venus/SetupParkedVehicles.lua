@@ -52,7 +52,7 @@ L 2:  17 [-]: GETIMPORT R2 9; var2 = 0x0ABA717E
       18 [-]: GETIMPORT R3 11; var3 = 0xBE190284
       19 [-]: NAMECALL R3 R3 K12; var4 = var3; var3 = var3[0xEF893AEC]
       20 [-]: CALL R3 2 2  ; var3 = var3(var4)
-      21 [-]: FASTCALL1 62 R3 L3; 
+      21 [-]: FASTCALL1 64 R3 L3; 
       22 [-]: MOVE R5 R3   ; var5 = var3
       23 [-]: GETIMPORT R4 14; var4 = 0x7B998233
       24 [-]: CALL R4 2 2  ; var4 = var4(var5)
@@ -61,12 +61,12 @@ L 3:  25 [-]: JUMPIF R4 L4 ; goto L4 if var4
       27 [-]: GETIMPORT R5 17; var5 = 0x0469F296
       28 [-]: LOADK R6 K18 ; var6 = "ActTwoStolenPlates"
       29 [-]: CALL R5 2 2  ; var5 = var5(var6)
-      30 [-]: JUMPIFNOTEQ R4 R5 L4; goto L4 if var4 ~= var65581
+      30 [-]: JUMPIFNOTEQ R4 R5 L4; goto L4 if var4 ~= var65571
       31 [-]: RETURN R0 0  ; 
 L 4:  32 [-]: GETIMPORT R6 20; var6 = 0x2973883D
       33 [-]: NAMECALL R4 R1 K21; var5 = var1; var4 = var1[0xA7FB023F]
       34 [-]: CALL R4 3 1  ; var4(var5, var6)
-      35 [-]: FASTCALL1 62 R2 L5; 
+      35 [-]: FASTCALL1 64 R2 L5; 
       36 [-]: MOVE R5 R2   ; var5 = var2
       37 [-]: GETIMPORT R4 14; var4 = 0x7B998233
       38 [-]: CALL R4 2 2  ; var4 = var4(var5)
@@ -95,7 +95,7 @@ L 7:  54 [-]: RETURN R0 0  ;
 ; Is_vararg:       0
 ; Max Stack Size:  4
 
-       0 [-]: FASTCALL1 62 R0 L0; 
+       0 [-]: FASTCALL1 64 R0 L0; 
        1 [-]: MOVE R2 R0   ; var2 = var0
        2 [-]: GETIMPORT R1 1; var1 = 0x7B998233
        3 [-]: CALL R1 2 2  ; var1 = var1(var2)

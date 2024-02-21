@@ -45,7 +45,7 @@
 ; Max Stack Size:  7
 
        0 [-]: GETIMPORT R4 1; var4 = 0x703BE01D
-       1 [-]: JUMPIFNOTEQ R1 R4 L0; goto L0 if var1 ~= var-1459616699
+       1 [-]: JUMPIFNOTEQ R1 R4 L0; goto L0 if var1 ~= var-1459616692
        2 [-]: NAMECALL R4 R0 K2; var5 = var0; var4 = var0[0x420402A9]
        3 [-]: CALL R4 2 2  ; var4 = var4(var5)
        4 [-]: JUMPIFNOT R4 L0; goto L0 if not var4

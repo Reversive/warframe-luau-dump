@@ -28,7 +28,7 @@
        4 [-]: CALL R0 1 2  ; var0 = var0()
        5 [-]: GETUPVAL R2 0; var2 = upvalues[0]
        6 [-]: GETTABLEKS R1 R2 K3; var1 = var2["UI_MODE_IN_SPACE_SHIP"]
-       7 [-]: JUMPIFEQ R0 R1 L0; goto L0 if var0 == var65581
+       7 [-]: JUMPIFEQ R0 R1 L0; goto L0 if var0 == var65571
        8 [-]: RETURN R0 0  ; 
 L 0:   9 [-]: DUPCLOSURE R0 K4; 
 L 1:  10 [-]: MOVE R1 R0   ; var1 = var0
@@ -45,7 +45,7 @@ L 2:  17 [-]: LOADN R3 1   ; var3 = 1
       21 [-]: FORNPREP R1 L6; nforprep start - [escape at L6] -- var1 = iterator
 L 3:  22 [-]: GETIMPORT R6 9; var6 = 0x1BC662CC
       23 [-]: GETTABLE R5 R6 R3; var5 = var6[var3]
-      24 [-]: FASTCALL1 62 R5 L4; 
+      24 [-]: FASTCALL1 64 R5 L4; 
       25 [-]: GETIMPORT R4 11; var4 = 0x7B998233
       26 [-]: CALL R4 2 2  ; var4 = var4(var5)
 L 4:  27 [-]: JUMPIF R4 L5 ; goto L5 if var4

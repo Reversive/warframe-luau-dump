@@ -25,11 +25,11 @@
 
        0 [-]: GETIMPORT R1 1; var1 = 0xE8489591
        1 [-]: LOADN R2 0   ; var2 = 0
-       2 [-]: JUMPIFNOTLT R2 R1 L0; goto L0 if var2 >= var196942
+       2 [-]: JUMPIFNOTLT R2 R1 L0; goto L0 if var2 >= var196897
        3 [-]: GETIMPORT R1 3; var1 = 0xCBD666E1
        4 [-]: GETIMPORT R2 1; var2 = 0xE8489591
        5 [-]: CALL R1 2 1  ; var1(var2)
-L 0:   6 [-]: FASTCALL1 62 R0 L1; 
+L 0:   6 [-]: FASTCALL1 64 R0 L1; 
        7 [-]: MOVE R2 R0   ; var2 = var0
        8 [-]: GETIMPORT R1 5; var1 = 0x7B998233
        9 [-]: CALL R1 2 2  ; var1 = var1(var2)
@@ -37,7 +37,7 @@ L 1:  10 [-]: JUMPIF R1 L3 ; goto L3 if var1
       11 [-]: LOADN R1 0   ; var1 = 0
       12 [-]: LOADN R2 0   ; var2 = 0
 L 2:  13 [-]: GETIMPORT R3 7; var3 = 0x07E9D557
-      14 [-]: JUMPIFNOTLT R1 R3 L3; goto L3 if var1 >= var1031
+      14 [-]: JUMPIFNOTLT R1 R3 L3; goto L3 if var1 >= var1084
       15 [-]: GETUPVAL R4 0; var4 = upvalues[0]
       16 [-]: GETTABLEKS R3 R4 K8; var3 = var4[0x0DE53E77]
       17 [-]: MOVE R4 R1   ; var4 = var1
@@ -80,9 +80,9 @@ L 3:  42 [-]: RETURN R0 0  ;
        2 [-]: LOADN R2 100 ; var2 = 100
        3 [-]: CALL R0 3 2  ; var0 = var0(var1, var2)
        4 [-]: GETIMPORT R1 4; var1 = 0xA619AC89
-       5 [-]: JUMPIFNOTLT R0 R1 L1; goto L1 if var0 >= var393806
+       5 [-]: JUMPIFNOTLT R0 R1 L1; goto L1 if var0 >= var393761
        6 [-]: GETIMPORT R2 6; var2 = 0x7E810A3D
-       7 [-]: FASTCALL1 62 R2 L0; 
+       7 [-]: FASTCALL1 64 R2 L0; 
        8 [-]: GETIMPORT R1 8; var1 = 0x7B998233
        9 [-]: CALL R1 2 2  ; var1 = var1(var2)
 L 0:  10 [-]: JUMPIF R1 L1 ; goto L1 if var1
@@ -92,7 +92,7 @@ L 0:  10 [-]: JUMPIF R1 L1 ; goto L1 if var1
       14 [-]: CALL R1 3 1  ; var1(var2, var3)
       15 [-]: RETURN R0 0  ; 
 L 1:  16 [-]: GETIMPORT R2 12; var2 = 0x7B810584
-      17 [-]: FASTCALL1 62 R2 L2; 
+      17 [-]: FASTCALL1 64 R2 L2; 
       18 [-]: GETIMPORT R1 8; var1 = 0x7B998233
       19 [-]: CALL R1 2 2  ; var1 = var1(var2)
 L 2:  20 [-]: JUMPIF R1 L3 ; goto L3 if var1

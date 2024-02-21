@@ -28,10 +28,10 @@
        8 [-]: NAMECALL R2 R1 K4; var3 = var1; var2 = var1[0x36E85886]
        9 [-]: CALL R2 2 2  ; var2 = var2(var3)
       10 [-]: LOADN R3 1   ; var3 = 1
-      11 [-]: JUMPIFNOTEQ R2 R3 L1; goto L1 if var2 ~= var-1140784315
+      11 [-]: JUMPIFNOTEQ R2 R3 L1; goto L1 if var2 ~= var-1140784308
       12 [-]: NAMECALL R3 R1 K5; var4 = var1; var3 = var1[0xF1F754BC]
       13 [-]: CALL R3 2 0  ; var3, ... = var3(var4)
-      14 [-]: FASTCALL 62 L0; 
+      14 [-]: FASTCALL 64 L0; 
       15 [-]: GETIMPORT R2 7; var2 = 0x7B998233
       16 [-]: CALL R2 0 2  ; var2 = var2(var3, ...)
 L 0:  17 [-]: JUMPIF R2 L1 ; goto L1 if var2

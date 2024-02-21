@@ -18,11 +18,11 @@
 ; Max Stack Size:  9
 
        0 [-]: GETIMPORT R3 1; var3 = 0x1F317627
-       1 [-]: FASTCALL1 62 R3 L0; 
+       1 [-]: FASTCALL1 64 R3 L0; 
        2 [-]: GETIMPORT R2 3; var2 = 0x7B998233
        3 [-]: CALL R2 2 2  ; var2 = var2(var3)
 L 0:   4 [-]: JUMPIF R2 L4 ; goto L4 if var2
-       5 [-]: FASTCALL1 62 R0 L1; 
+       5 [-]: FASTCALL1 64 R0 L1; 
        6 [-]: MOVE R3 R0   ; var3 = var0
        7 [-]: GETIMPORT R2 3; var2 = 0x7B998233
        8 [-]: CALL R2 2 2  ; var2 = var2(var3)
@@ -40,7 +40,7 @@ L 1:   9 [-]: JUMPIF R2 L2 ; goto L2 if var2
 L 2:  20 [-]: GETIMPORT R2 10; var2 = 0xCBD666E1
       21 [-]: LOADN R3 0   ; var3 = 0
       22 [-]: CALL R2 2 1  ; var2(var3)
-      23 [-]: FASTCALL1 62 R1 L3; 
+      23 [-]: FASTCALL1 64 R1 L3; 
       24 [-]: MOVE R3 R1   ; var3 = var1
       25 [-]: GETIMPORT R2 3; var2 = 0x7B998233
       26 [-]: CALL R2 2 2  ; var2 = var2(var3)

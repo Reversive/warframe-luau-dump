@@ -23,7 +23,7 @@
        3 [-]: CALL R3 2 2  ; var3 = var3(var4)
        4 [-]: NAMECALL R5 R3 K2; var6 = var3; var5 = var3[0x5E651723]
        5 [-]: CALL R5 2 0  ; var5, ... = var5(var6)
-       6 [-]: FASTCALL 62 L0; 
+       6 [-]: FASTCALL 64 L0; 
        7 [-]: GETIMPORT R4 4; var4 = 0x7B998233
        8 [-]: CALL R4 0 2  ; var4 = var4(var5, ...)
 L 0:   9 [-]: JUMPIF R4 L6 ; goto L6 if var4
@@ -69,7 +69,7 @@ L 5:  48 [-]: GETIMPORT R7 7; var7 = _T["gDominationChallengeData"]
       49 [-]: GETTABLE R6 R7 R2; var6 = var7[var2]
       50 [-]: GETTABLE R5 R6 R4; var5 = var6[var4]
       51 [-]: LOADN R6 2   ; var6 = 2
-      52 [-]: JUMPIFNOTLE R6 R5 L6; goto L6 if var6 > var66843
+      52 [-]: JUMPIFNOTLE R6 R5 L6; goto L6 if var6 > var66822
       53 [-]: LOADB R5 1   ; var5 = true
       54 [-]: RETURN R5 1  ; 
 L 6:  55 [-]: LOADB R4 0   ; var4 = false

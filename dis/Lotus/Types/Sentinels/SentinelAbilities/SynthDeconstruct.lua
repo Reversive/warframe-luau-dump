@@ -132,13 +132,13 @@ L 1:  14 [-]: GETIMPORT R7 10; var7 = 0x6687F6E0
       19 [-]: CALL R7 2 2  ; var7 = var7(var8)
       20 [-]: JUMPIF R7 L13; goto L13 if var7
       21 [-]: GETIMPORT R8 15; var8 = _T["synthKillAssists"]
-      22 [-]: FASTCALL1 62 R8 L2; 
+      22 [-]: FASTCALL1 64 R8 L2; 
       23 [-]: GETIMPORT R7 17; var7 = 0x7B998233
       24 [-]: CALL R7 2 2  ; var7 = var7(var8)
 L 2:  25 [-]: JUMPIF R7 L11; goto L11 if var7
       26 [-]: GETIMPORT R9 15; var9 = _T["synthKillAssists"]
       27 [-]: GETTABLE R8 R9 R5; var8 = var9[var5]
-      28 [-]: FASTCALL1 62 R8 L3; 
+      28 [-]: FASTCALL1 64 R8 L3; 
       29 [-]: GETIMPORT R7 17; var7 = 0x7B998233
       30 [-]: CALL R7 2 2  ; var7 = var7(var8)
 L 3:  31 [-]: JUMPIF R7 L11; goto L11 if var7
@@ -147,7 +147,7 @@ L 3:  31 [-]: JUMPIF R7 L11; goto L11 if var7
       34 [-]: GETTABLE R8 R10 R5; var8 = var10[var5]
       35 [-]: CALL R7 2 4  ; var7, var8, var9 = var7(var8)
       36 [-]: FORGPREP_NEXT R7 L10; 
-L 4:  37 [-]: FASTCALL1 62 R11 L5; 
+L 4:  37 [-]: FASTCALL1 64 R11 L5; 
       38 [-]: MOVE R13 R11 ; var13 = var11
       39 [-]: GETIMPORT R12 17; var12 = 0x7B998233
       40 [-]: CALL R12 2 2 ; var12 = var12(var13)
@@ -157,8 +157,8 @@ L 5:  41 [-]: JUMPIF R12 L6; goto L6 if var12
       44 [-]: JUMPIFNOT R12 L10; goto L10 if not var12
 L 6:  45 [-]: GETIMPORT R12 21; var12 = 0x5BCED4C4[0x3630E649]
       46 [-]: CALL R12 1 2 ; var12 = var12()
-      47 [-]: JUMPIFNOTLE R12 R6 L9; goto L9 if var12 > var51068491
-      48 [-]: FASTCALL1 62 R11 L7; 
+      47 [-]: JUMPIFNOTLE R12 R6 L9; goto L9 if var12 > var51068989
+      48 [-]: FASTCALL1 64 R11 L7; 
       49 [-]: MOVE R13 R11 ; var13 = var11
       50 [-]: GETIMPORT R12 17; var12 = 0x7B998233
       51 [-]: CALL R12 2 2 ; var12 = var12(var13)
@@ -227,12 +227,12 @@ L 0:  11 [-]: RETURN R0 0  ;
        5 [-]: NAMECALL R4 R4 K5; var5 = var4; var4 = var4[0xD8140B94]
        6 [-]: CALL R4 2 2  ; var4 = var4(var5)
        7 [-]: JUMPIFNOT R4 L2; goto L2 if not var4
-       8 [-]: FASTCALL1 62 R2 L0; 
+       8 [-]: FASTCALL1 64 R2 L0; 
        9 [-]: MOVE R5 R2   ; var5 = var2
       10 [-]: GETIMPORT R4 7; var4 = 0x7B998233
       11 [-]: CALL R4 2 2  ; var4 = var4(var5)
 L 0:  12 [-]: JUMPIF R4 L2 ; goto L2 if var4
-      13 [-]: FASTCALL1 62 R3 L1; 
+      13 [-]: FASTCALL1 64 R3 L1; 
       14 [-]: MOVE R5 R3   ; var5 = var3
       15 [-]: GETIMPORT R4 7; var4 = 0x7B998233
       16 [-]: CALL R4 2 2  ; var4 = var4(var5)
@@ -243,7 +243,7 @@ L 3:  19 [-]: NAMECALL R4 R0 K8; var5 = var0; var4 = var0[0x5163741E]
       21 [-]: NAMECALL R4 R4 K9; var5 = var4; var4 = var4[0x388577D5]
       22 [-]: CALL R4 2 2  ; var4 = var4(var5)
       23 [-]: GETIMPORT R6 12; var6 = _T["synthKillAssists"]
-      24 [-]: FASTCALL1 62 R6 L4; 
+      24 [-]: FASTCALL1 64 R6 L4; 
       25 [-]: GETIMPORT R5 7; var5 = 0x7B998233
       26 [-]: CALL R5 2 2  ; var5 = var5(var6)
 L 4:  27 [-]: JUMPIFNOT R5 L5; goto L5 if not var5
@@ -252,7 +252,7 @@ L 4:  27 [-]: JUMPIFNOT R5 L5; goto L5 if not var5
       30 [-]: SETTABLEKS R6 R5 K11; var6["synthKillAssists"] = var5
 L 5:  31 [-]: GETIMPORT R7 12; var7 = _T["synthKillAssists"]
       32 [-]: GETTABLE R6 R7 R4; var6 = var7[var4]
-      33 [-]: FASTCALL1 62 R6 L6; 
+      33 [-]: FASTCALL1 64 R6 L6; 
       34 [-]: GETIMPORT R5 7; var5 = 0x7B998233
       35 [-]: CALL R5 2 2  ; var5 = var5(var6)
 L 6:  36 [-]: JUMPIFNOT R5 L7; goto L7 if not var5

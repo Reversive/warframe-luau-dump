@@ -81,7 +81,7 @@ L 1:  16 [-]: GETTABLE R6 R7 R8; var6 = var7[var8]
       36 [-]: CALL R8 2 2  ; var8 = var8(var9)
       37 [-]: SETTABLEKS R8 R7 K22; var8["upgradeSymbol"] = var7
       38 [-]: GETIMPORT R9 25; var9 = _T["hackShock"]
-      39 [-]: FASTCALL1 62 R9 L2; 
+      39 [-]: FASTCALL1 64 R9 L2; 
       40 [-]: GETIMPORT R8 27; var8 = 0x7B998233
       41 [-]: CALL R8 2 2  ; var8 = var8(var9)
 L 2:  42 [-]: JUMPIFNOT R8 L3; goto L3 if not var8
@@ -101,7 +101,7 @@ L 3:  46 [-]: DUPTABLE R8 31;
 L 4:  56 [-]: GETIMPORT R15 25; var15 = _T["hackShock"]
       57 [-]: GETTABLE R14 R15 R12; var14 = var15[var12]
       58 [-]: GETTABLEKS R13 R14 K29; var13 = var14["Action"]
-      59 [-]: JUMPIFNOTEQ R13 R5 L5; goto L5 if var13 ~= var1641806
+      59 [-]: JUMPIFNOTEQ R13 R5 L5; goto L5 if var13 ~= var1641761
       60 [-]: GETIMPORT R13 25; var13 = _T["hackShock"]
       61 [-]: GETTABLE R8 R13 R12; var8 = var13[var12]
       62 [-]: LOADB R9 1   ; var9 = true
@@ -109,7 +109,7 @@ L 4:  56 [-]: GETIMPORT R15 25; var15 = _T["hackShock"]
 L 5:  64 [-]: FORNLOOP R10 L4; nforloop end - iterate + goto L4
 L 6:  65 [-]: NAMECALL R10 R0 K32; var11 = var0; var10 = var0[0xF6EBD926]
       66 [-]: CALL R10 2 2 ; var10 = var10(var11)
-L 7:  67 [-]: FASTCALL1 62 R5 L8; 
+L 7:  67 [-]: FASTCALL1 64 R5 L8; 
       68 [-]: MOVE R12 R5  ; var12 = var5
       69 [-]: GETIMPORT R11 27; var11 = 0x7B998233
       70 [-]: CALL R11 2 2 ; var11 = var11(var12)
@@ -133,7 +133,7 @@ L 8:  71 [-]: JUMPIF R11 L20; goto L20 if var11
 L 9:  88 [-]: GETTABLE R16 R11 R15; var16 = var11[var15]
       89 [-]: NAMECALL R17 R16 K39; var18 = var16; var17 = var16[0xFA9E477F]
       90 [-]: CALL R17 2 2 ; var17 = var17(var18)
-      91 [-]: FASTCALL1 62 R17 L10; 
+      91 [-]: FASTCALL1 64 R17 L10; 
       92 [-]: MOVE R19 R17 ; var19 = var17
       93 [-]: GETIMPORT R18 27; var18 = 0x7B998233
       94 [-]: CALL R18 2 2 ; var18 = var18(var19)
@@ -141,7 +141,7 @@ L10:  95 [-]: JUMPIF R18 L16; goto L16 if var18
       96 [-]: NAMECALL R18 R17 K40; var19 = var17; var18 = var17[0x5F45B081]
       97 [-]: CALL R18 2 2 ; var18 = var18(var19)
       98 [-]: JUMPIFNOT R18 L16; goto L16 if not var18
-      99 [-]: FASTCALL1 62 R16 L11; 
+      99 [-]: FASTCALL1 64 R16 L11; 
      100 [-]: MOVE R19 R16 ; var19 = var16
      101 [-]: GETIMPORT R18 27; var18 = 0x7B998233
      102 [-]: CALL R18 2 2 ; var18 = var18(var19)
@@ -166,7 +166,7 @@ L11: 103 [-]: JUMPIF R18 L16; goto L16 if var18
      121 [-]: FORNPREP R20 L14; nforprep start - [escape at L14] -- var20 = iterator
 L12: 122 [-]: GETTABLEKS R24 R8 K30; var24 = var8["Enemies"]
      123 [-]: GETTABLE R23 R24 R22; var23 = var24[var22]
-     124 [-]: JUMPIFNOTEQ R19 R23 L13; goto L13 if var19 ~= var70171
+     124 [-]: JUMPIFNOTEQ R19 R23 L13; goto L13 if var19 ~= var70150
      125 [-]: LOADB R18 1  ; var18 = true
      126 [-]: JUMP L14     ; goto L14
 L13: 127 [-]: FORNLOOP R20 L12; nforloop end - iterate + goto L12
@@ -218,7 +218,7 @@ L21: 172 [-]: GETIMPORT R16 25; var16 = _T["hackShock"]
      173 [-]: GETTABLE R15 R16 R13; var15 = var16[var13]
      174 [-]: GETTABLEKS R14 R15 K29; var14 = var15["Action"]
      175 [-]: GETTABLEKS R15 R8 K29; var15 = var8["Action"]
-     176 [-]: JUMPIFNOTEQ R14 R15 L22; goto L22 if var14 ~= var1642062
+     176 [-]: JUMPIFNOTEQ R14 R15 L22; goto L22 if var14 ~= var1642017
      177 [-]: GETIMPORT R14 25; var14 = _T["hackShock"]
      178 [-]: SETTABLE R8 R14 R13; var8[var14] = var13
      179 [-]: RETURN R0 0  ; 

@@ -31,7 +31,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  7
 
-       0 [-]: FASTCALL1 62 R0 L0; 
+       0 [-]: FASTCALL1 64 R0 L0; 
        1 [-]: MOVE R3 R0   ; var3 = var0
        2 [-]: GETIMPORT R2 1; var2 = 0x7B998233
        3 [-]: CALL R2 2 2  ; var2 = var2(var3)
@@ -40,7 +40,7 @@ L 0:   4 [-]: JUMPIFNOT R2 L1; goto L1 if not var2
        6 [-]: RETURN R2 1  ; 
 L 1:   7 [-]: NAMECALL R2 R0 K2; var3 = var0; var2 = var0[0x5163741E]
        8 [-]: CALL R2 2 2  ; var2 = var2(var3)
-       9 [-]: FASTCALL1 62 R2 L2; 
+       9 [-]: FASTCALL1 64 R2 L2; 
       10 [-]: MOVE R4 R2   ; var4 = var2
       11 [-]: GETIMPORT R3 1; var3 = 0x7B998233
       12 [-]: CALL R3 2 2  ; var3 = var3(var4)
@@ -76,7 +76,7 @@ L 5:  31 [-]: GETIMPORT R6 7; var6 = _T["Weapons"]
 ; Is_vararg:       0
 ; Max Stack Size:  6
 
-       0 [-]: FASTCALL1 62 R0 L0; 
+       0 [-]: FASTCALL1 64 R0 L0; 
        1 [-]: MOVE R2 R0   ; var2 = var0
        2 [-]: GETIMPORT R1 1; var1 = 0x7B998233
        3 [-]: CALL R1 2 2  ; var1 = var1(var2)
@@ -85,7 +85,7 @@ L 0:   4 [-]: JUMPIFNOT R1 L1; goto L1 if not var1
        6 [-]: RETURN R1 1  ; 
 L 1:   7 [-]: NAMECALL R1 R0 K2; var2 = var0; var1 = var0[0x5163741E]
        8 [-]: CALL R1 2 2  ; var1 = var1(var2)
-       9 [-]: FASTCALL1 62 R1 L2; 
+       9 [-]: FASTCALL1 64 R1 L2; 
       10 [-]: MOVE R3 R1   ; var3 = var1
       11 [-]: GETIMPORT R2 1; var2 = 0x7B998233
       12 [-]: CALL R2 2 2  ; var2 = var2(var3)
@@ -116,7 +116,7 @@ L 5:  24 [-]: GETIMPORT R4 6; var4 = _T["Weapons"]
 ; Is_vararg:       0
 ; Max Stack Size:  7
 
-       0 [-]: FASTCALL1 62 R0 L0; 
+       0 [-]: FASTCALL1 64 R0 L0; 
        1 [-]: MOVE R2 R0   ; var2 = var0
        2 [-]: GETIMPORT R1 1; var1 = 0x7B998233
        3 [-]: CALL R1 2 2  ; var1 = var1(var2)
@@ -125,7 +125,7 @@ L 0:   4 [-]: JUMPIFNOT R1 L1; goto L1 if not var1
        6 [-]: RETURN R1 1  ; 
 L 1:   7 [-]: NAMECALL R1 R0 K2; var2 = var0; var1 = var0[0x5163741E]
        8 [-]: CALL R1 2 2  ; var1 = var1(var2)
-       9 [-]: FASTCALL1 62 R1 L2; 
+       9 [-]: FASTCALL1 64 R1 L2; 
       10 [-]: MOVE R3 R1   ; var3 = var1
       11 [-]: GETIMPORT R2 1; var2 = 0x7B998233
       12 [-]: CALL R2 2 2  ; var2 = var2(var3)
@@ -167,7 +167,7 @@ L 5:  25 [-]: GETIMPORT R5 6; var5 = _T["Weapons"]
 ; Max Stack Size:  4
 
        0 [-]: GETTABLEKS R2 R0 K0; var2 = var0["mEnabled"]
-       1 [-]: JUMPIFEQ R2 R1 L1; goto L1 if var2 == var-1660944077
+       1 [-]: JUMPIFEQ R2 R1 L1; goto L1 if var2 == var-1660944071
        2 [-]: SETTABLEKS R1 R0 K0; var1["mEnabled"] = var0
        3 [-]: JUMPIFNOT R1 L0; goto L0 if not var1
        4 [-]: NAMECALL R2 R0 K1; var3 = var0; var2 = var0[0xD5D45305]

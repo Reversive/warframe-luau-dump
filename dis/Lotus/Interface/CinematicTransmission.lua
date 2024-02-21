@@ -41,7 +41,7 @@
        7 [-]: SETTABLEKS R3 R2 K2; var3["mScale"] = var2
 L 0:   8 [-]: GETIMPORT R3 4; var3 = 0x7A70CDCA
        9 [-]: LENGTH R2 R3 ; var2 = #var3
-      10 [-]: JUMPIFNOTLT R2 R0 L1; goto L1 if var2 >= var65607
+      10 [-]: JUMPIFNOTLT R2 R0 L1; goto L1 if var2 >= var65584
       11 [-]: LOADN R0 1   ; var0 = 1
       12 [-]: LOADN R1 0   ; var1 = 0
       13 [-]: GETIMPORT R2 1; var2 = 0xCBD666E1
@@ -52,7 +52,7 @@ L 1:  16 [-]: GETUPVAL R3 1; var3 = upvalues[1]
       18 [-]: GETIMPORT R4 4; var4 = 0x7A70CDCA
       19 [-]: GETTABLE R3 R4 R0; var3 = var4[var0]
       20 [-]: CALL R2 2 2  ; var2 = var2(var3)
-L 2:  21 [-]: FASTCALL1 62 R2 L3; 
+L 2:  21 [-]: FASTCALL1 64 R2 L3; 
       22 [-]: MOVE R4 R2   ; var4 = var2
       23 [-]: GETIMPORT R3 7; var3 = 0x7B998233
       24 [-]: CALL R3 2 2  ; var3 = var3(var4)
@@ -64,7 +64,7 @@ L 3:  25 [-]: JUMPIF R3 L6 ; goto L6 if var3
       30 [-]: CALL R3 4 1  ; var3(var4, var5, var6)
       31 [-]: GETIMPORT R4 13; var4 = 0x67652851
       32 [-]: CALL R4 1 2  ; var4 = var4()
-      33 [-]: MULK R3 R4 K11; var3 = var4 * 0.050000000000000003
+      33 [-]: MULK R3 R4 K11; var3 = var4 * 0.05000000074505806
       34 [-]: ADD R1 R1 R3 ; var1 = var1 + var3
       35 [-]: GETUPVAL R6 0; var6 = upvalues[0]
       36 [-]: GETTABLEKS R5 R6 K14; var5 = var6["mSmoothAmp"]
@@ -79,14 +79,14 @@ L 4:  42 [-]: GETIMPORT R4 9; var4 = 0x89326C93
       45 [-]: CALL R4 3 2  ; var4 = var4(var5, var6)
       46 [-]: LENGTH R5 R4 ; var5 = #var4
       47 [-]: LOADN R6 0   ; var6 = 0
-      48 [-]: JUMPIFNOTLT R6 R5 L5; goto L5 if var6 >= var263461
+      48 [-]: JUMPIFNOTLT R6 R5 L5; goto L5 if var6 >= var263476
       49 [-]: GETTABLEN R5 R4 1; var5 = var4[1]
       50 [-]: LOADK R8 K23 ; var8 = 0.75
       51 [-]: MULK R9 R3 K24; var9 = var3 * 0.25
       52 [-]: ADD R7 R8 R9 ; var7 = var8 + var9
-      53 [-]: LOADK R9 K25 ; var9 = 0.20000000000000001
+      53 [-]: LOADK R9 K25 ; var9 = 0.20000000298023224
       54 [-]: MUL R11 R3 R1; var11 = var3 * var1
-      55 [-]: MULK R10 R11 K25; var10 = var11 * 0.20000000000000001
+      55 [-]: MULK R10 R11 K25; var10 = var11 * 0.20000000298023224
       56 [-]: ADD R8 R9 R10; var8 = var9 + var10
       57 [-]: NAMECALL R5 R5 K26; var6 = var5; var5 = var5[0xF3CEFA26]
       58 [-]: CALL R5 4 1  ; var5(var6, var7, var8)

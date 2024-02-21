@@ -23,7 +23,7 @@
        3 [-]: NAMECALL R1 R0 K3; var2 = var0; var1 = var0[0x62C81B76]
        4 [-]: CALL R1 2 2  ; var1 = var1(var2)
        5 [-]: LOADNIL R2   ; var2 = nil
-       6 [-]: FASTCALL1 62 R1 L0; 
+       6 [-]: FASTCALL1 64 R1 L0; 
        7 [-]: MOVE R4 R1   ; var4 = var1
        8 [-]: GETIMPORT R3 5; var3 = 0x7B998233
        9 [-]: CALL R3 2 2  ; var3 = var3(var4)
@@ -33,7 +33,7 @@ L 0:  10 [-]: JUMPIF R3 L2 ; goto L2 if var3
       13 [-]: NAMECALL R4 R3 K7; var5 = var3; var4 = var3[0xC89BAE6F]
       14 [-]: CALL R4 3 2  ; var4 = var4(var5, var6)
       15 [-]: GETTABLEKS R6 R4 K8; var6 = var4["mItemType"]
-      16 [-]: FASTCALL1 62 R6 L1; 
+      16 [-]: FASTCALL1 64 R6 L1; 
       17 [-]: GETIMPORT R5 5; var5 = 0x7B998233
       18 [-]: CALL R5 2 2  ; var5 = var5(var6)
 L 1:  19 [-]: JUMPIF R5 L2 ; goto L2 if var5
@@ -45,7 +45,7 @@ L 2:  24 [-]: GETIMPORT R3 1; var3 = 0x89326C93
       25 [-]: GETIMPORT R5 12; var5 = gLotusCinematicType
       26 [-]: NAMECALL R3 R3 K13; var4 = var3; var3 = var3[0xFB669000]
       27 [-]: CALL R3 3 2  ; var3 = var3(var4, var5)
-      28 [-]: FASTCALL1 62 R3 L3; 
+      28 [-]: FASTCALL1 64 R3 L3; 
       29 [-]: MOVE R5 R3   ; var5 = var3
       30 [-]: GETIMPORT R4 5; var4 = 0x7B998233
       31 [-]: CALL R4 2 2  ; var4 = var4(var5)
@@ -54,7 +54,7 @@ L 3:  32 [-]: JUMPIFNOT R4 L4; goto L4 if not var4
       34 [-]: LOADK R5 K16 ; var5 = "ERROR - Could not find cinematic. No Sound Set will be loaded"
       35 [-]: CALL R4 2 1  ; var4(var5)
       36 [-]: RETURN R0 0  ; 
-L 4:  37 [-]: FASTCALL1 62 R2 L5; 
+L 4:  37 [-]: FASTCALL1 64 R2 L5; 
       38 [-]: MOVE R5 R2   ; var5 = var2
       39 [-]: GETIMPORT R4 5; var4 = 0x7B998233
       40 [-]: CALL R4 2 2  ; var4 = var4(var5)

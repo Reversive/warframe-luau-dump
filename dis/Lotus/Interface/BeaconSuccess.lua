@@ -57,7 +57,7 @@
 ; Max Stack Size:  9
 
        0 [-]: GETUPVAL R1 0; var1 = upvalues[0]
-       1 [-]: FASTCALL1 62 R1 L0; 
+       1 [-]: FASTCALL1 64 R1 L0; 
        2 [-]: GETIMPORT R0 1; var0 = 0x7B998233
        3 [-]: CALL R0 2 2  ; var0 = var0(var1)
 L 0:   4 [-]: JUMPIF R0 L1 ; goto L1 if var0
@@ -183,7 +183,7 @@ L 1:   8 [-]: GETIMPORT R0 4; var0 = 0x25312C9B
        4 [-]: CALL R0 3 2  ; var0 = var0(var1, var2)
        5 [-]: GETIMPORT R1 2; var1 = 0xAE91E43B
        6 [-]: LOADK R3 K3  ; var3 = "RewardContainer.Name"
-       7 [-]: LOADN R4 36  ; var4 = 36
+       7 [-]: LOADN R4 38  ; var4 = 38
        8 [-]: MOVE R5 R0   ; var5 = var0
        9 [-]: NAMECALL R1 R1 K4; var2 = var1; var1 = var1[0x67BC869F]
       10 [-]: CALL R1 5 1  ; var1(var2, var3, var4, var5)
@@ -252,7 +252,7 @@ L 1:   8 [-]: GETIMPORT R0 4; var0 = 0x25312C9B
       12 [-]: CALL R1 3 2  ; var1 = var1(var2, var3)
       13 [-]: GETIMPORT R2 6; var2 = 0xAE91E43B
       14 [-]: LOADK R4 K7  ; var4 = "RewardContainer.Name"
-      15 [-]: LOADN R5 36  ; var5 = 36
+      15 [-]: LOADN R5 38  ; var5 = 38
       16 [-]: MOVE R6 R1   ; var6 = var1
       17 [-]: NAMECALL R2 R2 K8; var3 = var2; var2 = var2[0x67BC869F]
       18 [-]: CALL R2 5 1  ; var2(var3, var4, var5, var6)
@@ -270,7 +270,7 @@ L 0:  29 [-]: GETTABLE R6 R2 R5; var6 = var2[var5]
       30 [-]: NAMECALL R6 R6 K15; var7 = var6; var6 = var6[0x5CA33548]
       31 [-]: CALL R6 2 2  ; var6 = var6(var7)
       32 [-]: GETIMPORT R7 11; var7 = _T["ScenarioInitiator"]
-      33 [-]: JUMPIFNOTEQ R6 R7 L1; goto L1 if var6 ~= var65819
+      33 [-]: JUMPIFNOTEQ R6 R7 L1; goto L1 if var6 ~= var65798
       34 [-]: LOADB R1 1   ; var1 = true
       35 [-]: JUMP L2      ; goto L2
 L 1:  36 [-]: FORNLOOP R3 L0; nforloop end - iterate + goto L0
@@ -337,7 +337,7 @@ L 4:  63 [-]: GETUPVAL R2 0; var2 = upvalues[0]
        4 [-]: NAMECALL R1 R1 K4; var2 = var1; var1 = var1[0x8A8C8D5A]
        5 [-]: CALL R1 3 1  ; var1(var2, var3)
        6 [-]: GETUPVAL R2 0; var2 = upvalues[0]
-       7 [-]: FASTCALL1 62 R2 L0; 
+       7 [-]: FASTCALL1 64 R2 L0; 
        8 [-]: GETIMPORT R1 6; var1 = 0x7B998233
        9 [-]: CALL R1 2 2  ; var1 = var1(var2)
 L 0:  10 [-]: JUMPIF R1 L1 ; goto L1 if var1
@@ -370,7 +370,7 @@ L 2:  20 [-]: RETURN R0 0  ;
        7 [-]: CALL R1 4 1  ; var1(var2, var3, var4)
        8 [-]: GETIMPORT R1 2; var1 = 0xAE91E43B
        9 [-]: LOADK R3 K6  ; var3 = "Description.Label"
-      10 [-]: LOADN R4 29  ; var4 = 29
+      10 [-]: LOADN R4 31  ; var4 = 31
       11 [-]: LOADK R5 K7  ; var5 = ""
       12 [-]: NAMECALL R1 R1 K8; var2 = var1; var1 = var1[0x5F56EEAB]
       13 [-]: CALL R1 5 1  ; var1(var2, var3, var4, var5)

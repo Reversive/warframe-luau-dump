@@ -60,17 +60,17 @@
       38 [-]: LENGTH R10 R2; var10 = #var2
       39 [-]: JUMPXEQKN R10 K21 L2 NOT; 
       40 [-]: GETIMPORT R11 23; var11 = 0xBBD19FC1
-      41 [-]: FASTCALL1 62 R11 L0; 
+      41 [-]: FASTCALL1 64 R11 L0; 
       42 [-]: GETIMPORT R10 25; var10 = 0x7B998233
       43 [-]: CALL R10 2 2 ; var10 = var10(var11)
 L 0:  44 [-]: JUMPIF R10 L2; goto L2 if var10
-      45 [-]: FASTCALL1 62 R3 L1; 
+      45 [-]: FASTCALL1 64 R3 L1; 
       46 [-]: MOVE R11 R3  ; var11 = var3
       47 [-]: GETIMPORT R10 25; var10 = 0x7B998233
       48 [-]: CALL R10 2 2 ; var10 = var10(var11)
 L 1:  49 [-]: JUMPIFNOT R10 L2; goto L2 if not var10
       50 [-]: LOADN R10 18 ; var10 = 18
-      51 [-]: JUMPIFEQ R4 R10 L2; goto L2 if var4 == var1772110
+      51 [-]: JUMPIFEQ R4 R10 L2; goto L2 if var4 == var1772065
       52 [-]: GETIMPORT R10 27; var10 = 0x3D106989
       53 [-]: LOADK R11 K28; var11 = "     The last sister is dead, dropping the Key"
       54 [-]: CALL R10 2 1 ; var10(var11)
@@ -115,9 +115,9 @@ L 2:  62 [-]: RETURN R0 0  ;
       21 [-]: MOVE R8 R5   ; var8 = var5
       22 [-]: CALL R6 3 2  ; var6 = var6(var7, var8)
       23 [-]: LOADN R7 4   ; var7 = 4
-      24 [-]: JUMPIFNOTEQ R1 R7 L1; goto L1 if var1 ~= var919630
+      24 [-]: JUMPIFNOTEQ R1 R7 L1; goto L1 if var1 ~= var919585
       25 [-]: GETIMPORT R8 14; var8 = 0xBBD19FC1
-      26 [-]: FASTCALL1 62 R8 L0; 
+      26 [-]: FASTCALL1 64 R8 L0; 
       27 [-]: GETIMPORT R7 16; var7 = 0x7B998233
       28 [-]: CALL R7 2 2  ; var7 = var7(var8)
 L 0:  29 [-]: JUMPIF R7 L1 ; goto L1 if var7

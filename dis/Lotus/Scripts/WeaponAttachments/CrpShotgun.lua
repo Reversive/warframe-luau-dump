@@ -46,7 +46,7 @@ L 2:  17 [-]: GETIMPORT R4 2; var4 = 0xCBD666E1
       19 [-]: GETTABLE R6 R7 R3; var6 = var7[var3]
       20 [-]: GETTABLEN R5 R6 1; var5 = var6[1]
       21 [-]: CALL R4 2 1  ; var4(var5)
-      22 [-]: FASTCALL1 62 R0 L3; 
+      22 [-]: FASTCALL1 64 R0 L3; 
       23 [-]: MOVE R5 R0   ; var5 = var0
       24 [-]: GETIMPORT R4 4; var4 = 0x7B998233
       25 [-]: CALL R4 2 2  ; var4 = var4(var5)

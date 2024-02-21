@@ -23,7 +23,7 @@
 
        0 [-]: LOADN R1 0   ; var1 = 0
 L 0:   1 [-]: LOADN R2 1   ; var2 = 1
-       2 [-]: JUMPIFNOTLT R1 R2 L1; goto L1 if var1 >= var1031
+       2 [-]: JUMPIFNOTLT R1 R2 L1; goto L1 if var1 >= var1084
        3 [-]: GETUPVAL R4 0; var4 = upvalues[0]
        4 [-]: LOADN R5 0   ; var5 = 0
        5 [-]: LOADN R6 0   ; var6 = 0

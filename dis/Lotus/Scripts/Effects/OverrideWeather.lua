@@ -27,13 +27,13 @@
        7 [-]: FORGPREP_INEXT R1 L2; 
 L 0:   8 [-]: GETIMPORT R6 8; var6 = 0x59E3E007
        9 [-]: LOADN R7 0   ; var7 = 0
-      10 [-]: JUMPIFNOTLE R7 R6 L1; goto L1 if var7 > var526414
+      10 [-]: JUMPIFNOTLE R7 R6 L1; goto L1 if var7 > var526369
       11 [-]: GETIMPORT R8 8; var8 = 0x59E3E007
       12 [-]: NAMECALL R6 R5 K9; var7 = var5; var6 = var5[0x1449D42E]
       13 [-]: CALL R6 3 1  ; var6(var7, var8)
 L 1:  14 [-]: GETIMPORT R6 11; var6 = 0x5F8BD42D
       15 [-]: LOADN R7 0   ; var7 = 0
-      16 [-]: JUMPIFNOTLE R7 R6 L2; goto L2 if var7 > var723022
+      16 [-]: JUMPIFNOTLE R7 R6 L2; goto L2 if var7 > var722977
       17 [-]: GETIMPORT R8 11; var8 = 0x5F8BD42D
       18 [-]: NAMECALL R6 R5 K12; var7 = var5; var6 = var5[0x16C76090]
       19 [-]: CALL R6 3 1  ; var6(var7, var8)

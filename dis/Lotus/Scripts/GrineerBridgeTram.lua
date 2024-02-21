@@ -28,7 +28,7 @@ L 1:   6 [-]: FORGLOOP R0 L0 2 [inext];
        8 [-]: NAMECALL R0 R0 K7; var1 = var0; var0 = var0[0x4554771F]
        9 [-]: CALL R0 2 1  ; var0(var1)
       10 [-]: GETIMPORT R0 9; var0 = 0xCBD666E1
-      11 [-]: LOADK R1 K10 ; var1 = 0.10000000000000001
+      11 [-]: LOADK R1 K10 ; var1 = 0.10000000149011612
       12 [-]: CALL R0 2 1  ; var0(var1)
       13 [-]: GETIMPORT R0 6; var0 = 0x42168BB6
       14 [-]: NAMECALL R0 R0 K11; var1 = var0; var0 = var0[0x7137D707]

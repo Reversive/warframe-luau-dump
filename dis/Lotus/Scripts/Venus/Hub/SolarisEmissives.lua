@@ -21,7 +21,7 @@
        1 [-]: JUMPIFNOT R1 L2; goto L2 if not var1
        2 [-]: GETIMPORT R3 2; var3 = _T["SolarisEmissivesEntities"]
        3 [-]: GETTABLEN R2 R3 1; var2 = var3[1]
-       4 [-]: FASTCALL1 62 R2 L0; 
+       4 [-]: FASTCALL1 64 R2 L0; 
        5 [-]: GETIMPORT R1 4; var1 = 0x7B998233
        6 [-]: CALL R1 2 2  ; var1 = var1(var2)
 L 0:   7 [-]: JUMPIF R1 L2 ; goto L2 if var1
@@ -44,7 +44,7 @@ L 3:  22 [-]: LOADN R5 1   ; var5 = 1
       24 [-]: LOADN R4 1   ; var4 = 1
       25 [-]: FORNPREP R3 L12; nforprep start - [escape at L12] -- var3 = iterator
 L 4:  26 [-]: GETTABLE R6 R2 R5; var6 = var2[var5]
-      27 [-]: FASTCALL1 62 R6 L5; 
+      27 [-]: FASTCALL1 64 R6 L5; 
       28 [-]: MOVE R8 R6   ; var8 = var6
       29 [-]: GETIMPORT R7 4; var7 = 0x7B998233
       30 [-]: CALL R7 2 2  ; var7 = var7(var8)
@@ -55,8 +55,8 @@ L 5:  31 [-]: JUMPIF R7 L11; goto L11 if var7
       35 [-]: JUMPIFNOT R7 L11; goto L11 if not var7
       36 [-]: NAMECALL R7 R6 K14; var8 = var6; var7 = var6[0xAD5B146C]
       37 [-]: CALL R7 2 2  ; var7 = var7(var8)
-      38 [-]: LOADK R8 K15 ; var8 = 0.10000000000000001
-      39 [-]: FASTCALL1 62 R7 L6; 
+      38 [-]: LOADK R8 K15 ; var8 = 0.10000000149011612
+      39 [-]: FASTCALL1 64 R7 L6; 
       40 [-]: MOVE R10 R7  ; var10 = var7
       41 [-]: GETIMPORT R9 4; var9 = 0x7B998233
       42 [-]: CALL R9 2 2  ; var9 = var9(var10)
@@ -64,7 +64,7 @@ L 6:  43 [-]: JUMPIFNOT R9 L8; goto L8 if not var9
       44 [-]: GETIMPORT R9 17; var9 = 0xF36BD7A6
       45 [-]: JUMPIFNOT R9 L8; goto L8 if not var9
       46 [-]: GETIMPORT R10 19; var10 = _T["curTransmission"]
-      47 [-]: FASTCALL1 62 R10 L7; 
+      47 [-]: FASTCALL1 64 R10 L7; 
       48 [-]: GETIMPORT R9 4; var9 = 0x7B998233
       49 [-]: CALL R9 2 2  ; var9 = var9(var10)
 L 7:  50 [-]: JUMPIF R9 L8 ; goto L8 if var9
@@ -72,9 +72,9 @@ L 7:  50 [-]: JUMPIF R9 L8 ; goto L8 if var9
       52 [-]: NAMECALL R9 R9 K20; var10 = var9; var9 = var9[0x22DA1852]
       53 [-]: CALL R9 2 2  ; var9 = var9(var10)
       54 [-]: GETIMPORT R10 22; var10 = 0xA2B4BEBE
-      55 [-]: JUMPIFNOTEQ R9 R10 L8; goto L8 if var9 ~= var1574734
+      55 [-]: JUMPIFNOTEQ R9 R10 L8; goto L8 if var9 ~= var1574689
       56 [-]: GETIMPORT R7 24; var7 = _T["TransmissionSoundInstance"]
-L 8:  57 [-]: FASTCALL1 62 R7 L9; 
+L 8:  57 [-]: FASTCALL1 64 R7 L9; 
       58 [-]: MOVE R10 R7  ; var10 = var7
       59 [-]: GETIMPORT R9 4; var9 = 0x7B998233
       60 [-]: CALL R9 2 2  ; var9 = var9(var10)
@@ -84,7 +84,7 @@ L 9:  61 [-]: JUMPIF R9 L10; goto L10 if var9
       64 [-]: MOVE R8 R9   ; var8 = var9
       65 [-]: MUL R8 R8 R8 ; var8 = var8 * var8
       66 [-]: GETIMPORT R9 27; var9 = 0x9BAFFFE3
-      67 [-]: LOADK R10 K15; var10 = 0.10000000000000001
+      67 [-]: LOADK R10 K15; var10 = 0.10000000149011612
       68 [-]: LOADN R11 6  ; var11 = 6
       69 [-]: MOVE R12 R8  ; var12 = var8
       70 [-]: CALL R9 4 2  ; var9 = var9(var10, var11, var12)

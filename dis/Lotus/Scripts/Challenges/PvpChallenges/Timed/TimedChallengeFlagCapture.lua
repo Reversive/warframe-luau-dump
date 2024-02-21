@@ -40,7 +40,7 @@
        6 [-]: CALL R0 3 2  ; var0 = var0(var1, var2)
        7 [-]: SETUPVAL R0 0; upvalues[0] = var0
        8 [-]: GETUPVAL R1 0; var1 = upvalues[0]
-       9 [-]: FASTCALL1 62 R1 L0; 
+       9 [-]: FASTCALL1 64 R1 L0; 
       10 [-]: GETIMPORT R0 9; var0 = 0x7B998233
       11 [-]: CALL R0 2 2  ; var0 = var0(var1)
 L 0:  12 [-]: JUMPIFNOT R0 L1; goto L1 if not var0
@@ -51,7 +51,7 @@ L 1:  14 [-]: GETIMPORT R0 4; var0 = 0xBA7DFCD2
       17 [-]: CALL R0 3 2  ; var0 = var0(var1, var2)
       18 [-]: SETUPVAL R0 1; upvalues[0] = var1
       19 [-]: GETUPVAL R1 1; var1 = upvalues[1]
-      20 [-]: FASTCALL1 62 R1 L2; 
+      20 [-]: FASTCALL1 64 R1 L2; 
       21 [-]: GETIMPORT R0 9; var0 = 0x7B998233
       22 [-]: CALL R0 2 2  ; var0 = var0(var1)
 L 2:  23 [-]: JUMPIFNOT R0 L3; goto L3 if not var0
@@ -97,7 +97,7 @@ L 4:  35 [-]: GETUPVAL R0 1; var0 = upvalues[1]
        8 [-]: ADDK R4 R5 K5; var4 = var5 + 1
        9 [-]: SETUPVAL R4 0; upvalues[4] = var0
       10 [-]: GETUPVAL R5 1; var5 = upvalues[1]
-      11 [-]: FASTCALL1 62 R5 L0; 
+      11 [-]: FASTCALL1 64 R5 L0; 
       12 [-]: GETIMPORT R4 7; var4 = 0x7B998233
       13 [-]: CALL R4 2 2  ; var4 = var4(var5)
 L 0:  14 [-]: JUMPIF R4 L1 ; goto L1 if var4

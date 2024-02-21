@@ -25,7 +25,7 @@
        3 [-]: GETIMPORT R0 3; var0 = 0x89326C93
        4 [-]: NAMECALL R0 R0 K4; var1 = var0; var0 = var0[0x78298275]
        5 [-]: CALL R0 2 2  ; var0 = var0(var1)
-       6 [-]: FASTCALL1 62 R0 L0; 
+       6 [-]: FASTCALL1 64 R0 L0; 
        7 [-]: MOVE R2 R0   ; var2 = var0
        8 [-]: GETIMPORT R1 6; var1 = 0x7B998233
        9 [-]: CALL R1 2 2  ; var1 = var1(var2)
@@ -59,7 +59,7 @@ L 2:  16 [-]: GETIMPORT R1 11; var1 = 0xA421AF95
       37 [-]: SETLIST R6 R7 4 [1]; var6[1] = var7; var6[2] = var8; var6[3] = var9; var6[4] = var10; var6[5] = var11; 
       38 [-]: GETIMPORT R7 11; var7 = 0xA421AF95
       39 [-]: CALL R7 1 2  ; var7 = var7()
-L 3:  40 [-]: FASTCALL1 62 R0 L4; 
+L 3:  40 [-]: FASTCALL1 64 R0 L4; 
       41 [-]: MOVE R9 R0   ; var9 = var0
       42 [-]: GETIMPORT R8 6; var8 = 0x7B998233
       43 [-]: CALL R8 2 2  ; var8 = var8(var9)
@@ -110,7 +110,7 @@ L 4:  44 [-]: JUMPIF R8 L6 ; goto L6 if var8
       88 [-]: CALL R8 5 1  ; var8(var9, var10, var11, var12)
 L 5:  89 [-]: GETIMPORT R8 37; var8 = 0xC163F229
       90 [-]: LOADK R9 K38 ; var9 = 0.5
-      91 [-]: LOADK R10 K39; var10 = 1.2
+      91 [-]: LOADK R10 K39; var10 = 1.2000000476837158
       92 [-]: CALL R8 3 2  ; var8 = var8(var9, var10)
       93 [-]: GETIMPORT R9 1; var9 = 0xCBD666E1
       94 [-]: MOVE R10 R8  ; var10 = var8
@@ -129,10 +129,10 @@ L 6:  97 [-]: RETURN R0 0  ;
        0 [-]: GETIMPORT R1 1; var1 = 0xCBD666E1
        1 [-]: GETIMPORT R2 3; var2 = 0xC163F229
        2 [-]: LOADK R3 K4  ; var3 = 0.5
-       3 [-]: LOADK R4 K5  ; var4 = 1.2
+       3 [-]: LOADK R4 K5  ; var4 = 1.2000000476837158
        4 [-]: CALL R2 3 0  ; var2, ... = var2(var3, var4)
        5 [-]: CALL R1 0 1  ; var1(var2, ...)
-       6 [-]: FASTCALL1 62 R0 L0; 
+       6 [-]: FASTCALL1 64 R0 L0; 
        7 [-]: MOVE R2 R0   ; var2 = var0
        8 [-]: GETIMPORT R1 7; var1 = 0x7B998233
        9 [-]: CALL R1 2 2  ; var1 = var1(var2)
@@ -184,7 +184,7 @@ L 1:  12 [-]: NEWTABLE R1 0 4; var1 = {}
       55 [-]: LOADK R10 K32; var10 = "FadeParams"
       56 [-]: CALL R9 2 2  ; var9 = var9(var10)
       57 [-]: MOVE R10 R6  ; var10 = var6
-      58 [-]: MULK R11 R6 K33; var11 = var6 * 0.69999999999999996
+      58 [-]: MULK R11 R6 K33; var11 = var6 * 0.69999998807907104
       59 [-]: LOADN R12 0  ; var12 = 0
       60 [-]: LOADN R13 0  ; var13 = 0
       61 [-]: NAMECALL R7 R0 K31; var8 = var0; var7 = var0[0x986D2AB8]

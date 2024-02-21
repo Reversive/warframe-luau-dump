@@ -34,7 +34,7 @@
       14 [-]: GETIMPORT R3 13; var3 = 0x3D106989
       15 [-]: LOADK R4 K14 ; var4 = "ChangeFog Started"
       16 [-]: CALL R3 2 1  ; var3(var4)
-L 0:  17 [-]: FASTCALL1 62 R2 L1; 
+L 0:  17 [-]: FASTCALL1 64 R2 L1; 
       18 [-]: MOVE R4 R2   ; var4 = var2
       19 [-]: GETIMPORT R3 16; var3 = 0x7B998233
       20 [-]: CALL R3 2 2  ; var3 = var3(var4)
@@ -47,7 +47,7 @@ L 1:  21 [-]: JUMPIF R3 L7 ; goto L7 if var3
 L 2:  27 [-]: GETIMPORT R3 4; var3 = 0x89326C93
       28 [-]: NAMECALL R3 R3 K18; var4 = var3; var3 = var3[0x78298275]
       29 [-]: CALL R3 2 2  ; var3 = var3(var4)
-      30 [-]: FASTCALL1 62 R3 L3; 
+      30 [-]: FASTCALL1 64 R3 L3; 
       31 [-]: MOVE R5 R3   ; var5 = var3
       32 [-]: GETIMPORT R4 16; var4 = 0x7B998233
       33 [-]: CALL R4 2 2  ; var4 = var4(var5)

@@ -424,26 +424,25 @@
      417 [-]: CAPTURE VAL R10; 
      418 [-]: CAPTURE REF R9; 
      419 [-]: CAPTURE VAL R8; 
-     420 [-]: CAPTURE VAL R15; 
-     421 [-]: CAPTURE VAL R3; 
-     422 [-]: CAPTURE VAL R6; 
-     423 [-]: CAPTURE VAL R7; 
-     424 [-]: CAPTURE VAL R2; 
-     425 [-]: CAPTURE VAL R16; 
-     426 [-]: CAPTURE VAL R14; 
-     427 [-]: CAPTURE VAL R5; 
-     428 [-]: CAPTURE VAL R13; 
-     429 [-]: NEWCLOSURE R18 P7; 
-     430 [-]: CAPTURE REF R9; 
-     431 [-]: CAPTURE VAL R1; 
-     432 [-]: CAPTURE VAL R17; 
-     433 [-]: NEWCLOSURE R19 P8; 
-     434 [-]: CAPTURE VAL R1; 
-     435 [-]: CAPTURE REF R9; 
-     436 [-]: CAPTURE VAL R17; 
-     437 [-]: SETGLOBAL R19 K84; "UpdateInvasionMissions" = var19
-     438 [-]: CLOSEUPVALS R9; 
-     439 [-]: RETURN R0 0  ; 
+     420 [-]: CAPTURE VAL R3; 
+     421 [-]: CAPTURE VAL R6; 
+     422 [-]: CAPTURE VAL R7; 
+     423 [-]: CAPTURE VAL R2; 
+     424 [-]: CAPTURE VAL R16; 
+     425 [-]: CAPTURE VAL R14; 
+     426 [-]: CAPTURE VAL R5; 
+     427 [-]: CAPTURE VAL R13; 
+     428 [-]: NEWCLOSURE R18 P7; 
+     429 [-]: CAPTURE REF R9; 
+     430 [-]: CAPTURE VAL R1; 
+     431 [-]: CAPTURE VAL R17; 
+     432 [-]: NEWCLOSURE R19 P8; 
+     433 [-]: CAPTURE VAL R1; 
+     434 [-]: CAPTURE REF R9; 
+     435 [-]: CAPTURE VAL R17; 
+     436 [-]: SETGLOBAL R19 K84; "UpdateInvasionMissions" = var19
+     437 [-]: CLOSEUPVALS R9; 
+     438 [-]: RETURN R0 0  ; 
 
 
 ; Name:            
@@ -488,8 +487,8 @@ L 0:   5 [-]: LOADN R8 0   ; var8 = 0
        7 [-]: GETTABLEKS R10 R7 K2; var10 = var7["factions"]
        8 [-]: CALL R9 2 4  ; var9, var10, var11 = var9(var10)
        9 [-]: FORGPREP_NEXT R9 L3; 
-L 1:  10 [-]: JUMPIFEQ R13 R0 L2; goto L2 if var13 == var134467
-      11 [-]: JUMPIFNOTEQ R13 R1 L3; goto L3 if var13 ~= var50858024
+L 1:  10 [-]: JUMPIFEQ R13 R0 L2; goto L2 if var13 == var134423
+      11 [-]: JUMPIFNOTEQ R13 R1 L3; goto L3 if var13 ~= var50857992
 L 2:  12 [-]: ADDK R8 R8 K3; var8 = var8 + 1
 L 3:  13 [-]: FORGLOOP R9 L1 2; 
       14 [-]: JUMPXEQKN R8 K4 L4 NOT; 
@@ -520,9 +519,9 @@ L 4:  20 [-]: FORGLOOP R3 L0 2;
        3 [-]: CALL R4 2 4  ; var4, var5, var6 = var4(var5)
        4 [-]: FORGPREP_NEXT R4 L1; 
 L 0:   5 [-]: GETTABLEKS R9 R8 K2; var9 = var8["faction"]
-       6 [-]: JUMPIFNOTEQ R9 R0 L1; goto L1 if var9 ~= var-1140324068
+       6 [-]: JUMPIFNOTEQ R9 R0 L1; goto L1 if var9 ~= var-1140324033
        7 [-]: GETTABLEKS R9 R8 K3; var9 = var8["location"]
-       8 [-]: JUMPIFNOTEQ R9 R2 L1; goto L1 if var9 ~= var-1291318500
+       8 [-]: JUMPIFNOTEQ R9 R2 L1; goto L1 if var9 ~= var-1291318465
        9 [-]: GETTABLEKS R11 R8 K4; var11 = var8["enemySpec"]
       10 [-]: FASTCALL2 52 R3 R11 L1; 
       11 [-]: MOVE R10 R3  ; var10 = var3
@@ -544,31 +543,32 @@ L 1:  14 [-]: FORGLOOP R4 L0 2;
 ; Is_vararg:       0
 ; Max Stack Size:  6
 
-       0 [-]: FASTCALL1 62 R0 L0; 
+       0 [-]: FASTCALL1 64 R0 L0; 
        1 [-]: MOVE R2 R0   ; var2 = var0
        2 [-]: GETIMPORT R1 1; var1 = 0x7B998233
        3 [-]: CALL R1 2 2  ; var1 = var1(var2)
 L 0:   4 [-]: JUMPIFNOT R1 L1; goto L1 if not var1
        5 [-]: LOADB R1 0   ; var1 = false
        6 [-]: RETURN R1 1  ; 
-L 1:   7 [-]: GETIMPORT R1 3; var1 = 0x64FB1586
-       8 [-]: NAMECALL R2 R0 K4; var3 = var0; var2 = var0[0xE223E2B1]
-       9 [-]: CALL R2 2 0  ; var2, ... = var2(var3)
-      10 [-]: CALL R1 0 2  ; var1 = var1(var2, ...)
-      11 [-]: LOADB R2 1   ; var2 = true
-      12 [-]: GETIMPORT R3 7; var3 = 0x7F5022CF[0xA5C556B9]
-      13 [-]: MOVE R4 R1   ; var4 = var1
-      14 [-]: LOADK R5 K8  ; var5 = "Galleon"
-      15 [-]: CALL R3 3 2  ; var3 = var3(var4, var5)
-      16 [-]: JUMPXEQKNIL R3 L3 NOT; 
-      17 [-]: GETIMPORT R3 7; var3 = 0x7F5022CF[0xA5C556B9]
-      18 [-]: MOVE R4 R1   ; var4 = var1
-      19 [-]: LOADK R5 K9  ; var5 = "CorpusShip"
-      20 [-]: CALL R3 3 2  ; var3 = var3(var4, var5)
-      21 [-]: JUMPXEQKNIL R3 L2 NOT; 
-      22 [-]: LOADB R2 0 +1; var2 = false
-L 2:  23 [-]: LOADB R2 1   ; var2 = true
-L 3:  24 [-]: RETURN R2 1  ; 
+L 1:   7 [-]: NAMECALL R2 R0 K2; var3 = var0; var2 = var0[0xE223E2B1]
+       8 [-]: CALL R2 2 0  ; var2, ... = var2(var3)
+       9 [-]: FASTCALL 63 L2; 
+      10 [-]: GETIMPORT R1 4; var1 = 0x64FB1586
+      11 [-]: CALL R1 0 2  ; var1 = var1(var2, ...)
+L 2:  12 [-]: LOADB R2 1   ; var2 = true
+      13 [-]: GETIMPORT R3 7; var3 = 0x7F5022CF[0xA5C556B9]
+      14 [-]: MOVE R4 R1   ; var4 = var1
+      15 [-]: LOADK R5 K8  ; var5 = "Galleon"
+      16 [-]: CALL R3 3 2  ; var3 = var3(var4, var5)
+      17 [-]: JUMPXEQKNIL R3 L4 NOT; 
+      18 [-]: GETIMPORT R3 7; var3 = 0x7F5022CF[0xA5C556B9]
+      19 [-]: MOVE R4 R1   ; var4 = var1
+      20 [-]: LOADK R5 K9  ; var5 = "CorpusShip"
+      21 [-]: CALL R3 3 2  ; var3 = var3(var4, var5)
+      22 [-]: JUMPXEQKNIL R3 L3 NOT; 
+      23 [-]: LOADB R2 0 +1; var2 = false
+L 3:  24 [-]: LOADB R2 1   ; var2 = true
+L 4:  25 [-]: RETURN R2 1  ; 
 
 
 ; Name:            
@@ -578,365 +578,400 @@ L 3:  24 [-]: RETURN R2 1  ;
 ; Is_vararg:       0
 ; Max Stack Size:  11
 
-       0 [-]: GETIMPORT R1 1; var1 = 0x64FB1586
-       1 [-]: NAMECALL R2 R0 K2; var3 = var0; var2 = var0[0xE223E2B1]
-       2 [-]: CALL R2 2 0  ; var2, ... = var2(var3)
-       3 [-]: CALL R1 0 2  ; var1 = var1(var2, ...)
-       4 [-]: NEWTABLE R2 0 4; var2 = {}
-       5 [-]: LOADK R3 K3  ; var3 = "Forest"
-       6 [-]: LOADK R4 K4  ; var4 = "Settlement"
-       7 [-]: LOADK R5 K5  ; var5 = "Shipyards"
-       8 [-]: LOADK R6 K6  ; var6 = "Ocean"
-       9 [-]: SETLIST R2 R3 4 [1]; var2[1] = var3; var2[2] = var4; var2[3] = var5; var2[4] = var6; var2[5] = var7; 
-      10 [-]: GETIMPORT R3 8; var3 = 0xC8802016
-      11 [-]: MOVE R4 R2   ; var4 = var2
-      12 [-]: CALL R3 2 4  ; var3, var4, var5 = var3(var4)
-      13 [-]: FORGPREP_INEXT R3 L1; 
-L 0:  14 [-]: GETIMPORT R8 11; var8 = 0x7F5022CF[0xA5C556B9]
-      15 [-]: MOVE R9 R1   ; var9 = var1
-      16 [-]: MOVE R10 R7  ; var10 = var7
-      17 [-]: CALL R8 3 2  ; var8 = var8(var9, var10)
-      18 [-]: JUMPXEQKNIL R8 L1; 
-      19 [-]: RETURN R7 1  ; 
-L 1:  20 [-]: FORGLOOP R3 L0 2 [inext]; 
-      21 [-]: LOADNIL R3   ; var3 = nil
-      22 [-]: RETURN R3 1  ; 
+       0 [-]: NAMECALL R2 R0 K0; var3 = var0; var2 = var0[0xE223E2B1]
+       1 [-]: CALL R2 2 0  ; var2, ... = var2(var3)
+       2 [-]: FASTCALL 63 L0; 
+       3 [-]: GETIMPORT R1 2; var1 = 0x64FB1586
+       4 [-]: CALL R1 0 2  ; var1 = var1(var2, ...)
+L 0:   5 [-]: NEWTABLE R2 0 4; var2 = {}
+       6 [-]: LOADK R3 K3  ; var3 = "Forest"
+       7 [-]: LOADK R4 K4  ; var4 = "Settlement"
+       8 [-]: LOADK R5 K5  ; var5 = "Shipyards"
+       9 [-]: LOADK R6 K6  ; var6 = "Ocean"
+      10 [-]: SETLIST R2 R3 4 [1]; var2[1] = var3; var2[2] = var4; var2[3] = var5; var2[4] = var6; var2[5] = var7; 
+      11 [-]: GETIMPORT R3 8; var3 = 0xC8802016
+      12 [-]: MOVE R4 R2   ; var4 = var2
+      13 [-]: CALL R3 2 4  ; var3, var4, var5 = var3(var4)
+      14 [-]: FORGPREP_INEXT R3 L2; 
+L 1:  15 [-]: GETIMPORT R8 11; var8 = 0x7F5022CF[0xA5C556B9]
+      16 [-]: MOVE R9 R1   ; var9 = var1
+      17 [-]: MOVE R10 R7  ; var10 = var7
+      18 [-]: CALL R8 3 2  ; var8 = var8(var9, var10)
+      19 [-]: JUMPXEQKNIL R8 L2; 
+      20 [-]: RETURN R7 1  ; 
+L 2:  21 [-]: FORGLOOP R3 L1 2 [inext]; 
+      22 [-]: LOADNIL R3   ; var3 = nil
+      23 [-]: RETURN R3 1  ; 
 
 
 ; Name:            
 ; Defined at line: 159
-; #Upvalues:       13
+; #Upvalues:       12
 ; #Parameters:     3
 ; Is_vararg:       0
 ; Max Stack Size:  23
 
        0 [-]: GETTABLEKS R4 R0 K0; var4 = var0["mAttackerMissionKey"]
-       1 [-]: FASTCALL1 62 R4 L0; 
+       1 [-]: FASTCALL1 64 R4 L0; 
        2 [-]: GETIMPORT R3 2; var3 = 0x7B998233
        3 [-]: CALL R3 2 2  ; var3 = var3(var4)
-L 0:   4 [-]: JUMPIF R3 L2 ; goto L2 if var3
-       5 [-]: JUMPIFNOT R2 L2; goto L2 if not var2
+L 0:   4 [-]: JUMPIF R3 L3 ; goto L3 if var3
+       5 [-]: JUMPIFNOT R2 L3; goto L3 if not var2
        6 [-]: GETIMPORT R3 4; var3 = 0xB009BBC6
        7 [-]: GETTABLEKS R4 R0 K0; var4 = var0["mAttackerMissionKey"]
        8 [-]: CALL R3 2 2  ; var3 = var3(var4)
-       9 [-]: FASTCALL1 62 R3 L1; 
+       9 [-]: FASTCALL1 64 R3 L1; 
       10 [-]: MOVE R5 R3   ; var5 = var3
       11 [-]: GETIMPORT R4 2; var4 = 0x7B998233
       12 [-]: CALL R4 2 2  ; var4 = var4(var5)
-L 1:  13 [-]: JUMPIF R4 L5 ; goto L5 if var4
+L 1:  13 [-]: JUMPIF R4 L7 ; goto L7 if var4
       14 [-]: NAMECALL R4 R3 K5; var5 = var3; var4 = var3[0xEF893AEC]
       15 [-]: CALL R4 2 2  ; var4 = var4(var5)
       16 [-]: NAMECALL R4 R4 K6; var5 = var4; var4 = var4[0x8F89D633]
       17 [-]: CALL R4 2 2  ; var4 = var4(var5)
       18 [-]: GETTABLEKS R6 R0 K7; var6 = var0["mId"]
-      19 [-]: GETTABLEKS R5 R6 K7; var5 = var6["mId"]
-      20 [-]: SETTABLEKS R5 R4 K8; var5["invasionId"] = var4
-      21 [-]: GETTABLEKS R5 R0 K9; var5 = var0["mFaction"]
-      22 [-]: SETTABLEKS R5 R4 K10; var5["invasionAllyFaction"] = var4
-      23 [-]: RETURN R4 1  ; 
-      24 [-]: JUMP L5      ; goto L5
-L 2:  25 [-]: GETTABLEKS R4 R0 K11; var4 = var0["mDefenderMissionKey"]
-      26 [-]: FASTCALL1 62 R4 L3; 
-      27 [-]: GETIMPORT R3 2; var3 = 0x7B998233
-      28 [-]: CALL R3 2 2  ; var3 = var3(var4)
-L 3:  29 [-]: JUMPIF R3 L5 ; goto L5 if var3
-      30 [-]: JUMPIF R2 L5 ; goto L5 if var2
-      31 [-]: GETIMPORT R3 4; var3 = 0xB009BBC6
-      32 [-]: GETTABLEKS R4 R0 K11; var4 = var0["mDefenderMissionKey"]
-      33 [-]: CALL R3 2 2  ; var3 = var3(var4)
-      34 [-]: FASTCALL1 62 R3 L4; 
-      35 [-]: MOVE R5 R3   ; var5 = var3
-      36 [-]: GETIMPORT R4 2; var4 = 0x7B998233
-      37 [-]: CALL R4 2 2  ; var4 = var4(var5)
-L 4:  38 [-]: JUMPIF R4 L5 ; goto L5 if var4
-      39 [-]: NAMECALL R4 R3 K5; var5 = var3; var4 = var3[0xEF893AEC]
-      40 [-]: CALL R4 2 2  ; var4 = var4(var5)
-      41 [-]: NAMECALL R4 R4 K6; var5 = var4; var4 = var4[0x8F89D633]
+      19 [-]: FASTCALL1 63 R6 L2; 
+      20 [-]: GETIMPORT R5 9; var5 = 0x64FB1586
+      21 [-]: CALL R5 2 2  ; var5 = var5(var6)
+L 2:  22 [-]: SETTABLEKS R5 R4 K10; var5["invasionId"] = var4
+      23 [-]: GETTABLEKS R5 R0 K11; var5 = var0["mFaction"]
+      24 [-]: SETTABLEKS R5 R4 K12; var5["invasionAllyFaction"] = var4
+      25 [-]: RETURN R4 1  ; 
+      26 [-]: JUMP L7      ; goto L7
+L 3:  27 [-]: GETTABLEKS R4 R0 K13; var4 = var0["mDefenderMissionKey"]
+      28 [-]: FASTCALL1 64 R4 L4; 
+      29 [-]: GETIMPORT R3 2; var3 = 0x7B998233
+      30 [-]: CALL R3 2 2  ; var3 = var3(var4)
+L 4:  31 [-]: JUMPIF R3 L7 ; goto L7 if var3
+      32 [-]: JUMPIF R2 L7 ; goto L7 if var2
+      33 [-]: GETIMPORT R3 4; var3 = 0xB009BBC6
+      34 [-]: GETTABLEKS R4 R0 K13; var4 = var0["mDefenderMissionKey"]
+      35 [-]: CALL R3 2 2  ; var3 = var3(var4)
+      36 [-]: FASTCALL1 64 R3 L5; 
+      37 [-]: MOVE R5 R3   ; var5 = var3
+      38 [-]: GETIMPORT R4 2; var4 = 0x7B998233
+      39 [-]: CALL R4 2 2  ; var4 = var4(var5)
+L 5:  40 [-]: JUMPIF R4 L7 ; goto L7 if var4
+      41 [-]: NAMECALL R4 R3 K5; var5 = var3; var4 = var3[0xEF893AEC]
       42 [-]: CALL R4 2 2  ; var4 = var4(var5)
-      43 [-]: GETTABLEKS R6 R0 K7; var6 = var0["mId"]
-      44 [-]: GETTABLEKS R5 R6 K7; var5 = var6["mId"]
-      45 [-]: SETTABLEKS R5 R4 K8; var5["invasionId"] = var4
-      46 [-]: GETTABLEKS R5 R0 K12; var5 = var0["mDefenderFaction"]
-      47 [-]: SETTABLEKS R5 R4 K10; var5["invasionAllyFaction"] = var4
-      48 [-]: RETURN R4 1  ; 
-L 5:  49 [-]: GETUPVAL R4 0; var4 = upvalues[0]
-      50 [-]: GETTABLEKS R3 R4 K13; var3 = var4[0x06D055F9]
-      51 [-]: MOVE R4 R2   ; var4 = var2
-      52 [-]: GETTABLEKS R5 R0 K14; var5 = var0["mAttackerMissionInfo"]
-      53 [-]: GETTABLEKS R6 R0 K15; var6 = var0["mDefenderMissionInfo"]
-      54 [-]: CALL R3 4 2  ; var3 = var3(var4, var5, var6)
-      55 [-]: GETUPVAL R5 0; var5 = upvalues[0]
-      56 [-]: GETTABLEKS R4 R5 K13; var4 = var5[0x06D055F9]
-      57 [-]: MOVE R5 R2   ; var5 = var2
-      58 [-]: GETTABLEKS R6 R0 K9; var6 = var0["mFaction"]
-      59 [-]: GETTABLEKS R8 R1 K16; var8 = var1["mission"]
-      60 [-]: GETTABLEKS R7 R8 K17; var7 = var8["faction"]
-      61 [-]: CALL R4 4 2  ; var4 = var4(var5, var6, var7)
-      62 [-]: GETUPVAL R6 0; var6 = upvalues[0]
-      63 [-]: GETTABLEKS R5 R6 K13; var5 = var6[0x06D055F9]
-      64 [-]: MOVE R6 R2   ; var6 = var2
-      65 [-]: GETTABLEKS R8 R1 K16; var8 = var1["mission"]
-      66 [-]: GETTABLEKS R7 R8 K17; var7 = var8["faction"]
-      67 [-]: GETTABLEKS R8 R0 K9; var8 = var0["mFaction"]
-      68 [-]: CALL R5 4 2  ; var5 = var5(var6, var7, var8)
-      69 [-]: GETUPVAL R7 0; var7 = upvalues[0]
-      70 [-]: GETTABLEKS R6 R7 K13; var6 = var7[0x06D055F9]
-      71 [-]: GETTABLEKS R8 R3 K18; var8 = var3["seed"]
-      72 [-]: GETUPVAL R10 1; var10 = upvalues[1]
-      73 [-]: GETTABLEKS R9 R10 K18; var9 = var10["seed"]
-      74 [-]: JUMPIFEQ R8 R9 L6; goto L6 if var8 == var16779035
-      75 [-]: LOADB R7 0 +1; var7 = false
-L 6:  76 [-]: LOADB R7 1   ; var7 = true
-L 7:  77 [-]: GETTABLEKS R9 R1 K16; var9 = var1["mission"]
-      78 [-]: GETTABLEKS R8 R9 K18; var8 = var9["seed"]
-      79 [-]: GETTABLEKS R9 R3 K18; var9 = var3["seed"]
-      80 [-]: CALL R6 4 2  ; var6 = var6(var7, var8, var9)
-      81 [-]: GETIMPORT R7 20; var7 = 0x84883F05
-      82 [-]: MOVE R8 R6   ; var8 = var6
-      83 [-]: GETUPVAL R11 2; var11 = upvalues[2]
-      84 [-]: GETTABLEKS R13 R0 K7; var13 = var0["mId"]
-      85 [-]: GETTABLEKS R12 R13 K7; var12 = var13["mId"]
-      86 [-]: GETTABLE R10 R11 R12; var10 = var11[var12]
-      87 [-]: GETTABLEKS R9 R10 K21; var9 = var10["cycleNum"]
-      88 [-]: CALL R7 3 1  ; var7(var8, var9)
-      89 [-]: GETTABLEKS R7 R1 K16; var7 = var1["mission"]
-      90 [-]: NAMECALL R7 R7 K6; var8 = var7; var7 = var7[0x8F89D633]
-      91 [-]: CALL R7 2 2  ; var7 = var7(var8)
-      92 [-]: LOADN R8 2   ; var8 = 2
-      93 [-]: JUMPIFNOTEQ R5 R8 L10; goto L10 if var5 ~= var1593903388
-      94 [-]: GETTABLEKS R9 R1 K16; var9 = var1["mission"]
-      95 [-]: GETTABLEKS R8 R9 K22; var8 = var9["missionType"]
-      96 [-]: LOADN R9 0   ; var9 = 0
-      97 [-]: JUMPIFNOTEQ R8 R9 L10; goto L10 if var8 ~= var1593903132
-      98 [-]: GETTABLEKS R8 R1 K16; var8 = var1["mission"]
-      99 [-]: NAMECALL R8 R8 K6; var9 = var8; var8 = var8[0x8F89D633]
-     100 [-]: CALL R8 2 2  ; var8 = var8(var9)
-     101 [-]: MOVE R7 R8   ; var7 = var8
-     102 [-]: GETUPVAL R9 3; var9 = upvalues[3]
-     103 [-]: GETTABLEKS R8 R9 K23; var8 = var9["levelOverride"]
-     104 [-]: SETTABLEKS R8 R7 K23; var8["levelOverride"] = var7
-     105 [-]: GETUPVAL R9 0; var9 = upvalues[0]
-     106 [-]: GETTABLEKS R8 R9 K13; var8 = var9[0x06D055F9]
-     107 [-]: LOADN R10 0  ; var10 = 0
-     108 [-]: JUMPIFEQ R4 R10 L8; goto L8 if var4 == var16779547
-     109 [-]: LOADB R9 0 +1; var9 = false
-L 8: 110 [-]: LOADB R9 1   ; var9 = true
-L 9: 111 [-]: GETUPVAL R11 3; var11 = upvalues[3]
-     112 [-]: GETTABLEKS R10 R11 K24; var10 = var11["enemySpecGrineer"]
-     113 [-]: GETUPVAL R12 3; var12 = upvalues[3]
-     114 [-]: GETTABLEKS R11 R12 K25; var11 = var12["enemySpecCorpus"]
-     115 [-]: CALL R8 4 2  ; var8 = var8(var9, var10, var11)
-     116 [-]: SETTABLEKS R8 R7 K26; var8["enemySpec"] = var7
-     117 [-]: GETUPVAL R9 3; var9 = upvalues[3]
-     118 [-]: GETTABLEKS R8 R9 K27; var8 = var9["vipAgent"]
-     119 [-]: SETTABLEKS R8 R7 K27; var8["vipAgent"] = var7
-     120 [-]: GETUPVAL R9 3; var9 = upvalues[3]
-     121 [-]: GETTABLEKS R8 R9 K28; var8 = var9["uniqueName"]
-     122 [-]: SETTABLEKS R8 R7 K28; var8["uniqueName"] = var7
-     123 [-]: JUMP L19     ; goto L19
-L10: 124 [-]: LOADN R8 2   ; var8 = 2
-     125 [-]: JUMPIFEQ R4 R8 L11; goto L11 if var4 == var133191
-     126 [-]: LOADN R8 2   ; var8 = 2
-     127 [-]: JUMPIFEQ R5 R8 L11; goto L11 if var5 == var264199
-     128 [-]: GETUPVAL R8 4; var8 = upvalues[4]
-     129 [-]: GETTABLEKS R10 R1 K16; var10 = var1["mission"]
-     130 [-]: GETTABLEKS R9 R10 K23; var9 = var10["levelOverride"]
-     131 [-]: CALL R8 2 2  ; var8 = var8(var9)
-     132 [-]: JUMPIFNOT R8 L11; goto L11 if not var8
-     133 [-]: GETUPVAL R10 5; var10 = upvalues[5]
-     134 [-]: GETTABLE R9 R10 R4; var9 = var10[var4]
-     135 [-]: GETIMPORT R10 30; var10 = 0x0C5E62F9
-     136 [-]: LOADN R11 1  ; var11 = 1
-     137 [-]: LENGTH R12 R9; var12 = #var9
-     138 [-]: CALL R10 3 2 ; var10 = var10(var11, var12)
-     139 [-]: GETTABLE R8 R9 R10; var8 = var9[var10]
-     140 [-]: GETTABLEKS R9 R1 K16; var9 = var1["mission"]
-     141 [-]: NAMECALL R9 R9 K6; var10 = var9; var9 = var9[0x8F89D633]
-     142 [-]: CALL R9 2 2  ; var9 = var9(var10)
-     143 [-]: MOVE R7 R9   ; var7 = var9
-     144 [-]: GETTABLEKS R9 R8 K22; var9 = var8["missionType"]
-     145 [-]: SETTABLEKS R9 R7 K22; var9["missionType"] = var7
-     146 [-]: GETTABLEKS R9 R8 K23; var9 = var8["levelOverride"]
-     147 [-]: SETTABLEKS R9 R7 K23; var9["levelOverride"] = var7
-     148 [-]: GETTABLEKS R9 R8 K31; var9 = var8["extraEnemySpec"]
-     149 [-]: SETTABLEKS R9 R7 K31; var9["extraEnemySpec"] = var7
-     150 [-]: GETTABLEKS R9 R8 K27; var9 = var8["vipAgent"]
-     151 [-]: SETTABLEKS R9 R7 K27; var9["vipAgent"] = var7
-     152 [-]: JUMP L13     ; goto L13
-L11: 153 [-]: GETUPVAL R9 0; var9 = upvalues[0]
-     154 [-]: GETTABLEKS R8 R9 K13; var8 = var9[0x06D055F9]
-     155 [-]: MOVE R9 R2   ; var9 = var2
-     156 [-]: GETUPVAL R10 6; var10 = upvalues[6]
-     157 [-]: GETUPVAL R11 7; var11 = upvalues[7]
-     158 [-]: CALL R8 4 2  ; var8 = var8(var9, var10, var11)
-     159 [-]: GETUPVAL R10 8; var10 = upvalues[8]
-     160 [-]: GETTABLEKS R9 R10 K32; var9 = var10[0xFCBCA8F8]
-     161 [-]: GETTABLEKS R11 R1 K16; var11 = var1["mission"]
-     162 [-]: GETTABLEKS R10 R11 K33; var10 = var11["location"]
-     163 [-]: MOVE R11 R8  ; var11 = var8
-     164 [-]: NEWTABLE R12 0 1; var12 = {}
-     165 [-]: LOADN R13 1  ; var13 = 1
-     166 [-]: SETLIST R12 R13 1 [1]; var12[1] = var13; var12[2] = var14; 
-     167 [-]: CALL R9 4 2  ; var9 = var9(var10, var11, var12)
-     168 [-]: MOVE R7 R9   ; var7 = var9
-     169 [-]: FASTCALL1 62 R7 L12; 
-     170 [-]: MOVE R10 R7  ; var10 = var7
-     171 [-]: GETIMPORT R9 2; var9 = 0x7B998233
-     172 [-]: CALL R9 2 2  ; var9 = var9(var10)
-L12: 173 [-]: JUMPIFNOT R9 L13; goto L13 if not var9
-     174 [-]: GETIMPORT R9 35; var9 = 0x3D106989
-     175 [-]: LOADK R11 K36; var11 = "Failed to generate invasion mission for "
-     176 [-]: GETIMPORT R17 38; var17 = 0x64FB1586
-     177 [-]: GETTABLEKS R18 R1 K39; var18 = var1["name"]
-     178 [-]: CALL R17 2 2 ; var17 = var17(var18)
-     179 [-]: MOVE R12 R17 ; var12 = var17
-     180 [-]: LOADK R13 K40; var13 = " "
-     181 [-]: MOVE R14 R4  ; var14 = var4
-     182 [-]: LOADK R15 K41; var15 = " vs "
-     183 [-]: MOVE R16 R5  ; var16 = var5
-     184 [-]: CONCAT R10 R11 R16; var10 = var11 .. var16
-     185 [-]: CALL R9 2 1  ; var9(var10)
-     186 [-]: GETTABLEKS R9 R1 K16; var9 = var1["mission"]
-     187 [-]: NAMECALL R9 R9 K6; var10 = var9; var9 = var9[0x8F89D633]
-     188 [-]: CALL R9 2 2  ; var9 = var9(var10)
-     189 [-]: MOVE R7 R9   ; var7 = var9
-L13: 190 [-]: GETTABLEKS R8 R7 K22; var8 = var7["missionType"]
-     191 [-]: LOADN R9 1   ; var9 = 1
-     192 [-]: JUMPIFNOTEQ R8 R9 L18; goto L18 if var8 ~= var592135
-     193 [-]: GETUPVAL R9 9; var9 = upvalues[9]
-     194 [-]: GETTABLEKS R11 R1 K16; var11 = var1["mission"]
-     195 [-]: GETTABLEKS R10 R11 K23; var10 = var11["levelOverride"]
-     196 [-]: CALL R9 2 2  ; var9 = var9(var10)
-     197 [-]: GETUPVAL R10 10; var10 = upvalues[10]
-     198 [-]: MOVE R11 R5  ; var11 = var5
-     199 [-]: GETUPVAL R12 11; var12 = upvalues[11]
-     200 [-]: MOVE R13 R9  ; var13 = var9
-     201 [-]: CALL R10 4 2 ; var10 = var10(var11, var12, var13)
-     202 [-]: GETUPVAL R11 10; var11 = upvalues[10]
-     203 [-]: MOVE R12 R4  ; var12 = var4
-     204 [-]: GETUPVAL R13 11; var13 = upvalues[11]
-     205 [-]: MOVE R14 R9  ; var14 = var9
-     206 [-]: CALL R11 4 2 ; var11 = var11(var12, var13, var14)
-     207 [-]: FASTCALL1 62 R10 L14; 
-     208 [-]: MOVE R13 R10 ; var13 = var10
-     209 [-]: GETIMPORT R12 2; var12 = 0x7B998233
-     210 [-]: CALL R12 2 2 ; var12 = var12(var13)
-L14: 211 [-]: JUMPIFNOT R12 L15; goto L15 if not var12
-     212 [-]: GETUPVAL R12 10; var12 = upvalues[10]
-     213 [-]: MOVE R13 R5  ; var13 = var5
-     214 [-]: GETUPVAL R14 11; var14 = upvalues[11]
-     215 [-]: LOADNIL R15  ; var15 = nil
-     216 [-]: CALL R12 4 2 ; var12 = var12(var13, var14, var15)
-     217 [-]: MOVE R10 R12 ; var10 = var12
-L15: 218 [-]: FASTCALL1 62 R11 L16; 
-     219 [-]: MOVE R13 R11 ; var13 = var11
-     220 [-]: GETIMPORT R12 2; var12 = 0x7B998233
-     221 [-]: CALL R12 2 2 ; var12 = var12(var13)
-L16: 222 [-]: JUMPIFNOT R12 L17; goto L17 if not var12
-     223 [-]: GETUPVAL R12 10; var12 = upvalues[10]
-     224 [-]: MOVE R13 R4  ; var13 = var4
-     225 [-]: GETUPVAL R14 11; var14 = upvalues[11]
-     226 [-]: LOADNIL R15  ; var15 = nil
-     227 [-]: CALL R12 4 2 ; var12 = var12(var13, var14, var15)
-     228 [-]: MOVE R11 R12 ; var11 = var12
-L17: 229 [-]: SETTABLEKS R10 R7 K26; var10["enemySpec"] = var7
-     230 [-]: SETTABLEKS R11 R7 K31; var11["extraEnemySpec"] = var7
-     231 [-]: JUMP L19     ; goto L19
-L18: 232 [-]: GETUPVAL R9 12; var9 = upvalues[12]
-     233 [-]: MOVE R10 R4  ; var10 = var4
-     234 [-]: MOVE R11 R5  ; var11 = var5
-     235 [-]: CALL R9 3 2  ; var9 = var9(var10, var11)
-     236 [-]: SETTABLEKS R9 R7 K26; var9["enemySpec"] = var7
-L19: 237 [-]: GETTABLEKS R9 R0 K7; var9 = var0["mId"]
-     238 [-]: GETTABLEKS R8 R9 K7; var8 = var9["mId"]
-     239 [-]: SETTABLEKS R8 R7 K8; var8["invasionId"] = var7
-     240 [-]: GETTABLEKS R8 R3 K18; var8 = var3["seed"]
-     241 [-]: SETTABLEKS R8 R7 K18; var8["seed"] = var7
-     242 [-]: SETTABLEKS R5 R7 K17; var5["faction"] = var7
-     243 [-]: SETTABLEKS R4 R7 K10; var4["invasionAllyFaction"] = var7
-     244 [-]: LOADN R8 1   ; var8 = 1
-     245 [-]: SETTABLEKS R8 R7 K42; var8["difficulty"] = var7
-     246 [-]: GETTABLEKS R10 R1 K16; var10 = var1["mission"]
-     247 [-]: GETTABLEKS R9 R10 K44; var9 = var10["minEnemyLevel"]
-     248 [-]: ADDK R8 R9 K43; var8 = var9 + 10
-     249 [-]: SETTABLEKS R8 R7 K44; var8["minEnemyLevel"] = var7
-     250 [-]: GETTABLEKS R10 R1 K16; var10 = var1["mission"]
-     251 [-]: GETTABLEKS R9 R10 K45; var9 = var10["maxEnemyLevel"]
-     252 [-]: ADDK R8 R9 K43; var8 = var9 + 10
-     253 [-]: SETTABLEKS R8 R7 K45; var8["maxEnemyLevel"] = var7
-     254 [-]: GETTABLEKS R8 R3 K46; var8 = var3["missionReward"]
-     255 [-]: SETTABLEKS R8 R7 K46; var8["missionReward"] = var7
-     256 [-]: GETTABLEKS R8 R7 K22; var8 = var7["missionType"]
-     257 [-]: LOADN R9 8   ; var9 = 8
-     258 [-]: JUMPIFNOTEQ R8 R9 L20; goto L20 if var8 ~= var329799
-     259 [-]: LOADN R8 5   ; var8 = 5
-     260 [-]: SETTABLEKS R8 R7 K47; var8["maxWaveNum"] = var7
-     261 [-]: JUMP L26     ; goto L26
-L20: 262 [-]: GETTABLEKS R8 R7 K22; var8 = var7["missionType"]
-     263 [-]: LOADN R9 13  ; var9 = 13
-     264 [-]: JUMPIFNOTEQ R8 R9 L21; goto L21 if var8 ~= var67655
-     265 [-]: LOADN R8 1   ; var8 = 1
-     266 [-]: SETTABLEKS R8 R7 K47; var8["maxWaveNum"] = var7
-     267 [-]: JUMP L26     ; goto L26
-L21: 268 [-]: GETTABLEKS R8 R7 K22; var8 = var7["missionType"]
-     269 [-]: LOADN R9 2   ; var9 = 2
-     270 [-]: JUMPIFNOTEQ R8 R9 L22; goto L22 if var8 ~= var329799
-     271 [-]: LOADN R8 5   ; var8 = 5
-     272 [-]: SETTABLEKS R8 R7 K47; var8["maxWaveNum"] = var7
-     273 [-]: JUMP L26     ; goto L26
-L22: 274 [-]: GETTABLEKS R8 R7 K22; var8 = var7["missionType"]
-     275 [-]: LOADN R9 17  ; var9 = 17
-     276 [-]: JUMPIFNOTEQ R8 R9 L23; goto L23 if var8 ~= var329799
-     277 [-]: LOADN R8 5   ; var8 = 5
-     278 [-]: SETTABLEKS R8 R7 K47; var8["maxWaveNum"] = var7
-     279 [-]: JUMP L26     ; goto L26
-L23: 280 [-]: GETTABLEKS R8 R7 K22; var8 = var7["missionType"]
-     281 [-]: LOADN R9 7   ; var9 = 7
-     282 [-]: JUMPIFNOTEQ R8 R9 L24; goto L24 if var8 ~= var133191
-     283 [-]: LOADN R8 2   ; var8 = 2
-     284 [-]: SETTABLEKS R8 R7 K47; var8["maxWaveNum"] = var7
-     285 [-]: JUMP L26     ; goto L26
-L24: 286 [-]: GETTABLEKS R8 R7 K22; var8 = var7["missionType"]
-     287 [-]: LOADN R9 4   ; var9 = 4
-     288 [-]: JUMPIFNOTEQ R8 R9 L25; goto L25 if var8 ~= var133191
-     289 [-]: LOADN R8 2   ; var8 = 2
-     290 [-]: SETTABLEKS R8 R7 K47; var8["maxWaveNum"] = var7
-     291 [-]: JUMP L26     ; goto L26
-L25: 292 [-]: GETTABLEKS R8 R7 K22; var8 = var7["missionType"]
-     293 [-]: LOADN R9 33  ; var9 = 33
-     294 [-]: JUMPIFNOTEQ R8 R9 L26; goto L26 if var8 ~= var264263
-     295 [-]: LOADN R8 4   ; var8 = 4
-     296 [-]: SETTABLEKS R8 R7 K47; var8["maxWaveNum"] = var7
-L26: 297 [-]: NAMECALL R8 R7 K48; var9 = var7; var8 = var7[0xA76123AC]
-     298 [-]: CALL R8 2 1  ; var8(var9)
-     299 [-]: GETIMPORT R8 51; var8 = _T["InvasionTest"]
-     300 [-]: JUMPIFNOT R8 L27; goto L27 if not var8
-     301 [-]: GETIMPORT R8 35; var8 = 0x3D106989
-     302 [-]: GETUPVAL R20 0; var20 = upvalues[0]
-     303 [-]: GETTABLEKS R19 R20 K13; var19 = var20[0x06D055F9]
-     304 [-]: MOVE R20 R2  ; var20 = var2
-     305 [-]: LOADK R21 K52; var21 = "ATTACKER : "
-     306 [-]: LOADK R22 K53; var22 = "DEFENDER: "
-     307 [-]: CALL R19 4 2 ; var19 = var19(var20, var21, var22)
-     308 [-]: MOVE R10 R19 ; var10 = var19
-     309 [-]: LOADK R11 K54; var11 = "node="
-     310 [-]: GETIMPORT R19 38; var19 = 0x64FB1586
-     311 [-]: GETTABLEKS R20 R1 K39; var20 = var1["name"]
-     312 [-]: CALL R19 2 2 ; var19 = var19(var20)
-     313 [-]: MOVE R12 R19 ; var12 = var19
-     314 [-]: LOADK R13 K55; var13 = " faction="
-     315 [-]: GETTABLEKS R14 R7 K17; var14 = var7["faction"]
-     316 [-]: LOADK R15 K56; var15 = " missionType="
-     317 [-]: GETTABLEKS R16 R7 K22; var16 = var7["missionType"]
-     318 [-]: LOADK R17 K57; var17 = " levelOverride="
-     319 [-]: GETIMPORT R18 38; var18 = 0x64FB1586
-     320 [-]: GETTABLEKS R19 R7 K23; var19 = var7["levelOverride"]
-     321 [-]: NAMECALL R19 R19 K58; var20 = var19; var19 = var19[0xED4E0128]
-     322 [-]: CALL R19 2 0 ; var19, ... = var19(var20)
-     323 [-]: CALL R18 0 2 ; var18 = var18(var19, ...)
-     324 [-]: CONCAT R9 R10 R18; var9 = var10 .. var18
-     325 [-]: CALL R8 2 1  ; var8(var9)
-L27: 326 [-]: RETURN R7 1  ; 
+      43 [-]: NAMECALL R4 R4 K6; var5 = var4; var4 = var4[0x8F89D633]
+      44 [-]: CALL R4 2 2  ; var4 = var4(var5)
+      45 [-]: GETTABLEKS R6 R0 K7; var6 = var0["mId"]
+      46 [-]: FASTCALL1 63 R6 L6; 
+      47 [-]: GETIMPORT R5 9; var5 = 0x64FB1586
+      48 [-]: CALL R5 2 2  ; var5 = var5(var6)
+L 6:  49 [-]: SETTABLEKS R5 R4 K10; var5["invasionId"] = var4
+      50 [-]: GETTABLEKS R5 R0 K14; var5 = var0["mDefenderFaction"]
+      51 [-]: SETTABLEKS R5 R4 K12; var5["invasionAllyFaction"] = var4
+      52 [-]: RETURN R4 1  ; 
+L 7:  53 [-]: GETUPVAL R4 0; var4 = upvalues[0]
+      54 [-]: GETTABLEKS R3 R4 K15; var3 = var4[0x06D055F9]
+      55 [-]: MOVE R4 R2   ; var4 = var2
+      56 [-]: GETTABLEKS R5 R0 K16; var5 = var0["mAttackerMissionInfo"]
+      57 [-]: GETTABLEKS R6 R0 K17; var6 = var0["mDefenderMissionInfo"]
+      58 [-]: CALL R3 4 2  ; var3 = var3(var4, var5, var6)
+      59 [-]: GETUPVAL R5 0; var5 = upvalues[0]
+      60 [-]: GETTABLEKS R4 R5 K15; var4 = var5[0x06D055F9]
+      61 [-]: MOVE R5 R2   ; var5 = var2
+      62 [-]: GETTABLEKS R6 R0 K11; var6 = var0["mFaction"]
+      63 [-]: GETTABLEKS R8 R1 K18; var8 = var1["mission"]
+      64 [-]: GETTABLEKS R7 R8 K19; var7 = var8["faction"]
+      65 [-]: CALL R4 4 2  ; var4 = var4(var5, var6, var7)
+      66 [-]: GETUPVAL R6 0; var6 = upvalues[0]
+      67 [-]: GETTABLEKS R5 R6 K15; var5 = var6[0x06D055F9]
+      68 [-]: MOVE R6 R2   ; var6 = var2
+      69 [-]: GETTABLEKS R8 R1 K18; var8 = var1["mission"]
+      70 [-]: GETTABLEKS R7 R8 K19; var7 = var8["faction"]
+      71 [-]: GETTABLEKS R8 R0 K11; var8 = var0["mFaction"]
+      72 [-]: CALL R5 4 2  ; var5 = var5(var6, var7, var8)
+      73 [-]: GETUPVAL R7 0; var7 = upvalues[0]
+      74 [-]: GETTABLEKS R6 R7 K15; var6 = var7[0x06D055F9]
+      75 [-]: GETTABLEKS R8 R3 K20; var8 = var3["seed"]
+      76 [-]: GETUPVAL R10 1; var10 = upvalues[1]
+      77 [-]: GETTABLEKS R9 R10 K20; var9 = var10["seed"]
+      78 [-]: JUMPIFEQ R8 R9 L8; goto L8 if var8 == var16779014
+      79 [-]: LOADB R7 0 +1; var7 = false
+L 8:  80 [-]: LOADB R7 1   ; var7 = true
+L 9:  81 [-]: GETTABLEKS R9 R1 K18; var9 = var1["mission"]
+      82 [-]: GETTABLEKS R8 R9 K20; var8 = var9["seed"]
+      83 [-]: GETTABLEKS R9 R3 K20; var9 = var3["seed"]
+      84 [-]: CALL R6 4 2  ; var6 = var6(var7, var8, var9)
+      85 [-]: GETIMPORT R7 22; var7 = 0x84883F05
+      86 [-]: MOVE R8 R6   ; var8 = var6
+      87 [-]: GETUPVAL R11 2; var11 = upvalues[2]
+      88 [-]: GETTABLEKS R13 R0 K7; var13 = var0["mId"]
+      89 [-]: FASTCALL1 63 R13 L10; 
+      90 [-]: GETIMPORT R12 9; var12 = 0x64FB1586
+      91 [-]: CALL R12 2 2 ; var12 = var12(var13)
+L10:  92 [-]: GETTABLE R10 R11 R12; var10 = var11[var12]
+      93 [-]: GETTABLEKS R9 R10 K23; var9 = var10["cycleNum"]
+      94 [-]: CALL R7 3 1  ; var7(var8, var9)
+      95 [-]: GETTABLEKS R7 R1 K18; var7 = var1["mission"]
+      96 [-]: NAMECALL R7 R7 K6; var8 = var7; var7 = var7[0x8F89D633]
+      97 [-]: CALL R7 2 2  ; var7 = var7(var8)
+      98 [-]: LOADN R8 2   ; var8 = 2
+      99 [-]: JUMPIFNOTEQ R5 R8 L13; goto L13 if var5 ~= var1593903423
+     100 [-]: GETTABLEKS R9 R1 K18; var9 = var1["mission"]
+     101 [-]: GETTABLEKS R8 R9 K24; var8 = var9["missionType"]
+     102 [-]: LOADN R9 0   ; var9 = 0
+     103 [-]: JUMPIFNOTEQ R8 R9 L13; goto L13 if var8 ~= var1593903167
+     104 [-]: GETTABLEKS R8 R1 K18; var8 = var1["mission"]
+     105 [-]: NAMECALL R8 R8 K6; var9 = var8; var8 = var8[0x8F89D633]
+     106 [-]: CALL R8 2 2  ; var8 = var8(var9)
+     107 [-]: MOVE R7 R8   ; var7 = var8
+     108 [-]: GETUPVAL R9 3; var9 = upvalues[3]
+     109 [-]: GETTABLEKS R8 R9 K25; var8 = var9["levelOverride"]
+     110 [-]: SETTABLEKS R8 R7 K25; var8["levelOverride"] = var7
+     111 [-]: GETUPVAL R9 0; var9 = upvalues[0]
+     112 [-]: GETTABLEKS R8 R9 K15; var8 = var9[0x06D055F9]
+     113 [-]: LOADN R10 0  ; var10 = 0
+     114 [-]: JUMPIFEQ R4 R10 L11; goto L11 if var4 == var16779526
+     115 [-]: LOADB R9 0 +1; var9 = false
+L11: 116 [-]: LOADB R9 1   ; var9 = true
+L12: 117 [-]: GETUPVAL R11 3; var11 = upvalues[3]
+     118 [-]: GETTABLEKS R10 R11 K26; var10 = var11["enemySpecGrineer"]
+     119 [-]: GETUPVAL R12 3; var12 = upvalues[3]
+     120 [-]: GETTABLEKS R11 R12 K27; var11 = var12["enemySpecCorpus"]
+     121 [-]: CALL R8 4 2  ; var8 = var8(var9, var10, var11)
+     122 [-]: SETTABLEKS R8 R7 K28; var8["enemySpec"] = var7
+     123 [-]: GETUPVAL R9 3; var9 = upvalues[3]
+     124 [-]: GETTABLEKS R8 R9 K29; var8 = var9["vipAgent"]
+     125 [-]: SETTABLEKS R8 R7 K29; var8["vipAgent"] = var7
+     126 [-]: GETUPVAL R9 3; var9 = upvalues[3]
+     127 [-]: GETTABLEKS R8 R9 K30; var8 = var9["uniqueName"]
+     128 [-]: SETTABLEKS R8 R7 K30; var8["uniqueName"] = var7
+     129 [-]: JUMP L28     ; goto L28
+L13: 130 [-]: LOADN R8 2   ; var8 = 2
+     131 [-]: JUMPIFEQ R4 R8 L19; goto L19 if var4 == var133168
+     132 [-]: LOADN R8 2   ; var8 = 2
+     133 [-]: JUMPIFEQ R5 R8 L19; goto L19 if var5 == var1593903679
+     134 [-]: GETTABLEKS R10 R1 K18; var10 = var1["mission"]
+     135 [-]: GETTABLEKS R9 R10 K25; var9 = var10["levelOverride"]
+     136 [-]: FASTCALL1 64 R9 L14; 
+     137 [-]: MOVE R11 R9  ; var11 = var9
+     138 [-]: GETIMPORT R10 2; var10 = 0x7B998233
+     139 [-]: CALL R10 2 2 ; var10 = var10(var11)
+L14: 140 [-]: JUMPIFNOT R10 L15; goto L15 if not var10
+     141 [-]: LOADB R8 0   ; var8 = false
+     142 [-]: JUMP L18     ; goto L18
+L15: 143 [-]: NAMECALL R11 R9 K31; var12 = var9; var11 = var9[0xE223E2B1]
+     144 [-]: CALL R11 2 0 ; var11, ... = var11(var12)
+     145 [-]: FASTCALL 63 L16; 
+     146 [-]: GETIMPORT R10 9; var10 = 0x64FB1586
+     147 [-]: CALL R10 0 2 ; var10 = var10(var11, ...)
+L16: 148 [-]: LOADB R8 1   ; var8 = true
+     149 [-]: GETIMPORT R11 34; var11 = 0x7F5022CF[0xA5C556B9]
+     150 [-]: MOVE R12 R10 ; var12 = var10
+     151 [-]: LOADK R13 K35; var13 = "Galleon"
+     152 [-]: CALL R11 3 2 ; var11 = var11(var12, var13)
+     153 [-]: JUMPXEQKNIL R11 L18 NOT; 
+     154 [-]: GETIMPORT R11 34; var11 = 0x7F5022CF[0xA5C556B9]
+     155 [-]: MOVE R12 R10 ; var12 = var10
+     156 [-]: LOADK R13 K36; var13 = "CorpusShip"
+     157 [-]: CALL R11 3 2 ; var11 = var11(var12, var13)
+     158 [-]: JUMPXEQKNIL R11 L17 NOT; 
+     159 [-]: LOADB R8 0 +1; var8 = false
+L17: 160 [-]: LOADB R8 1   ; var8 = true
+L18: 161 [-]: JUMPIFNOT R8 L19; goto L19 if not var8
+     162 [-]: GETUPVAL R10 4; var10 = upvalues[4]
+     163 [-]: GETTABLE R9 R10 R4; var9 = var10[var4]
+     164 [-]: GETIMPORT R10 38; var10 = 0x0C5E62F9
+     165 [-]: LOADN R11 1  ; var11 = 1
+     166 [-]: LENGTH R12 R9; var12 = #var9
+     167 [-]: CALL R10 3 2 ; var10 = var10(var11, var12)
+     168 [-]: GETTABLE R8 R9 R10; var8 = var9[var10]
+     169 [-]: GETTABLEKS R9 R1 K18; var9 = var1["mission"]
+     170 [-]: NAMECALL R9 R9 K6; var10 = var9; var9 = var9[0x8F89D633]
+     171 [-]: CALL R9 2 2  ; var9 = var9(var10)
+     172 [-]: MOVE R7 R9   ; var7 = var9
+     173 [-]: GETTABLEKS R9 R8 K24; var9 = var8["missionType"]
+     174 [-]: SETTABLEKS R9 R7 K24; var9["missionType"] = var7
+     175 [-]: GETTABLEKS R9 R8 K25; var9 = var8["levelOverride"]
+     176 [-]: SETTABLEKS R9 R7 K25; var9["levelOverride"] = var7
+     177 [-]: GETTABLEKS R9 R8 K39; var9 = var8["extraEnemySpec"]
+     178 [-]: SETTABLEKS R9 R7 K39; var9["extraEnemySpec"] = var7
+     179 [-]: GETTABLEKS R9 R8 K29; var9 = var8["vipAgent"]
+     180 [-]: SETTABLEKS R9 R7 K29; var9["vipAgent"] = var7
+     181 [-]: JUMP L22     ; goto L22
+L19: 182 [-]: GETUPVAL R9 0; var9 = upvalues[0]
+     183 [-]: GETTABLEKS R8 R9 K15; var8 = var9[0x06D055F9]
+     184 [-]: MOVE R9 R2   ; var9 = var2
+     185 [-]: GETUPVAL R10 5; var10 = upvalues[5]
+     186 [-]: GETUPVAL R11 6; var11 = upvalues[6]
+     187 [-]: CALL R8 4 2  ; var8 = var8(var9, var10, var11)
+     188 [-]: GETUPVAL R10 7; var10 = upvalues[7]
+     189 [-]: GETTABLEKS R9 R10 K40; var9 = var10[0xFCBCA8F8]
+     190 [-]: GETTABLEKS R11 R1 K18; var11 = var1["mission"]
+     191 [-]: GETTABLEKS R10 R11 K41; var10 = var11["location"]
+     192 [-]: MOVE R11 R8  ; var11 = var8
+     193 [-]: NEWTABLE R12 0 1; var12 = {}
+     194 [-]: LOADN R13 1  ; var13 = 1
+     195 [-]: SETLIST R12 R13 1 [1]; var12[1] = var13; var12[2] = var14; 
+     196 [-]: CALL R9 4 2  ; var9 = var9(var10, var11, var12)
+     197 [-]: MOVE R7 R9   ; var7 = var9
+     198 [-]: FASTCALL1 64 R7 L20; 
+     199 [-]: MOVE R10 R7  ; var10 = var7
+     200 [-]: GETIMPORT R9 2; var9 = 0x7B998233
+     201 [-]: CALL R9 2 2  ; var9 = var9(var10)
+L20: 202 [-]: JUMPIFNOT R9 L22; goto L22 if not var9
+     203 [-]: GETIMPORT R9 43; var9 = 0x3D106989
+     204 [-]: LOADK R11 K44; var11 = "Failed to generate invasion mission for "
+     205 [-]: GETTABLEKS R18 R1 K45; var18 = var1["name"]
+     206 [-]: FASTCALL1 63 R18 L21; 
+     207 [-]: GETIMPORT R17 9; var17 = 0x64FB1586
+     208 [-]: CALL R17 2 2 ; var17 = var17(var18)
+L21: 209 [-]: MOVE R12 R17 ; var12 = var17
+     210 [-]: LOADK R13 K46; var13 = " "
+     211 [-]: MOVE R14 R4  ; var14 = var4
+     212 [-]: LOADK R15 K47; var15 = " vs "
+     213 [-]: MOVE R16 R5  ; var16 = var5
+     214 [-]: CONCAT R10 R11 R16; var10 = var11 .. var16
+     215 [-]: CALL R9 2 1  ; var9(var10)
+     216 [-]: GETTABLEKS R9 R1 K18; var9 = var1["mission"]
+     217 [-]: NAMECALL R9 R9 K6; var10 = var9; var9 = var9[0x8F89D633]
+     218 [-]: CALL R9 2 2  ; var9 = var9(var10)
+     219 [-]: MOVE R7 R9   ; var7 = var9
+L22: 220 [-]: GETTABLEKS R8 R7 K24; var8 = var7["missionType"]
+     221 [-]: LOADN R9 1   ; var9 = 1
+     222 [-]: JUMPIFNOTEQ R8 R9 L27; goto L27 if var8 ~= var526652
+     223 [-]: GETUPVAL R9 8; var9 = upvalues[8]
+     224 [-]: GETTABLEKS R11 R1 K18; var11 = var1["mission"]
+     225 [-]: GETTABLEKS R10 R11 K25; var10 = var11["levelOverride"]
+     226 [-]: CALL R9 2 2  ; var9 = var9(var10)
+     227 [-]: GETUPVAL R10 9; var10 = upvalues[9]
+     228 [-]: MOVE R11 R5  ; var11 = var5
+     229 [-]: GETUPVAL R12 10; var12 = upvalues[10]
+     230 [-]: MOVE R13 R9  ; var13 = var9
+     231 [-]: CALL R10 4 2 ; var10 = var10(var11, var12, var13)
+     232 [-]: GETUPVAL R11 9; var11 = upvalues[9]
+     233 [-]: MOVE R12 R4  ; var12 = var4
+     234 [-]: GETUPVAL R13 10; var13 = upvalues[10]
+     235 [-]: MOVE R14 R9  ; var14 = var9
+     236 [-]: CALL R11 4 2 ; var11 = var11(var12, var13, var14)
+     237 [-]: FASTCALL1 64 R10 L23; 
+     238 [-]: MOVE R13 R10 ; var13 = var10
+     239 [-]: GETIMPORT R12 2; var12 = 0x7B998233
+     240 [-]: CALL R12 2 2 ; var12 = var12(var13)
+L23: 241 [-]: JUMPIFNOT R12 L24; goto L24 if not var12
+     242 [-]: GETUPVAL R12 9; var12 = upvalues[9]
+     243 [-]: MOVE R13 R5  ; var13 = var5
+     244 [-]: GETUPVAL R14 10; var14 = upvalues[10]
+     245 [-]: LOADNIL R15  ; var15 = nil
+     246 [-]: CALL R12 4 2 ; var12 = var12(var13, var14, var15)
+     247 [-]: MOVE R10 R12 ; var10 = var12
+L24: 248 [-]: FASTCALL1 64 R11 L25; 
+     249 [-]: MOVE R13 R11 ; var13 = var11
+     250 [-]: GETIMPORT R12 2; var12 = 0x7B998233
+     251 [-]: CALL R12 2 2 ; var12 = var12(var13)
+L25: 252 [-]: JUMPIFNOT R12 L26; goto L26 if not var12
+     253 [-]: GETUPVAL R12 9; var12 = upvalues[9]
+     254 [-]: MOVE R13 R4  ; var13 = var4
+     255 [-]: GETUPVAL R14 10; var14 = upvalues[10]
+     256 [-]: LOADNIL R15  ; var15 = nil
+     257 [-]: CALL R12 4 2 ; var12 = var12(var13, var14, var15)
+     258 [-]: MOVE R11 R12 ; var11 = var12
+L26: 259 [-]: SETTABLEKS R10 R7 K28; var10["enemySpec"] = var7
+     260 [-]: SETTABLEKS R11 R7 K39; var11["extraEnemySpec"] = var7
+     261 [-]: JUMP L28     ; goto L28
+L27: 262 [-]: GETUPVAL R9 11; var9 = upvalues[11]
+     263 [-]: MOVE R10 R4  ; var10 = var4
+     264 [-]: MOVE R11 R5  ; var11 = var5
+     265 [-]: CALL R9 3 2  ; var9 = var9(var10, var11)
+     266 [-]: SETTABLEKS R9 R7 K28; var9["enemySpec"] = var7
+L28: 267 [-]: GETTABLEKS R9 R0 K7; var9 = var0["mId"]
+     268 [-]: FASTCALL1 63 R9 L29; 
+     269 [-]: GETIMPORT R8 9; var8 = 0x64FB1586
+     270 [-]: CALL R8 2 2  ; var8 = var8(var9)
+L29: 271 [-]: SETTABLEKS R8 R7 K10; var8["invasionId"] = var7
+     272 [-]: GETTABLEKS R8 R3 K20; var8 = var3["seed"]
+     273 [-]: SETTABLEKS R8 R7 K20; var8["seed"] = var7
+     274 [-]: SETTABLEKS R5 R7 K19; var5["faction"] = var7
+     275 [-]: SETTABLEKS R4 R7 K12; var4["invasionAllyFaction"] = var7
+     276 [-]: LOADN R8 1   ; var8 = 1
+     277 [-]: SETTABLEKS R8 R7 K48; var8["difficulty"] = var7
+     278 [-]: GETTABLEKS R10 R1 K18; var10 = var1["mission"]
+     279 [-]: GETTABLEKS R9 R10 K50; var9 = var10["minEnemyLevel"]
+     280 [-]: ADDK R8 R9 K49; var8 = var9 + 10
+     281 [-]: SETTABLEKS R8 R7 K50; var8["minEnemyLevel"] = var7
+     282 [-]: GETTABLEKS R10 R1 K18; var10 = var1["mission"]
+     283 [-]: GETTABLEKS R9 R10 K51; var9 = var10["maxEnemyLevel"]
+     284 [-]: ADDK R8 R9 K49; var8 = var9 + 10
+     285 [-]: SETTABLEKS R8 R7 K51; var8["maxEnemyLevel"] = var7
+     286 [-]: GETTABLEKS R8 R3 K52; var8 = var3["missionReward"]
+     287 [-]: SETTABLEKS R8 R7 K52; var8["missionReward"] = var7
+     288 [-]: GETTABLEKS R8 R7 K24; var8 = var7["missionType"]
+     289 [-]: LOADN R9 8   ; var9 = 8
+     290 [-]: JUMPIFNOTEQ R8 R9 L30; goto L30 if var8 ~= var329776
+     291 [-]: LOADN R8 5   ; var8 = 5
+     292 [-]: SETTABLEKS R8 R7 K53; var8["maxWaveNum"] = var7
+     293 [-]: JUMP L36     ; goto L36
+L30: 294 [-]: GETTABLEKS R8 R7 K24; var8 = var7["missionType"]
+     295 [-]: LOADN R9 13  ; var9 = 13
+     296 [-]: JUMPIFNOTEQ R8 R9 L31; goto L31 if var8 ~= var67632
+     297 [-]: LOADN R8 1   ; var8 = 1
+     298 [-]: SETTABLEKS R8 R7 K53; var8["maxWaveNum"] = var7
+     299 [-]: JUMP L36     ; goto L36
+L31: 300 [-]: GETTABLEKS R8 R7 K24; var8 = var7["missionType"]
+     301 [-]: LOADN R9 2   ; var9 = 2
+     302 [-]: JUMPIFNOTEQ R8 R9 L32; goto L32 if var8 ~= var329776
+     303 [-]: LOADN R8 5   ; var8 = 5
+     304 [-]: SETTABLEKS R8 R7 K53; var8["maxWaveNum"] = var7
+     305 [-]: JUMP L36     ; goto L36
+L32: 306 [-]: GETTABLEKS R8 R7 K24; var8 = var7["missionType"]
+     307 [-]: LOADN R9 17  ; var9 = 17
+     308 [-]: JUMPIFNOTEQ R8 R9 L33; goto L33 if var8 ~= var329776
+     309 [-]: LOADN R8 5   ; var8 = 5
+     310 [-]: SETTABLEKS R8 R7 K53; var8["maxWaveNum"] = var7
+     311 [-]: JUMP L36     ; goto L36
+L33: 312 [-]: GETTABLEKS R8 R7 K24; var8 = var7["missionType"]
+     313 [-]: LOADN R9 7   ; var9 = 7
+     314 [-]: JUMPIFNOTEQ R8 R9 L34; goto L34 if var8 ~= var133168
+     315 [-]: LOADN R8 2   ; var8 = 2
+     316 [-]: SETTABLEKS R8 R7 K53; var8["maxWaveNum"] = var7
+     317 [-]: JUMP L36     ; goto L36
+L34: 318 [-]: GETTABLEKS R8 R7 K24; var8 = var7["missionType"]
+     319 [-]: LOADN R9 4   ; var9 = 4
+     320 [-]: JUMPIFNOTEQ R8 R9 L35; goto L35 if var8 ~= var133168
+     321 [-]: LOADN R8 2   ; var8 = 2
+     322 [-]: SETTABLEKS R8 R7 K53; var8["maxWaveNum"] = var7
+     323 [-]: JUMP L36     ; goto L36
+L35: 324 [-]: GETTABLEKS R8 R7 K24; var8 = var7["missionType"]
+     325 [-]: LOADN R9 33  ; var9 = 33
+     326 [-]: JUMPIFNOTEQ R8 R9 L36; goto L36 if var8 ~= var264240
+     327 [-]: LOADN R8 4   ; var8 = 4
+     328 [-]: SETTABLEKS R8 R7 K53; var8["maxWaveNum"] = var7
+L36: 329 [-]: NAMECALL R8 R7 K54; var9 = var7; var8 = var7[0xA76123AC]
+     330 [-]: CALL R8 2 1  ; var8(var9)
+     331 [-]: GETIMPORT R8 57; var8 = _T["InvasionTest"]
+     332 [-]: JUMPIFNOT R8 L39; goto L39 if not var8
+     333 [-]: GETIMPORT R8 43; var8 = 0x3D106989
+     334 [-]: GETUPVAL R20 0; var20 = upvalues[0]
+     335 [-]: GETTABLEKS R19 R20 K15; var19 = var20[0x06D055F9]
+     336 [-]: MOVE R20 R2  ; var20 = var2
+     337 [-]: LOADK R21 K58; var21 = "ATTACKER : "
+     338 [-]: LOADK R22 K59; var22 = "DEFENDER: "
+     339 [-]: CALL R19 4 2 ; var19 = var19(var20, var21, var22)
+     340 [-]: MOVE R10 R19 ; var10 = var19
+     341 [-]: LOADK R11 K60; var11 = "node="
+     342 [-]: GETTABLEKS R20 R1 K45; var20 = var1["name"]
+     343 [-]: FASTCALL1 63 R20 L37; 
+     344 [-]: GETIMPORT R19 9; var19 = 0x64FB1586
+     345 [-]: CALL R19 2 2 ; var19 = var19(var20)
+L37: 346 [-]: MOVE R12 R19 ; var12 = var19
+     347 [-]: LOADK R13 K61; var13 = " faction="
+     348 [-]: GETTABLEKS R14 R7 K19; var14 = var7["faction"]
+     349 [-]: LOADK R15 K62; var15 = " missionType="
+     350 [-]: GETTABLEKS R16 R7 K24; var16 = var7["missionType"]
+     351 [-]: LOADK R17 K63; var17 = " levelOverride="
+     352 [-]: GETTABLEKS R19 R7 K25; var19 = var7["levelOverride"]
+     353 [-]: NAMECALL R19 R19 K64; var20 = var19; var19 = var19[0xED4E0128]
+     354 [-]: CALL R19 2 0 ; var19, ... = var19(var20)
+     355 [-]: FASTCALL 63 L38; 
+     356 [-]: GETIMPORT R18 9; var18 = 0x64FB1586
+     357 [-]: CALL R18 0 2 ; var18 = var18(var19, ...)
+L38: 358 [-]: CONCAT R9 R10 R18; var9 = var10 .. var18
+     359 [-]: CALL R8 2 1  ; var8(var9)
+L39: 360 [-]: RETURN R7 1  ; 
 
 
 ; Name:            
@@ -984,12 +1019,12 @@ L 0:   3 [-]: GETIMPORT R0 3; var0 = _T
       35 [-]: LOADN R4 1   ; var4 = 1
       36 [-]: LOADN R2 100 ; var2 = 100
       37 [-]: LOADN R3 1   ; var3 = 1
-      38 [-]: FORNPREP R2 L9; nforprep start - [escape at L9] -- var2 = iterator
+      38 [-]: FORNPREP R2 L11; nforprep start - [escape at L11] -- var2 = iterator
 L 1:  39 [-]: LOADN R5 0   ; var5 = 0
       40 [-]: GETIMPORT R6 10; var6 = 0xCFC01047
       41 [-]: MOVE R7 R0   ; var7 = var0
       42 [-]: CALL R6 2 4  ; var6, var7, var8 = var6(var7)
-      43 [-]: FORGPREP_NEXT R6 L8; 
+      43 [-]: FORGPREP_NEXT R6 L10; 
 L 2:  44 [-]: NEWTABLE R11 4 0; var11 = {}
       45 [-]: NEWTABLE R12 0 0; var12 = {}
       46 [-]: SETTABLEKS R12 R11 K11; var12["mId"] = var11
@@ -1003,88 +1038,92 @@ L 2:  44 [-]: NEWTABLE R11 4 0; var11 = {}
       54 [-]: SETTABLEKS R12 R11 K14; var12["mFaction"] = var11
       55 [-]: GETUPVAL R12 0; var12 = upvalues[0]
       56 [-]: GETTABLEKS R14 R11 K11; var14 = var11["mId"]
-      57 [-]: GETTABLEKS R13 R14 K11; var13 = var14["mId"]
-      58 [-]: NEWTABLE R14 0 0; var14 = {}
-      59 [-]: SETTABLE R14 R12 R13; var14[var12] = var13
-      60 [-]: GETUPVAL R13 0; var13 = upvalues[0]
-      61 [-]: GETTABLEKS R15 R11 K11; var15 = var11["mId"]
-      62 [-]: GETTABLEKS R14 R15 K11; var14 = var15["mId"]
-      63 [-]: GETTABLE R12 R13 R14; var12 = var13[var14]
-      64 [-]: MULK R14 R9 K13; var14 = var9 * 1000
-      65 [-]: ADD R13 R4 R14; var13 = var4 + var14
-      66 [-]: SETTABLEKS R13 R12 K15; var13["cycleNum"] = var12
-      67 [-]: GETIMPORT R12 10; var12 = 0xCFC01047
-      68 [-]: MOVE R13 R1  ; var13 = var1
-      69 [-]: CALL R12 2 4 ; var12, var13, var14 = var12(var13)
-      70 [-]: FORGPREP_NEXT R12 L7; 
-L 3:  71 [-]: GETIMPORT R17 17; var17 = 0xCE225EFA
-      72 [-]: LOADN R18 0  ; var18 = 0
-      73 [-]: CALL R17 2 1 ; var17(var18)
-      74 [-]: GETTABLEKS R17 R16 K18; var17 = var16["name"]
-      75 [-]: NAMECALL R17 R17 K19; var18 = var17; var17 = var17[0x56C01834]
-      76 [-]: CALL R17 2 2 ; var17 = var17(var18)
-      77 [-]: JUMPIFNOT R17 L7; goto L7 if not var17
-      78 [-]: GETTABLEKS R19 R16 K20; var19 = var16["mission"]
-      79 [-]: GETTABLEKS R18 R19 K21; var18 = var19["levelOverride"]
-      80 [-]: FASTCALL1 62 R18 L4; 
-      81 [-]: GETIMPORT R17 23; var17 = 0x7B998233
-      82 [-]: CALL R17 2 2 ; var17 = var17(var18)
-L 4:  83 [-]: JUMPIF R17 L7; goto L7 if var17
-      84 [-]: GETTABLEKS R18 R16 K24; var18 = var16["tileset"]
-      85 [-]: FASTCALL1 62 R18 L5; 
-      86 [-]: GETIMPORT R17 23; var17 = 0x7B998233
-      87 [-]: CALL R17 2 2 ; var17 = var17(var18)
-L 5:  88 [-]: JUMPIF R17 L7; goto L7 if var17
-      89 [-]: GETTABLEKS R18 R16 K20; var18 = var16["mission"]
-      90 [-]: GETTABLEKS R17 R18 K25; var17 = var18["faction"]
-      91 [-]: GETTABLEKS R18 R11 K14; var18 = var11["mFaction"]
-      92 [-]: JUMPIFEQ R17 R18 L7; goto L7 if var17 == var1594888732
-      93 [-]: GETTABLEKS R18 R16 K20; var18 = var16["mission"]
-      94 [-]: GETTABLEKS R17 R18 K25; var17 = var18["faction"]
-      95 [-]: LOADN R18 0  ; var18 = 0
-      96 [-]: JUMPIFEQ R17 R18 L6; goto L6 if var17 == var1594888732
-      97 [-]: GETTABLEKS R18 R16 K20; var18 = var16["mission"]
-      98 [-]: GETTABLEKS R17 R18 K25; var17 = var18["faction"]
-      99 [-]: LOADN R18 1  ; var18 = 1
-     100 [-]: JUMPIFNOTEQ R17 R18 L7; goto L7 if var17 ~= var4378
-L 6: 101 [-]: NEWTABLE R17 0 0; var17 = {}
-     102 [-]: SETTABLEKS R17 R11 K26; var17["mAttackerMissionInfo"] = var11
-     103 [-]: GETIMPORT R17 29; var17 = 0x6C97A788[0x6E0E9F85]
-     104 [-]: CALL R17 1 2 ; var17 = var17()
-     105 [-]: SETTABLEKS R17 R11 K26; var17["mAttackerMissionInfo"] = var11
-     106 [-]: GETTABLEKS R17 R11 K26; var17 = var11["mAttackerMissionInfo"]
-     107 [-]: GETTABLEKS R18 R10 K5; var18 = var10["factionB"]
-     108 [-]: SETTABLEKS R18 R17 K25; var18["faction"] = var17
-     109 [-]: NEWTABLE R17 0 0; var17 = {}
-     110 [-]: SETTABLEKS R17 R11 K30; var17["mDefenderMissionInfo"] = var11
-     111 [-]: GETIMPORT R17 29; var17 = 0x6C97A788[0x6E0E9F85]
-     112 [-]: CALL R17 1 2 ; var17 = var17()
-     113 [-]: SETTABLEKS R17 R11 K30; var17["mDefenderMissionInfo"] = var11
-     114 [-]: GETTABLEKS R17 R11 K30; var17 = var11["mDefenderMissionInfo"]
-     115 [-]: GETTABLEKS R18 R10 K4; var18 = var10["factionA"]
-     116 [-]: SETTABLEKS R18 R17 K25; var18["faction"] = var17
-     117 [-]: GETUPVAL R17 2; var17 = upvalues[2]
-     118 [-]: MOVE R18 R11 ; var18 = var11
-     119 [-]: MOVE R19 R16 ; var19 = var16
-     120 [-]: LOADB R20 1  ; var20 = true
-     121 [-]: CALL R17 4 1 ; var17(var18, var19, var20)
-     122 [-]: GETUPVAL R17 2; var17 = upvalues[2]
-     123 [-]: MOVE R18 R11 ; var18 = var11
-     124 [-]: MOVE R19 R16 ; var19 = var16
-     125 [-]: LOADB R20 0  ; var20 = false
-     126 [-]: CALL R17 4 1 ; var17(var18, var19, var20)
-     127 [-]: ADDK R5 R5 K31; var5 = var5 + 1
-L 7: 128 [-]: FORGLOOP R12 L3 2; 
-L 8: 129 [-]: FORGLOOP R6 L2 2; 
-     130 [-]: GETIMPORT R6 33; var6 = 0x3D106989
-     131 [-]: LOADK R8 K34 ; var8 = "Generated cycle "
-     132 [-]: MOVE R9 R4   ; var9 = var4
-     133 [-]: LOADK R10 K35; var10 = " of invasion missions on all eligible starchart nodes. Num generated="
-     134 [-]: MOVE R11 R5  ; var11 = var5
-     135 [-]: CONCAT R7 R8 R11; var7 = var8 .. var11
-     136 [-]: CALL R6 2 1  ; var6(var7)
-     137 [-]: FORNLOOP R2 L1; nforloop end - iterate + goto L1
-L 9: 138 [-]: RETURN R0 0  ; 
+      57 [-]: FASTCALL1 63 R14 L3; 
+      58 [-]: GETIMPORT R13 16; var13 = 0x64FB1586
+      59 [-]: CALL R13 2 2 ; var13 = var13(var14)
+L 3:  60 [-]: NEWTABLE R14 0 0; var14 = {}
+      61 [-]: SETTABLE R14 R12 R13; var14[var12] = var13
+      62 [-]: GETUPVAL R13 0; var13 = upvalues[0]
+      63 [-]: GETTABLEKS R15 R11 K11; var15 = var11["mId"]
+      64 [-]: FASTCALL1 63 R15 L4; 
+      65 [-]: GETIMPORT R14 16; var14 = 0x64FB1586
+      66 [-]: CALL R14 2 2 ; var14 = var14(var15)
+L 4:  67 [-]: GETTABLE R12 R13 R14; var12 = var13[var14]
+      68 [-]: MULK R14 R9 K13; var14 = var9 * 1000
+      69 [-]: ADD R13 R4 R14; var13 = var4 + var14
+      70 [-]: SETTABLEKS R13 R12 K17; var13["cycleNum"] = var12
+      71 [-]: GETIMPORT R12 10; var12 = 0xCFC01047
+      72 [-]: MOVE R13 R1  ; var13 = var1
+      73 [-]: CALL R12 2 4 ; var12, var13, var14 = var12(var13)
+      74 [-]: FORGPREP_NEXT R12 L9; 
+L 5:  75 [-]: GETIMPORT R17 19; var17 = 0xCE225EFA
+      76 [-]: LOADN R18 0  ; var18 = 0
+      77 [-]: CALL R17 2 1 ; var17(var18)
+      78 [-]: GETTABLEKS R17 R16 K20; var17 = var16["name"]
+      79 [-]: NAMECALL R17 R17 K21; var18 = var17; var17 = var17[0x56C01834]
+      80 [-]: CALL R17 2 2 ; var17 = var17(var18)
+      81 [-]: JUMPIFNOT R17 L9; goto L9 if not var17
+      82 [-]: GETTABLEKS R19 R16 K22; var19 = var16["mission"]
+      83 [-]: GETTABLEKS R18 R19 K23; var18 = var19["levelOverride"]
+      84 [-]: FASTCALL1 64 R18 L6; 
+      85 [-]: GETIMPORT R17 25; var17 = 0x7B998233
+      86 [-]: CALL R17 2 2 ; var17 = var17(var18)
+L 6:  87 [-]: JUMPIF R17 L9; goto L9 if var17
+      88 [-]: GETTABLEKS R18 R16 K26; var18 = var16["tileset"]
+      89 [-]: FASTCALL1 64 R18 L7; 
+      90 [-]: GETIMPORT R17 25; var17 = 0x7B998233
+      91 [-]: CALL R17 2 2 ; var17 = var17(var18)
+L 7:  92 [-]: JUMPIF R17 L9; goto L9 if var17
+      93 [-]: GETTABLEKS R18 R16 K22; var18 = var16["mission"]
+      94 [-]: GETTABLEKS R17 R18 K27; var17 = var18["faction"]
+      95 [-]: GETTABLEKS R18 R11 K14; var18 = var11["mFaction"]
+      96 [-]: JUMPIFEQ R17 R18 L9; goto L9 if var17 == var1594888767
+      97 [-]: GETTABLEKS R18 R16 K22; var18 = var16["mission"]
+      98 [-]: GETTABLEKS R17 R18 K27; var17 = var18["faction"]
+      99 [-]: LOADN R18 0  ; var18 = 0
+     100 [-]: JUMPIFEQ R17 R18 L8; goto L8 if var17 == var1594888767
+     101 [-]: GETTABLEKS R18 R16 K22; var18 = var16["mission"]
+     102 [-]: GETTABLEKS R17 R18 K27; var17 = var18["faction"]
+     103 [-]: LOADN R18 1  ; var18 = 1
+     104 [-]: JUMPIFNOTEQ R17 R18 L9; goto L9 if var17 ~= var4405
+L 8: 105 [-]: NEWTABLE R17 0 0; var17 = {}
+     106 [-]: SETTABLEKS R17 R11 K28; var17["mAttackerMissionInfo"] = var11
+     107 [-]: GETIMPORT R17 31; var17 = 0x6C97A788[0x6E0E9F85]
+     108 [-]: CALL R17 1 2 ; var17 = var17()
+     109 [-]: SETTABLEKS R17 R11 K28; var17["mAttackerMissionInfo"] = var11
+     110 [-]: GETTABLEKS R17 R11 K28; var17 = var11["mAttackerMissionInfo"]
+     111 [-]: GETTABLEKS R18 R10 K5; var18 = var10["factionB"]
+     112 [-]: SETTABLEKS R18 R17 K27; var18["faction"] = var17
+     113 [-]: NEWTABLE R17 0 0; var17 = {}
+     114 [-]: SETTABLEKS R17 R11 K32; var17["mDefenderMissionInfo"] = var11
+     115 [-]: GETIMPORT R17 31; var17 = 0x6C97A788[0x6E0E9F85]
+     116 [-]: CALL R17 1 2 ; var17 = var17()
+     117 [-]: SETTABLEKS R17 R11 K32; var17["mDefenderMissionInfo"] = var11
+     118 [-]: GETTABLEKS R17 R11 K32; var17 = var11["mDefenderMissionInfo"]
+     119 [-]: GETTABLEKS R18 R10 K4; var18 = var10["factionA"]
+     120 [-]: SETTABLEKS R18 R17 K27; var18["faction"] = var17
+     121 [-]: GETUPVAL R17 2; var17 = upvalues[2]
+     122 [-]: MOVE R18 R11 ; var18 = var11
+     123 [-]: MOVE R19 R16 ; var19 = var16
+     124 [-]: LOADB R20 1  ; var20 = true
+     125 [-]: CALL R17 4 1 ; var17(var18, var19, var20)
+     126 [-]: GETUPVAL R17 2; var17 = upvalues[2]
+     127 [-]: MOVE R18 R11 ; var18 = var11
+     128 [-]: MOVE R19 R16 ; var19 = var16
+     129 [-]: LOADB R20 0  ; var20 = false
+     130 [-]: CALL R17 4 1 ; var17(var18, var19, var20)
+     131 [-]: ADDK R5 R5 K33; var5 = var5 + 1
+L 9: 132 [-]: FORGLOOP R12 L5 2; 
+L10: 133 [-]: FORGLOOP R6 L2 2; 
+     134 [-]: GETIMPORT R6 35; var6 = 0x3D106989
+     135 [-]: LOADK R8 K36 ; var8 = "Generated cycle "
+     136 [-]: MOVE R9 R4   ; var9 = var4
+     137 [-]: LOADK R10 K37; var10 = " of invasion missions on all eligible starchart nodes. Num generated="
+     138 [-]: MOVE R11 R5  ; var11 = var5
+     139 [-]: CONCAT R7 R8 R11; var7 = var8 .. var11
+     140 [-]: CALL R6 2 1  ; var6(var7)
+     141 [-]: FORNLOOP R2 L1; nforloop end - iterate + goto L1
+L11: 142 [-]: RETURN R0 0  ; 
 
 
 ; Name:            
@@ -1098,71 +1137,73 @@ L 9: 138 [-]: RETURN R0 0  ;
        1 [-]: GETTABLEKS R3 R4 K1; var3 = var4[0x55F0BD6D]
        2 [-]: CALL R3 1 2  ; var3 = var3()
        3 [-]: MODK R2 R3 K0; var2 = var3 1440
-       4 [-]: DIVK R4 R2 K2; var4 = var2 / 15
-       5 [-]: FASTCALL1 12 R4 L0; 
+            5 [-]: FASTCALL1 12 R4 L0; 
        6 [-]: GETIMPORT R3 5; var3 = 0x5BCED4C4[0x55F27C30]
        7 [-]: CALL R3 2 2  ; var3 = var3(var4)
 L 0:   8 [-]: GETTABLEKS R5 R1 K6; var5 = var1["mId"]
-       9 [-]: GETTABLEKS R4 R5 K6; var4 = var5["mId"]
-      10 [-]: GETUPVAL R6 1; var6 = upvalues[1]
-      11 [-]: GETTABLE R5 R6 R4; var5 = var6[var4]
-      12 [-]: JUMPIF R5 L1 ; goto L1 if var5
-      13 [-]: GETUPVAL R5 1; var5 = upvalues[1]
-      14 [-]: NEWTABLE R6 0 0; var6 = {}
-      15 [-]: SETTABLE R6 R5 R4; var6[var5] = var4
-L 1:  16 [-]: GETUPVAL R7 1; var7 = upvalues[1]
-      17 [-]: GETTABLE R6 R7 R4; var6 = var7[var4]
-      18 [-]: GETTABLEKS R5 R6 K7; var5 = var6["cycleNum"]
-      19 [-]: JUMPIFNOTEQ R5 R3 L2; goto L2 if var5 ~= var67335
-      20 [-]: GETUPVAL R7 1; var7 = upvalues[1]
-      21 [-]: GETTABLE R6 R7 R4; var6 = var7[var4]
-      22 [-]: GETTABLEKS R5 R6 K8; var5 = var6["defenderMissionInfo"]
-      23 [-]: JUMPIF R5 L3 ; goto L3 if var5
-L 2:  24 [-]: GETUPVAL R6 1; var6 = upvalues[1]
-      25 [-]: GETTABLE R5 R6 R4; var5 = var6[var4]
-      26 [-]: SETTABLEKS R3 R5 K7; var3["cycleNum"] = var5
-      27 [-]: GETUPVAL R6 0; var6 = upvalues[0]
-      28 [-]: GETTABLEKS R5 R6 K9; var5 = var6[0x5E35D4D6]
-      29 [-]: CALL R5 1 2  ; var5 = var5()
-      30 [-]: GETTABLEKS R7 R1 K10; var7 = var1["mNode"]
-      31 [-]: NAMECALL R5 R5 K11; var6 = var5; var5 = var5[0x3AD9ED31]
-      32 [-]: CALL R5 3 2  ; var5 = var5(var6, var7)
-      33 [-]: LOADK R7 K12 ; var7 = "GENERATING INVASION MISSIONS FOR "
-      34 [-]: GETIMPORT R13 14; var13 = 0x64FB1586
-      35 [-]: GETTABLEKS R14 R1 K10; var14 = var1["mNode"]
-      36 [-]: CALL R13 2 2 ; var13 = var13(var14)
-      37 [-]: MOVE R8 R13  ; var8 = var13
-      38 [-]: LOADK R9 K15 ; var9 = " "
-      39 [-]: GETTABLEKS R10 R1 K16; var10 = var1["mFaction"]
-      40 [-]: LOADK R11 K17; var11 = " VS "
-      41 [-]: GETTABLEKS R13 R5 K18; var13 = var5["mission"]
-      42 [-]: GETTABLEKS R12 R13 K19; var12 = var13["faction"]
-      43 [-]: CONCAT R6 R7 R12; var6 = var7 .. var12
-      44 [-]: GETUPVAL R7 1; var7 = upvalues[1]
-      45 [-]: GETTABLE R6 R7 R4; var6 = var7[var4]
-      46 [-]: GETUPVAL R7 2; var7 = upvalues[2]
-      47 [-]: MOVE R8 R1   ; var8 = var1
-      48 [-]: MOVE R9 R5   ; var9 = var5
-      49 [-]: LOADB R10 1  ; var10 = true
-      50 [-]: CALL R7 4 2  ; var7 = var7(var8, var9, var10)
-      51 [-]: SETTABLEKS R7 R6 K20; var7["attackerMissionInfo"] = var6
-      52 [-]: GETUPVAL R7 1; var7 = upvalues[1]
-      53 [-]: GETTABLE R6 R7 R4; var6 = var7[var4]
-      54 [-]: GETUPVAL R7 2; var7 = upvalues[2]
-      55 [-]: MOVE R8 R1   ; var8 = var1
-      56 [-]: MOVE R9 R5   ; var9 = var5
-      57 [-]: LOADB R10 0  ; var10 = false
-      58 [-]: CALL R7 4 2  ; var7 = var7(var8, var9, var10)
-      59 [-]: SETTABLEKS R7 R6 K8; var7["defenderMissionInfo"] = var6
-L 3:  60 [-]: GETUPVAL R7 1; var7 = upvalues[1]
-      61 [-]: GETTABLE R6 R7 R4; var6 = var7[var4]
-      62 [-]: GETTABLEKS R5 R6 K20; var5 = var6["attackerMissionInfo"]
-      63 [-]: SETTABLEKS R5 R1 K21; var5["mAttackerMissionInfo"] = var1
-      64 [-]: GETUPVAL R7 1; var7 = upvalues[1]
-      65 [-]: GETTABLE R6 R7 R4; var6 = var7[var4]
-      66 [-]: GETTABLEKS R5 R6 K8; var5 = var6["defenderMissionInfo"]
-      67 [-]: SETTABLEKS R5 R1 K22; var5["mDefenderMissionInfo"] = var1
-      68 [-]: RETURN R1 1  ; 
+       9 [-]: FASTCALL1 63 R5 L1; 
+      10 [-]: GETIMPORT R4 8; var4 = 0x64FB1586
+      11 [-]: CALL R4 2 2  ; var4 = var4(var5)
+L 1:  12 [-]: GETUPVAL R6 1; var6 = upvalues[1]
+      13 [-]: GETTABLE R5 R6 R4; var5 = var6[var4]
+      14 [-]: JUMPIF R5 L2 ; goto L2 if var5
+      15 [-]: GETUPVAL R5 1; var5 = upvalues[1]
+      16 [-]: NEWTABLE R6 0 0; var6 = {}
+      17 [-]: SETTABLE R6 R5 R4; var6[var5] = var4
+L 2:  18 [-]: GETUPVAL R7 1; var7 = upvalues[1]
+      19 [-]: GETTABLE R6 R7 R4; var6 = var7[var4]
+      20 [-]: GETTABLEKS R5 R6 K9; var5 = var6["cycleNum"]
+      21 [-]: JUMPIFNOTEQ R5 R3 L3; goto L3 if var5 ~= var67388
+      22 [-]: GETUPVAL R7 1; var7 = upvalues[1]
+      23 [-]: GETTABLE R6 R7 R4; var6 = var7[var4]
+      24 [-]: GETTABLEKS R5 R6 K10; var5 = var6["defenderMissionInfo"]
+      25 [-]: JUMPIF R5 L5 ; goto L5 if var5
+L 3:  26 [-]: GETUPVAL R6 1; var6 = upvalues[1]
+      27 [-]: GETTABLE R5 R6 R4; var5 = var6[var4]
+      28 [-]: SETTABLEKS R3 R5 K9; var3["cycleNum"] = var5
+      29 [-]: GETUPVAL R6 0; var6 = upvalues[0]
+      30 [-]: GETTABLEKS R5 R6 K11; var5 = var6[0x5E35D4D6]
+      31 [-]: CALL R5 1 2  ; var5 = var5()
+      32 [-]: GETTABLEKS R7 R1 K12; var7 = var1["mNode"]
+      33 [-]: NAMECALL R5 R5 K13; var6 = var5; var5 = var5[0x3AD9ED31]
+      34 [-]: CALL R5 3 2  ; var5 = var5(var6, var7)
+      35 [-]: LOADK R7 K14 ; var7 = "GENERATING INVASION MISSIONS FOR "
+      36 [-]: GETTABLEKS R14 R1 K12; var14 = var1["mNode"]
+      37 [-]: FASTCALL1 63 R14 L4; 
+      38 [-]: GETIMPORT R13 8; var13 = 0x64FB1586
+      39 [-]: CALL R13 2 2 ; var13 = var13(var14)
+L 4:  40 [-]: MOVE R8 R13  ; var8 = var13
+      41 [-]: LOADK R9 K15 ; var9 = " "
+      42 [-]: GETTABLEKS R10 R1 K16; var10 = var1["mFaction"]
+      43 [-]: LOADK R11 K17; var11 = " VS "
+      44 [-]: GETTABLEKS R13 R5 K18; var13 = var5["mission"]
+      45 [-]: GETTABLEKS R12 R13 K19; var12 = var13["faction"]
+      46 [-]: CONCAT R6 R7 R12; var6 = var7 .. var12
+      47 [-]: GETUPVAL R7 1; var7 = upvalues[1]
+      48 [-]: GETTABLE R6 R7 R4; var6 = var7[var4]
+      49 [-]: GETUPVAL R7 2; var7 = upvalues[2]
+      50 [-]: MOVE R8 R1   ; var8 = var1
+      51 [-]: MOVE R9 R5   ; var9 = var5
+      52 [-]: LOADB R10 1  ; var10 = true
+      53 [-]: CALL R7 4 2  ; var7 = var7(var8, var9, var10)
+      54 [-]: SETTABLEKS R7 R6 K20; var7["attackerMissionInfo"] = var6
+      55 [-]: GETUPVAL R7 1; var7 = upvalues[1]
+      56 [-]: GETTABLE R6 R7 R4; var6 = var7[var4]
+      57 [-]: GETUPVAL R7 2; var7 = upvalues[2]
+      58 [-]: MOVE R8 R1   ; var8 = var1
+      59 [-]: MOVE R9 R5   ; var9 = var5
+      60 [-]: LOADB R10 0  ; var10 = false
+      61 [-]: CALL R7 4 2  ; var7 = var7(var8, var9, var10)
+      62 [-]: SETTABLEKS R7 R6 K10; var7["defenderMissionInfo"] = var6
+L 5:  63 [-]: GETUPVAL R7 1; var7 = upvalues[1]
+      64 [-]: GETTABLE R6 R7 R4; var6 = var7[var4]
+      65 [-]: GETTABLEKS R5 R6 K20; var5 = var6["attackerMissionInfo"]
+      66 [-]: SETTABLEKS R5 R1 K21; var5["mAttackerMissionInfo"] = var1
+      67 [-]: GETUPVAL R7 1; var7 = upvalues[1]
+      68 [-]: GETTABLE R6 R7 R4; var6 = var7[var4]
+      69 [-]: GETTABLEKS R5 R6 K10; var5 = var6["defenderMissionInfo"]
+      70 [-]: SETTABLEKS R5 R1 K22; var5["mDefenderMissionInfo"] = var1
+      71 [-]: RETURN R1 1  ; 
 
 
 

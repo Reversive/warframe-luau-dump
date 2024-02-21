@@ -55,14 +55,14 @@ L 1:  16 [-]: RETURN R0 0  ;
        5 [-]: LOADNIL R3   ; var3 = nil
        6 [-]: GETIMPORT R4 3; var4 = 0xB4AAB526
 L 0:   7 [-]: GETIMPORT R5 5; var5 = 0x07E9D557
-       8 [-]: JUMPIFNOTLT R1 R5 L5; goto L5 if var1 >= var460110
+       8 [-]: JUMPIFNOTLT R1 R5 L5; goto L5 if var1 >= var460065
        9 [-]: GETIMPORT R5 7; var5 = 0xAEFC91CD
-      10 [-]: JUMPIFNOTLT R1 R5 L1; goto L1 if var1 >= var460110
+      10 [-]: JUMPIFNOTLT R1 R5 L1; goto L1 if var1 >= var460065
       11 [-]: GETIMPORT R5 7; var5 = 0xAEFC91CD
       12 [-]: DIV R2 R1 R5 ; var2 = var1 / var5
       13 [-]: JUMP L3      ; goto L3
 L 1:  14 [-]: GETIMPORT R5 9; var5 = 0x66D98152
-      15 [-]: JUMPIFNOTLT R1 R5 L2; goto L2 if var1 >= var66119
+      15 [-]: JUMPIFNOTLT R1 R5 L2; goto L2 if var1 >= var66096
       16 [-]: LOADN R2 1   ; var2 = 1
       17 [-]: JUMP L3      ; goto L3
 L 2:  18 [-]: GETIMPORT R4 11; var4 = 0x9164A61F
@@ -75,7 +75,7 @@ L 2:  18 [-]: GETIMPORT R4 11; var4 = 0x9164A61F
       25 [-]: DIV R6 R7 R8 ; var6 = var7 / var8
       26 [-]: SUB R2 R5 R6 ; var2 = var5 - var6
 L 3:  27 [-]: LOADN R5 0   ; var5 = 0
-      28 [-]: JUMPIFNOTLT R2 R5 L4; goto L4 if var2 >= var583
+      28 [-]: JUMPIFNOTLT R2 R5 L4; goto L4 if var2 >= var560
       29 [-]: LOADN R2 0   ; var2 = 0
 L 4:  30 [-]: GETIMPORT R5 13; var5 = 0x9BAFFFE3
       31 [-]: MOVE R6 R4   ; var6 = var4
@@ -118,8 +118,7 @@ L 5:  47 [-]: RETURN R0 0  ;
       11 [-]: GETIMPORT R8 12; var8 = 0x8E8CD7A4["x"]
       12 [-]: MULK R7 R8 K4; var7 = var8 * 100
       13 [-]: CALL R5 3 2  ; var5 = var5(var6, var7)
-      14 [-]: DIVK R4 R5 K4; var4 = var5 / 100
-      15 [-]: SETTABLEKS R4 R1 K9; var4["x"] = var1
+           15 [-]: SETTABLEKS R4 R1 K9; var4["x"] = var1
       16 [-]: GETIMPORT R4 14; var4 = 0xAC827982["y"]
       17 [-]: SETTABLEKS R4 R1 K13; var4["y"] = var1
       18 [-]: GETIMPORT R5 7; var5 = 0x5BCED4C4[0x3630E649]
@@ -128,8 +127,7 @@ L 5:  47 [-]: RETURN R0 0  ;
       21 [-]: GETIMPORT R8 17; var8 = 0x8E8CD7A4["z"]
       22 [-]: MULK R7 R8 K4; var7 = var8 * 100
       23 [-]: CALL R5 3 2  ; var5 = var5(var6, var7)
-      24 [-]: DIVK R4 R5 K4; var4 = var5 / 100
-      25 [-]: SETTABLEKS R4 R1 K15; var4["z"] = var1
+           25 [-]: SETTABLEKS R4 R1 K15; var4["z"] = var1
       26 [-]: GETTABLEKS R4 R1 K9; var4 = var1["x"]
       27 [-]: SETTABLEKS R4 R2 K9; var4["x"] = var2
       28 [-]: GETTABLEKS R4 R1 K13; var4 = var1["y"]
@@ -146,7 +144,7 @@ L 5:  47 [-]: RETURN R0 0  ;
       39 [-]: GETIMPORT R5 23; var5 = 0x637CBA1B
       40 [-]: CALL R4 2 1  ; var4(var5)
 L 0:  41 [-]: GETIMPORT R4 25; var4 = 0x7D813E5D
-      42 [-]: JUMPIFNOTLT R3 R4 L1; goto L1 if var3 >= var1770574
+      42 [-]: JUMPIFNOTLT R3 R4 L1; goto L1 if var3 >= var1770529
       43 [-]: GETIMPORT R4 27; var4 = 0x9BAFFFE3
       44 [-]: GETTABLEKS R5 R1 K9; var5 = var1["x"]
       45 [-]: LOADK R6 K28 ; var6 = 0.5

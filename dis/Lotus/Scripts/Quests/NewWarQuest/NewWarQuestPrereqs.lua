@@ -23,7 +23,7 @@
 ; #Upvalues:       2
 ; #Parameters:     0
 ; Is_vararg:       0
-; Max Stack Size:  7
+; Max Stack Size:  6
 
        0 [-]: GETIMPORT R0 1; var0 = 0x25D99D89
        1 [-]: GETIMPORT R2 3; var2 = 0x0469F296
@@ -51,61 +51,62 @@ L 0:  13 [-]: GETIMPORT R0 1; var0 = 0x25D99D89
       23 [-]: NAMECALL R3 R2 K13; var4 = var2; var3 = var2[0x62C81B76]
       24 [-]: CALL R3 2 2  ; var3 = var3(var4)
       25 [-]: GETTABLEKS R1 R3 K14; var1 = var3["mCrewShipLoadOut"]
-      26 [-]: GETTABLEKS R6 R1 K15; var6 = var1["mShip"]
-      27 [-]: GETTABLEKS R5 R6 K16; var5 = var6["mItemId"]
-      28 [-]: GETTABLEKS R4 R5 K17; var4 = var5["mId"]
-      29 [-]: GETIMPORT R5 20; var5 = 0x6C97A788["InvalidItemID"]
-      30 [-]: JUMPIFEQ R4 R5 L1; goto L1 if var4 == var-1727986148
-      31 [-]: GETTABLEKS R6 R1 K15; var6 = var1["mShip"]
-      32 [-]: GETTABLEKS R5 R6 K16; var5 = var6["mItemId"]
-      33 [-]: GETTABLEKS R4 R5 K17; var4 = var5["mId"]
-      34 [-]: JUMPXEQKS R4 K21 L1; 
-      35 [-]: LOADB R0 1   ; var0 = true
-L 1:  36 [-]: GETIMPORT R3 1; var3 = 0x25D99D89
-      37 [-]: NAMECALL R3 R3 K22; var4 = var3; var3 = var3[0x25A6E75E]
-      38 [-]: CALL R3 2 2  ; var3 = var3(var4)
-      39 [-]: NAMECALL R3 R3 K23; var4 = var3; var3 = var3[0xFAB085E3]
-      40 [-]: CALL R3 2 2  ; var3 = var3(var4)
-      41 [-]: LENGTH R2 R3 ; var2 = #var3
-      42 [-]: LOADN R3 0   ; var3 = 0
-      43 [-]: JUMPIFLT R3 R2 L2; goto L2 if var3 < var16777499
-      44 [-]: LOADB R1 0 +1; var1 = false
-L 2:  45 [-]: LOADB R1 1   ; var1 = true
-L 3:  46 [-]: JUMPIF R0 L4 ; goto L4 if var0
-      47 [-]: JUMPIF R1 L4 ; goto L4 if var1
-      48 [-]: GETUPVAL R3 0; var3 = upvalues[0]
-      49 [-]: GETTABLEKS R2 R3 K6; var2 = var3[0xE0CBA3CA]
-      50 [-]: LOADK R3 K24 ; var3 = "/Lotus/Language/NewWar/PrereqMissingMechAndRailjack"
-      51 [-]: CALL R2 2 1  ; var2(var3)
-      52 [-]: LOADB R2 0   ; var2 = false
-      53 [-]: RETURN R2 1  ; 
-L 4:  54 [-]: JUMPIF R0 L5 ; goto L5 if var0
-      55 [-]: GETUPVAL R3 0; var3 = upvalues[0]
-      56 [-]: GETTABLEKS R2 R3 K6; var2 = var3[0xE0CBA3CA]
-      57 [-]: LOADK R3 K25 ; var3 = "/Lotus/Language/NewWar/PrereqMissingRailjack"
-      58 [-]: CALL R2 2 1  ; var2(var3)
-      59 [-]: LOADB R2 0   ; var2 = false
-      60 [-]: RETURN R2 1  ; 
-L 5:  61 [-]: JUMPIF R1 L6 ; goto L6 if var1
-      62 [-]: GETUPVAL R3 0; var3 = upvalues[0]
-      63 [-]: GETTABLEKS R2 R3 K6; var2 = var3[0xE0CBA3CA]
-      64 [-]: LOADK R3 K26 ; var3 = "/Lotus/Language/NewWar/PrereqMissingMech"
-      65 [-]: CALL R2 2 1  ; var2(var3)
-      66 [-]: LOADB R2 0   ; var2 = false
-      67 [-]: RETURN R2 1  ; 
-L 6:  68 [-]: GETIMPORT R2 1; var2 = 0x25D99D89
-      69 [-]: NAMECALL R2 R2 K27; var3 = var2; var2 = var2[0xD8159207]
-      70 [-]: CALL R2 2 2  ; var2 = var2(var3)
-      71 [-]: LOADN R3 3   ; var3 = 3
-      72 [-]: JUMPIFNOTLT R2 R3 L7; goto L7 if var2 >= var775
-      73 [-]: GETUPVAL R3 0; var3 = upvalues[0]
-      74 [-]: GETTABLEKS R2 R3 K6; var2 = var3[0xE0CBA3CA]
-      75 [-]: LOADK R3 K28 ; var3 = "/Lotus/Language/NewWar/PrereqMissingCombatOperator"
-      76 [-]: CALL R2 2 1  ; var2(var3)
-      77 [-]: LOADB R2 0   ; var2 = false
-      78 [-]: RETURN R2 1  ; 
-L 7:  79 [-]: LOADB R2 1   ; var2 = true
-      80 [-]: RETURN R2 1  ; 
+      26 [-]: GETTABLEKS R5 R1 K15; var5 = var1["mShip"]
+      27 [-]: GETTABLEKS R4 R5 K16; var4 = var5["mItemId"]
+      28 [-]: NAMECALL R4 R4 K17; var5 = var4; var4 = var4[0x56C01834]
+      29 [-]: CALL R4 2 2  ; var4 = var4(var5)
+      30 [-]: JUMPIFNOT R4 L1; goto L1 if not var4
+      31 [-]: GETTABLEKS R5 R1 K15; var5 = var1["mShip"]
+      32 [-]: GETTABLEKS R4 R5 K16; var4 = var5["mItemId"]
+      33 [-]: NAMECALL R4 R4 K18; var5 = var4; var4 = var4[0x262A8B80]
+      34 [-]: CALL R4 2 2  ; var4 = var4(var5)
+      35 [-]: JUMPIF R4 L1 ; goto L1 if var4
+      36 [-]: LOADB R0 1   ; var0 = true
+L 1:  37 [-]: GETIMPORT R3 1; var3 = 0x25D99D89
+      38 [-]: NAMECALL R3 R3 K19; var4 = var3; var3 = var3[0x25A6E75E]
+      39 [-]: CALL R3 2 2  ; var3 = var3(var4)
+      40 [-]: NAMECALL R3 R3 K20; var4 = var3; var3 = var3[0xFAB085E3]
+      41 [-]: CALL R3 2 2  ; var3 = var3(var4)
+      42 [-]: LENGTH R2 R3 ; var2 = #var3
+      43 [-]: LOADN R3 0   ; var3 = 0
+      44 [-]: JUMPIFLT R3 R2 L2; goto L2 if var3 < var16777478
+      45 [-]: LOADB R1 0 +1; var1 = false
+L 2:  46 [-]: LOADB R1 1   ; var1 = true
+L 3:  47 [-]: JUMPIF R0 L4 ; goto L4 if var0
+      48 [-]: JUMPIF R1 L4 ; goto L4 if var1
+      49 [-]: GETUPVAL R3 0; var3 = upvalues[0]
+      50 [-]: GETTABLEKS R2 R3 K6; var2 = var3[0xE0CBA3CA]
+      51 [-]: LOADK R3 K21 ; var3 = "/Lotus/Language/NewWar/PrereqMissingMechAndRailjack"
+      52 [-]: CALL R2 2 1  ; var2(var3)
+      53 [-]: LOADB R2 0   ; var2 = false
+      54 [-]: RETURN R2 1  ; 
+L 4:  55 [-]: JUMPIF R0 L5 ; goto L5 if var0
+      56 [-]: GETUPVAL R3 0; var3 = upvalues[0]
+      57 [-]: GETTABLEKS R2 R3 K6; var2 = var3[0xE0CBA3CA]
+      58 [-]: LOADK R3 K22 ; var3 = "/Lotus/Language/NewWar/PrereqMissingRailjack"
+      59 [-]: CALL R2 2 1  ; var2(var3)
+      60 [-]: LOADB R2 0   ; var2 = false
+      61 [-]: RETURN R2 1  ; 
+L 5:  62 [-]: JUMPIF R1 L6 ; goto L6 if var1
+      63 [-]: GETUPVAL R3 0; var3 = upvalues[0]
+      64 [-]: GETTABLEKS R2 R3 K6; var2 = var3[0xE0CBA3CA]
+      65 [-]: LOADK R3 K23 ; var3 = "/Lotus/Language/NewWar/PrereqMissingMech"
+      66 [-]: CALL R2 2 1  ; var2(var3)
+      67 [-]: LOADB R2 0   ; var2 = false
+      68 [-]: RETURN R2 1  ; 
+L 6:  69 [-]: GETIMPORT R2 1; var2 = 0x25D99D89
+      70 [-]: NAMECALL R2 R2 K24; var3 = var2; var2 = var2[0xD8159207]
+      71 [-]: CALL R2 2 2  ; var2 = var2(var3)
+      72 [-]: LOADN R3 3   ; var3 = 3
+      73 [-]: JUMPIFNOTLT R2 R3 L7; goto L7 if var2 >= var828
+      74 [-]: GETUPVAL R3 0; var3 = upvalues[0]
+      75 [-]: GETTABLEKS R2 R3 K6; var2 = var3[0xE0CBA3CA]
+      76 [-]: LOADK R3 K25 ; var3 = "/Lotus/Language/NewWar/PrereqMissingCombatOperator"
+      77 [-]: CALL R2 2 1  ; var2(var3)
+      78 [-]: LOADB R2 0   ; var2 = false
+      79 [-]: RETURN R2 1  ; 
+L 7:  80 [-]: LOADB R2 1   ; var2 = true
+      81 [-]: RETURN R2 1  ; 
 
 
 

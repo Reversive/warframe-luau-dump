@@ -46,7 +46,7 @@ L 1:  17 [-]: GETIMPORT R10 4; var10 = 0x7FB0DAC9
       22 [-]: CALL R7 3 1  ; var7(var8, var9)
 L 2:  23 [-]: FORNLOOP R4 L0; nforloop end - iterate + goto L0
 L 3:  24 [-]: GETIMPORT R5 11; var5 = _T["NiraMist"]
-      25 [-]: FASTCALL1 62 R5 L4; 
+      25 [-]: FASTCALL1 64 R5 L4; 
       26 [-]: GETIMPORT R4 13; var4 = 0x7B998233
       27 [-]: CALL R4 2 2  ; var4 = var4(var5)
 L 4:  28 [-]: JUMPIFNOT R4 L5; goto L5 if not var4
@@ -55,7 +55,7 @@ L 4:  28 [-]: JUMPIFNOT R4 L5; goto L5 if not var4
       31 [-]: SETTABLEKS R5 R4 K10; var5["NiraMist"] = var4
 L 5:  32 [-]: GETIMPORT R6 11; var6 = _T["NiraMist"]
       33 [-]: GETTABLEKS R5 R6 K15; var5 = var6["MistFX"]
-      34 [-]: FASTCALL1 62 R5 L6; 
+      34 [-]: FASTCALL1 64 R5 L6; 
       35 [-]: GETIMPORT R4 13; var4 = 0x7B998233
       36 [-]: CALL R4 2 2  ; var4 = var4(var5)
 L 6:  37 [-]: JUMPIFNOT R4 L7; goto L7 if not var4
@@ -81,16 +81,16 @@ L 8:  55 [-]: LOADN R5 1   ; var5 = 1
       57 [-]: CALL R6 2 2  ; var6 = var6(var7)
 L 9:  58 [-]: GETTABLEKS R7 R6 K24; var7 = var6["y"]
       59 [-]: GETIMPORT R8 2; var8 = 0xDC46E393
-      60 [-]: JUMPIFNOTLE R7 R8 L12; goto L12 if var7 > var-486537403
+      60 [-]: JUMPIFNOTLE R7 R8 L12; goto L12 if var7 > var-486537396
       61 [-]: NAMECALL R7 R0 K23; var8 = var0; var7 = var0[0xDB7325E3]
       62 [-]: CALL R7 2 2  ; var7 = var7(var8)
       63 [-]: MOVE R6 R7   ; var6 = var7
       64 [-]: GETTABLEKS R7 R6 K24; var7 = var6["y"]
       65 [-]: GETTABLE R8 R2 R5; var8 = var2[var5]
-      66 [-]: JUMPIFNOTLT R8 R7 L11; goto L11 if var8 >= var84084535
+      66 [-]: JUMPIFNOTLT R8 R7 L11; goto L11 if var8 >= var84084509
       67 [-]: GETTABLE R7 R3 R5; var7 = var3[var5]
       68 [-]: JUMPXEQKB R7 0 L11 NOT; 
-      69 [-]: JUMPIFNOTLE R5 R1 L11; goto L11 if var5 > var67355
+      69 [-]: JUMPIFNOTLE R5 R1 L11; goto L11 if var5 > var67334
       70 [-]: LOADB R7 1   ; var7 = true
       71 [-]: SETTABLE R7 R3 R5; var7[var3] = var5
       72 [-]: NAMECALL R7 R0 K20; var8 = var0; var7 = var0[0xF6EBD926]

@@ -115,14 +115,14 @@ L 0:  26 [-]: RETURN R0 0  ;
        6 [-]: GETIMPORT R2 4; var2 = 0x89326C93
        7 [-]: NAMECALL R2 R2 K5; var3 = var2; var2 = var2[0x78298275]
        8 [-]: CALL R2 2 2  ; var2 = var2(var3)
-       9 [-]: FASTCALL1 62 R2 L0; 
+       9 [-]: FASTCALL1 64 R2 L0; 
       10 [-]: MOVE R4 R2   ; var4 = var2
       11 [-]: GETIMPORT R3 7; var3 = 0x7B998233
       12 [-]: CALL R3 2 2  ; var3 = var3(var4)
 L 0:  13 [-]: JUMPIF R3 L9 ; goto L9 if var3
       14 [-]: NAMECALL R4 R2 K8; var5 = var2; var4 = var2[0x5E651723]
       15 [-]: CALL R4 2 0  ; var4, ... = var4(var5)
-      16 [-]: FASTCALL 62 L1; 
+      16 [-]: FASTCALL 64 L1; 
       17 [-]: GETIMPORT R3 7; var3 = 0x7B998233
       18 [-]: CALL R3 0 2  ; var3 = var3(var4, ...)
 L 1:  19 [-]: JUMPIF R3 L9 ; goto L9 if var3
@@ -131,7 +131,7 @@ L 1:  19 [-]: JUMPIF R3 L9 ; goto L9 if var3
       22 [-]: LOADN R6 0   ; var6 = 0
       23 [-]: NAMECALL R4 R4 K11; var5 = var4; var4 = var4[0x3F3AE64C]
       24 [-]: CALL R4 3 2  ; var4 = var4(var5, var6)
-      25 [-]: FASTCALL1 62 R4 L2; 
+      25 [-]: FASTCALL1 64 R4 L2; 
       26 [-]: MOVE R6 R4   ; var6 = var4
       27 [-]: GETIMPORT R5 7; var5 = 0x7B998233
       28 [-]: CALL R5 2 2  ; var5 = var5(var6)
@@ -139,7 +139,7 @@ L 2:  29 [-]: JUMPIF R5 L3 ; goto L3 if var5
       30 [-]: NAMECALL R5 R4 K12; var6 = var4; var5 = var4[0x80563238]
       31 [-]: CALL R5 2 2  ; var5 = var5(var6)
       32 [-]: MOVE R3 R5   ; var3 = var5
-L 3:  33 [-]: FASTCALL1 62 R3 L4; 
+L 3:  33 [-]: FASTCALL1 64 R3 L4; 
       34 [-]: MOVE R6 R3   ; var6 = var3
       35 [-]: GETIMPORT R5 7; var5 = 0x7B998233
       36 [-]: CALL R5 2 2  ; var5 = var5(var6)
@@ -170,7 +170,7 @@ L 6:  53 [-]: GETIMPORT R8 19; var8 = 0xBA7DFCD2
       61 [-]: MOVE R11 R8  ; var11 = var8
       62 [-]: NAMECALL R9 R9 K23; var10 = var9; var9 = var9[0x11900845]
       63 [-]: CALL R9 3 2  ; var9 = var9(var10, var11)
-      64 [-]: FASTCALL1 62 R9 L7; 
+      64 [-]: FASTCALL1 64 R9 L7; 
       65 [-]: MOVE R11 R9  ; var11 = var9
       66 [-]: GETIMPORT R10 7; var10 = 0x7B998233
       67 [-]: CALL R10 2 2 ; var10 = var10(var11)
@@ -180,12 +180,12 @@ L 7:  68 [-]: JUMPIF R10 L8; goto L8 if var10
       71 [-]: CALL R10 2 2 ; var10 = var10(var11)
       72 [-]: GETTABLEKS R11 R10 K27; var11 = var10["mAffectorType"]
       73 [-]: LOADN R12 1  ; var12 = 1
-      74 [-]: JUMPIFNOTEQ R11 R12 L8; goto L8 if var11 ~= var655382
+      74 [-]: JUMPIFNOTEQ R11 R12 L8; goto L8 if var11 ~= var655406
       75 [-]: MOVE R0 R10  ; var0 = var10
       76 [-]: MOVE R1 R9   ; var1 = var9
       77 [-]: JUMP L9      ; goto L9
 L 8:  78 [-]: FORNLOOP R5 L6; nforloop end - iterate + goto L6
-L 9:  79 [-]: FASTCALL1 62 R0 L10; 
+L 9:  79 [-]: FASTCALL1 64 R0 L10; 
       80 [-]: MOVE R4 R0   ; var4 = var0
       81 [-]: GETIMPORT R3 7; var3 = 0x7B998233
       82 [-]: CALL R3 2 2  ; var3 = var3(var4)
@@ -218,15 +218,16 @@ L11:  88 [-]: GETIMPORT R3 1; var3 = 0xAE91E43B
      109 [-]: SETUPVAL R3 1; upvalues[3] = var1
      110 [-]: GETIMPORT R3 1; var3 = 0xAE91E43B
      111 [-]: LOADK R5 K32 ; var5 = "Title"
-     112 [-]: LOADN R6 29  ; var6 = 29
-     113 [-]: GETIMPORT R9 34; var9 = 0x64FB1586
-     114 [-]: GETTABLEKS R10 R0 K35; var10 = var0["mLocName"]
-     115 [-]: CALL R9 2 0  ; var9, ... = var9(var10)
-     116 [-]: NAMECALL R7 R1 K36; var8 = var1; var7 = var1[0xBD8C4EE7]
-     117 [-]: CALL R7 0 0  ; var7, ... = var7(var8, ...)
-     118 [-]: NAMECALL R3 R3 K37; var4 = var3; var3 = var3[0x5F56EEAB]
-     119 [-]: CALL R3 0 1  ; var3(var4, ...)
-     120 [-]: RETURN R0 0  ; 
+     112 [-]: LOADN R6 31  ; var6 = 31
+     113 [-]: GETTABLEKS R10 R0 K33; var10 = var0["mLocName"]
+     114 [-]: FASTCALL1 63 R10 L12; 
+     115 [-]: GETIMPORT R9 35; var9 = 0x64FB1586
+     116 [-]: CALL R9 2 2  ; var9 = var9(var10)
+L12: 117 [-]: NAMECALL R7 R1 K36; var8 = var1; var7 = var1[0xBD8C4EE7]
+     118 [-]: CALL R7 3 0  ; var7, ... = var7(var8, var9)
+     119 [-]: NAMECALL R3 R3 K37; var4 = var3; var3 = var3[0x5F56EEAB]
+     120 [-]: CALL R3 0 1  ; var3(var4, ...)
+     121 [-]: RETURN R0 0  ; 
 
 
 ; Name:            

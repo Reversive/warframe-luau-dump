@@ -26,7 +26,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  6
 
-       0 [-]: FASTCALL1 62 R0 L0; 
+       0 [-]: FASTCALL1 64 R0 L0; 
        1 [-]: MOVE R2 R0   ; var2 = var0
        2 [-]: GETIMPORT R1 1; var1 = 0x7B998233
        3 [-]: CALL R1 2 2  ; var1 = var1(var2)
@@ -53,7 +53,7 @@ L 1:   6 [-]: GETIMPORT R1 3; var1 = 0x89326C93
        1 [-]: GETIMPORT R1 2; var1 = _T["IsTeleportingToArena"]
        2 [-]: JUMPXEQKB R1 1 L0 NOT; 
        3 [-]: GETIMPORT R1 4; var1 = 0xCBD666E1
-       4 [-]: LOADK R2 K5  ; var2 = 0.10000000000000001
+       4 [-]: LOADK R2 K5  ; var2 = 0.10000000149011612
        5 [-]: CALL R1 2 1  ; var1(var2)
 L 0:   6 [-]: GETIMPORT R2 7; var2 = 0xC163F229
        7 [-]: LOADN R3 5   ; var3 = 5
@@ -67,7 +67,7 @@ L 1:  14 [-]: GETIMPORT R2 4; var2 = 0xCBD666E1
       15 [-]: MOVE R3 R1   ; var3 = var1
       16 [-]: CALL R2 2 1  ; var2(var3)
       17 [-]: GETUPVAL R2 0; var2 = upvalues[0]
-      18 [-]: FASTCALL1 62 R2 L2; 
+      18 [-]: FASTCALL1 64 R2 L2; 
       19 [-]: MOVE R4 R2   ; var4 = var2
       20 [-]: GETIMPORT R3 13; var3 = 0x7B998233
       21 [-]: CALL R3 2 2  ; var3 = var3(var4)

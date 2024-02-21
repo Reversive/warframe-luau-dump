@@ -84,14 +84,14 @@ L 1:  20 [-]: GETTABLE R11 R12 R13; var11 = var12[var13]
       26 [-]: LOADN R9 1   ; var9 = 1
       27 [-]: FORNPREP R8 L8; nforprep start - [escape at L8] -- var8 = iterator
 L 2:  28 [-]: GETTABLE R11 R6 R10; var11 = var6[var10]
-      29 [-]: FASTCALL1 62 R11 L3; 
+      29 [-]: FASTCALL1 64 R11 L3; 
       30 [-]: MOVE R13 R11 ; var13 = var11
       31 [-]: GETIMPORT R12 14; var12 = 0x7B998233
       32 [-]: CALL R12 2 2 ; var12 = var12(var13)
 L 3:  33 [-]: JUMPIF R12 L7; goto L7 if var12
       34 [-]: NAMECALL R12 R11 K15; var13 = var11; var12 = var11[0x2B54251B]
       35 [-]: CALL R12 2 2 ; var12 = var12(var13)
-      36 [-]: FASTCALL1 62 R12 L4; 
+      36 [-]: FASTCALL1 64 R12 L4; 
       37 [-]: MOVE R14 R12 ; var14 = var12
       38 [-]: GETIMPORT R13 14; var13 = 0x7B998233
       39 [-]: CALL R13 2 2 ; var13 = var13(var14)
@@ -100,7 +100,7 @@ L 4:  40 [-]: JUMPIF R13 L7; goto L7 if var13
       42 [-]: GETTABLEKS R13 R14 K16; var13 = var14[0xBA8BE587]
       43 [-]: MOVE R14 R12 ; var14 = var12
       44 [-]: CALL R13 2 2 ; var13 = var13(var14)
-      45 [-]: FASTCALL1 62 R13 L5; 
+      45 [-]: FASTCALL1 64 R13 L5; 
       46 [-]: MOVE R15 R13 ; var15 = var13
       47 [-]: GETIMPORT R14 14; var14 = 0x7B998233
       48 [-]: CALL R14 2 2 ; var14 = var14(var15)
@@ -119,7 +119,7 @@ L 6:  56 [-]: GETUPVAL R15 0; var15 = upvalues[0]
       61 [-]: GETIMPORT R18 23; var18 = 0xCF0B02E1
       62 [-]: CALL R14 5 1 ; var14(var15, var16, var17, var18)
       63 [-]: ADDK R7 R7 K24; var7 = var7 + 1
-      64 [-]: JUMPIFNOTLE R5 R7 L7; goto L7 if var5 > var65581
+      64 [-]: JUMPIFNOTLE R5 R7 L7; goto L7 if var5 > var65571
       65 [-]: RETURN R0 0  ; 
 L 7:  66 [-]: FORNLOOP R8 L2; nforloop end - iterate + goto L2
 L 8:  67 [-]: RETURN R0 0  ; 

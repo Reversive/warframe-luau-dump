@@ -20,11 +20,11 @@
       13 [-]: NEWTABLE R4 0 0; var4 = {}
       14 [-]: GETIMPORT R5 8; var5 = 0x78CA68A2
       15 [-]: LOADN R6 0   ; var6 = 0
-      16 [-]: LOADK R7 K9  ; var7 = 0.14999999999999999
+      16 [-]: LOADK R7 K9  ; var7 = 0.15000000596046448
       17 [-]: CALL R5 3 2  ; var5 = var5(var6, var7)
       18 [-]: GETIMPORT R6 8; var6 = 0x78CA68A2
       19 [-]: LOADN R7 0   ; var7 = 0
-      20 [-]: LOADK R8 K9  ; var8 = 0.14999999999999999
+      20 [-]: LOADK R8 K9  ; var8 = 0.15000000596046448
       21 [-]: CALL R6 3 2  ; var6 = var6(var7, var8)
       22 [-]: LOADN R7 1   ; var7 = 1
       23 [-]: NEWCLOSURE R8 P0; 
@@ -104,7 +104,7 @@
       10 [-]: CALL R4 2 4  ; var4, var5, var6 = var4(var5)
       11 [-]: FORGPREP_INEXT R4 L8; 
 L 0:  12 [-]: GETTABLEKS R10 R8 K7; var10 = var8["Texture"]
-      13 [-]: FASTCALL1 62 R10 L1; 
+      13 [-]: FASTCALL1 64 R10 L1; 
       14 [-]: GETIMPORT R9 9; var9 = 0x7B998233
       15 [-]: CALL R9 2 2  ; var9 = var9(var10)
 L 1:  16 [-]: JUMPIF R9 L2 ; goto L2 if var9
@@ -179,7 +179,7 @@ L 6:  81 [-]: GETIMPORT R9 1; var9 = 0xAE91E43B
       85 [-]: NAMECALL R9 R9 K15; var10 = var9; var9 = var9[0x67BC869F]
       86 [-]: CALL R9 5 1  ; var9(var10, var11, var12, var13)
       87 [-]: GETTABLEKS R10 R8 K18; var10 = var8["Material"]
-      88 [-]: FASTCALL1 62 R10 L7; 
+      88 [-]: FASTCALL1 64 R10 L7; 
       89 [-]: GETIMPORT R9 9; var9 = 0x7B998233
       90 [-]: CALL R9 2 2  ; var9 = var9(var10)
 L 7:  91 [-]: JUMPIF R9 L8 ; goto L8 if var9
@@ -396,48 +396,36 @@ L 8:  97 [-]: FORGLOOP R4 L0 2 [inext];
      161 [-]: LOADK R11 K25; var11 = "ForegroundContainer.Foreground.Egg"
      162 [-]: LOADK R12 K31; var12 = "StartColor"
      163 [-]: GETTABLEKS R14 R0 K33; var14 = var0["red"]
-     164 [-]: DIVK R13 R14 K32; var13 = var14 / 255
-     165 [-]: GETTABLEKS R15 R0 K34; var15 = var0["green"]
-     166 [-]: DIVK R14 R15 K32; var14 = var15 / 255
-     167 [-]: GETTABLEKS R16 R0 K35; var16 = var0["blue"]
-     168 [-]: DIVK R15 R16 K32; var15 = var16 / 255
-     169 [-]: LOADN R16 1  ; var16 = 1
+          165 [-]: GETTABLEKS R15 R0 K34; var15 = var0["green"]
+          167 [-]: GETTABLEKS R16 R0 K35; var16 = var0["blue"]
+          169 [-]: LOADN R16 1  ; var16 = 1
      170 [-]: NAMECALL R9 R9 K36; var10 = var9; var9 = var9[0x91E13703]
      171 [-]: CALL R9 8 1  ; var9(var10, var11, var12, var13, var14, var15, var16)
      172 [-]: GETIMPORT R9 3; var9 = 0xAE91E43B
      173 [-]: LOADK R11 K25; var11 = "ForegroundContainer.Foreground.Egg"
      174 [-]: LOADK R12 K37; var12 = "EndColor"
      175 [-]: GETTABLEKS R14 R3 K33; var14 = var3["red"]
-     176 [-]: DIVK R13 R14 K32; var13 = var14 / 255
-     177 [-]: GETTABLEKS R15 R3 K34; var15 = var3["green"]
-     178 [-]: DIVK R14 R15 K32; var14 = var15 / 255
-     179 [-]: GETTABLEKS R16 R3 K35; var16 = var3["blue"]
-     180 [-]: DIVK R15 R16 K32; var15 = var16 / 255
-     181 [-]: LOADN R16 1  ; var16 = 1
+          177 [-]: GETTABLEKS R15 R3 K34; var15 = var3["green"]
+          179 [-]: GETTABLEKS R16 R3 K35; var16 = var3["blue"]
+          181 [-]: LOADN R16 1  ; var16 = 1
      182 [-]: NAMECALL R9 R9 K36; var10 = var9; var9 = var9[0x91E13703]
      183 [-]: CALL R9 8 1  ; var9(var10, var11, var12, var13, var14, var15, var16)
      184 [-]: GETIMPORT R9 3; var9 = 0xAE91E43B
      185 [-]: LOADK R11 K38; var11 = "Bg"
      186 [-]: LOADK R12 K31; var12 = "StartColor"
      187 [-]: GETTABLEKS R14 R0 K33; var14 = var0["red"]
-     188 [-]: DIVK R13 R14 K32; var13 = var14 / 255
-     189 [-]: GETTABLEKS R15 R0 K34; var15 = var0["green"]
-     190 [-]: DIVK R14 R15 K32; var14 = var15 / 255
-     191 [-]: GETTABLEKS R16 R0 K35; var16 = var0["blue"]
-     192 [-]: DIVK R15 R16 K32; var15 = var16 / 255
-     193 [-]: LOADN R16 1  ; var16 = 1
+          189 [-]: GETTABLEKS R15 R0 K34; var15 = var0["green"]
+          191 [-]: GETTABLEKS R16 R0 K35; var16 = var0["blue"]
+          193 [-]: LOADN R16 1  ; var16 = 1
      194 [-]: NAMECALL R9 R9 K36; var10 = var9; var9 = var9[0x91E13703]
      195 [-]: CALL R9 8 1  ; var9(var10, var11, var12, var13, var14, var15, var16)
      196 [-]: GETIMPORT R9 3; var9 = 0xAE91E43B
      197 [-]: LOADK R11 K38; var11 = "Bg"
      198 [-]: LOADK R12 K37; var12 = "EndColor"
      199 [-]: GETTABLEKS R14 R1 K33; var14 = var1["red"]
-     200 [-]: DIVK R13 R14 K32; var13 = var14 / 255
-     201 [-]: GETTABLEKS R15 R1 K34; var15 = var1["green"]
-     202 [-]: DIVK R14 R15 K32; var14 = var15 / 255
-     203 [-]: GETTABLEKS R16 R1 K35; var16 = var1["blue"]
-     204 [-]: DIVK R15 R16 K32; var15 = var16 / 255
-     205 [-]: LOADN R16 1  ; var16 = 1
+          201 [-]: GETTABLEKS R15 R1 K34; var15 = var1["green"]
+          203 [-]: GETTABLEKS R16 R1 K35; var16 = var1["blue"]
+          205 [-]: LOADN R16 1  ; var16 = 1
      206 [-]: NAMECALL R9 R9 K36; var10 = var9; var9 = var9[0x91E13703]
      207 [-]: CALL R9 8 1  ; var9(var10, var11, var12, var13, var14, var15, var16)
      208 [-]: LOADNIL R9   ; var9 = nil
@@ -450,12 +438,9 @@ L 0: 210 [-]: ADDK R10 R10 K39; var10 = var10 + 1
      215 [-]: MOVE R13 R9  ; var13 = var9
      216 [-]: LOADK R14 K41; var14 = "RipplesColor"
      217 [-]: GETTABLEKS R16 R8 K33; var16 = var8["red"]
-     218 [-]: DIVK R15 R16 K32; var15 = var16 / 255
-     219 [-]: GETTABLEKS R17 R8 K34; var17 = var8["green"]
-     220 [-]: DIVK R16 R17 K32; var16 = var17 / 255
-     221 [-]: GETTABLEKS R18 R8 K35; var18 = var8["blue"]
-     222 [-]: DIVK R17 R18 K32; var17 = var18 / 255
-     223 [-]: LOADK R18 K42; var18 = 0.40000000000000002
+          219 [-]: GETTABLEKS R17 R8 K34; var17 = var8["green"]
+          221 [-]: GETTABLEKS R18 R8 K35; var18 = var8["blue"]
+          223 [-]: LOADK R18 K42; var18 = 0.40000000596046448
      224 [-]: NAMECALL R11 R11 K36; var12 = var11; var11 = var11[0x91E13703]
      225 [-]: CALL R11 8 1 ; var11(var12, var13, var14, var15, var16, var17, var18)
      226 [-]: GETIMPORT R11 3; var11 = 0xAE91E43B
@@ -489,7 +474,7 @@ L 1: 232 [-]: GETUPVAL R11 1; var11 = upvalues[1]
 ; Max Stack Size:  15
 
        0 [-]: GETIMPORT R6 1; var6 = 0xAE91E43B
-       1 [-]: FASTCALL1 62 R6 L0; 
+       1 [-]: FASTCALL1 64 R6 L0; 
        2 [-]: GETIMPORT R5 3; var5 = 0x7B998233
        3 [-]: CALL R5 2 2  ; var5 = var5(var6)
 L 0:   4 [-]: JUMPIFNOT R5 L1; goto L1 if not var5
@@ -524,7 +509,7 @@ L 1:   6 [-]: NEWTABLE R5 0 3; var5 = {}
 ; Is_vararg:       0
 ; Max Stack Size:  15
 
-       0 [-]: FASTCALL1 62 R1 L0; 
+       0 [-]: FASTCALL1 64 R1 L0; 
        1 [-]: MOVE R6 R1   ; var6 = var1
        2 [-]: GETIMPORT R5 1; var5 = 0x7B998233
        3 [-]: CALL R5 2 2  ; var5 = var5(var6)
@@ -535,7 +520,7 @@ L 0:   4 [-]: JUMPIFNOT R5 L1; goto L1 if not var5
        8 [-]: LOADN R6 0   ; var6 = 0
        9 [-]: SETTABLEKS R6 R5 K3; var6["y"] = var5
       10 [-]: MOVE R1 R5   ; var1 = var5
-L 1:  11 [-]: FASTCALL1 62 R2 L2; 
+L 1:  11 [-]: FASTCALL1 64 R2 L2; 
       12 [-]: MOVE R6 R2   ; var6 = var2
       13 [-]: GETIMPORT R5 1; var5 = 0x7B998233
       14 [-]: CALL R5 2 2  ; var5 = var5(var6)
@@ -550,7 +535,7 @@ L 3:  17 [-]: SETUPVAL R1 0; upvalues[1] = var0
 L 4:  23 [-]: GETTABLEKS R10 R9 K7; var10 = var9["Highlight"]
       24 [-]: JUMPIFNOT R10 L6; goto L6 if not var10
       25 [-]: GETIMPORT R11 9; var11 = 0xAE91E43B
-      26 [-]: FASTCALL1 62 R11 L5; 
+      26 [-]: FASTCALL1 64 R11 L5; 
       27 [-]: GETIMPORT R10 1; var10 = 0x7B998233
       28 [-]: CALL R10 2 2 ; var10 = var10(var11)
 L 5:  29 [-]: JUMPIF R10 L6; goto L6 if var10
@@ -607,7 +592,7 @@ L 6:  36 [-]: FORGLOOP R5 L4 2 [inext];
 ; Is_vararg:       0
 ; Max Stack Size:  8
 
-       0 [-]: FASTCALL1 62 R0 L0; 
+       0 [-]: FASTCALL1 64 R0 L0; 
        1 [-]: MOVE R4 R0   ; var4 = var0
        2 [-]: GETIMPORT R3 1; var3 = 0x7B998233
        3 [-]: CALL R3 2 2  ; var3 = var3(var4)
@@ -672,7 +657,7 @@ L 1:  20 [-]: GETUPVAL R4 0; var4 = upvalues[0]
       17 [-]: SETTABLEKS R3 R2 K6; var3["ClipName"] = var2
       18 [-]: GETIMPORT R3 14; var3 = 0x3FBD5638
       19 [-]: SETTABLEKS R3 R2 K7; var3["Texture"] = var2
-      20 [-]: LOADK R3 K15 ; var3 = 1.1000000000000001
+      20 [-]: LOADK R3 K15 ; var3 = 1.1000000238418579
       21 [-]: SETTABLEKS R3 R2 K8; var3["Scale"] = var2
       22 [-]: LOADN R3 100 ; var3 = 100
       23 [-]: SETTABLEKS R3 R2 K9; var3["Alpha"] = var2
@@ -687,7 +672,7 @@ L 0:  29 [-]: GETUPVAL R1 4; var1 = upvalues[4]
       32 [-]: SETTABLEKS R3 R2 K6; var3["ClipName"] = var2
       33 [-]: GETIMPORT R3 25; var3 = 0x182A313D
       34 [-]: SETTABLEKS R3 R2 K7; var3["Texture"] = var2
-      35 [-]: LOADK R3 K26 ; var3 = 1.075
+      35 [-]: LOADK R3 K26 ; var3 = 1.0750000476837158
       36 [-]: SETTABLEKS R3 R2 K8; var3["Scale"] = var2
       37 [-]: LOADN R3 40  ; var3 = 40
       38 [-]: SETTABLEKS R3 R2 K9; var3["Alpha"] = var2
@@ -700,7 +685,7 @@ L 1:  44 [-]: GETUPVAL R1 4; var1 = upvalues[4]
       45 [-]: DUPTABLE R2 27; 
       46 [-]: LOADK R3 K28 ; var3 = "Stars"
       47 [-]: SETTABLEKS R3 R2 K6; var3["ClipName"] = var2
-      48 [-]: LOADK R3 K29 ; var3 = 1.05
+      48 [-]: LOADK R3 K29 ; var3 = 1.0499999523162842
       49 [-]: SETTABLEKS R3 R2 K8; var3["Scale"] = var2
       50 [-]: LOADN R3 100 ; var3 = 100
       51 [-]: SETTABLEKS R3 R2 K9; var3["Alpha"] = var2
@@ -711,7 +696,7 @@ L 2:  55 [-]: GETUPVAL R1 4; var1 = upvalues[4]
       56 [-]: DUPTABLE R2 27; 
       57 [-]: LOADK R3 K30 ; var3 = "Triangles"
       58 [-]: SETTABLEKS R3 R2 K6; var3["ClipName"] = var2
-      59 [-]: LOADK R3 K31 ; var3 = 1.0449999999999999
+      59 [-]: LOADK R3 K31 ; var3 = 1.0449999570846558
       60 [-]: SETTABLEKS R3 R2 K8; var3["Scale"] = var2
       61 [-]: LOADN R3 7   ; var3 = 7
       62 [-]: SETTABLEKS R3 R2 K9; var3["Alpha"] = var2
@@ -784,7 +769,7 @@ L 7: 114 [-]: GETUPVAL R2 6; var2 = upvalues[6]
 ; Max Stack Size:  4
 
        0 [-]: GETIMPORT R1 1; var1 = 0xAE91E43B
-       1 [-]: FASTCALL1 62 R1 L0; 
+       1 [-]: FASTCALL1 64 R1 L0; 
        2 [-]: GETIMPORT R0 3; var0 = 0x7B998233
        3 [-]: CALL R0 2 2  ; var0 = var0(var1)
 L 0:   4 [-]: JUMPIFNOT R0 L1; goto L1 if not var0

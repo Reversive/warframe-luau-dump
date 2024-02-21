@@ -64,7 +64,7 @@ L 0:   7 [-]: GETTABLE R6 R2 R5; var6 = var2[var5]
       12 [-]: NAMECALL R6 R1 K4; var7 = var1; var6 = var1[0xBEBAD19F]
       13 [-]: CALL R6 3 2  ; var6 = var6(var7, var8)
       14 [-]: GETIMPORT R7 6; var7 = 0x443A8D0B
-      15 [-]: JUMPIFNOTLT R6 R7 L1; goto L1 if var6 >= var67143
+      15 [-]: JUMPIFNOTLT R6 R7 L1; goto L1 if var6 >= var67120
       16 [-]: LOADN R6 1   ; var6 = 1
       17 [-]: RETURN R6 1  ; 
 L 1:  18 [-]: FORNLOOP R3 L0; nforloop end - iterate + goto L0
@@ -82,7 +82,7 @@ L 2:  19 [-]: LOADN R3 0   ; var3 = 0
        0 [-]: NAMECALL R4 R1 K0; var5 = var1; var4 = var1[0x388577D5]
        1 [-]: CALL R4 2 2  ; var4 = var4(var5)
        2 [-]: GETIMPORT R6 3; var6 = _T["gSpaceTrap"]
-       3 [-]: FASTCALL1 62 R6 L0; 
+       3 [-]: FASTCALL1 64 R6 L0; 
        4 [-]: GETIMPORT R5 5; var5 = 0x7B998233
        5 [-]: CALL R5 2 2  ; var5 = var5(var6)
 L 0:   6 [-]: JUMPIFNOT R5 L1; goto L1 if not var5
@@ -91,7 +91,7 @@ L 0:   6 [-]: JUMPIFNOT R5 L1; goto L1 if not var5
        9 [-]: SETTABLEKS R6 R5 K2; var6["gSpaceTrap"] = var5
 L 1:  10 [-]: GETIMPORT R7 3; var7 = _T["gSpaceTrap"]
       11 [-]: GETTABLE R6 R7 R4; var6 = var7[var4]
-      12 [-]: FASTCALL1 62 R6 L2; 
+      12 [-]: FASTCALL1 64 R6 L2; 
       13 [-]: GETIMPORT R5 5; var5 = 0x7B998233
       14 [-]: CALL R5 2 2  ; var5 = var5(var6)
 L 2:  15 [-]: JUMPIFNOT R5 L3; goto L3 if not var5
@@ -105,7 +105,7 @@ L 3:  19 [-]: GETIMPORT R5 8; var5 = 0x89326C93
       23 [-]: NAMECALL R6 R1 K12; var7 = var1; var6 = var1[0xC1595BD5]
       24 [-]: CALL R6 3 2  ; var6 = var6(var7, var8)
       25 [-]: NEWTABLE R7 0 0; var7 = {}
-      26 [-]: FASTCALL1 62 R6 L4; 
+      26 [-]: FASTCALL1 64 R6 L4; 
       27 [-]: MOVE R9 R6   ; var9 = var6
       28 [-]: GETIMPORT R8 5; var8 = 0x7B998233
       29 [-]: CALL R8 2 2  ; var8 = var8(var9)
@@ -137,7 +137,7 @@ L 6:  52 [-]: GETIMPORT R12 6; var12 = _T
       55 [-]: SETTABLEKS R13 R12 K20; var13["EnergyNetWarning"] = var12
 L 7:  56 [-]: GETIMPORT R12 21; var12 = _T["EnergyNetWarning"]
       57 [-]: LOADN R13 2  ; var13 = 2
-      58 [-]: JUMPIFNOTLE R12 R13 L10; goto L10 if var12 > var69191
+      58 [-]: JUMPIFNOTLE R12 R13 L10; goto L10 if var12 > var69168
       59 [-]: LOADN R14 1  ; var14 = 1
       60 [-]: LENGTH R12 R5; var12 = #var5
       61 [-]: LOADN R13 1  ; var13 = 1
@@ -146,7 +146,7 @@ L 8:  63 [-]: GETTABLE R17 R5 R14; var17 = var5[var14]
       64 [-]: NAMECALL R15 R1 K23; var16 = var1; var15 = var1[0xBEBAD19F]
       65 [-]: CALL R15 3 2 ; var15 = var15(var16, var17)
       66 [-]: GETIMPORT R16 25; var16 = 0x443A8D0B
-      67 [-]: JUMPIFNOTLT R15 R16 L9; goto L9 if var15 >= var235212599
+      67 [-]: JUMPIFNOTLT R15 R16 L9; goto L9 if var15 >= var235212573
       68 [-]: GETTABLE R15 R5 R14; var15 = var5[var14]
       69 [-]: GETIMPORT R17 27; var17 = 0xFD2CD767
       70 [-]: NAMECALL R15 R15 K28; var16 = var15; var15 = var15[0x2A748F85]
@@ -223,7 +223,7 @@ L14: 140 [-]: GETTABLE R17 R5 R14; var17 = var5[var14]
      141 [-]: NAMECALL R15 R1 K23; var16 = var1; var15 = var1[0xBEBAD19F]
      142 [-]: CALL R15 3 2 ; var15 = var15(var16, var17)
      143 [-]: GETIMPORT R16 25; var16 = 0x443A8D0B
-     144 [-]: JUMPIFNOTLT R15 R16 L16; goto L16 if var15 >= var69959
+     144 [-]: JUMPIFNOTLT R15 R16 L16; goto L16 if var15 >= var69936
      145 [-]: LOADN R17 1  ; var17 = 1
      146 [-]: GETIMPORT R15 56; var15 = 0x35B2D0F5
      147 [-]: LOADN R16 1  ; var16 = 1
@@ -257,7 +257,7 @@ L15: 149 [-]: GETIMPORT R19 58; var19 = 0x55730E1A
      175 [-]: GETIMPORT R22 68; var22 = 0x0B03BC9B
      176 [-]: CALL R21 2 1 ; var21(var22)
      177 [-]: FORNLOOP R15 L15; nforloop end - iterate + goto L15
-L16: 178 [-]: FASTCALL1 62 R7 L17; 
+L16: 178 [-]: FASTCALL1 64 R7 L17; 
      179 [-]: MOVE R16 R7  ; var16 = var7
      180 [-]: GETIMPORT R15 5; var15 = 0x7B998233
      181 [-]: CALL R15 2 2 ; var15 = var15(var16)
@@ -267,7 +267,7 @@ L17: 182 [-]: JUMPIF R15 L21; goto L21 if var15
      185 [-]: LOADN R16 1  ; var16 = 1
      186 [-]: FORNPREP R15 L21; nforprep start - [escape at L21] -- var15 = iterator
 L18: 187 [-]: GETTABLE R19 R7 R17; var19 = var7[var17]
-     188 [-]: FASTCALL1 62 R19 L19; 
+     188 [-]: FASTCALL1 64 R19 L19; 
      189 [-]: GETIMPORT R18 5; var18 = 0x7B998233
      190 [-]: CALL R18 2 2 ; var18 = var18(var19)
 L19: 191 [-]: JUMPIF R18 L20; goto L20 if var18
@@ -298,7 +298,7 @@ L22: 202 [-]: RETURN R0 0  ;
        4 [-]: LOADN R5 20  ; var5 = 20
        5 [-]: NAMECALL R1 R1 K5; var2 = var1; var1 = var1[0x4E5939A5]
        6 [-]: CALL R1 5 2  ; var1 = var1(var2, var3, var4, var5)
-       7 [-]: FASTCALL1 62 R1 L0; 
+       7 [-]: FASTCALL1 64 R1 L0; 
        8 [-]: MOVE R3 R1   ; var3 = var1
        9 [-]: GETIMPORT R2 7; var2 = 0x7B998233
       10 [-]: CALL R2 2 2  ; var2 = var2(var3)
@@ -310,7 +310,7 @@ L 1:  15 [-]: NAMECALL R2 R1 K9; var3 = var1; var2 = var1[0xC8442850]
       16 [-]: CALL R2 2 2  ; var2 = var2(var3)
       17 [-]: LOADN R3 0   ; var3 = 0
 L 2:  18 [-]: LOADN R4 0   ; var4 = 0
-      19 [-]: JUMPIFNOTLT R4 R2 L5; goto L5 if var4 >= var1342243909
+      19 [-]: JUMPIFNOTLT R4 R2 L5; goto L5 if var4 >= var1342243916
       20 [-]: NAMECALL R4 R1 K9; var5 = var1; var4 = var1[0xC8442850]
       21 [-]: CALL R4 2 2  ; var4 = var4(var5)
       22 [-]: MOVE R2 R4   ; var2 = var4
@@ -318,12 +318,12 @@ L 2:  18 [-]: LOADN R4 0   ; var4 = 0
       24 [-]: JUMPIFNOT R4 L3; goto L3 if not var4
       25 [-]: GETIMPORT R4 12; var4 = _T["EnergyNetWarning"]
       26 [-]: LOADN R5 2   ; var5 = 2
-      27 [-]: JUMPIFNOTLE R4 R5 L4; goto L4 if var4 > var918606
+      27 [-]: JUMPIFNOTLE R4 R5 L4; goto L4 if var4 > var918561
 L 3:  28 [-]: GETIMPORT R4 14; var4 = 0x67652851
       29 [-]: CALL R4 1 2  ; var4 = var4()
       30 [-]: ADD R3 R3 R4 ; var3 = var3 + var4
       31 [-]: LOADN R4 30  ; var4 = 30
-      32 [-]: JUMPIFNOTLT R4 R3 L4; goto L4 if var4 >= var1031
+      32 [-]: JUMPIFNOTLT R4 R3 L4; goto L4 if var4 >= var1084
       33 [-]: GETUPVAL R4 0; var4 = upvalues[0]
       34 [-]: GETIMPORT R5 16; var5 = 0xEFB6326D
       35 [-]: CALL R4 2 1  ; var4(var5)
@@ -336,7 +336,7 @@ L 5:  41 [-]: GETIMPORT R4 12; var4 = _T["EnergyNetWarning"]
       42 [-]: JUMPIFNOT R4 L6; goto L6 if not var4
       43 [-]: GETIMPORT R4 12; var4 = _T["EnergyNetWarning"]
       44 [-]: LOADN R5 2   ; var5 = 2
-      45 [-]: JUMPIFNOTLE R4 R5 L7; goto L7 if var4 > var1031
+      45 [-]: JUMPIFNOTLE R4 R5 L7; goto L7 if var4 > var1084
 L 6:  46 [-]: GETUPVAL R4 0; var4 = upvalues[0]
       47 [-]: GETIMPORT R5 20; var5 = 0x1D1E5B96
       48 [-]: CALL R4 2 1  ; var4(var5)

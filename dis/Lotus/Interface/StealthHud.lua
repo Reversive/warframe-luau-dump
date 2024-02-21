@@ -57,7 +57,7 @@
 ; Max Stack Size:  5
 
        0 [-]: GETIMPORT R1 2; var1 = _T["HUD_GetAnchorMgr"]
-       1 [-]: FASTCALL1 62 R1 L0; 
+       1 [-]: FASTCALL1 64 R1 L0; 
        2 [-]: GETIMPORT R0 4; var0 = 0x7B998233
        3 [-]: CALL R0 2 2  ; var0 = var0(var1)
 L 0:   4 [-]: JUMPIF R0 L1 ; goto L1 if var0
@@ -79,60 +79,59 @@ L 1:  12 [-]: RETURN R0 0  ;
 ; Max Stack Size:  13
 
        0 [-]: LOADN R2 0   ; var2 = 0
-       1 [-]: JUMPIFNOTLE R0 R2 L0; goto L0 if var0 > var65581
+       1 [-]: JUMPIFNOTLE R0 R2 L0; goto L0 if var0 > var65571
        2 [-]: RETURN R0 0  ; 
 L 0:   3 [-]: GETIMPORT R6 3; var6 = 0x3B32B92D
-       4 [-]: DIVK R5 R6 K1; var5 = var6 / 2
-       5 [-]: MUL R4 R0 R5 ; var4 = var0 * var5
+            5 [-]: MUL R4 R0 R5 ; var4 = var0 * var5
        6 [-]: SUBK R6 R0 K5; var6 = var0 - 1
        7 [-]: MULK R5 R6 K4; var5 = var6 * 7
        8 [-]: ADD R3 R4 R5 ; var3 = var4 + var5
        9 [-]: ADDK R2 R3 K0; var2 = var3 + 10
       10 [-]: GETIMPORT R4 8; var4 = 0xAE91E43B
       11 [-]: LOADK R7 K9  ; var7 = "PipContainer.List.Element"
-      12 [-]: GETIMPORT R8 11; var8 = 0x64FB1586
+      12 [-]: FASTCALL1 63 R0 L1; 
       13 [-]: MOVE R9 R0   ; var9 = var0
-      14 [-]: CALL R8 2 2  ; var8 = var8(var9)
-      15 [-]: CONCAT R6 R7 R8; var6 = var7 .. var8
-      16 [-]: LOADN R7 0   ; var7 = 0
-      17 [-]: NAMECALL R4 R4 K12; var5 = var4; var4 = var4[0x91A24E4B]
-      18 [-]: CALL R4 4 2  ; var4 = var4(var5, var6, var7)
-      19 [-]: ADDK R3 R4 K6; var3 = var4 + 35
-      20 [-]: GETIMPORT R4 16; var4 = _T["DetectionHud_Info"]["NumSegments"]
-      21 [-]: JUMPIFNOTEQ R0 R4 L1; goto L1 if var0 ~= var285410087
-      22 [-]: SUBK R3 R3 K17; var3 = var3 - 3
-L 1:  23 [-]: GETUPVAL R5 0; var5 = upvalues[0]
-      24 [-]: GETTABLEKS R4 R5 K18; var4 = var5[0x06D055F9]
-      25 [-]: MOVE R5 R1   ; var5 = var1
-      26 [-]: LOADN R6 0   ; var6 = 0
-      27 [-]: LOADK R7 K19 ; var7 = 0.25
-      28 [-]: CALL R4 4 2  ; var4 = var4(var5, var6, var7)
-      29 [-]: GETIMPORT R5 21; var5 = 0x25312C9B
-      30 [-]: GETIMPORT R6 8; var6 = 0xAE91E43B
-      31 [-]: LOADK R7 K22 ; var7 = "PipContainer.List.BraceRight"
-      32 [-]: LOADN R8 8   ; var8 = 8
-      33 [-]: NEWTABLE R9 0 1; var9 = {}
-      34 [-]: LOADN R10 0  ; var10 = 0
-      35 [-]: SETLIST R9 R10 1 [1]; var9[1] = var10; var9[2] = var11; 
-      36 [-]: NEWTABLE R10 0 1; var10 = {}
-      37 [-]: MOVE R11 R3  ; var11 = var3
-      38 [-]: SETLIST R10 R11 1 [1]; var10[1] = var11; var10[2] = var12; 
-      39 [-]: MOVE R11 R4  ; var11 = var4
-      40 [-]: CALL R5 7 1  ; var5(var6, var7, var8, var9, var10, var11)
-      41 [-]: GETIMPORT R5 21; var5 = 0x25312C9B
-      42 [-]: GETIMPORT R6 8; var6 = 0xAE91E43B
-      43 [-]: LOADK R7 K23 ; var7 = "PipContainer.List"
-      44 [-]: LOADN R8 8   ; var8 = 8
-      45 [-]: NEWTABLE R9 0 1; var9 = {}
-      46 [-]: LOADN R10 0  ; var10 = 0
-      47 [-]: SETLIST R9 R10 1 [1]; var9[1] = var10; var9[2] = var11; 
-      48 [-]: NEWTABLE R10 0 1; var10 = {}
-      49 [-]: DIVK R12 R2 K1; var12 = var2 / 2
-      50 [-]: MINUS R11 R12; 
-      51 [-]: SETLIST R10 R11 1 [1]; var10[1] = var11; var10[2] = var12; 
-      52 [-]: MOVE R11 R4  ; var11 = var4
-      53 [-]: CALL R5 7 1  ; var5(var6, var7, var8, var9, var10, var11)
-      54 [-]: RETURN R0 0  ; 
+      14 [-]: GETIMPORT R8 11; var8 = 0x64FB1586
+      15 [-]: CALL R8 2 2  ; var8 = var8(var9)
+L 1:  16 [-]: CONCAT R6 R7 R8; var6 = var7 .. var8
+      17 [-]: LOADN R7 0   ; var7 = 0
+      18 [-]: NAMECALL R4 R4 K12; var5 = var4; var4 = var4[0x91A24E4B]
+      19 [-]: CALL R4 4 2  ; var4 = var4(var5, var6, var7)
+      20 [-]: ADDK R3 R4 K6; var3 = var4 + 35
+      21 [-]: GETIMPORT R4 16; var4 = _T["DetectionHud_Info"]["NumSegments"]
+      22 [-]: JUMPIFNOTEQ R0 R4 L2; goto L2 if var0 ~= var285410050
+      23 [-]: SUBK R3 R3 K17; var3 = var3 - 3
+L 2:  24 [-]: GETUPVAL R5 0; var5 = upvalues[0]
+      25 [-]: GETTABLEKS R4 R5 K18; var4 = var5[0x06D055F9]
+      26 [-]: MOVE R5 R1   ; var5 = var1
+      27 [-]: LOADN R6 0   ; var6 = 0
+      28 [-]: LOADK R7 K19 ; var7 = 0.25
+      29 [-]: CALL R4 4 2  ; var4 = var4(var5, var6, var7)
+      30 [-]: GETIMPORT R5 21; var5 = 0x25312C9B
+      31 [-]: GETIMPORT R6 8; var6 = 0xAE91E43B
+      32 [-]: LOADK R7 K22 ; var7 = "PipContainer.List.BraceRight"
+      33 [-]: LOADN R8 8   ; var8 = 8
+      34 [-]: NEWTABLE R9 0 1; var9 = {}
+      35 [-]: LOADN R10 0  ; var10 = 0
+      36 [-]: SETLIST R9 R10 1 [1]; var9[1] = var10; var9[2] = var11; 
+      37 [-]: NEWTABLE R10 0 1; var10 = {}
+      38 [-]: MOVE R11 R3  ; var11 = var3
+      39 [-]: SETLIST R10 R11 1 [1]; var10[1] = var11; var10[2] = var12; 
+      40 [-]: MOVE R11 R4  ; var11 = var4
+      41 [-]: CALL R5 7 1  ; var5(var6, var7, var8, var9, var10, var11)
+      42 [-]: GETIMPORT R5 21; var5 = 0x25312C9B
+      43 [-]: GETIMPORT R6 8; var6 = 0xAE91E43B
+      44 [-]: LOADK R7 K23 ; var7 = "PipContainer.List"
+      45 [-]: LOADN R8 8   ; var8 = 8
+      46 [-]: NEWTABLE R9 0 1; var9 = {}
+      47 [-]: LOADN R10 0  ; var10 = 0
+      48 [-]: SETLIST R9 R10 1 [1]; var9[1] = var10; var9[2] = var11; 
+      49 [-]: NEWTABLE R10 0 1; var10 = {}
+           51 [-]: MINUS R11 R12; 
+      52 [-]: SETLIST R10 R11 1 [1]; var10[1] = var11; var10[2] = var12; 
+      53 [-]: MOVE R11 R4  ; var11 = var4
+      54 [-]: CALL R5 7 1  ; var5(var6, var7, var8, var9, var10, var11)
+      55 [-]: RETURN R0 0  ; 
 
 
 ; Name:            
@@ -145,25 +144,26 @@ L 1:  23 [-]: GETUPVAL R5 0; var5 = upvalues[0]
        0 [-]: LOADN R2 1   ; var2 = 1
        1 [-]: GETIMPORT R0 3; var0 = _T["DetectionHud_Info"]["NumSegments"]
        2 [-]: LOADN R1 1   ; var1 = 1
-       3 [-]: FORNPREP R0 L1; nforprep start - [escape at L1] -- var0 = iterator
+       3 [-]: FORNPREP R0 L2; nforprep start - [escape at L2] -- var0 = iterator
 L 0:   4 [-]: LOADK R4 K4  ; var4 = "PipContainer.List.Element"
-       5 [-]: GETIMPORT R5 6; var5 = 0x64FB1586
+       5 [-]: FASTCALL1 63 R2 L1; 
        6 [-]: MOVE R6 R2   ; var6 = var2
-       7 [-]: CALL R5 2 2  ; var5 = var5(var6)
-       8 [-]: CONCAT R3 R4 R5; var3 = var4 .. var5
-       9 [-]: GETIMPORT R4 8; var4 = 0xAE91E43B
-      10 [-]: MOVE R6 R3   ; var6 = var3
-      11 [-]: LOADK R7 K9  ; var7 = "Fill"
-      12 [-]: LOADN R8 12  ; var8 = 12
-      13 [-]: GETIMPORT R9 11; var9 = 0x3B32B92D
-      14 [-]: NAMECALL R4 R4 K12; var5 = var4; var4 = var4[0xF64B7262]
-      15 [-]: CALL R4 6 1  ; var4(var5, var6, var7, var8, var9)
-      16 [-]: FORNLOOP R0 L0; nforloop end - iterate + goto L0
-L 1:  17 [-]: GETUPVAL R0 0; var0 = upvalues[0]
-      18 [-]: GETIMPORT R1 3; var1 = _T["DetectionHud_Info"]["NumSegments"]
-      19 [-]: LOADB R2 1   ; var2 = true
-      20 [-]: CALL R0 3 1  ; var0(var1, var2)
-      21 [-]: RETURN R0 0  ; 
+       7 [-]: GETIMPORT R5 6; var5 = 0x64FB1586
+       8 [-]: CALL R5 2 2  ; var5 = var5(var6)
+L 1:   9 [-]: CONCAT R3 R4 R5; var3 = var4 .. var5
+      10 [-]: GETIMPORT R4 8; var4 = 0xAE91E43B
+      11 [-]: MOVE R6 R3   ; var6 = var3
+      12 [-]: LOADK R7 K9  ; var7 = "Fill"
+      13 [-]: LOADN R8 12  ; var8 = 12
+      14 [-]: GETIMPORT R9 11; var9 = 0x3B32B92D
+      15 [-]: NAMECALL R4 R4 K12; var5 = var4; var4 = var4[0xF64B7262]
+      16 [-]: CALL R4 6 1  ; var4(var5, var6, var7, var8, var9)
+      17 [-]: FORNLOOP R0 L0; nforloop end - iterate + goto L0
+L 2:  18 [-]: GETUPVAL R0 0; var0 = upvalues[0]
+      19 [-]: GETIMPORT R1 3; var1 = _T["DetectionHud_Info"]["NumSegments"]
+      20 [-]: LOADB R2 1   ; var2 = true
+      21 [-]: CALL R0 3 1  ; var0(var1, var2)
+      22 [-]: RETURN R0 0  ; 
 
 
 ; Name:            
@@ -279,7 +279,7 @@ L 1:  55 [-]: GETUPVAL R3 2; var3 = upvalues[2]
        0 [-]: GETIMPORT R0 3; var0 = _T["DetectionHud_Info"]["Health"]
        1 [-]: LOADB R1 0   ; var1 = false
        2 [-]: GETUPVAL R2 0; var2 = upvalues[0]
-       3 [-]: JUMPIFEQ R0 R2 L1; goto L1 if var0 == var328270
+       3 [-]: JUMPIFEQ R0 R2 L1; goto L1 if var0 == var328225
        4 [-]: GETIMPORT R2 5; var2 = 0xAE91E43B
        5 [-]: LOADK R4 K6  ; var4 = "PipContainer"
        6 [-]: LOADN R5 10  ; var5 = 10
@@ -287,15 +287,15 @@ L 1:  55 [-]: GETUPVAL R3 2; var3 = upvalues[2]
        8 [-]: NAMECALL R2 R2 K7; var3 = var2; var2 = var2[0x67BC869F]
        9 [-]: CALL R2 5 1  ; var2(var3, var4, var5, var6)
       10 [-]: GETUPVAL R2 0; var2 = upvalues[0]
-      11 [-]: JUMPIFNOTLT R0 R2 L2; goto L2 if var0 >= var66119
+      11 [-]: JUMPIFNOTLT R0 R2 L2; goto L2 if var0 >= var66096
       12 [-]: LOADN R2 1   ; var2 = 1
-      13 [-]: JUMPIFNOTLT R0 R2 L2; goto L2 if var0 >= var519
+      13 [-]: JUMPIFNOTLT R0 R2 L2; goto L2 if var0 >= var572
       14 [-]: GETUPVAL R2 0; var2 = upvalues[0]
       15 [-]: LOADN R3 1   ; var3 = 1
-      16 [-]: JUMPIFNOTLT R2 R3 L2; goto L2 if var2 >= var65819
+      16 [-]: JUMPIFNOTLT R2 R3 L2; goto L2 if var2 >= var65798
       17 [-]: LOADB R1 1   ; var1 = true
       18 [-]: GETUPVAL R3 1; var3 = upvalues[1]
-      19 [-]: FASTCALL1 62 R3 L0; 
+      19 [-]: FASTCALL1 64 R3 L0; 
       20 [-]: GETIMPORT R2 9; var2 = 0x7B998233
       21 [-]: CALL R2 2 2  ; var2 = var2(var3)
 L 0:  22 [-]: JUMPIFNOT R2 L2; goto L2 if not var2
@@ -327,7 +327,7 @@ L 1:  29 [-]: GETIMPORT R2 5; var2 = 0xAE91E43B
       48 [-]: CALL R3 5 1  ; var3(var4, var5, var6, var7)
 L 2:  49 [-]: JUMPIF R1 L4 ; goto L4 if var1
       50 [-]: GETUPVAL R3 1; var3 = upvalues[1]
-      51 [-]: FASTCALL1 62 R3 L3; 
+      51 [-]: FASTCALL1 64 R3 L3; 
       52 [-]: GETIMPORT R2 9; var2 = 0x7B998233
       53 [-]: CALL R2 2 2  ; var2 = var2(var3)
 L 3:  54 [-]: JUMPIF R2 L4 ; goto L4 if var2
@@ -345,72 +345,73 @@ L 5:  65 [-]: FASTCALL1 7 R0 L6;
       66 [-]: MOVE R4 R0   ; var4 = var0
       67 [-]: GETIMPORT R3 22; var3 = 0x5BCED4C4[0x99675E23]
       68 [-]: CALL R3 2 2  ; var3 = var3(var4)
-L 6:  69 [-]: JUMPIFEQ R2 R3 L9; goto L9 if var2 == var1508101
+L 6:  69 [-]: JUMPIFEQ R2 R3 L10; goto L10 if var2 == var1508167
       70 [-]: LOADK R3 K23 ; var3 = "PipContainer.List.Element"
-      71 [-]: GETIMPORT R4 25; var4 = 0x64FB1586
-      72 [-]: GETUPVAL R6 0; var6 = upvalues[0]
-      73 [-]: FASTCALL1 7 R6 L7; 
-      74 [-]: GETIMPORT R5 22; var5 = 0x5BCED4C4[0x99675E23]
-      75 [-]: CALL R5 2 2  ; var5 = var5(var6)
-L 7:  76 [-]: CALL R4 2 2  ; var4 = var4(var5)
-      77 [-]: CONCAT R2 R3 R4; var2 = var3 .. var4
-      78 [-]: GETIMPORT R3 27; var3 = 0x89326C93
-      79 [-]: GETIMPORT R5 29; var5 = 0xCF74D4CC
-      80 [-]: GETIMPORT R6 31; var6 = ZERO_VECTOR
-      81 [-]: LOADB R7 0   ; var7 = false
-      82 [-]: LOADN R8 1   ; var8 = 1
-      83 [-]: NAMECALL R3 R3 K10; var4 = var3; var3 = var3[0x659D451F]
-      84 [-]: CALL R3 6 1  ; var3(var4, var5, var6, var7, var8)
-      85 [-]: GETUPVAL R4 2; var4 = upvalues[2]
-      86 [-]: GETTABLEKS R3 R4 K32; var3 = var4[0xF76783E5]
-      87 [-]: GETIMPORT R4 5; var4 = 0xAE91E43B
-      88 [-]: MOVE R5 R2   ; var5 = var2
-      89 [-]: GETIMPORT R6 34; var6 = 0x0849FF2F
-      90 [-]: GETIMPORT R8 37; var8 = 0x3B32B92D
-      91 [-]: DIVK R7 R8 K35; var7 = var8 / 2
-      92 [-]: LOADN R8 0   ; var8 = 0
-      93 [-]: CALL R3 6 1  ; var3(var4, var5, var6, var7, var8)
-      94 [-]: GETIMPORT R3 5; var3 = 0xAE91E43B
-      95 [-]: MOVE R5 R2   ; var5 = var2
-      96 [-]: LOADN R6 11  ; var6 = 11
-      97 [-]: LOADB R7 0   ; var7 = false
-      98 [-]: NAMECALL R3 R3 K38; var4 = var3; var3 = var3[0xAADE900E]
-      99 [-]: CALL R3 5 1  ; var3(var4, var5, var6, var7)
-     100 [-]: GETUPVAL R3 3; var3 = upvalues[3]
-     101 [-]: FASTCALL1 7 R0 L8; 
-     102 [-]: MOVE R5 R0   ; var5 = var0
-     103 [-]: GETIMPORT R4 22; var4 = 0x5BCED4C4[0x99675E23]
-     104 [-]: CALL R4 2 2  ; var4 = var4(var5)
-L 8: 105 [-]: CALL R3 2 1  ; var3(var4)
-L 9: 106 [-]: LOADK R3 K23 ; var3 = "PipContainer.List.Element"
-     107 [-]: GETIMPORT R4 25; var4 = 0x64FB1586
-     108 [-]: FASTCALL1 7 R0 L10; 
+      71 [-]: GETUPVAL R6 0; var6 = upvalues[0]
+      72 [-]: FASTCALL1 7 R6 L7; 
+      73 [-]: GETIMPORT R5 22; var5 = 0x5BCED4C4[0x99675E23]
+      74 [-]: CALL R5 2 2  ; var5 = var5(var6)
+L 7:  75 [-]: FASTCALL1 63 R5 L8; 
+      76 [-]: GETIMPORT R4 25; var4 = 0x64FB1586
+      77 [-]: CALL R4 2 2  ; var4 = var4(var5)
+L 8:  78 [-]: CONCAT R2 R3 R4; var2 = var3 .. var4
+      79 [-]: GETIMPORT R3 27; var3 = 0x89326C93
+      80 [-]: GETIMPORT R5 29; var5 = 0xCF74D4CC
+      81 [-]: GETIMPORT R6 31; var6 = ZERO_VECTOR
+      82 [-]: LOADB R7 0   ; var7 = false
+      83 [-]: LOADN R8 1   ; var8 = 1
+      84 [-]: NAMECALL R3 R3 K10; var4 = var3; var3 = var3[0x659D451F]
+      85 [-]: CALL R3 6 1  ; var3(var4, var5, var6, var7, var8)
+      86 [-]: GETUPVAL R4 2; var4 = upvalues[2]
+      87 [-]: GETTABLEKS R3 R4 K32; var3 = var4[0xF76783E5]
+      88 [-]: GETIMPORT R4 5; var4 = 0xAE91E43B
+      89 [-]: MOVE R5 R2   ; var5 = var2
+      90 [-]: GETIMPORT R6 34; var6 = 0x0849FF2F
+      91 [-]: GETIMPORT R8 37; var8 = 0x3B32B92D
+           93 [-]: LOADN R8 0   ; var8 = 0
+      94 [-]: CALL R3 6 1  ; var3(var4, var5, var6, var7, var8)
+      95 [-]: GETIMPORT R3 5; var3 = 0xAE91E43B
+      96 [-]: MOVE R5 R2   ; var5 = var2
+      97 [-]: LOADN R6 11  ; var6 = 11
+      98 [-]: LOADB R7 0   ; var7 = false
+      99 [-]: NAMECALL R3 R3 K38; var4 = var3; var3 = var3[0xAADE900E]
+     100 [-]: CALL R3 5 1  ; var3(var4, var5, var6, var7)
+     101 [-]: GETUPVAL R3 3; var3 = upvalues[3]
+     102 [-]: FASTCALL1 7 R0 L9; 
+     103 [-]: MOVE R5 R0   ; var5 = var0
+     104 [-]: GETIMPORT R4 22; var4 = 0x5BCED4C4[0x99675E23]
+     105 [-]: CALL R4 2 2  ; var4 = var4(var5)
+L 9: 106 [-]: CALL R3 2 1  ; var3(var4)
+L10: 107 [-]: LOADK R3 K23 ; var3 = "PipContainer.List.Element"
+     108 [-]: FASTCALL1 7 R0 L11; 
      109 [-]: MOVE R6 R0   ; var6 = var0
      110 [-]: GETIMPORT R5 22; var5 = 0x5BCED4C4[0x99675E23]
      111 [-]: CALL R5 2 2  ; var5 = var5(var6)
-L10: 112 [-]: CALL R4 2 2  ; var4 = var4(var5)
-     113 [-]: CONCAT R2 R3 R4; var2 = var3 .. var4
-     114 [-]: LOADN R3 1   ; var3 = 1
-     115 [-]: FASTCALL1 12 R0 L11; 
-     116 [-]: MOVE R5 R0   ; var5 = var0
-     117 [-]: GETIMPORT R4 40; var4 = 0x5BCED4C4[0x55F27C30]
-     118 [-]: CALL R4 2 2  ; var4 = var4(var5)
-L11: 119 [-]: JUMPIFEQ R0 R4 L13; goto L13 if var0 == var50334795
-     120 [-]: FASTCALL1 12 R0 L12; 
-     121 [-]: MOVE R5 R0   ; var5 = var0
-     122 [-]: GETIMPORT R4 40; var4 = 0x5BCED4C4[0x55F27C30]
-     123 [-]: CALL R4 2 2  ; var4 = var4(var5)
-L12: 124 [-]: SUB R3 R0 R4 ; var3 = var0 - var4
-L13: 125 [-]: GETIMPORT R4 5; var4 = 0xAE91E43B
-     126 [-]: MOVE R6 R2   ; var6 = var2
-     127 [-]: LOADK R7 K41 ; var7 = "Fill"
-     128 [-]: LOADN R8 12  ; var8 = 12
-     129 [-]: GETIMPORT R10 37; var10 = 0x3B32B92D
-     130 [-]: MUL R9 R10 R3; var9 = var10 * var3
-     131 [-]: NAMECALL R4 R4 K42; var5 = var4; var4 = var4[0xF64B7262]
-     132 [-]: CALL R4 6 1  ; var4(var5, var6, var7, var8, var9)
-     133 [-]: SETUPVAL R0 0; upvalues[0] = var0
-     134 [-]: RETURN R0 0  ; 
+L11: 112 [-]: FASTCALL1 63 R5 L12; 
+     113 [-]: GETIMPORT R4 25; var4 = 0x64FB1586
+     114 [-]: CALL R4 2 2  ; var4 = var4(var5)
+L12: 115 [-]: CONCAT R2 R3 R4; var2 = var3 .. var4
+     116 [-]: LOADN R3 1   ; var3 = 1
+     117 [-]: FASTCALL1 12 R0 L13; 
+     118 [-]: MOVE R5 R0   ; var5 = var0
+     119 [-]: GETIMPORT R4 40; var4 = 0x5BCED4C4[0x55F27C30]
+     120 [-]: CALL R4 2 2  ; var4 = var4(var5)
+L13: 121 [-]: JUMPIFEQ R0 R4 L15; goto L15 if var0 == var50334781
+     122 [-]: FASTCALL1 12 R0 L14; 
+     123 [-]: MOVE R5 R0   ; var5 = var0
+     124 [-]: GETIMPORT R4 40; var4 = 0x5BCED4C4[0x55F27C30]
+     125 [-]: CALL R4 2 2  ; var4 = var4(var5)
+L14: 126 [-]: SUB R3 R0 R4 ; var3 = var0 - var4
+L15: 127 [-]: GETIMPORT R4 5; var4 = 0xAE91E43B
+     128 [-]: MOVE R6 R2   ; var6 = var2
+     129 [-]: LOADK R7 K41 ; var7 = "Fill"
+     130 [-]: LOADN R8 12  ; var8 = 12
+     131 [-]: GETIMPORT R10 37; var10 = 0x3B32B92D
+     132 [-]: MUL R9 R10 R3; var9 = var10 * var3
+     133 [-]: NAMECALL R4 R4 K42; var5 = var4; var4 = var4[0xF64B7262]
+     134 [-]: CALL R4 6 1  ; var4(var5, var6, var7, var8, var9)
+     135 [-]: SETUPVAL R0 0; upvalues[0] = var0
+     136 [-]: RETURN R0 0  ; 
 
 
 ; Name:            
@@ -423,31 +424,32 @@ L13: 125 [-]: GETIMPORT R4 5; var4 = 0xAE91E43B
        0 [-]: LOADN R2 1   ; var2 = 1
        1 [-]: GETIMPORT R0 3; var0 = _T["DetectionHud_Info"]["NumSegments"]
        2 [-]: LOADN R1 1   ; var1 = 1
-       3 [-]: FORNPREP R0 L1; nforprep start - [escape at L1] -- var0 = iterator
+       3 [-]: FORNPREP R0 L2; nforprep start - [escape at L2] -- var0 = iterator
 L 0:   4 [-]: LOADK R4 K4  ; var4 = "PipContainer.List.Element"
-       5 [-]: GETIMPORT R5 6; var5 = 0x64FB1586
+       5 [-]: FASTCALL1 63 R2 L1; 
        6 [-]: MOVE R6 R2   ; var6 = var2
-       7 [-]: CALL R5 2 2  ; var5 = var5(var6)
-       8 [-]: CONCAT R3 R4 R5; var3 = var4 .. var5
-       9 [-]: GETIMPORT R4 8; var4 = 0xAE91E43B
-      10 [-]: MOVE R6 R3   ; var6 = var3
-      11 [-]: LOADK R7 K9  ; var7 = "Fill"
-      12 [-]: LOADN R8 12  ; var8 = 12
-      13 [-]: GETIMPORT R9 11; var9 = 0x3B32B92D
-      14 [-]: NAMECALL R4 R4 K12; var5 = var4; var4 = var4[0xF64B7262]
-      15 [-]: CALL R4 6 1  ; var4(var5, var6, var7, var8, var9)
-      16 [-]: GETIMPORT R4 8; var4 = 0xAE91E43B
-      17 [-]: MOVE R6 R3   ; var6 = var3
-      18 [-]: LOADN R7 11  ; var7 = 11
-      19 [-]: LOADB R8 1   ; var8 = true
-      20 [-]: NAMECALL R4 R4 K13; var5 = var4; var4 = var4[0xAADE900E]
-      21 [-]: CALL R4 5 1  ; var4(var5, var6, var7, var8)
-      22 [-]: FORNLOOP R0 L0; nforloop end - iterate + goto L0
-L 1:  23 [-]: GETUPVAL R0 0; var0 = upvalues[0]
-      24 [-]: GETIMPORT R1 3; var1 = _T["DetectionHud_Info"]["NumSegments"]
-      25 [-]: LOADB R2 1   ; var2 = true
-      26 [-]: CALL R0 3 1  ; var0(var1, var2)
-      27 [-]: RETURN R0 0  ; 
+       7 [-]: GETIMPORT R5 6; var5 = 0x64FB1586
+       8 [-]: CALL R5 2 2  ; var5 = var5(var6)
+L 1:   9 [-]: CONCAT R3 R4 R5; var3 = var4 .. var5
+      10 [-]: GETIMPORT R4 8; var4 = 0xAE91E43B
+      11 [-]: MOVE R6 R3   ; var6 = var3
+      12 [-]: LOADK R7 K9  ; var7 = "Fill"
+      13 [-]: LOADN R8 12  ; var8 = 12
+      14 [-]: GETIMPORT R9 11; var9 = 0x3B32B92D
+      15 [-]: NAMECALL R4 R4 K12; var5 = var4; var4 = var4[0xF64B7262]
+      16 [-]: CALL R4 6 1  ; var4(var5, var6, var7, var8, var9)
+      17 [-]: GETIMPORT R4 8; var4 = 0xAE91E43B
+      18 [-]: MOVE R6 R3   ; var6 = var3
+      19 [-]: LOADN R7 11  ; var7 = 11
+      20 [-]: LOADB R8 1   ; var8 = true
+      21 [-]: NAMECALL R4 R4 K13; var5 = var4; var4 = var4[0xAADE900E]
+      22 [-]: CALL R4 5 1  ; var4(var5, var6, var7, var8)
+      23 [-]: FORNLOOP R0 L0; nforloop end - iterate + goto L0
+L 2:  24 [-]: GETUPVAL R0 0; var0 = upvalues[0]
+      25 [-]: GETIMPORT R1 3; var1 = _T["DetectionHud_Info"]["NumSegments"]
+      26 [-]: LOADB R2 1   ; var2 = true
+      27 [-]: CALL R0 3 1  ; var0(var1, var2)
+      28 [-]: RETURN R0 0  ; 
 
 
 ; Name:            
@@ -471,7 +473,7 @@ L 1:  23 [-]: GETUPVAL R0 0; var0 = upvalues[0]
       11 [-]: CALL R0 1 1  ; var0()
       12 [-]: GETUPVAL R0 1; var0 = upvalues[1]
       13 [-]: GETIMPORT R1 10; var1 = _T["Chimera_FailureCount"]
-      14 [-]: JUMPIFEQ R0 R1 L0; goto L0 if var0 == var655438
+      14 [-]: JUMPIFEQ R0 R1 L0; goto L0 if var0 == var655393
       15 [-]: GETIMPORT R0 10; var0 = _T["Chimera_FailureCount"]
       16 [-]: SETUPVAL R0 1; upvalues[0] = var1
       17 [-]: GETUPVAL R0 2; var0 = upvalues[2]
@@ -487,7 +489,7 @@ L 0:  19 [-]: RETURN R0 0  ;
 ; Max Stack Size:  8
 
        0 [-]: GETIMPORT R5 2; var5 = _T["GetHudScale"]
-       1 [-]: FASTCALL1 62 R5 L0; 
+       1 [-]: FASTCALL1 64 R5 L0; 
        2 [-]: GETIMPORT R4 4; var4 = 0x7B998233
        3 [-]: CALL R4 2 2  ; var4 = var4(var5)
 L 0:   4 [-]: JUMPIF R4 L2 ; goto L2 if var4

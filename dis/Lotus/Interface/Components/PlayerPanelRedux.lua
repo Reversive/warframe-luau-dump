@@ -3,7 +3,7 @@
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       1
-; Max Stack Size:  10
+; Max Stack Size:  12
 
        1 [-]: GETIMPORT R0 1; var0 = 0xAEABECDA
        2 [-]: GETVARARGS R1 1; var1 = ...
@@ -42,23 +42,31 @@
       35 [-]: GETIMPORT R8 21; var8 = 0x7ED0A956
       36 [-]: LOADK R9 K23 ; var9 = "/Lotus/Powersuits/Operator/OperatorSuit"
       37 [-]: CALL R8 2 2  ; var8 = var8(var9)
-      38 [-]: DUPCLOSURE R9 K24; 
-      39 [-]: CAPTURE VAL R4; 
-      40 [-]: CAPTURE VAL R1; 
-      41 [-]: CAPTURE VAL R3; 
-      42 [-]: CAPTURE VAL R6; 
-      43 [-]: CAPTURE VAL R0; 
-      44 [-]: CAPTURE VAL R2; 
-      45 [-]: CAPTURE VAL R8; 
-      46 [-]: CAPTURE VAL R5; 
-      47 [-]: CAPTURE VAL R7; 
-      48 [-]: SETGLOBAL R9 K25; "Create" = var9
-      49 [-]: RETURN R0 0  ; 
+      38 [-]: GETIMPORT R9 21; var9 = 0x7ED0A956
+      39 [-]: LOADK R10 K24; var10 = "/Lotus/Types/Friendly/Pets/CreaturePets/CreaturePreceptComponents/InfestedCritterSentinelAvatar"
+      40 [-]: CALL R9 2 2  ; var9 = var9(var10)
+      41 [-]: GETIMPORT R10 21; var10 = 0x7ED0A956
+      42 [-]: LOADK R11 K25; var11 = "/Lotus/Powersuits/Khora/Kavat/KhoraKavatAvatar"
+      43 [-]: CALL R10 2 2 ; var10 = var10(var11)
+      44 [-]: DUPCLOSURE R11 K26; 
+      45 [-]: CAPTURE VAL R4; 
+      46 [-]: CAPTURE VAL R1; 
+      47 [-]: CAPTURE VAL R3; 
+      48 [-]: CAPTURE VAL R10; 
+      49 [-]: CAPTURE VAL R9; 
+      50 [-]: CAPTURE VAL R6; 
+      51 [-]: CAPTURE VAL R5; 
+      52 [-]: CAPTURE VAL R8; 
+      53 [-]: CAPTURE VAL R0; 
+      54 [-]: CAPTURE VAL R2; 
+      55 [-]: CAPTURE VAL R7; 
+      56 [-]: SETGLOBAL R11 K27; "Create" = var11
+      57 [-]: RETURN R0 0  ; 
 
 
 ; Name:            
-; Defined at line: 15
-; #Upvalues:       9
+; Defined at line: 17
+; #Upvalues:       11
 ; #Parameters:     4
 ; Is_vararg:       0
 ; Max Stack Size:  15
@@ -157,97 +165,99 @@
       91 [-]: CAPTURE UPVAL U1; 
       92 [-]: CAPTURE UPVAL U2; 
       93 [-]: CAPTURE UPVAL U3; 
-      94 [-]: CAPTURE VAL R0; 
-      95 [-]: CAPTURE VAL R1; 
-      96 [-]: CAPTURE UPVAL U4; 
-      97 [-]: CAPTURE UPVAL U0; 
-      98 [-]: CAPTURE UPVAL U5; 
+      94 [-]: CAPTURE UPVAL U0; 
+      95 [-]: CAPTURE UPVAL U4; 
+      96 [-]: CAPTURE UPVAL U5; 
+      97 [-]: CAPTURE VAL R0; 
+      98 [-]: CAPTURE VAL R1; 
       99 [-]: CAPTURE UPVAL U6; 
      100 [-]: CAPTURE UPVAL U7; 
-     101 [-]: SETTABLEKS R5 R4 K55; var5["Update"] = var4
-     102 [-]: DUPCLOSURE R5 K56; 
-     103 [-]: SETTABLEKS R5 R4 K57; var5["Shutdown"] = var4
-     104 [-]: GETUPVAL R6 1; var6 = upvalues[1]
-     105 [-]: GETTABLEKS R5 R6 K58; var5 = var6[0x52FB05B3]
-     106 [-]: GETUPVAL R6 8; var6 = upvalues[8]
-     107 [-]: CALL R5 2 2  ; var5 = var5(var6)
-     108 [-]: SETTABLEKS R5 R4 K23; var5["mCompletedSecondDream"] = var4
-     109 [-]: GETTABLEKS R5 R4 K5; var5 = var4["mMovie"]
-     110 [-]: MOVE R7 R1   ; var7 = var1
-     111 [-]: LOADN R8 10  ; var8 = 10
-     112 [-]: LOADN R9 0   ; var9 = 0
-     113 [-]: NAMECALL R5 R5 K59; var6 = var5; var5 = var5[0x67BC869F]
-     114 [-]: CALL R5 5 1  ; var5(var6, var7, var8, var9)
-     115 [-]: NAMECALL R5 R4 K60; var6 = var4; var5 = var4[0x008ED227]
-     116 [-]: CALL R5 2 1  ; var5(var6)
-     117 [-]: LOADN R7 1   ; var7 = 1
-     118 [-]: LOADN R5 8   ; var5 = 8
-     119 [-]: LOADN R6 1   ; var6 = 1
-     120 [-]: FORNPREP R5 L1; nforprep start - [escape at L1] -- var5 = iterator
-L 0: 121 [-]: GETTABLEKS R8 R4 K4; var8 = var4["mPlayerInfo"]
-     122 [-]: DUPTABLE R9 62; 
-     123 [-]: MOVE R11 R1  ; var11 = var1
-     124 [-]: LOADK R12 K63; var12 = ".Player"
-     125 [-]: MOVE R13 R7  ; var13 = var7
-     126 [-]: CONCAT R10 R11 R13; var10 = var11 .. var13
-     127 [-]: SETTABLEKS R10 R9 K61; var10["ClipName"] = var9
-     128 [-]: SETTABLE R9 R8 R7; var9[var8] = var7
-     129 [-]: GETTABLEKS R9 R4 K4; var9 = var4["mPlayerInfo"]
-     130 [-]: GETTABLE R8 R9 R7; var8 = var9[var7]
-     131 [-]: LOADN R9 0   ; var9 = 0
-     132 [-]: SETTABLEKS R9 R8 K64; var9["mPlayerTalking"] = var8
-     133 [-]: MOVE R11 R1  ; var11 = var1
-     134 [-]: LOADK R12 K63; var12 = ".Player"
-     135 [-]: MOVE R13 R7  ; var13 = var7
-     136 [-]: LOADK R14 K65; var14 = ".StatusEffectItem"
-     137 [-]: CONCAT R10 R11 R14; var10 = var11 .. var14
-     138 [-]: GETTABLEKS R12 R4 K4; var12 = var4["mPlayerInfo"]
-     139 [-]: GETTABLE R11 R12 R7; var11 = var12[var7]
-     140 [-]: NAMECALL R8 R4 K66; var9 = var4; var8 = var4[0x7345D5C3]
-     141 [-]: CALL R8 4 1  ; var8(var9, var10, var11)
-     142 [-]: GETTABLEKS R8 R4 K5; var8 = var4["mMovie"]
-     143 [-]: MOVE R11 R1  ; var11 = var1
-     144 [-]: LOADK R12 K63; var12 = ".Player"
-     145 [-]: MOVE R13 R7  ; var13 = var7
-     146 [-]: LOADK R14 K67; var14 = ".Icon"
-     147 [-]: CONCAT R10 R11 R14; var10 = var11 .. var14
-     148 [-]: GETIMPORT R12 69; var12 = 0x0032441C
-     149 [-]: GETTABLEKS R11 R12 K70; var11 = var12["UIMaterial_SmoothEdgeNoDepthTest"]
-     150 [-]: NAMECALL R8 R8 K71; var9 = var8; var8 = var8[0xD5181643]
-     151 [-]: CALL R8 4 1  ; var8(var9, var10, var11)
-     152 [-]: GETTABLEKS R8 R4 K5; var8 = var4["mMovie"]
-     153 [-]: MOVE R11 R1  ; var11 = var1
-     154 [-]: LOADK R12 K63; var12 = ".Player"
-     155 [-]: MOVE R13 R7  ; var13 = var7
-     156 [-]: LOADK R14 K72; var14 = ".VoipState.Bg"
-     157 [-]: CONCAT R10 R11 R14; var10 = var11 .. var14
-     158 [-]: GETIMPORT R12 69; var12 = 0x0032441C
-     159 [-]: GETTABLEKS R11 R12 K73; var11 = var12["UITexture_CircleGradientBacker"]
-     160 [-]: NAMECALL R8 R8 K74; var9 = var8; var8 = var8[0x1CB415C1]
-     161 [-]: CALL R8 4 1  ; var8(var9, var10, var11)
-     162 [-]: GETTABLEKS R8 R4 K5; var8 = var4["mMovie"]
-     163 [-]: MOVE R11 R1  ; var11 = var1
-     164 [-]: LOADK R12 K63; var12 = ".Player"
-     165 [-]: MOVE R13 R7  ; var13 = var7
-     166 [-]: LOADK R14 K72; var14 = ".VoipState.Bg"
-     167 [-]: CONCAT R10 R11 R14; var10 = var11 .. var14
-     168 [-]: LOADN R11 9  ; var11 = 9
-     169 [-]: GETIMPORT R13 69; var13 = 0x0032441C
-     170 [-]: GETTABLEKS R12 R13 K75; var12 = var13["UIColor_Black"]
-     171 [-]: NAMECALL R8 R8 K59; var9 = var8; var8 = var8[0x67BC869F]
-     172 [-]: CALL R8 5 1  ; var8(var9, var10, var11, var12)
-     173 [-]: GETTABLEKS R8 R4 K5; var8 = var4["mMovie"]
-     174 [-]: MOVE R11 R1  ; var11 = var1
-     175 [-]: LOADK R12 K63; var12 = ".Player"
-     176 [-]: MOVE R13 R7  ; var13 = var7
-     177 [-]: LOADK R14 K76; var14 = ".StatusIcon"
-     178 [-]: CONCAT R10 R11 R14; var10 = var11 .. var14
-     179 [-]: LOADN R11 11 ; var11 = 11
-     180 [-]: GETTABLEKS R12 R4 K20; var12 = var4["mShowPlayerStatus"]
-     181 [-]: NAMECALL R8 R8 K77; var9 = var8; var8 = var8[0xAADE900E]
-     182 [-]: CALL R8 5 1  ; var8(var9, var10, var11, var12)
-     183 [-]: FORNLOOP R5 L0; nforloop end - iterate + goto L0
-L 1: 184 [-]: RETURN R4 1  ; 
+     101 [-]: CAPTURE UPVAL U8; 
+     102 [-]: CAPTURE UPVAL U9; 
+     103 [-]: SETTABLEKS R5 R4 K55; var5["Update"] = var4
+     104 [-]: DUPCLOSURE R5 K56; 
+     105 [-]: SETTABLEKS R5 R4 K57; var5["Shutdown"] = var4
+     106 [-]: GETUPVAL R6 1; var6 = upvalues[1]
+     107 [-]: GETTABLEKS R5 R6 K58; var5 = var6[0x52FB05B3]
+     108 [-]: GETUPVAL R6 10; var6 = upvalues[10]
+     109 [-]: CALL R5 2 2  ; var5 = var5(var6)
+     110 [-]: SETTABLEKS R5 R4 K23; var5["mCompletedSecondDream"] = var4
+     111 [-]: GETTABLEKS R5 R4 K5; var5 = var4["mMovie"]
+     112 [-]: MOVE R7 R1   ; var7 = var1
+     113 [-]: LOADN R8 10  ; var8 = 10
+     114 [-]: LOADN R9 0   ; var9 = 0
+     115 [-]: NAMECALL R5 R5 K59; var6 = var5; var5 = var5[0x67BC869F]
+     116 [-]: CALL R5 5 1  ; var5(var6, var7, var8, var9)
+     117 [-]: NAMECALL R5 R4 K60; var6 = var4; var5 = var4[0x008ED227]
+     118 [-]: CALL R5 2 1  ; var5(var6)
+     119 [-]: LOADN R7 1   ; var7 = 1
+     120 [-]: LOADN R5 8   ; var5 = 8
+     121 [-]: LOADN R6 1   ; var6 = 1
+     122 [-]: FORNPREP R5 L1; nforprep start - [escape at L1] -- var5 = iterator
+L 0: 123 [-]: GETTABLEKS R8 R4 K4; var8 = var4["mPlayerInfo"]
+     124 [-]: DUPTABLE R9 62; 
+     125 [-]: MOVE R11 R1  ; var11 = var1
+     126 [-]: LOADK R12 K63; var12 = ".Player"
+     127 [-]: MOVE R13 R7  ; var13 = var7
+     128 [-]: CONCAT R10 R11 R13; var10 = var11 .. var13
+     129 [-]: SETTABLEKS R10 R9 K61; var10["ClipName"] = var9
+     130 [-]: SETTABLE R9 R8 R7; var9[var8] = var7
+     131 [-]: GETTABLEKS R9 R4 K4; var9 = var4["mPlayerInfo"]
+     132 [-]: GETTABLE R8 R9 R7; var8 = var9[var7]
+     133 [-]: LOADN R9 0   ; var9 = 0
+     134 [-]: SETTABLEKS R9 R8 K64; var9["mPlayerTalking"] = var8
+     135 [-]: MOVE R11 R1  ; var11 = var1
+     136 [-]: LOADK R12 K63; var12 = ".Player"
+     137 [-]: MOVE R13 R7  ; var13 = var7
+     138 [-]: LOADK R14 K65; var14 = ".StatusEffectItem"
+     139 [-]: CONCAT R10 R11 R14; var10 = var11 .. var14
+     140 [-]: GETTABLEKS R12 R4 K4; var12 = var4["mPlayerInfo"]
+     141 [-]: GETTABLE R11 R12 R7; var11 = var12[var7]
+     142 [-]: NAMECALL R8 R4 K66; var9 = var4; var8 = var4[0x7345D5C3]
+     143 [-]: CALL R8 4 1  ; var8(var9, var10, var11)
+     144 [-]: GETTABLEKS R8 R4 K5; var8 = var4["mMovie"]
+     145 [-]: MOVE R11 R1  ; var11 = var1
+     146 [-]: LOADK R12 K63; var12 = ".Player"
+     147 [-]: MOVE R13 R7  ; var13 = var7
+     148 [-]: LOADK R14 K67; var14 = ".Icon"
+     149 [-]: CONCAT R10 R11 R14; var10 = var11 .. var14
+     150 [-]: GETIMPORT R12 69; var12 = 0x0032441C
+     151 [-]: GETTABLEKS R11 R12 K70; var11 = var12["UIMaterial_SmoothEdgeNoDepthTest"]
+     152 [-]: NAMECALL R8 R8 K71; var9 = var8; var8 = var8[0xD5181643]
+     153 [-]: CALL R8 4 1  ; var8(var9, var10, var11)
+     154 [-]: GETTABLEKS R8 R4 K5; var8 = var4["mMovie"]
+     155 [-]: MOVE R11 R1  ; var11 = var1
+     156 [-]: LOADK R12 K63; var12 = ".Player"
+     157 [-]: MOVE R13 R7  ; var13 = var7
+     158 [-]: LOADK R14 K72; var14 = ".VoipState.Bg"
+     159 [-]: CONCAT R10 R11 R14; var10 = var11 .. var14
+     160 [-]: GETIMPORT R12 69; var12 = 0x0032441C
+     161 [-]: GETTABLEKS R11 R12 K73; var11 = var12["UITexture_CircleGradientBacker"]
+     162 [-]: NAMECALL R8 R8 K74; var9 = var8; var8 = var8[0x1CB415C1]
+     163 [-]: CALL R8 4 1  ; var8(var9, var10, var11)
+     164 [-]: GETTABLEKS R8 R4 K5; var8 = var4["mMovie"]
+     165 [-]: MOVE R11 R1  ; var11 = var1
+     166 [-]: LOADK R12 K63; var12 = ".Player"
+     167 [-]: MOVE R13 R7  ; var13 = var7
+     168 [-]: LOADK R14 K72; var14 = ".VoipState.Bg"
+     169 [-]: CONCAT R10 R11 R14; var10 = var11 .. var14
+     170 [-]: LOADN R11 9  ; var11 = 9
+     171 [-]: GETIMPORT R13 69; var13 = 0x0032441C
+     172 [-]: GETTABLEKS R12 R13 K75; var12 = var13["UIColor_Black"]
+     173 [-]: NAMECALL R8 R8 K59; var9 = var8; var8 = var8[0x67BC869F]
+     174 [-]: CALL R8 5 1  ; var8(var9, var10, var11, var12)
+     175 [-]: GETTABLEKS R8 R4 K5; var8 = var4["mMovie"]
+     176 [-]: MOVE R11 R1  ; var11 = var1
+     177 [-]: LOADK R12 K63; var12 = ".Player"
+     178 [-]: MOVE R13 R7  ; var13 = var7
+     179 [-]: LOADK R14 K76; var14 = ".StatusIcon"
+     180 [-]: CONCAT R10 R11 R14; var10 = var11 .. var14
+     181 [-]: LOADN R11 11 ; var11 = 11
+     182 [-]: GETTABLEKS R12 R4 K20; var12 = var4["mShowPlayerStatus"]
+     183 [-]: NAMECALL R8 R8 K77; var9 = var8; var8 = var8[0xAADE900E]
+     184 [-]: CALL R8 5 1  ; var8(var9, var10, var11, var12)
+     185 [-]: FORNLOOP R5 L0; nforloop end - iterate + goto L0
+L 1: 186 [-]: RETURN R4 1  ; 
 
 
 

@@ -79,7 +79,7 @@ L 0:   7 [-]: GETTABLE R3 R4 R5; var3 = var4[var5]
       12 [-]: GETIMPORT R5 7; var5 = 0x89326C93
       13 [-]: NAMECALL R5 R5 K8; var6 = var5; var5 = var5[0x78298275]
       14 [-]: CALL R5 2 2  ; var5 = var5(var6)
-      15 [-]: FASTCALL1 62 R5 L1; 
+      15 [-]: FASTCALL1 64 R5 L1; 
       16 [-]: MOVE R7 R5   ; var7 = var5
       17 [-]: GETIMPORT R6 10; var6 = 0x7B998233
       18 [-]: CALL R6 2 2  ; var6 = var6(var7)
@@ -124,7 +124,7 @@ L 0:  11 [-]: GETTABLE R12 R13 R14; var12 = var13[var14]
       15 [-]: GETUPVAL R9 2; var9 = upvalues[2]
       16 [-]: GETTABLEKS R8 R9 K7; var8 = var9[0x81E6C00C]
       17 [-]: CALL R8 1 2  ; var8 = var8()
-      18 [-]: FASTCALL1 62 R8 L1; 
+      18 [-]: FASTCALL1 64 R8 L1; 
       19 [-]: MOVE R10 R8  ; var10 = var8
       20 [-]: GETIMPORT R9 9; var9 = 0x7B998233
       21 [-]: CALL R9 2 2  ; var9 = var9(var10)

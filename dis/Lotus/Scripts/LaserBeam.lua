@@ -43,8 +43,7 @@ L 0:   5 [-]: NAMECALL R2 R0 K3; var3 = var0; var2 = var0[0xE812371F]
       21 [-]: GETIMPORT R6 16; var6 = 0xCC974F3F
       22 [-]: GETIMPORT R7 10; var7 = 0x5B5B3C2B
       23 [-]: CALL R4 4 2  ; var4 = var4(var5, var6, var7)
-      24 [-]: DIVK R9 R4 K17; var9 = var4 / 100
-      25 [-]: MUL R8 R9 R2 ; var8 = var9 * var2
+           25 [-]: MUL R8 R9 R2 ; var8 = var9 * var2
       26 [-]: MUL R7 R3 R8 ; var7 = var3 * var8
       27 [-]: GETIMPORT R8 19; var8 = 0x22460F5A
       28 [-]: GETIMPORT R9 21; var9 = 0x80A0CCB3
@@ -66,7 +65,7 @@ L 0:   5 [-]: NAMECALL R2 R0 K3; var3 = var0; var2 = var0[0xE812371F]
 ; Max Stack Size:  11
 
 L 0:   0 [-]: GETIMPORT R2 1; var2 = 0xBE190284
-       1 [-]: FASTCALL1 62 R2 L1; 
+       1 [-]: FASTCALL1 64 R2 L1; 
        2 [-]: GETIMPORT R1 3; var1 = 0x7B998233
        3 [-]: CALL R1 2 2  ; var1 = var1(var2)
 L 1:   4 [-]: JUMPIFNOT R1 L2; goto L2 if not var1
@@ -79,12 +78,12 @@ L 2:   9 [-]: LOADNIL R1   ; var1 = nil
       11 [-]: GETIMPORT R5 7; var5 = gSequencerType
       12 [-]: NAMECALL R3 R0 K8; var4 = var0; var3 = var0[0xC1595BD5]
       13 [-]: CALL R3 3 2  ; var3 = var3(var4, var5)
-L 3:  14 [-]: FASTCALL1 62 R0 L4; 
+L 3:  14 [-]: FASTCALL1 64 R0 L4; 
       15 [-]: MOVE R5 R0   ; var5 = var0
       16 [-]: GETIMPORT R4 3; var4 = 0x7B998233
       17 [-]: CALL R4 2 2  ; var4 = var4(var5)
 L 4:  18 [-]: JUMPIF R4 L13; goto L13 if var4
-      19 [-]: FASTCALL1 62 R3 L5; 
+      19 [-]: FASTCALL1 64 R3 L5; 
       20 [-]: MOVE R5 R3   ; var5 = var3
       21 [-]: GETIMPORT R4 3; var4 = 0x7B998233
       22 [-]: CALL R4 2 2  ; var4 = var4(var5)
@@ -102,7 +101,7 @@ L 6:  26 [-]: GETIMPORT R4 5; var4 = 0xCBD666E1
 L 7:  34 [-]: NAMECALL R4 R0 K10; var5 = var0; var4 = var0[0xD8140B94]
       35 [-]: CALL R4 2 2  ; var4 = var4(var5)
       36 [-]: MOVE R1 R4   ; var1 = var4
-      37 [-]: JUMPIFEQ R1 R2 L11; goto L11 if var1 == var787534
+      37 [-]: JUMPIFEQ R1 R2 L11; goto L11 if var1 == var787489
       38 [-]: GETIMPORT R4 12; var4 = 0xC8802016
       39 [-]: MOVE R5 R3   ; var5 = var3
       40 [-]: CALL R4 2 4  ; var4, var5, var6 = var4(var5)

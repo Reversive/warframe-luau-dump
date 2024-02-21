@@ -64,13 +64,13 @@ L 0:   5 [-]: GETIMPORT R0 5; var0 = 0x89326C93
       13 [-]: LOADN R2 1   ; var2 = 1
       14 [-]: LOADN R3 0   ; var3 = 0
       15 [-]: LOADN R4 0   ; var4 = 0
-      16 [-]: FASTCALL1 62 R0 L1; 
+      16 [-]: FASTCALL1 64 R0 L1; 
       17 [-]: MOVE R6 R0   ; var6 = var0
       18 [-]: GETIMPORT R5 8; var5 = 0x7B998233
       19 [-]: CALL R5 2 2  ; var5 = var5(var6)
 L 1:  20 [-]: JUMPIF R5 L3 ; goto L3 if var5
       21 [-]: GETTABLEN R6 R0 1; var6 = var0[1]
-      22 [-]: FASTCALL1 62 R6 L2; 
+      22 [-]: FASTCALL1 64 R6 L2; 
       23 [-]: GETIMPORT R5 8; var5 = 0x7B998233
       24 [-]: CALL R5 2 2  ; var5 = var5(var6)
 L 2:  25 [-]: JUMPIF R5 L3 ; goto L3 if var5
@@ -78,7 +78,7 @@ L 2:  25 [-]: JUMPIF R5 L3 ; goto L3 if var5
       27 [-]: GETTABLEN R6 R0 1; var6 = var0[1]
       28 [-]: CALL R5 2 1  ; var5(var6)
 L 3:  29 [-]: GETIMPORT R5 2; var5 = _T["AlchemyRoomInfestedLights"]
-      30 [-]: JUMPIFEQ R5 R2 L10; goto L10 if var5 == var853582
+      30 [-]: JUMPIFEQ R5 R2 L10; goto L10 if var5 == var853537
       31 [-]: GETIMPORT R6 13; var6 = 0x070B5BEB
       32 [-]: GETIMPORT R8 2; var8 = _T["AlchemyRoomInfestedLights"]
       33 [-]: SUB R7 R3 R8 ; var7 = var3 - var8
@@ -109,7 +109,7 @@ L 3:  29 [-]: GETIMPORT R5 2; var5 = _T["AlchemyRoomInfestedLights"]
       58 [-]: MOVE R8 R0   ; var8 = var0
       59 [-]: CALL R7 2 4  ; var7, var8, var9 = var7(var8)
       60 [-]: FORGPREP_INEXT R7 L6; 
-L 4:  61 [-]: FASTCALL1 62 R11 L5; 
+L 4:  61 [-]: FASTCALL1 64 R11 L5; 
       62 [-]: MOVE R13 R11 ; var13 = var11
       63 [-]: GETIMPORT R12 8; var12 = 0x7B998233
       64 [-]: CALL R12 2 2 ; var12 = var12(var13)
@@ -122,7 +122,7 @@ L 6:  69 [-]: FORGLOOP R7 L4 2 [inext];
       71 [-]: MOVE R8 R1   ; var8 = var1
       72 [-]: CALL R7 2 4  ; var7, var8, var9 = var7(var8)
       73 [-]: FORGPREP_INEXT R7 L9; 
-L 7:  74 [-]: FASTCALL1 62 R11 L8; 
+L 7:  74 [-]: FASTCALL1 64 R11 L8; 
       75 [-]: MOVE R13 R11 ; var13 = var11
       76 [-]: GETIMPORT R12 8; var12 = 0x7B998233
       77 [-]: CALL R12 2 2 ; var12 = var12(var13)
@@ -165,7 +165,7 @@ L 0:   8 [-]: GETUPVAL R3 0; var3 = upvalues[0]
 L 1:  16 [-]: GETIMPORT R9 1; var9 = 0x89326C93
       17 [-]: NAMECALL R9 R9 K9; var10 = var9; var9 = var9[0x78298275]
       18 [-]: CALL R9 2 2  ; var9 = var9(var10)
-      19 [-]: JUMPIFNOTEQ R8 R9 L2; goto L2 if var8 ~= var65563
+      19 [-]: JUMPIFNOTEQ R8 R9 L2; goto L2 if var8 ~= var65542
       20 [-]: LOADB R0 1   ; var0 = true
       21 [-]: JUMP L3      ; goto L3
 L 2:  22 [-]: FORGLOOP R4 L1 2 [inext]; 
@@ -177,11 +177,11 @@ L 3:  23 [-]: NAMECALL R4 R2 K10; var5 = var2; var4 = var2[0x1C84839C]
       28 [-]: JUMPIF R0 L5 ; goto L5 if var0
 L 4:  29 [-]: RETURN R0 0  ; 
 L 5:  30 [-]: LOADN R4 25  ; var4 = 25
-      31 [-]: JUMPIFLT R4 R1 L6; goto L6 if var4 < var984142
+      31 [-]: JUMPIFLT R4 R1 L6; goto L6 if var4 < var984097
       32 [-]: GETIMPORT R4 15; var4 = 0xCBD666E1
-      33 [-]: LOADK R5 K16 ; var5 = 0.10000000000000001
+      33 [-]: LOADK R5 K16 ; var5 = 0.10000000149011612
       34 [-]: CALL R4 2 1  ; var4(var5)
-      35 [-]: ADDK R1 R1 K16; var1 = var1 + 0.10000000000000001
+      35 [-]: ADDK R1 R1 K16; var1 = var1 + 0.10000000149011612
       36 [-]: JUMPBACK L0  ; goto L0
 L 6:  37 [-]: GETUPVAL R4 1; var4 = upvalues[1]
       38 [-]: GETTABLEKS R3 R4 K17; var3 = var4[0x1F60D532]
@@ -209,7 +209,7 @@ L 6:  37 [-]: GETUPVAL R4 1; var4 = upvalues[1]
        4 [-]: GETIMPORT R3 2; var3 = _T["LastInfestedRoomTransmission"]
        5 [-]: SUB R1 R2 R3 ; var1 = var2 - var3
        6 [-]: LOADN R2 40  ; var2 = 40
-       7 [-]: JUMPIFNOTLT R1 R2 L0; goto L0 if var1 >= var65581
+       7 [-]: JUMPIFNOTLT R1 R2 L0; goto L0 if var1 >= var65571
        8 [-]: RETURN R0 0  ; 
 L 0:   9 [-]: NAMECALL R1 R0 K5; var2 = var0; var1 = var0[0xCD73323E]
       10 [-]: CALL R1 2 2  ; var1 = var1(var2)
@@ -217,7 +217,7 @@ L 0:   9 [-]: NAMECALL R1 R0 K5; var2 = var0; var1 = var0[0xCD73323E]
       12 [-]: LOADN R4 0   ; var4 = 0
       13 [-]: NAMECALL R2 R2 K8; var3 = var2; var2 = var2[0x3F3AE64C]
       14 [-]: CALL R2 3 2  ; var2 = var2(var3, var4)
-      15 [-]: FASTCALL1 62 R2 L1; 
+      15 [-]: FASTCALL1 64 R2 L1; 
       16 [-]: MOVE R4 R2   ; var4 = var2
       17 [-]: GETIMPORT R3 10; var3 = 0x7B998233
       18 [-]: CALL R3 2 2  ; var3 = var3(var4)
@@ -240,12 +240,12 @@ L 3:  29 [-]: GETUPVAL R8 1; var8 = upvalues[1]
 L 4:  35 [-]: NAMECALL R7 R3 K18; var8 = var3; var7 = var3[0x1B1B9C3F]
       36 [-]: CALL R7 2 2  ; var7 = var7(var8)
       37 [-]: GETTABLEKS R6 R7 K19; var6 = var7["mAlignment"]
-      38 [-]: LOADK R7 K20 ; var7 = 0.33300000000000002
-      39 [-]: JUMPIFNOTLT R7 R6 L5; goto L5 if var7 >= var1442894
+      38 [-]: LOADK R7 K20 ; var7 = 0.33300000429153442
+      39 [-]: JUMPIFNOTLT R7 R6 L5; goto L5 if var7 >= var1442849
       40 [-]: GETIMPORT R4 22; var4 = 0x06685F95
       41 [-]: JUMP L8      ; goto L8
-L 5:  42 [-]: LOADK R7 K23 ; var7 = -0.33300000000000002
-      43 [-]: JUMPIFNOTLT R6 R7 L6; goto L6 if var6 >= var1639502
+L 5:  42 [-]: LOADK R7 K23 ; var7 = -0.33300000429153442
+      43 [-]: JUMPIFNOTLT R6 R7 L6; goto L6 if var6 >= var1639457
       44 [-]: GETIMPORT R4 25; var4 = 0xEAFA53BC
       45 [-]: JUMP L8      ; goto L8
 L 6:  46 [-]: GETIMPORT R4 27; var4 = 0x5E6D2716
@@ -259,7 +259,7 @@ L 8:  53 [-]: LENGTH R6 R4 ; var6 = #var4
       54 [-]: JUMPXEQKN R6 K30 L9 NOT; 
       55 [-]: RETURN R0 0  ; 
 L 9:  56 [-]: GETIMPORT R6 13; var6 = 0x2AB7A74C
-      57 [-]: JUMPIFNOTEQ R4 R6 L11; goto L11 if var4 ~= var132686
+      57 [-]: JUMPIFNOTEQ R4 R6 L11; goto L11 if var4 ~= var132641
       58 [-]: GETIMPORT R6 2; var6 = _T["LastInfestedRoomTransmission"]
       59 [-]: JUMPXEQKNIL R6 L10; 
       60 [-]: GETUPVAL R7 2; var7 = upvalues[2]
@@ -308,9 +308,9 @@ L12:  85 [-]: GETIMPORT R6 38; var6 = _T
        4 [-]: LOADN R2 0   ; var2 = 0
        5 [-]: SETTABLEKS R2 R1 K3; var2["AlchemyRoomInfestedLights"] = var1
 L 0:   6 [-]: GETIMPORT R1 2; var1 = _T["curTransmission"]
-       7 [-]: JUMPIFNOTEQ R1 R0 L4; goto L4 if var1 ~= var459086
+       7 [-]: JUMPIFNOTEQ R1 R0 L4; goto L4 if var1 ~= var459041
        8 [-]: GETIMPORT R1 7; var1 = _T["TransmissionSoundInstance"]
-       9 [-]: FASTCALL1 62 R1 L1; 
+       9 [-]: FASTCALL1 64 R1 L1; 
       10 [-]: MOVE R3 R1   ; var3 = var1
       11 [-]: GETIMPORT R2 9; var2 = 0x7B998233
       12 [-]: CALL R2 2 2  ; var2 = var2(var3)
@@ -319,7 +319,7 @@ L 1:  13 [-]: JUMPIF R2 L3 ; goto L3 if var2
       15 [-]: LOADN R4 1   ; var4 = 1
       16 [-]: NAMECALL R6 R1 K11; var7 = var1; var6 = var1[0xDAE5BCB5]
       17 [-]: CALL R6 2 2  ; var6 = var6(var7)
-      18 [-]: MULK R5 R6 K10; var5 = var6 * 1.1000000000000001
+      18 [-]: MULK R5 R6 K10; var5 = var6 * 1.1000000238418579
       19 [-]: FASTCALL2 19 R4 R5 L2; 
       20 [-]: GETIMPORT R3 14; var3 = 0x5BCED4C4[0xAC1B386A]
       21 [-]: CALL R3 3 2  ; var3 = var3(var4, var5)
@@ -331,11 +331,10 @@ L 3:  23 [-]: GETIMPORT R2 16; var2 = 0xCBD666E1
 L 4:  27 [-]: GETIMPORT R1 4; var1 = _T["AlchemyRoomInfestedLights"]
       28 [-]: LOADN R2 0   ; var2 = 0
 L 5:  29 [-]: LOADN R3 1   ; var3 = 1
-      30 [-]: JUMPIFNOTLT R2 R3 L6; goto L6 if var2 >= var1246286
+      30 [-]: JUMPIFNOTLT R2 R3 L6; goto L6 if var2 >= var1246241
       31 [-]: GETIMPORT R4 19; var4 = 0x67652851
       32 [-]: CALL R4 1 2  ; var4 = var4()
-      33 [-]: DIVK R3 R4 K17; var3 = var4 / 0.29999999999999999
-      34 [-]: ADD R2 R2 R3 ; var2 = var2 + var3
+           34 [-]: ADD R2 R2 R3 ; var2 = var2 + var3
       35 [-]: GETIMPORT R3 5; var3 = _T
       36 [-]: GETIMPORT R4 21; var4 = 0x9BAFFFE3
       37 [-]: MOVE R5 R1   ; var5 = var1

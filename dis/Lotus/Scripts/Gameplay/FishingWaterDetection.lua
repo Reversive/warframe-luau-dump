@@ -128,7 +128,7 @@ L 3:  26 [-]: GETIMPORT R3 4; var3 = _T["gFishing"]["levelData"]
       32 [-]: FORNPREP R4 L6; nforprep start - [escape at L6] -- var4 = iterator
 L 4:  33 [-]: GETTABLE R8 R2 R6; var8 = var2[var6]
       34 [-]: GETTABLEKS R7 R8 K14; var7 = var8["avtatar"]
-      35 [-]: JUMPIFNOTEQ R7 R0 L5; goto L5 if var7 ~= var100796215
+      35 [-]: JUMPIFNOTEQ R7 R0 L5; goto L5 if var7 ~= var100796189
       36 [-]: GETTABLE R7 R2 R6; var7 = var2[var6]
       37 [-]: SETTABLEKS R1 R7 K15; var1["lastPos"] = var7
       38 [-]: LOADB R3 1   ; var3 = true
@@ -216,7 +216,7 @@ L 3:  44 [-]: RETURN R0 0  ;
 
        0 [-]: NAMECALL R2 R1 K0; var3 = var1; var2 = var1[0x2B54251B]
        1 [-]: CALL R2 2 2  ; var2 = var2(var3)
-       2 [-]: FASTCALL1 62 R2 L0; 
+       2 [-]: FASTCALL1 64 R2 L0; 
        3 [-]: MOVE R4 R2   ; var4 = var2
        4 [-]: GETIMPORT R3 2; var3 = 0x7B998233
        5 [-]: CALL R3 2 2  ; var3 = var3(var4)
@@ -243,7 +243,7 @@ L 1:  17 [-]: RETURN R0 0  ;
 
        0 [-]: NAMECALL R2 R1 K0; var3 = var1; var2 = var1[0x2B54251B]
        1 [-]: CALL R2 2 2  ; var2 = var2(var3)
-       2 [-]: FASTCALL1 62 R2 L0; 
+       2 [-]: FASTCALL1 64 R2 L0; 
        3 [-]: MOVE R4 R2   ; var4 = var2
        4 [-]: GETIMPORT R3 2; var3 = 0x7B998233
        5 [-]: CALL R3 2 2  ; var3 = var3(var4)
@@ -290,7 +290,7 @@ L 1:   8 [-]: GETIMPORT R4 7; var4 = gBaseAvatarType
       17 [-]: FORNPREP R3 L4; nforprep start - [escape at L4] -- var3 = iterator
 L 2:  18 [-]: GETTABLE R7 R2 R5; var7 = var2[var5]
       19 [-]: GETTABLEKS R6 R7 K9; var6 = var7["avatar"]
-      20 [-]: JUMPIFNOTEQ R6 R1 L3; goto L3 if var6 ~= var788046
+      20 [-]: JUMPIFNOTEQ R6 R1 L3; goto L3 if var6 ~= var788001
       21 [-]: GETIMPORT R6 12; var6 = 0x33BDD652[0x9C1F3B5A]
       22 [-]: MOVE R7 R2   ; var7 = var2
       23 [-]: MOVE R8 R5   ; var8 = var5

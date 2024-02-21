@@ -7,13 +7,13 @@
 
        1 [-]: GETIMPORT R0 1; var0 = 0x78CA68A2
        2 [-]: LOADN R1 0   ; var1 = 0
-       3 [-]: LOADK R2 K2  ; var2 = 0.14999999999999999
+       3 [-]: LOADK R2 K2  ; var2 = 0.15000000596046448
        4 [-]: CALL R0 3 2  ; var0 = var0(var1, var2)
        5 [-]: GETIMPORT R1 1; var1 = 0x78CA68A2
        6 [-]: LOADN R2 0   ; var2 = 0
-       7 [-]: LOADK R3 K2  ; var3 = 0.14999999999999999
+       7 [-]: LOADK R3 K2  ; var3 = 0.15000000596046448
        8 [-]: CALL R1 3 2  ; var1 = var1(var2, var3)
-       9 [-]: LOADK R2 K3  ; var2 = -0.34000000000000002
+       9 [-]: LOADK R2 K3  ; var2 = -0.34000000357627869
       10 [-]: LOADN R3 0   ; var3 = 0
       11 [-]: LOADB R4 1   ; var4 = true
       12 [-]: DUPCLOSURE R5 K4; 
@@ -72,8 +72,7 @@
 L 0:   5 [-]: GETUPVAL R1 1; var1 = upvalues[1]
        6 [-]: GETIMPORT R3 2; var3 = 0xB693B6C1
        7 [-]: CALL R3 1 2  ; var3 = var3()
-       8 [-]: DIVK R2 R3 K0; var2 = var3 / 4
-       9 [-]: ADD R0 R1 R2 ; var0 = var1 + var2
+            9 [-]: ADD R0 R1 R2 ; var0 = var1 + var2
       10 [-]: SETUPVAL R0 1; upvalues[0] = var1
       11 [-]: GETIMPORT R0 4; var0 = 0x42DCC9F5
       12 [-]: GETUPVAL R1 1; var1 = upvalues[1]
@@ -120,7 +119,7 @@ L 0:   5 [-]: GETUPVAL R1 1; var1 = upvalues[1]
       53 [-]: CALL R4 8 1  ; var4(var5, var6, var7, var8, var9, var10, var11)
       54 [-]: GETUPVAL R4 1; var4 = upvalues[1]
       55 [-]: LOADN R5 1   ; var5 = 1
-      56 [-]: JUMPIFNOTLE R5 R4 L1; goto L1 if var5 > var853070
+      56 [-]: JUMPIFNOTLE R5 R4 L1; goto L1 if var5 > var853025
       57 [-]: GETIMPORT R4 13; var4 = 0xAE91E43B
       58 [-]: NAMECALL R4 R4 K17; var5 = var4; var4 = var4[0x32302B4A]
       59 [-]: CALL R4 2 1  ; var4(var5)

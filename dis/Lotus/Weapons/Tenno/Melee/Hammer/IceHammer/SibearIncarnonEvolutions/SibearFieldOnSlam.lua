@@ -40,18 +40,18 @@
 ; Max Stack Size:  4
 
        0 [-]: GETIMPORT R2 2; var2 = _T["SibearFieldSlow"]
-       1 [-]: FASTCALL1 62 R2 L0; 
+       1 [-]: FASTCALL1 64 R2 L0; 
        2 [-]: GETIMPORT R1 4; var1 = 0x7B998233
        3 [-]: CALL R1 2 2  ; var1 = var1(var2)
 L 0:   4 [-]: JUMPIF R1 L3 ; goto L3 if var1
        5 [-]: GETIMPORT R2 6; var2 = _T["SibearFieldSlow"]["Targets"]
-       6 [-]: FASTCALL1 62 R2 L1; 
+       6 [-]: FASTCALL1 64 R2 L1; 
        7 [-]: GETIMPORT R1 4; var1 = 0x7B998233
        8 [-]: CALL R1 2 2  ; var1 = var1(var2)
 L 1:   9 [-]: JUMPIF R1 L3 ; goto L3 if var1
       10 [-]: GETIMPORT R3 6; var3 = _T["SibearFieldSlow"]["Targets"]
       11 [-]: GETTABLE R2 R3 R0; var2 = var3[var0]
-      12 [-]: FASTCALL1 62 R2 L2; 
+      12 [-]: FASTCALL1 64 R2 L2; 
       13 [-]: GETIMPORT R1 4; var1 = 0x7B998233
       14 [-]: CALL R1 2 2  ; var1 = var1(var2)
 L 2:  15 [-]: JUMPIFNOT R1 L4; goto L4 if not var1
@@ -60,7 +60,7 @@ L 3:  16 [-]: LOADB R1 0   ; var1 = false
 L 4:  18 [-]: GETIMPORT R3 6; var3 = _T["SibearFieldSlow"]["Targets"]
       19 [-]: GETTABLE R2 R3 R0; var2 = var3[var0]
       20 [-]: LOADN R3 0   ; var3 = 0
-      21 [-]: JUMPIFLT R3 R2 L5; goto L5 if var3 < var16777499
+      21 [-]: JUMPIFLT R3 R2 L5; goto L5 if var3 < var16777478
       22 [-]: LOADB R1 0 +1; var1 = false
 L 5:  23 [-]: LOADB R1 1   ; var1 = true
 L 6:  24 [-]: RETURN R1 1  ; 
@@ -74,7 +74,7 @@ L 6:  24 [-]: RETURN R1 1  ;
 ; Max Stack Size:  5
 
        0 [-]: GETIMPORT R2 2; var2 = _T["SibearFieldSlow"]
-       1 [-]: FASTCALL1 62 R2 L0; 
+       1 [-]: FASTCALL1 64 R2 L0; 
        2 [-]: GETIMPORT R1 4; var1 = 0x7B998233
        3 [-]: CALL R1 2 2  ; var1 = var1(var2)
 L 0:   4 [-]: JUMPIFNOT R1 L1; goto L1 if not var1
@@ -82,7 +82,7 @@ L 0:   4 [-]: JUMPIFNOT R1 L1; goto L1 if not var1
        6 [-]: NEWTABLE R2 0 0; var2 = {}
        7 [-]: SETTABLEKS R2 R1 K1; var2["SibearFieldSlow"] = var1
 L 1:   8 [-]: GETIMPORT R2 7; var2 = _T["SibearFieldSlow"]["Targets"]
-       9 [-]: FASTCALL1 62 R2 L2; 
+       9 [-]: FASTCALL1 64 R2 L2; 
       10 [-]: GETIMPORT R1 4; var1 = 0x7B998233
       11 [-]: CALL R1 2 2  ; var1 = var1(var2)
 L 2:  12 [-]: JUMPIFNOT R1 L3; goto L3 if not var1
@@ -91,7 +91,7 @@ L 2:  12 [-]: JUMPIFNOT R1 L3; goto L3 if not var1
       15 [-]: SETTABLEKS R2 R1 K6; var2["Targets"] = var1
 L 3:  16 [-]: GETIMPORT R3 7; var3 = _T["SibearFieldSlow"]["Targets"]
       17 [-]: GETTABLE R2 R3 R0; var2 = var3[var0]
-      18 [-]: FASTCALL1 62 R2 L4; 
+      18 [-]: FASTCALL1 64 R2 L4; 
       19 [-]: GETIMPORT R1 4; var1 = 0x7B998233
       20 [-]: CALL R1 2 2  ; var1 = var1(var2)
 L 4:  21 [-]: JUMPIF R1 L5 ; goto L5 if var1
@@ -117,18 +117,18 @@ L 5:  29 [-]: GETIMPORT R1 7; var1 = _T["SibearFieldSlow"]["Targets"]
 ; Max Stack Size:  5
 
        0 [-]: GETIMPORT R3 2; var3 = _T["SibearFieldSlow"]
-       1 [-]: FASTCALL1 62 R3 L0; 
+       1 [-]: FASTCALL1 64 R3 L0; 
        2 [-]: GETIMPORT R2 4; var2 = 0x7B998233
        3 [-]: CALL R2 2 2  ; var2 = var2(var3)
 L 0:   4 [-]: JUMPIF R2 L3 ; goto L3 if var2
        5 [-]: GETIMPORT R3 6; var3 = _T["SibearFieldSlow"]["Targets"]
-       6 [-]: FASTCALL1 62 R3 L1; 
+       6 [-]: FASTCALL1 64 R3 L1; 
        7 [-]: GETIMPORT R2 4; var2 = 0x7B998233
        8 [-]: CALL R2 2 2  ; var2 = var2(var3)
 L 1:   9 [-]: JUMPIF R2 L3 ; goto L3 if var2
       10 [-]: GETIMPORT R4 6; var4 = _T["SibearFieldSlow"]["Targets"]
       11 [-]: GETTABLE R3 R4 R0; var3 = var4[var0]
-      12 [-]: FASTCALL1 62 R3 L2; 
+      12 [-]: FASTCALL1 64 R3 L2; 
       13 [-]: GETIMPORT R2 4; var2 = 0x7B998233
       14 [-]: CALL R2 2 2  ; var2 = var2(var3)
 L 2:  15 [-]: JUMPIFNOT R2 L4; goto L4 if not var2
@@ -137,7 +137,7 @@ L 3:  16 [-]: LOADB R1 0   ; var1 = false
 L 4:  18 [-]: GETIMPORT R3 6; var3 = _T["SibearFieldSlow"]["Targets"]
       19 [-]: GETTABLE R2 R3 R0; var2 = var3[var0]
       20 [-]: LOADN R3 0   ; var3 = 0
-      21 [-]: JUMPIFLT R3 R2 L5; goto L5 if var3 < var16777499
+      21 [-]: JUMPIFLT R3 R2 L5; goto L5 if var3 < var16777478
       22 [-]: LOADB R1 0 +1; var1 = false
 L 5:  23 [-]: LOADB R1 1   ; var1 = true
 L 6:  24 [-]: JUMPIFNOT R1 L7; goto L7 if not var1
@@ -149,7 +149,7 @@ L 6:  24 [-]: JUMPIFNOT R1 L7; goto L7 if not var1
       30 [-]: GETIMPORT R2 6; var2 = _T["SibearFieldSlow"]["Targets"]
       31 [-]: GETTABLE R1 R2 R0; var1 = var2[var0]
       32 [-]: LOADN R2 0   ; var2 = 0
-      33 [-]: JUMPIFNOTLE R1 R2 L7; goto L7 if var1 > var393550
+      33 [-]: JUMPIFNOTLE R1 R2 L7; goto L7 if var1 > var393505
       34 [-]: GETIMPORT R1 6; var1 = _T["SibearFieldSlow"]["Targets"]
       35 [-]: LOADNIL R2   ; var2 = nil
       36 [-]: SETTABLE R2 R1 R0; var2[var1] = var0
@@ -164,12 +164,12 @@ L 7:  37 [-]: RETURN R0 0  ;
 ; Max Stack Size:  7
 
        0 [-]: GETUPVAL R3 0; var3 = upvalues[0]
-       1 [-]: LOADK R4 K0  ; var4 = 0.59999999999999998
+       1 [-]: LOADK R4 K0  ; var4 = 0.60000002384185791
        2 [-]: NAMECALL R1 R0 K1; var2 = var0; var1 = var0[0x9D668F53]
        3 [-]: CALL R1 4 1  ; var1(var2, var3, var4)
        4 [-]: LOADNIL R1   ; var1 = nil
        5 [-]: GETIMPORT R3 3; var3 = 0xF198234F
-       6 [-]: FASTCALL1 62 R3 L0; 
+       6 [-]: FASTCALL1 64 R3 L0; 
        7 [-]: GETIMPORT R2 5; var2 = 0x7B998233
        8 [-]: CALL R2 2 2  ; var2 = var2(var3)
 L 0:   9 [-]: JUMPIF R2 L1 ; goto L1 if var2
@@ -180,7 +180,7 @@ L 0:   9 [-]: JUMPIF R2 L1 ; goto L1 if var2
       14 [-]: MOVE R1 R2   ; var1 = var2
 L 1:  15 [-]: NAMECALL R2 R0 K9; var3 = var0; var2 = var0[0x388577D5]
       16 [-]: CALL R2 2 2  ; var2 = var2(var3)
-L 2:  17 [-]: FASTCALL1 62 R0 L3; 
+L 2:  17 [-]: FASTCALL1 64 R0 L3; 
       18 [-]: MOVE R4 R0   ; var4 = var0
       19 [-]: GETIMPORT R3 5; var3 = 0x7B998233
       20 [-]: CALL R3 2 2  ; var3 = var3(var4)
@@ -193,18 +193,18 @@ L 3:  21 [-]: JUMPIF R3 L11; goto L11 if var3
       27 [-]: CALL R3 3 2  ; var3 = var3(var4, var5)
       28 [-]: JUMPIF R3 L11; goto L11 if var3
       29 [-]: GETIMPORT R5 14; var5 = _T["SibearFieldSlow"]
-      30 [-]: FASTCALL1 62 R5 L4; 
+      30 [-]: FASTCALL1 64 R5 L4; 
       31 [-]: GETIMPORT R4 5; var4 = 0x7B998233
       32 [-]: CALL R4 2 2  ; var4 = var4(var5)
 L 4:  33 [-]: JUMPIF R4 L7 ; goto L7 if var4
       34 [-]: GETIMPORT R5 16; var5 = _T["SibearFieldSlow"]["Targets"]
-      35 [-]: FASTCALL1 62 R5 L5; 
+      35 [-]: FASTCALL1 64 R5 L5; 
       36 [-]: GETIMPORT R4 5; var4 = 0x7B998233
       37 [-]: CALL R4 2 2  ; var4 = var4(var5)
 L 5:  38 [-]: JUMPIF R4 L7 ; goto L7 if var4
       39 [-]: GETIMPORT R6 16; var6 = _T["SibearFieldSlow"]["Targets"]
       40 [-]: GETTABLE R5 R6 R2; var5 = var6[var2]
-      41 [-]: FASTCALL1 62 R5 L6; 
+      41 [-]: FASTCALL1 64 R5 L6; 
       42 [-]: GETIMPORT R4 5; var4 = 0x7B998233
       43 [-]: CALL R4 2 2  ; var4 = var4(var5)
 L 6:  44 [-]: JUMPIFNOT R4 L8; goto L8 if not var4
@@ -213,15 +213,15 @@ L 7:  45 [-]: LOADB R3 0   ; var3 = false
 L 8:  47 [-]: GETIMPORT R5 16; var5 = _T["SibearFieldSlow"]["Targets"]
       48 [-]: GETTABLE R4 R5 R2; var4 = var5[var2]
       49 [-]: LOADN R5 0   ; var5 = 0
-      50 [-]: JUMPIFLT R5 R4 L9; goto L9 if var5 < var16778011
+      50 [-]: JUMPIFLT R5 R4 L9; goto L9 if var5 < var16777990
       51 [-]: LOADB R3 0 +1; var3 = false
 L 9:  52 [-]: LOADB R3 1   ; var3 = true
 L10:  53 [-]: JUMPIFNOT R3 L11; goto L11 if not var3
       54 [-]: GETIMPORT R3 18; var3 = 0xCBD666E1
-      55 [-]: LOADK R4 K19 ; var4 = 0.10000000000000001
+      55 [-]: LOADK R4 K19 ; var4 = 0.10000000149011612
       56 [-]: CALL R3 2 1  ; var3(var4)
       57 [-]: JUMPBACK L2  ; goto L2
-L11:  58 [-]: FASTCALL1 62 R0 L12; 
+L11:  58 [-]: FASTCALL1 64 R0 L12; 
       59 [-]: MOVE R4 R0   ; var4 = var0
       60 [-]: GETIMPORT R3 5; var3 = 0x7B998233
       61 [-]: CALL R3 2 2  ; var3 = var3(var4)
@@ -229,7 +229,7 @@ L12:  62 [-]: JUMPIF R3 L13; goto L13 if var3
       63 [-]: GETUPVAL R5 0; var5 = upvalues[0]
       64 [-]: NAMECALL R3 R0 K20; var4 = var0; var3 = var0[0xD8ECECCC]
       65 [-]: CALL R3 3 1  ; var3(var4, var5)
-L13:  66 [-]: FASTCALL1 62 R1 L14; 
+L13:  66 [-]: FASTCALL1 64 R1 L14; 
       67 [-]: MOVE R4 R1   ; var4 = var1
       68 [-]: GETIMPORT R3 5; var3 = 0x7B998233
       69 [-]: CALL R3 2 2  ; var3 = var3(var4)
@@ -249,21 +249,21 @@ L15:  73 [-]: GETIMPORT R3 14; var3 = _T["SibearFieldSlow"]
 ; Is_vararg:       0
 ; Max Stack Size:  9
 
-       0 [-]: FASTCALL1 62 R1 L0; 
+       0 [-]: FASTCALL1 64 R1 L0; 
        1 [-]: MOVE R3 R1   ; var3 = var1
        2 [-]: GETIMPORT R2 1; var2 = 0x7B998233
        3 [-]: CALL R2 2 2  ; var2 = var2(var3)
 L 0:   4 [-]: JUMPIF R2 L3 ; goto L3 if var2
        5 [-]: NAMECALL R2 R0 K2; var3 = var0; var2 = var0[0xED324116]
        6 [-]: CALL R2 2 2  ; var2 = var2(var3)
-       7 [-]: FASTCALL1 62 R2 L1; 
+       7 [-]: FASTCALL1 64 R2 L1; 
        8 [-]: MOVE R4 R2   ; var4 = var2
        9 [-]: GETIMPORT R3 1; var3 = 0x7B998233
       10 [-]: CALL R3 2 2  ; var3 = var3(var4)
 L 1:  11 [-]: JUMPIF R3 L3 ; goto L3 if var3
       12 [-]: NAMECALL R3 R2 K3; var4 = var2; var3 = var2[0x5163741E]
       13 [-]: CALL R3 2 2  ; var3 = var3(var4)
-      14 [-]: FASTCALL1 62 R3 L2; 
+      14 [-]: FASTCALL1 64 R3 L2; 
       15 [-]: MOVE R5 R3   ; var5 = var3
       16 [-]: GETIMPORT R4 1; var4 = 0x7B998233
       17 [-]: CALL R4 2 2  ; var4 = var4(var5)
@@ -298,7 +298,7 @@ L 3:  39 [-]: RETURN R0 0  ;
 ; Is_vararg:       0
 ; Max Stack Size:  7
 
-       0 [-]: FASTCALL1 62 R1 L0; 
+       0 [-]: FASTCALL1 64 R1 L0; 
        1 [-]: MOVE R3 R1   ; var3 = var1
        2 [-]: GETIMPORT R2 1; var2 = 0x7B998233
        3 [-]: CALL R2 2 2  ; var2 = var2(var3)
@@ -306,18 +306,18 @@ L 0:   4 [-]: JUMPIF R2 L8 ; goto L8 if var2
        5 [-]: NAMECALL R2 R1 K2; var3 = var1; var2 = var1[0x388577D5]
        6 [-]: CALL R2 2 2  ; var2 = var2(var3)
        7 [-]: GETIMPORT R5 5; var5 = _T["SibearFieldSlow"]
-       8 [-]: FASTCALL1 62 R5 L1; 
+       8 [-]: FASTCALL1 64 R5 L1; 
        9 [-]: GETIMPORT R4 1; var4 = 0x7B998233
       10 [-]: CALL R4 2 2  ; var4 = var4(var5)
 L 1:  11 [-]: JUMPIF R4 L4 ; goto L4 if var4
       12 [-]: GETIMPORT R5 7; var5 = _T["SibearFieldSlow"]["Targets"]
-      13 [-]: FASTCALL1 62 R5 L2; 
+      13 [-]: FASTCALL1 64 R5 L2; 
       14 [-]: GETIMPORT R4 1; var4 = 0x7B998233
       15 [-]: CALL R4 2 2  ; var4 = var4(var5)
 L 2:  16 [-]: JUMPIF R4 L4 ; goto L4 if var4
       17 [-]: GETIMPORT R6 7; var6 = _T["SibearFieldSlow"]["Targets"]
       18 [-]: GETTABLE R5 R6 R2; var5 = var6[var2]
-      19 [-]: FASTCALL1 62 R5 L3; 
+      19 [-]: FASTCALL1 64 R5 L3; 
       20 [-]: GETIMPORT R4 1; var4 = 0x7B998233
       21 [-]: CALL R4 2 2  ; var4 = var4(var5)
 L 3:  22 [-]: JUMPIFNOT R4 L5; goto L5 if not var4
@@ -326,7 +326,7 @@ L 4:  23 [-]: LOADB R3 0   ; var3 = false
 L 5:  25 [-]: GETIMPORT R5 7; var5 = _T["SibearFieldSlow"]["Targets"]
       26 [-]: GETTABLE R4 R5 R2; var4 = var5[var2]
       27 [-]: LOADN R5 0   ; var5 = 0
-      28 [-]: JUMPIFLT R5 R4 L6; goto L6 if var5 < var16778011
+      28 [-]: JUMPIFLT R5 R4 L6; goto L6 if var5 < var16777990
       29 [-]: LOADB R3 0 +1; var3 = false
 L 6:  30 [-]: LOADB R3 1   ; var3 = true
 L 7:  31 [-]: JUMPIFNOT R3 L8; goto L8 if not var3
@@ -338,7 +338,7 @@ L 7:  31 [-]: JUMPIFNOT R3 L8; goto L8 if not var3
       37 [-]: GETIMPORT R4 7; var4 = _T["SibearFieldSlow"]["Targets"]
       38 [-]: GETTABLE R3 R4 R2; var3 = var4[var2]
       39 [-]: LOADN R4 0   ; var4 = 0
-      40 [-]: JUMPIFNOTLE R3 R4 L8; goto L8 if var3 > var459598
+      40 [-]: JUMPIFNOTLE R3 R4 L8; goto L8 if var3 > var459553
       41 [-]: GETIMPORT R3 7; var3 = _T["SibearFieldSlow"]["Targets"]
       42 [-]: LOADNIL R4   ; var4 = nil
       43 [-]: SETTABLE R4 R3 R2; var4[var3] = var2
@@ -369,7 +369,7 @@ L 8:  44 [-]: RETURN R0 0  ;
 
        0 [-]: GETIMPORT R4 3; var4 = _T["SibearFieldSlow"]["Fields"]
        1 [-]: GETTABLE R3 R4 R0; var3 = var4[var0]
-       2 [-]: FASTCALL1 62 R3 L0; 
+       2 [-]: FASTCALL1 64 R3 L0; 
        3 [-]: GETIMPORT R2 5; var2 = 0x7B998233
        4 [-]: CALL R2 2 2  ; var2 = var2(var3)
 L 0:   5 [-]: JUMPIFNOT R2 L1; goto L1 if not var2
@@ -386,7 +386,7 @@ L 1:  10 [-]: NEWTABLE R2 0 0; var2 = {}
 L 2:  16 [-]: GETIMPORT R11 3; var11 = _T["SibearFieldSlow"]["Fields"]
       17 [-]: GETTABLE R10 R11 R0; var10 = var11[var0]
       18 [-]: GETTABLE R9 R10 R6; var9 = var10[var6]
-      19 [-]: FASTCALL1 62 R9 L3; 
+      19 [-]: FASTCALL1 64 R9 L3; 
       20 [-]: GETIMPORT R8 5; var8 = 0x7B998233
       21 [-]: CALL R8 2 2  ; var8 = var8(var9)
 L 3:  22 [-]: JUMPIF R8 L4 ; goto L4 if var8
@@ -400,12 +400,12 @@ L 3:  22 [-]: JUMPIF R8 L4 ; goto L4 if var8
 L 4:  30 [-]: FORGLOOP R3 L2 2; 
       31 [-]: LENGTH R3 R2 ; var3 = #var2
       32 [-]: GETIMPORT R4 12; var4 = 0xB525D01C
-      33 [-]: JUMPIFNOTLE R4 R3 L6; goto L6 if var4 > var918350
+      33 [-]: JUMPIFNOTLE R4 R3 L6; goto L6 if var4 > var918305
       34 [-]: GETIMPORT R3 14; var3 = 0x33BDD652[0x9C1F3B5A]
       35 [-]: MOVE R4 R2   ; var4 = var2
       36 [-]: LOADN R5 1   ; var5 = 1
       37 [-]: CALL R3 3 2  ; var3 = var3(var4, var5)
-      38 [-]: FASTCALL1 62 R3 L5; 
+      38 [-]: FASTCALL1 64 R3 L5; 
       39 [-]: MOVE R5 R3   ; var5 = var3
       40 [-]: GETIMPORT R4 5; var4 = 0x7B998233
       41 [-]: CALL R4 2 2  ; var4 = var4(var5)
@@ -436,7 +436,7 @@ L 8:  53 [-]: RETURN R0 0  ;
        3 [-]: RETURN R0 0  ; 
 L 0:   4 [-]: NAMECALL R4 R0 K1; var5 = var0; var4 = var0[0x5163741E]
        5 [-]: CALL R4 2 2  ; var4 = var4(var5)
-       6 [-]: FASTCALL1 62 R4 L1; 
+       6 [-]: FASTCALL1 64 R4 L1; 
        7 [-]: MOVE R6 R4   ; var6 = var4
        8 [-]: GETIMPORT R5 3; var5 = 0x7B998233
        9 [-]: CALL R5 2 2  ; var5 = var5(var6)
@@ -450,14 +450,14 @@ L 2:  12 [-]: LOADNIL R5   ; var5 = nil
 L 3:  17 [-]: GETIMPORT R5 7; var5 = 0x5B558F41
       18 [-]: JUMP L5      ; goto L5
 L 4:  19 [-]: GETIMPORT R5 9; var5 = 0xEBBA8CBC
-L 5:  20 [-]: FASTCALL1 62 R5 L6; 
+L 5:  20 [-]: FASTCALL1 64 R5 L6; 
       21 [-]: MOVE R7 R5   ; var7 = var5
       22 [-]: GETIMPORT R6 3; var6 = 0x7B998233
       23 [-]: CALL R6 2 2  ; var6 = var6(var7)
 L 6:  24 [-]: JUMPIFNOT R6 L7; goto L7 if not var6
       25 [-]: RETURN R0 0  ; 
 L 7:  26 [-]: GETIMPORT R7 12; var7 = _T["SibearFieldSlow"]
-      27 [-]: FASTCALL1 62 R7 L8; 
+      27 [-]: FASTCALL1 64 R7 L8; 
       28 [-]: GETIMPORT R6 3; var6 = 0x7B998233
       29 [-]: CALL R6 2 2  ; var6 = var6(var7)
 L 8:  30 [-]: JUMPIFNOT R6 L9; goto L9 if not var6
@@ -465,7 +465,7 @@ L 8:  30 [-]: JUMPIFNOT R6 L9; goto L9 if not var6
       32 [-]: NEWTABLE R7 0 0; var7 = {}
       33 [-]: SETTABLEKS R7 R6 K11; var7["SibearFieldSlow"] = var6
 L 9:  34 [-]: GETIMPORT R7 15; var7 = _T["SibearFieldSlow"]["Fields"]
-      35 [-]: FASTCALL1 62 R7 L10; 
+      35 [-]: FASTCALL1 64 R7 L10; 
       36 [-]: GETIMPORT R6 3; var6 = 0x7B998233
       37 [-]: CALL R6 2 2  ; var6 = var6(var7)
 L10:  38 [-]: JUMPIFNOT R6 L11; goto L11 if not var6
@@ -483,7 +483,7 @@ L11:  42 [-]: GETUPVAL R8 0; var8 = upvalues[0]
       50 [-]: MOVE R13 R0  ; var13 = var0
       51 [-]: NAMECALL R7 R7 K21; var8 = var7; var7 = var7[0x05909209]
       52 [-]: CALL R7 7 2  ; var7 = var7(var8, var9, var10, var11, var12, var13)
-      53 [-]: FASTCALL1 62 R7 L12; 
+      53 [-]: FASTCALL1 64 R7 L12; 
       54 [-]: MOVE R9 R7   ; var9 = var7
       55 [-]: GETIMPORT R8 3; var8 = 0x7B998233
       56 [-]: CALL R8 2 2  ; var8 = var8(var9)

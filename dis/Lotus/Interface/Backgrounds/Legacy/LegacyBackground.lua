@@ -128,24 +128,18 @@
        9 [-]: LOADK R4 K3  ; var4 = "Backer"
       10 [-]: LOADK R5 K4  ; var5 = "StartColor"
       11 [-]: GETTABLEKS R7 R0 K6; var7 = var0["red"]
-      12 [-]: DIVK R6 R7 K5; var6 = var7 / 255
-      13 [-]: GETTABLEKS R8 R0 K7; var8 = var0["green"]
-      14 [-]: DIVK R7 R8 K5; var7 = var8 / 255
-      15 [-]: GETTABLEKS R9 R0 K8; var9 = var0["blue"]
-      16 [-]: DIVK R8 R9 K5; var8 = var9 / 255
-      17 [-]: LOADN R9 1   ; var9 = 1
+           13 [-]: GETTABLEKS R8 R0 K7; var8 = var0["green"]
+           15 [-]: GETTABLEKS R9 R0 K8; var9 = var0["blue"]
+           17 [-]: LOADN R9 1   ; var9 = 1
       18 [-]: NAMECALL R2 R2 K9; var3 = var2; var2 = var2[0x91E13703]
       19 [-]: CALL R2 8 1  ; var2(var3, var4, var5, var6, var7, var8, var9)
       20 [-]: GETIMPORT R2 2; var2 = 0xAE91E43B
       21 [-]: LOADK R4 K3  ; var4 = "Backer"
       22 [-]: LOADK R5 K10 ; var5 = "EndColor"
       23 [-]: GETTABLEKS R7 R1 K6; var7 = var1["red"]
-      24 [-]: DIVK R6 R7 K5; var6 = var7 / 255
-      25 [-]: GETTABLEKS R8 R1 K7; var8 = var1["green"]
-      26 [-]: DIVK R7 R8 K5; var7 = var8 / 255
-      27 [-]: GETTABLEKS R9 R1 K8; var9 = var1["blue"]
-      28 [-]: DIVK R8 R9 K5; var8 = var9 / 255
-      29 [-]: LOADN R9 1   ; var9 = 1
+           25 [-]: GETTABLEKS R8 R1 K7; var8 = var1["green"]
+           27 [-]: GETTABLEKS R9 R1 K8; var9 = var1["blue"]
+           29 [-]: LOADN R9 1   ; var9 = 1
       30 [-]: NAMECALL R2 R2 K9; var3 = var2; var2 = var2[0x91E13703]
       31 [-]: CALL R2 8 1  ; var2(var3, var4, var5, var6, var7, var8, var9)
       32 [-]: GETUPVAL R2 1; var2 = upvalues[1]
@@ -161,7 +155,7 @@
 ; Max Stack Size:  15
 
        0 [-]: GETIMPORT R6 1; var6 = 0xAE91E43B
-       1 [-]: FASTCALL1 62 R6 L0; 
+       1 [-]: FASTCALL1 64 R6 L0; 
        2 [-]: GETIMPORT R5 3; var5 = 0x7B998233
        3 [-]: CALL R5 2 2  ; var5 = var5(var6)
 L 0:   4 [-]: JUMPIFNOT R5 L1; goto L1 if not var5
@@ -193,7 +187,7 @@ L 1:   6 [-]: NEWTABLE R5 0 2; var5 = {}
 ; Is_vararg:       0
 ; Max Stack Size:  10
 
-       0 [-]: FASTCALL1 62 R1 L0; 
+       0 [-]: FASTCALL1 64 R1 L0; 
        1 [-]: MOVE R5 R1   ; var5 = var1
        2 [-]: GETIMPORT R4 1; var4 = 0x7B998233
        3 [-]: CALL R4 2 2  ; var4 = var4(var5)
@@ -204,7 +198,7 @@ L 0:   4 [-]: JUMPIFNOT R4 L1; goto L1 if not var4
        8 [-]: LOADN R5 0   ; var5 = 0
        9 [-]: SETTABLEKS R5 R4 K3; var5["y"] = var4
       10 [-]: MOVE R1 R4   ; var1 = var4
-L 1:  11 [-]: FASTCALL1 62 R2 L2; 
+L 1:  11 [-]: FASTCALL1 64 R2 L2; 
       12 [-]: MOVE R5 R2   ; var5 = var2
       13 [-]: GETIMPORT R4 1; var4 = 0x7B998233
       14 [-]: CALL R4 2 2  ; var4 = var4(var5)
@@ -213,7 +207,7 @@ L 2:  15 [-]: JUMPIFNOT R4 L3; goto L3 if not var4
 L 3:  17 [-]: SETUPVAL R1 0; upvalues[1] = var0
       18 [-]: SETUPVAL R2 1; upvalues[2] = var1
       19 [-]: GETIMPORT R5 6; var5 = 0xAE91E43B
-      20 [-]: FASTCALL1 62 R5 L4; 
+      20 [-]: FASTCALL1 64 R5 L4; 
       21 [-]: GETIMPORT R4 1; var4 = 0x7B998233
       22 [-]: CALL R4 2 2  ; var4 = var4(var5)
 L 4:  23 [-]: JUMPIF R4 L5 ; goto L5 if var4
@@ -343,7 +337,7 @@ L 1:  27 [-]: GETIMPORT R0 15; var0 = 0xAE91E43B
 ; Max Stack Size:  4
 
        0 [-]: GETIMPORT R1 1; var1 = 0xAE91E43B
-       1 [-]: FASTCALL1 62 R1 L0; 
+       1 [-]: FASTCALL1 64 R1 L0; 
        2 [-]: GETIMPORT R0 3; var0 = 0x7B998233
        3 [-]: CALL R0 2 2  ; var0 = var0(var1)
 L 0:   4 [-]: JUMPIFNOT R0 L1; goto L1 if not var0

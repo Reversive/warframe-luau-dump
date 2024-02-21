@@ -26,7 +26,7 @@
        0 [-]: NAMECALL R2 R1 K0; var3 = var1; var2 = var1[0xC8442850]
        1 [-]: CALL R2 2 2  ; var2 = var2(var3)
        2 [-]: GETIMPORT R3 2; var3 = 0x2F37CF8E
-       3 [-]: JUMPIFNOTLT R2 R3 L0; goto L0 if var2 >= var66119
+       3 [-]: JUMPIFNOTLT R2 R3 L0; goto L0 if var2 >= var66096
        4 [-]: LOADN R2 1   ; var2 = 1
        5 [-]: RETURN R2 1  ; 
 L 0:   6 [-]: LOADN R2 0   ; var2 = 0
@@ -78,7 +78,7 @@ L 0:   6 [-]: LOADN R2 0   ; var2 = 0
       35 [-]: CALL R7 3 1  ; var7(var8, var9)
 L 0:  36 [-]: GETGLOBAL R7 K13; var7 = 0x2B210072
       37 [-]: LOADN R8 0   ; var8 = 0
-      38 [-]: JUMPIFNOTLT R8 R7 L4; goto L4 if var8 >= var984910
+      38 [-]: JUMPIFNOTLT R8 R7 L4; goto L4 if var8 >= var984865
       39 [-]: GETIMPORT R7 15; var7 = 0x89326C93
       40 [-]: GETIMPORT R9 17; var9 = 0xEB93D3C8
       41 [-]: NAMECALL R10 R1 K18; var11 = var1; var10 = var1[0xD1586535]
@@ -87,20 +87,20 @@ L 0:  36 [-]: GETGLOBAL R7 K13; var7 = 0x2B210072
       44 [-]: GETIMPORT R12 20; var12 = 0x443A8D0B
       45 [-]: NAMECALL R7 R7 K21; var8 = var7; var7 = var7[0xFB669000]
       46 [-]: CALL R7 6 2  ; var7 = var7(var8, var9, var10, var11, var12)
-      47 [-]: FASTCALL1 62 R7 L1; 
+      47 [-]: FASTCALL1 64 R7 L1; 
       48 [-]: MOVE R9 R7   ; var9 = var7
       49 [-]: GETIMPORT R8 23; var8 = 0x7B998233
       50 [-]: CALL R8 2 2  ; var8 = var8(var9)
 L 1:  51 [-]: JUMPIF R8 L3 ; goto L3 if var8
       52 [-]: LENGTH R8 R7 ; var8 = #var7
       53 [-]: LOADN R9 0   ; var9 = 0
-      54 [-]: JUMPIFNOTLT R9 R8 L3; goto L3 if var9 >= var1640782
+      54 [-]: JUMPIFNOTLT R9 R8 L3; goto L3 if var9 >= var1640737
       55 [-]: GETIMPORT R9 25; var9 = 0x55730E1A
       56 [-]: LOADN R10 1  ; var10 = 1
       57 [-]: LENGTH R11 R7; var11 = #var7
       58 [-]: CALL R9 3 2  ; var9 = var9(var10, var11)
       59 [-]: GETTABLE R8 R7 R9; var8 = var7[var9]
-      60 [-]: FASTCALL1 62 R8 L2; 
+      60 [-]: FASTCALL1 64 R8 L2; 
       61 [-]: MOVE R10 R8  ; var10 = var8
       62 [-]: GETIMPORT R9 23; var9 = 0x7B998233
       63 [-]: CALL R9 2 2  ; var9 = var9(var10)

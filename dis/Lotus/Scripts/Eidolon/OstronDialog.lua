@@ -3,7 +3,7 @@
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       1
-; Max Stack Size:  12
+; Max Stack Size:  13
 
        1 [-]: GETIMPORT R0 1; var0 = 0x2D0FAD09
        2 [-]: LOADK R1 K2  ; var1 = "EE.Interface.Utilities"
@@ -17,406 +17,497 @@
       10 [-]: GETIMPORT R3 1; var3 = 0x2D0FAD09
       11 [-]: LOADK R4 K5  ; var4 = "Lotus.Interface.StoreItemUtilities"
       12 [-]: CALL R3 2 2  ; var3 = var3(var4)
-      13 [-]: NEWTABLE R4 128 0; var4 = {}
-      14 [-]: GETIMPORT R5 7; var5 = 0x0469F296
-      15 [-]: LOADK R6 K8  ; var6 = "Ostron_CraftingScreen"
-      16 [-]: CALL R5 2 2  ; var5 = var5(var6)
-      17 [-]: SETTABLEKS R5 R4 K9; var5["ostronCraftingTag"] = var4
-      18 [-]: GETIMPORT R5 7; var5 = 0x0469F296
-      19 [-]: LOADK R6 K10 ; var6 = "Ostron_WeaponOfTheDay"
-      20 [-]: CALL R5 2 2  ; var5 = var5(var6)
-      21 [-]: SETTABLEKS R5 R4 K11; var5["ostronWeaponOfTheDayTag"] = var4
-      22 [-]: GETIMPORT R5 7; var5 = 0x0469F296
-      23 [-]: LOADK R6 K12 ; var6 = "Ostron_Actions"
-      24 [-]: CALL R5 2 2  ; var5 = var5(var6)
-      25 [-]: SETTABLEKS R5 R4 K13; var5["ostronActionsTag"] = var4
-      26 [-]: GETIMPORT R5 7; var5 = 0x0469F296
-      27 [-]: LOADK R6 K14 ; var6 = "Amp_CraftingScreen"
-      28 [-]: CALL R5 2 2  ; var5 = var5(var6)
-      29 [-]: SETTABLEKS R5 R4 K15; var5["ampCraftingTag"] = var4
-      30 [-]: GETIMPORT R5 7; var5 = 0x0469F296
-      31 [-]: LOADK R6 K16 ; var6 = "FishmongerDailySpecial"
-      32 [-]: CALL R5 2 2  ; var5 = var5(var6)
-      33 [-]: SETTABLEKS R5 R4 K17; var5["fishmongerDailySpecialTag"] = var4
-      34 [-]: GETIMPORT R5 7; var5 = 0x0469F296
-      35 [-]: LOADK R6 K18 ; var6 = "ProspectorDailySpecial"
-      36 [-]: CALL R5 2 2  ; var5 = var5(var6)
-      37 [-]: SETTABLEKS R5 R4 K19; var5["prospectorDailySpecialTag"] = var4
-      38 [-]: GETIMPORT R5 7; var5 = 0x0469F296
-      39 [-]: LOADK R6 K20 ; var6 = "PetVendorDailySpecial"
-      40 [-]: CALL R5 2 2  ; var5 = var5(var6)
-      41 [-]: SETTABLEKS R5 R4 K21; var5["petVendorDailySpecialTag"] = var4
-      42 [-]: GETIMPORT R5 7; var5 = 0x0469F296
-      43 [-]: LOADK R6 K22 ; var6 = "MaskSellerVendorItems"
-      44 [-]: CALL R5 2 2  ; var5 = var5(var6)
-      45 [-]: SETTABLEKS R5 R4 K23; var5["maskSellerVendorItemsTag"] = var4
-      46 [-]: GETIMPORT R5 7; var5 = 0x0469F296
-      47 [-]: LOADK R6 K24 ; var6 = "PetVendorItems"
-      48 [-]: CALL R5 2 2  ; var5 = var5(var6)
-      49 [-]: SETTABLEKS R5 R4 K25; var5["petVendorWaresTag"] = var4
-      50 [-]: GETIMPORT R5 7; var5 = 0x0469F296
-      51 [-]: LOADK R6 K26 ; var6 = "PetVendorTags"
-      52 [-]: CALL R5 2 2  ; var5 = var5(var6)
-      53 [-]: SETTABLEKS R5 R4 K27; var5["petVendorTradeTag"] = var4
-      54 [-]: GETIMPORT R5 7; var5 = 0x0469F296
-      55 [-]: LOADK R6 K28 ; var6 = "PetVendorBarter"
-      56 [-]: CALL R5 2 2  ; var5 = var5(var6)
-      57 [-]: SETTABLEKS R5 R4 K29; var5["petVendorBarterTag"] = var4
-      58 [-]: GETIMPORT R5 7; var5 = 0x0469F296
-      59 [-]: LOADK R6 K30 ; var6 = "Solaris_MoaPetOfTheDay"
-      60 [-]: CALL R5 2 2  ; var5 = var5(var6)
-      61 [-]: SETTABLEKS R5 R4 K31; var5["solarisMoaOfTheDayTag"] = var4
-      62 [-]: GETIMPORT R5 7; var5 = 0x0469F296
-      63 [-]: LOADK R6 K32 ; var6 = "Solaris_HoverboardOfTheDay"
-      64 [-]: CALL R5 2 2  ; var5 = var5(var6)
-      65 [-]: SETTABLEKS R5 R4 K33; var5["solarisHoverboardOfTheDayTag"] = var4
-      66 [-]: GETIMPORT R5 7; var5 = 0x0469F296
-      67 [-]: LOADK R6 K34 ; var6 = "MoaCraftingScreen"
-      68 [-]: CALL R5 2 2  ; var5 = var5(var6)
-      69 [-]: SETTABLEKS R5 R4 K35; var5["moaCraftingTag"] = var4
-      70 [-]: GETIMPORT R5 7; var5 = 0x0469F296
-      71 [-]: LOADK R6 K36 ; var6 = "ZanukaCraftingScreen"
-      72 [-]: CALL R5 2 2  ; var5 = var5(var6)
-      73 [-]: SETTABLEKS R5 R4 K37; var5["zanukaCraftingTag"] = var4
-      74 [-]: GETIMPORT R5 7; var5 = 0x0469F296
-      75 [-]: LOADK R6 K38 ; var6 = "Moa_Actions"
-      76 [-]: CALL R5 2 2  ; var5 = var5(var6)
-      77 [-]: SETTABLEKS R5 R4 K39; var5["moaActionsTag"] = var4
-      78 [-]: GETIMPORT R5 7; var5 = 0x0469F296
-      79 [-]: LOADK R6 K40 ; var6 = "HoverboardScreen"
-      80 [-]: CALL R5 2 2  ; var5 = var5(var6)
-      81 [-]: SETTABLEKS R5 R4 K41; var5["hoverboardTag"] = var4
-      82 [-]: GETIMPORT R5 7; var5 = 0x0469F296
-      83 [-]: LOADK R6 K42 ; var6 = "HoverboardCraftingScreen"
-      84 [-]: CALL R5 2 2  ; var5 = var5(var6)
-      85 [-]: SETTABLEKS R5 R4 K43; var5["hoverboardCraftingTag"] = var4
-      86 [-]: GETIMPORT R5 7; var5 = 0x0469F296
-      87 [-]: LOADK R6 K44 ; var6 = "HoverboardFavorsScreen"
-      88 [-]: CALL R5 2 2  ; var5 = var5(var6)
-      89 [-]: SETTABLEKS R5 R4 K45; var5["hoverboardFavorsTag"] = var4
-      90 [-]: GETIMPORT R5 7; var5 = 0x0469F296
-      91 [-]: LOADK R6 K46 ; var6 = "Hoverboard_Actions"
-      92 [-]: CALL R5 2 2  ; var5 = var5(var6)
-      93 [-]: SETTABLEKS R5 R4 K47; var5["hoverboardActionsTag"] = var4
-      94 [-]: GETIMPORT R5 7; var5 = 0x0469F296
-      95 [-]: LOADK R6 K48 ; var6 = "DebtTokenVendorFreeDebtBonds"
-      96 [-]: CALL R5 2 2  ; var5 = var5(var6)
-      97 [-]: SETTABLEKS R5 R4 K49; var5["debtTokenVendorFreeDebtBondsTag"] = var4
-      98 [-]: GETIMPORT R5 7; var5 = 0x0469F296
-      99 [-]: LOADK R6 K50 ; var6 = "DebtTokenVendorItems"
-     100 [-]: CALL R5 2 2  ; var5 = var5(var6)
-     101 [-]: SETTABLEKS R5 R4 K51; var5["debtTokenVendorItemsTag"] = var4
-     102 [-]: GETIMPORT R5 7; var5 = 0x0469F296
-     103 [-]: LOADK R6 K52 ; var6 = "DebtTokenVendorCrewMembers"
-     104 [-]: CALL R5 2 2  ; var5 = var5(var6)
-     105 [-]: SETTABLEKS R5 R4 K53; var5["debtTokenVendorCrewMembersTag"] = var4
-     106 [-]: GETIMPORT R5 7; var5 = 0x0469F296
-     107 [-]: LOADK R6 K54 ; var6 = "SolarisFishmongerVendorItems"
-     108 [-]: CALL R5 2 2  ; var5 = var5(var6)
-     109 [-]: SETTABLEKS R5 R4 K55; var5["solarisFishMongerVendorItemsTag"] = var4
-     110 [-]: GETIMPORT R5 7; var5 = 0x0469F296
-     111 [-]: LOADK R6 K56 ; var6 = "HivemindTokenVendorCommissions"
-     112 [-]: CALL R5 2 2  ; var5 = var5(var6)
-     113 [-]: SETTABLEKS R5 R4 K57; var5["hivemindTokenVendorCommissionsTag"] = var4
-     114 [-]: GETIMPORT R5 7; var5 = 0x0469F296
-     115 [-]: LOADK R6 K58 ; var6 = "HivemindTokenVendorProducts"
-     116 [-]: CALL R5 2 2  ; var5 = var5(var6)
-     117 [-]: SETTABLEKS R5 R4 K59; var5["hivemindTokenVendorProductsTag"] = var4
-     118 [-]: GETIMPORT R5 7; var5 = 0x0469F296
-     119 [-]: LOADK R6 K60 ; var6 = "HivemindTokenVendorBarter"
-     120 [-]: CALL R5 2 2  ; var5 = var5(var6)
-     121 [-]: SETTABLEKS R5 R4 K61; var5["hivemindTokenVendorBarterTag"] = var4
-     122 [-]: GETIMPORT R5 7; var5 = 0x0469F296
-     123 [-]: LOADK R6 K62 ; var6 = "HivemindProspectorCommissions"
-     124 [-]: CALL R5 2 2  ; var5 = var5(var6)
-     125 [-]: SETTABLEKS R5 R4 K63; var5["hivemindProspectorCommissionsTag"] = var4
-     126 [-]: GETIMPORT R5 7; var5 = 0x0469F296
-     127 [-]: LOADK R6 K64 ; var6 = "OtakLastWishManifest"
-     128 [-]: CALL R5 2 2  ; var5 = var5(var6)
-     129 [-]: SETTABLEKS R5 R4 K65; var5["hivemindProspectorLastWishManifestTag"] = var4
-     130 [-]: GETIMPORT R5 7; var5 = 0x0469F296
-     131 [-]: LOADK R6 K66 ; var6 = "HivemindFishmongerCommissions"
-     132 [-]: CALL R5 2 2  ; var5 = var5(var6)
-     133 [-]: SETTABLEKS R5 R4 K67; var5["hivemindFishmongerCommissionsTag"] = var4
-     134 [-]: GETIMPORT R5 7; var5 = 0x0469F296
-     135 [-]: LOADK R6 K68 ; var6 = "HivemindPetVendorCommissions"
-     136 [-]: CALL R5 2 2  ; var5 = var5(var6)
-     137 [-]: SETTABLEKS R5 R4 K69; var5["hivemindPetVendorCommissionsTag"] = var4
-     138 [-]: GETIMPORT R5 7; var5 = 0x0469F296
-     139 [-]: LOADK R6 K70 ; var6 = "HivemindGunsmithCommissions"
-     140 [-]: CALL R5 2 2  ; var5 = var5(var6)
-     141 [-]: SETTABLEKS R5 R4 K71; var5["hivemindGunsmithCommissionsTag"] = var4
-     142 [-]: GETIMPORT R5 7; var5 = 0x0469F296
-     143 [-]: LOADK R6 K72 ; var6 = "HivemindKubrowCraftingScreen"
-     144 [-]: CALL R5 2 2  ; var5 = var5(var6)
-     145 [-]: SETTABLEKS R5 R4 K73; var5["hivemindKubrowPetCraftingTag"] = var4
-     146 [-]: GETIMPORT R5 7; var5 = 0x0469F296
-     147 [-]: LOADK R6 K74 ; var6 = "HivemindCatbrowCraftingScreen"
-     148 [-]: CALL R5 2 2  ; var5 = var5(var6)
-     149 [-]: SETTABLEKS R5 R4 K75; var5["hivemindCatbrowPetCraftingTag"] = var4
-     150 [-]: GETIMPORT R5 7; var5 = 0x0469F296
-     151 [-]: LOADK R6 K76 ; var6 = "HivemindPetActions"
-     152 [-]: CALL R5 2 2  ; var5 = var5(var6)
-     153 [-]: SETTABLEKS R5 R4 K77; var5["hivemindPetActionsTag"] = var4
-     154 [-]: GETIMPORT R5 7; var5 = 0x0469F296
-     155 [-]: LOADK R6 K78 ; var6 = "AWCraftingScreen"
-     156 [-]: CALL R5 2 2  ; var5 = var5(var6)
-     157 [-]: SETTABLEKS R5 R4 K79; var5["AWCraftingTag"] = var4
-     158 [-]: GETIMPORT R5 7; var5 = 0x0469F296
-     159 [-]: LOADK R6 K80 ; var6 = "AWFavorsScreen"
-     160 [-]: CALL R5 2 2  ; var5 = var5(var6)
-     161 [-]: SETTABLEKS R5 R4 K81; var5["AWFavorsTag"] = var4
-     162 [-]: GETIMPORT R5 7; var5 = 0x0469F296
-     163 [-]: LOADK R6 K82 ; var6 = "SolarisUnitedScreen"
-     164 [-]: CALL R5 2 2  ; var5 = var5(var6)
-     165 [-]: SETTABLEKS R5 R4 K83; var5["solarisUnitedTag"] = var4
-     166 [-]: GETIMPORT R5 7; var5 = 0x0469F296
-     167 [-]: LOADK R6 K84 ; var6 = "VoxFavorsScreen"
-     168 [-]: CALL R5 2 2  ; var5 = var5(var6)
-     169 [-]: SETTABLEKS R5 R4 K85; var5["solarisUnitedFavorsTag"] = var4
-     170 [-]: GETIMPORT R5 7; var5 = 0x0469F296
-     171 [-]: LOADK R6 K86 ; var6 = "SolarisUnited_Actions"
-     172 [-]: CALL R5 2 2  ; var5 = var5(var6)
-     173 [-]: SETTABLEKS R5 R4 K87; var5["solarisUnitedActionTag"] = var4
-     174 [-]: GETIMPORT R5 7; var5 = 0x0469F296
-     175 [-]: LOADK R6 K88 ; var6 = "SolarisUnited_AmpCraftingScreen"
-     176 [-]: CALL R5 2 2  ; var5 = var5(var6)
-     177 [-]: SETTABLEKS R5 R4 K89; var5["solarisUnitedAmpCraftingTag"] = var4
-     178 [-]: GETIMPORT R5 7; var5 = 0x0469F296
-     179 [-]: LOADK R6 K90 ; var6 = "SentientInvasionScreen"
-     180 [-]: CALL R5 2 2  ; var5 = var5(var6)
-     181 [-]: SETTABLEKS R5 R4 K91; var5["solarisUnitedSentientInvasionTag"] = var4
-     182 [-]: GETIMPORT R5 7; var5 = 0x0469F296
-     183 [-]: LOADK R6 K92 ; var6 = "WeaponsmithFavorsScreen"
-     184 [-]: CALL R5 2 2  ; var5 = var5(var6)
-     185 [-]: SETTABLEKS R5 R4 K93; var5["weaponsmithFavorsTag"] = var4
-     186 [-]: GETIMPORT R5 7; var5 = 0x0469F296
-     187 [-]: LOADK R6 K94 ; var6 = "FishmongerFavorsScreen"
-     188 [-]: CALL R5 2 2  ; var5 = var5(var6)
-     189 [-]: SETTABLEKS R5 R4 K95; var5["fishmongerFavorsTag"] = var4
-     190 [-]: GETIMPORT R5 7; var5 = 0x0469F296
-     191 [-]: LOADK R6 K96 ; var6 = "ProspectorFavorsScreen"
-     192 [-]: CALL R5 2 2  ; var5 = var5(var6)
-     193 [-]: SETTABLEKS R5 R4 K97; var5["prospectorFavorsTag"] = var4
-     194 [-]: GETIMPORT R5 7; var5 = 0x0469F296
-     195 [-]: LOADK R6 K98 ; var6 = "Moa_FavorsScreen"
-     196 [-]: CALL R5 2 2  ; var5 = var5(var6)
-     197 [-]: SETTABLEKS R5 R4 K99; var5["moaFavorsTag"] = var4
-     198 [-]: GETIMPORT R5 7; var5 = 0x0469F296
-     199 [-]: LOADK R6 K100; var6 = "QuillsFavorsScreen"
-     200 [-]: CALL R5 2 2  ; var5 = var5(var6)
-     201 [-]: SETTABLEKS R5 R4 K101; var5["quillsFavorsTag"] = var4
-     202 [-]: GETIMPORT R5 7; var5 = 0x0469F296
-     203 [-]: LOADK R6 K102; var6 = "QuillsScreen"
-     204 [-]: CALL R5 2 2  ; var5 = var5(var6)
-     205 [-]: SETTABLEKS R5 R4 K103; var5["quillsTag"] = var4
-     206 [-]: GETIMPORT R5 7; var5 = 0x0469F296
-     207 [-]: LOADK R6 K104; var6 = "Quills_Actions"
-     208 [-]: CALL R5 2 2  ; var5 = var5(var6)
-     209 [-]: SETTABLEKS R5 R4 K105; var5["quillsActionTag"] = var4
-     210 [-]: GETIMPORT R5 7; var5 = 0x0469F296
-     211 [-]: LOADK R6 K106; var6 = "NecraloidFavorsScreen"
-     212 [-]: CALL R5 2 2  ; var5 = var5(var6)
-     213 [-]: SETTABLEKS R5 R4 K107; var5["necraloidFavorsTag"] = var4
-     214 [-]: GETIMPORT R5 7; var5 = 0x0469F296
-     215 [-]: LOADK R6 K108; var6 = "NecraloidSyndicateScreen"
-     216 [-]: CALL R5 2 2  ; var5 = var5(var6)
-     217 [-]: SETTABLEKS R5 R4 K109; var5["necraloidTag"] = var4
-     218 [-]: GETIMPORT R5 7; var5 = 0x0469F296
-     219 [-]: LOADK R6 K110; var6 = "NecraloidProducts"
-     220 [-]: CALL R5 2 2  ; var5 = var5(var6)
-     221 [-]: SETTABLEKS R5 R4 K111; var5["necraloidProductsTag"] = var4
-     222 [-]: GETIMPORT R5 7; var5 = 0x0469F296
-     223 [-]: LOADK R6 K112; var6 = "EventSyndicate"
-     224 [-]: CALL R5 2 2  ; var5 = var5(var6)
-     225 [-]: SETTABLEKS R5 R4 K113; var5["eventSyndicateTag"] = var4
-     226 [-]: GETIMPORT R5 7; var5 = 0x0469F296
-     227 [-]: LOADK R6 K114; var6 = "EventSyndicateScreen"
-     228 [-]: CALL R5 2 2  ; var5 = var5(var6)
-     229 [-]: SETTABLEKS R5 R4 K115; var5["eventSyndicateScreenTag"] = var4
-     230 [-]: GETIMPORT R5 7; var5 = 0x0469F296
-     231 [-]: LOADK R6 K116; var6 = "WaterFightVendorScreen"
-     232 [-]: CALL R5 2 2  ; var5 = var5(var6)
-     233 [-]: SETTABLEKS R5 R4 K117; var5["waterFightScreenTag"] = var4
-     234 [-]: GETIMPORT R5 7; var5 = 0x0469F296
-     235 [-]: LOADK R6 K118; var6 = "FishmongerExchangeScreen"
-     236 [-]: CALL R5 2 2  ; var5 = var5(var6)
-     237 [-]: SETTABLEKS R5 R4 K119; var5["fishmongerExchangeTag"] = var4
-     238 [-]: GETIMPORT R5 7; var5 = 0x0469F296
-     239 [-]: LOADK R6 K120; var6 = "FishmongerBaitScreen"
-     240 [-]: CALL R5 2 2  ; var5 = var5(var6)
-     241 [-]: SETTABLEKS R5 R4 K121; var5["fishmongerBaitTag"] = var4
-     242 [-]: GETIMPORT R5 7; var5 = 0x0469F296
-     243 [-]: LOADK R6 K122; var6 = "ZarimanApartmentFavorsScreen"
-     244 [-]: CALL R5 2 2  ; var5 = var5(var6)
-     245 [-]: SETTABLEKS R5 R4 K123; var5["zarimanApartmentFavorsTag"] = var4
-     246 [-]: GETIMPORT R5 7; var5 = 0x0469F296
-     247 [-]: LOADK R6 K124; var6 = "ZarimanVoidshellFavorsScreen"
-     248 [-]: CALL R5 2 2  ; var5 = var5(var6)
-     249 [-]: SETTABLEKS R5 R4 K125; var5["zarimanVoidshellFavorsTag"] = var4
-     250 [-]: GETIMPORT R5 7; var5 = 0x0469F296
-     251 [-]: LOADK R6 K126; var6 = "ZarimanWeaponsmithFavorsScreen"
-     252 [-]: CALL R5 2 2  ; var5 = var5(var6)
-     253 [-]: SETTABLEKS R5 R4 K127; var5["zarimanWeaponsmithFavorsTag"] = var4
-     254 [-]: GETIMPORT R5 7; var5 = 0x0469F296
-     255 [-]: LOADK R6 K128; var6 = "ZarimanWeaponsmithEvolveScreen"
-     256 [-]: CALL R5 2 2  ; var5 = var5(var6)
-     257 [-]: SETTABLEKS R5 R4 K129; var5["zarimanWeaponsmithEvolveWeapTag"] = var4
-     258 [-]: GETIMPORT R5 7; var5 = 0x0469F296
-     259 [-]: LOADK R6 K130; var6 = "ZarimanWeaponsmithIncarnonShop"
-     260 [-]: CALL R5 2 2  ; var5 = var5(var6)
-     261 [-]: SETTABLEKS R5 R4 K131; var5["zarimanWeaponsmithIncarnonShopTag"] = var4
-     262 [-]: GETIMPORT R5 7; var5 = 0x0469F296
-     263 [-]: LOADK R6 K132; var6 = "ArchimedeanVendorItems"
-     264 [-]: CALL R5 2 2  ; var5 = var5(var6)
-     265 [-]: SETTABLEKS R5 R4 K133; var5["zarimanArchimedeanManifestTag"] = var4
-     266 [-]: GETIMPORT R5 7; var5 = 0x0469F296
-     267 [-]: LOADK R6 K134; var6 = "ZarimanArchimedeanCommissions"
-     268 [-]: CALL R5 2 2  ; var5 = var5(var6)
-     269 [-]: SETTABLEKS R5 R4 K135; var5["zarimanArchimedeanCommissionsTag"] = var4
-     270 [-]: GETIMPORT R5 7; var5 = 0x0469F296
-     271 [-]: LOADK R6 K136; var6 = "ArchimedeanVoidEclipseManifest"
-     272 [-]: CALL R5 2 2  ; var5 = var5(var6)
-     273 [-]: SETTABLEKS R5 R4 K137; var5["zarimanArchimedeanVoidEclipseManifestTag"] = var4
-     274 [-]: GETIMPORT R5 7; var5 = 0x0469F296
-     275 [-]: LOADK R6 K138; var6 = "DuviriArchivistVendorItems"
-     276 [-]: CALL R5 2 2  ; var5 = var5(var6)
-     277 [-]: SETTABLEKS R5 R4 K139; var5["duviriArchivistVendorItemsTag"] = var4
-     278 [-]: GETIMPORT R5 7; var5 = 0x0469F296
-     279 [-]: LOADK R6 K140; var6 = "DuviriArchivistKullervoShop"
-     280 [-]: CALL R5 2 2  ; var5 = var5(var6)
-     281 [-]: SETTABLEKS R5 R4 K141; var5["duviriArchivistKullervoShopTag"] = var4
-     282 [-]: GETIMPORT R5 7; var5 = 0x0469F296
-     283 [-]: LOADK R6 K142; var6 = "DuviriArchivistEnigmaGyrumShop"
-     284 [-]: CALL R5 2 2  ; var5 = var5(var6)
-     285 [-]: SETTABLEKS R5 R4 K143; var5["duviriArchivistEnigmaGyrumShopTag"] = var4
-     286 [-]: GETIMPORT R5 7; var5 = 0x0469F296
-     287 [-]: LOADK R6 K144; var6 = "Kahl_MissionBrief"
-     288 [-]: CALL R5 2 2  ; var5 = var5(var6)
-     289 [-]: SETTABLEKS R5 R4 K145; var5["kahlMissionBriefTag"] = var4
-     290 [-]: GETIMPORT R5 7; var5 = 0x0469F296
-     291 [-]: LOADK R6 K146; var6 = "Kahl_Customizations"
-     292 [-]: CALL R5 2 2  ; var5 = var5(var6)
-     293 [-]: SETTABLEKS R5 R4 K147; var5["kahlCustomizationsTag"] = var4
-     294 [-]: GETIMPORT R5 7; var5 = 0x0469F296
-     295 [-]: LOADK R6 K148; var6 = "Chipper_VendorItems"
-     296 [-]: CALL R5 2 2  ; var5 = var5(var6)
-     297 [-]: SETTABLEKS R5 R4 K149; var5["chipperVendorItemsTag"] = var4
-     298 [-]: DUPCLOSURE R5 K150; 
-     299 [-]: CAPTURE VAL R1; 
-     300 [-]: DUPCLOSURE R6 K151; 
-     301 [-]: CAPTURE VAL R5; 
-     302 [-]: SETGLOBAL R6 K152; "OpenDogTagScreenDirect" = var6
-     303 [-]: DUPCLOSURE R6 K153; 
-     304 [-]: CAPTURE VAL R2; 
-     305 [-]: CAPTURE VAL R0; 
-     306 [-]: DUPCLOSURE R7 K154; 
-     307 [-]: CAPTURE VAL R1; 
-     308 [-]: DUPCLOSURE R8 K155; 
-     309 [-]: DUPCLOSURE R9 K156; 
-     310 [-]: CAPTURE VAL R0; 
-     311 [-]: DUPCLOSURE R10 K157; 
-     312 [-]: CAPTURE VAL R1; 
-     313 [-]: DUPCLOSURE R11 K158; 
-     314 [-]: CAPTURE VAL R1; 
-     315 [-]: CAPTURE VAL R6; 
-     316 [-]: CAPTURE VAL R4; 
-     317 [-]: CAPTURE VAL R8; 
-     318 [-]: CAPTURE VAL R10; 
-     319 [-]: CAPTURE VAL R5; 
-     320 [-]: CAPTURE VAL R9; 
-     321 [-]: CAPTURE VAL R7; 
-     322 [-]: CAPTURE VAL R0; 
-     323 [-]: CAPTURE VAL R3; 
-     324 [-]: SETGLOBAL R11 K159; "InitializeDialogOptions" = var11
-     325 [-]: DUPCLOSURE R11 K160; 
-     326 [-]: SETGLOBAL R11 K161; "OnOperatorUpgraded" = var11
-     327 [-]: DUPCLOSURE R11 K162; 
-     328 [-]: SETGLOBAL R11 K163; "UpgradeOperatorCinematic" = var11
-     329 [-]: RETURN R0 0  ; 
+      13 [-]: GETIMPORT R4 1; var4 = 0x2D0FAD09
+      14 [-]: LOADK R5 K6  ; var5 = "Lotus.Interface.WorldStateUtilities"
+      15 [-]: CALL R4 2 2  ; var4 = var4(var5)
+      16 [-]: NEWTABLE R5 128 0; var5 = {}
+      17 [-]: GETIMPORT R6 8; var6 = 0x0469F296
+      18 [-]: LOADK R7 K9  ; var7 = "Ostron_CraftingScreen"
+      19 [-]: CALL R6 2 2  ; var6 = var6(var7)
+      20 [-]: SETTABLEKS R6 R5 K10; var6["ostronCraftingTag"] = var5
+      21 [-]: GETIMPORT R6 8; var6 = 0x0469F296
+      22 [-]: LOADK R7 K11 ; var7 = "Ostron_WeaponOfTheDay"
+      23 [-]: CALL R6 2 2  ; var6 = var6(var7)
+      24 [-]: SETTABLEKS R6 R5 K12; var6["ostronWeaponOfTheDayTag"] = var5
+      25 [-]: GETIMPORT R6 8; var6 = 0x0469F296
+      26 [-]: LOADK R7 K13 ; var7 = "Ostron_Actions"
+      27 [-]: CALL R6 2 2  ; var6 = var6(var7)
+      28 [-]: SETTABLEKS R6 R5 K14; var6["ostronActionsTag"] = var5
+      29 [-]: GETIMPORT R6 8; var6 = 0x0469F296
+      30 [-]: LOADK R7 K15 ; var7 = "Amp_CraftingScreen"
+      31 [-]: CALL R6 2 2  ; var6 = var6(var7)
+      32 [-]: SETTABLEKS R6 R5 K16; var6["ampCraftingTag"] = var5
+      33 [-]: GETIMPORT R6 8; var6 = 0x0469F296
+      34 [-]: LOADK R7 K17 ; var7 = "FishmongerDailySpecial"
+      35 [-]: CALL R6 2 2  ; var6 = var6(var7)
+      36 [-]: SETTABLEKS R6 R5 K18; var6["fishmongerDailySpecialTag"] = var5
+      37 [-]: GETIMPORT R6 8; var6 = 0x0469F296
+      38 [-]: LOADK R7 K19 ; var7 = "ProspectorDailySpecial"
+      39 [-]: CALL R6 2 2  ; var6 = var6(var7)
+      40 [-]: SETTABLEKS R6 R5 K20; var6["prospectorDailySpecialTag"] = var5
+      41 [-]: GETIMPORT R6 8; var6 = 0x0469F296
+      42 [-]: LOADK R7 K21 ; var7 = "PetVendorDailySpecial"
+      43 [-]: CALL R6 2 2  ; var6 = var6(var7)
+      44 [-]: SETTABLEKS R6 R5 K22; var6["petVendorDailySpecialTag"] = var5
+      45 [-]: GETIMPORT R6 8; var6 = 0x0469F296
+      46 [-]: LOADK R7 K23 ; var7 = "MaskSellerVendorItems"
+      47 [-]: CALL R6 2 2  ; var6 = var6(var7)
+      48 [-]: SETTABLEKS R6 R5 K24; var6["maskSellerVendorItemsTag"] = var5
+      49 [-]: GETIMPORT R6 8; var6 = 0x0469F296
+      50 [-]: LOADK R7 K25 ; var7 = "PetVendorItems"
+      51 [-]: CALL R6 2 2  ; var6 = var6(var7)
+      52 [-]: SETTABLEKS R6 R5 K26; var6["petVendorWaresTag"] = var5
+      53 [-]: GETIMPORT R6 8; var6 = 0x0469F296
+      54 [-]: LOADK R7 K27 ; var7 = "PetVendorTags"
+      55 [-]: CALL R6 2 2  ; var6 = var6(var7)
+      56 [-]: SETTABLEKS R6 R5 K28; var6["petVendorTradeTag"] = var5
+      57 [-]: GETIMPORT R6 8; var6 = 0x0469F296
+      58 [-]: LOADK R7 K29 ; var7 = "PetVendorBarter"
+      59 [-]: CALL R6 2 2  ; var6 = var6(var7)
+      60 [-]: SETTABLEKS R6 R5 K30; var6["petVendorBarterTag"] = var5
+      61 [-]: GETIMPORT R6 8; var6 = 0x0469F296
+      62 [-]: LOADK R7 K31 ; var7 = "Solaris_MoaPetOfTheDay"
+      63 [-]: CALL R6 2 2  ; var6 = var6(var7)
+      64 [-]: SETTABLEKS R6 R5 K32; var6["solarisMoaOfTheDayTag"] = var5
+      65 [-]: GETIMPORT R6 8; var6 = 0x0469F296
+      66 [-]: LOADK R7 K33 ; var7 = "Solaris_HoverboardOfTheDay"
+      67 [-]: CALL R6 2 2  ; var6 = var6(var7)
+      68 [-]: SETTABLEKS R6 R5 K34; var6["solarisHoverboardOfTheDayTag"] = var5
+      69 [-]: GETIMPORT R6 8; var6 = 0x0469F296
+      70 [-]: LOADK R7 K35 ; var7 = "MoaCraftingScreen"
+      71 [-]: CALL R6 2 2  ; var6 = var6(var7)
+      72 [-]: SETTABLEKS R6 R5 K36; var6["moaCraftingTag"] = var5
+      73 [-]: GETIMPORT R6 8; var6 = 0x0469F296
+      74 [-]: LOADK R7 K37 ; var7 = "ZanukaCraftingScreen"
+      75 [-]: CALL R6 2 2  ; var6 = var6(var7)
+      76 [-]: SETTABLEKS R6 R5 K38; var6["zanukaCraftingTag"] = var5
+      77 [-]: GETIMPORT R6 8; var6 = 0x0469F296
+      78 [-]: LOADK R7 K39 ; var7 = "Moa_Actions"
+      79 [-]: CALL R6 2 2  ; var6 = var6(var7)
+      80 [-]: SETTABLEKS R6 R5 K40; var6["moaActionsTag"] = var5
+      81 [-]: GETIMPORT R6 8; var6 = 0x0469F296
+      82 [-]: LOADK R7 K41 ; var7 = "HoverboardScreen"
+      83 [-]: CALL R6 2 2  ; var6 = var6(var7)
+      84 [-]: SETTABLEKS R6 R5 K42; var6["hoverboardTag"] = var5
+      85 [-]: GETIMPORT R6 8; var6 = 0x0469F296
+      86 [-]: LOADK R7 K43 ; var7 = "HoverboardCraftingScreen"
+      87 [-]: CALL R6 2 2  ; var6 = var6(var7)
+      88 [-]: SETTABLEKS R6 R5 K44; var6["hoverboardCraftingTag"] = var5
+      89 [-]: GETIMPORT R6 8; var6 = 0x0469F296
+      90 [-]: LOADK R7 K45 ; var7 = "HoverboardFavorsScreen"
+      91 [-]: CALL R6 2 2  ; var6 = var6(var7)
+      92 [-]: SETTABLEKS R6 R5 K46; var6["hoverboardFavorsTag"] = var5
+      93 [-]: GETIMPORT R6 8; var6 = 0x0469F296
+      94 [-]: LOADK R7 K47 ; var7 = "Hoverboard_Actions"
+      95 [-]: CALL R6 2 2  ; var6 = var6(var7)
+      96 [-]: SETTABLEKS R6 R5 K48; var6["hoverboardActionsTag"] = var5
+      97 [-]: GETIMPORT R6 8; var6 = 0x0469F296
+      98 [-]: LOADK R7 K49 ; var7 = "DebtTokenVendorFreeDebtBonds"
+      99 [-]: CALL R6 2 2  ; var6 = var6(var7)
+     100 [-]: SETTABLEKS R6 R5 K50; var6["debtTokenVendorFreeDebtBondsTag"] = var5
+     101 [-]: GETIMPORT R6 8; var6 = 0x0469F296
+     102 [-]: LOADK R7 K51 ; var7 = "DebtTokenVendorItems"
+     103 [-]: CALL R6 2 2  ; var6 = var6(var7)
+     104 [-]: SETTABLEKS R6 R5 K52; var6["debtTokenVendorItemsTag"] = var5
+     105 [-]: GETIMPORT R6 8; var6 = 0x0469F296
+     106 [-]: LOADK R7 K53 ; var7 = "DebtTokenVendorCrewMembers"
+     107 [-]: CALL R6 2 2  ; var6 = var6(var7)
+     108 [-]: SETTABLEKS R6 R5 K54; var6["debtTokenVendorCrewMembersTag"] = var5
+     109 [-]: GETIMPORT R6 8; var6 = 0x0469F296
+     110 [-]: LOADK R7 K55 ; var7 = "SolarisFishmongerVendorItems"
+     111 [-]: CALL R6 2 2  ; var6 = var6(var7)
+     112 [-]: SETTABLEKS R6 R5 K56; var6["solarisFishMongerVendorItemsTag"] = var5
+     113 [-]: GETIMPORT R6 8; var6 = 0x0469F296
+     114 [-]: LOADK R7 K57 ; var7 = "HivemindSyndicateScreen"
+     115 [-]: CALL R6 2 2  ; var6 = var6(var7)
+     116 [-]: SETTABLEKS R6 R5 K58; var6["hivemindSyndicateTag"] = var5
+     117 [-]: GETIMPORT R6 8; var6 = 0x0469F296
+     118 [-]: LOADK R7 K59 ; var7 = "HivemindTokenVendorCommissions"
+     119 [-]: CALL R6 2 2  ; var6 = var6(var7)
+     120 [-]: SETTABLEKS R6 R5 K60; var6["hivemindTokenVendorCommissionsTag"] = var5
+     121 [-]: GETIMPORT R6 8; var6 = 0x0469F296
+     122 [-]: LOADK R7 K61 ; var7 = "HivemindTokenVendorProducts"
+     123 [-]: CALL R6 2 2  ; var6 = var6(var7)
+     124 [-]: SETTABLEKS R6 R5 K62; var6["hivemindTokenVendorProductsTag"] = var5
+     125 [-]: GETIMPORT R6 8; var6 = 0x0469F296
+     126 [-]: LOADK R7 K63 ; var7 = "HivemindTokenVendorBarter"
+     127 [-]: CALL R6 2 2  ; var6 = var6(var7)
+     128 [-]: SETTABLEKS R6 R5 K64; var6["hivemindTokenVendorBarterTag"] = var5
+     129 [-]: GETIMPORT R6 8; var6 = 0x0469F296
+     130 [-]: LOADK R7 K65 ; var7 = "HivemindProspectorCommissions"
+     131 [-]: CALL R6 2 2  ; var6 = var6(var7)
+     132 [-]: SETTABLEKS R6 R5 K66; var6["hivemindProspectorCommissionsTag"] = var5
+     133 [-]: GETIMPORT R6 8; var6 = 0x0469F296
+     134 [-]: LOADK R7 K67 ; var7 = "OtakLastWishManifest"
+     135 [-]: CALL R6 2 2  ; var6 = var6(var7)
+     136 [-]: SETTABLEKS R6 R5 K68; var6["hivemindProspectorLastWishManifestTag"] = var5
+     137 [-]: GETIMPORT R6 8; var6 = 0x0469F296
+     138 [-]: LOADK R7 K69 ; var7 = "HivemindFishmongerCommissions"
+     139 [-]: CALL R6 2 2  ; var6 = var6(var7)
+     140 [-]: SETTABLEKS R6 R5 K70; var6["hivemindFishmongerCommissionsTag"] = var5
+     141 [-]: GETIMPORT R6 8; var6 = 0x0469F296
+     142 [-]: LOADK R7 K71 ; var7 = "HivemindPetVendorCommissions"
+     143 [-]: CALL R6 2 2  ; var6 = var6(var7)
+     144 [-]: SETTABLEKS R6 R5 K72; var6["hivemindPetVendorCommissionsTag"] = var5
+     145 [-]: GETIMPORT R6 8; var6 = 0x0469F296
+     146 [-]: LOADK R7 K73 ; var7 = "HivemindGunsmithCommissions"
+     147 [-]: CALL R6 2 2  ; var6 = var6(var7)
+     148 [-]: SETTABLEKS R6 R5 K74; var6["hivemindGunsmithCommissionsTag"] = var5
+     149 [-]: GETIMPORT R6 8; var6 = 0x0469F296
+     150 [-]: LOADK R7 K75 ; var7 = "HivemindKubrowCraftingScreen"
+     151 [-]: CALL R6 2 2  ; var6 = var6(var7)
+     152 [-]: SETTABLEKS R6 R5 K76; var6["hivemindKubrowPetCraftingTag"] = var5
+     153 [-]: GETIMPORT R6 8; var6 = 0x0469F296
+     154 [-]: LOADK R7 K77 ; var7 = "HivemindCatbrowCraftingScreen"
+     155 [-]: CALL R6 2 2  ; var6 = var6(var7)
+     156 [-]: SETTABLEKS R6 R5 K78; var6["hivemindCatbrowPetCraftingTag"] = var5
+     157 [-]: GETIMPORT R6 8; var6 = 0x0469F296
+     158 [-]: LOADK R7 K79 ; var7 = "HivemindPetActions"
+     159 [-]: CALL R6 2 2  ; var6 = var6(var7)
+     160 [-]: SETTABLEKS R6 R5 K80; var6["hivemindPetActionsTag"] = var5
+     161 [-]: GETIMPORT R6 8; var6 = 0x0469F296
+     162 [-]: LOADK R7 K81 ; var7 = "AWCraftingScreen"
+     163 [-]: CALL R6 2 2  ; var6 = var6(var7)
+     164 [-]: SETTABLEKS R6 R5 K82; var6["AWCraftingTag"] = var5
+     165 [-]: GETIMPORT R6 8; var6 = 0x0469F296
+     166 [-]: LOADK R7 K83 ; var7 = "AWFavorsScreen"
+     167 [-]: CALL R6 2 2  ; var6 = var6(var7)
+     168 [-]: SETTABLEKS R6 R5 K84; var6["AWFavorsTag"] = var5
+     169 [-]: GETIMPORT R6 8; var6 = 0x0469F296
+     170 [-]: LOADK R7 K85 ; var7 = "SolarisUnitedScreen"
+     171 [-]: CALL R6 2 2  ; var6 = var6(var7)
+     172 [-]: SETTABLEKS R6 R5 K86; var6["solarisUnitedTag"] = var5
+     173 [-]: GETIMPORT R6 8; var6 = 0x0469F296
+     174 [-]: LOADK R7 K87 ; var7 = "VoxFavorsScreen"
+     175 [-]: CALL R6 2 2  ; var6 = var6(var7)
+     176 [-]: SETTABLEKS R6 R5 K88; var6["solarisUnitedFavorsTag"] = var5
+     177 [-]: GETIMPORT R6 8; var6 = 0x0469F296
+     178 [-]: LOADK R7 K89 ; var7 = "SolarisUnited_Actions"
+     179 [-]: CALL R6 2 2  ; var6 = var6(var7)
+     180 [-]: SETTABLEKS R6 R5 K90; var6["solarisUnitedActionTag"] = var5
+     181 [-]: GETIMPORT R6 8; var6 = 0x0469F296
+     182 [-]: LOADK R7 K91 ; var7 = "SolarisUnited_AmpCraftingScreen"
+     183 [-]: CALL R6 2 2  ; var6 = var6(var7)
+     184 [-]: SETTABLEKS R6 R5 K92; var6["solarisUnitedAmpCraftingTag"] = var5
+     185 [-]: GETIMPORT R6 8; var6 = 0x0469F296
+     186 [-]: LOADK R7 K93 ; var7 = "SentientInvasionScreen"
+     187 [-]: CALL R6 2 2  ; var6 = var6(var7)
+     188 [-]: SETTABLEKS R6 R5 K94; var6["solarisUnitedSentientInvasionTag"] = var5
+     189 [-]: GETIMPORT R6 8; var6 = 0x0469F296
+     190 [-]: LOADK R7 K95 ; var7 = "WeaponsmithFavorsScreen"
+     191 [-]: CALL R6 2 2  ; var6 = var6(var7)
+     192 [-]: SETTABLEKS R6 R5 K96; var6["weaponsmithFavorsTag"] = var5
+     193 [-]: GETIMPORT R6 8; var6 = 0x0469F296
+     194 [-]: LOADK R7 K97 ; var7 = "FishmongerFavorsScreen"
+     195 [-]: CALL R6 2 2  ; var6 = var6(var7)
+     196 [-]: SETTABLEKS R6 R5 K98; var6["fishmongerFavorsTag"] = var5
+     197 [-]: GETIMPORT R6 8; var6 = 0x0469F296
+     198 [-]: LOADK R7 K99 ; var7 = "ProspectorFavorsScreen"
+     199 [-]: CALL R6 2 2  ; var6 = var6(var7)
+     200 [-]: SETTABLEKS R6 R5 K100; var6["prospectorFavorsTag"] = var5
+     201 [-]: GETIMPORT R6 8; var6 = 0x0469F296
+     202 [-]: LOADK R7 K101; var7 = "Moa_FavorsScreen"
+     203 [-]: CALL R6 2 2  ; var6 = var6(var7)
+     204 [-]: SETTABLEKS R6 R5 K102; var6["moaFavorsTag"] = var5
+     205 [-]: GETIMPORT R6 8; var6 = 0x0469F296
+     206 [-]: LOADK R7 K103; var7 = "QuillsFavorsScreen"
+     207 [-]: CALL R6 2 2  ; var6 = var6(var7)
+     208 [-]: SETTABLEKS R6 R5 K104; var6["quillsFavorsTag"] = var5
+     209 [-]: GETIMPORT R6 8; var6 = 0x0469F296
+     210 [-]: LOADK R7 K105; var7 = "QuillsScreen"
+     211 [-]: CALL R6 2 2  ; var6 = var6(var7)
+     212 [-]: SETTABLEKS R6 R5 K106; var6["quillsTag"] = var5
+     213 [-]: GETIMPORT R6 8; var6 = 0x0469F296
+     214 [-]: LOADK R7 K107; var7 = "Quills_Actions"
+     215 [-]: CALL R6 2 2  ; var6 = var6(var7)
+     216 [-]: SETTABLEKS R6 R5 K108; var6["quillsActionTag"] = var5
+     217 [-]: GETIMPORT R6 8; var6 = 0x0469F296
+     218 [-]: LOADK R7 K109; var7 = "NecraloidFavorsScreen"
+     219 [-]: CALL R6 2 2  ; var6 = var6(var7)
+     220 [-]: SETTABLEKS R6 R5 K110; var6["necraloidFavorsTag"] = var5
+     221 [-]: GETIMPORT R6 8; var6 = 0x0469F296
+     222 [-]: LOADK R7 K111; var7 = "NecraloidSyndicateScreen"
+     223 [-]: CALL R6 2 2  ; var6 = var6(var7)
+     224 [-]: SETTABLEKS R6 R5 K112; var6["necraloidTag"] = var5
+     225 [-]: GETIMPORT R6 8; var6 = 0x0469F296
+     226 [-]: LOADK R7 K113; var7 = "NecraloidProducts"
+     227 [-]: CALL R6 2 2  ; var6 = var6(var7)
+     228 [-]: SETTABLEKS R6 R5 K114; var6["necraloidProductsTag"] = var5
+     229 [-]: GETIMPORT R6 8; var6 = 0x0469F296
+     230 [-]: LOADK R7 K115; var7 = "EventSyndicate"
+     231 [-]: CALL R6 2 2  ; var6 = var6(var7)
+     232 [-]: SETTABLEKS R6 R5 K116; var6["eventSyndicateTag"] = var5
+     233 [-]: GETIMPORT R6 8; var6 = 0x0469F296
+     234 [-]: LOADK R7 K117; var7 = "EventSyndicateScreen"
+     235 [-]: CALL R6 2 2  ; var6 = var6(var7)
+     236 [-]: SETTABLEKS R6 R5 K118; var6["eventSyndicateScreenTag"] = var5
+     237 [-]: GETIMPORT R6 8; var6 = 0x0469F296
+     238 [-]: LOADK R7 K119; var7 = "WaterFightVendorScreen"
+     239 [-]: CALL R6 2 2  ; var6 = var6(var7)
+     240 [-]: SETTABLEKS R6 R5 K120; var6["waterFightScreenTag"] = var5
+     241 [-]: GETIMPORT R6 8; var6 = 0x0469F296
+     242 [-]: LOADK R7 K121; var7 = "FishmongerExchangeScreen"
+     243 [-]: CALL R6 2 2  ; var6 = var6(var7)
+     244 [-]: SETTABLEKS R6 R5 K122; var6["fishmongerExchangeTag"] = var5
+     245 [-]: GETIMPORT R6 8; var6 = 0x0469F296
+     246 [-]: LOADK R7 K123; var7 = "FishmongerBaitScreen"
+     247 [-]: CALL R6 2 2  ; var6 = var6(var7)
+     248 [-]: SETTABLEKS R6 R5 K124; var6["fishmongerBaitTag"] = var5
+     249 [-]: GETIMPORT R6 8; var6 = 0x0469F296
+     250 [-]: LOADK R7 K125; var7 = "ZarimanApartmentFavorsScreen"
+     251 [-]: CALL R6 2 2  ; var6 = var6(var7)
+     252 [-]: SETTABLEKS R6 R5 K126; var6["zarimanApartmentFavorsTag"] = var5
+     253 [-]: GETIMPORT R6 8; var6 = 0x0469F296
+     254 [-]: LOADK R7 K127; var7 = "ZarimanVoidshellFavorsScreen"
+     255 [-]: CALL R6 2 2  ; var6 = var6(var7)
+     256 [-]: SETTABLEKS R6 R5 K128; var6["zarimanVoidshellFavorsTag"] = var5
+     257 [-]: GETIMPORT R6 8; var6 = 0x0469F296
+     258 [-]: LOADK R7 K129; var7 = "ZarimanWeaponsmithFavorsScreen"
+     259 [-]: CALL R6 2 2  ; var6 = var6(var7)
+     260 [-]: SETTABLEKS R6 R5 K130; var6["zarimanWeaponsmithFavorsTag"] = var5
+     261 [-]: GETIMPORT R6 8; var6 = 0x0469F296
+     262 [-]: LOADK R7 K131; var7 = "ZarimanWeaponsmithEvolveScreen"
+     263 [-]: CALL R6 2 2  ; var6 = var6(var7)
+     264 [-]: SETTABLEKS R6 R5 K132; var6["zarimanWeaponsmithEvolveWeapTag"] = var5
+     265 [-]: GETIMPORT R6 8; var6 = 0x0469F296
+     266 [-]: LOADK R7 K133; var7 = "ZarimanWeaponsmithIncarnonShop"
+     267 [-]: CALL R6 2 2  ; var6 = var6(var7)
+     268 [-]: SETTABLEKS R6 R5 K134; var6["zarimanWeaponsmithIncarnonShopTag"] = var5
+     269 [-]: GETIMPORT R6 8; var6 = 0x0469F296
+     270 [-]: LOADK R7 K135; var7 = "ArchimedeanVendorItems"
+     271 [-]: CALL R6 2 2  ; var6 = var6(var7)
+     272 [-]: SETTABLEKS R6 R5 K136; var6["zarimanArchimedeanManifestTag"] = var5
+     273 [-]: GETIMPORT R6 8; var6 = 0x0469F296
+     274 [-]: LOADK R7 K137; var7 = "ZarimanArchimedeanCommissions"
+     275 [-]: CALL R6 2 2  ; var6 = var6(var7)
+     276 [-]: SETTABLEKS R6 R5 K138; var6["zarimanArchimedeanCommissionsTag"] = var5
+     277 [-]: GETIMPORT R6 8; var6 = 0x0469F296
+     278 [-]: LOADK R7 K139; var7 = "ArchimedeanVoidEclipseManifest"
+     279 [-]: CALL R6 2 2  ; var6 = var6(var7)
+     280 [-]: SETTABLEKS R6 R5 K140; var6["zarimanArchimedeanVoidEclipseManifestTag"] = var5
+     281 [-]: GETIMPORT R6 8; var6 = 0x0469F296
+     282 [-]: LOADK R7 K141; var7 = "DuviriArchivistVendorItems"
+     283 [-]: CALL R6 2 2  ; var6 = var6(var7)
+     284 [-]: SETTABLEKS R6 R5 K142; var6["duviriArchivistVendorItemsTag"] = var5
+     285 [-]: GETIMPORT R6 8; var6 = 0x0469F296
+     286 [-]: LOADK R7 K143; var7 = "DuviriArchivistKullervoShop"
+     287 [-]: CALL R6 2 2  ; var6 = var6(var7)
+     288 [-]: SETTABLEKS R6 R5 K144; var6["duviriArchivistKullervoShopTag"] = var5
+     289 [-]: GETIMPORT R6 8; var6 = 0x0469F296
+     290 [-]: LOADK R7 K145; var7 = "DuviriArchivistEnigmaGyrumShop"
+     291 [-]: CALL R6 2 2  ; var6 = var6(var7)
+     292 [-]: SETTABLEKS R6 R5 K146; var6["duviriArchivistEnigmaGyrumShopTag"] = var5
+     293 [-]: GETIMPORT R6 8; var6 = 0x0469F296
+     294 [-]: LOADK R7 K147; var7 = "Kahl_MissionBrief"
+     295 [-]: CALL R6 2 2  ; var6 = var6(var7)
+     296 [-]: SETTABLEKS R6 R5 K148; var6["kahlMissionBriefTag"] = var5
+     297 [-]: GETIMPORT R6 8; var6 = 0x0469F296
+     298 [-]: LOADK R7 K149; var7 = "Kahl_Customizations"
+     299 [-]: CALL R6 2 2  ; var6 = var6(var7)
+     300 [-]: SETTABLEKS R6 R5 K150; var6["kahlCustomizationsTag"] = var5
+     301 [-]: GETIMPORT R6 8; var6 = 0x0469F296
+     302 [-]: LOADK R7 K151; var7 = "Chipper_VendorItems"
+     303 [-]: CALL R6 2 2  ; var6 = var6(var7)
+     304 [-]: SETTABLEKS R6 R5 K152; var6["chipperVendorItemsTag"] = var5
+     305 [-]: GETIMPORT R6 8; var6 = 0x0469F296
+     306 [-]: LOADK R7 K153; var7 = "EntratiLabSyndicateScreen"
+     307 [-]: CALL R6 2 2  ; var6 = var6(var7)
+     308 [-]: SETTABLEKS R6 R5 K154; var6["entratiLabSyndicateTag"] = var5
+     309 [-]: GETIMPORT R6 8; var6 = 0x0469F296
+     310 [-]: LOADK R7 K155; var7 = "EntratiLab_JobBoard"
+     311 [-]: CALL R6 2 2  ; var6 = var6(var7)
+     312 [-]: SETTABLEKS R6 R5 K156; var6["entratiLabJobBoardTag"] = var5
+     313 [-]: GETIMPORT R6 8; var6 = 0x0469F296
+     314 [-]: LOADK R7 K157; var7 = "EntratiLabFavorsScreen"
+     315 [-]: CALL R6 2 2  ; var6 = var6(var7)
+     316 [-]: SETTABLEKS R6 R5 K158; var6["entratiLabFavorsTag"] = var5
+     317 [-]: GETIMPORT R6 8; var6 = 0x0469F296
+     318 [-]: LOADK R7 K159; var7 = "EntratiLabCommissionsScreen"
+     319 [-]: CALL R6 2 2  ; var6 = var6(var7)
+     320 [-]: SETTABLEKS R6 R5 K160; var6["entratiLabCommissionsTag"] = var5
+     321 [-]: GETIMPORT R6 8; var6 = 0x0469F296
+     322 [-]: LOADK R7 K161; var7 = "EntratiLabVendorScreen"
+     323 [-]: CALL R6 2 2  ; var6 = var6(var7)
+     324 [-]: SETTABLEKS R6 R5 K162; var6["entratiLabVendorTag"] = var5
+     325 [-]: GETIMPORT R6 8; var6 = 0x0469F296
+     326 [-]: LOADK R7 K163; var7 = "EntratiLabVoidVaultScreen"
+     327 [-]: CALL R6 2 2  ; var6 = var6(var7)
+     328 [-]: SETTABLEKS R6 R5 K164; var6["entratiLabVaultTag"] = var5
+     329 [-]: GETIMPORT R6 8; var6 = 0x0469F296
+     330 [-]: LOADK R7 K165; var7 = "EntratiLabFishCustScreen"
+     331 [-]: CALL R6 2 2  ; var6 = var6(var7)
+     332 [-]: SETTABLEKS R6 R5 K166; var6["entratiLabFishCustTag"] = var5
+     333 [-]: GETIMPORT R6 8; var6 = 0x0469F296
+     334 [-]: LOADK R7 K167; var7 = "EntratiLabTagferCustScreen"
+     335 [-]: CALL R6 2 2  ; var6 = var6(var7)
+     336 [-]: SETTABLEKS R6 R5 K168; var6["entratiLabTagferCustTag"] = var5
+     337 [-]: GETIMPORT R6 8; var6 = 0x0469F296
+     338 [-]: LOADK R7 K169; var7 = "EntratiLabBirdCustScreen"
+     339 [-]: CALL R6 2 2  ; var6 = var6(var7)
+     340 [-]: SETTABLEKS R6 R5 K170; var6["entratiLabBirdCustTag"] = var5
+     341 [-]: GETIMPORT R6 8; var6 = 0x0469F296
+     342 [-]: LOADK R7 K171; var7 = "EntratiLabArcaneDistillationShop"
+     343 [-]: CALL R6 2 2  ; var6 = var6(var7)
+     344 [-]: SETTABLEKS R6 R5 K172; var6["entratiLabArcaneDistillationShopTag"] = var5
+     345 [-]: GETIMPORT R6 8; var6 = 0x0469F296
+     346 [-]: LOADK R7 K173; var7 = "EntratiEvent"
+     347 [-]: CALL R6 2 2  ; var6 = var6(var7)
+     348 [-]: SETTABLEKS R6 R5 K174; var6["gargoyleContributeTag"] = var5
+     349 [-]: GETIMPORT R6 8; var6 = 0x0469F296
+     350 [-]: LOADK R7 K175; var7 = "EntratiEventVendorItems"
+     351 [-]: CALL R6 2 2  ; var6 = var6(var7)
+     352 [-]: SETTABLEKS R6 R5 K176; var6["gargoyleBrowseWaresTag"] = var5
+     353 [-]: DUPCLOSURE R6 K177; 
+     354 [-]: CAPTURE VAL R1; 
+     355 [-]: DUPCLOSURE R7 K178; 
+     356 [-]: CAPTURE VAL R6; 
+     357 [-]: SETGLOBAL R7 K179; "OpenDogTagScreenDirect" = var7
+     358 [-]: DUPCLOSURE R7 K180; 
+     359 [-]: CAPTURE VAL R2; 
+     360 [-]: CAPTURE VAL R0; 
+     361 [-]: DUPCLOSURE R8 K181; 
+     362 [-]: CAPTURE VAL R1; 
+     363 [-]: DUPCLOSURE R9 K182; 
+     364 [-]: DUPCLOSURE R10 K183; 
+     365 [-]: CAPTURE VAL R0; 
+     366 [-]: DUPCLOSURE R11 K184; 
+     367 [-]: CAPTURE VAL R1; 
+     368 [-]: DUPCLOSURE R12 K185; 
+     369 [-]: CAPTURE VAL R1; 
+     370 [-]: CAPTURE VAL R7; 
+     371 [-]: CAPTURE VAL R5; 
+     372 [-]: CAPTURE VAL R9; 
+     373 [-]: CAPTURE VAL R11; 
+     374 [-]: CAPTURE VAL R6; 
+     375 [-]: CAPTURE VAL R10; 
+     376 [-]: CAPTURE VAL R8; 
+     377 [-]: CAPTURE VAL R4; 
+     378 [-]: CAPTURE VAL R0; 
+     379 [-]: CAPTURE VAL R3; 
+     380 [-]: SETGLOBAL R12 K186; "InitializeDialogOptions" = var12
+     381 [-]: DUPCLOSURE R12 K187; 
+     382 [-]: SETGLOBAL R12 K188; "OnOperatorUpgraded" = var12
+     383 [-]: DUPCLOSURE R12 K189; 
+     384 [-]: SETGLOBAL R12 K190; "UpgradeOperatorCinematic" = var12
+     385 [-]: RETURN R0 0  ; 
 
 
 ; Name:            
-; Defined at line: 114
+; Defined at line: 131
 ; #Upvalues:       1
 ; #Parameters:     3
 ; Is_vararg:       0
-; Max Stack Size:  10
+; Max Stack Size:  13
 
-       0 [-]: FASTCALL1 62 R1 L0; 
+       0 [-]: FASTCALL1 64 R1 L0; 
        1 [-]: MOVE R4 R1   ; var4 = var1
        2 [-]: GETIMPORT R3 1; var3 = 0x7B998233
        3 [-]: CALL R3 2 2  ; var3 = var3(var4)
-L 0:   4 [-]: JUMPIF R3 L2 ; goto L2 if var3
-       5 [-]: GETTABLEKS R3 R1 K2; var3 = var1["mTransmissionSet"]
-       6 [-]: GETIMPORT R5 4; var5 = 0x0469F296
-       7 [-]: LOADK R6 K5  ; var6 = "TradeInEnter"
-       8 [-]: CALL R5 2 0  ; var5, ... = var5(var6)
-       9 [-]: NAMECALL R3 R3 K6; var4 = var3; var3 = var3[0x10C9EEF2]
-      10 [-]: CALL R3 0 2  ; var3 = var3(var4, ...)
-      11 [-]: FASTCALL1 62 R3 L1; 
-      12 [-]: MOVE R5 R3   ; var5 = var3
-      13 [-]: GETIMPORT R4 1; var4 = 0x7B998233
-      14 [-]: CALL R4 2 2  ; var4 = var4(var5)
-L 1:  15 [-]: JUMPIF R4 L2 ; goto L2 if var4
-      16 [-]: MOVE R6 R3   ; var6 = var3
-      17 [-]: LOADNIL R7   ; var7 = nil
-      18 [-]: LOADB R8 0   ; var8 = false
-      19 [-]: LOADB R9 1   ; var9 = true
-      20 [-]: NAMECALL R4 R1 K7; var5 = var1; var4 = var1[0x68D7CBE0]
-      21 [-]: CALL R4 6 1  ; var4(var5, var6, var7, var8, var9)
-L 2:  22 [-]: DUPTABLE R3 10; 
-      23 [-]: SETTABLEKS R0 R3 K8; var0["Syndicate"] = var3
-      24 [-]: SETTABLEKS R2 R3 K9; var2["VendorTag"] = var3
-      25 [-]: GETUPVAL R5 0; var5 = upvalues[0]
-      26 [-]: GETTABLEKS R4 R5 K11; var4 = var5[0x338A8686]
-      27 [-]: MOVE R5 R0   ; var5 = var0
-      28 [-]: CALL R4 2 6  ; var4, var5, var6, var7, var8 = var4(var5)
-      29 [-]: SETTABLEKS R4 R3 K12; var4["Level"] = var3
-      30 [-]: SETTABLEKS R5 R3 K13; var5["Reputation"] = var3
-      31 [-]: SETTABLEKS R6 R3 K14; var6["RepReq"] = var3
-      32 [-]: SETTABLEKS R7 R3 K15; var7["HasRepForSac"] = var3
-      33 [-]: SETTABLEKS R8 R3 K16; var8["MaxRepInc"] = var3
-      34 [-]: GETIMPORT R4 18; var4 = _T
-      35 [-]: SETTABLEKS R3 R4 K19; var3["SyndicateInvInfo"] = var4
-      36 [-]: GETIMPORT R4 21; var4 = _T["GetScreenRes"]
-      37 [-]: LOADK R5 K22 ; var5 = "Inventory"
-      38 [-]: CALL R4 2 2  ; var4 = var4(var5)
-      39 [-]: GETIMPORT R5 24; var5 = 0x9BA7909F
-      40 [-]: MOVE R7 R4   ; var7 = var4
-      41 [-]: NAMECALL R5 R5 K25; var6 = var5; var5 = var5[0xCFBA257F]
-      42 [-]: CALL R5 3 2  ; var5 = var5(var6, var7)
-L 3:  43 [-]: FASTCALL1 62 R5 L4; 
-      44 [-]: MOVE R7 R5   ; var7 = var5
-      45 [-]: GETIMPORT R6 1; var6 = 0x7B998233
-      46 [-]: CALL R6 2 2  ; var6 = var6(var7)
-L 4:  47 [-]: JUMPIF R6 L5 ; goto L5 if var6
-      48 [-]: GETIMPORT R6 27; var6 = 0xCBD666E1
-      49 [-]: LOADN R7 0   ; var7 = 0
-      50 [-]: CALL R6 2 1  ; var6(var7)
-      51 [-]: JUMPBACK L3  ; goto L3
-L 5:  52 [-]: GETIMPORT R6 18; var6 = _T
-      53 [-]: LOADNIL R7   ; var7 = nil
-      54 [-]: SETTABLEKS R7 R6 K19; var7["SyndicateInvInfo"] = var6
-      55 [-]: FASTCALL1 62 R1 L6; 
-      56 [-]: MOVE R7 R1   ; var7 = var1
-      57 [-]: GETIMPORT R6 1; var6 = 0x7B998233
-      58 [-]: CALL R6 2 2  ; var6 = var6(var7)
-L 6:  59 [-]: JUMPIF R6 L7 ; goto L7 if var6
-      60 [-]: LOADB R6 1   ; var6 = true
-      61 [-]: SETTABLEKS R6 R1 K28; var6["mReset"] = var1
-L 7:  62 [-]: RETURN R0 0  ; 
+L 0:   4 [-]: JUMPIF R3 L4 ; goto L4 if var3
+       5 [-]: GETTABLEKS R4 R1 K2; var4 = var1["mTransmissionSet"]
+       6 [-]: FASTCALL1 64 R4 L1; 
+       7 [-]: GETIMPORT R3 1; var3 = 0x7B998233
+       8 [-]: CALL R3 2 2  ; var3 = var3(var4)
+L 1:   9 [-]: JUMPIF R3 L3 ; goto L3 if var3
+      10 [-]: GETTABLEKS R3 R1 K2; var3 = var1["mTransmissionSet"]
+      11 [-]: GETIMPORT R5 4; var5 = 0x0469F296
+      12 [-]: LOADK R6 K5  ; var6 = "TradeInEnter"
+      13 [-]: CALL R5 2 0  ; var5, ... = var5(var6)
+      14 [-]: NAMECALL R3 R3 K6; var4 = var3; var3 = var3[0x10C9EEF2]
+      15 [-]: CALL R3 0 2  ; var3 = var3(var4, ...)
+      16 [-]: FASTCALL1 64 R3 L2; 
+      17 [-]: MOVE R5 R3   ; var5 = var3
+      18 [-]: GETIMPORT R4 1; var4 = 0x7B998233
+      19 [-]: CALL R4 2 2  ; var4 = var4(var5)
+L 2:  20 [-]: JUMPIF R4 L4 ; goto L4 if var4
+      21 [-]: MOVE R6 R3   ; var6 = var3
+      22 [-]: LOADNIL R7   ; var7 = nil
+      23 [-]: LOADB R8 0   ; var8 = false
+      24 [-]: LOADB R9 1   ; var9 = true
+      25 [-]: NAMECALL R4 R1 K7; var5 = var1; var4 = var1[0x68D7CBE0]
+      26 [-]: CALL R4 6 1  ; var4(var5, var6, var7, var8, var9)
+      27 [-]: JUMP L4      ; goto L4
+L 3:  28 [-]: GETIMPORT R3 9; var3 = 0x3D106989
+      29 [-]: LOADK R4 K10 ; var4 = "Transmission Set Not Found"
+      30 [-]: CALL R3 2 1  ; var3(var4)
+L 4:  31 [-]: DUPTABLE R3 13; 
+      32 [-]: SETTABLEKS R0 R3 K11; var0["Syndicate"] = var3
+      33 [-]: SETTABLEKS R2 R3 K12; var2["VendorTag"] = var3
+      34 [-]: GETUPVAL R5 0; var5 = upvalues[0]
+      35 [-]: GETTABLEKS R4 R5 K14; var4 = var5[0x338A8686]
+      36 [-]: MOVE R5 R0   ; var5 = var0
+      37 [-]: CALL R4 2 6  ; var4, var5, var6, var7, var8 = var4(var5)
+      38 [-]: SETTABLEKS R4 R3 K15; var4["Level"] = var3
+      39 [-]: SETTABLEKS R5 R3 K16; var5["Reputation"] = var3
+      40 [-]: SETTABLEKS R6 R3 K17; var6["RepReq"] = var3
+      41 [-]: SETTABLEKS R7 R3 K18; var7["HasRepForSac"] = var3
+      42 [-]: SETTABLEKS R8 R3 K19; var8["MaxRepInc"] = var3
+      43 [-]: GETIMPORT R4 21; var4 = _T
+      44 [-]: SETTABLEKS R3 R4 K22; var3["SyndicateInvInfo"] = var4
+      45 [-]: GETIMPORT R4 24; var4 = _T["GetScreenRes"]
+      46 [-]: LOADK R5 K25 ; var5 = "Inventory"
+      47 [-]: CALL R4 2 2  ; var4 = var4(var5)
+      48 [-]: GETIMPORT R5 27; var5 = 0x9BA7909F
+      49 [-]: MOVE R7 R4   ; var7 = var4
+      50 [-]: NAMECALL R5 R5 K28; var6 = var5; var5 = var5[0xCFBA257F]
+      51 [-]: CALL R5 3 2  ; var5 = var5(var6, var7)
+L 5:  52 [-]: FASTCALL1 64 R5 L6; 
+      53 [-]: MOVE R7 R5   ; var7 = var5
+      54 [-]: GETIMPORT R6 1; var6 = 0x7B998233
+      55 [-]: CALL R6 2 2  ; var6 = var6(var7)
+L 6:  56 [-]: JUMPIF R6 L7 ; goto L7 if var6
+      57 [-]: GETIMPORT R6 30; var6 = 0xCBD666E1
+      58 [-]: LOADN R7 0   ; var7 = 0
+      59 [-]: CALL R6 2 1  ; var6(var7)
+      60 [-]: JUMPBACK L5  ; goto L5
+L 7:  61 [-]: GETIMPORT R6 21; var6 = _T
+      62 [-]: LOADNIL R7   ; var7 = nil
+      63 [-]: SETTABLEKS R7 R6 K22; var7["SyndicateInvInfo"] = var6
+      64 [-]: FASTCALL1 64 R1 L8; 
+      65 [-]: MOVE R7 R1   ; var7 = var1
+      66 [-]: GETIMPORT R6 1; var6 = 0x7B998233
+      67 [-]: CALL R6 2 2  ; var6 = var6(var7)
+L 8:  68 [-]: JUMPIF R6 L13; goto L13 if var6
+      69 [-]: GETTABLEKS R7 R1 K2; var7 = var1["mTransmissionSet"]
+      70 [-]: FASTCALL1 64 R7 L9; 
+      71 [-]: GETIMPORT R6 1; var6 = 0x7B998233
+      72 [-]: CALL R6 2 2  ; var6 = var6(var7)
+L 9:  73 [-]: JUMPIF R6 L11; goto L11 if var6
+      74 [-]: GETTABLEKS R6 R1 K2; var6 = var1["mTransmissionSet"]
+      75 [-]: GETIMPORT R8 4; var8 = 0x0469F296
+      76 [-]: LOADK R9 K31 ; var9 = "TradeInExit"
+      77 [-]: CALL R8 2 0  ; var8, ... = var8(var9)
+      78 [-]: NAMECALL R6 R6 K6; var7 = var6; var6 = var6[0x10C9EEF2]
+      79 [-]: CALL R6 0 2  ; var6 = var6(var7, ...)
+      80 [-]: FASTCALL1 64 R6 L10; 
+      81 [-]: MOVE R8 R6   ; var8 = var6
+      82 [-]: GETIMPORT R7 1; var7 = 0x7B998233
+      83 [-]: CALL R7 2 2  ; var7 = var7(var8)
+L10:  84 [-]: JUMPIF R7 L12; goto L12 if var7
+      85 [-]: MOVE R9 R6   ; var9 = var6
+      86 [-]: LOADNIL R10  ; var10 = nil
+      87 [-]: LOADB R11 0  ; var11 = false
+      88 [-]: LOADB R12 1  ; var12 = true
+      89 [-]: NAMECALL R7 R1 K7; var8 = var1; var7 = var1[0x68D7CBE0]
+      90 [-]: CALL R7 6 1  ; var7(var8, var9, var10, var11, var12)
+      91 [-]: JUMP L12     ; goto L12
+L11:  92 [-]: GETIMPORT R6 9; var6 = 0x3D106989
+      93 [-]: LOADK R7 K10 ; var7 = "Transmission Set Not Found"
+      94 [-]: CALL R6 2 1  ; var6(var7)
+L12:  95 [-]: LOADB R6 1   ; var6 = true
+      96 [-]: SETTABLEKS R6 R1 K32; var6["mReset"] = var1
+L13:  97 [-]: RETURN R0 0  ; 
 
 
 ; Name:            
-; Defined at line: 138
+; Defined at line: 168
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
 ; Max Stack Size:  2
 
        0 [-]: GETIMPORT R1 1; var1 = 0x1BFBAE56
-       1 [-]: FASTCALL1 62 R1 L0; 
+       1 [-]: FASTCALL1 64 R1 L0; 
        2 [-]: GETIMPORT R0 3; var0 = 0x7B998233
        3 [-]: CALL R0 2 2  ; var0 = var0(var1)
 L 0:   4 [-]: JUMPIF R0 L1 ; goto L1 if var0
@@ -427,7 +518,7 @@ L 1:   8 [-]: RETURN R0 0  ;
 
 
 ; Name:            
-; Defined at line: 144
+; Defined at line: 174
 ; #Upvalues:       2
 ; #Parameters:     5
 ; Is_vararg:       0
@@ -437,12 +528,12 @@ L 1:   8 [-]: RETURN R0 0  ;
        1 [-]: MOVE R7 R2   ; var7 = var2
        2 [-]: NAMECALL R5 R5 K2; var6 = var5; var5 = var5[0x46A0EBF5]
        3 [-]: CALL R5 3 2  ; var5 = var5(var6, var7)
-       4 [-]: FASTCALL1 62 R5 L0; 
+       4 [-]: FASTCALL1 64 R5 L0; 
        5 [-]: MOVE R7 R5   ; var7 = var5
        6 [-]: GETIMPORT R6 4; var6 = 0x7B998233
        7 [-]: CALL R6 2 2  ; var6 = var6(var7)
 L 0:   8 [-]: JUMPIF R6 L2 ; goto L2 if var6
-       9 [-]: FASTCALL1 62 R1 L1; 
+       9 [-]: FASTCALL1 64 R1 L1; 
       10 [-]: MOVE R7 R1   ; var7 = var1
       11 [-]: GETIMPORT R6 4; var6 = 0x7B998233
       12 [-]: CALL R6 2 2  ; var6 = var6(var7)
@@ -458,7 +549,7 @@ L 4:  18 [-]: JUMPXEQKNIL R4 L7;
       22 [-]: CALL R6 2 2  ; var6 = var6(var7)
       23 [-]: JUMPXEQKNIL R6 L6; 
       24 [-]: GETTABLEKS R8 R6 K9; var8 = var6["mWeapon"]
-      25 [-]: FASTCALL1 62 R8 L5; 
+      25 [-]: FASTCALL1 64 R8 L5; 
       26 [-]: GETIMPORT R7 4; var7 = 0x7B998233
       27 [-]: CALL R7 2 2  ; var7 = var7(var8)
 L 5:  28 [-]: JUMPIF R7 L6 ; goto L6 if var7
@@ -493,38 +584,48 @@ L 8:  52 [-]: GETIMPORT R6 6; var6 = _T
       57 [-]: LOADK R8 K20 ; var8 = "Open"
       58 [-]: NAMECALL R6 R5 K21; var7 = var5; var6 = var5[0x8EB2112D]
       59 [-]: CALL R6 3 1  ; var6(var7, var8)
-      60 [-]: NAMECALL R6 R0 K22; var7 = var0; var6 = var0[0xF4E253B6]
-      61 [-]: CALL R6 2 1  ; var6(var7)
-L 9:  62 [-]: NAMECALL R6 R5 K23; var7 = var5; var6 = var5[0xFE3BE07A]
+      60 [-]: FASTCALL1 64 R0 L9; 
+      61 [-]: MOVE R7 R0   ; var7 = var0
+      62 [-]: GETIMPORT R6 4; var6 = 0x7B998233
       63 [-]: CALL R6 2 2  ; var6 = var6(var7)
-      64 [-]: JUMPIFNOT R6 L10; goto L10 if not var6
-      65 [-]: GETIMPORT R6 25; var6 = 0xCBD666E1
-      66 [-]: LOADN R7 0   ; var7 = 0
-      67 [-]: CALL R6 2 1  ; var6(var7)
-      68 [-]: JUMPBACK L9  ; goto L9
-L10:  69 [-]: NAMECALL R6 R0 K26; var7 = var0; var6 = var0[0x383D2E7D]
-      70 [-]: CALL R6 2 1  ; var6(var7)
-      71 [-]: NAMECALL R6 R5 K22; var7 = var5; var6 = var5[0xF4E253B6]
+L 9:  64 [-]: JUMPIF R6 L10; goto L10 if var6
+      65 [-]: NAMECALL R6 R0 K22; var7 = var0; var6 = var0[0xF4E253B6]
+      66 [-]: CALL R6 2 1  ; var6(var7)
+L10:  67 [-]: NAMECALL R6 R5 K23; var7 = var5; var6 = var5[0xFE3BE07A]
+      68 [-]: CALL R6 2 2  ; var6 = var6(var7)
+      69 [-]: JUMPIFNOT R6 L11; goto L11 if not var6
+      70 [-]: GETIMPORT R6 25; var6 = 0xCBD666E1
+      71 [-]: LOADN R7 0   ; var7 = 0
       72 [-]: CALL R6 2 1  ; var6(var7)
-      73 [-]: GETIMPORT R6 27; var6 = _T["previousConsoleTag"]
-      74 [-]: JUMPIFNOTEQ R6 R2 L11; goto L11 if var6 ~= var1375798812
-      75 [-]: GETTABLEKS R6 R1 K18; var6 = var1["mPlayerAvatar"]
-      76 [-]: NAMECALL R6 R6 K28; var7 = var6; var6 = var6[0x0B4BCFB6]
+      73 [-]: JUMPBACK L10 ; goto L10
+L11:  74 [-]: FASTCALL1 64 R0 L12; 
+      75 [-]: MOVE R7 R0   ; var7 = var0
+      76 [-]: GETIMPORT R6 4; var6 = 0x7B998233
       77 [-]: CALL R6 2 2  ; var6 = var6(var7)
-      78 [-]: GETTABLEKS R9 R1 K29; var9 = var1["mCameraSpotStack"]
-      79 [-]: GETTABLEKS R11 R1 K29; var11 = var1["mCameraSpotStack"]
-      80 [-]: LENGTH R10 R11; var10 = #var11
-      81 [-]: GETTABLE R8 R9 R10; var8 = var9[var10]
-      82 [-]: LOADK R9 K30 ; var9 = 0.20000000000000001
-      83 [-]: NAMECALL R6 R6 K31; var7 = var6; var6 = var6[0x14C7F7DD]
-      84 [-]: CALL R6 4 1  ; var6(var7, var8, var9)
-      85 [-]: LOADB R6 1   ; var6 = true
-      86 [-]: SETTABLEKS R6 R1 K16; var6["mReset"] = var1
-L11:  87 [-]: RETURN R0 0  ; 
+L12:  78 [-]: JUMPIF R6 L13; goto L13 if var6
+      79 [-]: NAMECALL R6 R0 K26; var7 = var0; var6 = var0[0x383D2E7D]
+      80 [-]: CALL R6 2 1  ; var6(var7)
+L13:  81 [-]: NAMECALL R6 R5 K22; var7 = var5; var6 = var5[0xF4E253B6]
+      82 [-]: CALL R6 2 1  ; var6(var7)
+      83 [-]: GETIMPORT R6 27; var6 = _T["previousConsoleTag"]
+      84 [-]: JUMPIFNOTEQ R6 R2 L14; goto L14 if var6 ~= var1375798847
+      85 [-]: GETTABLEKS R6 R1 K18; var6 = var1["mPlayerAvatar"]
+      86 [-]: NAMECALL R6 R6 K28; var7 = var6; var6 = var6[0x0B4BCFB6]
+      87 [-]: CALL R6 2 2  ; var6 = var6(var7)
+      88 [-]: GETTABLEKS R9 R1 K29; var9 = var1["mCameraSpotStack"]
+      89 [-]: GETTABLEKS R11 R1 K29; var11 = var1["mCameraSpotStack"]
+      90 [-]: LENGTH R10 R11; var10 = #var11
+      91 [-]: GETTABLE R8 R9 R10; var8 = var9[var10]
+      92 [-]: LOADK R9 K30 ; var9 = 0.20000000298023224
+      93 [-]: NAMECALL R6 R6 K31; var7 = var6; var6 = var6[0x14C7F7DD]
+      94 [-]: CALL R6 4 1  ; var6(var7, var8, var9)
+      95 [-]: LOADB R6 1   ; var6 = true
+      96 [-]: SETTABLEKS R6 R1 K16; var6["mReset"] = var1
+L14:  97 [-]: RETURN R0 0  ; 
 
 
 ; Name:            
-; Defined at line: 187
+; Defined at line: 221
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -535,7 +636,7 @@ L11:  87 [-]: RETURN R0 0  ;
        2 [-]: LOADN R4 0   ; var4 = 0
        3 [-]: NAMECALL R2 R2 K2; var3 = var2; var2 = var2[0x3F3AE64C]
        4 [-]: CALL R2 3 2  ; var2 = var2(var3, var4)
-       5 [-]: FASTCALL1 62 R2 L0; 
+       5 [-]: FASTCALL1 64 R2 L0; 
        6 [-]: MOVE R4 R2   ; var4 = var2
        7 [-]: GETIMPORT R3 4; var3 = 0x7B998233
        8 [-]: CALL R3 2 2  ; var3 = var3(var4)
@@ -559,7 +660,7 @@ L 2:  18 [-]: NEWTABLE R3 1 0; var3 = {}
 
 
 ; Name:            
-; Defined at line: 205
+; Defined at line: 239
 ; #Upvalues:       0
 ; #Parameters:     5
 ; Is_vararg:       0
@@ -569,12 +670,12 @@ L 2:  18 [-]: NEWTABLE R3 1 0; var3 = {}
        1 [-]: MOVE R7 R2   ; var7 = var2
        2 [-]: NAMECALL R5 R5 K2; var6 = var5; var5 = var5[0x46A0EBF5]
        3 [-]: CALL R5 3 2  ; var5 = var5(var6, var7)
-       4 [-]: FASTCALL1 62 R5 L0; 
+       4 [-]: FASTCALL1 64 R5 L0; 
        5 [-]: MOVE R7 R5   ; var7 = var5
        6 [-]: GETIMPORT R6 4; var6 = 0x7B998233
        7 [-]: CALL R6 2 2  ; var6 = var6(var7)
 L 0:   8 [-]: JUMPIF R6 L2 ; goto L2 if var6
-       9 [-]: FASTCALL1 62 R1 L1; 
+       9 [-]: FASTCALL1 64 R1 L1; 
       10 [-]: MOVE R7 R1   ; var7 = var1
       11 [-]: GETIMPORT R6 4; var6 = 0x7B998233
       12 [-]: CALL R6 2 2  ; var6 = var6(var7)
@@ -602,7 +703,7 @@ L 6:  31 [-]: GETIMPORT R6 15; var6 = 0x9BA7909F
       34 [-]: CALL R8 2 0  ; var8, ... = var8(var9)
       35 [-]: NAMECALL R6 R6 K19; var7 = var6; var6 = var6[0xBCFB64AB]
       36 [-]: CALL R6 0 2  ; var6 = var6(var7, ...)
-L 7:  37 [-]: FASTCALL1 62 R6 L8; 
+L 7:  37 [-]: FASTCALL1 64 R6 L8; 
       38 [-]: MOVE R8 R6   ; var8 = var6
       39 [-]: GETIMPORT R7 4; var7 = 0x7B998233
       40 [-]: CALL R7 2 2  ; var7 = var7(var8)
@@ -620,7 +721,7 @@ L 9:  46 [-]: GETIMPORT R7 6; var7 = _T
 
 
 ; Name:            
-; Defined at line: 235
+; Defined at line: 269
 ; #Upvalues:       1
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -630,12 +731,12 @@ L 9:  46 [-]: GETIMPORT R7 6; var7 = _T
        1 [-]: MOVE R6 R2   ; var6 = var2
        2 [-]: NAMECALL R4 R4 K2; var5 = var4; var4 = var4[0x46A0EBF5]
        3 [-]: CALL R4 3 2  ; var4 = var4(var5, var6)
-       4 [-]: FASTCALL1 62 R4 L0; 
+       4 [-]: FASTCALL1 64 R4 L0; 
        5 [-]: MOVE R6 R4   ; var6 = var4
        6 [-]: GETIMPORT R5 4; var5 = 0x7B998233
        7 [-]: CALL R5 2 2  ; var5 = var5(var6)
 L 0:   8 [-]: JUMPIF R5 L2 ; goto L2 if var5
-       9 [-]: FASTCALL1 62 R1 L1; 
+       9 [-]: FASTCALL1 64 R1 L1; 
       10 [-]: MOVE R6 R1   ; var6 = var1
       11 [-]: GETIMPORT R5 4; var5 = 0x7B998233
       12 [-]: CALL R5 2 2  ; var5 = var5(var6)
@@ -651,7 +752,7 @@ L 3:  15 [-]: GETTABLEKS R7 R1 K5; var7 = var1["mPlayerAvatar"]
       22 [-]: NAMECALL R5 R5 K12; var6 = var5; var5 = var5[0xBCFB64AB]
       23 [-]: CALL R5 0 2  ; var5 = var5(var6, ...)
       24 [-]: LOADB R6 0   ; var6 = false
-L 4:  25 [-]: FASTCALL1 62 R5 L5; 
+L 4:  25 [-]: FASTCALL1 64 R5 L5; 
       26 [-]: MOVE R8 R5   ; var8 = var5
       27 [-]: GETIMPORT R7 4; var7 = 0x7B998233
       28 [-]: CALL R7 2 2  ; var7 = var7(var8)
@@ -661,7 +762,7 @@ L 5:  29 [-]: JUMPIF R7 L7 ; goto L7 if var7
       32 [-]: MOVE R8 R3   ; var8 = var3
       33 [-]: CALL R7 2 2  ; var7 = var7(var8)
       34 [-]: LOADN R8 -3600; var8 = -3600
-      35 [-]: JUMPIFNOTLE R7 R8 L6; goto L6 if var7 > var2055
+      35 [-]: JUMPIFNOTLE R7 R8 L6; goto L6 if var7 > var2108
       36 [-]: GETUPVAL R8 0; var8 = upvalues[0]
       37 [-]: GETTABLEKS R7 R8 K16; var7 = var8[0xE0CBA3CA]
       38 [-]: LOADK R8 K17 ; var8 = "/Lotus/Language/Menu/EventExpired"
@@ -682,7 +783,7 @@ L 7:  50 [-]: NOT R7 R6    ; var7 = not var6
 
 
 ; Name:            
-; Defined at line: 260
+; Defined at line: 294
 ; #Upvalues:       1
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -692,18 +793,18 @@ L 7:  50 [-]: NOT R7 R6    ; var7 = not var6
        1 [-]: MOVE R6 R2   ; var6 = var2
        2 [-]: NAMECALL R4 R4 K2; var5 = var4; var4 = var4[0x46A0EBF5]
        3 [-]: CALL R4 3 2  ; var4 = var4(var5, var6)
-       4 [-]: FASTCALL1 62 R4 L0; 
+       4 [-]: FASTCALL1 64 R4 L0; 
        5 [-]: MOVE R6 R4   ; var6 = var4
        6 [-]: GETIMPORT R5 4; var5 = 0x7B998233
        7 [-]: CALL R5 2 2  ; var5 = var5(var6)
 L 0:   8 [-]: JUMPIF R5 L3 ; goto L3 if var5
-       9 [-]: FASTCALL1 62 R1 L1; 
+       9 [-]: FASTCALL1 64 R1 L1; 
       10 [-]: MOVE R6 R1   ; var6 = var1
       11 [-]: GETIMPORT R5 4; var5 = 0x7B998233
       12 [-]: CALL R5 2 2  ; var5 = var5(var6)
 L 1:  13 [-]: JUMPIF R5 L3 ; goto L3 if var5
       14 [-]: GETIMPORT R6 6; var6 = 0x25D99D89
-      15 [-]: FASTCALL1 62 R6 L2; 
+      15 [-]: FASTCALL1 64 R6 L2; 
       16 [-]: GETIMPORT R5 4; var5 = 0x7B998233
       17 [-]: CALL R5 2 2  ; var5 = var5(var6)
 L 2:  18 [-]: JUMPIFNOT R5 L4; goto L4 if not var5
@@ -714,7 +815,7 @@ L 4:  20 [-]: NEWTABLE R5 0 0; var5 = {}
       23 [-]: CALL R6 1 2  ; var6 = var6()
       24 [-]: GETUPVAL R8 0; var8 = upvalues[0]
       25 [-]: GETTABLEKS R7 R8 K8; var7 = var8["SOUND_SET_EIDOLON"]
-      26 [-]: JUMPIFNOTEQ R6 R7 L9; goto L9 if var6 ~= var329750
+      26 [-]: JUMPIFNOTEQ R6 R7 L9; goto L9 if var6 ~= var329774
       27 [-]: MOVE R8 R5   ; var8 = var5
       28 [-]: GETIMPORT R9 10; var9 = 0x7ED0A956
       29 [-]: LOADK R10 K11; var10 = "/Lotus/Types/Items/Fish/Eidolon/CommonFishItem"
@@ -746,7 +847,7 @@ L 7:  48 [-]: MOVE R8 R5   ; var8 = var5
 L 8:  55 [-]: JUMP L18     ; goto L18
 L 9:  56 [-]: GETUPVAL R8 0; var8 = upvalues[0]
       57 [-]: GETTABLEKS R7 R8 K18; var7 = var8["SOUND_SET_FORTUNA"]
-      58 [-]: JUMPIFNOTEQ R6 R7 L14; goto L14 if var6 ~= var329750
+      58 [-]: JUMPIFNOTEQ R6 R7 L14; goto L14 if var6 ~= var329774
       59 [-]: MOVE R8 R5   ; var8 = var5
       60 [-]: GETIMPORT R9 10; var9 = 0x7ED0A956
       61 [-]: LOADK R10 K19; var10 = "/Lotus/Types/Items/Fish/Solaris/CommonFishItem"
@@ -778,7 +879,7 @@ L12:  80 [-]: MOVE R8 R5   ; var8 = var5
 L13:  87 [-]: JUMP L18     ; goto L18
 L14:  88 [-]: GETUPVAL R8 0; var8 = upvalues[0]
       89 [-]: GETTABLEKS R7 R8 K23; var7 = var8["SOUND_SET_OROKIN_TOWER"]
-      90 [-]: JUMPIFNOTEQ R6 R7 L18; goto L18 if var6 ~= var329750
+      90 [-]: JUMPIFNOTEQ R6 R7 L18; goto L18 if var6 ~= var329774
       91 [-]: MOVE R8 R5   ; var8 = var5
       92 [-]: GETIMPORT R9 10; var9 = 0x7ED0A956
       93 [-]: LOADK R10 K24; var10 = "/Lotus/Types/Items/Fish/Deimos/CommonFishItem"
@@ -830,7 +931,7 @@ L20: 133 [-]: GETTABLE R16 R8 R11; var16 = var8[var11]
      139 [-]: GETTABLE R16 R8 R11; var16 = var8[var11]
      140 [-]: GETTABLEKS R15 R16 K32; var15 = var16["mItemCount"]
      141 [-]: LOADN R16 0  ; var16 = 0
-     142 [-]: JUMPIFNOTLT R16 R15 L21; goto L21 if var16 >= var67355
+     142 [-]: JUMPIFNOTLT R16 R15 L21; goto L21 if var16 >= var67334
      143 [-]: LOADB R7 1   ; var7 = true
      144 [-]: JUMP L22     ; goto L22
 L21: 145 [-]: FORNLOOP R12 L20; nforloop end - iterate + goto L20
@@ -842,7 +943,7 @@ L23: 147 [-]: JUMPIF R7 L26; goto L26 if var7
      151 [-]: CALL R11 2 0 ; var11, ... = var11(var12)
      152 [-]: NAMECALL R9 R9 K37; var10 = var9; var9 = var9[0x10C9EEF2]
      153 [-]: CALL R9 0 2  ; var9 = var9(var10, ...)
-     154 [-]: FASTCALL1 62 R9 L24; 
+     154 [-]: FASTCALL1 64 R9 L24; 
      155 [-]: MOVE R11 R9  ; var11 = var9
      156 [-]: GETIMPORT R10 4; var10 = 0x7B998233
      157 [-]: CALL R10 2 2 ; var10 = var10(var11)
@@ -863,7 +964,7 @@ L26: 168 [-]: JUMPXEQKNIL R3 L28;
      172 [-]: CALL R11 2 0 ; var11, ... = var11(var12)
      173 [-]: NAMECALL R9 R9 K37; var10 = var9; var9 = var9[0x10C9EEF2]
      174 [-]: CALL R9 0 2  ; var9 = var9(var10, ...)
-     175 [-]: FASTCALL1 62 R9 L27; 
+     175 [-]: FASTCALL1 64 R9 L27; 
      176 [-]: MOVE R11 R9  ; var11 = var9
      177 [-]: GETIMPORT R10 4; var10 = 0x7B998233
      178 [-]: CALL R10 2 2 ; var10 = var10(var11)
@@ -889,11 +990,11 @@ L30: 195 [-]: LOADB R9 1   ; var9 = true
 
 
 ; Name:            
-; Defined at line: 325
-; #Upvalues:       10
+; Defined at line: 359
+; #Upvalues:       11
 ; #Parameters:     1
 ; Is_vararg:       0
-; Max Stack Size:  19
+; Max Stack Size:  20
 
        0 [-]: GETIMPORT R1 2; var1 = _T["TaggedDialog"]
        1 [-]: JUMPXEQKNIL R1 L0 NOT; 
@@ -1194,7 +1295,7 @@ L 0:   5 [-]: GETUPVAL R2 0; var2 = upvalues[0]
      296 [-]: SETTABLEKS R3 R2 K67; var3["Quills_Saya"] = var2
      297 [-]: LOADN R2 0   ; var2 = 0
      298 [-]: GETIMPORT R4 69; var4 = 0x25D99D89
-     299 [-]: FASTCALL1 62 R4 L1; 
+     299 [-]: FASTCALL1 64 R4 L1; 
      300 [-]: GETIMPORT R3 71; var3 = 0x7B998233
      301 [-]: CALL R3 2 2  ; var3 = var3(var4)
 L 1: 302 [-]: JUMPIF R3 L2 ; goto L2 if var3
@@ -1220,7 +1321,7 @@ L 3: 313 [-]: SETTABLEKS R6 R5 K75; var6["SkipVendorDialog"] = var5
      322 [-]: SETTABLEKS R7 R6 K6; var7["mCallback"] = var6
      323 [-]: SETTABLEKS R6 R5 K80; var6["LittleDuck_Warframe"] = var5
      324 [-]: LOADN R5 3   ; var5 = 3
-     325 [-]: JUMPIFNOTLE R5 R2 L4; goto L4 if var5 > var132430
+     325 [-]: JUMPIFNOTLE R5 R2 L4; goto L4 if var5 > var132385
      326 [-]: GETIMPORT R5 2; var5 = _T["TaggedDialog"]
      327 [-]: DUPTABLE R6 31; 
      328 [-]: LOADK R7 K56 ; var7 = "/Lotus/Language/OstronCrafting/AmpMod_DialogTag"
@@ -1287,7 +1388,7 @@ L 3: 313 [-]: SETTABLEKS R6 R5 K75; var6["SkipVendorDialog"] = var5
      389 [-]: SETTABLEKS R6 R5 K90; var6["SolarisUnited_SentientInvasion"] = var5
      390 [-]: JUMP L6      ; goto L6
 L 4: 391 [-]: LOADN R5 2   ; var5 = 2
-     392 [-]: JUMPIFNOTEQ R2 R5 L6; goto L6 if var2 ~= var197966
+     392 [-]: JUMPIFNOTEQ R2 R5 L6; goto L6 if var2 ~= var197921
      393 [-]: GETIMPORT R5 3; var5 = _T
      394 [-]: GETIMPORT R6 76; var6 = _T["SkipVendorDialog"]
      395 [-]: JUMPIF R6 L5 ; goto L5 if var6
@@ -1506,618 +1607,769 @@ L 6: 409 [-]: GETIMPORT R5 2; var5 = _T["TaggedDialog"]
      608 [-]: SETTABLEKS R6 R5 K126; var6["DebtTokenVendor_SyndicateStandingBonuses"] = var5
      609 [-]: GETIMPORT R5 2; var5 = _T["TaggedDialog"]
      610 [-]: DUPTABLE R6 7; 
-     611 [-]: LOADK R7 K127; var7 = "/Lotus/Language/InfestedMicroplanet/HivemindTokenVendorCommissions"
+     611 [-]: LOADK R7 K127; var7 = "/Lotus/Language/InfestedMicroplanet/EntratiStanding"
      612 [-]: SETTABLEKS R7 R6 K5; var7["mName"] = var6
      613 [-]: NEWCLOSURE R7 P61; 
-     614 [-]: CAPTURE UPVAL U3; 
+     614 [-]: CAPTURE UPVAL U6; 
      615 [-]: CAPTURE VAL R0; 
      616 [-]: CAPTURE UPVAL U2; 
      617 [-]: SETTABLEKS R7 R6 K6; var7["mCallback"] = var6
-     618 [-]: SETTABLEKS R6 R5 K128; var6["HivemindTokenVendor_Commissions"] = var5
+     618 [-]: SETTABLEKS R6 R5 K128; var6["Hivemind_Syndicate"] = var5
      619 [-]: GETIMPORT R5 2; var5 = _T["TaggedDialog"]
      620 [-]: DUPTABLE R6 7; 
-     621 [-]: LOADK R7 K129; var7 = "/Lotus/Language/InfestedMicroplanet/HivemindTokenVendorProducts"
+     621 [-]: LOADK R7 K129; var7 = "/Lotus/Language/InfestedMicroplanet/HivemindTokenVendorCommissions"
      622 [-]: SETTABLEKS R7 R6 K5; var7["mName"] = var6
      623 [-]: NEWCLOSURE R7 P62; 
      624 [-]: CAPTURE UPVAL U3; 
      625 [-]: CAPTURE VAL R0; 
      626 [-]: CAPTURE UPVAL U2; 
      627 [-]: SETTABLEKS R7 R6 K6; var7["mCallback"] = var6
-     628 [-]: SETTABLEKS R6 R5 K130; var6["HivemindTokenVendor_Products"] = var5
+     628 [-]: SETTABLEKS R6 R5 K130; var6["HivemindTokenVendor_Commissions"] = var5
      629 [-]: GETIMPORT R5 2; var5 = _T["TaggedDialog"]
-     630 [-]: DUPTABLE R6 93; 
-     631 [-]: LOADK R7 K12 ; var7 = "/Lotus/Language/OstronCrafting/Crafting_Favors"
+     630 [-]: DUPTABLE R6 7; 
+     631 [-]: LOADK R7 K131; var7 = "/Lotus/Language/InfestedMicroplanet/HivemindTokenVendorProducts"
      632 [-]: SETTABLEKS R7 R6 K5; var7["mName"] = var6
      633 [-]: NEWCLOSURE R7 P63; 
      634 [-]: CAPTURE UPVAL U3; 
      635 [-]: CAPTURE VAL R0; 
      636 [-]: CAPTURE UPVAL U2; 
      637 [-]: SETTABLEKS R7 R6 K6; var7["mCallback"] = var6
-     638 [-]: DUPCLOSURE R7 K131; 
-     639 [-]: SETTABLEKS R7 R6 K30; var7["mCondition"] = var6
-     640 [-]: SETTABLEKS R6 R5 K132; var6["HivemindTokenVendor_Items"] = var5
-     641 [-]: GETIMPORT R5 2; var5 = _T["TaggedDialog"]
-     642 [-]: DUPTABLE R6 7; 
-     643 [-]: LOADK R7 K133; var7 = "/Lotus/Language/InfestedMicroplanet/HivemindTokenVendorBarter"
-     644 [-]: SETTABLEKS R7 R6 K5; var7["mName"] = var6
-     645 [-]: NEWCLOSURE R7 P65; 
-     646 [-]: CAPTURE UPVAL U3; 
-     647 [-]: CAPTURE VAL R0; 
-     648 [-]: CAPTURE UPVAL U2; 
-     649 [-]: SETTABLEKS R7 R6 K6; var7["mCallback"] = var6
-     650 [-]: SETTABLEKS R6 R5 K134; var6["HivemindTokenVendor_Trade"] = var5
+     638 [-]: SETTABLEKS R6 R5 K132; var6["HivemindTokenVendor_Products"] = var5
+     639 [-]: GETIMPORT R5 2; var5 = _T["TaggedDialog"]
+     640 [-]: DUPTABLE R6 93; 
+     641 [-]: LOADK R7 K12 ; var7 = "/Lotus/Language/OstronCrafting/Crafting_Favors"
+     642 [-]: SETTABLEKS R7 R6 K5; var7["mName"] = var6
+     643 [-]: NEWCLOSURE R7 P64; 
+     644 [-]: CAPTURE UPVAL U3; 
+     645 [-]: CAPTURE VAL R0; 
+     646 [-]: CAPTURE UPVAL U2; 
+     647 [-]: SETTABLEKS R7 R6 K6; var7["mCallback"] = var6
+     648 [-]: DUPCLOSURE R7 K133; 
+     649 [-]: SETTABLEKS R7 R6 K30; var7["mCondition"] = var6
+     650 [-]: SETTABLEKS R6 R5 K134; var6["HivemindTokenVendor_Items"] = var5
      651 [-]: GETIMPORT R5 2; var5 = _T["TaggedDialog"]
-     652 [-]: DUPTABLE R6 52; 
-     653 [-]: LOADK R7 K135; var7 = "/Lotus/Language/InfestedMicroplanet/HivemindTokenVendorStandingBonuses"
+     652 [-]: DUPTABLE R6 7; 
+     653 [-]: LOADK R7 K135; var7 = "/Lotus/Language/InfestedMicroplanet/HivemindTokenVendorBarter"
      654 [-]: SETTABLEKS R7 R6 K5; var7["mName"] = var6
-     655 [-]: LOADB R7 1   ; var7 = true
-     656 [-]: SETTABLEKS R7 R6 K51; var7["mAlwaysShow"] = var6
-     657 [-]: DUPCLOSURE R7 K136; 
-     658 [-]: CAPTURE UPVAL U5; 
+     655 [-]: NEWCLOSURE R7 P66; 
+     656 [-]: CAPTURE UPVAL U3; 
+     657 [-]: CAPTURE VAL R0; 
+     658 [-]: CAPTURE UPVAL U2; 
      659 [-]: SETTABLEKS R7 R6 K6; var7["mCallback"] = var6
-     660 [-]: SETTABLEKS R6 R5 K137; var6["HivemindTokenVendor_SyndicateStandingBonuses"] = var5
+     660 [-]: SETTABLEKS R6 R5 K136; var6["HivemindTokenVendor_Trade"] = var5
      661 [-]: GETIMPORT R5 2; var5 = _T["TaggedDialog"]
-     662 [-]: DUPTABLE R6 7; 
-     663 [-]: LOADK R7 K138; var7 = "/Lotus/Language/InfestedMicroplanet/HivemindProspectorCommissions"
+     662 [-]: DUPTABLE R6 52; 
+     663 [-]: LOADK R7 K137; var7 = "/Lotus/Language/InfestedMicroplanet/HivemindTokenVendorStandingBonuses"
      664 [-]: SETTABLEKS R7 R6 K5; var7["mName"] = var6
-     665 [-]: NEWCLOSURE R7 P67; 
-     666 [-]: CAPTURE UPVAL U3; 
-     667 [-]: CAPTURE VAL R0; 
-     668 [-]: CAPTURE UPVAL U2; 
+     665 [-]: LOADB R7 1   ; var7 = true
+     666 [-]: SETTABLEKS R7 R6 K51; var7["mAlwaysShow"] = var6
+     667 [-]: DUPCLOSURE R7 K138; 
+     668 [-]: CAPTURE UPVAL U5; 
      669 [-]: SETTABLEKS R7 R6 K6; var7["mCallback"] = var6
-     670 [-]: SETTABLEKS R6 R5 K139; var6["HivemindProspector_Commissions"] = var5
+     670 [-]: SETTABLEKS R6 R5 K139; var6["HivemindTokenVendor_SyndicateStandingBonuses"] = var5
      671 [-]: GETIMPORT R5 2; var5 = _T["TaggedDialog"]
      672 [-]: DUPTABLE R6 7; 
-     673 [-]: LOADK R7 K12 ; var7 = "/Lotus/Language/OstronCrafting/Crafting_Favors"
+     673 [-]: LOADK R7 K140; var7 = "/Lotus/Language/InfestedMicroplanet/HivemindProspectorCommissions"
      674 [-]: SETTABLEKS R7 R6 K5; var7["mName"] = var6
      675 [-]: NEWCLOSURE R7 P68; 
      676 [-]: CAPTURE UPVAL U3; 
      677 [-]: CAPTURE VAL R0; 
      678 [-]: CAPTURE UPVAL U2; 
      679 [-]: SETTABLEKS R7 R6 K6; var7["mCallback"] = var6
-     680 [-]: SETTABLEKS R6 R5 K140; var6["HivemindProspector_ShowFavors"] = var5
+     680 [-]: SETTABLEKS R6 R5 K141; var6["HivemindProspector_Commissions"] = var5
      681 [-]: GETIMPORT R5 2; var5 = _T["TaggedDialog"]
      682 [-]: DUPTABLE R6 7; 
-     683 [-]: LOADK R7 K10 ; var7 = "/Lotus/Language/OstronCrafting/WeaponOfTheDay_DialogTag"
+     683 [-]: LOADK R7 K12 ; var7 = "/Lotus/Language/OstronCrafting/Crafting_Favors"
      684 [-]: SETTABLEKS R7 R6 K5; var7["mName"] = var6
      685 [-]: NEWCLOSURE R7 P69; 
      686 [-]: CAPTURE UPVAL U3; 
      687 [-]: CAPTURE VAL R0; 
      688 [-]: CAPTURE UPVAL U2; 
      689 [-]: SETTABLEKS R7 R6 K6; var7["mCallback"] = var6
-     690 [-]: SETTABLEKS R6 R5 K141; var6["HivemindProspector_DailySpecial"] = var5
+     690 [-]: SETTABLEKS R6 R5 K142; var6["HivemindProspector_ShowFavors"] = var5
      691 [-]: GETIMPORT R5 2; var5 = _T["TaggedDialog"]
      692 [-]: DUPTABLE R6 7; 
-     693 [-]: LOADK R7 K142; var7 = "/Lotus/Language/InfestedMicroplanet/HivemindProspectorLastWishManifest"
+     693 [-]: LOADK R7 K10 ; var7 = "/Lotus/Language/OstronCrafting/WeaponOfTheDay_DialogTag"
      694 [-]: SETTABLEKS R7 R6 K5; var7["mName"] = var6
      695 [-]: NEWCLOSURE R7 P70; 
      696 [-]: CAPTURE UPVAL U3; 
      697 [-]: CAPTURE VAL R0; 
      698 [-]: CAPTURE UPVAL U2; 
      699 [-]: SETTABLEKS R7 R6 K6; var7["mCallback"] = var6
-     700 [-]: SETTABLEKS R6 R5 K143; var6["HivemindProspector_LastWishManifest"] = var5
+     700 [-]: SETTABLEKS R6 R5 K143; var6["HivemindProspector_DailySpecial"] = var5
      701 [-]: GETIMPORT R5 2; var5 = _T["TaggedDialog"]
      702 [-]: DUPTABLE R6 7; 
-     703 [-]: LOADK R7 K144; var7 = "/Lotus/Language/InfestedMicroplanet/HivemindFishmongerCommissions"
+     703 [-]: LOADK R7 K144; var7 = "/Lotus/Language/InfestedMicroplanet/HivemindProspectorLastWishManifest"
      704 [-]: SETTABLEKS R7 R6 K5; var7["mName"] = var6
      705 [-]: NEWCLOSURE R7 P71; 
-     706 [-]: CAPTURE UPVAL U7; 
-     707 [-]: CAPTURE UPVAL U3; 
-     708 [-]: CAPTURE VAL R0; 
-     709 [-]: CAPTURE UPVAL U2; 
-     710 [-]: SETTABLEKS R7 R6 K6; var7["mCallback"] = var6
-     711 [-]: SETTABLEKS R6 R5 K145; var6["HivemindFishmonger_Commissions"] = var5
-     712 [-]: GETIMPORT R5 2; var5 = _T["TaggedDialog"]
-     713 [-]: DUPTABLE R6 7; 
-     714 [-]: LOADK R7 K10 ; var7 = "/Lotus/Language/OstronCrafting/WeaponOfTheDay_DialogTag"
-     715 [-]: SETTABLEKS R7 R6 K5; var7["mName"] = var6
-     716 [-]: NEWCLOSURE R7 P72; 
-     717 [-]: CAPTURE UPVAL U7; 
-     718 [-]: CAPTURE UPVAL U3; 
-     719 [-]: CAPTURE VAL R0; 
-     720 [-]: CAPTURE UPVAL U2; 
-     721 [-]: SETTABLEKS R7 R6 K6; var7["mCallback"] = var6
-     722 [-]: SETTABLEKS R6 R5 K146; var6["HivemindFishmonger_DailySpecial"] = var5
-     723 [-]: GETIMPORT R5 2; var5 = _T["TaggedDialog"]
-     724 [-]: DUPTABLE R6 7; 
-     725 [-]: LOADK R7 K12 ; var7 = "/Lotus/Language/OstronCrafting/Crafting_Favors"
-     726 [-]: SETTABLEKS R7 R6 K5; var7["mName"] = var6
-     727 [-]: NEWCLOSURE R7 P73; 
-     728 [-]: CAPTURE UPVAL U7; 
-     729 [-]: CAPTURE UPVAL U3; 
-     730 [-]: CAPTURE VAL R0; 
-     731 [-]: CAPTURE UPVAL U2; 
-     732 [-]: SETTABLEKS R7 R6 K6; var7["mCallback"] = var6
-     733 [-]: SETTABLEKS R6 R5 K147; var6["HivemindFishmonger_ShowFavors"] = var5
-     734 [-]: GETIMPORT R5 2; var5 = _T["TaggedDialog"]
-     735 [-]: DUPTABLE R6 7; 
-     736 [-]: LOADK R7 K27 ; var7 = "/Lotus/Language/OstronCrafting/Fishmonger_DissectOption"
-     737 [-]: SETTABLEKS R7 R6 K5; var7["mName"] = var6
-     738 [-]: NEWCLOSURE R7 P74; 
-     739 [-]: CAPTURE UPVAL U7; 
-     740 [-]: CAPTURE UPVAL U4; 
-     741 [-]: CAPTURE VAL R0; 
-     742 [-]: CAPTURE UPVAL U2; 
-     743 [-]: SETTABLEKS R7 R6 K6; var7["mCallback"] = var6
-     744 [-]: SETTABLEKS R6 R5 K148; var6["HivemindFishmonger_CutBait"] = var5
-     745 [-]: GETIMPORT R5 2; var5 = _T["TaggedDialog"]
-     746 [-]: DUPTABLE R6 52; 
-     747 [-]: LOADK R7 K149; var7 = "/Lotus/Language/InfestedMicroplanet/HivemindKubrowCraftingScreen"
-     748 [-]: SETTABLEKS R7 R6 K5; var7["mName"] = var6
-     749 [-]: LOADB R7 1   ; var7 = true
-     750 [-]: SETTABLEKS R7 R6 K51; var7["mAlwaysShow"] = var6
-     751 [-]: NEWCLOSURE R7 P75; 
-     752 [-]: CAPTURE UPVAL U7; 
-     753 [-]: CAPTURE UPVAL U1; 
-     754 [-]: CAPTURE VAL R0; 
-     755 [-]: CAPTURE UPVAL U2; 
-     756 [-]: SETTABLEKS R7 R6 K6; var7["mCallback"] = var6
-     757 [-]: SETTABLEKS R6 R5 K150; var6["HivemindPetVendor_KubrowCrafting"] = var5
-     758 [-]: GETIMPORT R5 2; var5 = _T["TaggedDialog"]
-     759 [-]: DUPTABLE R6 52; 
-     760 [-]: LOADK R7 K151; var7 = "/Lotus/Language/InfestedMicroplanet/HivemindCatbrowCraftingScreen"
-     761 [-]: SETTABLEKS R7 R6 K5; var7["mName"] = var6
-     762 [-]: LOADB R7 1   ; var7 = true
-     763 [-]: SETTABLEKS R7 R6 K51; var7["mAlwaysShow"] = var6
-     764 [-]: NEWCLOSURE R7 P76; 
-     765 [-]: CAPTURE UPVAL U7; 
-     766 [-]: CAPTURE UPVAL U1; 
-     767 [-]: CAPTURE VAL R0; 
-     768 [-]: CAPTURE UPVAL U2; 
-     769 [-]: SETTABLEKS R7 R6 K6; var7["mCallback"] = var6
-     770 [-]: SETTABLEKS R6 R5 K152; var6["HivemindPetVendor_CatbrowCrafting"] = var5
-     771 [-]: GETIMPORT R5 2; var5 = _T["TaggedDialog"]
-     772 [-]: DUPTABLE R6 7; 
-     773 [-]: LOADK R7 K153; var7 = "/Lotus/Language/InfestedMicroplanet/HivemindPetActions"
-     774 [-]: SETTABLEKS R7 R6 K5; var7["mName"] = var6
-     775 [-]: NEWCLOSURE R7 P77; 
-     776 [-]: CAPTURE UPVAL U7; 
-     777 [-]: CAPTURE UPVAL U1; 
-     778 [-]: CAPTURE VAL R0; 
-     779 [-]: CAPTURE UPVAL U2; 
-     780 [-]: SETTABLEKS R7 R6 K6; var7["mCallback"] = var6
-     781 [-]: SETTABLEKS R6 R5 K154; var6["HivemindPetVendor_Actions"] = var5
-     782 [-]: GETIMPORT R5 2; var5 = _T["TaggedDialog"]
-     783 [-]: DUPTABLE R6 7; 
-     784 [-]: LOADK R7 K155; var7 = "/Lotus/Language/InfestedMicroplanet/HivemindPetVendorCommissions"
-     785 [-]: SETTABLEKS R7 R6 K5; var7["mName"] = var6
-     786 [-]: NEWCLOSURE R7 P78; 
-     787 [-]: CAPTURE UPVAL U7; 
-     788 [-]: CAPTURE UPVAL U3; 
-     789 [-]: CAPTURE VAL R0; 
-     790 [-]: CAPTURE UPVAL U2; 
-     791 [-]: SETTABLEKS R7 R6 K6; var7["mCallback"] = var6
-     792 [-]: SETTABLEKS R6 R5 K156; var6["HivemindPetVendor_Commissions"] = var5
-     793 [-]: GETIMPORT R5 2; var5 = _T["TaggedDialog"]
-     794 [-]: DUPTABLE R6 7; 
-     795 [-]: LOADK R7 K12 ; var7 = "/Lotus/Language/OstronCrafting/Crafting_Favors"
-     796 [-]: SETTABLEKS R7 R6 K5; var7["mName"] = var6
-     797 [-]: NEWCLOSURE R7 P79; 
-     798 [-]: CAPTURE UPVAL U7; 
-     799 [-]: CAPTURE UPVAL U3; 
-     800 [-]: CAPTURE VAL R0; 
-     801 [-]: CAPTURE UPVAL U2; 
-     802 [-]: SETTABLEKS R7 R6 K6; var7["mCallback"] = var6
-     803 [-]: SETTABLEKS R6 R5 K157; var6["HivemindPetVendor_Items"] = var5
-     804 [-]: GETIMPORT R5 2; var5 = _T["TaggedDialog"]
-     805 [-]: DUPTABLE R6 7; 
-     806 [-]: LOADK R7 K40 ; var7 = "/Lotus/Language/SolarisVenus/SolarisFishMongerVendorItems"
-     807 [-]: SETTABLEKS R7 R6 K5; var7["mName"] = var6
-     808 [-]: NEWCLOSURE R7 P80; 
-     809 [-]: CAPTURE UPVAL U7; 
-     810 [-]: CAPTURE UPVAL U3; 
-     811 [-]: CAPTURE VAL R0; 
-     812 [-]: CAPTURE UPVAL U2; 
-     813 [-]: SETTABLEKS R7 R6 K6; var7["mCallback"] = var6
-     814 [-]: SETTABLEKS R6 R5 K158; var6["HivemindPetVendor_Tags"] = var5
-     815 [-]: GETIMPORT R5 2; var5 = _T["TaggedDialog"]
-     816 [-]: DUPTABLE R6 7; 
-     817 [-]: LOADK R7 K10 ; var7 = "/Lotus/Language/OstronCrafting/WeaponOfTheDay_DialogTag"
-     818 [-]: SETTABLEKS R7 R6 K5; var7["mName"] = var6
-     819 [-]: NEWCLOSURE R7 P81; 
+     706 [-]: CAPTURE UPVAL U3; 
+     707 [-]: CAPTURE VAL R0; 
+     708 [-]: CAPTURE UPVAL U2; 
+     709 [-]: SETTABLEKS R7 R6 K6; var7["mCallback"] = var6
+     710 [-]: SETTABLEKS R6 R5 K145; var6["HivemindProspector_LastWishManifest"] = var5
+     711 [-]: GETIMPORT R5 2; var5 = _T["TaggedDialog"]
+     712 [-]: DUPTABLE R6 7; 
+     713 [-]: LOADK R7 K146; var7 = "/Lotus/Language/InfestedMicroplanet/HivemindFishmongerCommissions"
+     714 [-]: SETTABLEKS R7 R6 K5; var7["mName"] = var6
+     715 [-]: NEWCLOSURE R7 P72; 
+     716 [-]: CAPTURE UPVAL U7; 
+     717 [-]: CAPTURE UPVAL U3; 
+     718 [-]: CAPTURE VAL R0; 
+     719 [-]: CAPTURE UPVAL U2; 
+     720 [-]: SETTABLEKS R7 R6 K6; var7["mCallback"] = var6
+     721 [-]: SETTABLEKS R6 R5 K147; var6["HivemindFishmonger_Commissions"] = var5
+     722 [-]: GETIMPORT R5 2; var5 = _T["TaggedDialog"]
+     723 [-]: DUPTABLE R6 7; 
+     724 [-]: LOADK R7 K10 ; var7 = "/Lotus/Language/OstronCrafting/WeaponOfTheDay_DialogTag"
+     725 [-]: SETTABLEKS R7 R6 K5; var7["mName"] = var6
+     726 [-]: NEWCLOSURE R7 P73; 
+     727 [-]: CAPTURE UPVAL U7; 
+     728 [-]: CAPTURE UPVAL U3; 
+     729 [-]: CAPTURE VAL R0; 
+     730 [-]: CAPTURE UPVAL U2; 
+     731 [-]: SETTABLEKS R7 R6 K6; var7["mCallback"] = var6
+     732 [-]: SETTABLEKS R6 R5 K148; var6["HivemindFishmonger_DailySpecial"] = var5
+     733 [-]: GETIMPORT R5 2; var5 = _T["TaggedDialog"]
+     734 [-]: DUPTABLE R6 7; 
+     735 [-]: LOADK R7 K12 ; var7 = "/Lotus/Language/OstronCrafting/Crafting_Favors"
+     736 [-]: SETTABLEKS R7 R6 K5; var7["mName"] = var6
+     737 [-]: NEWCLOSURE R7 P74; 
+     738 [-]: CAPTURE UPVAL U7; 
+     739 [-]: CAPTURE UPVAL U3; 
+     740 [-]: CAPTURE VAL R0; 
+     741 [-]: CAPTURE UPVAL U2; 
+     742 [-]: SETTABLEKS R7 R6 K6; var7["mCallback"] = var6
+     743 [-]: SETTABLEKS R6 R5 K149; var6["HivemindFishmonger_ShowFavors"] = var5
+     744 [-]: GETIMPORT R5 2; var5 = _T["TaggedDialog"]
+     745 [-]: DUPTABLE R6 7; 
+     746 [-]: LOADK R7 K27 ; var7 = "/Lotus/Language/OstronCrafting/Fishmonger_DissectOption"
+     747 [-]: SETTABLEKS R7 R6 K5; var7["mName"] = var6
+     748 [-]: NEWCLOSURE R7 P75; 
+     749 [-]: CAPTURE UPVAL U7; 
+     750 [-]: CAPTURE UPVAL U4; 
+     751 [-]: CAPTURE VAL R0; 
+     752 [-]: CAPTURE UPVAL U2; 
+     753 [-]: SETTABLEKS R7 R6 K6; var7["mCallback"] = var6
+     754 [-]: SETTABLEKS R6 R5 K150; var6["HivemindFishmonger_CutBait"] = var5
+     755 [-]: GETIMPORT R5 2; var5 = _T["TaggedDialog"]
+     756 [-]: DUPTABLE R6 52; 
+     757 [-]: LOADK R7 K151; var7 = "/Lotus/Language/InfestedMicroplanet/HivemindKubrowCraftingScreen"
+     758 [-]: SETTABLEKS R7 R6 K5; var7["mName"] = var6
+     759 [-]: LOADB R7 1   ; var7 = true
+     760 [-]: SETTABLEKS R7 R6 K51; var7["mAlwaysShow"] = var6
+     761 [-]: NEWCLOSURE R7 P76; 
+     762 [-]: CAPTURE UPVAL U7; 
+     763 [-]: CAPTURE UPVAL U1; 
+     764 [-]: CAPTURE VAL R0; 
+     765 [-]: CAPTURE UPVAL U2; 
+     766 [-]: SETTABLEKS R7 R6 K6; var7["mCallback"] = var6
+     767 [-]: SETTABLEKS R6 R5 K152; var6["HivemindPetVendor_KubrowCrafting"] = var5
+     768 [-]: GETIMPORT R5 2; var5 = _T["TaggedDialog"]
+     769 [-]: DUPTABLE R6 52; 
+     770 [-]: LOADK R7 K153; var7 = "/Lotus/Language/InfestedMicroplanet/HivemindCatbrowCraftingScreen"
+     771 [-]: SETTABLEKS R7 R6 K5; var7["mName"] = var6
+     772 [-]: LOADB R7 1   ; var7 = true
+     773 [-]: SETTABLEKS R7 R6 K51; var7["mAlwaysShow"] = var6
+     774 [-]: NEWCLOSURE R7 P77; 
+     775 [-]: CAPTURE UPVAL U7; 
+     776 [-]: CAPTURE UPVAL U1; 
+     777 [-]: CAPTURE VAL R0; 
+     778 [-]: CAPTURE UPVAL U2; 
+     779 [-]: SETTABLEKS R7 R6 K6; var7["mCallback"] = var6
+     780 [-]: SETTABLEKS R6 R5 K154; var6["HivemindPetVendor_CatbrowCrafting"] = var5
+     781 [-]: GETIMPORT R5 2; var5 = _T["TaggedDialog"]
+     782 [-]: DUPTABLE R6 7; 
+     783 [-]: LOADK R7 K155; var7 = "/Lotus/Language/InfestedMicroplanet/HivemindPetActions"
+     784 [-]: SETTABLEKS R7 R6 K5; var7["mName"] = var6
+     785 [-]: NEWCLOSURE R7 P78; 
+     786 [-]: CAPTURE UPVAL U7; 
+     787 [-]: CAPTURE UPVAL U1; 
+     788 [-]: CAPTURE VAL R0; 
+     789 [-]: CAPTURE UPVAL U2; 
+     790 [-]: SETTABLEKS R7 R6 K6; var7["mCallback"] = var6
+     791 [-]: SETTABLEKS R6 R5 K156; var6["HivemindPetVendor_Actions"] = var5
+     792 [-]: GETIMPORT R5 2; var5 = _T["TaggedDialog"]
+     793 [-]: DUPTABLE R6 7; 
+     794 [-]: LOADK R7 K157; var7 = "/Lotus/Language/InfestedMicroplanet/HivemindPetVendorCommissions"
+     795 [-]: SETTABLEKS R7 R6 K5; var7["mName"] = var6
+     796 [-]: NEWCLOSURE R7 P79; 
+     797 [-]: CAPTURE UPVAL U7; 
+     798 [-]: CAPTURE UPVAL U3; 
+     799 [-]: CAPTURE VAL R0; 
+     800 [-]: CAPTURE UPVAL U2; 
+     801 [-]: SETTABLEKS R7 R6 K6; var7["mCallback"] = var6
+     802 [-]: SETTABLEKS R6 R5 K158; var6["HivemindPetVendor_Commissions"] = var5
+     803 [-]: GETIMPORT R5 2; var5 = _T["TaggedDialog"]
+     804 [-]: DUPTABLE R6 7; 
+     805 [-]: LOADK R7 K12 ; var7 = "/Lotus/Language/OstronCrafting/Crafting_Favors"
+     806 [-]: SETTABLEKS R7 R6 K5; var7["mName"] = var6
+     807 [-]: NEWCLOSURE R7 P80; 
+     808 [-]: CAPTURE UPVAL U7; 
+     809 [-]: CAPTURE UPVAL U3; 
+     810 [-]: CAPTURE VAL R0; 
+     811 [-]: CAPTURE UPVAL U2; 
+     812 [-]: SETTABLEKS R7 R6 K6; var7["mCallback"] = var6
+     813 [-]: SETTABLEKS R6 R5 K159; var6["HivemindPetVendor_Items"] = var5
+     814 [-]: GETIMPORT R5 2; var5 = _T["TaggedDialog"]
+     815 [-]: DUPTABLE R6 7; 
+     816 [-]: LOADK R7 K40 ; var7 = "/Lotus/Language/SolarisVenus/SolarisFishMongerVendorItems"
+     817 [-]: SETTABLEKS R7 R6 K5; var7["mName"] = var6
+     818 [-]: NEWCLOSURE R7 P81; 
+     819 [-]: CAPTURE UPVAL U7; 
      820 [-]: CAPTURE UPVAL U3; 
      821 [-]: CAPTURE VAL R0; 
      822 [-]: CAPTURE UPVAL U2; 
      823 [-]: SETTABLEKS R7 R6 K6; var7["mCallback"] = var6
-     824 [-]: SETTABLEKS R6 R5 K159; var6["HivemindPetVendor_DailySpecial"] = var5
+     824 [-]: SETTABLEKS R6 R5 K160; var6["HivemindPetVendor_Tags"] = var5
      825 [-]: GETIMPORT R5 2; var5 = _T["TaggedDialog"]
      826 [-]: DUPTABLE R6 7; 
-     827 [-]: LOADK R7 K160; var7 = "/Lotus/Language/InfestedMicroplanet/HivemindGunsmithCommissions"
+     827 [-]: LOADK R7 K10 ; var7 = "/Lotus/Language/OstronCrafting/WeaponOfTheDay_DialogTag"
      828 [-]: SETTABLEKS R7 R6 K5; var7["mName"] = var6
      829 [-]: NEWCLOSURE R7 P82; 
-     830 [-]: CAPTURE UPVAL U7; 
-     831 [-]: CAPTURE UPVAL U3; 
-     832 [-]: CAPTURE VAL R0; 
-     833 [-]: CAPTURE UPVAL U2; 
-     834 [-]: SETTABLEKS R7 R6 K6; var7["mCallback"] = var6
-     835 [-]: SETTABLEKS R6 R5 K161; var6["HivemindGunSmith_Commissions"] = var5
-     836 [-]: GETIMPORT R5 2; var5 = _T["TaggedDialog"]
-     837 [-]: DUPTABLE R6 7; 
-     838 [-]: LOADK R7 K16 ; var7 = "/Lotus/Language/SolarisVenus/WeaponsmithCraftWeapon"
-     839 [-]: SETTABLEKS R7 R6 K5; var7["mName"] = var6
-     840 [-]: NEWCLOSURE R7 P83; 
-     841 [-]: CAPTURE UPVAL U7; 
-     842 [-]: CAPTURE UPVAL U1; 
-     843 [-]: CAPTURE VAL R0; 
-     844 [-]: CAPTURE UPVAL U2; 
-     845 [-]: SETTABLEKS R7 R6 K6; var7["mCallback"] = var6
-     846 [-]: SETTABLEKS R6 R5 K162; var6["HivemindGunSmith_GoToCrafting"] = var5
-     847 [-]: GETIMPORT R5 2; var5 = _T["TaggedDialog"]
-     848 [-]: DUPTABLE R6 7; 
-     849 [-]: LOADK R7 K21 ; var7 = "/Lotus/Language/SolarisVenus/WeaponsmithOtherServices"
-     850 [-]: SETTABLEKS R7 R6 K5; var7["mName"] = var6
-     851 [-]: NEWCLOSURE R7 P84; 
-     852 [-]: CAPTURE UPVAL U7; 
-     853 [-]: CAPTURE UPVAL U1; 
-     854 [-]: CAPTURE VAL R0; 
-     855 [-]: CAPTURE UPVAL U2; 
-     856 [-]: SETTABLEKS R7 R6 K6; var7["mCallback"] = var6
-     857 [-]: SETTABLEKS R6 R5 K163; var6["HivemindGunSmith_Actions"] = var5
-     858 [-]: GETIMPORT R5 2; var5 = _T["TaggedDialog"]
-     859 [-]: DUPTABLE R6 7; 
-     860 [-]: LOADK R7 K19 ; var7 = "/Lotus/Language/SolarisVenus/WeaponsmithBrowseWares"
-     861 [-]: SETTABLEKS R7 R6 K5; var7["mName"] = var6
-     862 [-]: NEWCLOSURE R7 P85; 
-     863 [-]: CAPTURE UPVAL U7; 
-     864 [-]: CAPTURE UPVAL U3; 
-     865 [-]: CAPTURE VAL R0; 
-     866 [-]: CAPTURE UPVAL U2; 
-     867 [-]: SETTABLEKS R7 R6 K6; var7["mCallback"] = var6
-     868 [-]: SETTABLEKS R6 R5 K164; var6["HivemindGunSmith_ShowFavors"] = var5
-     869 [-]: GETIMPORT R5 2; var5 = _T["TaggedDialog"]
-     870 [-]: DUPTABLE R6 7; 
-     871 [-]: LOADK R7 K165; var7 = "/Lotus/Language/InfestedMicroplanet/NecraloidViewStanding"
-     872 [-]: SETTABLEKS R7 R6 K5; var7["mName"] = var6
-     873 [-]: NEWCLOSURE R7 P86; 
-     874 [-]: CAPTURE UPVAL U6; 
+     830 [-]: CAPTURE UPVAL U3; 
+     831 [-]: CAPTURE VAL R0; 
+     832 [-]: CAPTURE UPVAL U2; 
+     833 [-]: SETTABLEKS R7 R6 K6; var7["mCallback"] = var6
+     834 [-]: SETTABLEKS R6 R5 K161; var6["HivemindPetVendor_DailySpecial"] = var5
+     835 [-]: GETIMPORT R5 2; var5 = _T["TaggedDialog"]
+     836 [-]: DUPTABLE R6 7; 
+     837 [-]: LOADK R7 K162; var7 = "/Lotus/Language/InfestedMicroplanet/HivemindGunsmithCommissions"
+     838 [-]: SETTABLEKS R7 R6 K5; var7["mName"] = var6
+     839 [-]: NEWCLOSURE R7 P83; 
+     840 [-]: CAPTURE UPVAL U7; 
+     841 [-]: CAPTURE UPVAL U3; 
+     842 [-]: CAPTURE VAL R0; 
+     843 [-]: CAPTURE UPVAL U2; 
+     844 [-]: SETTABLEKS R7 R6 K6; var7["mCallback"] = var6
+     845 [-]: SETTABLEKS R6 R5 K163; var6["HivemindGunSmith_Commissions"] = var5
+     846 [-]: GETIMPORT R5 2; var5 = _T["TaggedDialog"]
+     847 [-]: DUPTABLE R6 7; 
+     848 [-]: LOADK R7 K16 ; var7 = "/Lotus/Language/SolarisVenus/WeaponsmithCraftWeapon"
+     849 [-]: SETTABLEKS R7 R6 K5; var7["mName"] = var6
+     850 [-]: NEWCLOSURE R7 P84; 
+     851 [-]: CAPTURE UPVAL U7; 
+     852 [-]: CAPTURE UPVAL U1; 
+     853 [-]: CAPTURE VAL R0; 
+     854 [-]: CAPTURE UPVAL U2; 
+     855 [-]: SETTABLEKS R7 R6 K6; var7["mCallback"] = var6
+     856 [-]: SETTABLEKS R6 R5 K164; var6["HivemindGunSmith_GoToCrafting"] = var5
+     857 [-]: GETIMPORT R5 2; var5 = _T["TaggedDialog"]
+     858 [-]: DUPTABLE R6 7; 
+     859 [-]: LOADK R7 K21 ; var7 = "/Lotus/Language/SolarisVenus/WeaponsmithOtherServices"
+     860 [-]: SETTABLEKS R7 R6 K5; var7["mName"] = var6
+     861 [-]: NEWCLOSURE R7 P85; 
+     862 [-]: CAPTURE UPVAL U7; 
+     863 [-]: CAPTURE UPVAL U1; 
+     864 [-]: CAPTURE VAL R0; 
+     865 [-]: CAPTURE UPVAL U2; 
+     866 [-]: SETTABLEKS R7 R6 K6; var7["mCallback"] = var6
+     867 [-]: SETTABLEKS R6 R5 K165; var6["HivemindGunSmith_Actions"] = var5
+     868 [-]: GETIMPORT R5 2; var5 = _T["TaggedDialog"]
+     869 [-]: DUPTABLE R6 7; 
+     870 [-]: LOADK R7 K19 ; var7 = "/Lotus/Language/SolarisVenus/WeaponsmithBrowseWares"
+     871 [-]: SETTABLEKS R7 R6 K5; var7["mName"] = var6
+     872 [-]: NEWCLOSURE R7 P86; 
+     873 [-]: CAPTURE UPVAL U7; 
+     874 [-]: CAPTURE UPVAL U3; 
      875 [-]: CAPTURE VAL R0; 
      876 [-]: CAPTURE UPVAL U2; 
      877 [-]: SETTABLEKS R7 R6 K6; var7["mCallback"] = var6
-     878 [-]: SETTABLEKS R6 R5 K166; var6["Necraloid_Syndicate"] = var5
+     878 [-]: SETTABLEKS R6 R5 K166; var6["HivemindGunSmith_ShowFavors"] = var5
      879 [-]: GETIMPORT R5 2; var5 = _T["TaggedDialog"]
      880 [-]: DUPTABLE R6 7; 
-     881 [-]: LOADK R7 K34 ; var7 = "/Lotus/Language/SolarisVenus/BrowseWares"
+     881 [-]: LOADK R7 K167; var7 = "/Lotus/Language/InfestedMicroplanet/NecraloidViewStanding"
      882 [-]: SETTABLEKS R7 R6 K5; var7["mName"] = var6
      883 [-]: NEWCLOSURE R7 P87; 
-     884 [-]: CAPTURE UPVAL U3; 
+     884 [-]: CAPTURE UPVAL U6; 
      885 [-]: CAPTURE VAL R0; 
      886 [-]: CAPTURE UPVAL U2; 
      887 [-]: SETTABLEKS R7 R6 K6; var7["mCallback"] = var6
-     888 [-]: SETTABLEKS R6 R5 K167; var6["Necraloid_ShowFavors"] = var5
+     888 [-]: SETTABLEKS R6 R5 K168; var6["Necraloid_Syndicate"] = var5
      889 [-]: GETIMPORT R5 2; var5 = _T["TaggedDialog"]
      890 [-]: DUPTABLE R6 7; 
-     891 [-]: LOADK R7 K168; var7 = "/Lotus/Language/InfestedMicroplanet/NecraloidStandingBonuses"
+     891 [-]: LOADK R7 K34 ; var7 = "/Lotus/Language/SolarisVenus/BrowseWares"
      892 [-]: SETTABLEKS R7 R6 K5; var7["mName"] = var6
-     893 [-]: DUPCLOSURE R7 K169; 
-     894 [-]: CAPTURE UPVAL U5; 
-     895 [-]: SETTABLEKS R7 R6 K6; var7["mCallback"] = var6
-     896 [-]: SETTABLEKS R6 R5 K170; var6["Necraloid_SyndicateStandingBonuses"] = var5
-     897 [-]: GETIMPORT R5 2; var5 = _T["TaggedDialog"]
-     898 [-]: DUPTABLE R6 7; 
-     899 [-]: LOADK R7 K171; var7 = "/Lotus/Language/InfestedMicroplanet/HivemindMechsVendorProducts"
-     900 [-]: SETTABLEKS R7 R6 K5; var7["mName"] = var6
-     901 [-]: NEWCLOSURE R7 P89; 
-     902 [-]: CAPTURE UPVAL U3; 
-     903 [-]: CAPTURE VAL R0; 
-     904 [-]: CAPTURE UPVAL U2; 
+     893 [-]: NEWCLOSURE R7 P88; 
+     894 [-]: CAPTURE UPVAL U3; 
+     895 [-]: CAPTURE VAL R0; 
+     896 [-]: CAPTURE UPVAL U2; 
+     897 [-]: SETTABLEKS R7 R6 K6; var7["mCallback"] = var6
+     898 [-]: SETTABLEKS R6 R5 K169; var6["Necraloid_ShowFavors"] = var5
+     899 [-]: GETIMPORT R5 2; var5 = _T["TaggedDialog"]
+     900 [-]: DUPTABLE R6 7; 
+     901 [-]: LOADK R7 K170; var7 = "/Lotus/Language/InfestedMicroplanet/NecraloidStandingBonuses"
+     902 [-]: SETTABLEKS R7 R6 K5; var7["mName"] = var6
+     903 [-]: DUPCLOSURE R7 K171; 
+     904 [-]: CAPTURE UPVAL U5; 
      905 [-]: SETTABLEKS R7 R6 K6; var7["mCallback"] = var6
-     906 [-]: SETTABLEKS R6 R5 K172; var6["Necraloid_Products"] = var5
+     906 [-]: SETTABLEKS R6 R5 K172; var6["Necraloid_SyndicateStandingBonuses"] = var5
      907 [-]: GETIMPORT R5 2; var5 = _T["TaggedDialog"]
      908 [-]: DUPTABLE R6 7; 
-     909 [-]: LOADK R7 K173; var7 = "/Lotus/Language/Zariman/BrowseWaresApartment"
+     909 [-]: LOADK R7 K173; var7 = "/Lotus/Language/InfestedMicroplanet/HivemindMechsVendorProducts"
      910 [-]: SETTABLEKS R7 R6 K5; var7["mName"] = var6
      911 [-]: NEWCLOSURE R7 P90; 
      912 [-]: CAPTURE UPVAL U3; 
      913 [-]: CAPTURE VAL R0; 
      914 [-]: CAPTURE UPVAL U2; 
      915 [-]: SETTABLEKS R7 R6 K6; var7["mCallback"] = var6
-     916 [-]: SETTABLEKS R6 R5 K174; var6["ZarimanApartment_ShowFavors"] = var5
+     916 [-]: SETTABLEKS R6 R5 K174; var6["Necraloid_Products"] = var5
      917 [-]: GETIMPORT R5 2; var5 = _T["TaggedDialog"]
      918 [-]: DUPTABLE R6 7; 
-     919 [-]: LOADK R7 K175; var7 = "/Lotus/Language/Zariman/BrowseWaresVoidshell"
+     919 [-]: LOADK R7 K175; var7 = "/Lotus/Language/Zariman/BrowseWaresApartment"
      920 [-]: SETTABLEKS R7 R6 K5; var7["mName"] = var6
      921 [-]: NEWCLOSURE R7 P91; 
      922 [-]: CAPTURE UPVAL U3; 
      923 [-]: CAPTURE VAL R0; 
      924 [-]: CAPTURE UPVAL U2; 
      925 [-]: SETTABLEKS R7 R6 K6; var7["mCallback"] = var6
-     926 [-]: SETTABLEKS R6 R5 K176; var6["ZarimanVoidshell_ShowFavors"] = var5
+     926 [-]: SETTABLEKS R6 R5 K176; var6["ZarimanApartment_ShowFavors"] = var5
      927 [-]: GETIMPORT R5 2; var5 = _T["TaggedDialog"]
      928 [-]: DUPTABLE R6 7; 
-     929 [-]: LOADK R7 K177; var7 = "/Lotus/Language/Zariman/ZarimanStandingBonuses"
+     929 [-]: LOADK R7 K177; var7 = "/Lotus/Language/Zariman/BrowseWaresVoidshell"
      930 [-]: SETTABLEKS R7 R6 K5; var7["mName"] = var6
-     931 [-]: DUPCLOSURE R7 K178; 
-     932 [-]: CAPTURE UPVAL U5; 
-     933 [-]: SETTABLEKS R7 R6 K6; var7["mCallback"] = var6
-     934 [-]: SETTABLEKS R6 R5 K179; var6["Zariman_SyndicateStandingBonuses"] = var5
-     935 [-]: GETIMPORT R5 2; var5 = _T["TaggedDialog"]
-     936 [-]: DUPTABLE R6 7; 
-     937 [-]: LOADK R7 K180; var7 = "/Lotus/Language/Zariman/BrowseArchimedeanManifest"
-     938 [-]: SETTABLEKS R7 R6 K5; var7["mName"] = var6
-     939 [-]: NEWCLOSURE R7 P93; 
-     940 [-]: CAPTURE UPVAL U3; 
-     941 [-]: CAPTURE VAL R0; 
-     942 [-]: CAPTURE UPVAL U2; 
+     931 [-]: NEWCLOSURE R7 P92; 
+     932 [-]: CAPTURE UPVAL U3; 
+     933 [-]: CAPTURE VAL R0; 
+     934 [-]: CAPTURE UPVAL U2; 
+     935 [-]: SETTABLEKS R7 R6 K6; var7["mCallback"] = var6
+     936 [-]: SETTABLEKS R6 R5 K178; var6["ZarimanVoidshell_ShowFavors"] = var5
+     937 [-]: GETIMPORT R5 2; var5 = _T["TaggedDialog"]
+     938 [-]: DUPTABLE R6 7; 
+     939 [-]: LOADK R7 K179; var7 = "/Lotus/Language/Zariman/ZarimanStandingBonuses"
+     940 [-]: SETTABLEKS R7 R6 K5; var7["mName"] = var6
+     941 [-]: DUPCLOSURE R7 K180; 
+     942 [-]: CAPTURE UPVAL U5; 
      943 [-]: SETTABLEKS R7 R6 K6; var7["mCallback"] = var6
-     944 [-]: SETTABLEKS R6 R5 K181; var6["Zariman_ArchimedeanManifest"] = var5
+     944 [-]: SETTABLEKS R6 R5 K181; var6["Zariman_SyndicateStandingBonuses"] = var5
      945 [-]: GETIMPORT R5 2; var5 = _T["TaggedDialog"]
      946 [-]: DUPTABLE R6 7; 
-     947 [-]: LOADK R7 K182; var7 = "/Lotus/Language/Zariman/ZarimanCommisionsArchimedean"
+     947 [-]: LOADK R7 K182; var7 = "/Lotus/Language/Zariman/BrowseArchimedeanManifest"
      948 [-]: SETTABLEKS R7 R6 K5; var7["mName"] = var6
      949 [-]: NEWCLOSURE R7 P94; 
      950 [-]: CAPTURE UPVAL U3; 
      951 [-]: CAPTURE VAL R0; 
      952 [-]: CAPTURE UPVAL U2; 
      953 [-]: SETTABLEKS R7 R6 K6; var7["mCallback"] = var6
-     954 [-]: SETTABLEKS R6 R5 K183; var6["Zariman_ArchimedeanCommisions"] = var5
+     954 [-]: SETTABLEKS R6 R5 K183; var6["Zariman_ArchimedeanManifest"] = var5
      955 [-]: GETIMPORT R5 2; var5 = _T["TaggedDialog"]
      956 [-]: DUPTABLE R6 7; 
-     957 [-]: LOADK R7 K184; var7 = "/Lotus/Language/Zariman/ZarimanArchimedeanVoidEclipseManifest"
+     957 [-]: LOADK R7 K184; var7 = "/Lotus/Language/Zariman/ZarimanCommisionsArchimedean"
      958 [-]: SETTABLEKS R7 R6 K5; var7["mName"] = var6
      959 [-]: NEWCLOSURE R7 P95; 
      960 [-]: CAPTURE UPVAL U3; 
      961 [-]: CAPTURE VAL R0; 
      962 [-]: CAPTURE UPVAL U2; 
      963 [-]: SETTABLEKS R7 R6 K6; var7["mCallback"] = var6
-     964 [-]: SETTABLEKS R6 R5 K185; var6["Zariman_ArchimedeanVoidEclipseManifest"] = var5
+     964 [-]: SETTABLEKS R6 R5 K185; var6["Zariman_ArchimedeanCommisions"] = var5
      965 [-]: GETIMPORT R5 2; var5 = _T["TaggedDialog"]
      966 [-]: DUPTABLE R6 7; 
-     967 [-]: LOADK R7 K34 ; var7 = "/Lotus/Language/SolarisVenus/BrowseWares"
+     967 [-]: LOADK R7 K186; var7 = "/Lotus/Language/Zariman/ZarimanArchimedeanVoidEclipseManifest"
      968 [-]: SETTABLEKS R7 R6 K5; var7["mName"] = var6
      969 [-]: NEWCLOSURE R7 P96; 
      970 [-]: CAPTURE UPVAL U3; 
      971 [-]: CAPTURE VAL R0; 
      972 [-]: CAPTURE UPVAL U2; 
      973 [-]: SETTABLEKS R7 R6 K6; var7["mCallback"] = var6
-     974 [-]: SETTABLEKS R6 R5 K186; var6["ZarimanWeaponsmith_ShowFavors"] = var5
+     974 [-]: SETTABLEKS R6 R5 K187; var6["Zariman_ArchimedeanVoidEclipseManifest"] = var5
      975 [-]: GETIMPORT R5 2; var5 = _T["TaggedDialog"]
      976 [-]: DUPTABLE R6 7; 
-     977 [-]: LOADK R7 K187; var7 = "/Lotus/Language/Zariman/ZarimanWeaponsmithIncarnonShop"
+     977 [-]: LOADK R7 K34 ; var7 = "/Lotus/Language/SolarisVenus/BrowseWares"
      978 [-]: SETTABLEKS R7 R6 K5; var7["mName"] = var6
      979 [-]: NEWCLOSURE R7 P97; 
      980 [-]: CAPTURE UPVAL U3; 
      981 [-]: CAPTURE VAL R0; 
      982 [-]: CAPTURE UPVAL U2; 
      983 [-]: SETTABLEKS R7 R6 K6; var7["mCallback"] = var6
-     984 [-]: SETTABLEKS R6 R5 K188; var6["ZarimanWeaponsmith_IncarnonShop"] = var5
+     984 [-]: SETTABLEKS R6 R5 K188; var6["ZarimanWeaponsmith_ShowFavors"] = var5
      985 [-]: GETIMPORT R5 2; var5 = _T["TaggedDialog"]
-     986 [-]: DUPTABLE R6 7; 
-     987 [-]: LOADK R7 K189; var7 = "/Lotus/Language/Zariman/ZarimanEvolveWeapons"
+     986 [-]: DUPTABLE R6 93; 
+     987 [-]: LOADK R7 K189; var7 = "/Lotus/Language/Zariman/ZarimanWeaponsmithIncarnonShop"
      988 [-]: SETTABLEKS R7 R6 K5; var7["mName"] = var6
      989 [-]: NEWCLOSURE R7 P98; 
-     990 [-]: CAPTURE UPVAL U8; 
-     991 [-]: CAPTURE UPVAL U9; 
-     992 [-]: CAPTURE UPVAL U1; 
-     993 [-]: CAPTURE VAL R0; 
-     994 [-]: CAPTURE UPVAL U2; 
-     995 [-]: SETTABLEKS R7 R6 K6; var7["mCallback"] = var6
-     996 [-]: SETTABLEKS R6 R5 K190; var6["ZarimanWeaponsmith_EvolveWeapons"] = var5
-     997 [-]: GETIMPORT R5 3; var5 = _T
-     998 [-]: DUPCLOSURE R6 K191; 
-     999 [-]: SETTABLEKS R6 R5 K192; var6["ZarimanSyndicate_IntroTransmissionCheck"] = var5
-     1000 [-]: GETIMPORT R5 2; var5 = _T["TaggedDialog"]
-     1001 [-]: DUPTABLE R6 52; 
-     1002 [-]: LOADK R7 K193; var7 = "/Lotus/Language/Duviri/BrowseWares"
-     1003 [-]: SETTABLEKS R7 R6 K5; var7["mName"] = var6
-     1004 [-]: LOADB R7 1   ; var7 = true
-     1005 [-]: SETTABLEKS R7 R6 K51; var7["mAlwaysShow"] = var6
-     1006 [-]: NEWCLOSURE R7 P100; 
-     1007 [-]: CAPTURE UPVAL U3; 
-     1008 [-]: CAPTURE VAL R0; 
-     1009 [-]: CAPTURE UPVAL U2; 
-     1010 [-]: SETTABLEKS R7 R6 K6; var7["mCallback"] = var6
-     1011 [-]: SETTABLEKS R6 R5 K194; var6["DuviriArchivist_VendorItems"] = var5
-     1012 [-]: GETIMPORT R5 2; var5 = _T["TaggedDialog"]
-     1013 [-]: DUPTABLE R6 52; 
-     1014 [-]: LOADK R7 K195; var7 = "/Lotus/Language/Duviri/AcrithisKullervoShopManifest"
-     1015 [-]: SETTABLEKS R7 R6 K5; var7["mName"] = var6
-     1016 [-]: LOADB R7 1   ; var7 = true
-     1017 [-]: SETTABLEKS R7 R6 K51; var7["mAlwaysShow"] = var6
-     1018 [-]: NEWCLOSURE R7 P101; 
-     1019 [-]: CAPTURE UPVAL U3; 
-     1020 [-]: CAPTURE VAL R0; 
-     1021 [-]: CAPTURE UPVAL U2; 
-     1022 [-]: SETTABLEKS R7 R6 K6; var7["mCallback"] = var6
-     1023 [-]: SETTABLEKS R6 R5 K196; var6["DuviriArchivist_KullervoShop"] = var5
-     1024 [-]: GETIMPORT R5 2; var5 = _T["TaggedDialog"]
-     1025 [-]: DUPTABLE R6 52; 
-     1026 [-]: LOADK R7 K197; var7 = "/Lotus/Language/Duviri/AcrithisEnigmaGyrumShopManifest"
-     1027 [-]: SETTABLEKS R7 R6 K5; var7["mName"] = var6
-     1028 [-]: LOADB R7 1   ; var7 = true
-     1029 [-]: SETTABLEKS R7 R6 K51; var7["mAlwaysShow"] = var6
-     1030 [-]: NEWCLOSURE R7 P102; 
-     1031 [-]: CAPTURE UPVAL U3; 
-     1032 [-]: CAPTURE VAL R0; 
-     1033 [-]: CAPTURE UPVAL U2; 
-     1034 [-]: SETTABLEKS R7 R6 K6; var7["mCallback"] = var6
-     1035 [-]: SETTABLEKS R6 R5 K198; var6["DuviriArchivist_EnigmaGyrumShop"] = var5
-     1036 [-]: DUPCLOSURE R5 K199; 
-     1037 [-]: DUPCLOSURE R6 K200; 
-     1038 [-]: GETIMPORT R7 2; var7 = _T["TaggedDialog"]
-     1039 [-]: DUPTABLE R8 31; 
-     1040 [-]: LOADK R9 K201; var9 = "/Lotus/Language/Veilbreaker/KahlMissionBrief"
-     1041 [-]: SETTABLEKS R9 R8 K5; var9["mName"] = var8
-     1042 [-]: SETTABLEKS R5 R8 K30; var5["mCondition"] = var8
-     1043 [-]: NEWCLOSURE R9 P105; 
-     1044 [-]: CAPTURE UPVAL U1; 
-     1045 [-]: CAPTURE VAL R0; 
-     1046 [-]: CAPTURE UPVAL U2; 
-     1047 [-]: SETTABLEKS R9 R8 K6; var9["mCallback"] = var8
-     1048 [-]: SETTABLEKS R8 R7 K202; var8["Kahl_MissionBrief"] = var7
-     1049 [-]: GETIMPORT R7 2; var7 = _T["TaggedDialog"]
-     1050 [-]: DUPTABLE R8 7; 
-     1051 [-]: LOADK R9 K203; var9 = "/Lotus/Language/Veilbreaker/KahlCustomizations"
-     1052 [-]: SETTABLEKS R9 R8 K5; var9["mName"] = var8
-     1053 [-]: NEWCLOSURE R9 P106; 
-     1054 [-]: CAPTURE UPVAL U1; 
-     1055 [-]: CAPTURE VAL R0; 
-     1056 [-]: CAPTURE UPVAL U2; 
-     1057 [-]: SETTABLEKS R9 R8 K6; var9["mCallback"] = var8
-     1058 [-]: SETTABLEKS R8 R7 K204; var8["Kahl_Customizations"] = var7
-     1059 [-]: GETIMPORT R7 2; var7 = _T["TaggedDialog"]
-     1060 [-]: DUPTABLE R8 31; 
-     1061 [-]: LOADK R9 K205; var9 = "/Lotus/Language/Syndicates/RankUp"
-     1062 [-]: SETTABLEKS R9 R8 K5; var9["mName"] = var8
-     1063 [-]: DUPCLOSURE R9 K206; 
-     1064 [-]: CAPTURE VAL R5; 
-     1065 [-]: SETTABLEKS R9 R8 K30; var9["mCondition"] = var8
-     1066 [-]: DUPCLOSURE R9 K207; 
-     1067 [-]: CAPTURE UPVAL U8; 
-     1068 [-]: CAPTURE VAL R6; 
-     1069 [-]: CAPTURE UPVAL U9; 
-     1070 [-]: SETTABLEKS R9 R8 K6; var9["mCallback"] = var8
-     1071 [-]: SETTABLEKS R8 R7 K208; var8["Kahl_RankUp"] = var7
-     1072 [-]: GETIMPORT R7 2; var7 = _T["TaggedDialog"]
-     1073 [-]: DUPTABLE R8 52; 
-     1074 [-]: LOADK R9 K34 ; var9 = "/Lotus/Language/SolarisVenus/BrowseWares"
-     1075 [-]: SETTABLEKS R9 R8 K5; var9["mName"] = var8
-     1076 [-]: LOADB R9 1   ; var9 = true
-     1077 [-]: SETTABLEKS R9 R8 K51; var9["mAlwaysShow"] = var8
-     1078 [-]: NEWCLOSURE R9 P109; 
-     1079 [-]: CAPTURE UPVAL U3; 
-     1080 [-]: CAPTURE VAL R0; 
-     1081 [-]: CAPTURE UPVAL U2; 
-     1082 [-]: SETTABLEKS R9 R8 K6; var9["mCallback"] = var8
-     1083 [-]: SETTABLEKS R8 R7 K209; var8["Chipper_VendorItems"] = var7
-     1084 [-]: GETIMPORT R7 2; var7 = _T["TaggedDialog"]
-     1085 [-]: DUPTABLE R8 52; 
-     1086 [-]: LOADK R9 K210; var9 = "/Lotus/Language/Railjack/ModularAWCrafting_CraftTag"
-     1087 [-]: SETTABLEKS R9 R8 K5; var9["mName"] = var8
-     1088 [-]: LOADB R9 1   ; var9 = true
-     1089 [-]: SETTABLEKS R9 R8 K51; var9["mAlwaysShow"] = var8
-     1090 [-]: NEWCLOSURE R9 P110; 
-     1091 [-]: CAPTURE UPVAL U1; 
-     1092 [-]: CAPTURE VAL R0; 
-     1093 [-]: CAPTURE UPVAL U2; 
-     1094 [-]: SETTABLEKS R9 R8 K6; var9["mCallback"] = var8
-     1095 [-]: SETTABLEKS R8 R7 K211; var8["AWVendor_GoToCrafting"] = var7
-     1096 [-]: GETIMPORT R7 2; var7 = _T["TaggedDialog"]
-     1097 [-]: DUPTABLE R8 52; 
-     1098 [-]: LOADK R9 K12 ; var9 = "/Lotus/Language/OstronCrafting/Crafting_Favors"
-     1099 [-]: SETTABLEKS R9 R8 K5; var9["mName"] = var8
-     1100 [-]: LOADB R9 1   ; var9 = true
-     1101 [-]: SETTABLEKS R9 R8 K51; var9["mAlwaysShow"] = var8
-     1102 [-]: NEWCLOSURE R9 P111; 
-     1103 [-]: CAPTURE UPVAL U3; 
-     1104 [-]: CAPTURE VAL R0; 
-     1105 [-]: CAPTURE UPVAL U2; 
-     1106 [-]: SETTABLEKS R9 R8 K6; var9["mCallback"] = var8
-     1107 [-]: SETTABLEKS R8 R7 K212; var8["AWVendor_ShowFavors"] = var7
-     1108 [-]: GETIMPORT R7 214; var7 = 0x76EA806B
-     1109 [-]: LOADN R9 0   ; var9 = 0
-     1110 [-]: NAMECALL R7 R7 K215; var8 = var7; var7 = var7[0x3F3AE64C]
-     1111 [-]: CALL R7 3 2  ; var7 = var7(var8, var9)
-     1112 [-]: FASTCALL1 62 R7 L7; 
-     1113 [-]: MOVE R9 R7   ; var9 = var7
-     1114 [-]: GETIMPORT R8 71; var8 = 0x7B998233
-     1115 [-]: CALL R8 2 2  ; var8 = var8(var9)
-L 7: 1116 [-]: JUMPIFNOT R8 L8; goto L8 if not var8
-     1117 [-]: RETURN R0 0  ; 
-L 8: 1118 [-]: NAMECALL R8 R7 K216; var9 = var7; var8 = var7[0x80563238]
-     1119 [-]: CALL R8 2 2  ; var8 = var8(var9)
-     1120 [-]: FASTCALL1 62 R8 L9; 
-     1121 [-]: MOVE R10 R8  ; var10 = var8
-     1122 [-]: GETIMPORT R9 71; var9 = 0x7B998233
-     1123 [-]: CALL R9 2 2  ; var9 = var9(var10)
-L 9: 1124 [-]: JUMPIFNOT R9 L10; goto L10 if not var9
-     1125 [-]: RETURN R0 0  ; 
-L10: 1126 [-]: NAMECALL R10 R8 K217; var11 = var8; var10 = var8[0x69727E0B]
-     1127 [-]: CALL R10 2 2 ; var10 = var10(var11)
-     1128 [-]: GETTABLEKS R9 R10 K218; var9 = var10["mGoals"]
-     1129 [-]: LOADN R12 1  ; var12 = 1
-     1130 [-]: LENGTH R10 R9; var10 = #var9
-     1131 [-]: LOADN R11 1  ; var11 = 1
-     1132 [-]: FORNPREP R10 L16; nforprep start - [escape at L16] -- var10 = iterator
-L11: 1133 [-]: GETTABLE R13 R9 R12; var13 = var9[var12]
-     1134 [-]: GETTABLEKS R14 R13 K219; var14 = var13["mJobAffiliationTag"]
-     1135 [-]: GETUPVAL R16 2; var16 = upvalues[2]
-     1136 [-]: GETTABLEKS R15 R16 K220; var15 = var16["eventSyndicateTag"]
-     1137 [-]: JUMPIFNOTEQ R14 R15 L13; goto L13 if var14 ~= var-351465956
-     1138 [-]: GETTABLEKS R14 R13 K221; var14 = var13["mExpiry"]
-     1139 [-]: GETTABLEKS R15 R13 K222; var15 = var13["mActivation"]
-     1140 [-]: NAMECALL R16 R14 K223; var17 = var14; var16 = var14[0x56C01834]
-     1141 [-]: CALL R16 2 2 ; var16 = var16(var17)
-     1142 [-]: JUMPIFNOT R16 L12; goto L12 if not var16
-     1143 [-]: NAMECALL R16 R15 K223; var17 = var15; var16 = var15[0x56C01834]
-     1144 [-]: CALL R16 2 2 ; var16 = var16(var17)
-     1145 [-]: JUMPIFNOT R16 L12; goto L12 if not var16
-     1146 [-]: GETIMPORT R16 226; var16 = 0x34291F5C[0x397B920F]
-     1147 [-]: MOVE R17 R15 ; var17 = var15
-     1148 [-]: CALL R16 2 2 ; var16 = var16(var17)
-     1149 [-]: LOADN R17 0  ; var17 = 0
-     1150 [-]: JUMPIFNOTLE R16 R17 L12; goto L12 if var16 > var14815310
-     1151 [-]: GETIMPORT R16 226; var16 = 0x34291F5C[0x397B920F]
-     1152 [-]: MOVE R17 R14 ; var17 = var14
-     1153 [-]: CALL R16 2 2 ; var16 = var16(var17)
-     1154 [-]: LOADN R17 -3600; var17 = -3600
-     1155 [-]: JUMPIFNOTLT R17 R16 L12; goto L12 if var17 >= var-351465444
-     1156 [-]: GETTABLEKS R16 R13 K221; var16 = var13["mExpiry"]
-     1157 [-]: GETTABLEKS R14 R16 K227; var14 = var16["sec"]
-     1158 [-]: GETIMPORT R16 2; var16 = _T["TaggedDialog"]
-     1159 [-]: DUPTABLE R17 93; 
-     1160 [-]: LOADK R18 K228; var18 = "/Lotus/Language/Menu/EventSyndicate"
-     1161 [-]: SETTABLEKS R18 R17 K5; var18["mName"] = var17
-     1162 [-]: NEWCLOSURE R18 P112; 
-     1163 [-]: CAPTURE UPVAL U6; 
-     1164 [-]: CAPTURE VAL R0; 
-     1165 [-]: CAPTURE UPVAL U2; 
-     1166 [-]: CAPTURE REF R14; 
-     1167 [-]: SETTABLEKS R18 R17 K6; var18["mCallback"] = var17
-     1168 [-]: NEWCLOSURE R18 P113; 
-     1169 [-]: CAPTURE REF R14; 
-     1170 [-]: SETTABLEKS R18 R17 K30; var18["mCondition"] = var17
-     1171 [-]: SETTABLEKS R17 R16 K229; var17["MaskSeller_EventFavors"] = var16
-     1172 [-]: CLOSEUPVALS R14; 
-     1173 [-]: RETURN R0 0  ; 
-L12: 1174 [-]: CLOSEUPVALS R14; 
-     1175 [-]: JUMP L15     ; goto L15
-L13: 1176 [-]: GETTABLEKS R14 R13 K230; var14 = var13["mTag"]
-     1177 [-]: GETIMPORT R15 232; var15 = 0x0469F296
-     1178 [-]: LOADK R16 K233; var16 = "WaterFight"
-     1179 [-]: CALL R15 2 2 ; var15 = var15(var16)
-     1180 [-]: JUMPIFNOTEQ R14 R15 L15; goto L15 if var14 ~= var-351465956
-     1181 [-]: GETTABLEKS R14 R13 K221; var14 = var13["mExpiry"]
-     1182 [-]: GETTABLEKS R15 R13 K222; var15 = var13["mActivation"]
-     1183 [-]: NAMECALL R16 R14 K223; var17 = var14; var16 = var14[0x56C01834]
-     1184 [-]: CALL R16 2 2 ; var16 = var16(var17)
-     1185 [-]: JUMPIFNOT R16 L14; goto L14 if not var16
-     1186 [-]: NAMECALL R16 R15 K223; var17 = var15; var16 = var15[0x56C01834]
-     1187 [-]: CALL R16 2 2 ; var16 = var16(var17)
-     1188 [-]: JUMPIFNOT R16 L14; goto L14 if not var16
-     1189 [-]: GETIMPORT R16 226; var16 = 0x34291F5C[0x397B920F]
-     1190 [-]: MOVE R17 R15 ; var17 = var15
-     1191 [-]: CALL R16 2 2 ; var16 = var16(var17)
-     1192 [-]: LOADN R17 0  ; var17 = 0
-     1193 [-]: JUMPIFNOTLE R16 R17 L14; goto L14 if var16 > var14815310
-     1194 [-]: GETIMPORT R16 226; var16 = 0x34291F5C[0x397B920F]
-     1195 [-]: MOVE R17 R14 ; var17 = var14
-     1196 [-]: CALL R16 2 2 ; var16 = var16(var17)
-     1197 [-]: LOADN R17 -3600; var17 = -3600
-     1198 [-]: JUMPIFNOTLT R17 R16 L14; goto L14 if var17 >= var-351465444
-     1199 [-]: GETTABLEKS R16 R13 K221; var16 = var13["mExpiry"]
-     1200 [-]: GETTABLEKS R14 R16 K227; var14 = var16["sec"]
-     1201 [-]: GETIMPORT R16 2; var16 = _T["TaggedDialog"]
-     1202 [-]: DUPTABLE R17 93; 
-     1203 [-]: LOADK R18 K234; var18 = "/Lotus/Language/Menu/WaterFightWares"
-     1204 [-]: SETTABLEKS R18 R17 K5; var18["mName"] = var17
-     1205 [-]: NEWCLOSURE R18 P114; 
-     1206 [-]: CAPTURE UPVAL U3; 
-     1207 [-]: CAPTURE VAL R0; 
-     1208 [-]: CAPTURE UPVAL U2; 
-     1209 [-]: SETTABLEKS R18 R17 K6; var18["mCallback"] = var17
-     1210 [-]: NEWCLOSURE R18 P115; 
-     1211 [-]: CAPTURE REF R14; 
-     1212 [-]: SETTABLEKS R18 R17 K30; var18["mCondition"] = var17
-     1213 [-]: SETTABLEKS R17 R16 K235; var17["MaskSeller_WaterFightVendor"] = var16
-     1214 [-]: CLOSEUPVALS R14; 
-     1215 [-]: RETURN R0 0  ; 
-L14: 1216 [-]: CLOSEUPVALS R14; 
-L15: 1217 [-]: FORNLOOP R10 L11; nforloop end - iterate + goto L11
-L16: 1218 [-]: RETURN R0 0  ; 
+     990 [-]: CAPTURE UPVAL U3; 
+     991 [-]: CAPTURE VAL R0; 
+     992 [-]: CAPTURE UPVAL U2; 
+     993 [-]: SETTABLEKS R7 R6 K6; var7["mCallback"] = var6
+     994 [-]: DUPCLOSURE R7 K190; 
+     995 [-]: CAPTURE UPVAL U0; 
+     996 [-]: CAPTURE UPVAL U8; 
+     997 [-]: SETTABLEKS R7 R6 K30; var7["mCondition"] = var6
+     998 [-]: SETTABLEKS R6 R5 K191; var6["ZarimanWeaponsmith_IncarnonShop"] = var5
+     999 [-]: GETIMPORT R5 2; var5 = _T["TaggedDialog"]
+     1000 [-]: DUPTABLE R6 7; 
+     1001 [-]: LOADK R7 K192; var7 = "/Lotus/Language/Zariman/ZarimanEvolveWeapons"
+     1002 [-]: SETTABLEKS R7 R6 K5; var7["mName"] = var6
+     1003 [-]: NEWCLOSURE R7 P100; 
+     1004 [-]: CAPTURE UPVAL U9; 
+     1005 [-]: CAPTURE UPVAL U10; 
+     1006 [-]: CAPTURE UPVAL U1; 
+     1007 [-]: CAPTURE VAL R0; 
+     1008 [-]: CAPTURE UPVAL U2; 
+     1009 [-]: SETTABLEKS R7 R6 K6; var7["mCallback"] = var6
+     1010 [-]: SETTABLEKS R6 R5 K193; var6["ZarimanWeaponsmith_EvolveWeapons"] = var5
+     1011 [-]: GETIMPORT R5 3; var5 = _T
+     1012 [-]: DUPCLOSURE R6 K194; 
+     1013 [-]: SETTABLEKS R6 R5 K195; var6["ZarimanSyndicate_IntroTransmissionCheck"] = var5
+     1014 [-]: GETIMPORT R5 2; var5 = _T["TaggedDialog"]
+     1015 [-]: DUPTABLE R6 52; 
+     1016 [-]: LOADK R7 K196; var7 = "/Lotus/Language/Duviri/BrowseWares"
+     1017 [-]: SETTABLEKS R7 R6 K5; var7["mName"] = var6
+     1018 [-]: LOADB R7 1   ; var7 = true
+     1019 [-]: SETTABLEKS R7 R6 K51; var7["mAlwaysShow"] = var6
+     1020 [-]: NEWCLOSURE R7 P102; 
+     1021 [-]: CAPTURE UPVAL U3; 
+     1022 [-]: CAPTURE VAL R0; 
+     1023 [-]: CAPTURE UPVAL U2; 
+     1024 [-]: SETTABLEKS R7 R6 K6; var7["mCallback"] = var6
+     1025 [-]: SETTABLEKS R6 R5 K197; var6["DuviriArchivist_VendorItems"] = var5
+     1026 [-]: GETIMPORT R5 2; var5 = _T["TaggedDialog"]
+     1027 [-]: DUPTABLE R6 52; 
+     1028 [-]: LOADK R7 K198; var7 = "/Lotus/Language/Duviri/AcrithisKullervoShopManifest"
+     1029 [-]: SETTABLEKS R7 R6 K5; var7["mName"] = var6
+     1030 [-]: LOADB R7 1   ; var7 = true
+     1031 [-]: SETTABLEKS R7 R6 K51; var7["mAlwaysShow"] = var6
+     1032 [-]: NEWCLOSURE R7 P103; 
+     1033 [-]: CAPTURE UPVAL U3; 
+     1034 [-]: CAPTURE VAL R0; 
+     1035 [-]: CAPTURE UPVAL U2; 
+     1036 [-]: SETTABLEKS R7 R6 K6; var7["mCallback"] = var6
+     1037 [-]: SETTABLEKS R6 R5 K199; var6["DuviriArchivist_KullervoShop"] = var5
+     1038 [-]: GETIMPORT R5 2; var5 = _T["TaggedDialog"]
+     1039 [-]: DUPTABLE R6 52; 
+     1040 [-]: LOADK R7 K200; var7 = "/Lotus/Language/Duviri/AcrithisEnigmaGyrumShopManifest"
+     1041 [-]: SETTABLEKS R7 R6 K5; var7["mName"] = var6
+     1042 [-]: LOADB R7 1   ; var7 = true
+     1043 [-]: SETTABLEKS R7 R6 K51; var7["mAlwaysShow"] = var6
+     1044 [-]: NEWCLOSURE R7 P104; 
+     1045 [-]: CAPTURE UPVAL U3; 
+     1046 [-]: CAPTURE VAL R0; 
+     1047 [-]: CAPTURE UPVAL U2; 
+     1048 [-]: SETTABLEKS R7 R6 K6; var7["mCallback"] = var6
+     1049 [-]: SETTABLEKS R6 R5 K201; var6["DuviriArchivist_EnigmaGyrumShop"] = var5
+     1050 [-]: GETIMPORT R5 2; var5 = _T["TaggedDialog"]
+     1051 [-]: DUPTABLE R6 7; 
+     1052 [-]: LOADK R7 K202; var7 = "/Lotus/Language/EntratiLab/EntratiGeneral/EntratiLabSyndViewStanding"
+     1053 [-]: SETTABLEKS R7 R6 K5; var7["mName"] = var6
+     1054 [-]: NEWCLOSURE R7 P105; 
+     1055 [-]: CAPTURE UPVAL U6; 
+     1056 [-]: CAPTURE VAL R0; 
+     1057 [-]: CAPTURE UPVAL U2; 
+     1058 [-]: SETTABLEKS R7 R6 K6; var7["mCallback"] = var6
+     1059 [-]: SETTABLEKS R6 R5 K203; var6["EntratiLab_Syndicate"] = var5
+     1060 [-]: GETIMPORT R5 2; var5 = _T["TaggedDialog"]
+     1061 [-]: DUPTABLE R6 7; 
+     1062 [-]: LOADK R7 K204; var7 = "/Lotus/Language/EntratiLab/EntratiGeneral/EntratiLabBounties"
+     1063 [-]: SETTABLEKS R7 R6 K5; var7["mName"] = var6
+     1064 [-]: DUPCLOSURE R7 K205; 
+     1065 [-]: CAPTURE UPVAL U2; 
+     1066 [-]: SETTABLEKS R7 R6 K6; var7["mCallback"] = var6
+     1067 [-]: SETTABLEKS R6 R5 K206; var6["EntratiLab_JobBoard"] = var5
+     1068 [-]: DUPCLOSURE R5 K207; 
+     1069 [-]: CAPTURE UPVAL U7; 
+     1070 [-]: GETIMPORT R6 2; var6 = _T["TaggedDialog"]
+     1071 [-]: DUPTABLE R7 93; 
+     1072 [-]: LOADK R8 K208; var8 = "/Lotus/Language/Entrati/FibonacciCustomize"
+     1073 [-]: SETTABLEKS R8 R7 K5; var8["mName"] = var7
+     1074 [-]: NEWCLOSURE R8 P108; 
+     1075 [-]: CAPTURE UPVAL U1; 
+     1076 [-]: CAPTURE VAL R0; 
+     1077 [-]: CAPTURE UPVAL U2; 
+     1078 [-]: SETTABLEKS R8 R7 K6; var8["mCallback"] = var7
+     1079 [-]: SETTABLEKS R5 R7 K30; var5["mCondition"] = var7
+     1080 [-]: SETTABLEKS R7 R6 K209; var7["EntratiLab_FishCust"] = var6
+     1081 [-]: GETIMPORT R6 2; var6 = _T["TaggedDialog"]
+     1082 [-]: DUPTABLE R7 7; 
+     1083 [-]: LOADK R8 K210; var8 = "/Lotus/Language/Entrati/EntratiLabStandingBonuses"
+     1084 [-]: SETTABLEKS R8 R7 K5; var8["mName"] = var7
+     1085 [-]: DUPCLOSURE R8 K211; 
+     1086 [-]: CAPTURE UPVAL U5; 
+     1087 [-]: SETTABLEKS R8 R7 K6; var8["mCallback"] = var7
+     1088 [-]: SETTABLEKS R7 R6 K212; var7["EntratiLab_SyndicateStandingBonuses"] = var6
+     1089 [-]: GETIMPORT R6 2; var6 = _T["TaggedDialog"]
+     1090 [-]: DUPTABLE R7 7; 
+     1091 [-]: LOADK R8 K213; var8 = "/Lotus/Language/Entrati/EntratiLabCommisions"
+     1092 [-]: SETTABLEKS R8 R7 K5; var8["mName"] = var7
+     1093 [-]: NEWCLOSURE R8 P110; 
+     1094 [-]: CAPTURE UPVAL U3; 
+     1095 [-]: CAPTURE VAL R0; 
+     1096 [-]: CAPTURE UPVAL U2; 
+     1097 [-]: SETTABLEKS R8 R7 K6; var8["mCallback"] = var7
+     1098 [-]: SETTABLEKS R7 R6 K214; var7["EntratiLab_Commissions"] = var6
+     1099 [-]: GETIMPORT R6 2; var6 = _T["TaggedDialog"]
+     1100 [-]: DUPTABLE R7 7; 
+     1101 [-]: LOADK R8 K215; var8 = "/Lotus/Language/Entrati/EntratiLabArcaneDistillationShop"
+     1102 [-]: SETTABLEKS R8 R7 K5; var8["mName"] = var7
+     1103 [-]: NEWCLOSURE R8 P111; 
+     1104 [-]: CAPTURE UPVAL U3; 
+     1105 [-]: CAPTURE VAL R0; 
+     1106 [-]: CAPTURE UPVAL U2; 
+     1107 [-]: SETTABLEKS R8 R7 K6; var8["mCallback"] = var7
+     1108 [-]: SETTABLEKS R7 R6 K216; var7["EntratiLab_ArcaneDistillationShop"] = var6
+     1109 [-]: GETIMPORT R6 2; var6 = _T["TaggedDialog"]
+     1110 [-]: DUPTABLE R7 7; 
+     1111 [-]: LOADK R8 K12 ; var8 = "/Lotus/Language/OstronCrafting/Crafting_Favors"
+     1112 [-]: SETTABLEKS R8 R7 K5; var8["mName"] = var7
+     1113 [-]: NEWCLOSURE R8 P112; 
+     1114 [-]: CAPTURE UPVAL U3; 
+     1115 [-]: CAPTURE VAL R0; 
+     1116 [-]: CAPTURE UPVAL U2; 
+     1117 [-]: SETTABLEKS R8 R7 K6; var8["mCallback"] = var7
+     1118 [-]: SETTABLEKS R7 R6 K217; var7["EntratiLab_ShowFavors"] = var6
+     1119 [-]: GETIMPORT R6 2; var6 = _T["TaggedDialog"]
+     1120 [-]: DUPTABLE R7 7; 
+     1121 [-]: LOADK R8 K218; var8 = "/Lotus/Language/EntratiLab/EntratiGeneral/EntratiLabVendor"
+     1122 [-]: SETTABLEKS R8 R7 K5; var8["mName"] = var7
+     1123 [-]: NEWCLOSURE R8 P113; 
+     1124 [-]: CAPTURE UPVAL U3; 
+     1125 [-]: CAPTURE VAL R0; 
+     1126 [-]: CAPTURE UPVAL U2; 
+     1127 [-]: SETTABLEKS R8 R7 K6; var8["mCallback"] = var7
+     1128 [-]: SETTABLEKS R7 R6 K219; var7["EntratiLab_Vendor"] = var6
+     1129 [-]: GETIMPORT R6 2; var6 = _T["TaggedDialog"]
+     1130 [-]: DUPTABLE R7 93; 
+     1131 [-]: LOADK R8 K220; var8 = "/Lotus/Language/Entrati/Bird3Customize"
+     1132 [-]: SETTABLEKS R8 R7 K5; var8["mName"] = var7
+     1133 [-]: NEWCLOSURE R8 P114; 
+     1134 [-]: CAPTURE UPVAL U1; 
+     1135 [-]: CAPTURE VAL R0; 
+     1136 [-]: CAPTURE UPVAL U2; 
+     1137 [-]: SETTABLEKS R8 R7 K6; var8["mCallback"] = var7
+     1138 [-]: SETTABLEKS R5 R7 K30; var5["mCondition"] = var7
+     1139 [-]: SETTABLEKS R7 R6 K221; var7["EntratiLab_BirdCust"] = var6
+     1140 [-]: GETIMPORT R6 2; var6 = _T["TaggedDialog"]
+     1141 [-]: DUPTABLE R7 7; 
+     1142 [-]: LOADK R8 K222; var8 = "/Lotus/Language/Entrati/EntratiLabVoidVault"
+     1143 [-]: SETTABLEKS R8 R7 K5; var8["mName"] = var7
+     1144 [-]: NEWCLOSURE R8 P115; 
+     1145 [-]: CAPTURE UPVAL U1; 
+     1146 [-]: CAPTURE VAL R0; 
+     1147 [-]: CAPTURE UPVAL U2; 
+     1148 [-]: SETTABLEKS R8 R7 K6; var8["mCallback"] = var7
+     1149 [-]: SETTABLEKS R7 R6 K223; var7["EntratiLab_VoidVault"] = var6
+     1150 [-]: GETIMPORT R6 2; var6 = _T["TaggedDialog"]
+     1151 [-]: DUPTABLE R7 7; 
+     1152 [-]: LOADK R8 K224; var8 = "/Lotus/Language/Entrati/TagferPapa"
+     1153 [-]: SETTABLEKS R8 R7 K5; var8["mName"] = var7
+     1154 [-]: DUPCLOSURE R8 K225; 
+     1155 [-]: SETTABLEKS R8 R7 K6; var8["mCallback"] = var7
+     1156 [-]: SETTABLEKS R7 R6 K226; var7["EntratiLab_Papa"] = var6
+     1157 [-]: GETIMPORT R6 2; var6 = _T["TaggedDialog"]
+     1158 [-]: DUPTABLE R7 93; 
+     1159 [-]: LOADK R8 K227; var8 = "/Lotus/Language/Entrati/TagferCustomize"
+     1160 [-]: SETTABLEKS R8 R7 K5; var8["mName"] = var7
+     1161 [-]: NEWCLOSURE R8 P117; 
+     1162 [-]: CAPTURE UPVAL U1; 
+     1163 [-]: CAPTURE VAL R0; 
+     1164 [-]: CAPTURE UPVAL U2; 
+     1165 [-]: SETTABLEKS R8 R7 K6; var8["mCallback"] = var7
+     1166 [-]: SETTABLEKS R5 R7 K30; var5["mCondition"] = var7
+     1167 [-]: SETTABLEKS R7 R6 K228; var7["EntratiLab_TagferCust"] = var6
+     1168 [-]: GETIMPORT R6 2; var6 = _T["TaggedDialog"]
+     1169 [-]: DUPTABLE R7 7; 
+     1170 [-]: LOADK R8 K229; var8 = "/Lotus/Language/EntratiLab/EntratiGeneral/JahuGargoyleContribute"
+     1171 [-]: SETTABLEKS R8 R7 K5; var8["mName"] = var7
+     1172 [-]: DUPCLOSURE R8 K230; 
+     1173 [-]: SETTABLEKS R8 R7 K6; var8["mCallback"] = var7
+     1174 [-]: SETTABLEKS R7 R6 K231; var7["JahuGargoyle_Contribute"] = var6
+     1175 [-]: GETIMPORT R6 2; var6 = _T["TaggedDialog"]
+     1176 [-]: DUPTABLE R7 52; 
+     1177 [-]: LOADK R8 K196; var8 = "/Lotus/Language/Duviri/BrowseWares"
+     1178 [-]: SETTABLEKS R8 R7 K5; var8["mName"] = var7
+     1179 [-]: LOADB R8 1   ; var8 = true
+     1180 [-]: SETTABLEKS R8 R7 K51; var8["mAlwaysShow"] = var7
+     1181 [-]: NEWCLOSURE R8 P119; 
+     1182 [-]: CAPTURE UPVAL U3; 
+     1183 [-]: CAPTURE VAL R0; 
+     1184 [-]: CAPTURE UPVAL U2; 
+     1185 [-]: SETTABLEKS R8 R7 K6; var8["mCallback"] = var7
+     1186 [-]: SETTABLEKS R7 R6 K232; var7["JahuGargoyle_BrowseWares"] = var6
+     1187 [-]: DUPCLOSURE R6 K233; 
+     1188 [-]: DUPCLOSURE R7 K234; 
+     1189 [-]: GETIMPORT R8 2; var8 = _T["TaggedDialog"]
+     1190 [-]: DUPTABLE R9 31; 
+     1191 [-]: LOADK R10 K235; var10 = "/Lotus/Language/Veilbreaker/KahlMissionBrief"
+     1192 [-]: SETTABLEKS R10 R9 K5; var10["mName"] = var9
+     1193 [-]: SETTABLEKS R6 R9 K30; var6["mCondition"] = var9
+     1194 [-]: NEWCLOSURE R10 P122; 
+     1195 [-]: CAPTURE UPVAL U1; 
+     1196 [-]: CAPTURE VAL R0; 
+     1197 [-]: CAPTURE UPVAL U2; 
+     1198 [-]: SETTABLEKS R10 R9 K6; var10["mCallback"] = var9
+     1199 [-]: SETTABLEKS R9 R8 K236; var9["Kahl_MissionBrief"] = var8
+     1200 [-]: GETIMPORT R8 2; var8 = _T["TaggedDialog"]
+     1201 [-]: DUPTABLE R9 7; 
+     1202 [-]: LOADK R10 K237; var10 = "/Lotus/Language/Veilbreaker/KahlCustomizations"
+     1203 [-]: SETTABLEKS R10 R9 K5; var10["mName"] = var9
+     1204 [-]: NEWCLOSURE R10 P123; 
+     1205 [-]: CAPTURE UPVAL U1; 
+     1206 [-]: CAPTURE VAL R0; 
+     1207 [-]: CAPTURE UPVAL U2; 
+     1208 [-]: SETTABLEKS R10 R9 K6; var10["mCallback"] = var9
+     1209 [-]: SETTABLEKS R9 R8 K238; var9["Kahl_Customizations"] = var8
+     1210 [-]: GETIMPORT R8 2; var8 = _T["TaggedDialog"]
+     1211 [-]: DUPTABLE R9 31; 
+     1212 [-]: LOADK R10 K239; var10 = "/Lotus/Language/Syndicates/RankUp"
+     1213 [-]: SETTABLEKS R10 R9 K5; var10["mName"] = var9
+     1214 [-]: DUPCLOSURE R10 K240; 
+     1215 [-]: CAPTURE VAL R6; 
+     1216 [-]: SETTABLEKS R10 R9 K30; var10["mCondition"] = var9
+     1217 [-]: DUPCLOSURE R10 K241; 
+     1218 [-]: CAPTURE UPVAL U9; 
+     1219 [-]: CAPTURE VAL R7; 
+     1220 [-]: CAPTURE UPVAL U10; 
+     1221 [-]: SETTABLEKS R10 R9 K6; var10["mCallback"] = var9
+     1222 [-]: SETTABLEKS R9 R8 K242; var9["Kahl_RankUp"] = var8
+     1223 [-]: GETIMPORT R8 2; var8 = _T["TaggedDialog"]
+     1224 [-]: DUPTABLE R9 52; 
+     1225 [-]: LOADK R10 K34; var10 = "/Lotus/Language/SolarisVenus/BrowseWares"
+     1226 [-]: SETTABLEKS R10 R9 K5; var10["mName"] = var9
+     1227 [-]: LOADB R10 1  ; var10 = true
+     1228 [-]: SETTABLEKS R10 R9 K51; var10["mAlwaysShow"] = var9
+     1229 [-]: NEWCLOSURE R10 P126; 
+     1230 [-]: CAPTURE UPVAL U3; 
+     1231 [-]: CAPTURE VAL R0; 
+     1232 [-]: CAPTURE UPVAL U2; 
+     1233 [-]: SETTABLEKS R10 R9 K6; var10["mCallback"] = var9
+     1234 [-]: SETTABLEKS R9 R8 K243; var9["Chipper_VendorItems"] = var8
+     1235 [-]: GETIMPORT R8 2; var8 = _T["TaggedDialog"]
+     1236 [-]: DUPTABLE R9 52; 
+     1237 [-]: LOADK R10 K244; var10 = "/Lotus/Language/Railjack/ModularAWCrafting_CraftTag"
+     1238 [-]: SETTABLEKS R10 R9 K5; var10["mName"] = var9
+     1239 [-]: LOADB R10 1  ; var10 = true
+     1240 [-]: SETTABLEKS R10 R9 K51; var10["mAlwaysShow"] = var9
+     1241 [-]: NEWCLOSURE R10 P127; 
+     1242 [-]: CAPTURE UPVAL U1; 
+     1243 [-]: CAPTURE VAL R0; 
+     1244 [-]: CAPTURE UPVAL U2; 
+     1245 [-]: SETTABLEKS R10 R9 K6; var10["mCallback"] = var9
+     1246 [-]: SETTABLEKS R9 R8 K245; var9["AWVendor_GoToCrafting"] = var8
+     1247 [-]: GETIMPORT R8 2; var8 = _T["TaggedDialog"]
+     1248 [-]: DUPTABLE R9 52; 
+     1249 [-]: LOADK R10 K12; var10 = "/Lotus/Language/OstronCrafting/Crafting_Favors"
+     1250 [-]: SETTABLEKS R10 R9 K5; var10["mName"] = var9
+     1251 [-]: LOADB R10 1  ; var10 = true
+     1252 [-]: SETTABLEKS R10 R9 K51; var10["mAlwaysShow"] = var9
+     1253 [-]: NEWCLOSURE R10 P128; 
+     1254 [-]: CAPTURE UPVAL U3; 
+     1255 [-]: CAPTURE VAL R0; 
+     1256 [-]: CAPTURE UPVAL U2; 
+     1257 [-]: SETTABLEKS R10 R9 K6; var10["mCallback"] = var9
+     1258 [-]: SETTABLEKS R9 R8 K246; var9["AWVendor_ShowFavors"] = var8
+     1259 [-]: GETIMPORT R8 248; var8 = 0x76EA806B
+     1260 [-]: LOADN R10 0  ; var10 = 0
+     1261 [-]: NAMECALL R8 R8 K249; var9 = var8; var8 = var8[0x3F3AE64C]
+     1262 [-]: CALL R8 3 2  ; var8 = var8(var9, var10)
+     1263 [-]: FASTCALL1 64 R8 L7; 
+     1264 [-]: MOVE R10 R8  ; var10 = var8
+     1265 [-]: GETIMPORT R9 71; var9 = 0x7B998233
+     1266 [-]: CALL R9 2 2  ; var9 = var9(var10)
+L 7: 1267 [-]: JUMPIFNOT R9 L8; goto L8 if not var9
+     1268 [-]: RETURN R0 0  ; 
+L 8: 1269 [-]: NAMECALL R9 R8 K250; var10 = var8; var9 = var8[0x80563238]
+     1270 [-]: CALL R9 2 2  ; var9 = var9(var10)
+     1271 [-]: FASTCALL1 64 R9 L9; 
+     1272 [-]: MOVE R11 R9  ; var11 = var9
+     1273 [-]: GETIMPORT R10 71; var10 = 0x7B998233
+     1274 [-]: CALL R10 2 2 ; var10 = var10(var11)
+L 9: 1275 [-]: JUMPIFNOT R10 L10; goto L10 if not var10
+     1276 [-]: RETURN R0 0  ; 
+L10: 1277 [-]: NAMECALL R11 R9 K251; var12 = var9; var11 = var9[0x69727E0B]
+     1278 [-]: CALL R11 2 2 ; var11 = var11(var12)
+     1279 [-]: GETTABLEKS R10 R11 K252; var10 = var11["mGoals"]
+     1280 [-]: LOADN R13 1  ; var13 = 1
+     1281 [-]: LENGTH R11 R10; var11 = #var10
+     1282 [-]: LOADN R12 1  ; var12 = 1
+     1283 [-]: FORNPREP R11 L16; nforprep start - [escape at L16] -- var11 = iterator
+L11: 1284 [-]: GETTABLE R14 R10 R13; var14 = var10[var13]
+     1285 [-]: GETTABLEKS R15 R14 K253; var15 = var14["mJobAffiliationTag"]
+     1286 [-]: GETUPVAL R17 2; var17 = upvalues[2]
+     1287 [-]: GETTABLEKS R16 R17 K254; var16 = var17["eventSyndicateTag"]
+     1288 [-]: JUMPIFNOTEQ R15 R16 L13; goto L13 if var15 ~= var-351400129
+     1289 [-]: GETTABLEKS R15 R14 K255; var15 = var14["mExpiry"]
+     1290 [-]: GETTABLEKS R16 R14 K256; var16 = var14["mActivation"]
+     1291 [-]: NAMECALL R17 R15 K257; var18 = var15; var17 = var15[0x56C01834]
+     1292 [-]: CALL R17 2 2 ; var17 = var17(var18)
+     1293 [-]: JUMPIFNOT R17 L12; goto L12 if not var17
+     1294 [-]: NAMECALL R17 R16 K257; var18 = var16; var17 = var16[0x56C01834]
+     1295 [-]: CALL R17 2 2 ; var17 = var17(var18)
+     1296 [-]: JUMPIFNOT R17 L12; goto L12 if not var17
+     1297 [-]: GETIMPORT R17 260; var17 = 0x34291F5C[0x397B920F]
+     1298 [-]: MOVE R18 R16 ; var18 = var16
+     1299 [-]: CALL R17 2 2 ; var17 = var17(var18)
+     1300 [-]: LOADN R18 0  ; var18 = 0
+     1301 [-]: JUMPIFNOTLE R17 R18 L12; goto L12 if var17 > var17043745
+     1302 [-]: GETIMPORT R17 260; var17 = 0x34291F5C[0x397B920F]
+     1303 [-]: MOVE R18 R15 ; var18 = var15
+     1304 [-]: CALL R17 2 2 ; var17 = var17(var18)
+     1305 [-]: LOADN R18 -3600; var18 = -3600
+     1306 [-]: JUMPIFNOTLT R18 R17 L12; goto L12 if var18 >= var-351399617
+     1307 [-]: GETTABLEKS R17 R14 K255; var17 = var14["mExpiry"]
+     1308 [-]: GETTABLEKS R15 R17 K261; var15 = var17["sec"]
+     1309 [-]: GETIMPORT R17 2; var17 = _T["TaggedDialog"]
+     1310 [-]: DUPTABLE R18 93; 
+     1311 [-]: LOADK R19 K262; var19 = "/Lotus/Language/Menu/EventSyndicate"
+     1312 [-]: SETTABLEKS R19 R18 K5; var19["mName"] = var18
+     1313 [-]: NEWCLOSURE R19 P129; 
+     1314 [-]: CAPTURE UPVAL U6; 
+     1315 [-]: CAPTURE VAL R0; 
+     1316 [-]: CAPTURE UPVAL U2; 
+     1317 [-]: CAPTURE REF R15; 
+     1318 [-]: SETTABLEKS R19 R18 K6; var19["mCallback"] = var18
+     1319 [-]: NEWCLOSURE R19 P130; 
+     1320 [-]: CAPTURE REF R15; 
+     1321 [-]: SETTABLEKS R19 R18 K30; var19["mCondition"] = var18
+     1322 [-]: SETTABLEKS R18 R17 K263; var18["MaskSeller_EventFavors"] = var17
+     1323 [-]: CLOSEUPVALS R15; 
+     1324 [-]: RETURN R0 0  ; 
+L12: 1325 [-]: CLOSEUPVALS R15; 
+     1326 [-]: JUMP L15     ; goto L15
+L13: 1327 [-]: GETTABLEKS R15 R14 K264; var15 = var14["mTag"]
+     1328 [-]: GETIMPORT R16 266; var16 = 0x0469F296
+     1329 [-]: LOADK R17 K267; var17 = "WaterFight"
+     1330 [-]: CALL R16 2 2 ; var16 = var16(var17)
+     1331 [-]: JUMPIFNOTEQ R15 R16 L15; goto L15 if var15 ~= var-351400129
+     1332 [-]: GETTABLEKS R15 R14 K255; var15 = var14["mExpiry"]
+     1333 [-]: GETTABLEKS R16 R14 K256; var16 = var14["mActivation"]
+     1334 [-]: NAMECALL R17 R15 K257; var18 = var15; var17 = var15[0x56C01834]
+     1335 [-]: CALL R17 2 2 ; var17 = var17(var18)
+     1336 [-]: JUMPIFNOT R17 L14; goto L14 if not var17
+     1337 [-]: NAMECALL R17 R16 K257; var18 = var16; var17 = var16[0x56C01834]
+     1338 [-]: CALL R17 2 2 ; var17 = var17(var18)
+     1339 [-]: JUMPIFNOT R17 L14; goto L14 if not var17
+     1340 [-]: GETIMPORT R17 260; var17 = 0x34291F5C[0x397B920F]
+     1341 [-]: MOVE R18 R16 ; var18 = var16
+     1342 [-]: CALL R17 2 2 ; var17 = var17(var18)
+     1343 [-]: LOADN R18 0  ; var18 = 0
+     1344 [-]: JUMPIFNOTLE R17 R18 L14; goto L14 if var17 > var17043745
+     1345 [-]: GETIMPORT R17 260; var17 = 0x34291F5C[0x397B920F]
+     1346 [-]: MOVE R18 R15 ; var18 = var15
+     1347 [-]: CALL R17 2 2 ; var17 = var17(var18)
+     1348 [-]: LOADN R18 -3600; var18 = -3600
+     1349 [-]: JUMPIFNOTLT R18 R17 L14; goto L14 if var18 >= var-351399617
+     1350 [-]: GETTABLEKS R17 R14 K255; var17 = var14["mExpiry"]
+     1351 [-]: GETTABLEKS R15 R17 K261; var15 = var17["sec"]
+     1352 [-]: GETIMPORT R17 2; var17 = _T["TaggedDialog"]
+     1353 [-]: DUPTABLE R18 93; 
+     1354 [-]: LOADK R19 K268; var19 = "/Lotus/Language/Menu/WaterFightWares"
+     1355 [-]: SETTABLEKS R19 R18 K5; var19["mName"] = var18
+     1356 [-]: NEWCLOSURE R19 P131; 
+     1357 [-]: CAPTURE UPVAL U3; 
+     1358 [-]: CAPTURE VAL R0; 
+     1359 [-]: CAPTURE UPVAL U2; 
+     1360 [-]: SETTABLEKS R19 R18 K6; var19["mCallback"] = var18
+     1361 [-]: NEWCLOSURE R19 P132; 
+     1362 [-]: CAPTURE REF R15; 
+     1363 [-]: SETTABLEKS R19 R18 K30; var19["mCondition"] = var18
+     1364 [-]: SETTABLEKS R18 R17 K269; var18["MaskSeller_WaterFightVendor"] = var17
+     1365 [-]: CLOSEUPVALS R15; 
+     1366 [-]: RETURN R0 0  ; 
+L14: 1367 [-]: CLOSEUPVALS R15; 
+L15: 1368 [-]: FORNLOOP R11 L11; nforloop end - iterate + goto L11
+L16: 1369 [-]: RETURN R0 0  ; 
 
 
 ; Name:            
-; Defined at line: 1974
+; Defined at line: 2201
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2135,7 +2387,7 @@ L 0:   5 [-]: GETIMPORT R1 1; var1 = 0x3D106989
 
 
 ; Name:            
-; Defined at line: 1982
+; Defined at line: 2209
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2145,7 +2397,7 @@ L 0:   5 [-]: GETIMPORT R1 1; var1 = 0x3D106989
        1 [-]: LOADN R3 0   ; var3 = 0
        2 [-]: NAMECALL R1 R1 K2; var2 = var1; var1 = var1[0x3F3AE64C]
        3 [-]: CALL R1 3 2  ; var1 = var1(var2, var3)
-       4 [-]: FASTCALL1 62 R1 L0; 
+       4 [-]: FASTCALL1 64 R1 L0; 
        5 [-]: MOVE R3 R1   ; var3 = var1
        6 [-]: GETIMPORT R2 4; var2 = 0x7B998233
        7 [-]: CALL R2 2 2  ; var2 = var2(var3)
@@ -2153,7 +2405,7 @@ L 0:   8 [-]: JUMPIFNOT R2 L1; goto L1 if not var2
        9 [-]: RETURN R0 0  ; 
 L 1:  10 [-]: NAMECALL R2 R1 K5; var3 = var1; var2 = var1[0x80563238]
       11 [-]: CALL R2 2 2  ; var2 = var2(var3)
-      12 [-]: FASTCALL1 62 R2 L2; 
+      12 [-]: FASTCALL1 64 R2 L2; 
       13 [-]: MOVE R4 R2   ; var4 = var2
       14 [-]: GETIMPORT R3 4; var3 = 0x7B998233
       15 [-]: CALL R3 2 2  ; var3 = var3(var4)
@@ -2162,14 +2414,14 @@ L 2:  16 [-]: JUMPIFNOT R3 L3; goto L3 if not var3
 L 3:  18 [-]: NAMECALL R3 R2 K6; var4 = var2; var3 = var2[0xD8159207]
       19 [-]: CALL R3 2 2  ; var3 = var3(var4)
       20 [-]: LOADN R4 3   ; var4 = 3
-      21 [-]: JUMPIFNOTLE R4 R3 L6; goto L6 if var4 > var525390
+      21 [-]: JUMPIFNOTLE R4 R3 L6; goto L6 if var4 > var525345
       22 [-]: GETIMPORT R4 8; var4 = 0x89326C93
       23 [-]: GETIMPORT R6 10; var6 = 0x0469F296
       24 [-]: LOADK R7 K11 ; var7 = "OperatorAmpAction"
       25 [-]: CALL R6 2 0  ; var6, ... = var6(var7)
       26 [-]: NAMECALL R4 R4 K12; var5 = var4; var4 = var4[0x46A0EBF5]
       27 [-]: CALL R4 0 2  ; var4 = var4(var5, ...)
-      28 [-]: FASTCALL1 62 R4 L4; 
+      28 [-]: FASTCALL1 64 R4 L4; 
       29 [-]: MOVE R6 R4   ; var6 = var4
       30 [-]: GETIMPORT R5 4; var5 = 0x7B998233
       31 [-]: CALL R5 2 2  ; var5 = var5(var6)
@@ -2188,7 +2440,7 @@ L 6:  38 [-]: LOADK R6 K15 ; var6 = "OnOperatorUpgraded"
       44 [-]: CALL R6 2 0  ; var6, ... = var6(var7)
       45 [-]: NAMECALL R4 R4 K12; var5 = var4; var4 = var4[0x46A0EBF5]
       46 [-]: CALL R4 0 2  ; var4 = var4(var5, ...)
-      47 [-]: FASTCALL1 62 R4 L7; 
+      47 [-]: FASTCALL1 64 R4 L7; 
       48 [-]: MOVE R6 R4   ; var6 = var4
       49 [-]: GETIMPORT R5 4; var5 = 0x7B998233
       50 [-]: CALL R5 2 2  ; var5 = var5(var6)
@@ -2212,7 +2464,7 @@ L 9:  65 [-]: GETTABLE R9 R5 R8; var9 = var5[var8]
       68 [-]: NAMECALL R9 R9 K24; var10 = var9; var9 = var9[0xEADF35A7]
       69 [-]: CALL R9 4 1  ; var9(var10, var11, var12)
       70 [-]: FORNLOOP R6 L9; nforloop end - iterate + goto L9
-L10:  71 [-]: FASTCALL1 62 R4 L11; 
+L10:  71 [-]: FASTCALL1 64 R4 L11; 
       72 [-]: MOVE R7 R4   ; var7 = var4
       73 [-]: GETIMPORT R6 4; var6 = 0x7B998233
       74 [-]: CALL R6 2 2  ; var6 = var6(var7)
@@ -2232,7 +2484,7 @@ L12:  86 [-]: LOADN R8 1   ; var8 = 1
       88 [-]: LOADN R7 1   ; var7 = 1
       89 [-]: FORNPREP R6 L16; nforprep start - [escape at L16] -- var6 = iterator
 L13:  90 [-]: GETTABLE R10 R5 R8; var10 = var5[var8]
-      91 [-]: FASTCALL1 62 R10 L14; 
+      91 [-]: FASTCALL1 64 R10 L14; 
       92 [-]: GETIMPORT R9 4; var9 = 0x7B998233
       93 [-]: CALL R9 2 2  ; var9 = var9(var10)
 L14:  94 [-]: JUMPIF R9 L15; goto L15 if var9
@@ -2245,7 +2497,7 @@ L15: 100 [-]: FORNLOOP R6 L13; nforloop end - iterate + goto L13
 L16: 101 [-]: GETIMPORT R6 8; var6 = 0x89326C93
      102 [-]: NAMECALL R6 R6 K29; var7 = var6; var6 = var6[0x78298275]
      103 [-]: CALL R6 2 2  ; var6 = var6(var7)
-     104 [-]: FASTCALL1 62 R6 L17; 
+     104 [-]: FASTCALL1 64 R6 L17; 
      105 [-]: MOVE R8 R6   ; var8 = var6
      106 [-]: GETIMPORT R7 4; var7 = 0x7B998233
      107 [-]: CALL R7 2 2  ; var7 = var7(var8)
@@ -2254,7 +2506,7 @@ L17: 108 [-]: JUMPIF R7 L19; goto L19 if var7
      110 [-]: LOADB R10 1  ; var10 = true
      111 [-]: NAMECALL R7 R6 K32; var8 = var6; var7 = var6[0x511D26B8]
      112 [-]: CALL R7 4 2  ; var7 = var7(var8, var9, var10)
-     113 [-]: FASTCALL1 62 R7 L18; 
+     113 [-]: FASTCALL1 64 R7 L18; 
      114 [-]: MOVE R9 R7   ; var9 = var7
      115 [-]: GETIMPORT R8 4; var8 = 0x7B998233
      116 [-]: CALL R8 2 2  ; var8 = var8(var9)

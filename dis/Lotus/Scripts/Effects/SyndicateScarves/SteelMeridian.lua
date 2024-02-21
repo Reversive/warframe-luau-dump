@@ -17,7 +17,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  13
 
-       0 [-]: FASTCALL1 62 R1 L0; 
+       0 [-]: FASTCALL1 64 R1 L0; 
        1 [-]: MOVE R4 R1   ; var4 = var1
        2 [-]: GETIMPORT R3 1; var3 = 0x7B998233
        3 [-]: CALL R3 2 2  ; var3 = var3(var4)
@@ -25,7 +25,7 @@ L 0:   4 [-]: JUMPIFNOT R3 L1; goto L1 if not var3
        5 [-]: RETURN R0 0  ; 
 L 1:   6 [-]: NAMECALL R3 R1 K2; var4 = var1; var3 = var1[0xBB610E5B]
        7 [-]: CALL R3 2 2  ; var3 = var3(var4)
-       8 [-]: FASTCALL1 62 R3 L2; 
+       8 [-]: FASTCALL1 64 R3 L2; 
        9 [-]: MOVE R5 R3   ; var5 = var3
       10 [-]: GETIMPORT R4 1; var4 = 0x7B998233
       11 [-]: CALL R4 2 2  ; var4 = var4(var5)
@@ -33,7 +33,7 @@ L 2:  12 [-]: JUMPIFNOT R4 L3; goto L3 if not var4
       13 [-]: RETURN R0 0  ; 
 L 3:  14 [-]: NAMECALL R4 R3 K3; var5 = var3; var4 = var3[0x5E651723]
       15 [-]: CALL R4 2 2  ; var4 = var4(var5)
-      16 [-]: FASTCALL1 62 R4 L4; 
+      16 [-]: FASTCALL1 64 R4 L4; 
       17 [-]: MOVE R6 R4   ; var6 = var4
       18 [-]: GETIMPORT R5 1; var5 = 0x7B998233
       19 [-]: CALL R5 2 2  ; var5 = var5(var6)
@@ -85,7 +85,7 @@ L 9:  53 [-]: GETIMPORT R9 7; var9 = _T["MeridianEffects"]
       65 [-]: ADD R9 R10 R7; var9 = var10 + var7
       66 [-]: SETTABLEKS R9 R8 K10; var9["Health"] = var8
       67 [-]: LOADN R8 0   ; var8 = 0
-      68 [-]: JUMPIFNOTLT R8 R6 L10; goto L10 if var8 >= var526128
+      68 [-]: JUMPIFNOTLT R8 R6 L10; goto L10 if var8 >= var526134
       69 [-]: JUMPXEQKN R7 K18 L10 NOT; 
       70 [-]: GETIMPORT R9 7; var9 = _T["MeridianEffects"]
       71 [-]: GETTABLE R8 R9 R5; var8 = var9[var5]
@@ -94,7 +94,7 @@ L 9:  53 [-]: GETIMPORT R9 7; var9 = _T["MeridianEffects"]
       74 [-]: JUMP L11     ; goto L11
 L10:  75 [-]: JUMPXEQKN R6 K18 L11 NOT; 
       76 [-]: LOADN R8 0   ; var8 = 0
-      77 [-]: JUMPIFNOTLT R8 R7 L11; goto L11 if var8 >= var461134
+      77 [-]: JUMPIFNOTLT R8 R7 L11; goto L11 if var8 >= var461089
       78 [-]: GETIMPORT R9 7; var9 = _T["MeridianEffects"]
       79 [-]: GETTABLE R8 R9 R5; var8 = var9[var5]
       80 [-]: LOADN R9 1   ; var9 = 1

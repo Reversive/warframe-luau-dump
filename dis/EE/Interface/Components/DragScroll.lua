@@ -75,9 +75,9 @@
       47 [-]: SETTABLEKS R8 R7 K5; var8["y"] = var7
       48 [-]: SETTABLEKS R7 R6 K13; var7["mDragSpeed"] = var6
       49 [-]: DUPTABLE R7 6; 
-      50 [-]: LOADK R8 K14 ; var8 = 0.14999999999999999
+      50 [-]: LOADK R8 K14 ; var8 = 0.15000000596046448
       51 [-]: SETTABLEKS R8 R7 K4; var8["x"] = var7
-      52 [-]: LOADK R8 K14 ; var8 = 0.14999999999999999
+      52 [-]: LOADK R8 K14 ; var8 = 0.15000000596046448
       53 [-]: SETTABLEKS R8 R7 K5; var8["y"] = var7
       54 [-]: SETTABLEKS R7 R6 K15; var7["mLeeway"] = var6
       55 [-]: DUPTABLE R7 6; 

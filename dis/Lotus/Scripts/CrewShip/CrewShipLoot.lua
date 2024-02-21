@@ -28,7 +28,7 @@
        4 [-]: JUMPIFNOT R0 L0; goto L0 if not var0
        5 [-]: RETURN R0 0  ; 
 L 0:   6 [-]: GETIMPORT R1 6; var1 = 0x89326C93
-       7 [-]: FASTCALL1 62 R1 L1; 
+       7 [-]: FASTCALL1 64 R1 L1; 
        8 [-]: GETIMPORT R0 8; var0 = 0x7B998233
        9 [-]: CALL R0 2 2  ; var0 = var0(var1)
 L 1:  10 [-]: JUMPIFNOT R0 L2; goto L2 if not var0
@@ -56,7 +56,7 @@ L 3:  26 [-]: MOVE R0 R1   ; var0 = var1
 L 4:  32 [-]: GETIMPORT R5 20; var5 = 0x5BCED4C4[0x3630E649]
       33 [-]: CALL R5 1 2  ; var5 = var5()
       34 [-]: GETIMPORT R6 22; var6 = 0x56FF8D0F
-      35 [-]: JUMPIFNOTLE R5 R6 L5; goto L5 if var5 > var385941800
+      35 [-]: JUMPIFNOTLE R5 R6 L5; goto L5 if var5 > var385941768
       36 [-]: ADDK R1 R1 K23; var1 = var1 + 1
 L 5:  37 [-]: FORNLOOP R2 L4; nforloop end - iterate + goto L4
 L 6:  38 [-]: LOADN R2 0   ; var2 = 0
@@ -67,7 +67,7 @@ L 6:  38 [-]: LOADN R2 0   ; var2 = 0
 L 7:  43 [-]: GETIMPORT R6 20; var6 = 0x5BCED4C4[0x3630E649]
       44 [-]: CALL R6 1 2  ; var6 = var6()
       45 [-]: GETIMPORT R7 27; var7 = 0xF78F5708
-      46 [-]: JUMPIFNOTLE R6 R7 L8; goto L8 if var6 > var386007592
+      46 [-]: JUMPIFNOTLE R6 R7 L8; goto L8 if var6 > var386007560
       47 [-]: ADDK R2 R2 K23; var2 = var2 + 1
 L 8:  48 [-]: FORNLOOP R3 L7; nforloop end - iterate + goto L7
 L 9:  49 [-]: LOADN R3 0   ; var3 = 0
@@ -78,7 +78,7 @@ L 9:  49 [-]: LOADN R3 0   ; var3 = 0
 L10:  54 [-]: GETIMPORT R7 20; var7 = 0x5BCED4C4[0x3630E649]
       55 [-]: CALL R7 1 2  ; var7 = var7()
       56 [-]: GETIMPORT R8 31; var8 = 0x2E8EE40E
-      57 [-]: JUMPIFNOTLE R7 R8 L11; goto L11 if var7 > var386073384
+      57 [-]: JUMPIFNOTLE R7 R8 L11; goto L11 if var7 > var386073352
       58 [-]: ADDK R3 R3 K23; var3 = var3 + 1
 L11:  59 [-]: FORNLOOP R4 L10; nforloop end - iterate + goto L10
 L12:  60 [-]: LOADN R4 0   ; var4 = 0
@@ -89,7 +89,7 @@ L12:  60 [-]: LOADN R4 0   ; var4 = 0
 L13:  65 [-]: GETIMPORT R8 20; var8 = 0x5BCED4C4[0x3630E649]
       66 [-]: CALL R8 1 2  ; var8 = var8()
       67 [-]: GETIMPORT R9 35; var9 = 0x87BB9D2C
-      68 [-]: JUMPIFNOTLE R8 R9 L14; goto L14 if var8 > var386139176
+      68 [-]: JUMPIFNOTLE R8 R9 L14; goto L14 if var8 > var386139144
       69 [-]: ADDK R4 R4 K23; var4 = var4 + 1
 L14:  70 [-]: FORNLOOP R5 L13; nforloop end - iterate + goto L13
 L15:  71 [-]: GETIMPORT R5 37; var5 = 0xC8802016

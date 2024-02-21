@@ -21,7 +21,7 @@
 ; Max Stack Size:  10
 
        0 [-]: GETIMPORT R2 1; var2 = 0xBE190284
-       1 [-]: FASTCALL1 62 R2 L0; 
+       1 [-]: FASTCALL1 64 R2 L0; 
        2 [-]: GETIMPORT R1 3; var1 = 0x7B998233
        3 [-]: CALL R1 2 2  ; var1 = var1(var2)
 L 0:   4 [-]: JUMPIF R1 L1 ; goto L1 if var1
@@ -40,11 +40,11 @@ L 1:  12 [-]: GETIMPORT R3 9; var3 = 0xED1834FF
       17 [-]: LOADN R1 1   ; var1 = 1
       18 [-]: LOADN R2 1   ; var2 = 1
 L 2:  19 [-]: GETUPVAL R4 0; var4 = upvalues[0]
-      20 [-]: FASTCALL1 62 R4 L3; 
+      20 [-]: FASTCALL1 64 R4 L3; 
       21 [-]: GETIMPORT R3 3; var3 = 0x7B998233
       22 [-]: CALL R3 2 2  ; var3 = var3(var4)
 L 3:  23 [-]: JUMPIF R3 L6 ; goto L6 if var3
-      24 [-]: FASTCALL1 62 R0 L4; 
+      24 [-]: FASTCALL1 64 R0 L4; 
       25 [-]: MOVE R4 R0   ; var4 = var0
       26 [-]: GETIMPORT R3 3; var3 = 0x7B998233
       27 [-]: CALL R3 2 2  ; var3 = var3(var4)
@@ -88,7 +88,7 @@ L 5:  36 [-]: SETTABLEKS R4 R3 K12; var4["y"] = var3
       65 [-]: CALL R6 2 1  ; var6(var7)
       66 [-]: JUMPBACK L2  ; goto L2
 L 6:  67 [-]: GETUPVAL R4 0; var4 = upvalues[0]
-      68 [-]: FASTCALL1 62 R4 L7; 
+      68 [-]: FASTCALL1 64 R4 L7; 
       69 [-]: GETIMPORT R3 3; var3 = 0x7B998233
       70 [-]: CALL R3 2 2  ; var3 = var3(var4)
 L 7:  71 [-]: JUMPIF R3 L8 ; goto L8 if var3

@@ -26,7 +26,7 @@
        4 [-]: GETTABLEKS R3 R2 K2; var3 = var2["visible"]
        5 [-]: JUMPIFNOT R3 L1; goto L1 if not var3
        6 [-]: GETTABLEKS R4 R2 K3; var4 = var2["avatar"]
-       7 [-]: FASTCALL1 62 R4 L0; 
+       7 [-]: FASTCALL1 64 R4 L0; 
        8 [-]: GETIMPORT R3 5; var3 = 0x7B998233
        9 [-]: CALL R3 2 2  ; var3 = var3(var4)
 L 0:  10 [-]: JUMPIF R3 L1 ; goto L1 if var3
@@ -36,7 +36,7 @@ L 0:  10 [-]: JUMPIF R3 L1 ; goto L1 if var3
       14 [-]: JUMPIF R3 L1 ; goto L1 if var3
       15 [-]: GETTABLEKS R3 R2 K7; var3 = var2["distanceToTarget"]
       16 [-]: LOADK R4 K8  ; var4 = 7.5
-      17 [-]: JUMPIFNOTLT R3 R4 L1; goto L1 if var3 >= var1661076252
+      17 [-]: JUMPIFNOTLT R3 R4 L1; goto L1 if var3 >= var1661076287
       18 [-]: GETTABLEKS R3 R2 K3; var3 = var2["avatar"]
       19 [-]: NAMECALL R3 R3 K9; var4 = var3; var3 = var3[0xD1586535]
       20 [-]: CALL R3 2 2  ; var3 = var3(var4)
@@ -44,12 +44,12 @@ L 0:  10 [-]: JUMPIF R3 L1 ; goto L1 if var3
       22 [-]: CALL R4 2 2  ; var4 = var4(var5)
       23 [-]: GETTABLEKS R5 R3 K11; var5 = var3["y"]
       24 [-]: GETTABLEKS R6 R4 K11; var6 = var4["y"]
-      25 [-]: JUMPIFNOTLT R6 R5 L1; goto L1 if var6 >= var-1744632292
+      25 [-]: JUMPIFNOTLT R6 R5 L1; goto L1 if var6 >= var-1744632257
       26 [-]: GETTABLEKS R6 R3 K11; var6 = var3["y"]
       27 [-]: GETTABLEKS R7 R4 K11; var7 = var4["y"]
       28 [-]: SUB R5 R6 R7 ; var5 = var6 - var7
       29 [-]: LOADN R6 2   ; var6 = 2
-      30 [-]: JUMPIFNOTLT R6 R5 L1; goto L1 if var6 >= var1661077532
+      30 [-]: JUMPIFNOTLT R6 R5 L1; goto L1 if var6 >= var1661077567
       31 [-]: GETTABLEKS R8 R2 K3; var8 = var2["avatar"]
       32 [-]: NAMECALL R6 R0 K12; var7 = var0; var6 = var0[0x48D05257]
       33 [-]: CALL R6 3 1  ; var6(var7, var8)
@@ -94,7 +94,7 @@ L 1:  36 [-]: LOADN R3 0   ; var3 = 0
       25 [-]: MOVE R6 R4   ; var6 = var4
       26 [-]: NAMECALL R7 R2 K8; var8 = var2; var7 = var2[0xF6EBD926]
       27 [-]: CALL R7 2 2  ; var7 = var7(var8)
-      28 [-]: LOADK R8 K11 ; var8 = 0.98999999999999999
+      28 [-]: LOADK R8 K11 ; var8 = 0.99000000953674316
       29 [-]: CALL R5 4 2  ; var5 = var5(var6, var7, var8)
       30 [-]: GETIMPORT R8 1; var8 = 0x520E413D
       31 [-]: LOADB R9 0   ; var9 = false

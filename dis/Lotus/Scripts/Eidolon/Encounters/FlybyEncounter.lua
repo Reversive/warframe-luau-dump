@@ -31,7 +31,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  8
 
-       0 [-]: FASTCALL1 62 R1 L0; 
+       0 [-]: FASTCALL1 64 R1 L0; 
        1 [-]: MOVE R3 R1   ; var3 = var1
        2 [-]: GETIMPORT R2 1; var2 = 0x7B998233
        3 [-]: CALL R2 2 2  ; var2 = var2(var3)
@@ -103,7 +103,7 @@ L 0:  25 [-]: GETIMPORT R10 15; var10 = 0xCBD666E1
       33 [-]: LOADB R17 1  ; var17 = true
       34 [-]: NAMECALL R10 R1 K18; var11 = var1; var10 = var1[0xFEEEA290]
       35 [-]: CALL R10 8 2 ; var10 = var10(var11, var12, var13, var14, var15, var16, var17)
-      36 [-]: FASTCALL1 62 R10 L1; 
+      36 [-]: FASTCALL1 64 R10 L1; 
       37 [-]: MOVE R12 R10 ; var12 = var10
       38 [-]: GETIMPORT R11 20; var11 = 0x7B998233
       39 [-]: CALL R11 2 2 ; var11 = var11(var12)
@@ -122,7 +122,7 @@ L 1:  40 [-]: JUMPIF R11 L3; goto L3 if var11
       52 [-]: CALL R11 12 2; var11 = var11(var12, var13, var14, var15, var16, var17, var18, var19, var20, var21, var22)
       53 [-]: SETTABLE R11 R3 R9; var11[var3] = var9
       54 [-]: GETTABLE R12 R3 R9; var12 = var3[var9]
-      55 [-]: FASTCALL1 62 R12 L2; 
+      55 [-]: FASTCALL1 64 R12 L2; 
       56 [-]: GETIMPORT R11 20; var11 = 0x7B998233
       57 [-]: CALL R11 2 2 ; var11 = var11(var12)
 L 2:  58 [-]: JUMPIF R11 L3; goto L3 if var11
@@ -163,14 +163,14 @@ L 8:  86 [-]: LOADN R8 2   ; var8 = 2
       93 [-]: MOVE R7 R3   ; var7 = var3
       94 [-]: CALL R6 2 4  ; var6, var7, var8 = var6(var7)
       95 [-]: FORGPREP_INEXT R6 L12; 
-L 9:  96 [-]: FASTCALL1 62 R10 L10; 
+L 9:  96 [-]: FASTCALL1 64 R10 L10; 
       97 [-]: MOVE R12 R10 ; var12 = var10
       98 [-]: GETIMPORT R11 20; var11 = 0x7B998233
       99 [-]: CALL R11 2 2 ; var11 = var11(var12)
 L10: 100 [-]: JUMPIF R11 L12; goto L12 if var11
      101 [-]: NAMECALL R11 R10 K35; var12 = var10; var11 = var10[0xBB610E5B]
      102 [-]: CALL R11 2 2 ; var11 = var11(var12)
-     103 [-]: FASTCALL1 62 R11 L11; 
+     103 [-]: FASTCALL1 64 R11 L11; 
      104 [-]: MOVE R13 R11 ; var13 = var11
      105 [-]: GETIMPORT R12 20; var12 = 0x7B998233
      106 [-]: CALL R12 2 2 ; var12 = var12(var13)

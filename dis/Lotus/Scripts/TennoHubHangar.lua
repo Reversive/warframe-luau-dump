@@ -45,7 +45,7 @@
        5 [-]: CALL R3 2 4  ; var3, var4, var5 = var3(var4)
        6 [-]: FORGPREP_INEXT R3 L1; 
 L 0:   7 [-]: ADDK R2 R2 K3; var2 = var2 + 1
-       8 [-]: JUMPIFNOTEQ R7 R1 L1; goto L1 if var7 ~= var395598
+       8 [-]: JUMPIFNOTEQ R7 R1 L1; goto L1 if var7 ~= var395553
        9 [-]: GETIMPORT R9 6; var9 = _T["gHangarStatusArray"]
       10 [-]: GETTABLE R8 R9 R2; var8 = var9[var2]
       11 [-]: LOADK R9 K7  ; var9 = "UNDOCKING"
@@ -87,7 +87,7 @@ L 1:  31 [-]: FORGLOOP R3 L0 2 [inext];
        5 [-]: CALL R3 2 4  ; var3, var4, var5 = var3(var4)
        6 [-]: FORGPREP_INEXT R3 L1; 
 L 0:   7 [-]: ADDK R2 R2 K3; var2 = var2 + 1
-       8 [-]: JUMPIFNOTEQ R7 R1 L1; goto L1 if var7 ~= var395598
+       8 [-]: JUMPIFNOTEQ R7 R1 L1; goto L1 if var7 ~= var395553
        9 [-]: GETIMPORT R9 6; var9 = _T["gHangarStatusArray"]
       10 [-]: GETTABLE R8 R9 R2; var8 = var9[var2]
       11 [-]: LOADK R9 K7  ; var9 = "DOCKING"
@@ -198,7 +198,7 @@ L 7:  63 [-]: GETTABLEKS R9 R8 K8; var9 = var8["status"]
       78 [-]: NAMECALL R10 R10 K23; var11 = var10; var10 = var10[0xD5F7912B]
       79 [-]: CALL R10 4 1 ; var10(var11, var12, var13)
       80 [-]: GETIMPORT R10 25; var10 = 0xCBD666E1
-      81 [-]: LOADK R11 K30; var11 = 0.10000000000000001
+      81 [-]: LOADK R11 K30; var11 = 0.10000000149011612
       82 [-]: CALL R10 2 1 ; var10(var11)
       83 [-]: GETTABLEKS R10 R8 K7; var10 = var8["instance"]
       84 [-]: LOADB R12 1  ; var12 = true

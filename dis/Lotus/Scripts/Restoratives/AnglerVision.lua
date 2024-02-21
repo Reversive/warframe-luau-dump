@@ -24,7 +24,7 @@
 L 0:   4 [-]: RETURN R0 0  ; 
 L 1:   5 [-]: GETIMPORT R4 4; var4 = _T["gFishing"]["levelData"]
        6 [-]: GETTABLEKS R3 R4 K5; var3 = var4["isDeimos"]
-       7 [-]: FASTCALL1 62 R1 L2; 
+       7 [-]: FASTCALL1 64 R1 L2; 
        8 [-]: MOVE R5 R1   ; var5 = var1
        9 [-]: GETIMPORT R4 7; var4 = 0x7B998233
       10 [-]: CALL R4 2 2  ; var4 = var4(var5)
@@ -46,7 +46,7 @@ L 3:  20 [-]: LOADNIL R5   ; var5 = nil
       26 [-]: FORNPREP R7 L6; nforprep start - [escape at L6] -- var7 = iterator
 L 4:  27 [-]: GETTABLE R11 R6 R9; var11 = var6[var9]
       28 [-]: GETTABLEKS R10 R11 K12; var10 = var11["deco"]
-      29 [-]: JUMPIFNOTEQ R10 R1 L5; goto L5 if var10 ~= var151389495
+      29 [-]: JUMPIFNOTEQ R10 R1 L5; goto L5 if var10 ~= var151389469
       30 [-]: GETTABLE R5 R6 R9; var5 = var6[var9]
       31 [-]: JUMP L6      ; goto L6
 L 5:  32 [-]: FORNLOOP R7 L4; nforloop end - iterate + goto L4
@@ -65,9 +65,9 @@ L 6:  33 [-]: JUMPIFNOT R5 L13; goto L13 if not var5
       45 [-]: FORNPREP R9 L13; nforprep start - [escape at L13] -- var9 = iterator
 L 7:  46 [-]: GETTABLE R12 R7 R11; var12 = var7[var11]
       47 [-]: GETTABLEKS R13 R12 K17; var13 = var12["bait"]
-      48 [-]: JUMPIFNOTEQ R13 R8 L12; goto L12 if var13 ~= var-1089728740
+      48 [-]: JUMPIFNOTEQ R13 R8 L12; goto L12 if var13 ~= var-1089728705
       49 [-]: GETTABLEKS R15 R12 K18; var15 = var12["spline"]
-      50 [-]: FASTCALL1 62 R15 L8; 
+      50 [-]: FASTCALL1 64 R15 L8; 
       51 [-]: GETIMPORT R14 7; var14 = 0x7B998233
       52 [-]: CALL R14 2 2 ; var14 = var14(var15)
 L 8:  53 [-]: JUMPIF R14 L9; goto L9 if var14
@@ -78,10 +78,10 @@ L 8:  53 [-]: JUMPIF R14 L9; goto L9 if var14
       58 [-]: NAMECALL R14 R14 K16; var15 = var14; var14 = var14[0x2B54251B]
       59 [-]: CALL R14 2 2 ; var14 = var14(var15)
       60 [-]: GETTABLEKS R15 R12 K18; var15 = var12["spline"]
-      61 [-]: JUMPIFEQ R14 R15 L11; goto L11 if var14 == var688655900
+      61 [-]: JUMPIFEQ R14 R15 L11; goto L11 if var14 == var688655935
 L 9:  62 [-]: GETTABLEKS R14 R12 K20; var14 = var12["waterDeco"]
       63 [-]: GETTABLEKS R15 R5 K20; var15 = var5["waterDeco"]
-      64 [-]: JUMPIFEQ R14 R15 L10; goto L10 if var14 == var16780571
+      64 [-]: JUMPIFEQ R14 R15 L10; goto L10 if var14 == var16780550
       65 [-]: LOADB R13 0 +1; var13 = false
 L10:  66 [-]: LOADB R13 1  ; var13 = true
 L11:  67 [-]: MOVE R4 R13  ; var4 = var13

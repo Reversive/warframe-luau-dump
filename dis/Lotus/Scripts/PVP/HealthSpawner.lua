@@ -64,13 +64,13 @@ L 5:  40 [-]: GETIMPORT R2 17; var2 = 0xC8802016
       42 [-]: CALL R2 2 4  ; var2, var3, var4 = var2(var3)
       43 [-]: FORGPREP_INEXT R2 L9; 
 L 6:  44 [-]: GETTABLEKS R8 R6 K21; var8 = var6["pickup"]
-      45 [-]: FASTCALL1 62 R8 L7; 
+      45 [-]: FASTCALL1 64 R8 L7; 
       46 [-]: GETIMPORT R7 25; var7 = 0x7B998233
       47 [-]: CALL R7 2 2  ; var7 = var7(var8)
 L 7:  48 [-]: JUMPIFNOT R7 L9; goto L9 if not var7
       49 [-]: GETTABLEKS R7 R6 K20; var7 = var6["respawnTime"]
       50 [-]: LOADN R8 0   ; var8 = 0
-      51 [-]: JUMPIFNOTLE R7 R8 L8; goto L8 if var7 > var264014
+      51 [-]: JUMPIFNOTLE R7 R8 L8; goto L8 if var7 > var263969
       52 [-]: GETIMPORT R7 4; var7 = 0x89326C93
       53 [-]: GETIMPORT R9 14; var9 = 0x19E497CB
       54 [-]: GETTABLEKS R10 R6 K19; var10 = var6["loc"]
@@ -91,9 +91,9 @@ L 9:  67 [-]: FORGLOOP R2 L6 2 [inext];
       69 [-]: NAMECALL R2 R2 K33; var3 = var2; var2 = var2[0x529B110D]
       70 [-]: CALL R2 2 2  ; var2 = var2(var3)
       71 [-]: LOADN R3 3   ; var3 = 3
-      72 [-]: JUMPIFEQ R2 R3 L10; goto L10 if var2 == var394055
+      72 [-]: JUMPIFEQ R2 R3 L10; goto L10 if var2 == var394032
       73 [-]: LOADN R3 6   ; var3 = 6
-      74 [-]: JUMPIFEQ R2 R3 L10; goto L10 if var2 == var656206
+      74 [-]: JUMPIFEQ R2 R3 L10; goto L10 if var2 == var656161
       75 [-]: GETIMPORT R3 10; var3 = 0xCBD666E1
       76 [-]: LOADN R4 0   ; var4 = 0
       77 [-]: CALL R3 2 1  ; var3(var4)
@@ -116,12 +116,12 @@ L10:  79 [-]: GETIMPORT R2 1; var2 = 0x3D106989
        2 [-]: CALL R0 2 2  ; var0 = var0(var1)
        3 [-]: JUMPIFNOT R0 L3; goto L3 if not var0
 L 0:   4 [-]: GETIMPORT R1 4; var1 = 0xBE190284
-       5 [-]: FASTCALL1 62 R1 L1; 
+       5 [-]: FASTCALL1 64 R1 L1; 
        6 [-]: GETIMPORT R0 6; var0 = 0x7B998233
        7 [-]: CALL R0 2 2  ; var0 = var0(var1)
 L 1:   8 [-]: JUMPIFNOT R0 L2; goto L2 if not var0
        9 [-]: GETIMPORT R0 8; var0 = 0xCBD666E1
-      10 [-]: LOADK R1 K9  ; var1 = 0.10000000000000001
+      10 [-]: LOADK R1 K9  ; var1 = 0.10000000149011612
       11 [-]: CALL R0 2 1  ; var0(var1)
       12 [-]: JUMPBACK L0  ; goto L0
 L 2:  13 [-]: GETUPVAL R0 0; var0 = upvalues[0]

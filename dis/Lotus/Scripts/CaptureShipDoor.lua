@@ -24,7 +24,7 @@
        2 [-]: NAMECALL R1 R1 K2; var2 = var1; var1 = var1[0xCB3851B8]
        3 [-]: CALL R1 2 2  ; var1 = var1(var2)
 L 0:   4 [-]: LOADN R2 1   ; var2 = 1
-       5 [-]: JUMPIFNOTLT R0 R2 L1; goto L1 if var0 >= var262734
+       5 [-]: JUMPIFNOTLT R0 R2 L1; goto L1 if var0 >= var262689
        6 [-]: GETIMPORT R2 4; var2 = 0x9BAFFFE3
        7 [-]: GETTABLEKS R3 R1 K5; var3 = var1["pitch"]
        8 [-]: GETTABLEKS R5 R1 K5; var5 = var1["pitch"]
@@ -41,8 +41,7 @@ L 0:   4 [-]: LOADN R2 1   ; var2 = 1
       19 [-]: CALL R3 0 1  ; var3(var4, ...)
       20 [-]: GETIMPORT R4 14; var4 = 0x67652851
       21 [-]: CALL R4 1 2  ; var4 = var4()
-      22 [-]: DIVK R3 R4 K12; var3 = var4 / 2
-      23 [-]: ADD R0 R0 R3 ; var0 = var0 + var3
+           23 [-]: ADD R0 R0 R3 ; var0 = var0 + var3
       24 [-]: GETIMPORT R3 16; var3 = 0xCBD666E1
       25 [-]: LOADN R4 0   ; var4 = 0
       26 [-]: CALL R3 2 1  ; var3(var4)
@@ -78,7 +77,7 @@ L 1:  28 [-]: GETIMPORT R2 18; var2 = 0x6CFC5B97
       10 [-]: NAMECALL R2 R2 K6; var3 = var2; var2 = var2[0x8EB2112D]
       11 [-]: CALL R2 3 1  ; var2(var3, var4)
 L 0:  12 [-]: LOADN R2 1   ; var2 = 1
-      13 [-]: JUMPIFNOTLT R0 R2 L1; goto L1 if var0 >= var590414
+      13 [-]: JUMPIFNOTLT R0 R2 L1; goto L1 if var0 >= var590369
       14 [-]: GETIMPORT R2 9; var2 = 0x9BAFFFE3
       15 [-]: GETTABLEKS R3 R1 K10; var3 = var1["pitch"]
       16 [-]: GETTABLEKS R5 R1 K10; var5 = var1["pitch"]
@@ -95,8 +94,7 @@ L 0:  12 [-]: LOADN R2 1   ; var2 = 1
       27 [-]: CALL R3 0 1  ; var3(var4, ...)
       28 [-]: GETIMPORT R4 19; var4 = 0x67652851
       29 [-]: CALL R4 1 2  ; var4 = var4()
-      30 [-]: DIVK R3 R4 K17; var3 = var4 / 2
-      31 [-]: ADD R0 R0 R3 ; var0 = var0 + var3
+           31 [-]: ADD R0 R0 R3 ; var0 = var0 + var3
       32 [-]: GETIMPORT R3 21; var3 = 0xCBD666E1
       33 [-]: LOADN R4 0   ; var4 = 0
       34 [-]: CALL R3 2 1  ; var3(var4)

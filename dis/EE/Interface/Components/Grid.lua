@@ -30,7 +30,7 @@
 
        0 [-]: LOADB R5 0   ; var5 = false
        1 [-]: GETIMPORT R7 1; var7 = 0x76EA806B
-       2 [-]: FASTCALL1 62 R7 L0; 
+       2 [-]: FASTCALL1 64 R7 L0; 
        3 [-]: GETIMPORT R6 3; var6 = 0x7B998233
        4 [-]: CALL R6 2 2  ; var6 = var6(var7)
 L 0:   5 [-]: JUMPIF R6 L3 ; goto L3 if var6
@@ -38,7 +38,7 @@ L 0:   5 [-]: JUMPIF R6 L3 ; goto L3 if var6
        7 [-]: LOADN R8 0   ; var8 = 0
        8 [-]: NAMECALL R6 R6 K4; var7 = var6; var6 = var6[0x3F3AE64C]
        9 [-]: CALL R6 3 2  ; var6 = var6(var7, var8)
-      10 [-]: FASTCALL1 62 R6 L1; 
+      10 [-]: FASTCALL1 64 R6 L1; 
       11 [-]: MOVE R9 R6   ; var9 = var6
       12 [-]: GETIMPORT R8 3; var8 = 0x7B998233
       13 [-]: CALL R8 2 2  ; var8 = var8(var9)
@@ -104,7 +104,7 @@ L 3:  21 [-]: GETIMPORT R6 8; var6 = 0x2D0FAD09
       73 [-]: SETTABLEKS R8 R7 K41; var8["FIRST_PAGE_ID"] = var7
       74 [-]: LOADN R8 -20 ; var8 = -20
       75 [-]: SETTABLEKS R8 R7 K42; var8["LAST_PAGE_ID"] = var7
-      76 [-]: LOADK R8 K43 ; var8 = 0.02
+      76 [-]: LOADK R8 K43 ; var8 = 0.019999999552965164
       77 [-]: SETTABLEKS R8 R7 K44; var8["mElementDelayTime"] = var7
       78 [-]: LOADN R8 0   ; var8 = 0
       79 [-]: SETTABLEKS R8 R7 K45; var8["mExtraRowScroll"] = var7
@@ -121,14 +121,14 @@ L 3:  21 [-]: GETIMPORT R6 8; var6 = 0x2D0FAD09
       90 [-]: LOADB R8 0   ; var8 = false
       91 [-]: SETTABLEKS R8 R7 K51; var8["mSkipRefocusOnScrollRedraw"] = var7
       92 [-]: GETTABLEKS R9 R7 K20; var9 = var7["mPaginationClip"]
-      93 [-]: FASTCALL1 62 R9 L4; 
+      93 [-]: FASTCALL1 64 R9 L4; 
       94 [-]: GETIMPORT R8 3; var8 = 0x7B998233
       95 [-]: CALL R8 2 2  ; var8 = var8(var9)
 L 4:  96 [-]: JUMPIF R8 L5 ; goto L5 if var8
       97 [-]: GETTABLEKS R8 R7 K52; var8 = var7["mMovie"]
       98 [-]: GETTABLEKS R10 R7 K20; var10 = var7["mPaginationClip"]
       99 [-]: LOADK R11 K53; var11 = "PreviousPage.Label"
-     100 [-]: LOADN R12 33 ; var12 = 33
+     100 [-]: LOADN R12 35 ; var12 = 35
      101 [-]: NAMECALL R8 R8 K54; var9 = var8; var8 = var8[0x2CE15376]
      102 [-]: CALL R8 5 2  ; var8 = var8(var9, var10, var11, var12)
      103 [-]: GETTABLEKS R9 R7 K52; var9 = var7["mMovie"]
@@ -148,7 +148,7 @@ L 4:  96 [-]: JUMPIF R8 L5 ; goto L5 if var8
      117 [-]: GETTABLEKS R9 R7 K52; var9 = var7["mMovie"]
      118 [-]: GETTABLEKS R11 R7 K20; var11 = var7["mPaginationClip"]
      119 [-]: LOADK R12 K60; var12 = "NextPage.Label"
-     120 [-]: LOADN R13 33 ; var13 = 33
+     120 [-]: LOADN R13 35 ; var13 = 35
      121 [-]: NAMECALL R9 R9 K54; var10 = var9; var9 = var9[0x2CE15376]
      122 [-]: CALL R9 5 2  ; var9 = var9(var10, var11, var12, var13)
      123 [-]: MOVE R8 R9   ; var8 = var9
@@ -184,7 +184,7 @@ L 4:  96 [-]: JUMPIF R8 L5 ; goto L5 if var8
      153 [-]: GETTABLEKS R9 R7 K52; var9 = var7["mMovie"]
      154 [-]: GETTABLEKS R11 R7 K20; var11 = var7["mPaginationClip"]
      155 [-]: LOADK R12 K70; var12 = "FirstPage.Label"
-     156 [-]: LOADN R13 33 ; var13 = 33
+     156 [-]: LOADN R13 35 ; var13 = 35
      157 [-]: NAMECALL R9 R9 K54; var10 = var9; var9 = var9[0x2CE15376]
      158 [-]: CALL R9 5 2  ; var9 = var9(var10, var11, var12, var13)
      159 [-]: MOVE R8 R9   ; var8 = var9
@@ -220,7 +220,7 @@ L 4:  96 [-]: JUMPIF R8 L5 ; goto L5 if var8
      189 [-]: GETTABLEKS R9 R7 K52; var9 = var7["mMovie"]
      190 [-]: GETTABLEKS R11 R7 K20; var11 = var7["mPaginationClip"]
      191 [-]: LOADK R12 K76; var12 = "LastPage.Label"
-     192 [-]: LOADN R13 33 ; var13 = 33
+     192 [-]: LOADN R13 35 ; var13 = 35
      193 [-]: NAMECALL R9 R9 K54; var10 = var9; var9 = var9[0x2CE15376]
      194 [-]: CALL R9 5 2  ; var9 = var9(var10, var11, var12, var13)
      195 [-]: MOVE R8 R9   ; var8 = var9

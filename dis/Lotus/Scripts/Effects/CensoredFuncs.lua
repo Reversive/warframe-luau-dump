@@ -36,7 +36,7 @@
        4 [-]: NAMECALL R2 R2 K4; var3 = var2; var2 = var2[0x3F3AE64C]
        5 [-]: CALL R2 3 2  ; var2 = var2(var3, var4)
        6 [-]: JUMPIF R1 L1 ; goto L1 if var1
-       7 [-]: FASTCALL1 62 R2 L0; 
+       7 [-]: FASTCALL1 64 R2 L0; 
        8 [-]: MOVE R4 R2   ; var4 = var2
        9 [-]: GETIMPORT R3 6; var3 = 0x7B998233
       10 [-]: CALL R3 2 2  ; var3 = var3(var4)
@@ -52,14 +52,10 @@ L 2:  19 [-]: GETIMPORT R5 10; var5 = 0x0469F296
       20 [-]: LOADK R6 K11 ; var6 = "TintColor"
       21 [-]: CALL R5 2 2  ; var5 = var5(var6)
       22 [-]: GETIMPORT R7 15; var7 = 0xA73BFB80["red"]
-      23 [-]: DIVK R6 R7 K12; var6 = var7 / 255
-      24 [-]: GETIMPORT R8 17; var8 = 0xA73BFB80["green"]
-      25 [-]: DIVK R7 R8 K12; var7 = var8 / 255
-      26 [-]: GETIMPORT R9 19; var9 = 0xA73BFB80["blue"]
-      27 [-]: DIVK R8 R9 K12; var8 = var9 / 255
-      28 [-]: GETIMPORT R10 21; var10 = 0xA73BFB80["alpha"]
-      29 [-]: DIVK R9 R10 K12; var9 = var10 / 255
-      30 [-]: NAMECALL R3 R0 K22; var4 = var0; var3 = var0[0x986D2AB8]
+           24 [-]: GETIMPORT R8 17; var8 = 0xA73BFB80["green"]
+           26 [-]: GETIMPORT R9 19; var9 = 0xA73BFB80["blue"]
+           28 [-]: GETIMPORT R10 21; var10 = 0xA73BFB80["alpha"]
+           30 [-]: NAMECALL R3 R0 K22; var4 = var0; var3 = var0[0x986D2AB8]
       31 [-]: CALL R3 7 1  ; var3(var4, var5, var6, var7, var8, var9)
       32 [-]: RETURN R0 0  ; 
 
@@ -155,7 +151,7 @@ L 0:   8 [-]: GETIMPORT R4 7; var4 = 0x9CD1E81D
        9 [-]: LENGTH R3 R4 ; var3 = #var4
       10 [-]: GETIMPORT R5 9; var5 = 0xB989A628
       11 [-]: LENGTH R4 R5 ; var4 = #var5
-      12 [-]: JUMPIFEQ R3 R4 L1; goto L1 if var3 == var16777755
+      12 [-]: JUMPIFEQ R3 R4 L1; goto L1 if var3 == var16777734
       13 [-]: LOADB R2 0 +1; var2 = false
 L 1:  14 [-]: LOADB R2 1   ; var2 = true
 L 2:  15 [-]: FASTCALL1 1 R2 L3; 
@@ -179,7 +175,7 @@ L 4:  27 [-]: GETTABLE R5 R1 R4; var5 = var1[var4]
 L 5:  33 [-]: GETTABLEKS R9 R5 K15; var9 = var5["mType"]
       34 [-]: GETIMPORT R11 7; var11 = 0x9CD1E81D
       35 [-]: GETTABLE R10 R11 R8; var10 = var11[var8]
-      36 [-]: JUMPIFNOTEQ R9 R10 L6; goto L6 if var9 ~= var330518
+      36 [-]: JUMPIFNOTEQ R9 R10 L6; goto L6 if var9 ~= var330542
       37 [-]: MOVE R11 R5  ; var11 = var5
       38 [-]: NAMECALL R9 R0 K16; var10 = var0; var9 = var0[0xDE52F297]
       39 [-]: CALL R9 3 1  ; var9(var10, var11)

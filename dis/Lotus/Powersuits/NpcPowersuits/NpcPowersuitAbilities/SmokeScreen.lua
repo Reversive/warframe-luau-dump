@@ -24,7 +24,7 @@
        0 [-]: NAMECALL R2 R1 K0; var3 = var1; var2 = var1[0xD2715720]
        1 [-]: CALL R2 2 2  ; var2 = var2(var3)
        2 [-]: LOADN R3 50  ; var3 = 50
-       3 [-]: JUMPIFNOTLT R2 R3 L0; goto L0 if var2 >= var66119
+       3 [-]: JUMPIFNOTLT R2 R3 L0; goto L0 if var2 >= var66096
        4 [-]: LOADN R2 1   ; var2 = 1
        5 [-]: RETURN R2 1  ; 
 L 0:   6 [-]: LOADN R2 0   ; var2 = 0
@@ -38,7 +38,7 @@ L 0:   6 [-]: LOADN R2 0   ; var2 = 0
       14 [-]: FORNPREP R4 L4; nforprep start - [escape at L4] -- var4 = iterator
 L 1:  15 [-]: GETTABLE R9 R3 R6; var9 = var3[var6]
       16 [-]: GETTABLEKS R8 R9 K3; var8 = var9["entity"]
-      17 [-]: FASTCALL1 62 R8 L2; 
+      17 [-]: FASTCALL1 64 R8 L2; 
       18 [-]: GETIMPORT R7 5; var7 = 0x7B998233
       19 [-]: CALL R7 2 2  ; var7 = var7(var8)
 L 2:  20 [-]: JUMPIF R7 L3 ; goto L3 if var7
@@ -48,10 +48,9 @@ L 2:  20 [-]: JUMPIF R7 L3 ; goto L3 if var7
       24 [-]: GETTABLE R8 R3 R6; var8 = var3[var6]
       25 [-]: GETTABLEKS R7 R8 K7; var7 = var8["distanceToTarget"]
       26 [-]: LOADN R8 8   ; var8 = 8
-      27 [-]: JUMPIFNOTLE R7 R8 L3; goto L3 if var7 > var68167
+      27 [-]: JUMPIFNOTLE R7 R8 L3; goto L3 if var7 > var68144
       28 [-]: LOADN R10 1  ; var10 = 1
-      29 [-]: DIVK R11 R7 K8; var11 = var7 / 8
-      30 [-]: SUB R9 R10 R11; var9 = var10 - var11
+           30 [-]: SUB R9 R10 R11; var9 = var10 - var11
       31 [-]: LENGTH R10 R3; var10 = #var3
       32 [-]: DIV R8 R9 R10; var8 = var9 / var10
       33 [-]: ADD R2 R2 R8 ; var2 = var2 + var8
@@ -95,14 +94,14 @@ L 4:  35 [-]: RETURN R2 1  ;
       26 [-]: GETIMPORT R9 16; var9 = 0x4DA5C118
       27 [-]: NAMECALL R4 R4 K17; var5 = var4; var4 = var4[0xFB669000]
       28 [-]: CALL R4 6 2  ; var4 = var4(var5, var6, var7, var8, var9)
-      29 [-]: FASTCALL1 62 R4 L0; 
+      29 [-]: FASTCALL1 64 R4 L0; 
       30 [-]: MOVE R6 R4   ; var6 = var4
       31 [-]: GETIMPORT R5 19; var5 = 0x7B998233
       32 [-]: CALL R5 2 2  ; var5 = var5(var6)
 L 0:  33 [-]: JUMPIF R5 L3 ; goto L3 if var5
       34 [-]: LENGTH R5 R4 ; var5 = #var4
       35 [-]: LOADN R6 0   ; var6 = 0
-      36 [-]: JUMPIFNOTLT R6 R5 L3; goto L3 if var6 >= var67399
+      36 [-]: JUMPIFNOTLT R6 R5 L3; goto L3 if var6 >= var67376
       37 [-]: LOADN R7 1   ; var7 = 1
       38 [-]: LENGTH R5 R4 ; var5 = #var4
       39 [-]: LOADN R6 1   ; var6 = 1

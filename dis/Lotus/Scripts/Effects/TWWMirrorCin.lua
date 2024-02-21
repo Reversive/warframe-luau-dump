@@ -26,7 +26,7 @@
        2 [-]: CALL R0 2 1  ; var0(var1)
        3 [-]: LOADN R0 0   ; var0 = 0
 L 0:   4 [-]: GETIMPORT R1 5; var1 = 0x07E9D557
-       5 [-]: JUMPIFNOTLT R0 R1 L1; goto L1 if var0 >= var459086
+       5 [-]: JUMPIFNOTLT R0 R1 L1; goto L1 if var0 >= var459041
        6 [-]: GETIMPORT R1 7; var1 = 0x9BAFFFE3
        7 [-]: GETIMPORT R2 9; var2 = 0x64FE7991
        8 [-]: GETIMPORT R3 11; var3 = 0x20B00A90

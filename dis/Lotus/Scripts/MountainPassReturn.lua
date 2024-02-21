@@ -32,10 +32,10 @@
        8 [-]: LOADK R3 K5  ; var3 = 0.5
        9 [-]: CALL R0 4 1  ; var0(var1, var2, var3)
       10 [-]: GETIMPORT R0 7; var0 = 0xCBD666E1
-      11 [-]: LOADK R1 K8  ; var1 = 0.10000000000000001
+      11 [-]: LOADK R1 K8  ; var1 = 0.10000000149011612
       12 [-]: CALL R0 2 1  ; var0(var1)
       13 [-]: GETIMPORT R1 10; var1 = 0x6F76B4F8
-      14 [-]: FASTCALL1 62 R1 L0; 
+      14 [-]: FASTCALL1 64 R1 L0; 
       15 [-]: GETIMPORT R0 12; var0 = 0x7B998233
       16 [-]: CALL R0 2 2  ; var0 = var0(var1)
 L 0:  17 [-]: JUMPIF R0 L1 ; goto L1 if var0

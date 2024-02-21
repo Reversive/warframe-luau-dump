@@ -42,7 +42,7 @@
        0 [-]: GETUPVAL R3 0; var3 = upvalues[0]
        1 [-]: NAMECALL R1 R0 K0; var2 = var0; var1 = var0[0xC9F6A7D7]
        2 [-]: CALL R1 3 2  ; var1 = var1(var2, var3)
-L 0:   3 [-]: FASTCALL1 62 R1 L1; 
+L 0:   3 [-]: FASTCALL1 64 R1 L1; 
        4 [-]: MOVE R3 R1   ; var3 = var1
        5 [-]: GETIMPORT R2 2; var2 = 0x7B998233
        6 [-]: CALL R2 2 2  ; var2 = var2(var3)
@@ -77,7 +77,7 @@ L 3:  23 [-]: LOADNIL R2   ; var2 = nil
       35 [-]: NAMECALL R4 R4 K15; var5 = var4; var4 = var4[0x4E10BDC4]
       36 [-]: CALL R4 3 2  ; var4 = var4(var5, var6)
       37 [-]: MOVE R2 R4   ; var2 = var4
-L 4:  38 [-]: FASTCALL1 62 R2 L5; 
+L 4:  38 [-]: FASTCALL1 64 R2 L5; 
       39 [-]: MOVE R5 R2   ; var5 = var2
       40 [-]: GETIMPORT R4 2; var4 = 0x7B998233
       41 [-]: CALL R4 2 2  ; var4 = var4(var5)
@@ -104,7 +104,7 @@ L 6:  53 [-]: GETIMPORT R6 17; var6 = gAvatarType
       62 [-]: NAMECALL R4 R0 K0; var5 = var0; var4 = var0[0xC9F6A7D7]
       63 [-]: CALL R4 3 2  ; var4 = var4(var5, var6)
       64 [-]: MOVE R2 R4   ; var2 = var4
-L 7:  65 [-]: FASTCALL1 62 R2 L8; 
+L 7:  65 [-]: FASTCALL1 64 R2 L8; 
       66 [-]: MOVE R5 R2   ; var5 = var2
       67 [-]: GETIMPORT R4 2; var4 = 0x7B998233
       68 [-]: CALL R4 2 2  ; var4 = var4(var5)
@@ -124,7 +124,7 @@ L 9:  79 [-]: GETIMPORT R6 24; var6 = gProjectileType
       82 [-]: JUMPIFNOT R4 L17; goto L17 if not var4
       83 [-]: NAMECALL R4 R0 K25; var5 = var0; var4 = var0[0xCD73323E]
       84 [-]: CALL R4 2 2  ; var4 = var4(var5)
-L10:  85 [-]: FASTCALL1 62 R4 L11; 
+L10:  85 [-]: FASTCALL1 64 R4 L11; 
       86 [-]: MOVE R6 R4   ; var6 = var4
       87 [-]: GETIMPORT R5 2; var5 = 0x7B998233
       88 [-]: CALL R5 2 2  ; var5 = var5(var6)
@@ -148,13 +148,13 @@ L13: 101 [-]: GETIMPORT R8 4; var8 = 0xCBD666E1
      106 [-]: NAMECALL R8 R8 K26; var9 = var8; var8 = var8[0x4D8F4EC4]
      107 [-]: CALL R8 3 2  ; var8 = var8(var9, var10)
      108 [-]: MOVE R2 R8   ; var2 = var8
-     109 [-]: FASTCALL1 62 R2 L14; 
+     109 [-]: FASTCALL1 64 R2 L14; 
      110 [-]: MOVE R9 R2   ; var9 = var2
      111 [-]: GETIMPORT R8 2; var8 = 0x7B998233
      112 [-]: CALL R8 2 2  ; var8 = var8(var9)
 L14: 113 [-]: JUMPIFNOT R8 L15; goto L15 if not var8
      114 [-]: FORNLOOP R5 L13; nforloop end - iterate + goto L13
-L15: 115 [-]: FASTCALL1 62 R2 L16; 
+L15: 115 [-]: FASTCALL1 64 R2 L16; 
      116 [-]: MOVE R6 R2   ; var6 = var2
      117 [-]: GETIMPORT R5 2; var5 = 0x7B998233
      118 [-]: CALL R5 2 2  ; var5 = var5(var6)
@@ -168,7 +168,7 @@ L16: 119 [-]: JUMPIF R5 L22; goto L22 if var5
      126 [-]: JUMP L22     ; goto L22
 L17: 127 [-]: NAMECALL R4 R0 K29; var5 = var0; var4 = var0[0x2B54251B]
      128 [-]: CALL R4 2 2  ; var4 = var4(var5)
-     129 [-]: FASTCALL1 62 R4 L18; 
+     129 [-]: FASTCALL1 64 R4 L18; 
      130 [-]: MOVE R6 R4   ; var6 = var4
      131 [-]: GETIMPORT R5 2; var5 = 0x7B998233
      132 [-]: CALL R5 2 2  ; var5 = var5(var6)
@@ -184,7 +184,7 @@ L19: 140 [-]: GETIMPORT R5 8; var5 = _T["gHeatFissureHarvesters"]
      142 [-]: NAMECALL R5 R5 K26; var6 = var5; var5 = var5[0x4D8F4EC4]
      143 [-]: CALL R5 3 2  ; var5 = var5(var6, var7)
      144 [-]: MOVE R2 R5   ; var2 = var5
-L20: 145 [-]: FASTCALL1 62 R2 L21; 
+L20: 145 [-]: FASTCALL1 64 R2 L21; 
      146 [-]: MOVE R6 R2   ; var6 = var2
      147 [-]: GETIMPORT R5 2; var5 = 0x7B998233
      148 [-]: CALL R5 2 2  ; var5 = var5(var6)
@@ -201,7 +201,7 @@ L21: 149 [-]: JUMPIFNOT R5 L22; goto L22 if not var5
 L22: 159 [-]: GETUPVAL R6 3; var6 = upvalues[3]
      160 [-]: NAMECALL R4 R0 K0; var5 = var0; var4 = var0[0xC9F6A7D7]
      161 [-]: CALL R4 3 2  ; var4 = var4(var5, var6)
-L23: 162 [-]: FASTCALL1 62 R4 L24; 
+L23: 162 [-]: FASTCALL1 64 R4 L24; 
      163 [-]: MOVE R6 R4   ; var6 = var4
      164 [-]: GETIMPORT R5 2; var5 = 0x7B998233
      165 [-]: CALL R5 2 2  ; var5 = var5(var6)
@@ -215,7 +215,7 @@ L24: 166 [-]: JUMPIFNOT R5 L25; goto L25 if not var5
      173 [-]: MOVE R4 R5   ; var4 = var5
      174 [-]: JUMPBACK L23 ; goto L23
 L25: 175 [-]: LOADNIL R5   ; var5 = nil
-     176 [-]: FASTCALL1 62 R2 L26; 
+     176 [-]: FASTCALL1 64 R2 L26; 
      177 [-]: MOVE R7 R2   ; var7 = var2
      178 [-]: GETIMPORT R6 2; var6 = 0x7B998233
      179 [-]: CALL R6 2 2  ; var6 = var6(var7)
@@ -224,8 +224,7 @@ L26: 180 [-]: JUMPIFNOT R6 L27; goto L27 if not var6
      182 [-]: JUMP L28     ; goto L28
 L27: 183 [-]: NAMECALL R6 R2 K34; var7 = var2; var6 = var2[0x958B6075]
      184 [-]: CALL R6 2 2  ; var6 = var6(var7)
-     185 [-]: DIVK R5 R6 K33; var5 = var6 / 4
-L28: 186 [-]: GETUPVAL R8 1; var8 = upvalues[1]
+     L28: 186 [-]: GETUPVAL R8 1; var8 = upvalues[1]
      187 [-]: LOADN R10 1  ; var10 = 1
      188 [-]: SUB R9 R10 R5; var9 = var10 - var5
      189 [-]: NAMECALL R6 R4 K5; var7 = var4; var6 = var4[0x986D2AB8]
@@ -236,15 +235,14 @@ L28: 186 [-]: GETUPVAL R8 1; var8 = upvalues[1]
      194 [-]: CALL R6 4 1  ; var6(var7, var8, var9)
      195 [-]: MOVE R6 R5   ; var6 = var5
 L29: 196 [-]: JUMPIFNOT R3 L32; goto L32 if not var3
-     197 [-]: FASTCALL1 62 R2 L30; 
+     197 [-]: FASTCALL1 64 R2 L30; 
      198 [-]: MOVE R8 R2   ; var8 = var2
      199 [-]: GETIMPORT R7 2; var7 = 0x7B998233
      200 [-]: CALL R7 2 2  ; var7 = var7(var8)
 L30: 201 [-]: JUMPIF R7 L32; goto L32 if var7
      202 [-]: NAMECALL R7 R2 K34; var8 = var2; var7 = var2[0x958B6075]
      203 [-]: CALL R7 2 2  ; var7 = var7(var8)
-     204 [-]: DIVK R5 R7 K33; var5 = var7 / 4
-     205 [-]: JUMPIFEQ R5 R6 L31; goto L31 if var5 == var67847
+          205 [-]: JUMPIFEQ R5 R6 L31; goto L31 if var5 == var67900
      206 [-]: GETUPVAL R9 1; var9 = upvalues[1]
      207 [-]: LOADN R11 1  ; var11 = 1
      208 [-]: SUB R10 R11 R5; var10 = var11 - var5
@@ -304,7 +302,7 @@ L32: 220 [-]: RETURN R0 0  ;
        3 [-]: JUMPIF R1 L0 ; goto L0 if var1
        4 [-]: RETURN R0 0  ; 
 L 0:   5 [-]: GETIMPORT R2 5; var2 = _T["gHeatFissureHarvesters"]
-       6 [-]: FASTCALL1 62 R2 L1; 
+       6 [-]: FASTCALL1 64 R2 L1; 
        7 [-]: GETIMPORT R1 7; var1 = 0x7B998233
        8 [-]: CALL R1 2 2  ; var1 = var1(var2)
 L 1:   9 [-]: JUMPIFNOT R1 L2; goto L2 if not var1
@@ -313,7 +311,7 @@ L 2:  11 [-]: GETIMPORT R1 5; var1 = _T["gHeatFissureHarvesters"]
       12 [-]: MOVE R3 R0   ; var3 = var0
       13 [-]: NAMECALL R1 R1 K8; var2 = var1; var1 = var1[0xF1B9BF0F]
       14 [-]: CALL R1 3 2  ; var1 = var1(var2, var3)
-      15 [-]: FASTCALL1 62 R1 L3; 
+      15 [-]: FASTCALL1 64 R1 L3; 
       16 [-]: MOVE R3 R1   ; var3 = var1
       17 [-]: GETIMPORT R2 7; var2 = 0x7B998233
       18 [-]: CALL R2 2 2  ; var2 = var2(var3)

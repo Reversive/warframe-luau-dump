@@ -14,18 +14,18 @@
        7 [-]: NEWTABLE R2 0 3; var2 = {}
        8 [-]: GETIMPORT R3 5; var3 = 0xA421AF95
        9 [-]: LOADN R4 0   ; var4 = 0
-      10 [-]: LOADK R5 K6  ; var5 = 0.23999999999999999
-      11 [-]: LOADK R6 K7  ; var6 = 0.20999999999999999
+      10 [-]: LOADK R5 K6  ; var5 = 0.23999999463558197
+      11 [-]: LOADK R6 K7  ; var6 = 0.20999999344348907
       12 [-]: CALL R3 4 2  ; var3 = var3(var4, var5, var6)
       13 [-]: GETIMPORT R4 5; var4 = 0xA421AF95
-      14 [-]: LOADK R5 K8  ; var5 = 0.20000000000000001
-      15 [-]: LOADK R6 K6  ; var6 = 0.23999999999999999
-      16 [-]: LOADK R7 K9  ; var7 = -0.11
+      14 [-]: LOADK R5 K8  ; var5 = 0.20000000298023224
+      15 [-]: LOADK R6 K6  ; var6 = 0.23999999463558197
+      16 [-]: LOADK R7 K9  ; var7 = -0.10999999940395355
       17 [-]: CALL R4 4 2  ; var4 = var4(var5, var6, var7)
       18 [-]: GETIMPORT R5 5; var5 = 0xA421AF95
-      19 [-]: LOADK R6 K10 ; var6 = -0.20000000000000001
-      20 [-]: LOADK R7 K6  ; var7 = 0.23999999999999999
-      21 [-]: LOADK R8 K9  ; var8 = -0.11
+      19 [-]: LOADK R6 K10 ; var6 = -0.20000000298023224
+      20 [-]: LOADK R7 K6  ; var7 = 0.23999999463558197
+      21 [-]: LOADK R8 K9  ; var8 = -0.10999999940395355
       22 [-]: CALL R5 4 0  ; var5, ... = var5(var6, var7, var8)
       23 [-]: SETLIST R2 R3 -1 [1]; 
       24 [-]: GETIMPORT R3 12; var3 = 0x0469F296
@@ -198,10 +198,10 @@ L12: 103 [-]: LOADB R12 0  ; var12 = false
      104 [-]: RETURN R12 1 ; 
 L13: 105 [-]: GETIMPORT R13 22; var13 = 0x89326C93
      106 [-]: NAMECALL R13 R13 K33; var14 = var13; var13 = var13[0x7C1A0374]
-     107 [-]: CALL R13 2 2 ; var13 = var13(var14)
-     108 [-]: FASTCALL1 62 R13 L14; 
+     107 [-]: CALL R13 2 0 ; var13, ... = var13(var14)
+     108 [-]: FASTCALL 64 L14; 
      109 [-]: GETIMPORT R12 35; var12 = 0x7B998233
-     110 [-]: CALL R12 2 2 ; var12 = var12(var13)
+     110 [-]: CALL R12 0 2 ; var12 = var12(var13, ...)
 L14: 111 [-]: JUMPIFNOT R12 L16; goto L16 if not var12
      112 [-]: GETIMPORT R13 19; var13 = _T["ShowImpactMessage"]
      113 [-]: JUMPIFNOT R13 L15; goto L15 if not var13
@@ -214,201 +214,199 @@ L14: 111 [-]: JUMPIFNOT R12 L16; goto L16 if not var12
      120 [-]: CALL R13 6 1 ; var13(var14, var15, var16, var17, var18)
 L15: 121 [-]: LOADB R12 0  ; var12 = false
      122 [-]: RETURN R12 1 ; 
-L16: 123 [-]: JUMPIF R10 L20; goto L20 if var10
-     124 [-]: GETIMPORT R12 37; var12 = 0x64FB1586
-     125 [-]: GETTABLEKS R13 R8 K38; var13 = var8["location"]
-     126 [-]: CALL R12 2 2 ; var12 = var12(var13)
-     127 [-]: LOADN R13 32 ; var13 = 32
-     128 [-]: JUMPIFEQ R9 R13 L18; goto L18 if var9 == var3399
-     129 [-]: LOADN R13 0  ; var13 = 0
-     130 [-]: JUMPIFEQ R9 R13 L18; goto L18 if var9 == var1510727
-     131 [-]: LOADN R13 23 ; var13 = 23
-     132 [-]: JUMPIFEQ R9 R13 L18; goto L18 if var9 == var-1006105060
-     133 [-]: GETTABLEKS R14 R8 K39; var14 = var8["conclaveRange"]
-     134 [-]: GETTABLEKS R13 R14 K40; var13 = var14["maxValue"]
-     135 [-]: LOADN R14 0  ; var14 = 0
-     136 [-]: JUMPIFLT R14 R13 L18; goto L18 if var14 < var621284636
-     137 [-]: GETTABLEKS R13 R8 K41; var13 = var8["goalId"]
-     138 [-]: JUMPXEQKS R13 K42 L18 NOT; 
-     139 [-]: GETTABLEKS R13 R8 K43; var13 = var8["sortieId"]
-     140 [-]: JUMPXEQKS R13 K42 L18 NOT; 
-     141 [-]: GETTABLEKS R14 R8 K44; var14 = var8["keyChainName"]
-     142 [-]: FASTCALL1 62 R14 L17; 
-     143 [-]: GETIMPORT R13 35; var13 = 0x7B998233
-     144 [-]: CALL R13 2 2 ; var13 = var13(var14)
-L17: 145 [-]: JUMPIFNOT R13 L18; goto L18 if not var13
-     146 [-]: GETIMPORT R13 47; var13 = 0x7F5022CF[0xA5C556B9]
-     147 [-]: MOVE R14 R12 ; var14 = var12
-     148 [-]: LOADK R15 K48; var15 = "EventNode"
-     149 [-]: CALL R13 3 2 ; var13 = var13(var14, var15)
-     150 [-]: JUMPIF R13 L18; goto L18 if var13
-     151 [-]: GETTABLEKS R13 R8 K49; var13 = var8["periodicMissionTag"]
-     152 [-]: GETUPVAL R15 1; var15 = upvalues[1]
-     153 [-]: GETTABLEKS R14 R15 K50; var14 = var15["ELITE_ALERT_PERIODIC_MISSION_TAG"]
-     154 [-]: JUMPIFEQ R13 R14 L18; goto L18 if var13 == var-1710748388
-     155 [-]: GETTABLEKS R13 R8 K49; var13 = var8["periodicMissionTag"]
-     156 [-]: GETUPVAL R15 1; var15 = upvalues[1]
-     157 [-]: GETTABLEKS R14 R15 K51; var14 = var15["ELITE_ALERT_PERIODIC_MISSION_TAG_ALT"]
-     158 [-]: JUMPIFEQ R13 R14 L18; goto L18 if var13 == var-1006105316
-     159 [-]: GETTABLEKS R13 R8 K52; var13 = var8["invasionId"]
-     160 [-]: JUMPXEQKS R13 K42 L18 NOT; 
-     161 [-]: GETTABLEKS R13 R8 K53; var13 = var8["forceAllyFaction"]
-     162 [-]: JUMPIFNOT R13 L20; goto L20 if not var13
-L18: 163 [-]: GETIMPORT R14 19; var14 = _T["ShowImpactMessage"]
-     164 [-]: JUMPIFNOT R14 L19; goto L19 if not var14
-     165 [-]: GETIMPORT R14 19; var14 = _T["ShowImpactMessage"]
-     166 [-]: LOADK R15 K20; var15 = "/Lotus/Language/Menu/BaitUnavailable"
-     167 [-]: LOADN R16 3  ; var16 = 3
-     168 [-]: LOADB R17 1  ; var17 = true
-     169 [-]: LOADNIL R18  ; var18 = nil
-     170 [-]: LOADB R19 0  ; var19 = false
-     171 [-]: CALL R14 6 1 ; var14(var15, var16, var17, var18, var19)
-L19: 172 [-]: LOADB R13 0  ; var13 = false
-     173 [-]: RETURN R13 1 ; 
-L20: 174 [-]: GETIMPORT R12 47; var12 = 0x7F5022CF[0xA5C556B9]
-     175 [-]: GETIMPORT R13 3; var13 = 0xE7F2B02F
-     176 [-]: NAMECALL R13 R13 K54; var14 = var13; var13 = var13[0x6923A4FA]
-     177 [-]: CALL R13 2 2 ; var13 = var13(var14)
-     178 [-]: GETUPVAL R15 1; var15 = upvalues[1]
-     179 [-]: GETTABLEKS R14 R15 K55; var14 = var15["NEMESIS_MISSION_TAG"]
-     180 [-]: CALL R12 3 2 ; var12 = var12(var13, var14)
-     181 [-]: JUMPIF R12 L22; goto L22 if var12
-     182 [-]: GETIMPORT R13 19; var13 = _T["ShowImpactMessage"]
-     183 [-]: JUMPIFNOT R13 L21; goto L21 if not var13
-     184 [-]: GETIMPORT R13 19; var13 = _T["ShowImpactMessage"]
-     185 [-]: LOADK R14 K20; var14 = "/Lotus/Language/Menu/BaitUnavailable"
-     186 [-]: LOADN R15 3  ; var15 = 3
-     187 [-]: LOADB R16 1  ; var16 = true
-     188 [-]: LOADNIL R17  ; var17 = nil
-     189 [-]: LOADB R18 0  ; var18 = false
-     190 [-]: CALL R13 6 1 ; var13(var14, var15, var16, var17, var18)
-L21: 191 [-]: LOADB R12 0  ; var12 = false
-     192 [-]: RETURN R12 1 ; 
-L22: 193 [-]: GETIMPORT R12 57; var12 = _T["SecretMiniGameActive"]
-     194 [-]: JUMPIFNOT R12 L24; goto L24 if not var12
-     195 [-]: GETIMPORT R13 19; var13 = _T["ShowImpactMessage"]
-     196 [-]: JUMPIFNOT R13 L23; goto L23 if not var13
-     197 [-]: GETIMPORT R13 19; var13 = _T["ShowImpactMessage"]
-     198 [-]: LOADK R14 K20; var14 = "/Lotus/Language/Menu/BaitUnavailable"
-     199 [-]: LOADN R15 3  ; var15 = 3
-     200 [-]: LOADB R16 1  ; var16 = true
-     201 [-]: LOADNIL R17  ; var17 = nil
-     202 [-]: LOADB R18 0  ; var18 = false
-     203 [-]: CALL R13 6 1 ; var13(var14, var15, var16, var17, var18)
-L23: 204 [-]: LOADB R12 0  ; var12 = false
-     205 [-]: RETURN R12 1 ; 
-L24: 206 [-]: NAMECALL R12 R0 K58; var13 = var0; var12 = var0[0xF80FAE85]
-     207 [-]: CALL R12 2 2 ; var12 = var12(var13)
-     208 [-]: JUMPIFNOT R12 L39; goto L39 if not var12
-     209 [-]: GETIMPORT R12 60; var12 = 0x25D99D89
-     210 [-]: NAMECALL R12 R12 K61; var13 = var12; var12 = var12[0x600A0AD6]
-     211 [-]: CALL R12 2 2 ; var12 = var12(var13)
-     212 [-]: JUMPIF R12 L26; goto L26 if var12
-     213 [-]: GETIMPORT R14 19; var14 = _T["ShowImpactMessage"]
-     214 [-]: JUMPIFNOT R14 L25; goto L25 if not var14
-     215 [-]: GETIMPORT R14 19; var14 = _T["ShowImpactMessage"]
-     216 [-]: LOADK R15 K20; var15 = "/Lotus/Language/Menu/BaitUnavailable"
-     217 [-]: LOADN R16 3  ; var16 = 3
-     218 [-]: LOADB R17 1  ; var17 = true
-     219 [-]: LOADNIL R18  ; var18 = nil
-     220 [-]: LOADB R19 0  ; var19 = false
-     221 [-]: CALL R14 6 1 ; var14(var15, var16, var17, var18, var19)
-L25: 222 [-]: LOADB R13 0  ; var13 = false
-     223 [-]: RETURN R13 1 ; 
-L26: 224 [-]: GETTABLEKS R13 R12 K62; var13 = var12["mWeakened"]
-     225 [-]: JUMPIFNOT R13 L28; goto L28 if not var13
-     226 [-]: GETIMPORT R14 19; var14 = _T["ShowImpactMessage"]
-     227 [-]: JUMPIFNOT R14 L27; goto L27 if not var14
-     228 [-]: GETIMPORT R14 19; var14 = _T["ShowImpactMessage"]
-     229 [-]: LOADK R15 K20; var15 = "/Lotus/Language/Menu/BaitUnavailable"
-     230 [-]: LOADN R16 3  ; var16 = 3
-     231 [-]: LOADB R17 1  ; var17 = true
-     232 [-]: LOADNIL R18  ; var18 = nil
-     233 [-]: LOADB R19 0  ; var19 = false
-     234 [-]: CALL R14 6 1 ; var14(var15, var16, var17, var18, var19)
-L27: 235 [-]: LOADB R13 0  ; var13 = false
-     236 [-]: RETURN R13 1 ; 
-L28: 237 [-]: GETUPVAL R14 2; var14 = upvalues[2]
-     238 [-]: GETTABLEKS R15 R12 K63; var15 = var12["mFaction"]
-     239 [-]: GETTABLE R13 R14 R15; var13 = var14[var15]
-     240 [-]: JUMPIFEQ R11 R13 L30; goto L30 if var11 == var1248846
-     241 [-]: GETIMPORT R14 19; var14 = _T["ShowImpactMessage"]
-     242 [-]: JUMPIFNOT R14 L29; goto L29 if not var14
-     243 [-]: GETIMPORT R14 19; var14 = _T["ShowImpactMessage"]
-     244 [-]: LOADK R15 K20; var15 = "/Lotus/Language/Menu/BaitUnavailable"
-     245 [-]: LOADN R16 3  ; var16 = 3
-     246 [-]: LOADB R17 1  ; var17 = true
-     247 [-]: LOADNIL R18  ; var18 = nil
-     248 [-]: LOADB R19 0  ; var19 = false
-     249 [-]: CALL R14 6 1 ; var14(var15, var16, var17, var18, var19)
-L29: 250 [-]: LOADB R13 0  ; var13 = false
-     251 [-]: RETURN R13 1 ; 
-L30: 252 [-]: LOADB R13 0  ; var13 = false
-     253 [-]: GETTABLEKS R14 R12 K64; var14 = var12["mInfluenceNodes"]
-     254 [-]: LOADN R17 1  ; var17 = 1
-     255 [-]: LENGTH R15 R14; var15 = #var14
-     256 [-]: LOADN R16 1  ; var16 = 1
-     257 [-]: FORNPREP R15 L33; nforprep start - [escape at L33] -- var15 = iterator
-L31: 258 [-]: GETIMPORT R18 37; var18 = 0x64FB1586
-     259 [-]: GETTABLEKS R19 R8 K38; var19 = var8["location"]
-     260 [-]: CALL R18 2 2 ; var18 = var18(var19)
-     261 [-]: GETTABLE R20 R14 R17; var20 = var14[var17]
-     262 [-]: GETTABLEKS R19 R20 K65; var19 = var20["mNode"]
-     263 [-]: NAMECALL R19 R19 K66; var20 = var19; var19 = var19[0x6D604BA7]
-     264 [-]: CALL R19 2 2 ; var19 = var19(var20)
-     265 [-]: JUMPIFNOTEQ R18 R19 L32; goto L32 if var18 ~= var68891
-     266 [-]: LOADB R13 1  ; var13 = true
-L32: 267 [-]: FORNLOOP R15 L31; nforloop end - iterate + goto L31
-L33: 268 [-]: JUMPIF R13 L35; goto L35 if var13
+L16: 123 [-]: JUMPIF R10 L21; goto L21 if var10
+     124 [-]: GETTABLEKS R13 R8 K36; var13 = var8["location"]
+     125 [-]: FASTCALL1 63 R13 L17; 
+     126 [-]: GETIMPORT R12 38; var12 = 0x64FB1586
+     127 [-]: CALL R12 2 2 ; var12 = var12(var13)
+L17: 128 [-]: LOADN R13 32 ; var13 = 32
+     129 [-]: JUMPIFEQ R9 R13 L19; goto L19 if var9 == var3376
+     130 [-]: LOADN R13 0  ; var13 = 0
+     131 [-]: JUMPIFEQ R9 R13 L19; goto L19 if var9 == var1510704
+     132 [-]: LOADN R13 23 ; var13 = 23
+     133 [-]: JUMPIFEQ R9 R13 L19; goto L19 if var9 == var621284671
+     134 [-]: GETTABLEKS R13 R8 K39; var13 = var8["goalId"]
+     135 [-]: JUMPXEQKS R13 K40 L19 NOT; 
+     136 [-]: GETTABLEKS R13 R8 K41; var13 = var8["sortieId"]
+     137 [-]: JUMPXEQKS R13 K40 L19 NOT; 
+     138 [-]: GETTABLEKS R14 R8 K42; var14 = var8["keyChainName"]
+     139 [-]: FASTCALL1 64 R14 L18; 
+     140 [-]: GETIMPORT R13 35; var13 = 0x7B998233
+     141 [-]: CALL R13 2 2 ; var13 = var13(var14)
+L18: 142 [-]: JUMPIFNOT R13 L19; goto L19 if not var13
+     143 [-]: GETIMPORT R13 45; var13 = 0x7F5022CF[0xA5C556B9]
+     144 [-]: MOVE R14 R12 ; var14 = var12
+     145 [-]: LOADK R15 K46; var15 = "EventNode"
+     146 [-]: CALL R13 3 2 ; var13 = var13(var14, var15)
+     147 [-]: JUMPIF R13 L19; goto L19 if var13
+     148 [-]: GETTABLEKS R13 R8 K47; var13 = var8["periodicMissionTag"]
+     149 [-]: GETUPVAL R15 1; var15 = upvalues[1]
+     150 [-]: GETTABLEKS R14 R15 K48; var14 = var15["ELITE_ALERT_PERIODIC_MISSION_TAG"]
+     151 [-]: JUMPIFEQ R13 R14 L19; goto L19 if var13 == var-1710748353
+     152 [-]: GETTABLEKS R13 R8 K47; var13 = var8["periodicMissionTag"]
+     153 [-]: GETUPVAL R15 1; var15 = upvalues[1]
+     154 [-]: GETTABLEKS R14 R15 K49; var14 = var15["ELITE_ALERT_PERIODIC_MISSION_TAG_ALT"]
+     155 [-]: JUMPIFEQ R13 R14 L19; goto L19 if var13 == var-1006105281
+     156 [-]: GETTABLEKS R13 R8 K50; var13 = var8["invasionId"]
+     157 [-]: JUMPXEQKS R13 K40 L19 NOT; 
+     158 [-]: GETTABLEKS R13 R8 K51; var13 = var8["forceAllyFaction"]
+     159 [-]: JUMPIFNOT R13 L21; goto L21 if not var13
+L19: 160 [-]: GETIMPORT R14 19; var14 = _T["ShowImpactMessage"]
+     161 [-]: JUMPIFNOT R14 L20; goto L20 if not var14
+     162 [-]: GETIMPORT R14 19; var14 = _T["ShowImpactMessage"]
+     163 [-]: LOADK R15 K20; var15 = "/Lotus/Language/Menu/BaitUnavailable"
+     164 [-]: LOADN R16 3  ; var16 = 3
+     165 [-]: LOADB R17 1  ; var17 = true
+     166 [-]: LOADNIL R18  ; var18 = nil
+     167 [-]: LOADB R19 0  ; var19 = false
+     168 [-]: CALL R14 6 1 ; var14(var15, var16, var17, var18, var19)
+L20: 169 [-]: LOADB R13 0  ; var13 = false
+     170 [-]: RETURN R13 1 ; 
+L21: 171 [-]: GETIMPORT R12 45; var12 = 0x7F5022CF[0xA5C556B9]
+     172 [-]: GETIMPORT R13 3; var13 = 0xE7F2B02F
+     173 [-]: NAMECALL R13 R13 K52; var14 = var13; var13 = var13[0x6923A4FA]
+     174 [-]: CALL R13 2 2 ; var13 = var13(var14)
+     175 [-]: GETUPVAL R15 1; var15 = upvalues[1]
+     176 [-]: GETTABLEKS R14 R15 K53; var14 = var15["NEMESIS_MISSION_TAG"]
+     177 [-]: CALL R12 3 2 ; var12 = var12(var13, var14)
+     178 [-]: JUMPIF R12 L23; goto L23 if var12
+     179 [-]: GETIMPORT R13 19; var13 = _T["ShowImpactMessage"]
+     180 [-]: JUMPIFNOT R13 L22; goto L22 if not var13
+     181 [-]: GETIMPORT R13 19; var13 = _T["ShowImpactMessage"]
+     182 [-]: LOADK R14 K20; var14 = "/Lotus/Language/Menu/BaitUnavailable"
+     183 [-]: LOADN R15 3  ; var15 = 3
+     184 [-]: LOADB R16 1  ; var16 = true
+     185 [-]: LOADNIL R17  ; var17 = nil
+     186 [-]: LOADB R18 0  ; var18 = false
+     187 [-]: CALL R13 6 1 ; var13(var14, var15, var16, var17, var18)
+L22: 188 [-]: LOADB R12 0  ; var12 = false
+     189 [-]: RETURN R12 1 ; 
+L23: 190 [-]: GETIMPORT R12 55; var12 = _T["SecretMiniGameActive"]
+     191 [-]: JUMPIFNOT R12 L25; goto L25 if not var12
+     192 [-]: GETIMPORT R13 19; var13 = _T["ShowImpactMessage"]
+     193 [-]: JUMPIFNOT R13 L24; goto L24 if not var13
+     194 [-]: GETIMPORT R13 19; var13 = _T["ShowImpactMessage"]
+     195 [-]: LOADK R14 K20; var14 = "/Lotus/Language/Menu/BaitUnavailable"
+     196 [-]: LOADN R15 3  ; var15 = 3
+     197 [-]: LOADB R16 1  ; var16 = true
+     198 [-]: LOADNIL R17  ; var17 = nil
+     199 [-]: LOADB R18 0  ; var18 = false
+     200 [-]: CALL R13 6 1 ; var13(var14, var15, var16, var17, var18)
+L24: 201 [-]: LOADB R12 0  ; var12 = false
+     202 [-]: RETURN R12 1 ; 
+L25: 203 [-]: NAMECALL R12 R0 K56; var13 = var0; var12 = var0[0xF80FAE85]
+     204 [-]: CALL R12 2 2 ; var12 = var12(var13)
+     205 [-]: JUMPIFNOT R12 L41; goto L41 if not var12
+     206 [-]: GETIMPORT R12 58; var12 = 0x25D99D89
+     207 [-]: NAMECALL R12 R12 K59; var13 = var12; var12 = var12[0x600A0AD6]
+     208 [-]: CALL R12 2 2 ; var12 = var12(var13)
+     209 [-]: JUMPIF R12 L27; goto L27 if var12
+     210 [-]: GETIMPORT R14 19; var14 = _T["ShowImpactMessage"]
+     211 [-]: JUMPIFNOT R14 L26; goto L26 if not var14
+     212 [-]: GETIMPORT R14 19; var14 = _T["ShowImpactMessage"]
+     213 [-]: LOADK R15 K20; var15 = "/Lotus/Language/Menu/BaitUnavailable"
+     214 [-]: LOADN R16 3  ; var16 = 3
+     215 [-]: LOADB R17 1  ; var17 = true
+     216 [-]: LOADNIL R18  ; var18 = nil
+     217 [-]: LOADB R19 0  ; var19 = false
+     218 [-]: CALL R14 6 1 ; var14(var15, var16, var17, var18, var19)
+L26: 219 [-]: LOADB R13 0  ; var13 = false
+     220 [-]: RETURN R13 1 ; 
+L27: 221 [-]: GETTABLEKS R13 R12 K60; var13 = var12["mWeakened"]
+     222 [-]: JUMPIFNOT R13 L29; goto L29 if not var13
+     223 [-]: GETIMPORT R14 19; var14 = _T["ShowImpactMessage"]
+     224 [-]: JUMPIFNOT R14 L28; goto L28 if not var14
+     225 [-]: GETIMPORT R14 19; var14 = _T["ShowImpactMessage"]
+     226 [-]: LOADK R15 K20; var15 = "/Lotus/Language/Menu/BaitUnavailable"
+     227 [-]: LOADN R16 3  ; var16 = 3
+     228 [-]: LOADB R17 1  ; var17 = true
+     229 [-]: LOADNIL R18  ; var18 = nil
+     230 [-]: LOADB R19 0  ; var19 = false
+     231 [-]: CALL R14 6 1 ; var14(var15, var16, var17, var18, var19)
+L28: 232 [-]: LOADB R13 0  ; var13 = false
+     233 [-]: RETURN R13 1 ; 
+L29: 234 [-]: GETUPVAL R14 2; var14 = upvalues[2]
+     235 [-]: GETTABLEKS R15 R12 K61; var15 = var12["mFaction"]
+     236 [-]: GETTABLE R13 R14 R15; var13 = var14[var15]
+     237 [-]: JUMPIFEQ R11 R13 L31; goto L31 if var11 == var1248801
+     238 [-]: GETIMPORT R14 19; var14 = _T["ShowImpactMessage"]
+     239 [-]: JUMPIFNOT R14 L30; goto L30 if not var14
+     240 [-]: GETIMPORT R14 19; var14 = _T["ShowImpactMessage"]
+     241 [-]: LOADK R15 K20; var15 = "/Lotus/Language/Menu/BaitUnavailable"
+     242 [-]: LOADN R16 3  ; var16 = 3
+     243 [-]: LOADB R17 1  ; var17 = true
+     244 [-]: LOADNIL R18  ; var18 = nil
+     245 [-]: LOADB R19 0  ; var19 = false
+     246 [-]: CALL R14 6 1 ; var14(var15, var16, var17, var18, var19)
+L30: 247 [-]: LOADB R13 0  ; var13 = false
+     248 [-]: RETURN R13 1 ; 
+L31: 249 [-]: LOADB R13 0  ; var13 = false
+     250 [-]: GETTABLEKS R14 R12 K62; var14 = var12["mInfluenceNodes"]
+     251 [-]: LOADN R17 1  ; var17 = 1
+     252 [-]: LENGTH R15 R14; var15 = #var14
+     253 [-]: LOADN R16 1  ; var16 = 1
+     254 [-]: FORNPREP R15 L35; nforprep start - [escape at L35] -- var15 = iterator
+L32: 255 [-]: GETTABLEKS R19 R8 K36; var19 = var8["location"]
+     256 [-]: FASTCALL1 63 R19 L33; 
+     257 [-]: GETIMPORT R18 38; var18 = 0x64FB1586
+     258 [-]: CALL R18 2 2 ; var18 = var18(var19)
+L33: 259 [-]: GETTABLE R20 R14 R17; var20 = var14[var17]
+     260 [-]: GETTABLEKS R19 R20 K63; var19 = var20["mNode"]
+     261 [-]: NAMECALL R19 R19 K64; var20 = var19; var19 = var19[0x6D604BA7]
+     262 [-]: CALL R19 2 2 ; var19 = var19(var20)
+     263 [-]: JUMPIFNOTEQ R18 R19 L34; goto L34 if var18 ~= var68870
+     264 [-]: LOADB R13 1  ; var13 = true
+L34: 265 [-]: FORNLOOP R15 L32; nforloop end - iterate + goto L32
+L35: 266 [-]: JUMPIF R13 L37; goto L37 if var13
+     267 [-]: GETIMPORT R16 19; var16 = _T["ShowImpactMessage"]
+     268 [-]: JUMPIFNOT R16 L36; goto L36 if not var16
      269 [-]: GETIMPORT R16 19; var16 = _T["ShowImpactMessage"]
-     270 [-]: JUMPIFNOT R16 L34; goto L34 if not var16
-     271 [-]: GETIMPORT R16 19; var16 = _T["ShowImpactMessage"]
-     272 [-]: LOADK R17 K20; var17 = "/Lotus/Language/Menu/BaitUnavailable"
-     273 [-]: LOADN R18 3  ; var18 = 3
-     274 [-]: LOADB R19 1  ; var19 = true
-     275 [-]: LOADNIL R20  ; var20 = nil
-     276 [-]: LOADB R21 0  ; var21 = false
-     277 [-]: CALL R16 6 1 ; var16(var17, var18, var19, var20, var21)
-L34: 278 [-]: LOADB R15 0  ; var15 = false
-     279 [-]: RETURN R15 1 ; 
-L35: 280 [-]: NAMECALL R15 R0 K67; var16 = var0; var15 = var0[0xDE321E6F]
+     270 [-]: LOADK R17 K20; var17 = "/Lotus/Language/Menu/BaitUnavailable"
+     271 [-]: LOADN R18 3  ; var18 = 3
+     272 [-]: LOADB R19 1  ; var19 = true
+     273 [-]: LOADNIL R20  ; var20 = nil
+     274 [-]: LOADB R21 0  ; var21 = false
+     275 [-]: CALL R16 6 1 ; var16(var17, var18, var19, var20, var21)
+L36: 276 [-]: LOADB R15 0  ; var15 = false
+     277 [-]: RETURN R15 1 ; 
+L37: 278 [-]: NAMECALL R15 R0 K65; var16 = var0; var15 = var0[0xDE321E6F]
+     279 [-]: CALL R15 2 2 ; var15 = var15(var16)
+     280 [-]: NAMECALL R15 R15 K66; var16 = var15; var15 = var15[0x73D065D7]
      281 [-]: CALL R15 2 2 ; var15 = var15(var16)
-     282 [-]: NAMECALL R15 R15 K68; var16 = var15; var15 = var15[0x73D065D7]
-     283 [-]: CALL R15 2 2 ; var15 = var15(var16)
-     284 [-]: JUMPIF R15 L37; goto L37 if var15
+     282 [-]: JUMPIF R15 L39; goto L39 if var15
+     283 [-]: GETIMPORT R16 19; var16 = _T["ShowImpactMessage"]
+     284 [-]: JUMPIFNOT R16 L38; goto L38 if not var16
      285 [-]: GETIMPORT R16 19; var16 = _T["ShowImpactMessage"]
-     286 [-]: JUMPIFNOT R16 L36; goto L36 if not var16
-     287 [-]: GETIMPORT R16 19; var16 = _T["ShowImpactMessage"]
-     288 [-]: LOADK R17 K20; var17 = "/Lotus/Language/Menu/BaitUnavailable"
-     289 [-]: LOADN R18 3  ; var18 = 3
-     290 [-]: LOADB R19 1  ; var19 = true
-     291 [-]: LOADNIL R20  ; var20 = nil
-     292 [-]: LOADB R21 0  ; var21 = false
-     293 [-]: CALL R16 6 1 ; var16(var17, var18, var19, var20, var21)
-L36: 294 [-]: LOADB R15 0  ; var15 = false
-     295 [-]: RETURN R15 1 ; 
-L37: 296 [-]: GETIMPORT R15 13; var15 = 0xBE190284
-     297 [-]: LOADK R17 K69; var17 = "DummyCallback"
-     298 [-]: NAMECALL R15 R15 K70; var16 = var15; var15 = var15[0x6F58E60A]
-     299 [-]: CALL R15 3 2 ; var15 = var15(var16, var17)
-     300 [-]: JUMPIF R15 L39; goto L39 if var15
+     286 [-]: LOADK R17 K20; var17 = "/Lotus/Language/Menu/BaitUnavailable"
+     287 [-]: LOADN R18 3  ; var18 = 3
+     288 [-]: LOADB R19 1  ; var19 = true
+     289 [-]: LOADNIL R20  ; var20 = nil
+     290 [-]: LOADB R21 0  ; var21 = false
+     291 [-]: CALL R16 6 1 ; var16(var17, var18, var19, var20, var21)
+L38: 292 [-]: LOADB R15 0  ; var15 = false
+     293 [-]: RETURN R15 1 ; 
+L39: 294 [-]: GETIMPORT R15 13; var15 = 0xBE190284
+     295 [-]: LOADK R17 K67; var17 = "DummyCallback"
+     296 [-]: NAMECALL R15 R15 K68; var16 = var15; var15 = var15[0x6F58E60A]
+     297 [-]: CALL R15 3 2 ; var15 = var15(var16, var17)
+     298 [-]: JUMPIF R15 L41; goto L41 if var15
+     299 [-]: GETIMPORT R16 19; var16 = _T["ShowImpactMessage"]
+     300 [-]: JUMPIFNOT R16 L40; goto L40 if not var16
      301 [-]: GETIMPORT R16 19; var16 = _T["ShowImpactMessage"]
-     302 [-]: JUMPIFNOT R16 L38; goto L38 if not var16
-     303 [-]: GETIMPORT R16 19; var16 = _T["ShowImpactMessage"]
-     304 [-]: LOADK R17 K20; var17 = "/Lotus/Language/Menu/BaitUnavailable"
-     305 [-]: LOADN R18 3  ; var18 = 3
-     306 [-]: LOADB R19 1  ; var19 = true
-     307 [-]: LOADNIL R20  ; var20 = nil
-     308 [-]: LOADB R21 0  ; var21 = false
-     309 [-]: CALL R16 6 1 ; var16(var17, var18, var19, var20, var21)
-L38: 310 [-]: LOADB R15 0  ; var15 = false
-     311 [-]: RETURN R15 1 ; 
-L39: 312 [-]: LOADB R12 1  ; var12 = true
-     313 [-]: RETURN R12 1 ; 
+     302 [-]: LOADK R17 K20; var17 = "/Lotus/Language/Menu/BaitUnavailable"
+     303 [-]: LOADN R18 3  ; var18 = 3
+     304 [-]: LOADB R19 1  ; var19 = true
+     305 [-]: LOADNIL R20  ; var20 = nil
+     306 [-]: LOADB R21 0  ; var21 = false
+     307 [-]: CALL R16 6 1 ; var16(var17, var18, var19, var20, var21)
+L40: 308 [-]: LOADB R15 0  ; var15 = false
+     309 [-]: RETURN R15 1 ; 
+L41: 310 [-]: LOADB R12 1  ; var12 = true
+     311 [-]: RETURN R12 1 ; 
 
 
 ; Name:            
-; Defined at line: 135
+; Defined at line: 134
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -421,7 +419,7 @@ L39: 312 [-]: LOADB R12 1  ; var12 = true
        4 [-]: RETURN R0 0  ; 
 L 0:   5 [-]: NAMECALL R2 R0 K3; var3 = var0; var2 = var0[0x5E651723]
        6 [-]: CALL R2 2 2  ; var2 = var2(var3)
-       7 [-]: FASTCALL1 62 R2 L1; 
+       7 [-]: FASTCALL1 64 R2 L1; 
        8 [-]: MOVE R4 R2   ; var4 = var2
        9 [-]: GETIMPORT R3 5; var3 = 0x7B998233
       10 [-]: CALL R3 2 2  ; var3 = var3(var4)
@@ -467,7 +465,7 @@ L 6:  49 [-]: SUBK R12 R9 K13; var12 = var9 - 1
       50 [-]: LOADN R13 0  ; var13 = 0
       51 [-]: NAMECALL R10 R6 K22; var11 = var6; var10 = var6[0xE6E56442]
       52 [-]: CALL R10 4 2 ; var10 = var10(var11, var12, var13)
-      53 [-]: FASTCALL1 62 R10 L7; 
+      53 [-]: FASTCALL1 64 R10 L7; 
       54 [-]: MOVE R12 R10 ; var12 = var10
       55 [-]: GETIMPORT R11 5; var11 = 0x7B998233
       56 [-]: CALL R11 2 2 ; var11 = var11(var12)
@@ -476,7 +474,7 @@ L 7:  57 [-]: JUMPIF R11 L8; goto L8 if var11
       59 [-]: CALL R11 2 2 ; var11 = var11(var12)
       60 [-]: NAMECALL R12 R1 K23; var13 = var1; var12 = var1[0xCDE10C4A]
       61 [-]: CALL R12 2 2 ; var12 = var12(var13)
-      62 [-]: JUMPIFNOTEQ R11 R12 L8; goto L8 if var11 ~= var1862273861
+      62 [-]: JUMPIFNOTEQ R11 R12 L8; goto L8 if var11 ~= var1862273868
       63 [-]: NAMECALL R11 R0 K20; var12 = var0; var11 = var0[0xDE321E6F]
       64 [-]: CALL R11 2 2 ; var11 = var11(var12)
       65 [-]: SUBK R13 R9 K13; var13 = var9 - 1
@@ -528,7 +526,7 @@ L 9:  71 [-]: NAMECALL R6 R0 K20; var7 = var0; var6 = var0[0xDE321E6F]
      111 [-]: CALL R13 2 2 ; var13 = var13(var14)
      112 [-]: SETTABLEKS R13 R12 K46; var13["StalkerTargetPlayer"] = var12
      113 [-]: GETIMPORT R13 47; var13 = _T["StalkerTargetPlayer"]
-     114 [-]: FASTCALL1 62 R13 L10; 
+     114 [-]: FASTCALL1 64 R13 L10; 
      115 [-]: GETIMPORT R12 5; var12 = 0x7B998233
      116 [-]: CALL R12 2 2 ; var12 = var12(var13)
 L10: 117 [-]: JUMPIF R12 L11; goto L11 if var12
@@ -545,13 +543,13 @@ L11: 127 [-]: RETURN R0 0  ;
 
 
 ; Name:            
-; Defined at line: 188
+; Defined at line: 187
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
 ; Max Stack Size:  11
 
-       0 [-]: FASTCALL1 62 R0 L0; 
+       0 [-]: FASTCALL1 64 R0 L0; 
        1 [-]: MOVE R2 R0   ; var2 = var0
        2 [-]: GETIMPORT R1 1; var1 = 0x7B998233
        3 [-]: CALL R1 2 2  ; var1 = var1(var2)
@@ -561,7 +559,7 @@ L 1:   6 [-]: GETIMPORT R3 3; var3 = 0x4FE44092
        7 [-]: GETIMPORT R4 5; var4 = EMPTY_SYMBOL
        8 [-]: NAMECALL R1 R0 K6; var2 = var0; var1 = var0[0x47901F07]
        9 [-]: CALL R1 4 2  ; var1 = var1(var2, var3, var4)
-      10 [-]: FASTCALL1 62 R1 L2; 
+      10 [-]: FASTCALL1 64 R1 L2; 
       11 [-]: MOVE R3 R1   ; var3 = var1
       12 [-]: GETIMPORT R2 1; var2 = 0x7B998233
       13 [-]: CALL R2 2 2  ; var2 = var2(var3)
@@ -576,7 +574,7 @@ L 3:  19 [-]: GETIMPORT R7 8; var7 = 0x78A39459
       22 [-]: GETTABLE R9 R10 R4; var9 = var10[var4]
       23 [-]: NAMECALL R5 R0 K6; var6 = var0; var5 = var0[0x47901F07]
       24 [-]: CALL R5 5 2  ; var5 = var5(var6, var7, var8, var9)
-      25 [-]: FASTCALL1 62 R5 L4; 
+      25 [-]: FASTCALL1 64 R5 L4; 
       26 [-]: MOVE R7 R5   ; var7 = var5
       27 [-]: GETIMPORT R6 1; var6 = 0x7B998233
       28 [-]: CALL R6 2 2  ; var6 = var6(var7)
@@ -589,20 +587,20 @@ L 4:  29 [-]: JUMPIF R6 L5 ; goto L5 if var6
 L 5:  35 [-]: FORNLOOP R2 L3; nforloop end - iterate + goto L3
 L 6:  36 [-]: LOADN R2 0   ; var2 = 0
 L 7:  37 [-]: LOADN R3 1   ; var3 = 1
-      38 [-]: JUMPIFNOTLT R2 R3 L10; goto L10 if var2 >= var50347595
-      39 [-]: FASTCALL1 62 R0 L8; 
+      38 [-]: JUMPIFNOTLT R2 R3 L10; goto L10 if var2 >= var50348093
+      39 [-]: FASTCALL1 64 R0 L8; 
       40 [-]: MOVE R4 R0   ; var4 = var0
       41 [-]: GETIMPORT R3 1; var3 = 0x7B998233
       42 [-]: CALL R3 2 2  ; var3 = var3(var4)
 L 8:  43 [-]: JUMPIF R3 L10; goto L10 if var3
-      44 [-]: FASTCALL1 62 R1 L9; 
+      44 [-]: FASTCALL1 64 R1 L9; 
       45 [-]: MOVE R4 R1   ; var4 = var1
       46 [-]: GETIMPORT R3 1; var3 = 0x7B998233
       47 [-]: CALL R3 2 2  ; var3 = var3(var4)
 L 9:  48 [-]: JUMPIF R3 L10; goto L10 if var3
       49 [-]: GETIMPORT R5 13; var5 = 0xA421AF95
       50 [-]: LOADN R6 0   ; var6 = 0
-      51 [-]: LOADK R8 K14 ; var8 = 0.23999999999999999
+      51 [-]: LOADK R8 K14 ; var8 = 0.23999999463558197
       52 [-]: MULK R9 R2 K15; var9 = var2 * 1
       53 [-]: ADD R7 R8 R9 ; var7 = var8 + var9
       54 [-]: LOADN R8 0   ; var8 = 0
@@ -615,10 +613,10 @@ L 9:  48 [-]: JUMPIF R3 L10; goto L10 if var3
       61 [-]: CALL R3 2 1  ; var3(var4)
       62 [-]: GETIMPORT R4 23; var4 = 0x67652851
       63 [-]: CALL R4 1 2  ; var4 = var4()
-      64 [-]: MULK R3 R4 K21; var3 = var4 * 0.20000000000000001
+      64 [-]: MULK R3 R4 K21; var3 = var4 * 0.20000000298023224
       65 [-]: ADD R2 R2 R3 ; var2 = var2 + var3
       66 [-]: JUMPBACK L7  ; goto L7
-L10:  67 [-]: FASTCALL1 62 R1 L11; 
+L10:  67 [-]: FASTCALL1 64 R1 L11; 
       68 [-]: MOVE R4 R1   ; var4 = var1
       69 [-]: GETIMPORT R3 1; var3 = 0x7B998233
       70 [-]: CALL R3 2 2  ; var3 = var3(var4)

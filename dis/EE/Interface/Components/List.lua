@@ -85,7 +85,7 @@
       61 [-]: SETTABLEKS R5 R3 K31; var5["mInitialDepth"] = var3
       62 [-]: LOADN R5 -1  ; var5 = -1
       63 [-]: SETTABLEKS R5 R3 K32; var5["mDepthDirection"] = var3
-      64 [-]: LOADK R5 K33 ; var5 = 0.20000000000000001
+      64 [-]: LOADK R5 K33 ; var5 = 0.20000000298023224
       65 [-]: SETTABLEKS R5 R3 K34; var5["mElementTransitionTime"] = var3
       66 [-]: LOADN R5 0   ; var5 = 0
       67 [-]: SETTABLEKS R5 R3 K35; var5["mElementDelayTime"] = var3
@@ -145,7 +145,7 @@
      121 [-]: LOADN R5 4   ; var5 = 4
      122 [-]: SETTABLEKS R5 R3 K60; var5["LEFT"] = var3
      123 [-]: MOVE R6 R1   ; var6 = var1
-     124 [-]: LOADN R7 59  ; var7 = 59
+     124 [-]: LOADN R7 61  ; var7 = 61
      125 [-]: LOADB R8 0   ; var8 = false
      126 [-]: NAMECALL R4 R0 K61; var5 = var0; var4 = var0[0xAADE900E]
      127 [-]: CALL R4 5 2  ; var4 = var4(var5, var6, var7, var8)

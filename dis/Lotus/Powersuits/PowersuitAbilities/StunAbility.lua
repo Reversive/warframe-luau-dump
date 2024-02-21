@@ -44,7 +44,7 @@ L 1:  15 [-]: GETIMPORT R4 4; var4 = 0x0ED8B456
       17 [-]: CALL R2 3 2  ; var2 = var2(var3, var4)
       18 [-]: JUMPIFNOT R2 L2; goto L2 if not var2
       19 [-]: GETIMPORT R2 7; var2 = 0xCBD666E1
-      20 [-]: LOADK R3 K10 ; var3 = 0.10000000000000001
+      20 [-]: LOADK R3 K10 ; var3 = 0.10000000149011612
       21 [-]: CALL R2 2 1  ; var2(var3)
       22 [-]: JUMPBACK L1  ; goto L1
 L 2:  23 [-]: GETIMPORT R2 1; var2 = 0x89326C93
@@ -58,14 +58,14 @@ L 2:  23 [-]: GETIMPORT R2 1; var2 = 0x89326C93
       31 [-]: GETIMPORT R2 1; var2 = 0x89326C93
       32 [-]: NAMECALL R2 R2 K16; var3 = var2; var2 = var2[0x8B5B1F58]
       33 [-]: CALL R2 2 2  ; var2 = var2(var3)
-      34 [-]: FASTCALL1 62 R2 L3; 
+      34 [-]: FASTCALL1 64 R2 L3; 
       35 [-]: MOVE R4 R2   ; var4 = var2
       36 [-]: GETIMPORT R3 18; var3 = 0x7B998233
       37 [-]: CALL R3 2 2  ; var3 = var3(var4)
 L 3:  38 [-]: JUMPIF R3 L6 ; goto L6 if var3
       39 [-]: LENGTH R3 R2 ; var3 = #var2
       40 [-]: LOADN R4 0   ; var4 = 0
-      41 [-]: JUMPIFNOTLT R4 R3 L6; goto L6 if var4 >= var66887
+      41 [-]: JUMPIFNOTLT R4 R3 L6; goto L6 if var4 >= var66864
       42 [-]: LOADN R5 1   ; var5 = 1
       43 [-]: LENGTH R3 R2 ; var3 = #var2
       44 [-]: LOADN R4 1   ; var4 = 1
@@ -75,7 +75,7 @@ L 4:  46 [-]: GETTABLE R6 R2 R5; var6 = var2[var5]
       48 [-]: NAMECALL R6 R6 K19; var7 = var6; var6 = var6[0xBEBAD19F]
       49 [-]: CALL R6 3 2  ; var6 = var6(var7, var8)
       50 [-]: GETIMPORT R7 21; var7 = 0x64F08C82
-      51 [-]: JUMPIFNOTLE R6 R7 L5; goto L5 if var6 > var84018743
+      51 [-]: JUMPIFNOTLE R6 R7 L5; goto L5 if var6 > var84018717
       52 [-]: GETTABLE R6 R2 R5; var6 = var2[var5]
       53 [-]: NAMECALL R6 R6 K22; var7 = var6; var6 = var6[0x0B4BCFB6]
       54 [-]: CALL R6 2 2  ; var6 = var6(var7)
@@ -106,14 +106,14 @@ L 6:  62 [-]: GETIMPORT R3 33; var3 = _T
       79 [-]: MOVE R9 R3   ; var9 = var3
       80 [-]: NAMECALL R4 R4 K43; var5 = var4; var4 = var4[0xFB669000]
       81 [-]: CALL R4 6 2  ; var4 = var4(var5, var6, var7, var8, var9)
-      82 [-]: FASTCALL1 62 R4 L7; 
+      82 [-]: FASTCALL1 64 R4 L7; 
       83 [-]: MOVE R6 R4   ; var6 = var4
       84 [-]: GETIMPORT R5 18; var5 = 0x7B998233
       85 [-]: CALL R5 2 2  ; var5 = var5(var6)
 L 7:  86 [-]: JUMPIF R5 L13; goto L13 if var5
       87 [-]: LENGTH R5 R4 ; var5 = #var4
       88 [-]: LOADN R6 0   ; var6 = 0
-      89 [-]: JUMPIFNOTLT R6 R5 L13; goto L13 if var6 >= var2950478
+      89 [-]: JUMPIFNOTLT R6 R5 L13; goto L13 if var6 >= var2950433
       90 [-]: GETIMPORT R5 45; var5 = 0xC8802016
       91 [-]: MOVE R6 R4   ; var6 = var4
       92 [-]: CALL R5 2 4  ; var5, var6, var7 = var5(var6)
@@ -136,7 +136,7 @@ L 8:  94 [-]: MOVE R12 R9  ; var12 = var9
      109 [-]: CALL R11 3 1 ; var11(var12, var13)
      110 [-]: JUMP L11     ; goto L11
 L 9: 111 [-]: GETUPVAL R13 0; var13 = upvalues[0]
-     112 [-]: LOADK R14 K10; var14 = 0.10000000000000001
+     112 [-]: LOADK R14 K10; var14 = 0.10000000149011612
      113 [-]: NAMECALL R11 R9 K49; var12 = var9; var11 = var9[0x9D668F53]
      114 [-]: CALL R11 4 1 ; var11(var12, var13, var14)
      115 [-]: LOADB R10 1  ; var10 = true
@@ -186,7 +186,7 @@ L13: 136 [-]: NAMECALL R5 R1 K35; var6 = var1; var5 = var1[0xDE321E6F]
        1 [-]: GETIMPORT R3 4; var3 = _T["stunned"]
        2 [-]: CALL R2 2 4  ; var2, var3, var4 = var2(var3)
        3 [-]: FORGPREP_INEXT R2 L4; 
-L 0:   4 [-]: FASTCALL1 62 R6 L1; 
+L 0:   4 [-]: FASTCALL1 64 R6 L1; 
        5 [-]: MOVE R8 R6   ; var8 = var6
        6 [-]: GETIMPORT R7 6; var7 = 0x7B998233
        7 [-]: CALL R7 2 2  ; var7 = var7(var8)
@@ -201,7 +201,7 @@ L 1:   8 [-]: JUMPIF R7 L4 ; goto L4 if var7
 L 2:  16 [-]: GETIMPORT R9 12; var9 = 0xDB6AE546
       17 [-]: NAMECALL R7 R6 K13; var8 = var6; var7 = var6[0xC9F6A7D7]
       18 [-]: CALL R7 3 2  ; var7 = var7(var8, var9)
-      19 [-]: FASTCALL1 62 R7 L3; 
+      19 [-]: FASTCALL1 64 R7 L3; 
       20 [-]: MOVE R9 R7   ; var9 = var7
       21 [-]: GETIMPORT R8 6; var8 = 0x7B998233
       22 [-]: CALL R8 2 2  ; var8 = var8(var9)

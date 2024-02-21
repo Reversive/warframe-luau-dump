@@ -40,12 +40,12 @@
 
        0 [-]: NAMECALL R3 R2 K0; var4 = var2; var3 = var2[0xF1C7CAB6]
        1 [-]: CALL R3 2 2  ; var3 = var3(var4)
-       2 [-]: FASTCALL1 62 R3 L0; 
+       2 [-]: FASTCALL1 64 R3 L0; 
        3 [-]: MOVE R5 R3   ; var5 = var3
        4 [-]: GETIMPORT R4 2; var4 = 0x7B998233
        5 [-]: CALL R4 2 2  ; var4 = var4(var5)
 L 0:   6 [-]: JUMPIF R4 L2 ; goto L2 if var4
-       7 [-]: FASTCALL1 62 R0 L1; 
+       7 [-]: FASTCALL1 64 R0 L1; 
        8 [-]: MOVE R5 R0   ; var5 = var0
        9 [-]: GETIMPORT R4 2; var4 = 0x7B998233
       10 [-]: CALL R4 2 2  ; var4 = var4(var5)
@@ -56,7 +56,7 @@ L 3:  13 [-]: GETIMPORT R4 5; var4 = _T["PVPObject"]
       15 [-]: LOADK R4 K6  ; var4 = ""
       16 [-]: NAMECALL R5 R0 K7; var6 = var0; var5 = var0[0x5E651723]
       17 [-]: CALL R5 2 2  ; var5 = var5(var6)
-      18 [-]: FASTCALL1 62 R5 L4; 
+      18 [-]: FASTCALL1 64 R5 L4; 
       19 [-]: MOVE R7 R5   ; var7 = var5
       20 [-]: GETIMPORT R6 2; var6 = 0x7B998233
       21 [-]: CALL R6 2 2  ; var6 = var6(var7)
@@ -73,7 +73,7 @@ L 5:  29 [-]: NAMECALL R6 R5 K11; var7 = var5; var6 = var5[0x5CA33548]
 L 6:  32 [-]: JUMPXEQKS R4 K6 L10; 
       33 [-]: GETIMPORT R6 13; var6 = _T["PvpMode"]
       34 [-]: LOADN R7 3   ; var7 = 3
-      35 [-]: JUMPIFNOTEQ R6 R7 L7; goto L7 if var6 ~= var985166
+      35 [-]: JUMPIFNOTEQ R6 R7 L7; goto L7 if var6 ~= var985121
       36 [-]: GETIMPORT R8 15; var8 = 0x950DA5EE
       37 [-]: GETUPVAL R9 0; var9 = upvalues[0]
       38 [-]: NAMECALL R6 R0 K16; var7 = var0; var6 = var0[0x47901F07]
@@ -82,7 +82,7 @@ L 6:  32 [-]: JUMPXEQKS R4 K6 L10;
 L 7:  41 [-]: NAMECALL R6 R3 K17; var7 = var3; var6 = var3[0x22DA1852]
       42 [-]: CALL R6 2 2  ; var6 = var6(var7)
       43 [-]: GETUPVAL R7 1; var7 = upvalues[1]
-      44 [-]: JUMPIFNOTEQ R6 R7 L8; goto L8 if var6 ~= var1247310
+      44 [-]: JUMPIFNOTEQ R6 R7 L8; goto L8 if var6 ~= var1247265
       45 [-]: GETIMPORT R8 19; var8 = 0x0D479B27
       46 [-]: GETUPVAL R9 0; var9 = upvalues[0]
       47 [-]: NAMECALL R6 R0 K16; var7 = var0; var6 = var0[0x47901F07]

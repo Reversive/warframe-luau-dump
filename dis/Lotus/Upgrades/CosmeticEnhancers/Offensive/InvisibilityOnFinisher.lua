@@ -25,7 +25,7 @@
 ; Max Stack Size:  12
 
        0 [-]: GETIMPORT R6 2; var6 = _T["invisOnFinisher"]
-       1 [-]: FASTCALL1 62 R6 L0; 
+       1 [-]: FASTCALL1 64 R6 L0; 
        2 [-]: GETIMPORT R5 4; var5 = 0x7B998233
        3 [-]: CALL R5 2 2  ; var5 = var5(var6)
 L 0:   4 [-]: JUMPIFNOT R5 L1; goto L1 if not var5
@@ -36,7 +36,7 @@ L 1:   8 [-]: NAMECALL R5 R0 K6; var6 = var0; var5 = var0[0x388577D5]
        9 [-]: CALL R5 2 2  ; var5 = var5(var6)
       10 [-]: GETIMPORT R8 2; var8 = _T["invisOnFinisher"]
       11 [-]: GETTABLE R7 R8 R5; var7 = var8[var5]
-      12 [-]: FASTCALL1 62 R7 L2; 
+      12 [-]: FASTCALL1 64 R7 L2; 
       13 [-]: GETIMPORT R6 4; var6 = 0x7B998233
       14 [-]: CALL R6 2 2  ; var6 = var6(var7)
 L 2:  15 [-]: JUMPIFNOT R6 L3; goto L3 if not var6
@@ -48,7 +48,7 @@ L 3:  19 [-]: GETIMPORT R6 8; var6 = 0xC8802016
       21 [-]: GETTABLE R7 R9 R5; var7 = var9[var5]
       22 [-]: CALL R6 2 4  ; var6, var7, var8 = var6(var7)
       23 [-]: FORGPREP_INEXT R6 L5; 
-L 4:  24 [-]: JUMPIFNOTEQ R10 R4 L5; goto L5 if var10 ~= var65581
+L 4:  24 [-]: JUMPIFNOTEQ R10 R4 L5; goto L5 if var10 ~= var65571
       25 [-]: RETURN R0 0  ; 
 L 5:  26 [-]: FORGLOOP R6 L4 2 [inext]; 
       27 [-]: GETIMPORT R8 2; var8 = _T["invisOnFinisher"]
@@ -69,9 +69,9 @@ L 6:  33 [-]: GETUPVAL R7 0; var7 = upvalues[0]
       42 [-]: JUMPXEQKNIL R6 L7; 
       43 [-]: NAMECALL R6 R0 K14; var7 = var0; var6 = var0[0x0B4BCFB6]
       44 [-]: CALL R6 2 2  ; var6 = var6(var7)
-      45 [-]: LOADK R8 K15 ; var8 = 1.8
-      46 [-]: LOADK R9 K16 ; var9 = 1.1000000000000001
-      47 [-]: LOADK R10 K16; var10 = 1.1000000000000001
+      45 [-]: LOADK R8 K15 ; var8 = 1.7999999523162842
+      46 [-]: LOADK R9 K16 ; var9 = 1.1000000238418579
+      47 [-]: LOADK R10 K16; var10 = 1.1000000238418579
       48 [-]: LOADN R11 3  ; var11 = 3
       49 [-]: NAMECALL R6 R6 K17; var7 = var6; var6 = var6[0xD8BCB169]
       50 [-]: CALL R6 6 1  ; var6(var7, var8, var9, var10, var11)
@@ -97,7 +97,7 @@ L 7:  59 [-]: RETURN R0 0  ;
        1 [-]: CALL R5 2 2  ; var5 = var5(var6)
        2 [-]: LOADB R6 0   ; var6 = false
        3 [-]: GETIMPORT R8 3; var8 = _T["invisOnFinisher"]
-       4 [-]: FASTCALL1 62 R8 L0; 
+       4 [-]: FASTCALL1 64 R8 L0; 
        5 [-]: GETIMPORT R7 5; var7 = 0x7B998233
        6 [-]: CALL R7 2 2  ; var7 = var7(var8)
 L 0:   7 [-]: JUMPIF R7 L4 ; goto L4 if var7
@@ -106,7 +106,7 @@ L 0:   7 [-]: JUMPIF R7 L4 ; goto L4 if var7
       10 [-]: GETTABLE R8 R10 R5; var8 = var10[var5]
       11 [-]: CALL R7 2 4  ; var7, var8, var9 = var7(var8)
       12 [-]: FORGPREP_INEXT R7 L3; 
-L 1:  13 [-]: JUMPIFNOTEQ R11 R4 L3; goto L3 if var11 ~= var658510
+L 1:  13 [-]: JUMPIFNOTEQ R11 R4 L3; goto L3 if var11 ~= var658465
       14 [-]: GETIMPORT R12 10; var12 = 0x33BDD652[0x9C1F3B5A]
       15 [-]: GETIMPORT R14 3; var14 = _T["invisOnFinisher"]
       16 [-]: GETTABLE R13 R14 R5; var13 = var14[var5]

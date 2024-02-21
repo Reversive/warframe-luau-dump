@@ -32,7 +32,7 @@ L 0:   9 [-]: GETIMPORT R12 4; var12 = gHitProxyType
       12 [-]: JUMPIFNOT R10 L4; goto L4 if not var10
       13 [-]: LOADNIL R10  ; var10 = nil
       14 [-]: LOADN R11 5  ; var11 = 5
-      15 [-]: JUMPIFNOTLT R8 R11 L1; goto L1 if var8 >= var461646
+      15 [-]: JUMPIFNOTLT R8 R11 L1; goto L1 if var8 >= var461601
       16 [-]: GETIMPORT R11 7; var11 = 0x00046924
       17 [-]: MOVE R12 R4  ; var12 = var4
       18 [-]: LOADN R13 0  ; var13 = 0
@@ -71,13 +71,13 @@ L 3:  46 [-]: FASTCALL2 52 R3 R10 L4;
 L 4:  51 [-]: FORGLOOP R5 L0 2 [inext]; 
 L 5:  52 [-]: LENGTH R5 R2 ; var5 = #var2
       53 [-]: LOADN R6 0   ; var6 = 0
-      54 [-]: JUMPIFNOTLT R6 R5 L10; goto L10 if var6 >= var132880
+      54 [-]: JUMPIFNOTLT R6 R5 L10; goto L10 if var6 >= var132864
       55 [-]: LENGTH R7 R2 ; var7 = #var2
       56 [-]: LOADN R5 1   ; var5 = 1
       57 [-]: LOADN R6 -1  ; var6 = -1
       58 [-]: FORNPREP R5 L9; nforprep start - [escape at L9] -- var5 = iterator
 L 6:  59 [-]: GETTABLE R9 R2 R7; var9 = var2[var7]
-      60 [-]: FASTCALL1 62 R9 L7; 
+      60 [-]: FASTCALL1 64 R9 L7; 
       61 [-]: GETIMPORT R8 22; var8 = 0x7B998233
       62 [-]: CALL R8 2 2  ; var8 = var8(var9)
 L 7:  63 [-]: JUMPIFNOT R8 L8; goto L8 if not var8

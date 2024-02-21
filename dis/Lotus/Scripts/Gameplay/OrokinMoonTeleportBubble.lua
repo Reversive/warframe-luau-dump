@@ -22,10 +22,10 @@
        2 [-]: LOADNIL R2   ; var2 = nil
        3 [-]: LOADNIL R3   ; var3 = nil
        4 [-]: LOADN R4 1   ; var4 = 1
-       5 [-]: JUMPIFNOTEQ R1 R4 L4; goto L4 if var1 ~= var1051
+       5 [-]: JUMPIFNOTEQ R1 R4 L4; goto L4 if var1 ~= var1030
        6 [-]: LOADB R4 0   ; var4 = false
        7 [-]: GETIMPORT R6 2; var6 = 0x4C8DFC36
-       8 [-]: FASTCALL1 62 R6 L0; 
+       8 [-]: FASTCALL1 64 R6 L0; 
        9 [-]: GETIMPORT R5 4; var5 = 0x7B998233
       10 [-]: CALL R5 2 2  ; var5 = var5(var6)
 L 0:  11 [-]: JUMPIF R5 L2 ; goto L2 if var5
@@ -45,7 +45,7 @@ L 3:  22 [-]: GETIMPORT R2 12; var2 = 0xB50E8148
 L 4:  25 [-]: GETIMPORT R2 16; var2 = 0x8D4E8258
       26 [-]: GETIMPORT R3 18; var3 = 0x92D256BC
       27 [-]: GETIMPORT R5 2; var5 = 0x4C8DFC36
-      28 [-]: FASTCALL1 62 R5 L5; 
+      28 [-]: FASTCALL1 64 R5 L5; 
       29 [-]: GETIMPORT R4 4; var4 = 0x7B998233
       30 [-]: CALL R4 2 2  ; var4 = var4(var5)
 L 5:  31 [-]: JUMPIF R4 L6 ; goto L6 if var4
@@ -56,15 +56,16 @@ L 5:  31 [-]: JUMPIF R4 L6 ; goto L6 if var4
 L 6:  36 [-]: GETIMPORT R4 21; var4 = 0xC8802016
       37 [-]: MOVE R5 R2   ; var5 = var2
       38 [-]: CALL R4 2 4  ; var4, var5, var6 = var4(var5)
-      39 [-]: FORGPREP_INEXT R4 L8; 
-L 7:  40 [-]: GETIMPORT R9 23; var9 = 0x64FB1586
-      41 [-]: GETTABLE R10 R3 R7; var10 = var3[var7]
-      42 [-]: CALL R9 2 2  ; var9 = var9(var10)
-      43 [-]: MOVE R12 R9  ; var12 = var9
-      44 [-]: NAMECALL R10 R8 K24; var11 = var8; var10 = var8[0x8EB2112D]
-      45 [-]: CALL R10 3 1 ; var10(var11, var12)
-L 8:  46 [-]: FORGLOOP R4 L7 2 [inext]; 
-      47 [-]: RETURN R0 0  ; 
+      39 [-]: FORGPREP_INEXT R4 L9; 
+L 7:  40 [-]: GETTABLE R10 R3 R7; var10 = var3[var7]
+      41 [-]: FASTCALL1 63 R10 L8; 
+      42 [-]: GETIMPORT R9 23; var9 = 0x64FB1586
+      43 [-]: CALL R9 2 2  ; var9 = var9(var10)
+L 8:  44 [-]: MOVE R12 R9  ; var12 = var9
+      45 [-]: NAMECALL R10 R8 K24; var11 = var8; var10 = var8[0x8EB2112D]
+      46 [-]: CALL R10 3 1 ; var10(var11, var12)
+L 9:  47 [-]: FORGLOOP R4 L7 2 [inext]; 
+      48 [-]: RETURN R0 0  ; 
 
 
 

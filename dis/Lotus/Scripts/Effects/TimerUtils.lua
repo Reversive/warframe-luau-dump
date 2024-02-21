@@ -31,7 +31,7 @@ L 0:  10 [-]: GETIMPORT R2 13; var2 = 0xCBD666E1
       11 [-]: MOVE R3 R1   ; var3 = var1
       12 [-]: CALL R2 2 1  ; var2(var3)
       13 [-]: GETIMPORT R3 15; var3 = 0xB39D8ED1
-      14 [-]: FASTCALL1 62 R3 L1; 
+      14 [-]: FASTCALL1 64 R3 L1; 
       15 [-]: GETIMPORT R2 17; var2 = 0x7B998233
       16 [-]: CALL R2 2 2  ; var2 = var2(var3)
 L 1:  17 [-]: JUMPIF R2 L3 ; goto L3 if var2
@@ -66,7 +66,7 @@ L 4:  40 [-]: GETIMPORT R2 13; var2 = 0xCBD666E1
       46 [-]: LOADK R3 K18 ; var3 = "========== Firing Now"
       47 [-]: CALL R2 2 1  ; var2(var3)
 L 5:  48 [-]: GETIMPORT R3 15; var3 = 0xB39D8ED1
-      49 [-]: FASTCALL1 62 R3 L6; 
+      49 [-]: FASTCALL1 64 R3 L6; 
       50 [-]: GETIMPORT R2 17; var2 = 0x7B998233
       51 [-]: CALL R2 2 2  ; var2 = var2(var3)
 L 6:  52 [-]: JUMPIF R2 L7 ; goto L7 if var2

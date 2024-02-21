@@ -45,7 +45,7 @@ L 0:   8 [-]: GETTABLE R2 R3 R4; var2 = var3[var4]
        0 [-]: NAMECALL R5 R4 K0; var6 = var4; var5 = var4[0x5EFCA02D]
        1 [-]: CALL R5 2 2  ; var5 = var5(var6)
        2 [-]: GETTABLEKS R7 R5 K1; var7 = var5["victim"]
-       3 [-]: FASTCALL1 62 R7 L0; 
+       3 [-]: FASTCALL1 64 R7 L0; 
        4 [-]: GETIMPORT R6 3; var6 = 0x7B998233
        5 [-]: CALL R6 2 2  ; var6 = var6(var7)
 L 0:   6 [-]: JUMPIF R6 L1 ; goto L1 if var6

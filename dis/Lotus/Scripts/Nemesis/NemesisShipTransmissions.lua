@@ -35,7 +35,7 @@
        9 [-]: GETTABLEKS R7 R4 K5; var7 = var4["saturation"]
       10 [-]: SETTABLEKS R3 R4 K6; var3["desaturateColor"] = var4
       11 [-]: LOADN R8 0   ; var8 = 0
-L 0:  12 [-]: JUMPIFNOTLT R8 R0 L1; goto L1 if var8 >= var526670
+L 0:  12 [-]: JUMPIFNOTLT R8 R0 L1; goto L1 if var8 >= var526625
       13 [-]: GETIMPORT R9 8; var9 = 0xCBD666E1
       14 [-]: LOADN R10 0  ; var10 = 0
       15 [-]: CALL R9 2 1  ; var9(var10)
@@ -72,7 +72,7 @@ L 1:  38 [-]: RETURN R0 0  ;
 ; Max Stack Size:  13
 
 L 0:   0 [-]: GETIMPORT R1 1; var1 = 0x25D99D89
-       1 [-]: FASTCALL1 62 R1 L1; 
+       1 [-]: FASTCALL1 64 R1 L1; 
        2 [-]: GETIMPORT R0 3; var0 = 0x7B998233
        3 [-]: CALL R0 2 2  ; var0 = var0(var1)
 L 1:   4 [-]: JUMPIF R0 L2 ; goto L2 if var0
@@ -83,14 +83,14 @@ L 2:   7 [-]: GETIMPORT R0 8; var0 = 0xCBD666E1
        9 [-]: CALL R0 2 1  ; var0(var1)
       10 [-]: JUMPBACK L0  ; goto L0
 L 3:  11 [-]: GETIMPORT R1 1; var1 = 0x25D99D89
-      12 [-]: FASTCALL1 62 R1 L4; 
+      12 [-]: FASTCALL1 64 R1 L4; 
       13 [-]: GETIMPORT R0 3; var0 = 0x7B998233
       14 [-]: CALL R0 2 2  ; var0 = var0(var1)
 L 4:  15 [-]: JUMPIF R0 L6 ; goto L6 if var0
       16 [-]: GETIMPORT R0 1; var0 = 0x25D99D89
       17 [-]: NAMECALL R0 R0 K9; var1 = var0; var0 = var0[0x25A6E75E]
       18 [-]: CALL R0 2 2  ; var0 = var0(var1)
-      19 [-]: FASTCALL1 62 R0 L5; 
+      19 [-]: FASTCALL1 64 R0 L5; 
       20 [-]: MOVE R2 R0   ; var2 = var0
       21 [-]: GETIMPORT R1 3; var1 = 0x7B998233
       22 [-]: CALL R1 2 2  ; var1 = var1(var2)
@@ -100,7 +100,7 @@ L 5:  23 [-]: JUMPIF R1 L6 ; goto L6 if var1
       26 [-]: GETIMPORT R2 12; var2 = 0x7ED0A956
       27 [-]: LOADK R3 K13 ; var3 = "/Lotus/Types/Keys/NewWarQuest/NewWarQuestKeyChain"
       28 [-]: CALL R2 2 2  ; var2 = var2(var3)
-      29 [-]: JUMPIFNOTEQ R1 R2 L6; goto L6 if var1 ~= var917838
+      29 [-]: JUMPIFNOTEQ R1 R2 L6; goto L6 if var1 ~= var917793
       30 [-]: GETIMPORT R1 14; var1 = _T
       31 [-]: LOADB R2 1   ; var2 = true
       32 [-]: SETTABLEKS R2 R1 K15; var2["DisableNemesisTransmissions"] = var1
@@ -109,7 +109,7 @@ L 6:  33 [-]: GETIMPORT R0 16; var0 = _T["DisableNemesisTransmissions"]
       35 [-]: RETURN R0 0  ; 
 L 7:  36 [-]: GETIMPORT R3 18; var3 = 0x0032441C
       37 [-]: GETTABLEKS R2 R3 K19; var2 = var3["NemesisPopup_Info"]
-      38 [-]: FASTCALL1 62 R2 L8; 
+      38 [-]: FASTCALL1 64 R2 L8; 
       39 [-]: GETIMPORT R1 3; var1 = 0x7B998233
       40 [-]: CALL R1 2 2  ; var1 = var1(var2)
 L 8:  41 [-]: NOT R0 R1    ; var0 = not var1
@@ -165,12 +165,12 @@ L14:  86 [-]: GETIMPORT R3 41; var3 = 0x9BA7909F
       91 [-]: GETIMPORT R4 27; var4 = 0x89326C93
       92 [-]: NAMECALL R4 R4 K43; var5 = var4; var4 = var4[0x78298275]
       93 [-]: CALL R4 2 0  ; var4, ... = var4(var5)
-      94 [-]: FASTCALL 62 L15; 
+      94 [-]: FASTCALL 64 L15; 
       95 [-]: GETIMPORT R3 3; var3 = 0x7B998233
       96 [-]: CALL R3 0 2  ; var3 = var3(var4, ...)
 L15:  97 [-]: JUMPIF R3 L17; goto L17 if var3
       98 [-]: GETIMPORT R4 45; var4 = _T["curTransmission"]
-      99 [-]: FASTCALL1 62 R4 L16; 
+      99 [-]: FASTCALL1 64 R4 L16; 
      100 [-]: GETIMPORT R3 3; var3 = 0x7B998233
      101 [-]: CALL R3 2 2  ; var3 = var3(var4)
 L16: 102 [-]: JUMPIF R3 L18; goto L18 if var3
@@ -185,8 +185,8 @@ L18: 107 [-]: JUMPIFNOT R0 L20; goto L20 if not var0
      111 [-]: JUMPXEQKN R3 K47 L19 NOT; 
      112 [-]: GETUPVAL R3 0; var3 = upvalues[0]
      113 [-]: LOADN R4 1   ; var4 = 1
-     114 [-]: LOADK R5 K48 ; var5 = 0.20000000000000001
-     115 [-]: LOADK R6 K49 ; var6 = 0.29999999999999999
+     114 [-]: LOADK R5 K48 ; var5 = 0.20000000298023224
+     115 [-]: LOADK R6 K49 ; var6 = 0.30000001192092896
      116 [-]: GETIMPORT R7 51; var7 = 0x60130201
      117 [-]: LOADN R8 47  ; var8 = 47
      118 [-]: LOADN R9 200 ; var9 = 200
@@ -197,8 +197,8 @@ L18: 107 [-]: JUMPIFNOT R0 L20; goto L20 if not var0
      123 [-]: JUMP L20     ; goto L20
 L19: 124 [-]: GETUPVAL R3 0; var3 = upvalues[0]
      125 [-]: LOADN R4 1   ; var4 = 1
-     126 [-]: LOADK R5 K48 ; var5 = 0.20000000000000001
-     127 [-]: LOADK R6 K49 ; var6 = 0.29999999999999999
+     126 [-]: LOADK R5 K48 ; var5 = 0.20000000298023224
+     127 [-]: LOADK R6 K49 ; var6 = 0.30000001192092896
      128 [-]: GETIMPORT R7 51; var7 = 0x60130201
      129 [-]: LOADN R8 200 ; var8 = 200
      130 [-]: LOADN R9 32  ; var9 = 32
@@ -229,7 +229,7 @@ L21: 154 [-]: GETIMPORT R5 18; var5 = 0x0032441C
      155 [-]: GETTABLEKS R4 R5 K53; var4 = var5["NemesisReminderPlayed"]
      156 [-]: JUMPIF R4 L23; goto L23 if var4
      157 [-]: GETIMPORT R5 1; var5 = 0x25D99D89
-     158 [-]: FASTCALL1 62 R5 L22; 
+     158 [-]: FASTCALL1 64 R5 L22; 
      159 [-]: GETIMPORT R4 3; var4 = 0x7B998233
      160 [-]: CALL R4 2 2  ; var4 = var4(var5)
 L22: 161 [-]: JUMPIF R4 L23; goto L23 if var4
@@ -251,7 +251,7 @@ L22: 161 [-]: JUMPIF R4 L23; goto L23 if var4
      177 [-]: SETTABLEKS R5 R4 K53; var5["NemesisReminderPlayed"] = var4
 L23: 178 [-]: GETIMPORT R6 18; var6 = 0x0032441C
      179 [-]: GETTABLEKS R5 R6 K19; var5 = var6["NemesisPopup_Info"]
-     180 [-]: FASTCALL1 62 R5 L24; 
+     180 [-]: FASTCALL1 64 R5 L24; 
      181 [-]: GETIMPORT R4 3; var4 = 0x7B998233
      182 [-]: CALL R4 2 2  ; var4 = var4(var5)
 L24: 183 [-]: JUMPIF R4 L27; goto L27 if var4
@@ -260,12 +260,12 @@ L24: 183 [-]: JUMPIF R4 L27; goto L27 if var4
      186 [-]: GETTABLEKS R4 R5 K59; var4 = var5["OpenScreen"]
      187 [-]: JUMPIFNOT R4 L27; goto L27 if not var4
      188 [-]: GETIMPORT R5 61; var5 = 0x72FE4DC0
-     189 [-]: FASTCALL1 62 R5 L25; 
+     189 [-]: FASTCALL1 64 R5 L25; 
      190 [-]: GETIMPORT R4 3; var4 = 0x7B998233
      191 [-]: CALL R4 2 2  ; var4 = var4(var5)
 L25: 192 [-]: JUMPIF R4 L27; goto L27 if var4
      193 [-]: GETIMPORT R5 41; var5 = 0x9BA7909F
-     194 [-]: FASTCALL1 62 R5 L26; 
+     194 [-]: FASTCALL1 64 R5 L26; 
      195 [-]: GETIMPORT R4 3; var4 = 0x7B998233
      196 [-]: CALL R4 2 2  ; var4 = var4(var5)
 L26: 197 [-]: JUMPIF R4 L27; goto L27 if var4
@@ -280,7 +280,7 @@ L26: 197 [-]: JUMPIF R4 L27; goto L27 if var4
 L27: 206 [-]: JUMPIFNOT R0 L37; goto L37 if not var0
      207 [-]: JUMPIFNOT R3 L32; goto L32 if not var3
 L28: 208 [-]: GETIMPORT R5 45; var5 = _T["curTransmission"]
-     209 [-]: FASTCALL1 62 R5 L29; 
+     209 [-]: FASTCALL1 64 R5 L29; 
      210 [-]: GETIMPORT R4 3; var4 = 0x7B998233
      211 [-]: CALL R4 2 2  ; var4 = var4(var5)
 L29: 212 [-]: JUMPIFNOT R4 L30; goto L30 if not var4
@@ -289,7 +289,7 @@ L29: 212 [-]: JUMPIFNOT R4 L30; goto L30 if not var4
      215 [-]: CALL R4 2 1  ; var4(var5)
      216 [-]: JUMPBACK L28 ; goto L28
 L30: 217 [-]: GETIMPORT R5 45; var5 = _T["curTransmission"]
-     218 [-]: FASTCALL1 62 R5 L31; 
+     218 [-]: FASTCALL1 64 R5 L31; 
      219 [-]: GETIMPORT R4 3; var4 = 0x7B998233
      220 [-]: CALL R4 2 2  ; var4 = var4(var5)
 L31: 221 [-]: JUMPIF R4 L33; goto L33 if var4
@@ -326,7 +326,7 @@ L35: 248 [-]: FORGLOOP R4 L34 2;
      252 [-]: CALL R4 3 1  ; var4(var5, var6)
      253 [-]: GETIMPORT R6 18; var6 = 0x0032441C
      254 [-]: GETTABLEKS R5 R6 K19; var5 = var6["NemesisPopup_Info"]
-     255 [-]: FASTCALL1 62 R5 L36; 
+     255 [-]: FASTCALL1 64 R5 L36; 
      256 [-]: GETIMPORT R4 3; var4 = 0x7B998233
      257 [-]: CALL R4 2 2  ; var4 = var4(var5)
 L36: 258 [-]: JUMPIF R4 L37; goto L37 if var4

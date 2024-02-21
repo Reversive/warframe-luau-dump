@@ -26,7 +26,7 @@
        4 [-]: GETIMPORT R3 5; var3 = gWeaponTrailType
        5 [-]: NAMECALL R1 R0 K6; var2 = var0; var1 = var0[0xC1595BD5]
        6 [-]: CALL R1 3 2  ; var1 = var1(var2, var3)
-       7 [-]: FASTCALL1 62 R1 L0; 
+       7 [-]: FASTCALL1 64 R1 L0; 
        8 [-]: MOVE R3 R1   ; var3 = var1
        9 [-]: GETIMPORT R2 8; var2 = 0x7B998233
       10 [-]: CALL R2 2 2  ; var2 = var2(var3)
@@ -61,7 +61,7 @@ L 2:  25 [-]: RETURN R0 0  ;
        4 [-]: GETIMPORT R3 5; var3 = gWeaponTrailType
        5 [-]: NAMECALL R1 R0 K6; var2 = var0; var1 = var0[0xC1595BD5]
        6 [-]: CALL R1 3 2  ; var1 = var1(var2, var3)
-       7 [-]: FASTCALL1 62 R1 L0; 
+       7 [-]: FASTCALL1 64 R1 L0; 
        8 [-]: MOVE R3 R1   ; var3 = var1
        9 [-]: GETIMPORT R2 8; var2 = 0x7B998233
       10 [-]: CALL R2 2 2  ; var2 = var2(var3)

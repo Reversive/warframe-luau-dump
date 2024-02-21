@@ -40,7 +40,7 @@
       18 [-]: LOADN R9 25  ; var9 = 25
       19 [-]: LOADN R10 6  ; var10 = 6
       20 [-]: LOADN R11 0  ; var11 = 0
-      21 [-]: LOADK R12 K10; var12 = 0.10000000000000001
+      21 [-]: LOADK R12 K10; var12 = 0.10000000149011612
       22 [-]: NAMECALL R6 R4 K11; var7 = var4; var6 = var4[0xEB3C14DA]
       23 [-]: CALL R6 7 1  ; var6(var7, var8, var9, var10, var11, var12)
 L 0:  24 [-]: RETURN R0 0  ; 

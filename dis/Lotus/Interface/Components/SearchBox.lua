@@ -18,11 +18,11 @@
       11 [-]: GETIMPORT R2 6; var2 = 0x2D0FAD09
       12 [-]: LOADK R3 K9  ; var3 = "Lotus.Interface.UIStyleUtilities"
       13 [-]: CALL R2 2 2  ; var2 = var2(var3)
-      14 [-]: DUPCLOSURE R3 K10; 
+      14 [-]: NEWCLOSURE R3 P0; 
       15 [-]: CAPTURE VAL R1; 
       16 [-]: CAPTURE VAL R2; 
       17 [-]: CAPTURE VAL R0; 
-      18 [-]: SETGLOBAL R3 K11; "Create" = var3
+      18 [-]: SETGLOBAL R3 K10; "Create" = var3
       19 [-]: RETURN R0 0  ; 
 
 
@@ -48,7 +48,7 @@
       12 [-]: SETTABLEKS R4 R3 K8; var4["mTimeToClear"] = var3
       13 [-]: LOADN R4 0   ; var4 = 0
       14 [-]: SETTABLEKS R4 R3 K9; var4["mClearHoldTime"] = var3
-      15 [-]: LOADK R4 K10 ; var4 = 0.45000000000000001
+      15 [-]: LOADK R4 K10 ; var4 = 0.44999998807907104
       16 [-]: SETTABLEKS R4 R3 K11; var4["mUnfocusedRectInnerAlpha"] = var3
       17 [-]: LOADK R4 K12 ; var4 = "OnSearchFocused"
       18 [-]: SETTABLEKS R4 R3 K13; var4["mFocusCallbackName"] = var3
@@ -88,74 +88,74 @@
       52 [-]: SETTABLEKS R4 R3 K41; var4["mApplyThemes"] = var3
       53 [-]: NEWTABLE R4 0 0; var4 = {}
       54 [-]: SETTABLEKS R4 R3 K42; var4["mShiftClips"] = var3
-      55 [-]: DUPCLOSURE R4 K43; 
-      56 [-]: SETTABLEKS R4 R3 K44; var4["Print"] = var3
-      57 [-]: DUPCLOSURE R4 K45; 
-      58 [-]: SETTABLEKS R4 R3 K46; var4["GetParentEnv"] = var3
+      55 [-]: NEWCLOSURE R4 P0; 
+      56 [-]: SETTABLEKS R4 R3 K43; var4["Print"] = var3
+      57 [-]: NEWCLOSURE R4 P1; 
+      58 [-]: SETTABLEKS R4 R3 K44; var4["GetParentEnv"] = var3
       59 [-]: NEWCLOSURE R4 P2; 
       60 [-]: CAPTURE VAL R2; 
       61 [-]: CAPTURE UPVAL U0; 
       62 [-]: CAPTURE VAL R0; 
-      63 [-]: SETTABLEKS R4 R3 K47; var4["SetVisible"] = var3
-      64 [-]: DUPCLOSURE R4 K48; 
+      63 [-]: SETTABLEKS R4 R3 K45; var4["SetVisible"] = var3
+      64 [-]: NEWCLOSURE R4 P3; 
       65 [-]: CAPTURE UPVAL U1; 
       66 [-]: CAPTURE UPVAL U2; 
-      67 [-]: SETTABLEKS R4 R3 K49; var4["HookUpCallbacks"] = var3
-      68 [-]: DUPCLOSURE R4 K50; 
+      67 [-]: SETTABLEKS R4 R3 K46; var4["HookUpCallbacks"] = var3
+      68 [-]: NEWCLOSURE R4 P4; 
       69 [-]: CAPTURE UPVAL U0; 
-      70 [-]: SETTABLEKS R4 R3 K51; var4["CalloutTriggered"] = var3
-      71 [-]: DUPCLOSURE R4 K52; 
+      70 [-]: SETTABLEKS R4 R3 K47; var4["CalloutTriggered"] = var3
+      71 [-]: NEWCLOSURE R4 P5; 
       72 [-]: CAPTURE UPVAL U2; 
-      73 [-]: SETTABLEKS R4 R3 K53; var4["SearchSelected"] = var3
-      74 [-]: DUPCLOSURE R4 K54; 
-      75 [-]: SETTABLEKS R4 R3 K55; var4["UpdateWidth"] = var3
-      76 [-]: DUPCLOSURE R4 K56; 
+      73 [-]: SETTABLEKS R4 R3 K48; var4["SearchSelected"] = var3
+      74 [-]: NEWCLOSURE R4 P6; 
+      75 [-]: SETTABLEKS R4 R3 K49; var4["UpdateWidth"] = var3
+      76 [-]: NEWCLOSURE R4 P7; 
       77 [-]: CAPTURE UPVAL U1; 
       78 [-]: CAPTURE UPVAL U2; 
-      79 [-]: SETTABLEKS R4 R3 K57; var4["UpdateColors"] = var3
-      80 [-]: DUPCLOSURE R4 K58; 
-      81 [-]: SETTABLEKS R4 R3 K59; var4["Initialize"] = var3
-      82 [-]: DUPCLOSURE R4 K60; 
+      79 [-]: SETTABLEKS R4 R3 K50; var4["UpdateColors"] = var3
+      80 [-]: NEWCLOSURE R4 P8; 
+      81 [-]: SETTABLEKS R4 R3 K51; var4["Initialize"] = var3
+      82 [-]: NEWCLOSURE R4 P9; 
       83 [-]: CAPTURE UPVAL U2; 
-      84 [-]: SETTABLEKS R4 R3 K61; var4["UpdateSearchTerm"] = var3
+      84 [-]: SETTABLEKS R4 R3 K52; var4["UpdateSearchTerm"] = var3
       85 [-]: NEWCLOSURE R4 P10; 
       86 [-]: CAPTURE UPVAL U2; 
       87 [-]: CAPTURE VAL R0; 
       88 [-]: CAPTURE VAL R1; 
-      89 [-]: SETTABLEKS R4 R3 K62; var4["Update"] = var3
-      90 [-]: DUPCLOSURE R4 K63; 
+      89 [-]: SETTABLEKS R4 R3 K53; var4["Update"] = var3
+      90 [-]: NEWCLOSURE R4 P11; 
       91 [-]: CAPTURE UPVAL U2; 
-      92 [-]: SETTABLEKS R4 R3 K64; var4["OnGamepadTransition"] = var3
+      92 [-]: SETTABLEKS R4 R3 K54; var4["OnGamepadTransition"] = var3
       93 [-]: MOVE R7 R1   ; var7 = var1
-      94 [-]: LOADK R8 K65 ; var8 = ".Icon"
+      94 [-]: LOADK R8 K55 ; var8 = ".Icon"
       95 [-]: CONCAT R6 R7 R8; var6 = var7 .. var8
       96 [-]: GETIMPORT R8 29; var8 = 0x0032441C
-      97 [-]: GETTABLEKS R7 R8 K66; var7 = var8["UITexture_Search"]
-      98 [-]: NAMECALL R4 R0 K67; var5 = var0; var4 = var0[0x1CB415C1]
+      97 [-]: GETTABLEKS R7 R8 K56; var7 = var8["UITexture_Search"]
+      98 [-]: NAMECALL R4 R0 K57; var5 = var0; var4 = var0[0x1CB415C1]
       99 [-]: CALL R4 4 1  ; var4(var5, var6, var7)
      100 [-]: MOVE R7 R1   ; var7 = var1
      101 [-]: LOADK R8 K35 ; var8 = ".Bg"
      102 [-]: CONCAT R6 R7 R8; var6 = var7 .. var8
      103 [-]: GETIMPORT R8 29; var8 = 0x0032441C
-     104 [-]: GETTABLEKS R7 R8 K68; var7 = var8["UIMaterial_Button"]
-     105 [-]: NAMECALL R4 R0 K69; var5 = var0; var4 = var0[0xD5181643]
+     104 [-]: GETTABLEKS R7 R8 K58; var7 = var8["UIMaterial_Button"]
+     105 [-]: NAMECALL R4 R0 K59; var5 = var0; var4 = var0[0xD5181643]
      106 [-]: CALL R4 4 1  ; var4(var5, var6, var7)
      107 [-]: MOVE R7 R1   ; var7 = var1
-     108 [-]: LOADK R8 K70 ; var8 = ".IconBg"
+     108 [-]: LOADK R8 K60 ; var8 = ".IconBg"
      109 [-]: CONCAT R6 R7 R8; var6 = var7 .. var8
      110 [-]: GETIMPORT R8 29; var8 = 0x0032441C
-     111 [-]: GETTABLEKS R7 R8 K68; var7 = var8["UIMaterial_Button"]
-     112 [-]: NAMECALL R4 R0 K69; var5 = var0; var4 = var0[0xD5181643]
+     111 [-]: GETTABLEKS R7 R8 K58; var7 = var8["UIMaterial_Button"]
+     112 [-]: NAMECALL R4 R0 K59; var5 = var0; var4 = var0[0xD5181643]
      113 [-]: CALL R4 4 1  ; var4(var5, var6, var7)
      114 [-]: GETTABLEKS R4 R3 K37; var4 = var3["mInitWidth"]
-     115 [-]: SETTABLEKS R4 R3 K71; var4["mWidth"] = var3
+     115 [-]: SETTABLEKS R4 R3 K61; var4["mWidth"] = var3
      116 [-]: NOT R4 R2    ; var4 = not var2
      117 [-]: JUMPIFNOT R4 L0; goto L0 if not var4
      118 [-]: GETUPVAL R5 0; var5 = upvalues[0]
-     119 [-]: GETTABLEKS R4 R5 K72; var4 = var5[0xB5DE23C4]
+     119 [-]: GETTABLEKS R4 R5 K62; var4 = var5[0xB5DE23C4]
      120 [-]: MOVE R5 R0   ; var5 = var0
      121 [-]: CALL R4 2 2  ; var4 = var4(var5)
-L 0: 122 [-]: SETTABLEKS R4 R3 K73; var4["mAutoFocus"] = var3
+L 0: 122 [-]: SETTABLEKS R4 R3 K63; var4["mAutoFocus"] = var3
      123 [-]: RETURN R3 1  ; 
 
 

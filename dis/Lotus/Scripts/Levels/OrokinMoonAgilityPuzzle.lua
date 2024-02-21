@@ -56,12 +56,12 @@
 ; Max Stack Size:  2
 
        0 [-]: GETIMPORT R1 1; var1 = 0x8F4A95A5
-       1 [-]: JUMPIFNOTEQ R0 R1 L0; goto L0 if var0 ~= var65819
+       1 [-]: JUMPIFNOTEQ R0 R1 L0; goto L0 if var0 ~= var65798
        2 [-]: LOADB R1 1   ; var1 = true
        3 [-]: SETUPVAL R1 0; upvalues[1] = var0
        4 [-]: RETURN R0 0  ; 
 L 0:   5 [-]: GETIMPORT R1 3; var1 = 0xBF132EBE
-       6 [-]: JUMPIFNOTEQ R0 R1 L1; goto L1 if var0 ~= var65819
+       6 [-]: JUMPIFNOTEQ R0 R1 L1; goto L1 if var0 ~= var65798
        7 [-]: LOADB R1 1   ; var1 = true
        8 [-]: SETUPVAL R1 1; upvalues[1] = var1
 L 1:   9 [-]: RETURN R0 0  ; 
@@ -75,7 +75,7 @@ L 1:   9 [-]: RETURN R0 0  ;
 ; Max Stack Size:  3
 
        0 [-]: GETIMPORT R2 2; var2 = _T["AgilityPuzzleReset"]
-       1 [-]: FASTCALL1 62 R2 L0; 
+       1 [-]: FASTCALL1 64 R2 L0; 
        2 [-]: GETIMPORT R1 4; var1 = 0x7B998233
        3 [-]: CALL R1 2 2  ; var1 = var1(var2)
 L 0:   4 [-]: NOT R0 R1    ; var0 = not var1
@@ -94,7 +94,7 @@ L 1:   7 [-]: RETURN R0 1  ;
        0 [-]: LOADN R2 0   ; var2 = 0
        1 [-]: MOVE R3 R1   ; var3 = var1
        2 [-]: CALL R3 1 2  ; var3 = var3()
-L 0:   3 [-]: JUMPIFNOTLT R2 R0 L1; goto L1 if var2 >= var787268
+L 0:   3 [-]: JUMPIFNOTLT R2 R0 L1; goto L1 if var2 >= var787277
        4 [-]: JUMPIF R3 L1 ; goto L1 if var3
        5 [-]: GETIMPORT R4 1; var4 = 0xCBD666E1
        6 [-]: LOADN R5 0   ; var5 = 0
@@ -146,7 +146,7 @@ L 1:  15 [-]: RETURN R3 1  ;
 L 0:  15 [-]: GETUPVAL R0 0; var0 = upvalues[0]
       16 [-]: JUMPIF R0 L5 ; goto L5 if var0
       17 [-]: GETIMPORT R2 15; var2 = _T["AgilityPuzzleReset"]
-      18 [-]: FASTCALL1 62 R2 L1; 
+      18 [-]: FASTCALL1 64 R2 L1; 
       19 [-]: GETIMPORT R1 17; var1 = 0x7B998233
       20 [-]: CALL R1 2 2  ; var1 = var1(var2)
 L 1:  21 [-]: NOT R0 R1    ; var0 = not var1
@@ -202,7 +202,7 @@ L 6:  55 [-]: GETIMPORT R1 1; var1 = 0xA483AA40
        3 [-]: JUMPIF R1 L0 ; goto L0 if var1
        4 [-]: RETURN R0 0  ; 
 L 0:   5 [-]: GETIMPORT R2 5; var2 = _T["AgilityPuzzlePlayerList"]
-       6 [-]: FASTCALL1 62 R2 L1; 
+       6 [-]: FASTCALL1 64 R2 L1; 
        7 [-]: GETIMPORT R1 7; var1 = 0x7B998233
        8 [-]: CALL R1 2 2  ; var1 = var1(var2)
 L 1:   9 [-]: JUMPIFNOT R1 L2; goto L2 if not var1
@@ -223,7 +223,7 @@ L 3:  19 [-]: NAMECALL R7 R6 K12; var8 = var6; var7 = var6[0x5E651723]
       24 [-]: MOVE R10 R7  ; var10 = var7
       25 [-]: CALL R8 3 2  ; var8 = var8(var9, var10)
       26 [-]: LOADN R9 0   ; var9 = 0
-      27 [-]: JUMPIFNOTLE R8 R9 L4; goto L4 if var8 > var330062
+      27 [-]: JUMPIFNOTLE R8 R9 L4; goto L4 if var8 > var330017
       28 [-]: GETIMPORT R9 5; var9 = _T["AgilityPuzzlePlayerList"]
       29 [-]: FASTCALL2 52 R9 R7 L4; 
       30 [-]: MOVE R10 R7  ; var10 = var7
@@ -286,8 +286,8 @@ L 4:  33 [-]: FORGLOOP R2 L3 2 [inext];
       13 [-]: FORGPREP_INEXT R2 L1; 
 L 0:  14 [-]: NAMECALL R7 R6 K10; var8 = var6; var7 = var6[0x1D75805C]
       15 [-]: CALL R7 2 2  ; var7 = var7(var8)
-      16 [-]: LOADK R8 K11 ; var8 = 0.10000000000000001
-      17 [-]: JUMPIFNOTLT R8 R7 L1; goto L1 if var8 >= var520488773
+      16 [-]: LOADK R8 K11 ; var8 = 0.10000000149011612
+      17 [-]: JUMPIFNOTLT R8 R7 L1; goto L1 if var8 >= var520488780
       18 [-]: NAMECALL R7 R6 K12; var8 = var6; var7 = var6[0x4554771F]
       19 [-]: CALL R7 2 1  ; var7(var8)
 L 1:  20 [-]: FORGLOOP R2 L0 2 [inext]; 
@@ -306,7 +306,7 @@ L 3:  28 [-]: NAMECALL R7 R6 K14; var8 = var6; var7 = var6[0x5E651723]
       33 [-]: MOVE R10 R7  ; var10 = var7
       34 [-]: CALL R8 3 2  ; var8 = var8(var9, var10)
       35 [-]: LOADN R9 0   ; var9 = 0
-      36 [-]: JUMPIFNOTLT R9 R8 L4; goto L4 if var9 >= var2055
+      36 [-]: JUMPIFNOTLT R9 R8 L4; goto L4 if var9 >= var2108
       37 [-]: GETUPVAL R8 0; var8 = upvalues[0]
       38 [-]: CALL R8 1 1  ; var8()
       39 [-]: RETURN R0 0  ; 
@@ -324,14 +324,10 @@ L 4:  40 [-]: FORGLOOP R2 L3 2 [inext];
        0 [-]: GETIMPORT R0 1; var0 = 0xFC0FD5EA
        1 [-]: GETIMPORT R2 4; var2 = 0x6C97A788["EMISSIVE_TINT_COLOR"]
        2 [-]: GETIMPORT R4 8; var4 = 0x217E5467["red"]
-       3 [-]: DIVK R3 R4 K5; var3 = var4 / 255
-       4 [-]: GETIMPORT R5 10; var5 = 0x217E5467["green"]
-       5 [-]: DIVK R4 R5 K5; var4 = var5 / 255
-       6 [-]: GETIMPORT R6 12; var6 = 0x217E5467["blue"]
-       7 [-]: DIVK R5 R6 K5; var5 = var6 / 255
-       8 [-]: GETIMPORT R7 14; var7 = 0x217E5467["alpha"]
-       9 [-]: DIVK R6 R7 K5; var6 = var7 / 255
-      10 [-]: NAMECALL R0 R0 K15; var1 = var0; var0 = var0[0x986D2AB8]
+            4 [-]: GETIMPORT R5 10; var5 = 0x217E5467["green"]
+            6 [-]: GETIMPORT R6 12; var6 = 0x217E5467["blue"]
+            8 [-]: GETIMPORT R7 14; var7 = 0x217E5467["alpha"]
+           10 [-]: NAMECALL R0 R0 K15; var1 = var0; var0 = var0[0x986D2AB8]
       11 [-]: CALL R0 7 1  ; var0(var1, var2, var3, var4, var5, var6)
       12 [-]: GETIMPORT R0 17; var0 = 0xCBD666E1
       13 [-]: LOADN R1 1   ; var1 = 1
@@ -339,8 +335,8 @@ L 4:  40 [-]: FORGLOOP R2 L3 2 [inext];
 L 0:  15 [-]: GETIMPORT R0 19; var0 = 0xA483AA40
       16 [-]: NAMECALL R0 R0 K20; var1 = var0; var0 = var0[0x1D75805C]
       17 [-]: CALL R0 2 2  ; var0 = var0(var1)
-      18 [-]: LOADK R1 K21 ; var1 = 0.10000000000000001
-      19 [-]: JUMPIFNOTLT R1 R0 L1; goto L1 if var1 >= var1114190
+      18 [-]: LOADK R1 K21 ; var1 = 0.10000000149011612
+      19 [-]: JUMPIFNOTLT R1 R0 L1; goto L1 if var1 >= var1114145
       20 [-]: GETIMPORT R0 17; var0 = 0xCBD666E1
       21 [-]: LOADN R1 0   ; var1 = 0
       22 [-]: CALL R0 2 1  ; var0(var1)
@@ -348,14 +344,10 @@ L 0:  15 [-]: GETIMPORT R0 19; var0 = 0xA483AA40
 L 1:  24 [-]: GETIMPORT R0 1; var0 = 0xFC0FD5EA
       25 [-]: GETIMPORT R2 4; var2 = 0x6C97A788["EMISSIVE_TINT_COLOR"]
       26 [-]: GETIMPORT R4 23; var4 = 0x006096BD["red"]
-      27 [-]: DIVK R3 R4 K5; var3 = var4 / 255
-      28 [-]: GETIMPORT R5 24; var5 = 0x006096BD["green"]
-      29 [-]: DIVK R4 R5 K5; var4 = var5 / 255
-      30 [-]: GETIMPORT R6 25; var6 = 0x006096BD["blue"]
-      31 [-]: DIVK R5 R6 K5; var5 = var6 / 255
-      32 [-]: GETIMPORT R7 26; var7 = 0x006096BD["alpha"]
-      33 [-]: DIVK R6 R7 K5; var6 = var7 / 255
-      34 [-]: NAMECALL R0 R0 K15; var1 = var0; var0 = var0[0x986D2AB8]
+           28 [-]: GETIMPORT R5 24; var5 = 0x006096BD["green"]
+           30 [-]: GETIMPORT R6 25; var6 = 0x006096BD["blue"]
+           32 [-]: GETIMPORT R7 26; var7 = 0x006096BD["alpha"]
+           34 [-]: NAMECALL R0 R0 K15; var1 = var0; var0 = var0[0x986D2AB8]
       35 [-]: CALL R0 7 1  ; var0(var1, var2, var3, var4, var5, var6)
       36 [-]: RETURN R0 0  ; 
 
@@ -377,7 +369,7 @@ L 0:   4 [-]: GETIMPORT R9 5; var9 = 0xBE8C9893
        7 [-]: CALL R6 3 1  ; var6(var7, var8)
 L 1:   8 [-]: FORGLOOP R1 L0 2 [inext]; 
 L 2:   9 [-]: GETIMPORT R2 9; var2 = _T["AgilityPuzzleReset"]
-      10 [-]: FASTCALL1 62 R2 L3; 
+      10 [-]: FASTCALL1 64 R2 L3; 
       11 [-]: GETIMPORT R1 11; var1 = 0x7B998233
       12 [-]: CALL R1 2 2  ; var1 = var1(var2)
 L 3:  13 [-]: JUMPIF R1 L4 ; goto L4 if var1
@@ -400,8 +392,8 @@ L 5:  20 [-]: RETURN R0 0  ;
        0 [-]: GETIMPORT R1 1; var1 = 0xA483AA40
        1 [-]: NAMECALL R1 R1 K2; var2 = var1; var1 = var1[0x1D75805C]
        2 [-]: CALL R1 2 2  ; var1 = var1(var2)
-       3 [-]: LOADK R2 K3  ; var2 = 0.10000000000000001
-       4 [-]: JUMPIFNOTLT R1 R2 L2; goto L2 if var1 >= var-1073741499
+       3 [-]: LOADK R2 K3  ; var2 = 0.10000000149011612
+       4 [-]: JUMPIFNOTLT R1 R2 L2; goto L2 if var1 >= var-1073741492
        5 [-]: NAMECALL R1 R0 K4; var2 = var0; var1 = var0[0x0D09D3C0]
        6 [-]: CALL R1 2 2  ; var1 = var1(var2)
        7 [-]: GETIMPORT R2 6; var2 = 0xC8802016

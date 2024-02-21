@@ -49,7 +49,7 @@
       25 [-]: SETTABLEKS R3 R2 K10; var3["mInitialDepth"] = var2
       26 [-]: LOADN R3 -1  ; var3 = -1
       27 [-]: SETTABLEKS R3 R2 K11; var3["mDepthDirection"] = var2
-      28 [-]: LOADK R3 K37 ; var3 = 0.20000000000000001
+      28 [-]: LOADK R3 K37 ; var3 = 0.20000000298023224
       29 [-]: SETTABLEKS R3 R2 K12; var3["mElementTransitionTime"] = var2
       30 [-]: LOADN R3 1   ; var3 = 1
       31 [-]: SETTABLEKS R3 R2 K13; var3["mElementDuration"] = var2

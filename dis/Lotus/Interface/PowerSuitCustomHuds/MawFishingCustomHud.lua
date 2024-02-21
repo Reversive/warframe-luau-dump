@@ -119,7 +119,7 @@
        7 [-]: NEWTABLE R5 0 1; var5 = {}
        8 [-]: LOADN R6 0   ; var6 = 0
        9 [-]: SETLIST R5 R6 1 [1]; var5[1] = var6; var5[2] = var7; 
-      10 [-]: LOADK R6 K5  ; var6 = 0.14999999999999999
+      10 [-]: LOADK R6 K5  ; var6 = 0.15000000596046448
       11 [-]: LOADN R7 0   ; var7 = 0
       12 [-]: DUPCLOSURE R8 K6; 
       13 [-]: CALL R0 9 1  ; var0(var1, var2, var3, var4, var5, var6, var7, var8)
@@ -166,7 +166,7 @@
       30 [-]: NAMECALL R1 R1 K4; var2 = var1; var1 = var1[0x91E13703]
       31 [-]: CALL R1 8 1  ; var1(var2, var3, var4, var5, var6, var7, var8)
       32 [-]: GETUPVAL R2 3; var2 = upvalues[3]
-      33 [-]: FASTCALL1 62 R2 L0; 
+      33 [-]: FASTCALL1 64 R2 L0; 
       34 [-]: GETIMPORT R1 8; var1 = 0x7B998233
       35 [-]: CALL R1 2 2  ; var1 = var1(var2)
 L 0:  36 [-]: JUMPIF R1 L1 ; goto L1 if var1
@@ -176,13 +176,11 @@ L 0:  36 [-]: JUMPIF R1 L1 ; goto L1 if var1
       40 [-]: LOADK R3 K2  ; var3 = "Container.BarFill"
       41 [-]: CALL R1 3 3  ; var1, var2 = var1(var2, var3)
       42 [-]: GETUPVAL R5 1; var5 = upvalues[1]
-      43 [-]: DIVK R4 R5 K10; var4 = var5 / 4
-      44 [-]: SUB R3 R1 R4 ; var3 = var1 - var4
+           44 [-]: SUB R3 R1 R4 ; var3 = var1 - var4
       45 [-]: GETUPVAL R6 0; var6 = upvalues[0]
       46 [-]: GETUPVAL R7 1; var7 = upvalues[1]
       47 [-]: MUL R5 R6 R7 ; var5 = var6 * var7
-      48 [-]: DIVK R4 R5 K11; var4 = var5 / 2
-      49 [-]: ADD R1 R3 R4 ; var1 = var3 + var4
+           49 [-]: ADD R1 R3 R4 ; var1 = var3 + var4
       50 [-]: GETUPVAL R4 4; var4 = upvalues[4]
       51 [-]: GETTABLEKS R3 R4 K12; var3 = var4[0x3E145A1A]
       52 [-]: GETIMPORT R4 1; var4 = 0xAE91E43B
@@ -223,8 +221,7 @@ L 1:  70 [-]: RETURN R0 0  ;
        7 [-]: GETIMPORT R2 1; var2 = 0xAE91E43B
        8 [-]: LOADK R3 K5  ; var3 = "Container"
        9 [-]: CALL R1 3 3  ; var1, var2 = var1(var2, var3)
-      10 [-]: DIVK R4 R0 K6; var4 = var0 / 2
-      11 [-]: SUB R3 R1 R4 ; var3 = var1 - var4
+           11 [-]: SUB R3 R1 R4 ; var3 = var1 - var4
       12 [-]: GETUPVAL R5 1; var5 = upvalues[1]
       13 [-]: DIV R4 R3 R5 ; var4 = var3 / var5
       14 [-]: GETIMPORT R5 1; var5 = 0xAE91E43B
@@ -281,7 +278,7 @@ L 1:  70 [-]: RETURN R0 0  ;
 L 0:  10 [-]: SETTABLEKS R2 R1 K0; var2["mNumFilled"] = var1
       11 [-]: GETUPVAL R2 0; var2 = upvalues[0]
       12 [-]: GETTABLEKS R1 R2 K0; var1 = var2["mNumFilled"]
-      13 [-]: JUMPIFNOTLT R0 R1 L6; goto L6 if var0 >= var519
+      13 [-]: JUMPIFNOTLT R0 R1 L6; goto L6 if var0 >= var572
       14 [-]: GETUPVAL R2 0; var2 = upvalues[0]
       15 [-]: GETTABLEKS R1 R2 K0; var1 = var2["mNumFilled"]
       16 [-]: JUMPXEQKN R1 K6 L1; 
@@ -289,7 +286,7 @@ L 0:  10 [-]: SETTABLEKS R2 R1 K0; var2["mNumFilled"] = var1
       18 [-]: GETTABLEKS R1 R2 K0; var1 = var2["mNumFilled"]
       19 [-]: JUMPXEQKN R1 K2 L3 NOT; 
 L 1:  20 [-]: GETIMPORT R2 8; var2 = 0x995A0ECD
-      21 [-]: FASTCALL1 62 R2 L2; 
+      21 [-]: FASTCALL1 64 R2 L2; 
       22 [-]: GETIMPORT R1 10; var1 = 0x7B998233
       23 [-]: CALL R1 2 2  ; var1 = var1(var2)
 L 2:  24 [-]: JUMPIF R1 L5 ; goto L5 if var1
@@ -299,7 +296,7 @@ L 2:  24 [-]: JUMPIF R1 L5 ; goto L5 if var1
       28 [-]: CALL R1 2 1  ; var1(var2)
       29 [-]: JUMP L5      ; goto L5
 L 3:  30 [-]: GETIMPORT R2 13; var2 = 0x8BA8C74A
-      31 [-]: FASTCALL1 62 R2 L4; 
+      31 [-]: FASTCALL1 64 R2 L4; 
       32 [-]: GETIMPORT R1 10; var1 = 0x7B998233
       33 [-]: CALL R1 2 2  ; var1 = var1(var2)
 L 4:  34 [-]: JUMPIF R1 L5 ; goto L5 if var1
@@ -365,7 +362,7 @@ L 6:  45 [-]: RETURN R0 0  ;
        8 [-]: GETUPVAL R2 1; var2 = upvalues[1]
        9 [-]: LENGTH R1 R2 ; var1 = #var2
       10 [-]: LOADN R2 0   ; var2 = 0
-      11 [-]: JUMPIFNOTLT R2 R1 L2; goto L2 if var2 >= var66375
+      11 [-]: JUMPIFNOTLT R2 R1 L2; goto L2 if var2 >= var66352
       12 [-]: LOADN R3 1   ; var3 = 1
       13 [-]: GETUPVAL R4 1; var4 = upvalues[1]
       14 [-]: LENGTH R1 R4 ; var1 = #var4
@@ -400,10 +397,10 @@ L 2:  42 [-]: LOADB R1 0   ; var1 = false
       43 [-]: SETUPVAL R1 0; upvalues[1] = var0
       44 [-]: GETUPVAL R1 2; var1 = upvalues[2]
       45 [-]: LOADN R2 0   ; var2 = 0
-      46 [-]: JUMPIFNOTLE R2 R1 L6; goto L6 if var2 > var196871
+      46 [-]: JUMPIFNOTLE R2 R1 L6; goto L6 if var2 > var196924
       47 [-]: GETUPVAL R1 3; var1 = upvalues[3]
       48 [-]: LOADN R2 0   ; var2 = 0
-      49 [-]: JUMPIFNOTLT R2 R1 L6; goto L6 if var2 >= var131591
+      49 [-]: JUMPIFNOTLT R2 R1 L6; goto L6 if var2 >= var131644
       50 [-]: GETUPVAL R2 2; var2 = upvalues[2]
       51 [-]: SUB R1 R2 R0 ; var1 = var2 - var0
       52 [-]: SETUPVAL R1 2; upvalues[1] = var2
@@ -417,7 +414,7 @@ L 2:  42 [-]: LOADB R1 0   ; var1 = false
       60 [-]: SETUPVAL R1 4; upvalues[1] = var4
       61 [-]: GETUPVAL R1 2; var1 = upvalues[2]
       62 [-]: LOADN R2 5   ; var2 = 5
-      63 [-]: JUMPIFNOTLE R1 R2 L3; goto L3 if var1 > var327943
+      63 [-]: JUMPIFNOTLE R1 R2 L3; goto L3 if var1 > var327996
       64 [-]: GETUPVAL R1 5; var1 = upvalues[5]
       65 [-]: JUMPIF R1 L3 ; goto L3 if var1
       66 [-]: GETUPVAL R2 6; var2 = upvalues[6]
@@ -427,7 +424,7 @@ L 2:  42 [-]: LOADB R1 0   ; var1 = false
       70 [-]: LOADB R1 1   ; var1 = true
       71 [-]: SETUPVAL R1 5; upvalues[1] = var5
 L 3:  72 [-]: GETUPVAL R2 7; var2 = upvalues[7]
-      73 [-]: FASTCALL1 62 R2 L4; 
+      73 [-]: FASTCALL1 64 R2 L4; 
       74 [-]: GETIMPORT R1 11; var1 = 0x7B998233
       75 [-]: CALL R1 2 2  ; var1 = var1(var2)
 L 4:  76 [-]: JUMPIFNOT R1 L5; goto L5 if not var1
@@ -502,39 +499,42 @@ L 1:  15 [-]: RETURN R0 0  ;
       14 [-]: SETTABLEKS R1 R0 K8; var1["MAW_ToggleSpecialRewards"] = var0
       15 [-]: GETIMPORT R0 4; var0 = _T
       16 [-]: LOADNIL R1   ; var1 = nil
-      17 [-]: SETTABLEKS R1 R0 K9; var1["DisableMiniMap"] = var0
-      18 [-]: GETUPVAL R1 0; var1 = upvalues[0]
-      19 [-]: FASTCALL1 62 R1 L0; 
-      20 [-]: GETIMPORT R0 11; var0 = 0x7B998233
-      21 [-]: CALL R0 2 2  ; var0 = var0(var1)
-L 0:  22 [-]: JUMPIF R0 L1 ; goto L1 if var0
-      23 [-]: GETUPVAL R0 0; var0 = upvalues[0]
-      24 [-]: NAMECALL R0 R0 K12; var1 = var0; var0 = var0[0xA2880940]
-      25 [-]: CALL R0 2 1  ; var0(var1)
-L 1:  26 [-]: GETUPVAL R1 1; var1 = upvalues[1]
-      27 [-]: FASTCALL1 62 R1 L2; 
-      28 [-]: GETIMPORT R0 11; var0 = 0x7B998233
-      29 [-]: CALL R0 2 2  ; var0 = var0(var1)
-L 2:  30 [-]: JUMPIF R0 L6 ; goto L6 if var0
-      31 [-]: GETIMPORT R0 14; var0 = 0xC8802016
-      32 [-]: GETUPVAL R3 1; var3 = upvalues[1]
-      33 [-]: GETTABLEKS R1 R3 K15; var1 = var3["mElements"]
-      34 [-]: CALL R0 2 4  ; var0, var1, var2 = var0(var1)
-      35 [-]: FORGPREP_INEXT R0 L5; 
-L 3:  36 [-]: GETTABLEKS R6 R4 K16; var6 = var4["mFx"]
-      37 [-]: FASTCALL1 62 R6 L4; 
-      38 [-]: GETIMPORT R5 11; var5 = 0x7B998233
-      39 [-]: CALL R5 2 2  ; var5 = var5(var6)
-L 4:  40 [-]: JUMPIF R5 L5 ; goto L5 if var5
-      41 [-]: GETTABLEKS R5 R4 K16; var5 = var4["mFx"]
-      42 [-]: NAMECALL R5 R5 K12; var6 = var5; var5 = var5[0xA2880940]
-      43 [-]: CALL R5 2 1  ; var5(var6)
-L 5:  44 [-]: FORGLOOP R0 L3 2 [inext]; 
-L 6:  45 [-]: RETURN R0 0  ; 
+      17 [-]: SETTABLEKS R1 R0 K9; var1["SuppressMiniBossUI"] = var0
+      18 [-]: GETIMPORT R0 4; var0 = _T
+      19 [-]: LOADNIL R1   ; var1 = nil
+      20 [-]: SETTABLEKS R1 R0 K10; var1["DisableMiniMap"] = var0
+      21 [-]: GETUPVAL R1 0; var1 = upvalues[0]
+      22 [-]: FASTCALL1 64 R1 L0; 
+      23 [-]: GETIMPORT R0 12; var0 = 0x7B998233
+      24 [-]: CALL R0 2 2  ; var0 = var0(var1)
+L 0:  25 [-]: JUMPIF R0 L1 ; goto L1 if var0
+      26 [-]: GETUPVAL R0 0; var0 = upvalues[0]
+      27 [-]: NAMECALL R0 R0 K13; var1 = var0; var0 = var0[0xA2880940]
+      28 [-]: CALL R0 2 1  ; var0(var1)
+L 1:  29 [-]: GETUPVAL R1 1; var1 = upvalues[1]
+      30 [-]: FASTCALL1 64 R1 L2; 
+      31 [-]: GETIMPORT R0 12; var0 = 0x7B998233
+      32 [-]: CALL R0 2 2  ; var0 = var0(var1)
+L 2:  33 [-]: JUMPIF R0 L6 ; goto L6 if var0
+      34 [-]: GETIMPORT R0 15; var0 = 0xC8802016
+      35 [-]: GETUPVAL R3 1; var3 = upvalues[1]
+      36 [-]: GETTABLEKS R1 R3 K16; var1 = var3["mElements"]
+      37 [-]: CALL R0 2 4  ; var0, var1, var2 = var0(var1)
+      38 [-]: FORGPREP_INEXT R0 L5; 
+L 3:  39 [-]: GETTABLEKS R6 R4 K17; var6 = var4["mFx"]
+      40 [-]: FASTCALL1 64 R6 L4; 
+      41 [-]: GETIMPORT R5 12; var5 = 0x7B998233
+      42 [-]: CALL R5 2 2  ; var5 = var5(var6)
+L 4:  43 [-]: JUMPIF R5 L5 ; goto L5 if var5
+      44 [-]: GETTABLEKS R5 R4 K17; var5 = var4["mFx"]
+      45 [-]: NAMECALL R5 R5 K13; var6 = var5; var5 = var5[0xA2880940]
+      46 [-]: CALL R5 2 1  ; var5(var6)
+L 5:  47 [-]: FORGLOOP R0 L3 2 [inext]; 
+L 6:  48 [-]: RETURN R0 0  ; 
 
 
 ; Name:            
-; Defined at line: 158
+; Defined at line: 159
 ; #Upvalues:       6
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -547,7 +547,7 @@ L 6:  45 [-]: RETURN R0 0  ;
        4 [-]: SETUPVAL R4 0; upvalues[4] = var0
        5 [-]: SETUPVAL R5 1; upvalues[5] = var1
        6 [-]: GETUPVAL R5 3; var5 = upvalues[3]
-       7 [-]: FASTCALL1 62 R5 L0; 
+       7 [-]: FASTCALL1 64 R5 L0; 
        8 [-]: GETIMPORT R4 4; var4 = 0x7B998233
        9 [-]: CALL R4 2 2  ; var4 = var4(var5)
 L 0:  10 [-]: JUMPIF R4 L1 ; goto L1 if var4
@@ -564,7 +564,7 @@ L 2:  20 [-]: RETURN R0 0  ;
 
 
 ; Name:            
-; Defined at line: 169
+; Defined at line: 170
 ; #Upvalues:       2
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -597,7 +597,7 @@ L 2:  20 [-]: RETURN R0 0  ;
 
 
 ; Name:            
-; Defined at line: 215
+; Defined at line: 216
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -649,7 +649,7 @@ L 6:  36 [-]: GETUPVAL R2 0; var2 = upvalues[0]
 
 
 ; Name:            
-; Defined at line: 233
+; Defined at line: 234
 ; #Upvalues:       15
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -678,200 +678,202 @@ L 6:  36 [-]: GETUPVAL R2 0; var2 = upvalues[0]
       20 [-]: CAPTURE UPVAL U0; 
       21 [-]: CAPTURE UPVAL U4; 
       22 [-]: SETTABLEKS R1 R0 K10; var1["MAW_ToggleSpecialRewards"] = var0
-      23 [-]: GETIMPORT R0 12; var0 = 0xAE91E43B
-      24 [-]: NAMECALL R0 R0 K13; var1 = var0; var0 = var0[0x091C120E]
-      25 [-]: CALL R0 2 2  ; var0 = var0(var1)
-      26 [-]: SETUPVAL R0 5; upvalues[0] = var5
-      27 [-]: GETIMPORT R0 12; var0 = 0xAE91E43B
-      28 [-]: NAMECALL R0 R0 K14; var1 = var0; var0 = var0[0x2CC9D281]
-      29 [-]: CALL R0 2 2  ; var0 = var0(var1)
-      30 [-]: SETUPVAL R0 6; upvalues[0] = var6
-      31 [-]: GETUPVAL R1 8; var1 = upvalues[8]
-      32 [-]: GETTABLEKS R0 R1 K15; var0 = var1[0xAE6791BA]
-      33 [-]: GETIMPORT R1 12; var1 = 0xAE91E43B
-      34 [-]: CALL R0 2 2  ; var0 = var0(var1)
-      35 [-]: SETUPVAL R0 7; upvalues[0] = var7
-      36 [-]: GETUPVAL R0 7; var0 = upvalues[7]
-      37 [-]: GETIMPORT R2 12; var2 = 0xAE91E43B
-      38 [-]: LOADK R3 K16 ; var3 = "Container"
-      39 [-]: NEWTABLE R4 0 2; var4 = {}
-      40 [-]: GETUPVAL R6 7; var6 = upvalues[7]
-      41 [-]: GETTABLEKS R5 R6 K17; var5 = var6["ANCHOR_V_TOP"]
-      42 [-]: GETUPVAL R7 7; var7 = upvalues[7]
-      43 [-]: GETTABLEKS R6 R7 K18; var6 = var7["ANCHOR_H_CENTRE"]
-      44 [-]: SETLIST R4 R5 2 [1]; var4[1] = var5; var4[2] = var6; var4[3] = var7; 
-      45 [-]: NAMECALL R0 R0 K19; var1 = var0; var0 = var0[0x20FF29F7]
-      46 [-]: CALL R0 5 1  ; var0(var1, var2, var3, var4)
-      47 [-]: GETUPVAL R0 7; var0 = upvalues[7]
-      48 [-]: GETIMPORT R2 12; var2 = 0xAE91E43B
-      49 [-]: NAMECALL R2 R2 K20; var3 = var2; var2 = var2[0x6B837788]
-      50 [-]: CALL R2 2 2  ; var2 = var2(var3)
-      51 [-]: GETIMPORT R3 12; var3 = 0xAE91E43B
-      52 [-]: NAMECALL R3 R3 K21; var4 = var3; var3 = var3[0xAF9FDA9F]
-      53 [-]: CALL R3 2 2  ; var3 = var3(var4)
-      54 [-]: LOADB R4 1   ; var4 = true
-      55 [-]: GETUPVAL R6 7; var6 = upvalues[7]
-      56 [-]: GETTABLEKS R5 R6 K22; var5 = var6["mHudScalePadding"]
-      57 [-]: NAMECALL R0 R0 K23; var1 = var0; var0 = var0[0xFAA69527]
-      58 [-]: CALL R0 6 1  ; var0(var1, var2, var3, var4, var5)
-      59 [-]: GETIMPORT R0 12; var0 = 0xAE91E43B
-      60 [-]: LOADK R2 K24 ; var2 = "Container.BarFill"
-      61 [-]: GETIMPORT R3 26; var3 = 0x9AD710DE
-      62 [-]: NAMECALL R0 R0 K27; var1 = var0; var0 = var0[0xD5181643]
-      63 [-]: CALL R0 4 1  ; var0(var1, var2, var3)
-      64 [-]: GETIMPORT R0 12; var0 = 0xAE91E43B
-      65 [-]: LOADK R2 K28 ; var2 = "Container.BarFillShadow"
-      66 [-]: GETIMPORT R4 30; var4 = 0x0032441C
-      67 [-]: GETTABLEKS R3 R4 K31; var3 = var4["UIMaterial_VisibilityRange"]
-      68 [-]: NAMECALL R0 R0 K27; var1 = var0; var0 = var0[0xD5181643]
-      69 [-]: CALL R0 4 1  ; var0(var1, var2, var3)
-      70 [-]: GETIMPORT R0 12; var0 = 0xAE91E43B
-      71 [-]: LOADK R2 K28 ; var2 = "Container.BarFillShadow"
-      72 [-]: LOADK R3 K32 ; var3 = "VisibilityFadeSize"
-      73 [-]: LOADK R4 K33 ; var4 = 0.02
-      74 [-]: LOADN R5 0   ; var5 = 0
-      75 [-]: LOADN R6 0   ; var6 = 0
-      76 [-]: LOADN R7 0   ; var7 = 0
-      77 [-]: NAMECALL R0 R0 K34; var1 = var0; var0 = var0[0x91E13703]
-      78 [-]: CALL R0 8 1  ; var0(var1, var2, var3, var4, var5, var6, var7)
-      79 [-]: GETIMPORT R0 12; var0 = 0xAE91E43B
-      80 [-]: LOADK R2 K35 ; var2 = "Container.BarGlow"
-      81 [-]: GETIMPORT R3 37; var3 = 0x75AD8B67
-      82 [-]: NAMECALL R0 R0 K27; var1 = var0; var0 = var0[0xD5181643]
-      83 [-]: CALL R0 4 1  ; var0(var1, var2, var3)
-      84 [-]: GETIMPORT R0 12; var0 = 0xAE91E43B
-      85 [-]: LOADK R2 K35 ; var2 = "Container.BarGlow"
-      86 [-]: LOADK R3 K32 ; var3 = "VisibilityFadeSize"
-      87 [-]: LOADN R4 0   ; var4 = 0
-      88 [-]: LOADN R5 0   ; var5 = 0
-      89 [-]: LOADN R6 0   ; var6 = 0
-      90 [-]: LOADN R7 0   ; var7 = 0
-      91 [-]: NAMECALL R0 R0 K34; var1 = var0; var0 = var0[0x91E13703]
-      92 [-]: CALL R0 8 1  ; var0(var1, var2, var3, var4, var5, var6, var7)
-      93 [-]: GETUPVAL R0 9; var0 = upvalues[9]
-      94 [-]: CALL R0 1 1  ; var0()
-      95 [-]: GETUPVAL R0 10; var0 = upvalues[10]
-      96 [-]: CALL R0 1 1  ; var0()
-      97 [-]: LOADN R2 1   ; var2 = 1
-      98 [-]: LOADN R0 15  ; var0 = 15
-      99 [-]: LOADN R1 1   ; var1 = 1
-     100 [-]: FORNPREP R0 L3; nforprep start - [escape at L3] -- var0 = iterator
-L 0: 101 [-]: GETUPVAL R3 11; var3 = upvalues[11]
-     102 [-]: DUPTABLE R5 39; 
-     103 [-]: GETUPVAL R7 12; var7 = upvalues[12]
-     104 [-]: GETTABLEKS R6 R7 K40; var6 = var7[0x06D055F9]
-     105 [-]: LOADB R7 1   ; var7 = true
-     106 [-]: JUMPXEQKN R2 K41 L2; 
-     107 [-]: JUMPXEQKN R2 K42 L1; 
-     108 [-]: LOADB R7 0 +1; var7 = false
-L 1: 109 [-]: LOADB R7 1   ; var7 = true
-L 2: 110 [-]: LOADN R8 2   ; var8 = 2
-     111 [-]: LOADN R9 1   ; var9 = 1
-     112 [-]: CALL R6 4 2  ; var6 = var6(var7, var8, var9)
-     113 [-]: SETTABLEKS R6 R5 K38; var6["Type"] = var5
-     114 [-]: LOADB R6 1   ; var6 = true
-     115 [-]: NAMECALL R3 R3 K43; var4 = var3; var3 = var3[0xBAD4316F]
-     116 [-]: CALL R3 4 1  ; var3(var4, var5, var6)
-     117 [-]: FORNLOOP R0 L0; nforloop end - iterate + goto L0
-L 3: 118 [-]: GETUPVAL R0 11; var0 = upvalues[11]
-     119 [-]: LOADNIL R2   ; var2 = nil
-     120 [-]: LOADB R3 1   ; var3 = true
-     121 [-]: NAMECALL R0 R0 K44; var1 = var0; var0 = var0[0x71E9AC81]
-     122 [-]: CALL R0 4 1  ; var0(var1, var2, var3)
-     123 [-]: GETIMPORT R0 12; var0 = 0xAE91E43B
-     124 [-]: LOADK R2 K45 ; var2 = "Container.PipContainer"
-     125 [-]: LOADN R3 0   ; var3 = 0
-     126 [-]: GETIMPORT R6 12; var6 = 0xAE91E43B
-     127 [-]: LOADK R8 K45 ; var8 = "Container.PipContainer"
-     128 [-]: LOADN R9 12  ; var9 = 12
-     129 [-]: NAMECALL R6 R6 K47; var7 = var6; var6 = var6[0x91A24E4B]
-     130 [-]: CALL R6 4 2  ; var6 = var6(var7, var8, var9)
-     131 [-]: MINUS R5 R6  ; 
-     132 [-]: DIVK R4 R5 K46; var4 = var5 / 2
-     133 [-]: NAMECALL R0 R0 K48; var1 = var0; var0 = var0[0x67BC869F]
-     134 [-]: CALL R0 5 1  ; var0(var1, var2, var3, var4)
-     135 [-]: LOADB R0 1   ; var0 = true
-     136 [-]: SETUPVAL R0 13; upvalues[0] = var13
-     137 [-]: GETIMPORT R0 50; var0 = 0x3D106989
-     138 [-]: LOADK R1 K51 ; var1 = "MawFishingCustomHud - init fishing UI"
-     139 [-]: CALL R0 2 1  ; var0(var1)
-     140 [-]: LOADB R0 0   ; var0 = false
-     141 [-]: SETUPVAL R0 14; upvalues[0] = var14
-     142 [-]: GETIMPORT R1 53; var1 = _T["MAW_remainingTime"]
-     143 [-]: FASTCALL1 62 R1 L4; 
-     144 [-]: GETIMPORT R0 55; var0 = 0x7B998233
-     145 [-]: CALL R0 2 2  ; var0 = var0(var1)
-L 4: 146 [-]: JUMPIF R0 L6 ; goto L6 if var0
-     147 [-]: GETIMPORT R1 57; var1 = _T["MAW_fishingDuration"]
-     148 [-]: FASTCALL1 62 R1 L5; 
-     149 [-]: GETIMPORT R0 55; var0 = 0x7B998233
-     150 [-]: CALL R0 2 2  ; var0 = var0(var1)
-L 5: 151 [-]: JUMPIF R0 L6 ; goto L6 if var0
-     152 [-]: GETIMPORT R0 58; var0 = _T["MAW_SetTimer"]
-     153 [-]: GETIMPORT R1 53; var1 = _T["MAW_remainingTime"]
-     154 [-]: GETIMPORT R2 57; var2 = _T["MAW_fishingDuration"]
-     155 [-]: CALL R0 3 1  ; var0(var1, var2)
-     156 [-]: GETIMPORT R0 1; var0 = _T
-     157 [-]: LOADNIL R1   ; var1 = nil
-     158 [-]: SETTABLEKS R1 R0 K52; var1["MAW_remainingTime"] = var0
+      23 [-]: GETIMPORT R0 1; var0 = _T
+      24 [-]: LOADB R1 1   ; var1 = true
+      25 [-]: SETTABLEKS R1 R0 K11; var1["SuppressMiniBossUI"] = var0
+      26 [-]: GETIMPORT R0 13; var0 = 0xAE91E43B
+      27 [-]: NAMECALL R0 R0 K14; var1 = var0; var0 = var0[0x091C120E]
+      28 [-]: CALL R0 2 2  ; var0 = var0(var1)
+      29 [-]: SETUPVAL R0 5; upvalues[0] = var5
+      30 [-]: GETIMPORT R0 13; var0 = 0xAE91E43B
+      31 [-]: NAMECALL R0 R0 K15; var1 = var0; var0 = var0[0x2CC9D281]
+      32 [-]: CALL R0 2 2  ; var0 = var0(var1)
+      33 [-]: SETUPVAL R0 6; upvalues[0] = var6
+      34 [-]: GETUPVAL R1 8; var1 = upvalues[8]
+      35 [-]: GETTABLEKS R0 R1 K16; var0 = var1[0xAE6791BA]
+      36 [-]: GETIMPORT R1 13; var1 = 0xAE91E43B
+      37 [-]: CALL R0 2 2  ; var0 = var0(var1)
+      38 [-]: SETUPVAL R0 7; upvalues[0] = var7
+      39 [-]: GETUPVAL R0 7; var0 = upvalues[7]
+      40 [-]: GETIMPORT R2 13; var2 = 0xAE91E43B
+      41 [-]: LOADK R3 K17 ; var3 = "Container"
+      42 [-]: NEWTABLE R4 0 2; var4 = {}
+      43 [-]: GETUPVAL R6 7; var6 = upvalues[7]
+      44 [-]: GETTABLEKS R5 R6 K18; var5 = var6["ANCHOR_V_TOP"]
+      45 [-]: GETUPVAL R7 7; var7 = upvalues[7]
+      46 [-]: GETTABLEKS R6 R7 K19; var6 = var7["ANCHOR_H_CENTRE"]
+      47 [-]: SETLIST R4 R5 2 [1]; var4[1] = var5; var4[2] = var6; var4[3] = var7; 
+      48 [-]: NAMECALL R0 R0 K20; var1 = var0; var0 = var0[0x20FF29F7]
+      49 [-]: CALL R0 5 1  ; var0(var1, var2, var3, var4)
+      50 [-]: GETUPVAL R0 7; var0 = upvalues[7]
+      51 [-]: GETIMPORT R2 13; var2 = 0xAE91E43B
+      52 [-]: NAMECALL R2 R2 K21; var3 = var2; var2 = var2[0x6B837788]
+      53 [-]: CALL R2 2 2  ; var2 = var2(var3)
+      54 [-]: GETIMPORT R3 13; var3 = 0xAE91E43B
+      55 [-]: NAMECALL R3 R3 K22; var4 = var3; var3 = var3[0xAF9FDA9F]
+      56 [-]: CALL R3 2 2  ; var3 = var3(var4)
+      57 [-]: LOADB R4 1   ; var4 = true
+      58 [-]: GETUPVAL R6 7; var6 = upvalues[7]
+      59 [-]: GETTABLEKS R5 R6 K23; var5 = var6["mHudScalePadding"]
+      60 [-]: NAMECALL R0 R0 K24; var1 = var0; var0 = var0[0xFAA69527]
+      61 [-]: CALL R0 6 1  ; var0(var1, var2, var3, var4, var5)
+      62 [-]: GETIMPORT R0 13; var0 = 0xAE91E43B
+      63 [-]: LOADK R2 K25 ; var2 = "Container.BarFill"
+      64 [-]: GETIMPORT R3 27; var3 = 0x9AD710DE
+      65 [-]: NAMECALL R0 R0 K28; var1 = var0; var0 = var0[0xD5181643]
+      66 [-]: CALL R0 4 1  ; var0(var1, var2, var3)
+      67 [-]: GETIMPORT R0 13; var0 = 0xAE91E43B
+      68 [-]: LOADK R2 K29 ; var2 = "Container.BarFillShadow"
+      69 [-]: GETIMPORT R4 31; var4 = 0x0032441C
+      70 [-]: GETTABLEKS R3 R4 K32; var3 = var4["UIMaterial_VisibilityRange"]
+      71 [-]: NAMECALL R0 R0 K28; var1 = var0; var0 = var0[0xD5181643]
+      72 [-]: CALL R0 4 1  ; var0(var1, var2, var3)
+      73 [-]: GETIMPORT R0 13; var0 = 0xAE91E43B
+      74 [-]: LOADK R2 K29 ; var2 = "Container.BarFillShadow"
+      75 [-]: LOADK R3 K33 ; var3 = "VisibilityFadeSize"
+      76 [-]: LOADK R4 K34 ; var4 = 0.019999999552965164
+      77 [-]: LOADN R5 0   ; var5 = 0
+      78 [-]: LOADN R6 0   ; var6 = 0
+      79 [-]: LOADN R7 0   ; var7 = 0
+      80 [-]: NAMECALL R0 R0 K35; var1 = var0; var0 = var0[0x91E13703]
+      81 [-]: CALL R0 8 1  ; var0(var1, var2, var3, var4, var5, var6, var7)
+      82 [-]: GETIMPORT R0 13; var0 = 0xAE91E43B
+      83 [-]: LOADK R2 K36 ; var2 = "Container.BarGlow"
+      84 [-]: GETIMPORT R3 38; var3 = 0x75AD8B67
+      85 [-]: NAMECALL R0 R0 K28; var1 = var0; var0 = var0[0xD5181643]
+      86 [-]: CALL R0 4 1  ; var0(var1, var2, var3)
+      87 [-]: GETIMPORT R0 13; var0 = 0xAE91E43B
+      88 [-]: LOADK R2 K36 ; var2 = "Container.BarGlow"
+      89 [-]: LOADK R3 K33 ; var3 = "VisibilityFadeSize"
+      90 [-]: LOADN R4 0   ; var4 = 0
+      91 [-]: LOADN R5 0   ; var5 = 0
+      92 [-]: LOADN R6 0   ; var6 = 0
+      93 [-]: LOADN R7 0   ; var7 = 0
+      94 [-]: NAMECALL R0 R0 K35; var1 = var0; var0 = var0[0x91E13703]
+      95 [-]: CALL R0 8 1  ; var0(var1, var2, var3, var4, var5, var6, var7)
+      96 [-]: GETUPVAL R0 9; var0 = upvalues[9]
+      97 [-]: CALL R0 1 1  ; var0()
+      98 [-]: GETUPVAL R0 10; var0 = upvalues[10]
+      99 [-]: CALL R0 1 1  ; var0()
+     100 [-]: LOADN R2 1   ; var2 = 1
+     101 [-]: LOADN R0 15  ; var0 = 15
+     102 [-]: LOADN R1 1   ; var1 = 1
+     103 [-]: FORNPREP R0 L3; nforprep start - [escape at L3] -- var0 = iterator
+L 0: 104 [-]: GETUPVAL R3 11; var3 = upvalues[11]
+     105 [-]: DUPTABLE R5 40; 
+     106 [-]: GETUPVAL R7 12; var7 = upvalues[12]
+     107 [-]: GETTABLEKS R6 R7 K41; var6 = var7[0x06D055F9]
+     108 [-]: LOADB R7 1   ; var7 = true
+     109 [-]: JUMPXEQKN R2 K42 L2; 
+     110 [-]: JUMPXEQKN R2 K43 L1; 
+     111 [-]: LOADB R7 0 +1; var7 = false
+L 1: 112 [-]: LOADB R7 1   ; var7 = true
+L 2: 113 [-]: LOADN R8 2   ; var8 = 2
+     114 [-]: LOADN R9 1   ; var9 = 1
+     115 [-]: CALL R6 4 2  ; var6 = var6(var7, var8, var9)
+     116 [-]: SETTABLEKS R6 R5 K39; var6["Type"] = var5
+     117 [-]: LOADB R6 1   ; var6 = true
+     118 [-]: NAMECALL R3 R3 K44; var4 = var3; var3 = var3[0xBAD4316F]
+     119 [-]: CALL R3 4 1  ; var3(var4, var5, var6)
+     120 [-]: FORNLOOP R0 L0; nforloop end - iterate + goto L0
+L 3: 121 [-]: GETUPVAL R0 11; var0 = upvalues[11]
+     122 [-]: LOADNIL R2   ; var2 = nil
+     123 [-]: LOADB R3 1   ; var3 = true
+     124 [-]: NAMECALL R0 R0 K45; var1 = var0; var0 = var0[0x71E9AC81]
+     125 [-]: CALL R0 4 1  ; var0(var1, var2, var3)
+     126 [-]: GETIMPORT R0 13; var0 = 0xAE91E43B
+     127 [-]: LOADK R2 K46 ; var2 = "Container.PipContainer"
+     128 [-]: LOADN R3 0   ; var3 = 0
+     129 [-]: GETIMPORT R6 13; var6 = 0xAE91E43B
+     130 [-]: LOADK R8 K46 ; var8 = "Container.PipContainer"
+     131 [-]: LOADN R9 12  ; var9 = 12
+     132 [-]: NAMECALL R6 R6 K48; var7 = var6; var6 = var6[0x91A24E4B]
+     133 [-]: CALL R6 4 2  ; var6 = var6(var7, var8, var9)
+     134 [-]: MINUS R5 R6  ; 
+          136 [-]: NAMECALL R0 R0 K49; var1 = var0; var0 = var0[0x67BC869F]
+     137 [-]: CALL R0 5 1  ; var0(var1, var2, var3, var4)
+     138 [-]: LOADB R0 1   ; var0 = true
+     139 [-]: SETUPVAL R0 13; upvalues[0] = var13
+     140 [-]: GETIMPORT R0 51; var0 = 0x3D106989
+     141 [-]: LOADK R1 K52 ; var1 = "MawFishingCustomHud - init fishing UI"
+     142 [-]: CALL R0 2 1  ; var0(var1)
+     143 [-]: LOADB R0 0   ; var0 = false
+     144 [-]: SETUPVAL R0 14; upvalues[0] = var14
+     145 [-]: GETIMPORT R1 54; var1 = _T["MAW_remainingTime"]
+     146 [-]: FASTCALL1 64 R1 L4; 
+     147 [-]: GETIMPORT R0 56; var0 = 0x7B998233
+     148 [-]: CALL R0 2 2  ; var0 = var0(var1)
+L 4: 149 [-]: JUMPIF R0 L6 ; goto L6 if var0
+     150 [-]: GETIMPORT R1 58; var1 = _T["MAW_fishingDuration"]
+     151 [-]: FASTCALL1 64 R1 L5; 
+     152 [-]: GETIMPORT R0 56; var0 = 0x7B998233
+     153 [-]: CALL R0 2 2  ; var0 = var0(var1)
+L 5: 154 [-]: JUMPIF R0 L6 ; goto L6 if var0
+     155 [-]: GETIMPORT R0 59; var0 = _T["MAW_SetTimer"]
+     156 [-]: GETIMPORT R1 54; var1 = _T["MAW_remainingTime"]
+     157 [-]: GETIMPORT R2 58; var2 = _T["MAW_fishingDuration"]
+     158 [-]: CALL R0 3 1  ; var0(var1, var2)
      159 [-]: GETIMPORT R0 1; var0 = _T
      160 [-]: LOADNIL R1   ; var1 = nil
-     161 [-]: SETTABLEKS R1 R0 K56; var1["MAW_fishingDuration"] = var0
-L 6: 162 [-]: GETIMPORT R1 60; var1 = _T["MAW_currentScore"]
-     163 [-]: FASTCALL1 62 R1 L7; 
-     164 [-]: GETIMPORT R0 55; var0 = 0x7B998233
-     165 [-]: CALL R0 2 2  ; var0 = var0(var1)
-L 7: 166 [-]: JUMPIF R0 L8 ; goto L8 if var0
-     167 [-]: GETIMPORT R0 61; var0 = _T["MAW_SetKillCount"]
-     168 [-]: GETIMPORT R1 60; var1 = _T["MAW_currentScore"]
-     169 [-]: CALL R0 2 1  ; var0(var1)
-     170 [-]: GETIMPORT R0 1; var0 = _T
-     171 [-]: LOADNIL R1   ; var1 = nil
-     172 [-]: SETTABLEKS R1 R0 K59; var1["MAW_currentScore"] = var0
-L 8: 173 [-]: GETIMPORT R1 63; var1 = _T["HideWeaponPanel"]
-     174 [-]: FASTCALL1 62 R1 L9; 
-     175 [-]: GETIMPORT R0 55; var0 = 0x7B998233
-     176 [-]: CALL R0 2 2  ; var0 = var0(var1)
-L 9: 177 [-]: JUMPIF R0 L10; goto L10 if var0
-     178 [-]: GETIMPORT R0 63; var0 = _T["HideWeaponPanel"]
-     179 [-]: CALL R0 1 1  ; var0()
-L10: 180 [-]: GETIMPORT R1 65; var1 = _T["HideAbilityPanel"]
-     181 [-]: FASTCALL1 62 R1 L11; 
-     182 [-]: GETIMPORT R0 55; var0 = 0x7B998233
-     183 [-]: CALL R0 2 2  ; var0 = var0(var1)
-L11: 184 [-]: JUMPIF R0 L12; goto L12 if var0
-     185 [-]: GETIMPORT R0 65; var0 = _T["HideAbilityPanel"]
-     186 [-]: LOADB R1 1   ; var1 = true
-     187 [-]: CALL R0 2 1  ; var0(var1)
-L12: 188 [-]: GETIMPORT R0 67; var0 = 0xBE190284
-     189 [-]: NAMECALL R0 R0 K68; var1 = var0; var0 = var0[0x33307F92]
-     190 [-]: CALL R0 2 2  ; var0 = var0(var1)
-     191 [-]: FASTCALL1 62 R0 L13; 
-     192 [-]: MOVE R2 R0   ; var2 = var0
-     193 [-]: GETIMPORT R1 55; var1 = 0x7B998233
-     194 [-]: CALL R1 2 2  ; var1 = var1(var2)
-L13: 195 [-]: JUMPIF R1 L14; goto L14 if var1
-     196 [-]: LOADK R3 K69 ; var3 = "HideAbilityDots"
-     197 [-]: LOADK R4 K70 ; var4 = ""
-     198 [-]: NAMECALL R1 R0 K71; var2 = var0; var1 = var0[0xE4162EED]
-     199 [-]: CALL R1 4 1  ; var1(var2, var3, var4)
-     200 [-]: LOADK R3 K72 ; var3 = "HideAffinity"
-     201 [-]: LOADK R4 K70 ; var4 = ""
-     202 [-]: NAMECALL R1 R0 K71; var2 = var0; var1 = var0[0xE4162EED]
-     203 [-]: CALL R1 4 1  ; var1(var2, var3, var4)
-     204 [-]: LOADK R3 K73 ; var3 = "HealthAndShield"
-     205 [-]: LOADN R4 11  ; var4 = 11
-     206 [-]: LOADB R5 0   ; var5 = false
-     207 [-]: NAMECALL R1 R0 K74; var2 = var0; var1 = var0[0xAADE900E]
-     208 [-]: CALL R1 5 1  ; var1(var2, var3, var4, var5)
-L14: 209 [-]: GETIMPORT R1 1; var1 = _T
-     210 [-]: LOADN R2 1   ; var2 = 1
-     211 [-]: SETTABLEKS R2 R1 K75; var2["HidePlayerPanel"] = var1
-     212 [-]: RETURN R0 0  ; 
+     161 [-]: SETTABLEKS R1 R0 K53; var1["MAW_remainingTime"] = var0
+     162 [-]: GETIMPORT R0 1; var0 = _T
+     163 [-]: LOADNIL R1   ; var1 = nil
+     164 [-]: SETTABLEKS R1 R0 K57; var1["MAW_fishingDuration"] = var0
+L 6: 165 [-]: GETIMPORT R1 61; var1 = _T["MAW_currentScore"]
+     166 [-]: FASTCALL1 64 R1 L7; 
+     167 [-]: GETIMPORT R0 56; var0 = 0x7B998233
+     168 [-]: CALL R0 2 2  ; var0 = var0(var1)
+L 7: 169 [-]: JUMPIF R0 L8 ; goto L8 if var0
+     170 [-]: GETIMPORT R0 62; var0 = _T["MAW_SetKillCount"]
+     171 [-]: GETIMPORT R1 61; var1 = _T["MAW_currentScore"]
+     172 [-]: CALL R0 2 1  ; var0(var1)
+     173 [-]: GETIMPORT R0 1; var0 = _T
+     174 [-]: LOADNIL R1   ; var1 = nil
+     175 [-]: SETTABLEKS R1 R0 K60; var1["MAW_currentScore"] = var0
+L 8: 176 [-]: GETIMPORT R1 64; var1 = _T["HideWeaponPanel"]
+     177 [-]: FASTCALL1 64 R1 L9; 
+     178 [-]: GETIMPORT R0 56; var0 = 0x7B998233
+     179 [-]: CALL R0 2 2  ; var0 = var0(var1)
+L 9: 180 [-]: JUMPIF R0 L10; goto L10 if var0
+     181 [-]: GETIMPORT R0 64; var0 = _T["HideWeaponPanel"]
+     182 [-]: CALL R0 1 1  ; var0()
+L10: 183 [-]: GETIMPORT R1 66; var1 = _T["HideAbilityPanel"]
+     184 [-]: FASTCALL1 64 R1 L11; 
+     185 [-]: GETIMPORT R0 56; var0 = 0x7B998233
+     186 [-]: CALL R0 2 2  ; var0 = var0(var1)
+L11: 187 [-]: JUMPIF R0 L12; goto L12 if var0
+     188 [-]: GETIMPORT R0 66; var0 = _T["HideAbilityPanel"]
+     189 [-]: LOADB R1 1   ; var1 = true
+     190 [-]: CALL R0 2 1  ; var0(var1)
+L12: 191 [-]: GETIMPORT R0 68; var0 = 0xBE190284
+     192 [-]: NAMECALL R0 R0 K69; var1 = var0; var0 = var0[0x33307F92]
+     193 [-]: CALL R0 2 2  ; var0 = var0(var1)
+     194 [-]: FASTCALL1 64 R0 L13; 
+     195 [-]: MOVE R2 R0   ; var2 = var0
+     196 [-]: GETIMPORT R1 56; var1 = 0x7B998233
+     197 [-]: CALL R1 2 2  ; var1 = var1(var2)
+L13: 198 [-]: JUMPIF R1 L14; goto L14 if var1
+     199 [-]: LOADK R3 K70 ; var3 = "HideAbilityDots"
+     200 [-]: LOADK R4 K71 ; var4 = ""
+     201 [-]: NAMECALL R1 R0 K72; var2 = var0; var1 = var0[0xE4162EED]
+     202 [-]: CALL R1 4 1  ; var1(var2, var3, var4)
+     203 [-]: LOADK R3 K73 ; var3 = "HideAffinity"
+     204 [-]: LOADK R4 K71 ; var4 = ""
+     205 [-]: NAMECALL R1 R0 K72; var2 = var0; var1 = var0[0xE4162EED]
+     206 [-]: CALL R1 4 1  ; var1(var2, var3, var4)
+     207 [-]: LOADK R3 K74 ; var3 = "HealthAndShield"
+     208 [-]: LOADN R4 11  ; var4 = 11
+     209 [-]: LOADB R5 0   ; var5 = false
+     210 [-]: NAMECALL R1 R0 K75; var2 = var0; var1 = var0[0xAADE900E]
+     211 [-]: CALL R1 5 1  ; var1(var2, var3, var4, var5)
+L14: 212 [-]: GETIMPORT R1 1; var1 = _T
+     213 [-]: LOADN R2 1   ; var2 = 1
+     214 [-]: SETTABLEKS R2 R1 K76; var2["HidePlayerPanel"] = var1
+     215 [-]: RETURN R0 0  ; 
 
 
 ; Name:            
-; Defined at line: 294
+; Defined at line: 296
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0

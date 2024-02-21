@@ -96,7 +96,7 @@ L 1:  34 [-]: GETIMPORT R2 2; var2 = _T["TaggedDialog"]
        0 [-]: LOADB R1 0   ; var1 = false
        1 [-]: LOADB R2 0   ; var2 = false
        2 [-]: LOADN R3 0   ; var3 = 0
-L 0:   3 [-]: FASTCALL1 62 R0 L1; 
+L 0:   3 [-]: FASTCALL1 64 R0 L1; 
        4 [-]: MOVE R5 R0   ; var5 = var0
        5 [-]: GETIMPORT R4 1; var4 = 0x7B998233
        6 [-]: CALL R4 2 2  ; var4 = var4(var5)
@@ -114,7 +114,7 @@ L 3:  14 [-]: MOVE R2 R4   ; var2 = var4
       18 [-]: CALL R4 1 2  ; var4 = var4()
       19 [-]: SUB R3 R3 R4 ; var3 = var3 - var4
       20 [-]: LOADN R4 0   ; var4 = 0
-      21 [-]: JUMPIFNOTLT R3 R4 L9; goto L9 if var3 >= var721998
+      21 [-]: JUMPIFNOTLT R3 R4 L9; goto L9 if var3 >= var721953
       22 [-]: GETIMPORT R4 11; var4 = 0xC163F229
       23 [-]: GETIMPORT R5 13; var5 = 0x81AA1949
       24 [-]: GETIMPORT R6 15; var6 = 0xC8DBDE7B
@@ -122,11 +122,11 @@ L 3:  14 [-]: MOVE R2 R4   ; var2 = var4
       26 [-]: MOVE R3 R4   ; var3 = var4
       27 [-]: GETIMPORT R4 17; var4 = _T["CurrentConversation"]["mTransmissionSet"]
       28 [-]: GETIMPORT R6 19; var6 = _T["curTransmission"]
-      29 [-]: FASTCALL1 62 R6 L4; 
+      29 [-]: FASTCALL1 64 R6 L4; 
       30 [-]: GETIMPORT R5 1; var5 = 0x7B998233
       31 [-]: CALL R5 2 2  ; var5 = var5(var6)
 L 4:  32 [-]: JUMPIFNOT R5 L9; goto L9 if not var5
-      33 [-]: FASTCALL1 62 R4 L5; 
+      33 [-]: FASTCALL1 64 R4 L5; 
       34 [-]: MOVE R6 R4   ; var6 = var4
       35 [-]: GETIMPORT R5 1; var5 = 0x7B998233
       36 [-]: CALL R5 2 2  ; var5 = var5(var6)
@@ -135,7 +135,7 @@ L 5:  37 [-]: JUMPIF R5 L9 ; goto L9 if var5
       39 [-]: GETUPVAL R7 0; var7 = upvalues[0]
       40 [-]: NAMECALL R5 R5 K20; var6 = var5; var5 = var5[0x10C9EEF2]
       41 [-]: CALL R5 3 2  ; var5 = var5(var6, var7)
-      42 [-]: FASTCALL1 62 R5 L6; 
+      42 [-]: FASTCALL1 64 R5 L6; 
       43 [-]: MOVE R7 R5   ; var7 = var5
       44 [-]: GETIMPORT R6 1; var6 = 0x7B998233
       45 [-]: CALL R6 2 2  ; var6 = var6(var7)

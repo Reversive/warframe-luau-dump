@@ -42,7 +42,7 @@
        7 [-]: FORGPREP_INEXT R3 L2; 
 L 0:   8 [-]: NAMECALL R8 R7 K5; var9 = var7; var8 = var7[0xBB610E5B]
        9 [-]: CALL R8 2 2  ; var8 = var8(var9)
-      10 [-]: FASTCALL1 62 R8 L1; 
+      10 [-]: FASTCALL1 64 R8 L1; 
       11 [-]: MOVE R10 R8  ; var10 = var8
       12 [-]: GETIMPORT R9 7; var9 = 0x7B998233
       13 [-]: CALL R9 2 2  ; var9 = var9(var10)
@@ -68,7 +68,7 @@ L 2:  19 [-]: FORGLOOP R3 L0 2 [inext];
        3 [-]: MOVE R2 R0   ; var2 = var0
        4 [-]: CALL R1 2 1  ; var1(var2)
        5 [-]: GETTABLEKS R2 R0 K2; var2 = var0["pvpEventData"]
-       6 [-]: FASTCALL1 62 R2 L0; 
+       6 [-]: FASTCALL1 64 R2 L0; 
        7 [-]: GETIMPORT R1 4; var1 = 0x7B998233
        8 [-]: CALL R1 2 2  ; var1 = var1(var2)
 L 0:   9 [-]: JUMPIFNOT R1 L1; goto L1 if not var1
@@ -84,7 +84,7 @@ L 1:  11 [-]: NAMECALL R1 R0 K5; var2 = var0; var1 = var0[0x1BD14D99]
       19 [-]: FORGPREP_INEXT R3 L5; 
 L 2:  20 [-]: NAMECALL R8 R7 K11; var9 = var7; var8 = var7[0xBB610E5B]
       21 [-]: CALL R8 2 2  ; var8 = var8(var9)
-      22 [-]: FASTCALL1 62 R8 L3; 
+      22 [-]: FASTCALL1 64 R8 L3; 
       23 [-]: MOVE R10 R8  ; var10 = var8
       24 [-]: GETIMPORT R9 4; var9 = 0x7B998233
       25 [-]: CALL R9 2 2  ; var9 = var9(var10)
@@ -94,7 +94,7 @@ L 3:  26 [-]: JUMPIF R9 L5 ; goto L5 if var9
       29 [-]: JUMPIF R9 L5 ; goto L5 if var9
       30 [-]: GETTABLEKS R9 R0 K13; var9 = var0["lastKnownPVPEventState"]
       31 [-]: GETTABLEKS R10 R0 K14; var10 = var0["PVPSTATE_STARTED"]
-      32 [-]: JUMPIFNOTEQ R9 R10 L4; goto L4 if var9 ~= var1051470
+      32 [-]: JUMPIFNOTEQ R9 R10 L4; goto L4 if var9 ~= var1051425
       33 [-]: GETIMPORT R11 16; var11 = 0x0469F296
       34 [-]: CALL R11 1 0 ; var11, ... = var11()
       35 [-]: NAMECALL R9 R7 K17; var10 = var7; var9 = var7[0x7D904A7C]
@@ -128,7 +128,7 @@ L 5:  52 [-]: FORGLOOP R3 L2 2 [inext];
       63 [-]: CONCAT R3 R4 R5; var3 = var4 .. var5
       64 [-]: GETTABLEKS R4 R0 K13; var4 = var0["lastKnownPVPEventState"]
       65 [-]: GETTABLEKS R5 R0 K14; var5 = var0["PVPSTATE_STARTED"]
-      66 [-]: JUMPIFNOTEQ R4 R5 L6; goto L6 if var4 ~= var1593836613
+      66 [-]: JUMPIFNOTEQ R4 R5 L6; goto L6 if var4 ~= var1593836620
       67 [-]: NAMECALL R4 R0 K27; var5 = var0; var4 = var0[0xD5A1AD5F]
       68 [-]: CALL R4 2 2  ; var4 = var4(var5)
       69 [-]: MOVE R6 R3   ; var6 = var3

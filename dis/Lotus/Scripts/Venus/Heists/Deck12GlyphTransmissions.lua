@@ -23,7 +23,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  9
 
-       0 [-]: FASTCALL1 62 R0 L0; 
+       0 [-]: FASTCALL1 64 R0 L0; 
        1 [-]: MOVE R2 R0   ; var2 = var0
        2 [-]: GETIMPORT R1 1; var1 = 0x7B998233
        3 [-]: CALL R1 2 2  ; var1 = var1(var2)
@@ -43,7 +43,7 @@ L 2:  11 [-]: GETIMPORT R1 6; var1 = 0x89326C93
       17 [-]: NAMECALL R2 R2 K9; var3 = var2; var2 = var2[0x3DCC362A]
       18 [-]: CALL R2 3 2  ; var2 = var2(var3, var4)
       19 [-]: GETIMPORT R4 11; var4 = 0xF964DE2F
-      20 [-]: FASTCALL1 62 R4 L3; 
+      20 [-]: FASTCALL1 64 R4 L3; 
       21 [-]: GETIMPORT R3 1; var3 = 0x7B998233
       22 [-]: CALL R3 2 2  ; var3 = var3(var4)
 L 3:  23 [-]: JUMPIF R3 L4 ; goto L4 if var3
@@ -61,12 +61,12 @@ L 4:  30 [-]: LOADNIL R3   ; var3 = nil
       35 [-]: FORNPREP R4 L7; nforprep start - [escape at L7] -- var4 = iterator
 L 5:  36 [-]: GETIMPORT R8 14; var8 = 0x6A4006F1
       37 [-]: GETTABLE R7 R8 R6; var7 = var8[var6]
-      38 [-]: JUMPIFNOTEQ R7 R2 L6; goto L6 if var7 ~= var1050446
+      38 [-]: JUMPIFNOTEQ R7 R2 L6; goto L6 if var7 ~= var1050401
       39 [-]: GETIMPORT R7 16; var7 = 0x7D6C5EF7
       40 [-]: GETTABLE R3 R7 R6; var3 = var7[var6]
       41 [-]: JUMP L7      ; goto L7
 L 6:  42 [-]: FORNLOOP R4 L5; nforloop end - iterate + goto L5
-L 7:  43 [-]: FASTCALL1 62 R3 L8; 
+L 7:  43 [-]: FASTCALL1 64 R3 L8; 
       44 [-]: MOVE R5 R3   ; var5 = var3
       45 [-]: GETIMPORT R4 1; var4 = 0x7B998233
       46 [-]: CALL R4 2 2  ; var4 = var4(var5)
@@ -89,7 +89,7 @@ L 9:  51 [-]: RETURN R0 0  ;
        2 [-]: JUMPXEQKN R0 K2 L0 NOT; 
        3 [-]: RETURN R0 0  ; 
 L 0:   4 [-]: GETIMPORT R1 4; var1 = 0xBE190284
-       5 [-]: FASTCALL1 62 R1 L1; 
+       5 [-]: FASTCALL1 64 R1 L1; 
        6 [-]: GETIMPORT R0 6; var0 = 0x7B998233
        7 [-]: CALL R0 2 2  ; var0 = var0(var1)
 L 1:   8 [-]: JUMPIF R0 L2 ; goto L2 if var0
@@ -110,13 +110,13 @@ L 3:  18 [-]: GETIMPORT R1 4; var1 = 0xBE190284
       23 [-]: CALL R1 2 2  ; var1 = var1(var2)
       24 [-]: JUMPIFNOT R1 L4; goto L4 if not var1
       25 [-]: GETUPVAL R1 0; var1 = upvalues[0]
-      26 [-]: JUMPIFNOTEQ R0 R1 L7; goto L7 if var0 ~= var1114446
+      26 [-]: JUMPIFNOTEQ R0 R1 L7; goto L7 if var0 ~= var1114401
 L 4:  27 [-]: GETIMPORT R1 17; var1 = _T["ActiveJob"]
       28 [-]: JUMPIFNOT R1 L5; goto L5 if not var1
       29 [-]: GETIMPORT R1 19; var1 = _T["ActiveJob"]["isQuest"]
       30 [-]: JUMPIF R1 L7 ; goto L7 if var1
 L 5:  31 [-]: GETIMPORT R2 21; var2 = 0x25D99D89
-      32 [-]: FASTCALL1 62 R2 L6; 
+      32 [-]: FASTCALL1 64 R2 L6; 
       33 [-]: GETIMPORT R1 6; var1 = 0x7B998233
       34 [-]: CALL R1 2 2  ; var1 = var1(var2)
 L 6:  35 [-]: JUMPIFNOT R1 L8; goto L8 if not var1
@@ -135,14 +135,14 @@ L 9:  45 [-]: GETTABLE R6 R2 R5; var6 = var2[var5]
       48 [-]: CALL R7 2 2  ; var7 = var7(var8)
       49 [-]: GETTABLEKS R8 R6 K28; var8 = var6["mTag"]
       50 [-]: GETIMPORT R9 30; var9 = 0xB64D8867
-      51 [-]: JUMPIFNOTEQ R8 R9 L10; goto L10 if var8 ~= var1706062
+      51 [-]: JUMPIFNOTEQ R8 R9 L10; goto L10 if var8 ~= var1706017
       52 [-]: GETIMPORT R8 26; var8 = 0x34291F5C[0x397B920F]
       53 [-]: GETTABLEKS R9 R6 K31; var9 = var6["mActivation"]
       54 [-]: CALL R8 2 2  ; var8 = var8(var9)
       55 [-]: LOADN R9 0   ; var9 = 0
-      56 [-]: JUMPIFNOTLE R8 R9 L10; goto L10 if var8 > var2119
+      56 [-]: JUMPIFNOTLE R8 R9 L10; goto L10 if var8 > var2096
       57 [-]: LOADN R8 0   ; var8 = 0
-      58 [-]: JUMPIFNOTLT R8 R7 L10; goto L10 if var8 >= var264270
+      58 [-]: JUMPIFNOTLT R8 R7 L10; goto L10 if var8 >= var264225
       59 [-]: GETIMPORT R8 4; var8 = 0xBE190284
       60 [-]: LOADK R10 K32; var10 = "OnEntityScanned"
       61 [-]: NAMECALL R8 R8 K33; var9 = var8; var8 = var8[0x932DB32D]

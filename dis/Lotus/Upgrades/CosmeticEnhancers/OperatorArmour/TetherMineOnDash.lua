@@ -74,7 +74,7 @@ L 1:  17 [-]: GETTABLE R2 R3 R4; var2 = var3[var4]
        0 [-]: NAMECALL R5 R0 K0; var6 = var0; var5 = var0[0xF80FAE85]
        1 [-]: CALL R5 2 2  ; var5 = var5(var6)
        2 [-]: JUMPIF R5 L2 ; goto L2 if var5
-L 0:   3 [-]: FASTCALL1 62 R0 L1; 
+L 0:   3 [-]: FASTCALL1 64 R0 L1; 
        4 [-]: MOVE R6 R0   ; var6 = var0
        5 [-]: GETIMPORT R5 2; var5 = 0x7B998233
        6 [-]: CALL R5 2 2  ; var5 = var5(var6)
@@ -86,7 +86,7 @@ L 1:   7 [-]: JUMPIF R5 L2 ; goto L2 if var5
       12 [-]: LOADN R6 0   ; var6 = 0
       13 [-]: CALL R5 2 1  ; var5(var6)
       14 [-]: JUMPBACK L0  ; goto L0
-L 2:  15 [-]: FASTCALL1 62 R0 L3; 
+L 2:  15 [-]: FASTCALL1 64 R0 L3; 
       16 [-]: MOVE R6 R0   ; var6 = var0
       17 [-]: GETIMPORT R5 2; var5 = 0x7B998233
       18 [-]: CALL R5 2 2  ; var5 = var5(var6)
@@ -96,7 +96,7 @@ L 4:  21 [-]: NAMECALL R5 R0 K6; var6 = var0; var5 = var0[0x659C6864]
       22 [-]: CALL R5 2 2  ; var5 = var5(var6)
       23 [-]: NAMECALL R6 R0 K6; var7 = var0; var6 = var0[0x659C6864]
       24 [-]: CALL R6 2 2  ; var6 = var6(var7)
-L 5:  25 [-]: FASTCALL1 62 R0 L6; 
+L 5:  25 [-]: FASTCALL1 64 R0 L6; 
       26 [-]: MOVE R8 R0   ; var8 = var0
       27 [-]: GETIMPORT R7 2; var7 = 0x7B998233
       28 [-]: CALL R7 2 2  ; var7 = var7(var8)
@@ -104,7 +104,7 @@ L 6:  29 [-]: JUMPIF R7 L7 ; goto L7 if var7
       30 [-]: NAMECALL R7 R0 K3; var8 = var0; var7 = var0[0xC5D369FE]
       31 [-]: CALL R7 2 2  ; var7 = var7(var8)
       32 [-]: JUMPIFNOT R7 L7; goto L7 if not var7
-      33 [-]: JUMPIFNOTEQ R5 R6 L7; goto L7 if var5 ~= var329550
+      33 [-]: JUMPIFNOTEQ R5 R6 L7; goto L7 if var5 ~= var329505
       34 [-]: GETIMPORT R7 5; var7 = 0xCBD666E1
       35 [-]: LOADN R8 0   ; var8 = 0
       36 [-]: CALL R7 2 1  ; var7(var8)
@@ -112,7 +112,7 @@ L 6:  29 [-]: JUMPIF R7 L7 ; goto L7 if var7
       38 [-]: CALL R7 2 2  ; var7 = var7(var8)
       39 [-]: MOVE R6 R7   ; var6 = var7
       40 [-]: JUMPBACK L5  ; goto L5
-L 7:  41 [-]: FASTCALL1 62 R0 L8; 
+L 7:  41 [-]: FASTCALL1 64 R0 L8; 
       42 [-]: MOVE R8 R0   ; var8 = var0
       43 [-]: GETIMPORT R7 2; var7 = 0x7B998233
       44 [-]: CALL R7 2 2  ; var7 = var7(var8)
@@ -142,7 +142,7 @@ L10:  57 [-]: GETIMPORT R7 8; var7 = 0x89326C93
 L11:  68 [-]: GETTABLE R12 R13 R14; var12 = var13[var14]
       69 [-]: NAMECALL R7 R7 K18; var8 = var7; var7 = var7[0xFB669000]
       70 [-]: CALL R7 6 2  ; var7 = var7(var8, var9, var10, var11, var12)
-      71 [-]: FASTCALL1 62 R7 L12; 
+      71 [-]: FASTCALL1 64 R7 L12; 
       72 [-]: MOVE R9 R7   ; var9 = var7
       73 [-]: GETIMPORT R8 2; var8 = 0x7B998233
       74 [-]: CALL R8 2 2  ; var8 = var8(var9)
@@ -154,7 +154,7 @@ L13:  77 [-]: NEWTABLE R8 0 0; var8 = {}
       80 [-]: LOADN R10 1  ; var10 = 1
       81 [-]: FORNPREP R9 L20; nforprep start - [escape at L20] -- var9 = iterator
 L14:  82 [-]: GETTABLE R13 R7 R11; var13 = var7[var11]
-      83 [-]: FASTCALL1 62 R13 L15; 
+      83 [-]: FASTCALL1 64 R13 L15; 
       84 [-]: GETIMPORT R12 2; var12 = 0x7B998233
       85 [-]: CALL R12 2 2 ; var12 = var12(var13)
 L15:  86 [-]: JUMPIF R12 L19; goto L19 if var12
@@ -202,7 +202,7 @@ L20: 127 [-]: LENGTH R9 R8 ; var9 = #var8
      128 [-]: JUMPXEQKN R9 K29 L21 NOT; 
      129 [-]: RETURN R0 0  ; 
 L21: 130 [-]: GETIMPORT R10 32; var10 = _T["dashTetherMineLevel"]
-     131 [-]: FASTCALL1 62 R10 L22; 
+     131 [-]: FASTCALL1 64 R10 L22; 
      132 [-]: GETIMPORT R9 2; var9 = 0x7B998233
      133 [-]: CALL R9 2 2  ; var9 = var9(var10)
 L22: 134 [-]: JUMPIFNOT R9 L23; goto L23 if not var9
@@ -213,14 +213,14 @@ L23: 138 [-]: NAMECALL R9 R0 K34; var10 = var0; var9 = var0[0x388577D5]
      139 [-]: CALL R9 2 2  ; var9 = var9(var10)
      140 [-]: GETIMPORT R12 32; var12 = _T["dashTetherMineLevel"]
      141 [-]: GETTABLE R11 R12 R9; var11 = var12[var9]
-     142 [-]: FASTCALL1 62 R11 L24; 
+     142 [-]: FASTCALL1 64 R11 L24; 
      143 [-]: GETIMPORT R10 2; var10 = 0x7B998233
      144 [-]: CALL R10 2 2 ; var10 = var10(var11)
 L24: 145 [-]: JUMPIFNOT R10 L25; goto L25 if not var10
      146 [-]: GETIMPORT R10 32; var10 = _T["dashTetherMineLevel"]
      147 [-]: SETTABLE R2 R10 R9; var2[var10] = var9
 L25: 148 [-]: GETIMPORT R11 36; var11 = _T["dashTetherMine"]
-     149 [-]: FASTCALL1 62 R11 L26; 
+     149 [-]: FASTCALL1 64 R11 L26; 
      150 [-]: GETIMPORT R10 2; var10 = 0x7B998233
      151 [-]: CALL R10 2 2 ; var10 = var10(var11)
 L26: 152 [-]: JUMPIFNOT R10 L27; goto L27 if not var10
@@ -229,7 +229,7 @@ L26: 152 [-]: JUMPIFNOT R10 L27; goto L27 if not var10
      155 [-]: SETTABLEKS R11 R10 K35; var11["dashTetherMine"] = var10
 L27: 156 [-]: GETIMPORT R12 36; var12 = _T["dashTetherMine"]
      157 [-]: GETTABLE R11 R12 R9; var11 = var12[var9]
-     158 [-]: FASTCALL1 62 R11 L28; 
+     158 [-]: FASTCALL1 64 R11 L28; 
      159 [-]: GETIMPORT R10 2; var10 = 0x7B998233
      160 [-]: CALL R10 2 2 ; var10 = var10(var11)
 L28: 161 [-]: JUMPIFNOT R10 L29; goto L29 if not var10
@@ -270,7 +270,7 @@ L30: 187 [-]: GETIMPORT R13 8; var13 = 0x89326C93
      196 [-]: GETTABLE R15 R16 R9; var15 = var16[var9]
      197 [-]: LENGTH R14 R15; var14 = #var15
      198 [-]: LOADN R15 2  ; var15 = 2
-     199 [-]: JUMPIFNOTLE R15 R14 L31; goto L31 if var15 > var2363470
+     199 [-]: JUMPIFNOTLE R15 R14 L31; goto L31 if var15 > var2363425
      200 [-]: GETIMPORT R16 36; var16 = _T["dashTetherMine"]
      201 [-]: GETTABLE R15 R16 R9; var15 = var16[var9]
      202 [-]: GETTABLEN R14 R15 1; var14 = var15[1]
@@ -306,7 +306,7 @@ L32: 211 [-]: RETURN R0 0  ;
       11 [-]: CALL R4 2 4  ; var4, var5, var6 = var4(var5)
       12 [-]: FORGPREP_INEXT R4 L1; 
 L 0:  13 [-]: GETTABLEKS R9 R8 K9; var9 = var8["mine"]
-      14 [-]: JUMPIFNOTEQ R9 R0 L1; goto L1 if var9 ~= var525078
+      14 [-]: JUMPIFNOTEQ R9 R0 L1; goto L1 if var9 ~= var525102
       15 [-]: MOVE R3 R8   ; var3 = var8
       16 [-]: JUMP L2      ; goto L2
 L 1:  17 [-]: FORGLOOP R4 L0 2 [inext]; 
@@ -321,7 +321,7 @@ L 2:  18 [-]: GETIMPORT R5 11; var5 = _T["dashTetherMineLevel"]
       26 [-]: CALL R7 3 2  ; var7 = var7(var8, var9)
 L 3:  27 [-]: GETTABLE R5 R6 R7; var5 = var6[var7]
       28 [-]: GETTABLEKS R6 R3 K17; var6 = var3["enemies"]
-      29 [-]: FASTCALL1 62 R6 L4; 
+      29 [-]: FASTCALL1 64 R6 L4; 
       30 [-]: MOVE R8 R6   ; var8 = var6
       31 [-]: GETIMPORT R7 19; var7 = 0x7B998233
       32 [-]: CALL R7 2 2  ; var7 = var7(var8)
@@ -334,7 +334,7 @@ L 5:  35 [-]: LOADN R7 0   ; var7 = 0
       39 [-]: LOADN R10 1  ; var10 = 1
       40 [-]: FORNPREP R9 L16; nforprep start - [escape at L16] -- var9 = iterator
 L 6:  41 [-]: GETTABLE R13 R6 R11; var13 = var6[var11]
-      42 [-]: FASTCALL1 62 R13 L7; 
+      42 [-]: FASTCALL1 64 R13 L7; 
       43 [-]: GETIMPORT R12 19; var12 = 0x7B998233
       44 [-]: CALL R12 2 2 ; var12 = var12(var13)
 L 7:  45 [-]: JUMPIF R12 L15; goto L15 if var12
@@ -353,7 +353,7 @@ L 7:  45 [-]: JUMPIF R12 L15; goto L15 if var12
       58 [-]: CALL R13 3 2 ; var13 = var13(var14, var15)
       59 [-]: JUMPIFNOT R13 L11; goto L11 if not var13
       60 [-]: GETIMPORT R14 24; var14 = _T["tetherMineDiminish"]
-      61 [-]: FASTCALL1 62 R14 L8; 
+      61 [-]: FASTCALL1 64 R14 L8; 
       62 [-]: GETIMPORT R13 19; var13 = 0x7B998233
       63 [-]: CALL R13 2 2 ; var13 = var13(var14)
 L 8:  64 [-]: JUMPIF R13 L11; goto L11 if var13
@@ -366,12 +366,12 @@ L 9:  70 [-]: GETIMPORT R18 24; var18 = _T["tetherMineDiminish"]
       71 [-]: GETTABLE R17 R18 R15; var17 = var18[var15]
       72 [-]: GETTABLEKS R16 R17 K25; var16 = var17["enemy"]
       73 [-]: GETTABLE R17 R6 R11; var17 = var6[var11]
-      74 [-]: JUMPIFNOTEQ R16 R17 L10; goto L10 if var16 ~= var1577550
+      74 [-]: JUMPIFNOTEQ R16 R17 L10; goto L10 if var16 ~= var1577505
       75 [-]: GETIMPORT R18 24; var18 = _T["tetherMineDiminish"]
       76 [-]: GETTABLE R17 R18 R15; var17 = var18[var15]
       77 [-]: GETTABLEKS R16 R17 K26; var16 = var17["diminishes"]
       78 [-]: LOADN R17 5  ; var17 = 5
-      79 [-]: JUMPIFNOTLE R17 R16 L11; goto L11 if var17 > var68635
+      79 [-]: JUMPIFNOTLE R17 R16 L11; goto L11 if var17 > var68614
       80 [-]: LOADB R12 1  ; var12 = true
       81 [-]: JUMP L11     ; goto L11
 L10:  82 [-]: FORNLOOP R13 L9; nforloop end - iterate + goto L9
@@ -380,7 +380,7 @@ L11:  83 [-]: JUMPIF R12 L15; goto L15 if var12
       85 [-]: GETTABLE R13 R6 R11; var13 = var6[var11]
       86 [-]: NAMECALL R13 R13 K28; var14 = var13; var13 = var13[0xFA9E477F]
       87 [-]: CALL R13 2 2 ; var13 = var13(var14)
-      88 [-]: FASTCALL1 62 R13 L12; 
+      88 [-]: FASTCALL1 64 R13 L12; 
       89 [-]: MOVE R15 R13 ; var15 = var13
       90 [-]: GETIMPORT R14 19; var14 = 0x7B998233
       91 [-]: CALL R14 2 2 ; var14 = var14(var15)
@@ -410,7 +410,7 @@ L13:  99 [-]: GETTABLE R14 R6 R11; var14 = var6[var11]
      115 [-]: MOVE R18 R14 ; var18 = var14
      116 [-]: NAMECALL R15 R15 K36; var16 = var15; var15 = var15[0x47901F07]
      117 [-]: CALL R15 4 2 ; var15 = var15(var16, var17, var18)
-     118 [-]: FASTCALL1 62 R15 L14; 
+     118 [-]: FASTCALL1 64 R15 L14; 
      119 [-]: MOVE R17 R15 ; var17 = var15
      120 [-]: GETIMPORT R16 19; var16 = 0x7B998233
      121 [-]: CALL R16 2 2 ; var16 = var16(var17)
@@ -420,7 +420,7 @@ L14: 122 [-]: JUMPIF R16 L15; goto L15 if var16
      125 [-]: MOVE R18 R15 ; var18 = var15
      126 [-]: GETIMPORT R16 39; var16 = 0x33BDD652[0x23D5322F]
      127 [-]: CALL R16 3 1 ; var16(var17, var18)
-L15: 128 [-]: JUMPIFEQ R7 R5 L16; goto L16 if var7 == var-7534328
+L15: 128 [-]: JUMPIFEQ R7 R5 L16; goto L16 if var7 == var-7534299
      129 [-]: FORNLOOP R9 L6; nforloop end - iterate + goto L6
 L16: 130 [-]: GETIMPORT R9 1; var9 = 0xCBD666E1
      131 [-]: LOADN R10 0  ; var10 = 0
@@ -434,7 +434,7 @@ L16: 130 [-]: GETIMPORT R9 1; var9 = 0xCBD666E1
      139 [-]: LOADN R11 1  ; var11 = 1
      140 [-]: FORNPREP R10 L27; nforprep start - [escape at L27] -- var10 = iterator
 L17: 141 [-]: GETTABLE R14 R6 R12; var14 = var6[var12]
-     142 [-]: FASTCALL1 62 R14 L18; 
+     142 [-]: FASTCALL1 64 R14 L18; 
      143 [-]: GETIMPORT R13 19; var13 = 0x7B998233
      144 [-]: CALL R13 2 2 ; var13 = var13(var14)
 L18: 145 [-]: JUMPIF R13 L26; goto L26 if var13
@@ -450,7 +450,7 @@ L18: 145 [-]: JUMPIF R13 L26; goto L26 if var13
      155 [-]: GETIMPORT R15 41; var15 = 0x78A39459
      156 [-]: NAMECALL R13 R13 K42; var14 = var13; var13 = var13[0xC1595BD5]
      157 [-]: CALL R13 3 2 ; var13 = var13(var14, var15)
-     158 [-]: FASTCALL1 62 R13 L19; 
+     158 [-]: FASTCALL1 64 R13 L19; 
      159 [-]: MOVE R15 R13 ; var15 = var13
      160 [-]: GETIMPORT R14 19; var14 = 0x7B998233
      161 [-]: CALL R14 2 2 ; var14 = var14(var15)
@@ -467,7 +467,7 @@ L19: 162 [-]: JUMPIF R14 L26; goto L26 if var14
      172 [-]: CALL R14 3 2 ; var14 = var14(var15, var16)
      173 [-]: JUMPIFNOT R14 L26; goto L26 if not var14
      174 [-]: GETIMPORT R15 24; var15 = _T["tetherMineDiminish"]
-     175 [-]: FASTCALL1 62 R15 L20; 
+     175 [-]: FASTCALL1 64 R15 L20; 
      176 [-]: GETIMPORT R14 19; var14 = 0x7B998233
      177 [-]: CALL R14 2 2 ; var14 = var14(var15)
 L20: 178 [-]: JUMPIFNOT R14 L21; goto L21 if not var14
@@ -484,12 +484,12 @@ L22: 188 [-]: GETIMPORT R20 24; var20 = _T["tetherMineDiminish"]
      189 [-]: GETTABLE R19 R20 R17; var19 = var20[var17]
      190 [-]: GETTABLEKS R18 R19 K25; var18 = var19["enemy"]
      191 [-]: GETTABLE R19 R6 R12; var19 = var6[var12]
-     192 [-]: JUMPIFNOTEQ R18 R19 L24; goto L24 if var18 ~= var69147
+     192 [-]: JUMPIFNOTEQ R18 R19 L24; goto L24 if var18 ~= var69126
      193 [-]: LOADB R14 1  ; var14 = true
      194 [-]: GETIMPORT R20 24; var20 = _T["tetherMineDiminish"]
      195 [-]: GETTABLE R19 R20 R17; var19 = var20[var17]
      196 [-]: GETTABLEKS R18 R19 K26; var18 = var19["diminishes"]
-     197 [-]: JUMPIFNOTLT R9 R18 L23; goto L23 if var9 >= var1577806
+     197 [-]: JUMPIFNOTLT R9 R18 L23; goto L23 if var9 >= var1577761
      198 [-]: GETIMPORT R19 24; var19 = _T["tetherMineDiminish"]
      199 [-]: GETTABLE R18 R19 R17; var18 = var19[var17]
      200 [-]: GETTABLEKS R9 R18 K26; var9 = var18["diminishes"]
@@ -521,7 +521,7 @@ L27: 221 [-]: LOADN R11 4  ; var11 = 4
      226 [-]: CALL R12 3 2 ; var12 = var12(var13, var14)
 L28: 227 [-]: MUL R10 R11 R12; var10 = var11 * var12
 L29: 228 [-]: LOADN R11 0  ; var11 = 0
-     229 [-]: JUMPIFNOTLT R11 R10 L30; goto L30 if var11 >= var805505820
+     229 [-]: JUMPIFNOTLT R11 R10 L30; goto L30 if var11 >= var805505855
      230 [-]: GETTABLEKS R11 R3 K51; var11 = var3["destroy"]
      231 [-]: JUMPIF R11 L30; goto L30 if var11
      232 [-]: GETIMPORT R11 53; var11 = 0x67652851
@@ -536,7 +536,7 @@ L30: 239 [-]: LOADN R13 1  ; var13 = 1
      241 [-]: LOADN R12 1  ; var12 = 1
      242 [-]: FORNPREP R11 L36; nforprep start - [escape at L36] -- var11 = iterator
 L31: 243 [-]: GETTABLE R15 R6 R13; var15 = var6[var13]
-     244 [-]: FASTCALL1 62 R15 L32; 
+     244 [-]: FASTCALL1 64 R15 L32; 
      245 [-]: GETIMPORT R14 19; var14 = 0x7B998233
      246 [-]: CALL R14 2 2 ; var14 = var14(var15)
 L32: 247 [-]: JUMPIF R14 L35; goto L35 if var14
@@ -551,7 +551,7 @@ L32: 247 [-]: JUMPIF R14 L35; goto L35 if var14
      256 [-]: GETTABLE R14 R6 R13; var14 = var6[var13]
      257 [-]: NAMECALL R14 R14 K28; var15 = var14; var14 = var14[0xFA9E477F]
      258 [-]: CALL R14 2 2 ; var14 = var14(var15)
-     259 [-]: FASTCALL1 62 R14 L33; 
+     259 [-]: FASTCALL1 64 R14 L33; 
      260 [-]: MOVE R16 R14 ; var16 = var14
      261 [-]: GETIMPORT R15 19; var15 = 0x7B998233
      262 [-]: CALL R15 2 2 ; var15 = var15(var16)
@@ -579,7 +579,7 @@ L36: 282 [-]: LOADN R13 1  ; var13 = 1
      284 [-]: LOADN R12 1  ; var12 = 1
      285 [-]: FORNPREP R11 L40; nforprep start - [escape at L40] -- var11 = iterator
 L37: 286 [-]: GETTABLE R15 R8 R13; var15 = var8[var13]
-     287 [-]: FASTCALL1 62 R15 L38; 
+     287 [-]: FASTCALL1 64 R15 L38; 
      288 [-]: GETIMPORT R14 19; var14 = 0x7B998233
      289 [-]: CALL R14 2 2 ; var14 = var14(var15)
 L38: 290 [-]: JUMPIF R14 L39; goto L39 if var14
@@ -598,7 +598,7 @@ L40: 295 [-]: GETIMPORT R11 8; var11 = _T["dashTetherMine"]
      303 [-]: CALL R11 2 4 ; var11, var12, var13 = var11(var12)
      304 [-]: FORGPREP_INEXT R11 L42; 
 L41: 305 [-]: GETTABLEKS R16 R15 K9; var16 = var15["mine"]
-     306 [-]: JUMPIFNOTEQ R16 R0 L42; goto L42 if var16 ~= var3739726
+     306 [-]: JUMPIFNOTEQ R16 R0 L42; goto L42 if var16 ~= var3739681
      307 [-]: GETIMPORT R16 57; var16 = 0x33BDD652[0x9C1F3B5A]
      308 [-]: GETIMPORT R18 8; var18 = _T["dashTetherMine"]
      309 [-]: GETTABLE R17 R18 R2; var17 = var18[var2]
@@ -606,7 +606,7 @@ L41: 305 [-]: GETTABLEKS R16 R15 K9; var16 = var15["mine"]
      311 [-]: CALL R16 3 1 ; var16(var17, var18)
      312 [-]: JUMP L43     ; goto L43
 L42: 313 [-]: FORGLOOP R11 L41 2 [inext]; 
-L43: 314 [-]: FASTCALL1 62 R0 L44; 
+L43: 314 [-]: FASTCALL1 64 R0 L44; 
      315 [-]: MOVE R12 R0  ; var12 = var0
      316 [-]: GETIMPORT R11 19; var11 = 0x7B998233
      317 [-]: CALL R11 2 2 ; var11 = var11(var12)

@@ -9,7 +9,7 @@
        2 [-]: LOADK R1 K2  ; var1 = "EE.Interface.Utilities"
        3 [-]: CALL R0 2 2  ; var0 = var0(var1)
        4 [-]: LOADK R1 K3  ; var1 = 0.5
-       5 [-]: LOADK R2 K4  ; var2 = 7.8333333333333339
+       5 [-]: LOADK R2 K4  ; var2 = 7.8333334922790527
        6 [-]: LOADN R3 0   ; var3 = 0
        7 [-]: LOADNIL R4   ; var4 = nil
        8 [-]: NEWTABLE R5 0 5; var5 = {}
@@ -69,12 +69,12 @@
       24 [-]: NAMECALL R0 R0 K5; var1 = var0; var0 = var0[0x67BC869F]
       25 [-]: CALL R0 5 1  ; var0(var1, var2, var3, var4)
       26 [-]: GETUPVAL R1 0; var1 = upvalues[0]
-      27 [-]: FASTCALL1 62 R1 L0; 
+      27 [-]: FASTCALL1 64 R1 L0; 
       28 [-]: GETIMPORT R0 7; var0 = 0x7B998233
       29 [-]: CALL R0 2 2  ; var0 = var0(var1)
 L 0:  30 [-]: JUMPIF R0 L2 ; goto L2 if var0
       31 [-]: GETIMPORT R1 9; var1 = 0xD41FB258
-      32 [-]: FASTCALL1 62 R1 L1; 
+      32 [-]: FASTCALL1 64 R1 L1; 
       33 [-]: GETIMPORT R0 7; var0 = 0x7B998233
       34 [-]: CALL R0 2 2  ; var0 = var0(var1)
 L 1:  35 [-]: JUMPIF R0 L2 ; goto L2 if var0
@@ -127,7 +127,7 @@ L 2:  59 [-]: GETUPVAL R1 2; var1 = upvalues[2]
        9 [-]: CALL R0 4 2  ; var0 = var0(var1, var2, var3)
       10 [-]: SETUPVAL R0 0; upvalues[0] = var0
       11 [-]: GETIMPORT R1 5; var1 = 0xD41FB258
-      12 [-]: FASTCALL1 62 R1 L0; 
+      12 [-]: FASTCALL1 64 R1 L0; 
       13 [-]: GETIMPORT R0 7; var0 = 0x7B998233
       14 [-]: CALL R0 2 2  ; var0 = var0(var1)
 L 0:  15 [-]: JUMPIF R0 L1 ; goto L1 if var0
@@ -152,7 +152,7 @@ L 1:  23 [-]: GETIMPORT R0 13; var0 = 0xAE91E43B
       34 [-]: LOADK R6 K18 ; var6 = 4
       35 [-]: GETIMPORT R4 21; var4 = 0x5BCED4C4[0xA40531D8]
       36 [-]: CALL R4 3 2  ; var4 = var4(var5, var6)
-L 2:  37 [-]: MULK R3 R4 K17; var3 = var4 * 0.90000000000000002
+L 2:  37 [-]: MULK R3 R4 K17; var3 = var4 * 0.89999997615814209
       38 [-]: LOADN R4 0   ; var4 = 0
       39 [-]: LOADN R5 1   ; var5 = 1
       40 [-]: CALL R2 4 0  ; var2, ... = var2(var3, var4, var5)
@@ -171,11 +171,11 @@ L 2:  37 [-]: MULK R3 R4 K17; var3 = var4 * 0.90000000000000002
       53 [-]: FORNPREP R1 L5; nforprep start - [escape at L5] -- var1 = iterator
 L 3:  54 [-]: GETUPVAL R5 3; var5 = upvalues[3]
       55 [-]: GETTABLE R4 R5 R3; var4 = var5[var3]
-      56 [-]: JUMPIFNOTLE R4 R0 L4; goto L4 if var4 > var132103
+      56 [-]: JUMPIFNOTLE R4 R0 L4; goto L4 if var4 > var132156
       57 [-]: GETUPVAL R4 2; var4 = upvalues[2]
       58 [-]: GETUPVAL R6 3; var6 = upvalues[3]
       59 [-]: GETTABLE R5 R6 R3; var5 = var6[var3]
-      60 [-]: JUMPIFNOTLE R4 R5 L4; goto L4 if var4 > var263431
+      60 [-]: JUMPIFNOTLE R4 R5 L4; goto L4 if var4 > var263484
       61 [-]: GETUPVAL R5 4; var5 = upvalues[4]
       62 [-]: GETTABLEKS R4 R5 K23; var4 = var5[0x659D451F]
       63 [-]: GETIMPORT R5 25; var5 = 0x110BF14B
@@ -183,7 +183,7 @@ L 3:  54 [-]: GETUPVAL R5 3; var5 = upvalues[3]
 L 4:  65 [-]: FORNLOOP R1 L3; nforloop end - iterate + goto L3
 L 5:  66 [-]: GETUPVAL R1 2; var1 = upvalues[2]
       67 [-]: LOADN R2 0   ; var2 = 0
-      68 [-]: JUMPIFNOTLE R1 R2 L6; goto L6 if var1 > var66311
+      68 [-]: JUMPIFNOTLE R1 R2 L6; goto L6 if var1 > var66364
       69 [-]: GETUPVAL R3 1; var3 = upvalues[1]
       70 [-]: MINUS R2 R3  ; 
       71 [-]: MULK R1 R2 K26; var1 = var2 * 2.5
@@ -196,7 +196,7 @@ L 5:  66 [-]: GETUPVAL R1 2; var1 = upvalues[2]
       78 [-]: CALL R1 2 1  ; var1(var2)
 L 6:  79 [-]: GETUPVAL R1 0; var1 = upvalues[0]
       80 [-]: LOADN R2 0   ; var2 = 0
-      81 [-]: JUMPIFNOTLE R1 R2 L7; goto L7 if var1 > var852302
+      81 [-]: JUMPIFNOTLE R1 R2 L7; goto L7 if var1 > var852257
       82 [-]: GETIMPORT R1 13; var1 = 0xAE91E43B
       83 [-]: NAMECALL R1 R1 K29; var2 = var1; var1 = var1[0x32302B4A]
       84 [-]: CALL R1 2 1  ; var1(var2)

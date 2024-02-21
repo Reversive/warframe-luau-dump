@@ -39,11 +39,11 @@ L 0:  11 [-]: GETIMPORT R3 11; var3 = 0x5BCED4C4[0xC62A6BE2]
       13 [-]: GETIMPORT R6 13; var6 = 0xFA1B5621
       14 [-]: ADD R5 R1 R6 ; var5 = var1 + var6
       15 [-]: CALL R3 3 2  ; var3 = var3(var4, var5)
-      16 [-]: JUMPIFNOTLE R1 R3 L1; goto L1 if var1 > var1095
+      16 [-]: JUMPIFNOTLE R1 R3 L1; goto L1 if var1 > var1072
       17 [-]: LOADN R4 0   ; var4 = 0
       18 [-]: RETURN R4 1  ; 
 L 1:  19 [-]: GETIMPORT R4 1; var4 = 0xEC8BF25E
-      20 [-]: JUMPIFNOTLT R3 R4 L2; goto L2 if var3 >= var66894
+      20 [-]: JUMPIFNOTLT R3 R4 L2; goto L2 if var3 >= var66849
       21 [-]: GETIMPORT R5 1; var5 = 0xEC8BF25E
       22 [-]: DIV R4 R3 R5 ; var4 = var3 / var5
       23 [-]: RETURN R4 1  ; 
@@ -68,7 +68,7 @@ L 0:   3 [-]: NAMECALL R1 R0 K2; var2 = var0; var1 = var0[0xC3962B21]
        5 [-]: NAMECALL R2 R1 K3; var3 = var1; var2 = var1[0x388577D5]
        6 [-]: CALL R2 2 2  ; var2 = var2(var3)
        7 [-]: GETIMPORT R4 6; var4 = _T["TeslaTracking"]
-       8 [-]: FASTCALL1 62 R4 L1; 
+       8 [-]: FASTCALL1 64 R4 L1; 
        9 [-]: GETIMPORT R3 8; var3 = 0x7B998233
       10 [-]: CALL R3 2 2  ; var3 = var3(var4)
 L 1:  11 [-]: JUMPIFNOT R3 L2; goto L2 if not var3
@@ -88,7 +88,7 @@ L 3:  21 [-]: NAMECALL R5 R1 K10; var6 = var1; var5 = var1[0x2047CFE7]
       25 [-]: CALL R5 1 2  ; var5 = var5()
       26 [-]: ADD R4 R4 R5 ; var4 = var4 + var5
       27 [-]: GETIMPORT R5 14; var5 = 0x3338A69A
-      28 [-]: JUMPIFNOTLE R5 R4 L7; goto L7 if var5 > var1095
+      28 [-]: JUMPIFNOTLE R5 R4 L7; goto L7 if var5 > var1072
       29 [-]: LOADN R4 0   ; var4 = 0
       30 [-]: GETUPVAL R5 0; var5 = upvalues[0]
       31 [-]: NAMECALL R6 R1 K3; var7 = var1; var6 = var1[0x388577D5]
@@ -102,9 +102,9 @@ L 3:  21 [-]: NAMECALL R5 R1 K10; var6 = var1; var5 = var1[0x2047CFE7]
       39 [-]: ADD R6 R7 R8 ; var6 = var7 + var8
       40 [-]: LENGTH R7 R3 ; var7 = #var3
       41 [-]: LOADN R8 0   ; var8 = 0
-      42 [-]: JUMPIFNOTLT R8 R7 L7; goto L7 if var8 >= var1863
+      42 [-]: JUMPIFNOTLT R8 R7 L7; goto L7 if var8 >= var1840
       43 [-]: LOADN R7 0   ; var7 = 0
-      44 [-]: JUMPIFNOTLT R7 R6 L7; goto L7 if var7 >= var1378126
+      44 [-]: JUMPIFNOTLT R7 R6 L7; goto L7 if var7 >= var1378081
       45 [-]: GETIMPORT R7 21; var7 = 0x34291F5C[0x35C16153]
       46 [-]: CALL R7 1 2  ; var7 = var7()
       47 [-]: SETTABLEKS R6 R7 K22; var6["baseAmount"] = var7
@@ -125,7 +125,7 @@ L 3:  21 [-]: NAMECALL R5 R1 K10; var6 = var1; var5 = var1[0x2047CFE7]
       62 [-]: MOVE R9 R3   ; var9 = var3
       63 [-]: CALL R8 2 4  ; var8, var9, var10 = var8(var9)
       64 [-]: FORGPREP_INEXT R8 L6; 
-L 4:  65 [-]: FASTCALL1 62 R12 L5; 
+L 4:  65 [-]: FASTCALL1 64 R12 L5; 
       66 [-]: MOVE R14 R12 ; var14 = var12
       67 [-]: GETIMPORT R13 8; var13 = 0x7B998233
       68 [-]: CALL R13 2 2 ; var13 = var13(var14)
@@ -172,7 +172,7 @@ L 1:  10 [-]: NAMECALL R5 R4 K5; var6 = var4; var5 = var4[0x388577D5]
       11 [-]: CALL R5 2 2  ; var5 = var5(var6)
       12 [-]: GETIMPORT R7 8; var7 = _T["TeslaTracking"]
       13 [-]: GETTABLE R6 R7 R5; var6 = var7[var5]
-      14 [-]: FASTCALL1 62 R6 L2; 
+      14 [-]: FASTCALL1 64 R6 L2; 
       15 [-]: MOVE R8 R6   ; var8 = var6
       16 [-]: GETIMPORT R7 10; var7 = 0x7B998233
       17 [-]: CALL R7 2 2  ; var7 = var7(var8)
@@ -214,7 +214,7 @@ L 1:  14 [-]: NAMECALL R5 R4 K5; var6 = var4; var5 = var4[0x388577D5]
       19 [-]: MOVE R8 R6   ; var8 = var6
       20 [-]: CALL R7 2 4  ; var7, var8, var9 = var7(var8)
       21 [-]: FORGPREP_INEXT R7 L3; 
-L 2:  22 [-]: JUMPIFNOTEQ R11 R1 L3; goto L3 if var11 ~= var855118
+L 2:  22 [-]: JUMPIFNOTEQ R11 R1 L3; goto L3 if var11 ~= var855073
       23 [-]: GETIMPORT R12 13; var12 = 0x33BDD652[0x9C1F3B5A]
       24 [-]: MOVE R13 R6  ; var13 = var6
       25 [-]: MOVE R14 R10 ; var14 = var10

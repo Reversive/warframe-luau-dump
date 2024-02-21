@@ -35,7 +35,7 @@
        2 [-]: CALL R0 1 2  ; var0 = var0()
        3 [-]: JUMPIFNOT R0 L1; goto L1 if not var0
        4 [-]: GETIMPORT R1 3; var1 = _T["CodexTransmissionPlaying"]
-       5 [-]: FASTCALL1 62 R1 L0; 
+       5 [-]: FASTCALL1 64 R1 L0; 
        6 [-]: GETIMPORT R0 5; var0 = 0x7B998233
        7 [-]: CALL R0 2 2  ; var0 = var0(var1)
 L 0:   8 [-]: JUMPIF R0 L1 ; goto L1 if var0
@@ -69,12 +69,12 @@ L 0:   5 [-]: GETIMPORT R0 5; var0 = 0x9BA7909F
       13 [-]: GETIMPORT R4 2; var4 = _T["TrainingTransmissionIndex"]
       14 [-]: ADDK R3 R4 K9; var3 = var4 + 1
       15 [-]: SETTABLEKS R3 R2 K1; var3["TrainingTransmissionIndex"] = var2
-      16 [-]: FASTCALL1 62 R0 L1; 
+      16 [-]: FASTCALL1 64 R0 L1; 
       17 [-]: MOVE R3 R0   ; var3 = var0
       18 [-]: GETIMPORT R2 11; var2 = 0x7B998233
       19 [-]: CALL R2 2 2  ; var2 = var2(var3)
 L 1:  20 [-]: JUMPIF R2 L5 ; goto L5 if var2
-      21 [-]: FASTCALL1 62 R1 L2; 
+      21 [-]: FASTCALL1 64 R1 L2; 
       22 [-]: MOVE R3 R1   ; var3 = var1
       23 [-]: GETIMPORT R2 11; var2 = 0x7B998233
       24 [-]: CALL R2 2 2  ; var2 = var2(var3)

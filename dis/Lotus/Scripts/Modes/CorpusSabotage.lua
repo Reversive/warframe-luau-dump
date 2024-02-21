@@ -120,7 +120,7 @@ L 2:  39 [-]: GETIMPORT R1 18; var1 = 0xCBD666E1
       44 [-]: LOADN R2 1   ; var2 = 1
       45 [-]: FORNPREP R1 L6; nforprep start - [escape at L6] -- var1 = iterator
 L 3:  46 [-]: GETTABLE R5 R0 R3; var5 = var0[var3]
-      47 [-]: FASTCALL1 62 R5 L4; 
+      47 [-]: FASTCALL1 64 R5 L4; 
       48 [-]: GETIMPORT R4 20; var4 = 0x7B998233
       49 [-]: CALL R4 2 2  ; var4 = var4(var5)
 L 4:  50 [-]: JUMPIF R4 L5 ; goto L5 if var4
@@ -135,7 +135,7 @@ L 6:  56 [-]: GETUPVAL R1 1; var1 = upvalues[1]
       59 [-]: NAMECALL R1 R1 K24; var2 = var1; var1 = var1[0x751F061D]
       60 [-]: CALL R1 4 1  ; var1(var2, var3, var4)
       61 [-]: GETIMPORT R2 26; var2 = 0x3341B43B
-      62 [-]: FASTCALL1 62 R2 L7; 
+      62 [-]: FASTCALL1 64 R2 L7; 
       63 [-]: GETIMPORT R1 20; var1 = 0x7B998233
       64 [-]: CALL R1 2 2  ; var1 = var1(var2)
 L 7:  65 [-]: JUMPIF R1 L8 ; goto L8 if var1
@@ -144,7 +144,7 @@ L 7:  65 [-]: JUMPIF R1 L8 ; goto L8 if var1
       68 [-]: NAMECALL R1 R1 K28; var2 = var1; var1 = var1[0x8EB2112D]
       69 [-]: CALL R1 3 1  ; var1(var2, var3)
 L 8:  70 [-]: GETIMPORT R2 30; var2 = 0x75AFD571
-      71 [-]: FASTCALL1 62 R2 L9; 
+      71 [-]: FASTCALL1 64 R2 L9; 
       72 [-]: GETIMPORT R1 20; var1 = 0x7B998233
       73 [-]: CALL R1 2 2  ; var1 = var1(var2)
 L 9:  74 [-]: JUMPIF R1 L10; goto L10 if var1
@@ -159,7 +159,7 @@ L10:  78 [-]: GETIMPORT R1 18; var1 = 0xCBD666E1
       83 [-]: LOADN R2 1   ; var2 = 1
       84 [-]: FORNPREP R1 L14; nforprep start - [escape at L14] -- var1 = iterator
 L11:  85 [-]: GETTABLE R5 R0 R3; var5 = var0[var3]
-      86 [-]: FASTCALL1 62 R5 L12; 
+      86 [-]: FASTCALL1 64 R5 L12; 
       87 [-]: GETIMPORT R4 20; var4 = 0x7B998233
       88 [-]: CALL R4 2 2  ; var4 = var4(var5)
 L12:  89 [-]: JUMPIF R4 L13; goto L13 if var4
@@ -176,7 +176,7 @@ L12:  89 [-]: JUMPIF R4 L13; goto L13 if var4
 L13: 100 [-]: FORNLOOP R1 L11; nforloop end - iterate + goto L11
 L14: 101 [-]: LOADN R1 0   ; var1 = 0
 L15: 102 [-]: LOADN R2 5   ; var2 = 5
-     103 [-]: JUMPIFNOTLT R1 R2 L16; goto L16 if var1 >= var66055
+     103 [-]: JUMPIFNOTLT R1 R2 L16; goto L16 if var1 >= var66108
      104 [-]: GETUPVAL R2 1; var2 = upvalues[1]
      105 [-]: GETUPVAL R4 3; var4 = upvalues[3]
      106 [-]: NAMECALL R2 R2 K37; var3 = var2; var2 = var2[0x0EB34C69]
@@ -220,7 +220,7 @@ L17: 123 [-]: RETURN R0 0  ;
       11 [-]: CALL R3 3 2  ; var3 = var3(var4, var5)
       12 [-]: JUMPXEQKN R1 K1 L0; 
       13 [-]: LOADN R4 0   ; var4 = 0
-      14 [-]: JUMPIFNOTLT R4 R3 L1; goto L1 if var4 >= var65581
+      14 [-]: JUMPIFNOTLT R4 R3 L1; goto L1 if var4 >= var65571
 L 0:  15 [-]: RETURN R0 0  ; 
 L 1:  16 [-]: GETIMPORT R4 3; var4 = 0x89326C93
       17 [-]: GETIMPORT R6 5; var6 = 0x0469F296
@@ -236,20 +236,20 @@ L 2:  26 [-]: GETTABLE R8 R4 R7; var8 = var4[var7]
       27 [-]: NAMECALL R8 R8 K8; var9 = var8; var8 = var8[0xD2715720]
       28 [-]: CALL R8 2 2  ; var8 = var8(var9)
       29 [-]: LOADN R9 0   ; var9 = 0
-      30 [-]: JUMPIFNOTLE R8 R9 L3; goto L3 if var8 > var151126568
+      30 [-]: JUMPIFNOTLE R8 R9 L3; goto L3 if var8 > var151126536
       31 [-]: ADDK R2 R2 K9; var2 = var2 + 1
 L 3:  32 [-]: GETTABLE R8 R4 R7; var8 = var4[var7]
       33 [-]: NAMECALL R8 R8 K8; var9 = var8; var8 = var8[0xD2715720]
       34 [-]: CALL R8 2 2  ; var8 = var8(var9)
       35 [-]: LOADN R9 0   ; var9 = 0
-      36 [-]: JUMPIFNOTLT R9 R8 L4; goto L4 if var9 >= var723022
+      36 [-]: JUMPIFNOTLT R9 R8 L4; goto L4 if var9 >= var722977
       37 [-]: GETIMPORT R8 11; var8 = 0x11A19C5E
       38 [-]: GETTABLE R9 R4 R7; var9 = var4[var7]
       39 [-]: LOADK R10 K12; var10 = "OnDestroyed"
       40 [-]: CALL R8 3 1  ; var8(var9, var10)
 L 4:  41 [-]: FORNLOOP R5 L2; nforloop end - iterate + goto L2
 L 5:  42 [-]: LOADN R5 5   ; var5 = 5
-      43 [-]: JUMPIFNOTLT R2 R5 L6; goto L6 if var2 >= var1287
+      43 [-]: JUMPIFNOTLT R2 R5 L6; goto L6 if var2 >= var1340
       44 [-]: GETUPVAL R5 0; var5 = upvalues[0]
       45 [-]: GETUPVAL R7 2; var7 = upvalues[2]
       46 [-]: NAMECALL R5 R5 K0; var6 = var5; var5 = var5[0x0EB34C69]

@@ -30,7 +30,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  17
 
-       0 [-]: FASTCALL1 62 R0 L0; 
+       0 [-]: FASTCALL1 64 R0 L0; 
        1 [-]: MOVE R2 R0   ; var2 = var0
        2 [-]: GETIMPORT R1 1; var1 = 0x7B998233
        3 [-]: CALL R1 2 2  ; var1 = var1(var2)
@@ -41,12 +41,12 @@ L 0:   4 [-]: JUMPIF R1 L4 ; goto L4 if var1
        8 [-]: GETIMPORT R4 6; var4 = gHitProxyType
        9 [-]: NAMECALL R2 R0 K4; var3 = var0; var2 = var0[0xC9F6A7D7]
       10 [-]: CALL R2 3 2  ; var2 = var2(var3, var4)
-      11 [-]: FASTCALL1 62 R2 L1; 
+      11 [-]: FASTCALL1 64 R2 L1; 
       12 [-]: MOVE R4 R2   ; var4 = var2
       13 [-]: GETIMPORT R3 1; var3 = 0x7B998233
       14 [-]: CALL R3 2 2  ; var3 = var3(var4)
 L 1:  15 [-]: JUMPIF R3 L4 ; goto L4 if var3
-      16 [-]: FASTCALL1 62 R1 L2; 
+      16 [-]: FASTCALL1 64 R1 L2; 
       17 [-]: MOVE R4 R1   ; var4 = var1
       18 [-]: GETIMPORT R3 1; var3 = 0x7B998233
       19 [-]: CALL R3 2 2  ; var3 = var3(var4)
@@ -62,11 +62,11 @@ L 2:  20 [-]: JUMPIF R3 L4 ; goto L4 if var3
 L 3:  29 [-]: GETTABLEKS R6 R3 K10; var6 = var3["z"]
       30 [-]: GETTABLEKS R7 R3 K8; var7 = var3["x"]
       31 [-]: DIV R5 R6 R7 ; var5 = var6 / var7
-      32 [-]: MULK R4 R4 K14; var4 = var4 * 1.0960000000000001
+      32 [-]: MULK R4 R4 K14; var4 = var4 * 1.0959999561309814
       33 [-]: GETIMPORT R6 16; var6 = 0xA421AF95
-      34 [-]: LOADK R7 K17 ; var7 = 0.38400000000000001
+      34 [-]: LOADK R7 K17 ; var7 = 0.38400000333786011
       35 [-]: LOADN R8 0   ; var8 = 0
-      36 [-]: LOADK R9 K17 ; var9 = 0.38400000000000001
+      36 [-]: LOADK R9 K17 ; var9 = 0.38400000333786011
       37 [-]: CALL R6 4 2  ; var6 = var6(var7, var8, var9)
       38 [-]: ADD R3 R3 R6 ; var3 = var3 + var6
       39 [-]: GETUPVAL R8 0; var8 = upvalues[0]

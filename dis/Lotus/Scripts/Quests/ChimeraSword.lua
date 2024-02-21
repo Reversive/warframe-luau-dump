@@ -49,8 +49,8 @@ L 0:   4 [-]: GETIMPORT R6 1; var6 = 0xFB124C48
        6 [-]: GETIMPORT R6 3; var6 = 0x107BF6DA
        7 [-]: GETIMPORT R9 6; var9 = 0x55156FF7
        8 [-]: CALL R9 1 2  ; var9 = var9()
-       9 [-]: MULK R8 R9 K4; var8 = var9 * 0.10000000000000001
-      10 [-]: MULK R9 R4 K7; var9 = var4 * 3.3300000000000001
+       9 [-]: MULK R8 R9 K4; var8 = var9 * 0.10000000149011612
+      10 [-]: MULK R9 R4 K7; var9 = var4 * 3.3299999237060547
       11 [-]: ADD R7 R8 R9 ; var7 = var8 + var9
       12 [-]: CALL R6 2 2  ; var6 = var6(var7)
       13 [-]: GETIMPORT R8 10; var8 = 0xF7F90318
@@ -58,15 +58,15 @@ L 0:   4 [-]: GETIMPORT R6 1; var6 = 0xFB124C48
       15 [-]: CALL R8 2 2  ; var8 = var8(var9)
       16 [-]: MULK R7 R8 K8; var7 = var8 * 0.25
       17 [-]: GETIMPORT R9 10; var9 = 0xF7F90318
-      18 [-]: ADDK R10 R6 K11; var10 = var6 + 7.7000000000000002
+      18 [-]: ADDK R10 R6 K11; var10 = var6 + 7.6999998092651367
       19 [-]: CALL R9 2 2  ; var9 = var9(var10)
       20 [-]: MULK R8 R9 K8; var8 = var9 * 0.25
       21 [-]: GETIMPORT R10 10; var10 = 0xF7F90318
-      22 [-]: ADDK R11 R6 K12; var11 = var6 + 3.2999999999999998
+      22 [-]: ADDK R11 R6 K12; var11 = var6 + 3.2999999523162842
       23 [-]: CALL R10 2 2 ; var10 = var10(var11)
       24 [-]: MULK R9 R10 K8; var9 = var10 * 0.25
       25 [-]: GETIMPORT R11 10; var11 = 0xF7F90318
-      26 [-]: ADDK R12 R6 K14; var12 = var6 + 9.9000000000000004
+      26 [-]: ADDK R12 R6 K14; var12 = var6 + 9.8999996185302734
       27 [-]: CALL R11 2 2 ; var11 = var11(var12)
       28 [-]: MULK R10 R11 K13; var10 = var11 * 180
       29 [-]: GETIMPORT R11 16; var11 = 0x00046924
@@ -136,7 +136,7 @@ L 1:  55 [-]: RETURN R0 0  ;
       28 [-]: SETTABLEKS R7 R9 K16; var7["Chimera_DestroySwordAttachments"] = var9
       29 [-]: MOVE R9 R8   ; var9 = var8
       30 [-]: CALL R9 1 1  ; var9()
-L 0:  31 [-]: JUMPIFNOTLT R4 R3 L13; goto L13 if var4 >= var67918
+L 0:  31 [-]: JUMPIFNOTLT R4 R3 L13; goto L13 if var4 >= var67873
       32 [-]: GETIMPORT R9 1; var9 = 0xCBD666E1
       33 [-]: LOADN R10 0  ; var10 = 0
       34 [-]: CALL R9 2 1  ; var9(var10)
@@ -147,13 +147,13 @@ L 0:  31 [-]: JUMPIFNOTLT R4 R3 L13; goto L13 if var4 >= var67918
       39 [-]: GETIMPORT R10 19; var10 = _T["Chimera_SwordProgress"]
       40 [-]: ORK R9 R10 K17; var9 = var10 or 0
       41 [-]: LOADN R10 0  ; var10 = 0
-      42 [-]: JUMPIFNOTLT R10 R4 L1; goto L1 if var10 >= var330032
+      42 [-]: JUMPIFNOTLT R10 R4 L1; goto L1 if var10 >= var330038
       43 [-]: JUMPXEQKN R9 K17 L1 NOT; 
       44 [-]: MOVE R10 R8  ; var10 = var8
       45 [-]: CALL R10 1 1 ; var10()
       46 [-]: LOADN R4 0   ; var4 = 0
       47 [-]: JUMP L12     ; goto L12
-L 1:  48 [-]: JUMPIFNOTLT R4 R9 L12; goto L12 if var4 >= var335809576
+L 1:  48 [-]: JUMPIFNOTLT R4 R9 L12; goto L12 if var4 >= var335809544
       49 [-]: ADDK R12 R4 K20; var12 = var4 + 1
       50 [-]: MOVE R10 R9  ; var10 = var9
       51 [-]: LOADN R11 1  ; var11 = 1
@@ -161,7 +161,7 @@ L 1:  48 [-]: JUMPIFNOTLT R4 R9 L12; goto L12 if var4 >= var335809576
 L 2:  53 [-]: GETIMPORT R14 7; var14 = 0xFB124C48
       54 [-]: GETTABLE R13 R14 R12; var13 = var14[var12]
       55 [-]: GETIMPORT R14 19; var14 = _T["Chimera_SwordProgress"]
-      56 [-]: JUMPIFNOTLE R3 R14 L4; goto L4 if var3 > var69398
+      56 [-]: JUMPIFNOTLE R3 R14 L4; goto L4 if var3 > var69422
       57 [-]: MOVE R15 R1  ; var15 = var1
       58 [-]: GETIMPORT R18 22; var18 = 0x90716979
       59 [-]: MOVE R19 R13 ; var19 = var13
@@ -179,7 +179,7 @@ L 4:  66 [-]: MOVE R15 R1  ; var15 = var1
       71 [-]: FASTCALL 52 L5; 
       72 [-]: GETIMPORT R14 26; var14 = 0x33BDD652[0x23D5322F]
       73 [-]: CALL R14 0 1 ; var14(var15, ...)
-L 5:  74 [-]: FASTCALL1 62 R5 L6; 
+L 5:  74 [-]: FASTCALL1 64 R5 L6; 
       75 [-]: MOVE R15 R5  ; var15 = var5
       76 [-]: GETIMPORT R14 30; var14 = 0x7B998233
       77 [-]: CALL R14 2 2 ; var14 = var14(var15)
@@ -189,7 +189,7 @@ L 6:  78 [-]: JUMPIF R14 L7; goto L7 if var14
       81 [-]: CALL R14 2 1 ; var14(var15)
 L 7:  82 [-]: LOADN R14 0  ; var14 = 0
 L 8:  83 [-]: LOADN R15 1  ; var15 = 1
-      84 [-]: JUMPIFNOTLT R14 R15 L10; goto L10 if var14 >= var69454
+      84 [-]: JUMPIFNOTLT R14 R15 L10; goto L10 if var14 >= var69409
       85 [-]: GETIMPORT R15 1; var15 = 0xCBD666E1
       86 [-]: LOADN R16 0  ; var16 = 0
       87 [-]: CALL R15 2 1 ; var15(var16)
@@ -238,7 +238,7 @@ L13: 122 [-]: LOADN R9 0   ; var9 = 0
      130 [-]: LOADN R15 1  ; var15 = 1
      131 [-]: CALL R12 4 2 ; var12 = var12(var13, var14, var15)
 L14: 132 [-]: LOADN R13 1  ; var13 = 1
-     133 [-]: JUMPIFNOTLT R9 R13 L17; goto L17 if var9 >= var68942
+     133 [-]: JUMPIFNOTLT R9 R13 L17; goto L17 if var9 >= var68897
      134 [-]: GETIMPORT R13 1; var13 = 0xCBD666E1
      135 [-]: LOADN R14 0  ; var14 = 0
      136 [-]: CALL R13 2 1 ; var13(var14)

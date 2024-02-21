@@ -63,7 +63,7 @@
 ; Max Stack Size:  7
 
        0 [-]: GETIMPORT R1 1; var1 = 0xBE190284
-       1 [-]: FASTCALL1 62 R1 L0; 
+       1 [-]: FASTCALL1 64 R1 L0; 
        2 [-]: GETIMPORT R0 3; var0 = 0x7B998233
        3 [-]: CALL R0 2 2  ; var0 = var0(var1)
 L 0:   4 [-]: JUMPIF R0 L4 ; goto L4 if var0
@@ -107,11 +107,11 @@ L 3:  33 [-]: GETIMPORT R3 20; var3 = 0xCB79539E
       42 [-]: CALL R3 2 1  ; var3(var4)
 L 4:  43 [-]: GETIMPORT R0 28; var0 = _T["gActiveMatchMakingMode"]
       44 [-]: GETIMPORT R1 30; var1 = _T["MATCHMAKING_OFFLINE_GAMEMODE"]
-      45 [-]: JUMPIFEQ R0 R1 L7; goto L7 if var0 == var2097230
+      45 [-]: JUMPIFEQ R0 R1 L7; goto L7 if var0 == var2097185
       46 [-]: GETIMPORT R0 32; var0 = 0xE7F2B02F
       47 [-]: NAMECALL R0 R0 K33; var1 = var0; var0 = var0[0x565BE9EE]
       48 [-]: CALL R0 2 2  ; var0 = var0(var1)
-      49 [-]: FASTCALL1 62 R0 L5; 
+      49 [-]: FASTCALL1 64 R0 L5; 
       50 [-]: MOVE R2 R0   ; var2 = var0
       51 [-]: GETIMPORT R1 3; var1 = 0x7B998233
       52 [-]: CALL R1 2 2  ; var1 = var1(var2)
@@ -190,7 +190,7 @@ L 7:  79 [-]: GETIMPORT R0 47; var0 = 0x34291F5C[0x68D83431]
 ; Max Stack Size:  5
 
        0 [-]: GETUPVAL R1 0; var1 = upvalues[0]
-       1 [-]: FASTCALL1 62 R1 L0; 
+       1 [-]: FASTCALL1 64 R1 L0; 
        2 [-]: GETIMPORT R0 1; var0 = 0x7B998233
        3 [-]: CALL R0 2 2  ; var0 = var0(var1)
 L 0:   4 [-]: JUMPIF R0 L7 ; goto L7 if var0
@@ -199,19 +199,19 @@ L 0:   4 [-]: JUMPIF R0 L7 ; goto L7 if var0
        7 [-]: CALL R0 2 2  ; var0 = var0(var1)
        8 [-]: JUMPIFNOT R0 L7; goto L7 if not var0
        9 [-]: GETUPVAL R1 1; var1 = upvalues[1]
-      10 [-]: FASTCALL1 62 R1 L1; 
+      10 [-]: FASTCALL1 64 R1 L1; 
       11 [-]: GETIMPORT R0 1; var0 = 0x7B998233
       12 [-]: CALL R0 2 2  ; var0 = var0(var1)
 L 1:  13 [-]: JUMPIF R0 L7 ; goto L7 if var0
       14 [-]: GETUPVAL R1 2; var1 = upvalues[2]
-      15 [-]: FASTCALL1 62 R1 L2; 
+      15 [-]: FASTCALL1 64 R1 L2; 
       16 [-]: GETIMPORT R0 1; var0 = 0x7B998233
       17 [-]: CALL R0 2 2  ; var0 = var0(var1)
 L 2:  18 [-]: JUMPIF R0 L7 ; goto L7 if var0
       19 [-]: GETIMPORT R0 5; var0 = _T["LoadoutSaveRequired"]
       20 [-]: JUMPIFNOT R0 L5; goto L5 if not var0
       21 [-]: GETIMPORT R1 7; var1 = 0x76EA806B
-      22 [-]: FASTCALL1 62 R1 L3; 
+      22 [-]: FASTCALL1 64 R1 L3; 
       23 [-]: GETIMPORT R0 1; var0 = 0x7B998233
       24 [-]: CALL R0 2 2  ; var0 = var0(var1)
 L 3:  25 [-]: JUMPIF R0 L5 ; goto L5 if var0
@@ -219,7 +219,7 @@ L 3:  25 [-]: JUMPIF R0 L5 ; goto L5 if var0
       27 [-]: LOADN R2 0   ; var2 = 0
       28 [-]: NAMECALL R0 R0 K8; var1 = var0; var0 = var0[0x3F3AE64C]
       29 [-]: CALL R0 3 2  ; var0 = var0(var1, var2)
-      30 [-]: FASTCALL1 62 R0 L4; 
+      30 [-]: FASTCALL1 64 R0 L4; 
       31 [-]: MOVE R2 R0   ; var2 = var0
       32 [-]: GETIMPORT R1 1; var1 = 0x7B998233
       33 [-]: CALL R1 2 2  ; var1 = var1(var2)
@@ -237,7 +237,7 @@ L 5:  40 [-]: GETIMPORT R0 12; var0 = _T
       45 [-]: NAMECALL R0 R0 K17; var1 = var0; var0 = var0[0xEBE2F513]
       46 [-]: CALL R0 2 2  ; var0 = var0(var1)
       47 [-]: LOADN R1 1   ; var1 = 1
-      48 [-]: JUMPIFNOTLT R1 R0 L6; goto L6 if var1 >= var1245262
+      48 [-]: JUMPIFNOTLT R1 R0 L6; goto L6 if var1 >= var1245217
       49 [-]: GETIMPORT R0 19; var0 = 0xBE190284
       50 [-]: GETIMPORT R2 21; var2 = gLotusPhotoBoothGameRulesType
       51 [-]: NAMECALL R0 R0 K22; var1 = var0; var0 = var0[0xF2DEAF69]
@@ -277,7 +277,7 @@ L 0:   1 [-]: GETUPVAL R3 0; var3 = upvalues[0]
        3 [-]: LOADK R3 K1  ; var3 = "OnUpdateSessionSettings"
        4 [-]: CALL R2 2 1  ; var2(var3)
        5 [-]: GETIMPORT R2 4; var2 = _T["MenuSuitAvatar"]
-       6 [-]: FASTCALL1 62 R2 L1; 
+       6 [-]: FASTCALL1 64 R2 L1; 
        7 [-]: MOVE R4 R2   ; var4 = var2
        8 [-]: GETIMPORT R3 6; var3 = 0x7B998233
        9 [-]: CALL R3 2 2  ; var3 = var3(var4)
@@ -317,7 +317,7 @@ L 2:  35 [-]: RETURN R0 0  ;
 ; Max Stack Size:  16
 
        0 [-]: MOVE R4 R2   ; var4 = var2
-       1 [-]: FASTCALL1 62 R4 L0; 
+       1 [-]: FASTCALL1 64 R4 L0; 
        2 [-]: MOVE R6 R4   ; var6 = var4
        3 [-]: GETIMPORT R5 1; var5 = 0x7B998233
        4 [-]: CALL R5 2 2  ; var5 = var5(var6)
@@ -326,24 +326,24 @@ L 0:   5 [-]: JUMPIFNOT R5 L1; goto L1 if not var5
        7 [-]: NAMECALL R5 R5 K4; var6 = var5; var5 = var5[0xA1C390FE]
        8 [-]: CALL R5 2 2  ; var5 = var5(var6)
        9 [-]: MOVE R4 R5   ; var4 = var5
-L 1:  10 [-]: FASTCALL1 62 R0 L2; 
+L 1:  10 [-]: FASTCALL1 64 R0 L2; 
       11 [-]: MOVE R6 R0   ; var6 = var0
       12 [-]: GETIMPORT R5 1; var5 = 0x7B998233
       13 [-]: CALL R5 2 2  ; var5 = var5(var6)
 L 2:  14 [-]: JUMPIF R5 L5 ; goto L5 if var5
-      15 [-]: FASTCALL1 62 R1 L3; 
+      15 [-]: FASTCALL1 64 R1 L3; 
       16 [-]: MOVE R6 R1   ; var6 = var1
       17 [-]: GETIMPORT R5 1; var5 = 0x7B998233
       18 [-]: CALL R5 2 2  ; var5 = var5(var6)
 L 3:  19 [-]: JUMPIF R5 L5 ; goto L5 if var5
-      20 [-]: FASTCALL1 62 R4 L4; 
+      20 [-]: FASTCALL1 64 R4 L4; 
       21 [-]: MOVE R6 R4   ; var6 = var4
       22 [-]: GETIMPORT R5 1; var5 = 0x7B998233
       23 [-]: CALL R5 2 2  ; var5 = var5(var6)
 L 4:  24 [-]: JUMPIFNOT R5 L6; goto L6 if not var5
 L 5:  25 [-]: CLOSEUPVALS R4; 
       26 [-]: RETURN R0 0  ; 
-L 6:  27 [-]: FASTCALL1 62 R3 L7; 
+L 6:  27 [-]: FASTCALL1 64 R3 L7; 
       28 [-]: MOVE R6 R3   ; var6 = var3
       29 [-]: GETIMPORT R5 1; var5 = 0x7B998233
       30 [-]: CALL R5 2 2  ; var5 = var5(var6)
@@ -366,7 +366,7 @@ L 9:  46 [-]: GETUPVAL R5 1; var5 = upvalues[1]
       47 [-]: SETUPVAL R5 0; upvalues[5] = var0
 L10:  48 [-]: GETIMPORT R5 13; var5 = _T["MenuSuitAvatar"]
       49 [-]: LOADB R6 0   ; var6 = false
-      50 [-]: FASTCALL1 62 R5 L11; 
+      50 [-]: FASTCALL1 64 R5 L11; 
       51 [-]: MOVE R8 R5   ; var8 = var5
       52 [-]: GETIMPORT R7 1; var7 = 0x7B998233
       53 [-]: CALL R7 2 2  ; var7 = var7(var8)

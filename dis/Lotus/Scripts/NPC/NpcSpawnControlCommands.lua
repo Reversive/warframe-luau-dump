@@ -31,7 +31,7 @@ L 0:   4 [-]: NAMECALL R5 R4 K4; var6 = var4; var5 = var4[0x90E142BA]
        9 [-]: FORGPREP_INEXT R6 L3; 
 L 1:  10 [-]: NAMECALL R11 R10 K5; var12 = var10; var11 = var10[0x1E3535E5]
       11 [-]: CALL R11 2 2 ; var11 = var11(var12)
-      12 [-]: FASTCALL1 62 R11 L2; 
+      12 [-]: FASTCALL1 64 R11 L2; 
       13 [-]: MOVE R13 R11 ; var13 = var11
       14 [-]: GETIMPORT R12 7; var12 = 0x7B998233
       15 [-]: CALL R12 2 2 ; var12 = var12(var13)

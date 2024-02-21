@@ -36,7 +36,7 @@
        4 [-]: GETIMPORT R3 5; var3 = 0x0469F296
        5 [-]: LOADK R4 K6  ; var4 = "TreasureHunt"
        6 [-]: CALL R3 2 2  ; var3 = var3(var4)
-       7 [-]: JUMPIFEQ R2 R3 L0; goto L0 if var2 == var16777499
+       7 [-]: JUMPIFEQ R2 R3 L0; goto L0 if var2 == var16777478
        8 [-]: LOADB R1 0 +1; var1 = false
 L 0:   9 [-]: LOADB R1 1   ; var1 = true
 L 1:  10 [-]: RETURN R1 1  ; 
@@ -50,7 +50,7 @@ L 1:  10 [-]: RETURN R1 1  ;
 ; Max Stack Size:  10
 
        0 [-]: GETIMPORT R1 1; var1 = 0x418B9EE0
-       1 [-]: FASTCALL1 62 R1 L0; 
+       1 [-]: FASTCALL1 64 R1 L0; 
        2 [-]: GETIMPORT R0 3; var0 = 0x7B998233
        3 [-]: CALL R0 2 2  ; var0 = var0(var1)
 L 0:   4 [-]: JUMPIFNOT R0 L1; goto L1 if not var0
@@ -108,13 +108,13 @@ L 6:  51 [-]: GETIMPORT R0 20; var0 = 0xBE190284
       56 [-]: GETTABLEKS R2 R3 K23; var2 = var3["items"]
       57 [-]: LENGTH R3 R2 ; var3 = #var2
       58 [-]: LOADN R4 0   ; var4 = 0
-      59 [-]: JUMPIFNOTLT R4 R3 L9; goto L9 if var4 >= var131877
+      59 [-]: JUMPIFNOTLT R4 R3 L9; goto L9 if var4 >= var131892
       60 [-]: GETTABLEN R3 R2 1; var3 = var2[1]
       61 [-]: GETIMPORT R4 17; var4 = 0xC8802016
       62 [-]: GETIMPORT R5 25; var5 = 0x0C5E64CB
       63 [-]: CALL R4 2 4  ; var4, var5, var6 = var4(var5)
       64 [-]: FORGPREP_INEXT R4 L8; 
-L 7:  65 [-]: JUMPIFNOTEQ R3 R8 L8; goto L8 if var3 ~= var459030
+L 7:  65 [-]: JUMPIFNOTEQ R3 R8 L8; goto L8 if var3 ~= var459054
       66 [-]: MOVE R1 R7   ; var1 = var7
 L 8:  67 [-]: FORGLOOP R4 L7 2 [inext]; 
       68 [-]: JUMP L10     ; goto L10
@@ -175,7 +175,7 @@ L 1:  18 [-]: FORGLOOP R4 L0 2 [inext];
 ; Max Stack Size:  6
 
        0 [-]: GETIMPORT R1 1; var1 = 0x5D7C6CA7
-       1 [-]: FASTCALL1 62 R1 L0; 
+       1 [-]: FASTCALL1 64 R1 L0; 
        2 [-]: GETIMPORT R0 3; var0 = 0x7B998233
        3 [-]: CALL R0 2 2  ; var0 = var0(var1)
 L 0:   4 [-]: JUMPIFNOT R0 L1; goto L1 if not var0
@@ -188,7 +188,7 @@ L 1:   6 [-]: LOADK R0 K4  ; var0 = "/Lotus/Language/Objectives/OrokinChallengeR
       11 [-]: GETIMPORT R4 10; var4 = 0x0469F296
       12 [-]: LOADK R5 K11 ; var5 = "TreasureHunt"
       13 [-]: CALL R4 2 2  ; var4 = var4(var5)
-      14 [-]: JUMPIFEQ R3 R4 L2; goto L2 if var3 == var16777499
+      14 [-]: JUMPIFEQ R3 R4 L2; goto L2 if var3 == var16777478
       15 [-]: LOADB R1 0 +1; var1 = false
 L 2:  16 [-]: LOADB R1 1   ; var1 = true
 L 3:  17 [-]: JUMPIFNOT R1 L4; goto L4 if not var1
@@ -198,7 +198,7 @@ L 4:  19 [-]: GETIMPORT R2 1; var2 = 0x5D7C6CA7
       21 [-]: CALL R2 2 2  ; var2 = var2(var3)
       22 [-]: SUBK R1 R2 K12; var1 = var2 - 0.5
       23 [-]: LOADN R2 0   ; var2 = 0
-      24 [-]: JUMPIFNOTLT R2 R1 L10; goto L10 if var2 >= var775
+      24 [-]: JUMPIFNOTLT R2 R1 L10; goto L10 if var2 >= var828
       25 [-]: GETUPVAL R3 0; var3 = upvalues[0]
       26 [-]: GETTABLEKS R2 R3 K14; var2 = var3[0xF62F1A8F]
       27 [-]: MOVE R3 R1   ; var3 = var1
@@ -206,7 +206,7 @@ L 4:  19 [-]: GETIMPORT R2 1; var2 = 0x5D7C6CA7
       29 [-]: MOVE R5 R0   ; var5 = var0
       30 [-]: CALL R2 4 1  ; var2(var3, var4, var5)
 L 5:  31 [-]: GETIMPORT R3 18; var3 = _T["LootChallengeTimer"]
-      32 [-]: FASTCALL1 62 R3 L6; 
+      32 [-]: FASTCALL1 64 R3 L6; 
       33 [-]: GETIMPORT R2 3; var2 = 0x7B998233
       34 [-]: CALL R2 2 2  ; var2 = var2(var3)
 L 6:  35 [-]: JUMPIFNOT R2 L7; goto L7 if not var2
@@ -215,14 +215,14 @@ L 6:  35 [-]: JUMPIFNOT R2 L7; goto L7 if not var2
       38 [-]: CALL R2 2 1  ; var2(var3)
       39 [-]: JUMPBACK L5  ; goto L5
 L 7:  40 [-]: GETIMPORT R3 18; var3 = _T["LootChallengeTimer"]
-      41 [-]: FASTCALL1 62 R3 L8; 
+      41 [-]: FASTCALL1 64 R3 L8; 
       42 [-]: GETIMPORT R2 3; var2 = 0x7B998233
       43 [-]: CALL R2 2 2  ; var2 = var2(var3)
 L 8:  44 [-]: JUMPIF R2 L9 ; goto L9 if var2
       45 [-]: GETIMPORT R3 22; var3 = _T["LootChallengeTimer"]["Data"]
       46 [-]: GETTABLEKS R2 R3 K23; var2 = var3["Time"]
       47 [-]: LOADN R3 0   ; var3 = 0
-      48 [-]: JUMPIFNOTLT R3 R2 L9; goto L9 if var3 >= var1311310
+      48 [-]: JUMPIFNOTLT R3 R2 L9; goto L9 if var3 >= var1311265
       49 [-]: GETIMPORT R2 20; var2 = 0xCBD666E1
       50 [-]: LOADN R3 0   ; var3 = 0
       51 [-]: CALL R2 2 1  ; var2(var3)

@@ -71,7 +71,7 @@ L 0:  14 [-]: GETTABLE R6 R7 R8; var6 = var7[var8]
       17 [-]: CALL R7 2 2  ; var7 = var7(var8)
       18 [-]: SUB R6 R7 R5 ; var6 = var7 - var5
       19 [-]: MOVE R7 R6   ; var7 = var6
-      20 [-]: JUMPIFLE R3 R6 L1; goto L1 if var3 <= var16779291
+      20 [-]: JUMPIFLE R3 R6 L1; goto L1 if var3 <= var16779270
       21 [-]: LOADB R8 0 +1; var8 = false
 L 1:  22 [-]: LOADB R8 1   ; var8 = true
 L 2:  23 [-]: RETURN R7 2  ; 
@@ -86,7 +86,7 @@ L 2:  23 [-]: RETURN R7 2  ;
 
        0 [-]: NAMECALL R3 R1 K0; var4 = var1; var3 = var1[0x1C881607]
        1 [-]: CALL R3 2 2  ; var3 = var3(var4)
-       2 [-]: FASTCALL1 62 R3 L0; 
+       2 [-]: FASTCALL1 64 R3 L0; 
        3 [-]: MOVE R5 R3   ; var5 = var3
        4 [-]: GETIMPORT R4 2; var4 = 0x7B998233
        5 [-]: CALL R4 2 2  ; var4 = var4(var5)
@@ -114,7 +114,7 @@ L 1:  24 [-]: GETTABLE R10 R11 R12; var10 = var11[var12]
       27 [-]: CALL R11 2 2 ; var11 = var11(var12)
       28 [-]: SUB R10 R11 R9; var10 = var11 - var9
       29 [-]: MOVE R4 R10  ; var4 = var10
-      30 [-]: JUMPIFLE R7 R10 L2; goto L2 if var7 <= var16778523
+      30 [-]: JUMPIFLE R7 R10 L2; goto L2 if var7 <= var16778502
       31 [-]: LOADB R5 0 +1; var5 = false
 L 2:  32 [-]: LOADB R5 1   ; var5 = true
 L 3:  33 [-]: JUMPIFNOT R5 L4; goto L4 if not var5
@@ -138,7 +138,7 @@ L 4:  36 [-]: LOADN R4 0   ; var4 = 0
        4 [-]: RETURN R0 0  ; 
 L 0:   5 [-]: NAMECALL R4 R1 K3; var5 = var1; var4 = var1[0x1C881607]
        6 [-]: CALL R4 2 2  ; var4 = var4(var5)
-       7 [-]: FASTCALL1 62 R4 L1; 
+       7 [-]: FASTCALL1 64 R4 L1; 
        8 [-]: MOVE R6 R4   ; var6 = var4
        9 [-]: GETIMPORT R5 5; var5 = 0x7B998233
       10 [-]: CALL R5 2 2  ; var5 = var5(var6)
@@ -167,7 +167,7 @@ L 4:  30 [-]: GETTABLE R11 R12 R13; var11 = var12[var13]
       33 [-]: CALL R12 2 2 ; var12 = var12(var13)
       34 [-]: SUB R11 R12 R10; var11 = var12 - var10
       35 [-]: MOVE R5 R11  ; var5 = var11
-      36 [-]: JUMPIFLE R8 R11 L5; goto L5 if var8 <= var16778779
+      36 [-]: JUMPIFLE R8 R11 L5; goto L5 if var8 <= var16778758
       37 [-]: LOADB R6 0 +1; var6 = false
 L 5:  38 [-]: LOADB R6 1   ; var6 = true
 L 6:  39 [-]: JUMPIFNOT R6 L7; goto L7 if not var6

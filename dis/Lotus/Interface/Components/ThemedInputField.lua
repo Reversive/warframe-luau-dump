@@ -103,103 +103,105 @@
       79 [-]: MOVE R18 R8  ; var18 = var8
       80 [-]: CALL R15 4 2 ; var15 = var15(var16, var17, var18)
       81 [-]: SETTABLEKS R15 R14 K42; var15["mSkipAutoFocus"] = var14
-      82 [-]: GETTABLEKS R15 R14 K43; var15 = var14["HookUpCallbacks"]
-      83 [-]: SETTABLEKS R15 R14 K44; var15["Button_HookUpCallbacks"] = var14
-      84 [-]: NEWCLOSURE R15 P0; 
-      85 [-]: CAPTURE VAL R9; 
-      86 [-]: SETTABLEKS R15 R14 K43; var15["HookUpCallbacks"] = var14
-      87 [-]: GETTABLEKS R15 R14 K45; var15 = var14["SetId"]
-      88 [-]: SETTABLEKS R15 R14 K46; var15["ButtonSetId"] = var14
-      89 [-]: DUPCLOSURE R15 K47; 
-      90 [-]: SETTABLEKS R15 R14 K45; var15["SetId"] = var14
+      82 [-]: LOADB R15 0  ; var15 = false
+      83 [-]: SETTABLEKS R15 R14 K43; var15["mDoFilter"] = var14
+      84 [-]: GETTABLEKS R15 R14 K44; var15 = var14["HookUpCallbacks"]
+      85 [-]: SETTABLEKS R15 R14 K45; var15["Button_HookUpCallbacks"] = var14
+      86 [-]: NEWCLOSURE R15 P0; 
+      87 [-]: CAPTURE VAL R9; 
+      88 [-]: SETTABLEKS R15 R14 K44; var15["HookUpCallbacks"] = var14
+      89 [-]: GETTABLEKS R15 R14 K46; var15 = var14["SetId"]
+      90 [-]: SETTABLEKS R15 R14 K47; var15["ButtonSetId"] = var14
       91 [-]: DUPCLOSURE R15 K48; 
-      92 [-]: SETTABLEKS R15 R14 K49; var15["SetNumbersOnly"] = var14
-      93 [-]: GETTABLEKS R15 R14 K50; var15 = var14["SetActive"]
-      94 [-]: SETTABLEKS R15 R14 K51; var15["ButtonSetActive"] = var14
-      95 [-]: DUPCLOSURE R15 K52; 
-      96 [-]: SETTABLEKS R15 R14 K50; var15["SetActive"] = var14
+      92 [-]: SETTABLEKS R15 R14 K46; var15["SetId"] = var14
+      93 [-]: DUPCLOSURE R15 K49; 
+      94 [-]: SETTABLEKS R15 R14 K50; var15["SetNumbersOnly"] = var14
+      95 [-]: GETTABLEKS R15 R14 K51; var15 = var14["SetActive"]
+      96 [-]: SETTABLEKS R15 R14 K52; var15["ButtonSetActive"] = var14
       97 [-]: DUPCLOSURE R15 K53; 
-      98 [-]: SETTABLEKS R15 R14 K54; var15["SetAltFocus"] = var14
-      99 [-]: DUPCLOSURE R15 K55; 
-     100 [-]: SETTABLEKS R15 R14 K56; var15["AltPressed"] = var14
-     101 [-]: DUPCLOSURE R15 K57; 
-     102 [-]: SETTABLEKS R15 R14 K58; var15["InputFieldFocused"] = var14
-     103 [-]: DUPCLOSURE R15 K59; 
-     104 [-]: SETTABLEKS R15 R14 K60; var15["InputFieldTextChanged"] = var14
-     105 [-]: GETTABLEKS R15 R14 K61; var15 = var14["SetFocus"]
-     106 [-]: SETTABLEKS R15 R14 K62; var15["ButtonSetFocus"] = var14
-     107 [-]: DUPCLOSURE R15 K63; 
-     108 [-]: SETTABLEKS R15 R14 K61; var15["SetFocus"] = var14
-     109 [-]: GETTABLEKS R15 R14 K64; var15 = var14["TryPressed"]
-     110 [-]: SETTABLEKS R15 R14 K65; var15["ButtonTryPressed"] = var14
-     111 [-]: NEWCLOSURE R15 P9; 
-     112 [-]: CAPTURE VAL R12; 
-     113 [-]: CAPTURE VAL R10; 
-     114 [-]: SETTABLEKS R15 R14 K64; var15["TryPressed"] = var14
-     115 [-]: GETTABLEKS R15 R14 K66; var15 = var14["Pressed"]
-     116 [-]: SETTABLEKS R15 R14 K67; var15["ButtonPressed"] = var14
-     117 [-]: DUPCLOSURE R15 K68; 
-     118 [-]: SETTABLEKS R15 R14 K66; var15["Pressed"] = var14
-     119 [-]: GETTABLEKS R15 R14 K69; var15 = var14["SetVisible"]
-     120 [-]: SETTABLEKS R15 R14 K70; var15["ButtonSetVisible"] = var14
-     121 [-]: DUPCLOSURE R15 K71; 
-     122 [-]: SETTABLEKS R15 R14 K69; var15["SetVisible"] = var14
-     123 [-]: GETTABLEKS R15 R14 K72; var15 = var14["OnGamepadTransition"]
-     124 [-]: SETTABLEKS R15 R14 K73; var15["ButtonOnGamepadTransition"] = var14
-     125 [-]: DUPCLOSURE R15 K74; 
-     126 [-]: SETTABLEKS R15 R14 K72; var15["OnGamepadTransition"] = var14
-     127 [-]: GETTABLEKS R15 R14 K75; var15 = var14["Resize"]
-     128 [-]: SETTABLEKS R15 R14 K76; var15["ButtonResize"] = var14
-     129 [-]: NEWCLOSURE R15 P13; 
-     130 [-]: CAPTURE VAL R9; 
-     131 [-]: SETTABLEKS R15 R14 K75; var15["Resize"] = var14
-     132 [-]: GETTABLEKS R15 R14 K77; var15 = var14["UpdateColors"]
-     133 [-]: SETTABLEKS R15 R14 K78; var15["ButtonUpdateColors"] = var14
-     134 [-]: NEWCLOSURE R15 P14; 
-     135 [-]: CAPTURE VAL R12; 
-     136 [-]: CAPTURE VAL R9; 
-     137 [-]: SETTABLEKS R15 R14 K77; var15["UpdateColors"] = var14
-     138 [-]: GETTABLEKS R15 R14 K79; var15 = var14["Redraw"]
-     139 [-]: SETTABLEKS R15 R14 K80; var15["ButtonRedraw"] = var14
-     140 [-]: DUPCLOSURE R15 K81; 
-     141 [-]: SETTABLEKS R15 R14 K79; var15["Redraw"] = var14
-     142 [-]: GETTABLEKS R15 R14 K82; var15 = var14["SetText"]
-     143 [-]: SETTABLEKS R15 R14 K83; var15["ButtonSetText"] = var14
-     144 [-]: DUPCLOSURE R15 K84; 
-     145 [-]: SETTABLEKS R15 R14 K82; var15["SetText"] = var14
+      98 [-]: SETTABLEKS R15 R14 K51; var15["SetActive"] = var14
+      99 [-]: DUPCLOSURE R15 K54; 
+     100 [-]: SETTABLEKS R15 R14 K55; var15["SetAltFocus"] = var14
+     101 [-]: DUPCLOSURE R15 K56; 
+     102 [-]: SETTABLEKS R15 R14 K57; var15["AltPressed"] = var14
+     103 [-]: DUPCLOSURE R15 K58; 
+     104 [-]: SETTABLEKS R15 R14 K59; var15["InputFieldFocused"] = var14
+     105 [-]: DUPCLOSURE R15 K60; 
+     106 [-]: SETTABLEKS R15 R14 K61; var15["InputFieldTextChanged"] = var14
+     107 [-]: GETTABLEKS R15 R14 K62; var15 = var14["SetFocus"]
+     108 [-]: SETTABLEKS R15 R14 K63; var15["ButtonSetFocus"] = var14
+     109 [-]: DUPCLOSURE R15 K64; 
+     110 [-]: SETTABLEKS R15 R14 K62; var15["SetFocus"] = var14
+     111 [-]: GETTABLEKS R15 R14 K65; var15 = var14["TryPressed"]
+     112 [-]: SETTABLEKS R15 R14 K66; var15["ButtonTryPressed"] = var14
+     113 [-]: NEWCLOSURE R15 P9; 
+     114 [-]: CAPTURE VAL R12; 
+     115 [-]: CAPTURE VAL R10; 
+     116 [-]: SETTABLEKS R15 R14 K65; var15["TryPressed"] = var14
+     117 [-]: GETTABLEKS R15 R14 K67; var15 = var14["Pressed"]
+     118 [-]: SETTABLEKS R15 R14 K68; var15["ButtonPressed"] = var14
+     119 [-]: DUPCLOSURE R15 K69; 
+     120 [-]: SETTABLEKS R15 R14 K67; var15["Pressed"] = var14
+     121 [-]: GETTABLEKS R15 R14 K70; var15 = var14["SetVisible"]
+     122 [-]: SETTABLEKS R15 R14 K71; var15["ButtonSetVisible"] = var14
+     123 [-]: DUPCLOSURE R15 K72; 
+     124 [-]: SETTABLEKS R15 R14 K70; var15["SetVisible"] = var14
+     125 [-]: GETTABLEKS R15 R14 K73; var15 = var14["OnGamepadTransition"]
+     126 [-]: SETTABLEKS R15 R14 K74; var15["ButtonOnGamepadTransition"] = var14
+     127 [-]: DUPCLOSURE R15 K75; 
+     128 [-]: SETTABLEKS R15 R14 K73; var15["OnGamepadTransition"] = var14
+     129 [-]: GETTABLEKS R15 R14 K76; var15 = var14["Resize"]
+     130 [-]: SETTABLEKS R15 R14 K77; var15["ButtonResize"] = var14
+     131 [-]: NEWCLOSURE R15 P13; 
+     132 [-]: CAPTURE VAL R9; 
+     133 [-]: SETTABLEKS R15 R14 K76; var15["Resize"] = var14
+     134 [-]: GETTABLEKS R15 R14 K78; var15 = var14["UpdateColors"]
+     135 [-]: SETTABLEKS R15 R14 K79; var15["ButtonUpdateColors"] = var14
+     136 [-]: NEWCLOSURE R15 P14; 
+     137 [-]: CAPTURE VAL R12; 
+     138 [-]: CAPTURE VAL R9; 
+     139 [-]: SETTABLEKS R15 R14 K78; var15["UpdateColors"] = var14
+     140 [-]: GETTABLEKS R15 R14 K80; var15 = var14["Redraw"]
+     141 [-]: SETTABLEKS R15 R14 K81; var15["ButtonRedraw"] = var14
+     142 [-]: DUPCLOSURE R15 K82; 
+     143 [-]: SETTABLEKS R15 R14 K80; var15["Redraw"] = var14
+     144 [-]: GETTABLEKS R15 R14 K83; var15 = var14["SetText"]
+     145 [-]: SETTABLEKS R15 R14 K84; var15["ButtonSetText"] = var14
      146 [-]: DUPCLOSURE R15 K85; 
-     147 [-]: SETTABLEKS R15 R14 K86; var15["SetHint"] = var14
-     148 [-]: DUPCLOSURE R15 K87; 
-     149 [-]: SETTABLEKS R15 R14 K88; var15["SetType"] = var14
-     150 [-]: DUPCLOSURE R15 K89; 
-     151 [-]: SETTABLEKS R15 R14 K90; var15["SetMultiline"] = var14
-     152 [-]: DUPCLOSURE R15 K91; 
-     153 [-]: SETTABLEKS R15 R14 K92; var15["SetMaxChars"] = var14
-     154 [-]: DUPCLOSURE R15 K93; 
-     155 [-]: SETTABLEKS R15 R14 K94; var15["SetClearHintVisible"] = var14
-     156 [-]: DUPCLOSURE R15 K95; 
-     157 [-]: SETTABLEKS R15 R14 K96; var15["SetLocked"] = var14
-     158 [-]: NEWCLOSURE R15 P23; 
-     159 [-]: CAPTURE VAL R11; 
-     160 [-]: CAPTURE VAL R0; 
-     161 [-]: SETTABLEKS R15 R14 K97; var15["AutoFocus"] = var14
-     162 [-]: GETTABLEKS R17 R14 K9; var17 = var14["mLabelClipName"]
-     163 [-]: LOADN R18 81 ; var18 = 81
-     164 [-]: LOADB R19 1  ; var19 = true
-     165 [-]: NAMECALL R15 R0 K98; var16 = var0; var15 = var0[0xAADE900E]
-     166 [-]: CALL R15 5 1 ; var15(var16, var17, var18, var19)
-     167 [-]: LOADB R15 0  ; var15 = false
-     168 [-]: SETTABLEKS R15 R14 K99; var15["mHookedUpCallbacks"] = var14
-     169 [-]: NAMECALL R15 R14 K100; var16 = var14; var15 = var14[0xE91C55EC]
-     170 [-]: CALL R15 2 1 ; var15(var16)
-     171 [-]: LOADK R17 K101; var17 = "left"
-     172 [-]: NAMECALL R15 R14 K102; var16 = var14; var15 = var14[0x6B2AB44E]
-     173 [-]: CALL R15 3 1 ; var15(var16, var17)
-     174 [-]: NAMECALL R15 R14 K103; var16 = var14; var15 = var14[0x71E9AC81]
-     175 [-]: CALL R15 2 1 ; var15(var16)
-     176 [-]: NAMECALL R15 R14 K104; var16 = var14; var15 = var14[0xB61FB39F]
+     147 [-]: SETTABLEKS R15 R14 K83; var15["SetText"] = var14
+     148 [-]: DUPCLOSURE R15 K86; 
+     149 [-]: SETTABLEKS R15 R14 K87; var15["SetHint"] = var14
+     150 [-]: DUPCLOSURE R15 K88; 
+     151 [-]: SETTABLEKS R15 R14 K89; var15["SetType"] = var14
+     152 [-]: DUPCLOSURE R15 K90; 
+     153 [-]: SETTABLEKS R15 R14 K91; var15["SetMultiline"] = var14
+     154 [-]: DUPCLOSURE R15 K92; 
+     155 [-]: SETTABLEKS R15 R14 K93; var15["SetMaxChars"] = var14
+     156 [-]: DUPCLOSURE R15 K94; 
+     157 [-]: SETTABLEKS R15 R14 K95; var15["SetClearHintVisible"] = var14
+     158 [-]: DUPCLOSURE R15 K96; 
+     159 [-]: SETTABLEKS R15 R14 K97; var15["SetLocked"] = var14
+     160 [-]: NEWCLOSURE R15 P23; 
+     161 [-]: CAPTURE VAL R11; 
+     162 [-]: CAPTURE VAL R0; 
+     163 [-]: SETTABLEKS R15 R14 K98; var15["AutoFocus"] = var14
+     164 [-]: GETTABLEKS R17 R14 K9; var17 = var14["mLabelClipName"]
+     165 [-]: LOADN R18 83 ; var18 = 83
+     166 [-]: LOADB R19 1  ; var19 = true
+     167 [-]: NAMECALL R15 R0 K99; var16 = var0; var15 = var0[0xAADE900E]
+     168 [-]: CALL R15 5 1 ; var15(var16, var17, var18, var19)
+     169 [-]: LOADB R15 0  ; var15 = false
+     170 [-]: SETTABLEKS R15 R14 K100; var15["mHookedUpCallbacks"] = var14
+     171 [-]: NAMECALL R15 R14 K101; var16 = var14; var15 = var14[0xE91C55EC]
+     172 [-]: CALL R15 2 1 ; var15(var16)
+     173 [-]: LOADK R17 K102; var17 = "left"
+     174 [-]: NAMECALL R15 R14 K103; var16 = var14; var15 = var14[0x6B2AB44E]
+     175 [-]: CALL R15 3 1 ; var15(var16, var17)
+     176 [-]: NAMECALL R15 R14 K104; var16 = var14; var15 = var14[0x71E9AC81]
      177 [-]: CALL R15 2 1 ; var15(var16)
-     178 [-]: RETURN R14 1 ; 
+     178 [-]: NAMECALL R15 R14 K105; var16 = var14; var15 = var14[0xB61FB39F]
+     179 [-]: CALL R15 2 1 ; var15(var16)
+     180 [-]: RETURN R14 1 ; 
 
 
 

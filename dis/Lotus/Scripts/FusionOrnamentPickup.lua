@@ -20,7 +20,7 @@
 ; Max Stack Size:  8
 
        0 [-]: GETIMPORT R2 1; var2 = 0x0E058AD6
-       1 [-]: FASTCALL1 62 R2 L0; 
+       1 [-]: FASTCALL1 64 R2 L0; 
        2 [-]: GETIMPORT R1 3; var1 = 0x7B998233
        3 [-]: CALL R1 2 2  ; var1 = var1(var2)
 L 0:   4 [-]: JUMPIF R1 L1 ; goto L1 if var1
@@ -36,7 +36,7 @@ L 1:  11 [-]: GETIMPORT R3 6; var3 = gPickUpActionType
       14 [-]: JUMPIFNOT R1 L4; goto L4 if not var1
       15 [-]: MOVE R1 R0   ; var1 = var0
       16 [-]: LOADNIL R0   ; var0 = nil
-L 2:  17 [-]: FASTCALL1 62 R0 L3; 
+L 2:  17 [-]: FASTCALL1 64 R0 L3; 
       18 [-]: MOVE R3 R0   ; var3 = var0
       19 [-]: GETIMPORT R2 3; var2 = 0x7B998233
       20 [-]: CALL R2 2 2  ; var2 = var2(var3)
@@ -50,7 +50,7 @@ L 3:  21 [-]: JUMPIFNOT R2 L4; goto L4 if not var2
       28 [-]: JUMPBACK L2  ; goto L2
 L 4:  29 [-]: NAMECALL R1 R0 K12; var2 = var0; var1 = var0[0x4528012D]
       30 [-]: CALL R1 2 2  ; var1 = var1(var2)
-L 5:  31 [-]: FASTCALL1 62 R1 L6; 
+L 5:  31 [-]: FASTCALL1 64 R1 L6; 
       32 [-]: MOVE R3 R1   ; var3 = var1
       33 [-]: GETIMPORT R2 3; var2 = 0x7B998233
       34 [-]: CALL R2 2 2  ; var2 = var2(var3)

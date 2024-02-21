@@ -36,7 +36,7 @@ L 0:  12 [-]: GETIMPORT R3 5; var3 = 0xC8802016
       14 [-]: CALL R3 2 4  ; var3, var4, var5 = var3(var4)
       15 [-]: FORGPREP_INEXT R3 L2; 
 L 1:  16 [-]: GETTABLEN R8 R7 1; var8 = var7[1]
-      17 [-]: JUMPIFNOTEQ R8 R1 L2; goto L2 if var8 ~= var17238309
+      17 [-]: JUMPIFNOTEQ R8 R1 L2; goto L2 if var8 ~= var17238324
       18 [-]: GETTABLEN R9 R7 2; var9 = var7[2]
       19 [-]: ADDK R8 R9 K6; var8 = var9 + 1
       20 [-]: SETTABLEN R8 R7 2; SETTABLEN R8 R7 2
@@ -68,10 +68,10 @@ L 0:   3 [-]: GETIMPORT R3 4; var3 = 0xC8802016
        5 [-]: CALL R3 2 4  ; var3, var4, var5 = var3(var4)
        6 [-]: FORGPREP_INEXT R3 L3; 
 L 1:   7 [-]: GETTABLEN R8 R7 1; var8 = var7[1]
-       8 [-]: JUMPIFNOTEQ R8 R1 L3; goto L3 if var8 ~= var17238053
+       8 [-]: JUMPIFNOTEQ R8 R1 L3; goto L3 if var8 ~= var17238068
        9 [-]: GETTABLEN R8 R7 2; var8 = var7[2]
       10 [-]: LOADN R9 1   ; var9 = 1
-      11 [-]: JUMPIFNOTLE R8 R9 L2; goto L2 if var8 > var460878
+      11 [-]: JUMPIFNOTLE R8 R9 L2; goto L2 if var8 > var460833
       12 [-]: GETIMPORT R8 7; var8 = 0x33BDD652[0x9C1F3B5A]
       13 [-]: MOVE R9 R2   ; var9 = var2
       14 [-]: MOVE R10 R6  ; var10 = var6

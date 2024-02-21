@@ -22,7 +22,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  4
 
-       0 [-]: LOADK R2 K0  ; var2 = 0.20000000000000001
+       0 [-]: LOADK R2 K0  ; var2 = 0.20000000298023224
        1 [-]: SUBK R3 R0 K1; var3 = var0 - 1
        2 [-]: MUL R1 R2 R3 ; var1 = var2 * var3
        3 [-]: RETURN R1 1  ; 
@@ -36,7 +36,7 @@
 ; Max Stack Size:  7
 
        0 [-]: DUPTABLE R1 1; 
-       1 [-]: LOADK R5 K3  ; var5 = 0.20000000000000001
+       1 [-]: LOADK R5 K3  ; var5 = 0.20000000298023224
        2 [-]: SUBK R6 R0 K4; var6 = var0 - 1
        3 [-]: MUL R4 R5 R6 ; var4 = var5 * var6
        4 [-]: MULK R3 R4 K2; var3 = var4 * 100
@@ -62,16 +62,16 @@ L 0:   8 [-]: SETTABLEKS R2 R1 K0; var2["UPGRADE"] = var1
        2 [-]: CALL R5 2 2  ; var5 = var5(var6)
        3 [-]: JUMPIF R5 L0 ; goto L0 if var5
        4 [-]: RETURN R0 0  ; 
-L 0:   5 [-]: FASTCALL1 62 R0 L1; 
+L 0:   5 [-]: FASTCALL1 64 R0 L1; 
        6 [-]: MOVE R6 R0   ; var6 = var0
        7 [-]: GETIMPORT R5 4; var5 = 0x7B998233
        8 [-]: CALL R5 2 2  ; var5 = var5(var6)
 L 1:   9 [-]: JUMPIF R5 L2 ; goto L2 if var5
       10 [-]: NAMECALL R5 R0 K5; var6 = var0; var5 = var0[0xDE321E6F]
       11 [-]: CALL R5 2 2  ; var5 = var5(var6)
-      12 [-]: LOADN R7 51  ; var7 = 51
+      12 [-]: LOADN R7 54  ; var7 = 54
       13 [-]: LOADN R8 2   ; var8 = 2
-      14 [-]: LOADK R10 K6 ; var10 = 0.20000000000000001
+      14 [-]: LOADK R10 K6 ; var10 = 0.20000000298023224
       15 [-]: SUBK R11 R2 K7; var11 = var2 - 1
       16 [-]: MUL R9 R10 R11; var9 = var10 * var11
       17 [-]: NAMECALL R10 R1 K8; var11 = var1; var10 = var1[0x24B019AC]
@@ -94,16 +94,16 @@ L 2:  22 [-]: RETURN R0 0  ;
        2 [-]: CALL R5 2 2  ; var5 = var5(var6)
        3 [-]: JUMPIF R5 L0 ; goto L0 if var5
        4 [-]: RETURN R0 0  ; 
-L 0:   5 [-]: FASTCALL1 62 R0 L1; 
+L 0:   5 [-]: FASTCALL1 64 R0 L1; 
        6 [-]: MOVE R6 R0   ; var6 = var0
        7 [-]: GETIMPORT R5 4; var5 = 0x7B998233
        8 [-]: CALL R5 2 2  ; var5 = var5(var6)
 L 1:   9 [-]: JUMPIF R5 L2 ; goto L2 if var5
       10 [-]: NAMECALL R5 R0 K5; var6 = var0; var5 = var0[0xDE321E6F]
       11 [-]: CALL R5 2 2  ; var5 = var5(var6)
-      12 [-]: LOADN R7 51  ; var7 = 51
+      12 [-]: LOADN R7 54  ; var7 = 54
       13 [-]: LOADN R8 2   ; var8 = 2
-      14 [-]: LOADK R10 K6 ; var10 = 0.20000000000000001
+      14 [-]: LOADK R10 K6 ; var10 = 0.20000000298023224
       15 [-]: SUBK R11 R2 K7; var11 = var2 - 1
       16 [-]: MUL R9 R10 R11; var9 = var10 * var11
       17 [-]: NAMECALL R10 R1 K8; var11 = var1; var10 = var1[0x24B019AC]

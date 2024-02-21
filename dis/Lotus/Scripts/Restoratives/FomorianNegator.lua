@@ -28,7 +28,7 @@
        6 [-]: NAMECALL R3 R0 K6; var4 = var0; var3 = var0[0xA5E492D4]
        7 [-]: CALL R3 2 2  ; var3 = var3(var4)
        8 [-]: JUMPIFNOT R3 L6; goto L6 if not var3
-       9 [-]: FASTCALL1 62 R2 L0; 
+       9 [-]: FASTCALL1 64 R2 L0; 
       10 [-]: MOVE R4 R2   ; var4 = var2
       11 [-]: GETIMPORT R3 8; var3 = 0x7B998233
       12 [-]: CALL R3 2 2  ; var3 = var3(var4)
@@ -37,7 +37,7 @@ L 0:  13 [-]: JUMPIF R3 L1 ; goto L1 if var3
       15 [-]: NAMECALL R3 R2 K9; var4 = var2; var3 = var2[0xBEBAD19F]
       16 [-]: CALL R3 3 2  ; var3 = var3(var4, var5)
       17 [-]: GETIMPORT R4 11; var4 = 0xBD3ECD08
-      18 [-]: JUMPIFNOTLT R4 R3 L2; goto L2 if var4 >= var918350
+      18 [-]: JUMPIFNOTLT R4 R3 L2; goto L2 if var4 >= var918305
 L 1:  19 [-]: GETIMPORT R3 14; var3 = _T["ShowImpactMessage"]
       20 [-]: LOADK R4 K15 ; var4 = "/Lotus/Language/Game/RestorativeErrorOutOfRange"
       21 [-]: LOADN R5 2   ; var5 = 2
@@ -58,7 +58,7 @@ L 3:  35 [-]: MOVE R11 R8  ; var11 = var8
       36 [-]: NAMECALL R9 R2 K9; var10 = var2; var9 = var2[0xBEBAD19F]
       37 [-]: CALL R9 3 2  ; var9 = var9(var10, var11)
       38 [-]: GETIMPORT R10 11; var10 = 0xBD3ECD08
-      39 [-]: JUMPIFNOTLT R10 R9 L5; goto L5 if var10 >= var1313102
+      39 [-]: JUMPIFNOTLT R10 R9 L5; goto L5 if var10 >= var1313057
       40 [-]: GETIMPORT R9 20; var9 = _T["fomorianNegator"]
       41 [-]: JUMPXEQKNIL R9 L4 NOT; 
       42 [-]: GETIMPORT R9 21; var9 = _T
@@ -110,12 +110,12 @@ L 8:  80 [-]: LOADB R3 1   ; var3 = true
 ; Is_vararg:       0
 ; Max Stack Size:  16
 
-       0 [-]: FASTCALL1 62 R0 L0; 
+       0 [-]: FASTCALL1 64 R0 L0; 
        1 [-]: MOVE R3 R0   ; var3 = var0
        2 [-]: GETIMPORT R2 1; var2 = 0x7B998233
        3 [-]: CALL R2 2 2  ; var2 = var2(var3)
 L 0:   4 [-]: JUMPIF R2 L2 ; goto L2 if var2
-       5 [-]: FASTCALL1 62 R1 L1; 
+       5 [-]: FASTCALL1 64 R1 L1; 
        6 [-]: MOVE R3 R1   ; var3 = var1
        7 [-]: GETIMPORT R2 1; var2 = 0x7B998233
        8 [-]: CALL R2 2 2  ; var2 = var2(var3)
@@ -137,9 +137,9 @@ L 3:  11 [-]: GETIMPORT R2 3; var2 = 0x89326C93
       24 [-]: MOVE R5 R3   ; var5 = var3
       25 [-]: CALL R4 2 4  ; var4, var5, var6 = var4(var5)
       26 [-]: FORGPREP_INEXT R4 L9; 
-L 4:  27 [-]: JUMPIFEQ R8 R0 L9; goto L9 if var8 == var985678
+L 4:  27 [-]: JUMPIFEQ R8 R0 L9; goto L9 if var8 == var985633
       28 [-]: GETIMPORT R10 15; var10 = 0x2CB70B14
-      29 [-]: FASTCALL1 62 R10 L5; 
+      29 [-]: FASTCALL1 64 R10 L5; 
       30 [-]: GETIMPORT R9 1; var9 = 0x7B998233
       31 [-]: CALL R9 2 2  ; var9 = var9(var10)
 L 5:  32 [-]: JUMPIF R9 L6 ; goto L6 if var9
@@ -159,7 +159,7 @@ L 6:  40 [-]: GETIMPORT R9 3; var9 = 0x89326C93
       46 [-]: MOVE R11 R1  ; var11 = var1
       47 [-]: NAMECALL R9 R9 K19; var10 = var9; var9 = var9[0x40A5B7AF]
       48 [-]: CALL R9 3 1  ; var9(var10, var11)
-L 7:  49 [-]: FASTCALL1 62 R2 L8; 
+L 7:  49 [-]: FASTCALL1 64 R2 L8; 
       50 [-]: MOVE R10 R2  ; var10 = var2
       51 [-]: GETIMPORT R9 1; var9 = 0x7B998233
       52 [-]: CALL R9 2 2  ; var9 = var9(var10)
@@ -168,41 +168,42 @@ L 8:  53 [-]: JUMPIF R9 L9 ; goto L9 if var9
       55 [-]: NAMECALL R9 R8 K20; var10 = var8; var9 = var8[0xBEBAD19F]
       56 [-]: CALL R9 3 2  ; var9 = var9(var10, var11)
       57 [-]: GETIMPORT R10 22; var10 = 0xBD3ECD08
-      58 [-]: JUMPIFNOTLE R9 R10 L9; goto L9 if var9 > var592206
+      58 [-]: JUMPIFNOTLE R9 R10 L9; goto L9 if var9 > var592161
       59 [-]: GETIMPORT R9 9; var9 = _T
       60 [-]: GETIMPORT R11 24; var11 = _T["gPlayersInRange"]
       61 [-]: ADDK R10 R11 K23; var10 = var11 + 1
       62 [-]: SETTABLEKS R10 R9 K10; var10["gPlayersInRange"] = var9
 L 9:  63 [-]: FORGLOOP R4 L4 2 [inext]; 
       64 [-]: GETIMPORT R5 15; var5 = 0x2CB70B14
-      65 [-]: FASTCALL1 62 R5 L10; 
+      65 [-]: FASTCALL1 64 R5 L10; 
       66 [-]: GETIMPORT R4 1; var4 = 0x7B998233
       67 [-]: CALL R4 2 2  ; var4 = var4(var5)
-L10:  68 [-]: JUMPIF R4 L11; goto L11 if var4
-      69 [-]: GETIMPORT R6 26; var6 = 0x64FB1586
-      70 [-]: GETIMPORT R7 28; var7 = 0x287068AC
-      71 [-]: CALL R6 2 2  ; var6 = var6(var7)
-      72 [-]: GETIMPORT R9 15; var9 = 0x2CB70B14
-      73 [-]: LOADB R10 0  ; var10 = false
-      74 [-]: LOADN R11 3  ; var11 = 3
-      75 [-]: LOADN R12 1  ; var12 = 1
-      76 [-]: LOADB R13 1  ; var13 = true
-      77 [-]: NAMECALL R7 R0 K16; var8 = var0; var7 = var0[0x7027C544]
-      78 [-]: CALL R7 7 0  ; var7, ... = var7(var8, var9, var10, var11, var12, var13)
-      79 [-]: NAMECALL R4 R0 K29; var5 = var0; var4 = var0[0x21B4C60E]
-      80 [-]: CALL R4 0 1  ; var4(var5, ...)
-L11:  81 [-]: FASTCALL1 62 R2 L12; 
-      82 [-]: MOVE R5 R2   ; var5 = var2
-      83 [-]: GETIMPORT R4 1; var4 = 0x7B998233
-      84 [-]: CALL R4 2 2  ; var4 = var4(var5)
-L12:  85 [-]: JUMPIF R4 L13; goto L13 if var4
-      86 [-]: LOADK R6 K30 ; var6 = "TriggerPort"
-      87 [-]: NAMECALL R4 R2 K31; var5 = var2; var4 = var2[0x8EB2112D]
-      88 [-]: CALL R4 3 1  ; var4(var5, var6)
-      89 [-]: GETIMPORT R4 9; var4 = _T
-      90 [-]: LOADB R5 1   ; var5 = true
-      91 [-]: SETTABLEKS R5 R4 K32; var5["gUsedFomorianNegator"] = var4
-L13:  92 [-]: RETURN R0 0  ; 
+L10:  68 [-]: JUMPIF R4 L12; goto L12 if var4
+      69 [-]: GETIMPORT R7 26; var7 = 0x287068AC
+      70 [-]: FASTCALL1 63 R7 L11; 
+      71 [-]: GETIMPORT R6 28; var6 = 0x64FB1586
+      72 [-]: CALL R6 2 2  ; var6 = var6(var7)
+L11:  73 [-]: GETIMPORT R9 15; var9 = 0x2CB70B14
+      74 [-]: LOADB R10 0  ; var10 = false
+      75 [-]: LOADN R11 3  ; var11 = 3
+      76 [-]: LOADN R12 1  ; var12 = 1
+      77 [-]: LOADB R13 1  ; var13 = true
+      78 [-]: NAMECALL R7 R0 K16; var8 = var0; var7 = var0[0x7027C544]
+      79 [-]: CALL R7 7 0  ; var7, ... = var7(var8, var9, var10, var11, var12, var13)
+      80 [-]: NAMECALL R4 R0 K29; var5 = var0; var4 = var0[0x21B4C60E]
+      81 [-]: CALL R4 0 1  ; var4(var5, ...)
+L12:  82 [-]: FASTCALL1 64 R2 L13; 
+      83 [-]: MOVE R5 R2   ; var5 = var2
+      84 [-]: GETIMPORT R4 1; var4 = 0x7B998233
+      85 [-]: CALL R4 2 2  ; var4 = var4(var5)
+L13:  86 [-]: JUMPIF R4 L14; goto L14 if var4
+      87 [-]: LOADK R6 K30 ; var6 = "TriggerPort"
+      88 [-]: NAMECALL R4 R2 K31; var5 = var2; var4 = var2[0x8EB2112D]
+      89 [-]: CALL R4 3 1  ; var4(var5, var6)
+      90 [-]: GETIMPORT R4 9; var4 = _T
+      91 [-]: LOADB R5 1   ; var5 = true
+      92 [-]: SETTABLEKS R5 R4 K32; var5["gUsedFomorianNegator"] = var4
+L14:  93 [-]: RETURN R0 0  ; 
 
 
 

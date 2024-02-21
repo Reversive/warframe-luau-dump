@@ -244,45 +244,47 @@ L 3: 111 [-]: SETTABLEKS R13 R12 K61; var13["mForceCallout"] = var12
      220 [-]: SETTABLEKS R13 R12 K129; var13["SetPosition"] = var12
      221 [-]: DUPCLOSURE R13 K130; 
      222 [-]: SETTABLEKS R13 R12 K131; var13["IsPlayingWithController"] = var12
-     223 [-]: NEWCLOSURE R13 P33; 
-     224 [-]: CAPTURE VAL R10; 
-     225 [-]: SETTABLEKS R13 R12 K132; var13["UpdateSpecialModeMaterials"] = var12
-     226 [-]: NEWCLOSURE R13 P34; 
-     227 [-]: CAPTURE VAL R10; 
-     228 [-]: SETTABLEKS R13 R12 K133; var13["SetSpecialMode"] = var12
-     229 [-]: DUPCLOSURE R13 K134; 
-     230 [-]: SETTABLEKS R13 R12 K135; var13["SetVisibleRangeMaterials"] = var12
+     223 [-]: DUPCLOSURE R13 K132; 
+     224 [-]: SETTABLEKS R13 R12 K133; var13["KBMControlsDisabled"] = var12
+     225 [-]: NEWCLOSURE R13 P34; 
+     226 [-]: CAPTURE VAL R10; 
+     227 [-]: SETTABLEKS R13 R12 K134; var13["UpdateSpecialModeMaterials"] = var12
+     228 [-]: NEWCLOSURE R13 P35; 
+     229 [-]: CAPTURE VAL R10; 
+     230 [-]: SETTABLEKS R13 R12 K135; var13["SetSpecialMode"] = var12
      231 [-]: DUPCLOSURE R13 K136; 
-     232 [-]: SETTABLEKS R13 R12 K137; var13["ValueChanged"] = var12
+     232 [-]: SETTABLEKS R13 R12 K137; var13["SetVisibleRangeMaterials"] = var12
      233 [-]: DUPCLOSURE R13 K138; 
-     234 [-]: SETTABLEKS R13 R12 K139; var13["SetPressedCallback"] = var12
+     234 [-]: SETTABLEKS R13 R12 K139; var13["ValueChanged"] = var12
      235 [-]: DUPCLOSURE R13 K140; 
-     236 [-]: SETTABLEKS R13 R12 K141; var13["SetReleasedCallback"] = var12
-     237 [-]: GETIMPORT R13 143; var13 = 0xCFC01047
-     238 [-]: MOVE R14 R8  ; var14 = var8
-     239 [-]: CALL R13 2 4 ; var13, var14, var15 = var13(var14)
-     240 [-]: FORGPREP_NEXT R13 L5; 
-L 4: 241 [-]: SETTABLE R17 R12 R16; var17[var12] = var16
-L 5: 242 [-]: FORGLOOP R13 L4 2; 
-     243 [-]: MOVE R17 R1  ; var17 = var1
-     244 [-]: LOADN R18 0  ; var18 = 0
-     245 [-]: NAMECALL R15 R0 K144; var16 = var0; var15 = var0[0x91A24E4B]
-     246 [-]: CALL R15 4 2 ; var15 = var15(var16, var17, var18)
-     247 [-]: MOVE R18 R1  ; var18 = var1
-     248 [-]: LOADN R19 1  ; var19 = 1
-     249 [-]: NAMECALL R16 R0 K144; var17 = var0; var16 = var0[0x91A24E4B]
-     250 [-]: CALL R16 4 0 ; var16, ... = var16(var17, var18, var19)
-     251 [-]: NAMECALL R13 R12 K145; var14 = var12; var13 = var12[0x9307AA51]
-     252 [-]: CALL R13 0 1 ; var13(var14, ...)
-     253 [-]: MOVE R15 R3  ; var15 = var3
-     254 [-]: NAMECALL R13 R12 K146; var14 = var12; var13 = var12[0xE91C55EC]
-     255 [-]: CALL R13 3 1 ; var13(var14, var15)
-     256 [-]: NAMECALL R13 R12 K147; var14 = var12; var13 = var12[0x71E9AC81]
-     257 [-]: CALL R13 2 1 ; var13(var14)
-     258 [-]: LOADB R15 1  ; var15 = true
-     259 [-]: NAMECALL R13 R12 K148; var14 = var12; var13 = var12[0xB678E4BD]
-     260 [-]: CALL R13 3 1 ; var13(var14, var15)
-     261 [-]: RETURN R12 1 ; 
+     236 [-]: SETTABLEKS R13 R12 K141; var13["SetPressedCallback"] = var12
+     237 [-]: DUPCLOSURE R13 K142; 
+     238 [-]: SETTABLEKS R13 R12 K143; var13["SetReleasedCallback"] = var12
+     239 [-]: GETIMPORT R13 145; var13 = 0xCFC01047
+     240 [-]: MOVE R14 R8  ; var14 = var8
+     241 [-]: CALL R13 2 4 ; var13, var14, var15 = var13(var14)
+     242 [-]: FORGPREP_NEXT R13 L5; 
+L 4: 243 [-]: SETTABLE R17 R12 R16; var17[var12] = var16
+L 5: 244 [-]: FORGLOOP R13 L4 2; 
+     245 [-]: MOVE R17 R1  ; var17 = var1
+     246 [-]: LOADN R18 0  ; var18 = 0
+     247 [-]: NAMECALL R15 R0 K146; var16 = var0; var15 = var0[0x91A24E4B]
+     248 [-]: CALL R15 4 2 ; var15 = var15(var16, var17, var18)
+     249 [-]: MOVE R18 R1  ; var18 = var1
+     250 [-]: LOADN R19 1  ; var19 = 1
+     251 [-]: NAMECALL R16 R0 K146; var17 = var0; var16 = var0[0x91A24E4B]
+     252 [-]: CALL R16 4 0 ; var16, ... = var16(var17, var18, var19)
+     253 [-]: NAMECALL R13 R12 K147; var14 = var12; var13 = var12[0x9307AA51]
+     254 [-]: CALL R13 0 1 ; var13(var14, ...)
+     255 [-]: MOVE R15 R3  ; var15 = var3
+     256 [-]: NAMECALL R13 R12 K148; var14 = var12; var13 = var12[0xE91C55EC]
+     257 [-]: CALL R13 3 1 ; var13(var14, var15)
+     258 [-]: NAMECALL R13 R12 K149; var14 = var12; var13 = var12[0x71E9AC81]
+     259 [-]: CALL R13 2 1 ; var13(var14)
+     260 [-]: LOADB R15 1  ; var15 = true
+     261 [-]: NAMECALL R13 R12 K150; var14 = var12; var13 = var12[0xB678E4BD]
+     262 [-]: CALL R13 3 1 ; var13(var14, var15)
+     263 [-]: RETURN R12 1 ; 
 
 
 

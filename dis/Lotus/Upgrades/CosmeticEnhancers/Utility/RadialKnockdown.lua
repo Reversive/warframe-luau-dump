@@ -35,7 +35,7 @@ L 0:  13 [-]: MOVE R13 R10 ; var13 = var10
       15 [-]: CALL R11 3 2 ; var11 = var11(var12, var13)
       16 [-]: GETIMPORT R13 9; var13 = 0x908A73C0
       17 [-]: GETTABLE R12 R13 R2; var12 = var13[var2]
-      18 [-]: JUMPIFNOTLT R11 R12 L1; goto L1 if var11 >= var638192709
+      18 [-]: JUMPIFNOTLT R11 R12 L1; goto L1 if var11 >= var638192716
       19 [-]: NAMECALL R12 R10 K10; var13 = var10; var12 = var10[0xF6EBD926]
       20 [-]: CALL R12 2 2 ; var12 = var12(var13)
       21 [-]: NAMECALL R13 R0 K10; var14 = var0; var13 = var0[0xF6EBD926]

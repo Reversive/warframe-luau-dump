@@ -26,7 +26,7 @@
 
        0 [-]: LOADN R2 0   ; var2 = 0
 L 0:   1 [-]: LOADN R3 1   ; var3 = 1
-       2 [-]: JUMPIFNOTLT R2 R3 L1; goto L1 if var2 >= var66382
+       2 [-]: JUMPIFNOTLT R2 R3 L1; goto L1 if var2 >= var66337
        3 [-]: GETIMPORT R3 1; var3 = 0x9BAFFFE3
        4 [-]: GETIMPORT R4 3; var4 = 0x825F810A
        5 [-]: GETIMPORT R5 5; var5 = 0x0830F8E8
@@ -55,7 +55,7 @@ L 1:  20 [-]: RETURN R0 0  ;
 ; Max Stack Size:  3
 
        0 [-]: GETIMPORT R2 2; var2 = _T["gPlatformChallengeAllowContactNotify"]
-       1 [-]: FASTCALL1 62 R2 L0; 
+       1 [-]: FASTCALL1 64 R2 L0; 
        2 [-]: GETIMPORT R1 4; var1 = 0x7B998233
        3 [-]: CALL R1 2 2  ; var1 = var1(var2)
 L 0:   4 [-]: JUMPIF R1 L1 ; goto L1 if var1
@@ -78,7 +78,7 @@ L 1:  11 [-]: RETURN R0 0  ;
        0 [-]: GETIMPORT R1 1; var1 = 0xCBD666E1
        1 [-]: LOADN R2 0   ; var2 = 0
        2 [-]: CALL R1 2 1  ; var1(var2)
-       3 [-]: FASTCALL1 62 R0 L0; 
+       3 [-]: FASTCALL1 64 R0 L0; 
        4 [-]: MOVE R2 R0   ; var2 = var0
        5 [-]: GETIMPORT R1 3; var1 = 0x7B998233
        6 [-]: CALL R1 2 2  ; var1 = var1(var2)
@@ -100,11 +100,11 @@ L 2:  18 [-]: GETIMPORT R3 8; var3 = 0xD30FFD8D
       22 [-]: LOADN R1 0   ; var1 = 0
       23 [-]: LOADN R2 1   ; var2 = 1
       24 [-]: LOADN R3 1   ; var3 = 1
-      25 [-]: LOADK R4 K10 ; var4 = 0.01
+      25 [-]: LOADK R4 K10 ; var4 = 0.0099999997764825821
 L 3:  26 [-]: LOADN R5 0   ; var5 = 0
-      27 [-]: JUMPIFNOTLT R5 R4 L4; goto L4 if var5 >= var66887
+      27 [-]: JUMPIFNOTLT R5 R4 L4; goto L4 if var5 >= var66864
       28 [-]: LOADN R5 1   ; var5 = 1
-      29 [-]: JUMPIFNOTLT R4 R5 L4; goto L4 if var4 >= var853326
+      29 [-]: JUMPIFNOTLT R4 R5 L4; goto L4 if var4 >= var853281
       30 [-]: GETIMPORT R5 13; var5 = _T["gPlatformChallengeAllowContactNotify"]
       31 [-]: JUMPIFNOT R5 L4; goto L4 if not var5
       32 [-]: GETIMPORT R5 15; var5 = 0x9BAFFFE3
@@ -133,11 +133,11 @@ L 4:  50 [-]: GETIMPORT R5 13; var5 = _T["gPlatformChallengeAllowContactNotify"]
       55 [-]: CALL R5 4 1  ; var5(var6, var7, var8)
       56 [-]: JUMP L8      ; goto L8
 L 5:  57 [-]: LOADN R5 0   ; var5 = 0
-      58 [-]: JUMPIFNOTLT R4 R5 L6; goto L6 if var4 >= var656389
-      59 [-]: LOADK R4 K10 ; var4 = 0.01
+      58 [-]: JUMPIFNOTLT R4 R5 L6; goto L6 if var4 >= var656455
+      59 [-]: LOADK R4 K10 ; var4 = 0.0099999997764825821
 L 6:  60 [-]: LOADN R5 1   ; var5 = 1
-      61 [-]: JUMPIFNOTLT R5 R4 L7; goto L7 if var5 >= var1639429
-      62 [-]: LOADK R4 K25 ; var4 = 0.98999999999999999
+      61 [-]: JUMPIFNOTLT R5 R4 L7; goto L7 if var5 >= var1639495
+      62 [-]: LOADK R4 K25 ; var4 = 0.99000000953674316
 L 7:  63 [-]: MULK R2 R2 K26; var2 = var2 * -1
       64 [-]: ADDK R1 R1 K27; var1 = var1 + 1
       65 [-]: GETIMPORT R6 30; var6 = 0xF3916B5A
@@ -145,7 +145,7 @@ L 7:  63 [-]: MULK R2 R2 K26; var2 = var2 * -1
       67 [-]: MUL R3 R3 R5 ; var3 = var3 * var5
       68 [-]: GETIMPORT R6 33; var6 = 0xEA9AC937
       69 [-]: MULK R5 R6 K31; var5 = var6 * 2
-      70 [-]: JUMPIFLT R5 R1 L8; goto L8 if var5 < var-4194260
+      70 [-]: JUMPIFLT R5 R1 L8; goto L8 if var5 < var-4194234
       71 [-]: JUMPBACK L3  ; goto L3
 L 8:  72 [-]: GETIMPORT R5 35; var5 = 0x89326C93
       73 [-]: NAMECALL R5 R5 K36; var6 = var5; var5 = var5[0x78298275]

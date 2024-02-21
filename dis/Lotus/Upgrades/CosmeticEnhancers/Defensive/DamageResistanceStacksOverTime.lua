@@ -100,7 +100,7 @@ L 2:  39 [-]: GETTABLE R2 R3 R4; var2 = var3[var4]
 ; Is_vararg:       0
 ; Max Stack Size:  24
 
-       0 [-]: FASTCALL1 62 R0 L0; 
+       0 [-]: FASTCALL1 64 R0 L0; 
        1 [-]: MOVE R6 R0   ; var6 = var0
        2 [-]: GETIMPORT R5 1; var5 = 0x7B998233
        3 [-]: CALL R5 2 2  ; var5 = var5(var6)
@@ -157,7 +157,7 @@ L 5:  39 [-]: GETTABLE R7 R8 R9; var7 = var8[var9]
       54 [-]: CALL R10 2 2 ; var10 = var10(var11)
       55 [-]: NAMECALL R11 R0 K24; var12 = var0; var11 = var0[0x1AC1655C]
       56 [-]: CALL R11 2 2 ; var11 = var11(var12)
-L 6:  57 [-]: FASTCALL1 62 R0 L7; 
+L 6:  57 [-]: FASTCALL1 64 R0 L7; 
       58 [-]: MOVE R13 R0  ; var13 = var0
       59 [-]: GETIMPORT R12 1; var12 = 0x7B998233
       60 [-]: CALL R12 2 2 ; var12 = var12(var13)
@@ -172,7 +172,7 @@ L 7:  61 [-]: JUMPIF R12 L22; goto L22 if var12
       69 [-]: GETIMPORT R13 27; var13 = 0x5BCED4C4[0x55F27C30]
       70 [-]: CALL R13 2 2 ; var13 = var13(var14)
 L 8:  71 [-]: LOADN R14 0  ; var14 = 0
-      72 [-]: JUMPIFNOTLT R14 R13 L12; goto L12 if var14 >= var50924619
+      72 [-]: JUMPIFNOTLT R14 R13 L12; goto L12 if var14 >= var50924605
       73 [-]: FASTCALL1 12 R9 L9; 
       74 [-]: MOVE R14 R9  ; var14 = var9
       75 [-]: GETIMPORT R13 27; var13 = 0x5BCED4C4[0x55F27C30]
@@ -227,16 +227,16 @@ L17: 123 [-]: FASTCALL1 12 R9 L18;
      124 [-]: MOVE R15 R9  ; var15 = var9
      125 [-]: GETIMPORT R14 27; var14 = 0x5BCED4C4[0x55F27C30]
      126 [-]: CALL R14 2 2 ; var14 = var14(var15)
-L18: 127 [-]: LOADK R16 K41; var16 = 0.98999999999999999
+L18: 127 [-]: LOADK R16 K41; var16 = 0.99000000953674316
      128 [-]: MUL R17 R13 R6; var17 = var13 * var6
      129 [-]: FASTCALL2 19 R16 R17 L19; 
      130 [-]: GETIMPORT R15 11; var15 = 0x5BCED4C4[0xAC1B386A]
      131 [-]: CALL R15 3 2 ; var15 = var15(var16, var17)
-L19: 132 [-]: JUMPIFEQ R14 R13 L21; goto L21 if var14 == var487526403
+L19: 132 [-]: JUMPIFEQ R14 R13 L21; goto L21 if var14 == var487526469
      133 [-]: MULK R16 R15 K29; var16 = var15 * 100
      134 [-]: SETTABLEKS R16 R8 K28; var16["buffData"] = var8
      135 [-]: LOADN R16 0  ; var16 = 0
-     136 [-]: JUMPIFNOTLT R16 R13 L20; goto L20 if var16 >= var528918
+     136 [-]: JUMPIFNOTLT R16 R13 L20; goto L20 if var16 >= var528942
      137 [-]: MOVE R18 R8  ; var18 = var8
      138 [-]: LOADB R19 1  ; var19 = true
      139 [-]: LOADB R20 0  ; var20 = false
@@ -274,7 +274,7 @@ L22: 164 [-]: RETURN R0 0  ;
 ; Is_vararg:       0
 ; Max Stack Size:  12
 
-       0 [-]: FASTCALL1 62 R0 L0; 
+       0 [-]: FASTCALL1 64 R0 L0; 
        1 [-]: MOVE R6 R0   ; var6 = var0
        2 [-]: GETIMPORT R5 1; var5 = 0x7B998233
        3 [-]: CALL R5 2 2  ; var5 = var5(var6)
@@ -324,12 +324,12 @@ L 3:  40 [-]: RETURN R0 0  ;
 ; Is_vararg:       0
 ; Max Stack Size:  20
 
-       0 [-]: FASTCALL1 62 R0 L0; 
+       0 [-]: FASTCALL1 64 R0 L0; 
        1 [-]: MOVE R6 R0   ; var6 = var0
        2 [-]: GETIMPORT R5 1; var5 = 0x7B998233
        3 [-]: CALL R5 2 2  ; var5 = var5(var6)
 L 0:   4 [-]: JUMPIF R5 L2 ; goto L2 if var5
-       5 [-]: FASTCALL1 62 R4 L1; 
+       5 [-]: FASTCALL1 64 R4 L1; 
        6 [-]: MOVE R6 R4   ; var6 = var4
        7 [-]: GETIMPORT R5 1; var5 = 0x7B998233
        8 [-]: CALL R5 2 2  ; var5 = var5(var6)
@@ -408,7 +408,7 @@ L 8:  56 [-]: GETTABLE R6 R7 R8; var6 = var7[var8]
       81 [-]: GETTABLE R9 R10 R11; var9 = var10[var11]
       82 [-]: GETTABLEKS R8 R9 K13; var8 = var9["NumBuffs"]
       83 [-]: LOADN R9 0   ; var9 = 0
-      84 [-]: JUMPIFNOTLT R9 R8 L13; goto L13 if var9 >= var2296142
+      84 [-]: JUMPIFNOTLT R9 R8 L13; goto L13 if var9 >= var2296097
       85 [-]: GETIMPORT R9 35; var9 = 0x20AC4C71
       86 [-]: GETIMPORT R12 35; var12 = 0x20AC4C71
       87 [-]: LENGTH R11 R12; var11 = #var12
@@ -425,7 +425,7 @@ L 9:  92 [-]: GETTABLE R8 R9 R10; var8 = var9[var10]
       98 [-]: GETIMPORT R11 21; var11 = 0x5BCED4C4[0xAC1B386A]
       99 [-]: CALL R11 3 2 ; var11 = var11(var12, var13)
 L10: 100 [-]: GETTABLE R9 R10 R11; var9 = var10[var11]
-     101 [-]: LOADK R11 K38; var11 = 0.98999999999999999
+     101 [-]: LOADK R11 K38; var11 = 0.99000000953674316
      102 [-]: GETIMPORT R17 8; var17 = _T["DamageResistancePerStack"]
      103 [-]: NAMECALL R18 R0 K10; var19 = var0; var18 = var0[0x388577D5]
      104 [-]: CALL R18 2 2 ; var18 = var18(var19)
@@ -458,7 +458,7 @@ L14: 124 [-]: RETURN R0 0  ;
 ; Is_vararg:       0
 ; Max Stack Size:  23
 
-       0 [-]: FASTCALL1 62 R0 L0; 
+       0 [-]: FASTCALL1 64 R0 L0; 
        1 [-]: MOVE R6 R0   ; var6 = var0
        2 [-]: GETIMPORT R5 1; var5 = 0x7B998233
        3 [-]: CALL R5 2 2  ; var5 = var5(var6)
@@ -467,9 +467,9 @@ L 0:   4 [-]: JUMPIFNOT R5 L1; goto L1 if not var5
 L 1:   6 [-]: NAMECALL R5 R0 K2; var6 = var0; var5 = var0[0xADBDC520]
        7 [-]: CALL R5 2 2  ; var5 = var5(var6)
        8 [-]: GETIMPORT R6 4; var6 = 0x89326C93
-       9 [-]: JUMPIFEQ R5 R6 L2; goto L2 if var5 == var65581
+       9 [-]: JUMPIFEQ R5 R6 L2; goto L2 if var5 == var65571
       10 [-]: RETURN R0 0  ; 
-L 2:  11 [-]: FASTCALL1 62 R1 L3; 
+L 2:  11 [-]: FASTCALL1 64 R1 L3; 
       12 [-]: MOVE R6 R1   ; var6 = var1
       13 [-]: GETIMPORT R5 1; var5 = 0x7B998233
       14 [-]: CALL R5 2 2  ; var5 = var5(var6)
@@ -545,12 +545,12 @@ L11:  82 [-]: GETTABLE R8 R9 R10; var8 = var9[var10]
       84 [-]: CALL R9 2 2  ; var9 = var9(var10)
       85 [-]: NAMECALL R9 R9 K40; var10 = var9; var9 = var9[0xF7D48EE0]
       86 [-]: CALL R9 2 2  ; var9 = var9(var10)
-L12:  87 [-]: FASTCALL1 62 R0 L13; 
+L12:  87 [-]: FASTCALL1 64 R0 L13; 
       88 [-]: MOVE R11 R0  ; var11 = var0
       89 [-]: GETIMPORT R10 1; var10 = 0x7B998233
       90 [-]: CALL R10 2 2 ; var10 = var10(var11)
 L13:  91 [-]: JUMPIF R10 L33; goto L33 if var10
-      92 [-]: FASTCALL1 62 R9 L14; 
+      92 [-]: FASTCALL1 64 R9 L14; 
       93 [-]: MOVE R11 R9  ; var11 = var9
       94 [-]: GETIMPORT R10 1; var10 = 0x7B998233
       95 [-]: CALL R10 2 2 ; var10 = var10(var11)
@@ -567,7 +567,7 @@ L14:  96 [-]: JUMPIF R10 L33; goto L33 if var10
      106 [-]: GETTABLE R13 R14 R6; var13 = var14[var6]
      107 [-]: GETTABLEKS R12 R13 K21; var12 = var13["Active"]
      108 [-]: LOADN R13 0  ; var13 = 0
-     109 [-]: JUMPIFLT R13 R12 L15; goto L15 if var13 < var1969230
+     109 [-]: JUMPIFLT R13 R12 L15; goto L15 if var13 < var1969185
      110 [-]: GETIMPORT R12 30; var12 = 0xBC3C136F
      111 [-]: JUMPIF R12 L32; goto L32 if var12
 L15: 112 [-]: GETIMPORT R12 30; var12 = 0xBC3C136F
@@ -583,7 +583,7 @@ L16: 121 [-]: GETIMPORT R14 18; var14 = _T["DamageResistancePerStack"]
      122 [-]: GETTABLE R13 R14 R6; var13 = var14[var6]
      123 [-]: GETTABLEKS R12 R13 K21; var12 = var13["Active"]
      124 [-]: LOADN R13 0  ; var13 = 0
-     125 [-]: JUMPIFLT R13 R12 L17; goto L17 if var13 < var1969230
+     125 [-]: JUMPIFLT R13 R12 L17; goto L17 if var13 < var1969185
      126 [-]: GETIMPORT R12 30; var12 = 0xBC3C136F
      127 [-]: JUMPIF R12 L31; goto L31 if var12
 L17: 128 [-]: GETIMPORT R12 9; var12 = 0xC8802016
@@ -600,7 +600,7 @@ L18: 132 [-]: GETIMPORT R20 18; var20 = _T["DamageResistancePerStack"]
      139 [-]: GETTABLEKS R18 R19 K22; var18 = var19["Parkour"]
      140 [-]: GETTABLE R17 R18 R16; var17 = var18[var16]
      141 [-]: LOADN R18 0  ; var18 = 0
-     142 [-]: JUMPIFNOTLT R18 R17 L19; goto L19 if var18 >= var1184590
+     142 [-]: JUMPIFNOTLT R18 R17 L19; goto L19 if var18 >= var1184545
      143 [-]: GETIMPORT R19 18; var19 = _T["DamageResistancePerStack"]
      144 [-]: GETTABLE R18 R19 R6; var18 = var19[var6]
      145 [-]: GETTABLEKS R17 R18 K22; var17 = var18["Parkour"]
@@ -615,7 +615,7 @@ L19: 152 [-]: GETIMPORT R20 18; var20 = _T["DamageResistancePerStack"]
      154 [-]: GETTABLEKS R18 R19 K22; var18 = var19["Parkour"]
      155 [-]: GETTABLE R17 R18 R16; var17 = var18[var16]
      156 [-]: LOADN R18 0  ; var18 = 0
-     157 [-]: JUMPIFNOTLT R18 R17 L20; goto L20 if var18 >= var722144040
+     157 [-]: JUMPIFNOTLT R18 R17 L20; goto L20 if var18 >= var722144008
      158 [-]: ADDK R11 R11 K43; var11 = var11 + 1
      159 [-]: JUMP L22     ; goto L22
 L20: 160 [-]: GETIMPORT R19 18; var19 = _T["DamageResistancePerStack"]
@@ -624,7 +624,7 @@ L20: 160 [-]: GETIMPORT R19 18; var19 = _T["DamageResistancePerStack"]
      163 [-]: LOADNIL R18  ; var18 = nil
      164 [-]: SETTABLE R18 R17 R16; var18[var17] = var16
      165 [-]: GETIMPORT R18 45; var18 = 0x50A10319
-     166 [-]: FASTCALL1 62 R18 L21; 
+     166 [-]: FASTCALL1 64 R18 L21; 
      167 [-]: GETIMPORT R17 1; var17 = 0x7B998233
      168 [-]: CALL R17 2 2 ; var17 = var17(var18)
 L21: 169 [-]: JUMPIF R17 L22; goto L22 if var17
@@ -637,9 +637,9 @@ L22: 175 [-]: FORGLOOP R12 L18 2 [inext];
      176 [-]: GETIMPORT R14 18; var14 = _T["DamageResistancePerStack"]
      177 [-]: GETTABLE R13 R14 R6; var13 = var14[var6]
      178 [-]: GETTABLEKS R12 R13 K20; var12 = var13["NumBuffs"]
-     179 [-]: JUMPIFEQ R12 R11 L30; goto L30 if var12 == var3143
+     179 [-]: JUMPIFEQ R12 R11 L30; goto L30 if var12 == var3120
      180 [-]: LOADN R12 0  ; var12 = 0
-     181 [-]: JUMPIFNOTLT R12 R11 L28; goto L28 if var12 >= var3280206
+     181 [-]: JUMPIFNOTLT R12 R11 L28; goto L28 if var12 >= var3280161
      182 [-]: GETIMPORT R13 50; var13 = 0x20AC4C71
      183 [-]: GETIMPORT R16 50; var16 = 0x20AC4C71
      184 [-]: LENGTH R15 R16; var15 = #var16
@@ -648,7 +648,7 @@ L22: 175 [-]: FORGLOOP R12 L18 2 [inext];
      187 [-]: GETIMPORT R14 38; var14 = 0x5BCED4C4[0xAC1B386A]
      188 [-]: CALL R14 3 2 ; var14 = var14(var15, var16)
 L23: 189 [-]: GETTABLE R12 R13 R14; var12 = var13[var14]
-     190 [-]: LOADK R14 K51; var14 = 0.98999999999999999
+     190 [-]: LOADK R14 K51; var14 = 0.99000000953674316
      191 [-]: FASTCALL2 19 R12 R11 L24; 
      192 [-]: MOVE R17 R12 ; var17 = var12
      193 [-]: MOVE R18 R11 ; var18 = var11
@@ -739,13 +739,13 @@ L33: 271 [-]: RETURN R0 0  ;
 ; Is_vararg:       0
 ; Max Stack Size:  15
 
-       0 [-]: FASTCALL1 62 R0 L0; 
+       0 [-]: FASTCALL1 64 R0 L0; 
        1 [-]: MOVE R6 R0   ; var6 = var0
        2 [-]: GETIMPORT R5 1; var5 = 0x7B998233
        3 [-]: CALL R5 2 2  ; var5 = var5(var6)
 L 0:   4 [-]: JUMPIFNOT R5 L1; goto L1 if not var5
        5 [-]: RETURN R0 0  ; 
-L 1:   6 [-]: FASTCALL1 62 R1 L2; 
+L 1:   6 [-]: FASTCALL1 64 R1 L2; 
        7 [-]: MOVE R6 R1   ; var6 = var1
        8 [-]: GETIMPORT R5 1; var5 = 0x7B998233
        9 [-]: CALL R5 2 2  ; var5 = var5(var6)
@@ -763,7 +763,7 @@ L 4:  20 [-]: NAMECALL R12 R9 K9; var13 = var9; var12 = var9[0xCDE10C4A]
       21 [-]: CALL R12 2 0 ; var12, ... = var12(var13)
       22 [-]: NAMECALL R10 R1 K10; var11 = var1; var10 = var1[0xEAE4F533]
       23 [-]: CALL R10 0 2 ; var10 = var10(var11, ...)
-      24 [-]: FASTCALL1 62 R10 L5; 
+      24 [-]: FASTCALL1 64 R10 L5; 
       25 [-]: MOVE R12 R10 ; var12 = var10
       26 [-]: GETIMPORT R11 1; var11 = 0x7B998233
       27 [-]: CALL R11 2 2 ; var11 = var11(var12)
@@ -792,7 +792,7 @@ L 8:  37 [-]: GETIMPORT R5 14; var5 = _T["DamageResistancePerStack"]
 ; Max Stack Size:  10
 
        0 [-]: GETIMPORT R6 1; var6 = 0xBE190284
-       1 [-]: FASTCALL1 62 R6 L0; 
+       1 [-]: FASTCALL1 64 R6 L0; 
        2 [-]: GETIMPORT R5 3; var5 = 0x7B998233
        3 [-]: CALL R5 2 2  ; var5 = var5(var6)
 L 0:   4 [-]: JUMPIF R5 L1 ; goto L1 if var5
@@ -807,7 +807,7 @@ L 0:   4 [-]: JUMPIF R5 L1 ; goto L1 if var5
       13 [-]: CALL R5 3 2  ; var5 = var5(var6, var7)
       14 [-]: JUMPIFNOT R5 L2; goto L2 if not var5
 L 1:  15 [-]: RETURN R0 0  ; 
-L 2:  16 [-]: FASTCALL1 62 R0 L3; 
+L 2:  16 [-]: FASTCALL1 64 R0 L3; 
       17 [-]: MOVE R6 R0   ; var6 = var0
       18 [-]: GETIMPORT R5 3; var5 = 0x7B998233
       19 [-]: CALL R5 2 2  ; var5 = var5(var6)
@@ -840,7 +840,7 @@ L 6:  43 [-]: GETIMPORT R7 11; var7 = _T["DamageResistancePerStack"]
       46 [-]: GETTABLE R6 R7 R8; var6 = var7[var8]
       47 [-]: GETTABLEKS R5 R6 K15; var5 = var6["Active"]
       48 [-]: LOADN R6 0   ; var6 = 0
-      49 [-]: JUMPIFLT R6 R5 L7; goto L7 if var6 < var1246542
+      49 [-]: JUMPIFLT R6 R5 L7; goto L7 if var6 < var1246497
       50 [-]: GETIMPORT R5 19; var5 = 0xBC3C136F
       51 [-]: JUMPIF R5 L9 ; goto L9 if var5
 L 7:  52 [-]: GETIMPORT R7 11; var7 = _T["DamageResistancePerStack"]
@@ -852,7 +852,7 @@ L 7:  52 [-]: GETIMPORT R7 11; var7 = _T["DamageResistancePerStack"]
       58 [-]: GETIMPORT R7 23; var7 = 0x8BB9B938
       59 [-]: SETTABLE R7 R5 R6; var7[var5] = var6
       60 [-]: GETIMPORT R6 25; var6 = 0x50A10319
-      61 [-]: FASTCALL1 62 R6 L8; 
+      61 [-]: FASTCALL1 64 R6 L8; 
       62 [-]: GETIMPORT R5 3; var5 = 0x7B998233
       63 [-]: CALL R5 2 2  ; var5 = var5(var6)
 L 8:  64 [-]: JUMPIF R5 L9 ; goto L9 if var5

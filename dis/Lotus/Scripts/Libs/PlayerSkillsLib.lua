@@ -59,12 +59,12 @@
       52 [-]: NEWTABLE R9 0 10; var9 = {}
       53 [-]: NEWTABLE R10 0 2; var10 = {}
       54 [-]: DUPTABLE R11 30; 
-      55 [-]: LOADN R12 374; var12 = 374
+      55 [-]: LOADN R12 387; var12 = 387
       56 [-]: SETTABLEKS R12 R11 K28; var12["upgradeType"] = var11
       57 [-]: GETTABLEKS R12 R0 K31; var12 = var0["sSkillCommanderMap"]
       58 [-]: SETTABLEKS R12 R11 K29; var12["filter"] = var11
       59 [-]: DUPTABLE R12 30; 
-      60 [-]: LOADN R13 374; var13 = 374
+      60 [-]: LOADN R13 387; var13 = 387
       61 [-]: SETTABLEKS R13 R12 K28; var13["upgradeType"] = var12
       62 [-]: GETTABLEKS R13 R0 K32; var13 = var0["sSkillRemotePlayerTracking"]
       63 [-]: SETTABLEKS R13 R12 K29; var13["filter"] = var12
@@ -72,7 +72,7 @@
       65 [-]: SETTABLEN R10 R9 1; SETTABLEN R10 R9 1
       66 [-]: NEWTABLE R10 0 1; var10 = {}
       67 [-]: DUPTABLE R11 30; 
-      68 [-]: LOADN R12 374; var12 = 374
+      68 [-]: LOADN R12 387; var12 = 387
       69 [-]: SETTABLEKS R12 R11 K28; var12["upgradeType"] = var11
       70 [-]: GETTABLEKS R12 R0 K33; var12 = var0["sSkillRemotePlayerPower"]
       71 [-]: SETTABLEKS R12 R11 K29; var12["filter"] = var11
@@ -80,7 +80,7 @@
       73 [-]: SETTABLEN R10 R9 2; SETTABLEN R10 R9 2
       74 [-]: NEWTABLE R10 0 1; var10 = {}
       75 [-]: DUPTABLE R11 30; 
-      76 [-]: LOADN R12 374; var12 = 374
+      76 [-]: LOADN R12 387; var12 = 387
       77 [-]: SETTABLEKS R12 R11 K28; var12["upgradeType"] = var11
       78 [-]: GETTABLEKS R12 R0 K34; var12 = var0["sSkillCommandGearMenu"]
       79 [-]: SETTABLEKS R12 R11 K29; var12["filter"] = var11
@@ -88,7 +88,7 @@
       81 [-]: SETTABLEN R10 R9 3; SETTABLEN R10 R9 3
       82 [-]: NEWTABLE R10 0 1; var10 = {}
       83 [-]: DUPTABLE R11 30; 
-      84 [-]: LOADN R12 374; var12 = 374
+      84 [-]: LOADN R12 387; var12 = 387
       85 [-]: SETTABLEKS R12 R11 K28; var12["upgradeType"] = var11
       86 [-]: GETTABLEKS R12 R0 K35; var12 = var0["sSkillRecallToRailjack"]
       87 [-]: SETTABLEKS R12 R11 K29; var12["filter"] = var11
@@ -96,7 +96,7 @@
       89 [-]: SETTABLEN R10 R9 4; SETTABLEN R10 R9 4
       90 [-]: NEWTABLE R10 0 1; var10 = {}
       91 [-]: DUPTABLE R11 30; 
-      92 [-]: LOADN R12 374; var12 = 374
+      92 [-]: LOADN R12 387; var12 = 387
       93 [-]: SETTABLEKS R12 R11 K28; var12["upgradeType"] = var11
       94 [-]: GETTABLEKS R12 R0 K36; var12 = var0["sSkillMechSummon"]
       95 [-]: SETTABLEKS R12 R11 K29; var12["filter"] = var11
@@ -104,7 +104,7 @@
       97 [-]: SETTABLEN R10 R9 5; SETTABLEN R10 R9 5
       98 [-]: NEWTABLE R10 0 2; var10 = {}
       99 [-]: DUPTABLE R11 39; 
-     100 [-]: LOADN R12 376; var12 = 376
+     100 [-]: LOADN R12 389; var12 = 389
      101 [-]: SETTABLEKS R12 R11 K28; var12["upgradeType"] = var11
      102 [-]: LOADK R12 K40; var12 = 0.25
      103 [-]: SETTABLEKS R12 R11 K37; var12["value"] = var11
@@ -122,9 +122,9 @@
      115 [-]: SETTABLEN R10 R9 6; SETTABLEN R10 R9 6
      116 [-]: NEWTABLE R10 0 1; var10 = {}
      117 [-]: DUPTABLE R11 39; 
-     118 [-]: LOADN R12 375; var12 = 375
+     118 [-]: LOADN R12 388; var12 = 388
      119 [-]: SETTABLEKS R12 R11 K28; var12["upgradeType"] = var11
-     120 [-]: LOADK R12 K43; var12 = 0.80000000000000004
+     120 [-]: LOADK R12 K43; var12 = 0.80000001192092896
      121 [-]: SETTABLEKS R12 R11 K37; var12["value"] = var11
      122 [-]: LOADN R12 2  ; var12 = 2
      123 [-]: SETTABLEKS R12 R11 K38; var12["operationType"] = var11
@@ -132,7 +132,7 @@
      125 [-]: SETTABLEN R10 R9 7; SETTABLEN R10 R9 7
      126 [-]: NEWTABLE R10 0 2; var10 = {}
      127 [-]: DUPTABLE R11 45; 
-     128 [-]: LOADN R12 40 ; var12 = 40
+     128 [-]: LOADN R12 43 ; var12 = 43
      129 [-]: SETTABLEKS R12 R11 K28; var12["upgradeType"] = var11
      130 [-]: LOADK R12 K46; var12 = 0.75
      131 [-]: SETTABLEKS R12 R11 K37; var12["value"] = var11
@@ -141,7 +141,7 @@
      134 [-]: GETGLOBAL R12 K12; var12 = "CATEGORY_ARCHWING"
      135 [-]: SETTABLEKS R12 R11 K44; var12["category"] = var11
      136 [-]: DUPTABLE R12 47; 
-     137 [-]: LOADN R13 167; var13 = 167
+     137 [-]: LOADN R13 172; var13 = 172
      138 [-]: SETTABLEKS R13 R12 K28; var13["upgradeType"] = var12
      139 [-]: LOADK R13 K46; var13 = 0.75
      140 [-]: SETTABLEKS R13 R12 K37; var13["value"] = var12
@@ -154,9 +154,9 @@
      147 [-]: SETTABLEN R10 R9 8; SETTABLEN R10 R9 8
      148 [-]: NEWTABLE R10 0 1; var10 = {}
      149 [-]: DUPTABLE R11 39; 
-     150 [-]: LOADN R12 375; var12 = 375
+     150 [-]: LOADN R12 388; var12 = 388
      151 [-]: SETTABLEKS R12 R11 K28; var12["upgradeType"] = var11
-     152 [-]: LOADK R12 K43; var12 = 0.80000000000000004
+     152 [-]: LOADK R12 K43; var12 = 0.80000001192092896
      153 [-]: SETTABLEKS R12 R11 K37; var12["value"] = var11
      154 [-]: LOADN R12 2  ; var12 = 2
      155 [-]: SETTABLEKS R12 R11 K38; var12["operationType"] = var11
@@ -164,7 +164,7 @@
      157 [-]: SETTABLEN R10 R9 9; SETTABLEN R10 R9 9
      158 [-]: NEWTABLE R10 0 1; var10 = {}
      159 [-]: DUPTABLE R11 30; 
-     160 [-]: LOADN R12 374; var12 = 374
+     160 [-]: LOADN R12 387; var12 = 387
      161 [-]: SETTABLEKS R12 R11 K28; var12["upgradeType"] = var11
      162 [-]: GETTABLEKS R12 R0 K48; var12 = var0["sSkillRemotePlayerDeploy"]
      163 [-]: SETTABLEKS R12 R11 K29; var12["filter"] = var11
@@ -173,7 +173,7 @@
      166 [-]: NEWTABLE R10 0 10; var10 = {}
      167 [-]: NEWTABLE R11 0 1; var11 = {}
      168 [-]: DUPTABLE R12 30; 
-     169 [-]: LOADN R13 374; var13 = 374
+     169 [-]: LOADN R13 387; var13 = 387
      170 [-]: SETTABLEKS R13 R12 K28; var13["upgradeType"] = var12
      171 [-]: GETTABLEKS R13 R0 K49; var13 = var0["sSkillRJBoost"]
      172 [-]: SETTABLEKS R13 R12 K29; var13["filter"] = var12
@@ -181,7 +181,7 @@
      174 [-]: SETTABLEN R11 R10 1; SETTABLEN R11 R10 1
      175 [-]: NEWTABLE R11 0 1; var11 = {}
      176 [-]: DUPTABLE R12 30; 
-     177 [-]: LOADN R13 374; var13 = 374
+     177 [-]: LOADN R13 387; var13 = 387
      178 [-]: SETTABLEKS R13 R12 K28; var13["upgradeType"] = var12
      179 [-]: GETTABLEKS R13 R0 K50; var13 = var0["sSkillRJDodge"]
      180 [-]: SETTABLEKS R13 R12 K29; var13["filter"] = var12
@@ -189,7 +189,7 @@
      182 [-]: SETTABLEN R11 R10 2; SETTABLEN R11 R10 2
      183 [-]: NEWTABLE R11 0 1; var11 = {}
      184 [-]: DUPTABLE R12 30; 
-     185 [-]: LOADN R13 374; var13 = 374
+     185 [-]: LOADN R13 387; var13 = 387
      186 [-]: SETTABLEKS R13 R12 K28; var13["upgradeType"] = var12
      187 [-]: GETTABLEKS R13 R0 K51; var13 = var0["sSkillRJClearProjectile"]
      188 [-]: SETTABLEKS R13 R12 K29; var13["filter"] = var12
@@ -197,7 +197,7 @@
      190 [-]: SETTABLEN R11 R10 3; SETTABLEN R11 R10 3
      191 [-]: NEWTABLE R11 0 1; var11 = {}
      192 [-]: DUPTABLE R12 30; 
-     193 [-]: LOADN R13 374; var13 = 374
+     193 [-]: LOADN R13 387; var13 = 387
      194 [-]: SETTABLEKS R13 R12 K28; var13["upgradeType"] = var12
      195 [-]: GETTABLEKS R13 R0 K52; var13 = var0["sSkillRJDrift"]
      196 [-]: SETTABLEKS R13 R12 K29; var13["filter"] = var12
@@ -205,12 +205,12 @@
      198 [-]: SETTABLEN R11 R10 4; SETTABLEN R11 R10 4
      199 [-]: NEWTABLE R11 0 2; var11 = {}
      200 [-]: DUPTABLE R12 30; 
-     201 [-]: LOADN R13 374; var13 = 374
+     201 [-]: LOADN R13 387; var13 = 387
      202 [-]: SETTABLEKS R13 R12 K28; var13["upgradeType"] = var12
      203 [-]: GETTABLEKS R13 R0 K53; var13 = var0["sSkillLootPOIMarker"]
      204 [-]: SETTABLEKS R13 R12 K29; var13["filter"] = var12
      205 [-]: DUPTABLE R13 30; 
-     206 [-]: LOADN R14 374; var14 = 374
+     206 [-]: LOADN R14 387; var14 = 387
      207 [-]: SETTABLEKS R14 R13 K28; var14["upgradeType"] = var13
      208 [-]: GETTABLEKS R14 R0 K54; var14 = var0["sSkillVacuumBuff"]
      209 [-]: SETTABLEKS R14 R13 K29; var14["filter"] = var13
@@ -218,7 +218,7 @@
      211 [-]: SETTABLEN R11 R10 5; SETTABLEN R11 R10 5
      212 [-]: NEWTABLE R11 0 1; var11 = {}
      213 [-]: DUPTABLE R12 30; 
-     214 [-]: LOADN R13 374; var13 = 374
+     214 [-]: LOADN R13 387; var13 = 387
      215 [-]: SETTABLEKS R13 R12 K28; var13["upgradeType"] = var12
      216 [-]: GETTABLEKS R13 R0 K55; var13 = var0["sSkillRamsledEvasion"]
      217 [-]: SETTABLEKS R13 R12 K29; var13["filter"] = var12
@@ -226,9 +226,9 @@
      219 [-]: SETTABLEN R11 R10 6; SETTABLEN R11 R10 6
      220 [-]: NEWTABLE R11 0 1; var11 = {}
      221 [-]: DUPTABLE R12 45; 
-     222 [-]: LOADN R13 83 ; var13 = 83
+     222 [-]: LOADN R13 86 ; var13 = 86
      223 [-]: SETTABLEKS R13 R12 K28; var13["upgradeType"] = var12
-     224 [-]: LOADK R13 K56; var13 = 0.10000000000000001
+     224 [-]: LOADK R13 K56; var13 = 0.10000000149011612
      225 [-]: SETTABLEKS R13 R12 K37; var13["value"] = var12
      226 [-]: LOADN R13 3  ; var13 = 3
      227 [-]: SETTABLEKS R13 R12 K38; var13["operationType"] = var12
@@ -238,9 +238,9 @@
      231 [-]: SETTABLEN R11 R10 7; SETTABLEN R11 R10 7
      232 [-]: NEWTABLE R11 0 1; var11 = {}
      233 [-]: DUPTABLE R12 45; 
-     234 [-]: LOADN R13 83 ; var13 = 83
+     234 [-]: LOADN R13 86 ; var13 = 86
      235 [-]: SETTABLEKS R13 R12 K28; var13["upgradeType"] = var12
-     236 [-]: LOADK R13 K57; var13 = 0.20000000000000001
+     236 [-]: LOADK R13 K57; var13 = 0.20000000298023224
      237 [-]: SETTABLEKS R13 R12 K37; var13["value"] = var12
      238 [-]: LOADN R13 3  ; var13 = 3
      239 [-]: SETTABLEKS R13 R12 K38; var13["operationType"] = var12
@@ -250,7 +250,7 @@
      243 [-]: SETTABLEN R11 R10 8; SETTABLEN R11 R10 8
      244 [-]: NEWTABLE R11 0 2; var11 = {}
      245 [-]: DUPTABLE R12 59; 
-     246 [-]: LOADN R13 382; var13 = 382
+     246 [-]: LOADN R13 395; var13 = 395
      247 [-]: SETTABLEKS R13 R12 K28; var13["upgradeType"] = var12
      248 [-]: LOADK R13 K46; var13 = 0.75
      249 [-]: SETTABLEKS R13 R12 K37; var13["value"] = var12
@@ -260,7 +260,7 @@
      253 [-]: SETTABLEKS R13 R12 K38; var13["operationType"] = var12
      254 [-]: SETTABLEKS R2 R12 K41; var2["validType"] = var12
      255 [-]: DUPTABLE R13 39; 
-     256 [-]: LOADN R14 380; var14 = 380
+     256 [-]: LOADN R14 393; var14 = 393
      257 [-]: SETTABLEKS R14 R13 K28; var14["upgradeType"] = var13
      258 [-]: LOADN R14 2000; var14 = 2000
      259 [-]: SETTABLEKS R14 R13 K37; var14["value"] = var13
@@ -270,7 +270,7 @@
      263 [-]: SETTABLEN R11 R10 9; SETTABLEN R11 R10 9
      264 [-]: NEWTABLE R11 0 1; var11 = {}
      265 [-]: DUPTABLE R12 30; 
-     266 [-]: LOADN R13 374; var13 = 374
+     266 [-]: LOADN R13 387; var13 = 387
      267 [-]: SETTABLEKS R13 R12 K28; var13["upgradeType"] = var12
      268 [-]: GETTABLEKS R13 R0 K60; var13 = var0["sSkillRJBlink"]
      269 [-]: SETTABLEKS R13 R12 K29; var13["filter"] = var12
@@ -279,12 +279,12 @@
      272 [-]: NEWTABLE R11 0 10; var11 = {}
      273 [-]: NEWTABLE R12 0 2; var12 = {}
      274 [-]: DUPTABLE R13 30; 
-     275 [-]: LOADN R14 374; var14 = 374
+     275 [-]: LOADN R14 387; var14 = 387
      276 [-]: SETTABLEKS R14 R13 K28; var14["upgradeType"] = var13
      277 [-]: GETTABLEKS R14 R0 K61; var14 = var0["sSkillRJLeadIndicator"]
      278 [-]: SETTABLEKS R14 R13 K29; var14["filter"] = var13
      279 [-]: DUPTABLE R14 30; 
-     280 [-]: LOADN R15 374; var15 = 374
+     280 [-]: LOADN R15 387; var15 = 387
      281 [-]: SETTABLEKS R15 R14 K28; var15["upgradeType"] = var14
      282 [-]: GETTABLEKS R15 R0 K62; var15 = var0["sSkillRJOrdLockOn"]
      283 [-]: SETTABLEKS R15 R14 K29; var15["filter"] = var14
@@ -292,7 +292,7 @@
      285 [-]: SETTABLEN R12 R11 1; SETTABLEN R12 R11 1
      286 [-]: NEWTABLE R12 0 1; var12 = {}
      287 [-]: DUPTABLE R13 30; 
-     288 [-]: LOADN R14 374; var14 = 374
+     288 [-]: LOADN R14 387; var14 = 387
      289 [-]: SETTABLEKS R14 R13 K28; var14["upgradeType"] = var13
      290 [-]: GETTABLEKS R14 R0 K63; var14 = var0["sSkillRJARGimbal"]
      291 [-]: SETTABLEKS R14 R13 K29; var14["filter"] = var13
@@ -300,7 +300,7 @@
      293 [-]: SETTABLEN R12 R11 2; SETTABLEN R12 R11 2
      294 [-]: NEWTABLE R12 0 1; var12 = {}
      295 [-]: DUPTABLE R13 30; 
-     296 [-]: LOADN R14 374; var14 = 374
+     296 [-]: LOADN R14 387; var14 = 387
      297 [-]: SETTABLEKS R14 R13 K28; var14["upgradeType"] = var13
      298 [-]: GETTABLEKS R14 R0 K64; var14 = var0["sSkillAWCannon"]
      299 [-]: SETTABLEKS R14 R13 K29; var14["filter"] = var13
@@ -308,7 +308,7 @@
      301 [-]: SETTABLEN R12 R11 3; SETTABLEN R12 R11 3
      302 [-]: NEWTABLE R12 0 3; var12 = {}
      303 [-]: DUPTABLE R13 47; 
-     304 [-]: LOADN R14 276; var14 = 276
+     304 [-]: LOADN R14 284; var14 = 284
      305 [-]: SETTABLEKS R14 R13 K28; var14["upgradeType"] = var13
      306 [-]: LOADN R14 25 ; var14 = 25
      307 [-]: SETTABLEKS R14 R13 K37; var14["value"] = var13
@@ -318,7 +318,7 @@
      311 [-]: GETGLOBAL R14 K12; var14 = "CATEGORY_ARCHWING"
      312 [-]: SETTABLEKS R14 R13 K44; var14["category"] = var13
      313 [-]: DUPTABLE R14 47; 
-     314 [-]: LOADN R15 341; var15 = 341
+     314 [-]: LOADN R15 353; var15 = 353
      315 [-]: SETTABLEKS R15 R14 K28; var15["upgradeType"] = var14
      316 [-]: LOADK R15 K46; var15 = 0.75
      317 [-]: SETTABLEKS R15 R14 K37; var15["value"] = var14
@@ -328,9 +328,9 @@
      321 [-]: GETGLOBAL R15 K12; var15 = "CATEGORY_ARCHWING"
      322 [-]: SETTABLEKS R15 R14 K44; var15["category"] = var14
      323 [-]: DUPTABLE R15 47; 
-     324 [-]: LOADN R16 228; var16 = 228
+     324 [-]: LOADN R16 235; var16 = 235
      325 [-]: SETTABLEKS R16 R15 K28; var16["upgradeType"] = var15
-     326 [-]: LOADK R16 K57; var16 = 0.20000000000000001
+     326 [-]: LOADK R16 K57; var16 = 0.20000000298023224
      327 [-]: SETTABLEKS R16 R15 K37; var16["value"] = var15
      328 [-]: LOADN R16 3  ; var16 = 3
      329 [-]: SETTABLEKS R16 R15 K38; var16["operationType"] = var15
@@ -341,9 +341,9 @@
      334 [-]: SETTABLEN R12 R11 4; SETTABLEN R12 R11 4
      335 [-]: NEWTABLE R12 0 1; var12 = {}
      336 [-]: DUPTABLE R13 47; 
-     337 [-]: LOADN R14 228; var14 = 228
+     337 [-]: LOADN R14 235; var14 = 235
      338 [-]: SETTABLEKS R14 R13 K28; var14["upgradeType"] = var13
-     339 [-]: LOADK R14 K57; var14 = 0.20000000000000001
+     339 [-]: LOADK R14 K57; var14 = 0.20000000298023224
      340 [-]: SETTABLEKS R14 R13 K37; var14["value"] = var13
      341 [-]: LOADN R14 3  ; var14 = 3
      342 [-]: SETTABLEKS R14 R13 K38; var14["operationType"] = var13
@@ -354,9 +354,9 @@
      347 [-]: SETTABLEN R12 R11 5; SETTABLEN R12 R11 5
      348 [-]: NEWTABLE R12 0 1; var12 = {}
      349 [-]: DUPTABLE R13 42; 
-     350 [-]: LOADN R14 198; var14 = 198
+     350 [-]: LOADN R14 203; var14 = 203
      351 [-]: SETTABLEKS R14 R13 K28; var14["upgradeType"] = var13
-     352 [-]: LOADK R14 K43; var14 = 0.80000000000000004
+     352 [-]: LOADK R14 K43; var14 = 0.80000001192092896
      353 [-]: SETTABLEKS R14 R13 K37; var14["value"] = var13
      354 [-]: LOADN R14 2  ; var14 = 2
      355 [-]: SETTABLEKS R14 R13 K38; var14["operationType"] = var13
@@ -365,7 +365,7 @@
      358 [-]: SETTABLEN R12 R11 6; SETTABLEN R12 R11 6
      359 [-]: NEWTABLE R12 0 2; var12 = {}
      360 [-]: DUPTABLE R13 42; 
-     361 [-]: LOADN R14 345; var14 = 345
+     361 [-]: LOADN R14 357; var14 = 357
      362 [-]: SETTABLEKS R14 R13 K28; var14["upgradeType"] = var13
      363 [-]: LOADK R14 K65; var14 = 0.5
      364 [-]: SETTABLEKS R14 R13 K37; var14["value"] = var13
@@ -384,7 +384,7 @@
      377 [-]: SETTABLEN R12 R11 7; SETTABLEN R12 R11 7
      378 [-]: NEWTABLE R12 0 4; var12 = {}
      379 [-]: DUPTABLE R13 45; 
-     380 [-]: LOADN R14 228; var14 = 228
+     380 [-]: LOADN R14 235; var14 = 235
      381 [-]: SETTABLEKS R14 R13 K28; var14["upgradeType"] = var13
      382 [-]: LOADK R14 K40; var14 = 0.25
      383 [-]: SETTABLEKS R14 R13 K37; var14["value"] = var13
@@ -395,7 +395,7 @@
      388 [-]: DUPTABLE R14 45; 
      389 [-]: LOADN R15 10 ; var15 = 10
      390 [-]: SETTABLEKS R15 R14 K28; var15["upgradeType"] = var14
-     391 [-]: LOADK R15 K57; var15 = 0.20000000000000001
+     391 [-]: LOADK R15 K57; var15 = 0.20000000298023224
      392 [-]: SETTABLEKS R15 R14 K37; var15["value"] = var14
      393 [-]: LOADN R15 3  ; var15 = 3
      394 [-]: SETTABLEKS R15 R14 K38; var15["operationType"] = var14
@@ -404,7 +404,7 @@
      397 [-]: DUPTABLE R15 45; 
      398 [-]: LOADN R16 9  ; var16 = 9
      399 [-]: SETTABLEKS R16 R15 K28; var16["upgradeType"] = var15
-     400 [-]: LOADK R16 K57; var16 = 0.20000000000000001
+     400 [-]: LOADK R16 K57; var16 = 0.20000000298023224
      401 [-]: SETTABLEKS R16 R15 K37; var16["value"] = var15
      402 [-]: LOADN R16 3  ; var16 = 3
      403 [-]: SETTABLEKS R16 R15 K38; var16["operationType"] = var15
@@ -413,7 +413,7 @@
      406 [-]: DUPTABLE R16 45; 
      407 [-]: LOADN R17 4  ; var17 = 4
      408 [-]: SETTABLEKS R17 R16 K28; var17["upgradeType"] = var16
-     409 [-]: LOADK R17 K57; var17 = 0.20000000000000001
+     409 [-]: LOADK R17 K57; var17 = 0.20000000298023224
      410 [-]: SETTABLEKS R17 R16 K37; var17["value"] = var16
      411 [-]: LOADN R17 3  ; var17 = 3
      412 [-]: SETTABLEKS R17 R16 K38; var17["operationType"] = var16
@@ -423,7 +423,7 @@
      416 [-]: SETTABLEN R12 R11 8; SETTABLEN R12 R11 8
      417 [-]: NEWTABLE R12 0 1; var12 = {}
      418 [-]: DUPTABLE R13 30; 
-     419 [-]: LOADN R14 374; var14 = 374
+     419 [-]: LOADN R14 387; var14 = 387
      420 [-]: SETTABLEKS R14 R13 K28; var14["upgradeType"] = var13
      421 [-]: GETTABLEKS R14 R0 K66; var14 = var0["sSkillRJReload"]
      422 [-]: SETTABLEKS R14 R13 K29; var14["filter"] = var13
@@ -431,14 +431,14 @@
      424 [-]: SETTABLEN R12 R11 9; SETTABLEN R12 R11 9
      425 [-]: NEWTABLE R12 0 2; var12 = {}
      426 [-]: DUPTABLE R13 30; 
-     427 [-]: LOADN R14 374; var14 = 374
+     427 [-]: LOADN R14 387; var14 = 387
      428 [-]: SETTABLEKS R14 R13 K28; var14["upgradeType"] = var13
      429 [-]: GETTABLEKS R14 R0 K67; var14 = var0["sSkillAimIndicatorConverge"]
      430 [-]: SETTABLEKS R14 R13 K29; var14["filter"] = var13
      431 [-]: DUPTABLE R14 69; 
-     432 [-]: LOADN R15 198; var15 = 198
+     432 [-]: LOADN R15 203; var15 = 203
      433 [-]: SETTABLEKS R15 R14 K28; var15["upgradeType"] = var14
-     434 [-]: LOADK R15 K57; var15 = 0.20000000000000001
+     434 [-]: LOADK R15 K57; var15 = 0.20000000298023224
      435 [-]: SETTABLEKS R15 R14 K37; var15["value"] = var14
      436 [-]: LOADN R15 3  ; var15 = 3
      437 [-]: SETTABLEKS R15 R14 K38; var15["operationType"] = var14
@@ -452,7 +452,7 @@
      445 [-]: NEWTABLE R12 0 10; var12 = {}
      446 [-]: NEWTABLE R13 0 1; var13 = {}
      447 [-]: DUPTABLE R14 30; 
-     448 [-]: LOADN R15 374; var15 = 374
+     448 [-]: LOADN R15 387; var15 = 387
      449 [-]: SETTABLEKS R15 R14 K28; var15["upgradeType"] = var14
      450 [-]: GETTABLEKS R15 R0 K70; var15 = var0["sSkillMultiToolExpert"]
      451 [-]: SETTABLEKS R15 R14 K29; var15["filter"] = var14
@@ -460,7 +460,7 @@
      453 [-]: SETTABLEN R13 R12 1; SETTABLEN R13 R12 1
      454 [-]: NEWTABLE R13 0 1; var13 = {}
      455 [-]: DUPTABLE R14 47; 
-     456 [-]: LOADN R15 167; var15 = 167
+     456 [-]: LOADN R15 172; var15 = 172
      457 [-]: SETTABLEKS R15 R14 K28; var15["upgradeType"] = var14
      458 [-]: LOADK R15 K65; var15 = 0.5
      459 [-]: SETTABLEKS R15 R14 K37; var15["value"] = var14
@@ -473,7 +473,7 @@
      466 [-]: SETTABLEN R13 R12 2; SETTABLEN R13 R12 2
      467 [-]: NEWTABLE R13 0 1; var13 = {}
      468 [-]: DUPTABLE R14 30; 
-     469 [-]: LOADN R15 374; var15 = 374
+     469 [-]: LOADN R15 387; var15 = 387
      470 [-]: SETTABLEKS R15 R14 K28; var15["upgradeType"] = var14
      471 [-]: GETTABLEKS R15 R0 K71; var15 = var0["sSkillBCOrd"]
      472 [-]: SETTABLEKS R15 R14 K29; var15["filter"] = var14
@@ -481,7 +481,7 @@
      474 [-]: SETTABLEN R13 R12 3; SETTABLEN R13 R12 3
      475 [-]: NEWTABLE R13 0 1; var13 = {}
      476 [-]: DUPTABLE R14 30; 
-     477 [-]: LOADN R15 374; var15 = 374
+     477 [-]: LOADN R15 387; var15 = 387
      478 [-]: SETTABLEKS R15 R14 K28; var15["upgradeType"] = var14
      479 [-]: GETTABLEKS R15 R0 K72; var15 = var0["sSkillBCSuperAmmo"]
      480 [-]: SETTABLEKS R15 R14 K29; var15["filter"] = var14
@@ -489,12 +489,12 @@
      482 [-]: SETTABLEN R13 R12 4; SETTABLEN R13 R12 4
      483 [-]: NEWTABLE R13 0 2; var13 = {}
      484 [-]: DUPTABLE R14 30; 
-     485 [-]: LOADN R15 374; var15 = 374
+     485 [-]: LOADN R15 387; var15 = 387
      486 [-]: SETTABLEKS R15 R14 K28; var15["upgradeType"] = var14
      487 [-]: GETTABLEKS R15 R0 K73; var15 = var0["sSkillBCHeal"]
      488 [-]: SETTABLEKS R15 R14 K29; var15["filter"] = var14
      489 [-]: DUPTABLE R15 39; 
-     490 [-]: LOADN R16 377; var16 = 377
+     490 [-]: LOADN R16 390; var16 = 390
      491 [-]: SETTABLEKS R16 R15 K28; var16["upgradeType"] = var15
      492 [-]: LOADK R16 K40; var16 = 0.25
      493 [-]: SETTABLEKS R16 R15 K37; var16["value"] = var15
@@ -504,7 +504,7 @@
      497 [-]: SETTABLEN R13 R12 5; SETTABLEN R13 R12 5
      498 [-]: NEWTABLE R13 0 1; var13 = {}
      499 [-]: DUPTABLE R14 39; 
-     500 [-]: LOADN R15 379; var15 = 379
+     500 [-]: LOADN R15 392; var15 = 392
      501 [-]: SETTABLEKS R15 R14 K28; var15["upgradeType"] = var14
      502 [-]: LOADK R15 K74; var15 = -0.25
      503 [-]: SETTABLEKS R15 R14 K37; var15["value"] = var14
@@ -514,7 +514,7 @@
      507 [-]: SETTABLEN R13 R12 6; SETTABLEN R13 R12 6
      508 [-]: NEWTABLE R13 0 1; var13 = {}
      509 [-]: DUPTABLE R14 39; 
-     510 [-]: LOADN R15 377; var15 = 377
+     510 [-]: LOADN R15 390; var15 = 390
      511 [-]: SETTABLEKS R15 R14 K28; var15["upgradeType"] = var14
      512 [-]: LOADK R15 K40; var15 = 0.25
      513 [-]: SETTABLEKS R15 R14 K37; var15["value"] = var14
@@ -524,27 +524,27 @@
      517 [-]: SETTABLEN R13 R12 7; SETTABLEN R13 R12 7
      518 [-]: NEWTABLE R13 0 3; var13 = {}
      519 [-]: DUPTABLE R14 45; 
-     520 [-]: LOADN R15 66 ; var15 = 66
+     520 [-]: LOADN R15 69 ; var15 = 69
      521 [-]: SETTABLEKS R15 R14 K28; var15["upgradeType"] = var14
-     522 [-]: LOADK R15 K75; var15 = 0.29999999999999999
+     522 [-]: LOADK R15 K75; var15 = 0.30000001192092896
      523 [-]: SETTABLEKS R15 R14 K37; var15["value"] = var14
      524 [-]: LOADN R15 3  ; var15 = 3
      525 [-]: SETTABLEKS R15 R14 K38; var15["operationType"] = var14
      526 [-]: GETGLOBAL R15 K12; var15 = "CATEGORY_ARCHWING"
      527 [-]: SETTABLEKS R15 R14 K44; var15["category"] = var14
      528 [-]: DUPTABLE R15 45; 
-     529 [-]: LOADN R16 123; var16 = 123
+     529 [-]: LOADN R16 128; var16 = 128
      530 [-]: SETTABLEKS R16 R15 K28; var16["upgradeType"] = var15
-     531 [-]: LOADK R16 K75; var16 = 0.29999999999999999
+     531 [-]: LOADK R16 K75; var16 = 0.30000001192092896
      532 [-]: SETTABLEKS R16 R15 K37; var16["value"] = var15
      533 [-]: LOADN R16 3  ; var16 = 3
      534 [-]: SETTABLEKS R16 R15 K38; var16["operationType"] = var15
      535 [-]: GETGLOBAL R16 K12; var16 = "CATEGORY_ARCHWING"
      536 [-]: SETTABLEKS R16 R15 K44; var16["category"] = var15
      537 [-]: DUPTABLE R16 45; 
-     538 [-]: LOADN R17 15 ; var17 = 15
+     538 [-]: LOADN R17 17 ; var17 = 17
      539 [-]: SETTABLEKS R17 R16 K28; var17["upgradeType"] = var16
-     540 [-]: LOADK R17 K75; var17 = 0.29999999999999999
+     540 [-]: LOADK R17 K75; var17 = 0.30000001192092896
      541 [-]: SETTABLEKS R17 R16 K37; var17["value"] = var16
      542 [-]: LOADN R17 3  ; var17 = 3
      543 [-]: SETTABLEKS R17 R16 K38; var17["operationType"] = var16
@@ -554,7 +554,7 @@
      547 [-]: SETTABLEN R13 R12 8; SETTABLEN R13 R12 8
      548 [-]: NEWTABLE R13 0 2; var13 = {}
      549 [-]: DUPTABLE R14 45; 
-     550 [-]: LOADN R15 66 ; var15 = 66
+     550 [-]: LOADN R15 69 ; var15 = 69
      551 [-]: SETTABLEKS R15 R14 K28; var15["upgradeType"] = var14
      552 [-]: LOADK R15 K40; var15 = 0.25
      553 [-]: SETTABLEKS R15 R14 K37; var15["value"] = var14
@@ -563,7 +563,7 @@
      556 [-]: GETGLOBAL R15 K13; var15 = "CATEGORY_MECH"
      557 [-]: SETTABLEKS R15 R14 K44; var15["category"] = var14
      558 [-]: DUPTABLE R15 45; 
-     559 [-]: LOADN R16 123; var16 = 123
+     559 [-]: LOADN R16 128; var16 = 128
      560 [-]: SETTABLEKS R16 R15 K28; var16["upgradeType"] = var15
      561 [-]: LOADK R16 K40; var16 = 0.25
      562 [-]: SETTABLEKS R16 R15 K37; var16["value"] = var15
@@ -575,7 +575,7 @@
      568 [-]: SETTABLEN R13 R12 9; SETTABLEN R13 R12 9
      569 [-]: NEWTABLE R13 0 1; var13 = {}
      570 [-]: DUPTABLE R14 30; 
-     571 [-]: LOADN R15 374; var15 = 374
+     571 [-]: LOADN R15 387; var15 = 387
      572 [-]: SETTABLEKS R15 R14 K28; var15["upgradeType"] = var14
      573 [-]: GETTABLEKS R15 R0 K76; var15 = var0["sSkillBCUberFix"]
      574 [-]: SETTABLEKS R15 R14 K29; var15["filter"] = var14
@@ -584,7 +584,7 @@
      577 [-]: NEWTABLE R13 0 10; var13 = {}
      578 [-]: NEWTABLE R14 0 1; var14 = {}
      579 [-]: DUPTABLE R15 30; 
-     580 [-]: LOADN R16 374; var16 = 374
+     580 [-]: LOADN R16 387; var16 = 387
      581 [-]: SETTABLEKS R16 R15 K28; var16["upgradeType"] = var15
      582 [-]: GETTABLEKS R16 R0 K77; var16 = var0["sSkillCrewCommand"]
      583 [-]: SETTABLEKS R16 R15 K29; var16["filter"] = var15
@@ -606,7 +606,7 @@
      599 [-]: SETTABLEN R14 R13 8; SETTABLEN R14 R13 8
      600 [-]: NEWTABLE R14 0 1; var14 = {}
      601 [-]: DUPTABLE R15 30; 
-     602 [-]: LOADN R16 374; var16 = 374
+     602 [-]: LOADN R16 387; var16 = 387
      603 [-]: SETTABLEKS R16 R15 K28; var16["upgradeType"] = var15
      604 [-]: GETTABLEKS R16 R0 K78; var16 = var0["sSkillSecondCommand"]
      605 [-]: SETTABLEKS R16 R15 K29; var16["filter"] = var15
@@ -617,14 +617,14 @@
      610 [-]: NEWTABLE R14 0 10; var14 = {}
      611 [-]: NEWTABLE R15 0 2; var15 = {}
      612 [-]: DUPTABLE R16 79; 
-     613 [-]: LOADN R17 374; var17 = 374
+     613 [-]: LOADN R17 387; var17 = 387
      614 [-]: SETTABLEKS R17 R16 K28; var17["upgradeType"] = var16
      615 [-]: GETTABLEKS R17 R0 K80; var17 = var0["sSkillDamagePerBoon"]
      616 [-]: SETTABLEKS R17 R16 K29; var17["filter"] = var16
      617 [-]: GETGLOBAL R17 K14; var17 = "CATEGORY_DRIFTER"
      618 [-]: SETTABLEKS R17 R16 K44; var17["category"] = var16
      619 [-]: DUPTABLE R17 79; 
-     620 [-]: LOADN R18 374; var18 = 374
+     620 [-]: LOADN R18 387; var18 = 387
      621 [-]: SETTABLEKS R18 R17 K28; var18["upgradeType"] = var17
      622 [-]: GETTABLEKS R18 R0 K80; var18 = var0["sSkillDamagePerBoon"]
      623 [-]: SETTABLEKS R18 R17 K29; var18["filter"] = var17
@@ -634,7 +634,7 @@
      627 [-]: SETTABLEN R15 R14 1; SETTABLEN R15 R14 1
      628 [-]: NEWTABLE R15 0 1; var15 = {}
      629 [-]: DUPTABLE R16 79; 
-     630 [-]: LOADN R17 374; var17 = 374
+     630 [-]: LOADN R17 387; var17 = 387
      631 [-]: SETTABLEKS R17 R16 K28; var17["upgradeType"] = var16
      632 [-]: GETTABLEKS R17 R0 K81; var17 = var0["sSkillRestorationMoveSpeed"]
      633 [-]: SETTABLEKS R17 R16 K29; var17["filter"] = var16
@@ -644,7 +644,7 @@
      637 [-]: SETTABLEN R15 R14 2; SETTABLEN R15 R14 2
      638 [-]: NEWTABLE R15 0 1; var15 = {}
      639 [-]: DUPTABLE R16 79; 
-     640 [-]: LOADN R17 374; var17 = 374
+     640 [-]: LOADN R17 387; var17 = 387
      641 [-]: SETTABLEKS R17 R16 K28; var17["upgradeType"] = var16
      642 [-]: GETTABLEKS R17 R0 K82; var17 = var0["sSkillDuviriBeastMode"]
      643 [-]: SETTABLEKS R17 R16 K29; var17["filter"] = var16
@@ -654,11 +654,11 @@
      647 [-]: SETTABLEN R15 R14 3; SETTABLEN R15 R14 3
      648 [-]: NEWTABLE R15 0 1; var15 = {}
      649 [-]: DUPTABLE R16 83; 
-     650 [-]: LOADN R17 319; var17 = 319
+     650 [-]: LOADN R17 329; var17 = 329
      651 [-]: SETTABLEKS R17 R16 K28; var17["upgradeType"] = var16
      652 [-]: LOADN R17 2  ; var17 = 2
      653 [-]: SETTABLEKS R17 R16 K38; var17["operationType"] = var16
-     654 [-]: LOADK R17 K84; var17 = 0.69999999999999996
+     654 [-]: LOADK R17 K84; var17 = 0.69999998807907104
      655 [-]: SETTABLEKS R17 R16 K37; var17["value"] = var16
      656 [-]: GETIMPORT R17 86; var17 = gLotusMeleeWeaponType
      657 [-]: SETTABLEKS R17 R16 K41; var17["validType"] = var16
@@ -668,11 +668,11 @@
      661 [-]: SETTABLEN R15 R14 4; SETTABLEN R15 R14 4
      662 [-]: NEWTABLE R15 0 1; var15 = {}
      663 [-]: DUPTABLE R16 87; 
-     664 [-]: LOADN R17 181; var17 = 181
+     664 [-]: LOADN R17 186; var17 = 186
      665 [-]: SETTABLEKS R17 R16 K28; var17["upgradeType"] = var16
      666 [-]: LOADN R17 2  ; var17 = 2
      667 [-]: SETTABLEKS R17 R16 K38; var17["operationType"] = var16
-     668 [-]: LOADK R17 K43; var17 = 0.80000000000000004
+     668 [-]: LOADK R17 K43; var17 = 0.80000001192092896
      669 [-]: SETTABLEKS R17 R16 K37; var17["value"] = var16
      670 [-]: GETGLOBAL R17 K14; var17 = "CATEGORY_DRIFTER"
      671 [-]: SETTABLEKS R17 R16 K44; var17["category"] = var16
@@ -680,7 +680,7 @@
      673 [-]: SETTABLEN R15 R14 5; SETTABLEN R15 R14 5
      674 [-]: NEWTABLE R15 0 1; var15 = {}
      675 [-]: DUPTABLE R16 79; 
-     676 [-]: LOADN R17 374; var17 = 374
+     676 [-]: LOADN R17 387; var17 = 387
      677 [-]: SETTABLEKS R17 R16 K28; var17["upgradeType"] = var16
      678 [-]: GETTABLEKS R17 R0 K88; var17 = var0["sSkillRadarSlomo"]
      679 [-]: SETTABLEKS R17 R16 K29; var17["filter"] = var16
@@ -690,11 +690,11 @@
      683 [-]: SETTABLEN R15 R14 6; SETTABLEN R15 R14 6
      684 [-]: NEWTABLE R15 0 1; var15 = {}
      685 [-]: DUPTABLE R16 87; 
-     686 [-]: LOADN R17 221; var17 = 221
+     686 [-]: LOADN R17 228; var17 = 228
      687 [-]: SETTABLEKS R17 R16 K28; var17["upgradeType"] = var16
      688 [-]: LOADN R17 0  ; var17 = 0
      689 [-]: SETTABLEKS R17 R16 K38; var17["operationType"] = var16
-     690 [-]: LOADK R17 K57; var17 = 0.20000000000000001
+     690 [-]: LOADK R17 K57; var17 = 0.20000000298023224
      691 [-]: SETTABLEKS R17 R16 K37; var17["value"] = var16
      692 [-]: GETGLOBAL R17 K14; var17 = "CATEGORY_DRIFTER"
      693 [-]: SETTABLEKS R17 R16 K44; var17["category"] = var16
@@ -716,7 +716,7 @@
      709 [-]: SETTABLEN R15 R14 8; SETTABLEN R15 R14 8
      710 [-]: NEWTABLE R15 0 2; var15 = {}
      711 [-]: DUPTABLE R16 45; 
-     712 [-]: LOADN R17 228; var17 = 228
+     712 [-]: LOADN R17 235; var17 = 235
      713 [-]: SETTABLEKS R17 R16 K28; var17["upgradeType"] = var16
      714 [-]: LOADK R17 K40; var17 = 0.25
      715 [-]: SETTABLEKS R17 R16 K37; var17["value"] = var16
@@ -725,7 +725,7 @@
      718 [-]: GETGLOBAL R17 K14; var17 = "CATEGORY_DRIFTER"
      719 [-]: SETTABLEKS R17 R16 K44; var17["category"] = var16
      720 [-]: DUPTABLE R17 45; 
-     721 [-]: LOADN R18 228; var18 = 228
+     721 [-]: LOADN R18 235; var18 = 235
      722 [-]: SETTABLEKS R18 R17 K28; var18["upgradeType"] = var17
      723 [-]: LOADK R18 K40; var18 = 0.25
      724 [-]: SETTABLEKS R18 R17 K37; var18["value"] = var17
@@ -748,7 +748,7 @@
      741 [-]: NEWTABLE R15 0 10; var15 = {}
      742 [-]: NEWTABLE R16 0 1; var16 = {}
      743 [-]: DUPTABLE R17 79; 
-     744 [-]: LOADN R18 374; var18 = 374
+     744 [-]: LOADN R18 387; var18 = 387
      745 [-]: SETTABLEKS R18 R17 K28; var18["upgradeType"] = var17
      746 [-]: GETTABLEKS R18 R0 K96; var18 = var0["sSkillSummonHorse"]
      747 [-]: SETTABLEKS R18 R17 K29; var18["filter"] = var17
@@ -758,7 +758,7 @@
      751 [-]: SETTABLEN R16 R15 1; SETTABLEN R16 R15 1
      752 [-]: NEWTABLE R16 0 1; var16 = {}
      753 [-]: DUPTABLE R17 79; 
-     754 [-]: LOADN R18 374; var18 = 374
+     754 [-]: LOADN R18 387; var18 = 387
      755 [-]: SETTABLEKS R18 R17 K28; var18["upgradeType"] = var17
      756 [-]: GETTABLEKS R18 R0 K97; var18 = var0["sSkillHorseResistDismount"]
      757 [-]: SETTABLEKS R18 R17 K29; var18["filter"] = var17
@@ -768,7 +768,7 @@
      761 [-]: SETTABLEN R16 R15 2; SETTABLEN R16 R15 2
      762 [-]: NEWTABLE R16 0 1; var16 = {}
      763 [-]: DUPTABLE R17 79; 
-     764 [-]: LOADN R18 374; var18 = 374
+     764 [-]: LOADN R18 387; var18 = 387
      765 [-]: SETTABLEKS R18 R17 K28; var18["upgradeType"] = var17
      766 [-]: GETTABLEKS R18 R0 K98; var18 = var0["sSkillHorseStomp"]
      767 [-]: SETTABLEKS R18 R17 K29; var18["filter"] = var17
@@ -778,7 +778,7 @@
      771 [-]: SETTABLEN R16 R15 3; SETTABLEN R16 R15 3
      772 [-]: NEWTABLE R16 0 1; var16 = {}
      773 [-]: DUPTABLE R17 79; 
-     774 [-]: LOADN R18 374; var18 = 374
+     774 [-]: LOADN R18 387; var18 = 387
      775 [-]: SETTABLEKS R18 R17 K28; var18["upgradeType"] = var17
      776 [-]: GETTABLEKS R18 R0 K99; var18 = var0["sSkillDuviriFastTravel"]
      777 [-]: SETTABLEKS R18 R17 K29; var18["filter"] = var17
@@ -788,7 +788,7 @@
      781 [-]: SETTABLEN R16 R15 4; SETTABLEN R16 R15 4
      782 [-]: NEWTABLE R16 0 1; var16 = {}
      783 [-]: DUPTABLE R17 100; 
-     784 [-]: LOADN R18 78 ; var18 = 78
+     784 [-]: LOADN R18 81 ; var18 = 81
      785 [-]: SETTABLEKS R18 R17 K28; var18["upgradeType"] = var17
      786 [-]: GETGLOBAL R18 K16; var18 = "CATEGORY_HORSE"
      787 [-]: SETTABLEKS R18 R17 K44; var18["category"] = var17
@@ -800,7 +800,7 @@
      793 [-]: SETTABLEN R16 R15 5; SETTABLEN R16 R15 5
      794 [-]: NEWTABLE R16 0 1; var16 = {}
      795 [-]: DUPTABLE R17 79; 
-     796 [-]: LOADN R18 374; var18 = 374
+     796 [-]: LOADN R18 387; var18 = 387
      797 [-]: SETTABLEKS R18 R17 K28; var18["upgradeType"] = var17
      798 [-]: GETTABLEKS R18 R0 K101; var18 = var0["sSkillHorseProtect"]
      799 [-]: SETTABLEKS R18 R17 K29; var18["filter"] = var17
@@ -810,7 +810,7 @@
      803 [-]: SETTABLEN R16 R15 6; SETTABLEN R16 R15 6
      804 [-]: NEWTABLE R16 0 1; var16 = {}
      805 [-]: DUPTABLE R17 45; 
-     806 [-]: LOADN R18 186; var18 = 186
+     806 [-]: LOADN R18 191; var18 = 191
      807 [-]: SETTABLEKS R18 R17 K28; var18["upgradeType"] = var17
      808 [-]: LOADK R18 K65; var18 = 0.5
      809 [-]: SETTABLEKS R18 R17 K37; var18["value"] = var17
@@ -822,14 +822,14 @@
      815 [-]: SETTABLEN R16 R15 7; SETTABLEN R16 R15 7
      816 [-]: NEWTABLE R16 0 2; var16 = {}
      817 [-]: DUPTABLE R17 79; 
-     818 [-]: LOADN R18 374; var18 = 374
+     818 [-]: LOADN R18 387; var18 = 387
      819 [-]: SETTABLEKS R18 R17 K28; var18["upgradeType"] = var17
      820 [-]: GETTABLEKS R18 R0 K102; var18 = var0["sSkillHorseRename"]
      821 [-]: SETTABLEKS R18 R17 K29; var18["filter"] = var17
      822 [-]: GETGLOBAL R18 K14; var18 = "CATEGORY_DRIFTER"
      823 [-]: SETTABLEKS R18 R17 K44; var18["category"] = var17
      824 [-]: DUPTABLE R18 79; 
-     825 [-]: LOADN R19 374; var19 = 374
+     825 [-]: LOADN R19 387; var19 = 387
      826 [-]: SETTABLEKS R19 R18 K28; var19["upgradeType"] = var18
      827 [-]: GETTABLEKS R19 R0 K102; var19 = var0["sSkillHorseRename"]
      828 [-]: SETTABLEKS R19 R18 K29; var19["filter"] = var18
@@ -841,7 +841,7 @@
      834 [-]: SETTABLEN R16 R15 9; SETTABLEN R16 R15 9
      835 [-]: NEWTABLE R16 0 1; var16 = {}
      836 [-]: DUPTABLE R17 79; 
-     837 [-]: LOADN R18 374; var18 = 374
+     837 [-]: LOADN R18 387; var18 = 387
      838 [-]: SETTABLEKS R18 R17 K28; var18["upgradeType"] = var17
      839 [-]: GETTABLEKS R18 R0 K103; var18 = var0["sSkillDuviriFastTravelToDrifters"]
      840 [-]: SETTABLEKS R18 R17 K29; var18["filter"] = var17
@@ -852,7 +852,7 @@
      845 [-]: NEWTABLE R16 0 10; var16 = {}
      846 [-]: NEWTABLE R17 0 1; var17 = {}
      847 [-]: DUPTABLE R18 89; 
-     848 [-]: LOADN R19 374; var19 = 374
+     848 [-]: LOADN R19 387; var19 = 387
      849 [-]: SETTABLEKS R19 R18 K28; var19["upgradeType"] = var18
      850 [-]: LOADN R19 1  ; var19 = 1
      851 [-]: SETTABLEKS R19 R18 K37; var19["value"] = var18
@@ -866,7 +866,7 @@
      859 [-]: SETTABLEN R17 R16 1; SETTABLEN R17 R16 1
      860 [-]: NEWTABLE R17 0 1; var17 = {}
      861 [-]: DUPTABLE R18 89; 
-     862 [-]: LOADN R19 374; var19 = 374
+     862 [-]: LOADN R19 387; var19 = 387
      863 [-]: SETTABLEKS R19 R18 K28; var19["upgradeType"] = var18
      864 [-]: LOADN R19 2  ; var19 = 2
      865 [-]: SETTABLEKS R19 R18 K37; var19["value"] = var18
@@ -880,7 +880,7 @@
      873 [-]: SETTABLEN R17 R16 2; SETTABLEN R17 R16 2
      874 [-]: NEWTABLE R17 0 1; var17 = {}
      875 [-]: DUPTABLE R18 89; 
-     876 [-]: LOADN R19 374; var19 = 374
+     876 [-]: LOADN R19 387; var19 = 387
      877 [-]: SETTABLEKS R19 R18 K28; var19["upgradeType"] = var18
      878 [-]: LOADN R19 1  ; var19 = 1
      879 [-]: SETTABLEKS R19 R18 K37; var19["value"] = var18
@@ -894,7 +894,7 @@
      887 [-]: SETTABLEN R17 R16 3; SETTABLEN R17 R16 3
      888 [-]: NEWTABLE R17 0 1; var17 = {}
      889 [-]: DUPTABLE R18 89; 
-     890 [-]: LOADN R19 374; var19 = 374
+     890 [-]: LOADN R19 387; var19 = 387
      891 [-]: SETTABLEKS R19 R18 K28; var19["upgradeType"] = var18
      892 [-]: LOADN R19 1  ; var19 = 1
      893 [-]: SETTABLEKS R19 R18 K37; var19["value"] = var18
@@ -908,7 +908,7 @@
      901 [-]: SETTABLEN R17 R16 4; SETTABLEN R17 R16 4
      902 [-]: NEWTABLE R17 0 1; var17 = {}
      903 [-]: DUPTABLE R18 89; 
-     904 [-]: LOADN R19 374; var19 = 374
+     904 [-]: LOADN R19 387; var19 = 387
      905 [-]: SETTABLEKS R19 R18 K28; var19["upgradeType"] = var18
      906 [-]: LOADK R19 K65; var19 = 0.5
      907 [-]: SETTABLEKS R19 R18 K37; var19["value"] = var18
@@ -922,7 +922,7 @@
      915 [-]: SETTABLEN R17 R16 5; SETTABLEN R17 R16 5
      916 [-]: NEWTABLE R17 0 1; var17 = {}
      917 [-]: DUPTABLE R18 89; 
-     918 [-]: LOADN R19 374; var19 = 374
+     918 [-]: LOADN R19 387; var19 = 387
      919 [-]: SETTABLEKS R19 R18 K28; var19["upgradeType"] = var18
      920 [-]: LOADN R19 3  ; var19 = 3
      921 [-]: SETTABLEKS R19 R18 K37; var19["value"] = var18
@@ -936,7 +936,7 @@
      929 [-]: SETTABLEN R17 R16 6; SETTABLEN R17 R16 6
      930 [-]: NEWTABLE R17 0 1; var17 = {}
      931 [-]: DUPTABLE R18 89; 
-     932 [-]: LOADN R19 374; var19 = 374
+     932 [-]: LOADN R19 387; var19 = 387
      933 [-]: SETTABLEKS R19 R18 K28; var19["upgradeType"] = var18
      934 [-]: LOADN R19 2  ; var19 = 2
      935 [-]: SETTABLEKS R19 R18 K37; var19["value"] = var18
@@ -950,7 +950,7 @@
      943 [-]: SETTABLEN R17 R16 7; SETTABLEN R17 R16 7
      944 [-]: NEWTABLE R17 0 1; var17 = {}
      945 [-]: DUPTABLE R18 89; 
-     946 [-]: LOADN R19 374; var19 = 374
+     946 [-]: LOADN R19 387; var19 = 387
      947 [-]: SETTABLEKS R19 R18 K28; var19["upgradeType"] = var18
      948 [-]: LOADN R19 1  ; var19 = 1
      949 [-]: SETTABLEKS R19 R18 K37; var19["value"] = var18
@@ -966,7 +966,7 @@
      959 [-]: SETTABLEN R17 R16 9; SETTABLEN R17 R16 9
      960 [-]: NEWTABLE R17 0 1; var17 = {}
      961 [-]: DUPTABLE R18 79; 
-     962 [-]: LOADN R19 374; var19 = 374
+     962 [-]: LOADN R19 387; var19 = 387
      963 [-]: SETTABLEKS R19 R18 K28; var19["upgradeType"] = var18
      964 [-]: GETTABLEKS R19 R0 K110; var19 = var0["sSkillStalkerOption"]
      965 [-]: SETTABLEKS R19 R18 K29; var19["filter"] = var18
@@ -977,7 +977,7 @@
      970 [-]: NEWTABLE R17 0 10; var17 = {}
      971 [-]: NEWTABLE R18 0 1; var18 = {}
      972 [-]: DUPTABLE R19 79; 
-     973 [-]: LOADN R20 374; var20 = 374
+     973 [-]: LOADN R20 387; var20 = 387
      974 [-]: SETTABLEKS R20 R19 K28; var20["upgradeType"] = var19
      975 [-]: GETTABLEKS R20 R0 K111; var20 = var0["sSkillHealthPerBoon"]
      976 [-]: SETTABLEKS R20 R19 K29; var20["filter"] = var19
@@ -1004,7 +1004,7 @@
      997 [-]: SETTABLEN R18 R17 2; SETTABLEN R18 R17 2
      998 [-]: NEWTABLE R18 0 1; var18 = {}
      999 [-]: DUPTABLE R19 45; 
-     1000 [-]: LOADN R20 166; var20 = 166
+     1000 [-]: LOADN R20 171; var20 = 171
      1001 [-]: SETTABLEKS R20 R19 K28; var20["upgradeType"] = var19
      1002 [-]: LOADN R20 1  ; var20 = 1
      1003 [-]: SETTABLEKS R20 R19 K37; var20["value"] = var19
@@ -1033,7 +1033,7 @@
      1026 [-]: SETTABLEN R18 R17 4; SETTABLEN R18 R17 4
      1027 [-]: NEWTABLE R18 0 1; var18 = {}
      1028 [-]: DUPTABLE R19 45; 
-     1029 [-]: LOADN R20 66 ; var20 = 66
+     1029 [-]: LOADN R20 69 ; var20 = 69
      1030 [-]: SETTABLEKS R20 R19 K28; var20["upgradeType"] = var19
      1031 [-]: LOADK R20 K65; var20 = 0.5
      1032 [-]: SETTABLEKS R20 R19 K37; var20["value"] = var19
@@ -1045,7 +1045,7 @@
      1038 [-]: SETTABLEN R18 R17 5; SETTABLEN R18 R17 5
      1039 [-]: NEWTABLE R18 0 1; var18 = {}
      1040 [-]: DUPTABLE R19 79; 
-     1041 [-]: LOADN R20 374; var20 = 374
+     1041 [-]: LOADN R20 387; var20 = 387
      1042 [-]: SETTABLEKS R20 R19 K28; var20["upgradeType"] = var19
      1043 [-]: GETTABLEKS R20 R0 K115; var20 = var0["sSkillDuviriBeastModeIncreaseOnCounter"]
      1044 [-]: SETTABLEKS R20 R19 K29; var20["filter"] = var19
@@ -1072,7 +1072,7 @@
      1065 [-]: SETTABLEN R18 R17 7; SETTABLEN R18 R17 7
      1066 [-]: NEWTABLE R18 0 1; var18 = {}
      1067 [-]: DUPTABLE R19 45; 
-     1068 [-]: LOADN R20 166; var20 = 166
+     1068 [-]: LOADN R20 171; var20 = 171
      1069 [-]: SETTABLEKS R20 R19 K28; var20["upgradeType"] = var19
      1070 [-]: LOADN R20 1  ; var20 = 1
      1071 [-]: SETTABLEKS R20 R19 K37; var20["value"] = var19
@@ -1084,7 +1084,7 @@
      1077 [-]: SETTABLEN R18 R17 8; SETTABLEN R18 R17 8
      1078 [-]: NEWTABLE R18 0 2; var18 = {}
      1079 [-]: DUPTABLE R19 45; 
-     1080 [-]: LOADN R20 64 ; var20 = 64
+     1080 [-]: LOADN R20 67 ; var20 = 67
      1081 [-]: SETTABLEKS R20 R19 K28; var20["upgradeType"] = var19
      1082 [-]: LOADN R20 5  ; var20 = 5
      1083 [-]: SETTABLEKS R20 R19 K37; var20["value"] = var19
@@ -1093,7 +1093,7 @@
      1086 [-]: GETGLOBAL R20 K15; var20 = "CATEGORY_OPERATOR"
      1087 [-]: SETTABLEKS R20 R19 K44; var20["category"] = var19
      1088 [-]: DUPTABLE R20 45; 
-     1089 [-]: LOADN R21 64 ; var21 = 64
+     1089 [-]: LOADN R21 67 ; var21 = 67
      1090 [-]: SETTABLEKS R21 R20 K28; var21["upgradeType"] = var20
      1091 [-]: LOADN R21 5  ; var21 = 5
      1092 [-]: SETTABLEKS R21 R20 K37; var21["value"] = var20
@@ -1147,13 +1147,13 @@
 ; Is_vararg:       0
 ; Max Stack Size:  11
 
-       0 [-]: FASTCALL1 62 R0 L0; 
+       0 [-]: FASTCALL1 64 R0 L0; 
        1 [-]: MOVE R2 R0   ; var2 = var0
        2 [-]: GETIMPORT R1 1; var1 = 0x7B998233
        3 [-]: CALL R1 2 2  ; var1 = var1(var2)
 L 0:   4 [-]: JUMPIF R1 L2 ; goto L2 if var1
        5 [-]: GETTABLEKS R2 R0 K2; var2 = var0["upgradeType"]
-       6 [-]: FASTCALL1 62 R2 L1; 
+       6 [-]: FASTCALL1 64 R2 L1; 
        7 [-]: GETIMPORT R1 1; var1 = 0x7B998233
        8 [-]: CALL R1 2 2  ; var1 = var1(var2)
 L 1:   9 [-]: JUMPIFNOT R1 L3; goto L3 if not var1
@@ -1165,7 +1165,7 @@ L 3:  12 [-]: GETIMPORT R1 5; var1 = 0xAF6AC8D4[0x449A507E]
       15 [-]: NAMECALL R2 R1 K6; var3 = var1; var2 = var1[0x14894DE6]
       16 [-]: CALL R2 3 1  ; var2(var3, var4)
       17 [-]: GETTABLEKS R3 R0 K7; var3 = var0["operationType"]
-      18 [-]: FASTCALL1 62 R3 L4; 
+      18 [-]: FASTCALL1 64 R3 L4; 
       19 [-]: GETIMPORT R2 1; var2 = 0x7B998233
       20 [-]: CALL R2 2 2  ; var2 = var2(var3)
 L 4:  21 [-]: JUMPIFNOT R2 L5; goto L5 if not var2
@@ -1177,7 +1177,7 @@ L 5:  26 [-]: GETTABLEKS R4 R0 K7; var4 = var0["operationType"]
       27 [-]: NAMECALL R2 R1 K8; var3 = var1; var2 = var1[0xC670D7F3]
       28 [-]: CALL R2 3 1  ; var2(var3, var4)
 L 6:  29 [-]: GETTABLEKS R3 R0 K9; var3 = var0["value"]
-      30 [-]: FASTCALL1 62 R3 L7; 
+      30 [-]: FASTCALL1 64 R3 L7; 
       31 [-]: GETIMPORT R2 1; var2 = 0x7B998233
       32 [-]: CALL R2 2 2  ; var2 = var2(var3)
 L 7:  33 [-]: JUMPIFNOT R2 L8; goto L8 if not var2
@@ -1189,7 +1189,7 @@ L 8:  38 [-]: GETTABLEKS R4 R0 K9; var4 = var0["value"]
       39 [-]: NAMECALL R2 R1 K10; var3 = var1; var2 = var1[0x8550D2A7]
       40 [-]: CALL R2 3 1  ; var2(var3, var4)
 L 9:  41 [-]: GETTABLEKS R3 R0 K11; var3 = var0["validType"]
-      42 [-]: FASTCALL1 62 R3 L10; 
+      42 [-]: FASTCALL1 64 R3 L10; 
       43 [-]: GETIMPORT R2 1; var2 = 0x7B998233
       44 [-]: CALL R2 2 2  ; var2 = var2(var3)
 L10:  45 [-]: JUMPIF R2 L11; goto L11 if var2
@@ -1197,7 +1197,7 @@ L10:  45 [-]: JUMPIF R2 L11; goto L11 if var2
       47 [-]: NAMECALL R2 R1 K12; var3 = var1; var2 = var1[0xD314C0E0]
       48 [-]: CALL R2 3 1  ; var2(var3, var4)
 L11:  49 [-]: GETTABLEKS R3 R0 K13; var3 = var0["validPosture"]
-      50 [-]: FASTCALL1 62 R3 L12; 
+      50 [-]: FASTCALL1 64 R3 L12; 
       51 [-]: GETIMPORT R2 1; var2 = 0x7B998233
       52 [-]: CALL R2 2 2  ; var2 = var2(var3)
 L12:  53 [-]: JUMPIF R2 L13; goto L13 if var2
@@ -1215,7 +1215,7 @@ L14:  62 [-]: MOVE R9 R6   ; var9 = var6
       65 [-]: CALL R7 4 1  ; var7(var8, var9, var10)
 L15:  66 [-]: FORGLOOP R2 L14 2 [inext]; 
       67 [-]: GETTABLEKS R3 R0 K19; var3 = var0["filter"]
-      68 [-]: FASTCALL1 62 R3 L16; 
+      68 [-]: FASTCALL1 64 R3 L16; 
       69 [-]: GETIMPORT R2 1; var2 = 0x7B998233
       70 [-]: CALL R2 2 2  ; var2 = var2(var3)
 L16:  71 [-]: JUMPIF R2 L17; goto L17 if var2
@@ -1233,9 +1233,9 @@ L17:  75 [-]: RETURN R1 1  ;
 ; Max Stack Size:  21
 
        0 [-]: LOADN R4 1   ; var4 = 1
-       1 [-]: JUMPIFLT R1 R4 L0; goto L0 if var1 < var-1426062307
+       1 [-]: JUMPIFLT R1 R4 L0; goto L0 if var1 < var-1426062329
        2 [-]: GETGLOBAL R4 K0; var4 = "MAX_SKILL_RANK"
-       3 [-]: JUMPIFNOTLT R4 R1 L1; goto L1 if var4 >= var132174
+       3 [-]: JUMPIFNOTLT R4 R1 L1; goto L1 if var4 >= var132129
 L 0:   4 [-]: GETIMPORT R4 2; var4 = 0x3D106989
        5 [-]: LOADK R5 K3  ; var5 = "PLAYER_SKILL_LIB rank arg is incorrect"
        6 [-]: CALL R4 2 1  ; var4(var5)
@@ -1243,7 +1243,7 @@ L 0:   4 [-]: GETIMPORT R4 2; var4 = 0x3D106989
        8 [-]: RETURN R4 1  ; 
 L 1:   9 [-]: GETUPVAL R5 0; var5 = upvalues[0]
       10 [-]: GETTABLE R4 R5 R0; var4 = var5[var0]
-      11 [-]: FASTCALL1 62 R4 L2; 
+      11 [-]: FASTCALL1 64 R4 L2; 
       12 [-]: MOVE R6 R4   ; var6 = var4
       13 [-]: GETIMPORT R5 5; var5 = 0x7B998233
       14 [-]: CALL R5 2 2  ; var5 = var5(var6)
@@ -1258,7 +1258,7 @@ L 3:  21 [-]: NEWTABLE R5 0 0; var5 = {}
       23 [-]: LOADN R7 1   ; var7 = 1
       24 [-]: JUMPIFNOT R2 L4; goto L4 if not var2
       25 [-]: MOVE R7 R1   ; var7 = var1
-L 4:  26 [-]: FASTCALL1 62 R3 L5; 
+L 4:  26 [-]: FASTCALL1 64 R3 L5; 
       27 [-]: MOVE R9 R3   ; var9 = var3
       28 [-]: GETIMPORT R8 5; var8 = 0x7B998233
       29 [-]: CALL R8 2 2  ; var8 = var8(var9)
@@ -1275,30 +1275,30 @@ L 7:  36 [-]: GETTABLE R11 R4 R10; var11 = var4[var10]
       40 [-]: FORNPREP R12 L21; nforprep start - [escape at L21] -- var12 = iterator
 L 8:  41 [-]: LOADB R15 0  ; var15 = false
       42 [-]: GETGLOBAL R16 K7; var16 = "CATEGORY_ALL"
-      43 [-]: JUMPIFNOTEQ R3 R16 L9; goto L9 if var3 ~= var69403
+      43 [-]: JUMPIFNOTEQ R3 R16 L9; goto L9 if var3 ~= var69382
       44 [-]: LOADB R15 1  ; var15 = true
       45 [-]: JUMP L15     ; goto L15
 L 9:  46 [-]: GETTABLE R18 R11 R14; var18 = var11[var14]
       47 [-]: GETTABLEKS R17 R18 K8; var17 = var18["category"]
-      48 [-]: FASTCALL1 62 R17 L10; 
+      48 [-]: FASTCALL1 64 R17 L10; 
       49 [-]: GETIMPORT R16 5; var16 = 0x7B998233
       50 [-]: CALL R16 2 2 ; var16 = var16(var17)
 L10:  51 [-]: JUMPIF R16 L13; goto L13 if var16
       52 [-]: GETTABLE R17 R11 R14; var17 = var11[var14]
       53 [-]: GETTABLEKS R16 R17 K8; var16 = var17["category"]
-      54 [-]: JUMPIFEQ R3 R16 L11; goto L11 if var3 == var16781083
+      54 [-]: JUMPIFEQ R3 R16 L11; goto L11 if var3 == var16781062
       55 [-]: LOADB R15 0 +1; var15 = false
 L11:  56 [-]: LOADB R15 1  ; var15 = true
 L12:  57 [-]: JUMP L15     ; goto L15
 L13:  58 [-]: GETGLOBAL R16 K9; var16 = "CATEGORY_CREWSHIP"
-      59 [-]: JUMPIFEQ R3 R16 L14; goto L14 if var3 == var16781083
+      59 [-]: JUMPIFEQ R3 R16 L14; goto L14 if var3 == var16781062
       60 [-]: LOADB R15 0 +1; var15 = false
 L14:  61 [-]: LOADB R15 1  ; var15 = true
 L15:  62 [-]: JUMPIFNOT R15 L20; goto L20 if not var15
       63 [-]: GETUPVAL R16 1; var16 = upvalues[1]
       64 [-]: GETTABLE R17 R11 R14; var17 = var11[var14]
       65 [-]: CALL R16 2 2 ; var16 = var16(var17)
-      66 [-]: FASTCALL1 62 R16 L16; 
+      66 [-]: FASTCALL1 64 R16 L16; 
       67 [-]: MOVE R18 R16 ; var18 = var16
       68 [-]: GETIMPORT R17 5; var17 = 0x7B998233
       69 [-]: CALL R17 2 2 ; var17 = var17(var18)
@@ -1311,7 +1311,7 @@ L16:  70 [-]: JUMPIF R17 L18; goto L18 if var17
 L17:  76 [-]: JUMP L20     ; goto L20
 L18:  77 [-]: GETTABLE R19 R11 R14; var19 = var11[var14]
       78 [-]: GETTABLEKS R18 R19 K13; var18 = var19["upgradeObjectType"]
-      79 [-]: FASTCALL1 62 R18 L19; 
+      79 [-]: FASTCALL1 64 R18 L19; 
       80 [-]: GETIMPORT R17 5; var17 = 0x7B998233
       81 [-]: CALL R17 2 2 ; var17 = var17(var18)
 L19:  82 [-]: JUMPIF R17 L20; goto L20 if var17

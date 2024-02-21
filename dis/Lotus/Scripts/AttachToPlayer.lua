@@ -21,9 +21,9 @@
 L 0:   1 [-]: GETIMPORT R2 1; var2 = 0x89326C93
        2 [-]: NAMECALL R2 R2 K2; var3 = var2; var2 = var2[0x78298275]
        3 [-]: CALL R2 2 2  ; var2 = var2(var3)
-       4 [-]: JUMPIFEQ R2 R1 L2; goto L2 if var2 == var131350
+       4 [-]: JUMPIFEQ R2 R1 L2; goto L2 if var2 == var131374
        5 [-]: MOVE R1 R2   ; var1 = var2
-       6 [-]: FASTCALL1 62 R1 L1; 
+       6 [-]: FASTCALL1 64 R1 L1; 
        7 [-]: MOVE R4 R1   ; var4 = var1
        8 [-]: GETIMPORT R3 4; var3 = 0x7B998233
        9 [-]: CALL R3 2 2  ; var3 = var3(var4)

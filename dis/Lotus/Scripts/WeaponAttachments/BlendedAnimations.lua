@@ -39,7 +39,7 @@
        1 [-]: LENGTH R1 R2 ; var1 = #var2
        2 [-]: NAMECALL R2 R0 K2; var3 = var0; var2 = var0[0x73A8846A]
        3 [-]: CALL R2 2 2  ; var2 = var2(var3)
-       4 [-]: FASTCALL1 62 R2 L0; 
+       4 [-]: FASTCALL1 64 R2 L0; 
        5 [-]: MOVE R4 R2   ; var4 = var2
        6 [-]: GETIMPORT R3 4; var3 = 0x7B998233
        7 [-]: CALL R3 2 2  ; var3 = var3(var4)
@@ -57,7 +57,7 @@ L 1:  10 [-]: LOADN R3 0   ; var3 = 0
       19 [-]: NAMECALL R5 R4 K11; var6 = var4; var5 = var4[0x72D0BF01]
       20 [-]: CALL R5 2 2  ; var5 = var5(var6)
       21 [-]: LOADN R6 1   ; var6 = 1
-      22 [-]: JUMPIFNOTLT R6 R5 L2; goto L2 if var6 >= var65581
+      22 [-]: JUMPIFNOTLT R6 R5 L2; goto L2 if var6 >= var65571
       23 [-]: RETURN R0 0  ; 
 L 2:  24 [-]: NAMECALL R5 R4 K12; var6 = var4; var5 = var4[0x38CD9D88]
       25 [-]: CALL R5 2 2  ; var5 = var5(var6)
@@ -81,7 +81,7 @@ L 4:  31 [-]: GETUPVAL R6 0; var6 = upvalues[0]
       43 [-]: MOVE R5 R6   ; var5 = var6
       44 [-]: JUMP L8      ; goto L8
 L 5:  45 [-]: GETTABLEKS R7 R5 K16; var7 = var5["firingIndex"]
-      46 [-]: FASTCALL1 62 R7 L6; 
+      46 [-]: FASTCALL1 64 R7 L6; 
       47 [-]: GETIMPORT R6 4; var6 = 0x7B998233
       48 [-]: CALL R6 2 2  ; var6 = var6(var7)
 L 6:  49 [-]: JUMPIFNOT R6 L7; goto L7 if not var6
@@ -100,12 +100,12 @@ L 8:  57 [-]: GETIMPORT R7 1; var7 = 0xBB567003
       62 [-]: CALL R7 2 2  ; var7 = var7(var8)
       63 [-]: MOVE R8 R7   ; var8 = var7
       64 [-]: LOADN R9 0   ; var9 = 0
-      65 [-]: JUMPIFNOTLT R9 R3 L9; goto L9 if var9 >= var-1274672571
+      65 [-]: JUMPIFNOTLT R9 R3 L9; goto L9 if var9 >= var-1274672564
       66 [-]: NAMECALL R10 R6 K20; var11 = var6; var10 = var6[0xF0267DB4]
       67 [-]: CALL R10 2 2 ; var10 = var10(var11)
       68 [-]: DIV R9 R10 R3; var9 = var10 / var3
       69 [-]: DIV R8 R9 R1 ; var8 = var9 / var1
-      70 [-]: JUMPIFNOTLT R8 R7 L9; goto L9 if var8 >= var460822
+      70 [-]: JUMPIFNOTLT R8 R7 L9; goto L9 if var8 >= var460846
       71 [-]: MOVE R8 R7   ; var8 = var7
 L 9:  72 [-]: MOVE R11 R6  ; var11 = var6
       73 [-]: LOADB R12 0  ; var12 = false

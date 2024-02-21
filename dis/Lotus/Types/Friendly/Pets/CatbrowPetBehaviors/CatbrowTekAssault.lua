@@ -67,7 +67,7 @@ L 2:  21 [-]: GETTABLE R2 R3 R4; var2 = var3[var4]
        7 [-]: GETIMPORT R6 4; var6 = _T["tekAssault"]
        8 [-]: GETTABLE R5 R6 R2; var5 = var6[var2]
        9 [-]: GETTABLEKS R4 R5 K6; var4 = var5["immuneDuration"]
-L 0:  10 [-]: FASTCALL1 62 R0 L1; 
+L 0:  10 [-]: FASTCALL1 64 R0 L1; 
       11 [-]: MOVE R6 R0   ; var6 = var0
       12 [-]: GETIMPORT R5 8; var5 = 0x7B998233
       13 [-]: CALL R5 2 2  ; var5 = var5(var6)
@@ -80,7 +80,7 @@ L 1:  14 [-]: JUMPIF R5 L8 ; goto L8 if var5
       20 [-]: JUMPIFNOT R5 L7; goto L7 if not var5
       21 [-]: GETIMPORT R5 12; var5 = 0x0C62ABF7
       22 [-]: CALL R5 1 2  ; var5 = var5()
-      23 [-]: JUMPIFNOTLT R5 R3 L2; goto L2 if var5 >= var67355
+      23 [-]: JUMPIFNOTLT R5 R3 L2; goto L2 if var5 >= var67334
       24 [-]: LOADB R7 1   ; var7 = true
       25 [-]: NAMECALL R5 R1 K13; var6 = var1; var5 = var1[0xECD0F9D3]
       26 [-]: CALL R5 3 1  ; var5(var6, var7)
@@ -92,7 +92,7 @@ L 1:  14 [-]: JUMPIF R5 L8 ; goto L8 if var5
 L 2:  32 [-]: LOADB R7 0   ; var7 = false
       33 [-]: NAMECALL R5 R1 K13; var6 = var1; var5 = var1[0xECD0F9D3]
       34 [-]: CALL R5 3 1  ; var5(var6, var7)
-L 3:  35 [-]: FASTCALL1 62 R0 L4; 
+L 3:  35 [-]: FASTCALL1 64 R0 L4; 
       36 [-]: MOVE R6 R0   ; var6 = var0
       37 [-]: GETIMPORT R5 8; var5 = 0x7B998233
       38 [-]: CALL R5 2 2  ; var5 = var5(var6)
@@ -169,7 +169,7 @@ L 1:  20 [-]: GETTABLE R4 R5 R6; var4 = var5[var6]
       32 [-]: CALL R5 6 2  ; var5 = var5(var6, var7, var8, var9, var10)
       33 [-]: MOVE R4 R5   ; var4 = var5
       34 [-]: GETIMPORT R6 16; var6 = _T["tekAssault"]
-      35 [-]: FASTCALL1 62 R6 L2; 
+      35 [-]: FASTCALL1 64 R6 L2; 
       36 [-]: GETIMPORT R5 18; var5 = 0x7B998233
       37 [-]: CALL R5 2 2  ; var5 = var5(var6)
 L 2:  38 [-]: JUMPIFNOT R5 L3; goto L3 if not var5

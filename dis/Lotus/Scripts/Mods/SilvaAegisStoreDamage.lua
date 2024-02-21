@@ -72,12 +72,12 @@ L 0:  11 [-]: SETTABLEKS R2 R1 K5; var2["val"] = var1
 ; Is_vararg:       0
 ; Max Stack Size:  10
 
-       0 [-]: FASTCALL1 62 R0 L0; 
+       0 [-]: FASTCALL1 64 R0 L0; 
        1 [-]: MOVE R6 R0   ; var6 = var0
        2 [-]: GETIMPORT R5 1; var5 = 0x7B998233
        3 [-]: CALL R5 2 2  ; var5 = var5(var6)
 L 0:   4 [-]: JUMPIF R5 L2 ; goto L2 if var5
-       5 [-]: FASTCALL1 62 R1 L1; 
+       5 [-]: FASTCALL1 64 R1 L1; 
        6 [-]: MOVE R6 R1   ; var6 = var1
        7 [-]: GETIMPORT R5 1; var5 = 0x7B998233
        8 [-]: CALL R5 2 2  ; var5 = var5(var6)
@@ -123,7 +123,7 @@ L 4:  26 [-]: NAMECALL R5 R0 K12; var6 = var0; var5 = var0[0x388577D5]
 ; Is_vararg:       0
 ; Max Stack Size:  16
 
-       0 [-]: FASTCALL1 62 R0 L0; 
+       0 [-]: FASTCALL1 64 R0 L0; 
        1 [-]: MOVE R2 R0   ; var2 = var0
        2 [-]: GETIMPORT R1 1; var1 = 0x7B998233
        3 [-]: CALL R1 2 2  ; var1 = var1(var2)
@@ -145,7 +145,7 @@ L 2:  10 [-]: NAMECALL R1 R0 K3; var2 = var0; var1 = var0[0xDE321E6F]
       19 [-]: CALL R4 2 1  ; var4(var5)
       20 [-]: RETURN R0 0  ; 
 L 3:  21 [-]: GETTABLEKS R4 R3 K11; var4 = var3["weapon"]
-      22 [-]: FASTCALL1 62 R4 L4; 
+      22 [-]: FASTCALL1 64 R4 L4; 
       23 [-]: MOVE R6 R4   ; var6 = var4
       24 [-]: GETIMPORT R5 1; var5 = 0x7B998233
       25 [-]: CALL R5 2 2  ; var5 = var5(var6)
@@ -167,8 +167,7 @@ L 5:  28 [-]: LOADN R7 0   ; var7 = 0
       41 [-]: GETTABLEKS R8 R3 K16; var8 = var3["storagePct"]
       42 [-]: NAMECALL R9 R4 K17; var10 = var4; var9 = var4[0x97A9F2B9]
       43 [-]: CALL R9 2 2  ; var9 = var9(var10)
-      44 [-]: DIVK R11 R8 K18; var11 = var8 / 100
-      45 [-]: MUL R10 R7 R11; var10 = var7 * var11
+           45 [-]: MUL R10 R7 R11; var10 = var7 * var11
       46 [-]: ADD R11 R9 R10; var11 = var9 + var10
       47 [-]: FASTCALL1 7 R11 L6; 
       48 [-]: MOVE R15 R11 ; var15 = var11

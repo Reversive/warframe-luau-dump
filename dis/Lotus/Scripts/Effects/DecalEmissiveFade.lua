@@ -94,7 +94,7 @@ L 2:  41 [-]: RETURN R0 0  ;
 
        0 [-]: NAMECALL R1 R0 K0; var2 = var0; var1 = var0[0xED324116]
        1 [-]: CALL R1 2 2  ; var1 = var1(var2)
-       2 [-]: FASTCALL1 62 R1 L0; 
+       2 [-]: FASTCALL1 64 R1 L0; 
        3 [-]: MOVE R3 R1   ; var3 = var1
        4 [-]: GETIMPORT R2 2; var2 = 0x7B998233
        5 [-]: CALL R2 2 2  ; var2 = var2(var3)
@@ -108,7 +108,7 @@ L 0:   6 [-]: JUMPIF R2 L3 ; goto L3 if var2
       13 [-]: NAMECALL R2 R2 K7; var3 = var2; var2 = var2[0xF7D48EE0]
       14 [-]: CALL R2 2 2  ; var2 = var2(var3)
       15 [-]: MOVE R1 R2   ; var1 = var2
-      16 [-]: FASTCALL1 62 R1 L1; 
+      16 [-]: FASTCALL1 64 R1 L1; 
       17 [-]: MOVE R3 R1   ; var3 = var1
       18 [-]: GETIMPORT R2 2; var2 = 0x7B998233
       19 [-]: CALL R2 2 2  ; var2 = var2(var3)
@@ -127,7 +127,7 @@ L 2:  25 [-]: GETIMPORT R4 9; var4 = gLotusWeaponType
 L 3:  32 [-]: LOADN R2 0   ; var2 = 0
       33 [-]: LOADN R3 0   ; var3 = 0
 L 4:  34 [-]: GETIMPORT R4 11; var4 = 0x4A840118
-      35 [-]: JUMPIFNOTLT R3 R4 L6; goto L6 if var3 >= var853070
+      35 [-]: JUMPIFNOTLT R3 R4 L6; goto L6 if var3 >= var853025
       36 [-]: GETIMPORT R4 13; var4 = 0x42DCC9F5
       37 [-]: LOADN R7 1   ; var7 = 1
       38 [-]: GETIMPORT R8 15; var8 = 0xA533083A

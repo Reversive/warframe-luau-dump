@@ -30,7 +30,7 @@
        4 [-]: LOADN R8 2   ; var8 = 2
        5 [-]: NAMECALL R4 R4 K5; var5 = var4; var4 = var4[0x4E5939A5]
        6 [-]: CALL R4 5 2  ; var4 = var4(var5, var6, var7, var8)
-L 0:   7 [-]: FASTCALL1 62 R4 L1; 
+L 0:   7 [-]: FASTCALL1 64 R4 L1; 
        8 [-]: MOVE R6 R4   ; var6 = var4
        9 [-]: GETIMPORT R5 7; var5 = 0x7B998233
       10 [-]: CALL R5 2 2  ; var5 = var5(var6)
@@ -77,7 +77,7 @@ L 1:   6 [-]: NAMECALL R2 R0 K3; var3 = var0; var2 = var0[0xED4E0128]
 L 2:  13 [-]: JUMPIFNOT R1 L5; goto L5 if not var1
       14 [-]: GETIMPORT R5 6; var5 = _T["MusicBoxSounds"]
       15 [-]: GETTABLE R4 R5 R2; var4 = var5[var2]
-      16 [-]: FASTCALL1 62 R4 L3; 
+      16 [-]: FASTCALL1 64 R4 L3; 
       17 [-]: GETIMPORT R3 9; var3 = 0x7B998233
       18 [-]: CALL R3 2 2  ; var3 = var3(var4)
 L 3:  19 [-]: JUMPIFNOT R3 L4; goto L4 if not var3
@@ -99,7 +99,7 @@ L 4:  29 [-]: GETUPVAL R3 0; var3 = upvalues[0]
       35 [-]: RETURN R0 0  ; 
 L 5:  36 [-]: GETIMPORT R5 6; var5 = _T["MusicBoxSounds"]
       37 [-]: GETTABLE R4 R5 R2; var4 = var5[var2]
-      38 [-]: FASTCALL1 62 R4 L6; 
+      38 [-]: FASTCALL1 64 R4 L6; 
       39 [-]: GETIMPORT R3 9; var3 = 0x7B998233
       40 [-]: CALL R3 2 2  ; var3 = var3(var4)
 L 6:  41 [-]: JUMPIF R3 L7 ; goto L7 if var3
@@ -138,7 +138,7 @@ L 7:  50 [-]: GETUPVAL R3 0; var3 = upvalues[0]
        8 [-]: LOADN R6 2   ; var6 = 2
        9 [-]: NAMECALL R2 R2 K6; var3 = var2; var2 = var2[0x4E5939A5]
       10 [-]: CALL R2 5 2  ; var2 = var2(var3, var4, var5, var6)
-      11 [-]: FASTCALL1 62 R2 L0; 
+      11 [-]: FASTCALL1 64 R2 L0; 
       12 [-]: MOVE R4 R2   ; var4 = var2
       13 [-]: GETIMPORT R3 8; var3 = 0x7B998233
       14 [-]: CALL R3 2 2  ; var3 = var3(var4)
@@ -166,7 +166,7 @@ L 1:  19 [-]: RETURN R0 0  ;
        7 [-]: LOADN R6 2   ; var6 = 2
        8 [-]: NAMECALL R2 R2 K8; var3 = var2; var2 = var2[0x4E5939A5]
        9 [-]: CALL R2 5 2  ; var2 = var2(var3, var4, var5, var6)
-      10 [-]: FASTCALL1 62 R2 L0; 
+      10 [-]: FASTCALL1 64 R2 L0; 
       11 [-]: MOVE R4 R2   ; var4 = var2
       12 [-]: GETIMPORT R3 10; var3 = 0x7B998233
       13 [-]: CALL R3 2 2  ; var3 = var3(var4)
@@ -175,7 +175,7 @@ L 0:  14 [-]: JUMPIF R3 L2 ; goto L2 if var3
       16 [-]: CALL R3 2 2  ; var3 = var3(var4)
       17 [-]: GETIMPORT R6 2; var6 = _T["MusicBoxSounds"]
       18 [-]: GETTABLE R5 R6 R3; var5 = var6[var3]
-      19 [-]: FASTCALL1 62 R5 L1; 
+      19 [-]: FASTCALL1 64 R5 L1; 
       20 [-]: GETIMPORT R4 10; var4 = 0x7B998233
       21 [-]: CALL R4 2 2  ; var4 = var4(var5)
 L 1:  22 [-]: JUMPIF R4 L2 ; goto L2 if var4

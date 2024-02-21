@@ -17,7 +17,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  11
 
-       0 [-]: FASTCALL1 62 R1 L0; 
+       0 [-]: FASTCALL1 64 R1 L0; 
        1 [-]: MOVE R4 R1   ; var4 = var1
        2 [-]: GETIMPORT R3 1; var3 = 0x7B998233
        3 [-]: CALL R3 2 2  ; var3 = var3(var4)
@@ -25,7 +25,7 @@ L 0:   4 [-]: JUMPIFNOT R3 L1; goto L1 if not var3
        5 [-]: RETURN R0 0  ; 
 L 1:   6 [-]: NAMECALL R3 R1 K2; var4 = var1; var3 = var1[0xBB610E5B]
        7 [-]: CALL R3 2 2  ; var3 = var3(var4)
-       8 [-]: FASTCALL1 62 R3 L2; 
+       8 [-]: FASTCALL1 64 R3 L2; 
        9 [-]: MOVE R5 R3   ; var5 = var3
       10 [-]: GETIMPORT R4 1; var4 = 0x7B998233
       11 [-]: CALL R4 2 2  ; var4 = var4(var5)
@@ -33,7 +33,7 @@ L 2:  12 [-]: JUMPIFNOT R4 L3; goto L3 if not var4
       13 [-]: RETURN R0 0  ; 
 L 3:  14 [-]: NAMECALL R4 R3 K3; var5 = var3; var4 = var3[0x5E651723]
       15 [-]: CALL R4 2 2  ; var4 = var4(var5)
-      16 [-]: FASTCALL1 62 R4 L4; 
+      16 [-]: FASTCALL1 64 R4 L4; 
       17 [-]: MOVE R6 R4   ; var6 = var4
       18 [-]: GETIMPORT R5 1; var5 = 0x7B998233
       19 [-]: CALL R5 2 2  ; var5 = var5(var6)
@@ -60,7 +60,7 @@ L 7:  39 [-]: LOADN R8 19  ; var8 = 19
       40 [-]: NAMECALL R6 R0 K12; var7 = var0; var6 = var0[0x56B2AAE2]
       41 [-]: CALL R6 3 2  ; var6 = var6(var7, var8)
       42 [-]: LOADN R7 0   ; var7 = 0
-      43 [-]: JUMPIFNOTLT R7 R6 L8; goto L8 if var7 >= var460622
+      43 [-]: JUMPIFNOTLT R7 R6 L8; goto L8 if var7 >= var460577
       44 [-]: GETIMPORT R7 7; var7 = _T["VeilEffects"]
       45 [-]: GETTABLE R6 R7 R5; var6 = var7[var5]
       46 [-]: LOADN R7 5   ; var7 = 5

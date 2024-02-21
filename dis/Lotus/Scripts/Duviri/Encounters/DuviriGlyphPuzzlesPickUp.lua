@@ -57,7 +57,7 @@ L 0:  16 [-]: GETIMPORT R1 8; var1 = _T
        0 [-]: GETIMPORT R1 1; var1 = 0x7761E3BB
        1 [-]: JUMPIFNOT R1 L1; goto L1 if not var1
        2 [-]: GETIMPORT R2 4; var2 = _T["DuviriPrismPickUpType"]
-       3 [-]: FASTCALL1 62 R2 L0; 
+       3 [-]: FASTCALL1 64 R2 L0; 
        4 [-]: GETIMPORT R1 6; var1 = 0x7B998233
        5 [-]: CALL R1 2 2  ; var1 = var1(var2)
 L 0:   6 [-]: JUMPIF R1 L3 ; goto L3 if var1
@@ -71,7 +71,7 @@ L 0:   6 [-]: JUMPIF R1 L3 ; goto L3 if var1
       14 [-]: CALL R1 0 1  ; var1(var2, ...)
       15 [-]: RETURN R0 0  ; 
 L 1:  16 [-]: GETIMPORT R2 13; var2 = _T["DuviriDiscPickUpType"]
-      17 [-]: FASTCALL1 62 R2 L2; 
+      17 [-]: FASTCALL1 64 R2 L2; 
       18 [-]: GETIMPORT R1 6; var1 = 0x7B998233
       19 [-]: CALL R1 2 2  ; var1 = var1(var2)
 L 2:  20 [-]: JUMPIF R1 L3 ; goto L3 if var1

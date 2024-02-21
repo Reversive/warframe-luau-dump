@@ -22,14 +22,14 @@
 ; Max Stack Size:  10
 
        0 [-]: GETIMPORT R1 2; var1 = _T["curTransmission"]
-       1 [-]: FASTCALL1 62 R1 L0; 
+       1 [-]: FASTCALL1 64 R1 L0; 
        2 [-]: GETIMPORT R0 4; var0 = 0x7B998233
        3 [-]: CALL R0 2 2  ; var0 = var0(var1)
 L 0:   4 [-]: JUMPIFNOT R0 L1; goto L1 if not var0
        5 [-]: GETIMPORT R1 6; var1 = _T["QueuedTransmissions"]
        6 [-]: LENGTH R0 R1 ; var0 = #var1
        7 [-]: LOADN R1 0   ; var1 = 0
-       8 [-]: JUMPIFLT R1 R0 L1; goto L1 if var1 < var524366
+       8 [-]: JUMPIFLT R1 R0 L1; goto L1 if var1 < var524321
        9 [-]: GETIMPORT R0 8; var0 = _T["CurrentConversation"]
       10 [-]: JUMPIFNOT R0 L2; goto L2 if not var0
 L 1:  11 [-]: RETURN R0 0  ; 
@@ -42,7 +42,7 @@ L 3:  17 [-]: GETIMPORT R6 14; var6 = 0x89326C93
       18 [-]: MOVE R8 R5   ; var8 = var5
       19 [-]: NAMECALL R6 R6 K15; var7 = var6; var6 = var6[0x46A0EBF5]
       20 [-]: CALL R6 3 2  ; var6 = var6(var7, var8)
-      21 [-]: FASTCALL1 62 R6 L4; 
+      21 [-]: FASTCALL1 64 R6 L4; 
       22 [-]: MOVE R8 R6   ; var8 = var6
       23 [-]: GETIMPORT R7 4; var7 = 0x7B998233
       24 [-]: CALL R7 2 2  ; var7 = var7(var8)
@@ -76,17 +76,17 @@ L 7:  49 [-]: GETUPVAL R3 0; var3 = upvalues[0]
       52 [-]: GETGLOBAL R4 K29; var4 = 0xDFDA639E
       53 [-]: CALL R2 3 1  ; var2(var3, var4)
       54 [-]: GETIMPORT R2 34; var2 = 0xCBD666E1
-      55 [-]: LOADK R3 K35 ; var3 = 0.10000000000000001
+      55 [-]: LOADK R3 K35 ; var3 = 0.10000000149011612
       56 [-]: CALL R2 2 1  ; var2(var3)
 L 8:  57 [-]: GETIMPORT R3 2; var3 = _T["curTransmission"]
-      58 [-]: FASTCALL1 62 R3 L9; 
+      58 [-]: FASTCALL1 64 R3 L9; 
       59 [-]: GETIMPORT R2 4; var2 = 0x7B998233
       60 [-]: CALL R2 2 2  ; var2 = var2(var3)
 L 9:  61 [-]: JUMPIFNOT R2 L10; goto L10 if not var2
       62 [-]: GETIMPORT R3 6; var3 = _T["QueuedTransmissions"]
       63 [-]: LENGTH R2 R3 ; var2 = #var3
       64 [-]: LOADN R3 0   ; var3 = 0
-      65 [-]: JUMPIFLT R3 R2 L10; goto L10 if var3 < var524878
+      65 [-]: JUMPIFLT R3 R2 L10; goto L10 if var3 < var524833
       66 [-]: GETIMPORT R2 8; var2 = _T["CurrentConversation"]
       67 [-]: JUMPIFNOT R2 L11; goto L11 if not var2
 L10:  68 [-]: GETIMPORT R2 34; var2 = 0xCBD666E1
@@ -94,7 +94,7 @@ L10:  68 [-]: GETIMPORT R2 34; var2 = 0xCBD666E1
       70 [-]: CALL R2 2 1  ; var2(var3)
       71 [-]: JUMPBACK L8  ; goto L8
 L11:  72 [-]: GETIMPORT R2 34; var2 = 0xCBD666E1
-      73 [-]: LOADK R3 K35 ; var3 = 0.10000000000000001
+      73 [-]: LOADK R3 K35 ; var3 = 0.10000000149011612
       74 [-]: CALL R2 2 1  ; var2(var3)
       75 [-]: GETIMPORT R2 10; var2 = 0xC8802016
       76 [-]: MOVE R3 R0   ; var3 = var0

@@ -25,7 +25,7 @@
        1 [-]: NEWTABLE R2 0 0; var2 = {}
        2 [-]: SETTABLEKS R2 R1 K2; var2["InWorldTransmissionQueue"] = var1
        3 [-]: LOADN R1 0   ; var1 = 0
-L 0:   4 [-]: FASTCALL1 62 R0 L1; 
+L 0:   4 [-]: FASTCALL1 64 R0 L1; 
        5 [-]: MOVE R3 R0   ; var3 = var0
        6 [-]: GETIMPORT R2 4; var2 = 0x7B998233
        7 [-]: CALL R2 2 2  ; var2 = var2(var3)
@@ -34,7 +34,7 @@ L 1:   8 [-]: JUMPIF R2 L3 ; goto L3 if var2
       10 [-]: CALL R2 1 2  ; var2 = var2()
       11 [-]: ADD R1 R1 R2 ; var1 = var1 + var2
       12 [-]: LOADN R2 10  ; var2 = 10
-      13 [-]: JUMPIFNOTLT R2 R1 L2; goto L2 if var2 >= var327
+      13 [-]: JUMPIFNOTLT R2 R1 L2; goto L2 if var2 >= var304
       14 [-]: LOADN R1 0   ; var1 = 0
       15 [-]: GETIMPORT R3 7; var3 = _T["InWorldTransmissionQueue"]
       16 [-]: GETIMPORT R5 9; var5 = 0x7D6C5EF7

@@ -92,13 +92,13 @@
        1 [-]: NAMECALL R2 R0 K0; var3 = var0; var2 = var0[0x388577D5]
        2 [-]: CALL R2 2 2  ; var2 = var2(var3)
        3 [-]: GETIMPORT R4 3; var4 = _T["hbElemTrail"]
-       4 [-]: FASTCALL1 62 R4 L0; 
+       4 [-]: FASTCALL1 64 R4 L0; 
        5 [-]: GETIMPORT R3 5; var3 = 0x7B998233
        6 [-]: CALL R3 2 2  ; var3 = var3(var4)
 L 0:   7 [-]: JUMPIF R3 L2 ; goto L2 if var3
        8 [-]: GETIMPORT R5 3; var5 = _T["hbElemTrail"]
        9 [-]: GETTABLE R4 R5 R2; var4 = var5[var2]
-      10 [-]: FASTCALL1 62 R4 L1; 
+      10 [-]: FASTCALL1 64 R4 L1; 
       11 [-]: GETIMPORT R3 5; var3 = 0x7B998233
       12 [-]: CALL R3 2 2  ; var3 = var3(var4)
 L 1:  13 [-]: JUMPIF R3 L2 ; goto L2 if var3
@@ -117,7 +117,7 @@ L 2:  18 [-]: RETURN R0 0  ;
 ; Max Stack Size:  7
 
        0 [-]: GETIMPORT R4 2; var4 = _T["hbElemTrail"]
-       1 [-]: FASTCALL1 62 R4 L0; 
+       1 [-]: FASTCALL1 64 R4 L0; 
        2 [-]: GETIMPORT R3 4; var3 = 0x7B998233
        3 [-]: CALL R3 2 2  ; var3 = var3(var4)
 L 0:   4 [-]: JUMPIFNOT R3 L1; goto L1 if not var3
@@ -128,7 +128,7 @@ L 1:   8 [-]: NAMECALL R3 R0 K6; var4 = var0; var3 = var0[0x388577D5]
        9 [-]: CALL R3 2 2  ; var3 = var3(var4)
       10 [-]: GETIMPORT R6 2; var6 = _T["hbElemTrail"]
       11 [-]: GETTABLE R5 R6 R3; var5 = var6[var3]
-      12 [-]: FASTCALL1 62 R5 L2; 
+      12 [-]: FASTCALL1 64 R5 L2; 
       13 [-]: GETIMPORT R4 4; var4 = 0x7B998233
       14 [-]: CALL R4 2 2  ; var4 = var4(var5)
 L 2:  15 [-]: JUMPIFNOT R4 L3; goto L3 if not var4
@@ -140,7 +140,7 @@ L 2:  15 [-]: JUMPIFNOT R4 L3; goto L3 if not var4
 L 3:  21 [-]: JUMPXEQKB R2 1 L4 NOT; 
       22 [-]: GETIMPORT R4 10; var4 = 0xA65F8BEC
       23 [-]: LOADN R5 0   ; var5 = 0
-      24 [-]: JUMPIFNOTLT R5 R4 L4; goto L4 if var5 >= var132430
+      24 [-]: JUMPIFNOTLT R5 R4 L4; goto L4 if var5 >= var132385
       25 [-]: GETIMPORT R5 2; var5 = _T["hbElemTrail"]
       26 [-]: GETTABLE R4 R5 R3; var4 = var5[var3]
       27 [-]: GETIMPORT R5 10; var5 = 0xA65F8BEC
@@ -184,13 +184,13 @@ L 1:  20 [-]: GETIMPORT R6 5; var6 = 0xCBD666E1
       21 [-]: LOADN R7 0   ; var7 = 0
       22 [-]: CALL R6 2 1  ; var6(var7)
       23 [-]: GETIMPORT R7 8; var7 = _T["hbElemTrail"]
-      24 [-]: FASTCALL1 62 R7 L2; 
+      24 [-]: FASTCALL1 64 R7 L2; 
       25 [-]: GETIMPORT R6 10; var6 = 0x7B998233
       26 [-]: CALL R6 2 2  ; var6 = var6(var7)
 L 2:  27 [-]: JUMPIF R6 L13; goto L13 if var6
       28 [-]: GETIMPORT R8 8; var8 = _T["hbElemTrail"]
       29 [-]: GETTABLE R7 R8 R5; var7 = var8[var5]
-      30 [-]: FASTCALL1 62 R7 L3; 
+      30 [-]: FASTCALL1 64 R7 L3; 
       31 [-]: GETIMPORT R6 10; var6 = 0x7B998233
       32 [-]: CALL R6 2 2  ; var6 = var6(var7)
 L 3:  33 [-]: JUMPIF R6 L13; goto L13 if var6
@@ -216,7 +216,7 @@ L 3:  33 [-]: JUMPIF R6 L13; goto L13 if var6
       53 [-]: CALL R8 2 2  ; var8 = var8(var9)
       54 [-]: NAMECALL R8 R8 K21; var9 = var8; var8 = var8[0xF7D48EE0]
       55 [-]: CALL R8 2 2  ; var8 = var8(var9)
-      56 [-]: FASTCALL1 62 R7 L4; 
+      56 [-]: FASTCALL1 64 R7 L4; 
       57 [-]: MOVE R10 R7  ; var10 = var7
       58 [-]: GETIMPORT R9 10; var9 = 0x7B998233
       59 [-]: CALL R9 2 2  ; var9 = var9(var10)
@@ -242,8 +242,7 @@ L 5:  73 [-]: GETIMPORT R10 32; var10 = 0xA421AF95
       79 [-]: LOADN R12 0  ; var12 = 0
       80 [-]: LOADN R13 0  ; var13 = 0
       81 [-]: GETTABLEKS R15 R10 K34; var15 = var10["z"]
-      82 [-]: DIVK R14 R15 K33; var14 = var15 / 2
-      83 [-]: CALL R11 4 2 ; var11 = var11(var12, var13, var14)
+           83 [-]: CALL R11 4 2 ; var11 = var11(var12, var13, var14)
       84 [-]: GETIMPORT R12 36; var12 = 0x492C7F2A
       85 [-]: MOVE R13 R11 ; var13 = var11
       86 [-]: MOVE R14 R6  ; var14 = var6
@@ -280,7 +279,7 @@ L 6: 115 [-]: JUMPIFNOT R4 L7; goto L7 if not var4
      117 [-]: GETTABLE R7 R8 R5; var7 = var8[var5]
      118 [-]: GETTABLEKS R6 R7 K48; var6 = var7["endDuration"]
      119 [-]: LOADN R7 0   ; var7 = 0
-     120 [-]: JUMPIFNOTLT R7 R6 L7; goto L7 if var7 >= var526158
+     120 [-]: JUMPIFNOTLT R7 R6 L7; goto L7 if var7 >= var526113
      121 [-]: GETIMPORT R7 8; var7 = _T["hbElemTrail"]
      122 [-]: GETTABLE R6 R7 R5; var6 = var7[var5]
      123 [-]: GETIMPORT R10 8; var10 = _T["hbElemTrail"]
@@ -295,11 +294,11 @@ L 7: 130 [-]: JUMPIFNOT R4 L13; goto L13 if not var4
      132 [-]: GETTABLE R7 R8 R5; var7 = var8[var5]
      133 [-]: GETTABLEKS R6 R7 K48; var6 = var7["endDuration"]
      134 [-]: LOADN R7 0   ; var7 = 0
-     135 [-]: JUMPIFNOTLT R6 R7 L13; goto L13 if var6 >= var1247310
+     135 [-]: JUMPIFNOTLT R6 R7 L13; goto L13 if var6 >= var1247265
      136 [-]: GETIMPORT R8 19; var8 = 0xB7F1F4DE
      137 [-]: NAMECALL R6 R0 K51; var7 = var0; var6 = var0[0xC9F6A7D7]
      138 [-]: CALL R6 3 2  ; var6 = var6(var7, var8)
-     139 [-]: FASTCALL1 62 R6 L8; 
+     139 [-]: FASTCALL1 64 R6 L8; 
      140 [-]: MOVE R8 R6   ; var8 = var6
      141 [-]: GETIMPORT R7 10; var7 = 0x7B998233
      142 [-]: CALL R7 2 2  ; var7 = var7(var8)
@@ -309,7 +308,7 @@ L 8: 143 [-]: JUMPIF R7 L9 ; goto L9 if var7
 L 9: 146 [-]: GETIMPORT R9 14; var9 = 0xD07CC434
      147 [-]: NAMECALL R7 R0 K51; var8 = var0; var7 = var0[0xC9F6A7D7]
      148 [-]: CALL R7 3 2  ; var7 = var7(var8, var9)
-     149 [-]: FASTCALL1 62 R7 L10; 
+     149 [-]: FASTCALL1 64 R7 L10; 
      150 [-]: MOVE R9 R7   ; var9 = var7
      151 [-]: GETIMPORT R8 10; var8 = 0x7B998233
      152 [-]: CALL R8 2 2  ; var8 = var8(var9)

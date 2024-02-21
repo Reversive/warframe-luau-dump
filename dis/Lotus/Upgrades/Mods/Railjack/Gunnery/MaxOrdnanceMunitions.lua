@@ -51,7 +51,7 @@ L 0:   5 [-]: GETIMPORT R6 4; var6 = 0xB34EF41D
        6 [-]: MUL R5 R6 R2 ; var5 = var6 * var2
        7 [-]: NAMECALL R6 R0 K5; var7 = var0; var6 = var0[0xDE321E6F]
        8 [-]: CALL R6 2 2  ; var6 = var6(var7)
-       9 [-]: LOADN R8 200 ; var8 = 200
+       9 [-]: LOADN R8 205 ; var8 = 205
       10 [-]: LOADN R9 3   ; var9 = 3
       11 [-]: MOVE R10 R5  ; var10 = var5
       12 [-]: GETIMPORT R11 7; var11 = 0x7BB9B400
@@ -76,7 +76,7 @@ L 0:   5 [-]: GETIMPORT R6 4; var6 = 0xB34EF41D
        6 [-]: MUL R5 R6 R2 ; var5 = var6 * var2
        7 [-]: NAMECALL R6 R0 K5; var7 = var0; var6 = var0[0xDE321E6F]
        8 [-]: CALL R6 2 2  ; var6 = var6(var7)
-       9 [-]: LOADN R8 200 ; var8 = 200
+       9 [-]: LOADN R8 205 ; var8 = 205
       10 [-]: LOADN R9 3   ; var9 = 3
       11 [-]: MOVE R10 R5  ; var10 = var5
       12 [-]: GETIMPORT R11 7; var11 = 0x7BB9B400

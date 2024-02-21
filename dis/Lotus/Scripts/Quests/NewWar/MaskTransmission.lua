@@ -28,12 +28,12 @@
        8 [-]: NAMECALL R2 R2 K8; var3 = var2; var2 = var2[0x7C1A0374]
        9 [-]: CALL R2 2 2  ; var2 = var2(var3)
 L 0:  10 [-]: GETIMPORT R4 11; var4 = _T["curTransmission"]
-      11 [-]: FASTCALL1 62 R4 L1; 
+      11 [-]: FASTCALL1 64 R4 L1; 
       12 [-]: GETIMPORT R3 13; var3 = 0x7B998233
       13 [-]: CALL R3 2 2  ; var3 = var3(var4)
 L 1:  14 [-]: JUMPIF R3 L3 ; goto L3 if var3
       15 [-]: GETIMPORT R4 15; var4 = _T["TransmissionSoundInstance"]
-      16 [-]: FASTCALL1 62 R4 L2; 
+      16 [-]: FASTCALL1 64 R4 L2; 
       17 [-]: GETIMPORT R3 13; var3 = 0x7B998233
       18 [-]: CALL R3 2 2  ; var3 = var3(var4)
 L 2:  19 [-]: JUMPIFNOT R3 L3; goto L3 if not var3
@@ -42,7 +42,7 @@ L 2:  19 [-]: JUMPIFNOT R3 L3; goto L3 if not var3
       22 [-]: CALL R3 2 1  ; var3(var4)
       23 [-]: JUMPBACK L0  ; goto L0
 L 3:  24 [-]: GETIMPORT R4 15; var4 = _T["TransmissionSoundInstance"]
-      25 [-]: FASTCALL1 62 R4 L4; 
+      25 [-]: FASTCALL1 64 R4 L4; 
       26 [-]: GETIMPORT R3 13; var3 = 0x7B998233
       27 [-]: CALL R3 2 2  ; var3 = var3(var4)
 L 4:  28 [-]: JUMPIF R3 L5 ; goto L5 if var3
@@ -50,7 +50,7 @@ L 4:  28 [-]: JUMPIF R3 L5 ; goto L5 if var3
       30 [-]: NAMECALL R3 R3 K18; var4 = var3; var3 = var3[0x92107845]
       31 [-]: CALL R3 2 2  ; var3 = var3(var4)
       32 [-]: LOADN R4 3   ; var4 = 3
-      33 [-]: JUMPIFNOTLT R4 R3 L5; goto L5 if var4 >= var983886
+      33 [-]: JUMPIFNOTLT R4 R3 L5; goto L5 if var4 >= var983841
       34 [-]: GETIMPORT R3 15; var3 = _T["TransmissionSoundInstance"]
       35 [-]: NAMECALL R3 R3 K19; var4 = var3; var3 = var3[0xDAE5BCB5]
       36 [-]: CALL R3 2 2  ; var3 = var3(var4)

@@ -28,7 +28,7 @@
 
        0 [-]: GETIMPORT R0 1; var0 = _T
        1 [-]: DUPTABLE R1 3; 
-       2 [-]: LOADN R2 20  ; var2 = 20
+       2 [-]: LOADN R2 50  ; var2 = 50
        3 [-]: SETTABLEKS R2 R1 K2; var2["RADIUS"] = var1
        4 [-]: SETTABLEKS R1 R0 K4; var1["PassiveInfo"] = var0
        5 [-]: RETURN R0 0  ; 
@@ -53,16 +53,16 @@ L 0:   6 [-]: GETIMPORT R1 2; var1 = 0x89326C93
        9 [-]: JUMPIFNOT R1 L2; goto L2 if not var1
       10 [-]: NAMECALL R1 R0 K4; var2 = var0; var1 = var0[0x5163741E]
       11 [-]: CALL R1 2 2  ; var1 = var1(var2)
-      12 [-]: FASTCALL1 62 R1 L1; 
+      12 [-]: FASTCALL1 64 R1 L1; 
       13 [-]: MOVE R3 R1   ; var3 = var1
       14 [-]: GETIMPORT R2 6; var2 = 0x7B998233
       15 [-]: CALL R2 2 2  ; var2 = var2(var3)
 L 1:  16 [-]: JUMPIF R2 L2 ; goto L2 if var2
       17 [-]: NAMECALL R2 R1 K7; var3 = var1; var2 = var1[0xDE321E6F]
       18 [-]: CALL R2 2 2  ; var2 = var2(var3)
-      19 [-]: LOADN R4 47  ; var4 = 47
+      19 [-]: LOADN R4 50  ; var4 = 50
       20 [-]: LOADN R5 0   ; var5 = 0
-      21 [-]: LOADN R6 20  ; var6 = 20
+      21 [-]: LOADN R6 50  ; var6 = 50
       22 [-]: NAMECALL R2 R2 K8; var3 = var2; var2 = var2[0x5E6704FF]
       23 [-]: CALL R2 5 1  ; var2(var3, var4, var5, var6)
 L 2:  24 [-]: RETURN R0 0  ; 
@@ -87,16 +87,16 @@ L 0:   6 [-]: GETIMPORT R1 2; var1 = 0x89326C93
        9 [-]: JUMPIFNOT R1 L2; goto L2 if not var1
       10 [-]: NAMECALL R1 R0 K4; var2 = var0; var1 = var0[0x5163741E]
       11 [-]: CALL R1 2 2  ; var1 = var1(var2)
-      12 [-]: FASTCALL1 62 R1 L1; 
+      12 [-]: FASTCALL1 64 R1 L1; 
       13 [-]: MOVE R3 R1   ; var3 = var1
       14 [-]: GETIMPORT R2 6; var2 = 0x7B998233
       15 [-]: CALL R2 2 2  ; var2 = var2(var3)
 L 1:  16 [-]: JUMPIF R2 L2 ; goto L2 if var2
       17 [-]: NAMECALL R2 R1 K7; var3 = var1; var2 = var1[0xDE321E6F]
       18 [-]: CALL R2 2 2  ; var2 = var2(var3)
-      19 [-]: LOADN R4 47  ; var4 = 47
+      19 [-]: LOADN R4 50  ; var4 = 50
       20 [-]: LOADN R5 0   ; var5 = 0
-      21 [-]: LOADN R6 20  ; var6 = 20
+      21 [-]: LOADN R6 50  ; var6 = 50
       22 [-]: NAMECALL R2 R2 K8; var3 = var2; var2 = var2[0x12DD9DA2]
       23 [-]: CALL R2 5 1  ; var2(var3, var4, var5, var6)
 L 2:  24 [-]: RETURN R0 0  ; 

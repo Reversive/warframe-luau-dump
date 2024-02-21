@@ -24,17 +24,17 @@
        1 [-]: CALL R2 2 2  ; var2 = var2(var3)
        2 [-]: NAMECALL R2 R2 K1; var3 = var2; var2 = var2[0xA39BB54B]
        3 [-]: CALL R2 2 2  ; var2 = var2(var3)
-       4 [-]: FASTCALL1 62 R2 L0; 
+       4 [-]: FASTCALL1 64 R2 L0; 
        5 [-]: MOVE R4 R2   ; var4 = var2
        6 [-]: GETIMPORT R3 3; var3 = 0x7B998233
        7 [-]: CALL R3 2 2  ; var3 = var3(var4)
 L 0:   8 [-]: JUMPIFNOT R3 L1; goto L1 if not var3
        9 [-]: GETTABLEKS R3 R2 K4; var3 = var2["distanceToTarget"]
       10 [-]: GETIMPORT R4 6; var4 = 0x86F495D5
-      11 [-]: JUMPIFNOTLT R3 R4 L1; goto L1 if var3 >= var1593967388
+      11 [-]: JUMPIFNOTLT R3 R4 L1; goto L1 if var3 >= var1593967423
       12 [-]: GETTABLEKS R3 R2 K4; var3 = var2["distanceToTarget"]
       13 [-]: GETIMPORT R4 8; var4 = 0x4243A037
-      14 [-]: JUMPIFNOTLT R4 R3 L1; goto L1 if var4 >= var839
+      14 [-]: JUMPIFNOTLT R4 R3 L1; goto L1 if var4 >= var816
       15 [-]: LOADN R3 0   ; var3 = 0
       16 [-]: RETURN R3 1  ; 
 L 1:  17 [-]: GETIMPORT R3 10; var3 = 0xBE190284
@@ -42,7 +42,7 @@ L 1:  17 [-]: GETIMPORT R3 10; var3 = 0xBE190284
       19 [-]: CALL R3 2 2  ; var3 = var3(var4)
       20 [-]: GETTABLEKS R4 R3 K12; var4 = var3["goalTag"]
       21 [-]: LOADB R5 0   ; var5 = false
-      22 [-]: FASTCALL1 62 R4 L2; 
+      22 [-]: FASTCALL1 64 R4 L2; 
       23 [-]: MOVE R7 R4   ; var7 = var4
       24 [-]: GETIMPORT R6 3; var6 = 0x7B998233
       25 [-]: CALL R6 2 2  ; var6 = var6(var7)
@@ -54,7 +54,7 @@ L 2:  26 [-]: JUMPIF R6 L6 ; goto L6 if var6
       31 [-]: FORNPREP R6 L5; nforprep start - [escape at L5] -- var6 = iterator
 L 3:  32 [-]: GETIMPORT R10 14; var10 = 0x14128B21
       33 [-]: GETTABLE R9 R10 R8; var9 = var10[var8]
-      34 [-]: JUMPIFNOTEQ R4 R9 L4; goto L4 if var4 ~= var66843
+      34 [-]: JUMPIFNOTEQ R4 R9 L4; goto L4 if var4 ~= var66822
       35 [-]: LOADB R5 1   ; var5 = true
       36 [-]: JUMP L5      ; goto L5
 L 4:  37 [-]: FORNLOOP R6 L3; nforloop end - iterate + goto L3
@@ -75,12 +75,12 @@ L 6:  41 [-]: GETTABLEKS R8 R2 K15; var8 = var2["avatar"]
 ; Is_vararg:       0
 ; Max Stack Size:  15
 
-       0 [-]: FASTCALL1 62 R1 L0; 
+       0 [-]: FASTCALL1 64 R1 L0; 
        1 [-]: MOVE R4 R1   ; var4 = var1
        2 [-]: GETIMPORT R3 1; var3 = 0x7B998233
        3 [-]: CALL R3 2 2  ; var3 = var3(var4)
 L 0:   4 [-]: JUMPIF R3 L2 ; goto L2 if var3
-       5 [-]: FASTCALL1 62 R2 L1; 
+       5 [-]: FASTCALL1 64 R2 L1; 
        6 [-]: MOVE R4 R2   ; var4 = var2
        7 [-]: GETIMPORT R3 1; var3 = 0x7B998233
        8 [-]: CALL R3 2 2  ; var3 = var3(var4)
@@ -161,7 +161,7 @@ L 4:  52 [-]: GETIMPORT R10 27; var10 = 0xAEC1ADA0
       83 [-]: MOVE R13 R4  ; var13 = var4
       84 [-]: NAMECALL R9 R9 K10; var10 = var9; var9 = var9[0x05909209]
       85 [-]: CALL R9 5 2  ; var9 = var9(var10, var11, var12, var13)
-      86 [-]: FASTCALL1 62 R9 L5; 
+      86 [-]: FASTCALL1 64 R9 L5; 
       87 [-]: MOVE R11 R9  ; var11 = var9
       88 [-]: GETIMPORT R10 1; var10 = 0x7B998233
       89 [-]: CALL R10 2 2 ; var10 = var10(var11)
@@ -169,7 +169,7 @@ L 5:  90 [-]: JUMPIF R10 L7; goto L7 if var10
       91 [-]: MOVE R12 R1  ; var12 = var1
       92 [-]: NAMECALL R10 R9 K42; var11 = var9; var10 = var9[0x263A3CC2]
       93 [-]: CALL R10 3 1 ; var10(var11, var12)
-      94 [-]: FASTCALL1 62 R2 L6; 
+      94 [-]: FASTCALL1 64 R2 L6; 
       95 [-]: MOVE R11 R2  ; var11 = var2
       96 [-]: GETIMPORT R10 1; var10 = 0x7B998233
       97 [-]: CALL R10 2 2 ; var10 = var10(var11)
@@ -206,7 +206,7 @@ L 0:  13 [-]: NAMECALL R9 R8 K10; var10 = var8; var9 = var8[0x808B79E6]
       15 [-]: GETIMPORT R10 12; var10 = 0x0469F296
       16 [-]: LOADK R11 K13; var11 = "TENNO"
       17 [-]: CALL R10 2 2 ; var10 = var10(var11)
-      18 [-]: JUMPIFNOTEQ R9 R10 L2; goto L2 if var9 ~= var986190
+      18 [-]: JUMPIFNOTEQ R9 R10 L2; goto L2 if var9 ~= var986145
       19 [-]: GETIMPORT R12 15; var12 = gLotusSentinelAvatarType
       20 [-]: NAMECALL R10 R8 K16; var11 = var8; var10 = var8[0xF2DEAF69]
       21 [-]: CALL R10 3 2 ; var10 = var10(var11, var12)

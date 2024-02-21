@@ -60,53 +60,53 @@
       36 [-]: LOADB R9 0   ; var9 = false
       37 [-]: GETTABLEKS R10 R4 K8; var10 = var4["red"]
       38 [-]: GETTABLEKS R11 R8 K8; var11 = var8["red"]
-      39 [-]: JUMPIFNOTEQ R10 R11 L1; goto L1 if var10 ~= var2331
+      39 [-]: JUMPIFNOTEQ R10 R11 L1; goto L1 if var10 ~= var2310
       40 [-]: LOADB R9 0   ; var9 = false
       41 [-]: GETTABLEKS R10 R4 K9; var10 = var4["green"]
       42 [-]: GETTABLEKS R11 R8 K9; var11 = var8["green"]
-      43 [-]: JUMPIFNOTEQ R10 R11 L1; goto L1 if var10 ~= var-234616292
+      43 [-]: JUMPIFNOTEQ R10 R11 L1; goto L1 if var10 ~= var-234616257
       44 [-]: GETTABLEKS R10 R4 K10; var10 = var4["blue"]
       45 [-]: GETTABLEKS R11 R8 K10; var11 = var8["blue"]
-      46 [-]: JUMPIFEQ R10 R11 L0; goto L0 if var10 == var16779547
+      46 [-]: JUMPIFEQ R10 R11 L0; goto L0 if var10 == var16779526
       47 [-]: LOADB R9 0 +1; var9 = false
 L 0:  48 [-]: LOADB R9 1   ; var9 = true
 L 1:  49 [-]: LOADB R10 0  ; var10 = false
       50 [-]: GETTABLEKS R11 R5 K8; var11 = var5["red"]
       51 [-]: GETTABLEKS R12 R8 K8; var12 = var8["red"]
-      52 [-]: JUMPIFNOTEQ R11 R12 L3; goto L3 if var11 ~= var2587
+      52 [-]: JUMPIFNOTEQ R11 R12 L3; goto L3 if var11 ~= var2566
       53 [-]: LOADB R10 0  ; var10 = false
       54 [-]: GETTABLEKS R11 R5 K9; var11 = var5["green"]
       55 [-]: GETTABLEKS R12 R8 K9; var12 = var8["green"]
-      56 [-]: JUMPIFNOTEQ R11 R12 L3; goto L3 if var11 ~= var-234550500
+      56 [-]: JUMPIFNOTEQ R11 R12 L3; goto L3 if var11 ~= var-234550465
       57 [-]: GETTABLEKS R11 R5 K10; var11 = var5["blue"]
       58 [-]: GETTABLEKS R12 R8 K10; var12 = var8["blue"]
-      59 [-]: JUMPIFEQ R11 R12 L2; goto L2 if var11 == var16779803
+      59 [-]: JUMPIFEQ R11 R12 L2; goto L2 if var11 == var16779782
       60 [-]: LOADB R10 0 +1; var10 = false
 L 2:  61 [-]: LOADB R10 1  ; var10 = true
 L 3:  62 [-]: LOADB R11 0  ; var11 = false
       63 [-]: GETTABLEKS R12 R6 K8; var12 = var6["red"]
       64 [-]: GETTABLEKS R13 R8 K8; var13 = var8["red"]
-      65 [-]: JUMPIFNOTEQ R12 R13 L5; goto L5 if var12 ~= var2843
+      65 [-]: JUMPIFNOTEQ R12 R13 L5; goto L5 if var12 ~= var2822
       66 [-]: LOADB R11 0  ; var11 = false
       67 [-]: GETTABLEKS R12 R6 K9; var12 = var6["green"]
       68 [-]: GETTABLEKS R13 R8 K9; var13 = var8["green"]
-      69 [-]: JUMPIFNOTEQ R12 R13 L5; goto L5 if var12 ~= var-234484708
+      69 [-]: JUMPIFNOTEQ R12 R13 L5; goto L5 if var12 ~= var-234484673
       70 [-]: GETTABLEKS R12 R6 K10; var12 = var6["blue"]
       71 [-]: GETTABLEKS R13 R8 K10; var13 = var8["blue"]
-      72 [-]: JUMPIFEQ R12 R13 L4; goto L4 if var12 == var16780059
+      72 [-]: JUMPIFEQ R12 R13 L4; goto L4 if var12 == var16780038
       73 [-]: LOADB R11 0 +1; var11 = false
 L 4:  74 [-]: LOADB R11 1  ; var11 = true
 L 5:  75 [-]: LOADB R12 0  ; var12 = false
       76 [-]: GETTABLEKS R13 R7 K8; var13 = var7["red"]
       77 [-]: GETTABLEKS R14 R8 K8; var14 = var8["red"]
-      78 [-]: JUMPIFNOTEQ R13 R14 L7; goto L7 if var13 ~= var3099
+      78 [-]: JUMPIFNOTEQ R13 R14 L7; goto L7 if var13 ~= var3078
       79 [-]: LOADB R12 0  ; var12 = false
       80 [-]: GETTABLEKS R13 R7 K9; var13 = var7["green"]
       81 [-]: GETTABLEKS R14 R8 K9; var14 = var8["green"]
-      82 [-]: JUMPIFNOTEQ R13 R14 L7; goto L7 if var13 ~= var-234418916
+      82 [-]: JUMPIFNOTEQ R13 R14 L7; goto L7 if var13 ~= var-234418881
       83 [-]: GETTABLEKS R13 R7 K10; var13 = var7["blue"]
       84 [-]: GETTABLEKS R14 R8 K10; var14 = var8["blue"]
-      85 [-]: JUMPIFEQ R13 R14 L6; goto L6 if var13 == var16780315
+      85 [-]: JUMPIFEQ R13 R14 L6; goto L6 if var13 == var16780294
       86 [-]: LOADB R12 0 +1; var12 = false
 L 6:  87 [-]: LOADB R12 1  ; var12 = true
 L 7:  88 [-]: JUMPIFNOT R9 L8; goto L8 if not var9
@@ -158,12 +158,12 @@ L11:  96 [-]: LOADN R15 6  ; var15 = 6
      134 [-]: CALL R13 3 1 ; var13(var14, var15)
      135 [-]: LOADB R13 0  ; var13 = false
      136 [-]: LOADB R14 0  ; var14 = false
-L12: 137 [-]: FASTCALL1 62 R0 L13; 
+L12: 137 [-]: FASTCALL1 64 R0 L13; 
      138 [-]: MOVE R16 R0  ; var16 = var0
      139 [-]: GETIMPORT R15 24; var15 = 0x7B998233
      140 [-]: CALL R15 2 2 ; var15 = var15(var16)
 L13: 141 [-]: JUMPIF R15 L18; goto L18 if var15
-     142 [-]: FASTCALL1 62 R1 L14; 
+     142 [-]: FASTCALL1 64 R1 L14; 
      143 [-]: MOVE R16 R1  ; var16 = var1
      144 [-]: GETIMPORT R15 24; var15 = 0x7B998233
      145 [-]: CALL R15 2 2 ; var15 = var15(var16)
@@ -257,7 +257,7 @@ L16: 193 [-]: JUMPIFNOT R13 L17; goto L17 if not var13
      233 [-]: CALL R15 3 1 ; var15(var16, var17)
 L17: 234 [-]: MOVE R14 R13 ; var14 = var13
      235 [-]: GETIMPORT R15 1; var15 = 0xCBD666E1
-     236 [-]: LOADK R16 K26; var16 = 0.02
+     236 [-]: LOADK R16 K26; var16 = 0.019999999552965164
      237 [-]: CALL R15 2 1 ; var15(var16)
      238 [-]: JUMPBACK L12 ; goto L12
 L18: 239 [-]: RETURN R0 0  ; 
@@ -273,7 +273,7 @@ L18: 239 [-]: RETURN R0 0  ;
        0 [-]: NAMECALL R1 R0 K0; var2 = var0; var1 = var0[0xED324116]
        1 [-]: CALL R1 2 2  ; var1 = var1(var2)
        2 [-]: LOADNIL R2   ; var2 = nil
-       3 [-]: FASTCALL1 62 R1 L0; 
+       3 [-]: FASTCALL1 64 R1 L0; 
        4 [-]: MOVE R4 R1   ; var4 = var1
        5 [-]: GETIMPORT R3 2; var3 = 0x7B998233
        6 [-]: CALL R3 2 2  ; var3 = var3(var4)
@@ -306,7 +306,7 @@ L 2:  21 [-]: MOVE R5 R2   ; var5 = var2
 ; Max Stack Size:  9
 
        0 [-]: GETIMPORT R1 1; var1 = 0xCBD666E1
-       1 [-]: LOADK R2 K2  ; var2 = 0.10000000000000001
+       1 [-]: LOADK R2 K2  ; var2 = 0.10000000149011612
        2 [-]: CALL R1 2 1  ; var1(var2)
        3 [-]: NAMECALL R1 R0 K3; var2 = var0; var1 = var0[0x71C3065D]
        4 [-]: CALL R1 2 2  ; var1 = var1(var2)
@@ -315,7 +315,7 @@ L 2:  21 [-]: MOVE R5 R2   ; var5 = var2
        7 [-]: CALL R2 3 2  ; var2 = var2(var3, var4)
        8 [-]: JUMPIFNOT R2 L1; goto L1 if not var2
        9 [-]: GETIMPORT R3 8; var3 = 0x41BC50F8
-      10 [-]: FASTCALL1 62 R3 L0; 
+      10 [-]: FASTCALL1 64 R3 L0; 
       11 [-]: GETIMPORT R2 10; var2 = 0x7B998233
       12 [-]: CALL R2 2 2  ; var2 = var2(var3)
 L 0:  13 [-]: JUMPIF R2 L1 ; goto L1 if var2

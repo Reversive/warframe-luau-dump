@@ -212,9 +212,9 @@
      205 [-]: CAPTURE VAL R32; 
      206 [-]: SETGLOBAL R33 K94; "ManageDeco" = var33
      207 [-]: NEWCLOSURE R33 P58; 
-     208 [-]: CAPTURE REF R10; 
-     209 [-]: CAPTURE VAL R27; 
-     210 [-]: CAPTURE VAL R0; 
+     208 [-]: CAPTURE VAL R0; 
+     209 [-]: CAPTURE REF R10; 
+     210 [-]: CAPTURE VAL R27; 
      211 [-]: CAPTURE VAL R1; 
      212 [-]: SETGLOBAL R33 K95; "DuplicateDeco" = var33
      213 [-]: DUPCLOSURE R33 K96; 
@@ -300,7 +300,7 @@ L 0:   6 [-]: GETIMPORT R0 6; var0 = 0x76EA806B
        7 [-]: LOADN R2 0   ; var2 = 0
        8 [-]: NAMECALL R0 R0 K7; var1 = var0; var0 = var0[0x3F3AE64C]
        9 [-]: CALL R0 3 2  ; var0 = var0(var1, var2)
-      10 [-]: FASTCALL1 62 R0 L1; 
+      10 [-]: FASTCALL1 64 R0 L1; 
       11 [-]: MOVE R2 R0   ; var2 = var0
       12 [-]: GETIMPORT R1 9; var1 = 0x7B998233
       13 [-]: CALL R1 2 2  ; var1 = var1(var2)
@@ -308,7 +308,7 @@ L 1:  14 [-]: JUMPIFNOT R1 L2; goto L2 if not var1
       15 [-]: RETURN R0 0  ; 
 L 2:  16 [-]: NAMECALL R1 R0 K10; var2 = var0; var1 = var0[0x80563238]
       17 [-]: CALL R1 2 2  ; var1 = var1(var2)
-      18 [-]: FASTCALL1 62 R1 L3; 
+      18 [-]: FASTCALL1 64 R1 L3; 
       19 [-]: MOVE R3 R1   ; var3 = var1
       20 [-]: GETIMPORT R2 9; var2 = 0x7B998233
       21 [-]: CALL R2 2 2  ; var2 = var2(var3)
@@ -316,7 +316,7 @@ L 3:  22 [-]: JUMPIFNOT R2 L4; goto L4 if not var2
       23 [-]: RETURN R0 0  ; 
 L 4:  24 [-]: NAMECALL R2 R1 K11; var3 = var1; var2 = var1[0x713CE380]
       25 [-]: CALL R2 2 2  ; var2 = var2(var3)
-      26 [-]: FASTCALL1 62 R2 L5; 
+      26 [-]: FASTCALL1 64 R2 L5; 
       27 [-]: MOVE R4 R2   ; var4 = var2
       28 [-]: GETIMPORT R3 9; var3 = 0x7B998233
       29 [-]: CALL R3 2 2  ; var3 = var3(var4)
@@ -324,7 +324,7 @@ L 5:  30 [-]: JUMPIF R3 L6 ; goto L6 if var3
       31 [-]: GETIMPORT R3 1; var3 = 0xBE190284
       32 [-]: NAMECALL R3 R3 K11; var4 = var3; var3 = var3[0x713CE380]
       33 [-]: CALL R3 2 2  ; var3 = var3(var4)
-      34 [-]: JUMPIFEQ R2 R3 L7; goto L7 if var2 == var65581
+      34 [-]: JUMPIFEQ R2 R3 L7; goto L7 if var2 == var65571
 L 6:  35 [-]: RETURN R0 0  ; 
 L 7:  36 [-]: NAMECALL R3 R1 K12; var4 = var1; var3 = var1[0x7059711F]
       37 [-]: CALL R3 2 2  ; var3 = var3(var4)
@@ -359,7 +359,7 @@ L10:  61 [-]: GETTABLE R14 R9 R12; var14 = var9[var12]
       66 [-]: FORNPREP R14 L13; nforprep start - [escape at L13] -- var14 = iterator
 L11:  67 [-]: GETTABLE R18 R13 R16; var18 = var13[var16]
       68 [-]: GETTABLEKS R17 R18 K29; var17 = var18["decoType"]
-      69 [-]: JUMPIFNOTEQ R17 R7 L12; goto L12 if var17 ~= var67611
+      69 [-]: JUMPIFNOTEQ R17 R7 L12; goto L12 if var17 ~= var67590
       70 [-]: LOADB R8 1   ; var8 = true
       71 [-]: JUMP L13     ; goto L13
 L12:  72 [-]: FORNLOOP R14 L11; nforloop end - iterate + goto L11
@@ -406,11 +406,14 @@ L17: 101 [-]: RETURN R0 0  ;
        2 [-]: CALL R0 2 1  ; var0(var1)
        3 [-]: GETUPVAL R0 0; var0 = upvalues[0]
        4 [-]: CALL R0 1 1  ; var0()
-       5 [-]: RETURN R0 0  ; 
+       5 [-]: GETIMPORT R0 4; var0 = _T
+       6 [-]: LOADNIL R1   ; var1 = nil
+       7 [-]: SETTABLEKS R1 R0 K5; var1["DojoRefreshingJson"] = var0
+       8 [-]: RETURN R0 0  ; 
 
 
 ; Name:            
-; Defined at line: 118
+; Defined at line: 120
 ; #Upvalues:       2
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -440,7 +443,7 @@ L 1:  19 [-]: GETTABLE R8 R4 R7; var8 = var4[var7]
       21 [-]: CALL R8 2 1  ; var8(var9)
       22 [-]: FORNLOOP R5 L1; nforloop end - iterate + goto L1
 L 2:  23 [-]: GETIMPORT R5 15; var5 = _T["DojoMgr"]
-      24 [-]: FASTCALL1 62 R5 L3; 
+      24 [-]: FASTCALL1 64 R5 L3; 
       25 [-]: GETIMPORT R4 17; var4 = 0x7B998233
       26 [-]: CALL R4 2 2  ; var4 = var4(var5)
 L 3:  27 [-]: JUMPIFNOT R4 L11; goto L11 if not var4
@@ -510,31 +513,34 @@ L 8:  90 [-]: GETIMPORT R6 42; var6 = _T["DojoMgr"]["mDojo"]
       91 [-]: NAMECALL R6 R6 K43; var7 = var6; var6 = var6[0x43C3090E]
       92 [-]: CALL R6 2 2  ; var6 = var6(var7)
       93 [-]: JUMPXEQKNIL R6 L9 NOT; 
-      94 [-]: GETIMPORT R6 15; var6 = _T["DojoMgr"]
-      95 [-]: GETUPVAL R8 0; var8 = upvalues[0]
-      96 [-]: LOADN R9 0   ; var9 = 0
-      97 [-]: NAMECALL R6 R6 K40; var7 = var6; var6 = var6[0x0311B020]
-      98 [-]: CALL R6 4 1  ; var6(var7, var8, var9)
-      99 [-]: JUMP L10     ; goto L10
-L 9: 100 [-]: GETIMPORT R6 15; var6 = _T["DojoMgr"]
-     101 [-]: NAMECALL R6 R6 K39; var7 = var6; var6 = var6[0x02AFA3BF]
-     102 [-]: CALL R6 2 1  ; var6(var7)
-     103 [-]: LOADB R5 1   ; var5 = true
-L10: 104 [-]: JUMPIFNOT R5 L11; goto L11 if not var5
-     105 [-]: GETUPVAL R6 1; var6 = upvalues[1]
-     106 [-]: CALL R6 1 1  ; var6()
-L11: 107 [-]: RETURN R0 0  ; 
+      94 [-]: GETIMPORT R6 21; var6 = _T
+      95 [-]: LOADB R7 1   ; var7 = true
+      96 [-]: SETTABLEKS R7 R6 K44; var7["DojoRefreshingJson"] = var6
+      97 [-]: GETIMPORT R6 15; var6 = _T["DojoMgr"]
+      98 [-]: GETUPVAL R8 0; var8 = upvalues[0]
+      99 [-]: LOADN R9 0   ; var9 = 0
+     100 [-]: NAMECALL R6 R6 K40; var7 = var6; var6 = var6[0x0311B020]
+     101 [-]: CALL R6 4 1  ; var6(var7, var8, var9)
+     102 [-]: JUMP L10     ; goto L10
+L 9: 103 [-]: GETIMPORT R6 15; var6 = _T["DojoMgr"]
+     104 [-]: NAMECALL R6 R6 K39; var7 = var6; var6 = var6[0x02AFA3BF]
+     105 [-]: CALL R6 2 1  ; var6(var7)
+     106 [-]: LOADB R5 1   ; var5 = true
+L10: 107 [-]: JUMPIFNOT R5 L11; goto L11 if not var5
+     108 [-]: GETUPVAL R6 1; var6 = upvalues[1]
+     109 [-]: CALL R6 1 1  ; var6()
+L11: 110 [-]: RETURN R0 0  ; 
 
 
 ; Name:            
-; Defined at line: 169
+; Defined at line: 172
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
 ; Max Stack Size:  5
 
        0 [-]: GETIMPORT R3 2; var3 = _T["DojoMgr"]
-       1 [-]: FASTCALL1 62 R3 L0; 
+       1 [-]: FASTCALL1 64 R3 L0; 
        2 [-]: GETIMPORT R2 4; var2 = 0x7B998233
        3 [-]: CALL R2 2 2  ; var2 = var2(var3)
 L 0:   4 [-]: JUMPIF R2 L1 ; goto L1 if var2
@@ -546,14 +552,14 @@ L 1:   9 [-]: RETURN R0 0  ;
 
 
 ; Name:            
-; Defined at line: 175
+; Defined at line: 178
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
 ; Max Stack Size:  2
 
        0 [-]: GETIMPORT R1 2; var1 = _T["DojoMgr"]
-       1 [-]: FASTCALL1 62 R1 L0; 
+       1 [-]: FASTCALL1 64 R1 L0; 
        2 [-]: GETIMPORT R0 4; var0 = 0x7B998233
        3 [-]: CALL R0 2 2  ; var0 = var0(var1)
 L 0:   4 [-]: JUMPIF R0 L1 ; goto L1 if var0
@@ -564,14 +570,14 @@ L 1:   8 [-]: RETURN R0 0  ;
 
 
 ; Name:            
-; Defined at line: 181
+; Defined at line: 184
 ; #Upvalues:       0
 ; #Parameters:     3
 ; Is_vararg:       0
 ; Max Stack Size:  9
 
        0 [-]: GETIMPORT R4 2; var4 = _T["DojoMgr"]
-       1 [-]: FASTCALL1 62 R4 L0; 
+       1 [-]: FASTCALL1 64 R4 L0; 
        2 [-]: GETIMPORT R3 4; var3 = 0x7B998233
        3 [-]: CALL R3 2 2  ; var3 = var3(var4)
 L 0:   4 [-]: JUMPIFNOT R3 L1; goto L1 if not var3
@@ -589,14 +595,14 @@ L 3:   9 [-]: GETIMPORT R4 2; var4 = _T["DojoMgr"]
 
 
 ; Name:            
-; Defined at line: 190
+; Defined at line: 193
 ; #Upvalues:       1
 ; #Parameters:     3
 ; Is_vararg:       0
 ; Max Stack Size:  8
 
        0 [-]: GETIMPORT R4 2; var4 = _T["DojoMgr"]
-       1 [-]: FASTCALL1 62 R4 L0; 
+       1 [-]: FASTCALL1 64 R4 L0; 
        2 [-]: GETIMPORT R3 4; var3 = 0x7B998233
        3 [-]: CALL R3 2 2  ; var3 = var3(var4)
 L 0:   4 [-]: JUMPIFNOT R3 L1; goto L1 if not var3
@@ -608,10 +614,10 @@ L 1:   6 [-]: GETIMPORT R3 2; var3 = _T["DojoMgr"]
       10 [-]: NAMECALL R3 R3 K5; var4 = var3; var3 = var3[0xA3E0E6C0]
       11 [-]: CALL R3 5 1  ; var3(var4, var5, var6, var7)
       12 [-]: LOADN R3 0   ; var3 = 0
-      13 [-]: JUMPIFNOTEQ R0 R3 L3; goto L3 if var0 ~= var460110
+      13 [-]: JUMPIFNOTEQ R0 R3 L3; goto L3 if var0 ~= var460065
       14 [-]: GETIMPORT R5 7; var5 = _T["DojoMgr"]["mCurrentlyFocusedDeco"]
       15 [-]: GETTABLEKS R4 R5 K8; var4 = var5["Deco"]
-      16 [-]: FASTCALL1 62 R4 L2; 
+      16 [-]: FASTCALL1 64 R4 L2; 
       17 [-]: GETIMPORT R3 4; var3 = 0x7B998233
       18 [-]: CALL R3 2 2  ; var3 = var3(var4)
 L 2:  19 [-]: JUMPIF R3 L3 ; goto L3 if var3
@@ -625,16 +631,16 @@ L 3:  26 [-]: RETURN R0 0  ;
 
 
 ; Name:            
-; Defined at line: 203
+; Defined at line: 206
 ; #Upvalues:       0
 ; #Parameters:     3
 ; Is_vararg:       0
 ; Max Stack Size:  7
 
        0 [-]: LOADN R3 0   ; var3 = 0
-       1 [-]: JUMPIFNOTEQ R0 R3 L1; goto L1 if var0 ~= var132174
+       1 [-]: JUMPIFNOTEQ R0 R3 L1; goto L1 if var0 ~= var132129
        2 [-]: GETIMPORT R4 2; var4 = _T["DojoMgr"]
-       3 [-]: FASTCALL1 62 R4 L0; 
+       3 [-]: FASTCALL1 64 R4 L0; 
        4 [-]: GETIMPORT R3 4; var3 = 0x7B998233
        5 [-]: CALL R3 2 2  ; var3 = var3(var4)
 L 0:   6 [-]: JUMPIF R3 L1 ; goto L1 if var3
@@ -647,14 +653,14 @@ L 1:  12 [-]: RETURN R0 0  ;
 
 
 ; Name:            
-; Defined at line: 209
+; Defined at line: 212
 ; #Upvalues:       0
 ; #Parameters:     3
 ; Is_vararg:       0
 ; Max Stack Size:  8
 
        0 [-]: GETIMPORT R4 2; var4 = _T["DojoMgr"]
-       1 [-]: FASTCALL1 62 R4 L0; 
+       1 [-]: FASTCALL1 64 R4 L0; 
        2 [-]: GETIMPORT R3 4; var3 = 0x7B998233
        3 [-]: CALL R3 2 2  ; var3 = var3(var4)
 L 0:   4 [-]: JUMPIFNOT R3 L1; goto L1 if not var3
@@ -669,14 +675,14 @@ L 1:   6 [-]: GETIMPORT R3 2; var3 = _T["DojoMgr"]
 
 
 ; Name:            
-; Defined at line: 217
+; Defined at line: 220
 ; #Upvalues:       0
 ; #Parameters:     3
 ; Is_vararg:       0
 ; Max Stack Size:  8
 
        0 [-]: GETIMPORT R4 2; var4 = _T["DojoMgr"]
-       1 [-]: FASTCALL1 62 R4 L0; 
+       1 [-]: FASTCALL1 64 R4 L0; 
        2 [-]: GETIMPORT R3 4; var3 = 0x7B998233
        3 [-]: CALL R3 2 2  ; var3 = var3(var4)
 L 0:   4 [-]: JUMPIFNOT R3 L1; goto L1 if not var3
@@ -691,14 +697,14 @@ L 1:   6 [-]: GETIMPORT R3 2; var3 = _T["DojoMgr"]
 
 
 ; Name:            
-; Defined at line: 225
+; Defined at line: 228
 ; #Upvalues:       0
 ; #Parameters:     3
 ; Is_vararg:       0
 ; Max Stack Size:  8
 
        0 [-]: GETIMPORT R4 2; var4 = _T["DojoMgr"]
-       1 [-]: FASTCALL1 62 R4 L0; 
+       1 [-]: FASTCALL1 64 R4 L0; 
        2 [-]: GETIMPORT R3 4; var3 = 0x7B998233
        3 [-]: CALL R3 2 2  ; var3 = var3(var4)
 L 0:   4 [-]: JUMPIFNOT R3 L1; goto L1 if not var3
@@ -713,14 +719,14 @@ L 1:   6 [-]: GETIMPORT R3 2; var3 = _T["DojoMgr"]
 
 
 ; Name:            
-; Defined at line: 233
+; Defined at line: 236
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
 ; Max Stack Size:  6
 
        0 [-]: GETIMPORT R3 2; var3 = _T["DojoMgr"]
-       1 [-]: FASTCALL1 62 R3 L0; 
+       1 [-]: FASTCALL1 64 R3 L0; 
        2 [-]: GETIMPORT R2 4; var2 = 0x7B998233
        3 [-]: CALL R2 2 2  ; var2 = var2(var3)
 L 0:   4 [-]: JUMPIFNOT R2 L1; goto L1 if not var2
@@ -734,14 +740,14 @@ L 1:   6 [-]: GETIMPORT R2 2; var2 = _T["DojoMgr"]
 
 
 ; Name:            
-; Defined at line: 241
+; Defined at line: 244
 ; #Upvalues:       0
 ; #Parameters:     3
 ; Is_vararg:       0
 ; Max Stack Size:  8
 
        0 [-]: GETIMPORT R4 2; var4 = _T["DojoMgr"]
-       1 [-]: FASTCALL1 62 R4 L0; 
+       1 [-]: FASTCALL1 64 R4 L0; 
        2 [-]: GETIMPORT R3 4; var3 = 0x7B998233
        3 [-]: CALL R3 2 2  ; var3 = var3(var4)
 L 0:   4 [-]: JUMPIFNOT R3 L1; goto L1 if not var3
@@ -756,14 +762,14 @@ L 1:   6 [-]: GETIMPORT R3 2; var3 = _T["DojoMgr"]
 
 
 ; Name:            
-; Defined at line: 249
+; Defined at line: 252
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
 ; Max Stack Size:  2
 
        0 [-]: GETIMPORT R1 2; var1 = _T["DojoMgr"]
-       1 [-]: FASTCALL1 62 R1 L0; 
+       1 [-]: FASTCALL1 64 R1 L0; 
        2 [-]: GETIMPORT R0 4; var0 = 0x7B998233
        3 [-]: CALL R0 2 2  ; var0 = var0(var1)
 L 0:   4 [-]: JUMPIFNOT R0 L1; goto L1 if not var0
@@ -775,14 +781,14 @@ L 1:   6 [-]: GETIMPORT R0 2; var0 = _T["DojoMgr"]
 
 
 ; Name:            
-; Defined at line: 257
+; Defined at line: 260
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
 ; Max Stack Size:  5
 
        0 [-]: GETIMPORT R2 2; var2 = _T["DojoMgr"]
-       1 [-]: FASTCALL1 62 R2 L0; 
+       1 [-]: FASTCALL1 64 R2 L0; 
        2 [-]: GETIMPORT R1 4; var1 = 0x7B998233
        3 [-]: CALL R1 2 2  ; var1 = var1(var2)
 L 0:   4 [-]: JUMPIFNOT R1 L1; goto L1 if not var1
@@ -798,14 +804,14 @@ L 3:   9 [-]: GETIMPORT R2 2; var2 = _T["DojoMgr"]
 
 
 ; Name:            
-; Defined at line: 266
+; Defined at line: 269
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
 ; Max Stack Size:  2
 
        0 [-]: GETIMPORT R1 2; var1 = _T["DojoMgr"]
-       1 [-]: FASTCALL1 62 R1 L0; 
+       1 [-]: FASTCALL1 64 R1 L0; 
        2 [-]: GETIMPORT R0 4; var0 = 0x7B998233
        3 [-]: CALL R0 2 2  ; var0 = var0(var1)
 L 0:   4 [-]: JUMPIFNOT R0 L1; goto L1 if not var0
@@ -817,14 +823,14 @@ L 1:   6 [-]: GETIMPORT R0 2; var0 = _T["DojoMgr"]
 
 
 ; Name:            
-; Defined at line: 274
+; Defined at line: 277
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
 ; Max Stack Size:  7
 
        0 [-]: GETIMPORT R3 2; var3 = _T["DojoMgr"]
-       1 [-]: FASTCALL1 62 R3 L0; 
+       1 [-]: FASTCALL1 64 R3 L0; 
        2 [-]: GETIMPORT R2 4; var2 = 0x7B998233
        3 [-]: CALL R2 2 2  ; var2 = var2(var3)
 L 0:   4 [-]: JUMPIFNOT R2 L1; goto L1 if not var2
@@ -841,14 +847,14 @@ L 3:   9 [-]: GETIMPORT R3 2; var3 = _T["DojoMgr"]
 
 
 ; Name:            
-; Defined at line: 283
+; Defined at line: 286
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
 ; Max Stack Size:  5
 
        0 [-]: GETIMPORT R2 2; var2 = _T["DojoMgr"]
-       1 [-]: FASTCALL1 62 R2 L0; 
+       1 [-]: FASTCALL1 64 R2 L0; 
        2 [-]: GETIMPORT R1 4; var1 = 0x7B998233
        3 [-]: CALL R1 2 2  ; var1 = var1(var2)
 L 0:   4 [-]: JUMPIFNOT R1 L1; goto L1 if not var1
@@ -864,7 +870,7 @@ L 3:   9 [-]: GETIMPORT R2 2; var2 = _T["DojoMgr"]
 
 
 ; Name:            
-; Defined at line: 292
+; Defined at line: 295
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -884,7 +890,7 @@ L 3:   9 [-]: GETIMPORT R2 2; var2 = _T["DojoMgr"]
 L 0:  11 [-]: SETTABLEKS R1 R0 K6; var1["Count"] = var0
       12 [-]: GETIMPORT R0 7; var0 = _T["PrevPlacedDecoInfo"]["Count"]
       13 [-]: LOADN R1 1   ; var1 = 1
-      14 [-]: JUMPIFNOTLT R0 R1 L6; goto L6 if var0 >= var852046
+      14 [-]: JUMPIFNOTLT R0 R1 L6; goto L6 if var0 >= var852001
       15 [-]: GETIMPORT R0 13; var0 = _T["PrevPlacedDecoInfo"]["IsVault"]
       16 [-]: JUMPIF R0 L1 ; goto L1 if var0
       17 [-]: GETIMPORT R0 15; var0 = _T["PrevPlacedDecoInfo"]["StoreItem"]
@@ -911,7 +917,7 @@ L 3:  37 [-]: GETIMPORT R0 2; var0 = _T["ShipDecoItemInfo"]
       38 [-]: JUMPXEQKNIL R0 L5; 
       39 [-]: GETIMPORT R0 21; var0 = _T["ShipDecoItemInfo"]["Count"]
       40 [-]: LOADN R1 1   ; var1 = 1
-      41 [-]: JUMPIFLT R1 R0 L4; goto L4 if var1 < var1441870
+      41 [-]: JUMPIFLT R1 R0 L4; goto L4 if var1 < var1441825
       42 [-]: GETIMPORT R0 22; var0 = _T["ShipDecoItemInfo"]["StoreItem"]
       43 [-]: NAMECALL R0 R0 K16; var1 = var0; var0 = var0[0x31E559D2]
       44 [-]: CALL R0 2 2  ; var0 = var0(var1)
@@ -943,7 +949,7 @@ L 6:  66 [-]: GETIMPORT R0 18; var0 = _T
 
 
 ; Name:            
-; Defined at line: 315
+; Defined at line: 318
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -952,7 +958,7 @@ L 6:  66 [-]: GETIMPORT R0 18; var0 = _T
        0 [-]: GETIMPORT R1 1; var1 = 0x89326C93
        1 [-]: NAMECALL R1 R1 K2; var2 = var1; var1 = var1[0x78298275]
        2 [-]: CALL R1 2 2  ; var1 = var1(var2)
-       3 [-]: FASTCALL1 62 R1 L0; 
+       3 [-]: FASTCALL1 64 R1 L0; 
        4 [-]: MOVE R3 R1   ; var3 = var1
        5 [-]: GETIMPORT R2 4; var2 = 0x7B998233
        6 [-]: CALL R2 2 2  ; var2 = var2(var3)
@@ -964,12 +970,12 @@ L 0:   7 [-]: JUMPIF R2 L1 ; goto L1 if var2
       12 [-]: NAMECALL R2 R2 K7; var3 = var2; var2 = var2[0x1E7DE2A3]
       13 [-]: CALL R2 2 1  ; var2(var3)
 L 1:  14 [-]: GETIMPORT R3 10; var3 = _T["DojoMgr"]
-      15 [-]: FASTCALL1 62 R3 L2; 
+      15 [-]: FASTCALL1 64 R3 L2; 
       16 [-]: GETIMPORT R2 4; var2 = 0x7B998233
       17 [-]: CALL R2 2 2  ; var2 = var2(var3)
 L 2:  18 [-]: JUMPIF R2 L4 ; goto L4 if var2
       19 [-]: GETIMPORT R3 12; var3 = _T["DojoMgr"]["mPendingDestroyDeco"]
-      20 [-]: FASTCALL1 62 R3 L3; 
+      20 [-]: FASTCALL1 64 R3 L3; 
       21 [-]: GETIMPORT R2 4; var2 = 0x7B998233
       22 [-]: CALL R2 2 2  ; var2 = var2(var3)
 L 3:  23 [-]: JUMPIF R2 L4 ; goto L4 if var2
@@ -977,17 +983,17 @@ L 3:  23 [-]: JUMPIF R2 L4 ; goto L4 if var2
       25 [-]: NAMECALL R2 R2 K13; var3 = var2; var2 = var2[0xA8FA3C13]
       26 [-]: CALL R2 2 1  ; var2(var3)
 L 4:  27 [-]: GETIMPORT R3 15; var3 = _T["ShipDecoToRemove"]
-      28 [-]: FASTCALL1 62 R3 L5; 
+      28 [-]: FASTCALL1 64 R3 L5; 
       29 [-]: GETIMPORT R2 4; var2 = 0x7B998233
       30 [-]: CALL R2 2 2  ; var2 = var2(var3)
 L 5:  31 [-]: JUMPIF R2 L8 ; goto L8 if var2
       32 [-]: GETIMPORT R3 17; var3 = _T["PrevPlacedDecoInfo"]
-      33 [-]: FASTCALL1 62 R3 L6; 
+      33 [-]: FASTCALL1 64 R3 L6; 
       34 [-]: GETIMPORT R2 4; var2 = 0x7B998233
       35 [-]: CALL R2 2 2  ; var2 = var2(var3)
 L 6:  36 [-]: JUMPIF R2 L8 ; goto L8 if var2
       37 [-]: GETIMPORT R3 19; var3 = _T["PrevPlacedDecoInfo"]["StoreItem"]
-      38 [-]: FASTCALL1 62 R3 L7; 
+      38 [-]: FASTCALL1 64 R3 L7; 
       39 [-]: GETIMPORT R2 4; var2 = 0x7B998233
       40 [-]: CALL R2 2 2  ; var2 = var2(var3)
 L 7:  41 [-]: JUMPIF R2 L8 ; goto L8 if var2
@@ -997,7 +1003,7 @@ L 7:  41 [-]: JUMPIF R2 L8 ; goto L8 if var2
       45 [-]: GETIMPORT R3 15; var3 = _T["ShipDecoToRemove"]
       46 [-]: NAMECALL R3 R3 K21; var4 = var3; var3 = var3[0xCDE10C4A]
       47 [-]: CALL R3 2 2  ; var3 = var3(var4)
-      48 [-]: JUMPIFNOTEQ R2 R3 L8; goto L8 if var2 ~= var1507918
+      48 [-]: JUMPIFNOTEQ R2 R3 L8; goto L8 if var2 ~= var1507873
       49 [-]: GETIMPORT R2 23; var2 = _T["PrevPlacedDecoInfo"]["SocketInfo"]
       50 [-]: JUMPXEQKNIL R2 L8 NOT; 
       51 [-]: GETIMPORT R2 17; var2 = _T["PrevPlacedDecoInfo"]
@@ -1008,14 +1014,14 @@ L 8:  55 [-]: RETURN R0 0  ;
 
 
 ; Name:            
-; Defined at line: 334
+; Defined at line: 337
 ; #Upvalues:       4
 ; #Parameters:     2
 ; Is_vararg:       0
-; Max Stack Size:  18
+; Max Stack Size:  19
 
        0 [-]: GETIMPORT R3 2; var3 = _T["BackgroundMovie"]
-       1 [-]: FASTCALL1 62 R3 L0; 
+       1 [-]: FASTCALL1 64 R3 L0; 
        2 [-]: GETIMPORT R2 4; var2 = 0x7B998233
        3 [-]: CALL R2 2 2  ; var2 = var2(var3)
 L 0:   4 [-]: JUMPIF R2 L1 ; goto L1 if var2
@@ -1029,29 +1035,29 @@ L 1:  10 [-]: GETIMPORT R2 9; var2 = 0x3D106989
       12 [-]: CALL R2 2 1  ; var2(var3)
       13 [-]: LOADK R2 K11 ; var2 = ""
       14 [-]: LOADN R3 0   ; var3 = 0
-      15 [-]: JUMPIFEQ R0 R3 L8; goto L8 if var0 == var-64697
+      15 [-]: JUMPIFEQ R0 R3 L8; goto L8 if var0 == var-64720
       16 [-]: LOADN R3 -1  ; var3 = -1
-      17 [-]: JUMPIFNOTEQ R0 R3 L2; goto L2 if var0 ~= var786949
+      17 [-]: JUMPIFNOTEQ R0 R3 L2; goto L2 if var0 ~= var787015
       18 [-]: LOADK R2 K12 ; var2 = "/Lotus/Language/Dojo/Generic_INVALID_PERMISSION"
       19 [-]: JUMP L15     ; goto L15
 L 2:  20 [-]: LOADN R3 7   ; var3 = 7
-      21 [-]: JUMPIFNOTEQ R0 R3 L3; goto L3 if var0 ~= var852485
+      21 [-]: JUMPIFNOTEQ R0 R3 L3; goto L3 if var0 ~= var852551
       22 [-]: LOADK R2 K13 ; var2 = "/Lotus/Language/Dojo/DecoPlacementFail_COMPONENT_NOT_FOUND"
       23 [-]: JUMP L15     ; goto L15
 L 3:  24 [-]: LOADN R3 5   ; var3 = 5
-      25 [-]: JUMPIFNOTEQ R0 R3 L4; goto L4 if var0 ~= var918021
+      25 [-]: JUMPIFNOTEQ R0 R3 L4; goto L4 if var0 ~= var918087
       26 [-]: LOADK R2 K14 ; var2 = "/Lotus/Language/Dojo/DecoPlacementFail_INSUFFICIENT_CAPACITY"
       27 [-]: JUMP L15     ; goto L15
 L 4:  28 [-]: LOADN R3 6   ; var3 = 6
-      29 [-]: JUMPIFNOTEQ R0 R3 L5; goto L5 if var0 ~= var983557
+      29 [-]: JUMPIFNOTEQ R0 R3 L5; goto L5 if var0 ~= var983623
       30 [-]: LOADK R2 K15 ; var2 = "/Lotus/Language/Dojo/DecoPlacementFail_MISSING_PREREQ"
       31 [-]: JUMP L15     ; goto L15
 L 5:  32 [-]: LOADN R3 14  ; var3 = 14
-      33 [-]: JUMPIFNOTEQ R0 R3 L6; goto L6 if var0 ~= var1049093
+      33 [-]: JUMPIFNOTEQ R0 R3 L6; goto L6 if var0 ~= var1049159
       34 [-]: LOADK R2 K16 ; var2 = "/Lotus/Language/Dojo/DecoPlacementFail_DESTRUCTION_ALREADY_QUEUED"
       35 [-]: JUMP L15     ; goto L15
 L 6:  36 [-]: LOADN R3 8   ; var3 = 8
-      37 [-]: JUMPIFNOTEQ R0 R3 L7; goto L7 if var0 ~= var1114629
+      37 [-]: JUMPIFNOTEQ R0 R3 L7; goto L7 if var0 ~= var1114695
       38 [-]: LOADK R2 K17 ; var2 = "/Lotus/Language/Dojo/DecoPlacementFail_CONSTRUCTION_STARTED"
       39 [-]: JUMP L15     ; goto L15
 L 7:  40 [-]: LOADK R2 K18 ; var2 = "/Lotus/Language/Dojo/DecoPlacementFail_UNKNOWN_ERROR"
@@ -1059,7 +1065,7 @@ L 7:  40 [-]: LOADK R2 K18 ; var2 = "/Lotus/Language/Dojo/DecoPlacementFail_UNKN
 L 8:  42 [-]: GETIMPORT R3 20; var3 = _T["VaultDeco"]
       43 [-]: JUMPIF R3 L15; goto L15 if var3
       44 [-]: GETIMPORT R4 22; var4 = _T["ShipDecoItemToPlace"]
-      45 [-]: FASTCALL1 62 R4 L9; 
+      45 [-]: FASTCALL1 64 R4 L9; 
       46 [-]: GETIMPORT R3 4; var3 = 0x7B998233
       47 [-]: CALL R3 2 2  ; var3 = var3(var4)
 L 9:  48 [-]: JUMPIF R3 L15; goto L15 if var3
@@ -1074,7 +1080,7 @@ L10:  56 [-]: GETIMPORT R4 27; var4 = 0x76EA806B
       57 [-]: LOADN R6 0   ; var6 = 0
       58 [-]: NAMECALL R4 R4 K28; var5 = var4; var4 = var4[0x3F3AE64C]
       59 [-]: CALL R4 3 2  ; var4 = var4(var5, var6)
-      60 [-]: FASTCALL1 62 R4 L11; 
+      60 [-]: FASTCALL1 64 R4 L11; 
       61 [-]: MOVE R6 R4   ; var6 = var4
       62 [-]: GETIMPORT R5 4; var5 = 0x7B998233
       63 [-]: CALL R5 2 2  ; var5 = var5(var6)
@@ -1082,7 +1088,7 @@ L11:  64 [-]: JUMPIFNOT R5 L12; goto L12 if not var5
       65 [-]: RETURN R0 0  ; 
 L12:  66 [-]: NAMECALL R5 R4 K29; var6 = var4; var5 = var4[0x80563238]
       67 [-]: CALL R5 2 2  ; var5 = var5(var6)
-      68 [-]: FASTCALL1 62 R5 L13; 
+      68 [-]: FASTCALL1 64 R5 L13; 
       69 [-]: MOVE R7 R5   ; var7 = var5
       70 [-]: GETIMPORT R6 4; var6 = 0x7B998233
       71 [-]: CALL R6 2 2  ; var6 = var6(var7)
@@ -1101,7 +1107,7 @@ L15:  83 [-]: GETIMPORT R3 25; var3 = _T
       84 [-]: LOADB R4 0   ; var4 = false
       85 [-]: SETTABLEKS R4 R3 K19; var4["VaultDeco"] = var3
       86 [-]: GETIMPORT R4 32; var4 = _T["DecoMoveInfo"]
-      87 [-]: FASTCALL1 62 R4 L16; 
+      87 [-]: FASTCALL1 64 R4 L16; 
       88 [-]: GETIMPORT R3 4; var3 = 0x7B998233
       89 [-]: CALL R3 2 2  ; var3 = var3(var4)
 L16:  90 [-]: JUMPIF R3 L18; goto L18 if var3
@@ -1119,133 +1125,158 @@ L17:  98 [-]: GETUPVAL R3 1; var3 = upvalues[1]
      102 [-]: GETIMPORT R3 34; var3 = _T["DecoMoveInfo"]["Deco"]
      103 [-]: NAMECALL R3 R3 K39; var4 = var3; var3 = var3[0x9682718C]
      104 [-]: CALL R3 2 2  ; var3 = var3(var4)
-     105 [-]: JUMPIFNOT R3 L31; goto L31 if not var3
+     105 [-]: JUMPIFNOT R3 L34; goto L34 if not var3
      106 [-]: GETIMPORT R3 34; var3 = _T["DecoMoveInfo"]["Deco"]
      107 [-]: GETIMPORT R5 42; var5 = _T["DojoMgr"]["mDecoConstructionQueuedMaterialOverride"]
      108 [-]: GETIMPORT R6 44; var6 = _T["DojoMgr"]["mDecoUnderConstructionMaterialOverride"]
      109 [-]: NAMECALL R3 R3 K45; var4 = var3; var3 = var3[0xCEAAF2B6]
      110 [-]: CALL R3 4 1  ; var3(var4, var5, var6)
-     111 [-]: JUMP L31     ; goto L31
+     111 [-]: JUMP L34     ; goto L34
 L18: 112 [-]: GETIMPORT R4 47; var4 = _T["DojoPlacingRecipe"]
-     113 [-]: FASTCALL1 62 R4 L19; 
+     113 [-]: FASTCALL1 64 R4 L19; 
      114 [-]: GETIMPORT R3 4; var3 = 0x7B998233
      115 [-]: CALL R3 2 2  ; var3 = var3(var4)
-L19: 116 [-]: JUMPIF R3 L30; goto L30 if var3
+L19: 116 [-]: JUMPIF R3 L33; goto L33 if var3
      117 [-]: LOADN R3 1   ; var3 = 1
      118 [-]: LOADB R4 1   ; var4 = true
      119 [-]: GETIMPORT R5 47; var5 = _T["DojoPlacingRecipe"]
      120 [-]: NAMECALL R5 R5 K48; var6 = var5; var5 = var5[0xC777AB04]
      121 [-]: CALL R5 2 2  ; var5 = var5(var6)
-     122 [-]: LOADN R6 0   ; var6 = 0
-     123 [-]: JUMPIFNOTLT R6 R5 L27; goto L27 if var6 >= var3081806
-     124 [-]: GETIMPORT R6 47; var6 = _T["DojoPlacingRecipe"]
-     125 [-]: NAMECALL R6 R6 K49; var7 = var6; var6 = var6[0x05067C6D]
+     122 [-]: GETIMPORT R6 47; var6 = _T["DojoPlacingRecipe"]
+     123 [-]: NAMECALL R6 R6 K49; var7 = var6; var6 = var6[0x05067C6D]
+     124 [-]: CALL R6 2 2  ; var6 = var6(var7)
+     125 [-]: NAMECALL R6 R6 K50; var7 = var6; var6 = var6[0xE223E2B1]
      126 [-]: CALL R6 2 2  ; var6 = var6(var7)
-     127 [-]: FASTCALL1 62 R6 L20; 
-     128 [-]: MOVE R8 R6   ; var8 = var6
+     127 [-]: GETIMPORT R8 52; var8 = _T["DojoLimitedDecos"]
+     128 [-]: FASTCALL1 64 R8 L20; 
      129 [-]: GETIMPORT R7 4; var7 = 0x7B998233
      130 [-]: CALL R7 2 2  ; var7 = var7(var8)
-L20: 131 [-]: JUMPIF R7 L27; goto L27 if var7
-     132 [-]: GETIMPORT R8 50; var8 = _T["DojoMgr"]
-     133 [-]: FASTCALL1 62 R8 L21; 
-     134 [-]: GETIMPORT R7 4; var7 = 0x7B998233
-     135 [-]: CALL R7 2 2  ; var7 = var7(var8)
-L21: 136 [-]: JUMPIF R7 L27; goto L27 if var7
-     137 [-]: GETIMPORT R7 52; var7 = 0x89326C93
-     138 [-]: NAMECALL R7 R7 K53; var8 = var7; var7 = var7[0x78298275]
-     139 [-]: CALL R7 2 2  ; var7 = var7(var8)
-     140 [-]: FASTCALL1 62 R7 L22; 
-     141 [-]: MOVE R9 R7   ; var9 = var7
-     142 [-]: GETIMPORT R8 4; var8 = 0x7B998233
-     143 [-]: CALL R8 2 2  ; var8 = var8(var9)
-L22: 144 [-]: JUMPIF R8 L27; goto L27 if var8
-     145 [-]: NAMECALL R8 R7 K54; var9 = var7; var8 = var7[0xE79E7EF4]
-     146 [-]: CALL R8 2 2  ; var8 = var8(var9)
-     147 [-]: NAMECALL R8 R8 K55; var9 = var8; var8 = var8[0x7D05E45F]
-     148 [-]: CALL R8 2 2  ; var8 = var8(var9)
-     149 [-]: GETIMPORT R9 50; var9 = _T["DojoMgr"]
-     150 [-]: MOVE R11 R8  ; var11 = var8
-     151 [-]: NAMECALL R9 R9 K56; var10 = var9; var9 = var9[0xD1964243]
-     152 [-]: CALL R9 3 2  ; var9 = var9(var10, var11)
-     153 [-]: GETIMPORT R10 58; var10 = _T["DojoMgr"]["mDojo"]
-     154 [-]: MOVE R12 R9  ; var12 = var9
-     155 [-]: NAMECALL R10 R10 K59; var11 = var10; var10 = var10[0x5C69B193]
-     156 [-]: CALL R10 3 2 ; var10 = var10(var11, var12)
-     157 [-]: GETTABLEKS R11 R10 K60; var11 = var10["placedDecos"]
-     158 [-]: LOADN R14 1  ; var14 = 1
-     159 [-]: LENGTH R12 R11; var12 = #var11
-     160 [-]: LOADN R13 1  ; var13 = 1
-     161 [-]: FORNPREP R12 L26; nforprep start - [escape at L26] -- var12 = iterator
-L23: 162 [-]: GETTABLE R15 R11 R14; var15 = var11[var14]
-     163 [-]: FASTCALL1 62 R15 L24; 
-     164 [-]: MOVE R17 R15 ; var17 = var15
-     165 [-]: GETIMPORT R16 4; var16 = 0x7B998233
-     166 [-]: CALL R16 2 2 ; var16 = var16(var17)
-L24: 167 [-]: JUMPIF R16 L25; goto L25 if var16
-     168 [-]: GETTABLEKS R16 R15 K61; var16 = var15["decoType"]
-     169 [-]: JUMPIFNOTEQ R16 R6 L25; goto L25 if var16 ~= var1040384808
-     170 [-]: ADDK R3 R3 K62; var3 = var3 + 1
-L25: 171 [-]: FORNLOOP R12 L23; nforloop end - iterate + goto L23
-L26: 172 [-]: JUMPIFNOTLE R5 R3 L27; goto L27 if var5 > var1051
-     173 [-]: LOADB R4 0   ; var4 = false
-L27: 174 [-]: JUMPIFNOT R4 L28; goto L28 if not var4
-     175 [-]: GETIMPORT R6 25; var6 = _T
-     176 [-]: DUPTABLE R7 64; 
-     177 [-]: GETIMPORT R8 47; var8 = _T["DojoPlacingRecipe"]
-     178 [-]: SETTABLEKS R8 R7 K63; var8["Recipe"] = var7
-     179 [-]: SETTABLEKS R7 R6 K65; var7["PrevPlacedDecoInfo"] = var6
-     180 [-]: JUMP L29     ; goto L29
-L28: 181 [-]: GETIMPORT R6 25; var6 = _T
-     182 [-]: LOADNIL R7   ; var7 = nil
-     183 [-]: SETTABLEKS R7 R6 K65; var7["PrevPlacedDecoInfo"] = var6
-L29: 184 [-]: GETIMPORT R6 25; var6 = _T
-     185 [-]: LOADNIL R7   ; var7 = nil
-     186 [-]: SETTABLEKS R7 R6 K46; var7["DojoPlacingRecipe"] = var6
-     187 [-]: JUMP L31     ; goto L31
-L30: 188 [-]: GETIMPORT R3 67; var3 = _T["DojoPlacingGroup"]
-     189 [-]: JUMPIFNOT R3 L31; goto L31 if not var3
-     190 [-]: GETIMPORT R3 25; var3 = _T
-     191 [-]: LOADNIL R4   ; var4 = nil
-     192 [-]: SETTABLEKS R4 R3 K65; var4["PrevPlacedDecoInfo"] = var3
-     193 [-]: GETIMPORT R3 25; var3 = _T
-     194 [-]: LOADNIL R4   ; var4 = nil
-     195 [-]: SETTABLEKS R4 R3 K66; var4["DojoPlacingGroup"] = var3
-L31: 196 [-]: JUMPXEQKS R2 K11 L32; 
-     197 [-]: GETUPVAL R4 2; var4 = upvalues[2]
-     198 [-]: GETTABLEKS R3 R4 K68; var3 = var4[0xE0CBA3CA]
-     199 [-]: MOVE R4 R2   ; var4 = var2
-     200 [-]: CALL R3 2 1  ; var3(var4)
-     201 [-]: GETUPVAL R3 3; var3 = upvalues[3]
-     202 [-]: CALL R3 1 1  ; var3()
-     203 [-]: JUMP L35     ; goto L35
-L32: 204 [-]: GETIMPORT R3 52; var3 = 0x89326C93
-     205 [-]: NAMECALL R3 R3 K53; var4 = var3; var3 = var3[0x78298275]
-     206 [-]: CALL R3 2 2  ; var3 = var3(var4)
-     207 [-]: FASTCALL1 62 R3 L33; 
-     208 [-]: MOVE R5 R3   ; var5 = var3
-     209 [-]: GETIMPORT R4 4; var4 = 0x7B998233
-     210 [-]: CALL R4 2 2  ; var4 = var4(var5)
-L33: 211 [-]: JUMPIF R4 L35; goto L35 if var4
-     212 [-]: GETIMPORT R5 70; var5 = 0x94BDF50F
-     213 [-]: FASTCALL1 62 R5 L34; 
-     214 [-]: GETIMPORT R4 4; var4 = 0x7B998233
-     215 [-]: CALL R4 2 2  ; var4 = var4(var5)
-L34: 216 [-]: JUMPIF R4 L35; goto L35 if var4
-     217 [-]: GETIMPORT R6 70; var6 = 0x94BDF50F
-     218 [-]: LOADB R7 0   ; var7 = false
-     219 [-]: NAMECALL R4 R3 K71; var5 = var3; var4 = var3[0x659D451F]
-     220 [-]: CALL R4 4 1  ; var4(var5, var6, var7)
-L35: 221 [-]: GETIMPORT R3 9; var3 = 0x3D106989
-     222 [-]: LOADK R4 K72 ; var4 = "DecoMoveInfo cleared _OnDecorationPlaced"
-     223 [-]: CALL R3 2 1  ; var3(var4)
-     224 [-]: GETIMPORT R3 25; var3 = _T
-     225 [-]: LOADNIL R4   ; var4 = nil
-     226 [-]: SETTABLEKS R4 R3 K31; var4["DecoMoveInfo"] = var3
-     227 [-]: RETURN R0 0  ; 
+L20: 131 [-]: JUMPIF R7 L22; goto L22 if var7
+     132 [-]: GETIMPORT R9 52; var9 = _T["DojoLimitedDecos"]
+     133 [-]: GETTABLE R8 R9 R6; var8 = var9[var6]
+     134 [-]: FASTCALL1 64 R8 L21; 
+     135 [-]: GETIMPORT R7 4; var7 = 0x7B998233
+     136 [-]: CALL R7 2 2  ; var7 = var7(var8)
+L21: 137 [-]: JUMPIF R7 L22; goto L22 if var7
+     138 [-]: GETIMPORT R9 52; var9 = _T["DojoLimitedDecos"]
+     139 [-]: GETTABLE R8 R9 R6; var8 = var9[var6]
+     140 [-]: GETTABLEKS R7 R8 K53; var7 = var8["Count"]
+     141 [-]: GETIMPORT R10 52; var10 = _T["DojoLimitedDecos"]
+     142 [-]: GETTABLE R9 R10 R6; var9 = var10[var6]
+     143 [-]: GETTABLEKS R8 R9 K54; var8 = var9["MaxCount"]
+     144 [-]: JUMPIFNOTLE R8 R7 L22; goto L22 if var8 > var918087
+     145 [-]: LOADK R2 K14 ; var2 = "/Lotus/Language/Dojo/DecoPlacementFail_INSUFFICIENT_CAPACITY"
+     146 [-]: LOADB R4 0   ; var4 = false
+L22: 147 [-]: LOADN R7 0   ; var7 = 0
+     148 [-]: JUMPIFNOTLT R7 R5 L30; goto L30 if var7 >= var3082017
+     149 [-]: GETIMPORT R7 47; var7 = _T["DojoPlacingRecipe"]
+     150 [-]: NAMECALL R7 R7 K49; var8 = var7; var7 = var7[0x05067C6D]
+     151 [-]: CALL R7 2 2  ; var7 = var7(var8)
+     152 [-]: FASTCALL1 64 R7 L23; 
+     153 [-]: MOVE R9 R7   ; var9 = var7
+     154 [-]: GETIMPORT R8 4; var8 = 0x7B998233
+     155 [-]: CALL R8 2 2  ; var8 = var8(var9)
+L23: 156 [-]: JUMPIF R8 L30; goto L30 if var8
+     157 [-]: GETIMPORT R9 55; var9 = _T["DojoMgr"]
+     158 [-]: FASTCALL1 64 R9 L24; 
+     159 [-]: GETIMPORT R8 4; var8 = 0x7B998233
+     160 [-]: CALL R8 2 2  ; var8 = var8(var9)
+L24: 161 [-]: JUMPIF R8 L30; goto L30 if var8
+     162 [-]: GETIMPORT R8 57; var8 = 0x89326C93
+     163 [-]: NAMECALL R8 R8 K58; var9 = var8; var8 = var8[0x78298275]
+     164 [-]: CALL R8 2 2  ; var8 = var8(var9)
+     165 [-]: FASTCALL1 64 R8 L25; 
+     166 [-]: MOVE R10 R8  ; var10 = var8
+     167 [-]: GETIMPORT R9 4; var9 = 0x7B998233
+     168 [-]: CALL R9 2 2  ; var9 = var9(var10)
+L25: 169 [-]: JUMPIF R9 L30; goto L30 if var9
+     170 [-]: NAMECALL R9 R8 K59; var10 = var8; var9 = var8[0xE79E7EF4]
+     171 [-]: CALL R9 2 2  ; var9 = var9(var10)
+     172 [-]: NAMECALL R9 R9 K60; var10 = var9; var9 = var9[0x7D05E45F]
+     173 [-]: CALL R9 2 2  ; var9 = var9(var10)
+     174 [-]: GETIMPORT R10 55; var10 = _T["DojoMgr"]
+     175 [-]: MOVE R12 R9  ; var12 = var9
+     176 [-]: NAMECALL R10 R10 K61; var11 = var10; var10 = var10[0xD1964243]
+     177 [-]: CALL R10 3 2 ; var10 = var10(var11, var12)
+     178 [-]: GETIMPORT R11 63; var11 = _T["DojoMgr"]["mDojo"]
+     179 [-]: MOVE R13 R10 ; var13 = var10
+     180 [-]: NAMECALL R11 R11 K64; var12 = var11; var11 = var11[0x5C69B193]
+     181 [-]: CALL R11 3 2 ; var11 = var11(var12, var13)
+     182 [-]: GETTABLEKS R12 R11 K65; var12 = var11["placedDecos"]
+     183 [-]: LOADN R15 1  ; var15 = 1
+     184 [-]: LENGTH R13 R12; var13 = #var12
+     185 [-]: LOADN R14 1  ; var14 = 1
+     186 [-]: FORNPREP R13 L29; nforprep start - [escape at L29] -- var13 = iterator
+L26: 187 [-]: GETTABLE R16 R12 R15; var16 = var12[var15]
+     188 [-]: FASTCALL1 64 R16 L27; 
+     189 [-]: MOVE R18 R16 ; var18 = var16
+     190 [-]: GETIMPORT R17 4; var17 = 0x7B998233
+     191 [-]: CALL R17 2 2 ; var17 = var17(var18)
+L27: 192 [-]: JUMPIF R17 L28; goto L28 if var17
+     193 [-]: GETTABLEKS R17 R16 K66; var17 = var16["decoType"]
+     194 [-]: JUMPIFNOTEQ R17 R7 L28; goto L28 if var17 ~= var1124270856
+     195 [-]: ADDK R3 R3 K67; var3 = var3 + 1
+L28: 196 [-]: FORNLOOP R13 L26; nforloop end - iterate + goto L26
+L29: 197 [-]: JUMPIFNOTLE R5 R3 L30; goto L30 if var5 > var1030
+     198 [-]: LOADB R4 0   ; var4 = false
+L30: 199 [-]: JUMPIFNOT R4 L31; goto L31 if not var4
+     200 [-]: GETIMPORT R7 25; var7 = _T
+     201 [-]: DUPTABLE R8 69; 
+     202 [-]: GETIMPORT R9 47; var9 = _T["DojoPlacingRecipe"]
+     203 [-]: SETTABLEKS R9 R8 K68; var9["Recipe"] = var8
+     204 [-]: SETTABLEKS R8 R7 K70; var8["PrevPlacedDecoInfo"] = var7
+     205 [-]: JUMP L32     ; goto L32
+L31: 206 [-]: GETIMPORT R7 25; var7 = _T
+     207 [-]: LOADNIL R8   ; var8 = nil
+     208 [-]: SETTABLEKS R8 R7 K70; var8["PrevPlacedDecoInfo"] = var7
+L32: 209 [-]: GETIMPORT R7 25; var7 = _T
+     210 [-]: LOADNIL R8   ; var8 = nil
+     211 [-]: SETTABLEKS R8 R7 K46; var8["DojoPlacingRecipe"] = var7
+     212 [-]: JUMP L34     ; goto L34
+L33: 213 [-]: GETIMPORT R3 72; var3 = _T["DojoPlacingGroup"]
+     214 [-]: JUMPIFNOT R3 L34; goto L34 if not var3
+     215 [-]: GETIMPORT R3 25; var3 = _T
+     216 [-]: LOADNIL R4   ; var4 = nil
+     217 [-]: SETTABLEKS R4 R3 K70; var4["PrevPlacedDecoInfo"] = var3
+     218 [-]: GETIMPORT R3 25; var3 = _T
+     219 [-]: LOADNIL R4   ; var4 = nil
+     220 [-]: SETTABLEKS R4 R3 K71; var4["DojoPlacingGroup"] = var3
+L34: 221 [-]: JUMPXEQKS R2 K11 L35; 
+     222 [-]: GETUPVAL R4 2; var4 = upvalues[2]
+     223 [-]: GETTABLEKS R3 R4 K73; var3 = var4[0xE0CBA3CA]
+     224 [-]: MOVE R4 R2   ; var4 = var2
+     225 [-]: CALL R3 2 1  ; var3(var4)
+     226 [-]: GETUPVAL R3 3; var3 = upvalues[3]
+     227 [-]: CALL R3 1 1  ; var3()
+     228 [-]: JUMP L38     ; goto L38
+L35: 229 [-]: GETIMPORT R3 57; var3 = 0x89326C93
+     230 [-]: NAMECALL R3 R3 K58; var4 = var3; var3 = var3[0x78298275]
+     231 [-]: CALL R3 2 2  ; var3 = var3(var4)
+     232 [-]: FASTCALL1 64 R3 L36; 
+     233 [-]: MOVE R5 R3   ; var5 = var3
+     234 [-]: GETIMPORT R4 4; var4 = 0x7B998233
+     235 [-]: CALL R4 2 2  ; var4 = var4(var5)
+L36: 236 [-]: JUMPIF R4 L38; goto L38 if var4
+     237 [-]: GETIMPORT R5 75; var5 = 0x94BDF50F
+     238 [-]: FASTCALL1 64 R5 L37; 
+     239 [-]: GETIMPORT R4 4; var4 = 0x7B998233
+     240 [-]: CALL R4 2 2  ; var4 = var4(var5)
+L37: 241 [-]: JUMPIF R4 L38; goto L38 if var4
+     242 [-]: GETIMPORT R6 75; var6 = 0x94BDF50F
+     243 [-]: LOADB R7 0   ; var7 = false
+     244 [-]: NAMECALL R4 R3 K76; var5 = var3; var4 = var3[0x659D451F]
+     245 [-]: CALL R4 4 1  ; var4(var5, var6, var7)
+L38: 246 [-]: GETIMPORT R3 9; var3 = 0x3D106989
+     247 [-]: LOADK R4 K77 ; var4 = "DecoMoveInfo cleared _OnDecorationPlaced"
+     248 [-]: CALL R3 2 1  ; var3(var4)
+     249 [-]: GETIMPORT R3 25; var3 = _T
+     250 [-]: LOADNIL R4   ; var4 = nil
+     251 [-]: SETTABLEKS R4 R3 K31; var4["DecoMoveInfo"] = var3
+     252 [-]: RETURN R0 0  ; 
 
 
 ; Name:            
-; Defined at line: 446
+; Defined at line: 456
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1254,7 +1285,7 @@ L35: 221 [-]: GETIMPORT R3 9; var3 = 0x3D106989
        0 [-]: GETIMPORT R1 1; var1 = 0x89326C93
        1 [-]: NAMECALL R1 R1 K2; var2 = var1; var1 = var1[0x78298275]
        2 [-]: CALL R1 2 2  ; var1 = var1(var2)
-       3 [-]: FASTCALL1 62 R1 L0; 
+       3 [-]: FASTCALL1 64 R1 L0; 
        4 [-]: MOVE R3 R1   ; var3 = var1
        5 [-]: GETIMPORT R2 4; var2 = 0x7B998233
        6 [-]: CALL R2 2 2  ; var2 = var2(var3)
@@ -1273,7 +1304,7 @@ L 1:  14 [-]: GETUPVAL R3 0; var3 = upvalues[0]
 
 
 ; Name:            
-; Defined at line: 455
+; Defined at line: 465
 ; #Upvalues:       2
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -1284,7 +1315,7 @@ L 1:  14 [-]: GETUPVAL R3 0; var3 = upvalues[0]
        2 [-]: GETIMPORT R2 2; var2 = 0x89326C93
        3 [-]: NAMECALL R2 R2 K3; var3 = var2; var2 = var2[0x78298275]
        4 [-]: CALL R2 2 2  ; var2 = var2(var3)
-       5 [-]: FASTCALL1 62 R2 L0; 
+       5 [-]: FASTCALL1 64 R2 L0; 
        6 [-]: MOVE R4 R2   ; var4 = var2
        7 [-]: GETIMPORT R3 5; var3 = 0x7B998233
        8 [-]: CALL R3 2 2  ; var3 = var3(var4)
@@ -1309,7 +1340,7 @@ L 2:  21 [-]: GETIMPORT R2 13; var2 = 0x34291F5C[0xA7A2E381]
       27 [-]: LOADK R4 K15 ; var4 = " "
       28 [-]: CALL R2 3 2  ; var2 = var2(var3, var4)
       29 [-]: LOADN R3 0   ; var3 = 0
-      30 [-]: JUMPIFNOTLT R3 R2 L6; goto L6 if var3 >= var1031
+      30 [-]: JUMPIFNOTLT R3 R2 L6; goto L6 if var3 >= var1084
       31 [-]: GETUPVAL R4 0; var4 = upvalues[0]
       32 [-]: GETTABLEKS R3 R4 K9; var3 = var4[0xE0CBA3CA]
       33 [-]: GETIMPORT R7 17; var7 = 0x603636AD
@@ -1346,7 +1377,7 @@ L 3:  48 [-]: GETIMPORT R2 24; var2 = 0x7F5022CF[0xA5C556B9]
       64 [-]: GETIMPORT R4 2; var4 = 0x89326C93
       65 [-]: NAMECALL R4 R4 K3; var5 = var4; var4 = var4[0x78298275]
       66 [-]: CALL R4 2 2  ; var4 = var4(var5)
-      67 [-]: FASTCALL1 62 R4 L4; 
+      67 [-]: FASTCALL1 64 R4 L4; 
       68 [-]: MOVE R6 R4   ; var6 = var4
       69 [-]: GETIMPORT R5 5; var5 = 0x7B998233
       70 [-]: CALL R5 2 2  ; var5 = var5(var6)
@@ -1371,11 +1402,11 @@ L 6:  83 [-]: GETIMPORT R2 27; var2 = 0x7F5022CF[0x348C01F7]
       89 [-]: MOVE R3 R0   ; var3 = var0
       90 [-]: LOADN R4 0   ; var4 = 0
       91 [-]: CALL R2 3 2  ; var2 = var2(var3, var4)
-      92 [-]: JUMPIFEQ R2 R0 L9; goto L9 if var2 == var131918
+      92 [-]: JUMPIFEQ R2 R0 L9; goto L9 if var2 == var131873
       93 [-]: GETIMPORT R3 2; var3 = 0x89326C93
       94 [-]: NAMECALL R3 R3 K3; var4 = var3; var3 = var3[0x78298275]
       95 [-]: CALL R3 2 2  ; var3 = var3(var4)
-      96 [-]: FASTCALL1 62 R3 L7; 
+      96 [-]: FASTCALL1 64 R3 L7; 
       97 [-]: MOVE R5 R3   ; var5 = var3
       98 [-]: GETIMPORT R4 5; var4 = 0x7B998233
       99 [-]: CALL R4 2 2  ; var4 = var4(var5)
@@ -1406,7 +1437,7 @@ L10: 119 [-]: GETTABLE R8 R3 R6; var8 = var3[var6]
      124 [-]: FORNPREP R8 L13; nforprep start - [escape at L13] -- var8 = iterator
 L11: 125 [-]: GETTABLE R12 R7 R10; var12 = var7[var10]
      126 [-]: GETTABLEKS R11 R12 K38; var11 = var12["name"]
-     127 [-]: JUMPIFNOTEQ R11 R0 L12; goto L12 if var11 ~= var68359
+     127 [-]: JUMPIFNOTEQ R11 R0 L12; goto L12 if var11 ~= var68412
      128 [-]: GETUPVAL R11 1; var11 = upvalues[1]
      129 [-]: LOADN R12 8  ; var12 = 8
      130 [-]: LOADK R13 K0 ; var13 = ""
@@ -1415,7 +1446,7 @@ L11: 125 [-]: GETTABLE R12 R7 R10; var12 = var7[var10]
 L12: 133 [-]: FORNLOOP R8 L11; nforloop end - iterate + goto L11
 L13: 134 [-]: FORNLOOP R4 L10; nforloop end - iterate + goto L10
 L14: 135 [-]: GETIMPORT R3 40; var3 = _T["BackgroundMovie"]
-     136 [-]: FASTCALL1 62 R3 L15; 
+     136 [-]: FASTCALL1 64 R3 L15; 
      137 [-]: GETIMPORT R2 5; var2 = 0x7B998233
      138 [-]: CALL R2 2 2  ; var2 = var2(var3)
 L15: 139 [-]: JUMPIF R2 L16; goto L16 if var2
@@ -1449,7 +1480,7 @@ L16: 145 [-]: GETIMPORT R2 45; var2 = _T["DojoMgr"]["mPendingDecoToPlace"]
      167 [-]: NAMECALL R2 R2 K56; var3 = var2; var2 = var2[0x467C327C]
      168 [-]: CALL R2 2 1  ; var2(var3)
 L17: 169 [-]: GETIMPORT R3 58; var3 = _T["DecoMoveInfo"]
-     170 [-]: FASTCALL1 62 R3 L18; 
+     170 [-]: FASTCALL1 64 R3 L18; 
      171 [-]: GETIMPORT R2 5; var2 = 0x7B998233
      172 [-]: CALL R2 2 2  ; var2 = var2(var3)
 L18: 173 [-]: JUMPIF R2 L19; goto L19 if var2
@@ -1479,7 +1510,7 @@ L21: 191 [-]: GETIMPORT R2 52; var2 = _T["DojoMgr"]
 
 
 ; Name:            
-; Defined at line: 523
+; Defined at line: 533
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -1489,7 +1520,7 @@ L21: 191 [-]: GETIMPORT R2 52; var2 = _T["DojoMgr"]
        1 [-]: GETIMPORT R2 1; var2 = 0x89326C93
        2 [-]: NAMECALL R2 R2 K2; var3 = var2; var2 = var2[0x78298275]
        3 [-]: CALL R2 2 2  ; var2 = var2(var3)
-       4 [-]: FASTCALL1 62 R2 L0; 
+       4 [-]: FASTCALL1 64 R2 L0; 
        5 [-]: MOVE R4 R2   ; var4 = var2
        6 [-]: GETIMPORT R3 4; var3 = 0x7B998233
        7 [-]: CALL R3 2 2  ; var3 = var3(var4)
@@ -1509,7 +1540,7 @@ L 2:  20 [-]: RETURN R0 0  ;
 
 
 ; Name:            
-; Defined at line: 534
+; Defined at line: 544
 ; #Upvalues:       4
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1537,7 +1568,7 @@ L 0:  17 [-]: GETIMPORT R1 8; var1 = _T["DojoMgr"]["mPendingDecoToPlace"]
       19 [-]: CALL R1 2 2  ; var1 = var1(var2)
       20 [-]: JUMPIFNOT R1 L2; goto L2 if not var1
       21 [-]: GETIMPORT R2 13; var2 = _T["DecoMoveInfo"]
-      22 [-]: FASTCALL1 62 R2 L1; 
+      22 [-]: FASTCALL1 64 R2 L1; 
       23 [-]: GETIMPORT R1 15; var1 = 0x7B998233
       24 [-]: CALL R1 2 2  ; var1 = var1(var2)
 L 1:  25 [-]: JUMPIFNOT R1 L2; goto L2 if not var1
@@ -1558,7 +1589,7 @@ L 1:  25 [-]: JUMPIFNOT R1 L2; goto L2 if not var1
 L 2:  40 [-]: GETIMPORT R1 24; var1 = _T["DojoMgr"]["mDojo"]
       41 [-]: NAMECALL R1 R1 K25; var2 = var1; var1 = var1[0x0EFBD9F0]
       42 [-]: CALL R1 2 2  ; var1 = var1(var2)
-      43 [-]: FASTCALL1 62 R1 L3; 
+      43 [-]: FASTCALL1 64 R1 L3; 
       44 [-]: MOVE R3 R1   ; var3 = var1
       45 [-]: GETIMPORT R2 15; var2 = 0x7B998233
       46 [-]: CALL R2 2 2  ; var2 = var2(var3)
@@ -1574,7 +1605,7 @@ L 3:  47 [-]: JUMPIF R2 L5 ; goto L5 if var2
       56 [-]: CALL R2 3 2  ; var2 = var2(var3, var4)
       57 [-]: LENGTH R3 R2 ; var3 = #var2
       58 [-]: LOADN R4 1   ; var4 = 1
-      59 [-]: JUMPIFNOTLE R3 R4 L4; goto L4 if var3 > var197383
+      59 [-]: JUMPIFNOTLE R3 R4 L4; goto L4 if var3 > var197436
       60 [-]: GETUPVAL R3 3; var3 = upvalues[3]
       61 [-]: LOADK R4 K21 ; var4 = ""
       62 [-]: LOADB R5 0   ; var5 = false
@@ -1594,7 +1625,7 @@ L 5:  71 [-]: GETUPVAL R2 3; var2 = upvalues[3]
 
 
 ; Name:            
-; Defined at line: 574
+; Defined at line: 584
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1608,14 +1639,14 @@ L 5:  71 [-]: GETUPVAL R2 3; var2 = upvalues[3]
 
 
 ; Name:            
-; Defined at line: 578
+; Defined at line: 588
 ; #Upvalues:       4
 ; #Parameters:     2
 ; Is_vararg:       0
 ; Max Stack Size:  7
 
        0 [-]: GETIMPORT R3 2; var3 = _T["BackgroundMovie"]
-       1 [-]: FASTCALL1 62 R3 L0; 
+       1 [-]: FASTCALL1 64 R3 L0; 
        2 [-]: GETIMPORT R2 4; var2 = 0x7B998233
        3 [-]: CALL R2 2 2  ; var2 = var2(var3)
 L 0:   4 [-]: JUMPIF R2 L1 ; goto L1 if var2
@@ -1632,13 +1663,13 @@ L 1:  10 [-]: JUMPIFNOT R0 L4; goto L4 if not var0
       15 [-]: GETIMPORT R2 11; var2 = 0x89326C93
       16 [-]: NAMECALL R2 R2 K12; var3 = var2; var2 = var2[0x78298275]
       17 [-]: CALL R2 2 2  ; var2 = var2(var3)
-      18 [-]: FASTCALL1 62 R2 L2; 
+      18 [-]: FASTCALL1 64 R2 L2; 
       19 [-]: MOVE R4 R2   ; var4 = var2
       20 [-]: GETIMPORT R3 4; var3 = 0x7B998233
       21 [-]: CALL R3 2 2  ; var3 = var3(var4)
 L 2:  22 [-]: JUMPIF R3 L6 ; goto L6 if var3
       23 [-]: GETIMPORT R4 14; var4 = 0x94BDF50F
-      24 [-]: FASTCALL1 62 R4 L3; 
+      24 [-]: FASTCALL1 64 R4 L3; 
       25 [-]: GETIMPORT R3 4; var3 = 0x7B998233
       26 [-]: CALL R3 2 2  ; var3 = var3(var4)
 L 3:  27 [-]: JUMPIF R3 L6 ; goto L6 if var3
@@ -1674,14 +1705,14 @@ L 7:  51 [-]: GETUPVAL R2 3; var2 = upvalues[3]
 
 
 ; Name:            
-; Defined at line: 607
+; Defined at line: 617
 ; #Upvalues:       4
 ; #Parameters:     2
 ; Is_vararg:       0
 ; Max Stack Size:  6
 
        0 [-]: GETIMPORT R3 2; var3 = _T["BackgroundMovie"]
-       1 [-]: FASTCALL1 62 R3 L0; 
+       1 [-]: FASTCALL1 64 R3 L0; 
        2 [-]: GETIMPORT R2 4; var2 = 0x7B998233
        3 [-]: CALL R2 2 2  ; var2 = var2(var3)
 L 0:   4 [-]: JUMPIF R2 L1 ; goto L1 if var2
@@ -1712,7 +1743,7 @@ L 2:  21 [-]: GETIMPORT R2 9; var2 = _T
 
 
 ; Name:            
-; Defined at line: 623
+; Defined at line: 633
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -1720,7 +1751,7 @@ L 2:  21 [-]: GETIMPORT R2 9; var2 = _T
 
        0 [-]: JUMPIFNOT R0 L4; goto L4 if not var0
        1 [-]: GETIMPORT R3 2; var3 = _T["ShipDecoToPlace"]
-       2 [-]: FASTCALL1 62 R3 L0; 
+       2 [-]: FASTCALL1 64 R3 L0; 
        3 [-]: GETIMPORT R2 4; var2 = 0x7B998233
        4 [-]: CALL R2 2 2  ; var2 = var2(var3)
 L 0:   5 [-]: JUMPIF R2 L1 ; goto L1 if var2
@@ -1730,13 +1761,13 @@ L 0:   5 [-]: JUMPIF R2 L1 ; goto L1 if var2
 L 1:   9 [-]: GETIMPORT R2 7; var2 = 0x89326C93
       10 [-]: NAMECALL R2 R2 K8; var3 = var2; var2 = var2[0x78298275]
       11 [-]: CALL R2 2 2  ; var2 = var2(var3)
-      12 [-]: FASTCALL1 62 R2 L2; 
+      12 [-]: FASTCALL1 64 R2 L2; 
       13 [-]: MOVE R4 R2   ; var4 = var2
       14 [-]: GETIMPORT R3 4; var3 = 0x7B998233
       15 [-]: CALL R3 2 2  ; var3 = var3(var4)
 L 2:  16 [-]: JUMPIF R3 L5 ; goto L5 if var3
       17 [-]: GETIMPORT R4 10; var4 = 0x94BDF50F
-      18 [-]: FASTCALL1 62 R4 L3; 
+      18 [-]: FASTCALL1 64 R4 L3; 
       19 [-]: GETIMPORT R3 4; var3 = 0x7B998233
       20 [-]: CALL R3 2 2  ; var3 = var3(var4)
 L 3:  21 [-]: JUMPIF R3 L5 ; goto L5 if var3
@@ -1756,7 +1787,7 @@ L 5:  31 [-]: GETIMPORT R2 14; var2 = _T
 
 
 ; Name:            
-; Defined at line: 639
+; Defined at line: 649
 ; #Upvalues:       1
 ; #Parameters:     5
 ; Is_vararg:       0
@@ -1765,7 +1796,7 @@ L 5:  31 [-]: GETIMPORT R2 14; var2 = _T
        0 [-]: LOADNIL R5   ; var5 = nil
        1 [-]: GETIMPORT R8 2; var8 = _T["ShipDecos"]
        2 [-]: GETTABLE R7 R8 R0; var7 = var8[var0]
-       3 [-]: FASTCALL1 62 R7 L0; 
+       3 [-]: FASTCALL1 64 R7 L0; 
        4 [-]: GETIMPORT R6 4; var6 = 0x7B998233
        5 [-]: CALL R6 2 2  ; var6 = var6(var7)
 L 0:   6 [-]: JUMPIF R6 L1 ; goto L1 if var6
@@ -1774,13 +1805,13 @@ L 0:   6 [-]: JUMPIF R6 L1 ; goto L1 if var6
        9 [-]: JUMP L3      ; goto L3
 L 1:  10 [-]: GETIMPORT R8 6; var8 = _T["ApartmentPlaceableLevelObjectDecos"]
       11 [-]: GETTABLE R7 R8 R0; var7 = var8[var0]
-      12 [-]: FASTCALL1 62 R7 L2; 
+      12 [-]: FASTCALL1 64 R7 L2; 
       13 [-]: GETIMPORT R6 4; var6 = 0x7B998233
       14 [-]: CALL R6 2 2  ; var6 = var6(var7)
 L 2:  15 [-]: JUMPIF R6 L3 ; goto L3 if var6
       16 [-]: GETIMPORT R6 6; var6 = _T["ApartmentPlaceableLevelObjectDecos"]
       17 [-]: GETTABLE R5 R6 R0; var5 = var6[var0]
-L 3:  18 [-]: FASTCALL1 62 R5 L4; 
+L 3:  18 [-]: FASTCALL1 64 R5 L4; 
       19 [-]: MOVE R7 R5   ; var7 = var5
       20 [-]: GETIMPORT R6 4; var6 = 0x7B998233
       21 [-]: CALL R6 2 2  ; var6 = var6(var7)
@@ -1800,7 +1831,7 @@ L 4:  22 [-]: JUMPIF R6 L11; goto L11 if var6
       35 [-]: GETTABLEKS R10 R3 K15; var10 = var3["y"]
       36 [-]: GETTABLEKS R11 R3 K16; var11 = var3["z"]
       37 [-]: CALL R8 4 2  ; var8 = var8(var9, var10, var11)
-      38 [-]: FASTCALL1 62 R7 L5; 
+      38 [-]: FASTCALL1 64 R7 L5; 
       39 [-]: MOVE R10 R7  ; var10 = var7
       40 [-]: GETIMPORT R9 4; var9 = 0x7B998233
       41 [-]: CALL R9 2 2  ; var9 = var9(var10)
@@ -1808,7 +1839,7 @@ L 5:  42 [-]: JUMPIF R9 L9 ; goto L9 if var9
       43 [-]: JUMPXEQKS R6 K17 L8; 
       44 [-]: GETIMPORT R11 2; var11 = _T["ShipDecos"]
       45 [-]: GETTABLE R10 R11 R6; var10 = var11[var6]
-      46 [-]: FASTCALL1 62 R10 L6; 
+      46 [-]: FASTCALL1 64 R10 L6; 
       47 [-]: GETIMPORT R9 4; var9 = 0x7B998233
       48 [-]: CALL R9 2 2  ; var9 = var9(var10)
 L 6:  49 [-]: JUMPIF R9 L7 ; goto L7 if var9
@@ -1840,7 +1871,7 @@ L 9:  74 [-]: GETIMPORT R9 23; var9 = 0x3D106989
       75 [-]: LOADK R10 K25; var10 = "Could not find attachment anchor for ship decos!"
       76 [-]: CALL R9 2 1  ; var9(var10)
 L10:  77 [-]: LOADN R9 0   ; var9 = 0
-      78 [-]: JUMPIFNOTLT R9 R4 L11; goto L11 if var9 >= var264982
+      78 [-]: JUMPIFNOTLT R9 R4 L11; goto L11 if var9 >= var265006
       79 [-]: MOVE R11 R4  ; var11 = var4
       80 [-]: NAMECALL R9 R5 K26; var10 = var5; var9 = var5[0x2D9BA74F]
       81 [-]: CALL R9 3 1  ; var9(var10, var11)
@@ -1848,14 +1879,14 @@ L11:  82 [-]: RETURN R0 0  ;
 
 
 ; Name:            
-; Defined at line: 675
+; Defined at line: 685
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
 ; Max Stack Size:  9
 
        0 [-]: GETIMPORT R1 2; var1 = _T["DecoMoveInfo"]
-       1 [-]: FASTCALL1 62 R1 L0; 
+       1 [-]: FASTCALL1 64 R1 L0; 
        2 [-]: GETIMPORT R0 4; var0 = 0x7B998233
        3 [-]: CALL R0 2 2  ; var0 = var0(var1)
 L 0:   4 [-]: JUMPIF R0 L4 ; goto L4 if var0
@@ -1871,7 +1902,7 @@ L 0:   4 [-]: JUMPIF R0 L4 ; goto L4 if var0
       14 [-]: NAMECALL R2 R0 K11; var3 = var0; var2 = var0[0xD0001094]
       15 [-]: CALL R2 2 1  ; var2(var3)
       16 [-]: JUMP L3      ; goto L3
-L 1:  17 [-]: FASTCALL1 62 R1 L2; 
+L 1:  17 [-]: FASTCALL1 64 R1 L2; 
       18 [-]: MOVE R3 R1   ; var3 = var1
       19 [-]: GETIMPORT R2 4; var2 = 0x7B998233
       20 [-]: CALL R2 2 2  ; var2 = var2(var3)
@@ -1897,7 +1928,7 @@ L 4:  39 [-]: RETURN R0 0  ;
 
 
 ; Name:            
-; Defined at line: 696
+; Defined at line: 706
 ; #Upvalues:       8
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -1922,13 +1953,13 @@ L 0:  12 [-]: GETUPVAL R2 0; var2 = upvalues[0]
       16 [-]: GETIMPORT R2 14; var2 = 0x89326C93
       17 [-]: NAMECALL R2 R2 K15; var3 = var2; var2 = var2[0x78298275]
       18 [-]: CALL R2 2 2  ; var2 = var2(var3)
-      19 [-]: FASTCALL1 62 R2 L1; 
+      19 [-]: FASTCALL1 64 R2 L1; 
       20 [-]: MOVE R4 R2   ; var4 = var2
       21 [-]: GETIMPORT R3 17; var3 = 0x7B998233
       22 [-]: CALL R3 2 2  ; var3 = var3(var4)
 L 1:  23 [-]: JUMPIF R3 L3 ; goto L3 if var3
       24 [-]: GETIMPORT R4 19; var4 = 0x94BDF50F
-      25 [-]: FASTCALL1 62 R4 L2; 
+      25 [-]: FASTCALL1 64 R4 L2; 
       26 [-]: GETIMPORT R3 17; var3 = 0x7B998233
       27 [-]: CALL R3 2 2  ; var3 = var3(var4)
 L 2:  28 [-]: JUMPIF R3 L3 ; goto L3 if var3
@@ -1974,7 +2005,7 @@ L 7:  61 [-]: GETUPVAL R3 3; var3 = upvalues[3]
       68 [-]: GETIMPORT R5 8; var5 = _T["DecoMoveInfo"]["Deco"]
       69 [-]: NAMECALL R5 R5 K34; var6 = var5; var5 = var5[0x0682D093]
       70 [-]: CALL R5 2 2  ; var5 = var5(var6)
-      71 [-]: JUMPIFNOTEQ R5 R4 L8; goto L8 if var5 ~= var537068828
+      71 [-]: JUMPIFNOTEQ R5 R4 L8; goto L8 if var5 ~= var537068863
       72 [-]: GETTABLEKS R5 R3 K35; var5 = var3["MaxCapacityIncrease"]
       73 [-]: JUMPXEQKNIL R5 L9; 
 L 8:  74 [-]: GETIMPORT R5 8; var5 = _T["DecoMoveInfo"]["Deco"]
@@ -1986,7 +2017,7 @@ L 8:  74 [-]: GETIMPORT R5 8; var5 = _T["DecoMoveInfo"]["Deco"]
       80 [-]: GETTABLEKS R5 R6 K37; var5 = var6[0x5FF2DCC8]
       81 [-]: CALL R5 1 1  ; var5()
 L 9:  82 [-]: GETIMPORT R6 39; var6 = _T["DecoMoveInfo"]["UnattachParent"]
-      83 [-]: FASTCALL1 62 R6 L10; 
+      83 [-]: FASTCALL1 64 R6 L10; 
       84 [-]: GETIMPORT R5 17; var5 = 0x7B998233
       85 [-]: CALL R5 2 2  ; var5 = var5(var6)
 L10:  86 [-]: JUMPIF R5 L11; goto L11 if var5
@@ -1994,7 +2025,7 @@ L10:  86 [-]: JUMPIF R5 L11; goto L11 if var5
       88 [-]: NAMECALL R5 R5 K40; var6 = var5; var5 = var5[0xD0001094]
       89 [-]: CALL R5 2 1  ; var5(var6)
 L11:  90 [-]: GETUPVAL R5 5; var5 = upvalues[5]
-      91 [-]: JUMPIFNOTEQ R4 R5 L15; goto L15 if var4 ~= var2753870
+      91 [-]: JUMPIFNOTEQ R4 R5 L15; goto L15 if var4 ~= var2753825
       92 [-]: GETIMPORT R5 42; var5 = 0xA421AF95
       93 [-]: CALL R5 1 2  ; var5 = var5()
       94 [-]: GETIMPORT R6 42; var6 = 0xA421AF95
@@ -2017,7 +2048,7 @@ L11:  90 [-]: GETUPVAL R5 5; var5 = upvalues[5]
      111 [-]: LOADB R16 0  ; var16 = false
      112 [-]: NAMECALL R8 R8 K46; var9 = var8; var8 = var8[0x78094005]
      113 [-]: CALL R8 9 2  ; var8 = var8(var9, var10, var11, var12, var13, var14, var15, var16)
-     114 [-]: FASTCALL1 62 R8 L12; 
+     114 [-]: FASTCALL1 64 R8 L12; 
      115 [-]: MOVE R10 R8  ; var10 = var8
      116 [-]: GETIMPORT R9 17; var9 = 0x7B998233
      117 [-]: CALL R9 2 2  ; var9 = var9(var10)
@@ -2076,7 +2107,7 @@ L16: 158 [-]: GETIMPORT R3 59; var3 = 0x3D106989
 
 
 ; Name:            
-; Defined at line: 767
+; Defined at line: 777
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -2096,7 +2127,7 @@ L16: 158 [-]: GETIMPORT R3 59; var3 = 0x3D106989
 
 
 ; Name:            
-; Defined at line: 772
+; Defined at line: 782
 ; #Upvalues:       3
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -2105,7 +2136,7 @@ L16: 158 [-]: GETIMPORT R3 59; var3 = 0x3D106989
        0 [-]: GETIMPORT R2 1; var2 = 0x89326C93
        1 [-]: NAMECALL R2 R2 K2; var3 = var2; var2 = var2[0x78298275]
        2 [-]: CALL R2 2 2  ; var2 = var2(var3)
-       3 [-]: FASTCALL1 62 R2 L0; 
+       3 [-]: FASTCALL1 64 R2 L0; 
        4 [-]: MOVE R4 R2   ; var4 = var2
        5 [-]: GETIMPORT R3 4; var3 = 0x7B998233
        6 [-]: CALL R3 2 2  ; var3 = var3(var4)
@@ -2130,13 +2161,13 @@ L 0:   7 [-]: JUMPIF R3 L2 ; goto L2 if var3
       25 [-]: NAMECALL R3 R3 K13; var4 = var3; var3 = var3[0xC348FCEB]
       26 [-]: CALL R3 2 2  ; var3 = var3(var4)
       27 [-]: GETIMPORT R6 15; var6 = _T["DecoMoveInfo"]
-      28 [-]: FASTCALL1 62 R6 L1; 
+      28 [-]: FASTCALL1 64 R6 L1; 
       29 [-]: GETIMPORT R5 4; var5 = 0x7B998233
       30 [-]: CALL R5 2 2  ; var5 = var5(var6)
 L 1:  31 [-]: NAMECALL R3 R3 K16; var4 = var3; var3 = var3[0x8332BBFC]
       32 [-]: CALL R3 3 1  ; var3(var4, var5)
 L 2:  33 [-]: GETIMPORT R4 15; var4 = _T["DecoMoveInfo"]
-      34 [-]: FASTCALL1 62 R4 L3; 
+      34 [-]: FASTCALL1 64 R4 L3; 
       35 [-]: GETIMPORT R3 4; var3 = 0x7B998233
       36 [-]: CALL R3 2 2  ; var3 = var3(var4)
 L 3:  37 [-]: JUMPIF R3 L4 ; goto L4 if var3
@@ -2158,7 +2189,7 @@ L 4:  50 [-]: GETUPVAL R3 2; var3 = upvalues[2]
 
 
 ; Name:            
-; Defined at line: 795
+; Defined at line: 805
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -2172,7 +2203,7 @@ L 4:  50 [-]: GETUPVAL R3 2; var3 = upvalues[2]
 
 
 ; Name:            
-; Defined at line: 799
+; Defined at line: 809
 ; #Upvalues:       3
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -2182,7 +2213,7 @@ L 4:  50 [-]: GETUPVAL R3 2; var3 = upvalues[2]
        1 [-]: LOADN R2 0   ; var2 = 0
        2 [-]: NAMECALL R0 R0 K2; var1 = var0; var0 = var0[0x3F3AE64C]
        3 [-]: CALL R0 3 2  ; var0 = var0(var1, var2)
-       4 [-]: FASTCALL1 62 R0 L0; 
+       4 [-]: FASTCALL1 64 R0 L0; 
        5 [-]: MOVE R2 R0   ; var2 = var0
        6 [-]: GETIMPORT R1 4; var1 = 0x7B998233
        7 [-]: CALL R1 2 2  ; var1 = var1(var2)
@@ -2190,7 +2221,7 @@ L 0:   8 [-]: JUMPIFNOT R1 L1; goto L1 if not var1
        9 [-]: RETURN R0 0  ; 
 L 1:  10 [-]: NAMECALL R1 R0 K5; var2 = var0; var1 = var0[0x80563238]
       11 [-]: CALL R1 2 2  ; var1 = var1(var2)
-      12 [-]: FASTCALL1 62 R1 L2; 
+      12 [-]: FASTCALL1 64 R1 L2; 
       13 [-]: MOVE R3 R1   ; var3 = var1
       14 [-]: GETIMPORT R2 4; var2 = 0x7B998233
       15 [-]: CALL R2 2 2  ; var2 = var2(var3)
@@ -2206,12 +2237,12 @@ L 3:  18 [-]: GETUPVAL R3 0; var3 = upvalues[0]
       25 [-]: CALL R5 4 2  ; var5 = var5(var6, var7, var8)
       26 [-]: LOADNIL R6   ; var6 = nil
       27 [-]: GETIMPORT R8 12; var8 = _T["DecoMoveInfo"]
-      28 [-]: FASTCALL1 62 R8 L4; 
+      28 [-]: FASTCALL1 64 R8 L4; 
       29 [-]: GETIMPORT R7 4; var7 = 0x7B998233
       30 [-]: CALL R7 2 2  ; var7 = var7(var8)
 L 4:  31 [-]: JUMPIFNOT R7 L6; goto L6 if not var7
       32 [-]: GETIMPORT R8 14; var8 = _T["ShipDecoToPlaceCapacity"]
-      33 [-]: FASTCALL1 62 R8 L5; 
+      33 [-]: FASTCALL1 64 R8 L5; 
       34 [-]: GETIMPORT R7 4; var7 = 0x7B998233
       35 [-]: CALL R7 2 2  ; var7 = var7(var8)
 L 5:  36 [-]: JUMPIF R7 L6 ; goto L6 if var7
@@ -2220,7 +2251,7 @@ L 5:  36 [-]: JUMPIF R7 L6 ; goto L6 if var7
 L 6:  39 [-]: GETIMPORT R7 9; var7 = _T["ShipDecoToPlace"]
       40 [-]: NAMECALL R7 R7 K15; var8 = var7; var7 = var7[0x0682D093]
       41 [-]: CALL R7 2 2  ; var7 = var7(var8)
-      42 [-]: JUMPIFNOTEQ R2 R7 L7; goto L7 if var2 ~= var1607
+      42 [-]: JUMPIFNOTEQ R2 R7 L7; goto L7 if var2 ~= var1584
       43 [-]: LOADN R6 0   ; var6 = 0
       44 [-]: JUMP L8      ; goto L8
 L 7:  45 [-]: GETIMPORT R8 17; var8 = 0x0032441C
@@ -2235,7 +2266,7 @@ L 8:  53 [-]: JUMPXEQKNIL R6 L15 NOT;
       54 [-]: GETUPVAL R8 1; var8 = upvalues[1]
       55 [-]: GETTABLEKS R7 R8 K21; var7 = var8[0x06D055F9]
       56 [-]: GETIMPORT R9 12; var9 = _T["DecoMoveInfo"]
-      57 [-]: FASTCALL1 62 R9 L9; 
+      57 [-]: FASTCALL1 64 R9 L9; 
       58 [-]: GETIMPORT R8 4; var8 = 0x7B998233
       59 [-]: CALL R8 2 2  ; var8 = var8(var9)
 L 9:  60 [-]: LOADK R9 K22 ; var9 = "true"
@@ -2244,7 +2275,7 @@ L 9:  60 [-]: LOADK R9 K22 ; var9 = "true"
       63 [-]: GETUPVAL R9 1; var9 = upvalues[1]
       64 [-]: GETTABLEKS R8 R9 K21; var8 = var9[0x06D055F9]
       65 [-]: GETIMPORT R10 14; var10 = _T["ShipDecoToPlaceCapacity"]
-      66 [-]: FASTCALL1 62 R10 L10; 
+      66 [-]: FASTCALL1 64 R10 L10; 
       67 [-]: GETIMPORT R9 4; var9 = 0x7B998233
       68 [-]: CALL R9 2 2  ; var9 = var9(var10)
 L10:  69 [-]: LOADK R10 K22; var10 = "true"
@@ -2282,7 +2313,7 @@ L12:  85 [-]: LOADK R11 K22; var11 = "true"
      101 [-]: CALL R10 2 2 ; var10 = var10(var11)
      102 [-]: LOADK R11 K29; var11 = ""
      103 [-]: GETIMPORT R13 12; var13 = _T["DecoMoveInfo"]
-     104 [-]: FASTCALL1 62 R13 L13; 
+     104 [-]: FASTCALL1 64 R13 L13; 
      105 [-]: GETIMPORT R12 4; var12 = 0x7B998233
      106 [-]: CALL R12 2 2 ; var12 = var12(var13)
 L13: 107 [-]: JUMPIF R12 L14; goto L14 if var12
@@ -2298,8 +2329,8 @@ L14: 112 [-]: GETIMPORT R12 25; var12 = 0x3D106989
      117 [-]: CONCAT R13 R14 R17; var13 = var14 .. var17
      118 [-]: CALL R12 2 1 ; var12(var13)
 L15: 119 [-]: LOADN R7 0   ; var7 = 0
-     120 [-]: JUMPIFNOTLT R7 R6 L16; goto L16 if var7 >= var787724
-     121 [-]: JUMPIFNOTLT R5 R6 L16; goto L16 if var5 >= var132871
+     120 [-]: JUMPIFNOTLT R7 R6 L16; goto L16 if var7 >= var787776
+     121 [-]: JUMPIFNOTLT R5 R6 L16; goto L16 if var5 >= var132924
      122 [-]: GETUPVAL R7 2; var7 = upvalues[2]
      123 [-]: GETIMPORT R8 9; var8 = _T["ShipDecoToPlace"]
      124 [-]: LOADK R9 K29 ; var9 = ""
@@ -2315,7 +2346,7 @@ L16: 131 [-]: GETUPVAL R8 0; var8 = upvalues[0]
      134 [-]: MOVE R9 R4   ; var9 = var4
      135 [-]: GETIMPORT R10 9; var10 = _T["ShipDecoToPlace"]
      136 [-]: CALL R7 4 2  ; var7 = var7(var8, var9, var10)
-     137 [-]: FASTCALL1 62 R7 L17; 
+     137 [-]: FASTCALL1 64 R7 L17; 
      138 [-]: MOVE R9 R7   ; var9 = var7
      139 [-]: GETIMPORT R8 4; var8 = 0x7B998233
      140 [-]: CALL R8 2 2  ; var8 = var8(var9)
@@ -2343,7 +2374,7 @@ L20: 156 [-]: GETIMPORT R12 9; var12 = _T["ShipDecoToPlace"]
      162 [-]: NAMECALL R8 R8 K38; var9 = var8; var8 = var8[0x8E95E326]
      163 [-]: CALL R8 4 1  ; var8(var9, var10, var11)
      164 [-]: GETIMPORT R9 12; var9 = _T["DecoMoveInfo"]
-     165 [-]: FASTCALL1 62 R9 L21; 
+     165 [-]: FASTCALL1 64 R9 L21; 
      166 [-]: GETIMPORT R8 4; var8 = 0x7B998233
      167 [-]: CALL R8 2 2  ; var8 = var8(var9)
 L21: 168 [-]: JUMPIF R8 L22; goto L22 if var8
@@ -2389,7 +2420,7 @@ L23: 202 [-]: SETTABLEKS R9 R8 K58; var9["PlacingCustomizableDeco"] = var8
      208 [-]: LOADNIL R10  ; var10 = nil
      209 [-]: SETTABLEKS R10 R9 K59; var10["PlacedDecoSocketInfo"] = var9
 L24: 210 [-]: GETIMPORT R10 40; var10 = _T["BackgroundMovie"]
-     211 [-]: FASTCALL1 62 R10 L25; 
+     211 [-]: FASTCALL1 64 R10 L25; 
      212 [-]: GETIMPORT R9 4; var9 = 0x7B998233
      213 [-]: CALL R9 2 2  ; var9 = var9(var10)
 L25: 214 [-]: JUMPIF R9 L26; goto L26 if var9
@@ -2399,7 +2430,7 @@ L25: 214 [-]: JUMPIF R9 L26; goto L26 if var9
      218 [-]: NAMECALL R9 R9 K43; var10 = var9; var9 = var9[0xE4162EED]
      219 [-]: CALL R9 4 1  ; var9(var10, var11, var12)
 L26: 220 [-]: GETIMPORT R10 62; var10 = _T["ShipDecoItemInfo"]
-     221 [-]: FASTCALL1 62 R10 L27; 
+     221 [-]: FASTCALL1 64 R10 L27; 
      222 [-]: GETIMPORT R9 4; var9 = 0x7B998233
      223 [-]: CALL R9 2 2  ; var9 = var9(var10)
 L27: 224 [-]: JUMPIF R9 L28; goto L28 if var9
@@ -2429,7 +2460,7 @@ L29: 245 [-]: GETIMPORT R9 48; var9 = _T
 L30: 248 [-]: GETIMPORT R8 71; var8 = 0x89326C93
      249 [-]: NAMECALL R8 R8 K72; var9 = var8; var8 = var8[0x78298275]
      250 [-]: CALL R8 2 2  ; var8 = var8(var9)
-     251 [-]: FASTCALL1 62 R8 L31; 
+     251 [-]: FASTCALL1 64 R8 L31; 
      252 [-]: MOVE R10 R8  ; var10 = var8
      253 [-]: GETIMPORT R9 4; var9 = 0x7B998233
      254 [-]: CALL R9 2 2  ; var9 = var9(var10)
@@ -2444,7 +2475,7 @@ L32: 262 [-]: RETURN R0 0  ;
 
 
 ; Name:            
-; Defined at line: 887
+; Defined at line: 897
 ; #Upvalues:       2
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -2466,7 +2497,7 @@ L 0:   6 [-]: GETIMPORT R2 5; var2 = _T["DojoMgr"]
 
 
 ; Name:            
-; Defined at line: 900
+; Defined at line: 910
 ; #Upvalues:       2
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -2486,7 +2517,7 @@ L 0:   6 [-]: GETIMPORT R3 5; var3 = _T["DojoMgr"]
       11 [-]: GETIMPORT R5 10; var5 = _T["DojoMgr"]["mPendingDecoComponentId"]
       12 [-]: CALL R3 3 1  ; var3(var4, var5)
 L 1:  13 [-]: LOADN R3 -1  ; var3 = -1
-      14 [-]: JUMPIFNOTEQ R2 R3 L2; goto L2 if var2 ~= var66567
+      14 [-]: JUMPIFNOTEQ R2 R3 L2; goto L2 if var2 ~= var66620
       15 [-]: GETUPVAL R4 1; var4 = upvalues[1]
       16 [-]: GETTABLEKS R3 R4 K11; var3 = var4[0xE0CBA3CA]
       17 [-]: LOADK R4 K12 ; var4 = "/Lotus/Language/Dojo/InvalidGroupDecoration"
@@ -2497,7 +2528,7 @@ L 1:  13 [-]: LOADN R3 -1  ; var3 = -1
       22 [-]: CALL R3 3 1  ; var3(var4, var5)
       23 [-]: RETURN R0 0  ; 
 L 2:  24 [-]: LOADN R3 -2  ; var3 = -2
-      25 [-]: JUMPIFNOTEQ R2 R3 L3; goto L3 if var2 ~= var66567
+      25 [-]: JUMPIFNOTEQ R2 R3 L3; goto L3 if var2 ~= var66620
       26 [-]: GETUPVAL R4 1; var4 = upvalues[1]
       27 [-]: GETTABLEKS R3 R4 K11; var3 = var4[0xE0CBA3CA]
       28 [-]: LOADK R4 K13 ; var4 = "/Lotus/Language/Dojo/DecorationGroupCapacityExceeded"
@@ -2510,7 +2541,7 @@ L 3:  34 [-]: RETURN R0 0  ;
 
 
 ; Name:            
-; Defined at line: 916
+; Defined at line: 926
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -2523,12 +2554,12 @@ L 3:  34 [-]: RETURN R0 0  ;
        4 [-]: GETIMPORT R1 6; var1 = 0x89326C93
        5 [-]: NAMECALL R1 R1 K7; var2 = var1; var1 = var1[0x78298275]
        6 [-]: CALL R1 2 2  ; var1 = var1(var2)
-       7 [-]: FASTCALL1 62 R0 L0; 
+       7 [-]: FASTCALL1 64 R0 L0; 
        8 [-]: MOVE R3 R0   ; var3 = var0
        9 [-]: GETIMPORT R2 9; var2 = 0x7B998233
       10 [-]: CALL R2 2 2  ; var2 = var2(var3)
 L 0:  11 [-]: JUMPIF R2 L2 ; goto L2 if var2
-      12 [-]: FASTCALL1 62 R1 L1; 
+      12 [-]: FASTCALL1 64 R1 L1; 
       13 [-]: MOVE R3 R1   ; var3 = var1
       14 [-]: GETIMPORT R2 9; var2 = 0x7B998233
       15 [-]: CALL R2 2 2  ; var2 = var2(var3)
@@ -2557,7 +2588,7 @@ L 2:  37 [-]: RETURN R0 0  ;
 
 
 ; Name:            
-; Defined at line: 930
+; Defined at line: 940
 ; #Upvalues:       2
 ; #Parameters:     9
 ; Is_vararg:       0
@@ -2565,7 +2596,7 @@ L 2:  37 [-]: RETURN R0 0  ;
 
        0 [-]: LOADN R9 0   ; var9 = 0
        1 [-]: GETIMPORT R11 2; var11 = _T["DojoMgr"]
-       2 [-]: FASTCALL1 62 R11 L0; 
+       2 [-]: FASTCALL1 64 R11 L0; 
        3 [-]: GETIMPORT R10 4; var10 = 0x7B998233
        4 [-]: CALL R10 2 2 ; var10 = var10(var11)
 L 0:   5 [-]: JUMPIFNOT R10 L5; goto L5 if not var10
@@ -2573,14 +2604,14 @@ L 0:   5 [-]: JUMPIFNOT R10 L5; goto L5 if not var10
        7 [-]: LOADN R12 0  ; var12 = 0
        8 [-]: NAMECALL R10 R10 K7; var11 = var10; var10 = var10[0x3F3AE64C]
        9 [-]: CALL R10 3 2 ; var10 = var10(var11, var12)
-      10 [-]: FASTCALL1 62 R10 L1; 
+      10 [-]: FASTCALL1 64 R10 L1; 
       11 [-]: MOVE R12 R10 ; var12 = var10
       12 [-]: GETIMPORT R11 4; var11 = 0x7B998233
       13 [-]: CALL R11 2 2 ; var11 = var11(var12)
 L 1:  14 [-]: JUMPIF R11 L5; goto L5 if var11
       15 [-]: NAMECALL R11 R10 K8; var12 = var10; var11 = var10[0x80563238]
       16 [-]: CALL R11 2 2 ; var11 = var11(var12)
-      17 [-]: FASTCALL1 62 R11 L2; 
+      17 [-]: FASTCALL1 64 R11 L2; 
       18 [-]: MOVE R13 R11 ; var13 = var11
       19 [-]: GETIMPORT R12 4; var12 = 0x7B998233
       20 [-]: CALL R12 2 2 ; var12 = var12(var13)
@@ -2594,7 +2625,7 @@ L 2:  21 [-]: JUMPIF R12 L5; goto L5 if var12
       28 [-]: CALL R14 2 2 ; var14 = var14(var15)
       29 [-]: GETUPVAL R16 0; var16 = upvalues[0]
       30 [-]: GETTABLEKS R15 R16 K11; var15 = var16["DECO_AREA_APARTMENT"]
-      31 [-]: JUMPIFEQ R14 R15 L3; goto L3 if var14 == var16780571
+      31 [-]: JUMPIFEQ R14 R15 L3; goto L3 if var14 == var16780550
       32 [-]: LOADB R13 0 +1; var13 = false
 L 3:  33 [-]: LOADB R13 1  ; var13 = true
 L 4:  34 [-]: MOVE R16 R12 ; var16 = var12
@@ -2604,9 +2635,9 @@ L 4:  34 [-]: MOVE R16 R12 ; var16 = var12
       38 [-]: MOVE R9 R14  ; var9 = var14
 L 5:  39 [-]: LOADB R10 1  ; var10 = true
       40 [-]: LOADN R11 7  ; var11 = 7
-      41 [-]: JUMPIFEQ R1 R11 L7; goto L7 if var1 == var396103
+      41 [-]: JUMPIFEQ R1 R11 L7; goto L7 if var1 == var396080
       42 [-]: LOADN R11 6  ; var11 = 6
-      43 [-]: JUMPIFEQ R1 R11 L6; goto L6 if var1 == var16779803
+      43 [-]: JUMPIFEQ R1 R11 L6; goto L6 if var1 == var16779782
       44 [-]: LOADB R10 0 +1; var10 = false
 L 6:  45 [-]: LOADB R10 1  ; var10 = true
 L 7:  46 [-]: LOADK R11 K13; var11 = ""
@@ -2645,7 +2676,7 @@ L 9:  69 [-]: GETIMPORT R19 23; var19 = 0x34291F5C[0x1467D5F4]
       79 [-]: CALL R19 7 2 ; var19 = var19(var20, var21, var22, var23, var24, var25)
       80 [-]: LENGTH R20 R19; var20 = #var19
       81 [-]: LOADN R21 0  ; var21 = 0
-      82 [-]: JUMPIFNOTLT R21 R20 L10; goto L10 if var21 >= var1250341
+      82 [-]: JUMPIFNOTLT R21 R20 L10; goto L10 if var21 >= var1250356
       83 [-]: GETTABLEN R20 R19 1; var20 = var19[1]
       84 [-]: JUMPXEQKS R20 K13 L10; 
       85 [-]: GETTABLE R20 R12 R17; var20 = var12[var17]
@@ -2673,16 +2704,16 @@ L11:  96 [-]: GETTABLE R19 R12 R17; var19 = var12[var17]
 L12: 107 [-]: FORGLOOP R14 L9 2; 
      108 [-]: LOADK R14 K13; var14 = ""
      109 [-]: LOADN R15 3  ; var15 = 3
-     110 [-]: JUMPIFEQ R0 R15 L13; goto L13 if var0 == var2559822
+     110 [-]: JUMPIFEQ R0 R15 L13; goto L13 if var0 == var2559777
      111 [-]: GETIMPORT R15 39; var15 = _T["LastDecoTransformMode"]
      112 [-]: JUMPXEQKNIL R15 L13; 
      113 [-]: GETIMPORT R15 40; var15 = _T
      114 [-]: LOADNIL R16  ; var16 = nil
      115 [-]: SETTABLEKS R16 R15 K38; var16["LastDecoTransformMode"] = var15
 L13: 116 [-]: LOADN R15 3  ; var15 = 3
-     117 [-]: JUMPIFNOTEQ R0 R15 L30; goto L30 if var0 ~= var331847
+     117 [-]: JUMPIFNOTEQ R0 R15 L30; goto L30 if var0 ~= var331824
      118 [-]: LOADN R16 5  ; var16 = 5
-     119 [-]: JUMPIFEQ R1 R16 L14; goto L14 if var1 == var16781083
+     119 [-]: JUMPIFEQ R1 R16 L14; goto L14 if var1 == var16781062
      120 [-]: LOADB R15 0 +1; var15 = false
 L14: 121 [-]: LOADB R15 1  ; var15 = true
 L15: 122 [-]: LOADNIL R16  ; var16 = nil
@@ -2713,9 +2744,9 @@ L18: 143 [-]: GETIMPORT R18 43; var18 = 0x603636AD
      147 [-]: CALL R18 3 2 ; var18 = var18(var19, var20)
      148 [-]: MOVE R17 R18 ; var17 = var18
      149 [-]: LOADN R18 1  ; var18 = 1
-     150 [-]: JUMPIFEQ R1 R18 L19; goto L19 if var1 == var135751
+     150 [-]: JUMPIFEQ R1 R18 L19; goto L19 if var1 == var135728
      151 [-]: LOADN R18 2  ; var18 = 2
-     152 [-]: JUMPIFNOTEQ R1 R18 L20; goto L20 if var1 ~= var2822734
+     152 [-]: JUMPIFNOTEQ R1 R18 L20; goto L20 if var1 ~= var2822689
 L19: 153 [-]: GETIMPORT R18 43; var18 = 0x603636AD
      154 [-]: LOADK R19 K51; var19 = "/Lotus/Language/UiElements/PLACEMENT_WORLD_TRANSLATE"
      155 [-]: LOADNIL R20  ; var20 = nil
@@ -2725,9 +2756,9 @@ L19: 153 [-]: GETIMPORT R18 43; var18 = 0x603636AD
      159 [-]: SETTABLEKS R14 R18 K38; var14["LastDecoTransformMode"] = var18
      160 [-]: JUMP L23     ; goto L23
 L20: 161 [-]: LOADN R18 3  ; var18 = 3
-     162 [-]: JUMPIFEQ R1 R18 L21; goto L21 if var1 == var266823
+     162 [-]: JUMPIFEQ R1 R18 L21; goto L21 if var1 == var266800
      163 [-]: LOADN R18 4  ; var18 = 4
-     164 [-]: JUMPIFNOTEQ R1 R18 L22; goto L22 if var1 ~= var2822734
+     164 [-]: JUMPIFNOTEQ R1 R18 L22; goto L22 if var1 ~= var2822689
 L21: 165 [-]: GETIMPORT R18 43; var18 = 0x603636AD
      166 [-]: LOADK R19 K52; var19 = "/Lotus/Language/UiElements/PLACEMENT_LOCAL_TRANSLATE"
      167 [-]: LOADNIL R20  ; var20 = nil
@@ -2741,9 +2772,9 @@ L22: 173 [-]: GETIMPORT R18 39; var18 = _T["LastDecoTransformMode"]
      175 [-]: GETIMPORT R14 39; var14 = _T["LastDecoTransformMode"]
 L23: 176 [-]: JUMPIF R15 L25; goto L25 if var15
      177 [-]: LOADN R18 2  ; var18 = 2
-     178 [-]: JUMPIFEQ R1 R18 L24; goto L24 if var1 == var266823
+     178 [-]: JUMPIFEQ R1 R18 L24; goto L24 if var1 == var266800
      179 [-]: LOADN R18 4  ; var18 = 4
-     180 [-]: JUMPIFNOTEQ R1 R18 L25; goto L25 if var1 ~= var68123
+     180 [-]: JUMPIFNOTEQ R1 R18 L25; goto L25 if var1 ~= var68102
 L24: 181 [-]: LOADB R10 1  ; var10 = true
 L25: 182 [-]: LOADNIL R18  ; var18 = nil
      183 [-]: LOADK R19 K13; var19 = ""
@@ -2814,7 +2845,7 @@ L29: 217 [-]: GETIMPORT R21 43; var21 = 0x603636AD
      248 [-]: CONCAT R11 R21 R22; var11 = var21 .. var22
      249 [-]: JUMP L48     ; goto L48
 L30: 250 [-]: LOADN R15 4  ; var15 = 4
-     251 [-]: JUMPIFNOTEQ R0 R15 L31; goto L31 if var0 ~= var2821966
+     251 [-]: JUMPIFNOTEQ R0 R15 L31; goto L31 if var0 ~= var2821921
      252 [-]: GETIMPORT R15 43; var15 = 0x603636AD
      253 [-]: LOADK R16 K68; var16 = "/Lotus/Language/Dojo/DecoAttach"
      254 [-]: LOADNIL R17  ; var17 = nil
@@ -2824,7 +2855,7 @@ L30: 250 [-]: LOADN R15 4  ; var15 = 4
 L31: 258 [-]: LOADK R15 K13; var15 = ""
      259 [-]: LOADK R16 K13; var16 = ""
      260 [-]: LOADN R18 5  ; var18 = 5
-     261 [-]: JUMPIFEQ R1 R18 L32; goto L32 if var1 == var16781595
+     261 [-]: JUMPIFEQ R1 R18 L32; goto L32 if var1 == var16781574
      262 [-]: LOADB R17 0 +1; var17 = false
 L32: 263 [-]: LOADB R17 1  ; var17 = true
 L33: 264 [-]: JUMPIFNOT R3 L34; goto L34 if not var3
@@ -2943,7 +2974,7 @@ L46: 376 [-]: MOVE R26 R11 ; var26 = var11
      377 [-]: GETIMPORT R27 77; var27 = _T["ShipDecoItemInfo"]
      378 [-]: JUMPXEQKNIL R27 L47; 
      379 [-]: LOADN R27 1000; var27 = 1000
-     380 [-]: JUMPIFNOTLE R27 R9 L47; goto L47 if var27 > var727830
+     380 [-]: JUMPIFNOTLE R27 R9 L47; goto L47 if var27 > var727854
      381 [-]: MOVE R27 R11 ; var27 = var11
      382 [-]: LOADK R28 K78; var28 = "\r\n"
      383 [-]: GETIMPORT R31 43; var31 = 0x603636AD
@@ -3009,7 +3040,7 @@ L48: 432 [-]: GETIMPORT R15 90; var15 = 0x89326C93
 
 
 ; Name:            
-; Defined at line: 1111
+; Defined at line: 1121
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -3019,7 +3050,7 @@ L48: 432 [-]: GETIMPORT R15 90; var15 = 0x89326C93
        1 [-]: JUMPXEQKNIL R0 L1; 
        2 [-]: GETIMPORT R2 4; var2 = _T["DojoMgr"]["mCurrentlyFocusedDeco"]
        3 [-]: GETTABLEKS R1 R2 K5; var1 = var2["Deco"]
-       4 [-]: FASTCALL1 62 R1 L0; 
+       4 [-]: FASTCALL1 64 R1 L0; 
        5 [-]: GETIMPORT R0 7; var0 = 0x7B998233
        6 [-]: CALL R0 2 2  ; var0 = var0(var1)
 L 0:   7 [-]: JUMPIF R0 L1 ; goto L1 if var0
@@ -3038,7 +3069,7 @@ L 1:  19 [-]: RETURN R0 0  ;
 
 
 ; Name:            
-; Defined at line: 1120
+; Defined at line: 1130
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -3050,7 +3081,7 @@ L 1:  19 [-]: RETURN R0 0  ;
 
 
 ; Name:            
-; Defined at line: 1124
+; Defined at line: 1134
 ; #Upvalues:       3
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -3060,7 +3091,7 @@ L 1:  19 [-]: RETURN R0 0  ;
        1 [-]: LOADN R4 0   ; var4 = 0
        2 [-]: NAMECALL R2 R2 K2; var3 = var2; var2 = var2[0x3F3AE64C]
        3 [-]: CALL R2 3 2  ; var2 = var2(var3, var4)
-       4 [-]: FASTCALL1 62 R2 L0; 
+       4 [-]: FASTCALL1 64 R2 L0; 
        5 [-]: MOVE R4 R2   ; var4 = var2
        6 [-]: GETIMPORT R3 4; var3 = 0x7B998233
        7 [-]: CALL R3 2 2  ; var3 = var3(var4)
@@ -3068,7 +3099,7 @@ L 0:   8 [-]: JUMPIFNOT R3 L1; goto L1 if not var3
        9 [-]: RETURN R0 0  ; 
 L 1:  10 [-]: NAMECALL R3 R2 K5; var4 = var2; var3 = var2[0x80563238]
       11 [-]: CALL R3 2 2  ; var3 = var3(var4)
-      12 [-]: FASTCALL1 62 R3 L2; 
+      12 [-]: FASTCALL1 64 R3 L2; 
       13 [-]: MOVE R5 R3   ; var5 = var3
       14 [-]: GETIMPORT R4 4; var4 = 0x7B998233
       15 [-]: CALL R4 2 2  ; var4 = var4(var5)
@@ -3081,14 +3112,14 @@ L 3:  18 [-]: GETUPVAL R5 0; var5 = upvalues[0]
       22 [-]: LOADK R6 K7  ; var6 = 999999
       23 [-]: GETTABLEKS R7 R0 K8; var7 = var0["StoreItem"]
       24 [-]: GETIMPORT R9 11; var9 = _T["DojoMgr"]
-      25 [-]: FASTCALL1 62 R9 L4; 
+      25 [-]: FASTCALL1 64 R9 L4; 
       26 [-]: GETIMPORT R8 4; var8 = 0x7B998233
       27 [-]: CALL R8 2 2  ; var8 = var8(var9)
 L 4:  28 [-]: JUMPIF R8 L7 ; goto L7 if var8
       29 [-]: GETIMPORT R8 13; var8 = 0x89326C93
       30 [-]: NAMECALL R8 R8 K14; var9 = var8; var8 = var8[0x78298275]
       31 [-]: CALL R8 2 2  ; var8 = var8(var9)
-      32 [-]: FASTCALL1 62 R8 L5; 
+      32 [-]: FASTCALL1 64 R8 L5; 
       33 [-]: MOVE R10 R8  ; var10 = var8
       34 [-]: GETIMPORT R9 4; var9 = 0x7B998233
       35 [-]: CALL R9 2 2  ; var9 = var9(var10)
@@ -3122,7 +3153,7 @@ L 7:  57 [-]: GETUPVAL R9 0; var9 = upvalues[0]
       63 [-]: CALL R10 2 2 ; var10 = var10(var11)
       64 [-]: GETUPVAL R12 0; var12 = upvalues[0]
       65 [-]: GETTABLEKS R11 R12 K25; var11 = var12["DECO_AREA_APARTMENT"]
-      66 [-]: JUMPIFEQ R10 R11 L8; goto L8 if var10 == var16779547
+      66 [-]: JUMPIFEQ R10 R11 L8; goto L8 if var10 == var16779526
       67 [-]: LOADB R9 0 +1; var9 = false
 L 8:  68 [-]: LOADB R9 1   ; var9 = true
 L 9:  69 [-]: MOVE R12 R8  ; var12 = var8
@@ -3134,7 +3165,7 @@ L 9:  69 [-]: MOVE R12 R8  ; var12 = var8
       75 [-]: NAMECALL R10 R7 K22; var11 = var7; var10 = var7[0xFB7EB1D7]
       76 [-]: CALL R10 3 2 ; var10 = var10(var11, var12)
       77 [-]: MOVE R6 R10  ; var6 = var10
-L10:  78 [-]: JUMPIFNOTLT R5 R6 L11; goto L11 if var5 >= var67847
+L10:  78 [-]: JUMPIFNOTLT R5 R6 L11; goto L11 if var5 >= var67900
       79 [-]: GETUPVAL R9 1; var9 = upvalues[1]
       80 [-]: GETTABLEKS R8 R9 K27; var8 = var9[0xE0CBA3CA]
       81 [-]: LOADK R9 K28 ; var9 = "/Lotus/Language/UiElements/ShipDecoNeedMoreCapacity"
@@ -3194,7 +3225,7 @@ L13: 114 [-]: SETTABLEKS R10 R9 K37; var10["VaultDeco"] = var9
      135 [-]: SETTABLEKS R14 R13 K52; var14["maxValue"] = var13
      136 [-]: GETUPVAL R15 0; var15 = upvalues[0]
      137 [-]: GETTABLEKS R14 R15 K53; var14 = var15["UI_MODE_IN_SPACE_SHIP"]
-     138 [-]: JUMPIFNOTEQ R4 R14 L14; goto L14 if var4 ~= var725014
+     138 [-]: JUMPIFNOTEQ R4 R14 L14; goto L14 if var4 ~= var725038
      139 [-]: MOVE R16 R11 ; var16 = var11
      140 [-]: NEWTABLE R17 0 0; var17 = {}
      141 [-]: LOADK R18 K54; var18 = ""
@@ -3226,7 +3257,7 @@ L15: 164 [-]: GETUPVAL R14 2; var14 = upvalues[2]
 
 
 ; Name:            
-; Defined at line: 1209
+; Defined at line: 1219
 ; #Upvalues:       3
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -3239,7 +3270,7 @@ L15: 164 [-]: GETUPVAL R14 2; var14 = upvalues[2]
        4 [-]: LOADN R3 0   ; var3 = 0
        5 [-]: NAMECALL R1 R1 K5; var2 = var1; var1 = var1[0x3F3AE64C]
        6 [-]: CALL R1 3 2  ; var1 = var1(var2, var3)
-       7 [-]: FASTCALL1 62 R1 L0; 
+       7 [-]: FASTCALL1 64 R1 L0; 
        8 [-]: MOVE R3 R1   ; var3 = var1
        9 [-]: GETIMPORT R2 7; var2 = 0x7B998233
       10 [-]: CALL R2 2 2  ; var2 = var2(var3)
@@ -3247,7 +3278,7 @@ L 0:  11 [-]: JUMPIFNOT R2 L1; goto L1 if not var2
       12 [-]: RETURN R0 0  ; 
 L 1:  13 [-]: NAMECALL R2 R1 K8; var3 = var1; var2 = var1[0x80563238]
       14 [-]: CALL R2 2 2  ; var2 = var2(var3)
-      15 [-]: FASTCALL1 62 R2 L2; 
+      15 [-]: FASTCALL1 64 R2 L2; 
       16 [-]: MOVE R4 R2   ; var4 = var2
       17 [-]: GETIMPORT R3 7; var3 = 0x7B998233
       18 [-]: CALL R3 2 2  ; var3 = var3(var4)
@@ -3259,14 +3290,14 @@ L 3:  21 [-]: GETUPVAL R4 0; var4 = upvalues[0]
       24 [-]: LOADN R4 0   ; var4 = 0
       25 [-]: GETTABLEKS R5 R0 K10; var5 = var0["capacityCost"]
       26 [-]: GETIMPORT R7 12; var7 = _T["DojoMgr"]
-      27 [-]: FASTCALL1 62 R7 L4; 
+      27 [-]: FASTCALL1 64 R7 L4; 
       28 [-]: GETIMPORT R6 7; var6 = 0x7B998233
       29 [-]: CALL R6 2 2  ; var6 = var6(var7)
 L 4:  30 [-]: JUMPIF R6 L6 ; goto L6 if var6
       31 [-]: GETIMPORT R6 14; var6 = 0x89326C93
       32 [-]: NAMECALL R6 R6 K15; var7 = var6; var6 = var6[0x78298275]
       33 [-]: CALL R6 2 2  ; var6 = var6(var7)
-      34 [-]: FASTCALL1 62 R6 L5; 
+      34 [-]: FASTCALL1 64 R6 L5; 
       35 [-]: MOVE R8 R6   ; var8 = var6
       36 [-]: GETIMPORT R7 7; var7 = 0x7B998233
       37 [-]: CALL R7 2 2  ; var7 = var7(var8)
@@ -3296,7 +3327,7 @@ L 6:  55 [-]: GETUPVAL R7 0; var7 = upvalues[0]
       61 [-]: CALL R8 2 2  ; var8 = var8(var9)
       62 [-]: GETUPVAL R10 0; var10 = upvalues[0]
       63 [-]: GETTABLEKS R9 R10 K25; var9 = var10["DECO_AREA_APARTMENT"]
-      64 [-]: JUMPIFEQ R8 R9 L7; goto L7 if var8 == var16779035
+      64 [-]: JUMPIFEQ R8 R9 L7; goto L7 if var8 == var16779014
       65 [-]: LOADB R7 0 +1; var7 = false
 L 7:  66 [-]: LOADB R7 1   ; var7 = true
 L 8:  67 [-]: MOVE R10 R6  ; var10 = var6
@@ -3304,7 +3335,7 @@ L 8:  67 [-]: MOVE R10 R6  ; var10 = var6
       69 [-]: NAMECALL R8 R2 K26; var9 = var2; var8 = var2[0xD104F830]
       70 [-]: CALL R8 4 2  ; var8 = var8(var9, var10, var11)
       71 [-]: MOVE R4 R8   ; var4 = var8
-L 9:  72 [-]: JUMPIFNOTLT R4 R5 L10; goto L10 if var4 >= var67335
+L 9:  72 [-]: JUMPIFNOTLT R4 R5 L10; goto L10 if var4 >= var67388
       73 [-]: GETUPVAL R7 1; var7 = upvalues[1]
       74 [-]: GETTABLEKS R6 R7 K27; var6 = var7[0xE0CBA3CA]
       75 [-]: LOADK R7 K28 ; var7 = "/Lotus/Language/UiElements/ShipDecoNeedMoreCapacity"
@@ -3362,7 +3393,7 @@ L13: 119 [-]: SETTABLEKS R7 R6 K35; var7["VaultDeco"] = var6
      127 [-]: GETTABLEKS R8 R0 K37; var8 = var0["groupedDeco"]
      128 [-]: GETUPVAL R10 0; var10 = upvalues[0]
      129 [-]: GETTABLEKS R9 R10 K49; var9 = var10["UI_MODE_IN_SPACE_SHIP"]
-     130 [-]: JUMPIFNOTEQ R3 R9 L14; goto L14 if var3 ~= var527126
+     130 [-]: JUMPIFNOTEQ R3 R9 L14; goto L14 if var3 ~= var527150
      131 [-]: MOVE R11 R8  ; var11 = var8
      132 [-]: NEWTABLE R12 0 0; var12 = {}
      133 [-]: LOADK R13 K50; var13 = ""
@@ -3400,7 +3431,7 @@ L15: 162 [-]: GETUPVAL R9 2; var9 = upvalues[2]
 
 
 ; Name:            
-; Defined at line: 1284
+; Defined at line: 1294
 ; #Upvalues:       5
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -3410,7 +3441,7 @@ L15: 162 [-]: GETUPVAL R9 2; var9 = upvalues[2]
        1 [-]: LOADN R2 0   ; var2 = 0
        2 [-]: NAMECALL R0 R0 K2; var1 = var0; var0 = var0[0x3F3AE64C]
        3 [-]: CALL R0 3 2  ; var0 = var0(var1, var2)
-       4 [-]: FASTCALL1 62 R0 L0; 
+       4 [-]: FASTCALL1 64 R0 L0; 
        5 [-]: MOVE R2 R0   ; var2 = var0
        6 [-]: GETIMPORT R1 4; var1 = 0x7B998233
        7 [-]: CALL R1 2 2  ; var1 = var1(var2)
@@ -3418,7 +3449,7 @@ L 0:   8 [-]: JUMPIFNOT R1 L1; goto L1 if not var1
        9 [-]: RETURN R0 0  ; 
 L 1:  10 [-]: NAMECALL R1 R0 K5; var2 = var0; var1 = var0[0x80563238]
       11 [-]: CALL R1 2 2  ; var1 = var1(var2)
-      12 [-]: FASTCALL1 62 R1 L2; 
+      12 [-]: FASTCALL1 64 R1 L2; 
       13 [-]: MOVE R3 R1   ; var3 = var1
       14 [-]: GETIMPORT R2 4; var2 = 0x7B998233
       15 [-]: CALL R2 2 2  ; var2 = var2(var3)
@@ -3426,14 +3457,14 @@ L 2:  16 [-]: JUMPIFNOT R2 L3; goto L3 if not var2
       17 [-]: RETURN R0 0  ; 
 L 3:  18 [-]: LOADN R2 0   ; var2 = 0
       19 [-]: GETIMPORT R4 8; var4 = _T["DojoMgr"]
-      20 [-]: FASTCALL1 62 R4 L4; 
+      20 [-]: FASTCALL1 64 R4 L4; 
       21 [-]: GETIMPORT R3 4; var3 = 0x7B998233
       22 [-]: CALL R3 2 2  ; var3 = var3(var4)
 L 4:  23 [-]: JUMPIF R3 L6 ; goto L6 if var3
       24 [-]: GETIMPORT R3 10; var3 = 0x89326C93
       25 [-]: NAMECALL R3 R3 K11; var4 = var3; var3 = var3[0x78298275]
       26 [-]: CALL R3 2 2  ; var3 = var3(var4)
-      27 [-]: FASTCALL1 62 R3 L5; 
+      27 [-]: FASTCALL1 64 R3 L5; 
       28 [-]: MOVE R5 R3   ; var5 = var3
       29 [-]: GETIMPORT R4 4; var4 = 0x7B998233
       30 [-]: CALL R4 2 2  ; var4 = var4(var5)
@@ -3463,7 +3494,7 @@ L 6:  48 [-]: GETUPVAL R4 0; var4 = upvalues[0]
       54 [-]: CALL R5 2 2  ; var5 = var5(var6)
       55 [-]: GETUPVAL R7 0; var7 = upvalues[0]
       56 [-]: GETTABLEKS R6 R7 K21; var6 = var7["DECO_AREA_APARTMENT"]
-      57 [-]: JUMPIFEQ R5 R6 L7; goto L7 if var5 == var16778267
+      57 [-]: JUMPIFEQ R5 R6 L7; goto L7 if var5 == var16778246
       58 [-]: LOADB R4 0 +1; var4 = false
 L 7:  59 [-]: LOADB R4 1   ; var4 = true
 L 8:  60 [-]: MOVE R7 R3   ; var7 = var3
@@ -3480,7 +3511,7 @@ L 9:  65 [-]: GETIMPORT R3 24; var3 = 0x9BA7909F
       71 [-]: GETIMPORT R6 30; var6 = 0xA7F5685C
       72 [-]: NAMECALL R4 R4 K31; var5 = var4; var4 = var4[0xBCFB64AB]
       73 [-]: CALL R4 3 2  ; var4 = var4(var5, var6)
-      74 [-]: FASTCALL1 62 R4 L10; 
+      74 [-]: FASTCALL1 64 R4 L10; 
       75 [-]: MOVE R6 R4   ; var6 = var4
       76 [-]: GETIMPORT R5 4; var5 = 0x7B998233
       77 [-]: CALL R5 2 2  ; var5 = var5(var6)
@@ -3490,7 +3521,7 @@ L10:  78 [-]: JUMPIF R5 L11; goto L11 if var5
       81 [-]: NAMECALL R5 R4 K34; var6 = var4; var5 = var4[0xE4162EED]
       82 [-]: CALL R5 4 1  ; var5(var6, var7, var8)
 L11:  83 [-]: GETIMPORT R6 8; var6 = _T["DojoMgr"]
-      84 [-]: FASTCALL1 62 R6 L12; 
+      84 [-]: FASTCALL1 64 R6 L12; 
       85 [-]: GETIMPORT R5 4; var5 = 0x7B998233
       86 [-]: CALL R5 2 2  ; var5 = var5(var6)
 L12:  87 [-]: JUMPIFNOT R5 L13; goto L13 if not var5
@@ -3582,7 +3613,7 @@ L14: 104 [-]: LOADK R7 K42 ; var7 = "SetRequiresConfirmation"
 
 
 ; Name:            
-; Defined at line: 1404
+; Defined at line: 1427
 ; #Upvalues:       2
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -3599,14 +3630,14 @@ L 0:   5 [-]: GETUPVAL R0 1; var0 = upvalues[1]
 
 
 ; Name:            
-; Defined at line: 1412
+; Defined at line: 1435
 ; #Upvalues:       4
 ; #Parameters:     2
 ; Is_vararg:       0
 ; Max Stack Size:  6
 
        0 [-]: GETIMPORT R3 2; var3 = _T["BackgroundMovie"]
-       1 [-]: FASTCALL1 62 R3 L0; 
+       1 [-]: FASTCALL1 64 R3 L0; 
        2 [-]: GETIMPORT R2 4; var2 = 0x7B998233
        3 [-]: CALL R2 2 2  ; var2 = var2(var3)
 L 0:   4 [-]: JUMPIF R2 L1 ; goto L1 if var2
@@ -3616,11 +3647,11 @@ L 0:   4 [-]: JUMPIF R2 L1 ; goto L1 if var2
        8 [-]: NAMECALL R2 R2 K7; var3 = var2; var2 = var2[0xE4162EED]
        9 [-]: CALL R2 4 1  ; var2(var3, var4, var5)
 L 1:  10 [-]: LOADN R2 0   ; var2 = 0
-      11 [-]: JUMPIFNOTEQ R0 R2 L4; goto L4 if var0 ~= var519
+      11 [-]: JUMPIFNOTEQ R0 R2 L4; goto L4 if var0 ~= var572
       12 [-]: GETUPVAL R2 0; var2 = upvalues[0]
       13 [-]: CALL R2 1 1  ; var2()
       14 [-]: GETIMPORT R3 10; var3 = _T["DojoMgr"]["mPendingDecoToPlace"]
-      15 [-]: FASTCALL1 62 R3 L2; 
+      15 [-]: FASTCALL1 64 R3 L2; 
       16 [-]: GETIMPORT R2 4; var2 = 0x7B998233
       17 [-]: CALL R2 2 2  ; var2 = var2(var3)
 L 2:  18 [-]: JUMPIF R2 L3 ; goto L3 if var2
@@ -3632,21 +3663,21 @@ L 3:  23 [-]: GETUPVAL R2 2; var2 = upvalues[2]
       24 [-]: CALL R2 1 1  ; var2()
       25 [-]: RETURN R0 0  ; 
 L 4:  26 [-]: LOADN R2 -1  ; var2 = -1
-      27 [-]: JUMPIFNOTEQ R0 R2 L5; goto L5 if var0 ~= var197383
+      27 [-]: JUMPIFNOTEQ R0 R2 L5; goto L5 if var0 ~= var197436
       28 [-]: GETUPVAL R3 3; var3 = upvalues[3]
       29 [-]: GETTABLEKS R2 R3 K12; var2 = var3[0xE0CBA3CA]
       30 [-]: LOADK R3 K13 ; var3 = "/Lotus/Language/Dojo/Generic_INVALID_PERMISSION"
       31 [-]: CALL R2 2 1  ; var2(var3)
       32 [-]: RETURN R0 0  ; 
 L 5:  33 [-]: LOADN R2 14  ; var2 = 14
-      34 [-]: JUMPIFNOTEQ R0 R2 L6; goto L6 if var0 ~= var197383
+      34 [-]: JUMPIFNOTEQ R0 R2 L6; goto L6 if var0 ~= var197436
       35 [-]: GETUPVAL R3 3; var3 = upvalues[3]
       36 [-]: GETTABLEKS R2 R3 K12; var2 = var3[0xE0CBA3CA]
       37 [-]: LOADK R3 K14 ; var3 = "/Lotus/Language/Dojo/DecoDestructionFail_DESTRUCTION_ALREADY_QUEUED"
       38 [-]: CALL R2 2 1  ; var2(var3)
       39 [-]: RETURN R0 0  ; 
 L 6:  40 [-]: LOADN R2 2   ; var2 = 2
-      41 [-]: JUMPIFNOTEQ R0 R2 L7; goto L7 if var0 ~= var197383
+      41 [-]: JUMPIFNOTEQ R0 R2 L7; goto L7 if var0 ~= var197436
       42 [-]: GETUPVAL R3 3; var3 = upvalues[3]
       43 [-]: GETTABLEKS R2 R3 K12; var2 = var3[0xE0CBA3CA]
       44 [-]: LOADK R3 K15 ; var3 = "/Lotus/Language/Dojo/DecoDestructionFail_PARENT_NO_LONGER_EXISTS"
@@ -3660,240 +3691,244 @@ L 7:  47 [-]: GETUPVAL R3 3; var3 = upvalues[3]
 
 
 ; Name:            
-; Defined at line: 1437
+; Defined at line: 1460
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
 ; Max Stack Size:  5
 
-       0 [-]: GETIMPORT R1 1; var1 = 0x03F57322
+       0 [-]: FASTCALL1 62 R0 L0; 
        1 [-]: MOVE R2 R0   ; var2 = var0
-       2 [-]: CALL R1 2 2  ; var1 = var1(var2)
-       3 [-]: LOADN R2 4   ; var2 = 4
-       4 [-]: JUMPIFNOTEQ R1 R2 L2; goto L2 if var1 ~= var262734
-       5 [-]: GETIMPORT R2 4; var2 = _T["BackgroundMovie"]
-       6 [-]: FASTCALL1 62 R2 L0; 
-       7 [-]: GETIMPORT R1 6; var1 = 0x7B998233
-       8 [-]: CALL R1 2 2  ; var1 = var1(var2)
-L 0:   9 [-]: JUMPIF R1 L1 ; goto L1 if var1
-      10 [-]: GETIMPORT R1 4; var1 = _T["BackgroundMovie"]
-      11 [-]: LOADK R3 K7  ; var3 = "ShowBlockingMessage"
-      12 [-]: LOADK R4 K8  ; var4 = "2"
-      13 [-]: NAMECALL R1 R1 K9; var2 = var1; var1 = var1[0xE4162EED]
-      14 [-]: CALL R1 4 1  ; var1(var2, var3, var4)
-L 1:  15 [-]: GETIMPORT R1 11; var1 = _T["DojoMgr"]
-      16 [-]: GETUPVAL R3 0; var3 = upvalues[0]
-      17 [-]: NAMECALL R1 R1 K12; var2 = var1; var1 = var1[0x2AFF548E]
-      18 [-]: CALL R1 3 1  ; var1(var2, var3)
-      19 [-]: RETURN R0 0  ; 
-L 2:  20 [-]: GETIMPORT R1 13; var1 = _T
-      21 [-]: LOADNIL R2   ; var2 = nil
-      22 [-]: SETTABLEKS R2 R1 K14; var2["ShipDecoToRemove"] = var1
-      23 [-]: RETURN R0 0  ; 
+       2 [-]: GETIMPORT R1 1; var1 = 0x03F57322
+       3 [-]: CALL R1 2 2  ; var1 = var1(var2)
+L 0:   4 [-]: LOADN R2 4   ; var2 = 4
+       5 [-]: JUMPIFNOTEQ R1 R2 L3; goto L3 if var1 ~= var262689
+       6 [-]: GETIMPORT R2 4; var2 = _T["BackgroundMovie"]
+       7 [-]: FASTCALL1 64 R2 L1; 
+       8 [-]: GETIMPORT R1 6; var1 = 0x7B998233
+       9 [-]: CALL R1 2 2  ; var1 = var1(var2)
+L 1:  10 [-]: JUMPIF R1 L2 ; goto L2 if var1
+      11 [-]: GETIMPORT R1 4; var1 = _T["BackgroundMovie"]
+      12 [-]: LOADK R3 K7  ; var3 = "ShowBlockingMessage"
+      13 [-]: LOADK R4 K8  ; var4 = "2"
+      14 [-]: NAMECALL R1 R1 K9; var2 = var1; var1 = var1[0xE4162EED]
+      15 [-]: CALL R1 4 1  ; var1(var2, var3, var4)
+L 2:  16 [-]: GETIMPORT R1 11; var1 = _T["DojoMgr"]
+      17 [-]: GETUPVAL R3 0; var3 = upvalues[0]
+      18 [-]: NAMECALL R1 R1 K12; var2 = var1; var1 = var1[0x2AFF548E]
+      19 [-]: CALL R1 3 1  ; var1(var2, var3)
+      20 [-]: RETURN R0 0  ; 
+L 3:  21 [-]: GETIMPORT R1 13; var1 = _T
+      22 [-]: LOADNIL R2   ; var2 = nil
+      23 [-]: SETTABLEKS R2 R1 K14; var2["ShipDecoToRemove"] = var1
+      24 [-]: RETURN R0 0  ; 
 
 
 ; Name:            
-; Defined at line: 1448
+; Defined at line: 1471
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
 ; Max Stack Size:  11
 
-       0 [-]: GETIMPORT R1 1; var1 = 0x03F57322
+       0 [-]: FASTCALL1 62 R0 L0; 
        1 [-]: MOVE R2 R0   ; var2 = var0
-       2 [-]: CALL R1 2 2  ; var1 = var1(var2)
-       3 [-]: LOADN R2 4   ; var2 = 4
-       4 [-]: JUMPIFNOTEQ R1 R2 L6; goto L6 if var1 ~= var262734
-       5 [-]: GETIMPORT R2 4; var2 = _T["BackgroundMovie"]
-       6 [-]: FASTCALL1 62 R2 L0; 
-       7 [-]: GETIMPORT R1 6; var1 = 0x7B998233
-       8 [-]: CALL R1 2 2  ; var1 = var1(var2)
-L 0:   9 [-]: JUMPIF R1 L1 ; goto L1 if var1
-      10 [-]: GETIMPORT R1 4; var1 = _T["BackgroundMovie"]
-      11 [-]: LOADK R3 K7  ; var3 = "ShowBlockingMessage"
-      12 [-]: LOADK R4 K8  ; var4 = "2"
-      13 [-]: NAMECALL R1 R1 K9; var2 = var1; var1 = var1[0xE4162EED]
-      14 [-]: CALL R1 4 1  ; var1(var2, var3, var4)
-L 1:  15 [-]: GETIMPORT R2 12; var2 = _T["DojoMgr"]["mPendingDecoToPlace"]
-      16 [-]: FASTCALL1 62 R2 L2; 
-      17 [-]: GETIMPORT R1 6; var1 = 0x7B998233
-      18 [-]: CALL R1 2 2  ; var1 = var1(var2)
-L 2:  19 [-]: JUMPIF R1 L7 ; goto L7 if var1
-      20 [-]: GETIMPORT R2 14; var2 = _T["DojoMgr"]["mPendingDecoComponentId"]
-      21 [-]: FASTCALL1 62 R2 L3; 
-      22 [-]: GETIMPORT R1 6; var1 = 0x7B998233
-      23 [-]: CALL R1 2 2  ; var1 = var1(var2)
-L 3:  24 [-]: JUMPIF R1 L7 ; goto L7 if var1
-      25 [-]: GETIMPORT R1 12; var1 = _T["DojoMgr"]["mPendingDecoToPlace"]
-      26 [-]: GETIMPORT R2 14; var2 = _T["DojoMgr"]["mPendingDecoComponentId"]
-      27 [-]: GETIMPORT R3 12; var3 = _T["DojoMgr"]["mPendingDecoToPlace"]
-      28 [-]: NAMECALL R3 R3 K15; var4 = var3; var3 = var3[0xCDE10C4A]
-      29 [-]: CALL R3 2 2  ; var3 = var3(var4)
-      30 [-]: NAMECALL R3 R3 K16; var4 = var3; var3 = var3[0xED4E0128]
-      31 [-]: CALL R3 2 2  ; var3 = var3(var4)
-      32 [-]: FASTCALL1 62 R3 L4; 
-      33 [-]: MOVE R5 R3   ; var5 = var3
-      34 [-]: GETIMPORT R4 6; var4 = 0x7B998233
-      35 [-]: CALL R4 2 2  ; var4 = var4(var5)
-L 4:  36 [-]: JUMPIF R4 L7 ; goto L7 if var4
-      37 [-]: GETIMPORT R5 18; var5 = _T["DojoMgr"]["mDecoTypeToDecos"]
-      38 [-]: GETTABLE R4 R5 R3; var4 = var5[var3]
-      39 [-]: FASTCALL1 62 R4 L5; 
-      40 [-]: MOVE R6 R4   ; var6 = var4
-      41 [-]: GETIMPORT R5 6; var5 = 0x7B998233
-      42 [-]: CALL R5 2 2  ; var5 = var5(var6)
-L 5:  43 [-]: JUMPIF R5 L7 ; goto L7 if var5
-      44 [-]: GETIMPORT R5 20; var5 = 0x4EC73E73
-      45 [-]: MOVE R6 R4   ; var6 = var4
-      46 [-]: CALL R5 2 3  ; var5, var6 = var5(var6)
-      47 [-]: GETIMPORT R7 21; var7 = _T["DojoMgr"]
-      48 [-]: GETIMPORT R10 23; var10 = _T["DojoMgr"]["mIdToPlacedDecos"]
-      49 [-]: GETTABLE R9 R10 R6; var9 = var10[var6]
-      50 [-]: GETTABLE R8 R9 R5; var8 = var9[var5]
-      51 [-]: SETTABLEKS R8 R7 K24; var8["mPendingDestroyDeco"] = var7
-      52 [-]: GETIMPORT R7 21; var7 = _T["DojoMgr"]
-      53 [-]: SETTABLEKS R6 R7 K25; var6["mPendingDestroyDecoComponentId"] = var7
-      54 [-]: GETIMPORT R7 21; var7 = _T["DojoMgr"]
-      55 [-]: GETUPVAL R9 0; var9 = upvalues[0]
-      56 [-]: NAMECALL R7 R7 K26; var8 = var7; var7 = var7[0x2AFF548E]
-      57 [-]: CALL R7 3 1  ; var7(var8, var9)
-      58 [-]: GETIMPORT R7 21; var7 = _T["DojoMgr"]
-      59 [-]: SETTABLEKS R1 R7 K11; var1["mPendingDecoToPlace"] = var7
-      60 [-]: GETIMPORT R7 21; var7 = _T["DojoMgr"]
-      61 [-]: SETTABLEKS R2 R7 K13; var2["mPendingDecoComponentId"] = var7
-      62 [-]: RETURN R0 0  ; 
-L 6:  63 [-]: GETUPVAL R1 1; var1 = upvalues[1]
-      64 [-]: GETIMPORT R2 12; var2 = _T["DojoMgr"]["mPendingDecoToPlace"]
-      65 [-]: GETIMPORT R3 14; var3 = _T["DojoMgr"]["mPendingDecoComponentId"]
-      66 [-]: CALL R1 3 1  ; var1(var2, var3)
-L 7:  67 [-]: RETURN R0 0  ; 
+       2 [-]: GETIMPORT R1 1; var1 = 0x03F57322
+       3 [-]: CALL R1 2 2  ; var1 = var1(var2)
+L 0:   4 [-]: LOADN R2 4   ; var2 = 4
+       5 [-]: JUMPIFNOTEQ R1 R2 L7; goto L7 if var1 ~= var262689
+       6 [-]: GETIMPORT R2 4; var2 = _T["BackgroundMovie"]
+       7 [-]: FASTCALL1 64 R2 L1; 
+       8 [-]: GETIMPORT R1 6; var1 = 0x7B998233
+       9 [-]: CALL R1 2 2  ; var1 = var1(var2)
+L 1:  10 [-]: JUMPIF R1 L2 ; goto L2 if var1
+      11 [-]: GETIMPORT R1 4; var1 = _T["BackgroundMovie"]
+      12 [-]: LOADK R3 K7  ; var3 = "ShowBlockingMessage"
+      13 [-]: LOADK R4 K8  ; var4 = "2"
+      14 [-]: NAMECALL R1 R1 K9; var2 = var1; var1 = var1[0xE4162EED]
+      15 [-]: CALL R1 4 1  ; var1(var2, var3, var4)
+L 2:  16 [-]: GETIMPORT R2 12; var2 = _T["DojoMgr"]["mPendingDecoToPlace"]
+      17 [-]: FASTCALL1 64 R2 L3; 
+      18 [-]: GETIMPORT R1 6; var1 = 0x7B998233
+      19 [-]: CALL R1 2 2  ; var1 = var1(var2)
+L 3:  20 [-]: JUMPIF R1 L8 ; goto L8 if var1
+      21 [-]: GETIMPORT R2 14; var2 = _T["DojoMgr"]["mPendingDecoComponentId"]
+      22 [-]: FASTCALL1 64 R2 L4; 
+      23 [-]: GETIMPORT R1 6; var1 = 0x7B998233
+      24 [-]: CALL R1 2 2  ; var1 = var1(var2)
+L 4:  25 [-]: JUMPIF R1 L8 ; goto L8 if var1
+      26 [-]: GETIMPORT R1 12; var1 = _T["DojoMgr"]["mPendingDecoToPlace"]
+      27 [-]: GETIMPORT R2 14; var2 = _T["DojoMgr"]["mPendingDecoComponentId"]
+      28 [-]: GETIMPORT R3 12; var3 = _T["DojoMgr"]["mPendingDecoToPlace"]
+      29 [-]: NAMECALL R3 R3 K15; var4 = var3; var3 = var3[0xCDE10C4A]
+      30 [-]: CALL R3 2 2  ; var3 = var3(var4)
+      31 [-]: NAMECALL R3 R3 K16; var4 = var3; var3 = var3[0xED4E0128]
+      32 [-]: CALL R3 2 2  ; var3 = var3(var4)
+      33 [-]: FASTCALL1 64 R3 L5; 
+      34 [-]: MOVE R5 R3   ; var5 = var3
+      35 [-]: GETIMPORT R4 6; var4 = 0x7B998233
+      36 [-]: CALL R4 2 2  ; var4 = var4(var5)
+L 5:  37 [-]: JUMPIF R4 L8 ; goto L8 if var4
+      38 [-]: GETIMPORT R5 18; var5 = _T["DojoMgr"]["mDecoTypeToDecos"]
+      39 [-]: GETTABLE R4 R5 R3; var4 = var5[var3]
+      40 [-]: FASTCALL1 64 R4 L6; 
+      41 [-]: MOVE R6 R4   ; var6 = var4
+      42 [-]: GETIMPORT R5 6; var5 = 0x7B998233
+      43 [-]: CALL R5 2 2  ; var5 = var5(var6)
+L 6:  44 [-]: JUMPIF R5 L8 ; goto L8 if var5
+      45 [-]: GETIMPORT R5 20; var5 = 0x4EC73E73
+      46 [-]: MOVE R6 R4   ; var6 = var4
+      47 [-]: CALL R5 2 3  ; var5, var6 = var5(var6)
+      48 [-]: GETIMPORT R7 21; var7 = _T["DojoMgr"]
+      49 [-]: GETIMPORT R10 23; var10 = _T["DojoMgr"]["mIdToPlacedDecos"]
+      50 [-]: GETTABLE R9 R10 R6; var9 = var10[var6]
+      51 [-]: GETTABLE R8 R9 R5; var8 = var9[var5]
+      52 [-]: SETTABLEKS R8 R7 K24; var8["mPendingDestroyDeco"] = var7
+      53 [-]: GETIMPORT R7 21; var7 = _T["DojoMgr"]
+      54 [-]: SETTABLEKS R6 R7 K25; var6["mPendingDestroyDecoComponentId"] = var7
+      55 [-]: GETIMPORT R7 21; var7 = _T["DojoMgr"]
+      56 [-]: GETUPVAL R9 0; var9 = upvalues[0]
+      57 [-]: NAMECALL R7 R7 K26; var8 = var7; var7 = var7[0x2AFF548E]
+      58 [-]: CALL R7 3 1  ; var7(var8, var9)
+      59 [-]: GETIMPORT R7 21; var7 = _T["DojoMgr"]
+      60 [-]: SETTABLEKS R1 R7 K11; var1["mPendingDecoToPlace"] = var7
+      61 [-]: GETIMPORT R7 21; var7 = _T["DojoMgr"]
+      62 [-]: SETTABLEKS R2 R7 K13; var2["mPendingDecoComponentId"] = var7
+      63 [-]: RETURN R0 0  ; 
+L 7:  64 [-]: GETUPVAL R1 1; var1 = upvalues[1]
+      65 [-]: GETIMPORT R2 12; var2 = _T["DojoMgr"]["mPendingDecoToPlace"]
+      66 [-]: GETIMPORT R3 14; var3 = _T["DojoMgr"]["mPendingDecoComponentId"]
+      67 [-]: CALL R1 3 1  ; var1(var2, var3)
+L 8:  68 [-]: RETURN R0 0  ; 
 
 
 ; Name:            
-; Defined at line: 1476
+; Defined at line: 1499
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
 ; Max Stack Size:  6
 
-       0 [-]: GETIMPORT R1 1; var1 = 0x03F57322
+       0 [-]: FASTCALL1 62 R0 L0; 
        1 [-]: MOVE R2 R0   ; var2 = var0
-       2 [-]: CALL R1 2 2  ; var1 = var1(var2)
-       3 [-]: LOADN R2 4   ; var2 = 4
-       4 [-]: JUMPIFNOTEQ R1 R2 L2; goto L2 if var1 ~= var262734
-       5 [-]: GETIMPORT R2 4; var2 = _T["BackgroundMovie"]
-       6 [-]: FASTCALL1 62 R2 L0; 
-       7 [-]: GETIMPORT R1 6; var1 = 0x7B998233
-       8 [-]: CALL R1 2 2  ; var1 = var1(var2)
-L 0:   9 [-]: JUMPIF R1 L1 ; goto L1 if var1
-      10 [-]: GETIMPORT R1 4; var1 = _T["BackgroundMovie"]
-      11 [-]: LOADK R3 K7  ; var3 = "ShowBlockingMessage"
-      12 [-]: LOADK R4 K8  ; var4 = "2"
-      13 [-]: NAMECALL R1 R1 K9; var2 = var1; var1 = var1[0xE4162EED]
-      14 [-]: CALL R1 4 1  ; var1(var2, var3, var4)
-L 1:  15 [-]: GETIMPORT R1 11; var1 = _T["DojoMgr"]
-      16 [-]: GETIMPORT R3 13; var3 = _T["DojoMgr"]["mPendingDestroyDeco"]
-      17 [-]: GETIMPORT R4 15; var4 = _T["DojoMgr"]["mPendingDestroyDecoComponentId"]
-      18 [-]: GETUPVAL R5 0; var5 = upvalues[0]
-      19 [-]: NAMECALL R1 R1 K16; var2 = var1; var1 = var1[0xCBF579B6]
-      20 [-]: CALL R1 5 1  ; var1(var2, var3, var4, var5)
-L 2:  21 [-]: RETURN R0 0  ; 
+       2 [-]: GETIMPORT R1 1; var1 = 0x03F57322
+       3 [-]: CALL R1 2 2  ; var1 = var1(var2)
+L 0:   4 [-]: LOADN R2 4   ; var2 = 4
+       5 [-]: JUMPIFNOTEQ R1 R2 L3; goto L3 if var1 ~= var262689
+       6 [-]: GETIMPORT R2 4; var2 = _T["BackgroundMovie"]
+       7 [-]: FASTCALL1 64 R2 L1; 
+       8 [-]: GETIMPORT R1 6; var1 = 0x7B998233
+       9 [-]: CALL R1 2 2  ; var1 = var1(var2)
+L 1:  10 [-]: JUMPIF R1 L2 ; goto L2 if var1
+      11 [-]: GETIMPORT R1 4; var1 = _T["BackgroundMovie"]
+      12 [-]: LOADK R3 K7  ; var3 = "ShowBlockingMessage"
+      13 [-]: LOADK R4 K8  ; var4 = "2"
+      14 [-]: NAMECALL R1 R1 K9; var2 = var1; var1 = var1[0xE4162EED]
+      15 [-]: CALL R1 4 1  ; var1(var2, var3, var4)
+L 2:  16 [-]: GETIMPORT R1 11; var1 = _T["DojoMgr"]
+      17 [-]: GETIMPORT R3 13; var3 = _T["DojoMgr"]["mPendingDestroyDeco"]
+      18 [-]: GETIMPORT R4 15; var4 = _T["DojoMgr"]["mPendingDestroyDecoComponentId"]
+      19 [-]: GETUPVAL R5 0; var5 = upvalues[0]
+      20 [-]: NAMECALL R1 R1 K16; var2 = var1; var1 = var1[0xCBF579B6]
+      21 [-]: CALL R1 5 1  ; var1(var2, var3, var4, var5)
+L 3:  22 [-]: RETURN R0 0  ; 
 
 
 ; Name:            
-; Defined at line: 1485
+; Defined at line: 1508
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
 ; Max Stack Size:  12
 
-       0 [-]: GETIMPORT R1 1; var1 = 0x03F57322
+       0 [-]: FASTCALL1 62 R0 L0; 
        1 [-]: MOVE R2 R0   ; var2 = var0
-       2 [-]: CALL R1 2 2  ; var1 = var1(var2)
-       3 [-]: LOADN R2 4   ; var2 = 4
-       4 [-]: JUMPIFNOTEQ R1 R2 L12; goto L12 if var1 ~= var196942
-       5 [-]: GETIMPORT R1 3; var1 = 0xBE190284
-       6 [-]: FASTCALL1 62 R1 L0; 
-       7 [-]: MOVE R3 R1   ; var3 = var1
-       8 [-]: GETIMPORT R2 5; var2 = 0x7B998233
-       9 [-]: CALL R2 2 2  ; var2 = var2(var3)
-L 0:  10 [-]: JUMPIF R2 L2 ; goto L2 if var2
-      11 [-]: NAMECALL R3 R1 K6; var4 = var1; var3 = var1[0xA1C390FE]
-      12 [-]: CALL R3 2 2  ; var3 = var3(var4)
-      13 [-]: FASTCALL1 62 R3 L1; 
-      14 [-]: GETIMPORT R2 5; var2 = 0x7B998233
-      15 [-]: CALL R2 2 2  ; var2 = var2(var3)
-L 1:  16 [-]: JUMPIFNOT R2 L3; goto L3 if not var2
-L 2:  17 [-]: RETURN R0 0  ; 
-L 3:  18 [-]: GETIMPORT R3 9; var3 = _T["ShipDecoToRemove"]
-      19 [-]: FASTCALL1 62 R3 L4; 
-      20 [-]: GETIMPORT R2 5; var2 = 0x7B998233
-      21 [-]: CALL R2 2 2  ; var2 = var2(var3)
-L 4:  22 [-]: JUMPIFNOT R2 L5; goto L5 if not var2
-      23 [-]: RETURN R0 0  ; 
-L 5:  24 [-]: GETIMPORT R3 11; var3 = _T["BackgroundMovie"]
-      25 [-]: FASTCALL1 62 R3 L6; 
-      26 [-]: GETIMPORT R2 5; var2 = 0x7B998233
-      27 [-]: CALL R2 2 2  ; var2 = var2(var3)
-L 6:  28 [-]: JUMPIF R2 L7 ; goto L7 if var2
-      29 [-]: GETIMPORT R2 11; var2 = _T["BackgroundMovie"]
-      30 [-]: LOADK R4 K12 ; var4 = "ShowBlockingMessage"
-      31 [-]: LOADK R5 K13 ; var5 = "2"
-      32 [-]: NAMECALL R2 R2 K14; var3 = var2; var2 = var2[0xE4162EED]
-      33 [-]: CALL R2 4 1  ; var2(var3, var4, var5)
-L 7:  34 [-]: GETUPVAL R3 0; var3 = upvalues[0]
-      35 [-]: GETTABLEKS R2 R3 K15; var2 = var3[0x23DDC82A]
-      36 [-]: CALL R2 1 2  ; var2 = var2()
-      37 [-]: GETIMPORT R3 9; var3 = _T["ShipDecoToRemove"]
-      38 [-]: NAMECALL R3 R3 K16; var4 = var3; var3 = var3[0x9682718C]
-      39 [-]: CALL R3 2 2  ; var3 = var3(var4)
-      40 [-]: JUMPIFNOT R3 L8; goto L8 if not var3
-      41 [-]: GETIMPORT R3 3; var3 = 0xBE190284
-      42 [-]: GETIMPORT R5 9; var5 = _T["ShipDecoToRemove"]
-      43 [-]: MOVE R6 R2   ; var6 = var2
-      44 [-]: LOADK R7 K17 ; var7 = "OnShipDecoRemoved"
-      45 [-]: NAMECALL R3 R3 K18; var4 = var3; var3 = var3[0xF5CF9558]
-      46 [-]: CALL R3 5 1  ; var3(var4, var5, var6, var7)
-      47 [-]: RETURN R0 0  ; 
-L 8:  48 [-]: NAMECALL R3 R1 K6; var4 = var1; var3 = var1[0xA1C390FE]
-      49 [-]: CALL R3 2 2  ; var3 = var3(var4)
-      50 [-]: GETIMPORT R6 20; var6 = gShipDecoItemType
-      51 [-]: NAMECALL R4 R3 K21; var5 = var3; var4 = var3[0xE9CBFFA8]
-      52 [-]: CALL R4 3 2  ; var4 = var4(var5, var6)
-      53 [-]: LOADNIL R5   ; var5 = nil
-      54 [-]: LOADN R8 1   ; var8 = 1
-      55 [-]: LENGTH R6 R4 ; var6 = #var4
-      56 [-]: LOADN R7 1   ; var7 = 1
-      57 [-]: FORNPREP R6 L11; nforprep start - [escape at L11] -- var6 = iterator
-L 9:  58 [-]: GETTABLE R9 R4 R8; var9 = var4[var8]
-      59 [-]: NAMECALL R9 R9 K22; var10 = var9; var9 = var9[0x656C098F]
-      60 [-]: CALL R9 2 2  ; var9 = var9(var10)
-      61 [-]: GETIMPORT R10 9; var10 = _T["ShipDecoToRemove"]
-      62 [-]: NAMECALL R10 R10 K23; var11 = var10; var10 = var10[0xCDE10C4A]
-      63 [-]: CALL R10 2 2 ; var10 = var10(var11)
-      64 [-]: JUMPIFNOTEQ R9 R10 L10; goto L10 if var9 ~= var134482231
-      65 [-]: GETTABLE R9 R4 R8; var9 = var4[var8]
-      66 [-]: NAMECALL R9 R9 K24; var10 = var9; var9 = var9[0xF278F8A1]
-      67 [-]: CALL R9 2 2  ; var9 = var9(var10)
-      68 [-]: MOVE R5 R9   ; var5 = var9
-      69 [-]: JUMP L11     ; goto L11
-L10:  70 [-]: FORNLOOP R6 L9; nforloop end - iterate + goto L9
-L11:  71 [-]: GETIMPORT R6 3; var6 = 0xBE190284
-      72 [-]: GETIMPORT R8 9; var8 = _T["ShipDecoToRemove"]
-      73 [-]: MOVE R9 R5   ; var9 = var5
-      74 [-]: MOVE R10 R2  ; var10 = var2
-      75 [-]: LOADK R11 K17; var11 = "OnShipDecoRemoved"
-      76 [-]: NAMECALL R6 R6 K25; var7 = var6; var6 = var6[0x69D4E70E]
-      77 [-]: CALL R6 6 1  ; var6(var7, var8, var9, var10, var11)
-      78 [-]: RETURN R0 0  ; 
-L12:  79 [-]: GETIMPORT R1 26; var1 = _T
-      80 [-]: LOADNIL R2   ; var2 = nil
-      81 [-]: SETTABLEKS R2 R1 K8; var2["ShipDecoToRemove"] = var1
-      82 [-]: RETURN R0 0  ; 
+       2 [-]: GETIMPORT R1 1; var1 = 0x03F57322
+       3 [-]: CALL R1 2 2  ; var1 = var1(var2)
+L 0:   4 [-]: LOADN R2 4   ; var2 = 4
+       5 [-]: JUMPIFNOTEQ R1 R2 L13; goto L13 if var1 ~= var196897
+       6 [-]: GETIMPORT R1 3; var1 = 0xBE190284
+       7 [-]: FASTCALL1 64 R1 L1; 
+       8 [-]: MOVE R3 R1   ; var3 = var1
+       9 [-]: GETIMPORT R2 5; var2 = 0x7B998233
+      10 [-]: CALL R2 2 2  ; var2 = var2(var3)
+L 1:  11 [-]: JUMPIF R2 L3 ; goto L3 if var2
+      12 [-]: NAMECALL R3 R1 K6; var4 = var1; var3 = var1[0xA1C390FE]
+      13 [-]: CALL R3 2 0  ; var3, ... = var3(var4)
+      14 [-]: FASTCALL 64 L2; 
+      15 [-]: GETIMPORT R2 5; var2 = 0x7B998233
+      16 [-]: CALL R2 0 2  ; var2 = var2(var3, ...)
+L 2:  17 [-]: JUMPIFNOT R2 L4; goto L4 if not var2
+L 3:  18 [-]: RETURN R0 0  ; 
+L 4:  19 [-]: GETIMPORT R3 9; var3 = _T["ShipDecoToRemove"]
+      20 [-]: FASTCALL1 64 R3 L5; 
+      21 [-]: GETIMPORT R2 5; var2 = 0x7B998233
+      22 [-]: CALL R2 2 2  ; var2 = var2(var3)
+L 5:  23 [-]: JUMPIFNOT R2 L6; goto L6 if not var2
+      24 [-]: RETURN R0 0  ; 
+L 6:  25 [-]: GETIMPORT R3 11; var3 = _T["BackgroundMovie"]
+      26 [-]: FASTCALL1 64 R3 L7; 
+      27 [-]: GETIMPORT R2 5; var2 = 0x7B998233
+      28 [-]: CALL R2 2 2  ; var2 = var2(var3)
+L 7:  29 [-]: JUMPIF R2 L8 ; goto L8 if var2
+      30 [-]: GETIMPORT R2 11; var2 = _T["BackgroundMovie"]
+      31 [-]: LOADK R4 K12 ; var4 = "ShowBlockingMessage"
+      32 [-]: LOADK R5 K13 ; var5 = "2"
+      33 [-]: NAMECALL R2 R2 K14; var3 = var2; var2 = var2[0xE4162EED]
+      34 [-]: CALL R2 4 1  ; var2(var3, var4, var5)
+L 8:  35 [-]: GETUPVAL R3 0; var3 = upvalues[0]
+      36 [-]: GETTABLEKS R2 R3 K15; var2 = var3[0x23DDC82A]
+      37 [-]: CALL R2 1 2  ; var2 = var2()
+      38 [-]: GETIMPORT R3 9; var3 = _T["ShipDecoToRemove"]
+      39 [-]: NAMECALL R3 R3 K16; var4 = var3; var3 = var3[0x9682718C]
+      40 [-]: CALL R3 2 2  ; var3 = var3(var4)
+      41 [-]: JUMPIFNOT R3 L9; goto L9 if not var3
+      42 [-]: GETIMPORT R3 3; var3 = 0xBE190284
+      43 [-]: GETIMPORT R5 9; var5 = _T["ShipDecoToRemove"]
+      44 [-]: MOVE R6 R2   ; var6 = var2
+      45 [-]: LOADK R7 K17 ; var7 = "OnShipDecoRemoved"
+      46 [-]: NAMECALL R3 R3 K18; var4 = var3; var3 = var3[0xF5CF9558]
+      47 [-]: CALL R3 5 1  ; var3(var4, var5, var6, var7)
+      48 [-]: RETURN R0 0  ; 
+L 9:  49 [-]: NAMECALL R3 R1 K6; var4 = var1; var3 = var1[0xA1C390FE]
+      50 [-]: CALL R3 2 2  ; var3 = var3(var4)
+      51 [-]: GETIMPORT R6 20; var6 = gShipDecoItemType
+      52 [-]: NAMECALL R4 R3 K21; var5 = var3; var4 = var3[0xE9CBFFA8]
+      53 [-]: CALL R4 3 2  ; var4 = var4(var5, var6)
+      54 [-]: LOADNIL R5   ; var5 = nil
+      55 [-]: LOADN R8 1   ; var8 = 1
+      56 [-]: LENGTH R6 R4 ; var6 = #var4
+      57 [-]: LOADN R7 1   ; var7 = 1
+      58 [-]: FORNPREP R6 L12; nforprep start - [escape at L12] -- var6 = iterator
+L10:  59 [-]: GETTABLE R9 R4 R8; var9 = var4[var8]
+      60 [-]: NAMECALL R9 R9 K22; var10 = var9; var9 = var9[0x656C098F]
+      61 [-]: CALL R9 2 2  ; var9 = var9(var10)
+      62 [-]: GETIMPORT R10 9; var10 = _T["ShipDecoToRemove"]
+      63 [-]: NAMECALL R10 R10 K23; var11 = var10; var10 = var10[0xCDE10C4A]
+      64 [-]: CALL R10 2 2 ; var10 = var10(var11)
+      65 [-]: JUMPIFNOTEQ R9 R10 L11; goto L11 if var9 ~= var134482205
+      66 [-]: GETTABLE R9 R4 R8; var9 = var4[var8]
+      67 [-]: NAMECALL R9 R9 K24; var10 = var9; var9 = var9[0xF278F8A1]
+      68 [-]: CALL R9 2 2  ; var9 = var9(var10)
+      69 [-]: MOVE R5 R9   ; var5 = var9
+      70 [-]: JUMP L12     ; goto L12
+L11:  71 [-]: FORNLOOP R6 L10; nforloop end - iterate + goto L10
+L12:  72 [-]: GETIMPORT R6 3; var6 = 0xBE190284
+      73 [-]: GETIMPORT R8 9; var8 = _T["ShipDecoToRemove"]
+      74 [-]: MOVE R9 R5   ; var9 = var5
+      75 [-]: MOVE R10 R2  ; var10 = var2
+      76 [-]: LOADK R11 K17; var11 = "OnShipDecoRemoved"
+      77 [-]: NAMECALL R6 R6 K25; var7 = var6; var6 = var6[0x69D4E70E]
+      78 [-]: CALL R6 6 1  ; var6(var7, var8, var9, var10, var11)
+      79 [-]: RETURN R0 0  ; 
+L13:  80 [-]: GETIMPORT R1 26; var1 = _T
+      81 [-]: LOADNIL R2   ; var2 = nil
+      82 [-]: SETTABLEKS R2 R1 K8; var2["ShipDecoToRemove"] = var1
+      83 [-]: RETURN R0 0  ; 
 
 
 ; Name:            
-; Defined at line: 1521
+; Defined at line: 1544
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -3910,7 +3945,7 @@ L12:  79 [-]: GETIMPORT R1 26; var1 = _T
        8 [-]: MOVE R6 R0   ; var6 = var0
        9 [-]: MOVE R7 R1   ; var7 = var1
       10 [-]: CALL R5 3 3  ; var5, var6 = var5(var6, var7)
-      11 [-]: FASTCALL1 62 R5 L0; 
+      11 [-]: FASTCALL1 64 R5 L0; 
       12 [-]: MOVE R8 R5   ; var8 = var5
       13 [-]: GETIMPORT R7 4; var7 = 0x7B998233
       14 [-]: CALL R7 2 2  ; var7 = var7(var8)
@@ -3949,7 +3984,7 @@ L 3:  46 [-]: RETURN R0 0  ;
 
 
 ; Name:            
-; Defined at line: 1546
+; Defined at line: 1569
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -3963,7 +3998,7 @@ L 3:  46 [-]: RETURN R0 0  ;
        5 [-]: CALL R4 2 2  ; var4 = var4(var5)
        6 [-]: GETIMPORT R7 5; var7 = _T["DojoMgr"]["mIdToPlacedDecos"]
        7 [-]: GETTABLE R6 R7 R1; var6 = var7[var1]
-       8 [-]: FASTCALL1 62 R6 L0; 
+       8 [-]: FASTCALL1 64 R6 L0; 
        9 [-]: GETIMPORT R5 7; var5 = 0x7B998233
       10 [-]: CALL R5 2 2  ; var5 = var5(var6)
 L 0:  11 [-]: JUMPIF R5 L1 ; goto L1 if var5
@@ -3979,7 +4014,7 @@ L 0:  11 [-]: JUMPIF R5 L1 ; goto L1 if var5
       21 [-]: JUMPIFNOT R6 L1; goto L1 if not var6
       22 [-]: MOVE R2 R5   ; var2 = var5
       23 [-]: MOVE R3 R1   ; var3 = var1
-L 1:  24 [-]: FASTCALL1 62 R2 L2; 
+L 1:  24 [-]: FASTCALL1 64 R2 L2; 
       25 [-]: MOVE R6 R2   ; var6 = var2
       26 [-]: GETIMPORT R5 7; var5 = 0x7B998233
       27 [-]: CALL R5 2 2  ; var5 = var5(var6)
@@ -4006,7 +4041,7 @@ L 5:  47 [-]: RETURN R2 2  ;
 
 
 ; Name:            
-; Defined at line: 1577
+; Defined at line: 1600
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -4017,7 +4052,7 @@ L 5:  47 [-]: RETURN R2 2  ;
        2 [-]: GETTABLEKS R2 R3 K4; var2 = var3["UIMovie_DetailedPurchaseDialog"]
        3 [-]: NAMECALL R0 R0 K5; var1 = var0; var0 = var0[0xBCFB64AB]
        4 [-]: CALL R0 3 2  ; var0 = var0(var1, var2)
-       5 [-]: FASTCALL1 62 R0 L0; 
+       5 [-]: FASTCALL1 64 R0 L0; 
        6 [-]: MOVE R2 R0   ; var2 = var0
        7 [-]: GETIMPORT R1 7; var1 = 0x7B998233
        8 [-]: CALL R1 2 2  ; var1 = var1(var2)
@@ -4028,7 +4063,7 @@ L 1:  12 [-]: RETURN R0 0  ;
 
 
 ; Name:            
-; Defined at line: 1584
+; Defined at line: 1607
 ; #Upvalues:       3
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -4066,7 +4101,7 @@ L 1:  23 [-]: GETIMPORT R2 14; var2 = 0x34291F5C[0xA7A2E381]
       29 [-]: LOADK R4 K16 ; var4 = " "
       30 [-]: CALL R2 3 2  ; var2 = var2(var3, var4)
       31 [-]: LOADN R3 0   ; var3 = 0
-      32 [-]: JUMPIFNOTLT R3 R2 L3; goto L3 if var3 >= var1031
+      32 [-]: JUMPIFNOTLT R3 R2 L3; goto L3 if var3 >= var1084
       33 [-]: GETUPVAL R4 0; var4 = upvalues[0]
       34 [-]: GETTABLEKS R3 R4 K6; var3 = var4[0xE0CBA3CA]
       35 [-]: GETIMPORT R7 18; var7 = 0xAE91E43B
@@ -4131,7 +4166,7 @@ L 3:  88 [-]: GETIMPORT R2 30; var2 = 0x7F5022CF[0x348C01F7]
       94 [-]: MOVE R3 R1   ; var3 = var1
       95 [-]: LOADN R4 0   ; var4 = 0
       96 [-]: CALL R2 3 2  ; var2 = var2(var3, var4)
-      97 [-]: JUMPIFEQ R2 R1 L4; goto L4 if var2 == var1031
+      97 [-]: JUMPIFEQ R2 R1 L4; goto L4 if var2 == var1084
       98 [-]: GETUPVAL R4 0; var4 = upvalues[0]
       99 [-]: GETTABLEKS R3 R4 K6; var3 = var4[0xE0CBA3CA]
      100 [-]: LOADK R4 K34 ; var4 = "/Lotus/Language/Menu/Generic_Name_CENSORED"
@@ -4161,7 +4196,7 @@ L 5: 119 [-]: GETTABLE R8 R3 R6; var8 = var3[var6]
      124 [-]: FORNPREP R8 L8; nforprep start - [escape at L8] -- var8 = iterator
 L 6: 125 [-]: GETTABLE R12 R7 R10; var12 = var7[var10]
      126 [-]: GETTABLEKS R11 R12 K39; var11 = var12["name"]
-     127 [-]: JUMPIFNOTEQ R11 R1 L7; goto L7 if var11 ~= var3079
+     127 [-]: JUMPIFNOTEQ R11 R1 L7; goto L7 if var11 ~= var3132
      128 [-]: GETUPVAL R12 0; var12 = upvalues[0]
      129 [-]: GETTABLEKS R11 R12 K6; var11 = var12[0xE0CBA3CA]
      130 [-]: LOADK R12 K40; var12 = "/Lotus/Language/Dojo/DecoPlacementFail_CONSTRUCTION_STARTED"
@@ -4179,7 +4214,7 @@ L 6: 125 [-]: GETTABLE R12 R7 R10; var12 = var7[var10]
 L 7: 142 [-]: FORNLOOP R8 L6; nforloop end - iterate + goto L6
 L 8: 143 [-]: FORNLOOP R4 L5; nforloop end - iterate + goto L5
 L 9: 144 [-]: GETIMPORT R5 42; var5 = _T["BackgroundMovie"]
-     145 [-]: FASTCALL1 62 R5 L10; 
+     145 [-]: FASTCALL1 64 R5 L10; 
      146 [-]: GETIMPORT R4 44; var4 = 0x7B998233
      147 [-]: CALL R4 2 2  ; var4 = var4(var5)
 L10: 148 [-]: JUMPIF R4 L11; goto L11 if var4
@@ -4201,7 +4236,7 @@ L11: 154 [-]: GETIMPORT R4 48; var4 = _T["DojoMgr"]["mPendingDecoToPlace"]
 
 
 ; Name:            
-; Defined at line: 1648
+; Defined at line: 1671
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -4215,30 +4250,30 @@ L11: 154 [-]: GETIMPORT R4 48; var4 = _T["DojoMgr"]["mPendingDecoToPlace"]
 
 
 ; Name:            
-; Defined at line: 1652
+; Defined at line: 1675
 ; #Upvalues:       6
 ; #Parameters:     3
 ; Is_vararg:       0
 ; Max Stack Size:  15
 
-       0 [-]: FASTCALL1 62 R0 L0; 
+       0 [-]: FASTCALL1 64 R0 L0; 
        1 [-]: MOVE R4 R0   ; var4 = var0
        2 [-]: GETIMPORT R3 1; var3 = 0x7B998233
        3 [-]: CALL R3 2 2  ; var3 = var3(var4)
 L 0:   4 [-]: JUMPIFNOT R3 L9; goto L9 if not var3
        5 [-]: JUMPIFNOT R2 L8; goto L8 if not var2
        6 [-]: GETIMPORT R4 4; var4 = _T["PrevPlacedDecoInfo"]
-       7 [-]: FASTCALL1 62 R4 L1; 
+       7 [-]: FASTCALL1 64 R4 L1; 
        8 [-]: GETIMPORT R3 1; var3 = 0x7B998233
        9 [-]: CALL R3 2 2  ; var3 = var3(var4)
 L 1:  10 [-]: JUMPIF R3 L8 ; goto L8 if var3
       11 [-]: GETIMPORT R4 6; var4 = _T["PrevPlacedDecoInfo"]["Recipe"]
-      12 [-]: FASTCALL1 62 R4 L2; 
+      12 [-]: FASTCALL1 64 R4 L2; 
       13 [-]: GETIMPORT R3 1; var3 = 0x7B998233
       14 [-]: CALL R3 2 2  ; var3 = var3(var4)
 L 2:  15 [-]: JUMPIF R3 L4 ; goto L4 if var3
       16 [-]: GETIMPORT R4 8; var4 = _T["ComponentParams"]
-      17 [-]: FASTCALL1 62 R4 L3; 
+      17 [-]: FASTCALL1 64 R4 L3; 
       18 [-]: GETIMPORT R3 1; var3 = 0x7B998233
       19 [-]: CALL R3 2 2  ; var3 = var3(var4)
 L 3:  20 [-]: JUMPIF R3 L4 ; goto L4 if var3
@@ -4250,7 +4285,7 @@ L 3:  20 [-]: JUMPIF R3 L4 ; goto L4 if var3
       26 [-]: CALL R3 5 1  ; var3(var4, var5, var6, var7)
       27 [-]: RETURN R0 0  ; 
 L 4:  28 [-]: GETIMPORT R4 15; var4 = _T["PrevPlacedDecoInfo"]["StoreItem"]
-      29 [-]: FASTCALL1 62 R4 L5; 
+      29 [-]: FASTCALL1 64 R4 L5; 
       30 [-]: GETIMPORT R3 1; var3 = 0x7B998233
       31 [-]: CALL R3 2 2  ; var3 = var3(var4)
 L 5:  32 [-]: JUMPIF R3 L8 ; goto L8 if var3
@@ -4280,7 +4315,7 @@ L 5:  32 [-]: JUMPIF R3 L8 ; goto L8 if var3
       56 [-]: JUMPXEQKNIL R4 L7 NOT; 
       57 [-]: GETTABLEKS R4 R3 K18; var4 = var3["Count"]
       58 [-]: LOADN R5 1   ; var5 = 1
-      59 [-]: JUMPIFNOTLT R4 R5 L7; goto L7 if var4 >= var469959708
+      59 [-]: JUMPIFNOTLT R4 R5 L7; goto L7 if var4 >= var469959743
       60 [-]: GETTABLEKS R4 R3 K14; var4 = var3["StoreItem"]
       61 [-]: NAMECALL R4 R4 K31; var5 = var4; var4 = var4[0x31E559D2]
       62 [-]: CALL R4 2 2  ; var4 = var4(var5)
@@ -4432,11 +4467,11 @@ L18: 201 [-]: GETIMPORT R5 34; var5 = _T
      208 [-]: RETURN R0 0  ; 
 L19: 209 [-]: JUMPXEQKS R1 K55 L23 NOT; 
      210 [-]: GETIMPORT R6 87; var6 = _T["ShipDecoToRemove"]
-     211 [-]: FASTCALL1 62 R6 L20; 
+     211 [-]: FASTCALL1 64 R6 L20; 
      212 [-]: GETIMPORT R5 1; var5 = 0x7B998233
      213 [-]: CALL R5 2 2  ; var5 = var5(var6)
 L20: 214 [-]: JUMPIFNOT R5 L22; goto L22 if not var5
-     215 [-]: FASTCALL1 62 R0 L21; 
+     215 [-]: FASTCALL1 64 R0 L21; 
      216 [-]: MOVE R6 R0   ; var6 = var0
      217 [-]: GETIMPORT R5 1; var5 = 0x7B998233
      218 [-]: CALL R5 2 2  ; var5 = var5(var6)
@@ -4449,14 +4484,14 @@ L21: 219 [-]: JUMPIF R5 L22; goto L22 if var5
      225 [-]: LOADK R7 K90 ; var7 = "RemoveDecorationInShipConfirmResult"
      226 [-]: CALL R5 3 1  ; var5(var6, var7)
 L22: 227 [-]: RETURN R0 0  ; 
-L23: 228 [-]: FASTCALL1 62 R3 L24; 
+L23: 228 [-]: FASTCALL1 64 R3 L24; 
      229 [-]: MOVE R6 R3   ; var6 = var3
      230 [-]: GETIMPORT R5 1; var5 = 0x7B998233
      231 [-]: CALL R5 2 2  ; var5 = var5(var6)
-L24: 232 [-]: JUMPIF R5 L38; goto L38 if var5
+L24: 232 [-]: JUMPIF R5 L39; goto L39 if var5
      233 [-]: NAMECALL R5 R3 K91; var6 = var3; var5 = var3[0x56C01834]
      234 [-]: CALL R5 2 2  ; var5 = var5(var6)
-     235 [-]: JUMPIFNOT R5 L38; goto L38 if not var5
+     235 [-]: JUMPIFNOT R5 L39; goto L39 if not var5
      236 [-]: LOADNIL R5   ; var5 = nil
      237 [-]: GETIMPORT R6 93; var6 = 0xB009BBC6
      238 [-]: GETIMPORT R7 95; var7 = 0x59462ACB
@@ -4465,7 +4500,7 @@ L24: 232 [-]: JUMPIF R5 L38; goto L38 if var5
      241 [-]: NAMECALL R7 R6 K97; var8 = var6; var7 = var6[0x1CF7E604]
      242 [-]: CALL R7 3 2  ; var7 = var7(var8, var9)
      243 [-]: JUMPIFNOT R2 L28; goto L28 if not var2
-     244 [-]: FASTCALL1 62 R7 L25; 
+     244 [-]: FASTCALL1 64 R7 L25; 
      245 [-]: MOVE R9 R7   ; var9 = var7
      246 [-]: GETIMPORT R8 1; var8 = 0x7B998233
      247 [-]: CALL R8 2 2  ; var8 = var8(var9)
@@ -4477,15 +4512,15 @@ L25: 248 [-]: JUMPIF R8 L27; goto L27 if var8
      253 [-]: GETIMPORT R9 99; var9 = 0x5E9A35DB
      254 [-]: CALL R8 2 2  ; var8 = var8(var9)
      255 [-]: MOVE R5 R8   ; var5 = var8
-     256 [-]: JUMP L35     ; goto L35
+     256 [-]: JUMP L36     ; goto L36
 L26: 257 [-]: NAMECALL R8 R3 K57; var9 = var3; var8 = var3[0x04DE00E9]
      258 [-]: CALL R8 2 2  ; var8 = var8(var9)
-     259 [-]: JUMPIFNOT R8 L35; goto L35 if not var8
+     259 [-]: JUMPIFNOT R8 L36; goto L36 if not var8
      260 [-]: GETIMPORT R8 93; var8 = 0xB009BBC6
      261 [-]: GETIMPORT R9 101; var9 = 0x225828FD
      262 [-]: CALL R8 2 2  ; var8 = var8(var9)
      263 [-]: MOVE R5 R8   ; var5 = var8
-     264 [-]: JUMP L35     ; goto L35
+     264 [-]: JUMP L36     ; goto L36
 L27: 265 [-]: GETIMPORT R8 53; var8 = 0x3D106989
      266 [-]: LOADK R10 K102; var10 = "Could not find recipe for "
      267 [-]: GETTABLEKS R13 R3 K96; var13 = var3["decoType"]
@@ -4495,7 +4530,7 @@ L27: 265 [-]: GETIMPORT R8 53; var8 = 0x3D106989
      271 [-]: LOADK R12 K104; var12 = "; probably a ship deco that just got placed?"
      272 [-]: CONCAT R9 R10 R12; var9 = var10 .. var12
      273 [-]: CALL R8 2 1  ; var8(var9)
-     274 [-]: JUMP L35     ; goto L35
+     274 [-]: JUMP L36     ; goto L36
 L28: 275 [-]: GETIMPORT R8 43; var8 = 0x9BA7909F
      276 [-]: GETIMPORT R10 106; var10 = 0x3255839E
      277 [-]: NAMECALL R8 R8 K47; var9 = var8; var8 = var8[0xCFBA257F]
@@ -4504,120 +4539,125 @@ L28: 275 [-]: GETIMPORT R8 43; var8 = 0x9BA7909F
      280 [-]: GETTABLEKS R8 R9 K107; var8 = var9[0x334AF2B4]
      281 [-]: LOADB R9 1   ; var9 = true
      282 [-]: CALL R8 2 2  ; var8 = var8(var9)
-     283 [-]: JUMPIFNOT R8 L34; goto L34 if not var8
+     283 [-]: JUMPIFNOT R8 L35; goto L35 if not var8
      284 [-]: GETIMPORT R9 10; var9 = _T["DojoMgr"]
      285 [-]: SETTABLEKS R0 R9 K108; var0["mPendingDestroyDeco"] = var9
      286 [-]: GETIMPORT R9 10; var9 = _T["DojoMgr"]
      287 [-]: SETTABLEKS R4 R9 K109; var4["mPendingDestroyDecoComponentId"] = var9
      288 [-]: NAMECALL R9 R3 K56; var10 = var3; var9 = var3[0x3AE915BA]
      289 [-]: CALL R9 2 2  ; var9 = var9(var10)
-     290 [-]: JUMPIFNOT R9 L29; goto L29 if not var9
-     291 [-]: GETUPVAL R10 1; var10 = upvalues[1]
-     292 [-]: GETTABLEKS R9 R10 K88; var9 = var10[0xF616A184]
-     293 [-]: LOADK R10 K110; var10 = "/Lotus/Language/Dojo/CancelDecoConfirmation"
-     294 [-]: LOADK R11 K111; var11 = "AbortDecorationConfirmResult"
-     295 [-]: CALL R9 3 1  ; var9(var10, var11)
-     296 [-]: JUMP L35     ; goto L35
-L29: 297 [-]: FASTCALL1 62 R7 L30; 
-     298 [-]: MOVE R10 R7  ; var10 = var7
-     299 [-]: GETIMPORT R9 1; var9 = 0x7B998233
-     300 [-]: CALL R9 2 2  ; var9 = var9(var10)
-L30: 301 [-]: JUMPIF R9 L33; goto L33 if var9
-     302 [-]: NAMECALL R9 R7 K112; var10 = var7; var9 = var7[0x05AF28F3]
-     303 [-]: CALL R9 2 2  ; var9 = var9(var10)
-     304 [-]: JUMPXEQKN R9 K113 L31 NOT; 
-     305 [-]: NAMECALL R9 R7 K114; var10 = var7; var9 = var7[0x7E366333]
-     306 [-]: CALL R9 2 2  ; var9 = var9(var10)
-     307 [-]: JUMPXEQKN R9 K113 L31 NOT; 
-     308 [-]: NAMECALL R10 R7 K115; var11 = var7; var10 = var7[0x024D3816]
-     309 [-]: CALL R10 2 2 ; var10 = var10(var11)
-     310 [-]: LENGTH R9 R10; var9 = #var10
-     311 [-]: JUMPXEQKN R9 K113 L31 NOT; 
-     312 [-]: GETUPVAL R10 1; var10 = upvalues[1]
-     313 [-]: GETTABLEKS R9 R10 K88; var9 = var10[0xF616A184]
-     314 [-]: LOADK R10 K116; var10 = "/Lotus/Language/Dojo/DecoDestroyConfirm"
-     315 [-]: LOADK R11 K117; var11 = "DestroyDecorationConfirmResult"
-     316 [-]: CALL R9 3 1  ; var9(var10, var11)
-     317 [-]: JUMP L35     ; goto L35
-L31: 318 [-]: NAMECALL R9 R7 K118; var10 = var7; var9 = var7[0xE6A4276C]
-     319 [-]: CALL R9 2 2  ; var9 = var9(var10)
-     320 [-]: JUMPXEQKN R9 K119 L32 NOT; 
-     321 [-]: GETUPVAL R11 1; var11 = upvalues[1]
-     322 [-]: GETTABLEKS R10 R11 K88; var10 = var11[0xF616A184]
-     323 [-]: LOADK R11 K120; var11 = "/Lotus/Language/Dojo/DecoDestroyConfirmToVaultFullRefund"
-     324 [-]: LOADK R12 K117; var12 = "DestroyDecorationConfirmResult"
-     325 [-]: CALL R10 3 1 ; var10(var11, var12)
-     326 [-]: JUMP L35     ; goto L35
-L32: 327 [-]: DUPTABLE R10 122; 
-     328 [-]: MULK R11 R9 K123; var11 = var9 * 100
-     329 [-]: SETTABLEKS R11 R10 K121; var11["PERCENT"] = var10
-     330 [-]: GETIMPORT R11 24; var11 = 0x603636AD
-     331 [-]: LOADK R12 K124; var12 = "/Lotus/Language/Dojo/DecoDestroyConfirmWithRefundPercentage"
-     332 [-]: MOVE R13 R10 ; var13 = var10
-     333 [-]: CALL R11 3 2 ; var11 = var11(var12, var13)
-     334 [-]: GETUPVAL R13 1; var13 = upvalues[1]
-     335 [-]: GETTABLEKS R12 R13 K88; var12 = var13[0xF616A184]
-     336 [-]: MOVE R13 R11 ; var13 = var11
-     337 [-]: LOADK R14 K117; var14 = "DestroyDecorationConfirmResult"
-     338 [-]: CALL R12 3 1 ; var12(var13, var14)
-     339 [-]: JUMP L35     ; goto L35
-L33: 340 [-]: GETIMPORT R9 34; var9 = _T
-     341 [-]: SETTABLEKS R0 R9 K86; var0["ShipDecoToRemove"] = var9
-     342 [-]: GETUPVAL R10 1; var10 = upvalues[1]
-     343 [-]: GETTABLEKS R9 R10 K88; var9 = var10[0xF616A184]
-     344 [-]: LOADK R10 K125; var10 = "/Lotus/Language/Dojo/ShipDecoDestroyConfirmToVault"
-     345 [-]: LOADK R11 K117; var11 = "DestroyDecorationConfirmResult"
-     346 [-]: CALL R9 3 1  ; var9(var10, var11)
-     347 [-]: JUMP L35     ; goto L35
-L34: 348 [-]: GETUPVAL R10 1; var10 = upvalues[1]
-     349 [-]: GETTABLEKS R9 R10 K84; var9 = var10[0xE0CBA3CA]
-     350 [-]: LOADK R10 K126; var10 = "/Lotus/Language/Dojo/DecoDestroyNoPermission"
-     351 [-]: CALL R9 2 1  ; var9(var10)
-L35: 352 [-]: FASTCALL1 62 R5 L36; 
-     353 [-]: MOVE R9 R5   ; var9 = var5
-     354 [-]: GETIMPORT R8 1; var8 = 0x7B998233
-     355 [-]: CALL R8 2 2  ; var8 = var8(var9)
-L36: 356 [-]: JUMPIF R8 L38; goto L38 if var8
-     357 [-]: GETIMPORT R8 43; var8 = 0x9BA7909F
-     358 [-]: MOVE R10 R5  ; var10 = var5
-     359 [-]: NAMECALL R8 R8 K47; var9 = var8; var8 = var8[0xCFBA257F]
-     360 [-]: CALL R8 3 2  ; var8 = var8(var9, var10)
-     361 [-]: FASTCALL1 62 R8 L37; 
-     362 [-]: MOVE R10 R8  ; var10 = var8
-     363 [-]: GETIMPORT R9 1; var9 = 0x7B998233
-     364 [-]: CALL R9 2 2  ; var9 = var9(var10)
-L37: 365 [-]: JUMPIF R9 L38; goto L38 if var9
-     366 [-]: GETIMPORT R9 34; var9 = _T
-     367 [-]: GETIMPORT R10 129; var10 = 0x8D39C5FA[0x4EFA6A8B]
-     368 [-]: CALL R10 1 2 ; var10 = var10()
-     369 [-]: SETTABLEKS R10 R9 K7; var10["ComponentParams"] = var9
-     370 [-]: GETIMPORT R9 8; var9 = _T["ComponentParams"]
-     371 [-]: SETTABLEKS R4 R9 K11; var4["id"] = var9
-     372 [-]: GETIMPORT R9 34; var9 = _T
-     373 [-]: NAMECALL R10 R3 K130; var11 = var3; var10 = var3[0xF537CFC7]
-     374 [-]: CALL R10 2 2 ; var10 = var10(var11)
-     375 [-]: SETTABLEKS R10 R9 K131; var10["DecoId"] = var9
-     376 [-]: GETIMPORT R9 34; var9 = _T
-     377 [-]: LOADB R10 1  ; var10 = true
-     378 [-]: SETTABLEKS R10 R9 K132; var10["ShowDecorationContribution"] = var9
-     379 [-]: LOADK R11 K133; var11 = "ReadDojoVars"
-     380 [-]: LOADK R12 K55; var12 = ""
-     381 [-]: NAMECALL R9 R8 K134; var10 = var8; var9 = var8[0xE4162EED]
-     382 [-]: CALL R9 4 1  ; var9(var10, var11, var12)
-     383 [-]: GETIMPORT R9 34; var9 = _T
-     384 [-]: LOADB R10 0  ; var10 = false
-     385 [-]: SETTABLEKS R10 R9 K132; var10["ShowDecorationContribution"] = var9
-L38: 386 [-]: RETURN R0 0  ; 
+     290 [-]: JUMPIFNOT R9 L30; goto L30 if not var9
+     291 [-]: LOADK R9 K110; var9 = "/Lotus/Language/Dojo/CancelBuildNoFunding"
+     292 [-]: NAMECALL R10 R3 K111; var11 = var3; var10 = var3[0x5EB0ECE5]
+     293 [-]: CALL R10 2 2 ; var10 = var10(var11)
+     294 [-]: JUMPIFNOT R10 L29; goto L29 if not var10
+     295 [-]: LOADK R9 K112; var9 = "/Lotus/Language/Dojo/CancelDecoConfirmation"
+L29: 296 [-]: GETUPVAL R11 1; var11 = upvalues[1]
+     297 [-]: GETTABLEKS R10 R11 K88; var10 = var11[0xF616A184]
+     298 [-]: MOVE R11 R9  ; var11 = var9
+     299 [-]: LOADK R12 K113; var12 = "AbortDecorationConfirmResult"
+     300 [-]: CALL R10 3 1 ; var10(var11, var12)
+     301 [-]: JUMP L36     ; goto L36
+L30: 302 [-]: FASTCALL1 64 R7 L31; 
+     303 [-]: MOVE R10 R7  ; var10 = var7
+     304 [-]: GETIMPORT R9 1; var9 = 0x7B998233
+     305 [-]: CALL R9 2 2  ; var9 = var9(var10)
+L31: 306 [-]: JUMPIF R9 L34; goto L34 if var9
+     307 [-]: NAMECALL R9 R7 K114; var10 = var7; var9 = var7[0x05AF28F3]
+     308 [-]: CALL R9 2 2  ; var9 = var9(var10)
+     309 [-]: JUMPXEQKN R9 K115 L32 NOT; 
+     310 [-]: NAMECALL R9 R7 K116; var10 = var7; var9 = var7[0x7E366333]
+     311 [-]: CALL R9 2 2  ; var9 = var9(var10)
+     312 [-]: JUMPXEQKN R9 K115 L32 NOT; 
+     313 [-]: NAMECALL R10 R7 K117; var11 = var7; var10 = var7[0x024D3816]
+     314 [-]: CALL R10 2 2 ; var10 = var10(var11)
+     315 [-]: LENGTH R9 R10; var9 = #var10
+     316 [-]: JUMPXEQKN R9 K115 L32 NOT; 
+     317 [-]: GETUPVAL R10 1; var10 = upvalues[1]
+     318 [-]: GETTABLEKS R9 R10 K88; var9 = var10[0xF616A184]
+     319 [-]: LOADK R10 K118; var10 = "/Lotus/Language/Dojo/DecoDestroyConfirm"
+     320 [-]: LOADK R11 K119; var11 = "DestroyDecorationConfirmResult"
+     321 [-]: CALL R9 3 1  ; var9(var10, var11)
+     322 [-]: JUMP L36     ; goto L36
+L32: 323 [-]: NAMECALL R9 R7 K120; var10 = var7; var9 = var7[0xE6A4276C]
+     324 [-]: CALL R9 2 2  ; var9 = var9(var10)
+     325 [-]: JUMPXEQKN R9 K121 L33 NOT; 
+     326 [-]: GETUPVAL R11 1; var11 = upvalues[1]
+     327 [-]: GETTABLEKS R10 R11 K88; var10 = var11[0xF616A184]
+     328 [-]: LOADK R11 K122; var11 = "/Lotus/Language/Dojo/DecoDestroyConfirmToVaultFullRefund"
+     329 [-]: LOADK R12 K119; var12 = "DestroyDecorationConfirmResult"
+     330 [-]: CALL R10 3 1 ; var10(var11, var12)
+     331 [-]: JUMP L36     ; goto L36
+L33: 332 [-]: DUPTABLE R10 124; 
+     333 [-]: MULK R11 R9 K125; var11 = var9 * 100
+     334 [-]: SETTABLEKS R11 R10 K123; var11["PERCENT"] = var10
+     335 [-]: GETIMPORT R11 24; var11 = 0x603636AD
+     336 [-]: LOADK R12 K126; var12 = "/Lotus/Language/Dojo/DecoDestroyConfirmWithRefundPercentage"
+     337 [-]: MOVE R13 R10 ; var13 = var10
+     338 [-]: CALL R11 3 2 ; var11 = var11(var12, var13)
+     339 [-]: GETUPVAL R13 1; var13 = upvalues[1]
+     340 [-]: GETTABLEKS R12 R13 K88; var12 = var13[0xF616A184]
+     341 [-]: MOVE R13 R11 ; var13 = var11
+     342 [-]: LOADK R14 K119; var14 = "DestroyDecorationConfirmResult"
+     343 [-]: CALL R12 3 1 ; var12(var13, var14)
+     344 [-]: JUMP L36     ; goto L36
+L34: 345 [-]: GETIMPORT R9 34; var9 = _T
+     346 [-]: SETTABLEKS R0 R9 K86; var0["ShipDecoToRemove"] = var9
+     347 [-]: GETUPVAL R10 1; var10 = upvalues[1]
+     348 [-]: GETTABLEKS R9 R10 K88; var9 = var10[0xF616A184]
+     349 [-]: LOADK R10 K127; var10 = "/Lotus/Language/Dojo/ShipDecoDestroyConfirmToVault"
+     350 [-]: LOADK R11 K119; var11 = "DestroyDecorationConfirmResult"
+     351 [-]: CALL R9 3 1  ; var9(var10, var11)
+     352 [-]: JUMP L36     ; goto L36
+L35: 353 [-]: GETUPVAL R10 1; var10 = upvalues[1]
+     354 [-]: GETTABLEKS R9 R10 K84; var9 = var10[0xE0CBA3CA]
+     355 [-]: LOADK R10 K128; var10 = "/Lotus/Language/Dojo/DecoDestroyNoPermission"
+     356 [-]: CALL R9 2 1  ; var9(var10)
+L36: 357 [-]: FASTCALL1 64 R5 L37; 
+     358 [-]: MOVE R9 R5   ; var9 = var5
+     359 [-]: GETIMPORT R8 1; var8 = 0x7B998233
+     360 [-]: CALL R8 2 2  ; var8 = var8(var9)
+L37: 361 [-]: JUMPIF R8 L39; goto L39 if var8
+     362 [-]: GETIMPORT R8 43; var8 = 0x9BA7909F
+     363 [-]: MOVE R10 R5  ; var10 = var5
+     364 [-]: NAMECALL R8 R8 K47; var9 = var8; var8 = var8[0xCFBA257F]
+     365 [-]: CALL R8 3 2  ; var8 = var8(var9, var10)
+     366 [-]: FASTCALL1 64 R8 L38; 
+     367 [-]: MOVE R10 R8  ; var10 = var8
+     368 [-]: GETIMPORT R9 1; var9 = 0x7B998233
+     369 [-]: CALL R9 2 2  ; var9 = var9(var10)
+L38: 370 [-]: JUMPIF R9 L39; goto L39 if var9
+     371 [-]: GETIMPORT R9 34; var9 = _T
+     372 [-]: GETIMPORT R10 131; var10 = 0x8D39C5FA[0x4EFA6A8B]
+     373 [-]: CALL R10 1 2 ; var10 = var10()
+     374 [-]: SETTABLEKS R10 R9 K7; var10["ComponentParams"] = var9
+     375 [-]: GETIMPORT R9 8; var9 = _T["ComponentParams"]
+     376 [-]: SETTABLEKS R4 R9 K11; var4["id"] = var9
+     377 [-]: GETIMPORT R9 34; var9 = _T
+     378 [-]: NAMECALL R10 R3 K132; var11 = var3; var10 = var3[0xF537CFC7]
+     379 [-]: CALL R10 2 2 ; var10 = var10(var11)
+     380 [-]: SETTABLEKS R10 R9 K133; var10["DecoId"] = var9
+     381 [-]: GETIMPORT R9 34; var9 = _T
+     382 [-]: LOADB R10 1  ; var10 = true
+     383 [-]: SETTABLEKS R10 R9 K134; var10["ShowDecorationContribution"] = var9
+     384 [-]: LOADK R11 K135; var11 = "ReadDojoVars"
+     385 [-]: LOADK R12 K55; var12 = ""
+     386 [-]: NAMECALL R9 R8 K136; var10 = var8; var9 = var8[0xE4162EED]
+     387 [-]: CALL R9 4 1  ; var9(var10, var11, var12)
+     388 [-]: GETIMPORT R9 34; var9 = _T
+     389 [-]: LOADB R10 0  ; var10 = false
+     390 [-]: SETTABLEKS R10 R9 K134; var10["ShowDecorationContribution"] = var9
+L39: 391 [-]: RETURN R0 0  ; 
 
 
 ; Name:            
-; Defined at line: 1833
+; Defined at line: 1861
 ; #Upvalues:       4
 ; #Parameters:     2
 ; Is_vararg:       0
-; Max Stack Size:  19
+; Max Stack Size:  20
 
-       0 [-]: FASTCALL1 62 R0 L0; 
+       0 [-]: FASTCALL1 64 R0 L0; 
        1 [-]: MOVE R3 R0   ; var3 = var0
        2 [-]: GETIMPORT R2 1; var2 = 0x7B998233
        3 [-]: CALL R2 2 2  ; var2 = var2(var3)
@@ -4630,279 +4670,304 @@ L 1:   6 [-]: GETIMPORT R2 4; var2 = _T["DecoMoveInfo"]
       10 [-]: CALL R2 2 1  ; var2(var3)
       11 [-]: RETURN R0 0  ; 
 L 2:  12 [-]: GETIMPORT R2 9; var2 = 0xBE190284
-      13 [-]: FASTCALL1 62 R2 L3; 
+      13 [-]: FASTCALL1 64 R2 L3; 
       14 [-]: MOVE R4 R2   ; var4 = var2
       15 [-]: GETIMPORT R3 1; var3 = 0x7B998233
       16 [-]: CALL R3 2 2  ; var3 = var3(var4)
 L 3:  17 [-]: JUMPIFNOT R3 L4; goto L4 if not var3
       18 [-]: RETURN R0 0  ; 
-L 4:  19 [-]: GETIMPORT R5 11; var5 = gLotusDojoGameRulesType
-      20 [-]: NAMECALL R3 R2 K12; var4 = var2; var3 = var2[0xF2DEAF69]
-      21 [-]: CALL R3 3 2  ; var3 = var3(var4, var5)
-      22 [-]: JUMPIFNOT R3 L7; goto L7 if not var3
-      23 [-]: GETUPVAL R4 0; var4 = upvalues[0]
-      24 [-]: MOVE R5 R0   ; var5 = var0
-      25 [-]: MOVE R6 R1   ; var6 = var1
-      26 [-]: CALL R4 3 3  ; var4, var5 = var4(var5, var6)
-      27 [-]: FASTCALL1 62 R4 L5; 
-      28 [-]: MOVE R7 R4   ; var7 = var4
-      29 [-]: GETIMPORT R6 1; var6 = 0x7B998233
-      30 [-]: CALL R6 2 2  ; var6 = var6(var7)
-L 5:  31 [-]: JUMPIF R6 L7 ; goto L7 if var6
-      32 [-]: GETIMPORT R6 14; var6 = 0xB009BBC6
-      33 [-]: GETIMPORT R7 16; var7 = 0x59462ACB
-      34 [-]: CALL R6 2 2  ; var6 = var6(var7)
-      35 [-]: GETTABLEKS R9 R4 K17; var9 = var4["decoType"]
-      36 [-]: NAMECALL R7 R6 K18; var8 = var6; var7 = var6[0x1CF7E604]
-      37 [-]: CALL R7 3 2  ; var7 = var7(var8, var9)
-      38 [-]: FASTCALL1 62 R7 L6; 
-      39 [-]: MOVE R9 R7   ; var9 = var7
-      40 [-]: GETIMPORT R8 1; var8 = 0x7B998233
-      41 [-]: CALL R8 2 2  ; var8 = var8(var9)
-L 6:  42 [-]: JUMPIF R8 L7 ; goto L7 if var8
-      43 [-]: GETIMPORT R8 20; var8 = _T["DojoMgr"]
-      44 [-]: MOVE R10 R7  ; var10 = var7
-      45 [-]: MOVE R11 R1  ; var11 = var1
-      46 [-]: LOADB R12 1  ; var12 = true
-      47 [-]: NAMECALL R8 R8 K21; var9 = var8; var8 = var8[0xA539D818]
-      48 [-]: CALL R8 5 1  ; var8(var9, var10, var11, var12)
-      49 [-]: RETURN R0 0  ; 
-L 7:  50 [-]: NAMECALL R4 R2 K22; var5 = var2; var4 = var2[0xA1C390FE]
-      51 [-]: CALL R4 2 2  ; var4 = var4(var5)
-      52 [-]: FASTCALL1 62 R4 L8; 
-      53 [-]: MOVE R6 R4   ; var6 = var4
-      54 [-]: GETIMPORT R5 1; var5 = 0x7B998233
-      55 [-]: CALL R5 2 2  ; var5 = var5(var6)
-L 8:  56 [-]: JUMPIFNOT R5 L9; goto L9 if not var5
-      57 [-]: RETURN R0 0  ; 
-L 9:  58 [-]: GETIMPORT R7 24; var7 = gShipDecoItemType
-      59 [-]: NAMECALL R5 R4 K25; var6 = var4; var5 = var4[0xE9CBFFA8]
-      60 [-]: CALL R5 3 2  ; var5 = var5(var6, var7)
-      61 [-]: NAMECALL R6 R0 K26; var7 = var0; var6 = var0[0xCDE10C4A]
-      62 [-]: CALL R6 2 2  ; var6 = var6(var7)
-      63 [-]: LOADNIL R7   ; var7 = nil
-      64 [-]: LOADN R10 1  ; var10 = 1
-      65 [-]: LENGTH R8 R5 ; var8 = #var5
-      66 [-]: LOADN R9 1   ; var9 = 1
-      67 [-]: FORNPREP R8 L12; nforprep start - [escape at L12] -- var8 = iterator
-L10:  68 [-]: GETTABLE R11 R5 R10; var11 = var5[var10]
-      69 [-]: NAMECALL R11 R11 K27; var12 = var11; var11 = var11[0x656C098F]
-      70 [-]: CALL R11 2 2 ; var11 = var11(var12)
-      71 [-]: JUMPIFNOTEQ R11 R6 L11; goto L11 if var11 ~= var168101687
-      72 [-]: GETTABLE R7 R5 R10; var7 = var5[var10]
-      73 [-]: JUMP L12     ; goto L12
-L11:  74 [-]: FORNLOOP R8 L10; nforloop end - iterate + goto L10
-L12:  75 [-]: FASTCALL1 62 R7 L13; 
-      76 [-]: MOVE R9 R7   ; var9 = var7
-      77 [-]: GETIMPORT R8 1; var8 = 0x7B998233
-      78 [-]: CALL R8 2 2  ; var8 = var8(var9)
-L13:  79 [-]: JUMPIFNOT R8 L14; goto L14 if not var8
-      80 [-]: RETURN R0 0  ; 
-L14:  81 [-]: GETIMPORT R8 29; var8 = 0x76EA806B
-      82 [-]: LOADN R10 0  ; var10 = 0
-      83 [-]: NAMECALL R8 R8 K30; var9 = var8; var8 = var8[0x3F3AE64C]
-      84 [-]: CALL R8 3 2  ; var8 = var8(var9, var10)
-      85 [-]: FASTCALL1 62 R8 L15; 
-      86 [-]: MOVE R10 R8  ; var10 = var8
-      87 [-]: GETIMPORT R9 1; var9 = 0x7B998233
-      88 [-]: CALL R9 2 2  ; var9 = var9(var10)
-L15:  89 [-]: JUMPIFNOT R9 L16; goto L16 if not var9
-      90 [-]: RETURN R0 0  ; 
-L16:  91 [-]: GETIMPORT R10 32; var10 = 0x25D99D89
-      92 [-]: FASTCALL1 62 R10 L17; 
-      93 [-]: GETIMPORT R9 1; var9 = 0x7B998233
-      94 [-]: CALL R9 2 2  ; var9 = var9(var10)
-L17:  95 [-]: JUMPIFNOT R9 L18; goto L18 if not var9
-      96 [-]: RETURN R0 0  ; 
-L18:  97 [-]: DUPTABLE R9 38; 
-      98 [-]: SETTABLEKS R7 R9 K33; var7["StoreItem"] = var9
-      99 [-]: NAMECALL R10 R7 K39; var11 = var7; var10 = var7[0xF278F8A1]
-     100 [-]: CALL R10 2 2 ; var10 = var10(var11)
-     101 [-]: SETTABLEKS R10 R9 K34; var10["Type"] = var9
-     102 [-]: LOADN R10 0  ; var10 = 0
-     103 [-]: SETTABLEKS R10 R9 K35; var10["Count"] = var9
-     104 [-]: LOADB R10 0  ; var10 = false
-     105 [-]: SETTABLEKS R10 R9 K36; var10["VaultDeco"] = var9
-     106 [-]: LOADNIL R10  ; var10 = nil
-     107 [-]: SETTABLEKS R10 R9 K37; var10["SocketInfo"] = var9
-     108 [-]: JUMPIFNOT R3 L30; goto L30 if not var3
-     109 [-]: NAMECALL R10 R2 K40; var11 = var2; var10 = var2[0x713CE380]
-     110 [-]: CALL R10 2 2 ; var10 = var10(var11)
-     111 [-]: GETIMPORT R11 32; var11 = 0x25D99D89
-     112 [-]: NAMECALL R11 R11 K40; var12 = var11; var11 = var11[0x713CE380]
-     113 [-]: CALL R11 2 2 ; var11 = var11(var12)
-     114 [-]: JUMPIFNOTEQ R10 R11 L28; goto L28 if var10 ~= var2099790
-     115 [-]: GETIMPORT R10 32; var10 = 0x25D99D89
-     116 [-]: NAMECALL R10 R10 K41; var11 = var10; var10 = var10[0xF39284CF]
-     117 [-]: CALL R10 2 2 ; var10 = var10(var11)
-     118 [-]: JUMPXEQKNIL R10 L28; 
-     119 [-]: LOADN R13 1  ; var13 = 1
-     120 [-]: GETTABLEKS R14 R10 K42; var14 = var10["mShipDecorations"]
-     121 [-]: LENGTH R11 R14; var11 = #var14
-     122 [-]: LOADN R12 1  ; var12 = 1
-     123 [-]: FORNPREP R11 L21; nforprep start - [escape at L21] -- var11 = iterator
-L19: 124 [-]: GETTABLEKS R14 R9 K34; var14 = var9["Type"]
-     125 [-]: GETTABLEKS R17 R10 K42; var17 = var10["mShipDecorations"]
-     126 [-]: GETTABLE R16 R17 R13; var16 = var17[var13]
-     127 [-]: GETTABLEKS R15 R16 K43; var15 = var16["mItemType"]
-     128 [-]: JUMPIFNOTEQ R14 R15 L20; goto L20 if var14 ~= var-1307963364
-     129 [-]: GETTABLEKS R16 R10 K42; var16 = var10["mShipDecorations"]
-     130 [-]: GETTABLE R15 R16 R13; var15 = var16[var13]
-     131 [-]: GETTABLEKS R14 R15 K44; var14 = var15["mItemCount"]
-     132 [-]: SETTABLEKS R14 R9 K35; var14["Count"] = var9
-     133 [-]: JUMP L21     ; goto L21
-L20: 134 [-]: FORNLOOP R11 L19; nforloop end - iterate + goto L19
-L21: 135 [-]: GETTABLEKS R11 R9 K35; var11 = var9["Count"]
-     136 [-]: JUMPXEQKN R11 K45 L25 NOT; 
-     137 [-]: LOADN R11 0  ; var11 = 0
-     138 [-]: GETIMPORT R14 47; var14 = gDojoPlaceableDecorationType
-     139 [-]: NAMECALL R12 R0 K12; var13 = var0; var12 = var0[0xF2DEAF69]
-     140 [-]: CALL R12 3 2 ; var12 = var12(var13, var14)
-     141 [-]: JUMPIFNOT R12 L22; goto L22 if not var12
-     142 [-]: NAMECALL R12 R0 K48; var13 = var0; var12 = var0[0x3EF3C120]
-     143 [-]: CALL R12 2 2 ; var12 = var12(var13)
-     144 [-]: MOVE R11 R12 ; var11 = var12
-L22: 145 [-]: LOADN R14 1  ; var14 = 1
-     146 [-]: GETTABLEKS R15 R10 K49; var15 = var10["mFusionTreasures"]
-     147 [-]: LENGTH R12 R15; var12 = #var15
-     148 [-]: LOADN R13 1  ; var13 = 1
-     149 [-]: FORNPREP R12 L25; nforprep start - [escape at L25] -- var12 = iterator
-L23: 150 [-]: GETTABLEKS R15 R9 K34; var15 = var9["Type"]
-     151 [-]: GETTABLEKS R18 R10 K49; var18 = var10["mFusionTreasures"]
-     152 [-]: GETTABLE R17 R18 R14; var17 = var18[var14]
-     153 [-]: GETTABLEKS R16 R17 K43; var16 = var17["mItemType"]
-     154 [-]: JUMPIFNOTEQ R15 R16 L24; goto L24 if var15 ~= var-2113269476
-     155 [-]: GETTABLEKS R17 R10 K49; var17 = var10["mFusionTreasures"]
-     156 [-]: GETTABLE R16 R17 R14; var16 = var17[var14]
-     157 [-]: GETTABLEKS R15 R16 K50; var15 = var16["mSockets"]
-     158 [-]: JUMPIFNOTEQ R11 R15 L24; goto L24 if var11 ~= var-2113269476
-     159 [-]: GETTABLEKS R17 R10 K49; var17 = var10["mFusionTreasures"]
-     160 [-]: GETTABLE R16 R17 R14; var16 = var17[var14]
-     161 [-]: GETTABLEKS R15 R16 K44; var15 = var16["mItemCount"]
-     162 [-]: SETTABLEKS R15 R9 K35; var15["Count"] = var9
-     163 [-]: SETTABLEKS R11 R9 K37; var11["SocketInfo"] = var9
-     164 [-]: JUMP L25     ; goto L25
-L24: 165 [-]: FORNLOOP R12 L23; nforloop end - iterate + goto L23
-L25: 166 [-]: GETTABLEKS R12 R9 K35; var12 = var9["Count"]
-     167 [-]: LOADN R13 0  ; var13 = 0
-     168 [-]: JUMPIFLT R13 R12 L26; goto L26 if var13 < var16780059
-     169 [-]: LOADB R11 0 +1; var11 = false
-L26: 170 [-]: LOADB R11 1  ; var11 = true
-L27: 171 [-]: SETTABLEKS R11 R9 K36; var11["VaultDeco"] = var9
-L28: 172 [-]: GETTABLEKS R10 R9 K35; var10 = var9["Count"]
-     173 [-]: LOADN R11 0  ; var11 = 0
-     174 [-]: JUMPIFNOTLT R11 R10 L29; goto L29 if var11 >= var68103
-     175 [-]: GETUPVAL R10 1; var10 = upvalues[1]
-     176 [-]: MOVE R11 R9  ; var11 = var9
-     177 [-]: LOADB R12 0  ; var12 = false
-     178 [-]: CALL R10 3 1 ; var10(var11, var12)
-     179 [-]: RETURN R0 0  ; 
-L29: 180 [-]: GETUPVAL R11 2; var11 = upvalues[2]
-     181 [-]: GETTABLEKS R10 R11 K51; var10 = var11[0xE0CBA3CA]
-     182 [-]: LOADK R11 K52; var11 = "/Lotus/Language/Dojo/DecoNotInVault"
-     183 [-]: CALL R10 2 1 ; var10(var11)
-     184 [-]: RETURN R0 0  ; 
-L30: 185 [-]: GETIMPORT R10 32; var10 = 0x25D99D89
-     186 [-]: NAMECALL R10 R10 K53; var11 = var10; var10 = var10[0x25A6E75E]
-     187 [-]: CALL R10 2 2 ; var10 = var10(var11)
-     188 [-]: NAMECALL R11 R10 K54; var12 = var10; var11 = var10[0x7C12AC22]
-     189 [-]: CALL R11 2 2 ; var11 = var11(var12)
-     190 [-]: LOADN R14 1  ; var14 = 1
-     191 [-]: LENGTH R12 R11; var12 = #var11
-     192 [-]: LOADN R13 1  ; var13 = 1
-     193 [-]: FORNPREP R12 L33; nforprep start - [escape at L33] -- var12 = iterator
-L31: 194 [-]: GETTABLEKS R15 R9 K34; var15 = var9["Type"]
-     195 [-]: GETTABLE R17 R11 R14; var17 = var11[var14]
-     196 [-]: GETTABLEKS R16 R17 K43; var16 = var17["mItemType"]
-     197 [-]: JUMPIFNOTEQ R15 R16 L32; goto L32 if var15 ~= var235606071
-     198 [-]: GETTABLE R16 R11 R14; var16 = var11[var14]
-     199 [-]: GETTABLEKS R15 R16 K44; var15 = var16["mItemCount"]
-     200 [-]: SETTABLEKS R15 R9 K35; var15["Count"] = var9
-     201 [-]: JUMP L33     ; goto L33
-L32: 202 [-]: FORNLOOP R12 L31; nforloop end - iterate + goto L31
-L33: 203 [-]: GETTABLEKS R12 R9 K35; var12 = var9["Count"]
-     204 [-]: JUMPXEQKN R12 K45 L37 NOT; 
-     205 [-]: NAMECALL R12 R10 K55; var13 = var10; var12 = var10[0x7A5DC828]
-     206 [-]: CALL R12 2 2 ; var12 = var12(var13)
-     207 [-]: MOVE R11 R12 ; var11 = var12
-     208 [-]: LOADN R12 0  ; var12 = 0
-     209 [-]: GETIMPORT R15 47; var15 = gDojoPlaceableDecorationType
-     210 [-]: NAMECALL R13 R0 K12; var14 = var0; var13 = var0[0xF2DEAF69]
-     211 [-]: CALL R13 3 2 ; var13 = var13(var14, var15)
-     212 [-]: JUMPIFNOT R13 L34; goto L34 if not var13
-     213 [-]: NAMECALL R13 R0 K48; var14 = var0; var13 = var0[0x3EF3C120]
-     214 [-]: CALL R13 2 2 ; var13 = var13(var14)
-     215 [-]: MOVE R12 R13 ; var12 = var13
-L34: 216 [-]: LOADN R15 1  ; var15 = 1
-     217 [-]: LENGTH R13 R11; var13 = #var11
-     218 [-]: LOADN R14 1  ; var14 = 1
-     219 [-]: FORNPREP R13 L37; nforprep start - [escape at L37] -- var13 = iterator
-L35: 220 [-]: GETTABLEKS R16 R9 K34; var16 = var9["Type"]
-     221 [-]: GETTABLE R18 R11 R15; var18 = var11[var15]
-     222 [-]: GETTABLEKS R17 R18 K43; var17 = var18["mItemType"]
-     223 [-]: JUMPIFNOTEQ R16 R17 L36; goto L36 if var16 ~= var252383543
-     224 [-]: GETTABLE R17 R11 R15; var17 = var11[var15]
-     225 [-]: GETTABLEKS R16 R17 K50; var16 = var17["mSockets"]
-     226 [-]: JUMPIFNOTEQ R12 R16 L36; goto L36 if var12 ~= var252383543
-     227 [-]: GETTABLE R17 R11 R15; var17 = var11[var15]
-     228 [-]: GETTABLEKS R16 R17 K44; var16 = var17["mItemCount"]
-     229 [-]: SETTABLEKS R16 R9 K35; var16["Count"] = var9
-     230 [-]: SETTABLEKS R12 R9 K37; var12["SocketInfo"] = var9
-     231 [-]: JUMP L37     ; goto L37
-L36: 232 [-]: FORNLOOP R13 L35; nforloop end - iterate + goto L35
-L37: 233 [-]: GETTABLEKS R12 R9 K35; var12 = var9["Count"]
-     234 [-]: LOADN R13 1  ; var13 = 1
-     235 [-]: JUMPIFNOTLT R12 R13 L39; goto L39 if var12 >= var470354972
-     236 [-]: GETTABLEKS R12 R9 K33; var12 = var9["StoreItem"]
-     237 [-]: NAMECALL R12 R12 K56; var13 = var12; var12 = var12[0x31E559D2]
-     238 [-]: CALL R12 2 2 ; var12 = var12(var13)
-     239 [-]: JUMPIF R12 L39; goto L39 if var12
-     240 [-]: GETTABLEKS R12 R9 K33; var12 = var9["StoreItem"]
-     241 [-]: NAMECALL R12 R12 K57; var13 = var12; var12 = var12[0xC055CEF8]
-     242 [-]: CALL R12 2 2 ; var12 = var12(var13)
-     243 [-]: JUMPIFNOT R12 L38; goto L38 if not var12
-     244 [-]: NEWCLOSURE R12 P0; 
-     245 [-]: CAPTURE VAL R9; 
-     246 [-]: CAPTURE UPVAL U1; 
-     247 [-]: CAPTURE UPVAL U2; 
-     248 [-]: GETUPVAL R14 3; var14 = upvalues[3]
-     249 [-]: GETTABLEKS R13 R14 K58; var13 = var14[0xCD71F5A1]
-     250 [-]: GETTABLEKS R14 R9 K33; var14 = var9["StoreItem"]
-     251 [-]: CALL R13 2 2 ; var13 = var13(var14)
-     252 [-]: GETIMPORT R14 59; var14 = _T
-     253 [-]: LOADNIL R15  ; var15 = nil
-     254 [-]: SETTABLEKS R15 R14 K60; var15["marketDetailedViewParms"] = var14
-     255 [-]: GETIMPORT R14 59; var14 = _T
-     256 [-]: DUPTABLE R15 64; 
-     257 [-]: DUPTABLE R16 66; 
-     258 [-]: GETTABLEKS R17 R9 K33; var17 = var9["StoreItem"]
-     259 [-]: SETTABLEKS R17 R16 K33; var17["StoreItem"] = var16
-     260 [-]: SETTABLEKS R13 R16 K65; var13["Sale"] = var16
-     261 [-]: SETTABLEKS R16 R15 K61; var16["ITEM"] = var15
-     262 [-]: SETTABLEKS R12 R15 K62; var12["CALLBACK"] = var15
-     263 [-]: LOADB R16 1  ; var16 = true
-     264 [-]: SETTABLEKS R16 R15 K63; var16["HIDE_ITEM_GRID"] = var15
-     265 [-]: SETTABLEKS R15 R14 K60; var15["marketDetailedViewParms"] = var14
-     266 [-]: GETIMPORT R14 68; var14 = 0x9BA7909F
-     267 [-]: GETIMPORT R17 70; var17 = 0x0032441C
-     268 [-]: GETTABLEKS R16 R17 K71; var16 = var17["UIMovie_DetailedPurchaseDialog"]
-     269 [-]: NAMECALL R14 R14 K72; var15 = var14; var14 = var14[0xCFBA257F]
-     270 [-]: CALL R14 3 1 ; var14(var15, var16)
-     271 [-]: RETURN R0 0  ; 
-L38: 272 [-]: GETUPVAL R13 2; var13 = upvalues[2]
-     273 [-]: GETTABLEKS R12 R13 K51; var12 = var13[0xE0CBA3CA]
-     274 [-]: LOADK R13 K73; var13 = "/Lotus/Language/Dojo/DecoNotInInventory"
-     275 [-]: CALL R12 2 1 ; var12(var13)
-     276 [-]: RETURN R0 0  ; 
-L39: 277 [-]: GETUPVAL R12 1; var12 = upvalues[1]
-     278 [-]: MOVE R13 R9  ; var13 = var9
-     279 [-]: LOADB R14 1  ; var14 = true
-     280 [-]: CALL R12 3 1 ; var12(var13, var14)
-     281 [-]: RETURN R0 0  ; 
+L 4:  19 [-]: NAMECALL R3 R0 K10; var4 = var0; var3 = var0[0xED4E0128]
+      20 [-]: CALL R3 2 2  ; var3 = var3(var4)
+      21 [-]: GETIMPORT R5 12; var5 = _T["DojoLimitedDecos"]
+      22 [-]: FASTCALL1 64 R5 L5; 
+      23 [-]: GETIMPORT R4 1; var4 = 0x7B998233
+      24 [-]: CALL R4 2 2  ; var4 = var4(var5)
+L 5:  25 [-]: JUMPIF R4 L7 ; goto L7 if var4
+      26 [-]: GETIMPORT R6 12; var6 = _T["DojoLimitedDecos"]
+      27 [-]: GETTABLE R5 R6 R3; var5 = var6[var3]
+      28 [-]: FASTCALL1 64 R5 L6; 
+      29 [-]: GETIMPORT R4 1; var4 = 0x7B998233
+      30 [-]: CALL R4 2 2  ; var4 = var4(var5)
+L 6:  31 [-]: JUMPIF R4 L7 ; goto L7 if var4
+      32 [-]: GETIMPORT R6 12; var6 = _T["DojoLimitedDecos"]
+      33 [-]: GETTABLE R5 R6 R3; var5 = var6[var3]
+      34 [-]: GETTABLEKS R4 R5 K13; var4 = var5["Count"]
+      35 [-]: GETIMPORT R7 12; var7 = _T["DojoLimitedDecos"]
+      36 [-]: GETTABLE R6 R7 R3; var6 = var7[var3]
+      37 [-]: GETTABLEKS R5 R6 K14; var5 = var6["MaxCount"]
+      38 [-]: JUMPIFNOTLE R5 R4 L7; goto L7 if var5 > var1340
+      39 [-]: GETUPVAL R5 0; var5 = upvalues[0]
+      40 [-]: GETTABLEKS R4 R5 K15; var4 = var5[0xE0CBA3CA]
+      41 [-]: LOADK R5 K16 ; var5 = "/Lotus/Language/Dojo/DecoPlacementFail_INSUFFICIENT_CAPACITY"
+      42 [-]: CALL R4 2 1  ; var4(var5)
+      43 [-]: RETURN R0 0  ; 
+L 7:  44 [-]: GETIMPORT R6 18; var6 = gLotusDojoGameRulesType
+      45 [-]: NAMECALL R4 R2 K19; var5 = var2; var4 = var2[0xF2DEAF69]
+      46 [-]: CALL R4 3 2  ; var4 = var4(var5, var6)
+      47 [-]: JUMPIFNOT R4 L10; goto L10 if not var4
+      48 [-]: GETUPVAL R5 1; var5 = upvalues[1]
+      49 [-]: MOVE R6 R0   ; var6 = var0
+      50 [-]: MOVE R7 R1   ; var7 = var1
+      51 [-]: CALL R5 3 3  ; var5, var6 = var5(var6, var7)
+      52 [-]: FASTCALL1 64 R5 L8; 
+      53 [-]: MOVE R8 R5   ; var8 = var5
+      54 [-]: GETIMPORT R7 1; var7 = 0x7B998233
+      55 [-]: CALL R7 2 2  ; var7 = var7(var8)
+L 8:  56 [-]: JUMPIF R7 L10; goto L10 if var7
+      57 [-]: GETIMPORT R7 21; var7 = 0xB009BBC6
+      58 [-]: GETIMPORT R8 23; var8 = 0x59462ACB
+      59 [-]: CALL R7 2 2  ; var7 = var7(var8)
+      60 [-]: GETTABLEKS R10 R5 K24; var10 = var5["decoType"]
+      61 [-]: NAMECALL R8 R7 K25; var9 = var7; var8 = var7[0x1CF7E604]
+      62 [-]: CALL R8 3 2  ; var8 = var8(var9, var10)
+      63 [-]: FASTCALL1 64 R8 L9; 
+      64 [-]: MOVE R10 R8  ; var10 = var8
+      65 [-]: GETIMPORT R9 1; var9 = 0x7B998233
+      66 [-]: CALL R9 2 2  ; var9 = var9(var10)
+L 9:  67 [-]: JUMPIF R9 L10; goto L10 if var9
+      68 [-]: GETIMPORT R9 27; var9 = _T["DojoMgr"]
+      69 [-]: MOVE R11 R8  ; var11 = var8
+      70 [-]: MOVE R12 R1  ; var12 = var1
+      71 [-]: LOADB R13 1  ; var13 = true
+      72 [-]: NAMECALL R9 R9 K28; var10 = var9; var9 = var9[0xA539D818]
+      73 [-]: CALL R9 5 1  ; var9(var10, var11, var12, var13)
+      74 [-]: RETURN R0 0  ; 
+L10:  75 [-]: NAMECALL R5 R2 K29; var6 = var2; var5 = var2[0xA1C390FE]
+      76 [-]: CALL R5 2 2  ; var5 = var5(var6)
+      77 [-]: FASTCALL1 64 R5 L11; 
+      78 [-]: MOVE R7 R5   ; var7 = var5
+      79 [-]: GETIMPORT R6 1; var6 = 0x7B998233
+      80 [-]: CALL R6 2 2  ; var6 = var6(var7)
+L11:  81 [-]: JUMPIFNOT R6 L12; goto L12 if not var6
+      82 [-]: RETURN R0 0  ; 
+L12:  83 [-]: GETIMPORT R8 31; var8 = gShipDecoItemType
+      84 [-]: NAMECALL R6 R5 K32; var7 = var5; var6 = var5[0xE9CBFFA8]
+      85 [-]: CALL R6 3 2  ; var6 = var6(var7, var8)
+      86 [-]: NAMECALL R7 R0 K33; var8 = var0; var7 = var0[0xCDE10C4A]
+      87 [-]: CALL R7 2 2  ; var7 = var7(var8)
+      88 [-]: LOADNIL R8   ; var8 = nil
+      89 [-]: LOADN R11 1  ; var11 = 1
+      90 [-]: LENGTH R9 R6 ; var9 = #var6
+      91 [-]: LOADN R10 1  ; var10 = 1
+      92 [-]: FORNPREP R9 L15; nforprep start - [escape at L15] -- var9 = iterator
+L13:  93 [-]: GETTABLE R12 R6 R11; var12 = var6[var11]
+      94 [-]: NAMECALL R12 R12 K34; var13 = var12; var12 = var12[0x656C098F]
+      95 [-]: CALL R12 2 2 ; var12 = var12(var13)
+      96 [-]: JUMPIFNOTEQ R12 R7 L14; goto L14 if var12 ~= var184944669
+      97 [-]: GETTABLE R8 R6 R11; var8 = var6[var11]
+      98 [-]: JUMP L15     ; goto L15
+L14:  99 [-]: FORNLOOP R9 L13; nforloop end - iterate + goto L13
+L15: 100 [-]: FASTCALL1 64 R8 L16; 
+     101 [-]: MOVE R10 R8  ; var10 = var8
+     102 [-]: GETIMPORT R9 1; var9 = 0x7B998233
+     103 [-]: CALL R9 2 2  ; var9 = var9(var10)
+L16: 104 [-]: JUMPIFNOT R9 L17; goto L17 if not var9
+     105 [-]: RETURN R0 0  ; 
+L17: 106 [-]: GETIMPORT R9 36; var9 = 0x76EA806B
+     107 [-]: LOADN R11 0  ; var11 = 0
+     108 [-]: NAMECALL R9 R9 K37; var10 = var9; var9 = var9[0x3F3AE64C]
+     109 [-]: CALL R9 3 2  ; var9 = var9(var10, var11)
+     110 [-]: FASTCALL1 64 R9 L18; 
+     111 [-]: MOVE R11 R9  ; var11 = var9
+     112 [-]: GETIMPORT R10 1; var10 = 0x7B998233
+     113 [-]: CALL R10 2 2 ; var10 = var10(var11)
+L18: 114 [-]: JUMPIFNOT R10 L19; goto L19 if not var10
+     115 [-]: RETURN R0 0  ; 
+L19: 116 [-]: GETIMPORT R11 39; var11 = 0x25D99D89
+     117 [-]: FASTCALL1 64 R11 L20; 
+     118 [-]: GETIMPORT R10 1; var10 = 0x7B998233
+     119 [-]: CALL R10 2 2 ; var10 = var10(var11)
+L20: 120 [-]: JUMPIFNOT R10 L21; goto L21 if not var10
+     121 [-]: RETURN R0 0  ; 
+L21: 122 [-]: DUPTABLE R10 44; 
+     123 [-]: SETTABLEKS R8 R10 K40; var8["StoreItem"] = var10
+     124 [-]: NAMECALL R11 R8 K45; var12 = var8; var11 = var8[0xF278F8A1]
+     125 [-]: CALL R11 2 2 ; var11 = var11(var12)
+     126 [-]: SETTABLEKS R11 R10 K41; var11["Type"] = var10
+     127 [-]: LOADN R11 0  ; var11 = 0
+     128 [-]: SETTABLEKS R11 R10 K13; var11["Count"] = var10
+     129 [-]: LOADB R11 0  ; var11 = false
+     130 [-]: SETTABLEKS R11 R10 K42; var11["VaultDeco"] = var10
+     131 [-]: LOADNIL R11  ; var11 = nil
+     132 [-]: SETTABLEKS R11 R10 K43; var11["SocketInfo"] = var10
+     133 [-]: JUMPIFNOT R4 L33; goto L33 if not var4
+     134 [-]: NAMECALL R11 R2 K46; var12 = var2; var11 = var2[0x713CE380]
+     135 [-]: CALL R11 2 2 ; var11 = var11(var12)
+     136 [-]: GETIMPORT R12 39; var12 = 0x25D99D89
+     137 [-]: NAMECALL R12 R12 K46; var13 = var12; var12 = var12[0x713CE380]
+     138 [-]: CALL R12 2 2 ; var12 = var12(var13)
+     139 [-]: JUMPIFNOTEQ R11 R12 L31; goto L31 if var11 ~= var2558753
+     140 [-]: GETIMPORT R11 39; var11 = 0x25D99D89
+     141 [-]: NAMECALL R11 R11 K47; var12 = var11; var11 = var11[0xF39284CF]
+     142 [-]: CALL R11 2 2 ; var11 = var11(var12)
+     143 [-]: JUMPXEQKNIL R11 L31; 
+     144 [-]: LOADN R14 1  ; var14 = 1
+     145 [-]: GETTABLEKS R15 R11 K48; var15 = var11["mShipDecorations"]
+     146 [-]: LENGTH R12 R15; var12 = #var15
+     147 [-]: LOADN R13 1  ; var13 = 1
+     148 [-]: FORNPREP R12 L24; nforprep start - [escape at L24] -- var12 = iterator
+L22: 149 [-]: GETTABLEKS R15 R10 K41; var15 = var10["Type"]
+     150 [-]: GETTABLEKS R18 R11 K48; var18 = var11["mShipDecorations"]
+     151 [-]: GETTABLE R17 R18 R14; var17 = var18[var14]
+     152 [-]: GETTABLEKS R16 R17 K49; var16 = var17["mItemType"]
+     153 [-]: JUMPIFNOTEQ R15 R16 L23; goto L23 if var15 ~= var-1307897537
+     154 [-]: GETTABLEKS R17 R11 K48; var17 = var11["mShipDecorations"]
+     155 [-]: GETTABLE R16 R17 R14; var16 = var17[var14]
+     156 [-]: GETTABLEKS R15 R16 K50; var15 = var16["mItemCount"]
+     157 [-]: SETTABLEKS R15 R10 K13; var15["Count"] = var10
+     158 [-]: JUMP L24     ; goto L24
+L23: 159 [-]: FORNLOOP R12 L22; nforloop end - iterate + goto L22
+L24: 160 [-]: GETTABLEKS R12 R10 K13; var12 = var10["Count"]
+     161 [-]: JUMPXEQKN R12 K51 L28 NOT; 
+     162 [-]: LOADN R12 0  ; var12 = 0
+     163 [-]: GETIMPORT R15 53; var15 = gDojoPlaceableDecorationType
+     164 [-]: NAMECALL R13 R0 K19; var14 = var0; var13 = var0[0xF2DEAF69]
+     165 [-]: CALL R13 3 2 ; var13 = var13(var14, var15)
+     166 [-]: JUMPIFNOT R13 L25; goto L25 if not var13
+     167 [-]: NAMECALL R13 R0 K54; var14 = var0; var13 = var0[0x3EF3C120]
+     168 [-]: CALL R13 2 2 ; var13 = var13(var14)
+     169 [-]: MOVE R12 R13 ; var12 = var13
+L25: 170 [-]: LOADN R15 1  ; var15 = 1
+     171 [-]: GETTABLEKS R16 R11 K55; var16 = var11["mFusionTreasures"]
+     172 [-]: LENGTH R13 R16; var13 = #var16
+     173 [-]: LOADN R14 1  ; var14 = 1
+     174 [-]: FORNPREP R13 L28; nforprep start - [escape at L28] -- var13 = iterator
+L26: 175 [-]: GETTABLEKS R16 R10 K41; var16 = var10["Type"]
+     176 [-]: GETTABLEKS R19 R11 K55; var19 = var11["mFusionTreasures"]
+     177 [-]: GETTABLE R18 R19 R15; var18 = var19[var15]
+     178 [-]: GETTABLEKS R17 R18 K49; var17 = var18["mItemType"]
+     179 [-]: JUMPIFNOTEQ R16 R17 L27; goto L27 if var16 ~= var-2113203649
+     180 [-]: GETTABLEKS R18 R11 K55; var18 = var11["mFusionTreasures"]
+     181 [-]: GETTABLE R17 R18 R15; var17 = var18[var15]
+     182 [-]: GETTABLEKS R16 R17 K56; var16 = var17["mSockets"]
+     183 [-]: JUMPIFNOTEQ R12 R16 L27; goto L27 if var12 ~= var-2113203649
+     184 [-]: GETTABLEKS R18 R11 K55; var18 = var11["mFusionTreasures"]
+     185 [-]: GETTABLE R17 R18 R15; var17 = var18[var15]
+     186 [-]: GETTABLEKS R16 R17 K50; var16 = var17["mItemCount"]
+     187 [-]: SETTABLEKS R16 R10 K13; var16["Count"] = var10
+     188 [-]: SETTABLEKS R12 R10 K43; var12["SocketInfo"] = var10
+     189 [-]: JUMP L28     ; goto L28
+L27: 190 [-]: FORNLOOP R13 L26; nforloop end - iterate + goto L26
+L28: 191 [-]: GETTABLEKS R13 R10 K13; var13 = var10["Count"]
+     192 [-]: LOADN R14 0  ; var14 = 0
+     193 [-]: JUMPIFLT R14 R13 L29; goto L29 if var14 < var16780294
+     194 [-]: LOADB R12 0 +1; var12 = false
+L29: 195 [-]: LOADB R12 1  ; var12 = true
+L30: 196 [-]: SETTABLEKS R12 R10 K42; var12["VaultDeco"] = var10
+L31: 197 [-]: GETTABLEKS R11 R10 K13; var11 = var10["Count"]
+     198 [-]: LOADN R12 0  ; var12 = 0
+     199 [-]: JUMPIFNOTLT R12 R11 L32; goto L32 if var12 >= var133948
+     200 [-]: GETUPVAL R11 2; var11 = upvalues[2]
+     201 [-]: MOVE R12 R10 ; var12 = var10
+     202 [-]: LOADB R13 0  ; var13 = false
+     203 [-]: CALL R11 3 1 ; var11(var12, var13)
+     204 [-]: RETURN R0 0  ; 
+L32: 205 [-]: GETUPVAL R12 0; var12 = upvalues[0]
+     206 [-]: GETTABLEKS R11 R12 K15; var11 = var12[0xE0CBA3CA]
+     207 [-]: LOADK R12 K57; var12 = "/Lotus/Language/Dojo/DecoNotInVault"
+     208 [-]: CALL R11 2 1 ; var11(var12)
+     209 [-]: RETURN R0 0  ; 
+L33: 210 [-]: GETIMPORT R11 39; var11 = 0x25D99D89
+     211 [-]: NAMECALL R11 R11 K58; var12 = var11; var11 = var11[0x25A6E75E]
+     212 [-]: CALL R11 2 2 ; var11 = var11(var12)
+     213 [-]: NAMECALL R12 R11 K59; var13 = var11; var12 = var11[0x7C12AC22]
+     214 [-]: CALL R12 2 2 ; var12 = var12(var13)
+     215 [-]: LOADN R15 1  ; var15 = 1
+     216 [-]: LENGTH R13 R12; var13 = #var12
+     217 [-]: LOADN R14 1  ; var14 = 1
+     218 [-]: FORNPREP R13 L36; nforprep start - [escape at L36] -- var13 = iterator
+L34: 219 [-]: GETTABLEKS R16 R10 K41; var16 = var10["Type"]
+     220 [-]: GETTABLE R18 R12 R15; var18 = var12[var15]
+     221 [-]: GETTABLEKS R17 R18 K49; var17 = var18["mItemType"]
+     222 [-]: JUMPIFNOTEQ R16 R17 L35; goto L35 if var16 ~= var252449053
+     223 [-]: GETTABLE R17 R12 R15; var17 = var12[var15]
+     224 [-]: GETTABLEKS R16 R17 K50; var16 = var17["mItemCount"]
+     225 [-]: SETTABLEKS R16 R10 K13; var16["Count"] = var10
+     226 [-]: JUMP L36     ; goto L36
+L35: 227 [-]: FORNLOOP R13 L34; nforloop end - iterate + goto L34
+L36: 228 [-]: GETTABLEKS R13 R10 K13; var13 = var10["Count"]
+     229 [-]: JUMPXEQKN R13 K51 L40 NOT; 
+     230 [-]: NAMECALL R13 R11 K60; var14 = var11; var13 = var11[0x7A5DC828]
+     231 [-]: CALL R13 2 2 ; var13 = var13(var14)
+     232 [-]: MOVE R12 R13 ; var12 = var13
+     233 [-]: LOADN R13 0  ; var13 = 0
+     234 [-]: GETIMPORT R16 53; var16 = gDojoPlaceableDecorationType
+     235 [-]: NAMECALL R14 R0 K19; var15 = var0; var14 = var0[0xF2DEAF69]
+     236 [-]: CALL R14 3 2 ; var14 = var14(var15, var16)
+     237 [-]: JUMPIFNOT R14 L37; goto L37 if not var14
+     238 [-]: NAMECALL R14 R0 K54; var15 = var0; var14 = var0[0x3EF3C120]
+     239 [-]: CALL R14 2 2 ; var14 = var14(var15)
+     240 [-]: MOVE R13 R14 ; var13 = var14
+L37: 241 [-]: LOADN R16 1  ; var16 = 1
+     242 [-]: LENGTH R14 R12; var14 = #var12
+     243 [-]: LOADN R15 1  ; var15 = 1
+     244 [-]: FORNPREP R14 L40; nforprep start - [escape at L40] -- var14 = iterator
+L38: 245 [-]: GETTABLEKS R17 R10 K41; var17 = var10["Type"]
+     246 [-]: GETTABLE R19 R12 R16; var19 = var12[var16]
+     247 [-]: GETTABLEKS R18 R19 K49; var18 = var19["mItemType"]
+     248 [-]: JUMPIFNOTEQ R17 R18 L39; goto L39 if var17 ~= var269226525
+     249 [-]: GETTABLE R18 R12 R16; var18 = var12[var16]
+     250 [-]: GETTABLEKS R17 R18 K56; var17 = var18["mSockets"]
+     251 [-]: JUMPIFNOTEQ R13 R17 L39; goto L39 if var13 ~= var269226525
+     252 [-]: GETTABLE R18 R12 R16; var18 = var12[var16]
+     253 [-]: GETTABLEKS R17 R18 K50; var17 = var18["mItemCount"]
+     254 [-]: SETTABLEKS R17 R10 K13; var17["Count"] = var10
+     255 [-]: SETTABLEKS R13 R10 K43; var13["SocketInfo"] = var10
+     256 [-]: JUMP L40     ; goto L40
+L39: 257 [-]: FORNLOOP R14 L38; nforloop end - iterate + goto L38
+L40: 258 [-]: GETTABLEKS R13 R10 K13; var13 = var10["Count"]
+     259 [-]: LOADN R14 1  ; var14 = 1
+     260 [-]: JUMPIFNOTLT R13 R14 L42; goto L42 if var13 >= var470420799
+     261 [-]: GETTABLEKS R13 R10 K40; var13 = var10["StoreItem"]
+     262 [-]: NAMECALL R13 R13 K61; var14 = var13; var13 = var13[0x31E559D2]
+     263 [-]: CALL R13 2 2 ; var13 = var13(var14)
+     264 [-]: JUMPIF R13 L42; goto L42 if var13
+     265 [-]: GETTABLEKS R13 R10 K40; var13 = var10["StoreItem"]
+     266 [-]: NAMECALL R13 R13 K62; var14 = var13; var13 = var13[0xC055CEF8]
+     267 [-]: CALL R13 2 2 ; var13 = var13(var14)
+     268 [-]: JUMPIFNOT R13 L41; goto L41 if not var13
+     269 [-]: NEWCLOSURE R13 P0; 
+     270 [-]: CAPTURE VAL R10; 
+     271 [-]: CAPTURE UPVAL U2; 
+     272 [-]: CAPTURE UPVAL U0; 
+     273 [-]: GETUPVAL R15 3; var15 = upvalues[3]
+     274 [-]: GETTABLEKS R14 R15 K63; var14 = var15[0xCD71F5A1]
+     275 [-]: GETTABLEKS R15 R10 K40; var15 = var10["StoreItem"]
+     276 [-]: CALL R14 2 2 ; var14 = var14(var15)
+     277 [-]: GETIMPORT R15 64; var15 = _T
+     278 [-]: LOADNIL R16  ; var16 = nil
+     279 [-]: SETTABLEKS R16 R15 K65; var16["marketDetailedViewParms"] = var15
+     280 [-]: GETIMPORT R15 64; var15 = _T
+     281 [-]: DUPTABLE R16 69; 
+     282 [-]: DUPTABLE R17 71; 
+     283 [-]: GETTABLEKS R18 R10 K40; var18 = var10["StoreItem"]
+     284 [-]: SETTABLEKS R18 R17 K40; var18["StoreItem"] = var17
+     285 [-]: SETTABLEKS R14 R17 K70; var14["Sale"] = var17
+     286 [-]: SETTABLEKS R17 R16 K66; var17["ITEM"] = var16
+     287 [-]: SETTABLEKS R13 R16 K67; var13["CALLBACK"] = var16
+     288 [-]: LOADB R17 1  ; var17 = true
+     289 [-]: SETTABLEKS R17 R16 K68; var17["HIDE_ITEM_GRID"] = var16
+     290 [-]: SETTABLEKS R16 R15 K65; var16["marketDetailedViewParms"] = var15
+     291 [-]: GETIMPORT R15 73; var15 = 0x9BA7909F
+     292 [-]: GETIMPORT R18 75; var18 = 0x0032441C
+     293 [-]: GETTABLEKS R17 R18 K76; var17 = var18["UIMovie_DetailedPurchaseDialog"]
+     294 [-]: NAMECALL R15 R15 K77; var16 = var15; var15 = var15[0xCFBA257F]
+     295 [-]: CALL R15 3 1 ; var15(var16, var17)
+     296 [-]: RETURN R0 0  ; 
+L41: 297 [-]: GETUPVAL R14 0; var14 = upvalues[0]
+     298 [-]: GETTABLEKS R13 R14 K15; var13 = var14[0xE0CBA3CA]
+     299 [-]: LOADK R14 K78; var14 = "/Lotus/Language/Dojo/DecoNotInInventory"
+     300 [-]: CALL R13 2 1 ; var13(var14)
+     301 [-]: RETURN R0 0  ; 
+L42: 302 [-]: GETUPVAL R13 2; var13 = upvalues[2]
+     303 [-]: MOVE R14 R10 ; var14 = var10
+     304 [-]: LOADB R15 1  ; var15 = true
+     305 [-]: CALL R13 3 1 ; var13(var14, var15)
+     306 [-]: RETURN R0 0  ; 
 
 
 ; Name:            
-; Defined at line: 1987
+; Defined at line: 2023
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -4915,7 +4980,7 @@ L39: 277 [-]: GETUPVAL R12 1; var12 = upvalues[1]
        4 [-]: MOVE R3 R0   ; var3 = var0
        5 [-]: NAMECALL R1 R1 K5; var2 = var1; var1 = var1[0x6DD7AA66]
        6 [-]: CALL R1 3 2  ; var1 = var1(var2, var3)
-       7 [-]: FASTCALL1 62 R1 L0; 
+       7 [-]: FASTCALL1 64 R1 L0; 
        8 [-]: MOVE R3 R1   ; var3 = var1
        9 [-]: GETIMPORT R2 7; var2 = 0x7B998233
       10 [-]: CALL R2 2 2  ; var2 = var2(var3)
@@ -4925,7 +4990,7 @@ L 1:  13 [-]: RETURN R0 0  ;
 
 
 ; Name:            
-; Defined at line: 2012
+; Defined at line: 2048
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -4962,7 +5027,7 @@ L 2:  26 [-]: GETIMPORT R2 10; var2 = 0x09C87793
       28 [-]: MOVE R4 R1   ; var4 = var1
       29 [-]: CALL R2 3 2  ; var2 = var2(var3, var4)
       30 [-]: LOADN R3 0   ; var3 = 0
-      31 [-]: JUMPIFNOTLT R3 R2 L3; goto L3 if var3 >= var1031
+      31 [-]: JUMPIFNOTLT R3 R2 L3; goto L3 if var3 >= var1084
       32 [-]: GETUPVAL R4 0; var4 = upvalues[0]
       33 [-]: GETTABLEKS R3 R4 K1; var3 = var4[0xE0CBA3CA]
       34 [-]: GETIMPORT R7 12; var7 = 0xAE91E43B
@@ -4985,7 +5050,7 @@ L 3:  49 [-]: FASTCALL1 43 R0 L4;
       51 [-]: GETIMPORT R3 19; var3 = 0x7F5022CF[0x41E2AE25]
       52 [-]: CALL R3 2 2  ; var3 = var3(var4)
 L 4:  53 [-]: LOADN R4 24  ; var4 = 24
-      54 [-]: JUMPIFNOTLT R4 R3 L5; goto L5 if var4 >= var1031
+      54 [-]: JUMPIFNOTLT R4 R3 L5; goto L5 if var4 >= var1084
       55 [-]: GETUPVAL R4 0; var4 = upvalues[0]
       56 [-]: GETTABLEKS R3 R4 K1; var3 = var4[0xE0CBA3CA]
       57 [-]: GETIMPORT R4 12; var4 = 0xAE91E43B
@@ -5003,7 +5068,7 @@ L 5:  65 [-]: GETIMPORT R3 22; var3 = 0x7DB5F856
       69 [-]: MOVE R5 R3   ; var5 = var3
       70 [-]: LOADN R6 1   ; var6 = 1
       71 [-]: CALL R4 3 2  ; var4 = var4(var5, var6)
-      72 [-]: JUMPIFEQ R4 R3 L6; goto L6 if var4 == var1543
+      72 [-]: JUMPIFEQ R4 R3 L6; goto L6 if var4 == var1596
       73 [-]: GETUPVAL R6 0; var6 = upvalues[0]
       74 [-]: GETTABLEKS R5 R6 K1; var5 = var6[0xE0CBA3CA]
       75 [-]: GETIMPORT R6 12; var6 = 0xAE91E43B
@@ -5020,7 +5085,7 @@ L 6:  83 [-]: LOADB R5 1   ; var5 = true
 
 
 ; Name:            
-; Defined at line: 2044
+; Defined at line: 2080
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -5055,30 +5120,31 @@ L 0:  15 [-]: GETUPVAL R4 1; var4 = upvalues[1]
 
 
 ; Name:            
-; Defined at line: 2053
+; Defined at line: 2089
 ; #Upvalues:       1
 ; #Parameters:     3
 ; Is_vararg:       0
 ; Max Stack Size:  5
 
-       0 [-]: FASTCALL1 62 R2 L0; 
+       0 [-]: FASTCALL1 64 R2 L0; 
        1 [-]: MOVE R4 R2   ; var4 = var2
        2 [-]: GETIMPORT R3 1; var3 = 0x7B998233
        3 [-]: CALL R3 2 2  ; var3 = var3(var4)
-L 0:   4 [-]: JUMPIF R3 L1 ; goto L1 if var3
-       5 [-]: GETIMPORT R3 3; var3 = 0x03F57322
+L 0:   4 [-]: JUMPIF R3 L2 ; goto L2 if var3
+       5 [-]: FASTCALL1 62 R2 L1; 
        6 [-]: MOVE R4 R2   ; var4 = var2
-       7 [-]: CALL R3 2 2  ; var3 = var3(var4)
-       8 [-]: LOADN R4 4   ; var4 = 4
-       9 [-]: JUMPIFNOTEQ R3 R4 L1; goto L1 if var3 ~= var775
-      10 [-]: GETUPVAL R3 0; var3 = upvalues[0]
-      11 [-]: MOVE R4 R0   ; var4 = var0
-      12 [-]: CALL R3 2 1  ; var3(var4)
-L 1:  13 [-]: RETURN R0 0  ; 
+       7 [-]: GETIMPORT R3 3; var3 = 0x03F57322
+       8 [-]: CALL R3 2 2  ; var3 = var3(var4)
+L 1:   9 [-]: LOADN R4 4   ; var4 = 4
+      10 [-]: JUMPIFNOTEQ R3 R4 L2; goto L2 if var3 ~= var828
+      11 [-]: GETUPVAL R3 0; var3 = upvalues[0]
+      12 [-]: MOVE R4 R0   ; var4 = var0
+      13 [-]: CALL R3 2 1  ; var3(var4)
+L 2:  14 [-]: RETURN R0 0  ; 
 
 
 ; Name:            
-; Defined at line: 2059
+; Defined at line: 2095
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -5088,7 +5154,7 @@ L 1:  13 [-]: RETURN R0 0  ;
        1 [-]: GETIMPORT R2 1; var2 = 0x89326C93
        2 [-]: NAMECALL R2 R2 K2; var3 = var2; var2 = var2[0x78298275]
        3 [-]: CALL R2 2 2  ; var2 = var2(var3)
-       4 [-]: FASTCALL1 62 R2 L0; 
+       4 [-]: FASTCALL1 64 R2 L0; 
        5 [-]: MOVE R4 R2   ; var4 = var2
        6 [-]: GETIMPORT R3 4; var3 = 0x7B998233
        7 [-]: CALL R3 2 2  ; var3 = var3(var4)
@@ -5101,13 +5167,13 @@ L 2:  13 [-]: RETURN R0 0  ;
 
 
 ; Name:            
-; Defined at line: 2071
+; Defined at line: 2107
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
 ; Max Stack Size:  11
 
-       0 [-]: FASTCALL1 62 R0 L0; 
+       0 [-]: FASTCALL1 64 R0 L0; 
        1 [-]: MOVE R2 R0   ; var2 = var0
        2 [-]: GETIMPORT R1 1; var1 = 0x7B998233
        3 [-]: CALL R1 2 2  ; var1 = var1(var2)
@@ -5123,7 +5189,7 @@ L 1:   6 [-]: GETIMPORT R1 3; var1 = _T
       13 [-]: MOVE R5 R2   ; var5 = var2
       14 [-]: NAMECALL R3 R3 K10; var4 = var3; var3 = var3[0x6DD7AA66]
       15 [-]: CALL R3 3 2  ; var3 = var3(var4, var5)
-      16 [-]: FASTCALL1 62 R3 L2; 
+      16 [-]: FASTCALL1 64 R3 L2; 
       17 [-]: MOVE R5 R3   ; var5 = var3
       18 [-]: GETIMPORT R4 1; var4 = 0x7B998233
       19 [-]: CALL R4 2 2  ; var4 = var4(var5)
@@ -5131,7 +5197,7 @@ L 2:  20 [-]: JUMPIF R4 L3 ; goto L3 if var4
       21 [-]: MOVE R1 R3   ; var1 = var3
       22 [-]: JUMP L4      ; goto L4
 L 3:  23 [-]: LOADNIL R1   ; var1 = nil
-L 4:  24 [-]: FASTCALL1 62 R1 L5; 
+L 4:  24 [-]: FASTCALL1 64 R1 L5; 
       25 [-]: MOVE R3 R1   ; var3 = var1
       26 [-]: GETIMPORT R2 1; var2 = 0x7B998233
       27 [-]: CALL R2 2 2  ; var2 = var2(var3)
@@ -5159,88 +5225,89 @@ L 6:  48 [-]: RETURN R0 0  ;
 
 
 ; Name:            
-; Defined at line: 2083
+; Defined at line: 2119
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
 ; Max Stack Size:  6
 
-       0 [-]: GETIMPORT R1 1; var1 = 0x03F57322
+       0 [-]: FASTCALL1 62 R0 L0; 
        1 [-]: MOVE R2 R0   ; var2 = var0
-       2 [-]: CALL R1 2 2  ; var1 = var1(var2)
-       3 [-]: LOADN R2 4   ; var2 = 4
-       4 [-]: JUMPIFNOTEQ R1 R2 L5; goto L5 if var1 ~= var262734
-       5 [-]: GETIMPORT R2 4; var2 = _T["DojoMgr"]
-       6 [-]: FASTCALL1 62 R2 L0; 
-       7 [-]: GETIMPORT R1 6; var1 = 0x7B998233
-       8 [-]: CALL R1 2 2  ; var1 = var1(var2)
-L 0:   9 [-]: JUMPIF R1 L3 ; goto L3 if var1
-      10 [-]: GETIMPORT R2 8; var2 = _T["DojoMgr"]["mPendingDecoToPlace"]
-      11 [-]: FASTCALL1 62 R2 L1; 
-      12 [-]: GETIMPORT R1 6; var1 = 0x7B998233
-      13 [-]: CALL R1 2 2  ; var1 = var1(var2)
-L 1:  14 [-]: JUMPIF R1 L3 ; goto L3 if var1
-      15 [-]: GETIMPORT R1 8; var1 = _T["DojoMgr"]["mPendingDecoToPlace"]
-      16 [-]: NAMECALL R1 R1 K9; var2 = var1; var1 = var1[0x59A31CF2]
-      17 [-]: CALL R1 2 1  ; var1(var2)
-      18 [-]: GETIMPORT R1 11; var1 = _T["DojoMgr"]["mPendingDecoComponentId"]
-      19 [-]: JUMPXEQKS R1 K12 L2 NOT; 
-      20 [-]: GETIMPORT R1 13; var1 = _T
-      21 [-]: GETIMPORT R2 8; var2 = _T["DojoMgr"]["mPendingDecoToPlace"]
-      22 [-]: SETTABLEKS R2 R1 K14; var2["ShipDecoToPlace"] = var1
-      23 [-]: GETIMPORT R1 4; var1 = _T["DojoMgr"]
-      24 [-]: LOADNIL R2   ; var2 = nil
-      25 [-]: SETTABLEKS R2 R1 K7; var2["mPendingDecoToPlace"] = var1
-      26 [-]: GETUPVAL R1 0; var1 = upvalues[0]
-      27 [-]: CALL R1 1 1  ; var1()
-      28 [-]: RETURN R0 0  ; 
-L 2:  29 [-]: GETUPVAL R1 1; var1 = upvalues[1]
-      30 [-]: CALL R1 1 1  ; var1()
-      31 [-]: RETURN R0 0  ; 
-L 3:  32 [-]: GETIMPORT R2 15; var2 = _T["ShipDecoToPlace"]
-      33 [-]: FASTCALL1 62 R2 L4; 
-      34 [-]: GETIMPORT R1 6; var1 = 0x7B998233
-      35 [-]: CALL R1 2 2  ; var1 = var1(var2)
-L 4:  36 [-]: JUMPIF R1 L5 ; goto L5 if var1
-      37 [-]: GETIMPORT R1 17; var1 = 0x3D106989
-      38 [-]: LOADK R2 K18 ; var2 = "DecoMoveInfo set UngroupDecorationConfirmResult"
-      39 [-]: CALL R1 2 1  ; var1(var2)
-      40 [-]: GETIMPORT R1 15; var1 = _T["ShipDecoToPlace"]
-      41 [-]: GETIMPORT R2 13; var2 = _T
-      42 [-]: DUPTABLE R3 24; 
-      43 [-]: SETTABLEKS R1 R3 K19; var1["Deco"] = var3
-      44 [-]: NAMECALL R4 R1 K25; var5 = var1; var4 = var1[0xD1586535]
-      45 [-]: CALL R4 2 2  ; var4 = var4(var5)
-      46 [-]: SETTABLEKS R4 R3 K20; var4["OrigPos"] = var3
-      47 [-]: NAMECALL R4 R1 K26; var5 = var1; var4 = var1[0xCB3851B8]
-      48 [-]: CALL R4 2 2  ; var4 = var4(var5)
-      49 [-]: SETTABLEKS R4 R3 K21; var4["OrigRot"] = var3
-      50 [-]: NAMECALL R4 R1 K27; var5 = var1; var4 = var1[0x65D389CB]
-      51 [-]: CALL R4 2 2  ; var4 = var4(var5)
-      52 [-]: SETTABLEKS R4 R3 K22; var4["OrigScale"] = var3
-      53 [-]: NAMECALL R4 R1 K28; var5 = var1; var4 = var1[0x450EF75F]
-      54 [-]: CALL R4 2 2  ; var4 = var4(var5)
-      55 [-]: SETTABLEKS R4 R3 K23; var4["UnattachParent"] = var3
-      56 [-]: SETTABLEKS R3 R2 K29; var3["DecoMoveInfo"] = var2
-      57 [-]: GETUPVAL R2 0; var2 = upvalues[0]
-      58 [-]: CALL R2 1 1  ; var2()
-L 5:  59 [-]: RETURN R0 0  ; 
+       2 [-]: GETIMPORT R1 1; var1 = 0x03F57322
+       3 [-]: CALL R1 2 2  ; var1 = var1(var2)
+L 0:   4 [-]: LOADN R2 4   ; var2 = 4
+       5 [-]: JUMPIFNOTEQ R1 R2 L6; goto L6 if var1 ~= var262689
+       6 [-]: GETIMPORT R2 4; var2 = _T["DojoMgr"]
+       7 [-]: FASTCALL1 64 R2 L1; 
+       8 [-]: GETIMPORT R1 6; var1 = 0x7B998233
+       9 [-]: CALL R1 2 2  ; var1 = var1(var2)
+L 1:  10 [-]: JUMPIF R1 L4 ; goto L4 if var1
+      11 [-]: GETIMPORT R2 8; var2 = _T["DojoMgr"]["mPendingDecoToPlace"]
+      12 [-]: FASTCALL1 64 R2 L2; 
+      13 [-]: GETIMPORT R1 6; var1 = 0x7B998233
+      14 [-]: CALL R1 2 2  ; var1 = var1(var2)
+L 2:  15 [-]: JUMPIF R1 L4 ; goto L4 if var1
+      16 [-]: GETIMPORT R1 8; var1 = _T["DojoMgr"]["mPendingDecoToPlace"]
+      17 [-]: NAMECALL R1 R1 K9; var2 = var1; var1 = var1[0x59A31CF2]
+      18 [-]: CALL R1 2 1  ; var1(var2)
+      19 [-]: GETIMPORT R1 11; var1 = _T["DojoMgr"]["mPendingDecoComponentId"]
+      20 [-]: JUMPXEQKS R1 K12 L3 NOT; 
+      21 [-]: GETIMPORT R1 13; var1 = _T
+      22 [-]: GETIMPORT R2 8; var2 = _T["DojoMgr"]["mPendingDecoToPlace"]
+      23 [-]: SETTABLEKS R2 R1 K14; var2["ShipDecoToPlace"] = var1
+      24 [-]: GETIMPORT R1 4; var1 = _T["DojoMgr"]
+      25 [-]: LOADNIL R2   ; var2 = nil
+      26 [-]: SETTABLEKS R2 R1 K7; var2["mPendingDecoToPlace"] = var1
+      27 [-]: GETUPVAL R1 0; var1 = upvalues[0]
+      28 [-]: CALL R1 1 1  ; var1()
+      29 [-]: RETURN R0 0  ; 
+L 3:  30 [-]: GETUPVAL R1 1; var1 = upvalues[1]
+      31 [-]: CALL R1 1 1  ; var1()
+      32 [-]: RETURN R0 0  ; 
+L 4:  33 [-]: GETIMPORT R2 15; var2 = _T["ShipDecoToPlace"]
+      34 [-]: FASTCALL1 64 R2 L5; 
+      35 [-]: GETIMPORT R1 6; var1 = 0x7B998233
+      36 [-]: CALL R1 2 2  ; var1 = var1(var2)
+L 5:  37 [-]: JUMPIF R1 L6 ; goto L6 if var1
+      38 [-]: GETIMPORT R1 17; var1 = 0x3D106989
+      39 [-]: LOADK R2 K18 ; var2 = "DecoMoveInfo set UngroupDecorationConfirmResult"
+      40 [-]: CALL R1 2 1  ; var1(var2)
+      41 [-]: GETIMPORT R1 15; var1 = _T["ShipDecoToPlace"]
+      42 [-]: GETIMPORT R2 13; var2 = _T
+      43 [-]: DUPTABLE R3 24; 
+      44 [-]: SETTABLEKS R1 R3 K19; var1["Deco"] = var3
+      45 [-]: NAMECALL R4 R1 K25; var5 = var1; var4 = var1[0xD1586535]
+      46 [-]: CALL R4 2 2  ; var4 = var4(var5)
+      47 [-]: SETTABLEKS R4 R3 K20; var4["OrigPos"] = var3
+      48 [-]: NAMECALL R4 R1 K26; var5 = var1; var4 = var1[0xCB3851B8]
+      49 [-]: CALL R4 2 2  ; var4 = var4(var5)
+      50 [-]: SETTABLEKS R4 R3 K21; var4["OrigRot"] = var3
+      51 [-]: NAMECALL R4 R1 K27; var5 = var1; var4 = var1[0x65D389CB]
+      52 [-]: CALL R4 2 2  ; var4 = var4(var5)
+      53 [-]: SETTABLEKS R4 R3 K22; var4["OrigScale"] = var3
+      54 [-]: NAMECALL R4 R1 K28; var5 = var1; var4 = var1[0x450EF75F]
+      55 [-]: CALL R4 2 2  ; var4 = var4(var5)
+      56 [-]: SETTABLEKS R4 R3 K23; var4["UnattachParent"] = var3
+      57 [-]: SETTABLEKS R3 R2 K29; var3["DecoMoveInfo"] = var2
+      58 [-]: GETUPVAL R2 0; var2 = upvalues[0]
+      59 [-]: CALL R2 1 1  ; var2()
+L 6:  60 [-]: RETURN R0 0  ; 
 
 
 ; Name:            
-; Defined at line: 2104
+; Defined at line: 2140
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
 ; Max Stack Size:  5
 
-       0 [-]: FASTCALL1 62 R0 L0; 
+       0 [-]: FASTCALL1 64 R0 L0; 
        1 [-]: MOVE R3 R0   ; var3 = var0
        2 [-]: GETIMPORT R2 1; var2 = 0x7B998233
        3 [-]: CALL R2 2 2  ; var2 = var2(var3)
 L 0:   4 [-]: JUMPIF R2 L4 ; goto L4 if var2
        5 [-]: GETIMPORT R3 4; var3 = _T["DojoMgr"]
-       6 [-]: FASTCALL1 62 R3 L1; 
+       6 [-]: FASTCALL1 64 R3 L1; 
        7 [-]: GETIMPORT R2 1; var2 = 0x7B998233
        8 [-]: CALL R2 2 2  ; var2 = var2(var3)
 L 1:   9 [-]: JUMPIF R2 L2 ; goto L2 if var2
@@ -5260,20 +5327,20 @@ L 4:  22 [-]: RETURN R0 0  ;
 
 
 ; Name:            
-; Defined at line: 2116
+; Defined at line: 2152
 ; #Upvalues:       2
 ; #Parameters:     8
 ; Is_vararg:       0
 ; Max Stack Size:  25
 
-       0 [-]: FASTCALL1 62 R0 L0; 
+       0 [-]: FASTCALL1 64 R0 L0; 
        1 [-]: MOVE R9 R0   ; var9 = var0
        2 [-]: GETIMPORT R8 1; var8 = 0x7B998233
        3 [-]: CALL R8 2 2  ; var8 = var8(var9)
 L 0:   4 [-]: JUMPIFNOT R8 L1; goto L1 if not var8
        5 [-]: RETURN R0 0  ; 
 L 1:   6 [-]: GETIMPORT R9 4; var9 = _T["ShipDecoToRemove"]
-       7 [-]: FASTCALL1 62 R9 L2; 
+       7 [-]: FASTCALL1 64 R9 L2; 
        8 [-]: GETIMPORT R8 1; var8 = 0x7B998233
        9 [-]: CALL R8 2 2  ; var8 = var8(var9)
 L 2:  10 [-]: JUMPIF R8 L3 ; goto L3 if var8
@@ -5288,10 +5355,10 @@ L 3:  15 [-]: GETIMPORT R8 6; var8 = 0x3D106989
       19 [-]: CALL R8 2 2  ; var8 = var8(var9)
       20 [-]: JUMPIFNOT R8 L5; goto L5 if not var8
       21 [-]: NAMECALL R9 R0 K10; var10 = var0; var9 = var0[0x2B54251B]
-      22 [-]: CALL R9 2 2  ; var9 = var9(var10)
-      23 [-]: FASTCALL1 62 R9 L4; 
+      22 [-]: CALL R9 2 0  ; var9, ... = var9(var10)
+      23 [-]: FASTCALL 64 L4; 
       24 [-]: GETIMPORT R8 1; var8 = 0x7B998233
-      25 [-]: CALL R8 2 2  ; var8 = var8(var9)
+      25 [-]: CALL R8 0 2  ; var8 = var8(var9, ...)
 L 4:  26 [-]: JUMPIF R8 L5 ; goto L5 if var8
       27 [-]: GETIMPORT R8 11; var8 = _T
       28 [-]: DUPTABLE R9 16; 
@@ -5356,7 +5423,7 @@ L 7:  64 [-]: LOADK R9 K28 ; var9 = ""
       87 [-]: CALL R16 2 3 ; var16, var17 = var16(var17)
       88 [-]: MOVE R11 R16 ; var11 = var16
       89 [-]: MOVE R9 R17  ; var9 = var17
-      90 [-]: FASTCALL1 62 R11 L8; 
+      90 [-]: FASTCALL1 64 R11 L8; 
       91 [-]: MOVE R17 R11 ; var17 = var11
       92 [-]: GETIMPORT R16 1; var16 = 0x7B998233
       93 [-]: CALL R16 2 2 ; var16 = var16(var17)
@@ -5364,7 +5431,7 @@ L 8:  94 [-]: JUMPIFNOT R16 L9; goto L9 if not var16
       95 [-]: RETURN R0 0  ; 
 L 9:  96 [-]: GETIMPORT R16 45; var16 = _T["DojoMgr"]["mIdToZoneMap"]
       97 [-]: GETTABLE R10 R16 R9; var10 = var16[var9]
-      98 [-]: FASTCALL1 62 R15 L10; 
+      98 [-]: FASTCALL1 64 R15 L10; 
       99 [-]: MOVE R17 R15 ; var17 = var15
      100 [-]: GETIMPORT R16 1; var16 = 0x7B998233
      101 [-]: CALL R16 2 2 ; var16 = var16(var17)
@@ -5415,12 +5482,12 @@ L14: 141 [-]: GETIMPORT R14 52; var14 = _T["DecoMoveInfo"]
      146 [-]: GETTABLEKS R16 R13 K48; var16 = var13["maxValue"]
      147 [-]: GETTABLEKS R17 R13 K47; var17 = var13["minValue"]
      148 [-]: SUB R15 R16 R17; var15 = var16 - var17
-     149 [-]: LOADK R16 K55; var16 = 0.01
-     150 [-]: JUMPIFLT R16 R15 L15; goto L15 if var16 < var16780827
+     149 [-]: LOADK R16 K55; var16 = 0.0099999997764825821
+     150 [-]: JUMPIFLT R16 R15 L15; goto L15 if var16 < var16780806
      151 [-]: LOADB R14 0 +1; var14 = false
 L15: 152 [-]: LOADB R14 1  ; var14 = true
 L16: 153 [-]: LOADN R15 4  ; var15 = 4
-     154 [-]: JUMPIFEQ R1 R15 L17; goto L17 if var1 == var453775173
+     154 [-]: JUMPIFEQ R1 R15 L17; goto L17 if var1 == var453775180
      155 [-]: NAMECALL R15 R12 K56; var16 = var12; var15 = var12[0x59E42E1B]
      156 [-]: CALL R15 2 2 ; var15 = var15(var16)
      157 [-]: NAMECALL R15 R15 K57; var16 = var15; var15 = var15[0xC348FCEB]
@@ -5446,7 +5513,7 @@ L17: 165 [-]: GETUPVAL R15 1; var15 = upvalues[1]
 
 
 ; Name:            
-; Defined at line: 2182
+; Defined at line: 2218
 ; #Upvalues:       3
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -5455,33 +5522,33 @@ L17: 165 [-]: GETUPVAL R15 1; var15 = upvalues[1]
        0 [-]: GETIMPORT R2 1; var2 = 0x89326C93
        1 [-]: NAMECALL R2 R2 K2; var3 = var2; var2 = var2[0x78298275]
        2 [-]: CALL R2 2 2  ; var2 = var2(var3)
-       3 [-]: FASTCALL1 62 R2 L0; 
+       3 [-]: FASTCALL1 64 R2 L0; 
        4 [-]: MOVE R4 R2   ; var4 = var2
        5 [-]: GETIMPORT R3 4; var3 = 0x7B998233
        6 [-]: CALL R3 2 2  ; var3 = var3(var4)
-L 0:   7 [-]: JUMPIF R3 L21; goto L21 if var3
+L 0:   7 [-]: JUMPIF R3 L27; goto L27 if var3
        8 [-]: NAMECALL R3 R2 K5; var4 = var2; var3 = var2[0x59E42E1B]
        9 [-]: CALL R3 2 2  ; var3 = var3(var4)
       10 [-]: NAMECALL R3 R3 K6; var4 = var3; var3 = var3[0xC348FCEB]
       11 [-]: CALL R3 2 2  ; var3 = var3(var4)
-      12 [-]: FASTCALL1 62 R3 L1; 
+      12 [-]: FASTCALL1 64 R3 L1; 
       13 [-]: MOVE R5 R3   ; var5 = var3
       14 [-]: GETIMPORT R4 4; var4 = 0x7B998233
       15 [-]: CALL R4 2 2  ; var4 = var4(var5)
-L 1:  16 [-]: JUMPIF R4 L21; goto L21 if var4
+L 1:  16 [-]: JUMPIF R4 L27; goto L27 if var4
       17 [-]: GETIMPORT R6 8; var6 = gDecoModeActionType
       18 [-]: NAMECALL R4 R3 K9; var5 = var3; var4 = var3[0xF2DEAF69]
       19 [-]: CALL R4 3 2  ; var4 = var4(var5, var6)
-      20 [-]: JUMPIFNOT R4 L21; goto L21 if not var4
+      20 [-]: JUMPIFNOT R4 L27; goto L27 if not var4
       21 [-]: NAMECALL R4 R3 K10; var5 = var3; var4 = var3[0x76848AC7]
       22 [-]: CALL R4 2 2  ; var4 = var4(var5)
       23 [-]: JUMPIF R4 L2 ; goto L2 if var4
       24 [-]: NAMECALL R4 R3 K11; var5 = var3; var4 = var3[0x766A072B]
       25 [-]: CALL R4 2 2  ; var4 = var4(var5)
-      26 [-]: JUMPIFNOT R4 L21; goto L21 if not var4
+      26 [-]: JUMPIFNOT R4 L27; goto L27 if not var4
 L 2:  27 [-]: GETUPVAL R5 0; var5 = upvalues[0]
       28 [-]: GETTABLEKS R4 R5 K12; var4 = var5[0x06D055F9]
-      29 [-]: FASTCALL1 62 R0 L3; 
+      29 [-]: FASTCALL1 64 R0 L3; 
       30 [-]: MOVE R6 R0   ; var6 = var0
       31 [-]: GETIMPORT R5 4; var5 = 0x7B998233
       32 [-]: CALL R5 2 2  ; var5 = var5(var6)
@@ -5499,7 +5566,7 @@ L 3:  33 [-]: LOADK R6 K13 ; var6 = "/Lotus/Language/Labels/DecorationHeaderFree
       44 [-]: CALL R9 1 2  ; var9 = var9()
       45 [-]: JUMPIFNOT R9 L4; goto L4 if not var9
       46 [-]: LOADK R8 K21 ; var8 = "Console"
-L 4:  47 [-]: FASTCALL1 62 R0 L5; 
+L 4:  47 [-]: FASTCALL1 64 R0 L5; 
       48 [-]: MOVE R10 R0  ; var10 = var0
       49 [-]: GETIMPORT R9 4; var9 = 0x7B998233
       50 [-]: CALL R9 2 2  ; var9 = var9(var10)
@@ -5509,7 +5576,7 @@ L 5:  51 [-]: JUMPIFNOT R9 L9; goto L9 if not var9
       54 [-]: LOADNIL R11  ; var11 = nil
       55 [-]: CALL R9 3 2  ; var9 = var9(var10, var11)
       56 [-]: GETIMPORT R11 25; var11 = _T["PrevPlacedDecoInfo"]
-      57 [-]: FASTCALL1 62 R11 L6; 
+      57 [-]: FASTCALL1 64 R11 L6; 
       58 [-]: GETIMPORT R10 4; var10 = 0x7B998233
       59 [-]: CALL R10 2 2 ; var10 = var10(var11)
 L 6:  60 [-]: JUMPIF R10 L7; goto L7 if var10
@@ -5555,267 +5622,292 @@ L 8:  96 [-]: MOVE R10 R7  ; var10 = var7
      100 [-]: LOADB R14 1  ; var14 = true
      101 [-]: CALL R12 3 2 ; var12 = var12(var13, var14)
      102 [-]: CONCAT R7 R10 R12; var7 = var10 .. var12
-     103 [-]: JUMP L20     ; goto L20
+     103 [-]: JUMP L26     ; goto L26
 L 9: 104 [-]: GETIMPORT R9 16; var9 = 0x603636AD
-     105 [-]: GETIMPORT R10 33; var10 = 0x64FB1586
-     106 [-]: NAMECALL R11 R0 K34; var12 = var0; var11 = var0[0xAF8359C4]
-     107 [-]: CALL R11 2 0 ; var11, ... = var11(var12)
-     108 [-]: CALL R10 0 2 ; var10 = var10(var11, ...)
-     109 [-]: NEWTABLE R11 0 0; var11 = {}
-     110 [-]: CALL R9 3 2  ; var9 = var9(var10, var11)
-     111 [-]: LENGTH R10 R9; var10 = #var9
-     112 [-]: LOADN R11 0  ; var11 = 0
-     113 [-]: JUMPIFNOTLT R11 R10 L10; goto L10 if var11 >= var330262
-     114 [-]: MOVE R10 R5  ; var10 = var5
-     115 [-]: LOADK R11 K35; var11 = ":{br}"
-     116 [-]: MOVE R12 R9  ; var12 = var9
-     117 [-]: CONCAT R5 R10 R12; var5 = var10 .. var12
-L10: 118 [-]: GETIMPORT R13 16; var13 = 0x603636AD
-     119 [-]: LOADK R14 K22; var14 = "/Lotus/Language/Labels/DecorationModePlacement"
-     120 [-]: LOADNIL R15  ; var15 = nil
-     121 [-]: CALL R13 3 2 ; var13 = var13(var14, var15)
-     122 [-]: MOVE R10 R13 ; var10 = var13
-     123 [-]: LOADK R11 K27; var11 = "\r\n"
-     124 [-]: GETIMPORT R12 16; var12 = 0x603636AD
-     125 [-]: LOADK R13 K29; var13 = "/Lotus/Language/Labels/DecorationModeExit"
-     126 [-]: LOADNIL R14  ; var14 = nil
-     127 [-]: CALL R12 3 2 ; var12 = var12(var13, var14)
-     128 [-]: CONCAT R6 R10 R12; var6 = var10 .. var12
-     129 [-]: MOVE R7 R6   ; var7 = var6
-     130 [-]: GETIMPORT R10 16; var10 = 0x603636AD
-     131 [-]: LOADK R11 K36; var11 = "/Lotus/Language/UiElements/ShipDecoFocused"
-     132 [-]: LOADNIL R12  ; var12 = nil
-     133 [-]: CALL R10 3 2 ; var10 = var10(var11, var12)
-     134 [-]: MOVE R11 R10 ; var11 = var10
-     135 [-]: GETIMPORT R14 38; var14 = 0xEAA9B878
-     136 [-]: NAMECALL R12 R0 K9; var13 = var0; var12 = var0[0xF2DEAF69]
-     137 [-]: CALL R12 3 2 ; var12 = var12(var13, var14)
-     138 [-]: JUMPIF R12 L11; goto L11 if var12
-     139 [-]: GETIMPORT R14 40; var14 = 0xAEFFD5D2
-     140 [-]: NAMECALL R12 R0 K9; var13 = var0; var12 = var0[0xF2DEAF69]
-     141 [-]: CALL R12 3 2 ; var12 = var12(var13, var14)
-     142 [-]: JUMPIF R12 L11; goto L11 if var12
-     143 [-]: GETIMPORT R14 42; var14 = 0xB5C20330
-     144 [-]: NAMECALL R12 R0 K9; var13 = var0; var12 = var0[0xF2DEAF69]
-     145 [-]: CALL R12 3 2 ; var12 = var12(var13, var14)
-     146 [-]: JUMPIF R12 L11; goto L11 if var12
-     147 [-]: GETIMPORT R14 44; var14 = 0x33201EBB
-     148 [-]: NAMECALL R12 R0 K9; var13 = var0; var12 = var0[0xF2DEAF69]
-     149 [-]: CALL R12 3 2 ; var12 = var12(var13, var14)
-L11: 150 [-]: NAMECALL R13 R0 K45; var14 = var0; var13 = var0[0x4D1EAF2D]
-     151 [-]: CALL R13 2 2 ; var13 = var13(var14)
-     152 [-]: JUMPIFNOT R13 L12; goto L12 if not var13
-     153 [-]: LOADB R12 1  ; var12 = true
-L12: 154 [-]: LOADK R14 K46; var14 = "/Lotus/Language/Dojo/DecoEditContents"
-     155 [-]: MOVE R15 R8  ; var15 = var8
-     156 [-]: CONCAT R13 R14 R15; var13 = var14 .. var15
-     157 [-]: GETIMPORT R14 48; var14 = 0xBE190284
-     158 [-]: NAMECALL R14 R14 K49; var15 = var14; var14 = var14[0x99F38C13]
-     159 [-]: CALL R14 2 2 ; var14 = var14(var15)
-     160 [-]: JUMPIFNOT R14 L15; goto L15 if not var14
-     161 [-]: GETUPVAL R14 2; var14 = upvalues[2]
-     162 [-]: MOVE R15 R0  ; var15 = var0
-     163 [-]: MOVE R16 R1  ; var16 = var1
-     164 [-]: CALL R14 3 3 ; var14, var15 = var14(var15, var16)
-     165 [-]: FASTCALL1 62 R14 L13; 
-     166 [-]: MOVE R17 R14 ; var17 = var14
-     167 [-]: GETIMPORT R16 4; var16 = 0x7B998233
-     168 [-]: CALL R16 2 2 ; var16 = var16(var17)
-L13: 169 [-]: JUMPIF R16 L15; goto L15 if var16
-     170 [-]: NAMECALL R16 R14 K50; var17 = var14; var16 = var14[0x3AE915BA]
-     171 [-]: CALL R16 2 2 ; var16 = var16(var17)
-     172 [-]: JUMPIF R16 L14; goto L14 if var16
-     173 [-]: NAMECALL R16 R14 K51; var17 = var14; var16 = var14[0x04DE00E9]
-     174 [-]: CALL R16 2 2 ; var16 = var16(var17)
-     175 [-]: JUMPIFNOT R16 L15; goto L15 if not var16
-L14: 176 [-]: LOADB R12 1  ; var12 = true
-     177 [-]: LOADK R16 K52; var16 = "/Lotus/Language/Dojo/"
-     178 [-]: GETUPVAL R20 0; var20 = upvalues[0]
-     179 [-]: GETTABLEKS R19 R20 K12; var19 = var20[0x06D055F9]
-     180 [-]: NAMECALL R20 R14 K50; var21 = var14; var20 = var14[0x3AE915BA]
-     181 [-]: CALL R20 2 2 ; var20 = var20(var21)
-     182 [-]: LOADK R21 K53; var21 = "DecoEditContribute"
-     183 [-]: LOADK R22 K54; var22 = "DecoEditRush"
-     184 [-]: CALL R19 4 2 ; var19 = var19(var20, var21, var22)
-     185 [-]: MOVE R17 R19 ; var17 = var19
-     186 [-]: MOVE R18 R8  ; var18 = var8
-     187 [-]: CONCAT R13 R16 R18; var13 = var16 .. var18
-L15: 188 [-]: JUMPIFNOT R12 L16; goto L16 if not var12
-     189 [-]: MOVE R14 R10 ; var14 = var10
-     190 [-]: LOADK R15 K27; var15 = "\r\n"
-     191 [-]: GETIMPORT R16 16; var16 = 0x603636AD
-     192 [-]: MOVE R17 R13 ; var17 = var13
-     193 [-]: LOADB R18 1  ; var18 = true
-     194 [-]: CALL R16 3 2 ; var16 = var16(var17, var18)
-     195 [-]: CONCAT R10 R14 R16; var10 = var14 .. var16
-     196 [-]: MOVE R14 R11 ; var14 = var11
-     197 [-]: LOADK R15 K27; var15 = "\r\n"
-     198 [-]: GETIMPORT R16 16; var16 = 0x603636AD
-     199 [-]: MOVE R17 R13 ; var17 = var13
-     200 [-]: LOADB R18 1  ; var18 = true
-     201 [-]: CALL R16 3 2 ; var16 = var16(var17, var18)
-     202 [-]: CONCAT R11 R14 R16; var11 = var14 .. var16
-L16: 203 [-]: LOADK R13 K55; var13 = "/Lotus/Language/Dojo/DecoTweakPlacement"
-     204 [-]: MOVE R14 R10 ; var14 = var10
-     205 [-]: LOADK R15 K27; var15 = "\r\n"
-     206 [-]: GETIMPORT R16 16; var16 = 0x603636AD
-     207 [-]: MOVE R17 R13 ; var17 = var13
-     208 [-]: LOADB R18 1  ; var18 = true
-     209 [-]: CALL R16 3 2 ; var16 = var16(var17, var18)
-     210 [-]: CONCAT R11 R14 R16; var11 = var14 .. var16
-     211 [-]: LOADK R13 K56; var13 = "/Lotus/Language/Dojo/DecoPlaceAnotherFocused"
-     212 [-]: MOVE R14 R10 ; var14 = var10
-     213 [-]: LOADK R15 K27; var15 = "\r\n"
-     214 [-]: GETIMPORT R16 16; var16 = 0x603636AD
-     215 [-]: MOVE R17 R13 ; var17 = var13
-     216 [-]: LOADB R18 1  ; var18 = true
-     217 [-]: CALL R16 3 2 ; var16 = var16(var17, var18)
-     218 [-]: CONCAT R10 R14 R16; var10 = var14 .. var16
-     219 [-]: MOVE R14 R11 ; var14 = var11
-     220 [-]: LOADK R15 K27; var15 = "\r\n"
-     221 [-]: GETIMPORT R16 16; var16 = 0x603636AD
-     222 [-]: MOVE R17 R13 ; var17 = var13
-     223 [-]: LOADB R18 1  ; var18 = true
-     224 [-]: CALL R16 3 2 ; var16 = var16(var17, var18)
-     225 [-]: CONCAT R11 R14 R16; var11 = var14 .. var16
-     226 [-]: GETIMPORT R14 58; var14 = 0x9BA7909F
-     227 [-]: LOADK R16 K59; var16 = "LotusProfileTypes.DecoGroupingEnabled"
-     228 [-]: NAMECALL R14 R14 K60; var15 = var14; var14 = var14[0xBF9494FC]
-     229 [-]: CALL R14 3 2 ; var14 = var14(var15, var16)
-     230 [-]: JUMPIFNOT R14 L19; goto L19 if not var14
-     231 [-]: NAMECALL R14 R0 K61; var15 = var0; var14 = var0[0x029CC37A]
-     232 [-]: CALL R14 2 2 ; var14 = var14(var15)
-     233 [-]: JUMPIFNOT R14 L17; goto L17 if not var14
-     234 [-]: LOADK R13 K62; var13 = "/Lotus/Language/Dojo/DecoDetach"
-     235 [-]: MOVE R14 R10 ; var14 = var10
-     236 [-]: LOADK R15 K27; var15 = "\r\n"
-     237 [-]: GETIMPORT R16 16; var16 = 0x603636AD
-     238 [-]: MOVE R17 R13 ; var17 = var13
-     239 [-]: LOADB R18 1  ; var18 = true
-     240 [-]: CALL R16 3 2 ; var16 = var16(var17, var18)
-     241 [-]: CONCAT R10 R14 R16; var10 = var14 .. var16
-     242 [-]: MOVE R14 R11 ; var14 = var11
-     243 [-]: LOADK R15 K27; var15 = "\r\n"
-     244 [-]: GETIMPORT R16 16; var16 = 0x603636AD
-     245 [-]: MOVE R17 R13 ; var17 = var13
-     246 [-]: LOADB R18 1  ; var18 = true
-     247 [-]: CALL R16 3 2 ; var16 = var16(var17, var18)
-     248 [-]: CONCAT R11 R14 R16; var11 = var14 .. var16
-     249 [-]: JUMP L18     ; goto L18
-L17: 250 [-]: LOADK R13 K63; var13 = "/Lotus/Language/Dojo/DecoAttach"
-     251 [-]: MOVE R14 R10 ; var14 = var10
-     252 [-]: LOADK R15 K27; var15 = "\r\n"
-     253 [-]: GETIMPORT R16 16; var16 = 0x603636AD
-     254 [-]: MOVE R17 R13 ; var17 = var13
-     255 [-]: LOADB R18 1  ; var18 = true
-     256 [-]: CALL R16 3 2 ; var16 = var16(var17, var18)
-     257 [-]: CONCAT R10 R14 R16; var10 = var14 .. var16
-     258 [-]: MOVE R14 R11 ; var14 = var11
-     259 [-]: LOADK R15 K27; var15 = "\r\n"
-     260 [-]: GETIMPORT R16 16; var16 = 0x603636AD
-     261 [-]: MOVE R17 R13 ; var17 = var13
-     262 [-]: LOADB R18 1  ; var18 = true
-     263 [-]: CALL R16 3 2 ; var16 = var16(var17, var18)
-     264 [-]: CONCAT R11 R14 R16; var11 = var14 .. var16
-L18: 265 [-]: NAMECALL R14 R0 K64; var15 = var0; var14 = var0[0x2C10DA67]
-     266 [-]: CALL R14 2 2 ; var14 = var14(var15)
-     267 [-]: JUMPIFNOT R14 L19; goto L19 if not var14
-     268 [-]: LOADK R13 K65; var13 = "/Lotus/Language/Dojo/SaveDecoTemplate"
-     269 [-]: MOVE R14 R10 ; var14 = var10
-     270 [-]: LOADK R15 K27; var15 = "\r\n"
-     271 [-]: GETIMPORT R16 16; var16 = 0x603636AD
-     272 [-]: MOVE R17 R13 ; var17 = var13
-     273 [-]: LOADB R18 1  ; var18 = true
-     274 [-]: CALL R16 3 2 ; var16 = var16(var17, var18)
-     275 [-]: CONCAT R10 R14 R16; var10 = var14 .. var16
-     276 [-]: MOVE R14 R11 ; var14 = var11
-     277 [-]: LOADK R15 K27; var15 = "\r\n"
-     278 [-]: GETIMPORT R16 16; var16 = 0x603636AD
-     279 [-]: MOVE R17 R13 ; var17 = var13
-     280 [-]: LOADB R18 1  ; var18 = true
-     281 [-]: CALL R16 3 2 ; var16 = var16(var17, var18)
-     282 [-]: CONCAT R11 R14 R16; var11 = var14 .. var16
-L19: 283 [-]: MOVE R14 R10 ; var14 = var10
-     284 [-]: LOADK R15 K27; var15 = "\r\n"
-     285 [-]: MOVE R16 R6  ; var16 = var6
-     286 [-]: CONCAT R6 R14 R16; var6 = var14 .. var16
-     287 [-]: MOVE R14 R11 ; var14 = var11
-     288 [-]: LOADK R15 K27; var15 = "\r\n"
-     289 [-]: MOVE R16 R7  ; var16 = var7
-     290 [-]: CONCAT R7 R14 R16; var7 = var14 .. var16
-L20: 291 [-]: MOVE R10 R5  ; var10 = var5
-     292 [-]: LOADK R11 K27; var11 = "\r\n"
-     293 [-]: MOVE R12 R6  ; var12 = var6
-     294 [-]: LOADK R13 K66; var13 = "{A}"
-     295 [-]: MOVE R14 R5  ; var14 = var5
-     296 [-]: LOADK R15 K27; var15 = "\r\n"
-     297 [-]: MOVE R16 R7  ; var16 = var7
-     298 [-]: CONCAT R9 R10 R16; var9 = var10 .. var16
-     299 [-]: GETIMPORT R10 1; var10 = 0x89326C93
-     300 [-]: NAMECALL R10 R10 K2; var11 = var10; var10 = var10[0x78298275]
-     301 [-]: CALL R10 2 2 ; var10 = var10(var11)
-     302 [-]: NAMECALL R11 R10 K67; var12 = var10; var11 = var10[0x5E651723]
-     303 [-]: CALL R11 2 2 ; var11 = var11(var12)
-     304 [-]: NAMECALL R11 R11 K68; var12 = var11; var11 = var11[0x0803EEE1]
-     305 [-]: CALL R11 2 2 ; var11 = var11(var12)
-     306 [-]: MOVE R13 R9  ; var13 = var9
-     307 [-]: NAMECALL R11 R11 K69; var12 = var11; var11 = var11[0x89212ED6]
-     308 [-]: CALL R11 3 1 ; var11(var12, var13)
-L21: 309 [-]: GETIMPORT R4 71; var4 = _T["DojoMgr"]
-     310 [-]: FASTCALL1 62 R4 L22; 
-     311 [-]: GETIMPORT R3 4; var3 = 0x7B998233
-     312 [-]: CALL R3 2 2  ; var3 = var3(var4)
-L22: 313 [-]: JUMPIF R3 L29; goto L29 if var3
-     314 [-]: GETIMPORT R4 73; var4 = _T["DojoMgr"]["mCurrentlyFocusedDeco"]
-     315 [-]: GETTABLEKS R3 R4 K74; var3 = var4["Deco"]
-     316 [-]: JUMPIFNOTEQ R0 R3 L23; goto L23 if var0 ~= var4785230
-     317 [-]: GETIMPORT R4 73; var4 = _T["DojoMgr"]["mCurrentlyFocusedDeco"]
-     318 [-]: GETTABLEKS R3 R4 K75; var3 = var4["Id"]
-     319 [-]: JUMPIFEQ R3 R1 L29; goto L29 if var3 == var1114885
-L23: 320 [-]: LOADK R3 K17 ; var3 = ""
-     321 [-]: LOADK R4 K17 ; var4 = ""
-     322 [-]: GETIMPORT R7 73; var7 = _T["DojoMgr"]["mCurrentlyFocusedDeco"]
-     323 [-]: GETTABLEKS R6 R7 K74; var6 = var7["Deco"]
-     324 [-]: FASTCALL1 62 R6 L24; 
-     325 [-]: GETIMPORT R5 4; var5 = 0x7B998233
-     326 [-]: CALL R5 2 2  ; var5 = var5(var6)
-L24: 327 [-]: JUMPIF R5 L25; goto L25 if var5
-     328 [-]: GETIMPORT R6 73; var6 = _T["DojoMgr"]["mCurrentlyFocusedDeco"]
-     329 [-]: GETTABLEKS R5 R6 K74; var5 = var6["Deco"]
-     330 [-]: NAMECALL R5 R5 K76; var6 = var5; var5 = var5[0xF537CFC7]
-     331 [-]: CALL R5 2 2  ; var5 = var5(var6)
-     332 [-]: MOVE R3 R5   ; var3 = var5
-L25: 333 [-]: FASTCALL1 62 R0 L26; 
-     334 [-]: MOVE R6 R0   ; var6 = var0
-     335 [-]: GETIMPORT R5 4; var5 = 0x7B998233
-     336 [-]: CALL R5 2 2  ; var5 = var5(var6)
-L26: 337 [-]: JUMPIF R5 L27; goto L27 if var5
-     338 [-]: NAMECALL R5 R0 K76; var6 = var0; var5 = var0[0xF537CFC7]
-     339 [-]: CALL R5 2 2  ; var5 = var5(var6)
-     340 [-]: MOVE R4 R5   ; var4 = var5
-L27: 341 [-]: GETIMPORT R5 73; var5 = _T["DojoMgr"]["mCurrentlyFocusedDeco"]
-     342 [-]: SETTABLEKS R0 R5 K74; var0["Deco"] = var5
-     343 [-]: GETIMPORT R5 73; var5 = _T["DojoMgr"]["mCurrentlyFocusedDeco"]
-     344 [-]: SETTABLEKS R1 R5 K75; var1["Id"] = var5
-     345 [-]: GETIMPORT R6 78; var6 = _T["DojoMgr"]["mDecoFocusChangedCallback"]
-     346 [-]: GETTABLE R5 R6 R3; var5 = var6[var3]
-     347 [-]: JUMPIFNOT R5 L28; goto L28 if not var5
-     348 [-]: GETIMPORT R6 78; var6 = _T["DojoMgr"]["mDecoFocusChangedCallback"]
-     349 [-]: GETTABLE R5 R6 R3; var5 = var6[var3]
-     350 [-]: LOADB R6 0   ; var6 = false
-     351 [-]: CALL R5 2 1  ; var5(var6)
-L28: 352 [-]: GETIMPORT R6 78; var6 = _T["DojoMgr"]["mDecoFocusChangedCallback"]
-     353 [-]: GETTABLE R5 R6 R4; var5 = var6[var4]
-     354 [-]: JUMPIFNOT R5 L29; goto L29 if not var5
-     355 [-]: GETIMPORT R6 78; var6 = _T["DojoMgr"]["mDecoFocusChangedCallback"]
-     356 [-]: GETTABLE R5 R6 R4; var5 = var6[var4]
-     357 [-]: LOADB R6 1   ; var6 = true
-     358 [-]: CALL R5 2 1  ; var5(var6)
-L29: 359 [-]: RETURN R0 0  ; 
+     105 [-]: NAMECALL R11 R0 K32; var12 = var0; var11 = var0[0xAF8359C4]
+     106 [-]: CALL R11 2 0 ; var11, ... = var11(var12)
+     107 [-]: FASTCALL 63 L10; 
+     108 [-]: GETIMPORT R10 34; var10 = 0x64FB1586
+     109 [-]: CALL R10 0 2 ; var10 = var10(var11, ...)
+L10: 110 [-]: NEWTABLE R11 0 0; var11 = {}
+     111 [-]: CALL R9 3 2  ; var9 = var9(var10, var11)
+     112 [-]: LENGTH R10 R9; var10 = #var9
+     113 [-]: LOADN R11 0  ; var11 = 0
+     114 [-]: JUMPIFNOTLT R11 R10 L11; goto L11 if var11 >= var330286
+     115 [-]: MOVE R10 R5  ; var10 = var5
+     116 [-]: LOADK R11 K35; var11 = ":{br}"
+     117 [-]: MOVE R12 R9  ; var12 = var9
+     118 [-]: CONCAT R5 R10 R12; var5 = var10 .. var12
+L11: 119 [-]: GETIMPORT R13 16; var13 = 0x603636AD
+     120 [-]: LOADK R14 K22; var14 = "/Lotus/Language/Labels/DecorationModePlacement"
+     121 [-]: LOADNIL R15  ; var15 = nil
+     122 [-]: CALL R13 3 2 ; var13 = var13(var14, var15)
+     123 [-]: MOVE R10 R13 ; var10 = var13
+     124 [-]: LOADK R11 K27; var11 = "\r\n"
+     125 [-]: GETIMPORT R12 16; var12 = 0x603636AD
+     126 [-]: LOADK R13 K29; var13 = "/Lotus/Language/Labels/DecorationModeExit"
+     127 [-]: LOADNIL R14  ; var14 = nil
+     128 [-]: CALL R12 3 2 ; var12 = var12(var13, var14)
+     129 [-]: CONCAT R6 R10 R12; var6 = var10 .. var12
+     130 [-]: MOVE R7 R6   ; var7 = var6
+     131 [-]: GETIMPORT R10 16; var10 = 0x603636AD
+     132 [-]: LOADK R11 K36; var11 = "/Lotus/Language/UiElements/ShipDecoFocused"
+     133 [-]: LOADNIL R12  ; var12 = nil
+     134 [-]: CALL R10 3 2 ; var10 = var10(var11, var12)
+     135 [-]: MOVE R11 R10 ; var11 = var10
+     136 [-]: GETIMPORT R14 38; var14 = 0xEAA9B878
+     137 [-]: NAMECALL R12 R0 K9; var13 = var0; var12 = var0[0xF2DEAF69]
+     138 [-]: CALL R12 3 2 ; var12 = var12(var13, var14)
+     139 [-]: JUMPIF R12 L12; goto L12 if var12
+     140 [-]: GETIMPORT R14 40; var14 = 0xAEFFD5D2
+     141 [-]: NAMECALL R12 R0 K9; var13 = var0; var12 = var0[0xF2DEAF69]
+     142 [-]: CALL R12 3 2 ; var12 = var12(var13, var14)
+     143 [-]: JUMPIF R12 L12; goto L12 if var12
+     144 [-]: GETIMPORT R14 42; var14 = 0xB5C20330
+     145 [-]: NAMECALL R12 R0 K9; var13 = var0; var12 = var0[0xF2DEAF69]
+     146 [-]: CALL R12 3 2 ; var12 = var12(var13, var14)
+     147 [-]: JUMPIF R12 L12; goto L12 if var12
+     148 [-]: GETIMPORT R14 44; var14 = 0x33201EBB
+     149 [-]: NAMECALL R12 R0 K9; var13 = var0; var12 = var0[0xF2DEAF69]
+     150 [-]: CALL R12 3 2 ; var12 = var12(var13, var14)
+L12: 151 [-]: NAMECALL R13 R0 K45; var14 = var0; var13 = var0[0x4D1EAF2D]
+     152 [-]: CALL R13 2 2 ; var13 = var13(var14)
+     153 [-]: JUMPIFNOT R13 L13; goto L13 if not var13
+     154 [-]: LOADB R12 1  ; var12 = true
+L13: 155 [-]: LOADK R14 K46; var14 = "/Lotus/Language/Dojo/DecoEditContents"
+     156 [-]: MOVE R15 R8  ; var15 = var8
+     157 [-]: CONCAT R13 R14 R15; var13 = var14 .. var15
+     158 [-]: GETIMPORT R14 48; var14 = 0xBE190284
+     159 [-]: NAMECALL R14 R14 K49; var15 = var14; var14 = var14[0x99F38C13]
+     160 [-]: CALL R14 2 2 ; var14 = var14(var15)
+     161 [-]: JUMPIFNOT R14 L16; goto L16 if not var14
+     162 [-]: GETUPVAL R14 2; var14 = upvalues[2]
+     163 [-]: MOVE R15 R0  ; var15 = var0
+     164 [-]: MOVE R16 R1  ; var16 = var1
+     165 [-]: CALL R14 3 3 ; var14, var15 = var14(var15, var16)
+     166 [-]: FASTCALL1 64 R14 L14; 
+     167 [-]: MOVE R17 R14 ; var17 = var14
+     168 [-]: GETIMPORT R16 4; var16 = 0x7B998233
+     169 [-]: CALL R16 2 2 ; var16 = var16(var17)
+L14: 170 [-]: JUMPIF R16 L16; goto L16 if var16
+     171 [-]: NAMECALL R16 R14 K50; var17 = var14; var16 = var14[0x3AE915BA]
+     172 [-]: CALL R16 2 2 ; var16 = var16(var17)
+     173 [-]: JUMPIF R16 L15; goto L15 if var16
+     174 [-]: NAMECALL R16 R14 K51; var17 = var14; var16 = var14[0x04DE00E9]
+     175 [-]: CALL R16 2 2 ; var16 = var16(var17)
+     176 [-]: JUMPIFNOT R16 L16; goto L16 if not var16
+L15: 177 [-]: LOADB R12 1  ; var12 = true
+     178 [-]: LOADK R16 K52; var16 = "/Lotus/Language/Dojo/"
+     179 [-]: GETUPVAL R20 0; var20 = upvalues[0]
+     180 [-]: GETTABLEKS R19 R20 K12; var19 = var20[0x06D055F9]
+     181 [-]: NAMECALL R20 R14 K50; var21 = var14; var20 = var14[0x3AE915BA]
+     182 [-]: CALL R20 2 2 ; var20 = var20(var21)
+     183 [-]: LOADK R21 K53; var21 = "DecoEditContribute"
+     184 [-]: LOADK R22 K54; var22 = "DecoEditRush"
+     185 [-]: CALL R19 4 2 ; var19 = var19(var20, var21, var22)
+     186 [-]: MOVE R17 R19 ; var17 = var19
+     187 [-]: MOVE R18 R8  ; var18 = var8
+     188 [-]: CONCAT R13 R16 R18; var13 = var16 .. var18
+L16: 189 [-]: JUMPIFNOT R12 L17; goto L17 if not var12
+     190 [-]: MOVE R14 R10 ; var14 = var10
+     191 [-]: LOADK R15 K27; var15 = "\r\n"
+     192 [-]: GETIMPORT R16 16; var16 = 0x603636AD
+     193 [-]: MOVE R17 R13 ; var17 = var13
+     194 [-]: LOADB R18 1  ; var18 = true
+     195 [-]: CALL R16 3 2 ; var16 = var16(var17, var18)
+     196 [-]: CONCAT R10 R14 R16; var10 = var14 .. var16
+     197 [-]: MOVE R14 R11 ; var14 = var11
+     198 [-]: LOADK R15 K27; var15 = "\r\n"
+     199 [-]: GETIMPORT R16 16; var16 = 0x603636AD
+     200 [-]: MOVE R17 R13 ; var17 = var13
+     201 [-]: LOADB R18 1  ; var18 = true
+     202 [-]: CALL R16 3 2 ; var16 = var16(var17, var18)
+     203 [-]: CONCAT R11 R14 R16; var11 = var14 .. var16
+L17: 204 [-]: LOADK R13 K55; var13 = "/Lotus/Language/Dojo/DecoTweakPlacement"
+     205 [-]: MOVE R14 R10 ; var14 = var10
+     206 [-]: LOADK R15 K27; var15 = "\r\n"
+     207 [-]: GETIMPORT R16 16; var16 = 0x603636AD
+     208 [-]: MOVE R17 R13 ; var17 = var13
+     209 [-]: LOADB R18 1  ; var18 = true
+     210 [-]: CALL R16 3 2 ; var16 = var16(var17, var18)
+     211 [-]: CONCAT R11 R14 R16; var11 = var14 .. var16
+     212 [-]: LOADB R14 1  ; var14 = true
+     213 [-]: NAMECALL R15 R0 K56; var16 = var0; var15 = var0[0xED4E0128]
+     214 [-]: CALL R15 2 2 ; var15 = var15(var16)
+     215 [-]: GETIMPORT R17 58; var17 = _T["DojoLimitedDecos"]
+     216 [-]: FASTCALL1 64 R17 L18; 
+     217 [-]: GETIMPORT R16 4; var16 = 0x7B998233
+     218 [-]: CALL R16 2 2 ; var16 = var16(var17)
+L18: 219 [-]: JUMPIF R16 L21; goto L21 if var16
+     220 [-]: GETIMPORT R18 58; var18 = _T["DojoLimitedDecos"]
+     221 [-]: GETTABLE R17 R18 R15; var17 = var18[var15]
+     222 [-]: FASTCALL1 64 R17 L19; 
+     223 [-]: GETIMPORT R16 4; var16 = 0x7B998233
+     224 [-]: CALL R16 2 2 ; var16 = var16(var17)
+L19: 225 [-]: JUMPIF R16 L21; goto L21 if var16
+     226 [-]: GETIMPORT R18 58; var18 = _T["DojoLimitedDecos"]
+     227 [-]: GETTABLE R17 R18 R15; var17 = var18[var15]
+     228 [-]: GETTABLEKS R16 R17 K59; var16 = var17["Count"]
+     229 [-]: GETIMPORT R19 58; var19 = _T["DojoLimitedDecos"]
+     230 [-]: GETTABLE R18 R19 R15; var18 = var19[var15]
+     231 [-]: GETTABLEKS R17 R18 K60; var17 = var18["MaxCount"]
+     232 [-]: JUMPIFLT R16 R17 L20; goto L20 if var16 < var16780806
+     233 [-]: LOADB R14 0 +1; var14 = false
+L20: 234 [-]: LOADB R14 1  ; var14 = true
+L21: 235 [-]: JUMPIFNOT R14 L22; goto L22 if not var14
+     236 [-]: LOADK R13 K61; var13 = "/Lotus/Language/Dojo/DecoPlaceAnotherFocused"
+     237 [-]: MOVE R16 R10 ; var16 = var10
+     238 [-]: LOADK R17 K27; var17 = "\r\n"
+     239 [-]: GETIMPORT R18 16; var18 = 0x603636AD
+     240 [-]: MOVE R19 R13 ; var19 = var13
+     241 [-]: LOADB R20 1  ; var20 = true
+     242 [-]: CALL R18 3 2 ; var18 = var18(var19, var20)
+     243 [-]: CONCAT R10 R16 R18; var10 = var16 .. var18
+     244 [-]: MOVE R16 R11 ; var16 = var11
+     245 [-]: LOADK R17 K27; var17 = "\r\n"
+     246 [-]: GETIMPORT R18 16; var18 = 0x603636AD
+     247 [-]: MOVE R19 R13 ; var19 = var13
+     248 [-]: LOADB R20 1  ; var20 = true
+     249 [-]: CALL R18 3 2 ; var18 = var18(var19, var20)
+     250 [-]: CONCAT R11 R16 R18; var11 = var16 .. var18
+L22: 251 [-]: GETIMPORT R16 63; var16 = 0x9BA7909F
+     252 [-]: LOADK R18 K64; var18 = "LotusProfileTypes.DecoGroupingEnabled"
+     253 [-]: NAMECALL R16 R16 K65; var17 = var16; var16 = var16[0xBF9494FC]
+     254 [-]: CALL R16 3 2 ; var16 = var16(var17, var18)
+     255 [-]: JUMPIFNOT R16 L25; goto L25 if not var16
+     256 [-]: NAMECALL R16 R0 K66; var17 = var0; var16 = var0[0x029CC37A]
+     257 [-]: CALL R16 2 2 ; var16 = var16(var17)
+     258 [-]: JUMPIFNOT R16 L23; goto L23 if not var16
+     259 [-]: LOADK R13 K67; var13 = "/Lotus/Language/Dojo/DecoDetach"
+     260 [-]: MOVE R16 R10 ; var16 = var10
+     261 [-]: LOADK R17 K27; var17 = "\r\n"
+     262 [-]: GETIMPORT R18 16; var18 = 0x603636AD
+     263 [-]: MOVE R19 R13 ; var19 = var13
+     264 [-]: LOADB R20 1  ; var20 = true
+     265 [-]: CALL R18 3 2 ; var18 = var18(var19, var20)
+     266 [-]: CONCAT R10 R16 R18; var10 = var16 .. var18
+     267 [-]: MOVE R16 R11 ; var16 = var11
+     268 [-]: LOADK R17 K27; var17 = "\r\n"
+     269 [-]: GETIMPORT R18 16; var18 = 0x603636AD
+     270 [-]: MOVE R19 R13 ; var19 = var13
+     271 [-]: LOADB R20 1  ; var20 = true
+     272 [-]: CALL R18 3 2 ; var18 = var18(var19, var20)
+     273 [-]: CONCAT R11 R16 R18; var11 = var16 .. var18
+     274 [-]: JUMP L24     ; goto L24
+L23: 275 [-]: LOADK R13 K68; var13 = "/Lotus/Language/Dojo/DecoAttach"
+     276 [-]: MOVE R16 R10 ; var16 = var10
+     277 [-]: LOADK R17 K27; var17 = "\r\n"
+     278 [-]: GETIMPORT R18 16; var18 = 0x603636AD
+     279 [-]: MOVE R19 R13 ; var19 = var13
+     280 [-]: LOADB R20 1  ; var20 = true
+     281 [-]: CALL R18 3 2 ; var18 = var18(var19, var20)
+     282 [-]: CONCAT R10 R16 R18; var10 = var16 .. var18
+     283 [-]: MOVE R16 R11 ; var16 = var11
+     284 [-]: LOADK R17 K27; var17 = "\r\n"
+     285 [-]: GETIMPORT R18 16; var18 = 0x603636AD
+     286 [-]: MOVE R19 R13 ; var19 = var13
+     287 [-]: LOADB R20 1  ; var20 = true
+     288 [-]: CALL R18 3 2 ; var18 = var18(var19, var20)
+     289 [-]: CONCAT R11 R16 R18; var11 = var16 .. var18
+L24: 290 [-]: NAMECALL R16 R0 K69; var17 = var0; var16 = var0[0x2C10DA67]
+     291 [-]: CALL R16 2 2 ; var16 = var16(var17)
+     292 [-]: JUMPIFNOT R16 L25; goto L25 if not var16
+     293 [-]: LOADK R13 K70; var13 = "/Lotus/Language/Dojo/SaveDecoTemplate"
+     294 [-]: MOVE R16 R10 ; var16 = var10
+     295 [-]: LOADK R17 K27; var17 = "\r\n"
+     296 [-]: GETIMPORT R18 16; var18 = 0x603636AD
+     297 [-]: MOVE R19 R13 ; var19 = var13
+     298 [-]: LOADB R20 1  ; var20 = true
+     299 [-]: CALL R18 3 2 ; var18 = var18(var19, var20)
+     300 [-]: CONCAT R10 R16 R18; var10 = var16 .. var18
+     301 [-]: MOVE R16 R11 ; var16 = var11
+     302 [-]: LOADK R17 K27; var17 = "\r\n"
+     303 [-]: GETIMPORT R18 16; var18 = 0x603636AD
+     304 [-]: MOVE R19 R13 ; var19 = var13
+     305 [-]: LOADB R20 1  ; var20 = true
+     306 [-]: CALL R18 3 2 ; var18 = var18(var19, var20)
+     307 [-]: CONCAT R11 R16 R18; var11 = var16 .. var18
+L25: 308 [-]: MOVE R16 R10 ; var16 = var10
+     309 [-]: LOADK R17 K27; var17 = "\r\n"
+     310 [-]: MOVE R18 R6  ; var18 = var6
+     311 [-]: CONCAT R6 R16 R18; var6 = var16 .. var18
+     312 [-]: MOVE R16 R11 ; var16 = var11
+     313 [-]: LOADK R17 K27; var17 = "\r\n"
+     314 [-]: MOVE R18 R7  ; var18 = var7
+     315 [-]: CONCAT R7 R16 R18; var7 = var16 .. var18
+L26: 316 [-]: MOVE R10 R5  ; var10 = var5
+     317 [-]: LOADK R11 K27; var11 = "\r\n"
+     318 [-]: MOVE R12 R6  ; var12 = var6
+     319 [-]: LOADK R13 K71; var13 = "{A}"
+     320 [-]: MOVE R14 R5  ; var14 = var5
+     321 [-]: LOADK R15 K27; var15 = "\r\n"
+     322 [-]: MOVE R16 R7  ; var16 = var7
+     323 [-]: CONCAT R9 R10 R16; var9 = var10 .. var16
+     324 [-]: GETIMPORT R10 1; var10 = 0x89326C93
+     325 [-]: NAMECALL R10 R10 K2; var11 = var10; var10 = var10[0x78298275]
+     326 [-]: CALL R10 2 2 ; var10 = var10(var11)
+     327 [-]: NAMECALL R11 R10 K72; var12 = var10; var11 = var10[0x5E651723]
+     328 [-]: CALL R11 2 2 ; var11 = var11(var12)
+     329 [-]: NAMECALL R11 R11 K73; var12 = var11; var11 = var11[0x0803EEE1]
+     330 [-]: CALL R11 2 2 ; var11 = var11(var12)
+     331 [-]: MOVE R13 R9  ; var13 = var9
+     332 [-]: NAMECALL R11 R11 K74; var12 = var11; var11 = var11[0x89212ED6]
+     333 [-]: CALL R11 3 1 ; var11(var12, var13)
+L27: 334 [-]: GETIMPORT R4 76; var4 = _T["DojoMgr"]
+     335 [-]: FASTCALL1 64 R4 L28; 
+     336 [-]: GETIMPORT R3 4; var3 = 0x7B998233
+     337 [-]: CALL R3 2 2  ; var3 = var3(var4)
+L28: 338 [-]: JUMPIF R3 L35; goto L35 if var3
+     339 [-]: GETIMPORT R4 78; var4 = _T["DojoMgr"]["mCurrentlyFocusedDeco"]
+     340 [-]: GETTABLEKS R3 R4 K79; var3 = var4["Deco"]
+     341 [-]: JUMPIFNOTEQ R0 R3 L29; goto L29 if var0 ~= var5112865
+     342 [-]: GETIMPORT R4 78; var4 = _T["DojoMgr"]["mCurrentlyFocusedDeco"]
+     343 [-]: GETTABLEKS R3 R4 K80; var3 = var4["Id"]
+     344 [-]: JUMPIFEQ R3 R1 L35; goto L35 if var3 == var1114951
+L29: 345 [-]: LOADK R3 K17 ; var3 = ""
+     346 [-]: LOADK R4 K17 ; var4 = ""
+     347 [-]: GETIMPORT R7 78; var7 = _T["DojoMgr"]["mCurrentlyFocusedDeco"]
+     348 [-]: GETTABLEKS R6 R7 K79; var6 = var7["Deco"]
+     349 [-]: FASTCALL1 64 R6 L30; 
+     350 [-]: GETIMPORT R5 4; var5 = 0x7B998233
+     351 [-]: CALL R5 2 2  ; var5 = var5(var6)
+L30: 352 [-]: JUMPIF R5 L31; goto L31 if var5
+     353 [-]: GETIMPORT R6 78; var6 = _T["DojoMgr"]["mCurrentlyFocusedDeco"]
+     354 [-]: GETTABLEKS R5 R6 K79; var5 = var6["Deco"]
+     355 [-]: NAMECALL R5 R5 K81; var6 = var5; var5 = var5[0xF537CFC7]
+     356 [-]: CALL R5 2 2  ; var5 = var5(var6)
+     357 [-]: MOVE R3 R5   ; var3 = var5
+L31: 358 [-]: FASTCALL1 64 R0 L32; 
+     359 [-]: MOVE R6 R0   ; var6 = var0
+     360 [-]: GETIMPORT R5 4; var5 = 0x7B998233
+     361 [-]: CALL R5 2 2  ; var5 = var5(var6)
+L32: 362 [-]: JUMPIF R5 L33; goto L33 if var5
+     363 [-]: NAMECALL R5 R0 K81; var6 = var0; var5 = var0[0xF537CFC7]
+     364 [-]: CALL R5 2 2  ; var5 = var5(var6)
+     365 [-]: MOVE R4 R5   ; var4 = var5
+L33: 366 [-]: GETIMPORT R5 78; var5 = _T["DojoMgr"]["mCurrentlyFocusedDeco"]
+     367 [-]: SETTABLEKS R0 R5 K79; var0["Deco"] = var5
+     368 [-]: GETIMPORT R5 78; var5 = _T["DojoMgr"]["mCurrentlyFocusedDeco"]
+     369 [-]: SETTABLEKS R1 R5 K80; var1["Id"] = var5
+     370 [-]: GETIMPORT R6 83; var6 = _T["DojoMgr"]["mDecoFocusChangedCallback"]
+     371 [-]: GETTABLE R5 R6 R3; var5 = var6[var3]
+     372 [-]: JUMPIFNOT R5 L34; goto L34 if not var5
+     373 [-]: GETIMPORT R6 83; var6 = _T["DojoMgr"]["mDecoFocusChangedCallback"]
+     374 [-]: GETTABLE R5 R6 R3; var5 = var6[var3]
+     375 [-]: LOADB R6 0   ; var6 = false
+     376 [-]: CALL R5 2 1  ; var5(var6)
+L34: 377 [-]: GETIMPORT R6 83; var6 = _T["DojoMgr"]["mDecoFocusChangedCallback"]
+     378 [-]: GETTABLE R5 R6 R4; var5 = var6[var4]
+     379 [-]: JUMPIFNOT R5 L35; goto L35 if not var5
+     380 [-]: GETIMPORT R6 83; var6 = _T["DojoMgr"]["mDecoFocusChangedCallback"]
+     381 [-]: GETTABLE R5 R6 R4; var5 = var6[var4]
+     382 [-]: LOADB R6 1   ; var6 = true
+     383 [-]: CALL R5 2 1  ; var5(var6)
+L35: 384 [-]: RETURN R0 0  ; 
 
 
 ; Name:            
-; Defined at line: 2300
+; Defined at line: 2343
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -5829,7 +5921,7 @@ L29: 359 [-]: RETURN R0 0  ;
 
 
 ; Name:            
-; Defined at line: 2304
+; Defined at line: 2347
 ; #Upvalues:       1
 ; #Parameters:     9
 ; Is_vararg:       0
@@ -5850,20 +5942,20 @@ L29: 359 [-]: RETURN R0 0  ;
 
 
 ; Name:            
-; Defined at line: 2308
+; Defined at line: 2351
 ; #Upvalues:       1
 ; #Parameters:     4
 ; Is_vararg:       0
 ; Max Stack Size:  12
 
-       0 [-]: FASTCALL1 62 R0 L0; 
+       0 [-]: FASTCALL1 64 R0 L0; 
        1 [-]: MOVE R5 R0   ; var5 = var0
        2 [-]: GETIMPORT R4 1; var4 = 0x7B998233
        3 [-]: CALL R4 2 2  ; var4 = var4(var5)
 L 0:   4 [-]: JUMPIFNOT R4 L1; goto L1 if not var4
        5 [-]: RETURN R0 0  ; 
 L 1:   6 [-]: GETIMPORT R5 4; var5 = _T["ShipDecoToRemove"]
-       7 [-]: FASTCALL1 62 R5 L2; 
+       7 [-]: FASTCALL1 64 R5 L2; 
        8 [-]: GETIMPORT R4 1; var4 = 0x7B998233
        9 [-]: CALL R4 2 2  ; var4 = var4(var5)
 L 2:  10 [-]: JUMPIF R4 L3 ; goto L3 if var4
@@ -5901,7 +5993,7 @@ L 3:  15 [-]: GETIMPORT R4 6; var4 = 0x3D106989
       42 [-]: CALL R7 2 3  ; var7, var8 = var7(var8)
       43 [-]: MOVE R5 R7   ; var5 = var7
       44 [-]: MOVE R4 R8   ; var4 = var8
-      45 [-]: FASTCALL1 62 R5 L4; 
+      45 [-]: FASTCALL1 64 R5 L4; 
       46 [-]: MOVE R8 R5   ; var8 = var5
       47 [-]: GETIMPORT R7 1; var7 = 0x7B998233
       48 [-]: CALL R7 2 2  ; var7 = var7(var8)
@@ -5939,13 +6031,13 @@ L 7:  72 [-]: NAMECALL R7 R6 K26; var8 = var6; var7 = var6[0xDE321E6F]
 
 
 ; Name:            
-; Defined at line: 2345
+; Defined at line: 2388
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
 ; Max Stack Size:  15
 
-       0 [-]: FASTCALL1 62 R0 L0; 
+       0 [-]: FASTCALL1 64 R0 L0; 
        1 [-]: MOVE R3 R0   ; var3 = var0
        2 [-]: GETIMPORT R2 1; var2 = 0x7B998233
        3 [-]: CALL R2 2 2  ; var2 = var2(var3)
@@ -5965,7 +6057,7 @@ L 0:   4 [-]: JUMPIF R2 L9 ; goto L9 if var2
       17 [-]: CALL R5 2 0  ; var5, ... = var5(var6)
       18 [-]: NAMECALL R3 R2 K13; var4 = var2; var3 = var2[0x1CF7E604]
       19 [-]: CALL R3 0 2  ; var3 = var3(var4, ...)
-      20 [-]: FASTCALL1 62 R3 L1; 
+      20 [-]: FASTCALL1 64 R3 L1; 
       21 [-]: MOVE R5 R3   ; var5 = var3
       22 [-]: GETIMPORT R4 1; var4 = 0x7B998233
       23 [-]: CALL R4 2 2  ; var4 = var4(var5)
@@ -5976,7 +6068,7 @@ L 1:  24 [-]: JUMPIF R4 L14; goto L14 if var4
       28 [-]: LOADK R5 K19 ; var5 = "/Lotus/Interface/Objects/DojoBillboardTextParentDeco"
       29 [-]: CALL R4 2 2  ; var4 = var4(var5)
       30 [-]: GETIMPORT R6 21; var6 = _T["FxNamePlateAnchor"]
-      31 [-]: FASTCALL1 62 R6 L2; 
+      31 [-]: FASTCALL1 64 R6 L2; 
       32 [-]: GETIMPORT R5 1; var5 = 0x7B998233
       33 [-]: CALL R5 2 2  ; var5 = var5(var6)
 L 2:  34 [-]: JUMPIFNOT R5 L3; goto L3 if not var5
@@ -5999,7 +6091,7 @@ L 3:  46 [-]: GETIMPORT R5 21; var5 = _T["FxNamePlateAnchor"]
       51 [-]: NAMECALL R5 R5 K27; var6 = var5; var5 = var5[0x589EF1C1]
       52 [-]: CALL R5 0 1  ; var5(var6, ...)
 L 4:  53 [-]: GETIMPORT R6 21; var6 = _T["FxNamePlateAnchor"]
-      54 [-]: FASTCALL1 62 R6 L5; 
+      54 [-]: FASTCALL1 64 R6 L5; 
       55 [-]: GETIMPORT R5 1; var5 = 0x7B998233
       56 [-]: CALL R5 2 2  ; var5 = var5(var6)
 L 5:  57 [-]: JUMPIF R5 L14; goto L14 if var5
@@ -6008,7 +6100,7 @@ L 5:  57 [-]: JUMPIF R5 L14; goto L14 if var5
       60 [-]: NAMECALL R5 R5 K28; var6 = var5; var5 = var5[0x768274D6]
       61 [-]: CALL R5 3 1  ; var5(var6, var7)
       62 [-]: GETIMPORT R6 30; var6 = _T["FxNameMovie"]
-      63 [-]: FASTCALL1 62 R6 L6; 
+      63 [-]: FASTCALL1 64 R6 L6; 
       64 [-]: GETIMPORT R5 1; var5 = 0x7B998233
       65 [-]: CALL R5 2 2  ; var5 = var5(var6)
 L 6:  66 [-]: JUMPIFNOT R5 L7; goto L7 if not var5
@@ -6019,7 +6111,7 @@ L 6:  66 [-]: JUMPIFNOT R5 L7; goto L7 if not var5
       71 [-]: CALL R6 3 2  ; var6 = var6(var7, var8)
       72 [-]: SETTABLEKS R6 R5 K29; var6["FxNameMovie"] = var5
 L 7:  73 [-]: GETIMPORT R6 30; var6 = _T["FxNameMovie"]
-      74 [-]: FASTCALL1 62 R6 L8; 
+      74 [-]: FASTCALL1 64 R6 L8; 
       75 [-]: GETIMPORT R5 1; var5 = 0x7B998233
       76 [-]: CALL R5 2 2  ; var5 = var5(var6)
 L 8:  77 [-]: JUMPIF R5 L14; goto L14 if var5
@@ -6042,8 +6134,8 @@ L 8:  77 [-]: JUMPIF R5 L14; goto L14 if var5
       94 [-]: CALL R6 4 1  ; var6(var7, var8, var9)
       95 [-]: GETIMPORT R6 45; var6 = 0xA421AF95
       96 [-]: LOADN R7 0   ; var7 = 0
-      97 [-]: LOADK R8 K46 ; var8 = 0.20000000000000001
-      98 [-]: LOADK R9 K47 ; var9 = -0.14999999999999999
+      97 [-]: LOADK R8 K46 ; var8 = 0.20000000298023224
+      98 [-]: LOADK R9 K47 ; var9 = -0.15000000596046448
       99 [-]: CALL R6 4 2  ; var6 = var6(var7, var8, var9)
      100 [-]: GETIMPORT R7 49; var7 = 0x00046924
      101 [-]: CALL R7 1 2  ; var7 = var7()
@@ -6061,7 +6153,7 @@ L 8:  77 [-]: JUMPIF R5 L14; goto L14 if var5
      113 [-]: CALL R9 6 1  ; var9(var10, var11, var12, var13, var14)
      114 [-]: RETURN R0 0  ; 
 L 9: 115 [-]: GETIMPORT R3 21; var3 = _T["FxNamePlateAnchor"]
-     116 [-]: FASTCALL1 62 R3 L10; 
+     116 [-]: FASTCALL1 64 R3 L10; 
      117 [-]: GETIMPORT R2 1; var2 = 0x7B998233
      118 [-]: CALL R2 2 2  ; var2 = var2(var3)
 L10: 119 [-]: JUMPIF R2 L11; goto L11 if var2
@@ -6075,7 +6167,7 @@ L10: 119 [-]: JUMPIF R2 L11; goto L11 if var2
      127 [-]: LOADNIL R3   ; var3 = nil
      128 [-]: SETTABLEKS R3 R2 K16; var3["FxNamePlateParentDeco"] = var2
 L11: 129 [-]: GETIMPORT R3 30; var3 = _T["FxNameMovie"]
-     130 [-]: FASTCALL1 62 R3 L12; 
+     130 [-]: FASTCALL1 64 R3 L12; 
      131 [-]: GETIMPORT R2 1; var2 = 0x7B998233
      132 [-]: CALL R2 2 2  ; var2 = var2(var3)
 L12: 133 [-]: JUMPIF R2 L14; goto L14 if var2
@@ -6083,7 +6175,7 @@ L12: 133 [-]: JUMPIF R2 L14; goto L14 if var2
      135 [-]: NAMECALL R2 R2 K54; var3 = var2; var2 = var2[0x32302B4A]
      136 [-]: CALL R2 2 1  ; var2(var3)
      137 [-]: GETIMPORT R3 30; var3 = _T["FxNameMovie"]
-     138 [-]: FASTCALL1 62 R3 L13; 
+     138 [-]: FASTCALL1 64 R3 L13; 
      139 [-]: GETIMPORT R2 1; var2 = 0x7B998233
      140 [-]: CALL R2 2 2  ; var2 = var2(var3)
 L13: 141 [-]: JUMPIFNOT R2 L14; goto L14 if not var2
@@ -6094,7 +6186,7 @@ L14: 145 [-]: RETURN R0 0  ;
 
 
 ; Name:            
-; Defined at line: 2393
+; Defined at line: 2436
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -6112,10 +6204,10 @@ L14: 145 [-]: RETURN R0 0  ;
        9 [-]: FORNPREP R1 L3; nforprep start - [escape at L3] -- var1 = iterator
 L 0:  10 [-]: GETTABLE R4 R0 R3; var4 = var0[var3]
       11 [-]: NAMECALL R6 R4 K6; var7 = var4; var6 = var4[0xE79E7EF4]
-      12 [-]: CALL R6 2 2  ; var6 = var6(var7)
-      13 [-]: FASTCALL1 62 R6 L1; 
+      12 [-]: CALL R6 2 0  ; var6, ... = var6(var7)
+      13 [-]: FASTCALL 64 L1; 
       14 [-]: GETIMPORT R5 8; var5 = 0x7B998233
-      15 [-]: CALL R5 2 2  ; var5 = var5(var6)
+      15 [-]: CALL R5 0 2  ; var5 = var5(var6, ...)
 L 1:  16 [-]: JUMPIFNOT R5 L2; goto L2 if not var5
       17 [-]: NAMECALL R5 R4 K9; var6 = var4; var5 = var4[0xF537CFC7]
       18 [-]: CALL R5 2 2  ; var5 = var5(var6)
@@ -6141,7 +6233,7 @@ L 3:  37 [-]: RETURN R0 0  ;
 
 
 ; Name:            
-; Defined at line: 2408
+; Defined at line: 2451
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0

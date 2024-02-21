@@ -32,7 +32,7 @@
        8 [-]: FORNPREP R5 L3; nforprep start - [escape at L3] -- var5 = iterator
 L 0:   9 [-]: GETTABLE R10 R4 R7; var10 = var4[var7]
       10 [-]: GETTABLEKS R9 R10 K2; var9 = var10["avatar"]
-      11 [-]: FASTCALL1 62 R9 L1; 
+      11 [-]: FASTCALL1 64 R9 L1; 
       12 [-]: GETIMPORT R8 4; var8 = 0x7B998233
       13 [-]: CALL R8 2 2  ; var8 = var8(var9)
 L 1:  14 [-]: JUMPIF R8 L2 ; goto L2 if var8
@@ -47,7 +47,7 @@ L 1:  14 [-]: JUMPIF R8 L2 ; goto L2 if var8
       23 [-]: GETTABLE R9 R4 R7; var9 = var4[var7]
       24 [-]: GETTABLEKS R8 R9 K7; var8 = var9["distanceToTarget"]
       25 [-]: GETIMPORT R9 9; var9 = 0x7B17F407
-      26 [-]: JUMPIFNOTLE R8 R9 L2; goto L2 if var8 > var68423
+      26 [-]: JUMPIFNOTLE R8 R9 L2; goto L2 if var8 > var68400
       27 [-]: LOADN R11 1  ; var11 = 1
       28 [-]: GETIMPORT R13 9; var13 = 0x7B17F407
       29 [-]: DIV R12 R8 R13; var12 = var8 / var13
@@ -124,7 +124,7 @@ L 1:  53 [-]: JUMPIFNOT R6 L3; goto L3 if not var6
       55 [-]: CALL R7 1 2  ; var7 = var7()
       56 [-]: SUB R5 R5 R7 ; var5 = var5 - var7
       57 [-]: LOADN R7 0   ; var7 = 0
-      58 [-]: JUMPIFNOTLE R5 R7 L2; goto L2 if var5 > var1563
+      58 [-]: JUMPIFNOTLE R5 R7 L2; goto L2 if var5 > var1542
       59 [-]: LOADB R6 0   ; var6 = false
 L 2:  60 [-]: GETIMPORT R7 27; var7 = 0xCBD666E1
       61 [-]: LOADN R8 0   ; var8 = 0

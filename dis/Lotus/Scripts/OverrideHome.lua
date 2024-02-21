@@ -46,7 +46,7 @@ L 0:   3 [-]: GETIMPORT R1 3; var1 = 0x3D106989
       22 [-]: CALL R3 2 1  ; var3(var4)
       23 [-]: RETURN R0 0  ; 
 L 1:  24 [-]: GETIMPORT R2 20; var2 = 0xC366CF25
-      25 [-]: FASTCALL1 62 R2 L2; 
+      25 [-]: FASTCALL1 64 R2 L2; 
       26 [-]: GETIMPORT R1 22; var1 = 0x7B998233
       27 [-]: CALL R1 2 2  ; var1 = var1(var2)
 L 2:  28 [-]: JUMPIF R1 L4 ; goto L4 if var1
@@ -54,24 +54,24 @@ L 2:  28 [-]: JUMPIF R1 L4 ; goto L4 if var1
       30 [-]: GETTABLEKS R1 R2 K23; var1 = var2[0x8E7C3B5E]
       31 [-]: GETIMPORT R2 15; var2 = 0x25D99D89
       32 [-]: CALL R1 2 3  ; var1, var2 = var1(var2)
-      33 [-]: FASTCALL1 62 R1 L3; 
+      33 [-]: FASTCALL1 64 R1 L3; 
       34 [-]: MOVE R4 R1   ; var4 = var1
       35 [-]: GETIMPORT R3 22; var3 = 0x7B998233
       36 [-]: CALL R3 2 2  ; var3 = var3(var4)
 L 3:  37 [-]: JUMPIF R3 L4 ; goto L4 if var3
       38 [-]: GETIMPORT R3 20; var3 = 0xC366CF25
-      39 [-]: JUMPIFEQ R1 R3 L4; goto L4 if var1 == var197454
+      39 [-]: JUMPIFEQ R1 R3 L4; goto L4 if var1 == var197409
       40 [-]: GETIMPORT R3 3; var3 = 0x3D106989
       41 [-]: LOADK R4 K24 ; var4 = "Target quest is not active! Don't override"
       42 [-]: CALL R3 2 1  ; var3(var4)
       43 [-]: RETURN R0 0  ; 
 L 4:  44 [-]: GETIMPORT R2 26; var2 = 0x6903A8B6
-      45 [-]: FASTCALL1 62 R2 L5; 
+      45 [-]: FASTCALL1 64 R2 L5; 
       46 [-]: GETIMPORT R1 22; var1 = 0x7B998233
       47 [-]: CALL R1 2 2  ; var1 = var1(var2)
 L 5:  48 [-]: JUMPIF R1 L7 ; goto L7 if var1
       49 [-]: GETIMPORT R2 28; var2 = 0x2FA804E9
-      50 [-]: FASTCALL1 62 R2 L6; 
+      50 [-]: FASTCALL1 64 R2 L6; 
       51 [-]: GETIMPORT R1 22; var1 = 0x7B998233
       52 [-]: CALL R1 2 2  ; var1 = var1(var2)
 L 6:  53 [-]: JUMPIFNOT R1 L8; goto L8 if not var1

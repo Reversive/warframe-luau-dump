@@ -29,7 +29,7 @@
        1 [-]: CALL R2 2 2  ; var2 = var2(var3)
        2 [-]: NAMECALL R4 R2 K1; var5 = var2; var4 = var2[0x5E651723]
        3 [-]: CALL R4 2 0  ; var4, ... = var4(var5)
-       4 [-]: FASTCALL 62 L0; 
+       4 [-]: FASTCALL 64 L0; 
        5 [-]: GETIMPORT R3 3; var3 = 0x7B998233
        6 [-]: CALL R3 0 2  ; var3 = var3(var4, ...)
 L 0:   7 [-]: JUMPIF R3 L3 ; goto L3 if var3
@@ -49,7 +49,7 @@ L 2:  20 [-]: GETIMPORT R6 6; var6 = _T["gCaptureFlagKilledHolder"]
       21 [-]: NAMECALL R7 R4 K10; var8 = var4; var7 = var4[0xE223E2B1]
       22 [-]: CALL R7 2 2  ; var7 = var7(var8)
       23 [-]: GETTABLE R5 R6 R7; var5 = var6[var7]
-      24 [-]: JUMPIFNOTEQ R5 R2 L3; goto L3 if var5 ~= var66843
+      24 [-]: JUMPIFNOTEQ R5 R2 L3; goto L3 if var5 ~= var66822
       25 [-]: LOADB R5 1   ; var5 = true
       26 [-]: RETURN R5 1  ; 
 L 3:  27 [-]: LOADB R3 0   ; var3 = false

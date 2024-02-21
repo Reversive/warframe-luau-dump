@@ -24,7 +24,7 @@
        2 [-]: LOADN R7 3   ; var7 = 3
        3 [-]: NAMECALL R5 R5 K1; var6 = var5; var5 = var5[0xE85A2361]
        4 [-]: CALL R5 3 2  ; var5 = var5(var6, var7)
-       5 [-]: FASTCALL1 62 R5 L0; 
+       5 [-]: FASTCALL1 64 R5 L0; 
        6 [-]: MOVE R7 R5   ; var7 = var5
        7 [-]: GETIMPORT R6 3; var6 = 0x7B998233
        8 [-]: CALL R6 2 2  ; var6 = var6(var7)

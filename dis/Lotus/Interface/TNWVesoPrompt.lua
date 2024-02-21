@@ -40,7 +40,7 @@
 ; Max Stack Size:  13
 
        0 [-]: GETIMPORT R1 1; var1 = 0xAE91E43B
-       1 [-]: FASTCALL1 62 R1 L0; 
+       1 [-]: FASTCALL1 64 R1 L0; 
        2 [-]: GETIMPORT R0 3; var0 = 0x7B998233
        3 [-]: CALL R0 2 2  ; var0 = var0(var1)
 L 0:   4 [-]: JUMPIFNOT R0 L1; goto L1 if not var0
@@ -106,7 +106,7 @@ L 1:   6 [-]: LOADB R0 1   ; var0 = true
       64 [-]: CONCAT R1 R2 R6; var1 = var2 .. var6
       65 [-]: GETIMPORT R2 1; var2 = 0xAE91E43B
       66 [-]: LOADK R4 K23 ; var4 = "Panel.Label"
-      67 [-]: LOADN R5 29  ; var5 = 29
+      67 [-]: LOADN R5 31  ; var5 = 31
       68 [-]: MOVE R6 R1   ; var6 = var1
       69 [-]: NAMECALL R2 R2 K24; var3 = var2; var2 = var2[0x5F56EEAB]
       70 [-]: CALL R2 5 1  ; var2(var3, var4, var5, var6)
@@ -172,7 +172,7 @@ L 3: 103 [-]: GETIMPORT R2 1; var2 = 0xAE91E43B
      130 [-]: GETTABLEKS R2 R3 K42; var2 = var3[0xA9882367]
      131 [-]: LOADK R3 K43 ; var3 = "DiegeticCamera"
      132 [-]: CALL R2 2 2  ; var2 = var2(var3)
-     133 [-]: FASTCALL1 62 R2 L4; 
+     133 [-]: FASTCALL1 64 R2 L4; 
      134 [-]: MOVE R4 R2   ; var4 = var2
      135 [-]: GETIMPORT R3 3; var3 = 0x7B998233
      136 [-]: CALL R3 2 2  ; var3 = var3(var4)
@@ -211,7 +211,7 @@ L 5: 142 [-]: RETURN R0 0  ;
        5 [-]: GETUPVAL R0 0; var0 = upvalues[0]
        6 [-]: JUMPIF R0 L1 ; goto L1 if var0
        7 [-]: GETIMPORT R1 1; var1 = 0xAE91E43B
-       8 [-]: FASTCALL1 62 R1 L0; 
+       8 [-]: FASTCALL1 64 R1 L0; 
        9 [-]: GETIMPORT R0 6; var0 = 0x7B998233
       10 [-]: CALL R0 2 2  ; var0 = var0(var1)
 L 0:  11 [-]: JUMPIF R0 L1 ; goto L1 if var0
@@ -229,7 +229,7 @@ L 2:  20 [-]: LOADK R4 K7  ; var4 = "Panel.Bg"
       23 [-]: GETIMPORT R4 9; var4 = 0xDFEBB754
       24 [-]: GETIMPORT R7 12; var7 = 0x55156FF7
       25 [-]: CALL R7 1 2  ; var7 = var7()
-      26 [-]: MULK R6 R7 K10; var6 = var7 * 0.40000000000000002
+      26 [-]: MULK R6 R7 K10; var6 = var7 * 0.40000000596046448
       27 [-]: ADD R5 R6 R2 ; var5 = var6 + var2
       28 [-]: CALL R4 2 2  ; var4 = var4(var5)
       29 [-]: GETIMPORT R5 1; var5 = 0xAE91E43B

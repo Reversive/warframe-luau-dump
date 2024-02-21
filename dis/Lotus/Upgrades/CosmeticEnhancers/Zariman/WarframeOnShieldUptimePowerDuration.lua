@@ -65,7 +65,7 @@ L 1:  15 [-]: GETTABLE R2 R3 R4; var2 = var3[var4]
        2 [-]: CALL R5 1 2  ; var5 = var5()
        3 [-]: GETUPVAL R7 0; var7 = upvalues[0]
        4 [-]: GETTABLEKS R6 R7 K1; var6 = var7["UI_MODE_IN_GAME"]
-       5 [-]: JUMPIFNOTEQ R5 R6 L0; goto L0 if var5 ~= var67335
+       5 [-]: JUMPIFNOTEQ R5 R6 L0; goto L0 if var5 ~= var67388
        6 [-]: GETUPVAL R7 1; var7 = upvalues[1]
        7 [-]: NAMECALL R5 R0 K2; var6 = var0; var5 = var0[0xF2DEAF69]
        8 [-]: CALL R5 3 2  ; var5 = var5(var6, var7)
@@ -105,7 +105,7 @@ L 3:  26 [-]: GETTABLE R6 R7 R8; var6 = var7[var8]
       42 [-]: CALL R10 2 2 ; var10 = var10(var11)
       43 [-]: NAMECALL R11 R0 K19; var12 = var0; var11 = var0[0xDE321E6F]
       44 [-]: CALL R11 2 2 ; var11 = var11(var12)
-L 4:  45 [-]: FASTCALL1 62 R0 L5; 
+L 4:  45 [-]: FASTCALL1 64 R0 L5; 
       46 [-]: MOVE R13 R0  ; var13 = var0
       47 [-]: GETIMPORT R12 21; var12 = 0x7B998233
       48 [-]: CALL R12 2 2 ; var12 = var12(var13)
@@ -113,7 +113,7 @@ L 5:  49 [-]: JUMPIF R12 L10; goto L10 if var12
       50 [-]: NAMECALL R12 R10 K22; var13 = var10; var12 = var10[0xF456C2D7]
       51 [-]: CALL R12 2 2 ; var12 = var12(var13)
       52 [-]: LOADN R13 0  ; var13 = 0
-      53 [-]: JUMPIFNOTLT R13 R12 L8; goto L8 if var13 >= var1576270
+      53 [-]: JUMPIFNOTLT R13 R12 L8; goto L8 if var13 >= var1576225
       54 [-]: GETIMPORT R13 24; var13 = 0x67652851
       55 [-]: CALL R13 1 2 ; var13 = var13()
       56 [-]: ADD R8 R8 R13; var8 = var8 + var13
@@ -122,8 +122,8 @@ L 5:  49 [-]: JUMPIF R12 L10; goto L10 if var12
       59 [-]: GETIMPORT R13 26; var13 = 0x5BCED4C4[0x55F27C30]
       60 [-]: CALL R13 2 2 ; var13 = var13(var14)
 L 6:  61 [-]: LOADN R14 0  ; var14 = 0
-      62 [-]: JUMPIFNOTLT R14 R13 L9; goto L9 if var14 >= var3671820
-      63 [-]: JUMPIFNOTLT R7 R6 L9; goto L9 if var7 >= var1839182
+      62 [-]: JUMPIFNOTLT R14 R13 L9; goto L9 if var14 >= var3671872
+      63 [-]: JUMPIFNOTLT R7 R6 L9; goto L9 if var7 >= var1839137
       64 [-]: GETIMPORT R16 28; var16 = 0x14AB107E
       65 [-]: LOADN R17 3  ; var17 = 3
       66 [-]: MUL R18 R5 R7; var18 = var5 * var7
@@ -151,7 +151,7 @@ L 7:  74 [-]: MOVE R7 R14  ; var7 = var14
       88 [-]: CALL R14 5 1 ; var14(var15, var16, var17, var18)
       89 [-]: JUMP L9      ; goto L9
 L 8:  90 [-]: LOADN R13 0  ; var13 = 0
-      91 [-]: JUMPIFNOTLT R13 R7 L9; goto L9 if var13 >= var3399
+      91 [-]: JUMPIFNOTLT R13 R7 L9; goto L9 if var13 >= var3376
       92 [-]: LOADN R13 0  ; var13 = 0
       93 [-]: SETTABLEKS R13 R9 K32; var13["buffData"] = var9
       94 [-]: MOVE R15 R9  ; var15 = var9

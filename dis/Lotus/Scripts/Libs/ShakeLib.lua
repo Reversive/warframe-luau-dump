@@ -41,7 +41,7 @@
 ; Max Stack Size:  3
 
        0 [-]: GETTABLEKS R2 R0 K0; var2 = var0["shakeArray"]
-       1 [-]: FASTCALL1 62 R2 L0; 
+       1 [-]: FASTCALL1 64 R2 L0; 
        2 [-]: GETIMPORT R1 2; var1 = 0x7B998233
        3 [-]: CALL R1 2 2  ; var1 = var1(var2)
 L 0:   4 [-]: JUMPIFNOT R1 L1; goto L1 if not var1
@@ -89,14 +89,14 @@ L 2:  14 [-]: RETURN R0 0  ;
        5 [-]: CALL R2 2 2  ; var2 = var2(var3)
 L 0:   6 [-]: JUMPXEQKS R2 K3 L1 NOT; 
        7 [-]: LOADN R2 0   ; var2 = 0
-       8 [-]: JUMPIFLE R1 R2 L1; goto L1 if var1 <= var-1023409636
+       8 [-]: JUMPIFLE R1 R2 L1; goto L1 if var1 <= var-1023409601
        9 [-]: GETTABLEKS R2 R0 K4; var2 = var0["MAX_SHAKES"]
-      10 [-]: JUMPIFNOTLT R2 R1 L2; goto L2 if var2 >= var539
+      10 [-]: JUMPIFNOTLT R2 R1 L2; goto L2 if var2 >= var518
 L 1:  11 [-]: LOADB R2 0   ; var2 = false
       12 [-]: RETURN R2 1  ; 
 L 2:  13 [-]: GETTABLEKS R4 R0 K5; var4 = var0["shakeArray"]
       14 [-]: GETTABLE R3 R4 R1; var3 = var4[var1]
-      15 [-]: FASTCALL1 62 R3 L3; 
+      15 [-]: FASTCALL1 64 R3 L3; 
       16 [-]: GETIMPORT R2 7; var2 = 0x7B998233
       17 [-]: CALL R2 2 2  ; var2 = var2(var3)
 L 3:  18 [-]: JUMPIF R2 L4 ; goto L4 if var2
@@ -104,7 +104,7 @@ L 3:  18 [-]: JUMPIF R2 L4 ; goto L4 if var2
       20 [-]: GETTABLE R3 R4 R1; var3 = var4[var1]
       21 [-]: GETTABLEKS R2 R3 K8; var2 = var3["timeSinceLastUpdate"]
       22 [-]: LOADN R3 -1  ; var3 = -1
-      23 [-]: JUMPIFNOTLT R3 R2 L4; goto L4 if var3 >= var66075
+      23 [-]: JUMPIFNOTLT R3 R2 L4; goto L4 if var3 >= var66054
       24 [-]: LOADB R2 1   ; var2 = true
       25 [-]: RETURN R2 1  ; 
 L 4:  26 [-]: LOADB R2 0   ; var2 = false
@@ -133,7 +133,7 @@ L 0:   7 [-]: MOVE R6 R3   ; var6 = var3
       12 [-]: GETTABLE R5 R6 R3; var5 = var6[var3]
       13 [-]: GETTABLEKS R4 R5 K3; var4 = var5["timeSinceLastUpdate"]
       14 [-]: GETTABLEKS R5 R0 K4; var5 = var0["CLEANUP_TIME"]
-      15 [-]: JUMPIFNOTLT R5 R4 L1; goto L1 if var5 >= var198166
+      15 [-]: JUMPIFNOTLT R5 R4 L1; goto L1 if var5 >= var198190
       16 [-]: MOVE R6 R3   ; var6 = var3
       17 [-]: NAMECALL R4 R0 K5; var5 = var0; var4 = var0[0x934B91F5]
       18 [-]: CALL R4 3 1  ; var4(var5, var6)
@@ -165,8 +165,8 @@ L 4:  37 [-]: MOVE R8 R5   ; var8 = var5
       44 [-]: GETTABLEKS R9 R0 K1; var9 = var0["shakeArray"]
       45 [-]: GETTABLE R8 R9 R5; var8 = var9[var5]
       46 [-]: GETTABLEKS R7 R8 K9; var7 = var8["speed"]
-      47 [-]: JUMPIFNOTLE R1 R6 L8; goto L8 if var1 > var656963
-      48 [-]: JUMPIFNOTEQ R6 R1 L6; goto L6 if var6 ~= var84021773
+      47 [-]: JUMPIFNOTLE R1 R6 L8; goto L8 if var1 > var656919
+      48 [-]: JUMPIFNOTEQ R6 R1 L6; goto L6 if var6 ~= var84021801
       49 [-]: FASTCALL2 18 R2 R7 L5; 
       50 [-]: MOVE R9 R2   ; var9 = var2
       51 [-]: MOVE R10 R7  ; var10 = var7
@@ -209,7 +209,7 @@ L 0:   6 [-]: MOVE R6 R3   ; var6 = var3
        9 [-]: JUMPIF R4 L3 ; goto L3 if var4
       10 [-]: GETTABLEKS R6 R0 K3; var6 = var0["shakeArray"]
       11 [-]: GETTABLE R5 R6 R3; var5 = var6[var3]
-      12 [-]: FASTCALL1 62 R5 L1; 
+      12 [-]: FASTCALL1 64 R5 L1; 
       13 [-]: GETIMPORT R4 5; var4 = 0x7B998233
       14 [-]: CALL R4 2 2  ; var4 = var4(var5)
 L 1:  15 [-]: JUMPIFNOT R4 L2; goto L2 if not var4

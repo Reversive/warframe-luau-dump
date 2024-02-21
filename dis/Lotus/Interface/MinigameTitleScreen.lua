@@ -171,7 +171,7 @@ L 0:   3 [-]: GETUPVAL R1 1; var1 = upvalues[1]
 ; Max Stack Size:  10
 
        0 [-]: GETIMPORT R0 1; var0 = 0xBE190284
-       1 [-]: FASTCALL1 62 R0 L0; 
+       1 [-]: FASTCALL1 64 R0 L0; 
        2 [-]: MOVE R2 R0   ; var2 = var0
        3 [-]: GETIMPORT R1 3; var1 = 0x7B998233
        4 [-]: CALL R1 2 2  ; var1 = var1(var2)
@@ -187,7 +187,7 @@ L 1:   9 [-]: GETIMPORT R1 6; var1 = 0xAE91E43B
       14 [-]: GETIMPORT R3 12; var3 = 0xDFEBB754
       15 [-]: GETIMPORT R5 15; var5 = 0x55156FF7
       16 [-]: CALL R5 1 2  ; var5 = var5()
-      17 [-]: MULK R4 R5 K13; var4 = var5 * 0.10000000000000001
+      17 [-]: MULK R4 R5 K13; var4 = var5 * 0.10000000149011612
       18 [-]: CALL R3 2 2  ; var3 = var3(var4)
       19 [-]: FASTCALL2K 21 R3 K10 L2; 
       20 [-]: LOADK R4 K10 ; var4 = 2
@@ -198,8 +198,8 @@ L 2:  23 [-]: MULK R1 R2 K10; var1 = var2 * 2
       25 [-]: LOADK R4 K19 ; var4 = "Logo"
       26 [-]: LOADK R5 K20 ; var5 = "PlasmaStrength"
       27 [-]: GETIMPORT R6 22; var6 = 0x9BAFFFE3
-      28 [-]: LOADK R7 K23 ; var7 = 0.001
-      29 [-]: LOADK R8 K24 ; var8 = 0.02
+      28 [-]: LOADK R7 K23 ; var7 = 0.0010000000474974513
+      29 [-]: LOADK R8 K24 ; var8 = 0.019999999552965164
       30 [-]: MOVE R9 R1   ; var9 = var1
       31 [-]: CALL R6 4 2  ; var6 = var6(var7, var8, var9)
       32 [-]: LOADN R7 0   ; var7 = 0

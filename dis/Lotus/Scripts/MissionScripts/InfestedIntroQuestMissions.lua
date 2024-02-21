@@ -38,7 +38,7 @@
        6 [-]: LOADN R4 1   ; var4 = 1
        7 [-]: FORNPREP R3 L3; nforprep start - [escape at L3] -- var3 = iterator
 L 0:   8 [-]: GETTABLE R7 R2 R5; var7 = var2[var5]
-       9 [-]: FASTCALL1 62 R7 L1; 
+       9 [-]: FASTCALL1 64 R7 L1; 
       10 [-]: GETIMPORT R6 4; var6 = 0x7B998233
       11 [-]: CALL R6 2 2  ; var6 = var6(var7)
 L 1:  12 [-]: JUMPIF R6 L2 ; goto L2 if var6
@@ -76,7 +76,7 @@ L 3:  23 [-]: RETURN R0 0  ;
       11 [-]: NAMECALL R2 R0 K8; var3 = var0; var2 = var0[0x0EB34C69]
       12 [-]: CALL R2 4 2  ; var2 = var2(var3, var4, var5)
 L 0:  13 [-]: LOADN R3 2   ; var3 = 2
-      14 [-]: JUMPIFNOTLT R3 R2 L1; goto L1 if var3 >= var66382
+      14 [-]: JUMPIFNOTLT R3 R2 L1; goto L1 if var3 >= var66337
       15 [-]: GETIMPORT R3 1; var3 = 0xCBD666E1
       16 [-]: LOADN R4 1   ; var4 = 1
       17 [-]: CALL R3 2 1  ; var3(var4)
@@ -106,7 +106,7 @@ L 1:  24 [-]: JUMPXEQKN R2 K9 L2 NOT;
       41 [-]: LOADB R5 1   ; var5 = true
       42 [-]: CALL R3 3 1  ; var3(var4, var5)
 L 2:  43 [-]: LOADN R3 1   ; var3 = 1
-      44 [-]: JUMPIFNOTLT R3 R2 L3; goto L3 if var3 >= var66382
+      44 [-]: JUMPIFNOTLT R3 R2 L3; goto L3 if var3 >= var66337
       45 [-]: GETIMPORT R3 1; var3 = 0xCBD666E1
       46 [-]: LOADN R4 1   ; var4 = 1
       47 [-]: CALL R3 2 1  ; var3(var4)
@@ -130,7 +130,7 @@ L 3:  54 [-]: JUMPXEQKN R2 K17 L4 NOT;
       65 [-]: NAMECALL R3 R1 K14; var4 = var1; var3 = var1[0xE7C53F4E]
       66 [-]: CALL R3 4 1  ; var3(var4, var5, var6)
 L 4:  67 [-]: LOADN R3 0   ; var3 = 0
-      68 [-]: JUMPIFNOTLT R3 R2 L5; goto L5 if var3 >= var66382
+      68 [-]: JUMPIFNOTLT R3 R2 L5; goto L5 if var3 >= var66337
       69 [-]: GETIMPORT R3 1; var3 = 0xCBD666E1
       70 [-]: LOADN R4 1   ; var4 = 1
       71 [-]: CALL R3 2 1  ; var3(var4)
@@ -182,7 +182,7 @@ L 6:  96 [-]: RETURN R0 0  ;
       11 [-]: NAMECALL R2 R0 K8; var3 = var0; var2 = var0[0x0EB34C69]
       12 [-]: CALL R2 4 2  ; var2 = var2(var3, var4, var5)
 L 0:  13 [-]: LOADN R3 2   ; var3 = 2
-      14 [-]: JUMPIFNOTLT R3 R2 L1; goto L1 if var3 >= var66382
+      14 [-]: JUMPIFNOTLT R3 R2 L1; goto L1 if var3 >= var66337
       15 [-]: GETIMPORT R3 1; var3 = 0xCBD666E1
       16 [-]: LOADN R4 1   ; var4 = 1
       17 [-]: CALL R3 2 1  ; var3(var4)
@@ -212,7 +212,7 @@ L 1:  24 [-]: JUMPXEQKN R2 K9 L2 NOT;
       41 [-]: LOADB R5 1   ; var5 = true
       42 [-]: CALL R3 3 1  ; var3(var4, var5)
 L 2:  43 [-]: LOADN R3 1   ; var3 = 1
-      44 [-]: JUMPIFNOTLT R3 R2 L3; goto L3 if var3 >= var66382
+      44 [-]: JUMPIFNOTLT R3 R2 L3; goto L3 if var3 >= var66337
       45 [-]: GETIMPORT R3 1; var3 = 0xCBD666E1
       46 [-]: LOADN R4 1   ; var4 = 1
       47 [-]: CALL R3 2 1  ; var3(var4)
@@ -236,7 +236,7 @@ L 3:  54 [-]: JUMPXEQKN R2 K17 L4 NOT;
       65 [-]: NAMECALL R3 R1 K14; var4 = var1; var3 = var1[0xE7C53F4E]
       66 [-]: CALL R3 4 1  ; var3(var4, var5, var6)
 L 4:  67 [-]: LOADN R3 0   ; var3 = 0
-      68 [-]: JUMPIFNOTLT R3 R2 L5; goto L5 if var3 >= var66382
+      68 [-]: JUMPIFNOTLT R3 R2 L5; goto L5 if var3 >= var66337
       69 [-]: GETIMPORT R3 1; var3 = 0xCBD666E1
       70 [-]: LOADN R4 1   ; var4 = 1
       71 [-]: CALL R3 2 1  ; var3(var4)
@@ -278,7 +278,7 @@ L 7:  99 [-]: RETURN R0 0  ;
 ; Max Stack Size:  11
 
        0 [-]: GETIMPORT R3 1; var3 = 0x9367A449
-       1 [-]: FASTCALL1 62 R3 L0; 
+       1 [-]: FASTCALL1 64 R3 L0; 
        2 [-]: GETIMPORT R2 3; var2 = 0x7B998233
        3 [-]: CALL R2 2 2  ; var2 = var2(var3)
 L 0:   4 [-]: JUMPIF R2 L3 ; goto L3 if var2
@@ -299,14 +299,14 @@ L 1:  17 [-]: LOADK R10 K10; var10 = "Hide"
       19 [-]: CALL R8 3 1  ; var8(var9, var10)
 L 2:  20 [-]: FORGLOOP R3 L1 2 [inext]; 
 L 3:  21 [-]: GETIMPORT R3 13; var3 = 0xBE4A763A
-      22 [-]: FASTCALL1 62 R3 L4; 
+      22 [-]: FASTCALL1 64 R3 L4; 
       23 [-]: GETIMPORT R2 3; var2 = 0x7B998233
       24 [-]: CALL R2 2 2  ; var2 = var2(var3)
 L 4:  25 [-]: JUMPIF R2 L7 ; goto L7 if var2
       26 [-]: GETIMPORT R2 13; var2 = 0xBE4A763A
       27 [-]: GETIMPORT R3 15; var3 = 0x0469F296
       28 [-]: CALL R3 1 2  ; var3 = var3()
-      29 [-]: JUMPIFEQ R2 R3 L7; goto L7 if var2 == var393806
+      29 [-]: JUMPIFEQ R2 R3 L7; goto L7 if var2 == var393761
       30 [-]: GETIMPORT R2 6; var2 = 0x89326C93
       31 [-]: GETIMPORT R4 13; var4 = 0xBE4A763A
       32 [-]: NAMECALL R2 R2 K7; var3 = var2; var2 = var2[0xC7FCADA9]
@@ -320,14 +320,14 @@ L 5:  38 [-]: LOADK R10 K16; var10 = "Show"
       40 [-]: CALL R8 3 1  ; var8(var9, var10)
 L 6:  41 [-]: FORGLOOP R3 L5 2 [inext]; 
 L 7:  42 [-]: GETIMPORT R3 18; var3 = 0x70A0F363
-      43 [-]: FASTCALL1 62 R3 L8; 
+      43 [-]: FASTCALL1 64 R3 L8; 
       44 [-]: GETIMPORT R2 3; var2 = 0x7B998233
       45 [-]: CALL R2 2 2  ; var2 = var2(var3)
 L 8:  46 [-]: JUMPIF R2 L11; goto L11 if var2
       47 [-]: GETIMPORT R2 18; var2 = 0x70A0F363
       48 [-]: GETIMPORT R3 15; var3 = 0x0469F296
       49 [-]: CALL R3 1 2  ; var3 = var3()
-      50 [-]: JUMPIFEQ R2 R3 L11; goto L11 if var2 == var393806
+      50 [-]: JUMPIFEQ R2 R3 L11; goto L11 if var2 == var393761
       51 [-]: GETIMPORT R2 6; var2 = 0x89326C93
       52 [-]: GETIMPORT R4 18; var4 = 0x70A0F363
       53 [-]: NAMECALL R2 R2 K7; var3 = var2; var2 = var2[0xC7FCADA9]
@@ -341,14 +341,14 @@ L 9:  59 [-]: LOADK R10 K19; var10 = "Disable"
       61 [-]: CALL R8 3 1  ; var8(var9, var10)
 L10:  62 [-]: FORGLOOP R3 L9 2 [inext]; 
 L11:  63 [-]: GETIMPORT R3 21; var3 = 0x24D7F36A
-      64 [-]: FASTCALL1 62 R3 L12; 
+      64 [-]: FASTCALL1 64 R3 L12; 
       65 [-]: GETIMPORT R2 3; var2 = 0x7B998233
       66 [-]: CALL R2 2 2  ; var2 = var2(var3)
 L12:  67 [-]: JUMPIF R2 L15; goto L15 if var2
       68 [-]: GETIMPORT R2 21; var2 = 0x24D7F36A
       69 [-]: GETIMPORT R3 15; var3 = 0x0469F296
       70 [-]: CALL R3 1 2  ; var3 = var3()
-      71 [-]: JUMPIFEQ R2 R3 L15; goto L15 if var2 == var393806
+      71 [-]: JUMPIFEQ R2 R3 L15; goto L15 if var2 == var393761
       72 [-]: GETIMPORT R2 6; var2 = 0x89326C93
       73 [-]: GETIMPORT R4 21; var4 = 0x24D7F36A
       74 [-]: NAMECALL R2 R2 K7; var3 = var2; var2 = var2[0xC7FCADA9]

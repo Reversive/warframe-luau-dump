@@ -26,7 +26,7 @@
 ; Max Stack Size:  7
 
        0 [-]: MOVE R4 R1   ; var4 = var1
-       1 [-]: LOADN R5 29  ; var5 = 29
+       1 [-]: LOADN R5 31  ; var5 = 31
        2 [-]: LOADK R6 K0  ; var6 = ""
        3 [-]: NAMECALL R2 R0 K1; var3 = var0; var2 = var0[0x5F56EEAB]
        4 [-]: CALL R2 5 1  ; var2(var3, var4, var5, var6)

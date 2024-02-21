@@ -95,7 +95,7 @@
       15 [-]: FORNPREP R3 L2; nforprep start - [escape at L2] -- var3 = iterator
 L 0:  16 [-]: GETUPVAL R7 0; var7 = upvalues[0]
       17 [-]: GETTABLE R6 R7 R5; var6 = var7[var5]
-      18 [-]: JUMPIFNOTEQ R2 R6 L1; goto L1 if var2 ~= var67079
+      18 [-]: JUMPIFNOTEQ R2 R6 L1; goto L1 if var2 ~= var67132
       19 [-]: GETUPVAL R6 1; var6 = upvalues[1]
       20 [-]: GETTABLE R1 R6 R5; var1 = var6[var5]
       21 [-]: JUMP L2      ; goto L2
@@ -109,7 +109,7 @@ L 2:  23 [-]: GETIMPORT R3 7; var3 = 0x2D5C5020[0xC06CB5E5]
       29 [-]: GETIMPORT R5 11; var5 = gLensFlareType
       30 [-]: NAMECALL R3 R0 K12; var4 = var0; var3 = var0[0xC9F6A7D7]
       31 [-]: CALL R3 3 2  ; var3 = var3(var4, var5)
-      32 [-]: FASTCALL1 62 R3 L3; 
+      32 [-]: FASTCALL1 64 R3 L3; 
       33 [-]: MOVE R5 R3   ; var5 = var3
       34 [-]: GETIMPORT R4 14; var4 = 0x7B998233
       35 [-]: CALL R4 2 2  ; var4 = var4(var5)

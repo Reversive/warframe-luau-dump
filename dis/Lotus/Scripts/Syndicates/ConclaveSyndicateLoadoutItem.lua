@@ -27,7 +27,7 @@
        3 [-]: CALL R1 2 2  ; var1 = var1(var2)
        4 [-]: GETUPVAL R4 0; var4 = upvalues[0]
        5 [-]: GETTABLEKS R3 R4 K1; var3 = var4["MAX_PVP_LOADOUTS"]
-       6 [-]: JUMPIFLT R1 R3 L0; goto L0 if var1 < var16777755
+       6 [-]: JUMPIFLT R1 R3 L0; goto L0 if var1 < var16777734
        7 [-]: LOADB R2 0 +1; var2 = false
 L 0:   8 [-]: LOADB R2 1   ; var2 = true
 L 1:   9 [-]: RETURN R2 1  ; 

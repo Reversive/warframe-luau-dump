@@ -20,10 +20,10 @@
 ; Max Stack Size:  6
 
 L 0:   0 [-]: NAMECALL R2 R0 K0; var3 = var0; var2 = var0[0xA2196F29]
-       1 [-]: CALL R2 2 2  ; var2 = var2(var3)
-       2 [-]: FASTCALL1 62 R2 L1; 
+       1 [-]: CALL R2 2 0  ; var2, ... = var2(var3)
+       2 [-]: FASTCALL 64 L1; 
        3 [-]: GETIMPORT R1 2; var1 = 0x7B998233
-       4 [-]: CALL R1 2 2  ; var1 = var1(var2)
+       4 [-]: CALL R1 0 2  ; var1 = var1(var2, ...)
 L 1:   5 [-]: JUMPIFNOT R1 L2; goto L2 if not var1
        6 [-]: GETIMPORT R1 4; var1 = 0xCBD666E1
        7 [-]: LOADN R2 0   ; var2 = 0
@@ -50,10 +50,10 @@ L 2:  10 [-]: NAMECALL R1 R0 K0; var2 = var0; var1 = var0[0xA2196F29]
        2 [-]: LOADN R3 100 ; var3 = 100
        3 [-]: CALL R1 3 2  ; var1 = var1(var2, var3)
        4 [-]: GETIMPORT R2 3; var2 = 0x78EBEF76
-       5 [-]: JUMPIFNOTLT R2 R1 L0; goto L0 if var2 >= var65581
+       5 [-]: JUMPIFNOTLT R2 R1 L0; goto L0 if var2 >= var65571
        6 [-]: RETURN R0 0  ; 
 L 0:   7 [-]: GETIMPORT R3 5; var3 = 0xEFCB603B
-       8 [-]: FASTCALL1 62 R3 L1; 
+       8 [-]: FASTCALL1 64 R3 L1; 
        9 [-]: GETIMPORT R2 7; var2 = 0x7B998233
       10 [-]: CALL R2 2 2  ; var2 = var2(var3)
 L 1:  11 [-]: JUMPIFNOT R2 L2; goto L2 if not var2
@@ -78,12 +78,12 @@ L 2:  13 [-]: GETIMPORT R2 9; var2 = 0x4AFC651D
       30 [-]: GETTABLEN R5 R6 2; var5 = var6[2]
       31 [-]: CALL R3 3 2  ; var3 = var3(var4, var5)
 L 3:  32 [-]: NAMECALL R5 R0 K17; var6 = var0; var5 = var0[0xCECE5A69]
-      33 [-]: CALL R5 2 2  ; var5 = var5(var6)
-      34 [-]: FASTCALL1 62 R5 L4; 
+      33 [-]: CALL R5 2 0  ; var5, ... = var5(var6)
+      34 [-]: FASTCALL 64 L4; 
       35 [-]: GETIMPORT R4 7; var4 = 0x7B998233
-      36 [-]: CALL R4 2 2  ; var4 = var4(var5)
+      36 [-]: CALL R4 0 2  ; var4 = var4(var5, ...)
 L 4:  37 [-]: JUMPIF R4 L6 ; goto L6 if var4
-      38 [-]: JUMPIFNOTLT R3 R2 L5; goto L5 if var3 >= var66638
+      38 [-]: JUMPIFNOTLT R3 R2 L5; goto L5 if var3 >= var66593
       39 [-]: GETIMPORT R4 1; var4 = 0xC163F229
       40 [-]: GETIMPORT R6 16; var6 = 0x66A8EFD0
       41 [-]: GETTABLEN R5 R6 1; var5 = var6[1]

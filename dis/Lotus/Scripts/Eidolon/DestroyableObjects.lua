@@ -21,7 +21,7 @@
        1 [-]: GETIMPORT R2 3; var2 = 0xC45AA52C
        2 [-]: CALL R1 2 4  ; var1, var2, var3 = var1(var2)
        3 [-]: FORGPREP_INEXT R1 L2; 
-L 0:   4 [-]: FASTCALL1 62 R5 L1; 
+L 0:   4 [-]: FASTCALL1 64 R5 L1; 
        5 [-]: MOVE R7 R5   ; var7 = var5
        6 [-]: GETIMPORT R6 5; var6 = 0x7B998233
        7 [-]: CALL R6 2 2  ; var6 = var6(var7)
@@ -34,7 +34,7 @@ L 2:  12 [-]: FORGLOOP R1 L0 2 [inext];
       14 [-]: GETIMPORT R2 9; var2 = 0x5298BF71
       15 [-]: CALL R1 2 4  ; var1, var2, var3 = var1(var2)
       16 [-]: FORGPREP_INEXT R1 L5; 
-L 3:  17 [-]: FASTCALL1 62 R5 L4; 
+L 3:  17 [-]: FASTCALL1 64 R5 L4; 
       18 [-]: MOVE R7 R5   ; var7 = var5
       19 [-]: GETIMPORT R6 5; var6 = 0x7B998233
       20 [-]: CALL R6 2 2  ; var6 = var6(var7)
@@ -47,7 +47,7 @@ L 5:  25 [-]: FORGLOOP R1 L3 2 [inext];
       27 [-]: GETIMPORT R2 12; var2 = 0xEC94C032
       28 [-]: CALL R1 2 4  ; var1, var2, var3 = var1(var2)
       29 [-]: FORGPREP_INEXT R1 L8; 
-L 6:  30 [-]: FASTCALL1 62 R5 L7; 
+L 6:  30 [-]: FASTCALL1 64 R5 L7; 
       31 [-]: MOVE R7 R5   ; var7 = var5
       32 [-]: GETIMPORT R6 5; var6 = 0x7B998233
       33 [-]: CALL R6 2 2  ; var6 = var6(var7)

@@ -110,7 +110,7 @@ L 3:  21 [-]: GETTABLE R9 R3 R8; var9 = var3[var8]
       24 [-]: ADD R5 R5 R9 ; var5 = var5 + var9
       25 [-]: FORNLOOP R6 L3; nforloop end - iterate + goto L3
 L 4:  26 [-]: MOVE R4 R5   ; var4 = var5
-L 5:  27 [-]: FASTCALL1 62 R0 L6; 
+L 5:  27 [-]: FASTCALL1 64 R0 L6; 
       28 [-]: MOVE R6 R0   ; var6 = var0
       29 [-]: GETIMPORT R5 8; var5 = 0x7B998233
       30 [-]: CALL R5 2 2  ; var5 = var5(var6)
@@ -118,7 +118,7 @@ L 6:  31 [-]: JUMPIF R5 L10; goto L10 if var5
       32 [-]: NAMECALL R5 R0 K9; var6 = var0; var5 = var0[0x2047CFE7]
       33 [-]: CALL R5 2 2  ; var5 = var5(var6)
       34 [-]: JUMPIF R5 L10; goto L10 if var5
-      35 [-]: FASTCALL1 62 R1 L7; 
+      35 [-]: FASTCALL1 64 R1 L7; 
       36 [-]: MOVE R6 R1   ; var6 = var1
       37 [-]: GETIMPORT R5 8; var5 = 0x7B998233
       38 [-]: CALL R5 2 2  ; var5 = var5(var6)
@@ -137,7 +137,7 @@ L 8:  48 [-]: GETTABLE R10 R3 R9; var10 = var3[var9]
       51 [-]: ADD R6 R6 R10; var6 = var6 + var10
       52 [-]: FORNLOOP R7 L8; nforloop end - iterate + goto L8
 L 9:  53 [-]: MOVE R5 R6   ; var5 = var6
-      54 [-]: JUMPIFLT R4 R5 L10; goto L10 if var4 < var787790
+      54 [-]: JUMPIFLT R4 R5 L10; goto L10 if var4 < var787745
       55 [-]: GETIMPORT R5 12; var5 = 0xCBD666E1
       56 [-]: LOADN R6 0   ; var6 = 0
       57 [-]: CALL R5 2 1  ; var5(var6)
@@ -153,7 +153,7 @@ L10:  59 [-]: RETURN R0 0  ;
 ; Max Stack Size:  7
 
        0 [-]: GETIMPORT R4 2; var4 = _T["PowerStrikeSentinel"]
-       1 [-]: FASTCALL1 62 R4 L0; 
+       1 [-]: FASTCALL1 64 R4 L0; 
        2 [-]: GETIMPORT R3 4; var3 = 0x7B998233
        3 [-]: CALL R3 2 2  ; var3 = var3(var4)
 L 0:   4 [-]: JUMPIFNOT R3 L1; goto L1 if not var3
@@ -165,7 +165,7 @@ L 1:   8 [-]: NAMECALL R3 R0 K6; var4 = var0; var3 = var0[0x388577D5]
       10 [-]: GETIMPORT R4 2; var4 = _T["PowerStrikeSentinel"]
       11 [-]: LOADB R5 1   ; var5 = true
       12 [-]: SETTABLE R5 R4 R3; var5[var4] = var3
-L 2:  13 [-]: FASTCALL1 62 R0 L3; 
+L 2:  13 [-]: FASTCALL1 64 R0 L3; 
       14 [-]: MOVE R5 R0   ; var5 = var0
       15 [-]: GETIMPORT R4 4; var4 = 0x7B998233
       16 [-]: CALL R4 2 2  ; var4 = var4(var5)
@@ -173,7 +173,7 @@ L 3:  17 [-]: JUMPIF R4 L8 ; goto L8 if var4
       18 [-]: NAMECALL R4 R0 K7; var5 = var0; var4 = var0[0x2047CFE7]
       19 [-]: CALL R4 2 2  ; var4 = var4(var5)
       20 [-]: JUMPIF R4 L8 ; goto L8 if var4
-      21 [-]: FASTCALL1 62 R1 L4; 
+      21 [-]: FASTCALL1 64 R1 L4; 
       22 [-]: MOVE R5 R1   ; var5 = var1
       23 [-]: GETIMPORT R4 4; var4 = 0x7B998233
       24 [-]: CALL R4 2 2  ; var4 = var4(var5)
@@ -182,13 +182,13 @@ L 4:  25 [-]: JUMPIF R4 L8 ; goto L8 if var4
       27 [-]: CALL R4 2 2  ; var4 = var4(var5)
       28 [-]: JUMPIF R4 L8 ; goto L8 if var4
       29 [-]: GETIMPORT R5 2; var5 = _T["PowerStrikeSentinel"]
-      30 [-]: FASTCALL1 62 R5 L5; 
+      30 [-]: FASTCALL1 64 R5 L5; 
       31 [-]: GETIMPORT R4 4; var4 = 0x7B998233
       32 [-]: CALL R4 2 2  ; var4 = var4(var5)
 L 5:  33 [-]: JUMPIF R4 L8 ; goto L8 if var4
       34 [-]: GETIMPORT R6 2; var6 = _T["PowerStrikeSentinel"]
       35 [-]: GETTABLE R5 R6 R3; var5 = var6[var3]
-      36 [-]: FASTCALL1 62 R5 L6; 
+      36 [-]: FASTCALL1 64 R5 L6; 
       37 [-]: GETIMPORT R4 4; var4 = 0x7B998233
       38 [-]: CALL R4 2 2  ; var4 = var4(var5)
 L 6:  39 [-]: JUMPIFNOT R4 L7; goto L7 if not var4
@@ -211,12 +211,12 @@ L 8:  49 [-]: RETURN R0 0  ;
 ; Is_vararg:       0
 ; Max Stack Size:  13
 
-       0 [-]: FASTCALL1 62 R0 L0; 
+       0 [-]: FASTCALL1 64 R0 L0; 
        1 [-]: MOVE R6 R0   ; var6 = var0
        2 [-]: GETIMPORT R5 1; var5 = 0x7B998233
        3 [-]: CALL R5 2 2  ; var5 = var5(var6)
 L 0:   4 [-]: JUMPIF R5 L2 ; goto L2 if var5
-       5 [-]: FASTCALL1 62 R1 L1; 
+       5 [-]: FASTCALL1 64 R1 L1; 
        6 [-]: MOVE R6 R1   ; var6 = var1
        7 [-]: GETIMPORT R5 1; var5 = 0x7B998233
        8 [-]: CALL R5 2 2  ; var5 = var5(var6)
@@ -264,7 +264,7 @@ L 5:  48 [-]: LOADN R10 10 ; var10 = 10
       50 [-]: GETIMPORT R12 15; var12 = 0xAC838211
       51 [-]: NAMECALL R8 R6 K24; var9 = var6; var8 = var6[0x5E6704FF]
       52 [-]: CALL R8 5 1  ; var8(var9, var10, var11, var12)
-      53 [-]: LOADN R10 297; var10 = 297
+      53 [-]: LOADN R10 307; var10 = 307
       54 [-]: LOADN R11 3  ; var11 = 3
       55 [-]: GETIMPORT R12 15; var12 = 0xAC838211
       56 [-]: NAMECALL R8 R6 K24; var9 = var6; var8 = var6[0x5E6704FF]
@@ -287,7 +287,7 @@ L 6:  71 [-]: GETUPVAL R8 2; var8 = upvalues[2]
       73 [-]: MOVE R10 R7  ; var10 = var7
       74 [-]: MOVE R11 R6  ; var11 = var6
       75 [-]: CALL R8 4 1  ; var8(var9, var10, var11)
-L 7:  76 [-]: FASTCALL1 62 R0 L8; 
+L 7:  76 [-]: FASTCALL1 64 R0 L8; 
       77 [-]: MOVE R9 R0   ; var9 = var0
       78 [-]: GETIMPORT R8 1; var8 = 0x7B998233
       79 [-]: CALL R8 2 2  ; var8 = var8(var9)
@@ -297,7 +297,7 @@ L 8:  80 [-]: JUMPIF R8 L9 ; goto L9 if var8
       83 [-]: GETIMPORT R12 15; var12 = 0xAC838211
       84 [-]: NAMECALL R8 R6 K28; var9 = var6; var8 = var6[0x12DD9DA2]
       85 [-]: CALL R8 5 1  ; var8(var9, var10, var11, var12)
-      86 [-]: LOADN R10 297; var10 = 297
+      86 [-]: LOADN R10 307; var10 = 307
       87 [-]: LOADN R11 3  ; var11 = 3
       88 [-]: GETIMPORT R12 15; var12 = 0xAC838211
       89 [-]: NAMECALL R8 R6 K28; var9 = var6; var8 = var6[0x12DD9DA2]
@@ -320,7 +320,7 @@ L 9:  96 [-]: RETURN R0 0  ;
        0 [-]: GETIMPORT R2 1; var2 = 0x3D106989
        1 [-]: LOADK R3 K2  ; var3 = "power strike triggered!"
        2 [-]: CALL R2 2 1  ; var2(var3)
-       3 [-]: FASTCALL1 62 R0 L0; 
+       3 [-]: FASTCALL1 64 R0 L0; 
        4 [-]: MOVE R3 R0   ; var3 = var0
        5 [-]: GETIMPORT R2 4; var2 = 0x7B998233
        6 [-]: CALL R2 2 2  ; var2 = var2(var3)
@@ -328,13 +328,13 @@ L 0:   7 [-]: JUMPIFNOT R2 L1; goto L1 if not var2
        8 [-]: RETURN R0 0  ; 
 L 1:   9 [-]: NAMECALL R2 R0 K5; var3 = var0; var2 = var0[0xBB610E5B]
       10 [-]: CALL R2 2 2  ; var2 = var2(var3)
-      11 [-]: FASTCALL1 62 R2 L2; 
+      11 [-]: FASTCALL1 64 R2 L2; 
       12 [-]: MOVE R4 R2   ; var4 = var2
       13 [-]: GETIMPORT R3 4; var3 = 0x7B998233
       14 [-]: CALL R3 2 2  ; var3 = var3(var4)
 L 2:  15 [-]: JUMPIF R3 L4 ; goto L4 if var3
       16 [-]: GETIMPORT R4 8; var4 = _T["PowerStrikeSentinel"]
-      17 [-]: FASTCALL1 62 R4 L3; 
+      17 [-]: FASTCALL1 64 R4 L3; 
       18 [-]: GETIMPORT R3 4; var3 = 0x7B998233
       19 [-]: CALL R3 2 2  ; var3 = var3(var4)
 L 3:  20 [-]: JUMPIF R3 L4 ; goto L4 if var3

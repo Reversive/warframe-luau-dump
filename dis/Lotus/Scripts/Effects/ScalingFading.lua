@@ -105,7 +105,7 @@ L 1:  16 [-]: RETURN R0 0  ;
       13 [-]: GETIMPORT R5 15; var5 = 0xD36760A5
       14 [-]: SUB R3 R4 R5 ; var3 = var4 - var5
 L 0:  15 [-]: GETIMPORT R4 17; var4 = 0xB56224FA
-      16 [-]: JUMPIFNOTLT R1 R4 L3; goto L3 if var1 >= var1246286
+      16 [-]: JUMPIFNOTLT R1 R4 L3; goto L3 if var1 >= var1246241
       17 [-]: GETIMPORT R4 19; var4 = 0xF7CED305
       18 [-]: JUMPXEQKB R4 0 L1 NOT; 
       19 [-]: GETUPVAL R5 0; var5 = upvalues[0]
@@ -164,7 +164,7 @@ L 3:  59 [-]: RETURN R0 0  ;
        3 [-]: LOADN R1 0   ; var1 = 0
        4 [-]: LOADNIL R2   ; var2 = nil
 L 0:   5 [-]: GETIMPORT R3 5; var3 = 0xE375A751
-       6 [-]: JUMPIFNOTLT R1 R3 L1; goto L1 if var1 >= var459598
+       6 [-]: JUMPIFNOTLT R1 R3 L1; goto L1 if var1 >= var459553
        7 [-]: GETIMPORT R3 7; var3 = 0x9BAFFFE3
        8 [-]: GETIMPORT R4 9; var4 = 0xE8CF70CC
        9 [-]: GETIMPORT R5 11; var5 = 0xFD4E12B5
@@ -199,7 +199,7 @@ L 1:  25 [-]: RETURN R0 0  ;
        3 [-]: LOADN R1 0   ; var1 = 0
        4 [-]: LOADNIL R2   ; var2 = nil
 L 0:   5 [-]: GETIMPORT R3 5; var3 = 0xE375A751
-       6 [-]: JUMPIFNOTLT R1 R3 L1; goto L1 if var1 >= var1031
+       6 [-]: JUMPIFNOTLT R1 R3 L1; goto L1 if var1 >= var1084
        7 [-]: GETUPVAL R4 0; var4 = upvalues[0]
        8 [-]: GETTABLEKS R3 R4 K6; var3 = var4[0x0BDBAFCE]
        9 [-]: MOVE R4 R1   ; var4 = var1
@@ -237,14 +237,14 @@ L 2:  32 [-]: RETURN R0 0  ;
 
        0 [-]: GETIMPORT R1 1; var1 = 0x4B2E528E
        1 [-]: LOADN R2 0   ; var2 = 0
-       2 [-]: JUMPIFNOTLT R2 R1 L0; goto L0 if var2 >= var196942
+       2 [-]: JUMPIFNOTLT R2 R1 L0; goto L0 if var2 >= var196897
        3 [-]: GETIMPORT R1 3; var1 = 0xCBD666E1
        4 [-]: GETIMPORT R2 1; var2 = 0x4B2E528E
        5 [-]: CALL R1 2 1  ; var1(var2)
 L 0:   6 [-]: LOADN R1 0   ; var1 = 0
        7 [-]: LOADNIL R2   ; var2 = nil
 L 1:   8 [-]: GETIMPORT R3 5; var3 = 0xB56224FA
-       9 [-]: JUMPIFNOTLT R1 R3 L4; goto L4 if var1 >= var1031
+       9 [-]: JUMPIFNOTLT R1 R3 L4; goto L4 if var1 >= var1084
       10 [-]: GETUPVAL R4 0; var4 = upvalues[0]
       11 [-]: GETTABLEKS R3 R4 K6; var3 = var4[0x0BDBAFCE]
       12 [-]: MOVE R4 R1   ; var4 = var1

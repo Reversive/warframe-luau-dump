@@ -89,7 +89,7 @@
       16 [-]: MOVE R2 R5   ; var2 = var5
       17 [-]: SETUPVAL R2 0; upvalues[2] = var0
       18 [-]: GETUPVAL R3 0; var3 = upvalues[0]
-      19 [-]: FASTCALL1 62 R3 L0; 
+      19 [-]: FASTCALL1 64 R3 L0; 
       20 [-]: GETIMPORT R2 11; var2 = 0x7B998233
       21 [-]: CALL R2 2 2  ; var2 = var2(var3)
 L 0:  22 [-]: JUMPIFNOT R2 L1; goto L1 if not var2
@@ -162,7 +162,7 @@ L 2:  51 [-]: GETUPVAL R4 2; var4 = upvalues[2]
       19 [-]: MOVE R2 R5   ; var2 = var5
       20 [-]: SETUPVAL R2 0; upvalues[2] = var0
       21 [-]: GETUPVAL R3 0; var3 = upvalues[0]
-      22 [-]: FASTCALL1 62 R3 L0; 
+      22 [-]: FASTCALL1 64 R3 L0; 
       23 [-]: GETIMPORT R2 14; var2 = 0x7B998233
       24 [-]: CALL R2 2 2  ; var2 = var2(var3)
 L 0:  25 [-]: JUMPIF R2 L3 ; goto L3 if var2
@@ -170,7 +170,7 @@ L 0:  25 [-]: JUMPIF R2 L3 ; goto L3 if var2
       27 [-]: NAMECALL R2 R0 K15; var3 = var0; var2 = var0[0xBEBAD19F]
       28 [-]: CALL R2 3 2  ; var2 = var2(var3, var4)
       29 [-]: LOADN R3 2   ; var3 = 2
-      30 [-]: JUMPIFNOTLT R2 R3 L3; goto L3 if var2 >= var1031
+      30 [-]: JUMPIFNOTLT R2 R3 L3; goto L3 if var2 >= var1084
       31 [-]: GETUPVAL R4 0; var4 = upvalues[0]
       32 [-]: NAMECALL R4 R4 K4; var5 = var4; var4 = var4[0xF6EBD926]
       33 [-]: CALL R4 2 2  ; var4 = var4(var5)
@@ -210,7 +210,7 @@ L 0:  25 [-]: JUMPIF R2 L3 ; goto L3 if var2
       67 [-]: CALL R4 2 0  ; var4, ... = var4(var5)
       68 [-]: NAMECALL R2 R1 K34; var3 = var1; var2 = var1[0xBD84D75D]
       69 [-]: CALL R2 0 2  ; var2 = var2(var3, ...)
-      70 [-]: FASTCALL1 62 R2 L1; 
+      70 [-]: FASTCALL1 64 R2 L1; 
       71 [-]: MOVE R4 R2   ; var4 = var2
       72 [-]: GETIMPORT R3 14; var3 = 0x7B998233
       73 [-]: CALL R3 2 2  ; var3 = var3(var4)
@@ -227,7 +227,7 @@ L 2:  79 [-]: NAMECALL R3 R2 K4; var4 = var2; var3 = var2[0xF6EBD926]
       84 [-]: CALL R3 3 1  ; var3(var4, var5)
       85 [-]: RETURN R0 0  ; 
 L 3:  86 [-]: GETUPVAL R3 0; var3 = upvalues[0]
-      87 [-]: FASTCALL1 62 R3 L4; 
+      87 [-]: FASTCALL1 64 R3 L4; 
       88 [-]: GETIMPORT R2 14; var2 = 0x7B998233
       89 [-]: CALL R2 2 2  ; var2 = var2(var3)
 L 4:  90 [-]: JUMPIF R2 L5 ; goto L5 if var2
@@ -260,7 +260,7 @@ L 5: 102 [-]: RETURN R0 0  ;
        5 [-]: CALL R3 2 0  ; var3, ... = var3(var4)
        6 [-]: NAMECALL R1 R0 K7; var2 = var0; var1 = var0[0xC9F6A7D7]
        7 [-]: CALL R1 0 2  ; var1 = var1(var2, ...)
-       8 [-]: FASTCALL1 62 R1 L0; 
+       8 [-]: FASTCALL1 64 R1 L0; 
        9 [-]: MOVE R3 R1   ; var3 = var1
       10 [-]: GETIMPORT R2 9; var2 = 0x7B998233
       11 [-]: CALL R2 2 2  ; var2 = var2(var3)
@@ -345,7 +345,7 @@ L 1:  17 [-]: FORGLOOP R2 L0 2;
        0 [-]: GETIMPORT R1 1; var1 = 0x4C403684
        1 [-]: LOADK R2 K2  ; var2 = "Animal Debug"
        2 [-]: CALL R1 2 2  ; var1 = var1(var2)
-       3 [-]: JUMPIFNOT R1 L2; goto L2 if not var1
+       3 [-]: JUMPIFNOT R1 L6; goto L6 if not var1
        4 [-]: NAMECALL R1 R0 K3; var2 = var0; var1 = var0[0xFA9E477F]
        5 [-]: CALL R1 2 2  ; var1 = var1(var2)
        6 [-]: GETIMPORT R2 5; var2 = 0x2F44540D
@@ -353,63 +353,67 @@ L 1:  17 [-]: FORGLOOP R2 L0 2;
        8 [-]: CALL R2 2 1  ; var2(var3)
        9 [-]: GETIMPORT R2 8; var2 = 0x1577FC24
       10 [-]: LOADK R4 K9  ; var4 = "PlayerHasBall "
-      11 [-]: GETIMPORT R5 11; var5 = 0x64FB1586
-      12 [-]: GETIMPORT R8 13; var8 = 0x0469F296
-      13 [-]: LOADK R9 K14 ; var9 = "PlayerHasBall"
-      14 [-]: CALL R8 2 0  ; var8, ... = var8(var9)
-      15 [-]: NAMECALL R6 R0 K15; var7 = var0; var6 = var0[0xA088430F]
-      16 [-]: CALL R6 0 0  ; var6, ... = var6(var7, ...)
-      17 [-]: CALL R5 0 2  ; var5 = var5(var6, ...)
-      18 [-]: CONCAT R3 R4 R5; var3 = var4 .. var5
-      19 [-]: CALL R2 2 1  ; var2(var3)
-      20 [-]: GETIMPORT R2 8; var2 = 0x1577FC24
-      21 [-]: LOADK R4 K16 ; var4 = "IsCarryingBall "
-      22 [-]: GETIMPORT R5 11; var5 = 0x64FB1586
-      23 [-]: GETIMPORT R8 13; var8 = 0x0469F296
+      11 [-]: GETIMPORT R8 11; var8 = 0x0469F296
+      12 [-]: LOADK R9 K12 ; var9 = "PlayerHasBall"
+      13 [-]: CALL R8 2 0  ; var8, ... = var8(var9)
+      14 [-]: NAMECALL R6 R0 K13; var7 = var0; var6 = var0[0xA088430F]
+      15 [-]: CALL R6 0 0  ; var6, ... = var6(var7, ...)
+      16 [-]: FASTCALL 63 L0; 
+      17 [-]: GETIMPORT R5 15; var5 = 0x64FB1586
+      18 [-]: CALL R5 0 2  ; var5 = var5(var6, ...)
+L 0:  19 [-]: CONCAT R3 R4 R5; var3 = var4 .. var5
+      20 [-]: CALL R2 2 1  ; var2(var3)
+      21 [-]: GETIMPORT R2 8; var2 = 0x1577FC24
+      22 [-]: LOADK R4 K16 ; var4 = "IsCarryingBall "
+      23 [-]: GETIMPORT R8 11; var8 = 0x0469F296
       24 [-]: LOADK R9 K17 ; var9 = "IsCarryingBall"
       25 [-]: CALL R8 2 0  ; var8, ... = var8(var9)
-      26 [-]: NAMECALL R6 R0 K15; var7 = var0; var6 = var0[0xA088430F]
+      26 [-]: NAMECALL R6 R0 K13; var7 = var0; var6 = var0[0xA088430F]
       27 [-]: CALL R6 0 0  ; var6, ... = var6(var7, ...)
-      28 [-]: CALL R5 0 2  ; var5 = var5(var6, ...)
-      29 [-]: CONCAT R3 R4 R5; var3 = var4 .. var5
-      30 [-]: CALL R2 2 1  ; var2(var3)
-      31 [-]: GETIMPORT R2 8; var2 = 0x1577FC24
-      32 [-]: LOADK R4 K18 ; var4 = "IsFetchingBall "
-      33 [-]: GETIMPORT R5 11; var5 = 0x64FB1586
-      34 [-]: GETIMPORT R8 13; var8 = 0x0469F296
-      35 [-]: LOADK R9 K19 ; var9 = "IsFetchingBall"
-      36 [-]: CALL R8 2 0  ; var8, ... = var8(var9)
-      37 [-]: NAMECALL R6 R0 K15; var7 = var0; var6 = var0[0xA088430F]
-      38 [-]: CALL R6 0 0  ; var6, ... = var6(var7, ...)
-      39 [-]: CALL R5 0 2  ; var5 = var5(var6, ...)
-      40 [-]: CONCAT R3 R4 R5; var3 = var4 .. var5
-      41 [-]: CALL R2 2 1  ; var2(var3)
-      42 [-]: FASTCALL1 62 R1 L0; 
-      43 [-]: MOVE R3 R1   ; var3 = var1
-      44 [-]: GETIMPORT R2 21; var2 = 0x7B998233
-      45 [-]: CALL R2 2 2  ; var2 = var2(var3)
-L 0:  46 [-]: JUMPIF R2 L2 ; goto L2 if var2
-      47 [-]: GETIMPORT R4 13; var4 = 0x0469F296
-      48 [-]: LOADK R5 K22 ; var5 = "PlayerWhoPet"
-      49 [-]: CALL R4 2 0  ; var4, ... = var4(var5)
-      50 [-]: NAMECALL R2 R1 K23; var3 = var1; var2 = var1[0xBD84D75D]
-      51 [-]: CALL R2 0 2  ; var2 = var2(var3, ...)
-      52 [-]: FASTCALL1 62 R2 L1; 
-      53 [-]: MOVE R4 R2   ; var4 = var2
-      54 [-]: GETIMPORT R3 21; var3 = 0x7B998233
-      55 [-]: CALL R3 2 2  ; var3 = var3(var4)
-L 1:  56 [-]: JUMPIF R3 L2 ; goto L2 if var3
-      57 [-]: GETIMPORT R3 8; var3 = 0x1577FC24
-      58 [-]: LOADK R5 K24 ; var5 = "Petting Player "
-      59 [-]: GETIMPORT R6 11; var6 = 0x64FB1586
-      60 [-]: NAMECALL R7 R2 K25; var8 = var2; var7 = var2[0xE223E2B1]
-      61 [-]: CALL R7 2 0  ; var7, ... = var7(var8)
-      62 [-]: CALL R6 0 2  ; var6 = var6(var7, ...)
-      63 [-]: CONCAT R4 R5 R6; var4 = var5 .. var6
-      64 [-]: CALL R3 2 1  ; var3(var4)
-L 2:  65 [-]: GETIMPORT R1 27; var1 = 0xCA9F53F0
-      66 [-]: CALL R1 1 1  ; var1()
-      67 [-]: RETURN R0 0  ; 
+      28 [-]: FASTCALL 63 L1; 
+      29 [-]: GETIMPORT R5 15; var5 = 0x64FB1586
+      30 [-]: CALL R5 0 2  ; var5 = var5(var6, ...)
+L 1:  31 [-]: CONCAT R3 R4 R5; var3 = var4 .. var5
+      32 [-]: CALL R2 2 1  ; var2(var3)
+      33 [-]: GETIMPORT R2 8; var2 = 0x1577FC24
+      34 [-]: LOADK R4 K18 ; var4 = "IsFetchingBall "
+      35 [-]: GETIMPORT R8 11; var8 = 0x0469F296
+      36 [-]: LOADK R9 K19 ; var9 = "IsFetchingBall"
+      37 [-]: CALL R8 2 0  ; var8, ... = var8(var9)
+      38 [-]: NAMECALL R6 R0 K13; var7 = var0; var6 = var0[0xA088430F]
+      39 [-]: CALL R6 0 0  ; var6, ... = var6(var7, ...)
+      40 [-]: FASTCALL 63 L2; 
+      41 [-]: GETIMPORT R5 15; var5 = 0x64FB1586
+      42 [-]: CALL R5 0 2  ; var5 = var5(var6, ...)
+L 2:  43 [-]: CONCAT R3 R4 R5; var3 = var4 .. var5
+      44 [-]: CALL R2 2 1  ; var2(var3)
+      45 [-]: FASTCALL1 64 R1 L3; 
+      46 [-]: MOVE R3 R1   ; var3 = var1
+      47 [-]: GETIMPORT R2 21; var2 = 0x7B998233
+      48 [-]: CALL R2 2 2  ; var2 = var2(var3)
+L 3:  49 [-]: JUMPIF R2 L6 ; goto L6 if var2
+      50 [-]: GETIMPORT R4 11; var4 = 0x0469F296
+      51 [-]: LOADK R5 K22 ; var5 = "PlayerWhoPet"
+      52 [-]: CALL R4 2 0  ; var4, ... = var4(var5)
+      53 [-]: NAMECALL R2 R1 K23; var3 = var1; var2 = var1[0xBD84D75D]
+      54 [-]: CALL R2 0 2  ; var2 = var2(var3, ...)
+      55 [-]: FASTCALL1 64 R2 L4; 
+      56 [-]: MOVE R4 R2   ; var4 = var2
+      57 [-]: GETIMPORT R3 21; var3 = 0x7B998233
+      58 [-]: CALL R3 2 2  ; var3 = var3(var4)
+L 4:  59 [-]: JUMPIF R3 L6 ; goto L6 if var3
+      60 [-]: GETIMPORT R3 8; var3 = 0x1577FC24
+      61 [-]: LOADK R5 K24 ; var5 = "Petting Player "
+      62 [-]: NAMECALL R7 R2 K25; var8 = var2; var7 = var2[0xE223E2B1]
+      63 [-]: CALL R7 2 0  ; var7, ... = var7(var8)
+      64 [-]: FASTCALL 63 L5; 
+      65 [-]: GETIMPORT R6 15; var6 = 0x64FB1586
+      66 [-]: CALL R6 0 2  ; var6 = var6(var7, ...)
+L 5:  67 [-]: CONCAT R4 R5 R6; var4 = var5 .. var6
+      68 [-]: CALL R3 2 1  ; var3(var4)
+L 6:  69 [-]: GETIMPORT R1 27; var1 = 0xCA9F53F0
+      70 [-]: CALL R1 1 1  ; var1()
+      71 [-]: RETURN R0 0  ; 
 
 
 ; Name:            
@@ -419,7 +423,7 @@ L 2:  65 [-]: GETIMPORT R1 27; var1 = 0xCA9F53F0
 ; Is_vararg:       0
 ; Max Stack Size:  4
 
-L 0:   0 [-]: FASTCALL1 62 R0 L1; 
+L 0:   0 [-]: FASTCALL1 64 R0 L1; 
        1 [-]: MOVE R2 R0   ; var2 = var0
        2 [-]: GETIMPORT R1 1; var1 = 0x7B998233
        3 [-]: CALL R1 2 2  ; var1 = var1(var2)

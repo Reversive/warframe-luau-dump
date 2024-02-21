@@ -23,7 +23,7 @@
        3 [-]: JUMPIFNOT R1 L1; goto L1 if not var1
        4 [-]: GETIMPORT R1 4; var1 = 0xB25E4936
        5 [-]: LOADN R2 0   ; var2 = 0
-       6 [-]: JUMPIFNOTLE R1 R2 L0; goto L0 if var1 > var839
+       6 [-]: JUMPIFNOTLE R1 R2 L0; goto L0 if var1 > var816
        7 [-]: LOADN R3 0   ; var3 = 0
        8 [-]: NAMECALL R1 R0 K5; var2 = var0; var1 = var0[0x05EEB9DB]
        9 [-]: CALL R1 3 1  ; var1(var2, var3)

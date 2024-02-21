@@ -45,7 +45,7 @@
        7 [-]: RETURN R2 1  ; 
 L 0:   8 [-]: NAMECALL R2 R0 K4; var3 = var0; var2 = var0[0x14A55974]
        9 [-]: CALL R2 2 2  ; var2 = var2(var3)
-      10 [-]: FASTCALL1 62 R2 L1; 
+      10 [-]: FASTCALL1 64 R2 L1; 
       11 [-]: MOVE R4 R2   ; var4 = var2
       12 [-]: GETIMPORT R3 6; var3 = 0x7B998233
       13 [-]: CALL R3 2 2  ; var3 = var3(var4)
@@ -66,7 +66,7 @@ L 3:  25 [-]: GETIMPORT R5 13; var5 = gWeaponExType
       28 [-]: JUMPIFNOT R3 L6; goto L6 if not var3
       29 [-]: NAMECALL R3 R2 K14; var4 = var2; var3 = var2[0xD2073B32]
       30 [-]: CALL R3 2 2  ; var3 = var3(var4)
-      31 [-]: FASTCALL1 62 R3 L4; 
+      31 [-]: FASTCALL1 64 R3 L4; 
       32 [-]: MOVE R5 R3   ; var5 = var3
       33 [-]: GETIMPORT R4 6; var4 = 0x7B998233
       34 [-]: CALL R4 2 2  ; var4 = var4(var5)

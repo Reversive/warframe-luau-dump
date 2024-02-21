@@ -53,7 +53,7 @@ L 1:  23 [-]: SUBK R15 R12 K8; var15 = var12 - 1
       33 [-]: FASTCALL2 19 R16 R17 L2; 
       34 [-]: GETIMPORT R15 17; var15 = 0x5BCED4C4[0xAC1B386A]
       35 [-]: CALL R15 3 2 ; var15 = var15(var16, var17)
-L 2:  36 [-]: JUMPIFNOTLT R15 R14 L3; goto L3 if var15 >= var65581
+L 2:  36 [-]: JUMPIFNOTLT R15 R14 L3; goto L3 if var15 >= var65571
       37 [-]: RETURN R0 0  ; 
 L 3:  38 [-]: GETIMPORT R15 12; var15 = 0x47083EDE
       39 [-]: GETTABLE R7 R15 R14; var7 = var15[var14]

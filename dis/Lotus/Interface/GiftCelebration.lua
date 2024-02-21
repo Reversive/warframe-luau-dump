@@ -96,7 +96,7 @@
       13 [-]: NEWTABLE R5 0 1; var5 = {}
       14 [-]: LOADN R6 10000; var6 = 10000
       15 [-]: SETLIST R5 R6 1 [1]; var5[1] = var6; var5[2] = var7; 
-      16 [-]: LOADK R6 K8  ; var6 = 0.34999999999999998
+      16 [-]: LOADK R6 K8  ; var6 = 0.34999999403953552
       17 [-]: CALL R0 7 1  ; var0(var1, var2, var3, var4, var5, var6)
       18 [-]: GETIMPORT R0 4; var0 = 0x25312C9B
       19 [-]: GETIMPORT R1 6; var1 = 0xAE91E43B
@@ -108,17 +108,17 @@
       25 [-]: NEWTABLE R5 0 1; var5 = {}
       26 [-]: LOADN R6 0   ; var6 = 0
       27 [-]: SETLIST R5 R6 1 [1]; var5[1] = var6; var5[2] = var7; 
-      28 [-]: LOADK R6 K8  ; var6 = 0.34999999999999998
+      28 [-]: LOADK R6 K8  ; var6 = 0.34999999403953552
       29 [-]: LOADN R7 0   ; var7 = 0
       30 [-]: DUPCLOSURE R8 K10; 
       31 [-]: CALL R0 9 1  ; var0(var1, var2, var3, var4, var5, var6, var7, var8)
       32 [-]: GETIMPORT R1 13; var1 = _T["OnGiftScreenClosingCallbackMovie"]
-      33 [-]: FASTCALL1 62 R1 L0; 
+      33 [-]: FASTCALL1 64 R1 L0; 
       34 [-]: GETIMPORT R0 15; var0 = 0x7B998233
       35 [-]: CALL R0 2 2  ; var0 = var0(var1)
 L 0:  36 [-]: JUMPIF R0 L2 ; goto L2 if var0
       37 [-]: GETIMPORT R1 17; var1 = _T["OnGiftScreenClosingCallbackFunction"]
-      38 [-]: FASTCALL1 62 R1 L1; 
+      38 [-]: FASTCALL1 64 R1 L1; 
       39 [-]: GETIMPORT R0 15; var0 = 0x7B998233
       40 [-]: CALL R0 2 2  ; var0 = var0(var1)
 L 1:  41 [-]: JUMPIF R0 L2 ; goto L2 if var0
@@ -174,7 +174,7 @@ L 1:   9 [-]: RETURN R0 0  ;
 ; Is_vararg:       0
 ; Max Stack Size:  6
 
-       0 [-]: MULK R1 R0 K0; var1 = var0 * 0.59999999999999998
+       0 [-]: MULK R1 R0 K0; var1 = var0 * 0.60000002384185791
        1 [-]: GETIMPORT R3 2; var3 = 0x0032441C
        2 [-]: GETTABLEKS R2 R3 K3; var2 = var3["UIMaterial_VisibilityRange"]
        3 [-]: GETIMPORT R4 6; var4 = 0x6C97A788["VISIBILITY_FADE_SIZE"]
@@ -254,7 +254,7 @@ L 2:  29 [-]: GETIMPORT R1 15; var1 = _T["SetButtons"]
        9 [-]: LOADN R3 2   ; var3 = 2
       10 [-]: CALL R0 4 1  ; var0(var1, var2, var3)
       11 [-]: GETUPVAL R0 3; var0 = upvalues[3]
-      12 [-]: LOADK R2 K5  ; var2 = 0.20000000000000001
+      12 [-]: LOADK R2 K5  ; var2 = 0.20000000298023224
       13 [-]: DUPCLOSURE R3 K6; 
       14 [-]: CAPTURE UPVAL U4; 
       15 [-]: NAMECALL R0 R0 K7; var1 = var0; var0 = var0[0xBD2E96EA]
@@ -271,8 +271,8 @@ L 2:  29 [-]: GETIMPORT R1 15; var1 = _T["SetButtons"]
       26 [-]: LOADN R6 100 ; var6 = 100
       27 [-]: LOADN R7 0   ; var7 = 0
       28 [-]: SETLIST R5 R6 2 [1]; var5[1] = var6; var5[2] = var7; var5[3] = var8; 
-      29 [-]: LOADK R6 K11 ; var6 = 0.34999999999999998
-      30 [-]: LOADK R7 K12 ; var7 = 0.29999999999999999
+      29 [-]: LOADK R6 K11 ; var6 = 0.34999999403953552
+      30 [-]: LOADK R7 K12 ; var7 = 0.30000001192092896
       31 [-]: NEWCLOSURE R8 P1; 
       32 [-]: CAPTURE UPVAL U1; 
       33 [-]: CAPTURE UPVAL U5; 
@@ -295,260 +295,260 @@ L 2:  29 [-]: GETIMPORT R1 15; var1 = _T["SetButtons"]
        5 [-]: LOADNIL R7   ; var7 = nil
        6 [-]: JUMPXEQKNIL R3 L0 NOT; 
        7 [-]: LOADN R3 1   ; var3 = 1
-L 0:   8 [-]: FASTCALL1 62 R4 L1; 
+L 0:   8 [-]: FASTCALL1 64 R4 L1; 
        9 [-]: MOVE R9 R4   ; var9 = var4
       10 [-]: GETIMPORT R8 4; var8 = 0x7B998233
       11 [-]: CALL R8 2 2  ; var8 = var8(var9)
-L 1:  12 [-]: JUMPIF R8 L4 ; goto L4 if var8
+L 1:  12 [-]: JUMPIF R8 L5 ; goto L5 if var8
       13 [-]: GETIMPORT R10 6; var10 = gRecipeItemType
       14 [-]: NAMECALL R8 R4 K7; var9 = var4; var8 = var4[0xF2DEAF69]
       15 [-]: CALL R8 3 2  ; var8 = var8(var9, var10)
-      16 [-]: JUMPIFNOT R8 L4; goto L4 if not var8
+      16 [-]: JUMPIFNOT R8 L5; goto L5 if not var8
       17 [-]: GETIMPORT R8 9; var8 = 0x0032441C
       18 [-]: GETTABLEKS R7 R8 K10; var7 = var8["UITexture_Blueprint"]
       19 [-]: GETIMPORT R8 12; var8 = 0xAE91E43B
-      20 [-]: GETIMPORT R10 14; var10 = 0x64FB1586
-      21 [-]: NAMECALL R11 R0 K15; var12 = var0; var11 = var0[0xE9472DB7]
-      22 [-]: CALL R11 2 0 ; var11, ... = var11(var12)
-      23 [-]: CALL R10 0 2 ; var10 = var10(var11, ...)
-      24 [-]: LOADB R11 0  ; var11 = false
-      25 [-]: NAMECALL R8 R8 K16; var9 = var8; var8 = var8[0x42B04007]
-      26 [-]: CALL R8 4 2  ; var8 = var8(var9, var10, var11)
-      27 [-]: JUMPXEQKS R8 K1 L2; 
-      28 [-]: JUMPXEQKNIL R8 L3 NOT; 
-L 2:  29 [-]: NAMECALL R9 R0 K17; var10 = var0; var9 = var0[0xD3A9D01F]
-      30 [-]: CALL R9 2 2  ; var9 = var9(var10)
-      31 [-]: NAMECALL R9 R9 K18; var10 = var9; var9 = var9[0x6D604BA7]
-      32 [-]: CALL R9 2 2  ; var9 = var9(var10)
-      33 [-]: DUPTABLE R10 20; 
-      34 [-]: GETIMPORT R11 12; var11 = 0xAE91E43B
-      35 [-]: MOVE R13 R9  ; var13 = var9
-      36 [-]: LOADB R14 0  ; var14 = false
-      37 [-]: NAMECALL R11 R11 K16; var12 = var11; var11 = var11[0x42B04007]
-      38 [-]: CALL R11 4 2 ; var11 = var11(var12, var13, var14)
-      39 [-]: SETTABLEKS R11 R10 K19; var11["ITEM"] = var10
-      40 [-]: MOVE R8 R10  ; var8 = var10
-      41 [-]: GETIMPORT R10 12; var10 = 0xAE91E43B
-      42 [-]: LOADK R12 K21; var12 = "/Lotus/Language/Items/BlueprintAndItem"
-      43 [-]: LOADB R13 0  ; var13 = false
-      44 [-]: MOVE R14 R8  ; var14 = var8
-      45 [-]: NAMECALL R10 R10 K16; var11 = var10; var10 = var10[0x42B04007]
-      46 [-]: CALL R10 5 2 ; var10 = var10(var11, var12, var13, var14)
-      47 [-]: MOVE R5 R10  ; var5 = var10
-      48 [-]: JUMP L7      ; goto L7
-L 3:  49 [-]: MOVE R5 R8   ; var5 = var8
-      50 [-]: JUMP L7      ; goto L7
-L 4:  51 [-]: FASTCALL1 62 R4 L5; 
-      52 [-]: MOVE R9 R4   ; var9 = var4
-      53 [-]: GETIMPORT R8 4; var8 = 0x7B998233
-      54 [-]: CALL R8 2 2  ; var8 = var8(var9)
-L 5:  55 [-]: JUMPIF R8 L6 ; goto L6 if var8
-      56 [-]: GETIMPORT R10 23; var10 = gFusionBundleType
-      57 [-]: NAMECALL R8 R4 K7; var9 = var4; var8 = var4[0xF2DEAF69]
-      58 [-]: CALL R8 3 2  ; var8 = var8(var9, var10)
-      59 [-]: JUMPIFNOT R8 L6; goto L6 if not var8
-      60 [-]: NAMECALL R9 R0 K24; var10 = var0; var9 = var0[0x4E485A6F]
-      61 [-]: CALL R9 2 2  ; var9 = var9(var10)
-      62 [-]: MINUS R8 R9  ; 
-      63 [-]: MUL R9 R8 R3 ; var9 = var8 * var3
-      64 [-]: LOADK R10 K25; var10 = " "
-      65 [-]: GETIMPORT R11 12; var11 = 0xAE91E43B
-      66 [-]: NAMECALL R13 R0 K17; var14 = var0; var13 = var0[0xD3A9D01F]
-      67 [-]: CALL R13 2 2 ; var13 = var13(var14)
-      68 [-]: NAMECALL R13 R13 K18; var14 = var13; var13 = var13[0x6D604BA7]
-      69 [-]: CALL R13 2 2 ; var13 = var13(var14)
-      70 [-]: LOADB R14 0  ; var14 = false
-      71 [-]: NAMECALL R11 R11 K16; var12 = var11; var11 = var11[0x42B04007]
-      72 [-]: CALL R11 4 2 ; var11 = var11(var12, var13, var14)
-      73 [-]: CONCAT R5 R9 R11; var5 = var9 .. var11
-      74 [-]: LOADN R3 1   ; var3 = 1
-      75 [-]: JUMP L7      ; goto L7
-L 6:  76 [-]: GETIMPORT R8 12; var8 = 0xAE91E43B
-      77 [-]: NAMECALL R10 R0 K17; var11 = var0; var10 = var0[0xD3A9D01F]
-      78 [-]: CALL R10 2 2 ; var10 = var10(var11)
-      79 [-]: NAMECALL R10 R10 K18; var11 = var10; var10 = var10[0x6D604BA7]
-      80 [-]: CALL R10 2 2 ; var10 = var10(var11)
-      81 [-]: LOADB R11 0  ; var11 = false
-      82 [-]: NAMECALL R8 R8 K16; var9 = var8; var8 = var8[0x42B04007]
-      83 [-]: CALL R8 4 2  ; var8 = var8(var9, var10, var11)
-      84 [-]: MOVE R5 R8   ; var5 = var8
-L 7:  85 [-]: JUMPXEQKNIL R2 L12; 
-      86 [-]: FASTCALL1 62 R4 L8; 
-      87 [-]: MOVE R9 R4   ; var9 = var4
-      88 [-]: GETIMPORT R8 4; var8 = 0x7B998233
-      89 [-]: CALL R8 2 2  ; var8 = var8(var9)
-L 8:  90 [-]: JUMPIF R8 L12; goto L12 if var8
-      91 [-]: LOADB R8 1   ; var8 = true
-      92 [-]: GETIMPORT R11 27; var11 = gLotusBoosterUpgradeType
-      93 [-]: NAMECALL R9 R4 K7; var10 = var4; var9 = var4[0xF2DEAF69]
-      94 [-]: CALL R9 3 2  ; var9 = var9(var10, var11)
-      95 [-]: JUMPIFNOT R9 L9; goto L9 if not var9
-      96 [-]: GETIMPORT R9 29; var9 = 0xB009BBC6
-      97 [-]: MOVE R10 R4  ; var10 = var4
-      98 [-]: CALL R9 2 2  ; var9 = var9(var10)
-      99 [-]: NAMECALL R10 R9 K30; var11 = var9; var10 = var9[0x4BCC0A75]
-     100 [-]: CALL R10 2 2 ; var10 = var10(var11)
-     101 [-]: MOVE R8 R10  ; var8 = var10
-L 9: 102 [-]: JUMPIFNOT R8 L11; goto L11 if not var8
-     103 [-]: LOADN R9 0   ; var9 = 0
-     104 [-]: JUMPIFNOTEQ R2 R9 L10; goto L10 if var2 ~= var2100302
-     105 [-]: GETIMPORT R12 32; var12 = 0x603636AD
-     106 [-]: LOADK R13 K33; var13 = "/Lotus/Language/Menu/Global_3Days"
-     107 [-]: NEWTABLE R14 0 0; var14 = {}
-     108 [-]: CALL R12 3 2 ; var12 = var12(var13, var14)
-     109 [-]: MOVE R9 R12  ; var9 = var12
-     110 [-]: LOADK R10 K25; var10 = " "
-     111 [-]: MOVE R11 R5  ; var11 = var5
-     112 [-]: CONCAT R5 R9 R11; var5 = var9 .. var11
-     113 [-]: JUMP L12     ; goto L12
-L10: 114 [-]: LOADN R9 1   ; var9 = 1
-     115 [-]: JUMPIFNOTEQ R2 R9 L12; goto L12 if var2 ~= var2100302
-     116 [-]: GETIMPORT R12 32; var12 = 0x603636AD
-     117 [-]: LOADK R13 K34; var13 = "/Lotus/Language/Menu/Global_7Days"
-     118 [-]: NEWTABLE R14 0 0; var14 = {}
-     119 [-]: CALL R12 3 2 ; var12 = var12(var13, var14)
-     120 [-]: MOVE R9 R12  ; var9 = var12
-     121 [-]: LOADK R10 K25; var10 = " "
-     122 [-]: MOVE R11 R5  ; var11 = var5
-     123 [-]: CONCAT R5 R9 R11; var5 = var9 .. var11
-     124 [-]: JUMP L12     ; goto L12
-L11: 125 [-]: GETIMPORT R9 36; var9 = 0xA94DF70B
-     126 [-]: MOVE R11 R2  ; var11 = var2
-     127 [-]: NAMECALL R9 R9 K37; var10 = var9; var9 = var9[0xBD680672]
-     128 [-]: CALL R9 3 2  ; var9 = var9(var10, var11)
-     129 [-]: MOVE R10 R5  ; var10 = var5
-     130 [-]: LOADK R11 K38; var11 = " ("
-     131 [-]: GETIMPORT R14 32; var14 = 0x603636AD
-     132 [-]: LOADK R15 K39; var15 = "/Lotus/Language/Menu/Global_BoosterUses"
-     133 [-]: DUPTABLE R16 41; 
-     134 [-]: SETTABLEKS R9 R16 K40; var9["NUM_USES"] = var16
-     135 [-]: CALL R14 3 2 ; var14 = var14(var15, var16)
-     136 [-]: MOVE R12 R14 ; var12 = var14
-     137 [-]: LOADK R13 K42; var13 = ")"
-     138 [-]: CONCAT R5 R10 R13; var5 = var10 .. var13
-L12: 139 [-]: LOADN R8 1   ; var8 = 1
-     140 [-]: JUMPIFNOTLT R8 R3 L13; goto L13 if var8 >= var329750
-     141 [-]: MOVE R8 R5   ; var8 = var5
-     142 [-]: LOADK R9 K43 ; var9 = " x "
-     143 [-]: MOVE R10 R3  ; var10 = var3
-     144 [-]: CONCAT R5 R8 R10; var5 = var8 .. var10
-L13: 145 [-]: GETIMPORT R8 12; var8 = 0xAE91E43B
-     146 [-]: LOADK R10 K44; var10 = "Message.Title"
-     147 [-]: LOADN R11 29 ; var11 = 29
-     148 [-]: MOVE R12 R5  ; var12 = var5
-     149 [-]: NAMECALL R8 R8 K45; var9 = var8; var8 = var8[0x5F56EEAB]
-     150 [-]: CALL R8 5 1  ; var8(var9, var10, var11, var12)
-     151 [-]: LOADK R8 K1  ; var8 = ""
-     152 [-]: GETIMPORT R9 48; var9 = 0x34291F5C[0xA7A2E381]
-     153 [-]: CALL R9 1 2  ; var9 = var9()
-     154 [-]: JUMPIFNOT R9 L14; goto L14 if not var9
-     155 [-]: LOADK R8 K49 ; var8 = "<font face=\"Arial Unicode MS\" size=\"18\">"
-     156 [-]: LOADK R9 K50 ; var9 = "</font>"
-     157 [-]: MOVE R10 R8  ; var10 = var8
-     158 [-]: LOADK R11 K25; var11 = " "
-     159 [-]: MOVE R12 R1  ; var12 = var1
-     160 [-]: CONCAT R1 R9 R12; var1 = var9 .. var12
-     161 [-]: GETIMPORT R9 12; var9 = 0xAE91E43B
-     162 [-]: LOADK R11 K51; var11 = "Message.Content"
-     163 [-]: LOADN R12 12 ; var12 = 12
-     164 [-]: NAMECALL R9 R9 K52; var10 = var9; var9 = var9[0x91A24E4B]
-     165 [-]: CALL R9 4 2  ; var9 = var9(var10, var11, var12)
-     166 [-]: GETIMPORT R10 12; var10 = 0xAE91E43B
-     167 [-]: LOADK R12 K51; var12 = "Message.Content"
-     168 [-]: LOADN R13 5  ; var13 = 5
-     169 [-]: LOADN R14 150; var14 = 150
-     170 [-]: NAMECALL R10 R10 K53; var11 = var10; var10 = var10[0x67BC869F]
-     171 [-]: CALL R10 5 1 ; var10(var11, var12, var13, var14)
-     172 [-]: GETIMPORT R10 12; var10 = 0xAE91E43B
-     173 [-]: LOADK R12 K51; var12 = "Message.Content"
-     174 [-]: LOADN R13 6  ; var13 = 6
-     175 [-]: LOADN R14 150; var14 = 150
-     176 [-]: NAMECALL R10 R10 K53; var11 = var10; var10 = var10[0x67BC869F]
-     177 [-]: CALL R10 5 1 ; var10(var11, var12, var13, var14)
-     178 [-]: GETIMPORT R10 12; var10 = 0xAE91E43B
-     179 [-]: LOADK R12 K51; var12 = "Message.Content"
-     180 [-]: LOADN R13 0  ; var13 = 0
-     181 [-]: MULK R16 R9 K55; var16 = var9 * 1.5
-     182 [-]: MINUS R15 R16; 
-     183 [-]: DIVK R14 R15 K54; var14 = var15 / 2
-     184 [-]: NAMECALL R10 R10 K53; var11 = var10; var10 = var10[0x67BC869F]
-     185 [-]: CALL R10 5 1 ; var10(var11, var12, var13, var14)
-     186 [-]: GETIMPORT R10 12; var10 = 0xAE91E43B
-     187 [-]: LOADK R12 K51; var12 = "Message.Content"
-     188 [-]: LOADN R13 1  ; var13 = 1
-     189 [-]: LOADN R14 -4 ; var14 = -4
-     190 [-]: NAMECALL R10 R10 K53; var11 = var10; var10 = var10[0x67BC869F]
-     191 [-]: CALL R10 5 1 ; var10(var11, var12, var13, var14)
-     192 [-]: GETIMPORT R10 12; var10 = 0xAE91E43B
-     193 [-]: LOADK R12 K51; var12 = "Message.Content"
-     194 [-]: GETIMPORT R14 9; var14 = 0x0032441C
-     195 [-]: GETTABLEKS R13 R14 K56; var13 = var14["UIMaterial_FontSharpen"]
-     196 [-]: NAMECALL R10 R10 K57; var11 = var10; var10 = var10[0xD5181643]
-     197 [-]: CALL R10 4 1 ; var10(var11, var12, var13)
-     198 [-]: JUMP L15     ; goto L15
-L14: 199 [-]: LOADK R8 K58 ; var8 = "<font color=\"#FFFFFF\">"
-     200 [-]: LOADK R9 K50 ; var9 = "</font>"
-     201 [-]: MOVE R10 R8  ; var10 = var8
-     202 [-]: LOADK R11 K59; var11 = "<b>"
-     203 [-]: MOVE R12 R1  ; var12 = var1
-     204 [-]: LOADK R13 K60; var13 = "</b>"
-     205 [-]: CONCAT R1 R9 R13; var1 = var9 .. var13
-L15: 206 [-]: LOADK R10 K61; var10 = "<p>"
-     207 [-]: MOVE R11 R8  ; var11 = var8
-     208 [-]: GETIMPORT R14 12; var14 = 0xAE91E43B
-     209 [-]: LOADK R16 K62; var16 = "/Lotus/Language/Menu/GiftSender"
-     210 [-]: LOADB R17 0  ; var17 = false
-     211 [-]: DUPTABLE R18 64; 
-     212 [-]: SETTABLEKS R1 R18 K63; var1["SENDER"] = var18
-     213 [-]: NAMECALL R14 R14 K16; var15 = var14; var14 = var14[0x42B04007]
-     214 [-]: CALL R14 5 2 ; var14 = var14(var15, var16, var17, var18)
-     215 [-]: MOVE R12 R14 ; var12 = var14
-     216 [-]: LOADK R13 K65; var13 = "</font></p>"
-     217 [-]: CONCAT R9 R10 R13; var9 = var10 .. var13
-     218 [-]: GETIMPORT R10 12; var10 = 0xAE91E43B
-     219 [-]: LOADK R12 K51; var12 = "Message.Content"
-     220 [-]: LOADN R13 29 ; var13 = 29
-     221 [-]: MOVE R14 R9  ; var14 = var9
-     222 [-]: NAMECALL R10 R10 K45; var11 = var10; var10 = var10[0x5F56EEAB]
-     223 [-]: CALL R10 5 1 ; var10(var11, var12, var13, var14)
-     224 [-]: NAMECALL R12 R0 K0; var13 = var0; var12 = var0[0xF278F8A1]
-     225 [-]: CALL R12 2 2 ; var12 = var12(var13)
-     226 [-]: FASTCALL1 62 R12 L16; 
-     227 [-]: GETIMPORT R11 4; var11 = 0x7B998233
-     228 [-]: CALL R11 2 2 ; var11 = var11(var12)
-L16: 229 [-]: NOT R10 R11  ; var10 = not var11
-     230 [-]: JUMPIFNOT R10 L17; goto L17 if not var10
-     231 [-]: NAMECALL R10 R0 K0; var11 = var0; var10 = var0[0xF278F8A1]
-     232 [-]: CALL R10 2 2 ; var10 = var10(var11)
-     233 [-]: GETIMPORT R12 67; var12 = gAvatarImageItemType
-     234 [-]: NAMECALL R10 R10 K7; var11 = var10; var10 = var10[0xF2DEAF69]
-     235 [-]: CALL R10 3 2 ; var10 = var10(var11, var12)
-L17: 236 [-]: JUMPIFNOT R10 L18; goto L18 if not var10
-     237 [-]: GETIMPORT R11 12; var11 = 0xAE91E43B
-     238 [-]: LOADK R13 K68; var13 = "Item"
-     239 [-]: LOADN R14 12 ; var14 = 12
-     240 [-]: LOADN R15 335; var15 = 335
-     241 [-]: NAMECALL R11 R11 K53; var12 = var11; var11 = var11[0x67BC869F]
-     242 [-]: CALL R11 5 1 ; var11(var12, var13, var14, var15)
-L18: 243 [-]: GETIMPORT R11 12; var11 = 0xAE91E43B
-     244 [-]: LOADK R13 K69; var13 = "Item.Image"
-     245 [-]: MOVE R14 R6  ; var14 = var6
-     246 [-]: NAMECALL R11 R11 K70; var12 = var11; var11 = var11[0x1CB415C1]
-     247 [-]: CALL R11 4 1 ; var11(var12, var13, var14)
-     248 [-]: JUMPXEQKNIL R7 L19; 
-     249 [-]: GETIMPORT R11 12; var11 = 0xAE91E43B
-     250 [-]: LOADK R13 K71; var13 = "Item.Background"
-     251 [-]: MOVE R14 R7  ; var14 = var7
-     252 [-]: NAMECALL R11 R11 K70; var12 = var11; var11 = var11[0x1CB415C1]
-     253 [-]: CALL R11 4 1 ; var11(var12, var13, var14)
-     254 [-]: RETURN R0 0  ; 
-L19: 255 [-]: GETIMPORT R11 12; var11 = 0xAE91E43B
-     256 [-]: LOADK R13 K71; var13 = "Item.Background"
-     257 [-]: LOADN R14 11 ; var14 = 11
-     258 [-]: LOADB R15 0  ; var15 = false
-     259 [-]: NAMECALL R11 R11 K72; var12 = var11; var11 = var11[0xAADE900E]
-     260 [-]: CALL R11 5 1 ; var11(var12, var13, var14, var15)
-     261 [-]: RETURN R0 0  ; 
+      20 [-]: NAMECALL R11 R0 K13; var12 = var0; var11 = var0[0xE9472DB7]
+      21 [-]: CALL R11 2 0 ; var11, ... = var11(var12)
+      22 [-]: FASTCALL 63 L2; 
+      23 [-]: GETIMPORT R10 15; var10 = 0x64FB1586
+      24 [-]: CALL R10 0 2 ; var10 = var10(var11, ...)
+L 2:  25 [-]: LOADB R11 0  ; var11 = false
+      26 [-]: NAMECALL R8 R8 K16; var9 = var8; var8 = var8[0x42B04007]
+      27 [-]: CALL R8 4 2  ; var8 = var8(var9, var10, var11)
+      28 [-]: JUMPXEQKS R8 K1 L3; 
+      29 [-]: JUMPXEQKNIL R8 L4 NOT; 
+L 3:  30 [-]: NAMECALL R9 R0 K17; var10 = var0; var9 = var0[0xD3A9D01F]
+      31 [-]: CALL R9 2 2  ; var9 = var9(var10)
+      32 [-]: NAMECALL R9 R9 K18; var10 = var9; var9 = var9[0x6D604BA7]
+      33 [-]: CALL R9 2 2  ; var9 = var9(var10)
+      34 [-]: DUPTABLE R10 20; 
+      35 [-]: GETIMPORT R11 12; var11 = 0xAE91E43B
+      36 [-]: MOVE R13 R9  ; var13 = var9
+      37 [-]: LOADB R14 0  ; var14 = false
+      38 [-]: NAMECALL R11 R11 K16; var12 = var11; var11 = var11[0x42B04007]
+      39 [-]: CALL R11 4 2 ; var11 = var11(var12, var13, var14)
+      40 [-]: SETTABLEKS R11 R10 K19; var11["ITEM"] = var10
+      41 [-]: MOVE R8 R10  ; var8 = var10
+      42 [-]: GETIMPORT R10 12; var10 = 0xAE91E43B
+      43 [-]: LOADK R12 K21; var12 = "/Lotus/Language/Items/BlueprintAndItem"
+      44 [-]: LOADB R13 0  ; var13 = false
+      45 [-]: MOVE R14 R8  ; var14 = var8
+      46 [-]: NAMECALL R10 R10 K16; var11 = var10; var10 = var10[0x42B04007]
+      47 [-]: CALL R10 5 2 ; var10 = var10(var11, var12, var13, var14)
+      48 [-]: MOVE R5 R10  ; var5 = var10
+      49 [-]: JUMP L8      ; goto L8
+L 4:  50 [-]: MOVE R5 R8   ; var5 = var8
+      51 [-]: JUMP L8      ; goto L8
+L 5:  52 [-]: FASTCALL1 64 R4 L6; 
+      53 [-]: MOVE R9 R4   ; var9 = var4
+      54 [-]: GETIMPORT R8 4; var8 = 0x7B998233
+      55 [-]: CALL R8 2 2  ; var8 = var8(var9)
+L 6:  56 [-]: JUMPIF R8 L7 ; goto L7 if var8
+      57 [-]: GETIMPORT R10 23; var10 = gFusionBundleType
+      58 [-]: NAMECALL R8 R4 K7; var9 = var4; var8 = var4[0xF2DEAF69]
+      59 [-]: CALL R8 3 2  ; var8 = var8(var9, var10)
+      60 [-]: JUMPIFNOT R8 L7; goto L7 if not var8
+      61 [-]: NAMECALL R9 R0 K24; var10 = var0; var9 = var0[0x4E485A6F]
+      62 [-]: CALL R9 2 2  ; var9 = var9(var10)
+      63 [-]: MINUS R8 R9  ; 
+      64 [-]: MUL R9 R8 R3 ; var9 = var8 * var3
+      65 [-]: LOADK R10 K25; var10 = " "
+      66 [-]: GETIMPORT R11 12; var11 = 0xAE91E43B
+      67 [-]: NAMECALL R13 R0 K17; var14 = var0; var13 = var0[0xD3A9D01F]
+      68 [-]: CALL R13 2 2 ; var13 = var13(var14)
+      69 [-]: NAMECALL R13 R13 K18; var14 = var13; var13 = var13[0x6D604BA7]
+      70 [-]: CALL R13 2 2 ; var13 = var13(var14)
+      71 [-]: LOADB R14 0  ; var14 = false
+      72 [-]: NAMECALL R11 R11 K16; var12 = var11; var11 = var11[0x42B04007]
+      73 [-]: CALL R11 4 2 ; var11 = var11(var12, var13, var14)
+      74 [-]: CONCAT R5 R9 R11; var5 = var9 .. var11
+      75 [-]: LOADN R3 1   ; var3 = 1
+      76 [-]: JUMP L8      ; goto L8
+L 7:  77 [-]: GETIMPORT R8 12; var8 = 0xAE91E43B
+      78 [-]: NAMECALL R10 R0 K17; var11 = var0; var10 = var0[0xD3A9D01F]
+      79 [-]: CALL R10 2 2 ; var10 = var10(var11)
+      80 [-]: NAMECALL R10 R10 K18; var11 = var10; var10 = var10[0x6D604BA7]
+      81 [-]: CALL R10 2 2 ; var10 = var10(var11)
+      82 [-]: LOADB R11 0  ; var11 = false
+      83 [-]: NAMECALL R8 R8 K16; var9 = var8; var8 = var8[0x42B04007]
+      84 [-]: CALL R8 4 2  ; var8 = var8(var9, var10, var11)
+      85 [-]: MOVE R5 R8   ; var5 = var8
+L 8:  86 [-]: JUMPXEQKNIL R2 L13; 
+      87 [-]: FASTCALL1 64 R4 L9; 
+      88 [-]: MOVE R9 R4   ; var9 = var4
+      89 [-]: GETIMPORT R8 4; var8 = 0x7B998233
+      90 [-]: CALL R8 2 2  ; var8 = var8(var9)
+L 9:  91 [-]: JUMPIF R8 L13; goto L13 if var8
+      92 [-]: LOADB R8 1   ; var8 = true
+      93 [-]: GETIMPORT R11 27; var11 = gLotusBoosterUpgradeType
+      94 [-]: NAMECALL R9 R4 K7; var10 = var4; var9 = var4[0xF2DEAF69]
+      95 [-]: CALL R9 3 2  ; var9 = var9(var10, var11)
+      96 [-]: JUMPIFNOT R9 L10; goto L10 if not var9
+      97 [-]: GETIMPORT R9 29; var9 = 0xB009BBC6
+      98 [-]: MOVE R10 R4  ; var10 = var4
+      99 [-]: CALL R9 2 2  ; var9 = var9(var10)
+     100 [-]: NAMECALL R10 R9 K30; var11 = var9; var10 = var9[0x4BCC0A75]
+     101 [-]: CALL R10 2 2 ; var10 = var10(var11)
+     102 [-]: MOVE R8 R10  ; var8 = var10
+L10: 103 [-]: JUMPIFNOT R8 L12; goto L12 if not var8
+     104 [-]: LOADN R9 0   ; var9 = 0
+     105 [-]: JUMPIFNOTEQ R2 R9 L11; goto L11 if var2 ~= var2100257
+     106 [-]: GETIMPORT R12 32; var12 = 0x603636AD
+     107 [-]: LOADK R13 K33; var13 = "/Lotus/Language/Menu/Global_3Days"
+     108 [-]: NEWTABLE R14 0 0; var14 = {}
+     109 [-]: CALL R12 3 2 ; var12 = var12(var13, var14)
+     110 [-]: MOVE R9 R12  ; var9 = var12
+     111 [-]: LOADK R10 K25; var10 = " "
+     112 [-]: MOVE R11 R5  ; var11 = var5
+     113 [-]: CONCAT R5 R9 R11; var5 = var9 .. var11
+     114 [-]: JUMP L13     ; goto L13
+L11: 115 [-]: LOADN R9 1   ; var9 = 1
+     116 [-]: JUMPIFNOTEQ R2 R9 L13; goto L13 if var2 ~= var2100257
+     117 [-]: GETIMPORT R12 32; var12 = 0x603636AD
+     118 [-]: LOADK R13 K34; var13 = "/Lotus/Language/Menu/Global_7Days"
+     119 [-]: NEWTABLE R14 0 0; var14 = {}
+     120 [-]: CALL R12 3 2 ; var12 = var12(var13, var14)
+     121 [-]: MOVE R9 R12  ; var9 = var12
+     122 [-]: LOADK R10 K25; var10 = " "
+     123 [-]: MOVE R11 R5  ; var11 = var5
+     124 [-]: CONCAT R5 R9 R11; var5 = var9 .. var11
+     125 [-]: JUMP L13     ; goto L13
+L12: 126 [-]: GETIMPORT R9 36; var9 = 0xA94DF70B
+     127 [-]: MOVE R11 R2  ; var11 = var2
+     128 [-]: NAMECALL R9 R9 K37; var10 = var9; var9 = var9[0xBD680672]
+     129 [-]: CALL R9 3 2  ; var9 = var9(var10, var11)
+     130 [-]: MOVE R10 R5  ; var10 = var5
+     131 [-]: LOADK R11 K38; var11 = " ("
+     132 [-]: GETIMPORT R14 32; var14 = 0x603636AD
+     133 [-]: LOADK R15 K39; var15 = "/Lotus/Language/Menu/Global_BoosterUses"
+     134 [-]: DUPTABLE R16 41; 
+     135 [-]: SETTABLEKS R9 R16 K40; var9["NUM_USES"] = var16
+     136 [-]: CALL R14 3 2 ; var14 = var14(var15, var16)
+     137 [-]: MOVE R12 R14 ; var12 = var14
+     138 [-]: LOADK R13 K42; var13 = ")"
+     139 [-]: CONCAT R5 R10 R13; var5 = var10 .. var13
+L13: 140 [-]: LOADN R8 1   ; var8 = 1
+     141 [-]: JUMPIFNOTLT R8 R3 L14; goto L14 if var8 >= var329774
+     142 [-]: MOVE R8 R5   ; var8 = var5
+     143 [-]: LOADK R9 K43 ; var9 = " x "
+     144 [-]: MOVE R10 R3  ; var10 = var3
+     145 [-]: CONCAT R5 R8 R10; var5 = var8 .. var10
+L14: 146 [-]: GETIMPORT R8 12; var8 = 0xAE91E43B
+     147 [-]: LOADK R10 K44; var10 = "Message.Title"
+     148 [-]: LOADN R11 31 ; var11 = 31
+     149 [-]: MOVE R12 R5  ; var12 = var5
+     150 [-]: NAMECALL R8 R8 K45; var9 = var8; var8 = var8[0x5F56EEAB]
+     151 [-]: CALL R8 5 1  ; var8(var9, var10, var11, var12)
+     152 [-]: LOADK R8 K1  ; var8 = ""
+     153 [-]: GETIMPORT R9 48; var9 = 0x34291F5C[0xA7A2E381]
+     154 [-]: CALL R9 1 2  ; var9 = var9()
+     155 [-]: JUMPIFNOT R9 L15; goto L15 if not var9
+     156 [-]: LOADK R8 K49 ; var8 = "<font face=\"Arial Unicode MS\" size=\"18\">"
+     157 [-]: LOADK R9 K50 ; var9 = "</font>"
+     158 [-]: MOVE R10 R8  ; var10 = var8
+     159 [-]: LOADK R11 K25; var11 = " "
+     160 [-]: MOVE R12 R1  ; var12 = var1
+     161 [-]: CONCAT R1 R9 R12; var1 = var9 .. var12
+     162 [-]: GETIMPORT R9 12; var9 = 0xAE91E43B
+     163 [-]: LOADK R11 K51; var11 = "Message.Content"
+     164 [-]: LOADN R12 12 ; var12 = 12
+     165 [-]: NAMECALL R9 R9 K52; var10 = var9; var9 = var9[0x91A24E4B]
+     166 [-]: CALL R9 4 2  ; var9 = var9(var10, var11, var12)
+     167 [-]: GETIMPORT R10 12; var10 = 0xAE91E43B
+     168 [-]: LOADK R12 K51; var12 = "Message.Content"
+     169 [-]: LOADN R13 5  ; var13 = 5
+     170 [-]: LOADN R14 150; var14 = 150
+     171 [-]: NAMECALL R10 R10 K53; var11 = var10; var10 = var10[0x67BC869F]
+     172 [-]: CALL R10 5 1 ; var10(var11, var12, var13, var14)
+     173 [-]: GETIMPORT R10 12; var10 = 0xAE91E43B
+     174 [-]: LOADK R12 K51; var12 = "Message.Content"
+     175 [-]: LOADN R13 6  ; var13 = 6
+     176 [-]: LOADN R14 150; var14 = 150
+     177 [-]: NAMECALL R10 R10 K53; var11 = var10; var10 = var10[0x67BC869F]
+     178 [-]: CALL R10 5 1 ; var10(var11, var12, var13, var14)
+     179 [-]: GETIMPORT R10 12; var10 = 0xAE91E43B
+     180 [-]: LOADK R12 K51; var12 = "Message.Content"
+     181 [-]: LOADN R13 0  ; var13 = 0
+     182 [-]: MULK R16 R9 K55; var16 = var9 * 1.5
+     183 [-]: MINUS R15 R16; 
+          185 [-]: NAMECALL R10 R10 K53; var11 = var10; var10 = var10[0x67BC869F]
+     186 [-]: CALL R10 5 1 ; var10(var11, var12, var13, var14)
+     187 [-]: GETIMPORT R10 12; var10 = 0xAE91E43B
+     188 [-]: LOADK R12 K51; var12 = "Message.Content"
+     189 [-]: LOADN R13 1  ; var13 = 1
+     190 [-]: LOADN R14 -4 ; var14 = -4
+     191 [-]: NAMECALL R10 R10 K53; var11 = var10; var10 = var10[0x67BC869F]
+     192 [-]: CALL R10 5 1 ; var10(var11, var12, var13, var14)
+     193 [-]: GETIMPORT R10 12; var10 = 0xAE91E43B
+     194 [-]: LOADK R12 K51; var12 = "Message.Content"
+     195 [-]: GETIMPORT R14 9; var14 = 0x0032441C
+     196 [-]: GETTABLEKS R13 R14 K56; var13 = var14["UIMaterial_FontSharpen"]
+     197 [-]: NAMECALL R10 R10 K57; var11 = var10; var10 = var10[0xD5181643]
+     198 [-]: CALL R10 4 1 ; var10(var11, var12, var13)
+     199 [-]: JUMP L16     ; goto L16
+L15: 200 [-]: LOADK R8 K58 ; var8 = "<font color=\"#FFFFFF\">"
+     201 [-]: LOADK R9 K50 ; var9 = "</font>"
+     202 [-]: MOVE R10 R8  ; var10 = var8
+     203 [-]: LOADK R11 K59; var11 = "<b>"
+     204 [-]: MOVE R12 R1  ; var12 = var1
+     205 [-]: LOADK R13 K60; var13 = "</b>"
+     206 [-]: CONCAT R1 R9 R13; var1 = var9 .. var13
+L16: 207 [-]: LOADK R10 K61; var10 = "<p>"
+     208 [-]: MOVE R11 R8  ; var11 = var8
+     209 [-]: GETIMPORT R14 12; var14 = 0xAE91E43B
+     210 [-]: LOADK R16 K62; var16 = "/Lotus/Language/Menu/GiftSender"
+     211 [-]: LOADB R17 0  ; var17 = false
+     212 [-]: DUPTABLE R18 64; 
+     213 [-]: SETTABLEKS R1 R18 K63; var1["SENDER"] = var18
+     214 [-]: NAMECALL R14 R14 K16; var15 = var14; var14 = var14[0x42B04007]
+     215 [-]: CALL R14 5 2 ; var14 = var14(var15, var16, var17, var18)
+     216 [-]: MOVE R12 R14 ; var12 = var14
+     217 [-]: LOADK R13 K65; var13 = "</font></p>"
+     218 [-]: CONCAT R9 R10 R13; var9 = var10 .. var13
+     219 [-]: GETIMPORT R10 12; var10 = 0xAE91E43B
+     220 [-]: LOADK R12 K51; var12 = "Message.Content"
+     221 [-]: LOADN R13 31 ; var13 = 31
+     222 [-]: MOVE R14 R9  ; var14 = var9
+     223 [-]: NAMECALL R10 R10 K45; var11 = var10; var10 = var10[0x5F56EEAB]
+     224 [-]: CALL R10 5 1 ; var10(var11, var12, var13, var14)
+     225 [-]: NAMECALL R12 R0 K0; var13 = var0; var12 = var0[0xF278F8A1]
+     226 [-]: CALL R12 2 0 ; var12, ... = var12(var13)
+     227 [-]: FASTCALL 64 L17; 
+     228 [-]: GETIMPORT R11 4; var11 = 0x7B998233
+     229 [-]: CALL R11 0 2 ; var11 = var11(var12, ...)
+L17: 230 [-]: NOT R10 R11  ; var10 = not var11
+     231 [-]: JUMPIFNOT R10 L18; goto L18 if not var10
+     232 [-]: NAMECALL R10 R0 K0; var11 = var0; var10 = var0[0xF278F8A1]
+     233 [-]: CALL R10 2 2 ; var10 = var10(var11)
+     234 [-]: GETIMPORT R12 67; var12 = gAvatarImageItemType
+     235 [-]: NAMECALL R10 R10 K7; var11 = var10; var10 = var10[0xF2DEAF69]
+     236 [-]: CALL R10 3 2 ; var10 = var10(var11, var12)
+L18: 237 [-]: JUMPIFNOT R10 L19; goto L19 if not var10
+     238 [-]: GETIMPORT R11 12; var11 = 0xAE91E43B
+     239 [-]: LOADK R13 K68; var13 = "Item"
+     240 [-]: LOADN R14 12 ; var14 = 12
+     241 [-]: LOADN R15 335; var15 = 335
+     242 [-]: NAMECALL R11 R11 K53; var12 = var11; var11 = var11[0x67BC869F]
+     243 [-]: CALL R11 5 1 ; var11(var12, var13, var14, var15)
+L19: 244 [-]: GETIMPORT R11 12; var11 = 0xAE91E43B
+     245 [-]: LOADK R13 K69; var13 = "Item.Image"
+     246 [-]: MOVE R14 R6  ; var14 = var6
+     247 [-]: NAMECALL R11 R11 K70; var12 = var11; var11 = var11[0x1CB415C1]
+     248 [-]: CALL R11 4 1 ; var11(var12, var13, var14)
+     249 [-]: JUMPXEQKNIL R7 L20; 
+     250 [-]: GETIMPORT R11 12; var11 = 0xAE91E43B
+     251 [-]: LOADK R13 K71; var13 = "Item.Background"
+     252 [-]: MOVE R14 R7  ; var14 = var7
+     253 [-]: NAMECALL R11 R11 K70; var12 = var11; var11 = var11[0x1CB415C1]
+     254 [-]: CALL R11 4 1 ; var11(var12, var13, var14)
+     255 [-]: RETURN R0 0  ; 
+L20: 256 [-]: GETIMPORT R11 12; var11 = 0xAE91E43B
+     257 [-]: LOADK R13 K71; var13 = "Item.Background"
+     258 [-]: LOADN R14 11 ; var14 = 11
+     259 [-]: LOADB R15 0  ; var15 = false
+     260 [-]: NAMECALL R11 R11 K72; var12 = var11; var11 = var11[0xAADE900E]
+     261 [-]: CALL R11 5 1 ; var11(var12, var13, var14, var15)
+     262 [-]: RETURN R0 0  ; 
 
 
 ; Name:            
@@ -669,8 +669,8 @@ L19: 255 [-]: GETIMPORT R11 12; var11 = 0xAE91E43B
       76 [-]: GETUPVAL R1 3; var1 = upvalues[3]
       77 [-]: GETTABLEKS R0 R1 K28; var0 = var1[0x4C232AFC]
       78 [-]: GETIMPORT R1 1; var1 = 0xAE91E43B
-      79 [-]: LOADK R2 K29 ; var2 = 0.80000000000000004
-      80 [-]: LOADK R3 K30 ; var3 = 0.20000000000000001
+      79 [-]: LOADK R2 K29 ; var2 = 0.80000001192092896
+      80 [-]: LOADK R3 K30 ; var3 = 0.20000000298023224
       81 [-]: LOADN R4 0   ; var4 = 0
       82 [-]: NEWCLOSURE R5 P0; 
       83 [-]: CAPTURE UPVAL U4; 
@@ -692,7 +692,7 @@ L19: 255 [-]: GETIMPORT R11 12; var11 = 0xAE91E43B
        3 [-]: NAMECALL R0 R0 K4; var1 = var0; var0 = var0[0x8A8C8D5A]
        4 [-]: CALL R0 0 1  ; var0(var1, ...)
        5 [-]: GETUPVAL R1 0; var1 = upvalues[0]
-       6 [-]: FASTCALL1 62 R1 L0; 
+       6 [-]: FASTCALL1 64 R1 L0; 
        7 [-]: GETIMPORT R0 6; var0 = 0x7B998233
        8 [-]: CALL R0 2 2  ; var0 = var0(var1)
 L 0:   9 [-]: JUMPIF R0 L1 ; goto L1 if var0

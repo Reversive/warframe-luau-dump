@@ -26,7 +26,7 @@
        4 [-]: GETTABLEKS R3 R2 K2; var3 = var2["visible"]
        5 [-]: JUMPIFNOT R3 L1; goto L1 if not var3
        6 [-]: GETTABLEKS R4 R2 K3; var4 = var2["avatar"]
-       7 [-]: FASTCALL1 62 R4 L0; 
+       7 [-]: FASTCALL1 64 R4 L0; 
        8 [-]: GETIMPORT R3 5; var3 = 0x7B998233
        9 [-]: CALL R3 2 2  ; var3 = var3(var4)
 L 0:  10 [-]: JUMPIF R3 L1 ; goto L1 if var3
@@ -36,7 +36,7 @@ L 0:  10 [-]: JUMPIF R3 L1 ; goto L1 if var3
       14 [-]: JUMPIF R3 L1 ; goto L1 if var3
       15 [-]: GETTABLEKS R3 R2 K7; var3 = var2["distanceToTarget"]
       16 [-]: LOADK R4 K8  ; var4 = 7.5
-      17 [-]: JUMPIFNOTLT R3 R4 L1; goto L1 if var3 >= var1661076764
+      17 [-]: JUMPIFNOTLT R3 R4 L1; goto L1 if var3 >= var1661076799
       18 [-]: GETTABLEKS R5 R2 K3; var5 = var2["avatar"]
       19 [-]: NAMECALL R3 R0 K9; var4 = var0; var3 = var0[0x48D05257]
       20 [-]: CALL R3 3 1  ; var3(var4, var5)
@@ -55,7 +55,7 @@ L 1:  23 [-]: LOADN R3 0   ; var3 = 0
 
        0 [-]: NAMECALL R4 R1 K0; var5 = var1; var4 = var1[0xFA9E477F]
        1 [-]: CALL R4 2 2  ; var4 = var4(var5)
-       2 [-]: FASTCALL1 62 R4 L0; 
+       2 [-]: FASTCALL1 64 R4 L0; 
        3 [-]: MOVE R6 R4   ; var6 = var4
        4 [-]: GETIMPORT R5 2; var5 = 0x7B998233
        5 [-]: CALL R5 2 2  ; var5 = var5(var6)
@@ -92,7 +92,7 @@ L 1:  13 [-]: GETIMPORT R7 8; var7 = 0x520E413D
       36 [-]: CALL R5 2 2  ; var5 = var5(var6)
       37 [-]: LOADNIL R6   ; var6 = nil
       38 [-]: LOADNIL R7   ; var7 = nil
-      39 [-]: FASTCALL1 62 R2 L2; 
+      39 [-]: FASTCALL1 64 R2 L2; 
       40 [-]: MOVE R9 R2   ; var9 = var2
       41 [-]: GETIMPORT R8 2; var8 = 0x7B998233
       42 [-]: CALL R8 2 2  ; var8 = var8(var9)
@@ -104,7 +104,7 @@ L 3:  47 [-]: GETIMPORT R8 18; var8 = 0x5DB3CE80
       48 [-]: MOVE R9 R5   ; var9 = var5
       49 [-]: NAMECALL R10 R2 K14; var11 = var2; var10 = var2[0xF6EBD926]
       50 [-]: CALL R10 2 2 ; var10 = var10(var11)
-      51 [-]: LOADK R11 K19; var11 = 0.98999999999999999
+      51 [-]: LOADK R11 K19; var11 = 0.99000000953674316
       52 [-]: CALL R8 4 2  ; var8 = var8(var9, var10, var11)
       53 [-]: MOVE R6 R8   ; var6 = var8
       54 [-]: NAMECALL R8 R2 K20; var9 = var2; var8 = var2[0xCB3851B8]

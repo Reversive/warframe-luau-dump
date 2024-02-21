@@ -22,7 +22,7 @@
        0 [-]: GETIMPORT R1 1; var1 = 0x89326C93
        1 [-]: NAMECALL R1 R1 K2; var2 = var1; var1 = var1[0x78298275]
        2 [-]: CALL R1 2 2  ; var1 = var1(var2)
-       3 [-]: FASTCALL1 62 R1 L0; 
+       3 [-]: FASTCALL1 64 R1 L0; 
        4 [-]: MOVE R3 R1   ; var3 = var1
        5 [-]: GETIMPORT R2 4; var2 = 0x7B998233
        6 [-]: CALL R2 2 2  ; var2 = var2(var3)
@@ -48,7 +48,7 @@ L 1:  16 [-]: RETURN R0 0  ;
        0 [-]: GETIMPORT R1 1; var1 = 0xCBD666E1
        1 [-]: LOADN R2 0   ; var2 = 0
        2 [-]: CALL R1 2 1  ; var1(var2)
-       3 [-]: FASTCALL1 62 R0 L0; 
+       3 [-]: FASTCALL1 64 R0 L0; 
        4 [-]: MOVE R2 R0   ; var2 = var0
        5 [-]: GETIMPORT R1 3; var1 = 0x7B998233
        6 [-]: CALL R1 2 2  ; var1 = var1(var2)
@@ -57,14 +57,14 @@ L 0:   7 [-]: JUMPIFNOT R1 L1; goto L1 if not var1
 L 1:   9 [-]: GETIMPORT R3 5; var3 = gWeaponAttachmentType
       10 [-]: NAMECALL R1 R0 K6; var2 = var0; var1 = var0[0xC1595BD5]
       11 [-]: CALL R1 3 2  ; var1 = var1(var2, var3)
-L 2:  12 [-]: FASTCALL1 62 R0 L3; 
+L 2:  12 [-]: FASTCALL1 64 R0 L3; 
       13 [-]: MOVE R3 R0   ; var3 = var0
       14 [-]: GETIMPORT R2 3; var2 = 0x7B998233
       15 [-]: CALL R2 2 2  ; var2 = var2(var3)
 L 3:  16 [-]: JUMPIF R2 L8 ; goto L8 if var2
       17 [-]: LENGTH R2 R1 ; var2 = #var1
       18 [-]: LOADN R3 0   ; var3 = 0
-      19 [-]: JUMPIFNOTLT R3 R2 L8; goto L8 if var3 >= var66587
+      19 [-]: JUMPIFNOTLT R3 R2 L8; goto L8 if var3 >= var66566
       20 [-]: LOADB R4 1   ; var4 = true
       21 [-]: LOADB R5 1   ; var5 = true
       22 [-]: NAMECALL R2 R0 K7; var3 = var0; var2 = var0[0x768274D6]
@@ -74,7 +74,7 @@ L 3:  16 [-]: JUMPIF R2 L8 ; goto L8 if var2
       26 [-]: LOADN R3 1   ; var3 = 1
       27 [-]: FORNPREP R2 L7; nforprep start - [escape at L7] -- var2 = iterator
 L 4:  28 [-]: GETTABLE R6 R1 R4; var6 = var1[var4]
-      29 [-]: FASTCALL1 62 R6 L5; 
+      29 [-]: FASTCALL1 64 R6 L5; 
       30 [-]: GETIMPORT R5 3; var5 = 0x7B998233
       31 [-]: CALL R5 2 2  ; var5 = var5(var6)
 L 5:  32 [-]: JUMPIF R5 L6 ; goto L6 if var5

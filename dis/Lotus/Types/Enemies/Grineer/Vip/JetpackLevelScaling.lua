@@ -19,7 +19,7 @@
 
        0 [-]: LOADN R0 1   ; var0 = 1
        1 [-]: GETIMPORT R2 2; var2 = _T["gMinibossLevel"]
-       2 [-]: FASTCALL1 62 R2 L0; 
+       2 [-]: FASTCALL1 64 R2 L0; 
        3 [-]: GETIMPORT R1 4; var1 = 0x7B998233
        4 [-]: CALL R1 2 2  ; var1 = var1(var2)
 L 0:   5 [-]: JUMPIF R1 L1 ; goto L1 if var1

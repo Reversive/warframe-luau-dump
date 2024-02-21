@@ -22,7 +22,7 @@
 ; Max Stack Size:  4
 
        0 [-]: LOADN R1 0   ; var1 = 0
-       1 [-]: JUMPIFNOTLT R1 R0 L0; goto L0 if var1 >= var519
+       1 [-]: JUMPIFNOTLT R1 R0 L0; goto L0 if var1 >= var572
        2 [-]: GETUPVAL R2 0; var2 = upvalues[0]
        3 [-]: GETTABLEKS R1 R2 K0; var1 = var2[0x0C9EEDD2]
        4 [-]: MOVE R2 R0   ; var2 = var0

@@ -29,18 +29,18 @@
        0 [-]: GETIMPORT R1 1; var1 = 0xCBD666E1
        1 [-]: LOADN R2 0   ; var2 = 0
        2 [-]: CALL R1 2 1  ; var1(var2)
-L 0:   3 [-]: FASTCALL1 62 R0 L1; 
+L 0:   3 [-]: FASTCALL1 64 R0 L1; 
        4 [-]: MOVE R2 R0   ; var2 = var0
        5 [-]: GETIMPORT R1 3; var1 = 0x7B998233
        6 [-]: CALL R1 2 2  ; var1 = var1(var2)
 L 1:   7 [-]: JUMPIF R1 L9 ; goto L9 if var1
        8 [-]: GETIMPORT R2 6; var2 = _T["TransmissionSoundInstance"]
-       9 [-]: FASTCALL1 62 R2 L2; 
+       9 [-]: FASTCALL1 64 R2 L2; 
       10 [-]: GETIMPORT R1 3; var1 = 0x7B998233
       11 [-]: CALL R1 2 2  ; var1 = var1(var2)
 L 2:  12 [-]: JUMPIF R1 L8 ; goto L8 if var1
       13 [-]: GETIMPORT R2 8; var2 = _T["curTransmission"]
-      14 [-]: FASTCALL1 62 R2 L3; 
+      14 [-]: FASTCALL1 64 R2 L3; 
       15 [-]: GETIMPORT R1 3; var1 = 0x7B998233
       16 [-]: CALL R1 2 2  ; var1 = var1(var2)
 L 3:  17 [-]: JUMPIF R1 L8 ; goto L8 if var1
@@ -52,7 +52,7 @@ L 3:  17 [-]: JUMPIF R1 L8 ; goto L8 if var1
       23 [-]: FORNPREP R2 L7; nforprep start - [escape at L7] -- var2 = iterator
 L 4:  24 [-]: GETGLOBAL R7 K9; var7 = "transmissionTypes"
       25 [-]: GETTABLE R6 R7 R4; var6 = var7[var4]
-      26 [-]: FASTCALL1 62 R6 L5; 
+      26 [-]: FASTCALL1 64 R6 L5; 
       27 [-]: GETIMPORT R5 3; var5 = 0x7B998233
       28 [-]: CALL R5 2 2  ; var5 = var5(var6)
 L 5:  29 [-]: JUMPIF R5 L6 ; goto L6 if var5

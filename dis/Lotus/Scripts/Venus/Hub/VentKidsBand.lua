@@ -27,7 +27,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  6
 
-       0 [-]: FASTCALL1 62 R0 L0; 
+       0 [-]: FASTCALL1 64 R0 L0; 
        1 [-]: MOVE R4 R0   ; var4 = var0
        2 [-]: GETIMPORT R3 1; var3 = 0x7B998233
        3 [-]: CALL R3 2 2  ; var3 = var3(var4)
@@ -50,7 +50,7 @@ L 3:  16 [-]: NAMECALL R3 R0 K4; var4 = var0; var3 = var0[0x1C84839C]
       20 [-]: LOADN R4 0   ; var4 = 0
       21 [-]: CALL R3 2 1  ; var3(var4)
       22 [-]: JUMPBACK L3  ; goto L3
-L 4:  23 [-]: FASTCALL1 62 R2 L5; 
+L 4:  23 [-]: FASTCALL1 64 R2 L5; 
       24 [-]: MOVE R5 R2   ; var5 = var2
       25 [-]: GETIMPORT R4 1; var4 = 0x7B998233
       26 [-]: CALL R4 2 2  ; var4 = var4(var5)
@@ -79,7 +79,7 @@ L 6:  32 [-]: RETURN R3 1  ;
        7 [-]: GETUPVAL R2 1; var2 = upvalues[1]
        8 [-]: CALL R1 2 2  ; var1 = var1(var2)
        9 [-]: LOADN R2 1   ; var2 = 1
-      10 [-]: JUMPIFNOTLE R2 R1 L0; goto L0 if var2 > var65581
+      10 [-]: JUMPIFNOTLE R2 R1 L0; goto L0 if var2 > var65571
       11 [-]: RETURN R0 0  ; 
 L 0:  12 [-]: GETIMPORT R1 3; var1 = 0x89326C93
       13 [-]: NAMECALL R1 R1 K4; var2 = var1; var1 = var1[0x78298275]
@@ -103,7 +103,7 @@ L 1:  23 [-]: LOADN R6 1   ; var6 = 1
 L 2:  31 [-]: LOADK R9 K16 ; var9 = "StartPlaying"
       32 [-]: NAMECALL R7 R2 K17; var8 = var2; var7 = var2[0x8EB2112D]
       33 [-]: CALL R7 3 1  ; var7(var8, var9)
-L 3:  34 [-]: FASTCALL1 62 R1 L4; 
+L 3:  34 [-]: FASTCALL1 64 R1 L4; 
       35 [-]: MOVE R8 R1   ; var8 = var1
       36 [-]: GETIMPORT R7 19; var7 = 0x7B998233
       37 [-]: CALL R7 2 2  ; var7 = var7(var8)

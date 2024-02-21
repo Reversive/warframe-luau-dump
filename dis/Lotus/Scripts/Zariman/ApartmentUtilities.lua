@@ -37,7 +37,7 @@
        1 [-]: LOADNIL R2   ; var2 = nil
        2 [-]: GETIMPORT R3 1; var3 = EMPTY_SYMBOL
        3 [-]: LOADNIL R4   ; var4 = nil
-       4 [-]: FASTCALL1 62 R0 L0; 
+       4 [-]: FASTCALL1 64 R0 L0; 
        5 [-]: MOVE R6 R0   ; var6 = var0
        6 [-]: GETIMPORT R5 3; var5 = 0x7B998233
        7 [-]: CALL R5 2 2  ; var5 = var5(var6)
@@ -69,16 +69,16 @@ L 3:  29 [-]: GETIMPORT R9 8; var9 = _T["VideoWallZoneAttribs"]
       33 [-]: JUMPIFNOT R9 L4; goto L4 if not var9
       34 [-]: NAMECALL R9 R8 K17; var10 = var8; var9 = var8[0xEFE29E59]
       35 [-]: CALL R9 2 2  ; var9 = var9(var10)
-      36 [-]: JUMPIFNOTEQ R9 R3 L4; goto L4 if var9 ~= var524566
+      36 [-]: JUMPIFNOTEQ R9 R3 L4; goto L4 if var9 ~= var524590
       37 [-]: MOVE R1 R8   ; var1 = var8
       38 [-]: JUMP L5      ; goto L5
 L 4:  39 [-]: NAMECALL R9 R8 K18; var10 = var8; var9 = var8[0x22DA1852]
       40 [-]: CALL R9 2 2  ; var9 = var9(var10)
       41 [-]: GETUPVAL R10 0; var10 = upvalues[0]
-      42 [-]: JUMPIFNOTEQ R9 R10 L5; goto L5 if var9 ~= var524822
+      42 [-]: JUMPIFNOTEQ R9 R10 L5; goto L5 if var9 ~= var524846
       43 [-]: MOVE R2 R8   ; var2 = var8
 L 5:  44 [-]: FORNLOOP R5 L3; nforloop end - iterate + goto L3
-L 6:  45 [-]: FASTCALL1 62 R2 L7; 
+L 6:  45 [-]: FASTCALL1 64 R2 L7; 
       46 [-]: MOVE R6 R2   ; var6 = var2
       47 [-]: GETIMPORT R5 3; var5 = 0x7B998233
       48 [-]: CALL R5 2 2  ; var5 = var5(var6)
@@ -100,7 +100,7 @@ L 8:  54 [-]: GETIMPORT R5 23; var5 = _T["VideoWallDefaults"]
       64 [-]: CALL R7 2 2  ; var7 = var7(var8)
       65 [-]: SETTABLEKS R7 R6 K25; var7["BackdropZone"] = var6
       66 [-]: SETTABLEKS R6 R5 K22; var6["VideoWallDefaults"] = var5
-L 9:  67 [-]: FASTCALL1 62 R0 L10; 
+L 9:  67 [-]: FASTCALL1 64 R0 L10; 
       68 [-]: MOVE R6 R0   ; var6 = var0
       69 [-]: GETIMPORT R5 3; var5 = 0x7B998233
       70 [-]: CALL R5 2 2  ; var5 = var5(var6)
@@ -113,52 +113,53 @@ L10:  71 [-]: JUMPIFNOT R5 L11; goto L11 if not var5
       77 [-]: GETIMPORT R7 32; var7 = _T["VideoWallDefaults"]["BackdropZone"]
       78 [-]: NAMECALL R5 R5 K33; var6 = var5; var5 = var5[0xAD92127C]
       79 [-]: CALL R5 3 1  ; var5(var6, var7)
-      80 [-]: JUMP L14     ; goto L14
-L11:  81 [-]: FASTCALL1 62 R1 L12; 
+      80 [-]: JUMP L15     ; goto L15
+L11:  81 [-]: FASTCALL1 64 R1 L12; 
       82 [-]: MOVE R6 R1   ; var6 = var1
       83 [-]: GETIMPORT R5 3; var5 = 0x7B998233
       84 [-]: CALL R5 2 2  ; var5 = var5(var6)
-L12:  85 [-]: JUMPIFNOT R5 L13; goto L13 if not var5
+L12:  85 [-]: JUMPIFNOT R5 L14; goto L14 if not var5
       86 [-]: GETIMPORT R5 20; var5 = 0x3D106989
       87 [-]: LOADK R7 K34 ; var7 = "Couldn't find ZoneAttribs for backdrop "
-      88 [-]: GETIMPORT R8 36; var8 = 0x64FB1586
+      88 [-]: FASTCALL1 63 R3 L13; 
       89 [-]: MOVE R9 R3   ; var9 = var3
-      90 [-]: CALL R8 2 2  ; var8 = var8(var9)
-      91 [-]: CONCAT R6 R7 R8; var6 = var7 .. var8
-      92 [-]: CALL R5 2 1  ; var5(var6)
-      93 [-]: RETURN R0 0  ; 
-L13:  94 [-]: NAMECALL R7 R1 K17; var8 = var1; var7 = var1[0xEFE29E59]
-      95 [-]: CALL R7 2 0  ; var7, ... = var7(var8)
-      96 [-]: NAMECALL R5 R2 K31; var6 = var2; var5 = var2[0x7E070E71]
-      97 [-]: CALL R5 0 1  ; var5(var6, ...)
-      98 [-]: NAMECALL R5 R2 K28; var6 = var2; var5 = var2[0xE79E7EF4]
-      99 [-]: CALL R5 2 2  ; var5 = var5(var6)
-     100 [-]: NAMECALL R7 R1 K28; var8 = var1; var7 = var1[0xE79E7EF4]
-     101 [-]: CALL R7 2 0  ; var7, ... = var7(var8)
-     102 [-]: NAMECALL R5 R5 K33; var6 = var5; var5 = var5[0xAD92127C]
-     103 [-]: CALL R5 0 1  ; var5(var6, ...)
-L14: 104 [-]: GETIMPORT R5 38; var5 = _T["VideoWallEndColor"]
-     105 [-]: JUMPXEQKNIL R5 L15; 
-     106 [-]: GETIMPORT R5 10; var5 = _T
-     107 [-]: GETIMPORT R6 38; var6 = _T["VideoWallEndColor"]
-     108 [-]: SETTABLEKS R6 R5 K39; var6["VideoWallStartColor"] = var5
-L15: 109 [-]: GETIMPORT R5 10; var5 = _T
-     110 [-]: SETTABLEKS R4 R5 K37; var4["VideoWallEndColor"] = var5
-     111 [-]: GETIMPORT R5 12; var5 = 0x89326C93
-     112 [-]: GETIMPORT R7 41; var7 = 0x0469F296
-     113 [-]: LOADK R8 K42 ; var8 = "VideowallLightChange"
-     114 [-]: CALL R7 2 0  ; var7, ... = var7(var8)
-     115 [-]: NAMECALL R5 R5 K43; var6 = var5; var5 = var5[0x46A0EBF5]
-     116 [-]: CALL R5 0 2  ; var5 = var5(var6, ...)
-     117 [-]: FASTCALL1 62 R5 L16; 
-     118 [-]: MOVE R7 R5   ; var7 = var5
-     119 [-]: GETIMPORT R6 3; var6 = 0x7B998233
-     120 [-]: CALL R6 2 2  ; var6 = var6(var7)
-L16: 121 [-]: JUMPIF R6 L17; goto L17 if var6
-     122 [-]: LOADK R8 K44 ; var8 = "Execute"
-     123 [-]: NAMECALL R6 R5 K45; var7 = var5; var6 = var5[0x8EB2112D]
-     124 [-]: CALL R6 3 1  ; var6(var7, var8)
-L17: 125 [-]: RETURN R0 0  ; 
+      90 [-]: GETIMPORT R8 36; var8 = 0x64FB1586
+      91 [-]: CALL R8 2 2  ; var8 = var8(var9)
+L13:  92 [-]: CONCAT R6 R7 R8; var6 = var7 .. var8
+      93 [-]: CALL R5 2 1  ; var5(var6)
+      94 [-]: RETURN R0 0  ; 
+L14:  95 [-]: NAMECALL R7 R1 K17; var8 = var1; var7 = var1[0xEFE29E59]
+      96 [-]: CALL R7 2 0  ; var7, ... = var7(var8)
+      97 [-]: NAMECALL R5 R2 K31; var6 = var2; var5 = var2[0x7E070E71]
+      98 [-]: CALL R5 0 1  ; var5(var6, ...)
+      99 [-]: NAMECALL R5 R2 K28; var6 = var2; var5 = var2[0xE79E7EF4]
+     100 [-]: CALL R5 2 2  ; var5 = var5(var6)
+     101 [-]: NAMECALL R7 R1 K28; var8 = var1; var7 = var1[0xE79E7EF4]
+     102 [-]: CALL R7 2 0  ; var7, ... = var7(var8)
+     103 [-]: NAMECALL R5 R5 K33; var6 = var5; var5 = var5[0xAD92127C]
+     104 [-]: CALL R5 0 1  ; var5(var6, ...)
+L15: 105 [-]: GETIMPORT R5 38; var5 = _T["VideoWallEndColor"]
+     106 [-]: JUMPXEQKNIL R5 L16; 
+     107 [-]: GETIMPORT R5 10; var5 = _T
+     108 [-]: GETIMPORT R6 38; var6 = _T["VideoWallEndColor"]
+     109 [-]: SETTABLEKS R6 R5 K39; var6["VideoWallStartColor"] = var5
+L16: 110 [-]: GETIMPORT R5 10; var5 = _T
+     111 [-]: SETTABLEKS R4 R5 K37; var4["VideoWallEndColor"] = var5
+     112 [-]: GETIMPORT R5 12; var5 = 0x89326C93
+     113 [-]: GETIMPORT R7 41; var7 = 0x0469F296
+     114 [-]: LOADK R8 K42 ; var8 = "VideowallLightChange"
+     115 [-]: CALL R7 2 0  ; var7, ... = var7(var8)
+     116 [-]: NAMECALL R5 R5 K43; var6 = var5; var5 = var5[0x46A0EBF5]
+     117 [-]: CALL R5 0 2  ; var5 = var5(var6, ...)
+     118 [-]: FASTCALL1 64 R5 L17; 
+     119 [-]: MOVE R7 R5   ; var7 = var5
+     120 [-]: GETIMPORT R6 3; var6 = 0x7B998233
+     121 [-]: CALL R6 2 2  ; var6 = var6(var7)
+L17: 122 [-]: JUMPIF R6 L18; goto L18 if var6
+     123 [-]: LOADK R8 K44 ; var8 = "Execute"
+     124 [-]: NAMECALL R6 R5 K45; var7 = var5; var6 = var5[0x8EB2112D]
+     125 [-]: CALL R6 3 1  ; var6(var7, var8)
+L18: 126 [-]: RETURN R0 0  ; 
 
 
 ; Name:            
@@ -169,7 +170,7 @@ L17: 125 [-]: RETURN R0 0  ;
 ; Max Stack Size:  9
 
        0 [-]: LOADNIL R1   ; var1 = nil
-       1 [-]: FASTCALL1 62 R0 L0; 
+       1 [-]: FASTCALL1 64 R0 L0; 
        2 [-]: MOVE R3 R0   ; var3 = var0
        3 [-]: GETIMPORT R2 1; var2 = 0x7B998233
        4 [-]: CALL R2 2 2  ; var2 = var2(var3)
@@ -179,7 +180,7 @@ L 0:   5 [-]: JUMPIF R2 L1 ; goto L1 if var2
        8 [-]: CALL R2 2 2  ; var2 = var2(var3)
        9 [-]: MOVE R1 R2   ; var1 = var2
 L 1:  10 [-]: GETIMPORT R3 6; var3 = _T["SoundscapeWaypoint"]
-      11 [-]: FASTCALL1 62 R3 L2; 
+      11 [-]: FASTCALL1 64 R3 L2; 
       12 [-]: GETIMPORT R2 1; var2 = 0x7B998233
       13 [-]: CALL R2 2 2  ; var2 = var2(var3)
 L 2:  14 [-]: JUMPIFNOT R2 L3; goto L3 if not var2
@@ -190,12 +191,12 @@ L 2:  14 [-]: JUMPIFNOT R2 L3; goto L3 if not var2
       19 [-]: CALL R3 3 2  ; var3 = var3(var4, var5)
       20 [-]: SETTABLEKS R3 R2 K5; var3["SoundscapeWaypoint"] = var2
 L 3:  21 [-]: GETIMPORT R3 6; var3 = _T["SoundscapeWaypoint"]
-      22 [-]: FASTCALL1 62 R3 L4; 
+      22 [-]: FASTCALL1 64 R3 L4; 
       23 [-]: GETIMPORT R2 1; var2 = 0x7B998233
       24 [-]: CALL R2 2 2  ; var2 = var2(var3)
 L 4:  25 [-]: JUMPIF R2 L8 ; goto L8 if var2
       26 [-]: GETIMPORT R3 12; var3 = _T["VideoWallSoundSysVolume"]
-      27 [-]: FASTCALL1 62 R3 L5; 
+      27 [-]: FASTCALL1 64 R3 L5; 
       28 [-]: GETIMPORT R2 1; var2 = 0x7B998233
       29 [-]: CALL R2 2 2  ; var2 = var2(var3)
 L 5:  30 [-]: JUMPIF R2 L6 ; goto L6 if var2
@@ -203,7 +204,7 @@ L 5:  30 [-]: JUMPIF R2 L6 ; goto L6 if var2
       32 [-]: GETIMPORT R4 12; var4 = _T["VideoWallSoundSysVolume"]
       33 [-]: NAMECALL R2 R2 K13; var3 = var2; var2 = var2[0x59C96E77]
       34 [-]: CALL R2 3 1  ; var2(var3, var4)
-L 6:  35 [-]: FASTCALL1 62 R1 L7; 
+L 6:  35 [-]: FASTCALL1 64 R1 L7; 
       36 [-]: MOVE R3 R1   ; var3 = var1
       37 [-]: GETIMPORT R2 1; var2 = 0x7B998233
       38 [-]: CALL R2 2 2  ; var2 = var2(var3)

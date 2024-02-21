@@ -38,7 +38,7 @@
        6 [-]: GETIMPORT R1 1; var1 = 0xCBD666E1
        7 [-]: LOADN R2 0   ; var2 = 0
        8 [-]: CALL R1 2 1  ; var1(var2)
-       9 [-]: FASTCALL1 62 R0 L0; 
+       9 [-]: FASTCALL1 64 R0 L0; 
       10 [-]: MOVE R2 R0   ; var2 = var0
       11 [-]: GETIMPORT R1 3; var1 = 0x7B998233
       12 [-]: CALL R1 2 2  ; var1 = var1(var2)
@@ -46,7 +46,7 @@ L 0:  13 [-]: JUMPIFNOT R1 L1; goto L1 if not var1
       14 [-]: RETURN R0 0  ; 
 L 1:  15 [-]: NAMECALL R1 R0 K4; var2 = var0; var1 = var0[0x2B54251B]
       16 [-]: CALL R1 2 2  ; var1 = var1(var2)
-      17 [-]: FASTCALL1 62 R1 L2; 
+      17 [-]: FASTCALL1 64 R1 L2; 
       18 [-]: MOVE R3 R1   ; var3 = var1
       19 [-]: GETIMPORT R2 3; var2 = 0x7B998233
       20 [-]: CALL R2 2 2  ; var2 = var2(var3)
@@ -60,7 +60,7 @@ L 4:  27 [-]: NAMECALL R2 R1 K8; var3 = var1; var2 = var1[0xDE321E6F]
       28 [-]: CALL R2 2 2  ; var2 = var2(var3)
       29 [-]: NAMECALL R3 R2 K9; var4 = var2; var3 = var2[0xF7D48EE0]
       30 [-]: CALL R3 2 2  ; var3 = var3(var4)
-      31 [-]: FASTCALL1 62 R3 L5; 
+      31 [-]: FASTCALL1 64 R3 L5; 
       32 [-]: MOVE R5 R3   ; var5 = var3
       33 [-]: GETIMPORT R4 3; var4 = 0x7B998233
       34 [-]: CALL R4 2 2  ; var4 = var4(var5)
@@ -79,7 +79,7 @@ L 5:  35 [-]: JUMPIFNOT R4 L12; goto L12 if not var4
       47 [-]: CALL R4 2 2  ; var4 = var4(var5)
       48 [-]: JUMPIFNOT R4 L11; goto L11 if not var4
       49 [-]: GETIMPORT R5 19; var5 = 0x25D99D89
-      50 [-]: FASTCALL1 62 R5 L6; 
+      50 [-]: FASTCALL1 64 R5 L6; 
       51 [-]: GETIMPORT R4 3; var4 = 0x7B998233
       52 [-]: CALL R4 2 2  ; var4 = var4(var5)
 L 6:  53 [-]: JUMPIF R4 L11; goto L11 if var4
@@ -101,7 +101,7 @@ L 8:  65 [-]: GETUPVAL R8 2; var8 = upvalues[2]
       69 [-]: NAMECALL R11 R1 K24; var12 = var1; var11 = var1[0xADBDC520]
       70 [-]: CALL R11 2 2 ; var11 = var11(var12)
       71 [-]: GETIMPORT R12 26; var12 = 0x89326C93
-      72 [-]: JUMPIFNOTEQ R11 R12 L9; goto L9 if var11 ~= var16779803
+      72 [-]: JUMPIFNOTEQ R11 R12 L9; goto L9 if var11 ~= var16779782
       73 [-]: LOADB R10 0 +1; var10 = false
 L 9:  74 [-]: LOADB R10 1  ; var10 = true
 L10:  75 [-]: LOADB R11 1  ; var11 = true

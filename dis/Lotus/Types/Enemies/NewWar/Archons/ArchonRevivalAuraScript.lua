@@ -23,7 +23,7 @@
 ; Is_vararg:       0
 ; Max Stack Size:  12
 
-       0 [-]: FASTCALL1 62 R0 L0; 
+       0 [-]: FASTCALL1 64 R0 L0; 
        1 [-]: MOVE R2 R0   ; var2 = var0
        2 [-]: GETIMPORT R1 1; var1 = 0x7B998233
        3 [-]: CALL R1 2 2  ; var1 = var1(var2)
@@ -46,7 +46,7 @@ L 2:  13 [-]: GETIMPORT R3 7; var3 = gDecorationType
       20 [-]: FORNPREP R2 L8; nforprep start - [escape at L8] -- var2 = iterator
 L 3:  21 [-]: GETIMPORT R7 10; var7 = 0x03110559
       22 [-]: GETTABLE R6 R7 R4; var6 = var7[var4]
-      23 [-]: FASTCALL1 62 R6 L4; 
+      23 [-]: FASTCALL1 64 R6 L4; 
       24 [-]: GETIMPORT R5 1; var5 = 0x7B998233
       25 [-]: CALL R5 2 2  ; var5 = var5(var6)
 L 4:  26 [-]: JUMPIF R5 L7 ; goto L7 if var5
@@ -122,7 +122,7 @@ L 0:   5 [-]: LOADN R4 1   ; var4 = 1
        9 [-]: FORNPREP R2 L5; nforprep start - [escape at L5] -- var2 = iterator
 L 1:  10 [-]: GETIMPORT R6 2; var6 = _T["ArchonReviveTargets"]
       11 [-]: GETTABLE R5 R6 R4; var5 = var6[var4]
-      12 [-]: JUMPIFNOTEQ R5 R1 L2; goto L2 if var5 ~= var132686
+      12 [-]: JUMPIFNOTEQ R5 R1 L2; goto L2 if var5 ~= var132641
       13 [-]: GETIMPORT R6 2; var6 = _T["ArchonReviveTargets"]
       14 [-]: GETTABLE R5 R6 R4; var5 = var6[var4]
       15 [-]: NAMECALL R5 R5 K4; var6 = var5; var5 = var5[0x1AC1655C]
@@ -135,7 +135,7 @@ L 1:  10 [-]: GETIMPORT R6 2; var6 = _T["ArchonReviveTargets"]
       22 [-]: SETTABLE R6 R5 R4; var6[var5] = var4
 L 2:  23 [-]: GETIMPORT R7 2; var7 = _T["ArchonReviveTargets"]
       24 [-]: GETTABLE R6 R7 R4; var6 = var7[var4]
-      25 [-]: FASTCALL1 62 R6 L3; 
+      25 [-]: FASTCALL1 64 R6 L3; 
       26 [-]: GETIMPORT R5 7; var5 = 0x7B998233
       27 [-]: CALL R5 2 2  ; var5 = var5(var6)
 L 3:  28 [-]: JUMPIFNOT R5 L4; goto L4 if not var5
@@ -159,7 +159,7 @@ L 5:  34 [-]: RETURN R0 0  ;
        2 [-]: CALL R2 2 1  ; var2(var3)
        3 [-]: NAMECALL R2 R0 K3; var3 = var0; var2 = var0[0xFA9E477F]
        4 [-]: CALL R2 2 2  ; var2 = var2(var3)
-       5 [-]: FASTCALL1 62 R2 L0; 
+       5 [-]: FASTCALL1 64 R2 L0; 
        6 [-]: MOVE R4 R2   ; var4 = var2
        7 [-]: GETIMPORT R3 5; var3 = 0x7B998233
        8 [-]: CALL R3 2 2  ; var3 = var3(var4)

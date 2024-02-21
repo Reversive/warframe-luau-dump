@@ -106,7 +106,7 @@
        9 [-]: NEWTABLE R5 0 1; var5 = {}
       10 [-]: LOADN R6 0   ; var6 = 0
       11 [-]: SETLIST R5 R6 1 [1]; var5[1] = var6; var5[2] = var7; 
-      12 [-]: LOADK R6 K5  ; var6 = 0.20000000000000001
+      12 [-]: LOADK R6 K5  ; var6 = 0.20000000298023224
       13 [-]: LOADN R7 0   ; var7 = 0
       14 [-]: GETUPVAL R8 1; var8 = upvalues[1]
       15 [-]: CALL R0 9 1  ; var0(var1, var2, var3, var4, var5, var6, var7, var8)
@@ -133,7 +133,7 @@
       10 [-]: GETIMPORT R1 8; var1 = 0x33BDD652[0x23D5322F]
       11 [-]: CALL R1 3 1  ; var1(var2, var3)
 L 0:  12 [-]: GETIMPORT R2 11; var2 = _T["SetButtons"]
-      13 [-]: FASTCALL1 62 R2 L1; 
+      13 [-]: FASTCALL1 64 R2 L1; 
       14 [-]: GETIMPORT R1 13; var1 = 0x7B998233
       15 [-]: CALL R1 2 2  ; var1 = var1(var2)
 L 1:  16 [-]: JUMPIF R1 L2 ; goto L2 if var1
@@ -155,7 +155,7 @@ L 2:  24 [-]: RETURN R0 0  ;
 ; Max Stack Size:  2
 
        0 [-]: GETIMPORT R1 2; var1 = _T["SetSquadOverlayTitle"]
-       1 [-]: FASTCALL1 62 R1 L0; 
+       1 [-]: FASTCALL1 64 R1 L0; 
        2 [-]: GETIMPORT R0 4; var0 = 0x7B998233
        3 [-]: CALL R0 2 2  ; var0 = var0(var1)
 L 0:   4 [-]: JUMPIF R0 L1 ; goto L1 if var0
@@ -220,7 +220,7 @@ L 1:   7 [-]: RETURN R0 0  ;
       46 [-]: CALL R4 5 1  ; var4(var5, var6, var7, var8)
       47 [-]: GETIMPORT R4 5; var4 = 0xAE91E43B
       48 [-]: LOADK R6 K19 ; var6 = "ImageSlideShow"
-      49 [-]: LOADN R7 59  ; var7 = 59
+      49 [-]: LOADN R7 61  ; var7 = 61
       50 [-]: LOADB R8 0   ; var8 = false
       51 [-]: NAMECALL R4 R4 K21; var5 = var4; var4 = var4[0xAADE900E]
       52 [-]: CALL R4 5 1  ; var4(var5, var6, var7, var8)
@@ -237,13 +237,13 @@ L 1:   7 [-]: RETURN R0 0  ;
 ; Max Stack Size:  4
 
        0 [-]: GETIMPORT R1 1; var1 = 0xAE91E43B
-       1 [-]: FASTCALL1 62 R1 L0; 
+       1 [-]: FASTCALL1 64 R1 L0; 
        2 [-]: GETIMPORT R0 3; var0 = 0x7B998233
        3 [-]: CALL R0 2 2  ; var0 = var0(var1)
 L 0:   4 [-]: JUMPIFNOT R0 L1; goto L1 if not var0
        5 [-]: RETURN R0 0  ; 
 L 1:   6 [-]: GETUPVAL R1 0; var1 = upvalues[0]
-       7 [-]: FASTCALL1 62 R1 L2; 
+       7 [-]: FASTCALL1 64 R1 L2; 
        8 [-]: GETIMPORT R0 3; var0 = 0x7B998233
        9 [-]: CALL R0 2 2  ; var0 = var0(var1)
 L 2:  10 [-]: JUMPIF R0 L3 ; goto L3 if var0
@@ -257,7 +257,7 @@ L 3:  14 [-]: GETIMPORT R0 6; var0 = 0xB693B6C1
       18 [-]: NAMECALL R1 R1 K7; var2 = var1; var1 = var1[0x8A8C8D5A]
       19 [-]: CALL R1 3 1  ; var1(var2, var3)
       20 [-]: GETUPVAL R2 1; var2 = upvalues[1]
-      21 [-]: FASTCALL1 62 R2 L4; 
+      21 [-]: FASTCALL1 64 R2 L4; 
       22 [-]: GETIMPORT R1 3; var1 = 0x7B998233
       23 [-]: CALL R1 2 2  ; var1 = var1(var2)
 L 4:  24 [-]: JUMPIF R1 L5 ; goto L5 if var1
@@ -279,7 +279,7 @@ L 5:  29 [-]: RETURN R0 0  ;
        1 [-]: JUMPXEQKN R1 K0 L0 NOT; 
        2 [-]: RETURN R0 0  ; 
 L 0:   3 [-]: GETIMPORT R2 3; var2 = _T["SetSquadOverlayTitle"]
-       4 [-]: FASTCALL1 62 R2 L1; 
+       4 [-]: FASTCALL1 64 R2 L1; 
        5 [-]: GETIMPORT R1 5; var1 = 0x7B998233
        6 [-]: CALL R1 2 2  ; var1 = var1(var2)
 L 1:   7 [-]: JUMPIF R1 L2 ; goto L2 if var1
@@ -290,7 +290,7 @@ L 2:  11 [-]: GETUPVAL R1 0; var1 = upvalues[0]
       12 [-]: SETTABLEKS R0 R1 K7; var0["mImages"] = var1
       13 [-]: GETIMPORT R1 9; var1 = 0xAE91E43B
       14 [-]: LOADK R3 K10 ; var3 = "ImageSlideShow"
-      15 [-]: LOADN R4 59  ; var4 = 59
+      15 [-]: LOADN R4 61  ; var4 = 61
       16 [-]: LOADB R5 1   ; var5 = true
       17 [-]: NAMECALL R1 R1 K11; var2 = var1; var1 = var1[0xAADE900E]
       18 [-]: CALL R1 5 1  ; var1(var2, var3, var4, var5)
@@ -304,7 +304,7 @@ L 2:  11 [-]: GETUPVAL R1 0; var1 = upvalues[0]
       26 [-]: NEWTABLE R6 0 1; var6 = {}
       27 [-]: LOADN R7 100 ; var7 = 100
       28 [-]: SETLIST R6 R7 1 [1]; var6[1] = var7; var6[2] = var8; 
-      29 [-]: LOADK R7 K14 ; var7 = 0.14999999999999999
+      29 [-]: LOADK R7 K14 ; var7 = 0.15000000596046448
       30 [-]: CALL R1 7 1  ; var1(var2, var3, var4, var5, var6, var7)
       31 [-]: GETUPVAL R1 0; var1 = upvalues[0]
       32 [-]: LOADN R3 1   ; var3 = 1
@@ -324,7 +324,7 @@ L 2:  11 [-]: GETUPVAL R1 0; var1 = upvalues[0]
 ; Is_vararg:       0
 ; Max Stack Size:  4
 
-       0 [-]: FASTCALL1 62 R0 L0; 
+       0 [-]: FASTCALL1 64 R0 L0; 
        1 [-]: MOVE R2 R0   ; var2 = var0
        2 [-]: GETIMPORT R1 1; var1 = 0x7B998233
        3 [-]: CALL R1 2 2  ; var1 = var1(var2)
@@ -337,7 +337,7 @@ L 0:   4 [-]: JUMPIF R1 L2 ; goto L2 if var1
 L 1:  10 [-]: GETUPVAL R2 0; var2 = upvalues[0]
       11 [-]: LENGTH R1 R2 ; var1 = #var2
       12 [-]: GETUPVAL R2 1; var2 = upvalues[1]
-      13 [-]: JUMPIFNOTLE R2 R1 L2; goto L2 if var2 > var283
+      13 [-]: JUMPIFNOTLE R2 R1 L2; goto L2 if var2 > var262
       14 [-]: LOADB R1 0   ; var1 = false
       15 [-]: SETUPVAL R1 2; upvalues[1] = var2
       16 [-]: GETUPVAL R1 3; var1 = upvalues[3]
@@ -358,7 +358,7 @@ L 2:  23 [-]: RETURN R0 0  ;
 ; Max Stack Size:  6
 
        0 [-]: GETUPVAL R2 0; var2 = upvalues[0]
-       1 [-]: LOADK R4 K0  ; var4 = 0.01
+       1 [-]: LOADK R4 K0  ; var4 = 0.0099999997764825821
        2 [-]: NEWCLOSURE R5 P0; 
        3 [-]: CAPTURE UPVAL U1; 
        4 [-]: CAPTURE VAL R1; 
@@ -409,7 +409,7 @@ L 1:  23 [-]: FORGLOOP R2 L0 2 [inext];
 ; Max Stack Size:  6
 
        0 [-]: GETUPVAL R5 0; var5 = upvalues[0]
-       1 [-]: FASTCALL1 62 R5 L0; 
+       1 [-]: FASTCALL1 64 R5 L0; 
        2 [-]: GETIMPORT R4 1; var4 = 0x7B998233
        3 [-]: CALL R4 2 2  ; var4 = var4(var5)
 L 0:   4 [-]: JUMPIF R4 L1 ; goto L1 if var4

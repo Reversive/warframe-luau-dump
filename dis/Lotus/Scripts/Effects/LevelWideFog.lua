@@ -34,7 +34,7 @@
        7 [-]: LOADN R3 1   ; var3 = 1
        8 [-]: FORNPREP R2 L3; nforprep start - [escape at L3] -- var2 = iterator
 L 0:   9 [-]: GETTABLE R6 R0 R4; var6 = var0[var4]
-      10 [-]: FASTCALL1 62 R6 L1; 
+      10 [-]: FASTCALL1 64 R6 L1; 
       11 [-]: GETIMPORT R5 6; var5 = 0x7B998233
       12 [-]: CALL R5 2 2  ; var5 = var5(var6)
 L 1:  13 [-]: JUMPIF R5 L2 ; goto L2 if var5
@@ -44,11 +44,11 @@ L 1:  13 [-]: JUMPIF R5 L2 ; goto L2 if var5
       17 [-]: GETIMPORT R6 9; var6 = 0x0469F296
       18 [-]: LOADK R7 K10 ; var7 = "Backdrop"
       19 [-]: CALL R6 2 2  ; var6 = var6(var7)
-      20 [-]: JUMPIFEQ R5 R6 L2; goto L2 if var5 == var591438
+      20 [-]: JUMPIFEQ R5 R6 L2; goto L2 if var5 == var591393
       21 [-]: GETIMPORT R6 9; var6 = 0x0469F296
       22 [-]: LOADK R7 K11 ; var7 = "Cinematics"
       23 [-]: CALL R6 2 2  ; var6 = var6(var7)
-      24 [-]: JUMPIFEQ R5 R6 L2; goto L2 if var5 == var67350
+      24 [-]: JUMPIFEQ R5 R6 L2; goto L2 if var5 == var67374
       25 [-]: MOVE R7 R1   ; var7 = var1
       26 [-]: GETTABLE R8 R0 R4; var8 = var0[var4]
       27 [-]: NAMECALL R8 R8 K12; var9 = var8; var8 = var8[0xE79E7EF4]
@@ -58,7 +58,7 @@ L 1:  13 [-]: JUMPIF R5 L2 ; goto L2 if var5
       31 [-]: CALL R6 0 1  ; var6(var7, ...)
 L 2:  32 [-]: FORNLOOP R2 L0; nforloop end - iterate + goto L0
 L 3:  33 [-]: GETIMPORT R3 17; var3 = 0x677B6655
-      34 [-]: FASTCALL1 62 R3 L4; 
+      34 [-]: FASTCALL1 64 R3 L4; 
       35 [-]: GETIMPORT R2 6; var2 = 0x7B998233
       36 [-]: CALL R2 2 2  ; var2 = var2(var3)
 L 4:  37 [-]: JUMPIF R2 L7 ; goto L7 if var2
@@ -72,14 +72,10 @@ L 4:  37 [-]: JUMPIF R2 L7 ; goto L7 if var2
       45 [-]: FORGPREP_INEXT R3 L6; 
 L 5:  46 [-]: GETIMPORT R10 22; var10 = 0x6C97A788["TINT_COLOR"]
       47 [-]: GETIMPORT R12 26; var12 = 0xE279A2FC["red"]
-      48 [-]: DIVK R11 R12 K23; var11 = var12 / 255
-      49 [-]: GETIMPORT R13 28; var13 = 0xE279A2FC["green"]
-      50 [-]: DIVK R12 R13 K23; var12 = var13 / 255
-      51 [-]: GETIMPORT R14 30; var14 = 0xE279A2FC["blue"]
-      52 [-]: DIVK R13 R14 K23; var13 = var14 / 255
-      53 [-]: GETIMPORT R15 32; var15 = 0xE279A2FC["alpha"]
-      54 [-]: DIVK R14 R15 K23; var14 = var15 / 255
-      55 [-]: NAMECALL R8 R7 K33; var9 = var7; var8 = var7[0x986D2AB8]
+           49 [-]: GETIMPORT R13 28; var13 = 0xE279A2FC["green"]
+           51 [-]: GETIMPORT R14 30; var14 = 0xE279A2FC["blue"]
+           53 [-]: GETIMPORT R15 32; var15 = 0xE279A2FC["alpha"]
+           55 [-]: NAMECALL R8 R7 K33; var9 = var7; var8 = var7[0x986D2AB8]
       56 [-]: CALL R8 7 1  ; var8(var9, var10, var11, var12, var13, var14)
       57 [-]: GETIMPORT R10 35; var10 = 0x6C97A788["UNLIT_ATTEN"]
       58 [-]: GETIMPORT R11 37; var11 = 0x70DA5B99
@@ -91,7 +87,7 @@ L 7:  62 [-]: LOADN R4 1   ; var4 = 1
       64 [-]: LOADN R3 1   ; var3 = 1
       65 [-]: FORNPREP R2 L11; nforprep start - [escape at L11] -- var2 = iterator
 L 8:  66 [-]: GETTABLE R6 R1 R4; var6 = var1[var4]
-      67 [-]: FASTCALL1 62 R6 L9; 
+      67 [-]: FASTCALL1 64 R6 L9; 
       68 [-]: GETIMPORT R5 6; var5 = 0x7B998233
       69 [-]: CALL R5 2 2  ; var5 = var5(var6)
 L 9:  70 [-]: JUMPIF R5 L10; goto L10 if var5
@@ -112,7 +108,7 @@ L11:  83 [-]: GETIMPORT R2 47; var2 = 0x78D35867
       85 [-]: GETIMPORT R2 1; var2 = 0x89326C93
       86 [-]: NAMECALL R2 R2 K48; var3 = var2; var2 = var2[0x78298275]
       87 [-]: CALL R2 2 2  ; var2 = var2(var3)
-      88 [-]: FASTCALL1 62 R2 L12; 
+      88 [-]: FASTCALL1 64 R2 L12; 
       89 [-]: MOVE R4 R2   ; var4 = var2
       90 [-]: GETIMPORT R3 6; var3 = 0x7B998233
       91 [-]: CALL R3 2 2  ; var3 = var3(var4)
@@ -157,7 +153,7 @@ L 0:   8 [-]: GETTABLE R4 R0 R3; var4 = var0[var3]
       11 [-]: GETTABLE R5 R0 R3; var5 = var0[var3]
       12 [-]: NAMECALL R5 R5 K6; var6 = var5; var5 = var5[0x22DA1852]
       13 [-]: CALL R5 2 2  ; var5 = var5(var6)
-      14 [-]: FASTCALL1 62 R4 L1; 
+      14 [-]: FASTCALL1 64 R4 L1; 
       15 [-]: MOVE R7 R4   ; var7 = var4
       16 [-]: GETIMPORT R6 8; var6 = 0x7B998233
       17 [-]: CALL R6 2 2  ; var6 = var6(var7)
@@ -165,11 +161,11 @@ L 1:  18 [-]: JUMPIF R6 L2 ; goto L2 if var6
       19 [-]: GETIMPORT R6 10; var6 = 0x0469F296
       20 [-]: LOADK R7 K11 ; var7 = "Backdrop"
       21 [-]: CALL R6 2 2  ; var6 = var6(var7)
-      22 [-]: JUMPIFEQ R5 R6 L2; goto L2 if var5 == var656974
+      22 [-]: JUMPIFEQ R5 R6 L2; goto L2 if var5 == var656929
       23 [-]: GETIMPORT R6 10; var6 = 0x0469F296
       24 [-]: LOADK R7 K12 ; var7 = "Cinematics"
       25 [-]: CALL R6 2 2  ; var6 = var6(var7)
-      26 [-]: JUMPIFEQ R5 R6 L2; goto L2 if var5 == var67611
+      26 [-]: JUMPIFEQ R5 R6 L2; goto L2 if var5 == var67590
       27 [-]: LOADB R8 1   ; var8 = true
       28 [-]: NAMECALL R6 R4 K13; var7 = var4; var6 = var4[0x31376C14]
       29 [-]: CALL R6 3 1  ; var6(var7, var8)
@@ -181,7 +177,7 @@ L 1:  18 [-]: JUMPIF R6 L2 ; goto L2 if var6
       35 [-]: CALL R6 3 1  ; var6(var7, var8)
 L 2:  36 [-]: FORNLOOP R1 L0; nforloop end - iterate + goto L0
 L 3:  37 [-]: GETIMPORT R2 21; var2 = 0x677B6655
-      38 [-]: FASTCALL1 62 R2 L4; 
+      38 [-]: FASTCALL1 64 R2 L4; 
       39 [-]: GETIMPORT R1 8; var1 = 0x7B998233
       40 [-]: CALL R1 2 2  ; var1 = var1(var2)
 L 4:  41 [-]: JUMPIF R1 L14; goto L14 if var1
@@ -199,11 +195,11 @@ L 5:  50 [-]: GETTABLE R4 R0 R3; var4 = var0[var3]
       53 [-]: GETIMPORT R5 10; var5 = 0x0469F296
       54 [-]: LOADK R6 K11 ; var6 = "Backdrop"
       55 [-]: CALL R5 2 2  ; var5 = var5(var6)
-      56 [-]: JUMPIFNOTEQ R4 R5 L6; goto L6 if var4 ~= var656718
+      56 [-]: JUMPIFNOTEQ R4 R5 L6; goto L6 if var4 ~= var656673
       57 [-]: GETIMPORT R5 10; var5 = 0x0469F296
       58 [-]: LOADK R6 K12 ; var6 = "Cinematics"
       59 [-]: CALL R5 2 2  ; var5 = var5(var6)
-      60 [-]: JUMPIFEQ R4 R5 L6; goto L6 if var4 == var50332983
+      60 [-]: JUMPIFEQ R4 R5 L6; goto L6 if var4 == var50332957
       61 [-]: GETTABLE R5 R0 R3; var5 = var0[var3]
       62 [-]: NAMECALL R5 R5 K23; var6 = var5; var5 = var5[0xD1586535]
       63 [-]: CALL R5 2 2  ; var5 = var5(var6)
@@ -218,14 +214,10 @@ L 5:  50 [-]: GETTABLE R4 R0 R3; var4 = var0[var3]
       72 [-]: CALL R7 5 2  ; var7 = var7(var8, var9, var10, var11)
       73 [-]: GETIMPORT R10 28; var10 = 0x6C97A788["TINT_COLOR"]
       74 [-]: GETIMPORT R12 32; var12 = 0xE279A2FC["red"]
-      75 [-]: DIVK R11 R12 K29; var11 = var12 / 255
-      76 [-]: GETIMPORT R13 34; var13 = 0xE279A2FC["green"]
-      77 [-]: DIVK R12 R13 K29; var12 = var13 / 255
-      78 [-]: GETIMPORT R14 36; var14 = 0xE279A2FC["blue"]
-      79 [-]: DIVK R13 R14 K29; var13 = var14 / 255
-      80 [-]: GETIMPORT R15 38; var15 = 0xE279A2FC["alpha"]
-      81 [-]: DIVK R14 R15 K29; var14 = var15 / 255
-      82 [-]: NAMECALL R8 R7 K39; var9 = var7; var8 = var7[0x986D2AB8]
+           76 [-]: GETIMPORT R13 34; var13 = 0xE279A2FC["green"]
+           78 [-]: GETIMPORT R14 36; var14 = 0xE279A2FC["blue"]
+           80 [-]: GETIMPORT R15 38; var15 = 0xE279A2FC["alpha"]
+           82 [-]: NAMECALL R8 R7 K39; var9 = var7; var8 = var7[0x986D2AB8]
       83 [-]: CALL R8 7 1  ; var8(var9, var10, var11, var12, var13, var14)
       84 [-]: GETIMPORT R10 41; var10 = 0x6C97A788["UNLIT_ATTEN"]
       85 [-]: GETIMPORT R11 43; var11 = 0x70DA5B99
@@ -238,7 +230,7 @@ L 7:  90 [-]: GETIMPORT R1 1; var1 = 0x89326C93
       92 [-]: NAMECALL R1 R1 K4; var2 = var1; var1 = var1[0xFB669000]
       93 [-]: CALL R1 3 2  ; var1 = var1(var2, var3)
       94 [-]: LOADN R2 0   ; var2 = 0
-L 8:  95 [-]: FASTCALL1 62 R1 L9; 
+L 8:  95 [-]: FASTCALL1 64 R1 L9; 
       96 [-]: MOVE R4 R1   ; var4 = var1
       97 [-]: GETIMPORT R3 8; var3 = 0x7B998233
       98 [-]: CALL R3 2 2  ; var3 = var3(var4)
@@ -246,7 +238,7 @@ L 9:  99 [-]: JUMPIF R3 L10; goto L10 if var3
      100 [-]: LENGTH R3 R1 ; var3 = #var1
      101 [-]: JUMPXEQKN R3 K44 L11 NOT; 
 L10: 102 [-]: LOADN R3 10  ; var3 = 10
-     103 [-]: JUMPIFNOTLT R2 R3 L11; goto L11 if var2 >= var66382
+     103 [-]: JUMPIFNOTLT R2 R3 L11; goto L11 if var2 >= var66337
      104 [-]: GETIMPORT R3 1; var3 = 0x89326C93
      105 [-]: GETIMPORT R5 21; var5 = 0x677B6655
      106 [-]: NAMECALL R3 R3 K4; var4 = var3; var3 = var3[0xFB669000]
@@ -265,14 +257,10 @@ L11: 116 [-]: GETIMPORT R3 50; var3 = 0xC8802016
      119 [-]: FORGPREP_INEXT R3 L13; 
 L12: 120 [-]: GETIMPORT R10 28; var10 = 0x6C97A788["TINT_COLOR"]
      121 [-]: GETIMPORT R12 51; var12 = 0x88FC99A9["red"]
-     122 [-]: DIVK R11 R12 K29; var11 = var12 / 255
-     123 [-]: GETIMPORT R13 52; var13 = 0x88FC99A9["green"]
-     124 [-]: DIVK R12 R13 K29; var12 = var13 / 255
-     125 [-]: GETIMPORT R14 53; var14 = 0x88FC99A9["blue"]
-     126 [-]: DIVK R13 R14 K29; var13 = var14 / 255
-     127 [-]: GETIMPORT R15 54; var15 = 0x88FC99A9["alpha"]
-     128 [-]: DIVK R14 R15 K29; var14 = var15 / 255
-     129 [-]: NAMECALL R8 R7 K39; var9 = var7; var8 = var7[0x986D2AB8]
+          123 [-]: GETIMPORT R13 52; var13 = 0x88FC99A9["green"]
+          125 [-]: GETIMPORT R14 53; var14 = 0x88FC99A9["blue"]
+          127 [-]: GETIMPORT R15 54; var15 = 0x88FC99A9["alpha"]
+          129 [-]: NAMECALL R8 R7 K39; var9 = var7; var8 = var7[0x986D2AB8]
      130 [-]: CALL R8 7 1  ; var8(var9, var10, var11, var12, var13, var14)
      131 [-]: GETIMPORT R10 41; var10 = 0x6C97A788["UNLIT_ATTEN"]
      132 [-]: GETIMPORT R11 43; var11 = 0x70DA5B99

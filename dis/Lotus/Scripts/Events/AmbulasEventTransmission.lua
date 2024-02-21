@@ -73,10 +73,10 @@ L 2:  23 [-]: GETIMPORT R2 12; var2 = 0xA655E247
       26 [-]: CALL R2 3 1  ; var2(var3, var4)
 L 3:  27 [-]: GETIMPORT R2 17; var2 = _T["curTransmission"]
       28 [-]: GETUPVAL R3 0; var3 = upvalues[0]
-      29 [-]: JUMPIFEQ R2 R3 L4; goto L4 if var2 == var1245774
+      29 [-]: JUMPIFEQ R2 R3 L4; goto L4 if var2 == var1245729
       30 [-]: GETIMPORT R2 19; var2 = _T["CurrentInWorldTransmission"]
       31 [-]: GETUPVAL R3 0; var3 = upvalues[0]
-      32 [-]: JUMPIFNOTEQ R2 R3 L5; goto L5 if var2 ~= var1376846
+      32 [-]: JUMPIFNOTEQ R2 R3 L5; goto L5 if var2 ~= var1376801
 L 4:  33 [-]: GETIMPORT R2 21; var2 = 0xCBD666E1
       34 [-]: LOADN R3 0   ; var3 = 0
       35 [-]: CALL R2 2 1  ; var2(var3)
@@ -86,7 +86,7 @@ L 5:  37 [-]: LOADN R4 1   ; var4 = 1
       39 [-]: LOADN R3 1   ; var3 = 1
       40 [-]: FORNPREP R2 L9; nforprep start - [escape at L9] -- var2 = iterator
 L 6:  41 [-]: GETTABLE R6 R1 R4; var6 = var1[var4]
-      42 [-]: FASTCALL1 62 R6 L7; 
+      42 [-]: FASTCALL1 64 R6 L7; 
       43 [-]: GETIMPORT R5 23; var5 = 0x7B998233
       44 [-]: CALL R5 2 2  ; var5 = var5(var6)
 L 7:  45 [-]: JUMPIF R5 L8 ; goto L8 if var5
@@ -116,13 +116,13 @@ L 9:  51 [-]: RETURN R0 0  ;
 L 0:   8 [-]: SETUPVAL R0 0; upvalues[0] = var0
 L 1:   9 [-]: GETIMPORT R1 8; var1 = _T["CurrentInWorldTransmission"]
       10 [-]: GETUPVAL R2 0; var2 = upvalues[0]
-      11 [-]: JUMPIFEQ R1 R2 L2; goto L2 if var1 == var16777243
+      11 [-]: JUMPIFEQ R1 R2 L2; goto L2 if var1 == var16777222
       12 [-]: LOADB R0 0 +1; var0 = false
 L 2:  13 [-]: LOADB R0 1   ; var0 = true
 L 3:  14 [-]: JUMPIF R0 L4 ; goto L4 if var0
       15 [-]: GETIMPORT R1 6; var1 = _T["curTransmission"]
       16 [-]: GETUPVAL R2 0; var2 = upvalues[0]
-      17 [-]: JUMPIFNOTEQ R1 R2 L7; goto L7 if var1 ~= var458787
+      17 [-]: JUMPIFNOTEQ R1 R2 L7; goto L7 if var1 ~= var458772
 L 4:  18 [-]: JUMPIFNOT R0 L5; goto L5 if not var0
       19 [-]: GETGLOBAL R1 K0; var1 = 0xBD769ABC
       20 [-]: LOADK R3 K9  ; var3 = "Hide"

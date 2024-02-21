@@ -67,7 +67,7 @@ L 1:  19 [-]: NAMECALL R3 R1 K6; var4 = var1; var3 = var1[0xF80FAE85]
       21 [-]: JUMPIFNOT R3 L2; goto L2 if not var3
       22 [-]: GETTABLEKS R3 R2 K2; var3 = var2["mInvisTime"]
       23 [-]: LOADN R4 0   ; var4 = 0
-      24 [-]: JUMPIFNOTLE R3 R4 L2; goto L2 if var3 > var525646
+      24 [-]: JUMPIFNOTLE R3 R4 L2; goto L2 if var3 > var525601
       25 [-]: GETIMPORT R5 8; var5 = 0x5113CBDD
       26 [-]: LOADB R6 0   ; var6 = false
       27 [-]: LOADN R7 0   ; var7 = 0
@@ -100,7 +100,7 @@ L 2:  34 [-]: GETIMPORT R5 12; var5 = 0x0469F296
        4 [-]: NAMECALL R4 R1 K1; var5 = var1; var4 = var1[0x93A7101F]
        5 [-]: CALL R4 3 2  ; var4 = var4(var5, var6)
        6 [-]: JUMPIFNOT R4 L1; goto L1 if not var4
-       7 [-]: FASTCALL1 62 R3 L0; 
+       7 [-]: FASTCALL1 64 R3 L0; 
        8 [-]: MOVE R5 R3   ; var5 = var3
        9 [-]: GETIMPORT R4 3; var4 = 0x7B998233
       10 [-]: CALL R4 2 2  ; var4 = var4(var5)
@@ -152,9 +152,9 @@ L 0:   8 [-]: RETURN R0 0  ;
        8 [-]: RETURN R0 0  ; 
 L 0:   9 [-]: GETTABLEKS R4 R2 K2; var4 = var2["mInvisTime"]
       10 [-]: LOADN R5 0   ; var5 = 0
-      11 [-]: JUMPIFNOTLE R4 R5 L2; goto L2 if var4 > var263502
+      11 [-]: JUMPIFNOTLE R4 R5 L2; goto L2 if var4 > var263457
       12 [-]: GETIMPORT R5 4; var5 = 0xB8A171B4
-      13 [-]: FASTCALL1 62 R5 L1; 
+      13 [-]: FASTCALL1 64 R5 L1; 
       14 [-]: GETIMPORT R4 6; var4 = 0x7B998233
       15 [-]: CALL R4 2 2  ; var4 = var4(var5)
 L 1:  16 [-]: JUMPIF R4 L2 ; goto L2 if var4
@@ -175,7 +175,7 @@ L 2:  30 [-]: GETIMPORT R4 17; var4 = 0xBA86EA44
       31 [-]: SETTABLEKS R4 R2 K2; var4["mInvisTime"] = var2
       32 [-]: GETTABLEKS R4 R2 K18; var4 = var2["mSerial"]
 L 3:  33 [-]: GETTABLEKS R5 R2 K18; var5 = var2["mSerial"]
-      34 [-]: JUMPIFNOTEQ R4 R5 L10; goto L10 if var4 ~= var-1258158564
+      34 [-]: JUMPIFNOTEQ R4 R5 L10; goto L10 if var4 ~= var-1258158529
       35 [-]: GETTABLEKS R6 R2 K2; var6 = var2["mInvisTime"]
       36 [-]: GETIMPORT R7 20; var7 = 0x67652851
       37 [-]: CALL R7 1 2  ; var7 = var7()
@@ -191,9 +191,9 @@ L 4:  46 [-]: LOADN R5 -1  ; var5 = -1
       47 [-]: SETTABLEKS R5 R2 K2; var5["mInvisTime"] = var2
 L 5:  48 [-]: GETTABLEKS R5 R2 K2; var5 = var2["mInvisTime"]
       49 [-]: LOADN R6 0   ; var6 = 0
-      50 [-]: JUMPIFNOTLE R5 R6 L9; goto L9 if var5 > var263758
+      50 [-]: JUMPIFNOTLE R5 R6 L9; goto L9 if var5 > var263713
       51 [-]: GETIMPORT R6 4; var6 = 0xB8A171B4
-      52 [-]: FASTCALL1 62 R6 L6; 
+      52 [-]: FASTCALL1 64 R6 L6; 
       53 [-]: GETIMPORT R5 6; var5 = 0x7B998233
       54 [-]: CALL R5 2 2  ; var5 = var5(var6)
 L 6:  55 [-]: JUMPIF R5 L7 ; goto L7 if var5

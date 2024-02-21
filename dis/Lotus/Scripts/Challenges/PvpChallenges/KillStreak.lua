@@ -57,10 +57,10 @@
        3 [-]: CALL R3 2 2  ; var3 = var3(var4)
        4 [-]: NAMECALL R5 R3 K2; var6 = var3; var5 = var3[0x5E651723]
        5 [-]: CALL R5 2 0  ; var5, ... = var5(var6)
-       6 [-]: FASTCALL 62 L0; 
+       6 [-]: FASTCALL 64 L0; 
        7 [-]: GETIMPORT R4 4; var4 = 0x7B998233
        8 [-]: CALL R4 0 2  ; var4 = var4(var5, ...)
-L 0:   9 [-]: JUMPIF R4 L20; goto L20 if var4
+L 0:   9 [-]: JUMPIF R4 L21; goto L21 if var4
       10 [-]: NAMECALL R4 R3 K2; var5 = var3; var4 = var3[0x5E651723]
       11 [-]: CALL R4 2 2  ; var4 = var4(var5)
       12 [-]: NAMECALL R4 R4 K0; var5 = var4; var4 = var4[0x5CA33548]
@@ -90,7 +90,7 @@ L 3:  31 [-]: GETIMPORT R5 7; var5 = _T["gKillStreakData"]
       36 [-]: GETIMPORT R6 7; var6 = _T["gKillStreakData"]
       37 [-]: GETTABLE R5 R6 R4; var5 = var6[var4]
       38 [-]: GETIMPORT R6 11; var6 = 0x506F591C
-      39 [-]: JUMPIFNOTLE R6 R5 L7; goto L7 if var6 > var853326
+      39 [-]: JUMPIFNOTLE R6 R5 L7; goto L7 if var6 > var853281
       40 [-]: GETIMPORT R5 13; var5 = 0x0469F296
       41 [-]: GETIMPORT R6 16; var6 = 0x7F5022CF[0xE8072DED]
       42 [-]: LOADK R7 K17 ; var7 = "STREAK_STOPPED_%s"
@@ -101,7 +101,7 @@ L 3:  31 [-]: GETIMPORT R5 7; var5 = _T["gKillStreakData"]
       47 [-]: GETIMPORT R7 7; var7 = _T["gKillStreakData"]
       48 [-]: GETTABLE R6 R7 R4; var6 = var7[var4]
       49 [-]: LOADN R7 12  ; var7 = 12
-      50 [-]: JUMPIFNOTLE R7 R6 L4; goto L4 if var7 > var853582
+      50 [-]: JUMPIFNOTLE R7 R6 L4; goto L4 if var7 > var853537
       51 [-]: GETIMPORT R6 13; var6 = 0x0469F296
       52 [-]: GETIMPORT R7 16; var7 = 0x7F5022CF[0xE8072DED]
       53 [-]: LOADK R8 K17 ; var8 = "STREAK_STOPPED_%s"
@@ -114,7 +114,7 @@ L 3:  31 [-]: GETIMPORT R5 7; var5 = _T["gKillStreakData"]
 L 4:  60 [-]: GETIMPORT R7 7; var7 = _T["gKillStreakData"]
       61 [-]: GETTABLE R6 R7 R4; var6 = var7[var4]
       62 [-]: LOADN R7 9   ; var7 = 9
-      63 [-]: JUMPIFNOTLE R7 R6 L5; goto L5 if var7 > var853582
+      63 [-]: JUMPIFNOTLE R7 R6 L5; goto L5 if var7 > var853537
       64 [-]: GETIMPORT R6 13; var6 = 0x0469F296
       65 [-]: GETIMPORT R7 16; var7 = 0x7F5022CF[0xE8072DED]
       66 [-]: LOADK R8 K17 ; var8 = "STREAK_STOPPED_%s"
@@ -127,7 +127,7 @@ L 4:  60 [-]: GETIMPORT R7 7; var7 = _T["gKillStreakData"]
 L 5:  73 [-]: GETIMPORT R7 7; var7 = _T["gKillStreakData"]
       74 [-]: GETTABLE R6 R7 R4; var6 = var7[var4]
       75 [-]: LOADN R7 6   ; var7 = 6
-      76 [-]: JUMPIFNOTLE R7 R6 L6; goto L6 if var7 > var853582
+      76 [-]: JUMPIFNOTLE R7 R6 L6; goto L6 if var7 > var853537
       77 [-]: GETIMPORT R6 13; var6 = 0x0469F296
       78 [-]: GETIMPORT R7 16; var7 = 0x7F5022CF[0xE8072DED]
       79 [-]: LOADK R8 K17 ; var8 = "STREAK_STOPPED_%s"
@@ -155,7 +155,7 @@ L 7:  91 [-]: GETIMPORT R5 22; var5 = 0xBE190284
      101 [-]: FORNPREP R8 L10; nforprep start - [escape at L10] -- var8 = iterator
 L 8: 102 [-]: GETTABLE R12 R6 R10; var12 = var6[var10]
      103 [-]: GETTABLEKS R11 R12 K24; var11 = var12["mName"]
-     104 [-]: JUMPIFNOTEQ R11 R4 L9; goto L9 if var11 ~= var265494
+     104 [-]: JUMPIFNOTEQ R11 R4 L9; goto L9 if var11 ~= var265518
      105 [-]: MOVE R13 R4  ; var13 = var4
      106 [-]: LOADN R14 0  ; var14 = 0
      107 [-]: NAMECALL R11 R5 K25; var12 = var5; var11 = var5[0x9D0AECAF]
@@ -171,16 +171,16 @@ L10: 112 [-]: JUMPIF R7 L11; goto L11 if var7
 L11: 117 [-]: GETIMPORT R9 7; var9 = _T["gKillStreakData"]
      118 [-]: GETTABLE R8 R9 R2; var8 = var9[var2]
      119 [-]: GETIMPORT R9 11; var9 = 0x506F591C
-     120 [-]: JUMPIFNOTLE R9 R8 L19; goto L19 if var9 > var461134
+     120 [-]: JUMPIFNOTLE R9 R8 L20; goto L20 if var9 > var461089
      121 [-]: GETIMPORT R9 7; var9 = _T["gKillStreakData"]
      122 [-]: GETTABLE R8 R9 R2; var8 = var9[var2]
      123 [-]: GETIMPORT R9 28; var9 = 0x708E2D0F
-     124 [-]: JUMPIFNOTLE R8 R9 L19; goto L19 if var8 > var461390
+     124 [-]: JUMPIFNOTLE R8 R9 L20; goto L20 if var8 > var461345
      125 [-]: GETIMPORT R10 7; var10 = _T["gKillStreakData"]
      126 [-]: GETTABLE R9 R10 R2; var9 = var10[var2]
      127 [-]: GETIMPORT R10 11; var10 = 0x506F591C
      128 [-]: MOD R8 R9 R10; var8 = var9 var10
-     129 [-]: JUMPXEQKN R8 K29 L19 NOT; 
+     129 [-]: JUMPXEQKN R8 K29 L20 NOT; 
      130 [-]: GETIMPORT R8 13; var8 = 0x0469F296
      131 [-]: GETIMPORT R9 16; var9 = 0x7F5022CF[0xE8072DED]
      132 [-]: LOADK R10 K30; var10 = "KILL_STREAK_%s"
@@ -205,7 +205,7 @@ L11: 117 [-]: GETIMPORT R9 7; var9 = _T["gKillStreakData"]
      151 [-]: FORNPREP R11 L14; nforprep start - [escape at L14] -- var11 = iterator
 L12: 152 [-]: GETTABLE R15 R6 R13; var15 = var6[var13]
      153 [-]: GETTABLEKS R14 R15 K24; var14 = var15["mName"]
-     154 [-]: JUMPIFNOTEQ R14 R2 L13; goto L13 if var14 ~= var135190
+     154 [-]: JUMPIFNOTEQ R14 R2 L13; goto L13 if var14 ~= var135214
      155 [-]: MOVE R16 R2  ; var16 = var2
      156 [-]: GETUPVAL R18 1; var18 = upvalues[1]
      157 [-]: GETTABLE R17 R18 R9; var17 = var18[var9]
@@ -249,37 +249,38 @@ L15: 169 [-]: GETIMPORT R11 32; var11 = 0x89326C93
      195 [-]: CALL R20 3 2 ; var20 = var20(var21, var22)
      196 [-]: MOVE R16 R20 ; var16 = var20
      197 [-]: LOADK R17 K40; var17 = "\"><b>"
-     198 [-]: GETIMPORT R20 44; var20 = 0x64FB1586
+     198 [-]: FASTCALL1 63 R9 L16; 
      199 [-]: MOVE R21 R9  ; var21 = var9
-     200 [-]: CALL R20 2 2 ; var20 = var20(var21)
-     201 [-]: MOVE R18 R20 ; var18 = var20
-     202 [-]: LOADK R19 K41; var19 = "</b></font><font color=\"#FFFFFF\">"
-     203 [-]: CONCAT R14 R15 R19; var14 = var15 .. var19
-     204 [-]: LOADK R16 K45; var16 = "<p><font color=\"#FFFFFF\">"
-     205 [-]: LOADK R17 K46; var17 = "$$/Lotus/Language/Game/PlayerOnKillStreak$$"
-     206 [-]: LOADK R18 K47; var18 = "</font></p>"
-     207 [-]: CONCAT R15 R16 R18; var15 = var16 .. var18
-     208 [-]: FASTCALL1 62 R15 L16; 
-     209 [-]: MOVE R17 R15 ; var17 = var15
-     210 [-]: GETIMPORT R16 4; var16 = 0x7B998233
-     211 [-]: CALL R16 2 2 ; var16 = var16(var17)
-L16: 212 [-]: JUMPIF R16 L19; goto L19 if var16
-     213 [-]: GETIMPORT R16 22; var16 = 0xBE190284
-     214 [-]: GETIMPORT R17 49; var17 = 0xC8802016
-     215 [-]: MOVE R18 R11 ; var18 = var11
-     216 [-]: CALL R17 2 4 ; var17, var18, var19 = var17(var18)
-     217 [-]: FORGPREP_INEXT R17 L18; 
-L17: 218 [-]: MOVE R24 R21 ; var24 = var21
-     219 [-]: MOVE R25 R15 ; var25 = var15
-     220 [-]: MOVE R26 R13 ; var26 = var13
-     221 [-]: MOVE R27 R14 ; var27 = var14
-     222 [-]: NAMECALL R22 R16 K50; var23 = var16; var22 = var16[0x03B99283]
-     223 [-]: CALL R22 6 1 ; var22(var23, var24, var25, var26, var27)
-L18: 224 [-]: FORGLOOP R17 L17 2 [inext]; 
-L19: 225 [-]: NAMECALL R8 R5 K51; var9 = var5; var8 = var5[0xC510CE07]
-     226 [-]: CALL R8 2 1  ; var8(var9)
-L20: 227 [-]: LOADB R4 0   ; var4 = false
-     228 [-]: RETURN R4 1  ; 
+     200 [-]: GETIMPORT R20 44; var20 = 0x64FB1586
+     201 [-]: CALL R20 2 2 ; var20 = var20(var21)
+L16: 202 [-]: MOVE R18 R20 ; var18 = var20
+     203 [-]: LOADK R19 K41; var19 = "</b></font><font color=\"#FFFFFF\">"
+     204 [-]: CONCAT R14 R15 R19; var14 = var15 .. var19
+     205 [-]: LOADK R16 K45; var16 = "<p><font color=\"#FFFFFF\">"
+     206 [-]: LOADK R17 K46; var17 = "$$/Lotus/Language/Game/PlayerOnKillStreak$$"
+     207 [-]: LOADK R18 K47; var18 = "</font></p>"
+     208 [-]: CONCAT R15 R16 R18; var15 = var16 .. var18
+     209 [-]: FASTCALL1 64 R15 L17; 
+     210 [-]: MOVE R17 R15 ; var17 = var15
+     211 [-]: GETIMPORT R16 4; var16 = 0x7B998233
+     212 [-]: CALL R16 2 2 ; var16 = var16(var17)
+L17: 213 [-]: JUMPIF R16 L20; goto L20 if var16
+     214 [-]: GETIMPORT R16 22; var16 = 0xBE190284
+     215 [-]: GETIMPORT R17 49; var17 = 0xC8802016
+     216 [-]: MOVE R18 R11 ; var18 = var11
+     217 [-]: CALL R17 2 4 ; var17, var18, var19 = var17(var18)
+     218 [-]: FORGPREP_INEXT R17 L19; 
+L18: 219 [-]: MOVE R24 R21 ; var24 = var21
+     220 [-]: MOVE R25 R15 ; var25 = var15
+     221 [-]: MOVE R26 R13 ; var26 = var13
+     222 [-]: MOVE R27 R14 ; var27 = var14
+     223 [-]: NAMECALL R22 R16 K50; var23 = var16; var22 = var16[0x03B99283]
+     224 [-]: CALL R22 6 1 ; var22(var23, var24, var25, var26, var27)
+L19: 225 [-]: FORGLOOP R17 L18 2 [inext]; 
+L20: 226 [-]: NAMECALL R8 R5 K51; var9 = var5; var8 = var5[0xC510CE07]
+     227 [-]: CALL R8 2 1  ; var8(var9)
+L21: 228 [-]: LOADB R4 0   ; var4 = false
+     229 [-]: RETURN R4 1  ; 
 
 
 

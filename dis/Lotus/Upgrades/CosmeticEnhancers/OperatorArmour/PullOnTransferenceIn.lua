@@ -48,7 +48,7 @@ L 0:   8 [-]: GETTABLE R2 R3 R4; var2 = var3[var4]
 ; Is_vararg:       0
 ; Max Stack Size:  8
 
-       0 [-]: FASTCALL1 62 R0 L0; 
+       0 [-]: FASTCALL1 64 R0 L0; 
        1 [-]: MOVE R2 R0   ; var2 = var0
        2 [-]: GETIMPORT R1 1; var1 = 0x7B998233
        3 [-]: CALL R1 2 2  ; var1 = var1(var2)
@@ -76,25 +76,31 @@ L 4:  22 [-]: GETUPVAL R3 0; var3 = upvalues[0]
       25 [-]: JUMPIFNOT R1 L5; goto L5 if not var1
       26 [-]: LOADB R1 0   ; var1 = false
       27 [-]: RETURN R1 1  ; 
-L 5:  28 [-]: LOADN R3 1   ; var3 = 1
-      29 [-]: GETIMPORT R4 7; var4 = 0x43019322
-      30 [-]: LENGTH R1 R4 ; var1 = #var4
-      31 [-]: LOADN R2 1   ; var2 = 1
-      32 [-]: FORNPREP R1 L8; nforprep start - [escape at L8] -- var1 = iterator
-L 6:  33 [-]: GETIMPORT R7 7; var7 = 0x43019322
-      34 [-]: GETTABLE R6 R7 R3; var6 = var7[var3]
-      35 [-]: NAMECALL R4 R0 K8; var5 = var0; var4 = var0[0xF2DEAF69]
-      36 [-]: CALL R4 3 2  ; var4 = var4(var5, var6)
-      37 [-]: JUMPIFNOT R4 L7; goto L7 if not var4
-      38 [-]: LOADB R4 0   ; var4 = false
-      39 [-]: RETURN R4 1  ; 
-L 7:  40 [-]: FORNLOOP R1 L6; nforloop end - iterate + goto L6
-L 8:  41 [-]: LOADB R1 1   ; var1 = true
-      42 [-]: RETURN R1 1  ; 
+L 5:  28 [-]: LOADN R3 4   ; var3 = 4
+      29 [-]: NAMECALL R1 R0 K6; var2 = var0; var1 = var0[0xC4DFF581]
+      30 [-]: CALL R1 3 2  ; var1 = var1(var2, var3)
+      31 [-]: JUMPIFNOT R1 L6; goto L6 if not var1
+      32 [-]: LOADB R1 0   ; var1 = false
+      33 [-]: RETURN R1 1  ; 
+L 6:  34 [-]: LOADN R3 1   ; var3 = 1
+      35 [-]: GETIMPORT R4 8; var4 = 0x43019322
+      36 [-]: LENGTH R1 R4 ; var1 = #var4
+      37 [-]: LOADN R2 1   ; var2 = 1
+      38 [-]: FORNPREP R1 L9; nforprep start - [escape at L9] -- var1 = iterator
+L 7:  39 [-]: GETIMPORT R7 8; var7 = 0x43019322
+      40 [-]: GETTABLE R6 R7 R3; var6 = var7[var3]
+      41 [-]: NAMECALL R4 R0 K9; var5 = var0; var4 = var0[0xF2DEAF69]
+      42 [-]: CALL R4 3 2  ; var4 = var4(var5, var6)
+      43 [-]: JUMPIFNOT R4 L8; goto L8 if not var4
+      44 [-]: LOADB R4 0   ; var4 = false
+      45 [-]: RETURN R4 1  ; 
+L 8:  46 [-]: FORNLOOP R1 L7; nforloop end - iterate + goto L7
+L 9:  47 [-]: LOADB R1 1   ; var1 = true
+      48 [-]: RETURN R1 1  ; 
 
 
 ; Name:            
-; Defined at line: 47
+; Defined at line: 51
 ; #Upvalues:       1
 ; #Parameters:     5
 ; Is_vararg:       0

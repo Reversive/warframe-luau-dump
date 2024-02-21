@@ -61,7 +61,7 @@ L 2:  21 [-]: GETTABLE R2 R3 R4; var2 = var3[var4]
        1 [-]: CALL R1 2 2  ; var1 = var1(var2)
        2 [-]: GETIMPORT R4 3; var4 = _T["hoverboardSpeed"]
        3 [-]: GETTABLE R3 R4 R1; var3 = var4[var1]
-       4 [-]: FASTCALL1 62 R3 L0; 
+       4 [-]: FASTCALL1 64 R3 L0; 
        5 [-]: GETIMPORT R2 5; var2 = 0x7B998233
        6 [-]: CALL R2 2 2  ; var2 = var2(var3)
 L 0:   7 [-]: JUMPIFNOT R2 L1; goto L1 if not var2
@@ -90,7 +90,7 @@ L 2:  29 [-]: GETIMPORT R9 3; var9 = _T["hoverboardSpeed"]
       30 [-]: GETTABLE R8 R9 R1; var8 = var9[var1]
       31 [-]: GETTABLEKS R7 R8 K18; var7 = var8["timer"]
       32 [-]: LOADN R8 0   ; var8 = 0
-      33 [-]: JUMPIFNOTLT R8 R7 L8; goto L8 if var8 >= var1312590
+      33 [-]: JUMPIFNOTLT R8 R7 L8; goto L8 if var8 >= var1312545
       34 [-]: GETIMPORT R7 20; var7 = 0xCBD666E1
       35 [-]: LOADN R8 0   ; var8 = 0
       36 [-]: CALL R7 2 1  ; var7(var8)
@@ -106,17 +106,17 @@ L 2:  29 [-]: GETIMPORT R9 3; var9 = _T["hoverboardSpeed"]
       46 [-]: NAMECALL R7 R3 K17; var8 = var3; var7 = var3[0xBB610E5B]
       47 [-]: CALL R7 2 2  ; var7 = var7(var8)
       48 [-]: MOVE R6 R7   ; var6 = var7
-      49 [-]: JUMPIFEQ R4 R6 L7; goto L7 if var4 == var50675275
-      50 [-]: FASTCALL1 62 R5 L3; 
+      49 [-]: JUMPIFEQ R4 R6 L7; goto L7 if var4 == var50675773
+      50 [-]: FASTCALL1 64 R5 L3; 
       51 [-]: MOVE R8 R5   ; var8 = var5
       52 [-]: GETIMPORT R7 5; var7 = 0x7B998233
       53 [-]: CALL R7 2 2  ; var7 = var7(var8)
 L 3:  54 [-]: JUMPIF R7 L5 ; goto L5 if var7
       55 [-]: NAMECALL R8 R5 K23; var9 = var5; var8 = var5[0xF7D48EE0]
-      56 [-]: CALL R8 2 2  ; var8 = var8(var9)
-      57 [-]: FASTCALL1 62 R8 L4; 
+      56 [-]: CALL R8 2 0  ; var8, ... = var8(var9)
+      57 [-]: FASTCALL 64 L4; 
       58 [-]: GETIMPORT R7 5; var7 = 0x7B998233
-      59 [-]: CALL R7 2 2  ; var7 = var7(var8)
+      59 [-]: CALL R7 0 2  ; var7 = var7(var8, ...)
 L 4:  60 [-]: JUMPIF R7 L5 ; goto L5 if var7
       61 [-]: NAMECALL R7 R5 K23; var8 = var5; var7 = var5[0xF7D48EE0]
       62 [-]: CALL R7 2 2  ; var7 = var7(var8)
@@ -124,14 +124,14 @@ L 4:  60 [-]: JUMPIF R7 L5 ; goto L5 if var7
       64 [-]: NAMECALL R7 R7 K26; var8 = var7; var7 = var7[0xF2DEAF69]
       65 [-]: CALL R7 3 2  ; var7 = var7(var8, var9)
       66 [-]: JUMPIFNOT R7 L5; goto L5 if not var7
-      67 [-]: LOADN R9 194 ; var9 = 194
+      67 [-]: LOADN R9 199 ; var9 = 199
       68 [-]: LOADN R10 3  ; var10 = 3
       69 [-]: GETIMPORT R13 3; var13 = _T["hoverboardSpeed"]
       70 [-]: GETTABLE R12 R13 R1; var12 = var13[var1]
       71 [-]: GETTABLEKS R11 R12 K14; var11 = var12["speed"]
       72 [-]: NAMECALL R7 R5 K27; var8 = var5; var7 = var5[0x12DD9DA2]
       73 [-]: CALL R7 5 1  ; var7(var8, var9, var10, var11)
-      74 [-]: LOADN R9 196 ; var9 = 196
+      74 [-]: LOADN R9 201 ; var9 = 201
       75 [-]: LOADN R10 3  ; var10 = 3
       76 [-]: GETIMPORT R13 3; var13 = _T["hoverboardSpeed"]
       77 [-]: GETTABLE R12 R13 R1; var12 = var13[var1]
@@ -144,7 +144,7 @@ L 5:  81 [-]: MOVE R4 R6   ; var4 = var6
       84 [-]: MOVE R5 R7   ; var5 = var7
       85 [-]: NAMECALL R7 R5 K23; var8 = var5; var7 = var5[0xF7D48EE0]
       86 [-]: CALL R7 2 2  ; var7 = var7(var8)
-      87 [-]: FASTCALL1 62 R7 L6; 
+      87 [-]: FASTCALL1 64 R7 L6; 
       88 [-]: MOVE R9 R7   ; var9 = var7
       89 [-]: GETIMPORT R8 5; var8 = 0x7B998233
       90 [-]: CALL R8 2 2  ; var8 = var8(var9)
@@ -153,14 +153,14 @@ L 6:  91 [-]: JUMPIF R8 L7 ; goto L7 if var8
       93 [-]: NAMECALL R8 R7 K26; var9 = var7; var8 = var7[0xF2DEAF69]
       94 [-]: CALL R8 3 2  ; var8 = var8(var9, var10)
       95 [-]: JUMPIFNOT R8 L7; goto L7 if not var8
-      96 [-]: LOADN R10 194; var10 = 194
+      96 [-]: LOADN R10 199; var10 = 199
       97 [-]: LOADN R11 3  ; var11 = 3
       98 [-]: GETIMPORT R14 3; var14 = _T["hoverboardSpeed"]
       99 [-]: GETTABLE R13 R14 R1; var13 = var14[var1]
      100 [-]: GETTABLEKS R12 R13 K14; var12 = var13["speed"]
      101 [-]: NAMECALL R8 R5 K29; var9 = var5; var8 = var5[0x5E6704FF]
      102 [-]: CALL R8 5 1  ; var8(var9, var10, var11, var12)
-     103 [-]: LOADN R10 196; var10 = 196
+     103 [-]: LOADN R10 201; var10 = 201
      104 [-]: LOADN R11 3  ; var11 = 3
      105 [-]: GETIMPORT R14 3; var14 = _T["hoverboardSpeed"]
      106 [-]: GETTABLE R13 R14 R1; var13 = var14[var1]
@@ -181,16 +181,16 @@ L 6:  91 [-]: JUMPIF R8 L7 ; goto L7 if var8
      121 [-]: NAMECALL R8 R4 K32; var9 = var4; var8 = var4[0x37E45FB5]
      122 [-]: CALL R8 5 1  ; var8(var9, var10, var11, var12)
 L 7: 123 [-]: JUMPBACK L2  ; goto L2
-L 8: 124 [-]: FASTCALL1 62 R5 L9; 
+L 8: 124 [-]: FASTCALL1 64 R5 L9; 
      125 [-]: MOVE R8 R5   ; var8 = var5
      126 [-]: GETIMPORT R7 5; var7 = 0x7B998233
      127 [-]: CALL R7 2 2  ; var7 = var7(var8)
 L 9: 128 [-]: JUMPIF R7 L11; goto L11 if var7
      129 [-]: NAMECALL R8 R5 K23; var9 = var5; var8 = var5[0xF7D48EE0]
-     130 [-]: CALL R8 2 2  ; var8 = var8(var9)
-     131 [-]: FASTCALL1 62 R8 L10; 
+     130 [-]: CALL R8 2 0  ; var8, ... = var8(var9)
+     131 [-]: FASTCALL 64 L10; 
      132 [-]: GETIMPORT R7 5; var7 = 0x7B998233
-     133 [-]: CALL R7 2 2  ; var7 = var7(var8)
+     133 [-]: CALL R7 0 2  ; var7 = var7(var8, ...)
 L10: 134 [-]: JUMPIF R7 L11; goto L11 if var7
      135 [-]: NAMECALL R7 R5 K23; var8 = var5; var7 = var5[0xF7D48EE0]
      136 [-]: CALL R7 2 2  ; var7 = var7(var8)
@@ -198,14 +198,14 @@ L10: 134 [-]: JUMPIF R7 L11; goto L11 if var7
      138 [-]: NAMECALL R7 R7 K26; var8 = var7; var7 = var7[0xF2DEAF69]
      139 [-]: CALL R7 3 2  ; var7 = var7(var8, var9)
      140 [-]: JUMPIFNOT R7 L11; goto L11 if not var7
-     141 [-]: LOADN R9 194 ; var9 = 194
+     141 [-]: LOADN R9 199 ; var9 = 199
      142 [-]: LOADN R10 3  ; var10 = 3
      143 [-]: GETIMPORT R13 3; var13 = _T["hoverboardSpeed"]
      144 [-]: GETTABLE R12 R13 R1; var12 = var13[var1]
      145 [-]: GETTABLEKS R11 R12 K14; var11 = var12["speed"]
      146 [-]: NAMECALL R7 R5 K27; var8 = var5; var7 = var5[0x12DD9DA2]
      147 [-]: CALL R7 5 1  ; var7(var8, var9, var10, var11)
-     148 [-]: LOADN R9 196 ; var9 = 196
+     148 [-]: LOADN R9 201 ; var9 = 201
      149 [-]: LOADN R10 3  ; var10 = 3
      150 [-]: GETIMPORT R13 3; var13 = _T["hoverboardSpeed"]
      151 [-]: GETTABLE R12 R13 R1; var12 = var13[var1]
@@ -232,7 +232,7 @@ L11: 155 [-]: GETIMPORT R7 3; var7 = _T["hoverboardSpeed"]
        4 [-]: RETURN R0 0  ; 
 L 0:   5 [-]: NAMECALL R5 R0 K3; var6 = var0; var5 = var0[0x5B89142C]
        6 [-]: CALL R5 2 2  ; var5 = var5(var6)
-       7 [-]: FASTCALL1 62 R5 L1; 
+       7 [-]: FASTCALL1 64 R5 L1; 
        8 [-]: MOVE R7 R5   ; var7 = var5
        9 [-]: GETIMPORT R6 5; var6 = 0x7B998233
       10 [-]: CALL R6 2 2  ; var6 = var6(var7)
@@ -240,14 +240,14 @@ L 1:  11 [-]: JUMPIFNOT R6 L2; goto L2 if not var6
       12 [-]: RETURN R0 0  ; 
 L 2:  13 [-]: NAMECALL R6 R5 K6; var7 = var5; var6 = var5[0xA534C3AC]
       14 [-]: CALL R6 2 2  ; var6 = var6(var7)
-      15 [-]: FASTCALL1 62 R6 L3; 
+      15 [-]: FASTCALL1 64 R6 L3; 
       16 [-]: MOVE R8 R6   ; var8 = var6
       17 [-]: GETIMPORT R7 5; var7 = 0x7B998233
       18 [-]: CALL R7 2 2  ; var7 = var7(var8)
 L 3:  19 [-]: JUMPIFNOT R7 L4; goto L4 if not var7
       20 [-]: RETURN R0 0  ; 
 L 4:  21 [-]: GETIMPORT R8 9; var8 = _T["hoverboardSpeed"]
-      22 [-]: FASTCALL1 62 R8 L5; 
+      22 [-]: FASTCALL1 64 R8 L5; 
       23 [-]: GETIMPORT R7 5; var7 = 0x7B998233
       24 [-]: CALL R7 2 2  ; var7 = var7(var8)
 L 5:  25 [-]: JUMPIFNOT R7 L6; goto L6 if not var7
@@ -292,7 +292,7 @@ L 8:  44 [-]: GETTABLE R8 R9 R10; var8 = var9[var10]
       64 [-]: CALL R10 2 2 ; var10 = var10(var11)
       65 [-]: GETIMPORT R13 9; var13 = _T["hoverboardSpeed"]
       66 [-]: GETTABLE R12 R13 R10; var12 = var13[var10]
-      67 [-]: FASTCALL1 62 R12 L9; 
+      67 [-]: FASTCALL1 64 R12 L9; 
       68 [-]: GETIMPORT R11 5; var11 = 0x7B998233
       69 [-]: CALL R11 2 2 ; var11 = var11(var12)
 L 9:  70 [-]: JUMPIFNOT R11 L10; goto L10 if not var11

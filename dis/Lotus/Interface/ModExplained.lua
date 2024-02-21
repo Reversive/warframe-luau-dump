@@ -122,7 +122,7 @@
       63 [-]: NEWTABLE R8 0 1; var8 = {}
       64 [-]: LOADN R9 100 ; var9 = 100
       65 [-]: SETLIST R8 R9 1 [1]; var8[1] = var9; var8[2] = var10; 
-      66 [-]: LOADK R9 K14 ; var9 = 0.20000000000000001
+      66 [-]: LOADK R9 K14 ; var9 = 0.20000000298023224
       67 [-]: CALL R3 7 1  ; var3(var4, var5, var6, var7, var8, var9)
       68 [-]: GETIMPORT R3 10; var3 = 0xAE91E43B
       69 [-]: MOVE R5 R2   ; var5 = var2
@@ -141,7 +141,7 @@
 ; Max Stack Size:  10
 
        0 [-]: GETIMPORT R1 1; var1 = 0xFD909F70
-       1 [-]: FASTCALL1 62 R1 L0; 
+       1 [-]: FASTCALL1 64 R1 L0; 
        2 [-]: GETIMPORT R0 3; var0 = 0x7B998233
        3 [-]: CALL R0 2 2  ; var0 = var0(var1)
 L 0:   4 [-]: JUMPIF R0 L1 ; goto L1 if var0
@@ -195,7 +195,7 @@ L 1:  18 [-]: GETIMPORT R0 13; var0 = 0xAE91E43B
       52 [-]: CALL R1 5 1  ; var1(var2, var3, var4, var5)
       53 [-]: GETIMPORT R1 13; var1 = 0xAE91E43B
       54 [-]: LOADK R3 K18 ; var3 = "Conclave"
-      55 [-]: LOADN R4 75  ; var4 = 75
+      55 [-]: LOADN R4 77  ; var4 = 77
       56 [-]: LOADB R5 1   ; var5 = true
       57 [-]: NAMECALL R1 R1 K15; var2 = var1; var1 = var1[0xAADE900E]
       58 [-]: CALL R1 5 1  ; var1(var2, var3, var4, var5)

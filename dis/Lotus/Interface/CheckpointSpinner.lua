@@ -52,8 +52,8 @@
        7 [-]: NEWTABLE R5 0 1; var5 = {}
        8 [-]: LOADN R6 0   ; var6 = 0
        9 [-]: SETLIST R5 R6 1 [1]; var5[1] = var6; var5[2] = var7; 
-      10 [-]: LOADK R6 K5  ; var6 = 0.29999999999999999
-      11 [-]: LOADK R7 K6  ; var7 = 0.20000000000000001
+      10 [-]: LOADK R6 K5  ; var6 = 0.30000001192092896
+      11 [-]: LOADK R7 K6  ; var7 = 0.20000000298023224
       12 [-]: DUPCLOSURE R8 K7; 
       13 [-]: CALL R0 9 1  ; var0(var1, var2, var3, var4, var5, var6, var7, var8)
       14 [-]: RETURN R0 0  ; 
@@ -86,7 +86,7 @@ L 0:   9 [-]: JUMPXEQKS R1 K6 L1 NOT;
       17 [-]: NEWTABLE R7 0 1; var7 = {}
       18 [-]: LOADN R8 100 ; var8 = 100
       19 [-]: SETLIST R7 R8 1 [1]; var7[1] = var8; var7[2] = var9; 
-      20 [-]: LOADK R8 K10 ; var8 = 0.34999999999999998
+      20 [-]: LOADK R8 K10 ; var8 = 0.34999999403953552
       21 [-]: LOADN R9 0   ; var9 = 0
       22 [-]: CALL R2 8 1  ; var2(var3, var4, var5, var6, var7, var8, var9)
       23 [-]: RETURN R0 0  ; 
@@ -149,7 +149,7 @@ L 2:  27 [-]: RETURN R0 0  ;
       43 [-]: CALL R3 5 1  ; var3(var4, var5, var6, var7)
       44 [-]: GETIMPORT R3 6; var3 = 0xAE91E43B
       45 [-]: LOADK R5 K13 ; var5 = "SpinnerLabel.Label"
-      46 [-]: LOADN R6 36  ; var6 = 36
+      46 [-]: LOADN R6 38  ; var6 = 38
       47 [-]: MOVE R7 R2   ; var7 = var2
       48 [-]: NAMECALL R3 R3 K10; var4 = var3; var3 = var3[0x67BC869F]
       49 [-]: CALL R3 5 1  ; var3(var4, var5, var6, var7)
@@ -185,7 +185,7 @@ L 2:  27 [-]: RETURN R0 0  ;
        3 [-]: NAMECALL R0 R0 K4; var1 = var0; var0 = var0[0x8A8C8D5A]
        4 [-]: CALL R0 0 1  ; var0(var1, ...)
        5 [-]: GETUPVAL R1 0; var1 = upvalues[0]
-       6 [-]: FASTCALL1 62 R1 L0; 
+       6 [-]: FASTCALL1 64 R1 L0; 
        7 [-]: GETIMPORT R0 6; var0 = 0x7B998233
        8 [-]: CALL R0 2 2  ; var0 = var0(var1)
 L 0:   9 [-]: JUMPIF R0 L1 ; goto L1 if var0
@@ -205,7 +205,7 @@ L 1:  15 [-]: RETURN R0 0  ;
 ; Max Stack Size:  2
 
        0 [-]: GETUPVAL R1 0; var1 = upvalues[0]
-       1 [-]: FASTCALL1 62 R1 L0; 
+       1 [-]: FASTCALL1 64 R1 L0; 
        2 [-]: GETIMPORT R0 1; var0 = 0x7B998233
        3 [-]: CALL R0 2 2  ; var0 = var0(var1)
 L 0:   4 [-]: JUMPIF R0 L1 ; goto L1 if var0

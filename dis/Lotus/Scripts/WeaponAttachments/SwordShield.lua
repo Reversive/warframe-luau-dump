@@ -18,12 +18,12 @@
 ; Max Stack Size:  7
 
        0 [-]: LOADNIL R1   ; var1 = nil
-L 0:   1 [-]: FASTCALL1 62 R1 L1; 
+L 0:   1 [-]: FASTCALL1 64 R1 L1; 
        2 [-]: MOVE R3 R1   ; var3 = var1
        3 [-]: GETIMPORT R2 1; var2 = 0x7B998233
        4 [-]: CALL R2 2 2  ; var2 = var2(var3)
 L 1:   5 [-]: JUMPIFNOT R2 L3; goto L3 if not var2
-       6 [-]: FASTCALL1 62 R0 L2; 
+       6 [-]: FASTCALL1 64 R0 L2; 
        7 [-]: MOVE R3 R0   ; var3 = var0
        8 [-]: GETIMPORT R2 1; var2 = 0x7B998233
        9 [-]: CALL R2 2 2  ; var2 = var2(var3)
@@ -32,7 +32,7 @@ L 2:  10 [-]: JUMPIF R2 L3 ; goto L3 if var2
       12 [-]: CALL R2 2 2  ; var2 = var2(var3)
       13 [-]: MOVE R1 R2   ; var1 = var2
       14 [-]: JUMPBACK L0  ; goto L0
-L 3:  15 [-]: FASTCALL1 62 R1 L4; 
+L 3:  15 [-]: FASTCALL1 64 R1 L4; 
       16 [-]: MOVE R3 R1   ; var3 = var1
       17 [-]: GETIMPORT R2 1; var2 = 0x7B998233
       18 [-]: CALL R2 2 2  ; var2 = var2(var3)

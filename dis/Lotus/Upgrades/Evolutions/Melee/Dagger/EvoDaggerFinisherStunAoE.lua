@@ -57,7 +57,7 @@ L 0:   8 [-]: GETTABLE R2 R3 R4; var2 = var3[var4]
        2 [-]: RETURN R3 1  ; 
 L 0:   3 [-]: NAMECALL R3 R0 K0; var4 = var0; var3 = var0[0x52DE0ED7]
        4 [-]: CALL R3 2 2  ; var3 = var3(var4)
-       5 [-]: FASTCALL1 62 R3 L1; 
+       5 [-]: FASTCALL1 64 R3 L1; 
        6 [-]: MOVE R5 R3   ; var5 = var3
        7 [-]: GETIMPORT R4 2; var4 = 0x7B998233
        8 [-]: CALL R4 2 2  ; var4 = var4(var5)
@@ -69,7 +69,7 @@ L 1:   9 [-]: JUMPIF R4 L2 ; goto L2 if var4
 L 2:  14 [-]: LOADB R4 0   ; var4 = false
       15 [-]: RETURN R4 1  ; 
 L 3:  16 [-]: GETIMPORT R5 8; var5 = _T["ZarimanDaggerStunEvo"]
-      17 [-]: FASTCALL1 62 R5 L4; 
+      17 [-]: FASTCALL1 64 R5 L4; 
       18 [-]: GETIMPORT R4 2; var4 = 0x7B998233
       19 [-]: CALL R4 2 2  ; var4 = var4(var5)
 L 4:  20 [-]: JUMPIFNOT R4 L5; goto L5 if not var4
@@ -80,7 +80,7 @@ L 5:  24 [-]: NAMECALL R4 R3 K10; var5 = var3; var4 = var3[0x388577D5]
       25 [-]: CALL R4 2 2  ; var4 = var4(var5)
       26 [-]: GETIMPORT R7 8; var7 = _T["ZarimanDaggerStunEvo"]
       27 [-]: GETTABLE R6 R7 R4; var6 = var7[var4]
-      28 [-]: FASTCALL1 62 R6 L6; 
+      28 [-]: FASTCALL1 64 R6 L6; 
       29 [-]: GETIMPORT R5 2; var5 = 0x7B998233
       30 [-]: CALL R5 2 2  ; var5 = var5(var6)
 L 6:  31 [-]: JUMPIF R5 L7 ; goto L7 if var5
@@ -90,7 +90,7 @@ L 6:  31 [-]: JUMPIF R5 L7 ; goto L7 if var5
       35 [-]: GETTABLE R7 R8 R4; var7 = var8[var4]
       36 [-]: SUB R5 R6 R7 ; var5 = var6 - var7
       37 [-]: LOADK R6 K13 ; var6 = 1.5
-      38 [-]: JUMPIFNOTLE R6 R5 L8; goto L8 if var6 > var525646
+      38 [-]: JUMPIFNOTLE R6 R5 L8; goto L8 if var6 > var525601
 L 7:  39 [-]: GETIMPORT R5 8; var5 = _T["ZarimanDaggerStunEvo"]
       40 [-]: GETIMPORT R6 12; var6 = 0x55156FF7
       41 [-]: CALL R6 1 2  ; var6 = var6()
@@ -132,7 +132,7 @@ L 0:   7 [-]: GETTABLE R5 R6 R7; var5 = var6[var7]
       18 [-]: MOVE R9 R6   ; var9 = var6
       19 [-]: CALL R8 2 4  ; var8, var9, var10 = var8(var9)
       20 [-]: FORGPREP_INEXT R8 L3; 
-L 1:  21 [-]: FASTCALL1 62 R12 L2; 
+L 1:  21 [-]: FASTCALL1 64 R12 L2; 
       22 [-]: MOVE R14 R12 ; var14 = var12
       23 [-]: GETIMPORT R13 12; var13 = 0x7B998233
       24 [-]: CALL R13 2 2 ; var13 = var13(var14)

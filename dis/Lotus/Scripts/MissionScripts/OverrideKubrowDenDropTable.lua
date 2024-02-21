@@ -67,7 +67,7 @@
       21 [-]: MOVE R7 R4   ; var7 = var4
       22 [-]: CALL R5 3 2  ; var5 = var5(var6, var7)
       23 [-]: GETIMPORT R7 16; var7 = _T["KubrowQuestActive"]
-      24 [-]: FASTCALL1 62 R7 L0; 
+      24 [-]: FASTCALL1 64 R7 L0; 
       25 [-]: GETIMPORT R6 18; var6 = 0x7B998233
       26 [-]: CALL R6 2 2  ; var6 = var6(var7)
 L 0:  27 [-]: JUMPIF R6 L1 ; goto L1 if var6

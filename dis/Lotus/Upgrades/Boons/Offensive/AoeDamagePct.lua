@@ -59,7 +59,7 @@ L 1:  12 [-]: MUL R2 R3 R0 ; var2 = var3 * var0
 ; Is_vararg:       0
 ; Max Stack Size:  14
 
-       0 [-]: FASTCALL1 62 R0 L0; 
+       0 [-]: FASTCALL1 64 R0 L0; 
        1 [-]: MOVE R6 R0   ; var6 = var0
        2 [-]: GETIMPORT R5 1; var5 = 0x7B998233
        3 [-]: CALL R5 2 2  ; var5 = var5(var6)
@@ -71,18 +71,18 @@ L 1:   8 [-]: RETURN R0 0  ;
 L 2:   9 [-]: GETIMPORT R5 5; var5 = 0x5BCED4C4[0x3630E649]
       10 [-]: CALL R5 1 2  ; var5 = var5()
       11 [-]: GETIMPORT R6 7; var6 = 0x778EA816
-      12 [-]: JUMPIFNOTLE R6 R5 L3; goto L3 if var6 > var65581
+      12 [-]: JUMPIFNOTLE R6 R5 L3; goto L3 if var6 > var65571
       13 [-]: RETURN R0 0  ; 
 L 3:  14 [-]: NAMECALL R5 R4 K8; var6 = var4; var5 = var4[0x5EFCA02D]
       15 [-]: CALL R5 2 2  ; var5 = var5(var6)
-      16 [-]: FASTCALL1 62 R5 L4; 
+      16 [-]: FASTCALL1 64 R5 L4; 
       17 [-]: MOVE R7 R5   ; var7 = var5
       18 [-]: GETIMPORT R6 1; var6 = 0x7B998233
       19 [-]: CALL R6 2 2  ; var6 = var6(var7)
 L 4:  20 [-]: JUMPIFNOT R6 L5; goto L5 if not var6
       21 [-]: RETURN R0 0  ; 
 L 5:  22 [-]: GETTABLEKS R6 R5 K9; var6 = var5["victim"]
-      23 [-]: FASTCALL1 62 R6 L6; 
+      23 [-]: FASTCALL1 64 R6 L6; 
       24 [-]: MOVE R8 R6   ; var8 = var6
       25 [-]: GETIMPORT R7 1; var7 = 0x7B998233
       26 [-]: CALL R7 2 2  ; var7 = var7(var8)
@@ -126,27 +126,24 @@ L 8:  33 [-]: NAMECALL R7 R6 K11; var8 = var6; var7 = var6[0x1AC1655C]
       64 [-]: MOVE R11 R0  ; var11 = var0
       65 [-]: NAMECALL R9 R8 K33; var10 = var8; var9 = var8[0x86CD00CB]
       66 [-]: CALL R9 3 1  ; var9(var10, var11)
-      67 [-]: MOVE R11 R1  ; var11 = var1
-      68 [-]: NAMECALL R9 R8 K34; var10 = var8; var9 = var8[0xF4DC3420]
-      69 [-]: CALL R9 3 1  ; var9(var10, var11)
-      70 [-]: GETIMPORT R11 36; var11 = 0x0469F296
-      71 [-]: LOADK R12 K37; var12 = "Neutral"
-      72 [-]: CALL R11 2 0 ; var11, ... = var11(var12)
-      73 [-]: NAMECALL R9 R8 K38; var10 = var8; var9 = var8[0x5B06DDC8]
-      74 [-]: CALL R9 0 1  ; var9(var10, ...)
-      75 [-]: GETIMPORT R9 40; var9 = 0x1E9434AC
-      76 [-]: SETTABLEKS R9 R8 K41; var9["radius"] = var8
-      77 [-]: LOADB R9 1   ; var9 = true
-      78 [-]: SETTABLEKS R9 R8 K42; var9["checkForCover"] = var8
-      79 [-]: LOADB R9 1   ; var9 = true
-      80 [-]: SETTABLEKS R9 R8 K43; var9["staticCoverOnly"] = var8
-      81 [-]: LOADN R9 0   ; var9 = 0
-      82 [-]: SETTABLEKS R9 R8 K44; var9["fallOff"] = var8
-      83 [-]: GETIMPORT R9 15; var9 = 0x89326C93
-      84 [-]: MOVE R11 R8  ; var11 = var8
-      85 [-]: NAMECALL R9 R9 K45; var10 = var9; var9 = var9[0x97DCFF30]
-      86 [-]: CALL R9 3 1  ; var9(var10, var11)
-      87 [-]: RETURN R0 0  ; 
+      67 [-]: GETIMPORT R11 35; var11 = 0x0469F296
+      68 [-]: LOADK R12 K36; var12 = "Neutral"
+      69 [-]: CALL R11 2 0 ; var11, ... = var11(var12)
+      70 [-]: NAMECALL R9 R8 K37; var10 = var8; var9 = var8[0x5B06DDC8]
+      71 [-]: CALL R9 0 1  ; var9(var10, ...)
+      72 [-]: GETIMPORT R9 39; var9 = 0x1E9434AC
+      73 [-]: SETTABLEKS R9 R8 K40; var9["radius"] = var8
+      74 [-]: LOADB R9 1   ; var9 = true
+      75 [-]: SETTABLEKS R9 R8 K41; var9["checkForCover"] = var8
+      76 [-]: LOADB R9 1   ; var9 = true
+      77 [-]: SETTABLEKS R9 R8 K42; var9["staticCoverOnly"] = var8
+      78 [-]: LOADN R9 0   ; var9 = 0
+      79 [-]: SETTABLEKS R9 R8 K43; var9["fallOff"] = var8
+      80 [-]: GETIMPORT R9 15; var9 = 0x89326C93
+      81 [-]: MOVE R11 R8  ; var11 = var8
+      82 [-]: NAMECALL R9 R9 K44; var10 = var9; var9 = var9[0x97DCFF30]
+      83 [-]: CALL R9 3 1  ; var9(var10, var11)
+      84 [-]: RETURN R0 0  ; 
 
 
 

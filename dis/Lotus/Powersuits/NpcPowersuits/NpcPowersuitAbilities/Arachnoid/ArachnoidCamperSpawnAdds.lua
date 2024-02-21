@@ -46,7 +46,7 @@
 ; Max Stack Size:  11
 
        0 [-]: LOADN R2 0   ; var2 = 0
-       1 [-]: JUMPIFNOTLE R2 R0 L0; goto L0 if var2 > var66126
+       1 [-]: JUMPIFNOTLE R2 R0 L0; goto L0 if var2 > var66081
        2 [-]: GETIMPORT R2 1; var2 = 0xCBD666E1
        3 [-]: MOVE R3 R0   ; var3 = var0
        4 [-]: CALL R2 2 1  ; var2(var3)
@@ -57,12 +57,12 @@ L 0:   5 [-]: GETIMPORT R2 3; var2 = 0x89326C93
        9 [-]: MOVE R4 R2   ; var4 = var2
       10 [-]: CALL R3 2 4  ; var3, var4, var5 = var3(var4)
       11 [-]: FORGPREP_INEXT R3 L4; 
-L 1:  12 [-]: FASTCALL1 62 R7 L2; 
+L 1:  12 [-]: FASTCALL1 64 R7 L2; 
       13 [-]: MOVE R9 R7   ; var9 = var7
       14 [-]: GETIMPORT R8 8; var8 = 0x7B998233
       15 [-]: CALL R8 2 2  ; var8 = var8(var9)
 L 2:  16 [-]: JUMPIF R8 L4 ; goto L4 if var8
-      17 [-]: FASTCALL1 62 R1 L3; 
+      17 [-]: FASTCALL1 64 R1 L3; 
       18 [-]: MOVE R9 R1   ; var9 = var1
       19 [-]: GETIMPORT R8 8; var8 = 0x7B998233
       20 [-]: CALL R8 2 2  ; var8 = var8(var9)
@@ -92,7 +92,7 @@ L 0:   6 [-]: GETIMPORT R2 3; var2 = _T["CamperFinisherInProgress"]
        8 [-]: LOADN R2 0   ; var2 = 0
        9 [-]: RETURN R2 1  ; 
 L 1:  10 [-]: GETIMPORT R3 5; var3 = _T["exploiterAddCount"]
-      11 [-]: FASTCALL1 62 R3 L2; 
+      11 [-]: FASTCALL1 64 R3 L2; 
       12 [-]: GETIMPORT R2 7; var2 = 0x7B998233
       13 [-]: CALL R2 2 2  ; var2 = var2(var3)
 L 2:  14 [-]: JUMPIFNOT R2 L3; goto L3 if not var2
@@ -108,14 +108,14 @@ L 3:  17 [-]: GETIMPORT R2 9; var2 = 0xBE190284
       24 [-]: NAMECALL R4 R4 K13; var5 = var4; var4 = var4[0x8B5B1F58]
       25 [-]: CALL R4 2 2  ; var4 = var4(var5)
       26 [-]: LOADN R5 2   ; var5 = 2
-      27 [-]: JUMPIFNOTLT R2 R5 L4; goto L4 if var2 >= var262983
+      27 [-]: JUMPIFNOTLT R2 R5 L4; goto L4 if var2 >= var262960
       28 [-]: LOADN R3 4   ; var3 = 4
       29 [-]: JUMP L5      ; goto L5
 L 4:  30 [-]: LOADN R5 6   ; var5 = 6
       31 [-]: LENGTH R6 R4 ; var6 = #var4
       32 [-]: MUL R3 R5 R6 ; var3 = var5 * var6
 L 5:  33 [-]: GETIMPORT R5 5; var5 = _T["exploiterAddCount"]
-      34 [-]: JUMPIFNOTLE R3 R5 L6; goto L6 if var3 > var1351
+      34 [-]: JUMPIFNOTLE R3 R5 L6; goto L6 if var3 > var1328
       35 [-]: LOADN R5 0   ; var5 = 0
       36 [-]: RETURN R5 1  ; 
 L 6:  37 [-]: GETIMPORT R5 12; var5 = 0x89326C93
@@ -130,7 +130,7 @@ L 6:  37 [-]: GETIMPORT R5 12; var5 = 0x89326C93
 L 7:  46 [-]: NAMECALL R6 R5 K17; var7 = var5; var6 = var5[0x4278F969]
       47 [-]: CALL R6 2 2  ; var6 = var6(var7)
       48 [-]: LOADN R7 0   ; var7 = 0
-      49 [-]: JUMPIFNOTLT R7 R6 L8; goto L8 if var7 >= var67143
+      49 [-]: JUMPIFNOTLT R7 R6 L8; goto L8 if var7 >= var67120
       50 [-]: LOADN R6 1   ; var6 = 1
       51 [-]: RETURN R6 1  ; 
 L 8:  52 [-]: LOADN R6 0   ; var6 = 0
@@ -179,7 +179,7 @@ L 0:   3 [-]: GETIMPORT R0 3; var0 = _T
        6 [-]: SETTABLEKS R1 R0 K1; var1["BackUpSpiderSpawnLocationIterator"] = var0
        7 [-]: GETIMPORT R0 2; var0 = _T["BackUpSpiderSpawnLocationIterator"]
        8 [-]: LOADN R1 1   ; var1 = 1
-       9 [-]: JUMPIFNOTLT R0 R1 L1; goto L1 if var0 >= var196686
+       9 [-]: JUMPIFNOTLT R0 R1 L1; goto L1 if var0 >= var196641
       10 [-]: GETIMPORT R0 3; var0 = _T
       11 [-]: LOADN R1 6   ; var1 = 6
       12 [-]: SETTABLEKS R1 R0 K1; var1["BackUpSpiderSpawnLocationIterator"] = var0
@@ -202,7 +202,7 @@ L 1:  13 [-]: GETIMPORT R1 6; var1 = _T["BackUpSpiderSpawnLocations"]
        3 [-]: GETIMPORT R4 4; var4 = _T
        4 [-]: LOADB R5 0   ; var5 = false
        5 [-]: SETTABLEKS R5 R4 K5; var5["TerraTurretDisabledByAbility"] = var4
-       6 [-]: FASTCALL1 62 R3 L0; 
+       6 [-]: FASTCALL1 64 R3 L0; 
        7 [-]: MOVE R5 R3   ; var5 = var3
        8 [-]: GETIMPORT R4 7; var4 = 0x7B998233
        9 [-]: CALL R4 2 2  ; var4 = var4(var5)
@@ -234,7 +234,7 @@ L 2:  28 [-]: GETIMPORT R4 15; var4 = 0x89326C93
       35 [-]: NAMECALL R5 R5 K20; var6 = var5; var5 = var5[0x0EB34C69]
       36 [-]: CALL R5 3 2  ; var5 = var5(var6, var7)
       37 [-]: LOADN R6 2   ; var6 = 2
-      38 [-]: JUMPIFNOTLT R5 R6 L5; goto L5 if var5 >= var1443918
+      38 [-]: JUMPIFNOTLT R5 R6 L5; goto L5 if var5 >= var1443873
       39 [-]: GETIMPORT R8 22; var8 = 0xCEDC9DDC
       40 [-]: LOADB R9 0   ; var9 = false
       41 [-]: NAMECALL R6 R1 K12; var7 = var1; var6 = var1[0x659D451F]
@@ -263,7 +263,7 @@ L 2:  28 [-]: GETIMPORT R4 15; var4 = 0x89326C93
       64 [-]: LOADN R13 30 ; var13 = 30
       65 [-]: NAMECALL R7 R4 K36; var8 = var4; var7 = var4[0x6CD833C5]
       66 [-]: CALL R7 7 2  ; var7 = var7(var8, var9, var10, var11, var12, var13)
-      67 [-]: FASTCALL1 62 R7 L3; 
+      67 [-]: FASTCALL1 64 R7 L3; 
       68 [-]: MOVE R9 R7   ; var9 = var7
       69 [-]: GETIMPORT R8 7; var8 = 0x7B998233
       70 [-]: CALL R8 2 2  ; var8 = var8(var9)
@@ -341,7 +341,7 @@ L 9: 135 [-]: GETIMPORT R6 56; var6 = _T["exploiterStunCount"]
      142 [-]: CALL R8 2 0  ; var8, ... = var8(var9)
      143 [-]: CALL R6 0 1  ; var6(var7, ...)
 L10: 144 [-]: GETIMPORT R7 24; var7 = 0x0F399063
-     145 [-]: FASTCALL1 62 R7 L11; 
+     145 [-]: FASTCALL1 64 R7 L11; 
      146 [-]: GETIMPORT R6 7; var6 = 0x7B998233
      147 [-]: CALL R6 2 2  ; var6 = var6(var7)
 L11: 148 [-]: JUMPIF R6 L12; goto L12 if var6
@@ -384,14 +384,14 @@ L15: 184 [-]: LOADN R8 6   ; var8 = 6
      185 [-]: GETIMPORT R9 42; var9 = _T["exploiterAddCount"]
      186 [-]: SUB R7 R8 R9 ; var7 = var8 - var9
 L16: 187 [-]: LOADN R8 0   ; var8 = 0
-     188 [-]: JUMPIFNOTLT R8 R7 L29; goto L29 if var8 >= var2062
+     188 [-]: JUMPIFNOTLT R8 R7 L29; goto L29 if var8 >= var2126
      189 [-]: LOADNIL R8   ; var8 = nil
      190 [-]: LENGTH R9 R6 ; var9 = #var6
      191 [-]: LOADN R10 0  ; var10 = 0
-     192 [-]: JUMPIFNOTLT R10 R9 L20; goto L20 if var10 >= var395536
+     192 [-]: JUMPIFNOTLT R10 R9 L20; goto L20 if var10 >= var395520
      193 [-]: LENGTH R9 R6 ; var9 = #var6
      194 [-]: LOADN R10 1  ; var10 = 1
-     195 [-]: JUMPIFNOTLT R10 R9 L18; goto L18 if var10 >= var4458830
+     195 [-]: JUMPIFNOTLT R10 R9 L18; goto L18 if var10 >= var4458785
      196 [-]: GETIMPORT R9 68; var9 = 0x55730E1A
      197 [-]: LOADN R10 1  ; var10 = 1
      198 [-]: LENGTH R11 R6; var11 = #var6
@@ -434,7 +434,7 @@ L21: 232 [-]: GETIMPORT R9 4; var9 = _T
      235 [-]: SETTABLEKS R10 R9 K76; var10["BackUpSpiderSpawnLocationIterator"] = var9
      236 [-]: GETIMPORT R9 77; var9 = _T["BackUpSpiderSpawnLocationIterator"]
      237 [-]: LOADN R10 1  ; var10 = 1
-     238 [-]: JUMPIFNOTLT R9 R10 L22; goto L22 if var9 >= var264526
+     238 [-]: JUMPIFNOTLT R9 R10 L22; goto L22 if var9 >= var264481
      239 [-]: GETIMPORT R9 4; var9 = _T
      240 [-]: LOADN R10 6  ; var10 = 6
      241 [-]: SETTABLEKS R10 R9 K76; var10["BackUpSpiderSpawnLocationIterator"] = var9
@@ -458,7 +458,7 @@ L24: 252 [-]: JUMPXEQKNIL R8 L28;
      259 [-]: LOADN R15 30 ; var15 = 30
      260 [-]: NAMECALL R9 R4 K36; var10 = var4; var9 = var4[0x6CD833C5]
      261 [-]: CALL R9 7 2  ; var9 = var9(var10, var11, var12, var13, var14, var15)
-     262 [-]: FASTCALL1 62 R9 L25; 
+     262 [-]: FASTCALL1 64 R9 L25; 
      263 [-]: MOVE R11 R9  ; var11 = var9
      264 [-]: GETIMPORT R10 7; var10 = 0x7B998233
      265 [-]: CALL R10 2 2 ; var10 = var10(var11)
@@ -471,11 +471,11 @@ L25: 266 [-]: JUMPIF R10 L28; goto L28 if var10
      272 [-]: GETIMPORT R13 62; var13 = 0x0469F296
      273 [-]: LOADK R14 K85; var14 = "HeatModeSpeedUp"
      274 [-]: CALL R13 2 2 ; var13 = var13(var14)
-     275 [-]: LOADK R14 K86; var14 = 1.3
+     275 [-]: LOADK R14 K86; var14 = 1.2999999523162842
      276 [-]: NAMECALL R11 R10 K87; var12 = var10; var11 = var10[0x9D668F53]
      277 [-]: CALL R11 4 1 ; var11(var12, var13, var14)
      278 [-]: GETIMPORT R12 89; var12 = 0x46B19C8A
-     279 [-]: FASTCALL1 62 R12 L26; 
+     279 [-]: FASTCALL1 64 R12 L26; 
      280 [-]: GETIMPORT R11 7; var11 = 0x7B998233
      281 [-]: CALL R11 2 2 ; var11 = var11(var12)
 L26: 282 [-]: JUMPIF R11 L27; goto L27 if var11
@@ -519,7 +519,7 @@ L 0:  11 [-]: GETIMPORT R5 9; var5 = _T
       14 [-]: JUMP L3      ; goto L3
 L 1:  15 [-]: GETIMPORT R5 11; var5 = _T["TerraTurretDisabledByAbility"]
       16 [-]: JUMPIFNOT R5 L3; goto L3 if not var5
-      17 [-]: FASTCALL1 62 R4 L2; 
+      17 [-]: FASTCALL1 64 R4 L2; 
       18 [-]: MOVE R6 R4   ; var6 = var4
       19 [-]: GETIMPORT R5 13; var5 = 0x7B998233
       20 [-]: CALL R5 2 2  ; var5 = var5(var6)
@@ -548,7 +548,7 @@ L 3:  24 [-]: GETIMPORT R5 9; var5 = _T
        6 [-]: CALL R2 2 2  ; var2 = var2(var3)
        7 [-]: MOVE R1 R2   ; var1 = var2
 L 0:   8 [-]: GETIMPORT R3 6; var3 = _T["coolantSpiderDeathCount"]
-       9 [-]: FASTCALL1 62 R3 L1; 
+       9 [-]: FASTCALL1 64 R3 L1; 
       10 [-]: GETIMPORT R2 8; var2 = 0x7B998233
       11 [-]: CALL R2 2 2  ; var2 = var2(var3)
 L 1:  12 [-]: JUMPIFNOT R2 L2; goto L2 if not var2

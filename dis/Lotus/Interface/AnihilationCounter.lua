@@ -46,7 +46,7 @@
        3 [-]: LOADK R3 K2  ; var3 = 13108230
        4 [-]: GETIMPORT R4 5; var4 = _T["gDoomsdayFaction"]
        5 [-]: LOADN R5 3   ; var5 = 3
-       6 [-]: JUMPIFNOTEQ R4 R5 L2; goto L2 if var4 ~= var66587
+       6 [-]: JUMPIFNOTEQ R4 R5 L2; goto L2 if var4 ~= var66566
        7 [-]: LOADB R4 1   ; var4 = true
        8 [-]: SETUPVAL R4 0; upvalues[4] = var0
        9 [-]: GETIMPORT R5 7; var5 = 0xBE190284
@@ -56,7 +56,7 @@
       13 [-]: GETIMPORT R5 11; var5 = 0x0469F296
       14 [-]: LOADK R6 K12 ; var6 = "DevStreamHUB7"
       15 [-]: CALL R5 2 2  ; var5 = var5(var6)
-      16 [-]: JUMPIFNOTEQ R4 R5 L0; goto L0 if var4 ~= var917582
+      16 [-]: JUMPIFNOTEQ R4 R5 L0; goto L0 if var4 ~= var917537
       17 [-]: GETIMPORT R0 14; var0 = 0x99FF13C7
       18 [-]: GETIMPORT R1 16; var1 = 0x66CC142B
       19 [-]: JUMP L1      ; goto L1
@@ -72,7 +72,7 @@ L 1:  22 [-]: LOADK R3 K21 ; var3 = 16777215
       29 [-]: CALL R4 5 1  ; var4(var5, var6, var7, var8)
       30 [-]: GETIMPORT R4 23; var4 = 0xAE91E43B
       31 [-]: LOADK R6 K26 ; var6 = "Panel.Time.Tf"
-      32 [-]: LOADN R7 36  ; var7 = 36
+      32 [-]: LOADN R7 38  ; var7 = 38
       33 [-]: LOADK R8 K21 ; var8 = 16777215
       34 [-]: NAMECALL R4 R4 K25; var5 = var4; var4 = var4[0x67BC869F]
       35 [-]: CALL R4 5 1  ; var4(var5, var6, var7, var8)
@@ -96,7 +96,7 @@ L 1:  22 [-]: LOADK R3 K21 ; var3 = 16777215
       53 [-]: CALL R4 5 1  ; var4(var5, var6, var7, var8)
       54 [-]: GETIMPORT R4 23; var4 = 0xAE91E43B
       55 [-]: LOADK R6 K28 ; var6 = "Panel.Time2.Tf"
-      56 [-]: LOADN R7 36  ; var7 = 36
+      56 [-]: LOADN R7 38  ; var7 = 38
       57 [-]: LOADK R8 K21 ; var8 = 16777215
       58 [-]: NAMECALL R4 R4 K25; var5 = var4; var4 = var4[0x67BC869F]
       59 [-]: CALL R4 5 1  ; var4(var5, var6, var7, var8)
@@ -115,7 +115,7 @@ L 1:  22 [-]: LOADK R3 K21 ; var3 = 16777215
       72 [-]: JUMP L4      ; goto L4
 L 2:  73 [-]: GETIMPORT R4 5; var4 = _T["gDoomsdayFaction"]
       74 [-]: LOADN R5 1   ; var5 = 1
-      75 [-]: JUMPIFNOTEQ R4 R5 L3; goto L3 if var4 ~= var1966158
+      75 [-]: JUMPIFNOTEQ R4 R5 L3; goto L3 if var4 ~= var1966113
       76 [-]: GETIMPORT R0 30; var0 = 0xA98217E4
       77 [-]: JUMP L4      ; goto L4
 L 3:  78 [-]: GETIMPORT R0 32; var0 = 0x722F3B10
@@ -163,7 +163,7 @@ L 4:  79 [-]: GETIMPORT R4 23; var4 = 0xAE91E43B
 
        0 [-]: GETUPVAL R0 0; var0 = upvalues[0]
        1 [-]: LOADN R1 0   ; var1 = 0
-       2 [-]: JUMPIFLT R1 R0 L0; goto L0 if var1 < var65543
+       2 [-]: JUMPIFLT R1 R0 L0; goto L0 if var1 < var65596
        3 [-]: GETUPVAL R0 1; var0 = upvalues[1]
        4 [-]: JUMPIFNOT R0 L9; goto L9 if not var0
 L 0:   5 [-]: GETIMPORT R1 2; var1 = _T["gDoomsdayTimeRemaining"]
@@ -177,10 +177,10 @@ L 1:  10 [-]: SETUPVAL R0 0; upvalues[0] = var0
       13 [-]: JUMPIFNOT R1 L4; goto L4 if not var1
       14 [-]: GETUPVAL R1 0; var1 = upvalues[0]
       15 [-]: LOADN R2 0   ; var2 = 0
-      16 [-]: JUMPIFNOTLE R1 R2 L3; goto L3 if var1 > var131406
+      16 [-]: JUMPIFNOTLE R1 R2 L3; goto L3 if var1 > var131361
       17 [-]: GETIMPORT R1 2; var1 = _T["gDoomsdayTimeRemaining"]
       18 [-]: LOADN R2 -3600; var2 = -3600
-      19 [-]: JUMPIFNOTLE R2 R1 L2; goto L2 if var2 > var524622
+      19 [-]: JUMPIFNOTLE R2 R1 L2; goto L2 if var2 > var524577
       20 [-]: GETIMPORT R1 8; var1 = 0xAE91E43B
       21 [-]: LOADK R3 K9  ; var3 = "/Lotus/Language/News/NewsItem_LiveEvent"
       22 [-]: LOADB R4 0   ; var4 = false
@@ -204,17 +204,17 @@ L 4:  35 [-]: GETUPVAL R2 2; var2 = upvalues[2]
       40 [-]: CALL R1 4 2  ; var1 = var1(var2, var3, var4)
       41 [-]: MOVE R0 R1   ; var0 = var1
 L 5:  42 [-]: GETUPVAL R1 3; var1 = upvalues[3]
-      43 [-]: JUMPIFEQ R1 R0 L9; goto L9 if var1 == var196618
+      43 [-]: JUMPIFEQ R1 R0 L9; goto L9 if var1 == var196617
       44 [-]: SETUPVAL R0 3; upvalues[0] = var3
       45 [-]: GETIMPORT R1 8; var1 = 0xAE91E43B
       46 [-]: LOADK R3 K14 ; var3 = "Panel.Time.Tf"
-      47 [-]: LOADN R4 29  ; var4 = 29
+      47 [-]: LOADN R4 31  ; var4 = 31
       48 [-]: MOVE R5 R0   ; var5 = var0
       49 [-]: NAMECALL R1 R1 K15; var2 = var1; var1 = var1[0x5F56EEAB]
       50 [-]: CALL R1 5 1  ; var1(var2, var3, var4, var5)
       51 [-]: GETIMPORT R1 8; var1 = 0xAE91E43B
       52 [-]: LOADK R3 K16 ; var3 = "Panel.Time2.Tf"
-      53 [-]: LOADN R4 29  ; var4 = 29
+      53 [-]: LOADN R4 31  ; var4 = 31
       54 [-]: MOVE R5 R0   ; var5 = var0
       55 [-]: NAMECALL R1 R1 K15; var2 = var1; var1 = var1[0x5F56EEAB]
       56 [-]: CALL R1 5 1  ; var1(var2, var3, var4, var5)
@@ -236,10 +236,10 @@ L 5:  42 [-]: GETUPVAL R1 3; var1 = upvalues[3]
       72 [-]: JUMPIFNOT R1 L6; goto L6 if not var1
       73 [-]: GETUPVAL R1 0; var1 = upvalues[0]
       74 [-]: LOADN R2 60  ; var2 = 60
-      75 [-]: JUMPIFNOTLT R1 R2 L8; goto L8 if var1 >= var263
+      75 [-]: JUMPIFNOTLT R1 R2 L8; goto L8 if var1 >= var316
       76 [-]: GETUPVAL R1 0; var1 = upvalues[0]
       77 [-]: LOADN R2 0   ; var2 = 0
-      78 [-]: JUMPIFNOTLT R2 R1 L8; goto L8 if var2 >= var1311054
+      78 [-]: JUMPIFNOTLT R2 R1 L8; goto L8 if var2 >= var1311009
 L 6:  79 [-]: GETIMPORT R1 20; var1 = 0x25312C9B
       80 [-]: GETIMPORT R2 8; var2 = 0xAE91E43B
       81 [-]: LOADK R3 K17 ; var3 = "Panel.Time2"
@@ -275,9 +275,9 @@ L 9: 109 [-]: GETIMPORT R0 27; var0 = 0x89326C93
      111 [-]: CALL R0 2 2  ; var0 = var0(var1)
      112 [-]: LENGTH R1 R0 ; var1 = #var0
      113 [-]: LOADN R2 0   ; var2 = 0
-     114 [-]: JUMPIFNOTLT R2 R1 L13; goto L13 if var2 >= var293
+     114 [-]: JUMPIFNOTLT R2 R1 L13; goto L13 if var2 >= var308
      115 [-]: GETTABLEN R1 R0 1; var1 = var0[1]
-     116 [-]: FASTCALL1 62 R1 L10; 
+     116 [-]: FASTCALL1 64 R1 L10; 
      117 [-]: MOVE R3 R1   ; var3 = var1
      118 [-]: GETIMPORT R2 30; var2 = 0x7B998233
      119 [-]: CALL R2 2 2  ; var2 = var2(var3)
@@ -294,7 +294,7 @@ L10: 120 [-]: JUMPIF R2 L13; goto L13 if var2
      130 [-]: CALL R3 2 2  ; var3 = var3(var4)
      131 [-]: NAMECALL R4 R1 K32; var5 = var1; var4 = var1[0x0B4BCFB6]
      132 [-]: CALL R4 2 2  ; var4 = var4(var5)
-     133 [-]: FASTCALL1 62 R4 L11; 
+     133 [-]: FASTCALL1 64 R4 L11; 
      134 [-]: MOVE R6 R4   ; var6 = var4
      135 [-]: GETIMPORT R5 30; var5 = 0x7B998233
      136 [-]: CALL R5 2 2  ; var5 = var5(var6)

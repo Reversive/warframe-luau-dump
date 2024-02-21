@@ -23,7 +23,7 @@
        3 [-]: NAMECALL R2 R1 K1; var3 = var1; var2 = var1[0x2D0A291F]
        4 [-]: CALL R2 2 2  ; var2 = var2(var3)
        5 [-]: GETIMPORT R3 3; var3 = 0xC85463D2
-       6 [-]: JUMPIFNOTEQ R2 R3 L0; goto L0 if var2 ~= var66075
+       6 [-]: JUMPIFNOTEQ R2 R3 L0; goto L0 if var2 ~= var66054
        7 [-]: LOADB R2 1   ; var2 = true
        8 [-]: RETURN R2 1  ; 
 L 0:   9 [-]: LOADB R2 0   ; var2 = false

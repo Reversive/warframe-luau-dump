@@ -30,7 +30,7 @@
 L 0:   8 [-]: LOADN R5 0   ; var5 = 0
        9 [-]: GETIMPORT R8 8; var8 = 0x8BB9AACF
       10 [-]: GETTABLE R7 R8 R4; var7 = var8[var4]
-      11 [-]: FASTCALL1 62 R7 L1; 
+      11 [-]: FASTCALL1 64 R7 L1; 
       12 [-]: GETIMPORT R6 10; var6 = 0x7B998233
       13 [-]: CALL R6 2 2  ; var6 = var6(var7)
 L 1:  14 [-]: JUMPIF R6 L2 ; goto L2 if var6
@@ -50,7 +50,7 @@ L 3:  25 [-]: GETIMPORT R2 15; var2 = 0xFD724408
       28 [-]: GETIMPORT R3 17; var3 = 0xF22374EA
       29 [-]: SETTABLEKS R3 R2 K4; var3["EndOfMissionVoiceOverride"] = var2
 L 4:  30 [-]: GETIMPORT R3 19; var3 = 0x59B77966
-      31 [-]: FASTCALL1 62 R3 L5; 
+      31 [-]: FASTCALL1 64 R3 L5; 
       32 [-]: GETIMPORT R2 10; var2 = 0x7B998233
       33 [-]: CALL R2 2 2  ; var2 = var2(var3)
 L 5:  34 [-]: JUMPIF R2 L6 ; goto L6 if var2
@@ -58,7 +58,7 @@ L 5:  34 [-]: JUMPIF R2 L6 ; goto L6 if var2
       36 [-]: GETIMPORT R3 19; var3 = 0x59B77966
       37 [-]: SETTABLEKS R3 R2 K20; var3["MissionTransmissionSet"] = var2
 L 6:  38 [-]: GETIMPORT R3 22; var3 = 0xF9F7B152
-      39 [-]: FASTCALL1 62 R3 L7; 
+      39 [-]: FASTCALL1 64 R3 L7; 
       40 [-]: GETIMPORT R2 10; var2 = 0x7B998233
       41 [-]: CALL R2 2 2  ; var2 = var2(var3)
 L 7:  42 [-]: JUMPIF R2 L8 ; goto L8 if var2
@@ -77,7 +77,7 @@ L 8:  46 [-]: RETURN R0 0  ;
 
        0 [-]: GETIMPORT R0 1; var0 = 0xBE190284
        1 [-]: GETIMPORT R2 3; var2 = 0x8FA717B0
-       2 [-]: FASTCALL1 62 R2 L0; 
+       2 [-]: FASTCALL1 64 R2 L0; 
        3 [-]: GETIMPORT R1 5; var1 = 0x7B998233
        4 [-]: CALL R1 2 2  ; var1 = var1(var2)
 L 0:   5 [-]: JUMPIF R1 L1 ; goto L1 if var1
@@ -96,7 +96,7 @@ L 2:  13 [-]: LOADN R3 1   ; var3 = 1
 L 3:  18 [-]: LOADN R4 0   ; var4 = 0
       19 [-]: GETIMPORT R7 13; var7 = 0x8BB9AACF
       20 [-]: GETTABLE R6 R7 R3; var6 = var7[var3]
-      21 [-]: FASTCALL1 62 R6 L4; 
+      21 [-]: FASTCALL1 64 R6 L4; 
       22 [-]: GETIMPORT R5 5; var5 = 0x7B998233
       23 [-]: CALL R5 2 2  ; var5 = var5(var6)
 L 4:  24 [-]: JUMPIF R5 L5 ; goto L5 if var5
@@ -116,7 +116,7 @@ L 6:  35 [-]: GETIMPORT R1 18; var1 = 0xFD724408
       38 [-]: GETIMPORT R2 20; var2 = 0xF22374EA
       39 [-]: SETTABLEKS R2 R1 K8; var2["EndOfMissionVoiceOverride"] = var1
 L 7:  40 [-]: GETIMPORT R2 22; var2 = 0x59B77966
-      41 [-]: FASTCALL1 62 R2 L8; 
+      41 [-]: FASTCALL1 64 R2 L8; 
       42 [-]: GETIMPORT R1 5; var1 = 0x7B998233
       43 [-]: CALL R1 2 2  ; var1 = var1(var2)
 L 8:  44 [-]: JUMPIF R1 L9 ; goto L9 if var1
@@ -124,7 +124,7 @@ L 8:  44 [-]: JUMPIF R1 L9 ; goto L9 if var1
       46 [-]: GETIMPORT R2 22; var2 = 0x59B77966
       47 [-]: SETTABLEKS R2 R1 K23; var2["MissionTransmissionSet"] = var1
 L 9:  48 [-]: GETIMPORT R2 25; var2 = 0xF9F7B152
-      49 [-]: FASTCALL1 62 R2 L10; 
+      49 [-]: FASTCALL1 64 R2 L10; 
       50 [-]: GETIMPORT R1 5; var1 = 0x7B998233
       51 [-]: CALL R1 2 2  ; var1 = var1(var2)
 L10:  52 [-]: JUMPIF R1 L11; goto L11 if var1

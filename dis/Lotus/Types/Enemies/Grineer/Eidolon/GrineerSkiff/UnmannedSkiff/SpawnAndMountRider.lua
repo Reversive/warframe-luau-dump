@@ -23,7 +23,7 @@
        3 [-]: JUMPIFNOT R1 L2; goto L2 if not var1
        4 [-]: GETIMPORT R1 4; var1 = EMPTY_SYMBOL
 L 0:   5 [-]: GETIMPORT R2 4; var2 = EMPTY_SYMBOL
-       6 [-]: JUMPIFNOTEQ R1 R2 L1; goto L1 if var1 ~= var393806
+       6 [-]: JUMPIFNOTEQ R1 R2 L1; goto L1 if var1 ~= var393761
        7 [-]: GETIMPORT R2 6; var2 = 0xCBD666E1
        8 [-]: LOADN R3 0   ; var3 = 0
        9 [-]: CALL R2 2 1  ; var2(var3)
@@ -32,7 +32,7 @@ L 0:   5 [-]: GETIMPORT R2 4; var2 = EMPTY_SYMBOL
       12 [-]: MOVE R1 R2   ; var1 = var2
       13 [-]: JUMPBACK L0  ; goto L0
 L 1:  14 [-]: GETIMPORT R2 9; var2 = 0x280D6FE7
-      15 [-]: JUMPIFNOTEQ R1 R2 L2; goto L2 if var1 ~= var66126
+      15 [-]: JUMPIFNOTEQ R1 R2 L2; goto L2 if var1 ~= var66081
       16 [-]: GETIMPORT R2 1; var2 = 0x89326C93
       17 [-]: NAMECALL R2 R2 K10; var3 = var2; var2 = var2[0x29EF273D]
       18 [-]: CALL R2 2 2  ; var2 = var2(var3)

@@ -42,7 +42,7 @@ L 0:   9 [-]: SETTABLEKS R3 R2 K3; var3["EidolonCapturedCallbacks"] = var2
 L 1:  15 [-]: GETIMPORT R3 4; var3 = _T["EidolonCapturedCallbacks"]
       16 [-]: LENGTH R2 R3 ; var2 = #var3
 L 2:  17 [-]: GETIMPORT R4 9; var4 = 0xBE190284
-      18 [-]: FASTCALL1 62 R4 L3; 
+      18 [-]: FASTCALL1 64 R4 L3; 
       19 [-]: GETIMPORT R3 11; var3 = 0x7B998233
       20 [-]: CALL R3 2 2  ; var3 = var3(var4)
 L 3:  21 [-]: JUMPIF R3 L4 ; goto L4 if var3
@@ -82,7 +82,7 @@ L 7:  42 [-]: GETUPVAL R5 1; var5 = upvalues[1]
       55 [-]: NAMECALL R6 R6 K29; var7 = var6; var6 = var6[0x0EB34C69]
       56 [-]: CALL R6 4 2  ; var6 = var6(var7, var8, var9)
       57 [-]: GETIMPORT R7 31; var7 = 0x407A7155
-      58 [-]: JUMPIFEQ R6 R7 L8; goto L8 if var6 == var16778523
+      58 [-]: JUMPIFEQ R6 R7 L8; goto L8 if var6 == var16778502
       59 [-]: LOADB R5 0 +1; var5 = false
 L 8:  60 [-]: LOADB R5 1   ; var5 = true
 L 9:  61 [-]: JUMPIFNOT R5 L10; goto L10 if not var5
@@ -97,9 +97,9 @@ L10:  64 [-]: GETIMPORT R6 14; var6 = 0xCBD666E1
       70 [-]: NAMECALL R6 R6 K34; var7 = var6; var6 = var6[0x1622AB2C]
       71 [-]: CALL R6 2 2  ; var6 = var6(var7)
       72 [-]: LOADN R7 6   ; var7 = 6
-      73 [-]: JUMPIFNOTLT R7 R6 L11; goto L11 if var7 >= var1378119
+      73 [-]: JUMPIFNOTLT R7 R6 L11; goto L11 if var7 >= var1378096
       74 [-]: LOADN R7 21  ; var7 = 21
-      75 [-]: JUMPIFNOTLT R6 R7 L11; goto L11 if var6 >= var330055
+      75 [-]: JUMPIFNOTLT R6 R7 L11; goto L11 if var6 >= var330032
       76 [-]: LOADN R9 5   ; var9 = 5
       77 [-]: NAMECALL R7 R0 K35; var8 = var0; var7 = var0[0xFE9DC265]
       78 [-]: CALL R7 3 1  ; var7(var8, var9)
@@ -117,7 +117,7 @@ L11:  87 [-]: GETIMPORT R7 9; var7 = 0xBE190284
       90 [-]: NAMECALL R7 R7 K29; var8 = var7; var7 = var7[0x0EB34C69]
       91 [-]: CALL R7 4 2  ; var7 = var7(var8, var9, var10)
       92 [-]: GETIMPORT R8 31; var8 = 0x407A7155
-      93 [-]: JUMPIFEQ R7 R8 L12; goto L12 if var7 == var16778523
+      93 [-]: JUMPIFEQ R7 R8 L12; goto L12 if var7 == var16778502
       94 [-]: LOADB R5 0 +1; var5 = false
 L12:  95 [-]: LOADB R5 1   ; var5 = true
 L13:  96 [-]: JUMPIFNOT R5 L14; goto L14 if not var5
@@ -148,7 +148,7 @@ L16: 110 [-]: JUMPIFNOT R6 L23; goto L23 if not var6
      121 [-]: NAMECALL R7 R7 K29; var8 = var7; var7 = var7[0x0EB34C69]
      122 [-]: CALL R7 4 2  ; var7 = var7(var8, var9, var10)
      123 [-]: LOADN R8 1   ; var8 = 1
-     124 [-]: JUMPIFNOTLT R8 R7 L17; goto L17 if var8 >= var330055
+     124 [-]: JUMPIFNOTLT R8 R7 L17; goto L17 if var8 >= var330032
      125 [-]: LOADN R9 5   ; var9 = 5
      126 [-]: NAMECALL R7 R0 K35; var8 = var0; var7 = var0[0xFE9DC265]
      127 [-]: CALL R7 3 1  ; var7(var8, var9)
@@ -166,7 +166,7 @@ L17: 136 [-]: LOADB R6 0   ; var6 = false
      139 [-]: LOADN R8 1   ; var8 = 1
      140 [-]: FORNPREP R7 L21; nforprep start - [escape at L21] -- var7 = iterator
 L18: 141 [-]: GETTABLE R11 R4 R9; var11 = var4[var9]
-     142 [-]: FASTCALL1 62 R11 L19; 
+     142 [-]: FASTCALL1 64 R11 L19; 
      143 [-]: GETIMPORT R10 11; var10 = 0x7B998233
      144 [-]: CALL R10 2 2 ; var10 = var10(var11)
 L19: 145 [-]: JUMPIF R10 L20; goto L20 if var10
@@ -181,7 +181,7 @@ L21: 149 [-]: JUMPIF R6 L22; goto L22 if var6
      154 [-]: MOVE R4 R7   ; var4 = var7
      155 [-]: LENGTH R7 R4 ; var7 = #var4
      156 [-]: LOADN R8 0   ; var8 = 0
-     157 [-]: JUMPIFNOTLT R8 R7 L22; goto L22 if var8 >= var67099
+     157 [-]: JUMPIFNOTLT R8 R7 L22; goto L22 if var8 >= var67078
      158 [-]: LOADB R6 1   ; var6 = true
 L22: 159 [-]: JUMPBACK L16 ; goto L16
 L23: 160 [-]: GETIMPORT R7 9; var7 = 0xBE190284
@@ -190,7 +190,7 @@ L23: 160 [-]: GETIMPORT R7 9; var7 = 0xBE190284
      163 [-]: NAMECALL R7 R7 K29; var8 = var7; var7 = var7[0x0EB34C69]
      164 [-]: CALL R7 4 2  ; var7 = var7(var8, var9, var10)
      165 [-]: GETIMPORT R8 31; var8 = 0x407A7155
-     166 [-]: JUMPIFNOTLE R8 R7 L25; goto L25 if var8 > var3082062
+     166 [-]: JUMPIFNOTLE R8 R7 L25; goto L25 if var8 > var3082017
      167 [-]: GETIMPORT R7 47; var7 = 0xE39281D6
      168 [-]: JUMPIFNOT R7 L24; goto L24 if not var7
      169 [-]: GETUPVAL R7 0; var7 = upvalues[0]

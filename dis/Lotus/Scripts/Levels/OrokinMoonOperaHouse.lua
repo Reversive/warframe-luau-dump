@@ -90,7 +90,7 @@
       13 [-]: FORGPREP_INEXT R3 L1; 
 L 0:  14 [-]: NAMECALL R8 R7 K6; var9 = var7; var8 = var7[0x22DA1852]
       15 [-]: CALL R8 2 2  ; var8 = var8(var9)
-      16 [-]: JUMPIFNOTEQ R8 R2 L1; goto L1 if var8 ~= var132909
+      16 [-]: JUMPIFNOTEQ R8 R2 L1; goto L1 if var8 ~= var132899
       17 [-]: RETURN R7 1  ; 
 L 1:  18 [-]: FORGLOOP R3 L0 2 [inext]; 
       19 [-]: RETURN R0 0  ; 
@@ -132,7 +132,7 @@ L 0:   3 [-]: GETUPVAL R1 1; var1 = upvalues[1]
        9 [-]: GETUPVAL R5 3; var5 = upvalues[3]
       10 [-]: ADDK R4 R5 K1; var4 = var5 + 1
       11 [-]: GETTABLE R2 R3 R4; var2 = var3[var4]
-      12 [-]: JUMPIFNOTEQ R1 R2 L1; goto L1 if var1 ~= var197383
+      12 [-]: JUMPIFNOTEQ R1 R2 L1; goto L1 if var1 ~= var197436
       13 [-]: GETUPVAL R3 3; var3 = upvalues[3]
       14 [-]: ADDK R2 R3 K1; var2 = var3 + 1
       15 [-]: SETUPVAL R2 3; upvalues[2] = var3
@@ -163,7 +163,7 @@ L 3:  28 [-]: FORGLOOP R2 L2 2 [inext];
        1 [-]: JUMPIFNOT R1 L0; goto L0 if not var1
        2 [-]: RETURN R0 0  ; 
 L 0:   3 [-]: GETUPVAL R1 1; var1 = upvalues[1]
-       4 [-]: JUMPIFNOTEQ R0 R1 L1; goto L1 if var0 ~= var-1241513659
+       4 [-]: JUMPIFNOTEQ R0 R1 L1; goto L1 if var0 ~= var-1241513652
        5 [-]: NAMECALL R1 R0 K0; var2 = var0; var1 = var0[0xF4E253B6]
        6 [-]: CALL R1 2 1  ; var1(var2)
        7 [-]: LOADNIL R1   ; var1 = nil
@@ -211,7 +211,7 @@ L 2:  20 [-]: NAMECALL R8 R7 K6; var9 = var7; var8 = var7[0x383D2E7D]
       30 [-]: NAMECALL R9 R8 K8; var10 = var8; var9 = var8[0xE2E807CC]
       31 [-]: CALL R9 2 1  ; var9(var10)
       32 [-]: GETGLOBAL R9 K9; var9 = 0x06BB1610
-      33 [-]: JUMPIFEQ R6 R9 L3; goto L3 if var6 == var67918
+      33 [-]: JUMPIFEQ R6 R9 L3; goto L3 if var6 == var67873
       34 [-]: GETIMPORT R9 1; var9 = 0xCBD666E1
       35 [-]: MOVE R10 R1  ; var10 = var1
       36 [-]: CALL R9 2 1  ; var9(var10)
@@ -267,14 +267,13 @@ L 5:  33 [-]: GETUPVAL R11 1; var11 = upvalues[1]
       36 [-]: NAMECALL R12 R12 K20; var13 = var12; var12 = var12[0x6D604BA7]
       37 [-]: CALL R12 2 2 ; var12 = var12(var13)
       38 [-]: GETTABLE R10 R11 R12; var10 = var11[var12]
-      39 [-]: JUMPIFNOTEQ R10 R4 L8; goto L8 if var10 ~= var133895
+      39 [-]: JUMPIFNOTEQ R10 R4 L8; goto L8 if var10 ~= var133948
       40 [-]: GETUPVAL R11 2; var11 = upvalues[2]
       41 [-]: FASTCALL2 52 R11 R9 L6; 
       42 [-]: MOVE R12 R9  ; var12 = var9
       43 [-]: GETIMPORT R10 11; var10 = 0x33BDD652[0x23D5322F]
       44 [-]: CALL R10 3 1 ; var10(var11, var12)
-L 6:  45 [-]: DIVK R11 R0 K21; var11 = var0 / 10
-      46 [-]: FASTCALL1 12 R11 L7; 
+L 6:       46 [-]: FASTCALL1 12 R11 L7; 
       47 [-]: GETIMPORT R10 23; var10 = 0x5BCED4C4[0x55F27C30]
       48 [-]: CALL R10 2 2 ; var10 = var10(var11)
 L 7:  49 [-]: MOVE R0 R10  ; var0 = var10
@@ -305,7 +304,7 @@ L10:  66 [-]: GETIMPORT R5 35; var5 = 0x11A19C5E
 L11:  74 [-]: FORGLOOP R0 L10 2 [inext]; 
 L12:  75 [-]: GETUPVAL R0 4; var0 = upvalues[4]
       76 [-]: GETGLOBAL R1 K13; var1 = 0x06BB1610
-      77 [-]: JUMPIFNOTLT R0 R1 L13; goto L13 if var0 >= var262222
+      77 [-]: JUMPIFNOTLT R0 R1 L13; goto L13 if var0 >= var262177
       78 [-]: GETIMPORT R0 4; var0 = 0xCBD666E1
       79 [-]: LOADN R1 0   ; var1 = 0
       80 [-]: CALL R0 2 1  ; var0(var1)
@@ -356,7 +355,7 @@ L15:  96 [-]: FORGLOOP R0 L14 2 [inext];
 ; Max Stack Size:  4
 
        0 [-]: GETIMPORT R2 2; var2 = _T["ReplaySequence"]
-       1 [-]: FASTCALL1 62 R2 L0; 
+       1 [-]: FASTCALL1 64 R2 L0; 
        2 [-]: GETIMPORT R1 4; var1 = 0x7B998233
        3 [-]: CALL R1 2 2  ; var1 = var1(var2)
 L 0:   4 [-]: JUMPIF R1 L1 ; goto L1 if var1
@@ -383,7 +382,7 @@ L 1:   8 [-]: GETIMPORT R1 6; var1 = 0x40442800
        3 [-]: CALL R4 2 0  ; var4, ... = var4(var5)
        4 [-]: NAMECALL R2 R2 K5; var3 = var2; var2 = var2[0x46A0EBF5]
        5 [-]: CALL R2 0 2  ; var2 = var2(var3, ...)
-       6 [-]: FASTCALL1 62 R2 L0; 
+       6 [-]: FASTCALL1 64 R2 L0; 
        7 [-]: MOVE R4 R2   ; var4 = var2
        8 [-]: GETIMPORT R3 7; var3 = 0x7B998233
        9 [-]: CALL R3 2 2  ; var3 = var3(var4)

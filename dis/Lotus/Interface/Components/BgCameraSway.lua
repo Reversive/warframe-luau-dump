@@ -43,7 +43,7 @@ L 1:  13 [-]: DUPTABLE R5 23;
       19 [-]: SETTABLEKS R3 R5 K11; var3["mAnchorEnity"] = var5
       20 [-]: LOADNIL R6   ; var6 = nil
       21 [-]: SETTABLEKS R6 R5 K12; var6["mOldCameraSpot"] = var5
-      22 [-]: LOADK R6 K24 ; var6 = 0.20000000000000001
+      22 [-]: LOADK R6 K24 ; var6 = 0.20000000298023224
       23 [-]: SETTABLEKS R6 R5 K13; var6["mTransitionTime"] = var5
       24 [-]: GETIMPORT R6 26; var6 = 0xA421AF95
       25 [-]: CALL R6 1 2  ; var6 = var6()
